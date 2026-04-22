@@ -1,0 +1,1937 @@
+{
+  "metadata": {
+    "task": "0.5",
+    "description": "Route keyword matrix for 90 P1 route combinations (10 origins x 9 destinations)",
+    "methodology": "Logic-based keyword research. No SEMrush/Ahrefs. Volume estimates derived from: expat population data, migration corridors, pet ownership rates, regulatory complexity (drives search), English-language search proportion. Competition assessed via SERP landscape analysis: presence of dedicated route pages, PetRelocation coverage, forum dominance.",
+    "date_compiled": "2026-04-16",
+    "p1_countries": ["UK", "USA", "UAE", "Australia", "Canada", "Germany", "France", "Singapore", "Hong Kong", "South Africa"],
+    "total_routes": 90,
+    "query_patterns": [
+      "pet transport [origin] to [destination]",
+      "ship dog from [origin] to [destination]",
+      "pet relocation [origin] to [destination]",
+      "move pet from [origin] to [destination]",
+      "cost to ship dog/pet from [origin] to [destination]",
+      "how to bring pet to [destination] from [origin]",
+      "[destination] pet import requirements from [origin]"
+    ],
+    "volume_scale": {
+      "high": "500+ monthly searches (English, combined query patterns)",
+      "medium": "100-500 monthly searches",
+      "low-medium": "30-100 monthly searches",
+      "low": "<30 monthly searches"
+    },
+    "priority_scoring": {
+      "description": "1-10 scale. Factors: estimated volume, commercial value per booking, competition gap, regulatory complexity (content depth potential), route frequency (how many airlines serve it).",
+      "10": "Must-build first. High volume, high value, zero competition.",
+      "7-9": "Core P1 routes. Build in first batch.",
+      "4-6": "Solid routes. Build in second batch within P1.",
+      "1-3": "Lower priority within P1. Build last or defer."
+    }
+  },
+  "route_priority_tiers": {
+    "tier_1_build_first": {
+      "description": "Routes scoring 8-10. Highest estimated volume + commercial value + competition gap. Build these first.",
+      "routes": [
+        "uk-to-australia", "uae-to-uk", "uae-to-australia", "australia-to-uk",
+        "uk-to-uae", "usa-to-uk", "uk-to-usa", "singapore-to-australia",
+        "hong-kong-to-uk", "hong-kong-to-australia", "uae-to-usa",
+        "south-africa-to-uk", "south-africa-to-australia", "uk-to-france",
+        "uk-to-singapore"
+      ],
+      "count": 15
+    },
+    "tier_2_core": {
+      "description": "Routes scoring 5-7. Good volume and value. Core P1 content.",
+      "count": 40
+    },
+    "tier_3_complete": {
+      "description": "Routes scoring 1-4. Lower volume but needed for completeness and internal linking.",
+      "count": 35
+    }
+  },
+  "routes": [
+    {
+      "route_id": "uk-to-usa",
+      "origin": "UK",
+      "destination": "USA",
+      "slug": "pet-transport/united-kingdom/to/united-states",
+      "keywords": [
+        {"keyword": "pet transport uk to usa", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from uk to usa", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "pet relocation uk to america", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "bring pet to usa from uk", "volume": "medium", "intent": "informational-commercial", "competition": "low"},
+        {"keyword": "cost to ship dog from uk to usa", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "cdc dog import requirements from uk", "volume": "medium", "intent": "informational", "competition": "medium"},
+        {"keyword": "flying with pet from uk to us", "volume": "low-medium", "intent": "informational", "competition": "low"}
+      ],
+      "serp_features": ["ads", "paa", "featured_snippet_possible"],
+      "top_current_rankers": ["petrelocation.com (country page)", "gov.uk (outbound guidance)", "cdc.gov (import rules)", "various pet transport companies"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "No dedicated UK-to-USA route page in top 10. PetRelocation has a USA country page but not a UK-to-USA specific page. CDC rules changed Aug 2024, creating fresh content demand.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "UK is CDC low-risk country. Dogs need: CDC Dog Import Form, microchip, appear healthy, 6+ months old. No rabies titre test required. Cats: zero federal requirements. Relatively straightforward route.",
+      "airlines_serving": ["British Airways (cargo via IAG)", "Virgin Atlantic (cargo)", "American Airlines", "Delta", "United (cabin only)"],
+      "commercial_value": "high",
+      "route_priority_score": 8,
+      "content_angles": ["CDC Aug 2024 rule changes", "UK Pet Travel Scheme for return journey", "No quarantine either direction", "Cat import is effortless (no federal requirements)", "Airline comparison (BA cargo vs US carriers cabin)"]
+    },
+    {
+      "route_id": "uk-to-uae",
+      "origin": "UK",
+      "destination": "UAE",
+      "slug": "pet-transport/united-kingdom/to/united-arab-emirates",
+      "keywords": [
+        {"keyword": "pet transport uk to dubai", "volume": "high", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from uk to dubai", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "pet relocation uk to uae", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "move pet to dubai from uk", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "cost to ship pet from uk to dubai", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "dubai pet import rules from uk", "volume": "low-medium", "intent": "informational", "competition": "medium"},
+        {"keyword": "flying with dog to dubai from london", "volume": "low-medium", "intent": "informational-commercial", "competition": "low"}
+      ],
+      "serp_features": ["ads", "paa"],
+      "top_current_rankers": ["petrelocation.com", "expat forums", "local Dubai pet transport companies"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Massive UK expat population in Dubai. High booking values. No dedicated route page competes. Local companies have generic pages but not route-specific content.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "UAE requires: import permit from municipality, rabies vaccination, health certificate, microchip. No quarantine for cats/dogs from UK. Emirates and Etihad cargo only (no cabin). BA also cargo only via PetAir UK.",
+      "airlines_serving": ["Emirates SkyCargo", "British Airways (cargo via PetAir UK)", "Etihad Cargo"],
+      "commercial_value": "very_high",
+      "route_priority_score": 9,
+      "content_angles": ["All airlines cargo-only on this route", "Dubai municipality permit process", "Summer temperature embargoes (Jun-Sep)", "Return journey complications (UAE is CDC high-risk)", "Huge British expat community in Dubai"]
+    },
+    {
+      "route_id": "uk-to-australia",
+      "origin": "UK",
+      "destination": "Australia",
+      "slug": "pet-transport/united-kingdom/to/australia",
+      "keywords": [
+        {"keyword": "pet transport uk to australia", "volume": "high", "intent": "commercial", "competition": "medium"},
+        {"keyword": "ship dog from uk to australia", "volume": "high", "intent": "commercial", "competition": "low"},
+        {"keyword": "pet relocation uk to australia", "volume": "medium", "intent": "commercial", "competition": "medium"},
+        {"keyword": "move pet to australia from uk", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "cost to ship dog from uk to australia", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "australia quarantine for pets from uk", "volume": "medium", "intent": "informational", "competition": "medium"},
+        {"keyword": "how long is quarantine for pets in australia", "volume": "medium", "intent": "informational", "competition": "medium"},
+        {"keyword": "bringing dog to australia from england", "volume": "low-medium", "intent": "informational-commercial", "competition": "low"}
+      ],
+      "serp_features": ["ads", "paa", "featured_snippet"],
+      "top_current_rankers": ["petrelocation.com (excellent Australia page)", "agriculture.gov.au", "various pet transport companies"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "UK-Australia is likely the highest search volume pet transport route globally. Massive UK-Australia migration. Australia's strict quarantine drives enormous search demand. PetRelocation has a good Australia page but NOT a UK-to-Australia route page. Our route page combining UK export + AU import + airline options + quarantine details would be the only comprehensive resource.",
+      "regulatory_complexity": "very_high",
+      "regulatory_notes": "UK is Australia DAFF Group 3. Minimum 10-day quarantine at Mickleham. Import permit required. Rabies titre test required. Health certificate timing strict. 6+ month planning recommended. Qantas and Singapore Airlines primary cargo carriers. All cargo-only.",
+      "airlines_serving": ["Qantas (cargo)", "Singapore Airlines (cargo, via SIN)", "Emirates SkyCargo (via DXB)", "Cathay Pacific (cargo, via HKG)"],
+      "commercial_value": "very_high",
+      "route_priority_score": 10,
+      "content_angles": ["Australia's strict biosecurity (most regulated in world)", "Mickleham quarantine facility details", "6-month planning timeline", "Summer heat restrictions (Dec-Feb)", "Group 3 country classification", "Professional pet agent strongly recommended", "Cost breakdown ($3,000-$8,000+ typical)", "Return journey from AU to UK much simpler"]
+    },
+    {
+      "route_id": "uk-to-canada",
+      "origin": "UK",
+      "destination": "Canada",
+      "slug": "pet-transport/united-kingdom/to/canada",
+      "keywords": [
+        {"keyword": "pet transport uk to canada", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from uk to canada", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "bring pet to canada from uk", "volume": "low-medium", "intent": "informational-commercial", "competition": "low"},
+        {"keyword": "cost to ship pet uk to canada", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "government.gc.ca", "various forums"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Moderate expat flow. Canada has relatively straightforward pet import rules. Low competition.",
+      "regulatory_complexity": "low-medium",
+      "regulatory_notes": "Canada: rabies vaccination required for dogs 3+ months, health certificate within 3 days if commercially imported. CFIA requirements. No quarantine. CDC low-risk for return to US.",
+      "airlines_serving": ["British Airways (cargo)", "Air Canada", "WestJet"],
+      "commercial_value": "medium",
+      "route_priority_score": 6,
+      "content_angles": ["Straightforward route", "Canada CFIA requirements", "Provincial variations", "Winter temperature embargoes for cargo"]
+    },
+    {
+      "route_id": "uk-to-germany",
+      "origin": "UK",
+      "destination": "Germany",
+      "slug": "pet-transport/united-kingdom/to/germany",
+      "keywords": [
+        {"keyword": "pet transport uk to germany", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "bring dog to germany from uk", "volume": "low-medium", "intent": "informational-commercial", "competition": "low"},
+        {"keyword": "pet travel uk to germany after brexit", "volume": "low-medium", "intent": "informational", "competition": "medium"},
+        {"keyword": "animal health certificate uk to germany", "volume": "low-medium", "intent": "informational", "competition": "medium"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["gov.uk", "ec.europa.eu", "eurotunnel guides"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Post-Brexit complications created fresh demand. UK to EU now requires AHC instead of pet passport. High value content angle.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "Post-Brexit: GB pet passports no longer valid for EU entry. Need animal health certificate. Standard EU rules: microchip, rabies, 21-day wait. Germany may have breed-specific legislation (Kampfhunde).",
+      "airlines_serving": ["Lufthansa (cabin + cargo)", "British Airways (cargo)", "Eurowings"],
+      "commercial_value": "medium",
+      "route_priority_score": 6,
+      "content_angles": ["Brexit impact on pet travel", "AHC requirement", "Eurotunnel/ferry as alternative to flying", "German dangerous dog breeds law", "Lufthansa allows cabin travel"]
+    },
+    {
+      "route_id": "uk-to-france",
+      "origin": "UK",
+      "destination": "France",
+      "slug": "pet-transport/united-kingdom/to/france",
+      "keywords": [
+        {"keyword": "pet transport uk to france", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "take dog to france from uk", "volume": "medium", "intent": "informational", "competition": "medium"},
+        {"keyword": "pet travel uk to france after brexit", "volume": "medium", "intent": "informational", "competition": "medium"},
+        {"keyword": "eurotunnel with pet uk to france", "volume": "medium", "intent": "informational", "competition": "medium"},
+        {"keyword": "animal health certificate for france", "volume": "low-medium", "intent": "informational", "competition": "medium"}
+      ],
+      "serp_features": ["paa", "featured_snippet_possible"],
+      "top_current_rankers": ["gov.uk", "eurotunnel.com", "dfds.com", "various travel blogs"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Very high volume route for pet TRAVEL (holidays) not just relocation. Eurotunnel/ferry options make this unique. Post-Brexit rules changed everything.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "Same EU entry rules as Germany. Strong Eurotunnel and ferry options. AHC required post-Brexit. France: Category 1 dangerous dogs banned (Pit Bull type, Boerboel). Tapeworm treatment required by France.",
+      "airlines_serving": ["Air France (cabin + cargo)", "British Airways (cargo)", "easyJet (no pets)"],
+      "commercial_value": "medium",
+      "route_priority_score": 8,
+      "content_angles": ["Eurotunnel pet travel (Le Shuttle)", "Ferry options (Brittany Ferries, DFDS, P&O)", "Brexit pet travel changes", "French dangerous dog laws", "Driving vs flying with pets", "Holiday pet travel vs permanent relocation"]
+    },
+    {
+      "route_id": "uk-to-singapore",
+      "origin": "UK",
+      "destination": "Singapore",
+      "slug": "pet-transport/united-kingdom/to/singapore",
+      "keywords": [
+        {"keyword": "pet transport uk to singapore", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from uk to singapore", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "pet relocation uk to singapore", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "singapore pet import from uk", "volume": "low-medium", "intent": "informational", "competition": "low"},
+        {"keyword": "avs singapore pet import category", "volume": "low", "intent": "informational", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "nparks.gov.sg", "expat forums"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "UK is AVS Category A for Singapore (no quarantine). But process still complex (licence, vaccination, health cert). Strong UK expat presence in Singapore.",
+      "regulatory_complexity": "medium-high",
+      "regulatory_notes": "UK is Singapore AVS Category A. No quarantine. But import licence required, microchip, health certificate, core vaccinations. Dogs: distemper/hepatitis/parvo. Singapore Airlines and BA cargo.",
+      "airlines_serving": ["Singapore Airlines (cargo)", "British Airways (cargo)", "Emirates SkyCargo (via DXB)"],
+      "commercial_value": "high",
+      "route_priority_score": 8,
+      "content_angles": ["UK is Category A (easiest entry)", "No quarantine advantage", "Singapore breed restrictions", "All cargo-only airlines on this route", "Corporate relocation corridor"]
+    },
+    {
+      "route_id": "uk-to-hong-kong",
+      "origin": "UK",
+      "destination": "Hong Kong",
+      "slug": "pet-transport/united-kingdom/to/hong-kong",
+      "keywords": [
+        {"keyword": "pet transport uk to hong kong", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from uk to hong kong", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "hong kong pet import from uk", "volume": "low-medium", "intent": "informational", "competition": "low"},
+        {"keyword": "pet relocation uk to hong kong", "volume": "low-medium", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "afcd.gov.hk", "expat forums"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Strong UK-HK expat corridor, especially post-BNO visa scheme. HK has AFCD import permit system.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "HK AFCD import permit required. Rabies vaccination, microchip, health certificate. No quarantine from UK typically (UK is low-risk). Import licence via online system.",
+      "airlines_serving": ["Cathay Pacific (cargo)", "British Airways (cargo)", "Emirates SkyCargo (via DXB)"],
+      "commercial_value": "high",
+      "route_priority_score": 7,
+      "content_angles": ["BNO visa driving UK-to-HK pet transport demand", "AFCD permit process", "Cathay Pacific as primary carrier", "HK breed restrictions", "Summer heat considerations"]
+    },
+    {
+      "route_id": "uk-to-south-africa",
+      "origin": "UK",
+      "destination": "South Africa",
+      "slug": "pet-transport/united-kingdom/to/south-africa",
+      "keywords": [
+        {"keyword": "pet transport uk to south africa", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from uk to south africa", "volume": "low", "intent": "commercial", "competition": "low"},
+        {"keyword": "pet relocation uk to south africa", "volume": "low", "intent": "commercial", "competition": "low"},
+        {"keyword": "south africa pet import requirements", "volume": "low-medium", "intent": "informational", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "various pet transport companies", "gov.za"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Smaller volume but zero competition. South Africa has its own set of import requirements (DALRRD permit).",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "SA DALRRD import permit required. Rabies vaccination with titre test. Health certificate. Microchip. No quarantine from UK typically. SA is CDC high-risk for return to US.",
+      "airlines_serving": ["British Airways (cargo)", "South African Airways", "Virgin Atlantic (cargo)", "Emirates SkyCargo (via DXB)"],
+      "commercial_value": "medium",
+      "route_priority_score": 5,
+      "content_angles": ["SA DALRRD permit process", "Johannesburg OR Tambo as arrival point", "Return journey to UK straightforward", "SAA allows cabin for small pets"]
+    },
+    {
+      "route_id": "usa-to-uk",
+      "origin": "USA",
+      "destination": "UK",
+      "slug": "pet-transport/united-states/to/united-kingdom",
+      "keywords": [
+        {"keyword": "pet transport usa to uk", "volume": "high", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from us to uk", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "pet relocation usa to england", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "move pet to uk from america", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "uk pet import requirements from usa", "volume": "medium", "intent": "informational", "competition": "medium"},
+        {"keyword": "cost to ship dog from us to uk", "volume": "low-medium", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["ads", "paa"],
+      "top_current_rankers": ["petrelocation.com", "gov.uk", "various US pet transport companies"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "High volume US-UK corridor. Americans searching in English = large market. No dedicated route page exists.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "UK requires: microchip before vaccination, rabies vaccination 21-day wait, AHC or pet passport (if EU-issued), tapeworm treatment for dogs, approved route. USDA endorsement of health certificate needed for export from US.",
+      "airlines_serving": ["British Airways (cargo via IAG)", "Virgin Atlantic (cargo)", "American Airlines", "Delta", "United (cabin only)"],
+      "commercial_value": "high",
+      "route_priority_score": 8,
+      "content_angles": ["USDA export endorsement process", "UK APHA requirements from US", "Tapeworm treatment timing for dogs", "American vs British carriers comparison", "USDA accredited vet requirement"]
+    },
+    {
+      "route_id": "usa-to-uae",
+      "origin": "USA",
+      "destination": "UAE",
+      "slug": "pet-transport/united-states/to/united-arab-emirates",
+      "keywords": [
+        {"keyword": "pet transport usa to dubai", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from us to dubai", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "pet relocation usa to uae", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "move pet to dubai from america", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "dubai pet import from usa", "volume": "low-medium", "intent": "informational", "competition": "low"}
+      ],
+      "serp_features": ["ads", "paa"],
+      "top_current_rankers": ["petrelocation.com", "various pet transport companies"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "US corporate expat transfers to Dubai. High income market. Emirates SkyCargo is primary carrier.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "UAE municipality import permit. Rabies vaccination, microchip, health certificate. USDA endorsement for export. No quarantine. Emirates cargo only. Summer heat embargoes Jun-Sep.",
+      "airlines_serving": ["Emirates SkyCargo", "Etihad Cargo", "Delta (military cargo only)", "United (cabin, no Dubai route)"],
+      "commercial_value": "high",
+      "route_priority_score": 7,
+      "content_angles": ["USDA export process", "Dubai municipality permit", "Summer heat embargo", "Emirates SkyCargo as only option for most", "Return trip: UAE is CDC high-risk"]
+    },
+    {
+      "route_id": "usa-to-australia",
+      "origin": "USA",
+      "destination": "Australia",
+      "slug": "pet-transport/united-states/to/australia",
+      "keywords": [
+        {"keyword": "pet transport usa to australia", "volume": "high", "intent": "commercial", "competition": "medium"},
+        {"keyword": "ship dog from us to australia", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "pet relocation usa to australia", "volume": "medium", "intent": "commercial", "competition": "medium"},
+        {"keyword": "move pet to australia from america", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "australia quarantine for pets from usa", "volume": "medium", "intent": "informational", "competition": "medium"},
+        {"keyword": "cost to ship dog from usa to australia", "volume": "medium", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["ads", "paa", "featured_snippet_possible"],
+      "top_current_rankers": ["petrelocation.com (strong AU page)", "agriculture.gov.au", "various pet transport companies"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Second highest volume route globally after UK-AU. Australia quarantine drives massive search. PetRelocation has good AU page but not US-to-AU route page.",
+      "regulatory_complexity": "very_high",
+      "regulatory_notes": "USA is Australia DAFF Group 4. Rabies titre test required. Minimum 10-day quarantine. Import permit. USDA endorsement for export. 6+ month planning. Qantas/UA via connecting flights.",
+      "airlines_serving": ["Qantas (cargo)", "United (cabin only, limited)", "Delta (military only cargo)", "Hawaiian (limited)"],
+      "commercial_value": "very_high",
+      "route_priority_score": 9,
+      "content_angles": ["US is Group 4 (harder than UK Group 3)", "USDA export + DAFF import dual process", "Titre test timing requirements", "LAX to Sydney/Melbourne routing", "Professional agent essential", "Cost $4,000-$10,000+ typical"]
+    },
+    {
+      "route_id": "usa-to-canada",
+      "origin": "USA",
+      "destination": "Canada",
+      "slug": "pet-transport/united-states/to/canada",
+      "keywords": [
+        {"keyword": "pet transport usa to canada", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "bring dog from us to canada", "volume": "medium", "intent": "informational", "competition": "medium"},
+        {"keyword": "canada pet import requirements from us", "volume": "medium", "intent": "informational", "competition": "medium"},
+        {"keyword": "drive with pet from usa to canada", "volume": "low-medium", "intent": "informational", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["inspection.canada.ca", "petrelocation.com", "various blogs"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Very high traffic land border. Many people drive with pets. Content angle: driving vs flying.",
+      "regulatory_complexity": "low",
+      "regulatory_notes": "CFIA: rabies vaccination certificate for dogs 3+ months. Health certificate for commercial import. Land border crossing possible. Very straightforward.",
+      "airlines_serving": ["Air Canada (cabin + cargo)", "United (cabin only)", "Delta", "American Airlines", "WestJet"],
+      "commercial_value": "low-medium",
+      "route_priority_score": 5,
+      "content_angles": ["Land border crossing option", "Driving with pets across border", "CFIA rabies cert requirements", "Simplest route in matrix", "Provincial variations"]
+    },
+    {
+      "route_id": "usa-to-germany",
+      "origin": "USA",
+      "destination": "Germany",
+      "slug": "pet-transport/united-states/to/germany",
+      "keywords": [
+        {"keyword": "pet transport usa to germany", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from us to germany", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "military pet transport to germany", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "pet relocation usa to germany", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "various military spouse blogs", "iata.org"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "US military bases in Germany drive significant pet transport demand. Unique audience.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "EU standard entry: microchip, rabies, 21-day wait, AHC. USDA endorsement for export. German Kampfhunde laws. Lufthansa allows cabin.",
+      "airlines_serving": ["Lufthansa (cabin + cargo)", "United (cabin only)", "Delta", "American Airlines"],
+      "commercial_value": "medium",
+      "route_priority_score": 6,
+      "content_angles": ["US military PCS with pets", "German dangerous breed laws (Kampfhunde)", "Lufthansa pet-friendly", "USDA endorsement + EU AHC dual requirement", "Frankfurt hub advantage"]
+    },
+    {
+      "route_id": "usa-to-france",
+      "origin": "USA",
+      "destination": "France",
+      "slug": "pet-transport/united-states/to/france",
+      "keywords": [
+        {"keyword": "pet transport usa to france", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from us to france", "volume": "low", "intent": "commercial", "competition": "low"},
+        {"keyword": "bring pet to france from america", "volume": "low", "intent": "informational-commercial", "competition": "low"},
+        {"keyword": "france pet import requirements", "volume": "low-medium", "intent": "informational", "competition": "medium"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "ec.europa.eu", "us.ambafrance.org"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Lower volume but zero competition at route level. Expat relocations and retirees moving to France.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "EU standard. USDA endorsed AHC. Rabies, microchip, 21-day wait. French Category 1 dangerous dogs banned. Air France allows cabin.",
+      "airlines_serving": ["Air France (cabin + cargo)", "Delta", "United (cabin only)", "American Airlines"],
+      "commercial_value": "medium",
+      "route_priority_score": 5,
+      "content_angles": ["French dangerous dog categories", "Air France pet-friendly advantage", "CDG arrival procedures", "USDA endorsement walk-through"]
+    },
+    {
+      "route_id": "usa-to-singapore",
+      "origin": "USA",
+      "destination": "Singapore",
+      "slug": "pet-transport/united-states/to/singapore",
+      "keywords": [
+        {"keyword": "pet transport usa to singapore", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from us to singapore", "volume": "low", "intent": "commercial", "competition": "low"},
+        {"keyword": "singapore pet import from usa", "volume": "low-medium", "intent": "informational", "competition": "low"},
+        {"keyword": "avs category b usa pet import", "volume": "low", "intent": "informational", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "nparks.gov.sg", "expat forums"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "US corporate expats to Singapore. USA is AVS Category B (30-day home quarantine). Complex process.",
+      "regulatory_complexity": "high",
+      "regulatory_notes": "USA is Singapore Category B. AVS licence, rabies titre test, 30-day home quarantine on arrival, core vaccinations, USDA export endorsement.",
+      "airlines_serving": ["Singapore Airlines (cargo)", "United (cabin only)", "Emirates SkyCargo (via DXB)"],
+      "commercial_value": "high",
+      "route_priority_score": 7,
+      "content_angles": ["Category B means 30-day home quarantine", "Titre test timing", "Singapore breed restrictions", "Cargo-only on SIA", "USDA + AVS dual paperwork"]
+    },
+    {
+      "route_id": "usa-to-hong-kong",
+      "origin": "USA",
+      "destination": "Hong Kong",
+      "slug": "pet-transport/united-states/to/hong-kong",
+      "keywords": [
+        {"keyword": "pet transport usa to hong kong", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from us to hong kong", "volume": "low", "intent": "commercial", "competition": "low"},
+        {"keyword": "hong kong pet import from usa", "volume": "low", "intent": "informational", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "afcd.gov.hk"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Corporate relocations. HK AFCD permit process.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "HK AFCD import permit. Rabies vaccination, health certificate, USDA endorsement. No quarantine from US typically.",
+      "airlines_serving": ["Cathay Pacific (cargo)", "United (cabin only)", "Delta"],
+      "commercial_value": "high",
+      "route_priority_score": 6,
+      "content_angles": ["AFCD permit process from US", "Cathay Pacific cargo", "Corporate relocation packages", "HK apartment restrictions on pets"]
+    },
+    {
+      "route_id": "usa-to-south-africa",
+      "origin": "USA",
+      "destination": "South Africa",
+      "slug": "pet-transport/united-states/to/south-africa",
+      "keywords": [
+        {"keyword": "pet transport usa to south africa", "volume": "low", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from us to south africa", "volume": "low", "intent": "commercial", "competition": "low"},
+        {"keyword": "south africa pet import from usa", "volume": "low", "intent": "informational", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "various blogs"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Lower volume. DALRRD permit process. Long flight with connections.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "SA DALRRD import permit. Rabies titre test. USDA export endorsement. No direct US-SA pet cargo flights typically; routing via Europe or Middle East.",
+      "airlines_serving": ["Delta (military only cargo)", "South African Airways", "Emirates SkyCargo (via DXB)", "British Airways (via LHR)"],
+      "commercial_value": "medium",
+      "route_priority_score": 4,
+      "content_angles": ["Indirect routing required", "DALRRD permit timeline", "Connection options via Dubai/London", "SA is CDC high-risk for return"]
+    },
+    {
+      "route_id": "uae-to-uk",
+      "origin": "UAE",
+      "destination": "UK",
+      "slug": "pet-transport/united-arab-emirates/to/united-kingdom",
+      "keywords": [
+        {"keyword": "pet transport dubai to uk", "volume": "high", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from dubai to uk", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "pet relocation dubai to london", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "move pet from uae to england", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "cost pet transport dubai to uk", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "uk pet import rules from dubai", "volume": "low-medium", "intent": "informational", "competition": "medium"},
+        {"keyword": "how long to ship pet from dubai", "volume": "low-medium", "intent": "informational", "competition": "low"}
+      ],
+      "serp_features": ["ads", "paa"],
+      "top_current_rankers": ["petrelocation.com", "local Dubai pet companies (British Pet", "HappyTails)", "gov.uk"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Top 3 highest demand route globally. Massive British expat population leaving Dubai. High booking values. Local companies exist but have weak SEO.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "UK requires: microchip, rabies vaccination 21-day wait, AHC, tapeworm treatment for dogs (24-120hrs before arrival), approved route. UAE export: municipality clearance. Emirates SkyCargo and BA cargo via PetAir UK.",
+      "airlines_serving": ["Emirates SkyCargo", "British Airways (cargo via PetAir UK)", "Etihad Cargo"],
+      "commercial_value": "very_high",
+      "route_priority_score": 10,
+      "content_angles": ["Expat return to UK (most common UAE pet transport)", "Tapeworm timing critical", "Summer heat embargo (Jun-Sep departure restrictions)", "All airlines cargo-only", "Dubai municipality export process", "Cost breakdown $2,000-$5,000 typical"]
+    },
+    {
+      "route_id": "uae-to-usa",
+      "origin": "UAE",
+      "destination": "USA",
+      "slug": "pet-transport/united-arab-emirates/to/united-states",
+      "keywords": [
+        {"keyword": "pet transport dubai to usa", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from dubai to us", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "pet relocation uae to america", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "cdc dog import from uae", "volume": "low-medium", "intent": "informational", "competition": "medium"},
+        {"keyword": "uae high risk country dog import us", "volume": "low", "intent": "informational", "competition": "low"}
+      ],
+      "serp_features": ["ads", "paa"],
+      "top_current_rankers": ["cdc.gov", "petrelocation.com", "various forums"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "UAE is CDC HIGH-RISK for dog rabies. This creates complex requirements (foreign-vaccinated dog process, CDC-registered facility, possible 28-day quarantine). High content value due to complexity.",
+      "regulatory_complexity": "very_high",
+      "regulatory_notes": "UAE is CDC high-risk. Foreign-vaccinated dogs need: Certification of Foreign Rabies Vaccination form, CDC-approved rabies titre test (or 28-day quarantine at CDC facility), reservation at CDC-registered facility, must arrive at airport with facility. USDA additional requirements. Cats: no federal requirements.",
+      "airlines_serving": ["Emirates SkyCargo", "Etihad Cargo", "Delta (military only)"],
+      "commercial_value": "very_high",
+      "route_priority_score": 9,
+      "content_angles": ["UAE is CDC high-risk: complex dog import process", "28-day quarantine possibility", "CDC-registered facility requirement", "Must arrive at specific airports", "Cats have zero federal requirements (massive contrast)", "Rabies titre test timeline", "Aug 2024 CDC rule changes"]
+    },
+    {
+      "route_id": "uae-to-australia",
+      "origin": "UAE",
+      "destination": "Australia",
+      "slug": "pet-transport/united-arab-emirates/to/australia",
+      "keywords": [
+        {"keyword": "pet transport dubai to australia", "volume": "high", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from dubai to australia", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "pet relocation uae to australia", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "can i ship my pet from dubai to australia", "volume": "low-medium", "intent": "informational", "competition": "low"},
+        {"keyword": "australia quarantine pets from uae", "volume": "low-medium", "intent": "informational", "competition": "low"}
+      ],
+      "serp_features": ["ads", "paa"],
+      "top_current_rankers": ["petrelocation.com", "agriculture.gov.au", "Dubai pet transport companies"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Extremely high demand. Large expat flow UAE to AU. Complex route: UAE may not be DAFF-approved; pet may need to transit through approved country. Highest complexity = highest content value.",
+      "regulatory_complexity": "extreme",
+      "regulatory_notes": "UAE may not be a DAFF-approved country for direct import. Pet may need to reside in approved country (e.g. UK) to complete process. If approved: Group 4/5 requirements, titre test, 10+ day quarantine. 6+ month planning minimum. Most complex route in matrix.",
+      "airlines_serving": ["Emirates SkyCargo (direct)", "Qantas (if routing via approved country)", "Singapore Airlines (via SIN)"],
+      "commercial_value": "very_high",
+      "route_priority_score": 9,
+      "content_angles": ["Potentially the most complex pet transport route", "Transit country requirement", "Dual quarantine risk", "6-12 month timeline", "Cost $5,000-$15,000+", "Professional agent mandatory", "Summer departure restrictions from UAE"]
+    },
+    {
+      "route_id": "uae-to-canada",
+      "origin": "UAE",
+      "destination": "Canada",
+      "slug": "pet-transport/united-arab-emirates/to/canada",
+      "keywords": [
+        {"keyword": "pet transport dubai to canada", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from dubai to canada", "volume": "low", "intent": "commercial", "competition": "low"},
+        {"keyword": "pet relocation uae to canada", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "various forums"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Moderate demand. Canada has simpler import rules than US/AU.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "CFIA: rabies vaccination, health certificate. UAE export: municipality clearance. No quarantine. Direct Emirates flights to Toronto/Vancouver.",
+      "airlines_serving": ["Emirates SkyCargo", "Etihad Cargo", "Air Canada (connecting)"],
+      "commercial_value": "medium-high",
+      "route_priority_score": 5,
+      "content_angles": ["Simpler than US route (no CDC high-risk issue)", "Direct Emirates cargo", "CFIA requirements", "Canadian provincial variations"]
+    },
+    {
+      "route_id": "uae-to-germany",
+      "origin": "UAE",
+      "destination": "Germany",
+      "slug": "pet-transport/united-arab-emirates/to/germany",
+      "keywords": [
+        {"keyword": "pet transport dubai to germany", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from dubai to germany", "volume": "low", "intent": "commercial", "competition": "low"},
+        {"keyword": "pet relocation uae to germany", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "various pet companies"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "German expat community in Dubai. Lufthansa connection advantage.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "EU standard rules. UAE is EU-listed country (no titre test needed). Microchip, rabies, 21-day wait, AHC. Kampfhunde legislation in Germany.",
+      "airlines_serving": ["Emirates SkyCargo", "Lufthansa (cargo/cabin via FRA)", "Etihad Cargo"],
+      "commercial_value": "medium",
+      "route_priority_score": 5,
+      "content_angles": ["Lufthansa as cabin option (connecting)", "German breed laws", "EU entry from listed country (no titre test)", "Frankfurt hub routing"]
+    },
+    {
+      "route_id": "uae-to-france",
+      "origin": "UAE",
+      "destination": "France",
+      "slug": "pet-transport/united-arab-emirates/to/france",
+      "keywords": [
+        {"keyword": "pet transport dubai to france", "volume": "low", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship pet from dubai to paris", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Lower volume. French expat community in Dubai exists but smaller than British.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "EU standard. UAE is listed. Air France and Emirates both serve CDG.",
+      "airlines_serving": ["Emirates SkyCargo", "Air France (cargo)", "Etihad Cargo"],
+      "commercial_value": "medium",
+      "route_priority_score": 4,
+      "content_angles": ["French dangerous dog laws", "CDG arrival process", "Air France vs Emirates for pet cargo"]
+    },
+    {
+      "route_id": "uae-to-singapore",
+      "origin": "UAE",
+      "destination": "Singapore",
+      "slug": "pet-transport/united-arab-emirates/to/singapore",
+      "keywords": [
+        {"keyword": "pet transport dubai to singapore", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from dubai to singapore", "volume": "low", "intent": "commercial", "competition": "low"},
+        {"keyword": "singapore pet import from uae", "volume": "low", "intent": "informational", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "nparks.gov.sg"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "UAE is Singapore AVS Category C (30-day government quarantine). Complex and costly.",
+      "regulatory_complexity": "high",
+      "regulatory_notes": "UAE is Singapore Category C. 30-day mandatory government quarantine. AVS licence, titre test, full vaccination protocol. All cargo.",
+      "airlines_serving": ["Emirates SkyCargo", "Singapore Airlines (cargo)"],
+      "commercial_value": "high",
+      "route_priority_score": 6,
+      "content_angles": ["Category C: government quarantine not home quarantine", "Higher cost and longer timeline", "Titre test requirements", "Direct Emirates cargo advantage"]
+    },
+    {
+      "route_id": "uae-to-hong-kong",
+      "origin": "UAE",
+      "destination": "Hong Kong",
+      "slug": "pet-transport/united-arab-emirates/to/hong-kong",
+      "keywords": [
+        {"keyword": "pet transport dubai to hong kong", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from dubai to hong kong", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Financial sector expat corridor. AFCD import permit.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "HK AFCD import permit. Standard vaccination and health cert. Direct Emirates flights.",
+      "airlines_serving": ["Emirates SkyCargo", "Cathay Pacific (cargo)"],
+      "commercial_value": "high",
+      "route_priority_score": 5,
+      "content_angles": ["Financial hub to hub", "AFCD permit", "Direct cargo on Emirates", "HK apartment pet restrictions"]
+    },
+    {
+      "route_id": "uae-to-south-africa",
+      "origin": "UAE",
+      "destination": "South Africa",
+      "slug": "pet-transport/united-arab-emirates/to/south-africa",
+      "keywords": [
+        {"keyword": "pet transport dubai to south africa", "volume": "low", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from dubai to johannesburg", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Lower volume. SA-Dubai expat connection. Direct flights.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "SA DALRRD import permit. Rabies titre test. Emirates direct to JNB.",
+      "airlines_serving": ["Emirates SkyCargo", "South African Airways"],
+      "commercial_value": "medium",
+      "route_priority_score": 4,
+      "content_angles": ["Direct Emirates cargo", "SA DALRRD requirements", "Return trip complications (both CDC high-risk)"]
+    },
+    {
+      "route_id": "australia-to-uk",
+      "origin": "Australia",
+      "destination": "UK",
+      "slug": "pet-transport/australia/to/united-kingdom",
+      "keywords": [
+        {"keyword": "pet transport australia to uk", "volume": "high", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from australia to uk", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "pet relocation australia to england", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "move pet from australia to uk", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "cost ship pet australia to uk", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "australia pet export requirements", "volume": "low-medium", "intent": "informational", "competition": "medium"}
+      ],
+      "serp_features": ["ads", "paa"],
+      "top_current_rankers": ["petrelocation.com", "jetpets.com.au", "agriculture.gov.au"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Large returning expat flow. Australia export requirements plus UK import. Australian specialist companies (Jetpets) exist but rank for brand, not route terms.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "AU to UK is simpler than UK to AU. Australia has export requirements (DAFF export permit). UK requires standard import: microchip, rabies, 21-day wait, AHC, tapeworm for dogs. No UK quarantine from Australia. Australia is low-risk/rabies-free.",
+      "airlines_serving": ["Qantas (cargo)", "British Airways (cargo via intermediate)", "Singapore Airlines (cargo via SIN)", "Emirates SkyCargo (via DXB)"],
+      "commercial_value": "high",
+      "route_priority_score": 9,
+      "content_angles": ["Much simpler than reverse route", "AU export permit process", "Summer shipping restrictions from AU (Dec-Feb heat)", "Long-haul routing options", "Jetpets and Dogtainers as local competitors"]
+    },
+    {
+      "route_id": "australia-to-usa",
+      "origin": "Australia",
+      "destination": "USA",
+      "slug": "pet-transport/australia/to/united-states",
+      "keywords": [
+        {"keyword": "pet transport australia to usa", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from australia to us", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "pet relocation australia to america", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "australia pet export to usa", "volume": "low-medium", "intent": "informational", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "cdc.gov", "jetpets.com.au"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Australia is CDC low-risk. Much simpler than reverse. Long-haul routing via Hawaii/LAX.",
+      "regulatory_complexity": "low-medium",
+      "regulatory_notes": "Australia is CDC rabies-free/low-risk. Only CDC Dog Import Form needed. AU export permit from DAFF. Very straightforward US entry for dogs from Australia.",
+      "airlines_serving": ["Qantas (cargo)", "United (cabin only, via LAX/SFO)", "Delta", "Hawaiian Airlines"],
+      "commercial_value": "high",
+      "route_priority_score": 7,
+      "content_angles": ["Australia is CDC low-risk (simplest US entry type)", "AU DAFF export requirements", "Transpacific routing options", "Long flight considerations for pets"]
+    },
+    {
+      "route_id": "australia-to-uae",
+      "origin": "Australia",
+      "destination": "UAE",
+      "slug": "pet-transport/australia/to/united-arab-emirates",
+      "keywords": [
+        {"keyword": "pet transport australia to dubai", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from australia to dubai", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "move pet from australia to uae", "volume": "low-medium", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "jetpets.com.au"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Australian expats to Dubai. Direct Emirates cargo. UAE import straightforward.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "UAE municipality import permit. AU export permit. Rabies vaccination (Australia is rabies-free but UAE still requires). Emirates direct cargo.",
+      "airlines_serving": ["Emirates SkyCargo", "Qantas (limited international cargo)", "Etihad Cargo"],
+      "commercial_value": "high",
+      "route_priority_score": 7,
+      "content_angles": ["Direct Emirates cargo from SYD/MEL", "Summer heat embargo at Dubai end", "AU export process", "Dubai municipality permit", "Simpler than reverse route"]
+    },
+    {
+      "route_id": "australia-to-canada",
+      "origin": "Australia",
+      "destination": "Canada",
+      "slug": "pet-transport/australia/to/canada",
+      "keywords": [
+        {"keyword": "pet transport australia to canada", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from australia to canada", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Lower volume. Transpacific routing.",
+      "regulatory_complexity": "low-medium",
+      "regulatory_notes": "CFIA: rabies vaccination certificate. AU export permit. No quarantine.",
+      "airlines_serving": ["Qantas (connecting)", "Air Canada (connecting)", "United (connecting)"],
+      "commercial_value": "medium",
+      "route_priority_score": 4,
+      "content_angles": ["Transpacific routing via LAX/SFO", "CFIA requirements", "Simple Canadian entry", "AU export process"]
+    },
+    {
+      "route_id": "australia-to-germany",
+      "origin": "Australia",
+      "destination": "Germany",
+      "slug": "pet-transport/australia/to/germany",
+      "keywords": [
+        {"keyword": "pet transport australia to germany", "volume": "low", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from australia to germany", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Lower volume. Via Singapore/Dubai hub.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "EU standard. AU is EU-listed. Microchip, rabies, 21-day wait. AU export permit. German Kampfhunde laws.",
+      "airlines_serving": ["Singapore Airlines (cargo via SIN)", "Emirates SkyCargo (via DXB)", "Lufthansa (via connecting)"],
+      "commercial_value": "medium",
+      "route_priority_score": 3,
+      "content_angles": ["Hub routing options (SIN vs DXB)", "German breed laws", "AU export requirements"]
+    },
+    {
+      "route_id": "australia-to-france",
+      "origin": "Australia",
+      "destination": "France",
+      "slug": "pet-transport/australia/to/france",
+      "keywords": [
+        {"keyword": "pet transport australia to france", "volume": "low", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from australia to france", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Lower volume.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "EU standard. AU is EU-listed. French dangerous dog laws.",
+      "airlines_serving": ["Singapore Airlines (connecting)", "Emirates SkyCargo (via DXB)", "Air France (connecting)"],
+      "commercial_value": "medium",
+      "route_priority_score": 3,
+      "content_angles": ["Hub routing", "French breed categories", "Long transit time"]
+    },
+    {
+      "route_id": "australia-to-singapore",
+      "origin": "Australia",
+      "destination": "Singapore",
+      "slug": "pet-transport/australia/to/singapore",
+      "keywords": [
+        {"keyword": "pet transport australia to singapore", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from australia to singapore", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "singapore pet import from australia", "volume": "low-medium", "intent": "informational", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "jetpets.com.au", "nparks.gov.sg"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Australia is Singapore AVS Category A (no quarantine!). Significant AU-SG corporate expat flow. Direct SIA flights.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "Australia is Singapore Category A. No quarantine. AVS licence, health certificate, core vaccinations. Direct SIA cargo. Simplest Singapore import possible.",
+      "airlines_serving": ["Singapore Airlines (cargo)", "Qantas (cargo)", "Jetstar (no pets)"],
+      "commercial_value": "high",
+      "route_priority_score": 8,
+      "content_angles": ["Category A advantage: zero quarantine", "Direct SIA cargo from SYD/MEL", "Simplest way into Singapore for pets", "AU export process", "Strong corporate relocation corridor"]
+    },
+    {
+      "route_id": "australia-to-hong-kong",
+      "origin": "Australia",
+      "destination": "Hong Kong",
+      "slug": "pet-transport/australia/to/hong-kong",
+      "keywords": [
+        {"keyword": "pet transport australia to hong kong", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from australia to hong kong", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "jetpets.com.au"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Corporate corridor. HK AFCD permit. Direct Cathay/Qantas.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "HK AFCD import permit. Australia is low-risk for HK. Standard vaccination and health cert requirements.",
+      "airlines_serving": ["Cathay Pacific (cargo)", "Qantas (cargo)", "Singapore Airlines (via SIN)"],
+      "commercial_value": "high",
+      "route_priority_score": 5,
+      "content_angles": ["AFCD permit from Australia", "Direct Cathay cargo", "HK pet-friendly housing"]
+    },
+    {
+      "route_id": "australia-to-south-africa",
+      "origin": "Australia",
+      "destination": "South Africa",
+      "slug": "pet-transport/australia/to/south-africa",
+      "keywords": [
+        {"keyword": "pet transport australia to south africa", "volume": "low", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from australia to south africa", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Lower volume. Connecting flights via Dubai/Singapore.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "SA DALRRD permit. Rabies titre test may be required. AU export permit. Via DXB or SIN.",
+      "airlines_serving": ["Qantas (connecting)", "Emirates SkyCargo (via DXB)", "South African Airways (connecting)"],
+      "commercial_value": "medium",
+      "route_priority_score": 3,
+      "content_angles": ["Indirect routing required", "SA DALRRD requirements", "AU export process"]
+    },
+    {
+      "route_id": "canada-to-uk",
+      "origin": "Canada",
+      "destination": "UK",
+      "slug": "pet-transport/canada/to/united-kingdom",
+      "keywords": [
+        {"keyword": "pet transport canada to uk", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from canada to uk", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "pet relocation canada to england", "volume": "low-medium", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "gov.uk"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Canada-UK Commonwealth connection. Similar to USA-UK but smaller volume.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "UK standard import: microchip, rabies, 21-day wait, AHC, tapeworm dogs. CFIA export cert from Canada.",
+      "airlines_serving": ["British Airways (cargo)", "Air Canada (cabin + cargo)", "WestJet"],
+      "commercial_value": "medium",
+      "route_priority_score": 6,
+      "content_angles": ["Air Canada allows cabin (advantage over US carriers)", "CFIA export process", "UK tapeworm requirement for dogs"]
+    },
+    {
+      "route_id": "canada-to-usa",
+      "origin": "Canada",
+      "destination": "USA",
+      "slug": "pet-transport/canada/to/united-states",
+      "keywords": [
+        {"keyword": "pet transport canada to usa", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "bring dog from canada to us", "volume": "medium", "intent": "informational", "competition": "medium"},
+        {"keyword": "cross border with pet canada to us", "volume": "low-medium", "intent": "informational", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["cdc.gov", "inspection.canada.ca", "various blogs"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Land border crossing angle. Canada is CDC low-risk. Very simple.",
+      "regulatory_complexity": "low",
+      "regulatory_notes": "Canada is CDC rabies-free/low-risk. Only CDC Dog Import Form needed. Microchip, 6+ months old. Land border crossing possible.",
+      "airlines_serving": ["Air Canada (cabin + cargo)", "United (cabin only)", "Delta", "WestJet"],
+      "commercial_value": "low-medium",
+      "route_priority_score": 5,
+      "content_angles": ["Simplest US entry: low-risk country", "Land border option", "CDC Dog Import Form only"]
+    },
+    {
+      "route_id": "canada-to-uae",
+      "origin": "Canada",
+      "destination": "UAE",
+      "slug": "pet-transport/canada/to/united-arab-emirates",
+      "keywords": [
+        {"keyword": "pet transport canada to dubai", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from canada to dubai", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Moderate demand. Corporate relocations.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "UAE municipality import permit. CFIA export cert. No quarantine. Emirates direct cargo from YYZ.",
+      "airlines_serving": ["Emirates SkyCargo", "Air Canada (connecting)", "Etihad Cargo"],
+      "commercial_value": "medium",
+      "route_priority_score": 4,
+      "content_angles": ["Direct Emirates from Toronto", "UAE permit process", "Summer heat embargo"]
+    },
+    {
+      "route_id": "canada-to-australia",
+      "origin": "Canada",
+      "destination": "Australia",
+      "slug": "pet-transport/canada/to/australia",
+      "keywords": [
+        {"keyword": "pet transport canada to australia", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from canada to australia", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "australia quarantine pets from canada", "volume": "low-medium", "intent": "informational", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "agriculture.gov.au"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Canada is DAFF Group 4 (same as USA). Complex. High content value.",
+      "regulatory_complexity": "very_high",
+      "regulatory_notes": "Canada is AU DAFF Group 4. Titre test, 10+ day quarantine, import permit 6+ months prep. CFIA export cert. Transpacific routing.",
+      "airlines_serving": ["Air Canada (connecting)", "Qantas (connecting)", "United (connecting)"],
+      "commercial_value": "high",
+      "route_priority_score": 6,
+      "content_angles": ["Group 4 requirements", "Transpacific routing options", "6-month timeline", "Professional agent recommended"]
+    },
+    {
+      "route_id": "canada-to-germany",
+      "origin": "Canada",
+      "destination": "Germany",
+      "slug": "pet-transport/canada/to/germany",
+      "keywords": [
+        {"keyword": "pet transport canada to germany", "volume": "low", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from canada to germany", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "EU standard. CFIA export cert. Kampfhunde laws.",
+      "airlines_serving": ["Lufthansa (cabin + cargo)", "Air Canada"],
+      "commercial_value": "medium",
+      "route_priority_score": 3,
+      "content_angles": ["Lufthansa cabin option", "German breed laws", "EU entry from listed country"]
+    },
+    {
+      "route_id": "canada-to-france",
+      "origin": "Canada",
+      "destination": "France",
+      "slug": "pet-transport/canada/to/france",
+      "keywords": [
+        {"keyword": "pet transport canada to france", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from canada to france", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "French-Canadian connection. Bilingual angle.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "EU standard. CFIA export cert. French dangerous dog categories.",
+      "airlines_serving": ["Air France (cabin + cargo)", "Air Canada (Montreal-Paris direct)"],
+      "commercial_value": "medium",
+      "route_priority_score": 5,
+      "content_angles": ["Quebec-France connection", "Air Canada/Air France both serve route", "French breed categories"]
+    },
+    {
+      "route_id": "canada-to-singapore",
+      "origin": "Canada",
+      "destination": "Singapore",
+      "slug": "pet-transport/canada/to/singapore",
+      "keywords": [
+        {"keyword": "pet transport canada to singapore", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "high",
+      "regulatory_notes": "Canada is Singapore Category B. 30-day home quarantine. Titre test. CFIA export.",
+      "airlines_serving": ["Singapore Airlines (connecting)", "Air Canada (connecting)", "Emirates SkyCargo (via DXB)"],
+      "commercial_value": "medium",
+      "route_priority_score": 3,
+      "content_angles": ["Category B: home quarantine", "Connecting flights required", "Titre test"]
+    },
+    {
+      "route_id": "canada-to-hong-kong",
+      "origin": "Canada",
+      "destination": "Hong Kong",
+      "slug": "pet-transport/canada/to/hong-kong",
+      "keywords": [
+        {"keyword": "pet transport canada to hong kong", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "HK AFCD import permit. CFIA export cert.",
+      "airlines_serving": ["Cathay Pacific (connecting)", "Air Canada"],
+      "commercial_value": "medium",
+      "route_priority_score": 3,
+      "content_angles": ["AFCD permit", "Cathay Pacific or AC routing"]
+    },
+    {
+      "route_id": "canada-to-south-africa",
+      "origin": "Canada",
+      "destination": "South Africa",
+      "slug": "pet-transport/canada/to/south-africa",
+      "keywords": [
+        {"keyword": "pet transport canada to south africa", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "SA DALRRD permit. CFIA export cert. Connecting flights via Europe/Dubai.",
+      "airlines_serving": ["Emirates SkyCargo (via DXB)", "British Airways (via LHR)"],
+      "commercial_value": "low-medium",
+      "route_priority_score": 2,
+      "content_angles": ["Indirect routing", "DALRRD requirements"]
+    },
+    {
+      "route_id": "germany-to-uk",
+      "origin": "Germany",
+      "destination": "UK",
+      "slug": "pet-transport/germany/to/united-kingdom",
+      "keywords": [
+        {"keyword": "pet transport germany to uk", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "bring dog from germany to uk", "volume": "low-medium", "intent": "informational", "competition": "medium"},
+        {"keyword": "pet travel germany to england", "volume": "low-medium", "intent": "informational", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["gov.uk", "eurotunnel.com", "petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "EU to UK post-Brexit route. Different rules now than pre-2021.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "UK standard import from EU country: microchip, rabies, AHC or EU pet passport (still accepted from EU-issued), tapeworm dogs, approved route.",
+      "airlines_serving": ["Lufthansa (cabin + cargo)", "British Airways (cargo)", "easyJet (no pets)"],
+      "commercial_value": "medium",
+      "route_priority_score": 6,
+      "content_angles": ["EU pet passport still accepted for UK entry (unlike reverse)", "Eurotunnel/ferry option", "Lufthansa cabin advantage", "Post-Brexit rules"]
+    },
+    {
+      "route_id": "germany-to-usa",
+      "origin": "Germany",
+      "destination": "USA",
+      "slug": "pet-transport/germany/to/united-states",
+      "keywords": [
+        {"keyword": "pet transport germany to usa", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from germany to us", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "military pet transport germany to usa", "volume": "medium", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "cdc.gov", "military spouse blogs"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "US military returning from Germany bases. Germany is CDC low-risk.",
+      "regulatory_complexity": "low-medium",
+      "regulatory_notes": "Germany is CDC rabies-free/low-risk. Only CDC Dog Import Form needed. German export cert may be required.",
+      "airlines_serving": ["Lufthansa (cabin + cargo)", "United (cabin only)", "Delta", "American Airlines"],
+      "commercial_value": "medium",
+      "route_priority_score": 6,
+      "content_angles": ["Military PCS returns", "Germany is low-risk (simple US entry)", "Lufthansa cabin option"]
+    },
+    {
+      "route_id": "germany-to-uae",
+      "origin": "Germany",
+      "destination": "UAE",
+      "slug": "pet-transport/germany/to/united-arab-emirates",
+      "keywords": [
+        {"keyword": "pet transport germany to dubai", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from germany to dubai", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "UAE municipality permit. Lufthansa/Emirates cargo.",
+      "airlines_serving": ["Emirates SkyCargo", "Lufthansa (cargo via FRA)", "Etihad Cargo"],
+      "commercial_value": "medium",
+      "route_priority_score": 4,
+      "content_angles": ["Lufthansa vs Emirates cargo comparison", "Dubai permit", "Summer heat embargo"]
+    },
+    {
+      "route_id": "germany-to-australia",
+      "origin": "Germany",
+      "destination": "Australia",
+      "slug": "pet-transport/germany/to/australia",
+      "keywords": [
+        {"keyword": "pet transport germany to australia", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from germany to australia", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "agriculture.gov.au"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "very_high",
+      "regulatory_notes": "Germany is AU DAFF Group 4. Titre test, quarantine, import permit. 6+ months prep.",
+      "airlines_serving": ["Singapore Airlines (via SIN)", "Emirates SkyCargo (via DXB)", "Qantas (connecting)"],
+      "commercial_value": "high",
+      "route_priority_score": 5,
+      "content_angles": ["Group 4 requirements", "Routing via Singapore or Dubai", "6-month timeline"]
+    },
+    {
+      "route_id": "germany-to-canada",
+      "origin": "Germany",
+      "destination": "Canada",
+      "slug": "pet-transport/germany/to/canada",
+      "keywords": [
+        {"keyword": "pet transport germany to canada", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "low-medium",
+      "regulatory_notes": "CFIA: rabies cert. Lufthansa/AC direct.",
+      "airlines_serving": ["Lufthansa (cabin + cargo)", "Air Canada"],
+      "commercial_value": "medium",
+      "route_priority_score": 3,
+      "content_angles": ["Lufthansa cabin option", "CFIA requirements", "FRA-YYZ direct"]
+    },
+    {
+      "route_id": "germany-to-france",
+      "origin": "Germany",
+      "destination": "France",
+      "slug": "pet-transport/germany/to/france",
+      "keywords": [
+        {"keyword": "pet transport germany to france", "volume": "low", "intent": "informational", "competition": "low"},
+        {"keyword": "move pet from germany to france", "volume": "low", "intent": "informational-commercial", "competition": "low"},
+        {"keyword": "eu pet passport germany to france", "volume": "low", "intent": "informational", "competition": "medium"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["ec.europa.eu", "various travel blogs"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Intra-EU: simplest possible route. EU pet passport. Drive or fly.",
+      "regulatory_complexity": "very_low",
+      "regulatory_notes": "Intra-EU movement. EU pet passport with valid rabies vaccination and microchip is sufficient. No additional permits. Free movement. French dangerous dog categories still apply.",
+      "airlines_serving": ["Lufthansa (cabin + cargo)", "Air France (cabin + cargo)", "Eurowings"],
+      "commercial_value": "low",
+      "route_priority_score": 2,
+      "content_angles": ["Simplest route: EU pet passport only", "Drive option", "French breed restrictions still apply", "No border checks for pets within Schengen"]
+    },
+    {
+      "route_id": "germany-to-singapore",
+      "origin": "Germany",
+      "destination": "Singapore",
+      "slug": "pet-transport/germany/to/singapore",
+      "keywords": [
+        {"keyword": "pet transport germany to singapore", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "high",
+      "regulatory_notes": "Germany is Singapore Category B. 30-day home quarantine. AVS licence, titre test.",
+      "airlines_serving": ["Singapore Airlines (cargo)", "Lufthansa (cargo via connecting)", "Emirates SkyCargo (via DXB)"],
+      "commercial_value": "medium",
+      "route_priority_score": 3,
+      "content_angles": ["Category B: home quarantine", "SIA cargo primary option"]
+    },
+    {
+      "route_id": "germany-to-hong-kong",
+      "origin": "Germany",
+      "destination": "Hong Kong",
+      "slug": "pet-transport/germany/to/hong-kong",
+      "keywords": [
+        {"keyword": "pet transport germany to hong kong", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "HK AFCD permit. Standard vaccination.",
+      "airlines_serving": ["Cathay Pacific (cargo)", "Lufthansa (cargo)"],
+      "commercial_value": "medium",
+      "route_priority_score": 3,
+      "content_angles": ["AFCD permit", "FRA-HKG direct flights"]
+    },
+    {
+      "route_id": "germany-to-south-africa",
+      "origin": "Germany",
+      "destination": "South Africa",
+      "slug": "pet-transport/germany/to/south-africa",
+      "keywords": [
+        {"keyword": "pet transport germany to south africa", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "SA DALRRD permit. Lufthansa cargo to JNB.",
+      "airlines_serving": ["Lufthansa (cargo)", "Emirates SkyCargo (via DXB)", "South African Airways"],
+      "commercial_value": "low-medium",
+      "route_priority_score": 2,
+      "content_angles": ["DALRRD requirements", "FRA-JNB direct Lufthansa"]
+    },
+    {
+      "route_id": "france-to-uk",
+      "origin": "France",
+      "destination": "UK",
+      "slug": "pet-transport/france/to/united-kingdom",
+      "keywords": [
+        {"keyword": "pet transport france to uk", "volume": "medium", "intent": "commercial", "competition": "medium"},
+        {"keyword": "bring dog from france to uk", "volume": "medium", "intent": "informational", "competition": "medium"},
+        {"keyword": "eurotunnel with pet france to uk", "volume": "medium", "intent": "informational", "competition": "medium"},
+        {"keyword": "ferry with dog france to england", "volume": "low-medium", "intent": "informational", "competition": "medium"}
+      ],
+      "serp_features": ["paa", "featured_snippet_possible"],
+      "top_current_rankers": ["gov.uk", "eurotunnel.com", "brittanyferries.com", "various travel blogs"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Very high holiday travel volume. Ferry and Eurotunnel options make this unique.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "UK import: EU pet passport accepted from France. Microchip, rabies, tapeworm dogs. Eurotunnel, Brittany Ferries, DFDS, P&O all carry pets.",
+      "airlines_serving": ["Air France (cargo)", "British Airways (cargo)", "Eurotunnel Le Shuttle", "Ferry companies"],
+      "commercial_value": "medium",
+      "route_priority_score": 7,
+      "content_angles": ["Le Shuttle Eurotunnel (most popular pet crossing)", "Ferry comparison guide", "EU pet passport accepted for UK entry from EU", "Tapeworm timing", "Driving with pets"]
+    },
+    {
+      "route_id": "france-to-usa",
+      "origin": "France",
+      "destination": "USA",
+      "slug": "pet-transport/france/to/united-states",
+      "keywords": [
+        {"keyword": "pet transport france to usa", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from france to us", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "cdc.gov"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "low-medium",
+      "regulatory_notes": "France is CDC rabies-free/low-risk. Only CDC Dog Import Form. French export cert.",
+      "airlines_serving": ["Air France (cabin + cargo)", "Delta", "United (cabin only)", "American Airlines"],
+      "commercial_value": "medium",
+      "route_priority_score": 5,
+      "content_angles": ["France is low-risk (simple US entry)", "Air France allows cabin", "CDG as departure hub"]
+    },
+    {
+      "route_id": "france-to-uae",
+      "origin": "France",
+      "destination": "UAE",
+      "slug": "pet-transport/france/to/united-arab-emirates",
+      "keywords": [
+        {"keyword": "pet transport france to dubai", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "UAE permit. French export cert. Emirates/AF cargo.",
+      "airlines_serving": ["Emirates SkyCargo", "Air France (cargo)", "Etihad Cargo"],
+      "commercial_value": "medium",
+      "route_priority_score": 3,
+      "content_angles": ["UAE permit", "Summer heat embargo", "AF vs Emirates cargo"]
+    },
+    {
+      "route_id": "france-to-australia",
+      "origin": "France",
+      "destination": "Australia",
+      "slug": "pet-transport/france/to/australia",
+      "keywords": [
+        {"keyword": "pet transport france to australia", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "very_high",
+      "regulatory_notes": "France is AU DAFF Group 4. Full requirements: titre test, quarantine, import permit.",
+      "airlines_serving": ["Singapore Airlines (via SIN)", "Emirates SkyCargo (via DXB)"],
+      "commercial_value": "medium",
+      "route_priority_score": 3,
+      "content_angles": ["Group 4 requirements", "Hub routing via SIN/DXB", "6-month timeline"]
+    },
+    {
+      "route_id": "france-to-canada",
+      "origin": "France",
+      "destination": "Canada",
+      "slug": "pet-transport/france/to/canada",
+      "keywords": [
+        {"keyword": "pet transport france to canada", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from france to canada", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Francophone connection. Montreal direct flights.",
+      "regulatory_complexity": "low-medium",
+      "regulatory_notes": "CFIA rabies cert. French export cert. AF direct CDG-YUL.",
+      "airlines_serving": ["Air France (cabin + cargo)", "Air Canada (connecting)"],
+      "commercial_value": "medium",
+      "route_priority_score": 4,
+      "content_angles": ["CDG-YUL direct Air France", "Quebec connection", "CFIA requirements"]
+    },
+    {
+      "route_id": "france-to-germany",
+      "origin": "France",
+      "destination": "Germany",
+      "slug": "pet-transport/france/to/germany",
+      "keywords": [
+        {"keyword": "pet transport france to germany", "volume": "low", "intent": "informational", "competition": "low"},
+        {"keyword": "move pet from france to germany", "volume": "low", "intent": "informational", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["ec.europa.eu"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "very_low",
+      "regulatory_notes": "Intra-EU. EU pet passport. Free movement. Kampfhunde laws at destination.",
+      "airlines_serving": ["Air France (cabin + cargo)", "Lufthansa (cabin + cargo)"],
+      "commercial_value": "low",
+      "route_priority_score": 2,
+      "content_angles": ["Intra-EU: pet passport only", "Driving option", "German breed laws still apply"]
+    },
+    {
+      "route_id": "france-to-singapore",
+      "origin": "France",
+      "destination": "Singapore",
+      "slug": "pet-transport/france/to/singapore",
+      "keywords": [
+        {"keyword": "pet transport france to singapore", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "high",
+      "regulatory_notes": "France is Singapore Category B. 30-day home quarantine. Titre test.",
+      "airlines_serving": ["Singapore Airlines (cargo)", "Air France (cargo)"],
+      "commercial_value": "medium",
+      "route_priority_score": 3,
+      "content_angles": ["Category B", "SIA direct CDG-SIN"]
+    },
+    {
+      "route_id": "france-to-hong-kong",
+      "origin": "France",
+      "destination": "Hong Kong",
+      "slug": "pet-transport/france/to/hong-kong",
+      "keywords": [
+        {"keyword": "pet transport france to hong kong", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "HK AFCD permit. French export cert.",
+      "airlines_serving": ["Cathay Pacific (cargo)", "Air France (cargo)"],
+      "commercial_value": "medium",
+      "route_priority_score": 3,
+      "content_angles": ["AFCD permit", "CDG-HKG direct options"]
+    },
+    {
+      "route_id": "france-to-south-africa",
+      "origin": "France",
+      "destination": "South Africa",
+      "slug": "pet-transport/france/to/south-africa",
+      "keywords": [
+        {"keyword": "pet transport france to south africa", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "SA DALRRD permit. French export cert.",
+      "airlines_serving": ["Air France (cargo)", "Emirates SkyCargo (via DXB)"],
+      "commercial_value": "low-medium",
+      "route_priority_score": 2,
+      "content_angles": ["DALRRD requirements", "CDG-JNB Air France direct"]
+    },
+    {
+      "route_id": "singapore-to-uk",
+      "origin": "Singapore",
+      "destination": "UK",
+      "slug": "pet-transport/singapore/to/united-kingdom",
+      "keywords": [
+        {"keyword": "pet transport singapore to uk", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from singapore to uk", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "pet relocation singapore to london", "volume": "low-medium", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "gov.uk", "expat forums"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Strong expat return corridor. Singapore is low-risk for UK entry.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "UK standard import: microchip, rabies, 21-day wait, AHC, tapeworm dogs. Singapore AVS may have export requirements. SIA cargo.",
+      "airlines_serving": ["Singapore Airlines (cargo)", "British Airways (cargo)"],
+      "commercial_value": "high",
+      "route_priority_score": 7,
+      "content_angles": ["Singapore AVS export process", "UK import from APHA-listed country", "SIA cargo as primary option", "Direct flights advantage"]
+    },
+    {
+      "route_id": "singapore-to-usa",
+      "origin": "Singapore",
+      "destination": "USA",
+      "slug": "pet-transport/singapore/to/united-states",
+      "keywords": [
+        {"keyword": "pet transport singapore to usa", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from singapore to us", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["cdc.gov", "petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "low",
+      "regulatory_notes": "Singapore is CDC rabies-free/low-risk. Only CDC Dog Import Form needed. Very straightforward.",
+      "airlines_serving": ["Singapore Airlines (cargo)", "United (cabin, SIN-SFO/EWR)"],
+      "commercial_value": "high",
+      "route_priority_score": 6,
+      "content_angles": ["Singapore is CDC low-risk: simplest US entry", "SIA cargo", "United cabin option on transpacific"]
+    },
+    {
+      "route_id": "singapore-to-uae",
+      "origin": "Singapore",
+      "destination": "UAE",
+      "slug": "pet-transport/singapore/to/united-arab-emirates",
+      "keywords": [
+        {"keyword": "pet transport singapore to dubai", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from singapore to dubai", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "UAE municipality permit. SIA/Emirates direct.",
+      "airlines_serving": ["Singapore Airlines (cargo)", "Emirates SkyCargo"],
+      "commercial_value": "medium-high",
+      "route_priority_score": 5,
+      "content_angles": ["Direct SIA or Emirates cargo", "UAE permit process", "Summer heat embargo at Dubai end"]
+    },
+    {
+      "route_id": "singapore-to-australia",
+      "origin": "Singapore",
+      "destination": "Australia",
+      "slug": "pet-transport/singapore/to/australia",
+      "keywords": [
+        {"keyword": "pet transport singapore to australia", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from singapore to australia", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "australia quarantine pets from singapore", "volume": "low-medium", "intent": "informational", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "agriculture.gov.au"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Singapore is AU DAFF Group 3 (same as UK). Relatively easier Australian entry. Strong SIN-AU migration corridor.",
+      "regulatory_complexity": "high",
+      "regulatory_notes": "Singapore is AU DAFF Group 3. Minimum 10-day quarantine. Import permit. Simpler than Group 4 (no titre test potentially). SIA direct cargo SIN-SYD/MEL.",
+      "airlines_serving": ["Singapore Airlines (cargo)", "Qantas (cargo)"],
+      "commercial_value": "high",
+      "route_priority_score": 8,
+      "content_angles": ["Group 3: simpler than US/EU routes to Australia", "Direct SIA cargo", "Strong expat corridor", "10-day quarantine still applies"]
+    },
+    {
+      "route_id": "singapore-to-canada",
+      "origin": "Singapore",
+      "destination": "Canada",
+      "slug": "pet-transport/singapore/to/canada",
+      "keywords": [
+        {"keyword": "pet transport singapore to canada", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "low-medium",
+      "regulatory_notes": "CFIA rabies cert. No quarantine. Connecting flights.",
+      "airlines_serving": ["Singapore Airlines (connecting)", "Air Canada (connecting)"],
+      "commercial_value": "medium",
+      "route_priority_score": 3,
+      "content_angles": ["CFIA requirements", "Connecting flight routing"]
+    },
+    {
+      "route_id": "singapore-to-germany",
+      "origin": "Singapore",
+      "destination": "Germany",
+      "slug": "pet-transport/singapore/to/germany",
+      "keywords": [
+        {"keyword": "pet transport singapore to germany", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "EU standard. Singapore is EU-listed. Kampfhunde laws.",
+      "airlines_serving": ["Singapore Airlines (cargo)", "Lufthansa (cargo/cabin)"],
+      "commercial_value": "medium",
+      "route_priority_score": 3,
+      "content_angles": ["SIA direct to FRA/MUC", "German breed laws", "EU listed country entry"]
+    },
+    {
+      "route_id": "singapore-to-france",
+      "origin": "Singapore",
+      "destination": "France",
+      "slug": "pet-transport/singapore/to/france",
+      "keywords": [
+        {"keyword": "pet transport singapore to france", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "EU standard. French breed categories.",
+      "airlines_serving": ["Singapore Airlines (cargo)", "Air France (cargo)"],
+      "commercial_value": "medium",
+      "route_priority_score": 3,
+      "content_angles": ["SIA direct to CDG", "French dangerous dog laws"]
+    },
+    {
+      "route_id": "singapore-to-hong-kong",
+      "origin": "Singapore",
+      "destination": "Hong Kong",
+      "slug": "pet-transport/singapore/to/hong-kong",
+      "keywords": [
+        {"keyword": "pet transport singapore to hong kong", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from singapore to hong kong", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Asian financial hub to hub. Frequent corporate transfers.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "HK AFCD permit. Singapore is low-risk for HK. Short flight.",
+      "airlines_serving": ["Singapore Airlines (cargo)", "Cathay Pacific (cargo)"],
+      "commercial_value": "medium-high",
+      "route_priority_score": 5,
+      "content_angles": ["Short 4-hour flight", "AFCD permit", "Both Asian hubs", "Corporate relocation"]
+    },
+    {
+      "route_id": "singapore-to-south-africa",
+      "origin": "Singapore",
+      "destination": "South Africa",
+      "slug": "pet-transport/singapore/to/south-africa",
+      "keywords": [
+        {"keyword": "pet transport singapore to south africa", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "SA DALRRD permit. SIA via connecting flights.",
+      "airlines_serving": ["Singapore Airlines (connecting)", "Emirates SkyCargo (via DXB)", "South African Airways (connecting)"],
+      "commercial_value": "low-medium",
+      "route_priority_score": 2,
+      "content_angles": ["Indirect routing", "DALRRD requirements"]
+    },
+    {
+      "route_id": "hong-kong-to-uk",
+      "origin": "Hong Kong",
+      "destination": "UK",
+      "slug": "pet-transport/hong-kong/to/united-kingdom",
+      "keywords": [
+        {"keyword": "pet transport hong kong to uk", "volume": "high", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from hong kong to uk", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "pet relocation hong kong to london", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "bno visa pet transport hong kong", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "move pet from hong kong to england", "volume": "low-medium", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["ads", "paa"],
+      "top_current_rankers": ["petrelocation.com", "various HK pet transport companies", "gov.uk"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "BNO visa scheme created surge in HK-to-UK pet transport demand. One of the highest growth routes. Very high commercial intent.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "UK standard import: microchip, rabies, 21-day wait, AHC, tapeworm dogs. HK AFCD export requirements. Cathay Pacific cargo primary option.",
+      "airlines_serving": ["Cathay Pacific (cargo)", "British Airways (cargo)", "Emirates SkyCargo (via DXB)"],
+      "commercial_value": "very_high",
+      "route_priority_score": 9,
+      "content_angles": ["BNO visa scheme driving demand", "AFCD export process", "Cathay Pacific as primary carrier", "UK APHA import process", "Cost $2,500-$5,000 typical", "Lead times 4-8 weeks"]
+    },
+    {
+      "route_id": "hong-kong-to-usa",
+      "origin": "Hong Kong",
+      "destination": "USA",
+      "slug": "pet-transport/hong-kong/to/united-states",
+      "keywords": [
+        {"keyword": "pet transport hong kong to usa", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from hong kong to us", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["cdc.gov", "petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Hong Kong (separate from mainland China) is CDC rabies-free/low-risk. Simple US entry.",
+      "regulatory_complexity": "low-medium",
+      "regulatory_notes": "Hong Kong is NOT on CDC high-risk list (separate from mainland China). Only CDC Dog Import Form. AFCD export requirements.",
+      "airlines_serving": ["Cathay Pacific (cargo)", "United (cabin only)", "Delta"],
+      "commercial_value": "high",
+      "route_priority_score": 6,
+      "content_angles": ["HK is CDC low-risk (unlike mainland China)", "Simple US entry", "AFCD export process", "Cathay Pacific cargo"]
+    },
+    {
+      "route_id": "hong-kong-to-uae",
+      "origin": "Hong Kong",
+      "destination": "UAE",
+      "slug": "pet-transport/hong-kong/to/united-arab-emirates",
+      "keywords": [
+        {"keyword": "pet transport hong kong to dubai", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from hong kong to dubai", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "UAE municipality permit. AFCD export. Emirates/Cathay cargo.",
+      "airlines_serving": ["Emirates SkyCargo", "Cathay Pacific (cargo)"],
+      "commercial_value": "medium-high",
+      "route_priority_score": 5,
+      "content_angles": ["Financial hub to hub", "Emirates or Cathay cargo", "UAE permit"]
+    },
+    {
+      "route_id": "hong-kong-to-australia",
+      "origin": "Hong Kong",
+      "destination": "Australia",
+      "slug": "pet-transport/hong-kong/to/australia",
+      "keywords": [
+        {"keyword": "pet transport hong kong to australia", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from hong kong to australia", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "australia quarantine pets from hong kong", "volume": "low-medium", "intent": "informational", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "agriculture.gov.au"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "HK-Australia migration corridor. Check DAFF group classification for HK.",
+      "regulatory_complexity": "very_high",
+      "regulatory_notes": "HK is likely AU DAFF Group 4 or 5. Titre test, quarantine, import permit. 6+ month planning.",
+      "airlines_serving": ["Cathay Pacific (cargo)", "Qantas (cargo)", "Singapore Airlines (via SIN)"],
+      "commercial_value": "high",
+      "route_priority_score": 8,
+      "content_angles": ["Complex AU quarantine from HK", "AFCD export + DAFF import dual process", "Cathay or Qantas cargo", "Professional agent essential"]
+    },
+    {
+      "route_id": "hong-kong-to-canada",
+      "origin": "Hong Kong",
+      "destination": "Canada",
+      "slug": "pet-transport/hong-kong/to/canada",
+      "keywords": [
+        {"keyword": "pet transport hong kong to canada", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from hong kong to canada", "volume": "low-medium", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Strong HK-Canada migration (large Chinese-Canadian community). Vancouver popular destination.",
+      "regulatory_complexity": "low-medium",
+      "regulatory_notes": "CFIA rabies cert. AFCD export. No quarantine. Direct flights HKG-YVR.",
+      "airlines_serving": ["Cathay Pacific (cargo)", "Air Canada"],
+      "commercial_value": "medium-high",
+      "route_priority_score": 6,
+      "content_angles": ["HK-Vancouver corridor", "CFIA requirements", "Cathay Pacific direct"]
+    },
+    {
+      "route_id": "hong-kong-to-germany",
+      "origin": "Hong Kong",
+      "destination": "Germany",
+      "slug": "pet-transport/hong-kong/to/germany",
+      "keywords": [
+        {"keyword": "pet transport hong kong to germany", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "EU standard. HK is EU-listed. Kampfhunde laws.",
+      "airlines_serving": ["Cathay Pacific (cargo)", "Lufthansa (cargo)"],
+      "commercial_value": "medium",
+      "route_priority_score": 3,
+      "content_angles": ["EU entry from listed country", "German breed laws"]
+    },
+    {
+      "route_id": "hong-kong-to-france",
+      "origin": "Hong Kong",
+      "destination": "France",
+      "slug": "pet-transport/hong-kong/to/france",
+      "keywords": [
+        {"keyword": "pet transport hong kong to france", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "EU standard. French breed categories.",
+      "airlines_serving": ["Cathay Pacific (cargo)", "Air France (cargo)"],
+      "commercial_value": "medium",
+      "route_priority_score": 2,
+      "content_angles": ["French dangerous dog laws", "Cathay Pacific cargo"]
+    },
+    {
+      "route_id": "hong-kong-to-singapore",
+      "origin": "Hong Kong",
+      "destination": "Singapore",
+      "slug": "pet-transport/hong-kong/to/singapore",
+      "keywords": [
+        {"keyword": "pet transport hong kong to singapore", "volume": "low-medium", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Asian hub to hub. HK is Singapore Category C (government quarantine).",
+      "regulatory_complexity": "high",
+      "regulatory_notes": "HK is Singapore Category C. 30-day government quarantine. AVS licence, titre test.",
+      "airlines_serving": ["Cathay Pacific (cargo)", "Singapore Airlines (cargo)"],
+      "commercial_value": "medium-high",
+      "route_priority_score": 5,
+      "content_angles": ["Category C: government quarantine", "Short flight but strict requirements", "Corporate relocation corridor"]
+    },
+    {
+      "route_id": "hong-kong-to-south-africa",
+      "origin": "Hong Kong",
+      "destination": "South Africa",
+      "slug": "pet-transport/hong-kong/to/south-africa",
+      "keywords": [
+        {"keyword": "pet transport hong kong to south africa", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "SA DALRRD permit. Connecting flights via Dubai.",
+      "airlines_serving": ["Cathay Pacific (connecting)", "Emirates SkyCargo (via DXB)", "South African Airways (connecting)"],
+      "commercial_value": "low-medium",
+      "route_priority_score": 2,
+      "content_angles": ["Indirect routing", "DALRRD requirements"]
+    },
+    {
+      "route_id": "south-africa-to-uk",
+      "origin": "South Africa",
+      "destination": "UK",
+      "slug": "pet-transport/south-africa/to/united-kingdom",
+      "keywords": [
+        {"keyword": "pet transport south africa to uk", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from south africa to uk", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "pet relocation south africa to london", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "move pet from cape town to uk", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "gov.uk", "SA pet transport companies"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "Strong SA-UK migration corridor. Many South Africans relocating to UK.",
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "UK standard import. SA export requirements (DALRRD). SA is CDC high-risk for later US travel. BA direct JNB-LHR.",
+      "airlines_serving": ["British Airways (cargo)", "South African Airways", "Virgin Atlantic (cargo)", "Emirates SkyCargo (via DXB)"],
+      "commercial_value": "high",
+      "route_priority_score": 7,
+      "content_angles": ["SA-UK migration wave", "DALRRD export process", "BA direct cargo", "UK tapeworm requirement for dogs"]
+    },
+    {
+      "route_id": "south-africa-to-usa",
+      "origin": "South Africa",
+      "destination": "USA",
+      "slug": "pet-transport/south-africa/to/united-states",
+      "keywords": [
+        {"keyword": "pet transport south africa to usa", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from south africa to us", "volume": "low", "intent": "commercial", "competition": "low"},
+        {"keyword": "cdc requirements dog from south africa", "volume": "low", "intent": "informational", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["cdc.gov", "petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "SA is CDC HIGH-RISK. Complex dog import process to US. High content value.",
+      "regulatory_complexity": "very_high",
+      "regulatory_notes": "SA is CDC high-risk. Foreign-vaccinated dog process: Certification form, CDC-approved titre test or 28-day quarantine, CDC-registered facility reservation. DALRRD export.",
+      "airlines_serving": ["South African Airways", "Delta (military only cargo)", "Emirates SkyCargo (via DXB)", "British Airways (via LHR)"],
+      "commercial_value": "high",
+      "route_priority_score": 7,
+      "content_angles": ["SA is CDC high-risk: complex process", "28-day quarantine possible", "CDC facility reservation required", "Indirect routing via LHR or DXB", "Cats face zero federal requirements (contrast)"]
+    },
+    {
+      "route_id": "south-africa-to-uae",
+      "origin": "South Africa",
+      "destination": "UAE",
+      "slug": "pet-transport/south-africa/to/united-arab-emirates",
+      "keywords": [
+        {"keyword": "pet transport south africa to dubai", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from south africa to dubai", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "UAE municipality permit. DALRRD export. Emirates direct cargo JNB-DXB.",
+      "airlines_serving": ["Emirates SkyCargo", "South African Airways", "Etihad Cargo"],
+      "commercial_value": "medium",
+      "route_priority_score": 5,
+      "content_angles": ["Direct Emirates from JNB", "UAE permit", "Summer embargo", "SA-Dubai expat corridor"]
+    },
+    {
+      "route_id": "south-africa-to-australia",
+      "origin": "South Africa",
+      "destination": "Australia",
+      "slug": "pet-transport/south-africa/to/australia",
+      "keywords": [
+        {"keyword": "pet transport south africa to australia", "volume": "medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from south africa to australia", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "australia quarantine pets from south africa", "volume": "low-medium", "intent": "informational", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com", "agriculture.gov.au"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "SA-Australia migration (skills-based visas). SA is likely DAFF Group 4/5. Very complex.",
+      "regulatory_complexity": "very_high",
+      "regulatory_notes": "SA likely AU DAFF Group 4 or 5. Titre test, quarantine, import permit. May need to transit through approved country. 6-12 month planning.",
+      "airlines_serving": ["Qantas (connecting)", "Emirates SkyCargo (via DXB)", "Singapore Airlines (via SIN)"],
+      "commercial_value": "high",
+      "route_priority_score": 7,
+      "content_angles": ["Highly complex route", "Transit country may be needed", "SA-AU skills migration demand", "Dual export/import requirements", "Professional agent essential"]
+    },
+    {
+      "route_id": "south-africa-to-canada",
+      "origin": "South Africa",
+      "destination": "Canada",
+      "slug": "pet-transport/south-africa/to/canada",
+      "keywords": [
+        {"keyword": "pet transport south africa to canada", "volume": "low-medium", "intent": "commercial", "competition": "low"},
+        {"keyword": "ship dog from south africa to canada", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "CFIA rabies cert. DALRRD export. No quarantine. Connecting flights.",
+      "airlines_serving": ["Emirates SkyCargo (via DXB)", "British Airways (via LHR)", "Air Canada (connecting)"],
+      "commercial_value": "medium",
+      "route_priority_score": 4,
+      "content_angles": ["Indirect routing", "CFIA requirements", "DALRRD export"]
+    },
+    {
+      "route_id": "south-africa-to-germany",
+      "origin": "South Africa",
+      "destination": "Germany",
+      "slug": "pet-transport/south-africa/to/germany",
+      "keywords": [
+        {"keyword": "pet transport south africa to germany", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "EU standard. SA is EU-listed. Kampfhunde laws.",
+      "airlines_serving": ["Lufthansa (cargo)", "Emirates SkyCargo (via DXB)", "South African Airways"],
+      "commercial_value": "low-medium",
+      "route_priority_score": 3,
+      "content_angles": ["EU listed country entry", "German breed laws"]
+    },
+    {
+      "route_id": "south-africa-to-france",
+      "origin": "South Africa",
+      "destination": "France",
+      "slug": "pet-transport/south-africa/to/france",
+      "keywords": [
+        {"keyword": "pet transport south africa to france", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "EU standard. French breed categories.",
+      "airlines_serving": ["Air France (cargo)", "Emirates SkyCargo (via DXB)", "South African Airways"],
+      "commercial_value": "low-medium",
+      "route_priority_score": 2,
+      "content_angles": ["French dangerous dog laws", "JNB-CDG routing"]
+    },
+    {
+      "route_id": "south-africa-to-singapore",
+      "origin": "South Africa",
+      "destination": "Singapore",
+      "slug": "pet-transport/south-africa/to/singapore",
+      "keywords": [
+        {"keyword": "pet transport south africa to singapore", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "opportunity": "SA is Singapore Category C (government quarantine).",
+      "regulatory_complexity": "high",
+      "regulatory_notes": "SA is Singapore Category C. 30-day government quarantine. AVS licence, titre test.",
+      "airlines_serving": ["Singapore Airlines (connecting)", "Emirates SkyCargo (via DXB)"],
+      "commercial_value": "medium",
+      "route_priority_score": 3,
+      "content_angles": ["Category C: government quarantine", "Connecting via DXB or SIN"]
+    },
+    {
+      "route_id": "south-africa-to-hong-kong",
+      "origin": "South Africa",
+      "destination": "Hong Kong",
+      "slug": "pet-transport/south-africa/to/hong-kong",
+      "keywords": [
+        {"keyword": "pet transport south africa to hong kong", "volume": "low", "intent": "commercial", "competition": "low"}
+      ],
+      "serp_features": ["paa"],
+      "top_current_rankers": ["petrelocation.com"],
+      "dedicated_route_page_exists": false,
+      "regulatory_complexity": "medium",
+      "regulatory_notes": "HK AFCD permit. DALRRD export.",
+      "airlines_serving": ["Cathay Pacific (connecting)", "Emirates SkyCargo (via DXB)"],
+      "commercial_value": "low-medium",
+      "route_priority_score": 2,
+      "content_angles": ["AFCD permit", "Indirect routing via DXB"]
+    }
+  ],
+  "supplementary_keywords": {
+    "country_level": [
+      {"keyword": "pet import requirements [country]", "volume": "high_per_country", "intent": "informational", "target_page": "country-guides/[country]"},
+      {"keyword": "[country] quarantine for pets", "volume": "medium_for_AU_SG", "intent": "informational", "target_page": "country-guides/[country]"},
+      {"keyword": "banned dog breeds [country]", "volume": "medium", "intent": "informational", "target_page": "country-guides/[country]"},
+      {"keyword": "how to bring pet to [country]", "volume": "medium", "intent": "informational-commercial", "target_page": "country-guides/[country]"}
+    ],
+    "airline_level": [
+      {"keyword": "[airline] pet policy", "volume": "high", "intent": "informational", "target_page": "airline-guides/[airline]"},
+      {"keyword": "[airline] pet cargo", "volume": "medium", "intent": "informational-commercial", "target_page": "airline-guides/[airline]"},
+      {"keyword": "[airline] ship dog", "volume": "low-medium", "intent": "commercial", "target_page": "airline-guides/[airline]"},
+      {"keyword": "[airline] pet travel cost", "volume": "medium", "intent": "informational-commercial", "target_page": "airline-guides/[airline]"}
+    ],
+    "breed_level": [
+      {"keyword": "can I fly with [breed]", "volume": "medium", "intent": "informational", "target_page": "breed-guides/[breed]"},
+      {"keyword": "[breed] air travel", "volume": "low-medium", "intent": "informational", "target_page": "breed-guides/[breed]"},
+      {"keyword": "flying with french bulldog", "volume": "high", "intent": "informational", "target_page": "breed-guides/french-bulldog"},
+      {"keyword": "brachycephalic dog air travel", "volume": "medium", "intent": "informational", "target_page": "resources/brachycephalic-breeds"},
+      {"keyword": "can I bring pit bull to [country]", "volume": "medium", "intent": "informational", "target_page": "breed-guides/pit-bull"}
+    ],
+    "cost_queries": [
+      {"keyword": "how much to ship a dog internationally", "volume": "high", "intent": "commercial", "target_page": "resources/pet-transport-costs"},
+      {"keyword": "pet transport cost calculator", "volume": "medium", "intent": "commercial", "target_page": "resources/cost-calculator"},
+      {"keyword": "international pet shipping cost", "volume": "high", "intent": "commercial", "target_page": "resources/pet-transport-costs"}
+    ]
+  },
+  "build_order_recommendation": {
+    "batch_1": {
+      "description": "15 highest-priority routes (score 8-10). Build first for maximum SEO impact.",
+      "routes": [
+        "uk-to-australia", "uae-to-uk", "uae-to-australia", "uae-to-usa",
+        "australia-to-uk", "hong-kong-to-uk", "hong-kong-to-australia",
+        "uk-to-uae", "usa-to-uk", "usa-to-australia",
+        "uk-to-france", "uk-to-singapore", "singapore-to-australia",
+        "australia-to-singapore", "south-africa-to-australia"
+      ],
+      "rationale": "These routes have the highest search volume, highest booking value, and zero dedicated route pages competing. The UK-Australia and UAE-UK corridors are likely the highest-traffic pet transport routes globally."
+    },
+    "batch_2": {
+      "description": "Routes scoring 5-7. Core P1 routes.",
+      "count": "~40 routes"
+    },
+    "batch_3": {
+      "description": "Routes scoring 1-4. Completeness and internal linking value.",
+      "count": "~35 routes"
+    }
+  }
+}

@@ -1,0 +1,648 @@
+{
+  "metadata": {
+    "task": "0.4 + 0.7",
+    "description": "Airline pet cargo and cabin policies for 22 airlines serving P1 routes (Block 3 initial + Block 7 expansion)",
+    "date_compiled": "2026-04-16",
+    "sources_note": "Data sourced from airline websites where accessible. Many airline sites (Emirates, Singapore Airlines, Qantas, United, American, Air France, Cathay Pacific, Etihad, Air Canada) use JavaScript-heavy rendering that blocked automated extraction. For those airlines, data compiled from their published policy documentation and IATA Live Animals Regulations framework. Direct-scraped data marked with [SCRAPED]. All data should be verified against current airline policies before content publication.",
+    "direct_scraped_sources": [
+      "Delta Air Lines - delta.com/us/en/pet-travel (accessed Apr 2026) [SCRAPED]",
+      "Lufthansa - lufthansa.com/us/en/travelling-with-animals (accessed Apr 2026) [SCRAPED]",
+      "British Airways - britishairways.com/en-gb/information/travel-assistance/travelling-with-pets (accessed Apr 2026) [SCRAPED]",
+      "KLM - klm.com/information/pets (accessed Apr 2026) [SCRAPED]",
+      "CDC dog import requirements cross-referenced (accessed Apr 2026) [SCRAPED]"
+    ]
+  },
+  "iata_framework": {
+    "description": "International Air Transport Association (IATA) Live Animals Regulations (LAR) set the baseline standards all airlines must comply with for animal transport.",
+    "key_standards": {
+      "container_requirement_1": "Pets must travel in IATA-compliant containers allowing the animal to stand, sit upright, lie down, and turn around without touching top or sides.",
+      "ventilation": "Containers must have adequate ventilation on at least 3 sides",
+      "labelling": "Live animal stickers, this-way-up arrows, shipper/consignee details required on container",
+      "food_water": "Instructions for 24-hour feeding/watering must accompany animal. Food and water offered within 4 hours of check-in.",
+      "health_certificate": "Veterinary health certificate required within 10 days of travel (varies by airline)",
+      "sedation": "IATA and virtually all airlines prohibit sedation/tranquilization of pets for air travel"
+    }
+  },
+  "airlines": {
+    "emirates": {
+      "name": "Emirates",
+      "alliance": "None (independent)",
+      "hub": "Dubai (DXB)",
+      "key_routes_p1": ["Dubai-London", "Dubai-Singapore", "Dubai-Hong Kong", "Dubai-Johannesburg", "Dubai-Sydney", "Dubai-New York"],
+      "source": "Emirates published policy (website extraction failed)",
+      "cabin_policy": {
+        "allowed": false,
+        "exception": "Falcons allowed in Economy Class cabin on flights to/from select destinations (UAE, Pakistan, some Middle East routes). Service/assistance animals not permitted in cabin.",
+        "note": "Emirates does NOT allow dogs or cats in the passenger cabin on any route."
+      },
+      "cargo_policy": {
+        "allowed": true,
+        "service": "Emirates SkyCargo handles all pet transport as manifested cargo",
+        "species": "Dogs, cats, and birds (subject to route and country restrictions)",
+        "crate_requirements": "IATA-compliant rigid containers. Must allow animal to stand, turn, lie down.",
+        "temperature_controlled": true,
+        "booking": "Must be booked through Emirates SkyCargo or approved pet relocation agent",
+        "lead_time": "Recommended 2+ weeks advance booking",
+        "restrictions": [
+          "Snub-nosed (brachycephalic) breeds accepted with additional requirements and seasonal restrictions",
+          "Temperature embargoes during extreme heat (summer months in Gulf region)",
+          "Some breed restrictions apply"
+        ]
+      },
+      "fees": "Varies by route, weight, and container size. Contact SkyCargo for quotes.",
+      "key_consideration": "As a Dubai-hub airline, Emirates is the primary carrier for UAE pet relocations. All pets travel as cargo, never cabin."
+    },
+    "british_airways": {
+      "name": "British Airways",
+      "alliance": "oneworld",
+      "hub": "London Heathrow (LHR)",
+      "key_routes_p1": ["London-Dubai", "London-Singapore", "London-Hong Kong", "London-Johannesburg", "London-New York", "London-Sydney"],
+      "source": "[SCRAPED] britishairways.com Apr 2026",
+      "cabin_policy": {
+        "allowed": false,
+        "note": "British Airways does NOT carry pets in the cabin on ANY route. Only assistance dogs travel in cabin (free of charge)."
+      },
+      "cargo_policy": {
+        "allowed": true,
+        "service_from_uk": "Partnership with PetAir UK (run by qualified veterinary surgeons, operating since 2004). Handles all pet exports from UK.",
+        "service_to_uk": "Partnership with IAG Cargo for pet imports to UK.",
+        "species": "Dogs, cats (and other animals through cargo partners)",
+        "booking": "Through PetAir UK (exports) or IAG Cargo (imports), not directly through BA passenger booking",
+        "pet_travel_scheme": "Must comply with UK DEFRA Pet Travel Scheme for UK entry"
+      },
+      "emotional_support_animals": "NOT accepted in cabin on any BA-operated flight. Must travel as cargo pet.",
+      "fees": "Through partner companies (PetAir UK / IAG Cargo). Varies by route, animal size, destination requirements.",
+      "key_consideration": "BA's model requires specialist third-party agent for all pet travel. No direct pet booking through airline. Good for complex UK regulatory requirements."
+    },
+    "lufthansa": {
+      "name": "Lufthansa",
+      "alliance": "Star Alliance",
+      "hub": "Frankfurt (FRA), Munich (MUC)",
+      "key_routes_p1": ["Frankfurt-Dubai", "Frankfurt-Singapore", "Frankfurt-Hong Kong", "Frankfurt-Johannesburg", "Munich-London"],
+      "source": "[SCRAPED] lufthansa.com Apr 2026",
+      "cabin_policy": {
+        "allowed": true,
+        "species": "Small dogs and cats",
+        "weight_limit": "Max 8 kg including container",
+        "container": "Soft-sided, waterproof, ventilated. Max dimensions 55 x 40 x 23 cm.",
+        "fee_type": "Extra cost as additional carry-on baggage",
+        "restrictions": [
+          "Subject to country import/export regulations",
+          "Registration deadlines apply (must register pet before flight)",
+          "Not permitted into Lufthansa lounges",
+          "Subject to restrictions on flights with multiple airlines (codeshares)"
+        ]
+      },
+      "cargo_policy": {
+        "allowed": true,
+        "hold_as_excess_baggage": "Larger dogs and cats can travel in air-conditioned cargo hold as excess baggage on passenger aircraft",
+        "cargo_freight": "Lufthansa Cargo offers transport of pets and other species as air freight",
+        "crate_requirements": "IATA-compliant rigid container",
+        "restrictions": [
+          "Transport of large animals to certain destinations not possible due to local circumstances",
+          "Fighting dog breeds subject to special rules",
+          "Snub-nosed (brachycephalic) animals subject to additional requirements"
+        ]
+      },
+      "us_dog_travel_note": "Special CDC requirements apply when traveling to USA with dogs",
+      "fees": "Varies by route and whether cabin or cargo. Contact Lufthansa for specific pricing.",
+      "key_consideration": "One of the most pet-friendly major airlines. Allows cabin travel for small pets AND cargo hold on same aircraft. Lufthansa Cargo provides dedicated freight option."
+    },
+    "singapore_airlines": {
+      "name": "Singapore Airlines",
+      "alliance": "Star Alliance",
+      "hub": "Singapore Changi (SIN)",
+      "key_routes_p1": ["Singapore-London", "Singapore-Sydney", "Singapore-Dubai", "Singapore-Hong Kong", "Singapore-Frankfurt"],
+      "source": "Singapore Airlines published policy (website extraction failed)",
+      "cabin_policy": {
+        "allowed": false,
+        "note": "Singapore Airlines does NOT allow pets in the passenger cabin (service dogs excepted on some routes)."
+      },
+      "cargo_policy": {
+        "allowed": true,
+        "service": "Pets travel as cargo in temperature-controlled hold",
+        "species": "Dogs and cats",
+        "booking": "Must book through Singapore Airlines cargo or approved pet agent",
+        "crate_requirements": "IATA-compliant containers required",
+        "restrictions": [
+          "Brachycephalic breeds subject to restrictions",
+          "Temperature embargoes apply on certain routes/seasons",
+          "Must comply with Singapore NParks AVS import regulations for pets entering Singapore"
+        ]
+      },
+      "fees": "Varies by route, animal weight, and container size",
+      "key_consideration": "Singapore has strict AVS Category system (A/B/C/D). SIA cargo is the primary option for Singapore-bound pets."
+    },
+    "qantas": {
+      "name": "Qantas",
+      "alliance": "oneworld",
+      "hub": "Sydney (SYD), Melbourne (MEL)",
+      "key_routes_p1": ["Sydney-London", "Sydney-Singapore", "Sydney-Hong Kong", "Melbourne-Dubai"],
+      "source": "Qantas published policy (website extraction failed)",
+      "cabin_policy": {
+        "allowed": false,
+        "note": "Qantas does NOT allow pets in the passenger cabin on any route (assistance animals excepted on domestic flights)."
+      },
+      "cargo_policy": {
+        "allowed": true,
+        "domestic": "Qantas Freight handles domestic pet transport within Australia",
+        "international": "International pet transport through Qantas Freight as manifested cargo",
+        "species": "Dogs and cats",
+        "crate_requirements": "IATA-compliant containers. Specific Qantas container specifications may apply.",
+        "restrictions": [
+          "Brachycephalic breeds restricted year-round",
+          "Temperature embargoes: seasonal restrictions during Australian summer (Dec-Feb)",
+          "Australia's strict DAFF quarantine rules mean all international arrivals face minimum 10-day quarantine",
+          "Only arriving from DAFF-approved countries"
+        ],
+        "australia_specific": "All pets entering Australia must have valid DAFF biosecurity import permit and meet all country-group-specific requirements. Qantas works with licensed pet transport agents."
+      },
+      "fees": "Varies by route. Contact Qantas Freight.",
+      "key_consideration": "Australia's strict biosecurity regime means Qantas pet cargo is tightly regulated. Most customers use professional pet transport agents. No cabin option."
+    },
+    "klm": {
+      "name": "KLM Royal Dutch Airlines",
+      "alliance": "SkyTeam",
+      "hub": "Amsterdam Schiphol (AMS)",
+      "key_routes_p1": ["Amsterdam-Dubai", "Amsterdam-Singapore", "Amsterdam-Hong Kong", "Amsterdam-Johannesburg", "Amsterdam-London"],
+      "source": "[SCRAPED] klm.com Apr 2026",
+      "cabin_policy": {
+        "allowed": true,
+        "species": "Dogs and cats",
+        "weight_limit": "Max 8 kg including soft bag",
+        "container": "Soft bag/carrier that fits under seat",
+        "note": "Reservation required in advance"
+      },
+      "cargo_policy": {
+        "allowed": true,
+        "service": "Pets can travel in the hold as checked baggage or via KLM Cargo",
+        "crate_requirements": "IATA-compliant kennel for hold travel",
+        "documents": "Travel documents required as per destination country regulations"
+      },
+      "assistance_dogs": "Trained service dogs allowed in cabin",
+      "fees": "Varies by route and cabin/hold option",
+      "key_consideration": "KLM part of Air France-KLM group. Amsterdam is major European transit hub."
+    },
+    "air_france": {
+      "name": "Air France",
+      "alliance": "SkyTeam",
+      "hub": "Paris Charles de Gaulle (CDG)",
+      "key_routes_p1": ["Paris-Dubai", "Paris-Singapore", "Paris-Hong Kong", "Paris-Johannesburg", "Paris-London"],
+      "source": "Air France published policy (website extraction failed)",
+      "cabin_policy": {
+        "allowed": true,
+        "species": "Dogs and cats",
+        "weight_limit": "Max 8 kg including soft bag (cabin). Dogs under 8 kg and cats.",
+        "container": "Soft, ventilated bag max 46 x 28 x 24 cm",
+        "restricted_breeds": "Dogs classified as Category 1 attack dogs not allowed"
+      },
+      "cargo_policy": {
+        "allowed": true,
+        "hold": "Dogs 8-75 kg travel in hold as checked baggage in IATA-compliant rigid kennel",
+        "freight": "Air France Cargo/KLM Cargo for larger shipments",
+        "restrictions": [
+          "Brachycephalic breeds subject to restrictions/seasonal embargoes",
+          "French regulations on dangerous dog breeds apply"
+        ]
+      },
+      "fees": "Cabin from approx EUR 40-125 depending on route. Hold varies by weight and route.",
+      "key_consideration": "Part of Air France-KLM group. Good European hub coverage. France has breed-specific legislation."
+    },
+    "united": {
+      "name": "United Airlines",
+      "alliance": "Star Alliance",
+      "hub": "Newark (EWR), San Francisco (SFO), Houston (IAH), Chicago (ORD)",
+      "key_routes_p1": ["Newark-London", "San Francisco-Sydney", "Houston-Dubai", "Chicago-Frankfurt"],
+      "source": "United Airlines published policy (website extraction failed)",
+      "cabin_policy": {
+        "allowed": true,
+        "species": "Dogs, cats, rabbits, household birds (domestic US)",
+        "weight_limit": "Pet + carrier must fit under seat. No specific published weight limit but carrier max dimensions approx 17.5 x 12 x 7.5 inches (hard) or 18 x 11 x 11 inches (soft).",
+        "fee": "$150 USD each way (domestic), varies international",
+        "restrictions": [
+          "Brachycephalic dogs/cats restricted from cargo but allowed in cabin if they fit",
+          "International: varies by route, some destinations cargo only"
+        ]
+      },
+      "cargo_policy": {
+        "allowed": false,
+        "note": "United PetSafe cargo program was SUSPENDED indefinitely (since 2018/2019). Pets can only travel in-cabin on United.",
+        "exception": "Active US military with PCS orders may have options through United Cargo"
+      },
+      "key_consideration": "CRITICAL: United does NOT offer cargo pet transport for regular customers. In-cabin only. This is a major limitation for large dogs or routes where cabin pets aren't permitted."
+    },
+    "delta": {
+      "name": "Delta Air Lines",
+      "alliance": "SkyTeam",
+      "hub": "Atlanta (ATL), New York JFK, Los Angeles (LAX), Detroit (DTW), Minneapolis (MSP), Seattle (SEA)",
+      "key_routes_p1": ["New York-London", "Atlanta-Johannesburg", "Los Angeles-Sydney", "New York-Dubai"],
+      "source": "[SCRAPED] delta.com Apr 2026",
+      "cabin_policy": {
+        "allowed": true,
+        "species": "Small dogs, cats, household birds",
+        "requirements": {
+          "age_domestic": "8+ weeks",
+          "age_international_dogs_to_us": "6+ months",
+          "age_eu": "15+ weeks",
+          "kennel": "Soft-sided, ventilated. Recommended max 18 x 11 x 11 inches. Must fit under seat.",
+          "pets_per_kennel": "1 pet per kennel (exceptions: unweaned litter with mother; 2 same-breed/size pets 8wk-6mo)",
+          "seating_restrictions": "No bulkhead, emergency exit, no-stowage seats, flat-bed/Delta One seats, or specific rows on A330-200/300 and B757-200 center seats"
+        },
+        "booking": "First-come, first-serve. Call Delta Reservations. Limited spots per flight.",
+        "limits_by_cabin": {
+          "delta_first_domestic": "2 pets (not in flat-bed configs)",
+          "business_international": "0 pets (no exceptions except service animals)",
+          "delta_one": "0 pets",
+          "delta_premium": "0 pets",
+          "delta_comfort_main": "4 pets (restrictions may apply)"
+        }
+      },
+      "cabin_exceptions_cargo_only": [
+        "Australia", "Barbados", "Brazil (originating)", "Colombia (originating)",
+        "Dominican Republic (originating)", "Hawaii (to)", "Hong Kong", "Iceland",
+        "Jamaica", "New Zealand", "South Africa", "United Kingdom", "United Arab Emirates"
+      ],
+      "cargo_policy": {
+        "allowed": "Limited - currently only for active US Military or US State Dept FSO with PCS orders",
+        "normal_operations": {
+          "booking": "Through Delta Cargo Customer Service Center, separate from passenger booking",
+          "lead_time": "Cannot book until 14 days prior to departure",
+          "cutoff_domestic": "2.5 hours before departure",
+          "cutoff_international": "4 hours before departure",
+          "arrival_at_facility": "4-6 hours prior domestic, 6 hours prior international",
+          "international_requirement": "Must use IPATA-approved pet shipper for international cargo",
+          "crate": "IATA Container Requirement #1 compliant"
+        },
+        "health_requirements": {
+          "health_certificate": "From USDA-accredited vet within 10 days of travel. International: must be signed/endorsed by government vet authority.",
+          "sedation": "Prohibited. No tranquilizers or sedating medication permitted.",
+          "feeding": "Food and water offered within 4 hours of check-in. 24-hour feeding instructions required."
+        },
+        "breed_restrictions": {
+          "brachycephalic": "Snub-nosed dogs, cats, and their mixes NOT permitted on Delta or Delta Connection flights as cargo",
+          "full_list": "Available at deltacargo.com/Cargo/catalog/restricted-animals"
+        },
+        "temperature_restrictions": {
+          "max_ground_temp": "80F (27C) - no travel if exceeded at any point",
+          "min_ground_temp": "20F (-7C) - no travel if below",
+          "cold_acclimation": "Certificate of Acclimation required for 20-45F (-7 to 7C)"
+        }
+      },
+      "fees": {
+        "cabin_domestic": "$95 (tickets before Apr 8, 2025) / $150 (tickets on/after Apr 8, 2025) each way",
+        "cabin_international": "$200 USD/CAD/EUR each way",
+        "cabin_brazil": "$75 (before Apr 8, 2025) / $200 (on/after Apr 8, 2025)",
+        "cargo": "Contact Delta Cargo for quotes"
+      },
+      "key_consideration": "Delta has the most detailed published pet policy of major US airlines. Significant limitation: cargo currently restricted to military. Many P1 destinations (UK, UAE, Australia, South Africa, Hong Kong) are cabin-exception routes requiring cargo. This creates a gap for Delta on key routes."
+    },
+    "american_airlines": {
+      "name": "American Airlines",
+      "alliance": "oneworld",
+      "hub": "Dallas/Fort Worth (DFW), Charlotte (CLT), Miami (MIA), Philadelphia (PHL), Chicago (ORD)",
+      "key_routes_p1": ["Dallas-London", "Miami-Dubai", "Charlotte-Frankfurt", "Miami-Sao Paulo"],
+      "source": "American Airlines published policy (website extraction failed)",
+      "cabin_policy": {
+        "allowed": true,
+        "species": "Small dogs, cats",
+        "weight_limit": "Pet + carrier max 20 lbs",
+        "container": "Soft-sided carrier that fits under seat. Max dimensions vary by aircraft.",
+        "fee": "$150 USD each way (domestic and select international)",
+        "restrictions": [
+          "Not available to/from some international destinations",
+          "Breed restrictions may apply",
+          "Limit per flight enforced"
+        ]
+      },
+      "cargo_policy": {
+        "allowed": true,
+        "service": "American Airlines Cargo handles pet transport",
+        "note": "AA cargo pet program availability has fluctuated. Check current status.",
+        "crate": "IATA-compliant rigid kennel",
+        "temperature_restrictions": "Seasonal embargoes during extreme heat/cold"
+      },
+      "fees": "Cabin: $150 each way. Cargo: varies by route and weight.",
+      "key_consideration": "Major oneworld carrier. Miami hub important for Latin America connections."
+    },
+    "cathay_pacific": {
+      "name": "Cathay Pacific",
+      "alliance": "oneworld",
+      "hub": "Hong Kong (HKG)",
+      "key_routes_p1": ["Hong Kong-London", "Hong Kong-Singapore", "Hong Kong-Sydney", "Hong Kong-Dubai", "Hong Kong-Frankfurt"],
+      "source": "Cathay Pacific published policy (website extraction failed)",
+      "cabin_policy": {
+        "allowed": false,
+        "note": "Cathay Pacific does NOT allow pets in the passenger cabin (service dogs excepted)."
+      },
+      "cargo_policy": {
+        "allowed": true,
+        "service": "Pets travel as manifested cargo in temperature-controlled hold",
+        "species": "Dogs and cats",
+        "crate": "IATA-compliant containers",
+        "restrictions": [
+          "Brachycephalic breeds restricted during summer months",
+          "Hong Kong AFCD import regulations must be met",
+          "Temperature embargoes seasonal"
+        ]
+      },
+      "fees": "Varies by route, weight, container size",
+      "key_consideration": "Primary carrier for Hong Kong pet relocations. No cabin option. Hong Kong has its own import permit system through AFCD."
+    },
+    "etihad": {
+      "name": "Etihad Airways",
+      "alliance": "None (independent)",
+      "hub": "Abu Dhabi (AUH)",
+      "key_routes_p1": ["Abu Dhabi-London", "Abu Dhabi-Sydney", "Abu Dhabi-Singapore", "Abu Dhabi-Frankfurt"],
+      "source": "Etihad published policy (website extraction failed)",
+      "cabin_policy": {
+        "allowed": false,
+        "exception": "Falcons permitted in Economy cabin on select routes (similar to Emirates policy)",
+        "note": "Dogs and cats NOT permitted in passenger cabin."
+      },
+      "cargo_policy": {
+        "allowed": true,
+        "service": "Pets travel as cargo through Etihad Cargo",
+        "species": "Dogs, cats, birds",
+        "crate": "IATA-compliant containers required",
+        "restrictions": [
+          "Brachycephalic breeds subject to seasonal restrictions",
+          "Temperature embargoes during Abu Dhabi summer months",
+          "UAE import regulations apply"
+        ]
+      },
+      "fees": "Contact Etihad Cargo. Varies by route and animal size.",
+      "key_consideration": "Alternative UAE carrier to Emirates. Same cargo-only policy for pets. Abu Dhabi hub serves as alternative to Dubai for pet transport."
+    },
+    "air_canada": {
+      "name": "Air Canada",
+      "alliance": "Star Alliance",
+      "hub": "Toronto Pearson (YYZ), Montreal (YUL), Vancouver (YVR)",
+      "key_routes_p1": ["Toronto-London", "Vancouver-Sydney", "Toronto-Frankfurt", "Montreal-Dubai"],
+      "source": "Air Canada published policy (website extraction failed)",
+      "cabin_policy": {
+        "allowed": true,
+        "species": "Small dogs and cats",
+        "weight_limit": "Max 10 kg including carrier",
+        "container": "Soft-sided ventilated carrier that fits under seat (max 23 x 40 x 55 cm)",
+        "fee": "Approx CAD 71-118 depending on route",
+        "restrictions": ["Not available on all international routes", "Limit per flight"]
+      },
+      "cargo_policy": {
+        "allowed": true,
+        "service": "Air Canada Cargo handles pet transport in heated/pressurized hold",
+        "crate": "IATA-compliant rigid kennel",
+        "temperature": "Seasonal restrictions. No travel below -12C or above 29C at any point.",
+        "restrictions": ["Brachycephalic breeds restricted from cargo year-round"]
+      },
+      "fees": "Cabin: CAD 71-118. Cargo: varies by route, weight, destination.",
+      "key_consideration": "Good option for North America-UK/Europe routes. Canada classified as low-risk for CDC dog import purposes."
+    },
+    "south_african_airways": {
+      "name": "South African Airways",
+      "alliance": "Star Alliance (pending)",
+      "hub": "Johannesburg OR Tambo (JNB)",
+      "key_routes_p1": ["Johannesburg-London", "Johannesburg-Dubai", "Johannesburg-Frankfurt"],
+      "source": "SAA published policy",
+      "cabin_policy": {
+        "allowed": true,
+        "species": "Small dogs and cats",
+        "weight_limit": "Max 7 kg including carrier",
+        "container": "Soft carrier fitting under seat",
+        "restrictions": ["Limited international routes", "Subject to route restrictions"]
+      },
+      "cargo_policy": {
+        "allowed": true,
+        "service": "Pets travel as checked excess baggage in hold or through SAA cargo",
+        "crate": "IATA-compliant containers",
+        "species": "Dogs and cats",
+        "note": "South Africa classified as high-risk for CDC dog rabies. Additional US entry requirements apply."
+      },
+      "key_consideration": "Primary carrier for South Africa pet relocations. SA is CDC high-risk country, complicating US-bound pet travel."
+    },
+    "turkish_airlines": {
+      "name": "Turkish Airlines",
+      "alliance": "Star Alliance",
+      "hub": "Istanbul (IST)",
+      "key_routes_p1": ["Istanbul-London", "Istanbul-Dubai", "Istanbul-Singapore", "Istanbul-Johannesburg"],
+      "source": "Turkish Airlines published policy",
+      "cabin_policy": {
+        "allowed": true,
+        "species": "Dogs, cats, small birds (songbirds)",
+        "weight_limit": "Max 8 kg including carrier for cabin",
+        "container": "Soft carrier, max 23 x 30 x 40 cm",
+        "fee": "Varies by route"
+      },
+      "cargo_policy": {
+        "allowed": true,
+        "hold": "Pets 8-32 kg travel in hold as checked baggage in IATA container",
+        "freight": "Turkish Cargo for larger shipments",
+        "restrictions": ["Brachycephalic breeds restricted in cargo", "Temperature restrictions apply"]
+      },
+      "key_consideration": "Istanbul is a major connecting hub. Turkish Airlines is one of the most pet-accommodating airlines globally (cabin + cargo). Useful for complex routing."
+    },
+    "swiss": {
+      "name": "Swiss International Air Lines",
+      "alliance": "Star Alliance (Lufthansa Group)",
+      "hub": "Zurich (ZRH)",
+      "key_routes_p1": ["Zurich-London", "Zurich-Singapore", "Zurich-Hong Kong", "Zurich-Dubai"],
+      "source": "Swiss published policy (Lufthansa Group standards)",
+      "cabin_policy": {
+        "allowed": true,
+        "species": "Small dogs and cats",
+        "weight_limit": "Max 8 kg including container",
+        "container": "Soft-sided, ventilated, max 55 x 40 x 23 cm"
+      },
+      "cargo_policy": {
+        "allowed": true,
+        "service": "Larger pets travel in hold. Swiss WorldCargo for freight.",
+        "crate": "IATA-compliant"
+      },
+      "key_consideration": "Part of Lufthansa Group, similar pet policies. Good alternative European hub."
+    },
+    "virgin_atlantic": {
+      "name": "Virgin Atlantic",
+      "alliance": "SkyTeam",
+      "hub": "London Heathrow (LHR)",
+      "key_routes_p1": ["London-New York", "London-Johannesburg", "London-Hong Kong", "London-Dubai"],
+      "source": "Virgin Atlantic published policy",
+      "cabin_policy": {
+        "allowed": false,
+        "note": "Virgin Atlantic does NOT allow pets in cabin (assistance dogs excepted)."
+      },
+      "cargo_policy": {
+        "allowed": true,
+        "service": "Pets transported through Virgin Atlantic Cargo",
+        "species": "Dogs and cats",
+        "crate": "IATA-compliant",
+        "restrictions": ["Brachycephalic breeds restricted", "Temperature embargoes"]
+      },
+      "key_consideration": "London-based carrier. No cabin option. Uses specialist pet transport agents."
+    },
+    "korean_air": {
+      "name": "Korean Air",
+      "alliance": "SkyTeam",
+      "hub": "Seoul Incheon (ICN)",
+      "key_routes_p1": ["Seoul-London", "Seoul-Sydney", "Seoul-Singapore"],
+      "source": "Korean Air published policy",
+      "cabin_policy": {
+        "allowed": true,
+        "species": "Small dogs, cats, birds",
+        "weight_limit": "Max 7 kg including cage",
+        "container": "Soft or hard carrier max 40 x 55 x 20 cm"
+      },
+      "cargo_policy": {
+        "allowed": true,
+        "service": "Larger pets in hold as checked baggage or Korean Air Cargo",
+        "crate": "IATA-compliant"
+      },
+      "key_consideration": "Good Asian hub option for connections."
+    },
+    "emirates_skycargo_detail": {
+      "name": "Emirates SkyCargo (cargo division)",
+      "description": "Dedicated cargo service for Emirates. Handles vast majority of UAE pet relocations.",
+      "facilities": "State-of-the-art animal handling facilities at Dubai (DXB)",
+      "service_types": ["Pet transport (cats, dogs)", "Equine transport", "Exotic animal transport", "Zoo animal transport"],
+      "key_routes": "Global network including all P1 countries",
+      "booking": "Through Emirates SkyCargo agents or licensed pet relocation companies",
+      "note": "Emirates SkyCargo is the go-to for Dubai/UAE pet relocations given Emirates' no-cabin policy."
+    },
+    "japan_airlines": {
+      "name": "Japan Airlines (JAL)",
+      "alliance": "Oneworld",
+      "hub": "Tokyo Narita (NRT) / Tokyo Haneda (HND)",
+      "key_routes_p1": ["Tokyo-London", "Tokyo-Singapore", "Tokyo-Sydney", "Tokyo-Hong Kong"],
+      "source": "JAL published policy",
+      "cabin_policy": {
+        "allowed": false,
+        "exception": "JAL does not allow pets in the passenger cabin on international flights",
+        "domestic_note": "Pets accepted in cabin on some JAL domestic routes within Japan"
+      },
+      "cargo_policy": {
+        "allowed": true,
+        "service": "JAL Pet Policy: pets transported as checked baggage in temperature-controlled hold",
+        "species": "Dogs, cats, and certain small animals",
+        "crate": "IATA-compliant rigid container required",
+        "restrictions": [
+          "Brachycephalic breeds: French Bulldogs BANNED from cargo (May-October). English Bulldogs banned year-round.",
+          "Summer restrictions: May-October temperature embargoes on some routes",
+          "Maximum 2 pets per container for small animals"
+        ]
+      },
+      "fees": {
+        "international": "Based on container size and route. Typically JPY 30,000-60,000+",
+        "note": "Fees quoted at check-in or via cargo booking"
+      },
+      "key_consideration": "Important connecting airline for Australia-bound pets transiting through Tokyo. Group 3 status (Japan) means no 180-day wait for AU entry."
+    },
+    "thai_airways": {
+      "name": "Thai Airways",
+      "alliance": "Star Alliance",
+      "hub": "Bangkok Suvarnabhumi (BKK)",
+      "key_routes_p1": ["Bangkok-London", "Bangkok-Sydney", "Bangkok-Singapore", "Bangkok-Frankfurt", "Bangkok-Hong Kong"],
+      "source": "Thai Airways published policy",
+      "cabin_policy": {
+        "allowed": false,
+        "notes": "Thai Airways does not permit pets in the passenger cabin on any route"
+      },
+      "cargo_policy": {
+        "allowed": true,
+        "service": "Pets as checked baggage or Thai Cargo for larger animals",
+        "species": "Dogs and cats",
+        "crate": "IATA-compliant container. Maximum dimensions apply per aircraft type.",
+        "restrictions": [
+          "Brachycephalic breeds restricted during hot season (March-May)",
+          "Some breed restrictions apply",
+          "Temperature embargoes possible during extreme heat periods"
+        ]
+      },
+      "key_consideration": "Bangkok is a common transit point for Australia-bound pets from Europe and Middle East. Transit regulations apply."
+    },
+    "garuda_indonesia": {
+      "name": "Garuda Indonesia",
+      "alliance": "SkyTeam",
+      "hub": "Jakarta Soekarno-Hatta (CGK)",
+      "key_routes_p1": ["Jakarta-Singapore", "Jakarta-Sydney", "Jakarta-Amsterdam"],
+      "source": "Garuda Indonesia published policy",
+      "cabin_policy": {
+        "allowed": true,
+        "species": "Small dogs and cats",
+        "weight_limit": "Max 7 kg including carrier",
+        "container": "Soft-sided carrier, must fit under seat",
+        "routes": "Cabin pets allowed on domestic and some international routes (check at booking)"
+      },
+      "cargo_policy": {
+        "allowed": true,
+        "service": "Larger pets transported as checked baggage in pressurised, temperature-controlled hold",
+        "crate": "IATA-compliant",
+        "restrictions": [
+          "Brachycephalic breeds: check specific restrictions",
+          "Weight limits apply per aircraft type",
+          "Pets not accepted on certain short-haul routes"
+        ]
+      },
+      "key_consideration": "Relevant for Indonesia-Singapore and Indonesia-Australia routes. Indonesia pet export requirements add complexity."
+    },
+    "philippine_airlines": {
+      "name": "Philippine Airlines",
+      "alliance": "None (independent)",
+      "hub": "Manila Ninoy Aquino (MNL)",
+      "key_routes_p1": ["Manila-Singapore", "Manila-Hong Kong", "Manila-Sydney", "Manila-London"],
+      "source": "Philippine Airlines published policy",
+      "cabin_policy": {
+        "allowed": true,
+        "species": "Small dogs and cats",
+        "weight_limit": "Max 7 kg including carrier on domestic, carrier restrictions on international",
+        "notes": "Cabin pet acceptance varies by route and aircraft type. Confirm at booking."
+      },
+      "cargo_policy": {
+        "allowed": true,
+        "service": "Pets as checked baggage or PAL Cargo",
+        "crate": "IATA-compliant",
+        "restrictions": [
+          "Brachycephalic breeds restricted from cargo",
+          "Temperature restrictions during extreme heat",
+          "Some route restrictions apply"
+        ]
+      },
+      "key_consideration": "Philippines is a common origin for pets entering Singapore and Hong Kong. High OFW (overseas Filipino worker) mobility creates pet transport demand."
+    }
+  },
+  "cross_cutting_analysis": {
+    "cabin_allowed_airlines": ["Lufthansa", "KLM", "Air France", "Delta", "American Airlines", "United", "Air Canada", "South African Airways", "Turkish Airlines", "Swiss", "Korean Air", "Garuda Indonesia", "Philippine Airlines"],
+    "cargo_only_airlines": ["Emirates", "British Airways", "Singapore Airlines", "Qantas", "Cathay Pacific", "Etihad", "Virgin Atlantic", "Japan Airlines", "Thai Airways"],
+    "cargo_suspended": ["United (PetSafe suspended indefinitely)", "Delta (cargo limited to military only)"],
+    "brachycephalic_breed_policy": {
+      "universally_restricted_from_cargo": "Virtually all airlines restrict or ban snub-nosed breeds from cargo holds due to respiratory risk at altitude",
+      "affected_breeds_dogs": ["Bulldog (English, French, American)", "Pug", "Boston Terrier", "Boxer", "Pekingese", "Shih Tzu", "Cavalier King Charles Spaniel", "Lhasa Apso", "Brussels Griffon", "Japanese Chin", "Affenpinscher", "Tibetan Spaniel"],
+      "affected_breeds_cats": ["Persian", "Himalayan", "Burmese", "Exotic Shorthair", "British Shorthair", "Scottish Fold"],
+      "cabin_option": "Some airlines allow brachycephalic breeds in cabin if pet fits carrier requirements",
+      "key_content_angle": "Brachycephalic breed transport is one of the most searched topics in pet relocation. Major content opportunity."
+    },
+    "temperature_embargoes": {
+      "summer_risk_routes": ["All Gulf routes (Dubai, Abu Dhabi, Doha) Jun-Sep", "Australian domestic routes Dec-Feb", "Southern African routes Dec-Feb", "South Asian routes Apr-Jun"],
+      "winter_risk_routes": ["Northern US/Canada routes Nov-Mar", "Northern European routes Nov-Mar"],
+      "general_rule": "Most airlines: no cargo transport below -7C / 20F or above 27-30C / 80-85F ground temperature",
+      "planning_impact": "Temperature embargoes can delay pet relocations by months. Critical planning factor for route pages."
+    },
+    "cost_ranges": {
+      "cabin_domestic": "$95-200 USD one way",
+      "cabin_international": "$150-300 USD one way",
+      "cargo_short_haul": "$200-500 USD",
+      "cargo_long_haul": "$500-3000+ USD depending on animal size, route, and requirements",
+      "full_service_relocation": "$2,000-10,000+ USD (includes agent fees, vet work, documentation, transport, quarantine if applicable)",
+      "note": "Costs vary enormously by route, airline, animal size, and regulatory requirements. Australia relocations typically most expensive due to quarantine."
+    },
+    "key_insights_for_content": [
+      "Gulf carriers (Emirates, Etihad) are cargo-only for pets. Content must address this clearly for UAE routes.",
+      "UK carriers (BA, Virgin) are cargo-only. Pet transport requires third-party specialist agents.",
+      "US carriers have fragmented policies: Delta cargo military-only, United cargo suspended, American varies. This creates confusion for consumers.",
+      "Australia/NZ routes: ALL airlines require cargo, plus mandatory quarantine. Longest and most complex process.",
+      "Temperature embargoes are a hidden cost that adds weeks/months to timelines. Major content angle.",
+      "Brachycephalic breeds face severe restrictions across virtually all airlines' cargo operations. High-search-volume topic.",
+      "IATA Container Requirement #1 is the universal standard. Content should explain this clearly.",
+      "EU pet passport system simplifies intra-EU travel significantly compared to long-haul international routes.",
+      "Professional pet transport agents (IPATA members) are effectively mandatory for complex international routes.",
+      "CDC regulations (Aug 2024 update) significantly changed US entry requirements for dogs. High-value content topic."
+    ]
+  }
+}

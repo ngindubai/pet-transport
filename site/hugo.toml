@@ -1,0 +1,94 @@
+# Pet Transport — Hugo Configuration
+# Hugo docs: https://gohugo.io/getting-started/configuration/
+
+baseURL = "https://pettransportglobal.com/"  # Domain pending registration
+languageCode = "en"
+title = "Pet Transport Global | International Pet Transport"
+# No external theme — using custom layouts in /layouts/
+
+# Build settings
+enableRobotsTXT = true
+enableGitInfo = false
+timeout = "120s"
+
+# Taxonomies disabled — we use section-based routing
+[taxonomies]
+
+# Outputs
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  page = ["HTML"]
+
+# Sitemap
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# Pagination
+[pagination]
+  pagerSize = 20
+
+# Permalinks — clean URLs matching our slug structure
+[permalinks]
+  [permalinks.page]
+    routes = "/pet-transport/:sections[1:]/:slug/"
+    countries = "/pet-transport/countries/:slug/"
+    origins = "/pet-transport/origins/:slug/"
+    airlines = "/pet-transport/airlines/:slug/"
+    breeds = "/pet-transport/breeds/:slug/"
+    blog = "/blog/:slug/"
+    resources = "/pet-transport/resources/:slug/"
+  [permalinks.section]
+    routes = "/pet-transport/routes/"
+    countries = "/pet-transport/countries/"
+    origins = "/pet-transport/origins/"
+    airlines = "/pet-transport/airlines/"
+    breeds = "/pet-transport/breeds/"
+    blog = "/blog/"
+    resources = "/pet-transport/resources/"
+
+# Site parameters
+[params]
+  brand = "Pet Transport Global"
+  tagline = "International Pet Transport"
+  description = "Professional international pet transport services. Route-specific guides for shipping dogs and cats between countries."
+  quoteFormEndpoint = ""  # TODO: Cloudflare Worker URL when deployed
+  googleSearchConsole = ""  # TODO: GSC verification code
+  contactEmail = ""  # TODO: Update when confirmed
+
+  # Social (optional, add when ready)
+  # instagram = ""
+  # facebook = ""
+
+  # Design
+  [params.colors]
+    primary = "#1a6b4a"      # Deep green — trust, nature, pets
+    primaryLight = "#2a9d6e"
+    secondary = "#1e3a5f"    # Navy — professionalism
+    secondaryLight = "#2d5a8e"
+    accent = "#e8913a"       # Warm amber — CTA buttons
+    accentHover = "#d47e2a"
+    background = "#ffffff"
+    surface = "#f8f9fa"
+    surfaceAlt = "#eef2f5"
+    text = "#1a1a2e"
+    textMuted = "#5a6677"
+    border = "#dde2e8"
+    success = "#2ecc71"
+    warning = "#f39c12"
+    error = "#e74c3c"
+
+# Markup
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+  [markup.highlight]
+    style = "github"
+
+# Security (Hugo security policy)
+[security]
+  [security.funcs]
+    getenv = ["^HUGO_", "^CI$"]

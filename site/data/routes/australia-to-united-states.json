@@ -1,0 +1,153 @@
+{
+  "origin_name": "Australia",
+  "destination_name": "United States",
+  "route_data": {
+    "origin": {
+      "code": "AU",
+      "country": "Australia",
+      "export_requirements": {
+        "export_permit": "Required for live animal exports from Australia"
+      }
+    },
+    "destination": {
+      "code": "US",
+      "country": "United States",
+      "import_requirements": {
+        "microchip": "Required (Universal scanner detectable). MUST be implanted BEFORE rabies vaccination or vaccine is considered invalid",
+        "rabies_vaccination": "Required",
+        "titre_test": null,
+        "quarantine": "Quarantine may be shortened if dog receives US-licensed rabies vaccine and meets titre requirements during quarantine",
+        "import_permit": "No formal import permit. CDC Dog Import Form is the registration mechanism.",
+        "health_certificate": "No standalone health certificate requirement. The CDC certification forms include health attestation."
+      },
+      "breed_restrictions": []
+    },
+    "airlines": [
+      {
+        "name": "Emirates",
+        "type": "cargo_only",
+        "policy_summary": "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Snub-nosed (brachycephalic) breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
+      },
+      {
+        "name": "British Airways",
+        "type": "cargo_only",
+        "policy_summary": "Cargo transport available"
+      },
+      {
+        "name": "United Airlines",
+        "type": "cabin_only",
+        "policy_summary": "Small pets allowed in cabin"
+      },
+      {
+        "name": "Delta Air Lines",
+        "type": "cabin_and_cargo",
+        "policy_summary": "Small pets allowed in cabin. Cargo transport available"
+      }
+    ],
+    "timeline_steps": [
+      {
+        "step": 1,
+        "action": "Get your pet microchipped (ISO 11784/11785)",
+        "timing": "Before any vaccinations. Must be done first.",
+        "responsible": "Your veterinarian"
+      },
+      {
+        "step": 2,
+        "action": "Rabies vaccination",
+        "timing": "At least 21 days before travel (after microchip)",
+        "responsible": "Your veterinarian"
+      },
+      {
+        "step": 3,
+        "action": "Obtain health certificate / veterinary clearance",
+        "timing": "Within 10 days of travel (check destination-specific requirements)",
+        "responsible": "Official veterinarian"
+      },
+      {
+        "step": 4,
+        "action": "Book IATA-compliant flight and arrange pet cargo/cabin booking",
+        "timing": "2-4 weeks before travel. Confirm pet space availability.",
+        "responsible": "You (or your pet transport agent)"
+      },
+      {
+        "step": 5,
+        "action": "Travel day: arrive early, present all documentation",
+        "timing": "3-4 hours before departure for cargo pets",
+        "responsible": "You + airline cargo desk"
+      }
+    ],
+    "cost_factors": [
+      "Airline cargo/cabin fees (varies by carrier, pet weight, and crate size)",
+      "IATA-compliant travel crate (purchase or hire)",
+      "Veterinary fees (vaccinations, health certificate, microchip)",
+      "Government endorsement/USDA endorsement fee (if applicable)",
+      "Pet transport agent fee (if using a relocation service)"
+    ],
+    "key_warnings": [
+      "Brachycephalic (flat-faced) breeds face cargo restrictions on most airlines. Check breed-specific policies before booking.",
+      "Microchip MUST be implanted before rabies vaccination. Vaccination given before microchip is invalid and the clock restarts.",
+      "Australian airlines may restrict pet cargo during peak summer (December to February) when temperatures exceed safe thresholds."
+    ],
+    "route_complexity": "moderate",
+    "estimated_timeline_weeks": "6-10"
+  },
+  "seo": {
+    "title": "Pet Transport from Australia to United States | Complete Guide",
+    "description": "How to transport your dog or cat from Australia to United States. Import requirements, airline options, costs, and step-by-step process."
+  },
+  "content": {
+    "h1": "Pet Transport from Australia to United States",
+    "overview": "If you're relocating from Australia to United States with a dog or cat, here's what you need to know.\n\nExpect to start preparations 6-10 weeks before your travel date. Airlines serving this route include Emirates, British Airways, United Airlines, and Delta Air Lines.\n\nGetting the paperwork right is the hardest part. Once that's sorted, the flight itself is the easy bit.",
+    "sections": [
+      {
+        "heading": "Key things to know about this route",
+        "body": "Compared to some international routes, Australia to United States is relatively straightforward. That doesn't mean you can leave it to the last minute."
+      },
+      {
+        "heading": "Practical tips for shipping your pet from Australia to United States",
+        "body": "Start the microchip and vaccination process as early as possible. The biggest mistake people make is leaving it too late. Once you miss a deadline, the entire timeline pushes back.\n\nSome airlines on this route (United Airlines, Delta Air Lines) allow small pets in the cabin. Your pet must fit in a carrier under the seat. Weight limits are strict: usually 8-10kg including the carrier.\n\nWatch the calendar. Temperature embargoes mean airlines won't accept pets during extreme heat or cold. If you're planning a summer move, book early and have a backup date.\n\nUse a pet transport agent if you're not confident handling the paperwork yourself. A good agent knows the current rules, has relationships with airline cargo departments, and can troubleshoot problems before they become disasters."
+      },
+      {
+        "heading": "Travel day: Australia to United States",
+        "body": "Arrive at the airport at least 3 hours before departure if your pet is travelling as cargo. You'll need to present all original documents: health certificate, vaccination records, microchip number, and any import permits.\n\nYour pet's crate must be clean, labelled with your contact details and the consignee's details at the destination, and have food and water containers attached. Live animal stickers and orientation arrows are required.\n\nOn arrival in United States, you (or your agent) collect your pet from the cargo terminal. There may be an inspection by veterinary authorities at the airport. Have copies of all paperwork ready."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Does United States require quarantine for pets from Australia?",
+      "answer": "It depends on your specific circumstances. Quarantine may be shortened if dog receives US-licensed rabies vaccine and meets titre requirements during quarantine. Check with the destination authorities or a pet transport specialist for your exact situation."
+    },
+    {
+      "question": "Can my pet fly in the cabin from Australia to United States?",
+      "answer": "Some airlines allow small pets (typically under 8kg with carrier) in the cabin. United Airlines, Delta Air Lines offer cabin options on this route. Larger pets must travel as cargo. Airlines with cargo service include Emirates, British Airways, United Airlines, Delta Air Lines. Availability varies by season and aircraft type, so confirm when booking."
+    },
+    {
+      "question": "How far in advance should I start preparing to move my pet from Australia to United States?",
+      "answer": "Start at least 6-10 weeks before your planned travel date. The process begins with microchipping, then rabies vaccination (with a mandatory waiting period), then any required blood tests, health certificates, and permit applications. Rushing the timeline is the most common reason people hit problems."
+    },
+    {
+      "question": "How much does it cost to transport a dog from Australia to United States?",
+      "answer": "The total cost depends on your dog's size, the airline, and whether you use a transport agent. For a medium-sized dog, expect to pay for: veterinary fees (vaccinations, health certificate, microchip), an IATA-compliant crate, airline cargo fees, government endorsements, and any import permits or quarantine fees at the destination. Using a door-to-door agent adds to the cost but handles the complexity for you."
+    },
+    {
+      "question": "What documents does my pet need to travel from Australia to United States?",
+      "answer": "Your pet will need: proof of ISO microchip, rabies vaccination certificate, official health certificate. The health certificate must be issued by an official veterinarian within 10 days of travel. Some documents need government endorsement. Check every requirement against the current rules, because regulations change and an outdated document can mean your pet doesn't fly."
+    },
+    {
+      "question": "Can I fly my French Bulldog or Pug from Australia to United States?",
+      "answer": "Brachycephalic (flat-faced) breeds face restrictions on most airlines, particularly for cargo transport. These breeds are more vulnerable to breathing difficulties at altitude and in heat. Many airlines impose seasonal embargoes (typically summer months), and some restrict flat-faced breeds from cargo year-round. A few airlines still accept them with additional veterinary clearance. Check the specific airline's current policy before booking."
+    },
+    {
+      "question": "Is it easier to transport a cat from Australia to United States than a dog?",
+      "answer": "Generally, yes. Cats face fewer regulatory hurdles than dogs in most countries. The US has no federal import requirements for cats at all, which makes the process significantly simpler."
+    }
+  ],
+  "links": {
+    "sideways": [],
+    "upward": []
+  },
+  "status": "draft",
+  "version": 1,
+  "updated_at": "2026-04-16"
+}

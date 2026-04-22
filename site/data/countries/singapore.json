@@ -1,0 +1,124 @@
+{
+  "title": "Pet Import Guide: Singapore",
+  "description": "Complete guide to importing your dog or cat to Singapore. Import requirements, quarantine, breed restrictions, and step-by-step process.",
+  "name": "Singapore",
+  "code": "SG",
+  "slug": "singapore",
+  "pet_friendliness": "moderate-strict",
+  "overview": "Importing a pet to Singapore is moderate. Here's what you need to know.",
+  "import_requirements": {
+    "microchip": "Required (ISO 11784/11785). Must be implanted before rabies vaccination",
+    "rabies_vaccination": "Required",
+    "rabies_titre_test": "Required for: Category B and C countries",
+    "import_permit": "Not required",
+    "health_certificate": "Veterinary health certificate. Valid 10 days."
+  },
+  "sections": [
+    {
+      "heading": "Import requirements for Singapore",
+      "body": "**Microchip:** Required (ISO 11784/11785). Must be implanted before rabies vaccination\n\n**Rabies Vaccination:** Required\n\n**Rabies Titre Test:** Required for: Category B and C countries\n\n**Import Permit:** Not required\n\n**Health Certificate:** Veterinary health certificate. Valid 10 days."
+    },
+    {
+      "heading": "Breed restrictions in Singapore",
+      "body": "Governed by: Animals and Birds (Dog Licensing and Control) Rules"
+    },
+    {
+      "heading": "Routes to Singapore",
+      "body": "We have detailed guides for the following routes:\n\n- [Australia to Singapore](/routes/australia-to-singapore/)\n- [United Kingdom to Singapore](/routes/united-kingdom-to-singapore/)"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What vaccinations does my pet need to enter Singapore?",
+      "answer": "At minimum, a rabies vaccination is required. Required Your pet must also be microchipped before vaccination."
+    },
+    {
+      "question": "Is there quarantine in Singapore?",
+      "answer": "Check with Singapore's authorities for current quarantine policy."
+    },
+    {
+      "question": "Which airlines fly pets to Singapore?",
+      "answer": "Multiple airlines serve pet cargo to Singapore. Check our route-specific guides for airline details on your particular origin-destination pair."
+    }
+  ],
+  "airlines": [
+    {
+      "name": "Emirates",
+      "type": "cargo_only"
+    },
+    {
+      "name": "British Airways",
+      "type": "cargo_only"
+    },
+    {
+      "name": "Lufthansa",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "Singapore Airlines",
+      "type": "cargo_only"
+    },
+    {
+      "name": "Qantas",
+      "type": "cargo_only"
+    },
+    {
+      "name": "KLM Royal Dutch Airlines",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "Air France",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "Cathay Pacific",
+      "type": "cargo_only"
+    },
+    {
+      "name": "Etihad Airways",
+      "type": "cargo_only"
+    },
+    {
+      "name": "Turkish Airlines",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "Swiss International Air Lines",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "Korean Air",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "Japan Airlines (JAL)",
+      "type": "cargo_only"
+    },
+    {
+      "name": "Thai Airways",
+      "type": "cargo_only"
+    },
+    {
+      "name": "Garuda Indonesia",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "Philippine Airlines",
+      "type": "cabin_and_cargo"
+    }
+  ],
+  "inbound_routes": [
+    {
+      "slug": "australia-to-singapore",
+      "origin": "Australia",
+      "origin_code": "AU",
+      "complexity": "moderate"
+    },
+    {
+      "slug": "united-kingdom-to-singapore",
+      "origin": "United Kingdom",
+      "origin_code": "GB",
+      "complexity": "moderate"
+    }
+  ]
+}

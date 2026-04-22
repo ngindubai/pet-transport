@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Competitor Analysis: PetRelocation.com | Spider Report</title>
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --surface-2: #1a1a26;
+    --border: #2a2a3a;
+    --text: #e0e0e8;
+    --text-muted: #8888a0;
+    --accent: #6c5ce7;
+    --accent-light: #a388ee;
+    --green: #00b894;
+    --red: #e74c3c;
+    --amber: #fdcb6e;
+    --blue: #74b9ff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    padding: 2rem;
+  }
+  .container { max-width: 1100px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  .header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  .header h1 span { color: var(--accent-light); }
+  .meta-row {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+  }
+  .badge {
+    display: inline-block;
+    padding: 0.2rem 0.7rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .badge-worker { background: var(--accent); color: #fff; }
+  .badge-block { background: var(--surface-2); border: 1px solid var(--border); color: var(--amber); }
+
+  /* Sections */
+  section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  section h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  section h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 1.2rem 0 0.6rem;
+    color: var(--accent-light);
+  }
+  p { margin-bottom: 0.8rem; }
+  ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+  li { margin-bottom: 0.35rem; }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.6rem 0.8rem;
+    border-bottom: 1px solid var(--border);
+  }
+  th {
+    background: var(--surface-2);
+    font-weight: 600;
+    color: var(--accent-light);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  tr:hover { background: var(--surface-2); }
+
+  /* Stat cards */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  .stat-card {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem;
+    text-align: center;
+  }
+  .stat-card .number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-light);
+  }
+  .stat-card .label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 0.3rem;
+  }
+
+  /* Gap highlight */
+  .gap-box {
+    background: rgba(231, 76, 60, 0.08);
+    border: 1px solid rgba(231, 76, 60, 0.25);
+    border-left: 4px solid var(--red);
+    border-radius: 6px;
+    padding: 1.2rem;
+    margin: 1rem 0;
+  }
+  .gap-box h4 {
+    color: var(--red);
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .opp-box {
+    background: rgba(0, 184, 148, 0.08);
+    border: 1px solid rgba(0, 184, 148, 0.25);
+    border-left: 4px solid var(--green);
+    border-radius: 6px;
+    padding: 1.2rem;
+    margin: 1rem 0;
+  }
+  .opp-box h4 {
+    color: var(--green);
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .info-box {
+    background: rgba(116, 185, 255, 0.08);
+    border: 1px solid rgba(116, 185, 255, 0.25);
+    border-left: 4px solid var(--blue);
+    border-radius: 6px;
+    padding: 1.2rem;
+    margin: 1rem 0;
+  }
+  .info-box h4 {
+    color: var(--blue);
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  /* Content depth meter */
+  .depth-meter {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .depth-bar {
+    height: 8px;
+    border-radius: 4px;
+  }
+  .depth-high { background: var(--green); }
+  .depth-med { background: var(--amber); }
+  .depth-low { background: var(--red); }
+
+  code {
+    background: var(--surface-2);
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.85em;
+    color: var(--accent-light);
+  }
+
+  .toc {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .toc h3 {
+    color: var(--text);
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+  }
+  .toc ol { margin: 0 0 0 1.2rem; }
+  .toc li { margin-bottom: 0.3rem; }
+  .toc a {
+    color: var(--accent-light);
+    text-decoration: none;
+  }
+  .toc a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Competitor Analysis: <span>PetRelocation.com</span></h1>
+    <div class="meta-row">
+      <span class="badge badge-worker">Worker: The Spider</span>
+      <span class="badge badge-block">Block 2 / Phase 0</span>
+      <span>Compiled: 15 April 2025</span>
+      <span>Domain: petrelocation.com</span>
+      <span>HQ: Austin, Texas</span>
+    </div>
+  </div>
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc">
+    <h3>Contents</h3>
+    <ol>
+      <li><a href="#s1">Site overview and page count</a></li>
+      <li><a href="#s2">URL architecture and patterns</a></li>
+      <li><a href="#s3">Page types inventory</a></li>
+      <li><a href="#s4">Country page analysis</a></li>
+      <li><a href="#s5">Content depth assessment</a></li>
+      <li><a href="#s6">Service model and conversion funnel</a></li>
+      <li><a href="#s7">Internal linking strategy</a></li>
+      <li><a href="#s8">SEO metadata patterns</a></li>
+      <li><a href="#s9">Content quality observations</a></li>
+      <li><a href="#s10">Critical gap: zero route-level pages</a></li>
+      <li><a href="#s11">Full country coverage list</a></li>
+      <li><a href="#s12">Actionable intelligence for our build</a></li>
+    </ol>
+  </div>
+
+  <!-- S1: OVERVIEW -->
+  <section id="s1">
+    <h2>1. Site Overview and Estimated Page Count</h2>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="number">~65</div>
+        <div class="label">Country pages</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">~12</div>
+        <div class="label">Sub-country pages (dog/cat)</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">~20</div>
+        <div class="label">Cat + Dog topic pages</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">~8</div>
+        <div class="label">Learn / resource pages</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">3+</div>
+        <div class="label">Blog pages (paginated)</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">0</div>
+        <div class="label">Route pages (A to B)</div>
+      </div>
+    </div>
+
+    <p>PetRelocation.com is a service-first site, not a content-farm or SEO play. Estimated total indexable pages: <strong>200-350</strong>, depending on how many blog posts and stories exist behind pagination. The site is clean, fast, and well-built for conversion. It is not built for programmatic SEO or mass content coverage.</p>
+
+    <p>Their business model is managed pet relocation services: door-to-door, quote-based, fully coordinated. The site exists to educate potential customers and capture leads through a "Request a Quote" flow. They are not trying to rank for thousands of long-tail queries. They are trying to rank for high-intent, country-level searches.</p>
+  </section>
+
+  <!-- S2: URL ARCHITECTURE -->
+  <section id="s2">
+    <h2>2. URL Architecture and Patterns</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Page type</th>
+          <th>URL pattern</th>
+          <th>Examples</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Country import guide</td>
+          <td><code>/country/[slug]</code></td>
+          <td>/country/australia, /country/uk, /country/united-arab-emirates</td>
+        </tr>
+        <tr>
+          <td>Sub-country (animal)</td>
+          <td><code>/country/[slug]/[variant]</code></td>
+          <td>/country/australia/australia-dog-transport, /country/uk/uk-cat-transport</td>
+        </tr>
+        <tr>
+          <td>Dog topics</td>
+          <td><code>/dogs/[topic]</code></td>
+          <td>/dogs/puppy-shipping, /dogs/flying-with-snub-nosed-dogs, /dogs/transporting-large-dogs</td>
+        </tr>
+        <tr>
+          <td>Cat topics</td>
+          <td><code>/cats/[topic]</code></td>
+          <td>/cats/international-cat-transport, /cats/shipping-kittens, /cats/in-cabin-cat-travel</td>
+        </tr>
+        <tr>
+          <td>Animals (general)</td>
+          <td><code>/animals/[topic]</code></td>
+          <td>/animals/international-animal-transport, /animals/shipping-animals-by-air</td>
+        </tr>
+        <tr>
+          <td>Learn / resources</td>
+          <td><code>/learn/[topic]</code></td>
+          <td>/learn/how, /learn/general-requirements, /learn/shipping-pets-overseas</td>
+        </tr>
+        <tr>
+          <td>Blog posts</td>
+          <td><code>/blog/post/[slug]</code></td>
+          <td>/blog/post/how-much-does-pet-relocation-cost, /blog/post/booking-british-airways-pet-travel</td>
+        </tr>
+        <tr>
+          <td>Customer stories</td>
+          <td><code>/stories/post/[slug]</code></td>
+          <td>/stories/post/curly-moves-to-scotland, /stories/post/metgot-moves-to-japan</td>
+        </tr>
+        <tr>
+          <td>Main navigation</td>
+          <td><code>/[section]</code></td>
+          <td>/destinations, /learn, /blog, /stories, /about, /contact, /arrange</td>
+        </tr>
+        <tr>
+          <td>Corporate</td>
+          <td><code>/arrange/corporate-relocation-services</code></td>
+          <td>Single page with form</td>
+        </tr>
+        <tr>
+          <td>Route pages (A to B)</td>
+          <td colspan="2" style="color: var(--red); font-weight: 600;">NONE. Zero route-level pages exist anywhere on the site.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="info-box">
+      <h4>Slug inconsistencies observed</h4>
+      <p>Some countries have inconsistent slug patterns: <code>/country/importing-pets-to-usa</code> for USA (not <code>/country/usa</code>), <code>/country/Canada</code> with capital C (while others use lowercase), duplicate New Zealand entries (<code>/country/new-zealand</code> and <code>/country/new_zealand</code>). Hawaii and Guam get their own country-level pages despite being US territories. The "Europe" page acts as a catch-all for smaller EU states (Croatia, Cyprus, Slovakia, Slovenia, Lithuania, Luxembourg).</p>
+    </div>
+  </section>
+
+  <!-- S3: PAGE TYPES -->
+  <section id="s3">
+    <h2>3. Page Types Inventory</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Count (est.)</th>
+          <th>Purpose</th>
+          <th>SEO value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Country import guides</td>
+          <td>~65</td>
+          <td>Destination-specific import regulations, vaccines, documentation, timelines</td>
+          <td>High. Primary organic traffic drivers for "[country] pet import" queries</td>
+        </tr>
+        <tr>
+          <td>Sub-country (dog/cat)</td>
+          <td>~12</td>
+          <td>Dog or cat-specific variant of parent country page. Most are near-duplicates of the parent.</td>
+          <td>Medium. Targets "dog/cat transport to [country]" variants</td>
+        </tr>
+        <tr>
+          <td>Cat topic pages</td>
+          <td>~8</td>
+          <td>International cat transport, kitten shipping, in-cabin, cost, older cats, domestic, relocation, by air</td>
+          <td>Medium. Targets "ship a cat" type queries</td>
+        </tr>
+        <tr>
+          <td>Dog topic pages</td>
+          <td>~7</td>
+          <td>Puppy shipping, snub-nosed breeds, large dogs, older dogs, cost, in-cabin, international, relocation, by air</td>
+          <td>Medium. Targets "ship a dog" type queries</td>
+        </tr>
+        <tr>
+          <td>Animals (general)</td>
+          <td>~3</td>
+          <td>Catch-all for non dog/cat species</td>
+          <td>Low</td>
+        </tr>
+        <tr>
+          <td>Learn / educational</td>
+          <td>~6</td>
+          <td>How it works, general requirements, overseas shipping, by air, crates, cross-country</td>
+          <td>Medium. Top-of-funnel educational content</td>
+        </tr>
+        <tr>
+          <td>Blog posts</td>
+          <td>~30-60+</td>
+          <td>Mix of destination guides (long-form), airline reviews, FAQs, seasonal tips, news</td>
+          <td>Medium-High. Some posts duplicate country pages with blog-style format</td>
+        </tr>
+        <tr>
+          <td>Customer stories</td>
+          <td>~30-50+</td>
+          <td>Testimonial/case study format. Named pets, photos, route details.</td>
+          <td>Low-Medium. Social proof, some long-tail capture</td>
+        </tr>
+        <tr>
+          <td>Core pages</td>
+          <td>~8</td>
+          <td>Home, about, team, careers, contact, arrange, corporate, common-concerns</td>
+          <td>Low. Brand and conversion</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- S4: COUNTRY PAGE ANALYSIS -->
+  <section id="s4">
+    <h2>4. Country Page Analysis</h2>
+
+    <h3>Two distinct content tiers</h3>
+    <p>PetRelocation's country pages fall into two clearly different quality levels. A small number of high-priority markets got a full rewrite in what appears to be late 2025 or early 2026, while the majority remain in an older, thinner format.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Tier 1 (rewritten)</th>
+          <th>Tier 2 (legacy)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Example countries</td>
+          <td>Australia, Cats (main page)</td>
+          <td>UK, UAE, most others</td>
+        </tr>
+        <tr>
+          <td>Word count</td>
+          <td>3,000-4,000+</td>
+          <td>800-1,500</td>
+        </tr>
+        <tr>
+          <td>Structure</td>
+          <td>In-page TOC, requirements-at-a-glance table, subsections per step, timeline, FAQ, team section, stories</td>
+          <td>3 accordion steps (Microchip, Docs, Rules), basic bullet points, pet stories + blog links</td>
+        </tr>
+        <tr>
+          <td>Specificity</td>
+          <td>Exact costs (AUD $1,877), named products (Bravecto Plus), named labs, specific test methods (FAVN/RFFIT), timing windows down to the day</td>
+          <td>General requirements, "consult your relocation coordinator" for details, sometimes outdated references (COVID-19)</td>
+        </tr>
+        <tr>
+          <td>Origin perspective</td>
+          <td>Explicitly US-origin ("USA to Australia")</td>
+          <td>Implicitly US-origin but less clear</td>
+        </tr>
+        <tr>
+          <td>FAQ section</td>
+          <td>Yes, 6+ questions, expandable</td>
+          <td>No, or single link to generic /common-concerns</td>
+        </tr>
+        <tr>
+          <td>Schema markup</td>
+          <td>Likely FAQPage (accordion UI)</td>
+          <td>Minimal or none</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="gap-box">
+      <h4>Critical weakness: US-only origin perspective</h4>
+      <p>Every single country page is written from the perspective of someone moving a pet FROM the United States. The Australia page explicitly says "This guide covers every required step for US-based pet owners." The UAE page references APHIS Form 7001 and USDA endorsements. If you are moving a pet from the UK to Australia, or from Singapore to the UAE, this content does not apply. They have zero content for non-US origins.</p>
+    </div>
+
+    <h3>Sub-country pages: near-duplicates</h3>
+    <p>The sub-country pages (e.g., /country/australia/australia-dog-transport) appear to serve the same content as the parent country page. The Australia dog transport page links to anchor sections (#section-1 through #section-11) on the parent /country/australia page. These are essentially thin redirect pages targeting "[country] dog transport" keyword variants. Limited additional value over the parent.</p>
+
+    <p>Countries with sub-pages: Australia (dog + cat), UK (dog + cat), South Africa (dog + cat), Switzerland (dog + cat), Hong Kong (dog + cat), UAE (dog + cat), New Zealand (dog + cat). Roughly 7 countries x 2 = 14 sub-pages.</p>
+  </section>
+
+  <!-- S5: CONTENT DEPTH -->
+  <section id="s5">
+    <h2>5. Content Depth Assessment</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Page</th>
+          <th>Est. words</th>
+          <th>Depth</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>/country/australia</td>
+          <td>4,000+</td>
+          <td><span class="depth-meter"><span class="depth-bar depth-high" style="width:120px;"></span> Excellent</span></td>
+          <td>Best page on the site. Specific costs, product names, step-by-step timeline, common mistakes section, FAQ. This is what their entire site should look like.</td>
+        </tr>
+        <tr>
+          <td>/cats (main page)</td>
+          <td>2,500+</td>
+          <td><span class="depth-meter"><span class="depth-bar depth-high" style="width:100px;"></span> Strong</span></td>
+          <td>Good structure. Domestic vs international sections, destination requirement summaries, USDA process explained, tier breakdowns. Clearly rewritten recently.</td>
+        </tr>
+        <tr>
+          <td>/country/uk</td>
+          <td>1,200</td>
+          <td><span class="depth-meter"><span class="depth-bar depth-med" style="width:60px;"></span> Moderate</span></td>
+          <td>Older format. 3-step accordion. Mentions 5-day rule and banned breeds but lacks specifics. Still references "seamless" moving. No FAQ section. No costs.</td>
+        </tr>
+        <tr>
+          <td>/country/united-arab-emirates</td>
+          <td>1,000</td>
+          <td><span class="depth-meter"><span class="depth-bar depth-med" style="width:50px;"></span> Moderate</span></td>
+          <td>Older format. Has regulations section but it reads like a checklist, not a guide. Still mentions COVID-19 restrictions. No costs, no timeline.</td>
+        </tr>
+        <tr>
+          <td>/learn/general-requirements</td>
+          <td>400</td>
+          <td><span class="depth-meter"><span class="depth-bar depth-low" style="width:30px;"></span> Thin</span></td>
+          <td>Numbered list of 5 generic requirements. "Best practices" section is promotional. Low information density.</td>
+        </tr>
+        <tr>
+          <td>/learn/shipping-pets-by-air</td>
+          <td>600</td>
+          <td><span class="depth-meter"><span class="depth-bar depth-low" style="width:35px;"></span> Thin</span></td>
+          <td>Cost factors listed but no actual numbers. "It depends" without giving ranges. Reads as lead-gen content.</td>
+        </tr>
+        <tr>
+          <td>/learn/how (process page)</td>
+          <td>300</td>
+          <td><span class="depth-meter"><span class="depth-bar depth-low" style="width:20px;"></span> Very thin</span></td>
+          <td>6-step process graphic with one paragraph each. Pure marketing, no substantive detail.</td>
+        </tr>
+        <tr>
+          <td>/dogs (main page)</td>
+          <td>300</td>
+          <td><span class="depth-meter"><span class="depth-bar depth-low" style="width:20px;"></span> Very thin</span></td>
+          <td>Intro paragraph + link hub to sub-pages. Little standalone value.</td>
+        </tr>
+        <tr>
+          <td>/arrange/corporate</td>
+          <td>50</td>
+          <td><span class="depth-meter"><span class="depth-bar depth-low" style="width:10px;"></span> Stub</span></td>
+          <td>Just a form. No content about corporate relocation services, pricing, case studies.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="info-box">
+      <h4>Depth pattern</h4>
+      <p>The site is clearly in the middle of a content upgrade. Australia and Cats got the treatment. Most other country pages are still in the legacy 3-accordion format with 800-1,200 words. If they continue upgrading at this pace, they will have strong single-country content within 6-12 months. But the structural gap (no route pages) won't close without an architectural change.</p>
+    </div>
+  </section>
+
+  <!-- S6: SERVICE MODEL -->
+  <section id="s6">
+    <h2>6. Service Model and Conversion Funnel</h2>
+
+    <h3>Service tiers (observed on Australia and Cats pages)</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Tier</th>
+          <th>What it covers</th>
+          <th>Likely price range</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Complete Support</td>
+          <td>Full door-to-door coordination: vet scheduling, health certificates, USDA endorsements, airline cargo booking, ground transport, customs clearance, quarantine booking, post-quarantine delivery</td>
+          <td>$3,000-$10,000+ (based on industry norms, they don't publish prices)</td>
+        </tr>
+        <tr>
+          <td>Vet Paperwork Support</td>
+          <td>Documentation chain only: health certificate guidance, endorsement logistics, import permits. Client handles travel.</td>
+          <td>$500-$2,000 (estimated)</td>
+        </tr>
+        <tr>
+          <td>Consultation</td>
+          <td>One-time session: timeline mapping, eligibility confirmation, starting point identification</td>
+          <td>$100-$300 (estimated)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Conversion funnel</h3>
+    <ol>
+      <li><strong>Entry:</strong> Organic search ("pet transport to [country]") or direct/referral</li>
+      <li><strong>Education:</strong> Country page or blog post. Every page has "Need Our Support?" CTA above the fold and "Get a Quote" in nav</li>
+      <li><strong>Capture:</strong> /arrange form. Also /arrange/corporate-relocation-services for B2B</li>
+      <li><strong>Trust signals:</strong> Customer stories section, team photos, "coordinated thousands of moves to Australia", named team members shown on country pages</li>
+      <li><strong>No self-serve:</strong> You cannot get a price without talking to them. Entire model is quote-based. The form collects origin, destination, pet details, timeline.</li>
+    </ol>
+
+    <div class="info-box">
+      <h4>Implications for our build</h4>
+      <p>Their model is high-touch, high-price, quote-based. They are NOT competing on content volume or programmatic SEO. Our 10,000+ page route strategy occupies a completely different market position: we compete on information breadth and search coverage, they compete on service delivery and trust. These are complementary, not directly competing approaches, unless we also add a service layer later.</p>
+    </div>
+  </section>
+
+  <!-- S7: INTERNAL LINKING -->
+  <section id="s7">
+    <h2>7. Internal Linking Strategy</h2>
+
+    <h3>Link architecture observed</h3>
+    <ul>
+      <li><strong>Global nav:</strong> Destinations (hub), Learn (drops to /learn/how), Blog, Stories, About, Contact. "Get a Quote" as persistent CTA button.</li>
+      <li><strong>Country page to blog:</strong> Country pages link to related blog posts at the bottom ("More Blog Posts from [Country]"). This is filtered by destination tag.</li>
+      <li><strong>Country page to stories:</strong> Same pattern, filtered stories for that destination.</li>
+      <li><strong>Cat/Dog pages to country pages:</strong> "Explore Cat/Dog Import Requirements by Country" section. Manual internal links to top countries.</li>
+      <li><strong>Blog to country pages:</strong> Blog posts link to relevant country pages when mentioning a destination.</li>
+      <li><strong>Sub-country to parent:</strong> Anchor links pointing to sections on the parent country page.</li>
+      <li><strong>Cross-country linking:</strong> Minimal. Australia page does not link to UK page. No "related destinations" pattern.</li>
+      <li><strong>Footer:</strong> Standard nav links. No sitemap-style deep footer.</li>
+    </ul>
+
+    <div class="gap-box">
+      <h4>Weak cross-linking</h4>
+      <p>No connection graph between countries. If someone reads about moving a pet to Australia, they are never shown "Also moving from Australia? See our [country] guide." No route-based linking at all. No airline pages that cross-link to applicable countries. No breed pages that cross-link to countries with breed bans. The link graph is shallow: hub (destinations) to spokes (country pages), with blog as a parallel column. Our 4-way link graph (route / country / airline / breed) will be structurally different.</p>
+    </div>
+  </section>
+
+  <!-- S8: SEO METADATA PATTERNS -->
+  <section id="s8">
+    <h2>8. SEO Metadata Patterns</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Element</th>
+          <th>Pattern observed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Title format (country pages)</td>
+          <td>"BRINGING PETS TO: [COUNTRY]" or "[Country] Pet Transport" or variant. Inconsistent across pages.</td>
+        </tr>
+        <tr>
+          <td>Title format (cats)</td>
+          <td>"Cat Transport Service" (generic)</td>
+        </tr>
+        <tr>
+          <td>Title format (dogs)</td>
+          <td>"Dog Transport Services" (generic)</td>
+        </tr>
+        <tr>
+          <td>Title format (blog)</td>
+          <td>Descriptive: "Pet Import Requirements: Australia (2026) | Dogs & Cats"</td>
+        </tr>
+        <tr>
+          <td>H1 usage</td>
+          <td>Consistent. One H1 per page matching the title pattern.</td>
+        </tr>
+        <tr>
+          <td>H2/H3 structure</td>
+          <td>Tier 1 pages: proper H2 > H3 hierarchy. Tier 2 pages: flat, some skipping.</td>
+        </tr>
+        <tr>
+          <td>Structured data</td>
+          <td>FAQ accordion on Tier 1 pages (likely FAQPage schema). No HowTo schema observed. No Service schema observed.</td>
+        </tr>
+        <tr>
+          <td>Image alt text</td>
+          <td>Descriptive but generic: "Australia", "The United Kingdom". Country flag/icon images.</td>
+        </tr>
+        <tr>
+          <td>Canonical</td>
+          <td>Standard self-referencing (assumed, not explicitly verified via source code).</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="info-box">
+      <h4>SEO weakness: title inconsistency</h4>
+      <p>Country page titles vary between "BRINGING PETS TO: AUSTRALIA", "United Arab Emirates", "Ukraine Pet Transport", etc. No consistent formula. Some titles include the year ("Australia (2026)"), most don't. Blog posts sometimes duplicate country page intent ("Pet Import Requirements: Australia" is both a blog post title AND the Australia country page angle). Competing with themselves.</p>
+    </div>
+  </section>
+
+  <!-- S9: CONTENT QUALITY -->
+  <section id="s9">
+    <h2>9. Content Quality Observations</h2>
+
+    <h3>Strengths (things they do well)</h3>
+    <ul>
+      <li><strong>Australia page is genuinely excellent.</strong> Step-sequence warnings, specific product names that fail compliance, exact costs in AUD, common mistakes that reset timelines. This is the kind of content that earns links and trust. Someone went deep on this.</li>
+      <li><strong>Cats main page is well-structured.</strong> Separates domestic vs international, gives destination-specific summaries, explains USDA process, differentiates service tiers clearly.</li>
+      <li><strong>Customer stories with named pets and photos.</strong> Real social proof. Filtered by destination and pet type. This is effective trust-building.</li>
+      <li><strong>Tone is warm but not sycophantic.</strong> Professional, straightforward, occasionally direct ("This is the step that most US families are not told about clearly enough").</li>
+      <li><strong>Blog covers useful niche topics.</strong> Booking British Airways pet travel, moving pets to China, in-cabin eligibility. Answering real questions people ask.</li>
+    </ul>
+
+    <h3>Weaknesses (things we can exploit)</h3>
+    <ul>
+      <li><strong>Most country pages are thin.</strong> Outside of Australia and the Cats page, country pages are 800-1,200 words of generic requirements with "contact us for details" as the answer to anything specific.</li>
+      <li><strong>Still mentions COVID-19.</strong> UAE page still references "ongoing COVID-19 reality" and "additional restrictions and regulations." Outdated content signals to Google that the page is stale.</li>
+      <li><strong>Some AI-pattern language.</strong> UK page uses "seamless", "crucial", "comprehensive" in its intro paragraph. Cats page uses "comprehensive guide" in sub-page titles. Not pervasive, but present.</li>
+      <li><strong>No price transparency.</strong> The "How Much Does Pet Relocation Cost?" blog post refused to load (403), suggesting they either paywall this or are very protective of pricing info. Their /learn/shipping-pets-by-air page lists cost factors but gives zero numbers.</li>
+      <li><strong>No airline-specific pages.</strong> Blog posts mention British Airways and Emirates by name, but there are no dedicated airline guide pages. Our airline guide section will fill this.</li>
+      <li><strong>No breed-specific pages.</strong> They mention banned breeds on some country pages but have no standalone breed travel guides. Our breed guide section will fill this.</li>
+      <li><strong>Corporate relocation is a stub.</strong> Just a form. No case studies, no detail about corporate programs, no pricing tiers. If we build corporate content, we win this segment immediately.</li>
+    </ul>
+  </section>
+
+  <!-- S10: THE GAP -->
+  <section id="s10">
+    <h2>10. The Critical Gap: Zero Route-Level Pages</h2>
+
+    <div class="gap-box">
+      <h4>This is the entire play.</h4>
+      <p>PetRelocation.com has zero pages targeting "pet transport from [Country A] to [Country B]". Every country page is destination-only, written from a US-origin perspective. If you search for "pet transport from UK to Australia", "move dog from Dubai to Singapore", or "ship cat from Germany to USA", PetRelocation has no page that directly answers that query.</p>
+    </div>
+
+    <h3>What they have vs what they don't</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>They have</th>
+          <th>They don't have</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>/country/australia (import guide, US origin assumed)</td>
+          <td>/pet-transport/uk/to/australia/ (UK-specific export + AU import combined)</td>
+        </tr>
+        <tr>
+          <td>/country/uk (import guide, US origin assumed)</td>
+          <td>/pet-transport/uae/to/uk/ (UAE export + UK import combined)</td>
+        </tr>
+        <tr>
+          <td>/country/united-arab-emirates (import guide)</td>
+          <td>/pet-transport/usa/to/uae/ (even though this is their most common corridor)</td>
+        </tr>
+        <tr>
+          <td>Blog post: "Moving Pets to China"</td>
+          <td>/pet-transport/japan/to/china/, /pet-transport/uk/to/china/, etc.</td>
+        </tr>
+        <tr>
+          <td>/cats (general cat transport)</td>
+          <td>/pet-transport/australia/to/uk/cats/ (route + animal type)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Why this gap matters</h3>
+    <ol>
+      <li><strong>Route queries are fundamentally different from destination queries.</strong> "Pet import requirements Australia" is one question. "How to move a dog from Germany to Australia" is a different question with different answers (German export requirements + Australian import requirements + airline routing + transit country rules).</li>
+      <li><strong>Route queries have strong commercial intent.</strong> Someone searching "pet transport from UK to Dubai" has already decided to move. They need the specific, combined regulatory picture for that exact corridor.</li>
+      <li><strong>Every route page is genuinely unique.</strong> UK to Australia has different export requirements than USA to Australia. The import side is the same, but the export side, airline routing, transit rules, and timeline all differ per origin. This is not thin content if done right.</li>
+      <li><strong>The combinatorial math is in our favour.</strong> 10 P1 countries x 9 destinations = 90 route pages before we even touch P2. PetRelocation would need to restructure their entire site to compete.</li>
+    </ol>
+
+    <div class="opp-box">
+      <h4>Opportunity size</h4>
+      <p>P1 alone (90 routes) captures the highest-traffic corridors with zero direct competition from PetRelocation. P2 (500 routes) expands into secondary corridors where no one has specific content. By P3 (2,400 routes), we own the long tail of international pet transport search entirely. PetRelocation cannot pivot to this model without abandoning their current architecture.</p>
+    </div>
+  </section>
+
+  <!-- S11: COUNTRY COVERAGE LIST -->
+  <section id="s11">
+    <h2>11. Full Country Coverage List (from /destinations)</h2>
+    <p>Countries with dedicated /country/ pages on PetRelocation.com, alphabetically:</p>
+
+    <div style="column-count: 3; column-gap: 2rem; font-size: 0.88rem; margin: 1rem 0;">
+      <p>Argentina<br>
+      Australia *<br>
+      Austria<br>
+      Bahrain<br>
+      Bangladesh<br>
+      Belgium<br>
+      Brazil<br>
+      Brunei<br>
+      Canada<br>
+      Chile<br>
+      China<br>
+      Colombia<br>
+      Costa Rica<br>
+      Czech Republic<br>
+      Denmark<br>
+      Dominican Republic<br>
+      Ecuador<br>
+      Egypt<br>
+      Estonia<br>
+      Europe (catch-all)<br>
+      Fiji<br>
+      Finland</p>
+
+      <p>France<br>
+      Germany<br>
+      Greece<br>
+      Guam<br>
+      Hawaii (US territory)<br>
+      Hong Kong *<br>
+      Hungary<br>
+      India<br>
+      Indonesia<br>
+      Ireland<br>
+      Israel<br>
+      Italy<br>
+      Japan<br>
+      Kuwait<br>
+      Latvia<br>
+      Malaysia<br>
+      Mexico<br>
+      Netherlands<br>
+      New Zealand *<br>
+      Norway<br>
+      Pakistan<br>
+      Peru</p>
+
+      <p>Philippines<br>
+      Poland<br>
+      Portugal<br>
+      Puerto Rico<br>
+      Qatar<br>
+      Romania<br>
+      Russia<br>
+      Saudi Arabia<br>
+      Singapore<br>
+      South Africa *<br>
+      South Korea<br>
+      Spain<br>
+      Sri Lanka<br>
+      Sweden<br>
+      Switzerland *<br>
+      Taiwan<br>
+      Thailand<br>
+      Turkey<br>
+      UAE *<br>
+      Ukraine<br>
+      United Kingdom *<br>
+      United States<br>
+      Vietnam</p>
+    </div>
+    <p style="font-size: 0.82rem; color: var(--text-muted);">* = has sub-country pages (dog transport + cat transport variants). Total: ~65 countries + 1 regional catch-all (Europe).</p>
+
+    <h3>Notable absences from their country list</h3>
+    <p>Countries in our P1/P2 priority tiers that PetRelocation does NOT have pages for:</p>
+    <ul>
+      <li>None of our P1 10 are missing (UK, USA, UAE, Australia, Canada, Germany, France, Singapore, Hong Kong, South Africa all have pages)</li>
+      <li>Some P2 countries may be absent. Their list skips: Cambodia, Kenya, Morocco, Nigeria, Myanmar, Panama, Tanzania, Ghana, Oman, and most smaller African/Central Asian nations</li>
+    </ul>
+  </section>
+
+  <!-- S12: ACTIONABLE INTELLIGENCE -->
+  <section id="s12">
+    <h2>12. Actionable Intelligence for Our Build</h2>
+
+    <div class="opp-box">
+      <h4>1. Route pages are uncontested territory</h4>
+      <p>Build route pages first. Every single one of our 90 P1 route pages targets a query that PetRelocation has zero dedicated content for. This is the primary reason our strategy works.</p>
+    </div>
+
+    <div class="opp-box">
+      <h4>2. Dual-country content is our differentiator</h4>
+      <p>PetRelocation writes destination-only guides from a US perspective. Our route pages combine export regulations from the origin country AND import regulations from the destination country into a single, route-specific guide. This is genuinely more useful for the searcher and Google knows it.</p>
+    </div>
+
+    <div class="opp-box">
+      <h4>3. Non-US origins are wide open</h4>
+      <p>If you live in the UK, UAE, or Singapore and want to move a pet, PetRelocation's content barely applies to you. Their health certificates, USDA endorsements, and APHIS forms are irrelevant. Our route pages will serve these users properly for the first time.</p>
+    </div>
+
+    <div class="opp-box">
+      <h4>4. Airline and breed guides are missing everywhere</h4>
+      <p>No dedicated airline pet policy pages. No breed travel guides. PetRelocation mentions breeds and airlines within country pages and blog posts, but never gives them standalone pages. Our airline guides (40-60 pages) and breed guides (50-80 pages) create two entirely new content categories with cross-linking potential.</p>
+    </div>
+
+    <div class="info-box">
+      <h4>5. Learn from their Australia page</h4>
+      <p>Their Australia page sets the content depth bar. We should match or exceed this level of specificity on every route page: exact costs, specific product names, named test methods, timeline with day-level precision, common mistakes section. If our route pages are thinner than their best country page, we lose on quality despite winning on coverage.</p>
+    </div>
+
+    <div class="info-box">
+      <h4>6. Steal their content structure ideas</h4>
+      <p>Things worth adapting for our route page template: "Requirements at a Glance" summary table (convert to dual-country format), "Common mistakes that reset the timeline" (extremely high-value content), In-page table of contents, FAQ section with expandable answers. Things to skip: "Our Team" sections (service-oriented, doesn't apply to info site), "How PetRelocation Can Help" (their conversion section).</p>
+    </div>
+
+    <div class="info-box">
+      <h4>7. Their customer stories are a content advantage we cannot replicate at launch</h4>
+      <p>Named pets, photos, real routes. This builds trust. We will need an alternative trust mechanism: either government source citations, user-submitted stories later, or sheer depth of regulatory detail as a proxy for authority.</p>
+    </div>
+
+    <div class="gap-box">
+      <h4>8. Watch for their content upgrades</h4>
+      <p>They are clearly in the middle of upgrading country pages (Australia got the treatment, others haven't yet). If they add route-level content in the coming months, our competitive window narrows. Speed matters. Getting P1 routes live first is a strategic priority, not just an operational one.</p>
+    </div>
+  </section>
+
+  <footer>
+    Spider Report v1.0 | Block 2 deliverable | Pet Transport Build Phase 0
+  </footer>
+
+</div>
+</body>
+</html>

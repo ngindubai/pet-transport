@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Params.brand }}{{ end }}</title>
+
+    {{/* SEO meta */}}
+    {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    {{/* Open Graph */}}
+    <meta property="og:title" content="{{ .Title }}">
+    <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+    {{ with .Params.og_image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+
+    {{/* Schema.org */}}
+    {{ block "schema" . }}{{ end }}
+
+    {{/* Fonts */}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,600,700%7CMontserrat:400,500,600,700&display=swap" rel="stylesheet">
+
+    {{/* Flaticon + FontAwesome */}}
+    <link href="/fonts/flaticon/flaticon.css" rel="stylesheet">
+    <link href="/fonts/fontawesome/fontawesome-all.min.css" rel="stylesheet">
+
+    {{/* Bootstrap 5.3 */}}
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    {{/* Template CSS */}}
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/plugins.css" rel="stylesheet">
+
+    {{/* Color scheme */}}
+    <link href="/styles/maincolors.css" rel="stylesheet">
+
+    {{/* Site override CSS */}}
+    {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+
+    {{/* LayerSlider CSS (homepage only) */}}
+    {{ block "extra_css" . }}{{ end }}
+
+    {{/* Google Search Console verification */}}
+    {{ with .Site.Params.googleSearchConsole }}
+    <meta name="google-site-verification" content="{{ . }}">
+    {{ end }}
+
+    {{/* Cloudflare Web Analytics */}}
+    {{ if not hugo.IsServer }}
+    {{/* TODO: Add Cloudflare analytics beacon when site ID available */}}
+    {{ end }}
+</head>
+<body id="top">
+    {{ partial "header.html" . }}
+
+    <main id="main-content">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    {{ partial "footer.html" . }}
+
+    {{/* Core JS */}}
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/custom.js"></script>
+    <script src="/js/plugins.js"></script>
+    <script src="/js/prefixfree.min.js"></script>
+    <script src="/js/counter.js"></script>
+
+    {{/* Extra JS (LayerSlider etc.) */}}
+    {{ block "extra_js" . }}{{ end }}
+
+    {{/* Site-specific JS */}}
+    {{ $js := resources.Get "js/main.js" | minify | fingerprint }}
+    <script src="{{ $js.RelPermalink }}" defer></script>
+</body>
+</html>

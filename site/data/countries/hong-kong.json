@@ -1,0 +1,95 @@
+{
+  "title": "Pet Import Guide: Hong Kong",
+  "description": "Complete guide to importing your dog or cat to Hong Kong. Import requirements, quarantine, breed restrictions, and step-by-step process.",
+  "name": "Hong Kong",
+  "code": "HK",
+  "slug": "hong-kong",
+  "pet_friendliness": "moderate",
+  "overview": "Importing a pet to Hong Kong is moderately strict. Here's what you need to know.",
+  "import_requirements": {
+    "microchip": "Required (ISO 11784/11785). Must be implanted before rabies vaccination",
+    "rabies_vaccination": "Required",
+    "rabies_titre_test": "Required for: Pets from Group 2 and Group 3 countries",
+    "import_permit": "Required. Must be obtained BEFORE travel. Permit specifies conditions and quarantine requirements.",
+    "health_certificate": "Official veterinary health certificate. Valid 10 days."
+  },
+  "sections": [
+    {
+      "heading": "Import requirements for Hong Kong",
+      "body": "**Microchip:** Required (ISO 11784/11785). Must be implanted before rabies vaccination\n\n**Rabies Vaccination:** Required\n\n**Rabies Titre Test:** Required for: Pets from Group 2 and Group 3 countries\n\n**Import Permit:** Required. Must be obtained BEFORE travel. Permit specifies conditions and quarantine requirements.\n\n**Health Certificate:** Official veterinary health certificate. Valid 10 days."
+    },
+    {
+      "heading": "Breed restrictions in Hong Kong",
+      "body": "Governed by: Dangerous Dogs Regulation (Cap. 167D)"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What vaccinations does my pet need to enter Hong Kong?",
+      "answer": "At minimum, a rabies vaccination is required. Required Your pet must also be microchipped before vaccination."
+    },
+    {
+      "question": "Is there quarantine in Hong Kong?",
+      "answer": "Check with Hong Kong's authorities for current quarantine policy."
+    },
+    {
+      "question": "Which airlines fly pets to Hong Kong?",
+      "answer": "Multiple airlines serve pet cargo to Hong Kong. Check our route-specific guides for airline details on your particular origin-destination pair."
+    }
+  ],
+  "airlines": [
+    {
+      "name": "Emirates",
+      "type": "cargo_only"
+    },
+    {
+      "name": "British Airways",
+      "type": "cargo_only"
+    },
+    {
+      "name": "Lufthansa",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "Singapore Airlines",
+      "type": "cargo_only"
+    },
+    {
+      "name": "Qantas",
+      "type": "cargo_only"
+    },
+    {
+      "name": "KLM Royal Dutch Airlines",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "Air France",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "Cathay Pacific",
+      "type": "cargo_only"
+    },
+    {
+      "name": "Swiss International Air Lines",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "Virgin Atlantic",
+      "type": "cargo_only"
+    },
+    {
+      "name": "Japan Airlines (JAL)",
+      "type": "cargo_only"
+    },
+    {
+      "name": "Thai Airways",
+      "type": "cargo_only"
+    },
+    {
+      "name": "Philippine Airlines",
+      "type": "cabin_and_cargo"
+    }
+  ],
+  "inbound_routes": []
+}

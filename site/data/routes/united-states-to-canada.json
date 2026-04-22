@@ -1,0 +1,139 @@
+{
+  "origin_name": "United States",
+  "destination_name": "Canada",
+  "route_data": {
+    "origin": {
+      "code": "US",
+      "country": "United States",
+      "export_requirements": {
+        "export_permit": "No formal export permit. USDA endorsement of health certificate serves as export documentation."
+      }
+    },
+    "destination": {
+      "code": "CA",
+      "country": "Canada",
+      "import_requirements": {
+        "microchip": "Required (ISO 11784/11785 recommended)",
+        "rabies_vaccination": "Required",
+        "titre_test": null,
+        "quarantine": "No routine quarantine",
+        "import_permit": "Personal pet imports (1-2 animals) do not require an import permit. Commercial imports (for sale, breeding, adoption, fostering, or more than 2 dogs) require CFIA import permit.",
+        "health_certificate": "Required"
+      },
+      "breed_restrictions": []
+    },
+    "airlines": [
+      {
+        "name": "United Airlines",
+        "type": "cabin_only",
+        "policy_summary": "Small pets allowed in cabin"
+      }
+    ],
+    "timeline_steps": [
+      {
+        "step": 1,
+        "action": "Get your pet microchipped (ISO 11784/11785)",
+        "timing": "Before any vaccinations. Must be done first.",
+        "responsible": "Your veterinarian"
+      },
+      {
+        "step": 2,
+        "action": "Rabies vaccination",
+        "timing": "At least 21 days before travel (after microchip)",
+        "responsible": "Your veterinarian"
+      },
+      {
+        "step": 3,
+        "action": "Obtain health certificate / veterinary clearance",
+        "timing": "Within 10 days of travel (check destination-specific requirements)",
+        "responsible": "Official veterinarian"
+      },
+      {
+        "step": 4,
+        "action": "Government endorsement of health certificate (United States)",
+        "timing": "After health certificate issued, before travel",
+        "responsible": "Government veterinary authority"
+      },
+      {
+        "step": 5,
+        "action": "Book IATA-compliant flight and arrange pet cargo/cabin booking",
+        "timing": "2-4 weeks before travel. Confirm pet space availability.",
+        "responsible": "You (or your pet transport agent)"
+      },
+      {
+        "step": 6,
+        "action": "Travel day: arrive early, present all documentation",
+        "timing": "3-4 hours before departure for cargo pets",
+        "responsible": "You + airline cargo desk"
+      }
+    ],
+    "cost_factors": [
+      "Airline cargo/cabin fees (varies by carrier, pet weight, and crate size)",
+      "IATA-compliant travel crate (purchase or hire)",
+      "Veterinary fees (vaccinations, health certificate, microchip)",
+      "Government endorsement/USDA endorsement fee (if applicable)",
+      "Pet transport agent fee (if using a relocation service)"
+    ],
+    "key_warnings": [
+      "Brachycephalic (flat-faced) breeds face cargo restrictions on most airlines. Check breed-specific policies before booking.",
+      "Microchip MUST be implanted before rabies vaccination. Vaccination given before microchip is invalid and the clock restarts."
+    ],
+    "route_complexity": "moderate",
+    "estimated_timeline_weeks": "6-10"
+  },
+  "seo": {
+    "title": "Pet Transport from United States to Canada | Complete Guide",
+    "description": "How to transport your dog or cat from United States to Canada. Import requirements, airline options, costs, and step-by-step process."
+  },
+  "content": {
+    "h1": "Pet Transport from United States to Canada",
+    "overview": "Shipping a cat between United States and Canada is one of the moderately complex international pet transport routes.\n\nExpect to start preparations 6-10 weeks before your travel date. Airlines serving this route include United Airlines.\n\nThis guide covers everything: Canada's import rules, what you need from United States's side, airlines, costs, and timelines.",
+    "sections": [
+      {
+        "heading": "Why United States to Canada pet transport needs planning",
+        "body": "Compared to some international routes, United States to Canada is relatively straightforward. That doesn't mean you can leave it to the last minute."
+      },
+      {
+        "heading": "Advice from experience: United States to Canada",
+        "body": "Start the microchip and vaccination process as early as possible. The biggest mistake people make is leaving it too late. Once you miss a deadline, the entire timeline pushes back.\n\nSome airlines on this route (United Airlines) allow small pets in the cabin. Your pet must fit in a carrier under the seat. Weight limits are strict: usually 8-10kg including the carrier.\n\nUse a pet transport agent if you're not confident handling the paperwork yourself. A good agent knows the current rules, has relationships with airline cargo departments, and can troubleshoot problems before they become disasters."
+      },
+      {
+        "heading": "The day your pet flies",
+        "body": "Arrive at the airport at least 3 hours before departure if your pet is travelling as cargo. You'll need to present all original documents: health certificate, vaccination records, microchip number, and any import permits.\n\nYour pet's crate must be clean, labelled with your contact details and the consignee's details at the destination, and have food and water containers attached. Live animal stickers and orientation arrows are required.\n\nOn arrival in Canada, you (or your agent) collect your pet from the cargo terminal. There may be an inspection by veterinary authorities at the airport. Have copies of all paperwork ready."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Will my pet need to go into quarantine when arriving in Canada?",
+      "answer": "No, not if all your paperwork is correct. Canada does not require routine quarantine for pets with valid documentation. However, if anything is missing or incorrect, your pet could face penalty quarantine at your expense. Getting the paperwork right is not optional."
+    },
+    {
+      "question": "Can my pet fly in the cabin from United States to Canada?",
+      "answer": "Some airlines allow small pets (typically under 8kg with carrier) in the cabin. United Airlines offer cabin options on this route. Larger pets must travel as cargo. Airlines with cargo service include United Airlines. Availability varies by season and aircraft type, so confirm when booking."
+    },
+    {
+      "question": "How far in advance should I start preparing to move my pet from United States to Canada?",
+      "answer": "Start at least 6-10 weeks before your planned travel date. The process begins with microchipping, then rabies vaccination (with a mandatory waiting period), then any required blood tests, health certificates, and permit applications. Rushing the timeline is the most common reason people hit problems."
+    },
+    {
+      "question": "How much does it cost to transport a dog from United States to Canada?",
+      "answer": "The total cost depends on your dog's size, the airline, and whether you use a transport agent. For a medium-sized dog, expect to pay for: veterinary fees (vaccinations, health certificate, microchip), an IATA-compliant crate, airline cargo fees, government endorsements, and any import permits or quarantine fees at the destination. Using a door-to-door agent adds to the cost but handles the complexity for you."
+    },
+    {
+      "question": "What documents does my pet need to travel from United States to Canada?",
+      "answer": "Your pet will need: proof of ISO microchip, rabies vaccination certificate, official health certificate. The health certificate must be issued by an official veterinarian within 10 days of travel. Some documents need government endorsement. Check every requirement against the current rules, because regulations change and an outdated document can mean your pet doesn't fly."
+    },
+    {
+      "question": "Can I fly my French Bulldog or Pug from United States to Canada?",
+      "answer": "Brachycephalic (flat-faced) breeds face restrictions on most airlines, particularly for cargo transport. These breeds are more vulnerable to breathing difficulties at altitude and in heat. Many airlines impose seasonal embargoes (typically summer months), and some restrict flat-faced breeds from cargo year-round. A few airlines still accept them with additional veterinary clearance. Check the specific airline's current policy before booking."
+    }
+  ],
+  "links": {
+    "sideways": [],
+    "upward": []
+  },
+  "status": "draft",
+  "version": 1,
+  "updated_at": "2026-04-16"
+}

@@ -1,0 +1,293 @@
+{
+  "metadata": {
+    "task": "0.9 + 0.11",
+    "description": "Route database schema (dual-country joins) and tech stack recommendation for pet transport site",
+    "date_compiled": "2026-04-16",
+    "authors": ["Librarian (schema)", "Builder (tech stack)"],
+    "dependencies": "Block 5 (country regs), Block 6 (country regs), Block 7 (airline DB, breed restrictions)"
+  },
+  "route_database_schema": {
+    "overview": "Each route page draws from TWO country records (origin export + destination import), multiple airline records, and breed restriction records. The schema supports these dual-country joins. Route data is assembled by the Librarian from separate source tables and exported as a single JSON file per page for the Builder to consume.",
+    "design_principles": [
+      "One record per page. Slug is the primary key. Updates overwrite, never duplicate.",
+      "Dual-country join: origin.export_requirements + destination.import_requirements = route regulatory data.",
+      "All data ingested from source workers (Geographer, Wordsmith, Interrogator, Optimiser, Connector) is validated against schema before storage.",
+      "Every record has version number and updated_at timestamp.",
+      "Content status pipeline: draft -> seo_optimised -> humanised -> audited -> published."
+    ],
+    "tables": {
+      "pages": {
+        "description": "Central table. One record per page on the site.",
+        "fields": {
+          "slug": {"type": "string", "pk": true, "example": "/pet-transport/uae/to/united-kingdom", "description": "URL path. Unique identifier."},
+          "template": {"type": "enum", "values": ["route-page", "origin-hub", "country-guide", "airline-guide", "breed-guide", "resource", "blog", "core"], "description": "Which template the Builder uses to render this page."},
+          "status": {"type": "enum", "values": ["draft", "seo_optimised", "humanised", "audited", "published"], "description": "Content pipeline status. Controls whether Builder can generate the page."},
+          "origin_code": {"type": "string", "nullable": true, "description": "ISO alpha-2 country code. Required for route-page and origin-hub templates."},
+          "destination_code": {"type": "string", "nullable": true, "description": "ISO alpha-2 country code. Required for route-page and country-guide templates."},
+          "content": {"type": "json", "description": "Full content object from Wordsmith/Chameleon. Contains h1, overview, sections array, word_count."},
+          "faqs": {"type": "json", "description": "FAQ array from Interrogator. Each item has question and answer."},
+          "seo": {"type": "json", "description": "SEO metadata from Optimiser. Contains title, meta_description, canonical, og_image, schema markup."},
+          "links": {"type": "json", "description": "Link graph from Connector. Contains upward, cross_type, and sideways link arrays."},
+          "route_data": {"type": "json", "description": "Assembled route data. Librarian joins origin export + destination import + airlines + breeds into this object."},
+          "version": {"type": "int", "auto_increment": true, "description": "Version number. Increments on every update."},
+          "created_at": {"type": "datetime", "description": "First creation timestamp."},
+          "updated_at": {"type": "datetime", "description": "Last modification timestamp."}
+        }
+      },
+      "countries": {
+        "description": "Country regulation records. Source: Geographer (countries_pet_regulations.json).",
+        "fields": {
+          "code": {"type": "string", "pk": true, "example": "GB", "description": "ISO alpha-2 country code."},
+          "name": {"type": "string", "example": "United Kingdom", "description": "Country name in English."},
+          "iso_alpha3": {"type": "string", "example": "GBR"},
+          "region": {"type": "string", "example": "Europe"},
+          "import_requirements": {"type": "json", "description": "Full import requirements from Geographer. Copied from countries_pet_regulations.json."},
+          "export_requirements": {"type": "json", "description": "Full export requirements from Geographer."},
+          "rabies_status": {"type": "enum", "values": ["rabies-free", "rabies-controlled", "rabies-endemic"]},
+          "pet_friendliness": {"type": "string", "values": ["easy", "easy-moderate", "moderate", "moderate-strict", "strict"]},
+          "classification_by_others": {"type": "json", "description": "How other countries classify this country (CDC risk, AU group, SG category, etc.)"},
+          "last_verified": {"type": "date", "description": "When regulations were last verified against official sources."}
+        },
+        "initial_data": "10 P1 countries from countries_pet_regulations.json (UK, USA, UAE, Australia, Canada, Germany, France, Singapore, Hong Kong, South Africa)"
+      },
+      "airlines": {
+        "description": "Airline pet transport policies. Source: Geographer (airline_pet_policies.json).",
+        "fields": {
+          "code": {"type": "string", "pk": true, "example": "EK", "description": "Airline IATA code."},
+          "name": {"type": "string", "example": "Emirates"},
+          "alliance": {"type": "string", "nullable": true},
+          "hub": {"type": "string"},
+          "cabin_allowed": {"type": "boolean", "description": "Does airline allow pets in cabin?"},
+          "cargo_allowed": {"type": "boolean", "description": "Does airline transport pets as cargo?"},
+          "cargo_suspended": {"type": "boolean", "default": false, "description": "Is cargo pet service currently suspended?"},
+          "policy": {"type": "json", "description": "Full policy object from Geographer."},
+          "brachycephalic_policy": {"type": "string", "values": ["banned", "seasonal_ban", "restricted", "accepted"], "description": "How airline handles brachycephalic breeds in cargo."},
+          "routes_p1": {"type": "json", "description": "Key P1 routes this airline serves."},
+          "last_verified": {"type": "date"}
+        },
+        "initial_data": "22 airlines from airline_pet_policies.json"
+      },
+      "breeds": {
+        "description": "Breed restriction records. Source: Geographer (breed_restrictions.json).",
+        "fields": {
+          "slug": {"type": "string", "pk": true, "example": "french-bulldog"},
+          "name": {"type": "string", "example": "French Bulldog"},
+          "category": {"type": "enum", "values": ["commonly_restricted", "brachycephalic", "large_breed", "standard"], "description": "Primary restriction category."},
+          "brachycephalic": {"type": "boolean"},
+          "banned_countries": {"type": "json", "description": "Array of country codes where this breed is banned from import."},
+          "restricted_countries": {"type": "json", "description": "Array of country codes where this breed requires special permit."},
+          "airline_cargo_banned": {"type": "json", "description": "Airlines that ban this breed from cargo."},
+          "airline_cargo_restricted": {"type": "json", "description": "Airlines that restrict (seasonal/conditional) this breed in cargo."},
+          "transport_notes": {"type": "json", "description": "Breed-specific transport considerations."}
+        }
+      },
+      "content_status_log": {
+        "description": "Audit trail for content pipeline status changes.",
+        "fields": {
+          "id": {"type": "int", "pk": true, "auto_increment": true},
+          "slug": {"type": "string", "fk": "pages.slug"},
+          "from_status": {"type": "enum", "values": ["draft", "seo_optimised", "humanised", "audited", "published"]},
+          "to_status": {"type": "enum", "values": ["draft", "seo_optimised", "humanised", "audited", "published"]},
+          "actor": {"type": "string", "description": "Which worker made the change."},
+          "timestamp": {"type": "datetime"},
+          "notes": {"type": "string", "nullable": true}
+        }
+      }
+    },
+    "route_data_assembly": {
+      "description": "How the Librarian assembles route data for a single route page.",
+      "example_route": "/pet-transport/uae/to/united-kingdom",
+      "steps": [
+        "1. Pull countries['AE'].export_requirements (UAE export: municipality export permit, MOCCAE endorsement, vet inspection within 48hrs)",
+        "2. Pull countries['GB'].import_requirements (UK import: microchip, rabies, 21-day wait, AHC, tapeworm for dogs, approved route, breed check)",
+        "3. Pull countries['GB'].banned_breeds and match against breeds table (Pit Bull, Tosa, Dogo Argentino, Fila Brasileiro)",
+        "4. Query airlines where routes_p1 includes both AE and GB (Emirates SkyCargo, BA cargo, Etihad cargo, potentially Lufthansa/KLM connecting)",
+        "5. Pull classification_by_others: how UK classifies UAE (listed country), how USA_CDC classifies UAE (high-risk, for onward context)",
+        "6. Calculate route_complexity based on destination requirements (quarantine? titre test? breed bans? timeline?)",
+        "7. Assemble into route_data JSON object",
+        "8. Merge with content, faqs, seo, links from pages table",
+        "9. Export as single JSON file for Builder"
+      ],
+      "assembled_route_data_format": {
+        "origin": {
+          "country": "United Arab Emirates",
+          "code": "AE",
+          "export_requirements": "...(from countries table)",
+          "temperature_restrictions": "...(summer embargo Jun-Sep)"
+        },
+        "destination": {
+          "country": "United Kingdom",
+          "code": "GB",
+          "import_requirements": "...(from countries table)",
+          "breed_restrictions": "...(from breeds table, filtered for GB)"
+        },
+        "airlines": [
+          {"code": "EK", "name": "Emirates", "type": "cargo-only", "policy_summary": "..."},
+          {"code": "BA", "name": "British Airways", "type": "cargo-only", "policy_summary": "..."},
+          {"code": "EY", "name": "Etihad", "type": "cargo-only", "policy_summary": "..."}
+        ],
+        "timeline_steps": [
+          {"step": 1, "action": "Microchip implantation", "timing": "Before rabies vaccination", "responsible": "Vet in UAE"},
+          {"step": 2, "action": "Rabies vaccination", "timing": "After microchip, 21+ days before travel", "responsible": "Vet in UAE"},
+          {"step": 3, "action": "Other vaccinations", "timing": "As required by UAE exit and UK entry", "responsible": "Vet in UAE"},
+          {"step": 4, "action": "UAE municipality export permit", "timing": "Before travel", "responsible": "DM/ADAFSA"},
+          {"step": 5, "action": "Veterinary health certificate", "timing": "Within 48 hours of departure", "responsible": "Government-approved vet"},
+          {"step": 6, "action": "MOCCAE endorsement", "timing": "After vet cert", "responsible": "MOCCAE"},
+          {"step": 7, "action": "Animal Health Certificate (AHC)", "timing": "Valid 10 days for UK entry", "responsible": "Official vet"},
+          {"step": 8, "action": "Tapeworm treatment (dogs only)", "timing": "24-120 hours before UK arrival", "responsible": "Vet"},
+          {"step": 9, "action": "Book approved carrier", "timing": "2+ weeks before travel", "responsible": "Owner/agent"},
+          {"step": 10, "action": "Arrive via approved route", "timing": "Day of travel", "responsible": "Owner/agent"}
+        ],
+        "route_complexity": "medium",
+        "estimated_timeline_weeks": "4-8",
+        "cost_factors": ["Vet consultations and vaccinations", "Export permit fees", "Health certificate and endorsement", "Airline cargo fees", "Pet transport agent (recommended)", "UK-side collection from cargo"],
+        "key_warnings": [
+          "Tapeworm treatment for dogs has strict 24-120 hour timing window",
+          "Summer heat embargo (Jun-Sep) may prevent cargo transport from UAE",
+          "GB pet passport not valid for EU onward travel if needed",
+          "Breed-restricted dogs (Pit Bull type, Tosa, Dogo Argentino, Fila Brasileiro) CANNOT enter UK"
+        ]
+      }
+    },
+    "page_count_estimates": {
+      "route_pages": {"count": "90 P1 routes (Phase 1), expanding to 3,000-5,000 (Phases 2-4)", "template": "route-page"},
+      "origin_hub_pages": {"count": "10 P1 (expanding to 80+)", "template": "origin-hub"},
+      "country_guide_pages": {"count": "10 P1 (expanding to 150+)", "template": "country-guide"},
+      "airline_guide_pages": {"count": "22 (expanding to 40-60)", "template": "airline-guide"},
+      "breed_guide_pages": {"count": "20-30 (expanding to 50-80)", "template": "breed-guide"},
+      "resource_pages": {"count": "10-20 (expanding to 30-50)", "template": "resource"},
+      "core_pages": {"count": "10-15", "template": "core"},
+      "blog_articles": {"count": "0 initial (100-200 over 12 months)", "template": "blog"},
+      "total_phase_1": "~170 pages",
+      "total_at_scale": "5,000-10,000 pages"
+    }
+  },
+  "tech_stack_recommendation": {
+    "overview": "Recommendation follows same architecture proven for the security-bodyguard project: Hugo static site generator + Cloudflare Pages hosting. The pet transport site has similar characteristics: data-driven page generation from JSON, high page count at scale, global audience, SEO-first requirements.",
+    "static_site_generator": {
+      "recommendation": "Hugo",
+      "reasons": [
+        "Scale: 5,000-10,000 pages at full build. Hugo generates this in under 10 seconds. Astro and Next.js struggle at this volume.",
+        "Data-driven: Hugo's data templates consume JSON directly. Our entire pipeline (Geographer -> Librarian -> Builder) outputs JSON. Perfect fit.",
+        "No JavaScript runtime: Pet transport pages are informational. No client-side interactivity needed for content. Pure static HTML = fastest load, best Core Web Vitals.",
+        "Proven: Same stack as security-bodyguard project. Shared learnings, shared templates where applicable.",
+        "Template system: Multiple page types (route, country, airline, breed, blog) map to Hugo's template hierarchy cleanly.",
+        "Incremental builds: Hugo supports partial rebuilds, needed when updating individual route pages without regenerating all 5,000+."
+      ],
+      "alternatives_considered": {
+        "astro": "Good for content sites with islands of interactivity. Node-based build slower at 5,000+ pages. Would pick if we needed interactive route comparison tools.",
+        "nextjs_ssg": "Overkill. We don't need React. Build times 10-50x slower. Introduces unnecessary complexity.",
+        "11ty": "Close second. More flexible templating than Hugo. Falls behind at 5,000+ pages. JavaScript ecosystem means slower builds.",
+        "custom_python": "Considered a Python template engine (Jinja2) since research scripts are Python. Rejected: no sitemap/RSS generation, no dev server, would need to build tooling that Hugo provides for free."
+      }
+    },
+    "hosting": {
+      "recommendation": "Cloudflare Pages",
+      "reasons": [
+        "Global edge: Pet transport customers are worldwide. Cloudflare has edge nodes in Dubai, Singapore, Hong Kong, Johannesburg, Sydney, London, etc.",
+        "Free tier: Unlimited sites, unlimited bandwidth, 500 builds/month. Generous for initial launch.",
+        "Cloudflare ecosystem: If we need WAF, DDoS protection, or rate limiting for the quote form, it's in the same dashboard.",
+        "File limit: 25,000 files max. Even at 10,000 pages with assets, we fit comfortably.",
+        "Build integration: Hugo is a supported framework. Connect GitHub repo and auto-deploy on push."
+      ],
+      "alternatives": {
+        "netlify": "Better developer experience (deploy previews, split testing). 100GB/month bandwidth cap. Weaker global edge in Asia/Africa/Middle East.",
+        "vercel": "Next.js-focused. Not optimal for Hugo.",
+        "aws_s3_cloudfront": "Maximum control, more operational overhead. Consider if Cloudflare limits become a problem."
+      }
+    },
+    "quote_form": {
+      "recommendation": "Cloudflare Worker endpoint + email forwarding",
+      "reasons": [
+        "Zero third-party dependency. Form data stays within Cloudflare ecosystem.",
+        "Serverless function processes form submission, validates inputs, sends email to configured address.",
+        "Can add Turnstile (Cloudflare's CAPTCHA alternative) for bot protection. Free.",
+        "No data stored long-term. Form data forwarded to email and discarded."
+      ],
+      "form_fields": [
+        {"field": "origin_country", "type": "select", "required": true},
+        {"field": "destination_country", "type": "select", "required": true},
+        {"field": "pet_type", "type": "select", "options": ["Dog", "Cat", "Other"], "required": true},
+        {"field": "breed", "type": "text", "required": false},
+        {"field": "pet_weight_kg", "type": "number", "required": false},
+        {"field": "travel_date", "type": "date", "required": false},
+        {"field": "name", "type": "text", "required": true},
+        {"field": "email", "type": "email", "required": true},
+        {"field": "phone", "type": "tel", "required": false},
+        {"field": "message", "type": "textarea", "required": false}
+      ],
+      "conversion_tracking": "Google Tag Manager event on form submission. Track origin/destination pair for demand analysis."
+    },
+    "domain": {
+      "status": "To be confirmed by Gareth",
+      "notes": "Domain selection affects anchor text strategy and brand positioning. Options discussed in strategic questions (Task 0.10)."
+    },
+    "analytics": {
+      "recommendation": "Cloudflare Web Analytics + Google Search Console",
+      "reasons": [
+        "Cloudflare Web Analytics is privacy-focused, free, no cookies. Built into Cloudflare Pages.",
+        "Google Search Console is essential for monitoring organic search performance, index coverage, Core Web Vitals.",
+        "Can add GA4 later if needed for detailed user behaviour analysis, but start lightweight."
+      ]
+    },
+    "performance_targets": {
+      "lighthouse_performance": "90+",
+      "largest_contentful_paint": "< 2.5s",
+      "cumulative_layout_shift": "< 0.1",
+      "first_input_delay": "< 100ms",
+      "time_to_first_byte": "< 200ms (Cloudflare edge)"
+    },
+    "build_pipeline": {
+      "description": "Source data -> Librarian assembly -> Hugo build -> Cloudflare deploy",
+      "steps": [
+        "1. Geographer outputs country, airline, breed data as JSON files (Blocks 3-7, DONE)",
+        "2. Librarian assembles route data by joining origin + destination + airlines + breeds (Phase 1)",
+        "3. Wordsmith writes route content, Interrogator writes FAQs, Optimiser writes SEO metadata (Phase 1)",
+        "4. Chameleon humanises content, Auditor reviews (Phase 1)",
+        "5. Librarian exports final page data JSON files (one per page)",
+        "6. Builder runs Hugo with page data, selects template per page type, renders static HTML",
+        "7. Hugo generates sitemap.xml (split by content type if >50,000 URLs)",
+        "8. Deploy to Cloudflare Pages (git push triggers build, or manual deploy via Wrangler CLI)"
+      ]
+    },
+    "directory_structure": {
+      "description": "Proposed Hugo site directory structure",
+      "structure": {
+        "site_root/": {
+          "config/": {"_default/": "Hugo configuration files (config.toml, params.toml, menus.toml)"},
+          "content/": {
+            "pet-transport/": {
+              "_index.md": "Homepage",
+              "uae/": {"to/": {"united-kingdom/": {"index.md": "Route page (content from Librarian JSON)"}}},
+              "countries/": {"united-kingdom/": {"index.md": "Country guide page"}},
+              "airlines/": {"emirates/": {"index.md": "Airline guide page"}},
+              "breeds/": {"french-bulldog/": {"index.md": "Breed guide page"}},
+              "blog/": {"post-slug/": {"index.md": "Blog article"}},
+              "resources/": {"quarantine-guide/": {"index.md": "Resource page"}}
+            }
+          },
+          "data/": {
+            "countries/": "JSON files per country (from Librarian)",
+            "airlines/": "JSON files per airline (from Librarian)",
+            "breeds/": "JSON files per breed (from Librarian)",
+            "routes/": "JSON files per route (assembled by Librarian)"
+          },
+          "layouts/": {
+            "_default/": "Base templates",
+            "route-page/": "Route page template",
+            "country-guide/": "Country guide template",
+            "airline-guide/": "Airline guide template",
+            "breed-guide/": "Breed guide template",
+            "partials/": "Shared components (header, footer, quote-form, faq-accordion, route-card)"
+          },
+          "static/": {
+            "images/": "Optimised images (country flags, hero images, icons)",
+            "css/": "Compiled CSS",
+            "js/": "Minimal JS (quote form, accordion, analytics)"
+          },
+          "assets/": "Source SCSS/CSS, unprocessed images (Hugo Pipes processes these)"
+        }
+      }
+    }
+  }
+}

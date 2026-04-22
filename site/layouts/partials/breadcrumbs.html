@@ -1,0 +1,35 @@
+{{/* Breadcrumb partial — generates BreadcrumbList schema + visible breadcrumbs */}}
+
+{{ $breadcrumbs := slice }}
+
+{{/* Build breadcrumb trail from URL segments */}}
+{{ $url := "" }}
+{{ $breadcrumbs = $breadcrumbs | append (dict "name" "Home" "url" "/") }}
+
+{{ range $i, $segment := (split (strings.TrimRight "/" .RelPermalink) "/") }}
+    {{ if ne $segment "" }}
+        {{ $url = printf "%s/%s" $url $segment }}
+        {{ $name := replace $segment "-" " " | title }}
+        {{ if eq $segment "to" }}{{ $name = "to" }}{{ end }}
+        {{ if eq $segment "pet-transport" }}{{ $name = "Pet Transport" }}{{ end }}
+        {{ $breadcrumbs = $breadcrumbs | append (dict "name" $name "url" (printf "%s/" $url)) }}
+    {{ end }}
+{{ end }}
+
+{{ if gt (len $breadcrumbs) 1 }}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+        {{ range $i, $crumb := $breadcrumbs }}
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            {{ if eq $i (sub (len $breadcrumbs) 1) }}
+            <span itemprop="name" aria-current="page">{{ $crumb.name }}</span>
+            {{ else }}
+            <a itemprop="item" href="{{ $crumb.url }}"><span itemprop="name">{{ $crumb.name }}</span></a>
+            <span class="breadcrumb-sep" aria-hidden="true">/</span>
+            {{ end }}
+            <meta itemprop="position" content="{{ add $i 1 }}">
+        </li>
+        {{ end }}
+    </ol>
+</nav>
+{{ end }}

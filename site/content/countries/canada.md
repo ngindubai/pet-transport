@@ -1,0 +1,53 @@
+---
+title: "Importing Your Pet to Canada: Requirements and Timeline"
+description: "Importing a pet to Canada is straightforward for most owners. Rabies vaccination, CFIA requirements, and what the border crossing process looks like."
+type: "countries"
+layout: "single"
+slug: "canada"
+url: "/pet-transport/countries/canada/"
+country_name: "Canada"
+country_code: "CA"
+pet_friendliness: "easy-moderate"
+seo:
+  title: "Importing Your Pet to Canada: Requirements and Timeline | Pet Transport Global"
+  description: "Importing a pet to Canada is straightforward for most owners. Rabies vaccination, CFIA requirements, and what the border crossing process looks like."
+import_requirements:
+  microchip: "ISO 11784/11785 recommended"
+  rabies_vaccination: "Required."
+  titre_test: "Not typically required."
+  quarantine: "Not required for pets with correct documentation."
+  import_permit: "Check specific requirements."
+  health_certificate: "Official veterinary health certificate. Valid for 10 days from issue. Must be endorsed by official authority."
+  banned_breeds: "Federal: No federal breed-specific legislation for imports. Check state/local laws."
+  approved_ports: "Check official sources for approved entry points."
+content:
+  h1: "Pet Import to Canada"
+  overview: |
+    Canada is one of the more straightforward countries for pet imports, particularly compared to its southern neighbour. For dogs from most countries, a valid rabies vaccination certificate and a clean bill of health from a licensed vet is enough. The process at the border is quick if your paperwork is in order.
+    
+    There are two things worth knowing. First, Canada in 2022 suspended commercial imports of dogs from high-risk rabies countries, but personal pets are handled differently from commercial imports. Second, Ontario has breed-specific legislation banning Pit Bull types at the provincial level. Bring a Pit Bull or similar type to Ontario and you'll face restrictions there even if the federal import went fine.
+    
+    Dogs under three months old have no vaccine requirement, but must appear healthy. Dogs between three months and one year need proof of valid rabies vaccination. The border crossing itself is usually a quick document check and visual inspection.
+  sections:
+    - heading: "What you need at the border"
+      body: |
+        For dogs from most countries, the Canadian border crossing requires a rabies vaccination certificate and a vet-issued health certificate confirming your dog is healthy. Dogs under three months old don't need the vaccine but must look healthy. The certificate should be written in English or French, or translated.
+        
+        Cats have even fewer requirements. No vaccination certificate is federally required for cats entering Canada from most countries. The process is quick and usually just a visual inspection and document check.
+    - heading: "Ontario's breed ban"
+      body: |
+        Canada at the federal level has no breed-specific legislation. But Ontario's Dog Owners Liability Act bans Pit Bull Terriers and substantially similar dogs. If you're moving to Ontario with a dog that could be classified as a Pit Bull type, this is a hard prohibition, not a permit situation. Other provinces don't have the same ban, but some municipalities have their own restrictions. Check local rules before you arrive.
+faqs:
+  - question: "What does my dog need to enter Canada?"
+    answer: |
+      For dogs three months old or older from most countries: a valid rabies vaccination certificate and a vet health certificate confirming the dog is healthy. The certificate should be in English or French. For dogs under three months: no vaccine required, just appear healthy. For dogs from high-risk countries or in connection with the 2022 commercial import suspension rules, additional steps may apply. Check CFIA's current requirements before travel.
+  - question: "Do cats need anything to enter Canada?"
+    answer: |
+      Cats entering Canada have minimal federal requirements. A current rabies vaccination is recommended but not always mandated at the federal border. A health certificate from a vet is good practice. Individual provinces may have additional requirements, so check the province you're entering. The border crossing process for cats is typically quick.
+  - question: "Is there a quarantine requirement for pets in Canada?"
+    answer: |
+      No. Canada does not require quarantine for pets arriving with correct documentation. There is no mandatory hold period. The process at the border is a document check and a visual inspection.
+  - question: "Are Pit Bulls allowed in Canada?"
+    answer: |
+      At the federal level, yes. Canada has no national breed ban. But Ontario bans Pit Bull Terriers and dogs that are substantially similar in appearance under the Dog Owners Liability Act. If you're moving to Ontario with a dog that might be classified as a Pit Bull type, this is a genuine legal prohibition. Other provinces are more permissive at the provincial level, though some municipalities have their own restrictions.
+---

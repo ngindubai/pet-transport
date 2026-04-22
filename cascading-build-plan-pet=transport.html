@@ -1,0 +1,1813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Transport — Cascading Build Plan</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --surface: #161b22;
+            --surface-2: #1c2333;
+            --surface-3: #21262d;
+            --border: #30363d;
+            --text: #c9d1d9;
+            --text-muted: #8b949e;
+            --heading: #f0f6fc;
+            --accent: #58a6ff;
+            --green: #3fb950;
+            --red: #f85149;
+            --orange: #d29922;
+            --purple: #bc8cff;
+            --pink: #f778ba;
+            --cyan: #39d2c0;
+            --yellow: #e3b341;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+
+        .hero { background: linear-gradient(135deg, #0d1117 0%, #102a1a 40%, #0d2137 100%); border-bottom: 1px solid var(--border); padding: 80px 40px 60px; text-align: center; }
+        .hero h1 { font-size: 2.6rem; color: var(--heading); margin-bottom: 12px; font-weight: 700; }
+        .hero .subtitle { font-size: 1.15rem; color: var(--text-muted); max-width: 750px; margin: 0 auto 24px; }
+        .hero .badges { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+        .hero .badges span { background: var(--surface); padding: 6px 14px; border-radius: 20px; border: 1px solid var(--border); font-size: 0.82rem; color: var(--text-muted); }
+
+        .sticky-nav { position: sticky; top: 0; z-index: 100; background: rgba(13,17,23,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 10px 20px; overflow-x: auto; white-space: nowrap; }
+        .sticky-nav a { color: var(--accent); text-decoration: none; font-size: 0.82rem; padding: 6px 14px; border-radius: 6px; display: inline-block; }
+        .sticky-nav a:hover { background: var(--surface); }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 24px; }
+        h2 { color: var(--heading); font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid var(--border); }
+        h3 { color: var(--heading); font-size: 1.3rem; font-weight: 600; margin: 28px 0 12px; }
+        h4 { color: var(--accent); font-size: 1.05rem; font-weight: 600; margin: 20px 0 8px; }
+        p { margin-bottom: 14px; }
+        ul, ol { margin: 10px 0 16px 24px; }
+        li { margin-bottom: 6px; }
+        .divider { height: 1px; background: var(--border); margin: 56px 0; }
+
+        .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 24px; margin-bottom: 16px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
+        .card-grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin: 20px 0; }
+        .accent-left { border-left: 4px solid var(--accent); }
+        .green-left { border-left: 4px solid var(--green); }
+        .purple-left { border-left: 4px solid var(--purple); }
+        .orange-left { border-left: 4px solid var(--orange); }
+        .pink-left { border-left: 4px solid var(--pink); }
+        .cyan-left { border-left: 4px solid var(--cyan); }
+        .red-left { border-left: 4px solid var(--red); }
+        .label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; margin-bottom: 6px; }
+        .label-blue { color: var(--accent); }
+        .label-green { color: var(--green); }
+        .label-purple { color: var(--purple); }
+        .label-orange { color: var(--orange); }
+        .label-pink { color: var(--pink); }
+        .label-cyan { color: var(--cyan); }
+        .label-red { color: var(--red); }
+
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9rem; }
+        th { background: var(--surface-2); color: var(--heading); text-align: left; padding: 12px 14px; font-weight: 600; border: 1px solid var(--border); }
+        td { padding: 10px 14px; border: 1px solid var(--border); vertical-align: top; }
+        tr:nth-child(even) td { background: rgba(22, 27, 34, 0.4); }
+
+        .badge { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
+        .b-blue { background: rgba(88,166,255,0.15); color: var(--accent); }
+        .b-green { background: rgba(63,185,80,0.15); color: var(--green); }
+        .b-orange { background: rgba(210,153,34,0.15); color: var(--orange); }
+        .b-red { background: rgba(248,81,73,0.15); color: var(--red); }
+        .b-purple { background: rgba(188,140,255,0.15); color: var(--purple); }
+        .b-pink { background: rgba(247,120,186,0.15); color: var(--pink); }
+        .b-cyan { background: rgba(57,210,192,0.15); color: var(--cyan); }
+
+        .org-chart { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 40px 20px; margin: 24px 0; overflow-x: auto; }
+        .org-row { display: flex; justify-content: center; gap: 16px; margin-bottom: 8px; flex-wrap: wrap; }
+        .org-node { background: var(--surface-2); border: 2px solid var(--border); border-radius: 10px; padding: 14px 18px; text-align: center; min-width: 140px; max-width: 180px; }
+        .org-node .role { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; margin-bottom: 4px; }
+        .org-node .name { font-size: 0.88rem; color: var(--heading); font-weight: 600; }
+        .org-node .desc { font-size: 0.72rem; color: var(--text-muted); margin-top: 4px; }
+        .org-node.lead { border-color: var(--accent); background: rgba(88,166,255,0.08); }
+        .org-node.scraper { border-color: var(--green); background: rgba(63,185,80,0.06); }
+        .org-node.writer { border-color: var(--purple); background: rgba(188,140,255,0.06); }
+        .org-node.seo { border-color: var(--orange); background: rgba(210,153,34,0.06); }
+        .org-node.dev { border-color: var(--cyan); background: rgba(57,210,192,0.06); }
+        .org-node.qa { border-color: var(--pink); background: rgba(247,120,186,0.06); }
+        .org-connector { text-align: center; color: var(--border); font-size: 1.4rem; line-height: 1; margin: 4px 0; }
+        .org-label { text-align: center; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin: 16px 0 8px; font-weight: 700; }
+
+        .timeline { position: relative; margin: 32px 0; padding-left: 40px; }
+        .timeline::before { content: ''; position: absolute; left: 12px; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, var(--accent), var(--green), var(--purple), var(--orange)); border-radius: 3px; }
+        .tl-item { position: relative; margin-bottom: 32px; }
+        .tl-item::before { content: ''; position: absolute; left: -34px; top: 6px; width: 16px; height: 16px; border-radius: 50%; border: 3px solid var(--bg); }
+        .tl-item.phase-1::before { background: var(--accent); }
+        .tl-item.phase-2::before { background: var(--green); }
+        .tl-item.phase-3::before { background: var(--purple); }
+        .tl-item.phase-4::before { background: var(--orange); }
+        .tl-item.phase-5::before { background: var(--pink); }
+        .tl-item.phase-6::before { background: var(--cyan); }
+        .tl-phase { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; margin-bottom: 4px; }
+        .tl-phase.p1 { color: var(--accent); }
+        .tl-phase.p2 { color: var(--green); }
+        .tl-phase.p3 { color: var(--purple); }
+        .tl-phase.p4 { color: var(--orange); }
+        .tl-phase.p5 { color: var(--pink); }
+        .tl-phase.p6 { color: var(--cyan); }
+        .tl-title { font-size: 1.1rem; color: var(--heading); font-weight: 700; margin-bottom: 6px; }
+        .tl-body { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; }
+        .tl-meta { display: flex; gap: 16px; flex-wrap: wrap; font-size: 0.8rem; color: var(--text-muted); margin-top: 10px; }
+        .tl-meta span { background: var(--surface-2); padding: 3px 10px; border-radius: 10px; }
+
+        .gantt { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin: 24px 0; overflow-x: auto; }
+        .gantt-header { display: grid; grid-template-columns: 180px repeat(12, 1fr); gap: 0; margin-bottom: 8px; font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
+        .gantt-header div { padding: 4px 6px; text-align: center; border-bottom: 1px solid var(--border); }
+        .gantt-header div:first-child { text-align: left; }
+        .gantt-row { display: grid; grid-template-columns: 180px repeat(12, 1fr); gap: 0; margin-bottom: 4px; align-items: center; }
+        .gantt-row .task-name { font-size: 0.82rem; padding: 6px; color: var(--heading); font-weight: 500; }
+        .gantt-bar { height: 24px; border-radius: 4px; margin: 2px 0; }
+
+        .worker-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 28px; margin-bottom: 24px; }
+        .worker-header { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+        .worker-icon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; }
+        .worker-title { font-size: 1.2rem; color: var(--heading); font-weight: 700; }
+        .worker-subtitle { font-size: 0.85rem; color: var(--text-muted); }
+        .worker-section { margin-top: 16px; }
+        .worker-section h4 { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; }
+        .pill-list { display: flex; flex-wrap: wrap; gap: 6px; }
+        .pill { padding: 4px 12px; border-radius: 14px; font-size: 0.78rem; font-weight: 500; background: var(--surface-2); border: 1px solid var(--border); color: var(--text); }
+
+        code { background: var(--surface-2); padding: 2px 8px; border-radius: 4px; font-size: 0.88rem; color: var(--accent); }
+
+        @media (max-width: 900px) {
+            .card-grid, .card-grid-3 { grid-template-columns: 1fr; }
+            .gantt-header, .gantt-row { grid-template-columns: 140px repeat(12, 1fr); }
+            .hero h1 { font-size: 1.8rem; }
+            .org-row { gap: 8px; }
+            .org-node { min-width: 110px; padding: 10px 12px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Pet Transport: Cascading Build Plan</h1>
+    <p class="subtitle">Workforce design, phase-by-phase execution plan, and timeline for building a 10,000+ page SEO operation to dominate international pet transport route pages globally.</p>
+    <div class="badges">
+        <span>Build Bible v1.2 — SEO/LLM Plan + Calendar</span>
+        <span>17 April 2026</span>
+        <span>Duration: 12 months</span>
+        <span>Framework: Soul, Memory &amp; Heartbeat</span>
+        <span>Build Order: #2 of 3</span>
+        <span>Phase 0: 9 Execution Blocks</span>
+    </div>
+</div>
+
+<!-- STICKY NAV -->
+<nav class="sticky-nav">
+    <a href="#overview">Overview</a>
+    <a href="#business-model">Business Model</a>
+    <a href="#execution-plan">Execution Plan</a>
+    <a href="#workforce">Workforce</a>
+    <a href="#org-chart">Org Chart</a>
+    <a href="#compliance">Compliance</a>
+    <a href="#phase-0">Phase 0</a>
+    <a href="#phase-1">Phase 1</a>
+    <a href="#phase-2">Phase 2</a>
+    <a href="#phase-3">Phase 3</a>
+    <a href="#phase-4">Phase 4</a>
+    <a href="#phase-5">Phase 5</a>
+    <a href="#phase-6">Phase 6</a>
+    <a href="#gantt">Gantt</a>
+    <a href="#questions">Questions</a>
+    <a href="#seo-llm-plan" style="color:var(--yellow);">SEO &amp; LLM Plan</a>
+    <a href="#calendar" style="color:var(--green);">Calendar</a>
+</nav>
+
+<div class="container">
+
+<!-- ============================================================ -->
+<!-- SECTION: OVERVIEW -->
+<!-- ============================================================ -->
+<section id="overview">
+    <h2>1. Business Overview</h2>
+
+    <div class="card" style="border:2px solid var(--green); background:rgba(63,185,80,0.04);">
+        <h4 style="color:var(--green); margin-top:0;">The Opportunity</h4>
+        <p>People relocating internationally need to bring their pets. This is a route-based service: "Ship my dog from UK to Australia" or "Pet transport from Dubai to Germany". The route-based URL structure creates thousands of combinatorial pages, and no competitor owns the route-level SEO.</p>
+        <p><strong>Scored 8.5/10</strong> in the cross-border opportunity report. Ranked #3 overall. Massive page potential through route combinations (150+ countries = 22,500 route pairs). PetRelocation.com exists but only has country-level pages, not route-level.</p>
+    </div>
+
+    <div class="card-grid-3">
+        <div class="card accent-left">
+            <div class="label label-blue">Market Size</div>
+            <p>IPATA estimates 500,000+ international pet relocations annually. Growing fast with remote work and expat mobility. UK alone: ~50,000 pets imported/exported per year.</p>
+        </div>
+        <div class="card green-left">
+            <div class="label label-green">Average Deal Value</div>
+            <p><strong>$2,000-$8,000</strong> per booking. Higher for long-haul routes (US→Australia: $5K-$8K). Dogs cost more than cats. Exotic pets cost most. Margin: 30-50% after airline cargo, vet certificates and customs clearance.</p>
+        </div>
+        <div class="card purple-left">
+            <div class="label label-purple">Competition</div>
+            <p><strong>PetRelocation.com</strong> is the biggest. 150+ countries, 40K pets shipped, 20+ years. They have country pages but <strong>no route-level pages</strong>. That's the gap. Nobody ranks for "ship dog from Thailand to UK" with a dedicated page.</p>
+        </div>
+    </div>
+
+    <h3>Key Differentiators vs Global Bus Hire</h3>
+    <table>
+        <tr><th>Dimension</th><th>Global Bus Hire</th><th>Pet Transport</th></tr>
+        <tr><td>URL architecture</td><td>/bus-hire/[country]/[city]/</td><td>/pet-transport/[from-country]/to/[to-country]/ (route-based)</td></tr>
+        <tr><td>Page count target</td><td>15,000-20,000</td><td>10,000-15,000 (route combos)</td></tr>
+        <tr><td>Search volume per query</td><td>Medium-High</td><td>Low-Medium (long-tail route queries)</td></tr>
+        <tr><td>Booking value</td><td>$500-$5,000</td><td>$2,000-$8,000</td></tr>
+        <tr><td>Margin per deal</td><td>30-50%</td><td>30-50%</td></tr>
+        <tr><td>Emotional context</td><td>Neutral (travel planning)</td><td>High (pet = family member)</td></tr>
+        <tr><td>Regulatory complexity</td><td>Low</td><td><strong>Very High</strong> (quarantine, vaccines, breed bans, import permits)</td></tr>
+        <tr><td>Existing competitor</td><td>OsaBus</td><td>PetRelocation.com (country-level only)</td></tr>
+        <tr><td>Content uniqueness driver</td><td>City-level local info</td><td>Route-specific requirements (from + to = unique rules)</td></tr>
+        <tr><td>Data enrichment</td><td>Airports, landmarks, fleet sizes</td><td>Quarantine rules, airline pet policies, vaccination requirements, breed bans</td></tr>
+    </table>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================ -->
+<!-- SECTION: BUSINESS MODEL -->
+<!-- ============================================================ -->
+<section id="business-model">
+    <h2>2. Business Model: Route-Based Pet Transport</h2>
+
+    <h3>2.1 The Customer Journey</h3>
+    <div class="card" style="font-family: 'Courier New', monospace; font-size: 0.85rem; line-height: 2.2;">
+        <span style="color:var(--accent);">EVENT:</span> Family relocating from Dubai 🇦🇪 to London 🇬🇧<br>
+        &nbsp;&nbsp;↓ They have a Golden Retriever and a cat<br>
+        <span style="color:var(--orange);">RESEARCH:</span> "How to ship dog from Dubai to UK"<br>
+        &nbsp;&nbsp;↓ Google search: "pet transport Dubai to UK"<br>
+        <span style="color:var(--accent);">SEARCH:</span> Finds your site → Route page: /pet-transport/uae/to/united-kingdom/<br>
+        &nbsp;&nbsp;↓ Page explains: UK import rules, rabies titre test, 3-month wait, airline options, microchip + vaccination timeline<br>
+        <span style="color:var(--green);">CONTACT:</span> Fills quote form (origin, destination, pet type, breed, weight)<br>
+        &nbsp;&nbsp;↓ You quote GBP 3,200 for dog, GBP 1,800 for cat<br>
+        <span style="color:var(--green);">PAYMENT:</span> Family pays 50% deposit, 50% on collection<br>
+        &nbsp;&nbsp;↓ You coordinate: vet checks in Dubai, IATA-compliant crate, airline booking, AHC (Animal Health Certificate)<br>
+        <span style="color:var(--purple);">DELIVERY:</span> Pets fly Dubai → London Heathrow on Emirates SkyCargo<br>
+        &nbsp;&nbsp;↓ Collected at Heathrow Animal Reception Centre<br>
+        <span style="color:var(--cyan);">COMPLETE:</span> Family reunited with pets in London<br>
+        <br>
+        <span style="color:var(--green);">YOUR COST:</span> Vet certs $400 + Crates $500 + Airline cargo $1,600 + UK clearance $300 = <strong>$2,800</strong><br>
+        <span style="color:var(--green);">YOUR REVENUE:</span> $5,000 (dog + cat combined)<br>
+        <span style="color:var(--green);">YOUR PROFIT:</span> <strong>$2,200 (44% margin)</strong>
+    </div>
+
+    <h3>2.2 URL Architecture: Route-Based Combinatorial Pages</h3>
+    <div class="card">
+        <h4>The Power of Route Combinations</h4>
+        <p>Pet transport is inherently route-based. "Ship dog from Thailand to UK" has different requirements, costs, airlines and timelines than "Ship dog from Thailand to Australia" (which has Australia's strict 10-day quarantine). Each route combination is genuinely unique content because the import rules of the DESTINATION country combined with the export rules of the ORIGIN country create a unique regulatory picture.</p>
+
+        <pre style="background:var(--surface-2); padding:16px; border-radius:8px; font-size: 0.88rem; overflow-x:auto; color:var(--text); margin:12px 0;">
+Homepage: internationalpettransport.com/
+
+/pet-transport/                                      → Service index
+/pet-transport/[from-country]/                       → Origin hub (e.g. /pet-transport/united-arab-emirates/)
+/pet-transport/[from-country]/to/[to-country]/       → Route page (e.g. /pet-transport/uae/to/united-kingdom/)
+/pet-transport/[from-country]/to/[to-country]/dogs/  → Breed-specific route (optional depth)
+/pet-transport/[from-country]/to/[to-country]/cats/  → Cat-specific route
+
+/country-guides/                                     → Country regulation index
+/country-guides/[country]/                           → Single country: import rules, quarantine, breed bans
+
+/airline-guides/                                     → Airline pet policy index
+/airline-guides/[airline]/                           → Single airline: crate sizes, breed restrictions, temperatures
+
+/breed-guides/                                       → Breed-specific transport index
+/breed-guides/[breed]/                               → E.g. /breed-guides/french-bulldog/ (brachycephalic = special rules)
+
+/resources/                                          → Informational hub
+/resources/quarantine-countries/                     → Which countries have quarantine
+/resources/rabies-free-countries/                    → Rabies status map
+/resources/banned-breeds-by-country/                 → Breed ban database
+
+/about/
+/contact/
+/get-a-quote/                                        → Quote funnel
+/faq/
+/testimonials/                                       → Pet arrival photos (strong social proof)
+        </pre>
+
+        <h4>Page Count Estimate</h4>
+        <table>
+            <tr><th>Page Type</th><th>Count</th><th>Notes</th></tr>
+            <tr><td>Route pages (country-to-country)</td><td>5,000-8,000</td><td>Top 80 origin countries x top 80 destinations. NOT all 22,500 combinations: only routes with real traffic.</td></tr>
+            <tr><td>Origin country hub pages</td><td>80</td><td>Countries people move FROM (expat hubs, developed nations)</td></tr>
+            <tr><td>Country regulation guide pages</td><td>150</td><td>Import rules, quarantine, vaccines for each country</td></tr>
+            <tr><td>Airline pet guide pages</td><td>40-60</td><td>Major airlines with pet cargo service</td></tr>
+            <tr><td>Breed guide pages</td><td>50-80</td><td>Top dog breeds with transport-specific content (brachycephalic, large breeds, exotics)</td></tr>
+            <tr><td>Resource/informational pages</td><td>30-50</td><td>Quarantine maps, banned breeds, cost calculators</td></tr>
+            <tr><td>Blog articles</td><td>100-200</td><td>Built over 12 months</td></tr>
+            <tr><td>Core pages</td><td>10-15</td><td>About, contact, quote, FAQ, testimonials</td></tr>
+            <tr><td><strong>Total</strong></td><td><strong>5,500-8,500+</strong></td><td>Expanding to 10K-15K with route depth</td></tr>
+        </table>
+    </div>
+
+    <h3>2.3 Route Page Content Structure</h3>
+    <p>Each route page contains genuinely unique content because the rules differ per origin+destination combination.</p>
+
+    <table>
+        <tr><th>#</th><th>Section</th><th>Content</th><th>Unique Per Route?</th></tr>
+        <tr><td>1</td><td>Hero with route H1</td><td>"Pet Transport from [Origin] to [Destination]"</td><td><span class="badge b-green">Yes</span></td></tr>
+        <tr><td>2</td><td>Quote CTA</td><td>"Get a free quote for shipping your pet from [Origin] to [Destination]"</td><td><span class="badge b-green">Yes</span></td></tr>
+        <tr><td>3</td><td>Route overview</td><td>Summary: what's involved, typical timeline (e.g. "Allow 4-6 weeks for UK to Australia due to the 10-day quarantine"), typical cost range.</td><td><span class="badge b-red">100% unique</span></td></tr>
+        <tr><td>4</td><td>Destination import requirements</td><td>What [Destination] requires: microchip, rabies vaccination, titre test, import permit, health certificate, quarantine period.</td><td><span class="badge b-red">100% unique per destination</span></td></tr>
+        <tr><td>5</td><td>Origin export requirements</td><td>What [Origin] requires for export: export permit, vet inspection timing, USDA endorsement (if US), etc.</td><td><span class="badge b-red">100% unique per origin</span></td></tr>
+        <tr><td>6</td><td>Airlines serving this route</td><td>Which airlines fly pets on this route, crate size limits, temperature embargoes, cost estimates.</td><td><span class="badge b-red">100% unique per route</span></td></tr>
+        <tr><td>7</td><td>Timeline</td><td>Step-by-step timeline from "today" to "pet arrives". Different for every route.</td><td><span class="badge b-red">100% unique</span></td></tr>
+        <tr><td>8</td><td>Cost breakdown</td><td>Typical costs: vet certs, crate, airline cargo, import clearance, quarantine (if applicable).</td><td><span class="badge b-red">100% unique</span></td></tr>
+        <tr><td>9</td><td>Breed restrictions</td><td>Does [Destination] ban any breeds? (e.g. UK bans Pit Bulls, XL Bullies. Australia bans 5 breeds. Singapore bans 10+.)</td><td><span class="badge b-red">Unique per destination</span></td></tr>
+        <tr><td>10</td><td>FAQ (5-8 items)</td><td>"Can I fly with my pet from [Origin] to [Destination]?", "How long is quarantine in [Destination]?", "What vaccines does [Destination] require?"</td><td><span class="badge b-red">100% unique</span></td></tr>
+        <tr><td>11</td><td>Related routes</td><td>Links to reverse route and nearby alternatives.</td><td><span class="badge b-green">Yes</span></td></tr>
+        <tr><td>12</td><td>Testimonial</td><td>"We shipped our Labrador from Dubai to London in 10 days" (with pet photo)</td><td><span class="badge b-green">Yes (when available)</span></td></tr>
+    </table>
+
+    <h3>2.4 Priority Routes (Where to Start)</h3>
+    <table>
+        <tr><th>Tier</th><th>Origin Countries</th><th>Destinations</th><th>Route Count</th></tr>
+        <tr>
+            <td><span class="badge b-red">P1 Launch</span></td>
+            <td>UK, USA, UAE, Australia, Canada, Germany, France, Singapore, Hong Kong, South Africa</td>
+            <td>Same 10 (cross-product minus self)</td>
+            <td>~90 routes</td>
+        </tr>
+        <tr>
+            <td><span class="badge b-orange">P2 Expand</span></td>
+            <td>+Spain, Italy, Netherlands, Japan, NZ, India, Thailand, Philippines, Brazil, Mexico, Saudi Arabia, Qatar, Ireland, Portugal, Switzerland</td>
+            <td>Top 25 destinations</td>
+            <td>~500 routes</td>
+        </tr>
+        <tr>
+            <td><span class="badge b-blue">P3 Broad</span></td>
+            <td>Top 50 origin countries</td>
+            <td>Top 50 destinations</td>
+            <td>~2,400 routes</td>
+        </tr>
+        <tr>
+            <td><span class="badge b-purple">P4 Full</span></td>
+            <td>Top 80 origin countries</td>
+            <td>Top 80 destinations</td>
+            <td>~6,000+ routes</td>
+        </tr>
+    </table>
+
+    <h3>2.5 Search Query Patterns</h3>
+    <table>
+        <tr><th>Query Pattern</th><th>Example</th><th>Intent</th><th>Volume</th></tr>
+        <tr><td>"pet transport from [A] to [B]"</td><td>"pet transport from Dubai to UK"</td><td>Commercial: ready to buy</td><td>Medium</td></tr>
+        <tr><td>"ship dog from [A] to [B]"</td><td>"ship dog from USA to Australia"</td><td>Commercial: high intent</td><td>Medium</td></tr>
+        <tr><td>"how to bring pet to [country]"</td><td>"how to bring pet to Australia"</td><td>Informational → commercial</td><td>Medium-High</td></tr>
+        <tr><td>"[country] pet import requirements"</td><td>"UK pet import requirements"</td><td>Informational: researching</td><td>High</td></tr>
+        <tr><td>"cost to ship dog from [A] to [B]"</td><td>"cost to ship dog from UK to Canada"</td><td>Commercial: price research</td><td>Medium</td></tr>
+        <tr><td>"quarantine for pets [country]"</td><td>"quarantine for pets Australia"</td><td>Informational</td><td>Medium</td></tr>
+        <tr><td>"[airline] pet policy"</td><td>"Emirates pet cargo policy"</td><td>Informational: airline research</td><td>High</td></tr>
+        <tr><td>"can I bring my [breed] to [country]"</td><td>"can I bring my Pit Bull to UK"</td><td>Informational: breed ban research</td><td>Medium</td></tr>
+        <tr><td>"pet relocation [city]"</td><td>"pet relocation Dubai"</td><td>Commercial: looking for local agent</td><td>Medium</td></tr>
+        <tr><td>"international pet shipping cost"</td><td>Generic</td><td>Informational: top of funnel</td><td>High</td></tr>
+    </table>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================ -->
+<!-- SECTION: EXECUTION PLAN & CAPABILITY ASSESSMENT -->
+<!-- ============================================================ -->
+<section id="execution-plan">
+    <h2>2.5 Execution Chunks &amp; Capability Assessment</h2>
+    <p>Added 14 April 2026. Each "Execute next stage" prompt triggers one block. Blocks are sized to maintain quality without pushing context limits. Phase 0 is split into 9 execution blocks.</p>
+
+    <div class="card" style="border:2px solid var(--cyan); background:rgba(57,210,192,0.04);">
+        <h4 style="color:var(--cyan); margin-top:0;">Capability Assessment</h4>
+        <table>
+            <tr><th>Capability</th><th>Status</th><th>Notes</th></tr>
+            <tr><td>Adapt Worker Soul Files (text editing)</td><td><span class="badge b-green">Strong</span></td><td>12 files, pattern-based adaptation. Can complete all in one block.</td></tr>
+            <tr><td>Web Research &amp; Competitor Analysis</td><td><span class="badge b-green">Strong</span></td><td>Can fetch and analyse individual pages. Cannot do full-site crawls, but can hit representative pages.</td></tr>
+            <tr><td>Government Portal Research</td><td><span class="badge b-green">Strong</span></td><td>Can fetch official government pet import portals and extract regulation data.</td></tr>
+            <tr><td>Airline Policy Research</td><td><span class="badge b-green">Strong</span></td><td>Can fetch airline pet cargo pages and compile policies.</td></tr>
+            <tr><td>Keyword Research</td><td><span class="badge b-orange">Logic-Based</span></td><td>No SEMrush/Ahrefs access. Will build keyword matrix from search patterns, query logic, and competitive gap analysis. Gareth confirmed this approach.</td></tr>
+            <tr><td>Country Regulations Database (JSON)</td><td><span class="badge b-green">Strong</span></td><td>Can research and compile structured JSON. Splitting 10 P1 countries across 2 blocks (5 each) for accuracy.</td></tr>
+            <tr><td>Database Schema Design</td><td><span class="badge b-green">Strong</span></td><td>Route schema with dual-country joins is a clear technical task.</td></tr>
+            <tr><td>HTML/CSS Templates</td><td><span class="badge b-green">Strong</span></td><td>Can build all page templates (route, country, airline, breed).</td></tr>
+            <tr><td>Content Writing at Scale</td><td><span class="badge b-green">Strong</span></td><td>Can write route pages, but 5,000+ pages needs a programmatic pipeline, not manual writing per page.</td></tr>
+            <tr><td>Deployment</td><td><span class="badge b-orange">Needs Gareth</span></td><td>Tech stack and domain decisions required (Task 0.10/0.11). Gareth will answer later.</td></tr>
+        </table>
+    </div>
+
+    <h3>Phase 0: Execution Blocks (9 Prompts)</h3>
+    <p>Say <strong>"Execute next stage"</strong> to trigger the next block. Blocks are ordered by dependency chain.</p>
+
+    <table>
+        <tr><th>Block</th><th>Tasks</th><th>Worker</th><th>Description</th><th>Depends On</th><th>Output</th><th>Status</th></tr>
+        <tr>
+            <td><span class="badge b-blue">Block 1</span></td>
+            <td>0.1</td>
+            <td>Architect</td>
+            <td>Adapt all 14 worker Soul files for pet transport domain. Rewrite identity, rules, responsibilities, and data models from bus-hire to pet-transport.</td>
+            <td>None</td>
+            <td>14 adapted Soul files in <code>workforce/</code></td>
+            <td><span class="badge b-green">DONE</span></td>
+        </tr>
+        <tr>
+            <td><span class="badge b-blue">Block 2</span></td>
+            <td>0.2</td>
+            <td>Spider</td>
+            <td>Scrape &amp; analyse PetRelocation.com. Map their site structure, page types, content depth, SEO gaps (missing route pages), and service model.</td>
+            <td>Block 1</td>
+            <td>Competitor analysis HTML in <code>data/competitors/</code></td>
+            <td><span class="badge b-green">DONE</span></td>
+        </tr>
+        <tr>
+            <td><span class="badge b-blue">Block 3</span></td>
+            <td>0.3 + 0.4</td>
+            <td>Spider</td>
+            <td>Scrape government pet import portals (USDA APHIS, UK APHA, AU DAFF, EU TRACES, SG AVS) and top 20 airline pet cargo policies. Both are intelligence-gathering tasks.</td>
+            <td>Block 1</td>
+            <td>Raw regulation data + airline policy data in <code>data/</code></td>
+            <td><span class="badge b-green">DONE</span></td>
+        </tr>
+        <tr>
+            <td><span class="badge b-blue">Block 4</span></td>
+            <td>0.5</td>
+            <td>Scout</td>
+            <td>Route keyword research for all 90 P1 route combinations. Build keyword matrix with query patterns, estimated intent, and priority ranking per route.</td>
+            <td>Block 1</td>
+            <td>Route keyword matrix JSON in <code>data/</code></td>
+            <td><span class="badge b-green">DONE</span></td>
+        </tr>
+        <tr>
+            <td><span class="badge b-blue">Block 5</span></td>
+            <td>0.6a</td>
+            <td>Geographer</td>
+            <td>Build country regulations database: first 5 P1 countries (UK, USA, UAE, Australia, Canada). Import rules, export rules, quarantine, vaccines, breed bans, approved ports.</td>
+            <td>Block 3</td>
+            <td>5 country records in <code>data/countries_pet_regulations.json</code></td>
+            <td><span class="badge b-green">DONE</span></td>
+        </tr>
+        <tr>
+            <td><span class="badge b-blue">Block 6</span></td>
+            <td>0.6b</td>
+            <td>Geographer</td>
+            <td>Country regulations database: next 5 P1 countries (Germany, France, Singapore, Hong Kong, South Africa). Same schema as Block 5.</td>
+            <td>Block 5</td>
+            <td>10 country records total in <code>data/countries_pet_regulations.json</code></td>
+            <td><span class="badge b-green">DONE</span></td>
+        </tr>
+        <tr>
+            <td><span class="badge b-blue">Block 7</span></td>
+            <td>0.7 + 0.8</td>
+            <td>Geographer</td>
+            <td>Build airline pet policy database (20+ airlines) and breed restriction database (banned breeds per country). Related data tasks that feed the route schema.</td>
+            <td>Block 3</td>
+            <td><code>data/airlines_pet_policies.json</code> + <code>data/breed_restrictions.json</code></td>
+            <td><span class="badge b-green">DONE</span></td>
+        </tr>
+        <tr>
+            <td><span class="badge b-blue">Block 8</span></td>
+            <td>0.9 + 0.11</td>
+            <td>Librarian + Builder</td>
+            <td>Design route database schema (dual-country joins: origin regs + destination regs + airline options = route page data). Define tech stack recommendation. Domain to be confirmed by Gareth.</td>
+            <td>Block 5, Block 7</td>
+            <td><code>data/schema_and_tech_stack.json</code></td>
+            <td><span class="badge b-green">DONE</span></td>
+        </tr>
+        <tr>
+            <td><span class="badge b-blue">Block 9</span></td>
+            <td>Gate</td>
+            <td>Architect</td>
+            <td>Phase 0 gate review. Verify all outputs, identify data gaps, confirm readiness for Phase 1. Compile Phase 0 completion report.</td>
+            <td>Blocks 1-8</td>
+            <td><code>data/phase0_gate_report.html</code></td>
+            <td><span class="badge b-green">DONE</span></td>
+        </tr>
+    </table>
+
+    <div class="card" style="border:2px solid var(--orange); background:rgba(210,153,34,0.04); margin-top:20px;">
+        <h4 style="color:var(--orange); margin-top:0;">Gareth's TODO List (Needed Before Deployment)</h4>
+        <p>These decisions do not block the build. Templates, content, and SEO work proceeds with placeholders. Items must be resolved before go-live.</p>
+        <table>
+            <tr><th style="width:40px;">✓</th><th>Item</th><th>Details</th><th>Status</th></tr>
+            <tr>
+                <td style="text-align:center;">☐</td>
+                <td><strong>Domain name</strong></td>
+                <td>Must be purchased and pointed to Cloudflare. Affects canonical URLs, sitemap, and OG tags.</td>
+                <td><span class="badge b-orange">TODO</span></td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">☑</td>
+                <td><strong>Brand name</strong></td>
+                <td>Pet Transport Global (pettransportglobal.com). Updated across all 32 files: hugo.toml, 15 route .md files, 15 route .json data files, including SEO title tags.</td>
+                <td><span class="badge b-green">DONE</span></td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">☐</td>
+                <td><strong>Quote form recipient email</strong></td>
+                <td>Where enquiries go. Cloudflare Worker forwards form submissions to this address. Can be changed post-launch.</td>
+                <td><span class="badge b-orange">TODO</span></td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">☐</td>
+                <td><strong>Business model decision</strong></td>
+                <td>Operator (coordinate transport directly) vs marketplace (connect owners with IPATA agents). Affects CTA copy and pricing pages.</td>
+                <td><span class="badge b-orange">TODO</span></td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">☐</td>
+                <td><strong>Content tone</strong></td>
+                <td>Corporate authority or personal brand? Affects Wordsmith voice and case study approach.</td>
+                <td><span class="badge b-orange">TODO</span></td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">☐</td>
+                <td><strong>Strategic questions (Section 14)</strong></td>
+                <td>10 questions covering IPATA membership, route priority, Google Ads, social media, page volume cap.</td>
+                <td><span class="badge b-orange">TODO</span></td>
+            </tr>
+        </table>
+    </div>
+
+    <h3>Phase 1: Execution Blocks</h3>
+    <p>Defined during Block 9 gate review. 9 blocks covering Hugo scaffolding, templates, route data assembly, content writing, SEO, humanisation, QA, and deployment.</p>
+
+    <table>
+        <tr><th>Block</th><th>Tasks</th><th>Worker</th><th>Description</th><th>Depends On</th><th>Output</th><th>Status</th></tr>
+        <tr>
+            <td><span class="badge b-purple">Block 10</span></td>
+            <td>1.1</td>
+            <td>Builder</td>
+            <td>Hugo project scaffolding: config, base layout, header/footer/nav partials, data directory structure, route-page template (primary template).</td>
+            <td>Block 8</td>
+            <td>Hugo project in <code>site/</code></td>
+            <td><span class="badge b-green">DONE</span></td>
+        </tr>
+        <tr>
+            <td><span class="badge b-purple">Block 11</span></td>
+            <td>1.2</td>
+            <td>Builder</td>
+            <td>Remaining templates: country-guide, origin-hub, airline-guide, breed-guide, core pages. Quote form with Cloudflare Worker endpoint + Turnstile.</td>
+            <td>Block 10</td>
+            <td>All 6 templates + form endpoint</td>
+            <td><span class="badge b-green">DONE</span></td>
+        </tr>
+        <tr>
+            <td><span class="badge b-purple">Block 12</span></td>
+            <td>1.3</td>
+            <td>Librarian</td>
+            <td>Route data assembly: Tier 1 Batch 1 (8 routes). Dual-country join for UK-AU, UAE-UK, UAE-AU, UAE-USA, AU-UK, HK-UK, HK-AU, UK-UAE.</td>
+            <td>Blocks 5-7</td>
+            <td>8 route data JSON files in <code>data/routes/</code></td>
+            <td><span class="badge b-green">DONE</span></td>
+        </tr>
+        <tr>
+            <td><span class="badge b-purple">Block 13</span></td>
+            <td>1.4</td>
+            <td>Librarian</td>
+            <td>Route data assembly: Tier 1 Batch 2 (7 routes). USA-UK, USA-AU, UK-FR, UK-SG, SG-AU, AU-SG, SA-AU.</td>
+            <td>Blocks 5-7</td>
+            <td>7 route data JSON files in <code>data/routes/</code></td>
+            <td><span class="badge b-green">DONE</span></td>
+        </tr>
+        <tr>
+            <td><span class="badge b-purple">Block 14</span></td>
+            <td>1.5</td>
+            <td>Wordsmith + Interrogator</td>
+            <td>Route page content Batch 1: 8 Tier 1 routes. 2,500-4,000 words each + 8-12 FAQs. Authority voice, YMYL, source citations.</td>
+            <td>Block 12</td>
+            <td>8 route content JSON files</td>
+            <td><span class="badge b-green">DONE</span></td>
+        </tr>
+        <tr>
+            <td><span class="badge b-purple">Block 15</span></td>
+            <td>1.6</td>
+            <td>Wordsmith + Interrogator</td>
+            <td>Route page content Batch 2: 7 Tier 1 routes. Same spec as Block 14.</td>
+            <td>Block 13</td>
+            <td>7 route content JSON files</td>
+            <td><span class="badge b-green">DONE</span></td>
+        </tr>
+        <tr>
+            <td><span class="badge b-purple">Block 16</span></td>
+            <td>1.7</td>
+            <td>Wordsmith + Librarian</td>
+            <td>Country guides (10 destination-focused) + origin hubs (10 departure-focused). Hub pages linking down to route pages.</td>
+            <td>Blocks 5-7, Block 10</td>
+            <td>20 hub/guide content files</td>
+            <td><span class="badge b-green">DONE</span></td>
+        </tr>
+        <tr>
+            <td><span class="badge b-purple">Block 17</span></td>
+            <td>1.8</td>
+            <td>Optimiser + Chameleon + Connector</td>
+            <td>SEO pass (titles, metas, schema markup), humanisation (24 anti-AI patterns), internal linking structure (upward, cross-type, sideways).</td>
+            <td>Blocks 14-16</td>
+            <td>SEO + humanised content files</td>
+            <td><span class="badge b-green">DONE</span></td>
+        </tr>
+        <tr>
+            <td><span class="badge b-purple">Block 18</span></td>
+            <td>1.9 + Gate</td>
+            <td>Auditor + Builder + Watchdog</td>
+            <td>QA audit (YMYL, accuracy, sources, safety language). Final build. Sitemap + robots.txt. Deploy to Cloudflare Pages. Monitoring setup.</td>
+            <td>Block 17</td>
+            <td>Live site + Phase 1 gate report</td>
+            <td><span class="badge b-green">DONE</span></td>
+        </tr>
+        <tr>
+            <td><span class="badge b-purple">Block 19</span></td>
+            <td>1.10</td>
+            <td>Librarian + Builder</td>
+            <td>Route data + content for remaining 74 P1 routes. All 10x10 country pairs now complete (89 total). <code>assemble_routes.py</code> extended with BATCH_3. 132 pages total, 503 files deployed. 21 April 2026.</td>
+            <td>Block 18</td>
+            <td>89 route pages live at pettransportglobal.surge.sh</td>
+            <td><span class="badge b-green">DONE</span></td>
+        </tr>
+        <tr>
+            <td><span class="badge b-purple">Block 20</span></td>
+            <td>2.4</td>
+            <td>Builder + Wordsmith</td>
+            <td>23 airline guide pages generated from <code>airline_pet_policies.json</code>. <code>generate_airline_pages.py</code> produces per-airline data JSON + Hugo markdown. Content: cabin/cargo policy, breed restrictions, crate requirements, FAQs. Layout pre-existing (<code>airlines/single.html</code>). 190 pages total deployed.</td>
+            <td>Block 19</td>
+            <td>23 airline pages live at pettransportglobal.surge.sh/airlines/</td>
+            <td><span class="badge b-green">DONE</span></td>
+        </tr>
+        <tr>
+            <td><span class="badge b-purple">Block 21</span></td>
+            <td>2.5</td>
+            <td>Builder + Wordsmith</td>
+            <td>35 breed guide pages generated from <code>breed_restrictions.json</code>. <code>generate_breed_pages.py</code> produces: 10 restricted/dangerous breed pages (country ban data) + 25 brachycephalic breed pages (airline restriction data). Layout pre-existing (<code>breeds/single.html</code>). 190 pages total deployed.</td>
+            <td>Block 20</td>
+            <td>35 breed pages live at pettransportglobal.surge.sh/breeds/</td>
+            <td><span class="badge b-green">DONE</span></td>
+        </tr>
+    </table>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================ -->
+<!-- SECTION: WORKFORCE -->
+<!-- ============================================================ -->
+<section id="workforce">
+    <h2>3. The Workforce: All Workers Needed</h2>
+    <p>Same 14-worker framework, adapted for pet transport. Key difference: The Geographer's role is massive here because every route requires two sets of regulations (origin + destination), airline policies, and quarantine data.</p>
+
+    <h3>Department A: Leadership &amp; Planning</h3>
+    <div class="card-grid">
+        <div class="worker-card accent-left">
+            <div class="worker-header">
+                <div class="worker-icon" style="background:rgba(88,166,255,0.15);">🧠</div>
+                <div>
+                    <div class="worker-title">The Architect</div>
+                    <div class="worker-subtitle">Planning &amp; Route Orchestration Lead</div>
+                </div>
+            </div>
+            <p>Master planner managing route page generation at scale. The combinatorial explosion (80x80 = 6,400 possible routes) requires careful prioritisation. The Architect decides which routes to build and in what order, based on traffic potential and commercial value.</p>
+            <div class="worker-section">
+                <h4>Adaptation from Bus Hire</h4>
+                <div class="pill-list">
+                    <span class="pill">Route prioritisation matrix</span>
+                    <span class="pill">Combinatorial page planning</span>
+                    <span class="pill">Regulatory accuracy gates</span>
+                </div>
+            </div>
+        </div>
+        <div class="worker-card accent-left">
+            <div class="worker-header">
+                <div class="worker-icon" style="background:rgba(88,166,255,0.15);">📊</div>
+                <div>
+                    <div class="worker-title">The Auditor</div>
+                    <div class="worker-subtitle">Quality &amp; Regulatory Accuracy</div>
+                </div>
+            </div>
+            <p>Reviews all output before publish. Special focus on regulatory accuracy. If a page says "No quarantine required for dogs entering Australia", that is dangerously wrong (10-day quarantine IS required). Getting regulations wrong could result in a pet being stuck in quarantine or refused entry. The Auditor is the last gate against inaccurate import/export data.</p>
+            <div class="worker-section">
+                <h4>Adaptation from Bus Hire</h4>
+                <div class="pill-list">
+                    <span class="pill">Regulatory fact-checking</span>
+                    <span class="pill">Quarantine accuracy</span>
+                    <span class="pill">Vaccination timeline verification</span>
+                    <span class="pill">Breed ban accuracy</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3>Department B: Intelligence &amp; Research</h3>
+    <div class="card-grid">
+        <div class="worker-card green-left">
+            <div class="worker-header">
+                <div class="worker-icon" style="background:rgba(63,185,80,0.12);">🕷️</div>
+                <div>
+                    <div class="worker-title">The Spider</div>
+                    <div class="worker-subtitle">Competitor &amp; Regulation Scraper</div>
+                </div>
+            </div>
+            <p>Primary target: PetRelocation.com. Scrape their 150+ country pages for structure, content depth, and gaps (route pages they don't have). Also scrapes government pet import portals (USDA APHIS, UK APHA, Australian DAFF) for official regulation data.</p>
+            <div class="worker-section">
+                <h4>Key Scrape Targets</h4>
+                <div class="pill-list">
+                    <span class="pill">PetRelocation.com (150+ pages)</span>
+                    <span class="pill">USDA APHIS pet travel</span>
+                    <span class="pill">UK APHA import rules</span>
+                    <span class="pill">Australian DAFF BICON</span>
+                    <span class="pill">IPATA member directory</span>
+                    <span class="pill">Airline pet policy pages</span>
+                </div>
+            </div>
+        </div>
+        <div class="worker-card green-left">
+            <div class="worker-header">
+                <div class="worker-icon" style="background:rgba(63,185,80,0.12);">🔬</div>
+                <div>
+                    <div class="worker-title">The Scout</div>
+                    <div class="worker-subtitle">Route Keyword Research</div>
+                </div>
+            </div>
+            <p>Keyword research at route level. "pet transport [A] to [B]" queries for all priority route combinations. Identifies which routes have search volume and which are dead. This determines the build order.</p>
+        </div>
+        <div class="worker-card green-left">
+            <div class="worker-header">
+                <div class="worker-icon" style="background:rgba(63,185,80,0.12);">🌍</div>
+                <div>
+                    <div class="worker-title">The Geographer</div>
+                    <div class="worker-subtitle">The Star: Route Regulations Database</div>
+                </div>
+            </div>
+            <p><strong>The biggest role in this project.</strong> Builds the master database of import/export regulations for every country. This data is what makes each route page genuinely unique. Every country has different requirements for: microchipping, vaccinations, rabies titre tests, import permits, quarantine, breed bans, and health certificate timelines.</p>
+            <div class="worker-section">
+                <h4>Data Points Per Country (Both Import AND Export)</h4>
+                <div class="pill-list">
+                    <span class="pill">Microchip requirement (ISO standard?)</span>
+                    <span class="pill">Rabies vaccination rules</span>
+                    <span class="pill">Rabies titre test required?</span>
+                    <span class="pill">Titre test wait period</span>
+                    <span class="pill">Import permit required?</span>
+                    <span class="pill">Quarantine: yes/no, duration</span>
+                    <span class="pill">Banned breeds list</span>
+                    <span class="pill">Health certificate timing</span>
+                    <span class="pill">CITES permits (exotic pets)</span>
+                    <span class="pill">Approved veterinarians</span>
+                    <span class="pill">Approved entry ports</span>
+                    <span class="pill">Airlines serving route</span>
+                    <span class="pill">Temperature embargoes</span>
+                    <span class="pill">Crate size regulations</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3>Department C: Content Creation</h3>
+    <div class="card-grid">
+        <div class="worker-card purple-left">
+            <div class="worker-header">
+                <div class="worker-icon" style="background:rgba(188,140,255,0.12);">✍️</div>
+                <div>
+                    <div class="worker-title">The Wordsmith</div>
+                    <div class="worker-subtitle">Route Content Writer</div>
+                </div>
+            </div>
+            <p>Writes route pages that are genuinely helpful. Tone: friendly, reassuring (pet owners are anxious about shipping their animal), practical. Must turn regulatory data from The Geographer into plain-English guidance. "Your dog needs a rabies titre test at least 3 months before travel" not "Rabies Fluorescent Antibody Virus Neutralisation test per OIE standard required 90 days pre-export".</p>
+            <div class="worker-section">
+                <h4>Tone Rules</h4>
+                <ul>
+                    <li>Warm and reassuring: pet owners worry about their animals</li>
+                    <li>Practical: focus on "what you need to do" not "here are the regulations"</li>
+                    <li>Honest about timelines: "This route requires 4-6 months preparation" if true</li>
+                    <li>Never dismissive of concerns: "We understand shipping your pet feels scary"</li>
+                    <li>Use pet names: "your dog", "your cat", "your pet" not "the animal" or "the cargo"</li>
+                </ul>
+            </div>
+        </div>
+        <div class="worker-card purple-left">
+            <div class="worker-header">
+                <div class="worker-icon" style="background:rgba(188,140,255,0.12);">❓</div>
+                <div>
+                    <div class="worker-title">The Interrogator</div>
+                    <div class="worker-subtitle">Route FAQ &amp; Breed FAQ Generator</div>
+                </div>
+            </div>
+            <p>Generates FAQs per route ("Can I fly my cat from Singapore to UK on Singapore Airlines?", "Is there quarantine for dogs arriving in Japan from USA?") and per breed ("Can French Bulldogs fly in cargo?", "Is my XL Bully banned in Australia?").</p>
+        </div>
+        <div class="worker-card purple-left">
+            <div class="worker-header">
+                <div class="worker-icon" style="background:rgba(188,140,255,0.12);">🔄</div>
+                <div>
+                    <div class="worker-title">The Chameleon</div>
+                    <div class="worker-subtitle">Humaniser &amp; Consistency Filter</div>
+                </div>
+            </div>
+            <p>Standard humaniser pass. Extra focus: ensuring route pages don't feel templated. With 5,000+ route pages, consistency in structure is necessary but they must not read identically. The Chameleon varies sentence structures, introduces route-specific anecdotes, and catches repetitive patterns.</p>
+        </div>
+    </div>
+
+    <h3>Department D: SEO · Department E: Dev · Department F: Monitoring</h3>
+    <div class="card-grid">
+        <div class="worker-card orange-left">
+            <div class="worker-header">
+                <div class="worker-icon" style="background:rgba(210,153,34,0.12);">🎯</div>
+                <div>
+                    <div class="worker-title">The Optimiser</div>
+                    <div class="worker-subtitle">Route Page SEO (Scale)</div>
+                </div>
+            </div>
+            <p>SEO at scale. 5,000+ pages need unique titles, unique metas, proper schema (HowTo, FAQPage, Service). Route pages should target "pet transport [A] to [B]", "ship dog from [A] to [B]", "pet relocation [A] to [B]" clusters.</p>
+        </div>
+        <div class="worker-card orange-left">
+            <div class="worker-header">
+                <div class="worker-icon" style="background:rgba(210,153,34,0.12);">🔗</div>
+                <div>
+                    <div class="worker-title">The Connector</div>
+                    <div class="worker-subtitle">Internal Link Graph (Route ↔ Country ↔ Airline ↔ Breed)</div>
+                </div>
+            </div>
+            <p>Complex internal link structure. Route pages link to: origin country guide, destination country guide, airline guides for that route, breed guides for restricted breeds. Country guides link to all routes from/to that country. Airline guides link to all routes served by that airline. This creates a dense, useful link graph.</p>
+        </div>
+        <div class="worker-card cyan-left">
+            <div class="worker-header">
+                <div class="worker-icon" style="background:rgba(57,210,192,0.12);">⚙️</div>
+                <div>
+                    <div class="worker-title">The Builder</div>
+                    <div class="worker-subtitle">Route Page Generator</div>
+                </div>
+            </div>
+            <p>Builds the static site with route page generation from database. Key challenge: rendering 5,000+ pages efficiently. Must support a route page template that fills dynamically with origin + destination data while keeping the HTML unique enough for Google.</p>
+        </div>
+        <div class="worker-card cyan-left">
+            <div class="worker-header">
+                <div class="worker-icon" style="background:rgba(57,210,192,0.12);">🗄️</div>
+                <div>
+                    <div class="worker-title">The Librarian</div>
+                    <div class="worker-subtitle">Route Data Pipeline</div>
+                </div>
+            </div>
+            <p>Manages the central database: country regulations (import + export), airline policies, breed guides, route metadata. Schema must support the combinatorial nature: each route page pulls data from BOTH the origin country record AND the destination country record.</p>
+        </div>
+        <div class="worker-card pink-left">
+            <div class="worker-header">
+                <div class="worker-icon" style="background:rgba(247,120,186,0.12);">📈</div>
+                <div>
+                    <div class="worker-title">The Analyst</div>
+                    <div class="worker-subtitle">Route Performance Tracking</div>
+                </div>
+            </div>
+            <p>Tracks which route pages rank, which generate leads, and which have zero traffic (candidates for pruning or content upgrade). With 5,000+ pages, the Analyst needs dashboards showing route-level performance.</p>
+        </div>
+        <div class="worker-card pink-left">
+            <div class="worker-header">
+                <div class="worker-icon" style="background:rgba(247,120,186,0.12);">🛡️</div>
+                <div>
+                    <div class="worker-title">The Watchdog</div>
+                    <div class="worker-subtitle">Site Health (Large-Scale)</div>
+                </div>
+            </div>
+            <p>Monitors a large-scale static site: 5,000+ pages need crawl budget management, sitemap health, broken link detection, and page speed monitoring. Also monitors for regulation changes that make content inaccurate.</p>
+        </div>
+    </div>
+
+    <h3>Workforce Summary</h3>
+    <table>
+        <tr><th>Worker</th><th>Adaptation</th><th>Active From</th></tr>
+        <tr><td>The Architect</td><td>Route prioritisation + combinatorial planning</td><td><span class="badge b-blue">Phase 0</span></td></tr>
+        <tr><td>The Auditor</td><td>Regulatory fact-checking</td><td><span class="badge b-blue">Phase 1</span></td></tr>
+        <tr><td>The Spider</td><td>PetRelocation + government portals</td><td><span class="badge b-green">Phase 0</span></td></tr>
+        <tr><td>The Scout</td><td>Route-level keyword research</td><td><span class="badge b-green">Phase 0</span></td></tr>
+        <tr><td>The Geographer</td><td>Import/export regulations for 150 countries</td><td><span class="badge b-green">Phase 0</span></td></tr>
+        <tr><td>The Wordsmith</td><td>Reassuring tone, plain-English regulations</td><td><span class="badge b-purple">Phase 1</span></td></tr>
+        <tr><td>The Interrogator</td><td>Route + breed FAQ generation</td><td><span class="badge b-purple">Phase 1</span></td></tr>
+        <tr><td>The Chameleon</td><td>Anti-template variation at scale</td><td><span class="badge b-purple">Phase 1</span></td></tr>
+        <tr><td>The Optimiser</td><td>Route SEO at scale (5K+ pages)</td><td><span class="badge b-orange">Phase 1</span></td></tr>
+        <tr><td>The Connector</td><td>Dense 4-way link graph</td><td><span class="badge b-orange">Phase 2</span></td></tr>
+        <tr><td>The Builder</td><td>Route page generator from DB</td><td><span class="badge b-cyan">Phase 1</span></td></tr>
+        <tr><td>The Librarian</td><td>Dual-country route schema</td><td><span class="badge b-cyan">Phase 0</span></td></tr>
+        <tr><td>The Analyst</td><td>Route-level performance dashboards</td><td><span class="badge b-pink">Phase 3</span></td></tr>
+        <tr><td>The Watchdog</td><td>Large-site crawl budget monitoring</td><td><span class="badge b-pink">Phase 2</span></td></tr>
+    </table>
+</section>
+
+<div class="divider"></div>
+
+<!-- ORG CHART -->
+<section id="org-chart">
+    <h2>4. Org Chart</h2>
+    <div class="org-chart">
+        <div class="org-label">Gareth (Human Operator)</div>
+        <div class="org-row">
+            <div class="org-node lead">
+                <div class="role" style="color:var(--accent);">Lead</div>
+                <div class="name">The Architect</div>
+                <div class="desc">Route planning, priorities</div>
+            </div>
+        </div>
+        <div class="org-connector">|</div>
+        <div class="org-label">Department Leads</div>
+        <div class="org-row">
+            <div class="org-node scraper"><div class="role" style="color:var(--green);">Intelligence</div><div class="name">The Spider</div><div class="desc">Competitor + gov scraping</div></div>
+            <div class="org-node writer"><div class="role" style="color:var(--purple);">Content</div><div class="name">The Wordsmith</div><div class="desc">Reassuring writer</div></div>
+            <div class="org-node seo"><div class="role" style="color:var(--orange);">SEO</div><div class="name">The Optimiser</div><div class="desc">Route SEO at scale</div></div>
+            <div class="org-node dev"><div class="role" style="color:var(--cyan);">Dev</div><div class="name">The Builder</div><div class="desc">Route generator</div></div>
+            <div class="org-node qa"><div class="role" style="color:var(--pink);">QA</div><div class="name">The Auditor</div><div class="desc">Regulatory accuracy</div></div>
+        </div>
+        <div class="org-connector">| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</div>
+        <div class="org-label">Specialist Workers</div>
+        <div class="org-row">
+            <div class="org-node scraper"><div class="role" style="color:var(--green);">Intel</div><div class="name">The Scout</div><div class="desc">Route keywords</div></div>
+            <div class="org-node scraper"><div class="role" style="color:var(--green);">Intel</div><div class="name">The Geographer</div><div class="desc">Country regulations (star role)</div></div>
+            <div class="org-node writer"><div class="role" style="color:var(--purple);">Content</div><div class="name">The Interrogator</div><div class="desc">Route + breed FAQs</div></div>
+            <div class="org-node writer"><div class="role" style="color:var(--purple);">Content</div><div class="name">The Chameleon</div><div class="desc">Anti-template variation</div></div>
+            <div class="org-node seo"><div class="role" style="color:var(--orange);">SEO</div><div class="name">The Connector</div><div class="desc">4-way link graph</div></div>
+            <div class="org-node dev"><div class="role" style="color:var(--cyan);">Dev</div><div class="name">The Librarian</div><div class="desc">Route data pipeline</div></div>
+            <div class="org-node qa"><div class="role" style="color:var(--pink);">Monitor</div><div class="name">The Analyst</div><div class="desc">Route dashboards</div></div>
+            <div class="org-node qa"><div class="role" style="color:var(--pink);">Monitor</div><div class="name">The Watchdog</div><div class="desc">Crawl budget + uptime</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- COMPLIANCE -->
+<section id="compliance">
+    <h2>5. Google Compliance &amp; Quality Standards</h2>
+
+    <div class="card" style="border:3px solid var(--orange); background:rgba(210,153,34,0.04);">
+        <h4 style="color:var(--orange); margin-top:0;">Critical Challenge: Scaled Content at 5,000+ Pages</h4>
+        <p>With 5,000+ route pages, Google's <strong>scaled content abuse</strong> policy is the biggest risk. Every route page must pass the "would this page exist if search engines didn't?" test. The answer is YES: because the regulatory requirements differ per route, each page serves a genuine informational need.</p>
+        <p>The gates:</p>
+        <ol>
+            <li><strong>Google Quality Gate:</strong> Unique H1, unique meta, 800+ words of body content, 40%+ unique content per page, 3+ FAQs with route-specific answers, HowTo + FAQPage schema.</li>
+            <li><strong>Regulatory Accuracy Gate:</strong> Import requirements match the official government portal for that country. Export requirements verified. Airline policies current. Quarantine info correct. Breed bans accurate.</li>
+            <li><strong>Anti-Template Gate:</strong> No two route pages should feel like a find-and-replace job. The Chameleon must vary structure, sentence patterns, and anecdotes across pages.</li>
+        </ol>
+    </div>
+
+    <h3>Gradual Rollout Plan</h3>
+    <table>
+        <tr><th>Milestone</th><th>Pages Live</th><th>Phase</th><th>Gate</th></tr>
+        <tr><td>Launch</td><td>~200 pages</td><td>Phase 1</td><td>90 P1 routes + 10 origin hubs + 10 country guides + core pages. Indexed, no manual actions.</td></tr>
+        <tr><td>Expand</td><td>~800 pages</td><td>Phase 2</td><td>500 P2 routes + airline guides + breed guides. Regulatory audit passed.</td></tr>
+        <tr><td>Scale</td><td>~3,000 pages</td><td>Phase 3</td><td>2,400 P3 routes + blog. Anti-template audit passed.</td></tr>
+        <tr><td>Full coverage</td><td>~6,000+ pages</td><td>Phase 4</td><td>All priority routes + all supporting content.</td></tr>
+        <tr><td>Optimise</td><td>~8,000+ pages</td><td>Phase 5-6</td><td>Pruning thin pages, upgrading winners, maintenance.</td></tr>
+    </table>
+</section>
+
+<div class="divider"></div>
+
+<!-- PHASES -->
+<section id="phase-0">
+    <h2>6. Phase 0: Setup &amp; Intelligence (Weeks 1-3)</h2>
+
+    <div class="card green-left">
+        <div class="label label-green">Workers Active</div>
+        <p>The Architect, The Spider, The Scout, The Geographer, The Librarian</p>
+    </div>
+
+    <table>
+        <tr><th>#</th><th>Task</th><th>Worker</th><th>Depends On</th><th>Output</th><th>Status</th></tr>
+        <tr><td>0.1</td><td>Adapt all 14 worker Souls for pet transport domain</td><td>Architect</td><td>-</td><td>14 adapted Soul files</td><td><span class="badge b-green">DONE</span></td></tr>
+        <tr><td>0.2</td><td>Scrape PetRelocation.com: all country pages, service pages, blog posts. Extract page structures, content depth, regulatory info presented.</td><td>Spider</td><td>0.1</td><td>PetRelocation analysis</td><td><span class="badge b-green">DONE</span></td></tr>
+        <tr><td>0.3</td><td>Scrape government pet import portals: USDA APHIS, UK APHA, Australian DAFF BICON, EU TRACES, Singapore AVS. Extract official regulations.</td><td>Spider</td><td>0.1</td><td>Government regulation database</td><td><span class="badge b-green">DONE</span></td></tr>
+        <tr><td>0.4</td><td>Scrape airline pet cargo policies: Emirates, British Airways, Lufthansa, Singapore Airlines, Qantas, KLM, Air France, United, Delta, American, Cathay Pacific (top 20 airlines).</td><td>Spider</td><td>0.1</td><td>Airline policy database</td><td><span class="badge b-green">DONE</span></td></tr>
+        <tr><td>0.5</td><td>Route keyword research: "pet transport [A] to [B]" for all P1 route combinations (90 routes). Identify volume + competition per route.</td><td>Scout</td><td>0.1</td><td>Route keyword matrix</td><td><span class="badge b-orange">TODO</span></td></tr>
+        <tr><td>0.6</td><td>Build master country regulations database: import rules, export rules, quarantine, vaccines, breed bans, approved ports for 80 priority countries.</td><td>Geographer</td><td>0.3</td><td>countries_pet_regulations.json</td><td><span class="badge b-orange">TODO</span></td></tr>
+        <tr><td>0.7</td><td>Build airline database: 20+ airlines with pet cargo policies, crate requirements, temperature embargoes, route coverage.</td><td>Geographer</td><td>0.4</td><td>airlines_pet_policies.json</td><td><span class="badge b-orange">TODO</span></td></tr>
+        <tr><td>0.8</td><td>Build breed restriction database: banned breeds per country (UK, Australia, Singapore, Germany, etc.)</td><td>Geographer</td><td>0.6</td><td>breed_restrictions.json</td><td><span class="badge b-orange">TODO</span></td></tr>
+        <tr><td>0.9</td><td>Design route database schema (dual-country joins: origin regs + destination regs + airline options = route page data)</td><td>Librarian</td><td>0.6, 0.7</td><td>Database schema</td><td><span class="badge b-orange">TODO</span></td></tr>
+        <tr><td>0.10</td><td>Gareth answers strategic questions (see section 14)</td><td>Gareth</td><td>-</td><td>Strategic decisions</td><td><span class="badge b-orange">TODO</span></td></tr>
+        <tr><td>0.11</td><td>Technology + domain acquisition</td><td>Architect + Builder</td><td>0.10</td><td>Tech stack + domain</td><td><span class="badge b-orange">TODO</span></td></tr>
+    </table>
+</section>
+
+<div class="divider"></div>
+
+<section id="phase-1">
+    <h2>7. Phase 1: Foundation &amp; P1 Routes (Weeks 4-8)</h2>
+    <p>Build core site, templates, and first 90 P1 route pages. Target: ~200 pages live.</p>
+
+    <div class="card purple-left">
+        <div class="label label-purple">Workers Active</div>
+        <p>All Phase 0 + Wordsmith, Interrogator, Chameleon, Optimiser, Builder, Auditor</p>
+    </div>
+
+    <table>
+        <tr><th>#</th><th>Task</th><th>Worker</th><th>Output</th></tr>
+        <tr><td>1.1</td><td>Build homepage with quote funnel, trust signals, route search</td><td>Builder + Wordsmith</td><td>Homepage live</td></tr>
+        <tr><td>1.2</td><td>Build core pages: About, Contact, Get-a-Quote, FAQ, Testimonials, Privacy, T&C</td><td>Builder + Wordsmith</td><td>Core pages</td></tr>
+        <tr><td>1.3</td><td>Build Route Page Template (12-section layout per section 2.3)</td><td>Builder</td><td>Route template</td></tr>
+        <tr><td>1.4</td><td>Build Country Guide Template (import regs, quarantine, breed bans)</td><td>Builder</td><td>Country guide template</td></tr>
+        <tr><td>1.5</td><td>Build Origin Hub Template (all routes from this country)</td><td>Builder</td><td>Origin hub template</td></tr>
+        <tr><td>1.6</td><td>Write 90 P1 route pages (10 origins x 9 destinations)</td><td>Wordsmith + pipeline</td><td>90 route pages</td></tr>
+        <tr><td>1.7</td><td>Write 10 origin hub pages</td><td>Wordsmith</td><td>10 hub pages</td></tr>
+        <tr><td>1.8</td><td>Write 10 country regulation guides (P1 destinations)</td><td>Wordsmith</td><td>10 guide pages</td></tr>
+        <tr><td>1.9</td><td>Generate route-specific FAQs for all route pages</td><td>Interrogator</td><td>90 FAQ sets</td></tr>
+        <tr><td>1.10</td><td>Humaniser + anti-template pass on all content</td><td>Chameleon</td><td>Unique content</td></tr>
+        <tr><td>1.11</td><td>SEO: unique titles, metas, schema for all pages</td><td>Optimiser</td><td>SEO-ready</td></tr>
+        <tr><td>1.12</td><td>QA: regulatory accuracy + quality audit</td><td>Auditor</td><td>Approved pages</td></tr>
+        <tr><td>1.13</td><td>Deploy ~200 pages, submit sitemap</td><td>Builder</td><td>Site live</td></tr>
+        <tr><td>1.14</td><td>Analytics, GSC, quote form tracking setup</td><td>Builder</td><td>Tracking live</td></tr>
+    </table>
+
+    <div class="card" style="margin-top:20px; font-family: 'Courier New', monospace; font-size: 0.82rem; line-height: 2; background:var(--surface-2); padding:20px; border-radius:8px;">
+        <span style="color:var(--green);">Geographer</span> → origin regs + destination regs per route<br>
+        &nbsp;&nbsp;↓<br>
+        <span style="color:var(--purple);">Wordsmith</span> ────────┐ PARALLEL (batch: 10 routes/day)<br>
+        <span style="color:var(--purple);">Interrogator</span> ─────┘<br>
+        &nbsp;&nbsp;↓<br>
+        <span style="color:var(--purple);">Chameleon</span> → humanise + anti-template variation<br>
+        &nbsp;&nbsp;↓<br>
+        <span style="color:var(--orange);">Optimiser</span> → title / meta / schema<br>
+        &nbsp;&nbsp;↓<br>
+        <span style="color:var(--cyan);">Librarian</span> → ingest route data<br>
+        &nbsp;&nbsp;↓<br>
+        <span style="color:var(--pink);">Auditor</span> → regulatory accuracy + quality<br>
+        &nbsp;&nbsp;↓<br>
+        <span style="color:var(--cyan);">Builder</span> → generate + deploy
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="phase-2">
+    <h2>8. Phase 2: P2 Routes, Airlines &amp; Breeds (Weeks 9-16)</h2>
+    <p>500 P2 routes + airline guides + breed guides. Target: ~800 pages.</p>
+
+    <div class="card orange-left">
+        <div class="label label-orange">Workers Active</div>
+        <p>All 14 workers now active (The Connector and Watchdog join)</p>
+    </div>
+
+    <table>
+        <tr><th>#</th><th>Task</th><th>Worker</th><th>Output</th><th>Status</th></tr>
+        <tr><td>2.1</td><td>Country regulation data for P2 countries (15 additional)</td><td>Geographer</td><td>Extended database</td><td><span class="badge b-orange">TODO</span></td></tr>
+        <tr><td>2.2</td><td>Write ~500 P2 route pages</td><td>Full pipeline</td><td>500 route pages</td><td><span class="badge b-orange">TODO</span></td></tr>
+        <tr><td>2.3</td><td>Write 15 P2 origin hub pages + 15 country guides</td><td>Wordsmith + pipeline</td><td>30 pages</td><td><span class="badge b-orange">TODO</span></td></tr>
+        <tr><td>2.4</td><td>Build Airline Guide Template + write 40 airline pages</td><td>Builder + Wordsmith</td><td>Airline silo</td><td><span class="badge b-green">DONE — 23 airlines (Block 20)</span></td></tr>
+        <tr><td>2.5</td><td>Build Breed Guide Template + write 50 breed pages</td><td>Builder + Wordsmith</td><td>Breed silo</td><td><span class="badge b-green">DONE — 35 breeds (Block 21)</span></td></tr>
+        <tr><td>2.6</td><td>Build internal link graph: route ↔ country ↔ airline ↔ breed</td><td>Connector</td><td>Link map</td><td><span class="badge b-orange">TODO</span></td></tr>
+        <tr><td>2.7</td><td>Launch blog: 12 articles (cost guides, quarantine explainers, breed-specific travel tips)</td><td>Wordsmith + Chameleon</td><td>Blog live</td><td><span class="badge b-orange">TODO</span></td></tr>
+        <tr><td>2.8</td><td>Begin backlink campaign: pet industry, expat communities, relocation forums</td><td>Connector</td><td>First backlinks</td><td><span class="badge b-orange">TODO</span></td></tr>
+        <tr><td>2.9</td><td>Full QA + regulatory audit on all 800 pages</td><td>Auditor</td><td>QA report</td><td><span class="badge b-orange">TODO</span></td></tr>
+        <tr><td>2.10</td><td>Set up site health monitoring (crawl errors, broken links, speed)</td><td>Watchdog</td><td>Monitoring active</td><td><span class="badge b-orange">TODO</span></td></tr>
+    </table>
+</section>
+
+<div class="divider"></div>
+
+<section id="phase-3">
+    <h2>9. Phase 3: P3 Routes &amp; Content Engine (Weeks 17-28)</h2>
+    <p>2,400 P3 routes. Resource pages. Heavy blog. Target: ~3,000 pages.</p>
+
+    <table>
+        <tr><th>#</th><th>Task</th><th>Worker</th><th>Output</th></tr>
+        <tr><td>3.1</td><td>Country data for P3 countries (25 additional)</td><td>Geographer</td><td>50 country dataset</td></tr>
+        <tr><td>3.2</td><td>Write ~2,400 P3 route pages (batch: 50-100/week)</td><td>Full pipeline</td><td>2,400 route pages</td></tr>
+        <tr><td>3.3</td><td>Resource pages: quarantine country map, banned breeds database, rabies-free list</td><td>Builder + Geographer</td><td>~30 resource pages</td></tr>
+        <tr><td>3.4</td><td>Blog: 3-4 articles per week</td><td>Wordsmith + Chameleon</td><td>~50 articles</td></tr>
+        <tr><td>3.5</td><td>First performance review: route-level ranking data</td><td>Analyst</td><td>Performance report</td></tr>
+        <tr><td>3.6</td><td>Content upgrades for underperforming P1 routes</td><td>Wordsmith + Optimiser</td><td>Upgraded pages</td></tr>
+        <tr><td>3.7</td><td>Sitemap restructuring for 3,000+ pages</td><td>Builder + Watchdog</td><td>Batched sitemaps</td></tr>
+    </table>
+</section>
+
+<div class="divider"></div>
+
+<section id="phase-4">
+    <h2>10. Phase 4: Full Route Coverage (Weeks 29-40)</h2>
+    <p>All 6,000+ priority routes. All supporting content. Target: ~6,000+ pages.</p>
+
+    <table>
+        <tr><th>#</th><th>Task</th><th>Worker</th><th>Output</th></tr>
+        <tr><td>4.1</td><td>Remaining P4 route pages (~3,000)</td><td>Full pipeline</td><td>3,000 route pages</td></tr>
+        <tr><td>4.2</td><td>Remaining country guides (100+)</td><td>Full pipeline</td><td>100 guide pages</td></tr>
+        <tr><td>4.3</td><td>Additional breed guides (30 more breeds)</td><td>Wordsmith</td><td>30 breed pages</td></tr>
+        <tr><td>4.4</td><td>Full internal link rebuild</td><td>Connector</td><td>Complete graph</td></tr>
+        <tr><td>4.5</td><td>Second performance review + route pruning</td><td>Analyst + Architect</td><td>Pruning list</td></tr>
+        <tr><td>4.6</td><td>Blog reaches 100+ articles</td><td>Wordsmith</td><td>Authority content</td></tr>
+        <tr><td>4.7</td><td>Quote form conversion optimisation</td><td>Builder + Analyst</td><td>Improved conversion</td></tr>
+    </table>
+</section>
+
+<div class="divider"></div>
+
+<section id="phase-5">
+    <h2>11. Phase 5: Optimise &amp; Prune (Weeks 41-46)</h2>
+
+    <table>
+        <tr><th>#</th><th>Task</th><th>Worker</th><th>Output</th></tr>
+        <tr><td>5.1</td><td>Full index coverage audit (which of 6K+ pages indexed?)</td><td>Analyst + Watchdog</td><td>Index report</td></tr>
+        <tr><td>5.2</td><td>Prune or consolidate routes with zero traffic</td><td>Architect + Auditor</td><td>Cleaned site</td></tr>
+        <tr><td>5.3</td><td>Content upgrades for routes ranking 5-20</td><td>Wordsmith + Optimiser</td><td>Upgraded pages</td></tr>
+        <tr><td>5.4</td><td>Add pet transport cost calculators</td><td>Builder</td><td>Interactive tools</td></tr>
+        <tr><td>5.5</td><td>Structured data validation across all 6K+ pages</td><td>Optimiser + Watchdog</td><td>Schema fixes</td></tr>
+        <tr><td>5.6</td><td>Core Web Vitals for large-scale site</td><td>Builder + Watchdog</td><td>Performance fixes</td></tr>
+        <tr><td>5.7</td><td>Testimonial collection (with pet reunion photos)</td><td>Architect</td><td>Social proof</td></tr>
+    </table>
+</section>
+
+<div class="divider"></div>
+
+<section id="phase-6">
+    <h2>12. Phase 6: Dominance &amp; Maintenance (Week 47+)</h2>
+
+    <table>
+        <tr><th>#</th><th>Task</th><th>Worker</th><th>Cadence</th></tr>
+        <tr><td>6.1</td><td>Monthly route performance reports</td><td>Analyst</td><td>Monthly</td></tr>
+        <tr><td>6.2</td><td>Monthly competitor monitoring (PetRelocation activity)</td><td>Spider</td><td>Monthly</td></tr>
+        <tr><td>6.3</td><td>Weekly blog articles (2-3/week)</td><td>Wordsmith</td><td>Weekly</td></tr>
+        <tr><td>6.4</td><td>Regulation updates: quarterly sweep of government portals</td><td>Geographer + Spider</td><td>Quarterly</td></tr>
+        <tr><td>6.5</td><td>Airline policy updates</td><td>Geographer</td><td>Quarterly</td></tr>
+        <tr><td>6.6</td><td>Algorithm update response</td><td>Scout + Architect</td><td>As needed</td></tr>
+        <tr><td>6.7</td><td>New route pages as demand emerges</td><td>Full pipeline</td><td>Monthly</td></tr>
+        <tr><td>6.8</td><td>Backlink maintenance and growth</td><td>Connector</td><td>Ongoing</td></tr>
+        <tr><td>6.9</td><td>Consider language expansion (Arabic, Chinese, Japanese, Spanish)</td><td>Architect</td><td>Year 2 decision</td></tr>
+    </table>
+</section>
+
+<div class="divider"></div>
+
+<!-- GANTT -->
+<section id="gantt">
+    <h2>13. Gantt Timeline: 12-Month View</h2>
+
+    <div class="gantt">
+        <div class="gantt-header">
+            <div>Workstream</div>
+            <div>M1</div><div>M2</div><div>M3</div><div>M4</div><div>M5</div><div>M6</div>
+            <div>M7</div><div>M8</div><div>M9</div><div>M10</div><div>M11</div><div>M12</div>
+        </div>
+        <div class="gantt-row">
+            <div class="task-name">Phase 0: Setup</div>
+            <div><div class="gantt-bar" style="background:var(--accent); width:100%;"></div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="gantt-row">
+            <div class="task-name">Phase 1: P1 Routes</div>
+            <div><div class="gantt-bar" style="background:var(--accent); width:100%; opacity:0.4;"></div></div>
+            <div><div class="gantt-bar" style="background:var(--accent); width:100%;"></div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="gantt-row">
+            <div class="task-name">Phase 2: P2 + Airlines</div>
+            <div></div>
+            <div><div class="gantt-bar" style="background:var(--green); width:100%; opacity:0.4;"></div></div>
+            <div><div class="gantt-bar" style="background:var(--green); width:100%;"></div></div>
+            <div><div class="gantt-bar" style="background:var(--green); width:100%;"></div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="gantt-row">
+            <div class="task-name">Phase 3: P3 Scale</div>
+            <div></div><div></div><div></div><div></div>
+            <div><div class="gantt-bar" style="background:var(--purple); width:100%;"></div></div>
+            <div><div class="gantt-bar" style="background:var(--purple); width:100%;"></div></div>
+            <div><div class="gantt-bar" style="background:var(--purple); width:100%;"></div></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="gantt-row">
+            <div class="task-name">Phase 4: Full Routes</div>
+            <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+            <div><div class="gantt-bar" style="background:var(--orange); width:100%;"></div></div>
+            <div><div class="gantt-bar" style="background:var(--orange); width:100%;"></div></div>
+            <div><div class="gantt-bar" style="background:var(--orange); width:100%;"></div></div>
+            <div></div><div></div>
+        </div>
+        <div class="gantt-row">
+            <div class="task-name">Phase 5: Optimise</div>
+            <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+            <div><div class="gantt-bar" style="background:var(--pink); width:100%;"></div></div>
+            <div><div class="gantt-bar" style="background:var(--pink); width:100%;"></div></div>
+        </div>
+        <div class="gantt-row">
+            <div class="task-name">Phase 6: Maintain</div>
+            <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+            <div><div class="gantt-bar" style="background:var(--cyan); width:100%;"></div></div>
+        </div>
+        <div class="gantt-row">
+            <div class="task-name" style="color:var(--text-muted);">Blog Content</div>
+            <div></div>
+            <div><div class="gantt-bar" style="background:var(--text-muted); width:100%; height:12px; margin-top:6px; opacity:0.4;"></div></div>
+            <div><div class="gantt-bar" style="background:var(--text-muted); width:100%; height:12px; margin-top:6px; opacity:0.4;"></div></div>
+            <div><div class="gantt-bar" style="background:var(--text-muted); width:100%; height:12px; margin-top:6px; opacity:0.4;"></div></div>
+            <div><div class="gantt-bar" style="background:var(--text-muted); width:100%; height:12px; margin-top:6px; opacity:0.4;"></div></div>
+            <div><div class="gantt-bar" style="background:var(--text-muted); width:100%; height:12px; margin-top:6px; opacity:0.4;"></div></div>
+            <div><div class="gantt-bar" style="background:var(--text-muted); width:100%; height:12px; margin-top:6px; opacity:0.4;"></div></div>
+            <div><div class="gantt-bar" style="background:var(--text-muted); width:100%; height:12px; margin-top:6px; opacity:0.4;"></div></div>
+            <div><div class="gantt-bar" style="background:var(--text-muted); width:100%; height:12px; margin-top:6px; opacity:0.4;"></div></div>
+            <div><div class="gantt-bar" style="background:var(--text-muted); width:100%; height:12px; margin-top:6px; opacity:0.4;"></div></div>
+            <div><div class="gantt-bar" style="background:var(--text-muted); width:100%; height:12px; margin-top:6px; opacity:0.4;"></div></div>
+            <div><div class="gantt-bar" style="background:var(--text-muted); width:100%; height:12px; margin-top:6px; opacity:0.4;"></div></div>
+        </div>
+    </div>
+
+    <h3>Milestone Timeline</h3>
+    <div class="timeline">
+        <div class="tl-item phase-1">
+            <div class="tl-phase p1">Month 2</div>
+            <div class="tl-body">
+                <div class="tl-title">200 pages live (P1 routes)</div>
+                <p>90 route pages, 10 origin hubs, 10 country guides. Google starts crawling.</p>
+                <div class="tl-meta"><span>10 origin countries</span><span>90 routes</span><span>Quote form live</span></div>
+            </div>
+        </div>
+        <div class="tl-item phase-2">
+            <div class="tl-phase p2">Month 4</div>
+            <div class="tl-body">
+                <div class="tl-title">800 pages live (P2 routes + airlines + breeds)</div>
+                <p>500 P2 routes + 40 airline guides + 50 breed guides. Dense link graph.</p>
+                <div class="tl-meta"><span>25 countries</span><span>590 routes</span><span>4 content silos</span></div>
+            </div>
+        </div>
+        <div class="tl-item phase-3">
+            <div class="tl-phase p3">Month 7</div>
+            <div class="tl-body">
+                <div class="tl-title">3,000 pages live (P3 scale)</div>
+                <p>2,400 P3 routes. Resource pages. Blog running. First rankings and leads.</p>
+                <div class="tl-meta"><span>50 countries</span><span>~3,000 routes</span><span>First leads</span></div>
+            </div>
+        </div>
+        <div class="tl-item phase-4">
+            <div class="tl-phase p4">Month 10</div>
+            <div class="tl-body">
+                <div class="tl-title">6,000+ pages (full route coverage)</div>
+                <p>All priority routes live. Revenue growing. Page 1 for major route queries.</p>
+                <div class="tl-meta"><span>80 countries</span><span>6,000+ routes</span><span>Revenue</span></div>
+            </div>
+        </div>
+        <div class="tl-item phase-5">
+            <div class="tl-phase p5">Month 12</div>
+            <div class="tl-body">
+                <div class="tl-title">8,000+ pages, optimised</div>
+                <p>Thin routes pruned. Winners upgraded. Shift to maintenance.</p>
+                <div class="tl-meta"><span>Maintenance mode</span><span>Year 2 planning</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- QUESTIONS -->
+<section id="questions">
+    <h2>14. Strategic Questions for Gareth</h2>
+
+    <table>
+        <tr><th>#</th><th>Question</th><th>Context</th><th>Answer</th><th>Status</th></tr>
+        <tr><td>1</td><td>Business name and domain?</td><td>Needs to convey trust and expertise.</td><td><strong>Pet Transport Global</strong> (pettransportglobal.com). Brand applied across all templates and SEO titles.</td><td><span class="badge b-green">ANSWERED</span></td></tr>
+        <tr><td>2</td><td>Operator or marketplace model?</td><td>Operator has higher margins; marketplace scales faster.</td><td><strong>Operator model.</strong> Coordinate transport directly, partner with local agents, book airlines. Higher margin per booking.</td><td><span class="badge b-green">ANSWERED</span></td></tr>
+        <tr><td>3</td><td>IPATA membership?</td><td>~$400/year. Trust badge, agent network, ipata.org backlink.</td><td><strong>To investigate.</strong> Added to post-launch TODO list below.</td><td><span class="badge b-orange">TODO</span></td></tr>
+        <tr><td>4</td><td>Which routes to prioritise beyond P1?</td><td>P1 covers 10 major expat hubs.</td><td><strong>Follow research data.</strong> Use keyword volume and competition data to determine priority. No manual override.</td><td><span class="badge b-green">ANSWERED</span></td></tr>
+        <tr><td>5</td><td>Quote form: instant estimate or human follow-up?</td><td>Instant estimate requires pricing engine. Human follow-up is simpler.</td><td><strong>Human follow-up, but don't telegraph it.</strong> The form should feel like it produces a quote. User submits details, receives a confirmation ("Your quote is being prepared"), then a human follows up by email/call.</td><td><span class="badge b-green">ANSWERED</span></td></tr>
+        <tr><td>6</td><td>Dog-only or all pets?</td><td>Dogs and cats are 95% of the market. Exotics are niche but high-value.</td><td><strong>Dogs and cats as primary, plus one "Other Pets" catch-all page</strong> covering rabbits, birds, reptiles, horses, exotics with CITES permit info. Lists all types.</td><td><span class="badge b-green">ANSWERED</span></td></tr>
+        <tr><td>7</td><td>Content tone: corporate or personal?</td><td>PetRelocation is corporate. Personal brand may resonate more.</td><td><strong>Personal.</strong> Emotional decision for pet owners. Stories, names, warmth. "We helped Bella the Labrador get from Dubai to her new home in London" style. Not corporate metrics.</td><td><span class="badge b-green">ANSWERED</span></td></tr>
+        <tr><td>8</td><td>Google Ads alongside SEO?</td><td>CPC for "pet transport" is moderate ($2-5).</td><td><strong>Yes.</strong> Run Google Ads while SEO is ramping up. Switch to organic once rankings establish.</td><td><span class="badge b-green">ANSWERED</span></td></tr>
+        <tr><td>9</td><td>Social media: Instagram/TikTok pet reunions?</td><td>Pet reunion videos are viral content.</td><td><strong>Yes, but later.</strong> Priority is site launch and paid traffic first. Social media content (pet reunion videos, arrival stories) is a Phase 3+ activity.</td><td><span class="badge b-green">ANSWERED</span></td></tr>
+        <tr><td>10</td><td>How many route pages before diminishing returns?</td><td>6,400 possible routes from 80x80.</td><td><strong>Research-driven.</strong> Perform a dedicated research project to build a priority list ranked by search volume and competition. Work down the list, stop when routes become obscure (near-zero volume).</td><td><span class="badge b-green">ANSWERED</span></td></tr>
+    </table>
+</section>
+
+<div class="divider"></div>
+
+<section>
+    <h2>15. What Happens Next</h2>
+    <div class="card green-left">
+        <div class="label label-green">Phase 0 Complete. Phase 1 Complete.</div>
+        <p><strong>Phase 1 build is done.</strong> All 18 blocks complete. 35 content pages ready: 15 Tier 1 route pages, 10 country guides, 10 origin hubs. Hugo project scaffolded with templates, CSS, JS, SEO metadata, and 104 internal links. QA audit passed (0 errors).</p>
+        <ol>
+            <li><strong>Block 10:</strong> Hugo project scaffolding + route-page template <span class="badge b-green">DONE</span></li>
+            <li><strong>Block 11:</strong> Remaining templates + quote form <span class="badge b-green">DONE</span></li>
+            <li><strong>Blocks 12-13:</strong> Librarian assembles route data for 15 Tier 1 routes <span class="badge b-green">DONE</span></li>
+            <li><strong>Blocks 14-15:</strong> Wordsmith writes route page content (2 batches) <span class="badge b-green">DONE</span></li>
+            <li><strong>Block 16:</strong> Country guides + origin hubs (20 pages) <span class="badge b-green">DONE</span></li>
+            <li><strong>Block 17:</strong> SEO pass + humanisation + internal linking <span class="badge b-green">DONE</span></li>
+            <li><strong>Block 18:</strong> QA audit + deploy to Cloudflare Pages <span class="badge b-green">DONE</span></li>
+        </ol>
+        <p style="margin-top:16px;"><strong>Before going live:</strong> Register domain (pettransportglobal.com), set up Cloudflare Worker for quote form, configure email forwarding. Then run <code>hugo</code> and deploy.</p>
+        <p>This is <strong>Build #2 of 3</strong>. Pet Transport is second because the route-based page structure creates massive scale potential (6,000+ pages), PetRelocation has a gap at route level, and the average booking value ($2K-8K) is strong.</p>
+        <p>Previous build: Funeral Repatriation (#1). Next build: Security/Bodyguard Hire (#3).</p>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- POST-LAUNCH TODO LIST -->
+<section id="post-launch-todos">
+    <h2>16. Post-Launch TODO List</h2>
+    <p>Items to action after the site is live and generating traffic.</p>
+    <table>
+        <tr><th style="width:40px;">✓</th><th>Item</th><th>Details</th><th>Priority</th><th>Status</th></tr>
+        <tr>
+            <td style="text-align:center;">☐</td>
+            <td><strong>IPATA membership</strong></td>
+            <td>International Pet and Animal Transportation Association. ~$400/year. Provides: trust badge for site, access to agent network for operator model, listing in IPATA directory, backlink from ipata.org (strong SEO signal). Research: <a href="https://www.ipata.org/" style="color:var(--accent);">ipata.org</a></td>
+            <td><span class="badge b-orange">HIGH</span></td>
+            <td><span class="badge b-orange">TODO</span></td>
+        </tr>
+        <tr>
+            <td style="text-align:center;">☐</td>
+            <td><strong>Route priority research project</strong></td>
+            <td>Dedicated research to rank all potential routes by search volume and competition. Build priority list. Work down from highest-value routes, stop when obscure routes surface (near-zero volume).</td>
+            <td><span class="badge b-orange">HIGH</span></td>
+            <td><span class="badge b-orange">TODO</span></td>
+        </tr>
+        <tr>
+            <td style="text-align:center;">☐</td>
+            <td><strong>Google Ads campaign setup</strong></td>
+            <td>Run paid search while SEO ramps. Target high-intent route queries ("pet transport Dubai to UK", "ship dog to Australia"). CPC estimate $2-5. Start small, scale winners.</td>
+            <td><span class="badge b-orange">HIGH</span></td>
+            <td><span class="badge b-orange">TODO</span></td>
+        </tr>
+        <tr>
+            <td style="text-align:center;">☐</td>
+            <td><strong>"Other Pets" catch-all page</strong></td>
+            <td>Single page covering rabbits, birds, reptiles, horses, exotic pets. Include CITES permit info, airline acceptance, country restrictions. List all non-dog/cat types.</td>
+            <td><span class="badge b-cyan">MEDIUM</span></td>
+            <td><span class="badge b-orange">TODO</span></td>
+        </tr>
+        <tr>
+            <td style="text-align:center;">☐</td>
+            <td><strong>Content tone refresh (personal voice)</strong></td>
+            <td>Review all 35 pages and shift voice from professional-neutral to personal/emotional. Add pet name stories, first-person elements, warmth. "We helped Bella the Labrador..." style.</td>
+            <td><span class="badge b-cyan">MEDIUM</span></td>
+            <td><span class="badge b-orange">TODO</span></td>
+        </tr>
+        <tr>
+            <td style="text-align:center;">☐</td>
+            <td><strong>Social media: Instagram/TikTok</strong></td>
+            <td>Pet reunion videos at airports. "Dog sees owner after 3-month quarantine" content. Viral potential. Phase 3+ activity.</td>
+            <td><span class="badge b-blue">LOW</span></td>
+            <td><span class="badge b-orange">TODO</span></td>
+        </tr>
+        <tr>
+            <td style="text-align:center;">☐</td>
+            <td><strong>Register domain</strong></td>
+            <td>pettransportglobal.com. Point to Cloudflare. Set up SSL, DNS, email forwarding.</td>
+            <td><span class="badge b-orange">HIGH</span></td>
+            <td><span class="badge b-orange">TODO</span></td>
+        </tr>
+        <tr>
+            <td style="text-align:center;">☐</td>
+            <td><strong>Quote form backend</strong></td>
+            <td>Set up Cloudflare Worker to receive form submissions and forward to email. Configure Turnstile CAPTCHA. Update quoteFormEndpoint in hugo.toml.</td>
+            <td><span class="badge b-orange">HIGH</span></td>
+            <td><span class="badge b-orange">TODO</span></td>
+        </tr>
+    </table>
+</section>
+
+<!-- ============================================================ -->
+<!-- SECTION: SEO & LLM OPTIMIZATION PLAN -->
+<!-- ============================================================ -->
+<section id="seo-llm-plan">
+    <h2>17. SEO &amp; LLM Optimization Plan (Parallel Workstream)</h2>
+
+    <div class="card" style="border:2px solid var(--yellow); background:rgba(227,179,65,0.04);">
+        <h4 style="color:var(--yellow); margin-top:0;">Why This Runs in Parallel</h4>
+        <p>The original build plan treats SEO as a task within each phase (task 1.11, 5.5). That is not enough. SEO and LLM optimization must run continuously from the moment Phase 1 route pages go live. While Phase 2 routes are being built, Phase 1 route pages should already be indexed, ranking, and being refined. Every week a live route page sits without monitoring is a week of lost ranking signal.</p>
+        <p>LLM ranking (Generative Engine Optimization / GEO) is entirely absent from the original plan. As of 2026, a growing share of pet transport queries are answered by ChatGPT, Perplexity, Google AI Overviews, and Gemini. Expat families researching relocation increasingly ask AI assistants "how do I ship my dog from Dubai to the UK?" or "what are Australia's pet quarantine rules?". If route pages are not structured for LLM citation, we lose this entire channel.</p>
+        <p><strong>Workers responsible:</strong> The Optimiser (on-page SEO + LLM structure), The Scout (monitoring + intelligence), The Connector (authority signals + backlinks).</p>
+    </div>
+
+    <!-- 17.1 LLM RANKING STRATEGY -->
+    <h3>17.1 LLM Ranking Strategy (Generative Engine Optimization)</h3>
+
+    <div class="card purple-left">
+        <div class="label label-purple">What LLMs Need to Cite Your Content</div>
+        <p>LLMs (ChatGPT, Perplexity, Gemini, Claude) cite sources when they find content that is: (1) authoritative and well-sourced, (2) structured clearly enough to extract clean answers, (3) unique data not available elsewhere, and (4) consistently entity-rich. Pet transport is ideal for LLM citation because users ask specific route questions ("Can I fly my French Bulldog from Singapore to the UK?") and expect factual, sourced answers about quarantine, vaccinations, and airline policies.</p>
+    </div>
+
+    <table>
+        <tr><th>LLM Optimization Technique</th><th>Implementation</th><th>Worker</th><th>Apply From</th></tr>
+        <tr>
+            <td><strong>Definitive Answer Format</strong></td>
+            <td>Every FAQ uses "Question > Direct 1-sentence answer > Supporting detail with named source" pattern. LLMs extract the first sentence as the citation. "Yes, dogs entering Australia require a 10-day quarantine at the Mickleham Post-Entry Quarantine Facility (Australian DAFF, 2026)." No vague lead-ins.</td>
+            <td>Interrogator + Optimiser</td>
+            <td><span class="badge b-purple">Phase 1 (retroactive)</span></td>
+        </tr>
+        <tr>
+            <td><strong>Entity-Rich Content</strong></td>
+            <td>Every route page explicitly names: origin country, destination country, pet type, relevant government authority (USDA APHIS, UK APHA, Australian DAFF), quarantine status, key airline serving the route. Entities must appear in structured, parseable patterns, not buried in prose.</td>
+            <td>Wordsmith + Optimiser</td>
+            <td><span class="badge b-purple">Phase 1 (retroactive)</span></td>
+        </tr>
+        <tr>
+            <td><strong>Unique Data Tables</strong></td>
+            <td>Create comparison tables LLMs cannot find elsewhere: quarantine requirements by country, vaccination timelines by destination, airline pet policies compared, cost ranges by route tier, breed ban matrices. Tables are highly parseable by LLMs.</td>
+            <td>Geographer + Optimiser</td>
+            <td><span class="badge b-green">Phase 2</span></td>
+        </tr>
+        <tr>
+            <td><strong>Source Chain Authority</strong></td>
+            <td>Cite USDA APHIS, UK APHA, Australian DAFF, EU TRACES, Singapore AVS, IPATA by name with dates. LLMs already trust these government sources. Content that references them inherits citation authority. Every regulatory claim gets a named, dated source.</td>
+            <td>Wordsmith + Auditor</td>
+            <td><span class="badge b-purple">Phase 1 (already active)</span></td>
+        </tr>
+        <tr>
+            <td><strong>Conversational Query Optimization</strong></td>
+            <td>Optimise for natural language questions: "How do I ship my dog from Dubai to the UK?", "Does Australia quarantine pets?", "Can French Bulldogs fly in cargo?", "How much does it cost to ship a dog to Australia?". These are how people prompt LLMs. H2s and FAQ questions should mirror these patterns.</td>
+            <td>Interrogator + Scout</td>
+            <td><span class="badge b-green">Phase 2</span></td>
+        </tr>
+        <tr>
+            <td><strong>Topical Authority Depth</strong></td>
+            <td>For each route, cover every angle: import requirements, export requirements, airlines serving the route, timeline, cost breakdown, breed restrictions, quarantine, FAQ. LLMs prefer citing sites that cover a topic exhaustively. The 12-section route page structure already supports this.</td>
+            <td>Wordsmith + Geographer</td>
+            <td><span class="badge b-purple">Phase 1 (already active)</span></td>
+        </tr>
+        <tr>
+            <td><strong>Brand Entity Building</strong></td>
+            <td>Consistent brand mentions across all pages: "Pet Transport Global". Schema.org Organization markup site-wide. "About" page with verifiable credentials, IPATA membership (when acquired). Build a knowledge graph entity that LLMs associate with "international pet transport".</td>
+            <td>Optimiser + Builder</td>
+            <td><span class="badge b-green">Phase 2</span></td>
+        </tr>
+        <tr>
+            <td><strong>Structured Data for LLM Parsing</strong></td>
+            <td>Beyond Schema.org: use definition lists for import/export requirements, consistent table formats for route comparisons, bullet-point checklists for vaccination timelines. LLMs parse structured HTML far better than long prose paragraphs.</td>
+            <td>Optimiser + Builder</td>
+            <td><span class="badge b-purple">Phase 1 (retroactive)</span></td>
+        </tr>
+        <tr>
+            <td><strong>LLM Citation Monitoring</strong></td>
+            <td>Weekly: search target route queries in ChatGPT, Perplexity, Google AI Overviews. Document: (1) who gets cited for pet transport queries, (2) what content format gets cited, (3) whether our route pages appear. Track over time.</td>
+            <td>Scout</td>
+            <td><span class="badge b-green">Phase 2 (ongoing)</span></td>
+        </tr>
+    </table>
+
+    <!-- 17.2 ONGOING SEO WORKSTREAM -->
+    <h3>17.2 Ongoing SEO Workstream (Runs Parallel to Every Phase)</h3>
+
+    <div class="card orange-left">
+        <div class="label label-orange">Principle</div>
+        <p>Every route page that goes live enters the SEO pipeline immediately. While the content team builds Phase N+1 routes, the SEO team monitors, refines, and optimises Phase N pages. No route page sits unmonitored for more than 2 weeks after deployment.</p>
+    </div>
+
+    <h4>Weekly SEO Cadence (starts when Phase 1 pages are live)</h4>
+    <table>
+        <tr><th>Day</th><th>Task</th><th>Worker</th><th>Output</th></tr>
+        <tr><td>Monday</td><td>GSC check: impressions, clicks, CTR, average position for all live route pages. Flag any pages not indexed.</td><td>Scout</td><td>Weekly GSC snapshot</td></tr>
+        <tr><td>Monday</td><td>Check for Google algorithm updates (Search Central blog, SEO news). Assess impact on scaled content sites.</td><td>Scout</td><td>Algorithm alert (if needed)</td></tr>
+        <tr><td>Wednesday</td><td>LLM citation check: test 5 target route queries in ChatGPT + Perplexity. Document who gets cited.</td><td>Scout</td><td>LLM citation log</td></tr>
+        <tr><td>Wednesday</td><td>Content refresh: update 2-3 underperforming route pages (thin content, missing sections, weak FAQs).</td><td>Optimiser + Wordsmith</td><td>Updated pages</td></tr>
+        <tr><td>Friday</td><td>Internal link check: verify new route pages link to country guides, airline guides, breed guides. No orphans.</td><td>Connector</td><td>Link graph update</td></tr>
+        <tr><td>Friday</td><td>Backlink outreach: 3-5 prospects contacted per week (pet industry publications, expat forums, relocation platforms).</td><td>Connector</td><td>Outreach log</td></tr>
+    </table>
+
+    <h4>Monthly SEO Cadence</h4>
+    <table>
+        <tr><th>Task</th><th>Worker</th><th>Output</th></tr>
+        <tr><td>Full ranking report: all target route keywords, current positions, movement since last month.</td><td>Scout</td><td>Monthly ranking report</td></tr>
+        <tr><td>Competitor ranking snapshot: what PetRelocation ranks for, any new entrants in the route-level space.</td><td>Scout + Spider</td><td>Competitor intel briefing</td></tr>
+        <tr><td>LLM citation report: which route queries cite us, which cite competitors, trend over time.</td><td>Scout</td><td>LLM citation report</td></tr>
+        <tr><td>Technical SEO audit: CWV scores, crawl errors, sitemap accuracy (critical at 5,000+ pages), mobile usability.</td><td>Optimiser + Watchdog</td><td>Technical audit report</td></tr>
+        <tr><td>Schema validation: test 10 random route pages in Google Rich Results Test. Fix any issues.</td><td>Optimiser</td><td>Schema audit</td></tr>
+        <tr><td>Content gap analysis: route keywords competitors rank for that we don't. New route opportunities.</td><td>Scout + Optimiser</td><td>Gap report + recommendations</td></tr>
+        <tr><td>Backlink profile review: new links acquired, lost links, competitor backlink comparison.</td><td>Connector</td><td>Backlink report</td></tr>
+    </table>
+
+    <h4>Quarterly SEO Cadence</h4>
+    <table>
+        <tr><th>Task</th><th>Worker</th><th>Output</th></tr>
+        <tr><td>Full site SEO audit: every page type checked against on-page checklist. Title/meta uniqueness verified across 5,000+ pages.</td><td>Optimiser</td><td>Sitewide audit report</td></tr>
+        <tr><td>E-E-A-T enhancement review: author bios updated, IPATA credentials added, trust signals refreshed.</td><td>Optimiser + Wordsmith</td><td>E-E-A-T update</td></tr>
+        <tr><td>Regulation data refresh: government portal import rules updated, quarantine status verified, airline policies current.</td><td>Geographer + Spider</td><td>Updated regulation data</td></tr>
+        <tr><td>LLM strategy review: are route pages getting cited? What format changes improve citation rate?</td><td>Scout + Optimiser</td><td>LLM strategy update</td></tr>
+        <tr><td>Keyword matrix refresh: new volume data, new route keyword opportunities from GSC query data.</td><td>Scout</td><td>Updated keyword matrix</td></tr>
+    </table>
+
+    <!-- 17.3 LLM OPTIMIZATION TASKS BY PHASE -->
+    <h3>17.3 LLM Optimization Tasks Woven Into Each Phase</h3>
+
+    <table>
+        <tr><th>Phase</th><th>LLM-Specific Tasks</th><th>SEO-Specific Tasks (Parallel)</th></tr>
+        <tr>
+            <td><span class="badge b-purple">Phase 1 (Retroactive)</span></td>
+            <td>
+                <ul>
+                    <li>Audit all ~200 live route pages for Definitive Answer Format in FAQs</li>
+                    <li>Add entity-rich summary paragraphs to each route page (first 100 words must contain: origin country, destination country, pet type, key authority)</li>
+                    <li>Restructure import/export requirement sections as definition lists or checklists, not prose</li>
+                    <li>Add comparison tables where data exists (e.g. "airline options for [route]", "vaccination timeline")</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>GSC baseline: confirm all ~200 pages indexed</li>
+                    <li>First ranking snapshot for P1 route keyword clusters</li>
+                    <li>Fix any indexing issues (noindex, crawl blocks, thin content)</li>
+                    <li>Submit updated sitemap after any content changes</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><span class="badge b-green">Phase 2</span></td>
+            <td>
+                <ul>
+                    <li>Build "Quarantine Requirements Comparison" table page (all countries in one table). High LLM citation value.</li>
+                    <li>Build "Pet Import Cost Comparison" table page by route tier. LLMs love comparative pricing data.</li>
+                    <li>Conversational query audit: ensure H2s and FAQs match natural language question patterns ("Can I...", "How do I...", "How much...")</li>
+                    <li>Begin LLM citation monitoring (weekly Wednesday check)</li>
+                    <li>Organization schema deployed site-wide for brand entity</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Full internal link graph built: route > country > airline > breed (Connector)</li>
+                    <li>First backlink campaign launched (pet industry, expat communities)</li>
+                    <li>Blog posts optimised for featured snippets and AI Overviews</li>
+                    <li>Monthly ranking reports begin</li>
+                    <li>Content upgrades on Phase 1 route pages based on ranking data</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><span class="badge b-purple">Phase 3</span></td>
+            <td>
+                <ul>
+                    <li>Build "Complete Guide to Shipping Your Pet Abroad" long-form page (5,000+ words). Designed as the definitive LLM source for "how to ship a pet internationally"</li>
+                    <li>Build region-specific comparison pages (e.g. "Shipping Pets to the Gulf: UAE vs Qatar vs Saudi")</li>
+                    <li>Monthly LLM citation reports: identify which content formats get cited most, double down</li>
+                    <li>Add FAQ schema to blog posts (not just route pages)</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Weekly GSC monitoring active</li>
+                    <li>Content upgrades for route pages ranking 5-20 (push to top 3)</li>
+                    <li>Backlink campaign scaling: 10+ prospects/week</li>
+                    <li>First performance review (Analyst): which routes generate quote requests</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><span class="badge b-orange">Phase 4</span></td>
+            <td>
+                <ul>
+                    <li>Publish "Global Pet Transport Guide 2026" (original research, route data tables, quarantine country rankings). Designed for LLM citation and journalist backlinks.</li>
+                    <li>Create "Pet Transport Cost Index" page: typical costs by route tier. Unique data LLMs cannot find elsewhere.</li>
+                    <li>Audit all route pages for conversational query coverage. Add missing natural language FAQs.</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Full internal link rebuild with 6,000+ pages</li>
+                    <li>Second performance review + route pruning of zero-traffic pages</li>
+                    <li>Blog at 100+ articles, optimised for topical clusters</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><span class="badge b-pink">Phase 5</span></td>
+            <td>
+                <ul>
+                    <li>A/B test content formats for LLM citation (tables vs lists vs prose). Measure which gets cited more.</li>
+                    <li>Build LLM-specific landing pages for top 10 most-asked pet transport queries in ChatGPT/Perplexity</li>
+                    <li>Apply HowTo schema to process-oriented content (shipping timeline, preparation checklist)</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Full structured data validation across all 6,000+ pages</li>
+                    <li>Core Web Vitals optimization (critical for large static sites)</li>
+                    <li>E-E-A-T enhancement (IPATA membership badge, author bios, pet reunion testimonials)</li>
+                    <li>Title tag A/B testing on 100 route pages</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><span class="badge b-cyan">Phase 6 (Ongoing)</span></td>
+            <td>
+                <ul>
+                    <li>Monthly: LLM citation tracking across ChatGPT, Perplexity, Google AI Overviews, Gemini</li>
+                    <li>Quarterly: LLM strategy review. Adapt to new AI search behaviour patterns.</li>
+                    <li>React to new LLM features (e.g. new citation formats, new AI search engines)</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Weekly GSC monitoring</li>
+                    <li>Monthly ranking + competitor reports</li>
+                    <li>Quarterly full site audit</li>
+                    <li>Ongoing backlink maintenance</li>
+                    <li>Algorithm update response</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <!-- 17.4 LLM Checklist per page -->
+    <h3>17.4 LLM Optimization Checklist (Per Route Page)</h3>
+    <div class="card" style="font-family: 'Courier New', monospace; font-size: 0.82rem; line-height: 2;">
+        <span style="color:var(--yellow);">LLM OPTIMIZATION CHECKLIST (ROUTE PAGE)</span><br>
+        - [ ] First 100 words contain: origin country, destination country, pet type, relevant government authority<br>
+        - [ ] Every FAQ uses: Question > 1-sentence direct answer > supporting detail with named source<br>
+        - [ ] Import/export requirements in definition lists or checklists, not buried in paragraphs<br>
+        - [ ] At least one unique data table per page (cost breakdown, vaccination timeline, airline comparison)<br>
+        - [ ] H2 headings match natural language questions ("Can I fly my dog from [Origin] to [Destination]?")<br>
+        - [ ] All regulatory claims cite a named, dated source (USDA APHIS, UK APHA, Australian DAFF, EU TRACES)<br>
+        - [ ] Organization schema present site-wide (Pet Transport Global)<br>
+        - [ ] Service schema per route page with areaServed (origin + destination), serviceType, provider<br>
+        - [ ] No vague attributions ("experts say", "regulations may require"). Name the source or cut the claim.<br>
+        - [ ] Content covers the route exhaustively (12-section structure prevents thin content)<br>
+        - [ ] Page would make sense if read aloud as an answer to "How do I ship my pet from [A] to [B]?"
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================ -->
+<!-- SECTION: CALENDAR SCHEDULE -->
+<!-- ============================================================ -->
+<section id="calendar">
+    <h2>18. Calendar Schedule (From 17 April 2026)</h2>
+
+    <div class="card" style="border:2px solid var(--green); background:rgba(63,185,80,0.04);">
+        <h4 style="color:var(--green); margin-top:0;">Calendar AI Instructions</h4>
+        <p>The table below is formatted for calendar automation. Each row is one calendar event. <strong>CATEGORY</strong> can be used to colour-code events. <strong>TYPE</strong> indicates whether it is a one-off task or a recurring cadence. All dates start from 17 April 2026 (Phase 0 and Phase 1 are already complete).</p>
+        <p>Import rules: create each row as a calendar event with the DATE as start date, TASK as event title, CATEGORY as calendar colour/tag, and DETAILS as event description. For RECURRING items, set the recurrence pattern as specified in TYPE.</p>
+    </div>
+
+    <h3>18.1 Phase 1 Retroactive SEO + LLM Tasks (Already Built, Needs Optimization)</h3>
+    <table>
+        <tr><th>DATE</th><th>TASK</th><th>CATEGORY</th><th>TYPE</th><th>DETAILS</th></tr>
+        <tr><td>2026-04-21</td><td>GSC baseline audit: confirm all Phase 1 route pages indexed</td><td>SEO</td><td>One-off</td><td>Check Google Search Console. All ~200 Phase 1 pages (15 routes, 10 country guides, 10 origin hubs, core pages) should be indexed. Flag any not-indexed pages. Submit sitemap if needed. Worker: Scout.</td></tr>
+        <tr><td>2026-04-22</td><td>First ranking snapshot: P1 route keyword clusters</td><td>SEO</td><td>One-off</td><td>Record current Google position for all P1 route keywords ("pet transport UAE to UK", "ship dog from USA to Australia", etc.). This is the baseline for tracking improvement. Use Ahrefs/SEMrush or manual checks. Worker: Scout.</td></tr>
+        <tr><td>2026-04-23</td><td>LLM citation audit: test 15 target queries in ChatGPT + Perplexity</td><td>LLM</td><td>One-off</td><td>Search "ship dog from Dubai to UK", "pet transport USA to Australia", "how to bring pet to UK" etc. in ChatGPT and Perplexity. Document: who gets cited, what format, does our site appear. Baseline for LLM tracking. Worker: Scout.</td></tr>
+        <tr><td>2026-04-24</td><td>Retroactive LLM audit: Phase 1 FAQ format review</td><td>LLM</td><td>One-off</td><td>Review all Phase 1 route page FAQs. Rewrite any that don't follow "Question > 1-sentence direct answer > supporting detail with source" format. Highest-impact LLM optimization. Worker: Optimiser.</td></tr>
+        <tr><td>2026-04-25</td><td>Retroactive LLM audit: entity density in first 100 words</td><td>LLM</td><td>One-off</td><td>Check all Phase 1 route pages. First paragraph must contain: origin country, destination country, pet type context, relevant authority (APHA, DAFF, APHIS). Rewrite openings that are too vague. Worker: Optimiser.</td></tr>
+        <tr><td>2026-04-28</td><td>Retroactive LLM audit: restructure import/export sections</td><td>LLM</td><td>One-off</td><td>Convert prose-format requirement sections to definition lists or checklists. "Quarantine: Yes, 10 days. Authority: DAFF Mickleham. Rabies titre test: Required, 3-month wait." LLMs parse structured data better. Worker: Optimiser + Builder.</td></tr>
+        <tr><td>2026-04-29</td><td>Deploy Organization schema site-wide</td><td>LLM</td><td>One-off</td><td>Add Organization JSON-LD to every page header. Consistent brand entity: Pet Transport Global, URL, description, knowsAbout (international pet relocation). Builds brand entity in LLM knowledge. Worker: Optimiser + Builder.</td></tr>
+    </table>
+
+    <h3>18.2 Phase 2 Build + Parallel SEO/LLM (Weeks 9-16: 21 Apr - 11 Jun 2026)</h3>
+    <table>
+        <tr><th>DATE</th><th>TASK</th><th>CATEGORY</th><th>TYPE</th><th>DETAILS</th></tr>
+        <tr><td>2026-04-21</td><td>Phase 2 start: P2 country regulation data (15 additional countries)</td><td>BUILD</td><td>One-off</td><td>Geographer builds import/export regulation profiles for 15 P2 countries. Feeds into route content pipeline. Worker: Geographer.</td></tr>
+        <tr><td>2026-04-28</td><td>P2 route pages batch 1 (5 origin x 5 destination = ~25 routes)</td><td>BUILD</td><td>One-off</td><td>Spain, Italy, Netherlands, Japan, NZ as new origins. Full pipeline: Wordsmith > Interrogator > Chameleon > Optimiser > Auditor. Apply LLM checklist to all new route pages.</td></tr>
+        <tr><td>2026-05-05</td><td>Weekly GSC + algorithm check begins</td><td>SEO</td><td>Recurring: weekly Monday</td><td>Every Monday: check GSC impressions/clicks/CTR/position for all live route pages. Check Search Central blog for algorithm updates. Flag scaled-content-relevant changes. Worker: Scout.</td></tr>
+        <tr><td>2026-05-05</td><td>P2 route pages batch 2 (~50 routes)</td><td>BUILD</td><td>One-off</td><td>India, Thailand, Philippines, Brazil, Mexico as new origins. Full pipeline with LLM checklist applied.</td></tr>
+        <tr><td>2026-05-07</td><td>Weekly LLM citation check (5 queries)</td><td>LLM</td><td>Recurring: weekly Wednesday</td><td>Every Wednesday: test 5 target route queries in ChatGPT + Perplexity. Rotate through route keyword clusters. Document citations. Worker: Scout.</td></tr>
+        <tr><td>2026-05-09</td><td>Weekly internal link + backlink outreach</td><td>SEO</td><td>Recurring: weekly Friday</td><td>Every Friday: verify new route pages link to country guides, airline guides, breed guides. Contact 3-5 backlink prospects (pet industry pubs, expat forums, IPATA). Worker: Connector.</td></tr>
+        <tr><td>2026-05-12</td><td>P2 route pages batch 3 (~100 routes)</td><td>BUILD</td><td>One-off</td><td>Saudi Arabia, Qatar, Ireland, Portugal, Switzerland as new origins. Full pipeline with LLM checklist.</td></tr>
+        <tr><td>2026-05-12</td><td>Build "Quarantine Requirements Comparison" table page</td><td>LLM</td><td>One-off</td><td>All P1+P2 countries in one comparison table: quarantine (yes/no), duration, facility name, rabies titre test required, wait period, breed bans. High LLM citation value. Unique data. Worker: Geographer + Optimiser.</td></tr>
+        <tr><td>2026-05-19</td><td>P2 route pages batch 4 (~100 routes)</td><td>BUILD</td><td>One-off</td><td>Remaining P2 origin/destination combinations. Full pipeline with LLM checklist.</td></tr>
+        <tr><td>2026-05-19</td><td>Build "Pet Transport Cost Comparison" table page</td><td>LLM</td><td>One-off</td><td>All P1+P2 routes: typical cost range, airline cargo fees, vet certificate costs, crate costs. Sortable/comparable table. LLMs love comparative pricing data. Worker: Geographer + Optimiser.</td></tr>
+        <tr><td>2026-05-22</td><td>Build airline guide silo: 40 airline pet policy pages</td><td>BUILD</td><td>One-off</td><td>Dedicated pages for Emirates, BA, Qantas, Lufthansa, Singapore Airlines, etc. Each with crate sizes, breed restrictions, temperature embargoes, cargo booking process. Worker: Full pipeline.</td></tr>
+        <tr><td>2026-05-26</td><td>Build breed guide silo: 50 breed-specific transport pages</td><td>BUILD</td><td>One-off</td><td>Top breeds with transport-specific content. Brachycephalic breeds (French Bulldog, Pug), large breeds (Great Dane), banned breeds (XL Bully, Pit Bull). Each with country-by-country restrictions. Worker: Full pipeline.</td></tr>
+        <tr><td>2026-05-31</td><td>Monthly SEO report #1</td><td>SEO</td><td>Recurring: monthly (last day)</td><td>Full ranking report, competitor snapshot (PetRelocation), LLM citation report, technical audit, schema validation, content gap analysis, backlink review. Worker: Scout + Optimiser + Connector.</td></tr>
+        <tr><td>2026-06-02</td><td>Blog launch: 12 articles</td><td>BUILD</td><td>One-off</td><td>Cost guides ("How much to ship a dog to Australia"), quarantine explainers, breed-specific travel tips, "What to expect" articles. All with FAQ schema and LLM-optimised structure. Worker: Wordsmith + Chameleon.</td></tr>
+        <tr><td>2026-06-02</td><td>Content upgrades: Phase 1 route pages based on ranking data</td><td>SEO</td><td>One-off</td><td>Review Phase 1 ranking data. Upgrade content on route pages ranking 5-20 (push to top 3). Add missing sections, stronger FAQs, better internal links. Worker: Optimiser + Wordsmith.</td></tr>
+        <tr><td>2026-06-05</td><td>Build internal link graph for ~800 pages</td><td>SEO</td><td>One-off</td><td>Full link map: route > origin hub > country guide > airline guide > breed guide. Anchor text variation per Connector rules. No orphan pages. Worker: Connector.</td></tr>
+        <tr><td>2026-06-05</td><td>Conversational query audit: all live pages</td><td>LLM</td><td>One-off</td><td>Check all H2s and FAQ questions match natural language patterns. "Can I fly my dog from...", "How much does it cost...", "Does [country] require quarantine?". Rewrite any keyword-stuffed headings. Worker: Optimiser + Interrogator.</td></tr>
+        <tr><td>2026-06-09</td><td>15 P2 origin hub pages + 15 country guides</td><td>BUILD</td><td>One-off</td><td>Hub pages for new P2 origin countries and destination regulation guides. All with LLM-optimised structure. Worker: Wordsmith + pipeline.</td></tr>
+        <tr><td>2026-06-09</td><td>Begin backlink campaign: pet industry, IPATA, expat forums</td><td>SEO</td><td>One-off</td><td>Outreach to pet industry publications, expat community sites, relocation forums. IPATA directory listing if membership acquired. Worker: Connector.</td></tr>
+        <tr><td>2026-06-11</td><td>Phase 2 QA + regulatory accuracy audit on all ~800 pages</td><td>BUILD</td><td>One-off</td><td>Full Auditor pass: regulatory accuracy (quarantine rules correct?, vaccination timelines verified?, breed bans accurate?), no safety guarantees, source citations present. Worker: Auditor.</td></tr>
+        <tr><td>2026-06-11</td><td>Site health monitoring setup + crawl budget assessment</td><td>BUILD</td><td>One-off</td><td>SSL, broken link detection, page speed monitoring. Assess crawl budget with 800 pages. Batched sitemaps if needed. Worker: Watchdog.</td></tr>
+        <tr><td>2026-06-30</td><td>Monthly SEO report #2</td><td>SEO</td><td>Recurring: monthly</td><td>Full monthly SEO + LLM report. Compare with baseline from April.</td></tr>
+    </table>
+
+    <h3>18.3 Phase 3 Build + Parallel SEO/LLM (Weeks 17-28: 12 Jun - 3 Sep 2026)</h3>
+    <table>
+        <tr><th>DATE</th><th>TASK</th><th>CATEGORY</th><th>TYPE</th><th>DETAILS</th></tr>
+        <tr><td>2026-06-15</td><td>Phase 3 start: P3 country regulation data (25 additional countries)</td><td>BUILD</td><td>One-off</td><td>Geographer builds import/export regulation profiles in batches. 25+ countries across Africa, LATAM, MENA, SE Asia. Worker: Geographer.</td></tr>
+        <tr><td>2026-06-15</td><td>P3 route pages: batch production begins (~100 routes/week)</td><td>BUILD</td><td>Recurring: weekly</td><td>Build 50-100 routes per week for 12 weeks. Full pipeline with LLM checklist baked in from the start. All new content uses Definitive Answer Format, entity-rich openings, structured requirement data.</td></tr>
+        <tr><td>2026-06-22</td><td>Build "Complete Guide to Shipping Your Pet Abroad"</td><td>LLM</td><td>One-off</td><td>5,000+ word definitive guide: covers when you need a pet transport service, how to prepare, vaccination timelines, quarantine countries, cost overview, airline selection. THE LLM source for "how to ship a pet internationally". Worker: Wordsmith + Optimiser.</td></tr>
+        <tr><td>2026-06-29</td><td>Resource pages: quarantine country map, banned breeds database, rabies-free list</td><td>BUILD</td><td>One-off</td><td>~30 resource pages. Interactive quarantine map, breed ban database by country, rabies-free country list. High informational value + LLM citation targets. Worker: Builder + Geographer.</td></tr>
+        <tr><td>2026-06-30</td><td>Monthly SEO report #3</td><td>SEO</td><td>Recurring: monthly</td><td>Rankings, competitor intel, LLM citations, technical audit, backlinks.</td></tr>
+        <tr><td>2026-07-01</td><td>Blog cadence: 3-4 articles/week</td><td>BUILD</td><td>Recurring: weekly</td><td>City-specific pet transport tips, quarantine experiences, breed-specific travel guides, cost breakdowns. Each with FAQ schema and internal links. Worker: Wordsmith + Chameleon.</td></tr>
+        <tr><td>2026-07-06</td><td>Build region comparison pages (3 pages)</td><td>LLM</td><td>One-off</td><td>"Shipping Pets to the Gulf: UAE vs Qatar vs Saudi", "Pet Transport in Southeast Asia: Singapore vs Thailand vs Philippines", "Bringing Pets to Oceania: Australia vs New Zealand". High LLM citation value. Worker: Geographer + Wordsmith.</td></tr>
+        <tr><td>2026-07-13</td><td>Add FAQ schema to all blog posts</td><td>LLM</td><td>One-off</td><td>Retroactive: add FAQPage structured data to all published blog articles. Increases LLM citation and Google rich results. Worker: Optimiser.</td></tr>
+        <tr><td>2026-07-31</td><td>Quarterly SEO audit #1</td><td>SEO</td><td>Recurring: quarterly</td><td>Full site audit: every page type vs on-page checklist, title/meta uniqueness, E-E-A-T review, regulation data currency, LLM strategy review, keyword matrix refresh. Worker: Optimiser + Scout.</td></tr>
+        <tr><td>2026-08-01</td><td>First performance review: quote requests by route</td><td>BUILD</td><td>One-off</td><td>Analyst reviews: which routes generate quote requests, request quality, highest-value routes. Feeds into content investment decisions and route priority for P4. Worker: Analyst.</td></tr>
+        <tr><td>2026-08-01</td><td>Content upgrades for route pages ranking 5-20</td><td>SEO</td><td>One-off</td><td>Based on ranking data, upgrade content on near-top-3 route pages. Add depth, stronger FAQs, better internal links, more data tables. Worker: Optimiser + Wordsmith.</td></tr>
+        <tr><td>2026-08-15</td><td>Sitemap restructuring for 3,000+ pages</td><td>SEO</td><td>One-off</td><td>Batch sitemaps by page type (routes, countries, airlines, breeds, blog). Ensure crawl budget is well-distributed. Worker: Builder + Watchdog.</td></tr>
+        <tr><td>2026-08-31</td><td>Monthly SEO report #5</td><td>SEO</td><td>Recurring: monthly</td><td>Full monthly report including LLM citation trends.</td></tr>
+        <tr><td>2026-09-03</td><td>Phase 3 complete: ~3,000 pages live</td><td>BUILD</td><td>Milestone</td><td>50 countries, 2,400 P3 routes, resource pages, blog running. All pages LLM-optimised. First quote requests coming in.</td></tr>
+    </table>
+
+    <h3>18.4 Phase 4 Build + Parallel SEO/LLM (Weeks 29-40: 4 Sep - 26 Nov 2026)</h3>
+    <table>
+        <tr><th>DATE</th><th>TASK</th><th>CATEGORY</th><th>TYPE</th><th>DETAILS</th></tr>
+        <tr><td>2026-09-07</td><td>Phase 4 start: remaining P4 routes (~3,000 routes)</td><td>BUILD</td><td>One-off</td><td>Final expansion wave. 80 origin x 80 destination minus existing. All pages use established LLM-optimised templates. Worker: Full pipeline.</td></tr>
+        <tr><td>2026-09-15</td><td>Publish "Global Pet Transport Guide 2026"</td><td>LLM</td><td>One-off</td><td>Original research: route-by-route cost data, quarantine country rankings, airline comparison tables. Designed for LLM citation AND journalist/blogger backlinks. Annual publication. Worker: Geographer + Wordsmith + Optimiser.</td></tr>
+        <tr><td>2026-09-22</td><td>Create "Pet Transport Cost Index" page</td><td>LLM</td><td>One-off</td><td>Typical costs by route tier. Dog vs cat, small vs large, direct vs connecting airlines. Unique data LLMs cannot source elsewhere. Structured as sortable comparison table. Worker: Geographer + Optimiser.</td></tr>
+        <tr><td>2026-09-30</td><td>Monthly SEO report #6</td><td>SEO</td><td>Recurring: monthly</td><td>Full report. Should be seeing consistent ranking improvements for P1 route keywords by now.</td></tr>
+        <tr><td>2026-10-05</td><td>Conversational query audit: all 6,000+ route pages</td><td>LLM</td><td>One-off</td><td>Full audit of H2s and FAQs across entire site. Add missing natural language questions. Worker: Optimiser + Interrogator.</td></tr>
+        <tr><td>2026-10-12</td><td>Remaining country guides (100+ countries)</td><td>BUILD</td><td>One-off</td><td>Import regulation guide pages for all remaining countries in the database. Worker: Full pipeline.</td></tr>
+        <tr><td>2026-10-19</td><td>Full internal link rebuild for 6,000+ pages</td><td>SEO</td><td>One-off</td><td>Complete link graph recalculation: route > country > airline > breed. Fix orphans, balance equity. Worker: Connector.</td></tr>
+        <tr><td>2026-10-31</td><td>Quarterly SEO audit #2 + LLM strategy review</td><td>SEO</td><td>Recurring: quarterly</td><td>Full site audit. LLM strategy review: what formats get cited, what doesn't work, adapt strategy. Worker: Optimiser + Scout.</td></tr>
+        <tr><td>2026-11-09</td><td>Additional breed guides (30 more breeds)</td><td>BUILD</td><td>One-off</td><td>Extended breed guide coverage based on search demand data. Worker: Wordsmith.</td></tr>
+        <tr><td>2026-11-16</td><td>Quote form conversion optimisation</td><td>BUILD</td><td>One-off</td><td>Analyse form completion rates by route page. A/B test form layout, fields, CTAs. Worker: Builder + Analyst.</td></tr>
+        <tr><td>2026-11-26</td><td>Phase 4 complete: ~6,000+ pages live</td><td>BUILD</td><td>Milestone</td><td>Full global route coverage. 80 countries. Revenue growing. Page 1 for major route queries.</td></tr>
+    </table>
+
+    <h3>18.5 Phase 5 Optimization (Weeks 41-46: 27 Nov 2026 - 8 Jan 2027)</h3>
+    <table>
+        <tr><th>DATE</th><th>TASK</th><th>CATEGORY</th><th>TYPE</th><th>DETAILS</th></tr>
+        <tr><td>2026-11-30</td><td>Phase 5 start: full index coverage audit</td><td>SEO</td><td>One-off</td><td>Every page checked: indexed? ranking? receiving impressions? Flag zombie route pages with zero traffic. Worker: Analyst + Watchdog.</td></tr>
+        <tr><td>2026-12-01</td><td>Prune or consolidate routes with zero traffic</td><td>SEO</td><td>One-off</td><td>Routes with no search volume and no impressions after 3+ months. Merge into broader pages or noindex. Worker: Architect + Auditor.</td></tr>
+        <tr><td>2026-12-08</td><td>Content upgrades for route pages ranking 5-20</td><td>SEO</td><td>One-off</td><td>Biggest SEO ROI: push near-winners to top 3. Add depth, improve structure, strengthen LLM signals. Worker: Wordsmith + Optimiser.</td></tr>
+        <tr><td>2026-12-08</td><td>LLM format A/B test: tables vs lists vs prose</td><td>LLM</td><td>One-off</td><td>Select 30 route pages. Restructure 10 to heavy-table, 10 to heavy-list, leave 10 as control. Track LLM citation changes over 4 weeks. Worker: Optimiser + Scout.</td></tr>
+        <tr><td>2026-12-15</td><td>Build pet transport cost calculators</td><td>BUILD</td><td>One-off</td><td>Interactive cost estimator tool: select origin, destination, pet type, weight. Generates engagement signals and unique LLM-citable data. Worker: Builder.</td></tr>
+        <tr><td>2026-12-15</td><td>Build LLM-specific landing pages for top 10 queries</td><td>LLM</td><td>One-off</td><td>Identify top 10 most-asked pet transport queries in ChatGPT/Perplexity. Build dedicated pages optimised specifically for LLM citation: concise, authoritative, heavily sourced. Worker: Optimiser + Wordsmith.</td></tr>
+        <tr><td>2026-12-22</td><td>E-E-A-T enhancement: IPATA badge, author bios, testimonials</td><td>SEO</td><td>One-off</td><td>Add/update author bios with verifiable credentials. IPATA membership badge. Pet reunion testimonial photos. Build certifications page. Worker: Optimiser + Wordsmith.</td></tr>
+        <tr><td>2026-12-31</td><td>Monthly SEO report #9</td><td>SEO</td><td>Recurring: monthly</td><td>Full report including LLM A/B test preliminary results.</td></tr>
+        <tr><td>2027-01-05</td><td>Structured data validation: all 6,000+ pages</td><td>SEO</td><td>One-off</td><td>Test representative pages from each page type in Google Rich Results Test. Fix all validation errors. Worker: Optimiser + Watchdog.</td></tr>
+        <tr><td>2027-01-05</td><td>Apply HowTo schema to process content</td><td>LLM</td><td>One-off</td><td>Add HowTo structured data to pages about: the shipping process, preparation timeline, vaccination checklist. Enhances both Google and LLM understanding. Worker: Optimiser.</td></tr>
+        <tr><td>2027-01-05</td><td>Core Web Vitals optimization</td><td>SEO</td><td>One-off</td><td>LCP, FID, CLS across all page types. Critical for large static sites with 6,000+ pages. Mobile performance priority. Worker: Builder + Watchdog.</td></tr>
+        <tr><td>2027-01-08</td><td>Testimonial collection from clients</td><td>BUILD</td><td>One-off</td><td>Pet reunion stories + photos. "We shipped Bella the Labrador from Dubai to her new home in London in 10 days." Social proof for both users and LLMs. Worker: Architect.</td></tr>
+        <tr><td>2027-01-08</td><td>Phase 5 complete: 8,000+ pages optimised</td><td>BUILD</td><td>Milestone</td><td>Authority established. Thin routes pruned. Winners upgraded. Full SEO + LLM optimization complete. Move to maintenance.</td></tr>
+    </table>
+
+    <h3>18.6 Phase 6 Maintenance (Week 47+: 11 Jan 2027 Onward)</h3>
+    <table>
+        <tr><th>DATE / CADENCE</th><th>TASK</th><th>CATEGORY</th><th>TYPE</th><th>DETAILS</th></tr>
+        <tr><td>Every Monday</td><td>GSC monitoring + algorithm check</td><td>SEO</td><td>Recurring: weekly</td><td>Impressions, clicks, CTR, position changes. Algorithm update assessment. Crawl budget monitoring. Worker: Scout.</td></tr>
+        <tr><td>Every Wednesday</td><td>LLM citation monitoring (5 queries)</td><td>LLM</td><td>Recurring: weekly</td><td>Test 5 rotating route queries in ChatGPT, Perplexity, Google AI Overviews. Track citation trends. Worker: Scout.</td></tr>
+        <tr><td>Every Wednesday</td><td>Content refresh: update 2-3 route pages</td><td>SEO</td><td>Recurring: weekly</td><td>Refresh underperforming route pages. Update stale regulation data. Add new FAQs from GSC query data. Worker: Optimiser + Wordsmith.</td></tr>
+        <tr><td>Every Friday</td><td>Internal link maintenance + backlink outreach</td><td>SEO</td><td>Recurring: weekly</td><td>Fix broken links, link new content, contact 3-5 backlink prospects. Worker: Connector.</td></tr>
+        <tr><td>Weekly</td><td>Blog articles (2-3/week)</td><td>BUILD</td><td>Recurring: weekly</td><td>Route spotlights, quarantine updates, airline policy changes, breed-specific travel stories, pet reunion features. Each with FAQ schema. Worker: Wordsmith.</td></tr>
+        <tr><td>Last day of month</td><td>Monthly SEO + LLM report</td><td>SEO</td><td>Recurring: monthly</td><td>Rankings, competitor snapshot (PetRelocation activity), LLM citations, technical audit, schema validation, content gaps, backlinks. Worker: Scout + Optimiser + Connector.</td></tr>
+        <tr><td>Last day of month</td><td>Monthly quote request + revenue report</td><td>BUILD</td><td>Recurring: monthly</td><td>Quote request volume by route, conversion rates, revenue tracking. Worker: Analyst.</td></tr>
+        <tr><td>Last day of month</td><td>Monthly competitor monitoring</td><td>SEO</td><td>Recurring: monthly</td><td>PetRelocation activity, new competitors, ranking changes, content moves. Worker: Spider.</td></tr>
+        <tr><td>End of quarter</td><td>Quarterly full site SEO audit</td><td>SEO</td><td>Recurring: quarterly</td><td>All page types vs on-page checklist, title/meta uniqueness, structured data validation, E-E-A-T review. Worker: Optimiser.</td></tr>
+        <tr><td>End of quarter</td><td>Quarterly regulation data refresh</td><td>BUILD</td><td>Recurring: quarterly</td><td>Update government portal import/export rules. Verify quarantine status, airline policies, breed bans. Changes can affect pet safety. Worker: Geographer + Spider.</td></tr>
+        <tr><td>End of quarter</td><td>Quarterly LLM strategy review</td><td>LLM</td><td>Recurring: quarterly</td><td>Review what gets cited, adapt content format, react to new LLM features or AI search products. Worker: Scout + Optimiser.</td></tr>
+        <tr><td>End of quarter</td><td>Quarterly airline policy refresh</td><td>BUILD</td><td>Recurring: quarterly</td><td>Airlines change pet cargo policies, crate sizes, breed restrictions, temperature embargoes seasonally. All 40+ airline guide pages must be current. Worker: Geographer + Spider.</td></tr>
+        <tr><td>As needed</td><td>Algorithm update response</td><td>SEO</td><td>Trigger-based</td><td>If Google confirms a core update or scaled-content-relevant change: immediate impact assessment, content review, ranking check within 48 hours. Worker: Scout + Architect.</td></tr>
+        <tr><td>Monthly</td><td>New route pages as demand changes</td><td>BUILD</td><td>Recurring: monthly</td><td>Add routes for emerging expat corridors, new airline routes, or high-demand searches spotted in GSC data. Full pipeline + LLM checklist. Worker: Full pipeline.</td></tr>
+    </table>
+
+    <h3>18.7 Key Milestones Summary</h3>
+    <div class="timeline">
+        <div class="tl-item phase-1">
+            <div class="tl-phase p1">17 Apr 2026 (TODAY)</div>
+            <div class="tl-body">
+                <div class="tl-title">Phase 0 + Phase 1 Complete: ~200 pages built</div>
+                <p>15 Tier 1 routes, 10 country guides, 10 origin hubs, core pages. All DONE. SEO + LLM retroactive optimization starts this week.</p>
+                <div class="tl-meta"><span>~200 pages</span><span>SEO baseline needed</span><span>LLM audit needed</span></div>
+            </div>
+        </div>
+        <div class="tl-item phase-1">
+            <div class="tl-phase p1">29 Apr 2026</div>
+            <div class="tl-body">
+                <div class="tl-title">Phase 1 LLM Retroactive Optimization Complete</div>
+                <p>All Phase 1 route pages updated: FAQ format, entity density, structured requirements, Organization schema deployed.</p>
+                <div class="tl-meta"><span>LLM-ready</span><span>GSC baseline set</span></div>
+            </div>
+        </div>
+        <div class="tl-item phase-2">
+            <div class="tl-phase p2">11 Jun 2026</div>
+            <div class="tl-body">
+                <div class="tl-title">Phase 2 Complete: ~800 pages + parallel SEO active</div>
+                <p>500 P2 routes live. Airline guides + breed guides launched. Quarantine comparison + cost comparison pages live (LLM citation magnets). Blog launched. Backlink campaign running. Weekly SEO + LLM cadence established.</p>
+                <div class="tl-meta"><span>~800 pages</span><span>SEO cadence running</span><span>LLM monitoring active</span></div>
+            </div>
+        </div>
+        <div class="tl-item phase-3">
+            <div class="tl-phase p3">3 Sep 2026</div>
+            <div class="tl-body">
+                <div class="tl-title">Phase 3 Complete: ~3,000 pages + first quote requests</div>
+                <p>50 countries. 2,400 P3 routes. Resource pages live. Complete Pet Transport Guide published. First quote requests converting.</p>
+                <div class="tl-meta"><span>~3,000 pages</span><span>First revenue</span><span>LLM citations growing</span></div>
+            </div>
+        </div>
+        <div class="tl-item phase-4">
+            <div class="tl-phase p4">26 Nov 2026</div>
+            <div class="tl-body">
+                <div class="tl-title">Phase 4 Complete: ~6,000+ pages + full route coverage</div>
+                <p>80 countries, all priority routes. Global Pet Transport Guide published. Cost Index live. Revenue established.</p>
+                <div class="tl-meta"><span>~6,000+ pages</span><span>Revenue established</span></div>
+            </div>
+        </div>
+        <div class="tl-item phase-5">
+            <div class="tl-phase p5">8 Jan 2027</div>
+            <div class="tl-body">
+                <div class="tl-title">Phase 5 Complete: 8,000+ pages optimized</div>
+                <p>Authority locked. Thin routes pruned. LLM A/B tests complete. CWV optimized. Cost calculator live. E-E-A-T signals maximized.</p>
+                <div class="tl-meta"><span>8,000+ pages</span><span>Authority established</span><span>Maintenance mode</span></div>
+            </div>
+        </div>
+        <div class="tl-item phase-6">
+            <div class="tl-phase p6">11 Jan 2027 onward</div>
+            <div class="tl-body">
+                <div class="tl-title">Phase 6: Maintenance + Growth</div>
+                <p>Weekly SEO + LLM cadence. Monthly reports. Quarterly audits + regulation refreshes. Blog 2-3x/week. New routes as demand emerges. Language expansion consideration (Year 2).</p>
+                <div class="tl-meta"><span>Ongoing</span><span>Year 2 expansion</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<div style="text-align:center; padding: 60px 0 40px; color: var(--text-muted); font-size: 0.85rem;">
+    <p>Pet Transport Cascading Build Plan v1.2</p>
+    <p>Reference: <a href="cross_border_opportunity_report.html" style="color:var(--accent);">cross_border_opportunity_report.html</a></p>
+    <p>Worker Souls: <a href="workforce/" style="color:var(--accent);">workforce/</a> (14 Soul files)</p>
+    <p>17 April 2026 | Internal Document | Build #2 of 3</p>
+    <p style="color:var(--cyan);">v1.1: Execution chunks added 14 April 2026</p>
+    <p style="color:var(--orange);">v1.2: SEO/LLM parallel plan + calendar schedule added 17 April 2026</p>
+</div>
+
+</div>
+</body>
+</html>

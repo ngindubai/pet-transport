@@ -1,0 +1,547 @@
+{
+  "metadata": {
+    "task": "0.8",
+    "description": "Breed restriction database: banned, restricted, and controlled dog breeds per P1 country + airline brachycephalic policies. Compiled from countries_pet_regulations.json and airline_pet_policies.json.",
+    "schema_version": "1.0",
+    "date_compiled": "2026-04-16",
+    "methodology": "Aggregated from Block 5/6 country regulations database and Block 3/7 airline policies. Data sourced from official government legislation, airline published policies, and published guidelines.",
+    "content_use": "Feeds breed-specific route pages, breed guide pages, and warning callouts on route pages where breed restrictions apply."
+  },
+  "country_breed_restrictions": {
+    "UK": {
+      "legislation": "Dangerous Dogs Act 1991 (as amended)",
+      "restriction_type": "Type-based ban (not breed registration based)",
+      "severity": "restrictive",
+      "banned_types": [
+        {
+          "name": "Pit Bull Terrier",
+          "status": "banned",
+          "import_allowed": false,
+          "exemption": "Certificate of Exemption possible for existing dogs in UK"
+        },
+        {
+          "name": "Japanese Tosa",
+          "status": "banned",
+          "import_allowed": false,
+          "exemption": "Certificate of Exemption possible for existing dogs in UK"
+        },
+        {
+          "name": "Dogo Argentino",
+          "status": "banned",
+          "import_allowed": false,
+          "exemption": "Certificate of Exemption possible for existing dogs in UK"
+        },
+        {
+          "name": "Fila Brasileiro",
+          "status": "banned",
+          "import_allowed": false,
+          "exemption": "Certificate of Exemption possible for existing dogs in UK"
+        }
+      ],
+      "assessment_method": "Type-based: a dog that 'substantially conforms' to the physical characteristics of a banned type can be classified as that type regardless of pedigree or registration",
+      "mixed_breeds": "Crosses of banned types are also prohibited",
+      "notes": "XL Bully added to restricted list in 2024 (England and Wales). Owners must obtain Certificate of Exemption, dog must be neutered, muzzled and on lead in public.",
+      "source_url": "https://www.gov.uk/control-dog-public"
+    },
+    "USA": {
+      "legislation": "No federal breed-specific legislation",
+      "restriction_type": "State and local BSL only",
+      "severity": "least_restrictive",
+      "federal_banned": [],
+      "state_local_examples": [
+        {
+          "jurisdiction": "Denver, Colorado",
+          "breeds": ["Pit Bull Terrier"],
+          "status": "Previously banned, lifted 2021, now restricted"
+        },
+        {
+          "jurisdiction": "Miami-Dade County, Florida",
+          "breeds": ["Pit Bull Terrier"],
+          "status": "Banned (county-level despite state preemption in other FL counties)"
+        }
+      ],
+      "commonly_restricted_breeds": ["Pit Bull Terrier", "American Pit Bull Terrier", "American Staffordshire Terrier", "Staffordshire Bull Terrier", "Rottweiler", "Doberman Pinscher", "German Shepherd", "Chow Chow"],
+      "states_banning_bsl": ["Florida (partial)", "California", "Colorado", "Illinois", "Maine", "Minnesota", "New Jersey", "New York", "Oklahoma", "Pennsylvania", "Texas", "Virginia"],
+      "notes": "BSL varies enormously. Some states have banned BSL at state level. Import has no federal breed restriction. Check destination city/county before travel.",
+      "import_impact": "No breed-based import restrictions at federal level. Federal entry requirements are the same regardless of breed."
+    },
+    "UAE": {
+      "legislation": "Federal Law + emirate-level regulations",
+      "restriction_type": "Restricted breeds (varies by emirate)",
+      "severity": "moderate",
+      "restricted_breeds": [
+        {
+          "name": "Pit Bull Terrier (and related types)",
+          "status": "restricted",
+          "import_allowed": "Varies by emirate. Generally restricted or requires special permit."
+        },
+        {
+          "name": "American Staffordshire Terrier",
+          "status": "restricted",
+          "import_allowed": "May require special permit"
+        },
+        {
+          "name": "Staffordshire Bull Terrier",
+          "status": "restricted in some emirates",
+          "import_allowed": "Check specific emirate"
+        },
+        {
+          "name": "Rottweiler",
+          "status": "restricted but not outright banned in most emirates",
+          "import_allowed": "May require special permit"
+        },
+        {
+          "name": "Dogo Argentino",
+          "status": "restricted",
+          "import_allowed": false
+        },
+        {
+          "name": "Fila Brasileiro",
+          "status": "restricted",
+          "import_allowed": false
+        },
+        {
+          "name": "Japanese Tosa",
+          "status": "restricted",
+          "import_allowed": false
+        },
+        {
+          "name": "Perro de Presa Canario",
+          "status": "restricted",
+          "import_allowed": false
+        }
+      ],
+      "wolf_hybrids": "Banned in all emirates",
+      "emirate_variations": "Dubai, Abu Dhabi, Sharjah may each have different lists. Check with specific municipality.",
+      "notes": "List may not be exhaustive. Verify with relevant municipality import permit office."
+    },
+    "Australia": {
+      "legislation": "No federal breed ban for imports. State-level legislation.",
+      "restriction_type": "State-level restrictions on ownership (not import ban)",
+      "severity": "least_restrictive",
+      "federal_import_ban": [],
+      "state_restricted_breeds": [
+        {
+          "name": "Pit Bull Terrier / American Pit Bull Terrier",
+          "jurisdictions": "Most states restrict or require registration",
+          "status": "restricted"
+        },
+        {
+          "name": "Perro de Presa Canario",
+          "jurisdictions": "Some states",
+          "status": "restricted"
+        },
+        {
+          "name": "Japanese Tosa",
+          "jurisdictions": "Some states",
+          "status": "restricted"
+        },
+        {
+          "name": "Dogo Argentino",
+          "jurisdictions": "Some states",
+          "status": "restricted"
+        },
+        {
+          "name": "Fila Brasileiro",
+          "jurisdictions": "Some states",
+          "status": "restricted"
+        }
+      ],
+      "notes": "Import is not restricted by breed at the federal/DAFF level. However, state authorities may restrict ownership. Check destination state before import."
+    },
+    "Canada": {
+      "legislation": "No federal breed-specific legislation. Provincial and municipal BSL.",
+      "restriction_type": "Provincial/municipal BSL",
+      "severity": "least_restrictive",
+      "federal_import_ban": [],
+      "notable_bsl": [
+        {
+          "jurisdiction": "Ontario",
+          "breeds": ["Pit Bull (American Pit Bull Terrier, American Staffordshire Terrier, Staffordshire Bull Terrier, and similar)"],
+          "legislation": "Dog Owners' Liability Act (2005)",
+          "status": "Banned. Cannot own, breed, or import Pit Bulls into Ontario."
+        },
+        {
+          "jurisdiction": "Winnipeg, Manitoba",
+          "breeds": ["Pit Bull types"],
+          "status": "Banned"
+        },
+        {
+          "jurisdiction": "Montreal, Quebec",
+          "breeds": ["Previously banned Pit Bulls, law revised multiple times"],
+          "status": "Restricted (check current status)"
+        }
+      ],
+      "notes": "Ontario Pit Bull ban is the most significant: cannot import a Pit Bull into Ontario even as a personal pet. This affects Toronto routes specifically. Other provinces generally less restrictive.",
+      "import_impact": "No federal import breed restriction, but provincial laws apply immediately upon arrival. Ontario is the critical one for pet transport."
+    },
+    "Germany": {
+      "legislation": "Hundeverbringungs- und -einfuhrbeschraenkungsgesetz (Dog Import Restriction Act)",
+      "restriction_type": "Federal import ban + Bundeslaender additional lists",
+      "severity": "very_restrictive",
+      "federal_import_banned": [
+        {
+          "name": "Pit Bull Terrier",
+          "status": "banned from import",
+          "import_allowed": false
+        },
+        {
+          "name": "American Staffordshire Terrier",
+          "status": "banned from import",
+          "import_allowed": false
+        },
+        {
+          "name": "Staffordshire Bull Terrier",
+          "status": "banned from import",
+          "import_allowed": false
+        },
+        {
+          "name": "Bull Terrier",
+          "status": "banned from import",
+          "import_allowed": false
+        }
+      ],
+      "crosses": "Crosses of all four breeds also banned from import",
+      "bundesland_additional_lists": {
+        "description": "Individual German states add breeds to their own 'dangerous dog' lists beyond the federal four",
+        "examples": {
+          "bayern": ["Pit Bull", "Am Staff", "Staffy", "Bull Terrier", "Bandog", "American Bulldog", "Bullmastiff", "Dogo Argentino", "Tosa", "Fila Brasileiro", "Staffordshire Bull Terrier", "and others"],
+          "hessen": ["Pit Bull", "Am Staff", "Staffy", "Bull Terrier", "Rottweiler (Category 2)", "American Bulldog", "Bullmastiff", "Dogo Argentino", "Kangal", "and others"],
+          "hamburg": ["Pit Bull", "Am Staff", "Staffy", "Bull Terrier", "Rottweiler", "and others"]
+        },
+        "notes": "Bundesland lists vary. Some categorise breeds into Category 1 (banned/dangerous) and Category 2 (requires temperament test). Category 2 dogs may be imported with proof of temperament test results."
+      },
+      "exemption": "Bundesland-specific. Some allow import with prior approval and proof of non-dangerousness (temperament test/Wesenstest).",
+      "notes": "Germany is the second strictest P1 country for breed restrictions (after France). Four breeds banned at the FEDERAL level specifically for import and transit. This directly impacts content for any route with Germany as destination."
+    },
+    "France": {
+      "legislation": "Law 99-5 of 6 January 1999 (amended by Law 2008-582)",
+      "restriction_type": "Two-category system: Category 1 (outright ban) and Category 2 (restricted with permit)",
+      "severity": "most_restrictive",
+      "category_1_banned": {
+        "description": "Attack dogs. BANNED from import. Cannot be acquired, sold, given away, or imported into France.",
+        "breeds": [
+          {
+            "name": "Pit Bull type (not registered in studbook/LOF)",
+            "status": "banned",
+            "import_allowed": false,
+            "notes": "Unregistered dogs resembling Pit Bull type"
+          },
+          {
+            "name": "Boerboel / Mastiff type (not registered)",
+            "status": "banned",
+            "import_allowed": false,
+            "notes": "Unregistered dogs resembling Mastiff/Boerboel type"
+          },
+          {
+            "name": "Tosa type (not registered in studbook)",
+            "status": "banned",
+            "import_allowed": false,
+            "notes": "Unregistered Tosa-type dogs"
+          }
+        ],
+        "additional_rules": "Category 1 dogs must be sterilised, muzzled and leashed in public, cannot access public transport, cannot be in common areas of apartment buildings"
+      },
+      "category_2_restricted": {
+        "description": "Guard and defence dogs. Restricted but CAN be imported with conditions.",
+        "breeds": [
+          {
+            "name": "American Staffordshire Terrier (registered in studbook/LOF)",
+            "status": "restricted",
+            "import_allowed": true,
+            "conditions": "Permis de detention required, civil liability insurance, muzzle and leash in public"
+          },
+          {
+            "name": "Rottweiler (registered or not)",
+            "status": "restricted",
+            "import_allowed": true,
+            "conditions": "Permis de detention required, civil liability insurance, sterilisation if not registered in studbook"
+          },
+          {
+            "name": "Tosa (registered in studbook)",
+            "status": "restricted",
+            "import_allowed": true,
+            "conditions": "Permis de detention required, civil liability insurance"
+          }
+        ],
+        "permit_requirements": ["Permis de detention (detention permit) from local mairie", "Civil liability insurance", "Behavioural assessment by approved vet", "Training attestation (formation)", "Sterilisation (if not registered in studbook)"]
+      },
+      "notes": "France has the strictest breed framework of all P1 countries. Category 1 is an absolute import ban. Category 2 requires significant paperwork and ongoing compliance. Route pages with France as destination MUST prominently flag breed restrictions."
+    },
+    "Singapore": {
+      "legislation": "Animals and Birds (Dog Licensing and Control) Rules",
+      "restriction_type": "Import prohibition on listed breeds",
+      "severity": "very_restrictive",
+      "prohibited_breeds": [
+        {
+          "name": "Pit Bull Terrier (including American Pit Bull Terrier, American Staffordshire Terrier, Staffordshire Bull Terrier)",
+          "status": "prohibited",
+          "import_allowed": false
+        },
+        {
+          "name": "Akita",
+          "status": "prohibited",
+          "import_allowed": false,
+          "notes": "Unusual restriction. Not commonly banned globally."
+        },
+        {
+          "name": "Boerboel",
+          "status": "prohibited",
+          "import_allowed": false
+        },
+        {
+          "name": "Dogo Argentino",
+          "status": "prohibited",
+          "import_allowed": false
+        },
+        {
+          "name": "Fila Brasileiro",
+          "status": "prohibited",
+          "import_allowed": false
+        },
+        {
+          "name": "Neapolitan Mastiff",
+          "status": "prohibited",
+          "import_allowed": false,
+          "notes": "Unusual restriction. Not commonly banned globally."
+        },
+        {
+          "name": "Perro de Presa Canario",
+          "status": "prohibited",
+          "import_allowed": false
+        },
+        {
+          "name": "Tosa",
+          "status": "prohibited",
+          "import_allowed": false
+        }
+      ],
+      "crosses": "Crosses of prohibited breeds are also prohibited",
+      "hdb_restrictions": {
+        "description": "HDB (Housing Development Board) public housing (approximately 80% of Singapore's population) has additional breed restrictions",
+        "rules": "Only approved small dog breeds allowed in HDB flats. Maximum 1 dog per HDB household.",
+        "approved_breeds": "HDB maintains a list of 62 approved breeds plus mixed breeds under 15 kg",
+        "cats": "Cats permitted in HDB flats since September 2024 (previously prohibited). Maximum 2 cats per household."
+      },
+      "notes": "8 breeds prohibited from import. Akita and Neapolitan Mastiff restrictions are unusual compared to other countries. HDB housing rules further constrain which dogs can practically be relocated to Singapore."
+    },
+    "Hong_Kong": {
+      "legislation": "Dangerous Dogs Regulation (Cap. 167D)",
+      "restriction_type": "Fighting dog prohibition",
+      "severity": "moderate",
+      "prohibited_fighting_dogs": [
+        {
+          "name": "Pit Bull Terrier (including American Pit Bull Terrier)",
+          "status": "prohibited",
+          "import_allowed": false
+        },
+        {
+          "name": "Japanese Tosa",
+          "status": "prohibited",
+          "import_allowed": false
+        },
+        {
+          "name": "Dogo Argentino",
+          "status": "prohibited",
+          "import_allowed": false
+        },
+        {
+          "name": "Fila Brasileiro",
+          "status": "prohibited",
+          "import_allowed": false
+        }
+      ],
+      "known_large_dogs": {
+        "description": "Dogs classified as 'known large dogs' (over 20 kg in adulthood) face additional requirements",
+        "requirements": ["Must be held on a leash not exceeding 2 metres in public", "Must be under control of person over 16 years old"],
+        "not_banned": true,
+        "notes": "Large dogs are not banned from import but face additional handling requirements"
+      },
+      "housing_restrictions": "Many housing estates (public and private) have breed and size restrictions. Verify with estate management before relocating a pet.",
+      "notes": "Four fighting dog types prohibited. Similar to UK list. Additional practical restrictions in housing estates."
+    },
+    "South_Africa": {
+      "legislation": "No national breed-specific import legislation",
+      "restriction_type": "Municipal bylaws only",
+      "severity": "least_restrictive",
+      "national_import_ban": [],
+      "municipal_examples": [
+        {
+          "jurisdiction": "eThekwini Municipality (Durban)",
+          "breeds": ["Pit Bull Terrier"],
+          "status": "Restricted (special permit required)"
+        },
+        {
+          "jurisdiction": "Various municipalities",
+          "breeds": ["Pit Bull types", "Rottweiler"],
+          "status": "Some municipalities require special permits or have bylaws"
+        }
+      ],
+      "notes": "No national import breed restriction. South Africa is one of the least restrictive P1 countries for breed-based import. Municipal bylaws may apply at destination."
+    }
+  },
+  "airline_brachycephalic_restrictions": {
+    "description": "Brachycephalic (snub-nosed) breed restrictions across airlines. Virtually all airlines restrict or ban these breeds from cargo holds due to respiratory distress risks at altitude and during temperature extremes.",
+    "universally_affected_dog_breeds": [
+      "English Bulldog",
+      "French Bulldog",
+      "American Bulldog",
+      "Pug",
+      "Boston Terrier",
+      "Boxer",
+      "Pekingese",
+      "Shih Tzu",
+      "Cavalier King Charles Spaniel",
+      "Lhasa Apso",
+      "Brussels Griffon",
+      "Japanese Chin",
+      "Affenpinscher",
+      "Tibetan Spaniel",
+      "Chow Chow",
+      "Bull Mastiff",
+      "Shar Pei",
+      "Cane Corso",
+      "Dogue de Bordeaux"
+    ],
+    "universally_affected_cat_breeds": [
+      "Persian",
+      "Himalayan",
+      "Burmese",
+      "Exotic Shorthair",
+      "British Shorthair",
+      "Scottish Fold"
+    ],
+    "airline_policies": {
+      "complete_cargo_ban": {
+        "description": "Airlines that outright ban all brachycephalic breeds from cargo transport year-round",
+        "airlines": ["British Airways", "Virgin Atlantic", "Singapore Airlines", "Qantas (English Bulldog year-round)"],
+        "notes": "Some may have seasonal exceptions or cabin alternatives"
+      },
+      "seasonal_cargo_ban": {
+        "description": "Airlines that ban brachycephalic breeds from cargo during hot months only",
+        "airlines": ["Emirates", "Etihad", "Lufthansa (summer restrictions)", "KLM (summer)", "Air France (summer)", "Japan Airlines (English Bulldog year-round, French Bulldog May-Oct)"],
+        "hot_months": "Typically May-October in northern hemisphere, November-March for southern hemisphere/Gulf routes"
+      },
+      "accepted_with_restrictions": {
+        "description": "Airlines that accept brachycephalic breeds in cargo with additional requirements",
+        "airlines": ["Delta (domestic only, with health cert within 10 days)", "American Airlines (varies by route)", "United (cabin only, cargo suspended)"],
+        "typical_requirements": ["Additional health certificate dated within 10 days", "Temperature restrictions (typically 20C-25C ground temp only)", "Signed liability waiver", "Upgraded crate ventilation"]
+      },
+      "cabin_alternative": {
+        "description": "Some brachycephalic breeds can fly in cabin if small enough for carrier",
+        "breeds_commonly_cabin_eligible": ["French Bulldog", "Pug", "Boston Terrier", "Cavalier King Charles Spaniel", "Shih Tzu"],
+        "airlines_allowing_cabin": ["Lufthansa", "KLM", "Air France", "Delta", "American Airlines", "United", "Air Canada", "Turkish Airlines", "Korean Air"],
+        "weight_limit": "Typically 8-10 kg including carrier",
+        "notes": "Cabin transport is the primary viable option for small brachycephalic breeds on long-haul international flights"
+      }
+    },
+    "content_opportunity": {
+      "search_demand": "High. 'Can French Bulldogs fly?', 'flying with a bulldog', 'brachycephalic breed airline rules' are high-volume queries.",
+      "page_types": [
+        "Breed-specific guide pages (e.g. 'Flying with a French Bulldog: Airline Guide')",
+        "Route-specific brachycephalic callouts (embedded in route pages)",
+        "Comparison tables: which airlines accept which brachycephalic breeds"
+      ],
+      "notes": "French Bulldog is the most searched brachycephalic breed for air travel. English Bulldog has the most restrictions. Pug and Boston Terrier are mid-tier in both search volume and restriction severity."
+    }
+  },
+  "breed_restriction_severity_ranking": {
+    "description": "Overall ranking of P1 countries by breed import restriction severity",
+    "ranking": [
+      {
+        "rank": 1,
+        "country": "France",
+        "severity": "most_restrictive",
+        "reason": "Category 1 breeds outright banned from import. Category 2 requires permit, insurance, sterilisation, behavioural assessment, and training."
+      },
+      {
+        "rank": 2,
+        "country": "Germany",
+        "severity": "very_restrictive",
+        "reason": "4 breeds banned from import at federal level. Bundeslaender add 5-10+ more breeds each."
+      },
+      {
+        "rank": 3,
+        "country": "Singapore",
+        "severity": "very_restrictive",
+        "reason": "8 breeds prohibited from import. Additional HDB housing restrictions limit most residents to small breeds only."
+      },
+      {
+        "rank": 4,
+        "country": "UK",
+        "severity": "restrictive",
+        "reason": "4 types banned. Type-based assessment (not registration). XL Bully added 2024."
+      },
+      {
+        "rank": 5,
+        "country": "Hong Kong",
+        "severity": "moderate",
+        "reason": "4 fighting dog types prohibited. Housing estate restrictions add practical constraints."
+      },
+      {
+        "rank": 6,
+        "country": "UAE",
+        "severity": "moderate",
+        "reason": "8+ breeds restricted. Varies by emirate. Some breeds may get special permits."
+      },
+      {
+        "rank": 7,
+        "country": "Canada",
+        "severity": "least_restrictive",
+        "reason": "No federal ban, but Ontario Pit Bull ban is significant (affects Toronto routes)."
+      },
+      {
+        "rank": 8,
+        "country": "Australia",
+        "severity": "least_restrictive",
+        "reason": "No federal import breed ban. State-level ownership restrictions exist."
+      },
+      {
+        "rank": 9,
+        "country": "USA",
+        "severity": "least_restrictive",
+        "reason": "No federal BSL. State/local BSL varies. No import breed restriction."
+      },
+      {
+        "rank": 10,
+        "country": "South Africa",
+        "severity": "least_restrictive",
+        "reason": "No national import breed restriction. Municipal bylaws may apply."
+      }
+    ]
+  },
+  "common_restricted_breed_matrix": {
+    "description": "Which commonly restricted breeds are banned/restricted in which P1 countries",
+    "pit_bull_terrier": {
+      "banned_from_import": ["UK", "Germany", "Singapore", "Hong Kong", "France (Cat 1 if unregistered)"],
+      "restricted": ["UAE", "Canada (Ontario only)", "France (Cat 2 if registered as Am Staff)"],
+      "no_restriction": ["USA (federal)", "Australia (federal)", "South Africa (national)"]
+    },
+    "rottweiler": {
+      "banned_from_import": [],
+      "restricted": ["France (Cat 2 - permit required)", "Germany (Cat 2 in some Bundeslaender)", "UAE (some emirates)", "Hessen, Hamburg (Germany)"],
+      "no_restriction": ["UK", "USA", "Australia", "Canada", "Singapore", "Hong Kong", "South Africa"]
+    },
+    "japanese_tosa": {
+      "banned_from_import": ["UK", "Germany (federal if crosses)", "Singapore", "Hong Kong", "France (Cat 1 if unregistered, Cat 2 if registered)"],
+      "restricted": ["UAE"],
+      "no_restriction": ["USA (federal)", "Australia (federal)", "Canada (federal)", "South Africa"]
+    },
+    "dogo_argentino": {
+      "banned_from_import": ["UK", "Singapore", "Hong Kong"],
+      "restricted": ["UAE", "Germany (some Bundeslaender)"],
+      "no_restriction": ["USA (federal)", "Australia (state level varies)", "Canada", "France (check registration)", "South Africa"]
+    },
+    "akita": {
+      "banned_from_import": ["Singapore"],
+      "restricted": [],
+      "no_restriction": ["UK", "USA", "UAE", "Australia", "Canada", "Germany", "France", "Hong Kong", "South Africa"],
+      "notes": "Singapore's Akita ban is unusual. Important for Japan-Singapore route content."
+    },
+    "american_staffordshire_terrier": {
+      "banned_from_import": ["Germany (federal)", "Singapore"],
+      "restricted": ["France (Cat 2 - permit + insurance)", "UAE", "UK (if assessed as Pit Bull type)"],
+      "no_restriction": ["USA (federal)", "Australia (federal)", "Canada (Ontario = banned as Pit Bull)", "Hong Kong", "South Africa"]
+    }
+  }
+}

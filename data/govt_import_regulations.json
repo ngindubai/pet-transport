@@ -1,0 +1,394 @@
+{
+  "metadata": {
+    "task": "0.3",
+    "description": "Government pet import portal regulations for P1 countries",
+    "sources": [
+      "CDC - cdc.gov/importation/dogs (updated Aug 2024, accessed Apr 2026)",
+      "USDA APHIS - aphis.usda.gov/pet-travel (accessed Apr 2026)",
+      "UK GOV.UK - gov.uk/bring-pet-to-great-britain (accessed Apr 2026)",
+      "Australian DAFF - agriculture.gov.au/biosecurity-trade/cats-dogs (page updated 13 Mar 2026)",
+      "EU Commission - food.ec.europa.eu/animals/movement-pets (accessed Apr 2026)",
+      "Singapore NParks AVS - nparks.gov.sg/avs/pets (site inaccessible, data from AVS published guidelines)"
+    ],
+    "date_compiled": "2026-04-16",
+    "notes": "Raw regulation data extracted from official government portals. Singapore AVS site blocked automated extraction; data compiled from AVS published category system and guidelines."
+  },
+  "countries": {
+    "USA": {
+      "governing_bodies": [
+        {
+          "name": "CDC (Centers for Disease Control and Prevention)",
+          "role": "Primary authority for dog imports. Manages rabies prevention requirements.",
+          "url": "https://www.cdc.gov/importation/dogs/index.html"
+        },
+        {
+          "name": "USDA APHIS (Animal and Plant Health Inspection Service)",
+          "role": "Additional regulations for dogs. No APHIS health requirements for pet cats.",
+          "url": "https://www.aphis.usda.gov/pet-travel"
+        },
+        {
+          "name": "US Fish and Wildlife Service",
+          "role": "CITES compliance for certain species",
+          "url": "https://www.fws.gov"
+        }
+      ],
+      "dogs": {
+        "classification_system": "Binary: High-risk vs rabies-free/low-risk countries (based on 6-month travel history)",
+        "high_risk_countries_note": "CDC maintains a list of 100+ high-risk countries for dog rabies. If a country is not listed, it is considered rabies-free or low-risk. Key P1 countries classified as HIGH-RISK: UAE, South Africa, Hong Kong (low-risk, separate from mainland China), Singapore (low-risk). UK, Canada, Australia, Germany, France are all low-risk.",
+        "requirements_low_risk": {
+          "documents": ["CDC Dog Import Form (free, completed online)"],
+          "vaccination": "CDC strongly recommends rabies vaccination but does not require it for dogs from low-risk countries",
+          "microchip": "Required. Must be detectable with universal scanner.",
+          "minimum_age": "6 months at time of entry",
+          "health": "Must appear healthy upon arrival",
+          "arrival": "Can arrive at any airport, seaport, or land border crossing",
+          "receipt_validity": "6 months from issue (valid for multiple entries if dog stays in same low-risk country)"
+        },
+        "requirements_high_risk_us_vaccinated": {
+          "documents": [
+            "CDC Dog Import Form receipt",
+            "Certification of U.S.-issued Rabies Vaccination form (completed by USDA-accredited vet, endorsed by USDA)"
+          ],
+          "vaccination": "Valid U.S.-issued rabies vaccination required. Dog must be at least 12 weeks old at vaccination. First vaccine: form completed at least 28 days after vaccination.",
+          "microchip": "Required. Must be implanted BEFORE rabies vaccination or vaccine is invalid.",
+          "minimum_age": "6 months at time of entry",
+          "arrival": "Can arrive at any airport, seaport, or land border crossing",
+          "note": "USDA-endorsed export health certificates issued after July 31, 2025 no longer accepted for re-entry"
+        },
+        "requirements_high_risk_foreign_vaccinated": {
+          "documents": [
+            "Certification of Foreign Rabies Vaccination and Microchip form (vet-completed, endorsed by government vet)",
+            "CDC Dog Import Form receipt",
+            "Reservation confirmation at CDC-registered animal care facility",
+            "Valid rabies serology titer report from CDC-approved lab (or agree to 28-day quarantine)"
+          ],
+          "vaccination": "Valid rabies vaccination required. First vaccine at 12+ weeks of age. Must wait 28 days after first vaccine before entry.",
+          "microchip": "Required. Must be implanted BEFORE rabies vaccination.",
+          "minimum_age": "6 months at time of entry",
+          "serology_titer": "Blood sample drawn at least 30 days after first valid rabies vaccine and at least 28 days before US entry. Must pass at CDC-approved lab. Valid for life if no lapse in vaccine coverage.",
+          "quarantine": "28-day quarantine at CDC-registered facility if no valid serology titer. Quarantine may be shortened if criteria met.",
+          "arrival": "MUST arrive by air at airport where CDC-registered animal care facility is located. No domestic travel allowed until after facility services.",
+          "costs": "Examination, revaccination with US-licensed vaccine, quarantine (if required). All at importer expense.",
+          "form_validity": "Certification form valid 30 days after vet signature, single use only",
+          "timeline": {
+            "60_days_before": "Microchip, verify rabies vaccination, begin airline booking, collect blood for serology",
+            "30_days_before": "Last chance for serology blood draw. Reserve spot at CDC facility. Get Certification form completed.",
+            "week_of_travel": "Finalize travel. Complete CDC Dog Import Form online.",
+            "day_of_travel": "Arrive at correct airport. Present: CDC Dog Import Form receipt, Certification form, facility reservation."
+          }
+        },
+        "key_high_risk_p1_countries": ["UAE", "South Africa"]
+      },
+      "cats": {
+        "federal_requirements": "APHIS Veterinary Services has NO animal health requirements for importing pet cats into the United States from a foreign country.",
+        "other_agencies": "Check CDC and US Fish and Wildlife Service for any applicable requirements.",
+        "state_requirements": "Individual US states may have their own import requirements. Check destination state's agriculture department.",
+        "note": "This is a significant differentiator: cats face virtually no federal import barriers to the USA."
+      }
+    },
+    "UK": {
+      "governing_bodies": [
+        {
+          "name": "Animal and Plant Health Agency (APHA)",
+          "role": "Administers pet travel scheme for Great Britain (England, Wales, Scotland)",
+          "url": "https://www.gov.uk/bring-pet-to-great-britain"
+        },
+        {
+          "name": "DAERA (Northern Ireland)",
+          "role": "Separate rules for pet travel into Northern Ireland",
+          "url": "https://www.daera-ni.gov.uk/articles/travelling-pets"
+        }
+      ],
+      "species_covered": "Dogs, cats, ferrets",
+      "requirements_entering_gb": {
+        "step_1_approved_route": "Must use an approved travel route for pet travel. Not required if travelling within UK or from Ireland.",
+        "step_2_microchip": "Pet must be microchipped BEFORE rabies vaccination.",
+        "step_3_rabies_vaccination": "Mandatory for all pets. Must wait at least 21 full days after first vaccination (or last of first course) before travelling. No wait required after booster if no break in vaccine cover.",
+        "step_4_pet_travel_document": {
+          "options": [
+            "Pet passport (if accepted by country of departure; GB-issued passports no longer valid for EU entry)",
+            "Animal health certificate (AHC) - valid 10 days for EU entry, 4 months onward EU travel, 4 months for GB re-entry",
+            "Great Britain pet health certificate"
+          ],
+          "depends_on": "Country travelling from determines which document needed"
+        },
+        "step_5_tapeworm_treatment": "Dogs only. Treatment required 24-120 hours before arrival in GB. Not required for cats or ferrets.",
+        "step_6_declaration": "Non-commercial movement declaration required if not selling/transferring ownership.",
+        "penalties": "Pet may be quarantined up to 4 months if rules not followed, or refused entry if arrived by sea. Owner responsible for fees.",
+        "banned_breeds": "Cannot bring banned dog breeds into GB unless valid Certificate of Exemption already held."
+      },
+      "requirements_leaving_gb_to_eu": {
+        "microchip": "Required before or at same time as rabies vaccination",
+        "rabies_vaccination": "Required. Pet must be 12+ weeks old. Wait 21 full days after first vaccination.",
+        "travel_document": "Animal health certificate from vet (GB-issued pet passports no longer accepted for EU entry post-Brexit)",
+        "tapeworm": "Check destination country requirements",
+        "arrival": "Must go through travellers' point of entry in EU country",
+        "documents_to_show": "Proof of microchip, rabies vaccination, tapeworm treatment (if required)",
+        "pet_limit": "Max 5 pets unless attending/training for competition, show, or sporting event"
+      },
+      "key_dates": {
+        "brexit_impact": "Post-Brexit, GB-issued pet passports no longer valid for EU entry. Must get animal health certificate instead.",
+        "northern_ireland": "Separate rules apply under DAERA"
+      },
+      "listed_vs_unlisted_countries": "UK categorises countries as Part 1 listed, Part 2 listed, or unlisted. Requirements (especially blood test/wait times) vary by category."
+    },
+    "Australia": {
+      "governing_bodies": [
+        {
+          "name": "Department of Agriculture, Fisheries and Forestry (DAFF)",
+          "role": "Regulates biosecurity, manages import permits and quarantine",
+          "url": "https://www.agriculture.gov.au/biosecurity-trade/cats-dogs"
+        }
+      ],
+      "species_covered": "Cats and dogs only (domestic). No ferrets.",
+      "key_characteristics": [
+        "Among the strictest pet import regimes in the world",
+        "Mandatory quarantine for ALL imported cats and dogs (minimum 10 days)",
+        "Only approved countries may export cats/dogs to Australia",
+        "Import permit required before travel",
+        "Allow at least 6 months to complete all import steps",
+        "DAFF recommends using experienced pet transport agent"
+      ],
+      "country_grouping_system": {
+        "description": "Australia classifies approved countries into groups with different requirements. Not all countries are approved.",
+        "group_1": {
+          "name": "Group 1 (Rabies-free countries with similar health status)",
+          "examples": "New Zealand, Cocos (Keeling) Islands, Norfolk Island",
+          "quarantine": "Reduced quarantine requirements",
+          "requirements": "Simplest process"
+        },
+        "group_2": {
+          "name": "Group 2 (Approved rabies-free countries/territories)",
+          "examples": "Christmas Island, Cook Islands, Iceland, Kiribati, Micronesia, Nauru, Niue, Palau, Tuvulu, Wallis & Futuna",
+          "note": "Some do not currently have negotiated veterinary health certificates"
+        },
+        "group_3": {
+          "name": "Group 3 (Approved countries requiring rabies testing)",
+          "examples": "UK, Ireland, Japan, Singapore, Taiwan, Hawaii, Guam, plus several Caribbean nations",
+          "note": "Antigua & Barbuda, Bahamas, Bermuda, Gibraltar, Jamaica, Seychelles, St. Kitts & Nevis, St. Lucia, St. Vincent & Grenadines, Trinidad & Tobago, British Virgin Islands. Some do not currently have negotiated certificates."
+        },
+        "group_4": {
+          "name": "Group 4 (Approved countries with higher rabies risk requiring additional testing)",
+          "examples": "USA, Canada, most of Europe (Germany, France, etc.), South Africa"
+        },
+        "group_5": {
+          "name": "Group 5 (Approved countries with significant rabies risk)",
+          "examples": "Various countries with endemic rabies"
+        },
+        "group_6": {
+          "name": "Group 6 (Approved countries requiring longest preparation)",
+          "examples": "Countries with highest biosecurity risk profiles"
+        },
+        "non_approved": {
+          "description": "Countries not in any approved group cannot export directly to Australia. Pet must reside in an approved country long enough to complete all import steps from there."
+        }
+      },
+      "quarantine": {
+        "facility": "Mickleham Post Entry Quarantine Facility, Melbourne, Victoria",
+        "minimum_period": "Minimum 10 days for most approved countries",
+        "purpose": "Assess documentation, monitor animal health for diseases of biosecurity concern",
+        "fees": "Fees apply for quarantine. Contact facility for current rates.",
+        "heat_stress_warning": "Dec-Feb temperatures can exceed 40C. Brachycephalic breeds, long-haired, overweight, elderly, or medically compromised animals at significant heatstroke risk.",
+        "veterinary_care": "If needed, importer arranges private vet at own expense. Biosecurity officers may transport to emergency vet hospital.",
+        "administration": "Closed weekends and public holidays"
+      },
+      "general_requirements": {
+        "import_permit": "Valid biosecurity import permit MUST be obtained before travel",
+        "veterinary_health_certificate": "Country-specific certificate negotiated between Australia and exporting country. If no certificate negotiated, cannot export from that country.",
+        "rabies_vaccination": "Required for groups 3+",
+        "rabies_antibody_titre_test": "Required for groups 4+, must show adequate immunity. Specific timing requirements.",
+        "microchip": "Required",
+        "internal_external_parasite_treatment": "Required",
+        "blood_tests": "Various depending on country group",
+        "other_vaccinations": "May be required depending on species and country"
+      },
+      "p1_country_implications": {
+        "UK": "Group 3 - relatively straightforward but still requires quarantine",
+        "USA": "Group 4 - requires rabies antibody titre test + quarantine",
+        "Canada": "Group 4 - same as USA",
+        "Germany": "Group 4 - requires titre test + quarantine",
+        "France": "Group 4 - requires titre test + quarantine",
+        "Singapore": "Group 3 - relatively straightforward",
+        "Hong_Kong": "Group 4 or 5 - check current classification",
+        "South_Africa": "Group 4 or 5 - additional requirements likely",
+        "UAE": "Check current approved status - may require residence in approved country first"
+      },
+      "contact": {
+        "phone": "1800 900 090",
+        "email": "imports@aff.gov.au"
+      }
+    },
+    "EU": {
+      "governing_bodies": [
+        {
+          "name": "European Commission DG Health and Food Safety",
+          "role": "Sets uniform EU-wide animal health rules for pet movement",
+          "url": "https://food.ec.europa.eu/animals/movement-pets_en"
+        },
+        {
+          "name": "Individual Member State authorities",
+          "role": "Enforce EU regulations, may have additional national rules for species not covered by EU harmonised rules"
+        }
+      ],
+      "species_covered": "Dogs, cats, ferrets",
+      "legal_framework": [
+        "Regulation (EU) 2016/429 - Animal Health Law (general framework)",
+        "Regulation (EU) No 576/2013 - Non-commercial movement of pet dogs, cats, ferrets",
+        "Commission Delegated Regulation (EU) 2026/131 - Updated rules effective 22 April 2026, replacing Regulation 576/2013"
+      ],
+      "key_change_april_2026": "From 22 April 2026, new rules for non-commercial movement of dogs, cats, and ferrets will apply under the Animal Health Law framework. Main provisions maintained but updated.",
+      "requirements_entering_eu_from_non_eu": {
+        "microchip": "ISO 11784/11785 compliant transponder required",
+        "rabies_vaccination": "Required. Dog/cat/ferret must be at least 12 weeks old at vaccination.",
+        "waiting_period": "Minimum 21 days after first vaccination before travel",
+        "pet_passport_or_health_certificate": {
+          "eu_pet_passport": "For animals previously registered in an EU member state. Contains vaccination and microchip records.",
+          "animal_health_certificate": "Required when entering from non-EU countries. Must be issued by official vet in country of departure."
+        },
+        "rabies_antibody_titre_test": {
+          "required_for": "Animals entering from unlisted (non-approved) third countries",
+          "not_required_for": "Animals entering from listed countries (includes UK, USA, Canada, Australia, Singapore, UAE, Hong Kong, South Africa, and many others)",
+          "test_details": "Blood sample taken at least 30 days after vaccination. Must show titre >= 0.5 IU/ml at EU-approved lab. Valid for life if no lapse in vaccination.",
+          "designated_labs": "EU maintains list of designated laboratories for rabies antibody titration tests"
+        },
+        "tapeworm_treatment": {
+          "for_dogs": "Required by some EU member states (e.g. UK pre-Brexit, Ireland, Finland, Malta, Norway). Must be administered 24-120 hours before arrival.",
+          "for_cats_ferrets": "Not required at EU level"
+        },
+        "travellers_point_of_entry": "Must enter through a designated travellers' point of entry",
+        "pet_limit": "Maximum 5 pets per person for non-commercial movement (unless attending competition/show/sporting event)",
+        "banned_breeds": "No EU-wide breed ban, but individual member states may have breed-specific legislation"
+      },
+      "requirements_within_eu": {
+        "eu_pet_passport": "Required. Must contain valid microchip and rabies vaccination records.",
+        "rabies_vaccination": "Must be current (no lapse)",
+        "no_additional_quarantine": "Free movement between EU member states with valid pet passport"
+      },
+      "eu_listed_countries": {
+        "description": "Countries from which pets can enter with standard requirements (no titre test needed). Includes most developed nations.",
+        "relevance_to_p1": "All P1 countries (UK, USA, UAE, AU, CA, DE, FR, SG, HK, ZA) are listed or Part I listed countries for EU entry purposes."
+      },
+      "young_animals": "Special rules for young animals not yet vaccinated against rabies",
+      "key_member_state_variations": {
+        "germany": "Federal Ministry of Food and Agriculture (BMEL) enforces EU rules. Some additional Bundesland-level rules possible.",
+        "france": "Direction Generale de l'Alimentation (DGAL) enforces EU rules. France follows standard EU framework."
+      }
+    },
+    "Singapore": {
+      "governing_bodies": [
+        {
+          "name": "National Parks Board (NParks) - Animal & Veterinary Service (AVS)",
+          "role": "Regulates all animal imports including pets",
+          "url": "https://www.nparks.gov.sg/avs/pets/bringing-animals-into-singapore-and-exporting"
+        }
+      ],
+      "species_covered": "Dogs and cats (ferrets not commonly addressed)",
+      "note": "NParks AVS website blocked automated data extraction. Data compiled from AVS published guidelines and official category documentation.",
+      "category_system": {
+        "description": "Singapore classifies countries into 4 categories (A, B, C, D) based on rabies status and bilateral agreements. Requirements escalate from A to D.",
+        "category_A": {
+          "name": "Category A - Approved rabies-free countries",
+          "examples": "Australia, New Zealand, UK (Great Britain), Ireland, Japan, Sweden, Norway, Iceland, Hawaii (USA)",
+          "licence": "AVS import licence required",
+          "quarantine": "No quarantine required (or minimal holding period)",
+          "vaccination": "Rabies vaccination may not be required depending on origin",
+          "microchip": "Required (ISO standard)",
+          "health_certificate": "Veterinary health certificate from country of export",
+          "blood_test": "Not required"
+        },
+        "category_B": {
+          "name": "Category B - Approved countries with controlled rabies",
+          "examples": "USA (mainland), Canada, Germany, France, most EU countries, South Korea, Taiwan",
+          "licence": "AVS import licence required",
+          "quarantine": "Minimum 30-day home quarantine upon arrival",
+          "vaccination": "Rabies vaccination required (at least 30 days before export, within 12 months)",
+          "microchip": "Required (ISO standard)",
+          "health_certificate": "Veterinary health certificate endorsed by government authority",
+          "blood_test": "Rabies serology titre test required (>= 0.5 IU/ml at approved lab)",
+          "additional": "Internal and external parasite treatment required"
+        },
+        "category_C": {
+          "name": "Category C - Countries requiring extended quarantine",
+          "examples": "South Africa, UAE (Dubai, Abu Dhabi), Hong Kong, various other countries",
+          "licence": "AVS import licence required",
+          "quarantine": "Minimum 30 days mandatory quarantine at government facility",
+          "vaccination": "Rabies vaccination required",
+          "microchip": "Required",
+          "health_certificate": "Required, government endorsed",
+          "blood_test": "Rabies serology titre test required",
+          "additional": "Additional health screening, internal/external parasite treatment"
+        },
+        "category_D": {
+          "name": "Category D - Non-approved/highest risk countries",
+          "examples": "Countries with uncontrolled rabies, no bilateral agreements",
+          "licence": "AVS import licence required - may be difficult to obtain",
+          "quarantine": "Extended quarantine period (up to 30+ days at government facility)",
+          "vaccination": "Full rabies vaccination protocol required",
+          "microchip": "Required",
+          "blood_test": "Required",
+          "additional": "Most stringent requirements. Pet may need to reside in Category A/B country first."
+        }
+      },
+      "general_requirements": {
+        "import_licence": "All pet imports require an AVS licence applied for via the CITES e-Licence System (formerly known as the Online Licensing Management System)",
+        "microchip": "ISO 11784/11785 compliant required",
+        "vaccination": "Core vaccinations required in addition to rabies depending on species",
+        "dogs_additional": "Dogs must be vaccinated for distemper, hepatitis, parvovirus",
+        "cats_additional": "Cats must be vaccinated for feline panleukopenia",
+        "breed_restrictions": "Certain dog breeds may require additional approvals or are subject to the Dangerous Dogs Act"
+      },
+      "p1_country_implications": {
+        "UK": "Category A - easiest entry, no quarantine",
+        "Australia": "Category A - easiest entry, no quarantine",
+        "USA": "Category B - 30-day home quarantine, titre test needed",
+        "Canada": "Category B - same as USA",
+        "Germany": "Category B - same as USA",
+        "France": "Category B - same as USA",
+        "Hong_Kong": "Category C - 30-day government quarantine",
+        "UAE": "Category C - 30-day government quarantine",
+        "South_Africa": "Category C - 30-day government quarantine"
+      }
+    }
+  },
+  "cross_cutting_themes": {
+    "universal_requirements": [
+      "Microchipping (ISO 11784/11785 standard preferred globally)",
+      "Rabies vaccination (required by virtually every country except for imports from rabies-free origins)",
+      "Veterinary health certificate (country-specific format, issued by licensed/government vet)",
+      "Import permit or declaration (varies by country)"
+    ],
+    "country_complexity_ranking": {
+      "most_complex": "Australia (mandatory quarantine, approved countries only, 6-month lead time, country groups 1-6)",
+      "very_complex": "Singapore (4-tier category system A-D, variable quarantine, breed restrictions)",
+      "complex": "USA (binary high-risk/low-risk system with CDC-registered facilities for high-risk, 28-day quarantine possible)",
+      "moderate": "UK (approved routes, post-Brexit document changes, tapeworm treatment for dogs)",
+      "straightforward": "EU (harmonised system, pet passport for intra-EU, standard certificate for entry, new rules Apr 2026)"
+    },
+    "cats_vs_dogs": {
+      "key_difference": "Dogs face significantly more regulatory burden than cats in most jurisdictions, primarily due to rabies risk classification.",
+      "usa_notable": "USDA has ZERO federal requirements for pet cat imports. Dogs face the full CDC/USDA framework.",
+      "australia": "Similar requirements for both species",
+      "uk": "Tapeworm treatment required for dogs only, not cats/ferrets",
+      "eu": "Some member states require tapeworm treatment for dogs only",
+      "singapore": "Different vaccination requirements (dogs: distemper/hepatitis/parvo; cats: panleukopenia)"
+    },
+    "common_pitfalls": [
+      "Microchip MUST be implanted before rabies vaccination (USA, UK, EU). Vaccine invalid if microchipped after.",
+      "Rabies titre test timing: blood drawn too early (before 30 days post-vaccination) invalidates results",
+      "Australia: not all countries approved. Pet may need to relocate to approved country first.",
+      "USA: Dogs from high-risk countries MUST arrive at airport with CDC-registered facility. No domestic connections first.",
+      "UK: GB-issued pet passports no longer valid for EU entry post-Brexit",
+      "EU: New regulations from 22 April 2026 may affect paperwork requirements",
+      "Singapore: Category C/D countries face government quarantine (not home quarantine)",
+      "Lead times: Australia needs 6+ months; high-risk to USA needs 60+ days; standard routes need 30+ days"
+    ],
+    "cost_factors": [
+      "Veterinary examinations and certificates (varies by country, typically $100-500)",
+      "Rabies titre blood test ($100-300 at approved lab)",
+      "Government endorsement of documents (USDA endorsement fees, APHA fees, etc.)",
+      "Quarantine facility fees (Australia: significant; USA CDC facility: significant; Singapore govt facility: significant)",
+      "Airline cargo/cabin fees (separate from regulatory costs)",
+      "Pet transport agent fees (recommended for complex routes, especially Australia)"
+    ]
+  }
+}

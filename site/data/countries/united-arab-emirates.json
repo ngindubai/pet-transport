@@ -1,0 +1,123 @@
+{
+  "title": "Pet Import Guide: United Arab Emirates",
+  "description": "Complete guide to importing your dog or cat to United Arab Emirates. Import requirements, quarantine, breed restrictions, and step-by-step process.",
+  "name": "United Arab Emirates",
+  "code": "AE",
+  "slug": "united-arab-emirates",
+  "pet_friendliness": "moderate",
+  "overview": "Importing a pet to United Arab Emirates is moderately strict. Here's what you need to know.",
+  "import_requirements": {
+    "microchip": "Required (ISO 11784/11785). Must be implanted before rabies vaccination",
+    "rabies_vaccination": "Required",
+    "rabies_titre_test": "Required for: Pets from certain non-approved or high-risk countries",
+    "quarantine": "Not required (penalty quarantine if non-compliant)",
+    "import_permit": "Required. Import permit MUST be obtained before travel. Different emirates have different application processes. Allow 1-2 weeks for processing.",
+    "health_certificate": "Veterinary health certificate / Official health certificate. Valid 10 days."
+  },
+  "sections": [
+    {
+      "heading": "Import requirements for United Arab Emirates",
+      "body": "**Microchip:** Required (ISO 11784/11785). Must be implanted before rabies vaccination\n\n**Rabies Vaccination:** Required\n\n**Rabies Titre Test:** Required for: Pets from certain non-approved or high-risk countries\n\n**Quarantine:** Not required (penalty quarantine if non-compliant)\n\n**Import Permit:** Required. Import permit MUST be obtained before travel. Different emirates have different application processes. Allow 1-2 weeks for processing.\n\n**Health Certificate:** Veterinary health certificate / Official health certificate. Valid 10 days."
+    },
+    {
+      "heading": "Breed restrictions in United Arab Emirates",
+      "body": "Governed by: Federal Law + emirate-level regulations"
+    },
+    {
+      "heading": "Routes to United Arab Emirates",
+      "body": "We have detailed guides for the following routes:\n\n- [United Kingdom to United Arab Emirates](/routes/united-kingdom-to-united-arab-emirates/)"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What vaccinations does my pet need to enter United Arab Emirates?",
+      "answer": "At minimum, a rabies vaccination is required. Required Your pet must also be microchipped before vaccination."
+    },
+    {
+      "question": "Is there quarantine in United Arab Emirates?",
+      "answer": "Not required (penalty quarantine if non-compliant)"
+    },
+    {
+      "question": "Which airlines fly pets to United Arab Emirates?",
+      "answer": "Multiple airlines serve pet cargo to United Arab Emirates. Check our route-specific guides for airline details on your particular origin-destination pair."
+    }
+  ],
+  "airlines": [
+    {
+      "name": "Emirates",
+      "type": "cargo_only"
+    },
+    {
+      "name": "British Airways",
+      "type": "cargo_only"
+    },
+    {
+      "name": "Lufthansa",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "Singapore Airlines",
+      "type": "cargo_only"
+    },
+    {
+      "name": "Qantas",
+      "type": "cargo_only"
+    },
+    {
+      "name": "KLM Royal Dutch Airlines",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "Air France",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "United Airlines",
+      "type": "cabin_only"
+    },
+    {
+      "name": "Delta Air Lines",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "American Airlines",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "Cathay Pacific",
+      "type": "cargo_only"
+    },
+    {
+      "name": "Etihad Airways",
+      "type": "cargo_only"
+    },
+    {
+      "name": "Air Canada",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "South African Airways",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "Turkish Airlines",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "Swiss International Air Lines",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "Virgin Atlantic",
+      "type": "cargo_only"
+    }
+  ],
+  "inbound_routes": [
+    {
+      "slug": "united-kingdom-to-united-arab-emirates",
+      "origin": "United Kingdom",
+      "origin_code": "GB",
+      "complexity": "moderate"
+    }
+  ]
+}

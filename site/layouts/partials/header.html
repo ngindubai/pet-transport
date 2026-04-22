@@ -1,0 +1,61 @@
+<nav id="main-nav" class="navbar-expand-xl fixed-top">
+    <!-- Top Bar -->
+    <div class="container-fluid top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="contact-details float-start">
+                        <li><i class="fa fa-envelope"></i><a href="mailto:{{ .Site.Params.contactEmail }}">{{ .Site.Params.contactEmail | default "hello@pettransportglobal.com" }}</a></li>
+                        <li><i class="fa fa-phone"></i>{{ .Site.Params.contactPhone | default "+44 (0) 123 456 789" }}</li>
+                    </ul>
+                    <ul class="social-list float-end list-inline">
+                        {{ with .Site.Params.instagram }}<li class="list-inline-item"><a title="Instagram" href="{{ . }}"><i class="fab fa-instagram"></i></a></li>{{ end }}
+                        {{ with .Site.Params.facebook }}<li class="list-inline-item"><a title="Facebook" href="{{ . }}"><i class="fab fa-facebook-f"></i></a></li>{{ end }}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <div class="navbar container-fluid">
+        <div class="container">
+            <a class="nav-brand" href="/">
+                <img src="/img/logo.png" alt="{{ .Site.Params.brand }}" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggle-icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item{{ if .IsHome }} active{{ end }}">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown{{ if eq .Section "routes" }} active{{ end }}">
+                        <a class="nav-link dropdown-toggle" href="#" id="routes-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Routes</a>
+                        <div class="dropdown-menu pattern2" aria-labelledby="routes-dropdown">
+                            <a class="dropdown-item" href="/pet-transport/routes/">All Routes</a>
+                            <a class="dropdown-item" href="/pet-transport/united-kingdom-to-australia/">UK to Australia</a>
+                            <a class="dropdown-item" href="/pet-transport/united-arab-emirates-to-united-kingdom/">UAE to UK</a>
+                            <a class="dropdown-item" href="/pet-transport/united-states-to-united-kingdom/">USA to UK</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown{{ if eq .Section "countries" }} active{{ end }}">
+                        <a class="nav-link dropdown-toggle" href="#" id="countries-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Countries</a>
+                        <div class="dropdown-menu pattern2" aria-labelledby="countries-dropdown">
+                            <a class="dropdown-item" href="/pet-transport/countries/">All Country Guides</a>
+                            <a class="dropdown-item" href="/pet-transport/countries/australia/">Australia</a>
+                            <a class="dropdown-item" href="/pet-transport/countries/united-kingdom/">United Kingdom</a>
+                            <a class="dropdown-item" href="/pet-transport/countries/united-states/">United States</a>
+                        </div>
+                    </li>
+                    <li class="nav-item{{ if eq .Section "origins" }} active{{ end }}">
+                        <a class="nav-link" href="/pet-transport/origins/">Origin Guides</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quote-form">Get a Quote</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,61 @@
+---
+title: "Australia Pet Import: Quarantine, Permits and the Full Process"
+description: "Australia has the world's strictest pet import rules. Mandatory quarantine, import permits, titre tests, and a 6-month minimum preparation timeline."
+type: "countries"
+layout: "single"
+slug: "australia"
+url: "/pet-transport/countries/australia/"
+country_name: "Australia"
+country_code: "AU"
+pet_friendliness: "strict"
+seo:
+  title: "Australia Pet Import: Quarantine, Permits and the Full Process | Pet Transport Global"
+  description: "Australia has the world's strictest pet import rules. Mandatory quarantine, import permits, titre tests, and a 6-month minimum preparation timeline."
+import_requirements:
+  microchip: "ISO 11784/11785. Must be implanted before or on same day as rabies vaccination"
+  rabies_vaccination: "Required."
+  titre_test: "Required for: Groups 3, 4, 5, 6 (all except Groups 1 and 2)."
+  quarantine: "Mandatory. Minimum 10 days at government facility. Cost is owner's responsibility."
+  import_permit: "Required. Apply before travel. Issuing authority: Department of Agriculture, Fisheries and Forestry (DAFF)."
+  health_certificate: "Government-issued veterinary health certificate (country-specific format). Valid for 5 days from issue. Must be endorsed by official authority."
+  banned_breeds: "Federal: No federal breed ban for imports. Check state/local laws."
+  approved_ports: "Melbourne Airport (MEL) - only port with quarantine facility"
+content:
+  h1: "Importing Your Pet to Australia"
+  overview: |
+    Australia has the strictest pet import process of any country in this guide. That is not an exaggeration. There is mandatory quarantine for every imported dog and cat, no exceptions. The quarantine facility is in Melbourne, which means your pet arrives in Melbourne regardless of where in Australia you're going. There is only one quarantine facility, at Mickleham, and spaces must be booked in advance.
+    
+    The preparation timeline for most countries is a minimum of six months. For pets from USA, Canada, most EU countries, and South Africa (Group 4), the timeline is driven by the 180-day wait after the rabies titre test blood draw. You need two rabies vaccinations first, then wait 30 days, draw blood, get a passing result, then wait another 180 days before your pet can enter Australia. There is no way to shorten this.
+    
+    Australia's import process is complex enough that DAFF itself recommends using a professional pet transport agent. This is not boilerplate advice. If any documentation step is done out of sequence, the whole process may need to restart.
+  sections:
+    - heading: "The 180-day rule and why you can't shortcut it"
+      body: |
+        For dogs coming from Group 4 countries (USA, Canada, most EU countries, South Africa), the timeline is controlled by one number: 180 days. After the successful rabies titre test blood draw, your pet must wait 180 days from the blood draw date before entering Australia. Not from the date you get the result. From the date the blood was drawn.
+        
+        To reach that blood draw date, you need two rabies vaccinations at least 30 days apart, then another 30-day wait after the second before drawing blood. Add the 30-day processing window for the DAFF import permit and you're at a realistic minimum of seven to eight months from starting to flying. Six months is the absolute floor, and only if everything goes right the first time.
+    - heading: "Mickleham: the one quarantine facility"
+      body: |
+        All imported cats and dogs arrive in Melbourne and go to the Mickleham Post Entry Quarantine Facility. There is no other option. If you're moving to Perth, Sydney, or Brisbane, your pet still arrives in Melbourne, completes quarantine, and is then released to you or transported onward.
+        
+        Spaces at Mickleham must be pre-booked and they fill up. Don't finalise your own travel date before you have a confirmed quarantine booking. The cost of 10 days' quarantine is typically AUD 2,000-4,000 and is entirely the owner's responsibility.
+    - heading: "Blood tests beyond rabies"
+      body: |
+        Australia requires several disease-specific tests beyond the rabies titre, particularly for dogs. Dogs must test negative for Ehrlichia canis (a tick-borne disease that has emerged in Australia) and Brucella canis. The specific test requirements depend on which country group you're in. Some groups require Leptospirosis vaccination. This is one reason DAFF recommends using a pet transport agent: the paperwork sequence is genuinely complex and the order in which tests are done matters.
+faqs:
+  - question: "Is quarantine mandatory for all pets entering Australia?"
+    answer: |
+      Yes, without exception. Every imported dog and cat must complete government quarantine at the Mickleham Post Entry Quarantine Facility in Victoria. The minimum period is 10 days, with longer periods for some country groups. There are no exemptions. The cost (typically AUD 2,000-4,000) is the owner's responsibility and must be paid before your pet is released.
+  - question: "How long does it take to prepare my pet to enter Australia?"
+    answer: |
+      For pets from Group 4 countries (USA, Canada, most EU countries, South Africa), allow a minimum of 6-8 months. The timeline is driven by the 180-day wait after the rabies titre test blood draw. You need two vaccinations first (30 days apart), then a 30-day wait before the blood draw, then 180 days from the draw date. If the titre test fails, the clock resets. For UK pets (Group 3), the process is faster: no 180-day wait.
+  - question: "Can I fly my pet directly from the UAE to Australia?"
+    answer: |
+      The UAE may not be on Australia's approved country list for direct import. If it isn't, your pet would need to reside in an approved country long enough to complete the full import preparation from that country. Check the current DAFF classification for the UAE on the BICON system before making plans. This is a route where an experienced pet transport agent is not optional.
+  - question: "My dog is a brachycephalic breed. Can it fly to Australia?"
+    answer: |
+      Flat-faced breeds face additional risks during quarantine, particularly in summer months (December to February) when temperatures at Mickleham can exceed 40 degrees. DAFF issues specific heat stress warnings for these breeds. Most airlines also have restrictions on transporting brachycephalic breeds as cargo. Winter arrivals (May to September) are significantly lower risk. Get veterinary clearance specific to your dog before booking.
+  - question: "What is BICON and do I need to use it?"
+    answer: |
+      BICON (Biosecurity Import Conditions) is DAFF's online system for managing import permits and conditions. Yes, you use BICON to apply for the import permit (cost AUD 420) and to check the specific requirements for your origin country and species. The permit takes 20-30 days to process. Start the BICON application before beginning the veterinary preparation.
+---

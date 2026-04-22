@@ -1,0 +1,63 @@
+---
+title: "Moving Pets to the UAE: Import Rules, Permits and Advice"
+description: "UAE pet import process: municipality permits, health certificates, summer cargo embargoes, and which breeds are restricted. Dubai and Abu Dhabi requirements."
+type: "countries"
+layout: "single"
+slug: "united-arab-emirates"
+url: "/pet-transport/countries/united-arab-emirates/"
+country_name: "United Arab Emirates"
+country_code: "AE"
+pet_friendliness: "moderate"
+seo:
+  title: "Moving Pets to the UAE: Import Rules, Permits and Advice | Pet Transport Global"
+  description: "UAE pet import process: municipality permits, health certificates, summer cargo embargoes, and which breeds are restricted. Dubai and Abu Dhabi requirements."
+import_requirements:
+  microchip: "ISO 11784/11785. Must be implanted before rabies vaccination"
+  rabies_vaccination: "Required. 21-day wait after first vaccination."
+  titre_test: "Required for: Pets from certain non-approved or high-risk countries."
+  quarantine: "Not required for compliant pets. Penalty quarantine (up to ) if documentation is wrong."
+  import_permit: "Required. Apply before travel. Issuing authority: Municipality of destination emirate."
+  health_certificate: "Veterinary health certificate / Official health certificate. Valid for 10 days from issue. Must be endorsed by official authority."
+  banned_breeds: "Banned/restricted: Pit Bull Terrier (and related types), American Staffordshire Terrier, Staffordshire Bull Terrier (restricted in some emirates), Rottweiler (restricted but not outright banned in most emirates). Type-based assessment in most cases."
+  approved_ports: "Dubai International Airport (DXB), Abu Dhabi International Airport (AUH), Sharjah International Airport (SHJ), Al Maktoum International Airport (DWC)"
+content:
+  h1: "Pet Import to the UAE"
+  overview: |
+    The UAE is a popular destination for expats relocating with pets, and the process is more structured than it used to be. The core requirement is an import permit from the relevant emirate municipality before your pet travels. Dubai Municipality and Abu Dhabi's ADAFSA have online application systems, but allow a week or two for processing.
+    
+    There is one seasonal constraint that catches people off guard: summer. From roughly June to September, ground temperatures at UAE airports can exceed 45 degrees Celsius. Most airlines suspend or severely restrict pet cargo during these months. If you're planning to bring your pet to the UAE, avoid the summer window entirely if you can.
+    
+    A point specific to certain breeds: the UAE restricts several types, including Pit Bull types, Rottweilers in some emirates, and others. The list varies by emirate. Check the current regulations for the specific emirate you're moving to, not just the federal rules.
+  sections:
+    - heading: "Getting the import permit: Dubai vs Abu Dhabi"
+      body: |
+        The UAE does not have a single national pet import system. You apply to the municipality of the emirate you're moving to. Dubai permits go through Dubai Municipality (dm.gov.ae). Abu Dhabi permits go through ADAFSA. Each has an online portal. Processing typically takes 3-7 business days, but allow two weeks to be safe.
+        
+        The permit is valid for 30 days from issue, so don't apply too early. Confirm the fee before applying: Dubai charges approximately AED 200-300 at time of writing, Abu Dhabi a similar amount, but these can change.
+    - heading: "Summer cargo embargo"
+      body: |
+        Every year between roughly June and September, most airlines operating in the UAE suspend or severely restrict pet cargo. The reason is simple: ground temperatures at Dubai International Airport regularly exceed 45 degrees Celsius, and the risk to animals in cargo holds is real. Emirates SkyCargo, Etihad Cargo, and most other airlines operating from Dubai and Abu Dhabi apply these seasonal restrictions.
+        
+        If you're planning a pet move to the UAE, the window from October to May is significantly safer and gives you far more airline options.
+    - heading: "Breed restrictions by emirate"
+      body: |
+        The UAE restricts several dog breeds, and the exact list varies by emirate. At federal and most emirate levels, Pit Bull types, Dogo Argentino, Fila Brasileiro, and Japanese Tosa are restricted or prohibited. Rottweilers and American Staffordshire Terriers are restricted in several emirates but not outright banned everywhere. Wolf hybrids are banned.
+        
+        Check the regulations for the specific emirate you're relocating to. The rules at municipality level are what matter in practice, and they can differ from one emirate to the next.
+faqs:
+  - question: "Do I need an import permit to bring my pet to the UAE?"
+    answer: |
+      Yes. You need an import permit from the municipality of the emirate you're moving to. Dubai uses Dubai Municipality's portal. Abu Dhabi uses ADAFSA's portal. Apply in advance and allow at least two weeks. The permit is valid for 30 days from issue, so time the application to arrive close to your travel date.
+  - question: "Can I bring my pet to the UAE in summer?"
+    answer: |
+      Technically yes, but it is difficult in practice. From roughly June to September, ground temperatures at UAE airports exceed 45 degrees Celsius and most airlines suspend or severely restrict pet cargo during this period. Emirates SkyCargo, Etihad Cargo, and others apply seasonal embargoes. If you need to move your pet to the UAE, October through April is significantly easier and gives you many more airline options.
+  - question: "Is my dog's breed allowed in the UAE?"
+    answer: |
+      The UAE restricts several breeds, and the rules vary by emirate. Pit Bull types, Dogo Argentino, Fila Brasileiro, and Japanese Tosa are broadly restricted or prohibited. Rottweilers and Staffordshire types are restricted in some emirates but not all. Wolf hybrids are banned. Check the current regulations for the specific emirate you're moving to, as restrictions at municipality level are what apply in practice.
+  - question: "What documents does my pet need to enter the UAE?"
+    answer: |
+      At minimum: valid import permit from the relevant emirate, government-endorsed veterinary health certificate issued within 10 days of travel, proof of ISO microchip, valid rabies vaccination (and titre test if required from your origin country), and current core vaccinations (distemper, parvovirus, hepatitis for dogs; panleukopenia and calicivirus for cats). Internal and external parasite treatment is also recommended.
+  - question: "Can I bring a Rottweiler to Dubai?"
+    answer: |
+      Rottweilers are restricted in Dubai but not outright banned for existing residents. The rules around importing a Rottweiler to Dubai specifically are not straightforward. Contact Dubai Municipality directly before making plans, and work with a pet transport agent who has handled this breed on this route.
+---

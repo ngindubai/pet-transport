@@ -1,0 +1,172 @@
+{
+  "origin_name": "South Africa",
+  "destination_name": "Australia",
+  "route_data": {
+    "origin": {
+      "code": "ZA",
+      "country": "South Africa",
+      "export_requirements": {
+        "export_permit": "Required for all live animal exports. Apply through provincial State Veterinarian office."
+      }
+    },
+    "destination": {
+      "code": "AU",
+      "country": "Australia",
+      "import_requirements": {
+        "microchip": "Required (ISO 11784/11785). Must be implanted before or on same day as rabies vaccination",
+        "rabies_vaccination": "Minimum age: 12 weeks. Vaccination schedule must be completed before titre test blood draw",
+        "titre_test": "Required for: Groups 3, 4, 5, 6 (all except Groups 1 and 2). Minimum: 0.5 IU/ml",
+        "quarantine": "Mandatory quarantine. Facility: Mickleham Post Entry Quarantine Facility. Location: Melbourne, Victoria",
+        "import_permit": "Required. Must be obtained BEFORE travel. Permit specifies conditions for import.",
+        "health_certificate": "Required. Government-issued veterinary health certificate (country-specific format). Issued by: Government veterinarian in country of export. Certificate format is NON-NEGOTIABLE. Must use exact DAFF-approved format for the specific country of export."
+      },
+      "breed_restrictions": []
+    },
+    "airlines": [
+      {
+        "name": "Emirates",
+        "type": "cargo_only",
+        "policy_summary": "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Snub-nosed (brachycephalic) breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
+      },
+      {
+        "name": "British Airways",
+        "type": "cargo_only",
+        "policy_summary": "Cargo transport available"
+      },
+      {
+        "name": "Air France",
+        "type": "cabin_and_cargo",
+        "policy_summary": "Small pets allowed in cabin. Cargo transport available. Brachycephalic breeds subject to restrictions/seasonal embargoes. French regulations on dangerous dog breeds apply"
+      },
+      {
+        "name": "Delta Air Lines",
+        "type": "cabin_and_cargo",
+        "policy_summary": "Small pets allowed in cabin. Cargo transport available"
+      }
+    ],
+    "timeline_steps": [
+      {
+        "step": 1,
+        "action": "Get your pet microchipped (ISO 11784/11785)",
+        "timing": "Before any vaccinations. Must be done first.",
+        "responsible": "Your veterinarian"
+      },
+      {
+        "step": 2,
+        "action": "Rabies vaccination",
+        "timing": "At least 21 days before travel (after microchip)",
+        "responsible": "Your veterinarian"
+      },
+      {
+        "step": 3,
+        "action": "Rabies titre test (RNATT blood test)",
+        "timing": "Blood drawn 30+ days after vaccination. 90-day wait after successful result.",
+        "responsible": "Your veterinarian + approved laboratory"
+      },
+      {
+        "step": 4,
+        "action": "Apply for import permit from Australia",
+        "timing": "Lead time: Check with authorities",
+        "responsible": "You (or your pet transport agent)"
+      },
+      {
+        "step": 5,
+        "action": "Obtain health certificate / veterinary clearance",
+        "timing": "Within 10 days of travel (check destination-specific requirements)",
+        "responsible": "Official veterinarian"
+      },
+      {
+        "step": 6,
+        "action": "Book IATA-compliant flight and arrange pet cargo/cabin booking",
+        "timing": "2-4 weeks before travel. Confirm pet space availability.",
+        "responsible": "You (or your pet transport agent)"
+      },
+      {
+        "step": 7,
+        "action": "Travel day: arrive early, present all documentation",
+        "timing": "3-4 hours before departure for cargo pets",
+        "responsible": "You + airline cargo desk"
+      },
+      {
+        "step": 8,
+        "action": "Quarantine on arrival (varies days)",
+        "timing": "Immediately on arrival",
+        "responsible": "Australia quarantine authorities"
+      }
+    ],
+    "cost_factors": [
+      "Airline cargo/cabin fees (varies by carrier, pet weight, and crate size)",
+      "IATA-compliant travel crate (purchase or hire)",
+      "Veterinary fees (vaccinations, health certificate, microchip)",
+      "Rabies titre test (laboratory fee)",
+      "Import permit application fee (Australia)",
+      "Quarantine facility fees (owner-paid)",
+      "Government endorsement/USDA endorsement fee (if applicable)",
+      "Pet transport agent fee (if using a relocation service)"
+    ],
+    "key_warnings": [
+      "Mandatory quarantine in Australia: Plan for separation from your pet.",
+      "Brachycephalic (flat-faced) breeds face cargo restrictions on most airlines. Check breed-specific policies before booking.",
+      "Microchip MUST be implanted before rabies vaccination. Vaccination given before microchip is invalid and the clock restarts.",
+      "Australian airlines may restrict pet cargo during peak summer (December to February) when temperatures exceed safe thresholds.",
+      "Australia has the strictest pet import process globally. Expect a minimum 180-day preparation period. Pets can only enter through Melbourne (Mickleham quarantine facility)."
+    ],
+    "route_complexity": "very_high",
+    "estimated_timeline_weeks": "26-30"
+  },
+  "seo": {
+    "title": "Pet Transport from South Africa to Australia | Complete Guide",
+    "description": "How to transport your dog or cat from South Africa to Australia. Import requirements, airline options, costs, and step-by-step process."
+  },
+  "content": {
+    "h1": "Pet Transport from South Africa to Australia",
+    "overview": "Moving your cat from South Africa to Australia takes planning.\n\nExpect to start preparations 26-30 weeks before your travel date. Australia requires mandatory quarantine for all arriving pets, which adds time and cost to the process. A rabies titre test (blood test) is required, which means an additional waiting period after vaccination. You'll need to apply for an import permit from Australia before your pet can travel. Airlines serving this route include Emirates, British Airways, Air France, and Delta Air Lines.\n\nThis guide covers everything: Australia's import rules, what you need from South Africa's side, airlines, costs, and timelines.",
+    "sections": [
+      {
+        "heading": "What makes the South Africa to Australia route different",
+        "body": "This is one of the more complex international pet transport routes. Australia's regulations are strict, and there's no shortcut through the process.\n\nAustralia is one of the few countries that still requires mandatory quarantine for arriving pets. Your pet will spend time in a government facility on arrival, and you can't visit during that period. It's the part of the process most owners find hardest."
+      },
+      {
+        "heading": "Advice from experience: South Africa to Australia",
+        "body": "Start the microchip and vaccination process as early as possible. The biggest mistake people make is leaving it too late. Once you miss a deadline, the entire timeline pushes back.\n\nSome airlines on this route (Air France, Delta Air Lines) allow small pets in the cabin. Your pet must fit in a carrier under the seat. Weight limits are strict: usually 8-10kg including the carrier.\n\nWatch the calendar. Temperature embargoes mean airlines won't accept pets during extreme heat or cold. If you're planning a summer move, book early and have a backup date.\n\nUse a pet transport agent if you're not confident handling the paperwork yourself. A good agent knows the current rules, has relationships with airline cargo departments, and can troubleshoot problems before they become disasters."
+      },
+      {
+        "heading": "The day your pet flies",
+        "body": "Arrive at the airport at least 3 hours before departure if your pet is travelling as cargo. You'll need to present all original documents: health certificate, vaccination records, microchip number, and any import permits.\n\nYour pet's crate must be clean, labelled with your contact details and the consignee's details at the destination, and have food and water containers attached. Live animal stickers and orientation arrows are required.\n\nOn arrival in Australia, your pet goes directly to the quarantine facility. You won't collect them at the airport. The quarantine authorities will contact you when the quarantine period ends."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Is there quarantine for pets arriving in Australia from South Africa?",
+      "answer": "Yes. Australia requires mandatory quarantine for all arriving pets. Mandatory quarantine. Facility: Mickleham Post Entry Quarantine Facility. Location: Melbourne, Victoria. You should factor the quarantine period into your planning and budget."
+    },
+    {
+      "question": "Which airlines transport pets from South Africa to Australia?",
+      "answer": "Airlines operating pet cargo on this route include Emirates, British Airways, Air France, Delta Air Lines. All transport pets as manifested cargo in temperature-controlled holds, not in the cabin. You'll need an IATA-compliant crate and should book cargo space well in advance. Some airlines have seasonal restrictions and brachycephalic breed embargoes."
+    },
+    {
+      "question": "How far in advance should I start preparing to move my pet from South Africa to Australia?",
+      "answer": "Start at least 26-30 weeks before your planned travel date. The process begins with microchipping, then rabies vaccination (with a mandatory waiting period), then any required blood tests, health certificates, and permit applications. Rushing the timeline is the most common reason people hit problems."
+    },
+    {
+      "question": "How much does it cost to transport a dog from South Africa to Australia?",
+      "answer": "The total cost depends on your dog's size, the airline, and whether you use a transport agent. For a medium-sized dog, expect to pay for: veterinary fees (vaccinations, health certificate, microchip), an IATA-compliant crate, airline cargo fees, government endorsements, and any import permits or quarantine fees at the destination. Using a door-to-door agent adds to the cost but handles the complexity for you."
+    },
+    {
+      "question": "What documents does my pet need to travel from South Africa to Australia?",
+      "answer": "Your pet will need: proof of ISO microchip, rabies vaccination certificate, rabies titre test results, official health certificate, import permit. The health certificate must be issued by an official veterinarian within 10 days of travel. Some documents need government endorsement. Check every requirement against the current rules, because regulations change and an outdated document can mean your pet doesn't fly."
+    },
+    {
+      "question": "Can I fly my French Bulldog or Pug from South Africa to Australia?",
+      "answer": "Brachycephalic (flat-faced) breeds face restrictions on most airlines, particularly for cargo transport. These breeds are more vulnerable to breathing difficulties at altitude and in heat. Many airlines impose seasonal embargoes (typically summer months), and some restrict flat-faced breeds from cargo year-round. A few airlines still accept them with additional veterinary clearance. Check the specific airline's current policy before booking."
+    }
+  ],
+  "links": {
+    "sideways": [],
+    "upward": []
+  },
+  "status": "draft",
+  "version": 1,
+  "updated_at": "2026-04-16"
+}

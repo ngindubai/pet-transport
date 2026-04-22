@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envato Elements: Asset Shopping List — Pet Transport Global</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --surface: #161b22;
+            --surface-2: #1c2333;
+            --border: #30363d;
+            --text: #c9d1d9;
+            --text-muted: #8b949e;
+            --heading: #f0f6fc;
+            --accent: #58a6ff;
+            --green: #3fb950;
+            --red: #f85149;
+            --orange: #d29922;
+            --purple: #bc8cff;
+            --pink: #f778ba;
+            --cyan: #39d2c0;
+            --yellow: #e3b341;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+
+        .hero { background: linear-gradient(135deg, #0d1117 0%, #0a1e3d 40%, #0e2a45 100%); border-bottom: 1px solid var(--border); padding: 60px 40px 50px; text-align: center; }
+        .hero h1 { font-size: 2.2rem; color: var(--heading); margin-bottom: 10px; font-weight: 700; }
+        .hero .subtitle { font-size: 1.05rem; color: var(--text-muted); max-width: 700px; margin: 0 auto 20px; }
+        .hero .stats { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }
+        .hero .stat { background: var(--surface); padding: 12px 20px; border-radius: 10px; border: 1px solid var(--border); text-align: center; min-width: 130px; }
+        .hero .stat .num { font-size: 1.6rem; font-weight: 700; color: var(--heading); }
+        .hero .stat .lbl { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-top: 2px; }
+
+        .sticky-nav { position: sticky; top: 0; z-index: 100; background: rgba(13,17,23,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 10px 20px; overflow-x: auto; white-space: nowrap; }
+        .sticky-nav a { color: var(--accent); text-decoration: none; font-size: 0.82rem; padding: 6px 14px; border-radius: 6px; display: inline-block; }
+        .sticky-nav a:hover { background: var(--surface); }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 24px; }
+        h2 { color: var(--heading); font-size: 1.6rem; font-weight: 700; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid var(--border); }
+        h3 { color: var(--heading); font-size: 1.2rem; font-weight: 600; margin: 24px 0 10px; }
+        h4 { color: var(--accent); font-size: 1rem; font-weight: 600; margin: 16px 0 8px; }
+        p { margin-bottom: 12px; }
+        ul, ol { margin: 8px 0 14px 24px; }
+        li { margin-bottom: 4px; }
+        .divider { height: 1px; background: var(--border); margin: 48px 0; }
+
+        .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 14px; }
+        .accent-left { border-left: 4px solid var(--accent); }
+        .green-left { border-left: 4px solid var(--green); }
+        .purple-left { border-left: 4px solid var(--purple); }
+        .orange-left { border-left: 4px solid var(--orange); }
+        .pink-left { border-left: 4px solid var(--pink); }
+        .cyan-left { border-left: 4px solid var(--cyan); }
+        .red-left { border-left: 4px solid var(--red); }
+        .yellow-left { border-left: 4px solid var(--yellow); }
+
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.88rem; }
+        th { background: var(--surface-2); color: var(--heading); text-align: left; padding: 10px 12px; font-weight: 600; border: 1px solid var(--border); }
+        td { padding: 8px 12px; border: 1px solid var(--border); vertical-align: top; }
+        tr:nth-child(even) td { background: rgba(22, 27, 34, 0.4); }
+
+        .badge { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
+        .b-red { background: rgba(248,81,73,0.15); color: var(--red); }
+        .b-orange { background: rgba(210,153,34,0.15); color: var(--orange); }
+        .b-yellow { background: rgba(227,179,65,0.15); color: var(--yellow); }
+        .b-green { background: rgba(63,185,80,0.15); color: var(--green); }
+        .b-blue { background: rgba(88,166,255,0.15); color: var(--accent); }
+        .b-purple { background: rgba(188,140,255,0.15); color: var(--purple); }
+        .b-cyan { background: rgba(57,210,192,0.15); color: var(--cyan); }
+
+        .search-phrase { background: var(--surface-2); padding: 3px 10px; border-radius: 6px; font-family: 'Courier New', monospace; font-size: 0.84rem; color: var(--cyan); border: 1px solid var(--border); display: inline-block; }
+        .notes { font-size: 0.84rem; color: var(--text-muted); }
+
+        .spec-row { display: flex; gap: 10px; flex-wrap: wrap; margin: 10px 0; }
+        .spec { background: var(--surface-2); padding: 6px 14px; border-radius: 8px; font-size: 0.8rem; border: 1px solid var(--border); }
+        .spec strong { color: var(--heading); }
+
+        .problem-card { background: rgba(248,81,73,0.04); border: 2px solid var(--red); border-radius: 10px; padding: 24px; margin-bottom: 24px; }
+        .problem-card h3 { color: var(--red); margin-top: 0; }
+
+        code { background: var(--surface-2); padding: 2px 8px; border-radius: 4px; font-size: 0.86rem; color: var(--cyan); }
+
+        .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; margin: 20px 0; }
+
+        .phase-tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; margin-left: 8px; }
+        .pt-1 { background: rgba(88,166,255,0.12); color: var(--accent); }
+        .pt-2 { background: rgba(63,185,80,0.12); color: var(--green); }
+        .pt-future { background: rgba(188,140,255,0.12); color: var(--purple); }
+
+        @media (max-width: 900px) {
+            .hero h1 { font-size: 1.6rem; }
+            .hero .stats { flex-direction: column; align-items: center; }
+            table { font-size: 0.8rem; }
+            td, th { padding: 6px 8px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Envato Elements: Asset Shopping List</h1>
+    <p class="subtitle">Complete image and design asset download guide for the Pet Transport Global website. Every asset, search phrase, and specification organised by priority tier.</p>
+    <div class="stats">
+        <div class="stat"><div class="num">58</div><div class="lbl">Pages Generated</div></div>
+        <div class="stat"><div class="num">107</div><div class="lbl">Template Placeholders</div></div>
+        <div class="stat"><div class="num" style="color:var(--red);">45-55</div><div class="lbl">Assets Needed</div></div>
+        <div class="stat"><div class="num">7</div><div class="lbl">Priority Tiers</div></div>
+        <div class="stat"><div class="num">8</div><div class="lbl">Existing Photos Kept</div></div>
+    </div>
+</div>
+
+<!-- NAV -->
+<nav class="sticky-nav">
+    <a href="#problem">The Problem</a>
+    <a href="#existing">Existing Assets</a>
+    <a href="#p1">P1: Logo &amp; Brand</a>
+    <a href="#p2">P2: Homepage Hero</a>
+    <a href="#p3">P3: Homepage Sections</a>
+    <a href="#p4">P4: Route Page Heroes</a>
+    <a href="#p5">P5: Country/Origin Heroes</a>
+    <a href="#p6">P6: Feature &amp; CTA Images</a>
+    <a href="#p7">P7: Pattern &amp; Misc</a>
+    <a href="#summary">Summary</a>
+    <a href="#naming">File Naming</a>
+    <a href="#optimisation">Optimisation</a>
+</nav>
+
+<div class="container">
+
+<!-- ============================================================ -->
+<!-- THE PROBLEM -->
+<!-- ============================================================ -->
+<section id="problem">
+    <div class="problem-card">
+        <h3>The Problem: 107 Placeholder Images Across 58 Pages</h3>
+        <p>The United Pets BS5.3 template shipped with pet shelter/veterinary clinic imagery. Every photo shows shelter dogs and cats, adoption events, vet clinics. None of it relates to pet transport, international shipping, airport crates, or travel logistics.</p>
+        <p>The site currently uses 8 stock pet photos (from Pexels/Pixabay) for all 58 page heroes via modulo rotation. Every route, country, and origin page shows the same handful of generic pet portraits. There is no logo, no branded imagery, no transport-specific photography.</p>
+        <p><strong>Professional, transport-specific photography is the single biggest gap between this template assembly and a brand that converts corporate relocation clients.</strong></p>
+        <table>
+            <tr><th>Current Asset</th><th>Used On</th><th>Problem</th></tr>
+            <tr><td><code>img/logo.png</code></td><td>Every page (navbar + footer)</td><td>United Pets template logo. Not our brand.</td></tr>
+            <tr><td><code>img/slider/slide1-4.jpg</code></td><td>Homepage LayerSlider (template default)</td><td>Shelter/adoption imagery. We override with hero.jpg but template slides remain.</td></tr>
+            <tr><td><code>img/box1-3.jpg</code></td><td>Homepage 3-box CTA section</td><td>Generic pet shelter photos. Should show routes/countries/quotes visuals.</td></tr>
+            <tr><td><code>img/services/service1-10.jpg</code></td><td>Homepage "How It Works" carousel</td><td>Vet clinic services. Should show transport steps: crate, vet check, airport.</td></tr>
+            <tr><td><code>images/hero.jpg</code> (kept)</td><td>Homepage hero, jumbotron fallback</td><td>Usable but generic. Single photo for the entire site hero.</td></tr>
+            <tr><td><code>images/pexels-*.jpg</code> (8 total, kept)</td><td>All 58 page heroes via modulo rotation</td><td>Generic pet portraits. Every route shows the same 8 images cycling. No transport context.</td></tr>
+            <tr><td><code>img/adoption/adopt1-24.jpg</code></td><td>Country guides carousel (template)</td><td>Shelter adoption photos. Should show destination landmarks or airport pet facilities.</td></tr>
+            <tr><td><code>img/about/*.jpg</code></td><td>Not used in current layouts</td><td>Can ignore. Template about page assets.</td></tr>
+            <tr><td><code>img/blog/*.jpg</code></td><td>Route cards on list pages</td><td>Template blog thumbnails used as blog-box images. Should show route-specific imagery.</td></tr>
+        </table>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================ -->
+<!-- EXISTING ASSETS WE KEEP -->
+<!-- ============================================================ -->
+<section id="existing">
+    <h2>Existing Assets (Keeping)</h2>
+    <p>These 8 photos from Pexels/Pixabay are already in <code>/images/</code> and are free to use. They provide a baseline but need to be supplemented with transport-specific imagery.</p>
+    <table>
+        <tr><th>File</th><th>Content</th><th>Current Usage</th><th>Keep?</th></tr>
+        <tr><td><code>hero.jpg</code></td><td>Pet portrait</td><td>Homepage LayerSlider hero</td><td><span class="badge b-green">KEEP</span></td></tr>
+        <tr><td><code>pexels-dog-1850465.jpg</code></td><td>Dog portrait</td><td>Modulo rotation on all pages</td><td><span class="badge b-green">KEEP</span></td></tr>
+        <tr><td><code>eddiekphoto-dog-6680642.jpg</code></td><td>Dog portrait</td><td>Routes section hero default</td><td><span class="badge b-green">KEEP</span></td></tr>
+        <tr><td><code>rmgaylord0-dog-916421.jpg</code></td><td>Dog outdoor</td><td>Origins section hero default</td><td><span class="badge b-green">KEEP</span></td></tr>
+        <tr><td><code>dompixabay-cats-3971069.jpg</code></td><td>Cat portrait</td><td>Modulo rotation</td><td><span class="badge b-green">KEEP</span></td></tr>
+        <tr><td><code>pinuu-cat-5047346.jpg</code></td><td>Cat portrait</td><td>Countries section hero default</td><td><span class="badge b-green">KEEP</span></td></tr>
+        <tr><td><code>stocksnap-pug-2598826.jpg</code></td><td>Pug portrait</td><td>Modulo rotation</td><td><span class="badge b-green">KEEP</span></td></tr>
+        <tr><td><code>publicdomainpictures-dog-165210_1920.jpg</code></td><td>Dog portrait</td><td>Modulo rotation</td><td><span class="badge b-green">KEEP</span></td></tr>
+    </table>
+    <div class="card green-left">
+        <h4>Action: Supplement, Don't Replace</h4>
+        <p>These photos are fine for soft launch. The priority tiers below add transport-specific imagery that will differentiate the site. Replace existing images gradually as better assets become available.</p>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================ -->
+<!-- PRIORITY 1: LOGO & BRAND -->
+<!-- ============================================================ -->
+<section id="p1">
+    <h2><span class="badge b-red">Priority 1</span> Logo &amp; Brand Identity (3-5 assets) <span class="phase-tag pt-1">Phase 1</span></h2>
+    <p>The logo appears on every page (navbar + footer = 116 instances across 58 pages). The template references <code>/img/logo.png</code>. This must be replaced first because every screenshot, preview, and social share shows it.</p>
+
+    <div class="spec-row">
+        <div class="spec"><strong>Type:</strong> Logo Template / Custom Design</div>
+        <div class="spec"><strong>Format:</strong> SVG + PNG (transparent bg)</div>
+        <div class="spec"><strong>Variants:</strong> Light (for dark footer), Standard (for white nav), Favicon</div>
+        <div class="spec"><strong>Style:</strong> Clean, modern, professional. Plane + paw motif or globe. NOT cartoon animals.</div>
+    </div>
+
+    <table>
+        <tr><th>Asset</th><th>Search Phrase</th><th>What to Look For</th><th>Replaces</th></tr>
+        <tr>
+            <td>Primary Logo</td>
+            <td><span class="search-phrase">pet transport logo modern minimal</span><br><span class="search-phrase">animal travel company logo</span></td>
+            <td class="notes">Clean wordmark or icon+wordmark. Paw print + plane, globe + animal silhouette. Blue/teal tones match template palette. Avoid cartoon style.</td>
+            <td><code>img/logo.png</code></td>
+        </tr>
+        <tr>
+            <td>Favicon</td>
+            <td>N/A (crop from logo icon)</td>
+            <td class="notes">32x32 and 16x16 from the icon portion of the logo. Simple shape that reads at small sizes.</td>
+            <td><code>favicon.ico</code> (new)</td>
+        </tr>
+        <tr>
+            <td>Social Card / OG Image</td>
+            <td><span class="search-phrase">pet travel social media banner</span></td>
+            <td class="notes">1200x630 branded card for link previews. Logo + tagline "Move your pet anywhere" + transport imagery. Used in meta og:image.</td>
+            <td>N/A (new)</td>
+        </tr>
+    </table>
+
+    <div class="card accent-left">
+        <h4>Design Brief</h4>
+        <p>The brand name is "Pet Transport Global". Tagline: "Move your pet anywhere." The feel should be corporate relocation company, not pet shop. Think: DHL/FedEx meets veterinary care. Professional, trustworthy, international.</p>
+        <p>Template colours: Light Blue <code>#018AE0</code>, Dark Blue <code>#1446A0</code>, Pink <code>#D61C62</code>. Logo should work with these.</p>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================ -->
+<!-- PRIORITY 2: HOMEPAGE HERO -->
+<!-- ============================================================ -->
+<section id="p2">
+    <h2><span class="badge b-orange">Priority 2</span> Homepage Hero / LayerSlider (2-3 assets) <span class="phase-tag pt-1">Phase 1</span></h2>
+    <p>The homepage uses a LayerSlider hero. Currently showing our existing <code>hero.jpg</code>. The template shipped with 4 slider images in <code>img/slider/</code>. We need 2-3 strong transport-themed hero images.</p>
+
+    <div class="spec-row">
+        <div class="spec"><strong>Dimensions:</strong> 1920x900 minimum</div>
+        <div class="spec"><strong>Format:</strong> JPG (compressed, under 300KB)</div>
+        <div class="spec"><strong>Style:</strong> Warm, professional. Pet + travel context. Light enough for white text overlay.</div>
+    </div>
+
+    <table>
+        <tr><th>Asset</th><th>Search Phrase</th><th>What to Look For</th><th>Replaces</th></tr>
+        <tr>
+            <td>Hero Slide 1 (primary)</td>
+            <td><span class="search-phrase">dog travel crate airport</span><br><span class="search-phrase">pet carrier airport terminal</span></td>
+            <td class="notes">Dog or cat near a travel crate at an airport. Bright, clean, professional setting. The H1 "Move your pet anywhere" overlays this. Needs clear space on left/center for text.</td>
+            <td><code>images/hero.jpg</code></td>
+        </tr>
+        <tr>
+            <td>Hero Slide 2</td>
+            <td><span class="search-phrase">pet transport van delivery</span><br><span class="search-phrase">animal transport vehicle</span></td>
+            <td class="notes">Pet transport vehicle or delivery scene. Shows the logistics/professional side. Warm tones.</td>
+            <td><code>img/slider/slide2.jpg</code></td>
+        </tr>
+        <tr>
+            <td>Hero Slide 3</td>
+            <td><span class="search-phrase">happy dog family moving</span><br><span class="search-phrase">pet relocation new home</span></td>
+            <td class="notes">Family with pet arriving at new home. The emotional payoff. "Your pet arrives safely." Lifestyle shot.</td>
+            <td><code>img/slider/slide3.jpg</code></td>
+        </tr>
+    </table>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================ -->
+<!-- PRIORITY 3: HOMEPAGE SECTIONS -->
+<!-- ============================================================ -->
+<section id="p3">
+    <h2><span class="badge b-yellow">Priority 3</span> Homepage Section Images (6-9 assets) <span class="phase-tag pt-1">Phase 1</span></h2>
+    <p>Three homepage sections use direct image references: the 3-box CTA, the "How It Works" carousel, and background images for features/stats/CTA sections.</p>
+
+    <h3>3.1 Three-Box CTA Section</h3>
+    <p>Three image boxes linking to Routes, Countries, and Get a Quote. Currently using template's <code>box1-3.jpg</code> (shelter photos).</p>
+    <table>
+        <tr><th>Asset</th><th>Search Phrase</th><th>What to Look For</th><th>Replaces</th></tr>
+        <tr>
+            <td>Box 1: "Explore Routes"</td>
+            <td><span class="search-phrase">world map routes connections</span><br><span class="search-phrase">global shipping routes illustration</span></td>
+            <td class="notes">Map with route lines, globe with connections, or stylised world travel image. Blue tones. Will have text overlay + magnifying glass icon.</td>
+            <td><code>img/box1.jpg</code></td>
+        </tr>
+        <tr>
+            <td>Box 2: "Country Guides"</td>
+            <td><span class="search-phrase">passport travel documents pet</span><br><span class="search-phrase">pet passport vaccination booklet</span></td>
+            <td class="notes">Pet passport, travel documents, vaccination record. Flat-lay or close-up. Shows the regulatory/documentation side.</td>
+            <td><code>img/box2.jpg</code></td>
+        </tr>
+        <tr>
+            <td>Box 3: "Get a Quote"</td>
+            <td><span class="search-phrase">pet crate measurement size</span><br><span class="search-phrase">dog kennel airline approved crate</span></td>
+            <td class="notes">Airline-approved pet crate, or pet being measured for transport. Action-oriented. Warm lighting.</td>
+            <td><code>img/box3.jpg</code></td>
+        </tr>
+    </table>
+
+    <h3>3.2 "How It Works" Carousel (3 steps)</h3>
+    <p>Three circular images showing the transport process steps. Template uses <code>services/service1-3.jpg</code>.</p>
+    <table>
+        <tr><th>Asset</th><th>Search Phrase</th><th>What to Look For</th><th>Replaces</th></tr>
+        <tr>
+            <td>Step 1: "Tell us about your pet"</td>
+            <td><span class="search-phrase">person filling form laptop pet</span><br><span class="search-phrase">online booking pet service</span></td>
+            <td class="notes">Person at laptop/phone with pet nearby. Booking/enquiry scene. Will be cropped to circle. Clean background.</td>
+            <td><code>img/services/service1.jpg</code></td>
+        </tr>
+        <tr>
+            <td>Step 2: "We handle everything"</td>
+            <td><span class="search-phrase">veterinarian examining dog paperwork</span><br><span class="search-phrase">pet health check certificate</span></td>
+            <td class="notes">Vet examination, paperwork being stamped, official documentation process. The "we do the hard bit" step.</td>
+            <td><code>img/services/service2.jpg</code></td>
+        </tr>
+        <tr>
+            <td>Step 3: "Your pet arrives safely"</td>
+            <td><span class="search-phrase">happy dog owner reunion airport</span><br><span class="search-phrase">pet arriving new home happy</span></td>
+            <td class="notes">Happy reunion scene. Owner greeting pet at destination. Emotional, warm. The payoff moment.</td>
+            <td><code>img/services/service3.jpg</code></td>
+        </tr>
+    </table>
+
+    <h3>3.3 Background / Section Images</h3>
+    <table>
+        <tr><th>Asset</th><th>Search Phrase</th><th>What to Look For</th><th>Used As</th></tr>
+        <tr>
+            <td>Features section background</td>
+            <td><span class="search-phrase">pet travel abstract background blue</span></td>
+            <td class="notes">Subtle, dark-toned background. Paw prints or travel icons as pattern. Needs to work with white text overlay. Template uses <code>bg-fixed overlay</code>.</td>
+            <td><code>img/features.jpg</code></td>
+        </tr>
+        <tr>
+            <td>Stats counter background</td>
+            <td><span class="search-phrase">airport departure board abstract</span></td>
+            <td class="notes">Airport terminal, departure boards, or abstract travel imagery. Dark enough for white counter numbers. Fixed background parallax effect.</td>
+            <td><code>img/calltoaction.jpg</code></td>
+        </tr>
+        <tr>
+            <td>Intro section image</td>
+            <td><span class="search-phrase">pet transport crate professional</span></td>
+            <td class="notes">Professional pet crate or transport setup. Clean, bright. Used in the intro bar between hero and CTA boxes.</td>
+            <td><code>img/introimg1.jpg</code></td>
+        </tr>
+    </table>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================ -->
+<!-- PRIORITY 4: ROUTE PAGE HEROES -->
+<!-- ============================================================ -->
+<section id="p4">
+    <h2><span class="badge b-green">Priority 4</span> Route Page Heroes (8-15 assets) <span class="phase-tag pt-2">Phase 2</span></h2>
+    <p>Each route page uses a jumbotron hero with a background image. Currently cycling through the same 8 stock photos. Ideally each major route corridor gets a unique image showing the destination or transport context.</p>
+
+    <div class="spec-row">
+        <div class="spec"><strong>Dimensions:</strong> 1920x600 minimum</div>
+        <div class="spec"><strong>Format:</strong> JPG (under 200KB, dark overlay applied in CSS)</div>
+        <div class="spec"><strong>Style:</strong> City skylines, airports, landmarks. Dark enough for white text. Transport or destination theme.</div>
+    </div>
+
+    <h3>4.1 Route-Specific Hero Images (15 routes)</h3>
+    <p>Grouped by origin region. Each route page shows origin-to-destination, so images should evoke either the journey or the destination.</p>
+
+    <table>
+        <tr><th>Route</th><th>Search Phrase</th><th>What to Look For</th><th>Priority</th></tr>
+        <tr><td>UK to USA</td><td><span class="search-phrase">london to new york skyline aerial</span></td><td class="notes">Dual city skyline or transatlantic travel. British + American elements.</td><td><span class="badge b-red">HIGH</span></td></tr>
+        <tr><td>UK to Australia</td><td><span class="search-phrase">sydney harbour bridge aerial</span></td><td class="notes">Sydney skyline. Long-haul destination feel.</td><td><span class="badge b-red">HIGH</span></td></tr>
+        <tr><td>UK to UAE</td><td><span class="search-phrase">dubai skyline aerial sunset</span></td><td class="notes">Dubai/Abu Dhabi skyline. Premium relocation market.</td><td><span class="badge b-red">HIGH</span></td></tr>
+        <tr><td>UK to Spain</td><td><span class="search-phrase">spain coastal town aerial mediterranean</span></td><td class="notes">Spanish coast or Barcelona/Madrid skyline. Retirement/expat market.</td><td><span class="badge b-orange">MEDIUM</span></td></tr>
+        <tr><td>UK to France</td><td><span class="search-phrase">paris skyline eiffel tower aerial</span></td><td class="notes">Paris or French countryside. Short-haul but high volume.</td><td><span class="badge b-orange">MEDIUM</span></td></tr>
+        <tr><td>UK to Germany</td><td><span class="search-phrase">berlin skyline aerial modern</span></td><td class="notes">German city skyline. Corporate relocation market.</td><td><span class="badge b-yellow">LOWER</span></td></tr>
+        <tr><td>UK to Canada</td><td><span class="search-phrase">toronto skyline cn tower aerial</span></td><td class="notes">Toronto or Vancouver skyline.</td><td><span class="badge b-yellow">LOWER</span></td></tr>
+        <tr><td>UK to South Africa</td><td><span class="search-phrase">cape town table mountain aerial</span></td><td class="notes">Cape Town landmark shot.</td><td><span class="badge b-yellow">LOWER</span></td></tr>
+        <tr><td>UK to New Zealand</td><td><span class="search-phrase">new zealand landscape aerial mountains</span></td><td class="notes">NZ landscape. Long-haul, complex regulations.</td><td><span class="badge b-yellow">LOWER</span></td></tr>
+        <tr><td>UK to Singapore</td><td><span class="search-phrase">singapore skyline marina bay aerial</span></td><td class="notes">Singapore skyline.</td><td><span class="badge b-yellow">LOWER</span></td></tr>
+        <tr><td>USA to UK</td><td><span class="search-phrase">london skyline big ben aerial</span></td><td class="notes">London skyline. Reverse direction of UK to USA.</td><td><span class="badge b-orange">MEDIUM</span></td></tr>
+        <tr><td>USA to Australia</td><td><span class="search-phrase">sydney opera house aerial sunset</span></td><td class="notes">Can reuse Australia image from UK to Aus route.</td><td><span class="badge b-yellow">LOWER</span></td></tr>
+        <tr><td>Australia to UK</td><td><span class="search-phrase">heathrow airport aerial</span></td><td class="notes">London arrival. UK destination.</td><td><span class="badge b-yellow">LOWER</span></td></tr>
+        <tr><td>UAE to UK</td><td><span class="search-phrase">london city aerial thames</span></td><td class="notes">Can reuse London image.</td><td><span class="badge b-yellow">LOWER</span></td></tr>
+        <tr><td>Germany to UK</td><td><span class="search-phrase">english countryside aerial green</span></td><td class="notes">UK countryside or city arrival scene.</td><td><span class="badge b-yellow">LOWER</span></td></tr>
+    </table>
+
+    <div class="card green-left">
+        <h4>Efficiency Note: Deduplicate Destinations</h4>
+        <p>Several routes share the same destination (e.g., UK, Australia, UAE). Download one hero per destination city (8-10 unique images), then map routes that go TO the same place to the same image. This turns 15 route heroes into ~8-10 actual downloads.</p>
+        <ul>
+            <li>London (3 routes arriving): 1 image</li>
+            <li>Sydney/Australia (2 routes): 1 image</li>
+            <li>Dubai/UAE (1 route arriving, 1 departing): 1 image</li>
+            <li>New York/USA (1 route): 1 image</li>
+            <li>Paris (1): 1 image</li>
+            <li>Toronto (1): 1 image</li>
+            <li>Cape Town (1): 1 image</li>
+            <li>Spain coast (1): 1 image</li>
+            <li>Singapore (1): 1 image</li>
+            <li>Berlin (1): 1 image, or reuse for NZ</li>
+        </ul>
+        <p><strong>Realistic download count: 8-10 unique city/destination images.</strong></p>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================ -->
+<!-- PRIORITY 5: COUNTRY/ORIGIN HEROES -->
+<!-- ============================================================ -->
+<section id="p5">
+    <h2><span class="badge b-blue">Priority 5</span> Country &amp; Origin Guide Heroes (10-12 assets) <span class="phase-tag pt-2">Phase 2</span></h2>
+    <p>10 country import guides and 10 origin export guides each use a jumbotron hero. Many countries overlap (e.g., UK appears as both a country guide and an origin hub), so deduplicated this is ~10-12 unique images.</p>
+
+    <div class="spec-row">
+        <div class="spec"><strong>Dimensions:</strong> 1920x600 minimum</div>
+        <div class="spec"><strong>Format:</strong> JPG (under 200KB)</div>
+        <div class="spec"><strong>Style:</strong> Country landmarks, cityscapes, airports. Pet-friendly public spaces if available.</div>
+    </div>
+
+    <h3>5.1 Country Guide Heroes (10 countries)</h3>
+    <table>
+        <tr><th>Country</th><th>Search Phrase</th><th>What to Look For</th></tr>
+        <tr><td>United Kingdom</td><td><span class="search-phrase">london landmarks panoramic</span></td><td class="notes">London skyline or UK countryside. Warm tones.</td></tr>
+        <tr><td>United States</td><td><span class="search-phrase">new york city skyline sunset</span></td><td class="notes">NYC skyline or iconic US landmark.</td></tr>
+        <tr><td>Australia</td><td><span class="search-phrase">sydney harbour aerial</span></td><td class="notes">Sydney harbour or Australian landscape.</td></tr>
+        <tr><td>UAE</td><td><span class="search-phrase">dubai burj khalifa skyline</span></td><td class="notes">Dubai skyline. Premium market.</td></tr>
+        <tr><td>Spain</td><td><span class="search-phrase">barcelona sagrada familia aerial</span></td><td class="notes">Spanish landmark or coastal town.</td></tr>
+        <tr><td>France</td><td><span class="search-phrase">paris eiffel tower cityscape</span></td><td class="notes">Paris landmark shot.</td></tr>
+        <tr><td>Germany</td><td><span class="search-phrase">berlin cityscape modern</span></td><td class="notes">German city architecture.</td></tr>
+        <tr><td>Canada</td><td><span class="search-phrase">toronto skyline lake ontario</span></td><td class="notes">Canadian city or landscape.</td></tr>
+        <tr><td>South Africa</td><td><span class="search-phrase">cape town table mountain panoramic</span></td><td class="notes">Cape Town or South African landscape.</td></tr>
+        <tr><td>New Zealand</td><td><span class="search-phrase">new zealand mountains landscape aerial</span></td><td class="notes">NZ mountains or Auckland skyline.</td></tr>
+    </table>
+
+    <div class="card accent-left">
+        <h4>Overlap with Route Heroes</h4>
+        <p>Most country guide images can be the same images used for route page heroes (P4). If you downloaded "Sydney skyline" for the UK-to-Australia route, reuse it for the Australia country guide. <strong>Net new downloads for P5: 2-4 images</strong> (only countries not already covered by route destinations).</p>
+    </div>
+
+    <h3>5.2 Origin Hub Heroes (10 origins)</h3>
+    <p>Origin guides use similar imagery to country guides. The origins are: UK, USA, Australia, UAE, France, Germany, Spain, Canada, South Africa, Singapore. These are the same countries as the import guides. <strong>Same images can be reused. Zero additional downloads needed.</strong></p>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================ -->
+<!-- PRIORITY 6: FEATURE & CTA -->
+<!-- ============================================================ -->
+<section id="p6">
+    <h2><span class="badge b-purple">Priority 6</span> Feature &amp; CTA Images (4-6 assets) <span class="phase-tag pt-2">Phase 2</span></h2>
+    <p>Supporting images used in template sections: about/feature areas, call-to-action backgrounds, testimonials, and sidebar content.</p>
+
+    <table>
+        <tr><th>Asset</th><th>Search Phrase</th><th>What to Look For</th><th>Replaces</th></tr>
+        <tr>
+            <td>About/Trust section</td>
+            <td><span class="search-phrase">pet transport team professional</span><br><span class="search-phrase">animal logistics warehouse crate</span></td>
+            <td class="notes">Professional team handling pet crate, or logistics warehouse with animal transport crates. Shows operational capability.</td>
+            <td><code>img/about/about1.jpg</code></td>
+        </tr>
+        <tr>
+            <td>Newsletter/CTA background</td>
+            <td><span class="search-phrase">happy pet owner dog park outdoor</span></td>
+            <td class="notes">Positive lifestyle image. Owner with pet outdoors. Used behind the newsletter signup / CTA section in the footer area. Dark overlay applied.</td>
+            <td><code>img/call-to-action/cta1.jpg</code></td>
+        </tr>
+        <tr>
+            <td>Quote form section background</td>
+            <td><span class="search-phrase">pet travel preparation home packing</span></td>
+            <td class="notes">Pet owner preparing for travel: packing, crate training, vet visit. Contextual background for the quote request form.</td>
+            <td><code>img/contactbg1.png</code></td>
+        </tr>
+        <tr>
+            <td>Testimonial avatars (3-5)</td>
+            <td><span class="search-phrase">professional headshot portrait diverse</span></td>
+            <td class="notes">3-5 professional headshots for future testimonials section. Diverse, warm, trustworthy. Will not be used immediately but good to have ready.</td>
+            <td><code>img/testimonials.jpg</code> (future)</td>
+        </tr>
+        <tr>
+            <td>404 page illustration</td>
+            <td><span class="search-phrase">lost pet illustration cute cartoon</span></td>
+            <td class="notes">Friendly "lost pet" illustration for the 404 page. Light-hearted, on-brand.</td>
+            <td><code>img/404.png</code></td>
+        </tr>
+    </table>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================ -->
+<!-- PRIORITY 7: PATTERNS & MISC -->
+<!-- ============================================================ -->
+<section id="p7">
+    <h2><span class="badge b-cyan">Priority 7</span> Patterns, Backgrounds &amp; Misc (0-2 assets) <span class="phase-tag pt-future">Future</span></h2>
+    <p>The template includes 5 pattern overlay images (<code>img/patterns/pattern1-5.png</code>) used as subtle texture overlays on coloured sections. These are template defaults and work fine as-is. No replacement needed unless we want custom paw-print or travel-themed patterns.</p>
+
+    <table>
+        <tr><th>Asset</th><th>Status</th><th>Notes</th></tr>
+        <tr><td><code>img/patterns/pattern1-5.png</code></td><td><span class="badge b-green">KEEP</span></td><td>Generic geometric patterns. Work fine with the template's colour scheme.</td></tr>
+        <tr><td><code>img/jumbotron.jpg</code></td><td><span class="badge b-yellow">OPTIONAL</span></td><td>Default jumbotron background. Used on pages without a specific hero. Could replace with a generic transport image but low priority.</td></tr>
+        <tr><td><code>img/services2.jpg</code></td><td><span class="badge b-yellow">OPTIONAL</span></td><td>Secondary services background. Not used in current layouts.</td></tr>
+        <tr><td><code>img/gallery/*</code> (12 images)</td><td><span class="badge b-green">KEEP</span></td><td>Not used in current layouts. Template gallery page assets. Ignore.</td></tr>
+        <tr><td><code>img/team/*</code> (5 images)</td><td><span class="badge b-green">KEEP</span></td><td>Not used in current layouts. Template team page assets. Ignore.</td></tr>
+        <tr><td><code>img/slider4/*</code> (3 elements)</td><td><span class="badge b-green">KEEP</span></td><td>LayerSlider decorative elements. Keep for slider animations.</td></tr>
+    </table>
+
+    <div class="card cyan-left">
+        <h4>Optional: Custom Paw Print Pattern</h4>
+        <p>If you want a branded touch, search for <span class="search-phrase">paw print pattern transparent overlay</span> and replace <code>pattern1.png</code>. This would add subtle pet branding to the section overlays. Low priority but a nice detail.</p>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================ -->
+<!-- SUMMARY -->
+<!-- ============================================================ -->
+<section id="summary">
+    <h2>Summary: Total Assets Needed</h2>
+
+    <div class="summary-grid">
+        <div class="card red-left">
+            <h4>P1: Logo &amp; Brand</h4>
+            <p><strong>3-5 assets</strong></p>
+            <p class="notes">Logo (light+dark), favicon, OG image. Must do first.</p>
+        </div>
+        <div class="card orange-left">
+            <h4>P2: Homepage Hero</h4>
+            <p><strong>2-3 images</strong></p>
+            <p class="notes">LayerSlider slides. Transport-themed hero photography.</p>
+        </div>
+        <div class="card yellow-left">
+            <h4>P3: Homepage Sections</h4>
+            <p><strong>6-9 images</strong></p>
+            <p class="notes">CTA boxes, how-it-works carousel, section backgrounds.</p>
+        </div>
+        <div class="card green-left">
+            <h4>P4: Route Heroes</h4>
+            <p><strong>8-10 images</strong></p>
+            <p class="notes">City/destination skylines. Deduplicated across 15 routes.</p>
+        </div>
+        <div class="card accent-left">
+            <h4>P5: Country/Origin Heroes</h4>
+            <p><strong>2-4 images (net new)</strong></p>
+            <p class="notes">Most reused from P4. Only unique countries need new images.</p>
+        </div>
+        <div class="card purple-left">
+            <h4>P6: Feature &amp; CTA</h4>
+            <p><strong>4-6 images</strong></p>
+            <p class="notes">About section, CTA backgrounds, 404, testimonial avatars.</p>
+        </div>
+        <div class="card cyan-left">
+            <h4>P7: Patterns &amp; Misc</h4>
+            <p><strong>0-2 images</strong></p>
+            <p class="notes">Optional only. Template patterns work fine as-is.</p>
+        </div>
+    </div>
+
+    <table>
+        <tr><th>Priority</th><th>Min Assets</th><th>Max Assets</th><th>Phase</th><th>Impact</th></tr>
+        <tr><td><span class="badge b-red">P1</span> Logo</td><td>3</td><td>5</td><td>Phase 1</td><td>Every page, brand identity</td></tr>
+        <tr><td><span class="badge b-orange">P2</span> Hero</td><td>2</td><td>3</td><td>Phase 1</td><td>Homepage first impression</td></tr>
+        <tr><td><span class="badge b-yellow">P3</span> Homepage</td><td>6</td><td>9</td><td>Phase 1</td><td>Homepage conversion sections</td></tr>
+        <tr><td><span class="badge b-green">P4</span> Routes</td><td>8</td><td>10</td><td>Phase 2</td><td>15 route pages (deduplicated)</td></tr>
+        <tr><td><span class="badge b-blue">P5</span> Countries</td><td>2</td><td>4</td><td>Phase 2</td><td>20 guide pages (reuse from P4)</td></tr>
+        <tr><td><span class="badge b-purple">P6</span> Features</td><td>4</td><td>6</td><td>Phase 2</td><td>Trust, CTA, supporting content</td></tr>
+        <tr><td><span class="badge b-cyan">P7</span> Misc</td><td>0</td><td>2</td><td>Future</td><td>Optional refinement</td></tr>
+        <tr style="font-weight:700;"><td>TOTAL</td><td>25</td><td>39</td><td></td><td>8 existing photos kept as supplement</td></tr>
+    </table>
+
+    <div class="card accent-left">
+        <h4>Recommended Download Session: ~30 Assets</h4>
+        <p>Start with P1-P3 (11-17 assets) for an immediate visual upgrade. Then P4-P5 (10-14 city images) to differentiate individual pages. P6 and P7 can wait until after soft launch.</p>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================ -->
+<!-- FILE NAMING -->
+<!-- ============================================================ -->
+<section id="naming">
+    <h2>File Naming Convention</h2>
+
+    <p>All downloaded assets should follow a consistent naming scheme for easy mapping in Hugo templates.</p>
+
+    <table>
+        <tr><th>Category</th><th>Pattern</th><th>Example</th><th>Save To</th></tr>
+        <tr><td>Logo</td><td><code>logo.png</code> / <code>logo.svg</code></td><td><code>logo.png</code></td><td><code>static/img/</code></td></tr>
+        <tr><td>Hero slides</td><td><code>hero-{n}.jpg</code></td><td><code>hero-1.jpg</code>, <code>hero-2.jpg</code></td><td><code>static/images/</code></td></tr>
+        <tr><td>Homepage sections</td><td><code>box{n}.jpg</code> or <code>service{n}.jpg</code></td><td><code>box1.jpg</code></td><td><code>static/img/</code> (replace template files)</td></tr>
+        <tr><td>Route heroes</td><td><code>route-{origin}-to-{dest}.jpg</code></td><td><code>route-uk-to-usa.jpg</code></td><td><code>static/images/routes/</code></td></tr>
+        <tr><td>Country heroes</td><td><code>country-{code}.jpg</code></td><td><code>country-au.jpg</code></td><td><code>static/images/countries/</code></td></tr>
+        <tr><td>Section backgrounds</td><td><code>{section}.jpg</code></td><td><code>features.jpg</code></td><td><code>static/img/</code> (replace template files)</td></tr>
+        <tr><td>Misc</td><td>Descriptive lowercase</td><td><code>about-team.jpg</code></td><td><code>static/img/</code></td></tr>
+    </table>
+
+    <div class="card accent-left">
+        <h4>Hugo Template Mapping</h4>
+        <p>Once route/country hero images are downloaded, update the image pool arrays in the layout files:</p>
+        <ul>
+            <li><code>layouts/routes/single.html</code>: Change the <code>$images</code> slice to reference new route-specific images, or use front matter <code>hero_image</code> param.</li>
+            <li><code>layouts/countries/single.html</code>: Same approach. Map <code>$heroImg</code> to <code>country-{{ $country.country_code | lower }}.jpg</code>.</li>
+            <li><code>layouts/origins/single.html</code>: Reuse country images since origins are the same countries.</li>
+        </ul>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================ -->
+<!-- OPTIMISATION -->
+<!-- ============================================================ -->
+<section id="optimisation">
+    <h2>Image Optimisation Notes</h2>
+
+    <div class="card accent-left">
+        <h4>Before Adding to Repo</h4>
+        <ol>
+            <li><strong>Resize:</strong> No image needs to be larger than 1920px wide. Hero images: 1920x900. Card thumbnails: 800x600. Logos: vector SVG preferred.</li>
+            <li><strong>Compress:</strong> Run through TinyPNG, Squoosh, or ImageOptim. Target: hero images under 200KB, card images under 80KB.</li>
+            <li><strong>Format:</strong> JPG for photographs. PNG for logos and illustrations with transparency. WebP optional (with JPG fallback) for modern browsers.</li>
+            <li><strong>Alt text:</strong> Every <code>&lt;img&gt;</code> in the Hugo templates has an <code>alt</code> attribute. Update these when replacing images to describe the actual content for accessibility and SEO.</li>
+            <li><strong>Lazy loading:</strong> All images below the fold should use <code>loading="lazy"</code>. Hero images use <code>loading="eager"</code>. This is already set in the Hugo templates.</li>
+        </ol>
+    </div>
+
+    <div class="card orange-left">
+        <h4>Envato Elements Download Tips</h4>
+        <ul>
+            <li>Download the largest resolution available, then resize locally. Envato images often come at 5000px+.</li>
+            <li>Check the licence: Envato Elements licence covers web use on one project. All downloads under one subscription are covered.</li>
+            <li>Use the "Similar" feature after finding one good image to find matching style/photographer for visual consistency.</li>
+            <li>For city skylines (P4/P5), search by city name + "aerial" or "skyline" for the cleanest jumbotron-style images.</li>
+            <li>For pet transport specifics, try: "pet travel", "dog carrier", "cat crate", "animal transport", "pet relocation".</li>
+        </ul>
+    </div>
+</section>
+
+</div>
+</body>
+</html>

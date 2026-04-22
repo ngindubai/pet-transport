@@ -1,0 +1,63 @@
+{{/* Newsletter / CTA */}}
+<div class="container-fluid footer-bg block-padding overlay">
+    <div class="container">
+        <div class="col-lg-5 text-light text-center">
+            <h4>Get a free pet transport quote</h4>
+            <p>Tell us your route and pet details. We will send you a step-by-step plan and tailored quote.</p>
+            <a href="#quote-form" class="btn btn-primary">Request a Quote</a>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-light pattern1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 text-center my-auto">
+                <img src="/img/logo.png" class="logo-footer img-fluid" alt="{{ .Site.Params.brand }}">
+                <ul class="social-list text-center list-inline">
+                    {{ with .Site.Params.instagram }}<li class="list-inline-item"><a title="Instagram" href="{{ . }}"><i class="fab fa-instagram"></i></a></li>{{ end }}
+                    {{ with .Site.Params.facebook }}<li class="list-inline-item"><a title="Facebook" href="{{ . }}"><i class="fab fa-facebook-f"></i></a></li>{{ end }}
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h5>Popular Routes</h5>
+                <hr class="small-divider left">
+                <ul class="list-unstyled mt-3">
+                    <li class="mb-1"><a href="/pet-transport/united-kingdom-to-australia/">UK to Australia</a></li>
+                    <li class="mb-1"><a href="/pet-transport/united-arab-emirates-to-united-kingdom/">UAE to UK</a></li>
+                    <li class="mb-1"><a href="/pet-transport/united-arab-emirates-to-australia/">UAE to Australia</a></li>
+                    <li class="mb-1"><a href="/pet-transport/united-states-to-united-kingdom/">USA to UK</a></li>
+                    <li><a href="/pet-transport/hong-kong-to-united-kingdom/">Hong Kong to UK</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h5>Explore</h5>
+                <hr class="small-divider left">
+                <ul class="list-unstyled mt-3">
+                    <li class="mb-1"><a href="/pet-transport/routes/">All Routes</a></li>
+                    <li class="mb-1"><a href="/pet-transport/countries/">Country Guides</a></li>
+                    <li class="mb-1"><a href="/pet-transport/origins/">Origin Guides</a></li>
+                    <li><a href="#quote-form">Request a Quote</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h5>Contact</h5>
+                <hr class="small-divider left">
+                <ul class="list-unstyled mt-3">
+                    <li class="mb-1"><i class="fas fa-envelope margin-icon"></i><a href="mailto:{{ .Site.Params.contactEmail | default "hello@pettransportglobal.com" }}">{{ .Site.Params.contactEmail | default "hello@pettransportglobal.com" }}</a></li>
+                    <li><i class="fas fa-phone margin-icon"></i>{{ .Site.Params.contactPhone | default "+44 (0) 123 456 789" }}</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="credits col-sm-12">
+                <p>&copy; {{ now.Year }} {{ .Site.Params.brand }}. All rights reserved.</p>
+                <p class="mt-1" style="font-size:0.85em;color:#888;">Information on this site is for guidance only. Regulations change frequently. Always verify current requirements with the relevant government authority before travelling with your pet.</p>
+            </div>
+        </div>
+    </div>
+    <div class="page-scroll hidden-sm hidden-xs">
+        <a href="#top" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+    </div>
+</footer>

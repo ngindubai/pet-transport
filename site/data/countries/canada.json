@@ -1,0 +1,55 @@
+{
+  "title": "Pet Import Guide: Canada",
+  "description": "Complete guide to importing your dog or cat to Canada. Import requirements, quarantine, breed restrictions, and step-by-step process.",
+  "name": "Canada",
+  "code": "CA",
+  "slug": "canada",
+  "pet_friendliness": "easy-moderate",
+  "overview": "Importing a pet to Canada is moderate. Here's what you need to know.",
+  "import_requirements": {
+    "microchip": "Required (ISO 11784/11785 recommended)",
+    "rabies_vaccination": "Required",
+    "quarantine": "Not required (penalty quarantine if non-compliant)",
+    "import_permit": "Personal pet imports (1-2 animals) do not require an import permit. Commercial imports (for sale, breeding, adoption, fostering, or more than 2 dogs) require CFIA import permit.",
+    "health_certificate": "Required. Valid 10 days."
+  },
+  "sections": [
+    {
+      "heading": "Import requirements for Canada",
+      "body": "**Microchip:** Required (ISO 11784/11785 recommended)\n\n**Rabies Vaccination:** Required\n\n**Quarantine:** Not required (penalty quarantine if non-compliant)\n\n**Import Permit:** Personal pet imports (1-2 animals) do not require an import permit. Commercial imports (for sale, breeding, adoption, fostering, or more than 2 dogs) require CFIA import permit.\n\n**Health Certificate:** Required. Valid 10 days."
+    },
+    {
+      "heading": "Breed restrictions in Canada",
+      "body": "Governed by: No federal breed-specific legislation. Provincial and municipal BSL."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What vaccinations does my pet need to enter Canada?",
+      "answer": "At minimum, a rabies vaccination is required. Required Your pet must also be microchipped before vaccination."
+    },
+    {
+      "question": "Is there quarantine in Canada?",
+      "answer": "Not required (penalty quarantine if non-compliant)"
+    },
+    {
+      "question": "Which airlines fly pets to Canada?",
+      "answer": "Multiple airlines serve pet cargo to Canada. Check our route-specific guides for airline details on your particular origin-destination pair."
+    }
+  ],
+  "airlines": [
+    {
+      "name": "United Airlines",
+      "type": "cabin_only"
+    },
+    {
+      "name": "American Airlines",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "Air Canada",
+      "type": "cabin_and_cargo"
+    }
+  ],
+  "inbound_routes": []
+}

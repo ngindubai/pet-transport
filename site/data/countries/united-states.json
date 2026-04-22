@@ -1,0 +1,73 @@
+{
+  "title": "Pet Import Guide: United States",
+  "description": "Complete guide to importing your dog or cat to United States. Import requirements, quarantine, breed restrictions, and step-by-step process.",
+  "name": "United States",
+  "code": "US",
+  "slug": "united-states",
+  "pet_friendliness": "moderate",
+  "overview": "Importing a pet to United States is moderately strict. Here's what you need to know.",
+  "import_requirements": {
+    "microchip": "Required (Universal scanner detectable). MUST be implanted BEFORE rabies vaccination or vaccine is considered invalid",
+    "rabies_vaccination": "Required",
+    "import_permit": "No formal import permit. CDC Dog Import Form is the registration mechanism.",
+    "health_certificate": "Required. Valid 10 days."
+  },
+  "sections": [
+    {
+      "heading": "Import requirements for United States",
+      "body": "**Microchip:** Required (Universal scanner detectable). MUST be implanted BEFORE rabies vaccination or vaccine is considered invalid\n\n**Rabies Vaccination:** Required\n\n**Import Permit:** No formal import permit. CDC Dog Import Form is the registration mechanism.\n\n**Health Certificate:** Required. Valid 10 days."
+    },
+    {
+      "heading": "Breed restrictions in United States",
+      "body": "Governed by: No federal breed-specific legislation"
+    },
+    {
+      "heading": "Routes to United States",
+      "body": "We have detailed guides for the following routes:\n\n- [United Arab Emirates to United States](/routes/united-arab-emirates-to-united-states/)"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What vaccinations does my pet need to enter United States?",
+      "answer": "At minimum, a rabies vaccination is required. Required Your pet must also be microchipped before vaccination."
+    },
+    {
+      "question": "Is there quarantine in United States?",
+      "answer": "Check with United States's authorities for current quarantine policy."
+    },
+    {
+      "question": "Which airlines fly pets to United States?",
+      "answer": "Multiple airlines serve pet cargo to United States. Check our route-specific guides for airline details on your particular origin-destination pair."
+    }
+  ],
+  "airlines": [
+    {
+      "name": "Emirates",
+      "type": "cargo_only"
+    },
+    {
+      "name": "British Airways",
+      "type": "cargo_only"
+    },
+    {
+      "name": "United Airlines",
+      "type": "cabin_only"
+    },
+    {
+      "name": "Delta Air Lines",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "Virgin Atlantic",
+      "type": "cargo_only"
+    }
+  ],
+  "inbound_routes": [
+    {
+      "slug": "united-arab-emirates-to-united-states",
+      "origin": "United Arab Emirates",
+      "origin_code": "AE",
+      "complexity": "high"
+    }
+  ]
+}

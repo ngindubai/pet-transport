@@ -1,0 +1,362 @@
+{{ define "title" }}{{ .Site.Params.brand }} | International Pet Transport{{ end }}
+
+{{ define "main" }}
+
+{{/* ===== HERO with inline quote form ===== */}}
+<section id="quote-form" class="site-hero">
+    <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+
+            {{/* Left: headline + trust bullets */}}
+            <div class="col-lg-6 hero-text-col">
+                <h1>Move your pet <span>anywhere</span> in the world</h1>
+                <p class="hero-lead">Route-specific guides and professional coordination for shipping dogs and cats between countries. Every requirement verified.</p>
+                <ul class="hero-trust list-unstyled mt-4 mb-4">
+                    <li><i class="fas fa-check-circle me-2"></i>Government-verified import rules</li>
+                    <li><i class="fas fa-check-circle me-2"></i>Breed restriction checks included</li>
+                    <li><i class="fas fa-check-circle me-2"></i>Full documentation and vet coordination</li>
+                </ul>
+                <a class="btn btn-outline-light" href="/pet-transport/routes/">Browse all routes</a>
+            </div>
+
+            {{/* Right: quote form card */}}
+            <div class="col-lg-6">
+                <div class="hero-form-card">
+                    <h4>Get your free quote</h4>
+                    <p class="hero-form-sub">Tell us your route and we'll send a step-by-step plan.</p>
+                    <form class="quote-form" action="{{ .Site.Params.quoteFormEndpoint }}" method="POST" novalidate>
+                        <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <label class="form-label">Moving from <span class="required">*</span></label>
+                                <select name="origin_country" class="form-control input-field" required>
+                                    <option value="">Select country</option>
+                                    {{ range hugo.Data.countries }}
+                                    <option value="{{ .code }}">{{ .name }}</option>
+                                    {{ end }}
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label">Moving to <span class="required">*</span></label>
+                                <select name="destination_country" class="form-control input-field" required>
+                                    <option value="">Select country</option>
+                                    {{ range hugo.Data.countries }}
+                                    <option value="{{ .code }}">{{ .name }}</option>
+                                    {{ end }}
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label">Pet type <span class="required">*</span></label>
+                                <select name="pet_type" class="form-control input-field" required>
+                                    <option value="">Select</option>
+                                    <option value="dog">Dog</option>
+                                    <option value="cat">Cat</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label">Breed</label>
+                                <input type="text" name="breed" class="form-control input-field" placeholder="e.g. Labrador">
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label">Your name <span class="required">*</span></label>
+                                <input type="text" name="name" class="form-control input-field" required autocomplete="name">
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label">Email <span class="required">*</span></label>
+                                <input type="email" name="email" class="form-control input-field" required autocomplete="email">
+                            </div>
+                            <div class="col-12 mt-1">
+                                <button type="submit" class="btn btn-primary w-100 py-2">Get My Free Quote</button>
+                            </div>
+                        </div>
+                        <p class="hero-form-note mt-2 mb-0">No spam. Just your personalised transport plan.</p>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{{/* ===== INTRO BAR ===== */}}
+<section id="intro-home" class="container-fluid bg-light pattern4-right">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <h3>International Pet Transport Specialists</h3>
+                <p>Route-specific guides and professional coordination for shipping dogs and cats between countries. Every route page is built from verified government regulations, airline policies, and breed restrictions.</p>
+            </div>
+            <div class="col-lg-3 justify-content-center align-self-center">
+                <a href="#quote-form" class="btn btn-secondary" data-aos="zoom-out">Get a Quote</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/* ===== 3-BOX CALL TO ACTION ===== */}}
+<section id="call-widget" class="container-fluid pt-0 pb-0">
+    <div class="row p-0">
+        <div class="call-box col-lg-4 p-0">
+            <a href="/pet-transport/routes/">
+                <img src="/img/box1.jpg" alt="" class="center-block img-responsive">
+                <div class="call-title">
+                    <div class="call-info text-center">
+                        <p class="subtitle text-light">explore</p>
+                        <h3 class="text-light">Transport Routes</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="call-box col-lg-4 p-0">
+            <a href="/pet-transport/countries/">
+                <img src="/img/box2.jpg" alt="" class="center-block img-responsive">
+                <div class="call-title">
+                    <div class="call-info text-center">
+                        <p class="subtitle text-light">guides</p>
+                        <h3 class="text-light">Country Requirements</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="call-box col-lg-4 p-0">
+            <a href="#quote-form">
+                <img src="/img/box3.jpg" alt="" class="center-block img-responsive">
+                <div class="call-title">
+                    <div class="call-info text-center">
+                        <p class="subtitle text-light">start here</p>
+                        <h3 class="text-light">Get a Quote</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+{{/* ===== SERVICES / HOW IT WORKS ===== */}}
+<section id="services-home" class="container">
+    <div class="container">
+        <div class="section-heading text-center">
+            <p class="subtitle">how it works</p>
+            <h2>Three Steps to Move Your Pet</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-7 my-auto">
+                <h3>Professional pet relocation</h3>
+                <span class="h7 mt-0">Every country has different import rules. Vaccination timing, microchip standards, quarantine policies, breed restrictions, crate specifications.</span>
+                <p class="mt-3">One missed requirement and your pet doesn't fly. A specialist handles the paperwork, books cargo space, coordinates vet appointments, and knows which rules changed last month. You focus on your move. We focus on your pet.</p>
+                <a href="#quote-form" class="btn btn-primary mt-3">Get started</a>
+            </div>
+            <div class="col-lg-5">
+                {{/* Use introimg1.jpg when available, fallback to hero.jpg */}}
+                {{ $introImg := cond (os.FileExists "static/img/introimg1.jpg") "/img/introimg1.jpg" "/images/hero.jpg" }}
+                <img src="{{ $introImg }}" class="img-fluid rounded services-intro-img" alt="Pet ready for international transport">
+            </div>
+            <div class="carousel-3items owl-carousel owl-theme container res-margin">
+                <div class="serviceBox1 bg-primary pattern3">
+                    <div class="service-content bg-light">
+                        <div class="service-icon">
+                            <div class="service-icon-circle"><i class="flaticon-dog-in-front-of-a-man"></i></div>
+                        </div>
+                        <h3 class="title">1. Tell us your route</h3>
+                        <p class="description">Fill in the quote form with your origin, destination, and pet details. Takes 60 seconds.</p>
+                    </div>
+                    <div class="text-center"><a class="btn btn-secondary" href="#quote-form">Start now</a></div>
+                </div>
+                <div class="serviceBox1 bg-primary pattern3">
+                    <div class="service-content bg-light">
+                        <div class="service-icon">
+                            <div class="service-icon-circle"><i class="flaticon-dog-training-1"></i></div>
+                        </div>
+                        <h3 class="title">2. Get your custom plan</h3>
+                        <p class="description">We research the exact regulations, options, and timeline for your specific route and breed.</p>
+                    </div>
+                    <div class="text-center"><a class="btn btn-secondary" href="/pet-transport/routes/">View routes</a></div>
+                </div>
+                <div class="serviceBox1 bg-primary pattern3">
+                    <div class="service-content bg-light">
+                        <div class="service-icon">
+                            <div class="service-icon-circle"><i class="flaticon-pet-shelter"></i></div>
+                        </div>
+                        <h3 class="title">3. Travel with confidence</h3>
+                        <p class="description">We coordinate vet visits, paperwork, crate booking, airport handling, and arrival clearance.</p>
+                    </div>
+                    <div class="text-center"><a class="btn btn-secondary" href="#quote-form">Get a quote</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/* ===== POPULAR ROUTES (using About/tabs section pattern) ===== */}}
+<section id="about-home" class="overlay-light">
+    <div class="container">
+        <div class="section-heading text-center">
+            <p class="subtitle">popular routes</p>
+            <h2>Most Searched Pet Transport Routes</h2>
+        </div>
+        <p class="text-center mb-4">Each guide covers import rules, export process, costs, and step-by-step timelines.</p>
+        <div class="row">
+            {{ $routes := slice
+                (dict "url" "/pet-transport/united-kingdom-to-australia/" "name" "UK to Australia" "desc" "10-day quarantine. BOAS testing required for flat-faced breeds." "img" "/images/routes/route-united-kingdom-to-australia.jpg")
+                (dict "url" "/pet-transport/united-arab-emirates-to-united-kingdom/" "name" "UAE to UK" "desc" "Rabies titre test 3 months before travel. No quarantine." "img" "/images/routes/route-united-arab-emirates-to-united-kingdom.jpg")
+                (dict "url" "/pet-transport/united-arab-emirates-to-australia/" "name" "UAE to Australia" "desc" "One of the longest prep timelines. 10-day mandatory quarantine." "img" "/images/routes/route-united-arab-emirates-to-australia.jpg")
+                (dict "url" "/pet-transport/united-states-to-united-kingdom/" "name" "USA to UK" "desc" "CDC dog import rules. Titre test needed for UK entry." "img" "/images/routes/route-united-states-to-united-kingdom.jpg")
+                (dict "url" "/pet-transport/hong-kong-to-united-kingdom/" "name" "Hong Kong to UK" "desc" "Approved third country. Microchip, rabies, tapeworm required." "img" "/images/routes/route-hong-kong-to-united-kingdom.jpg")
+                (dict "url" "/pet-transport/united-kingdom-to-france/" "name" "UK to France" "desc" "EU pet passport rules. Eurotunnel Shuttle option available." "img" "/images/routes/route-united-kingdom-to-france.jpg")
+            }}
+            {{ range $r := $routes }}
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="blog-box">
+                    <a href="{{ $r.url }}">
+                        <div class="image"><img src="{{ $r.img }}" alt="{{ $r.name }}"></div>
+                    </a>
+                    <div class="blog-box-caption">
+                        <a href="{{ $r.url }}"><h4>{{ $r.name }}</h4></a>
+                        <p>{{ $r.desc }}</p>
+                    </div>
+                    <div class="blog-box-footer">
+                        <div class="text-center col-md-12">
+                            <a href="{{ $r.url }}" class="btn btn-primary">View guide</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        <div class="text-center mt-3">
+            <a href="/pet-transport/routes/" class="btn btn-secondary">View all 15 routes</a>
+        </div>
+    </div>
+</section>
+
+{{/* ===== FEATURES SECTION ===== */}}
+<section id="feature-section" class="bg-light pattern1">
+    <div class="container">
+        <div class="section-heading text-center">
+            <p class="subtitle">why choose us</p>
+            <h2>What We Handle</h2>
+        </div>
+        <div class="row text-lg-end">
+            <div class="col-md-6 col-lg-3 my-auto p-3">
+                <div class="feature-with-icon">
+                    <div class="icon-features"><i class="flaticon-veterinarian-hospital"></i></div>
+                    <h5><strong>Vet coordination</strong></h5>
+                    <p>We book and manage all vet appointments, vaccinations, titre tests, and health certificates.</p>
+                </div>
+                <div class="feature-with-icon">
+                    <div class="icon-features"><i class="flaticon-pet"></i></div>
+                    <h5><strong>Airline booking</strong></h5>
+                    <p>Cargo space reserved on pet-friendly airlines. IATA-compliant crate specifications confirmed.</p>
+                </div>
+                <div class="feature-with-icon">
+                    <div class="icon-features"><i class="flaticon-dog-training-1"></i></div>
+                    <h5><strong>Paperwork</strong></h5>
+                    <p>Import permits, export health certificates, customs declarations. Every form handled.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 text-start p-3 my-auto pt-sm-0 order-3">
+                <div class="feature-with-icon">
+                    <div class="icon-features"><i class="flaticon-pet-shelter"></i></div>
+                    <h5><strong>Door to door</strong></h5>
+                    <p>Collection from your home, airport handling, customs clearance, delivery to your new address.</p>
+                </div>
+                <div class="feature-with-icon">
+                    <div class="icon-features"><i class="flaticon-animal-1"></i></div>
+                    <h5><strong>Breed expertise</strong></h5>
+                    <p>Flat-faced breed restrictions, banned breed lists, size limits. We know which rules apply to your pet.</p>
+                </div>
+                <div class="feature-with-icon">
+                    <div class="icon-features"><i class="flaticon-pet-lotion"></i></div>
+                    <h5><strong>Quarantine support</strong></h5>
+                    <p>Pre-booked quarantine facilities where required. Updates during your pet's stay.</p>
+                </div>
+            </div>
+            <div class="text-center col-lg-6 mx-auto align-self-center pt-4 pt-lg-0 order-2">
+                <img alt="Pet transport features" class="img-fluid features-hero-img" src="/img/features.jpg" data-aos="flip-right">
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/* ===== COUNTRY GUIDES ===== */}}
+<section id="adoption-home" class="container-fluid ps-0 pr-0 overlay-dark bg-fixed">
+    <div class="section-heading text-center text-light">
+        <p class="subtitle">destination guides</p>
+        <h2>Country Import Requirements</h2>
+    </div>
+    <div class="container">
+        <div class="col-lg-10 offset-lg-1 text-center text-light">
+            <h3>Quarantine rules, vaccinations, and <span class="text-tertiary">breed restrictions</span></h3>
+            <p>Every destination has unique pet import regulations. Our country guides break down exactly what you need.</p>
+        </div>
+        <div class="col-md-12 carousel-2items owl-carousel owl-theme mt-4">
+            {{ range $c := hugo.Data.countries }}
+            <div class="adopt-card res-margin row bg-light pattern2">
+                <div class="col-md-5">
+                    <div class="adopt-image d-flex flex-wrap align-items-center">
+                        <a href="/pet-transport/countries/{{ $c.slug }}/">
+                            <img src="/images/countries/country-{{ $c.code | lower }}.jpg" class="img-fluid" alt="{{ $c.name }}">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-7 res-margin">
+                    <div class="caption-adoption">
+                        <h5 class="adoption-header"><a href="/pet-transport/countries/{{ $c.slug }}/">{{ $c.name }}</a></h5>
+                        <ul class="list-unstyled">
+                            {{ with $c.quarantine }}<li><strong>Quarantine:</strong> {{ . }}</li>{{ end }}
+                            {{ with $c.rabies_status }}<li><strong>Rabies status:</strong> {{ . }}</li>{{ end }}
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-3">
+                    <div class="text-center">
+                        <a href="/pet-transport/countries/{{ $c.slug }}/" class="btn btn-primary">View guide</a>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        <div class="col-lg-12 text-center mt-3">
+            <a href="/pet-transport/countries/" class="btn btn-secondary">View all country guides</a>
+        </div>
+    </div>
+</section>
+
+{{/* ===== STATS COUNTER ===== */}}
+<section id="counter-section" class="container-fluid counter-calltoaction bg-fixed overlay">
+    <div id="counter" class="container">
+        <div class="row col-lg-10 offset-lg-1">
+            <div class="col-xl-3 col-md-6">
+                <div class="counter">
+                    <i class="counter-icon flaticon-dog-in-front-of-a-man"></i>
+                    <div class="counter-value" data-count="15">0</div>
+                    <h3 class="title">Transport Routes</h3>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+                <div class="counter">
+                    <i class="counter-icon flaticon-dog-2"></i>
+                    <div class="counter-value" data-count="10">0</div>
+                    <h3 class="title">Country Guides</h3>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+                <div class="counter">
+                    <i class="counter-icon flaticon-prize-badge-with-paw-print"></i>
+                    <div class="counter-value" data-count="10">0</div>
+                    <h3 class="title">Origin Hubs</h3>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+                <div class="counter">
+                    <i class="counter-icon flaticon-dog-18"></i>
+                    <div class="counter-value" data-count="58">0</div>
+                    <h3 class="title">Pages of Guides</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}

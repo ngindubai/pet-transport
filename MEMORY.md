@@ -1,0 +1,113 @@
+# MEMORY.md — PetTransportGlobal
+
+## Site Overview
+- **Domain:** pettransportglobal.surge.sh (surge.sh hosting, pending domain purchase)
+- **Type:** Programmatic SEO — international pet transport route pages
+- **Total pages:** 202 live (May 2025)
+- **Stack:** Hugo static site generator + Python generation scripts + surge.sh deploy
+- **Git:** `C:\Users\garet\Desktop\pet-transport\` (standalone VS Code instance)
+
+## Build Decisions
+
+### Architecture
+- Hugo static site in `site/` subdirectory
+- Python scripts at **repo root** (not in `scripts/` folder)
+- All Hugo content in `site/content/[section]/`
+- Build command: `hugo --gc --minify` from `site/`
+- Deploy command: `surge public pettransportglobal.surge.sh` from `site/`
+- NOTE: surge deploy requires an interactive terminal session. Cannot be run from subagents.
+
+### Slug Pattern
+- Routes: `[origin-country]-to-[destination-country]` — e.g. `uk-to-australia`
+- Countries: `[country-slug]` — e.g. `australia`
+- Origins: `from-[country-slug]` — e.g. `from-uk`
+- Airlines: `[airline-slug]` — e.g. `emirates`
+- Breeds: `[breed-slug]` — e.g. `french-bulldog`
+
+### Data File Locations
+- Country regulations (P1): `data/countries_pet_regulations.json`
+- Government official regulations: `data/govt_import_regulations.json`
+- Airline policies: `data/airline_pet_policies.json`
+- Breed restrictions: `data/breed_restrictions.json`
+- Route keyword matrix: `data/route_keyword_matrix.json`
+- Schema + tech stack: `data/schema_and_tech_stack.json`
+
+### Front Matter Format (Hugo)
+```yaml
+---
+title: "Pet Transport UK to Australia | PetTransportGlobal"
+description: "140-160 char description with keyword and reassurance hook"
+slug: "uk-to-australia"
+date: 2025-01-01
+draft: false
+---
+```
+
+### Python Script Convention
+All generation scripts use skip-if-exists:
+```python
+if os.path.exists(output_path):
+    print(f"Skipping {output_path} — already exists")
+    continue
+```
+
+## Content Rules (Always On)
+
+### Tone
+- Warm, practical, expert. Pet owners are anxious — reassure without promising.
+- British English throughout (colour, licence [noun], travelling, etc.)
+
+### Hard Prohibitions
+- No safety guarantees: never "your pet will arrive safely" or "guaranteed safe delivery"
+- No banned vocabulary: delve, tapestry, vibrant, crucial, comprehensive, meticulous, embark, robust, seamless, groundbreaking, leverage, synergy, transformative, paramount, multifaceted, myriad, cornerstone, reimagine, empower, catalyst, invaluable, bustling, nestled, realm
+- No em dashes (zero tolerance)
+- No unverified regulatory claims — every quarantine period, vaccine requirement, or breed ban must cite a named, dated official source
+
+## Build Status
+
+### Phase 0 — Research (Blocks 1-9): ALL DONE
+All worker souls created, competitor scraped, government portals scraped, airline policies scraped, keyword matrix built, all databases assembled.
+
+### Phase 1 — Foundation (Blocks 10-21): ALL DONE
+- Block 10-11: Hugo scaffolding + 6 templates + quote form
+- Block 12-15: 15 Tier 1 routes (initial batch), content + SEO pass
+- Block 16: 10 country guides + 10 origin hubs
+- Block 17: SEO pass + humanisation + internal linking
+- Block 18: QA + first deploy
+- Block 19: All 89 P1 routes complete (132 pages, deployed 21 April 2025)
+- Block 20: 23 airline guide pages (190 pages total)
+- Block 21: 35 breed guide pages (202 pages total, deployed)
+
+### Phase 2 — Next Stage (Block 22 onwards): TODO
+- 2.1: P2 country regulation data (15 additional countries)
+- 2.2: ~500 P2 route pages
+- 2.3: 15 P2 origin hubs + 15 P2 country guides
+- 2.6: Internal link graph rebuild (route ↔ country ↔ airline ↔ breed)
+- 2.7: Blog launch (12 articles, targeting research-intent queries)
+- 2.8: Backlink campaign
+- 2.9: Full QA + regulatory audit (all 800+ pages)
+- 2.10: Site health monitoring setup
+
+## P1 Country Matrix (all routes DONE)
+Countries: UK, UAE, Australia, USA, Singapore, France, Hong Kong, Saudi Arabia, Germany, Netherlands
+10x10 grid = 90 combinations, 89 unique routes (no self-routes)
+
+## Open Strategic Decisions (Gareth's TODO list)
+1. Domain purchase — pending
+2. Business name — pending
+3. Operator model vs marketplace model (affects all CTA copy and pricing display)
+4. Payment processing (Stripe, GoCardless, etc.)
+5. IPATA membership (~$400/year) — would add trust signal
+
+## Mistakes to Avoid
+- `hugo server` and `surge` both require live terminal (can't run from subagent in background)
+- Build plan filename has `=` sign: `cascading-build-plan-pet=transport.html`
+- Deploy from `site/` directory, not repo root
+- Deploy command: `surge public pettransportglobal.surge.sh` (NOT `surge .`)
+- Never fabricate quarantine periods or vaccine requirements — sources are mandatory
+- Anti-template gate: route pages that feel identical will hurt SEO and user trust
+
+## Session Log
+| Date | Block | Description | Pages |
+|------|-------|-------------|-------|
+| Pre-migration | 1-21 | Phase 0 + 1 complete | 202 |

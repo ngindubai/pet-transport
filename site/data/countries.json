@@ -1,0 +1,86 @@
+[
+  {
+    "code": "GB",
+    "name": "United Kingdom",
+    "slug": "united-kingdom",
+    "quarantine": "No routine quarantine. Penalty quarantine up to 4 months if documentation is incorrect.",
+    "rabies_status": "Rabies-free island. Strict import rules apply."
+  },
+  {
+    "code": "US",
+    "name": "United States",
+    "slug": "united-states",
+    "quarantine": "No quarantine for dogs with valid CDC compliance. Cats: no quarantine.",
+    "rabies_status": "Rabies-controlled. CDC dog import rules effective Aug 2024."
+  },
+  {
+    "code": "AE",
+    "name": "United Arab Emirates",
+    "slug": "united-arab-emirates",
+    "quarantine": "No quarantine for compliant pets from approved countries.",
+    "rabies_status": "Rabies-controlled. Rabies vaccination required."
+  },
+  {
+    "code": "AU",
+    "name": "Australia",
+    "slug": "australia",
+    "quarantine": "Mandatory 10-day post-arrival quarantine at AQIS facility in Melbourne.",
+    "rabies_status": "Rabies-free. One of the strictest import regimes in the world."
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "slug": "canada",
+    "quarantine": "No quarantine for rabies-vaccinated dogs from most countries.",
+    "rabies_status": "Rabies-controlled. Vaccination certificate required for dogs."
+  },
+  {
+    "code": "DE",
+    "name": "Germany",
+    "slug": "germany",
+    "quarantine": "No quarantine for pets from EU/listed countries with valid EU pet passport or AHC.",
+    "rabies_status": "Rabies-free (EU). Rabies vaccination required for entry."
+  },
+  {
+    "code": "FR",
+    "name": "France",
+    "slug": "france",
+    "quarantine": "No quarantine for compliant pets. EU pet passport or AHC required.",
+    "rabies_status": "Rabies-free (EU). Titre test required from unlisted countries."
+  },
+  {
+    "code": "SG",
+    "name": "Singapore",
+    "slug": "singapore",
+    "quarantine": "10–30 days quarantine depending on origin country category.",
+    "rabies_status": "Rabies-free. Strict import categories apply."
+  },
+  {
+    "code": "HK",
+    "name": "Hong Kong",
+    "slug": "hong-kong",
+    "quarantine": "No quarantine for pets from approved 'Category 1' countries.",
+    "rabies_status": "Rabies-free. Licences and documentation required."
+  },
+  {
+    "code": "ZA",
+    "name": "South Africa",
+    "slug": "south-africa",
+    "quarantine": "No quarantine if paperwork is complete. Import permit required.",
+    "rabies_status": "Rabies-controlled. Rabies vaccination mandatory."
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "slug": "spain",
+    "quarantine": "No quarantine for EU-compliant pets. AHC required for non-EU origin.",
+    "rabies_status": "Rabies-free (EU). Titre test may be required from high-risk countries."
+  },
+  {
+    "code": "NZ",
+    "name": "New Zealand",
+    "slug": "new-zealand",
+    "quarantine": "Mandatory 10-day quarantine. Only allowed from approved countries.",
+    "rabies_status": "Rabies-free. Among the world's strictest biosecurity regimes."
+  }
+]

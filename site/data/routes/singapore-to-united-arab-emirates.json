@@ -1,0 +1,210 @@
+{
+  "origin_name": "Singapore",
+  "destination_name": "United Arab Emirates",
+  "route_data": {
+    "origin": {
+      "code": "SG",
+      "country": "Singapore",
+      "export_requirements": {
+        "endorsement": "Must meet destination country requirements. Contact destination authority for specific format."
+      }
+    },
+    "destination": {
+      "code": "AE",
+      "country": "United Arab Emirates",
+      "import_requirements": {
+        "microchip": "Required (ISO 11784/11785). Must be implanted before rabies vaccination",
+        "rabies_vaccination": "Required. Minimum age: 12 weeks. Vaccination must be administered after microchipping. Titre test may be required from certain countries.",
+        "titre_test": "Required for: Pets from certain non-approved or high-risk countries. Not required for: Pets from approved countries (UK, USA, Canada, Australia, EU countries, etc.). Minimum: 0.5 IU/ml",
+        "quarantine": "No routine quarantine. Penalty quarantine up to varies days if non-compliant",
+        "import_permit": "Required. Import permit MUST be obtained before travel. Different emirates have different application processes. Allow 1-2 weeks for processing.",
+        "health_certificate": "Required. Veterinary health certificate / Official health certificate. Issued by: Government veterinarian or government-endorsed veterinarian in country of export. Certificate must confirm: rabies vaccination status, microchip number, pet is free from infectious disease, fit to travel"
+      },
+      "breed_restrictions": [
+        "Pit Bull Terrier (and related types) (restricted)",
+        "American Staffordshire Terrier (restricted)",
+        "Staffordshire Bull Terrier (restricted in some emirates)",
+        "Rottweiler (restricted but not outright banned in most emirates)",
+        "Dogo Argentino (restricted)",
+        "Fila Brasileiro (restricted)",
+        "Japanese Tosa (restricted)",
+        "Perro de Presa Canario (restricted)"
+      ]
+    },
+    "airlines": [
+      {
+        "name": "Emirates",
+        "type": "cargo_only",
+        "policy_summary": "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Snub-nosed (brachycephalic) breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
+      },
+      {
+        "name": "British Airways",
+        "type": "cargo_only",
+        "policy_summary": "Cargo transport available"
+      },
+      {
+        "name": "Lufthansa",
+        "type": "cabin_and_cargo",
+        "policy_summary": "Small pets allowed in cabin. Cargo transport available. Transport of large animals to certain destinations not possible due to local circumstances. Fighting dog breeds subject to special rules"
+      },
+      {
+        "name": "Singapore Airlines",
+        "type": "cargo_only",
+        "policy_summary": "Cargo: Pets travel as cargo in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
+      },
+      {
+        "name": "Qantas",
+        "type": "cargo_only",
+        "policy_summary": "Cargo transport available. Brachycephalic breeds restricted year-round. Temperature embargoes: seasonal restrictions during Australian summer (Dec-Feb)"
+      },
+      {
+        "name": "KLM Royal Dutch Airlines",
+        "type": "cabin_and_cargo",
+        "policy_summary": "Small pets allowed in cabin. Cargo: Pets can travel in the hold as checked baggage or via KLM Cargo"
+      },
+      {
+        "name": "Air France",
+        "type": "cabin_and_cargo",
+        "policy_summary": "Small pets allowed in cabin. Cargo transport available. Brachycephalic breeds subject to restrictions/seasonal embargoes. French regulations on dangerous dog breeds apply"
+      },
+      {
+        "name": "Cathay Pacific",
+        "type": "cargo_only",
+        "policy_summary": "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
+      },
+      {
+        "name": "Etihad Airways",
+        "type": "cargo_only",
+        "policy_summary": "Cargo: Pets travel as cargo through Etihad Cargo. Brachycephalic breeds subject to seasonal restrictions. Temperature embargoes during Abu Dhabi summer months"
+      },
+      {
+        "name": "Turkish Airlines",
+        "type": "cabin_and_cargo",
+        "policy_summary": "Small pets allowed in cabin. Cargo transport available. Brachycephalic breeds restricted in cargo. Temperature restrictions apply"
+      },
+      {
+        "name": "Swiss International Air Lines",
+        "type": "cabin_and_cargo",
+        "policy_summary": "Small pets allowed in cabin. Cargo: Larger pets travel in hold. Swiss WorldCargo for freight."
+      }
+    ],
+    "timeline_steps": [
+      {
+        "step": 1,
+        "action": "Get your pet microchipped (ISO 11784/11785)",
+        "timing": "Before any vaccinations. Must be done first.",
+        "responsible": "Your veterinarian"
+      },
+      {
+        "step": 2,
+        "action": "Rabies vaccination",
+        "timing": "At least 21 days before travel (after microchip)",
+        "responsible": "Your veterinarian"
+      },
+      {
+        "step": 3,
+        "action": "Rabies titre test (RNATT blood test)",
+        "timing": "Blood drawn 30+ days after vaccination. 90-day wait after successful result.",
+        "responsible": "Your veterinarian + approved laboratory"
+      },
+      {
+        "step": 4,
+        "action": "Apply for import permit from United Arab Emirates",
+        "timing": "Lead time: Check with authorities",
+        "responsible": "You (or your pet transport agent)"
+      },
+      {
+        "step": 5,
+        "action": "Obtain health certificate / veterinary clearance",
+        "timing": "Within 10 days of travel (check destination-specific requirements)",
+        "responsible": "Official veterinarian"
+      },
+      {
+        "step": 6,
+        "action": "Book IATA-compliant flight and arrange pet cargo/cabin booking",
+        "timing": "2-4 weeks before travel. Confirm pet space availability.",
+        "responsible": "You (or your pet transport agent)"
+      },
+      {
+        "step": 7,
+        "action": "Travel day: arrive early, present all documentation",
+        "timing": "3-4 hours before departure for cargo pets",
+        "responsible": "You + airline cargo desk"
+      }
+    ],
+    "cost_factors": [
+      "Airline cargo/cabin fees (varies by carrier, pet weight, and crate size)",
+      "IATA-compliant travel crate (purchase or hire)",
+      "Veterinary fees (vaccinations, health certificate, microchip)",
+      "Import permit application fee (United Arab Emirates)",
+      "Government endorsement/USDA endorsement fee (if applicable)",
+      "Pet transport agent fee (if using a relocation service)"
+    ],
+    "key_warnings": [
+      "Brachycephalic (flat-faced) breeds face cargo restrictions on most airlines. Check breed-specific policies before booking.",
+      "Microchip MUST be implanted before rabies vaccination. Vaccination given before microchip is invalid and the clock restarts.",
+      "Temperature embargoes apply during Gulf summer months (June to September). Airlines may refuse pet cargo when ground temperatures exceed 30C."
+    ],
+    "route_complexity": "moderate",
+    "estimated_timeline_weeks": "6-10"
+  },
+  "seo": {
+    "title": "Pet Transport from Singapore to United Arab Emirates | Complete Guide",
+    "description": "How to transport your dog or cat from Singapore to United Arab Emirates. Import requirements, airline options, costs, and step-by-step process."
+  },
+  "content": {
+    "h1": "Pet Transport from Singapore to United Arab Emirates",
+    "overview": "Moving your dog from Singapore to United Arab Emirates takes planning.\n\nExpect to start preparations 6-10 weeks before your travel date. A rabies titre test (blood test) is required, which means an additional waiting period after vaccination. You'll need to apply for an import permit from United Arab Emirates before your pet can travel. Airlines serving this route include Emirates, British Airways, Lufthansa, and Singapore Airlines.\n\nWe've put together this guide to walk you through every step.",
+    "sections": [
+      {
+        "heading": "Key things to know about this route",
+        "body": "Compared to some international routes, Singapore to United Arab Emirates is relatively straightforward. That doesn't mean you can leave it to the last minute.\n\nUnited Arab Emirates bans or restricts certain breeds. Pit Bull Terrier, American Staffordshire Terrier, Staffordshire Bull Terrier types are affected. If your dog is one of these breeds or a mix, contact a specialist before making plans."
+      },
+      {
+        "heading": "Practical tips for shipping your pet from Singapore to United Arab Emirates",
+        "body": "Start the microchip and vaccination process as early as possible. The biggest mistake people make is leaving it too late. Once you miss a deadline, the entire timeline pushes back.\n\nSome airlines on this route (Lufthansa, KLM Royal Dutch Airlines) allow small pets in the cabin. Your pet must fit in a carrier under the seat. Weight limits are strict: usually 8-10kg including the carrier.\n\nWatch the calendar. Temperature embargoes mean airlines won't accept pets during extreme heat or cold. If you're planning a summer move, book early and have a backup date.\n\nUse a pet transport agent if you're not confident handling the paperwork yourself. A good agent knows the current rules, has relationships with airline cargo departments, and can troubleshoot problems before they become disasters."
+      },
+      {
+        "heading": "Travel day: Singapore to United Arab Emirates",
+        "body": "Arrive at the airport at least 3 hours before departure if your pet is travelling as cargo. You'll need to present all original documents: health certificate, vaccination records, microchip number, and any import permits.\n\nYour pet's crate must be clean, labelled with your contact details and the consignee's details at the destination, and have food and water containers attached. Live animal stickers and orientation arrows are required.\n\nOn arrival in United Arab Emirates, you (or your agent) collect your pet from the cargo terminal. There may be an inspection by veterinary authorities at the airport. Have copies of all paperwork ready."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Will my pet need to go into quarantine when arriving in United Arab Emirates?",
+      "answer": "No, not if all your paperwork is correct. United Arab Emirates does not require routine quarantine for pets with valid documentation. However, if anything is missing or incorrect, your pet could face penalty quarantine at your expense. Getting the paperwork right is not optional."
+    },
+    {
+      "question": "Which airlines transport pets from Singapore to United Arab Emirates?",
+      "answer": "Airlines operating pet cargo on this route include Emirates, British Airways, Lufthansa, Singapore Airlines, Qantas. All transport pets as manifested cargo in temperature-controlled holds, not in the cabin. You'll need an IATA-compliant crate and should book cargo space well in advance. Some airlines have seasonal restrictions and brachycephalic breed embargoes."
+    },
+    {
+      "question": "How far in advance should I start preparing to move my pet from Singapore to United Arab Emirates?",
+      "answer": "Start at least 6-10 weeks before your planned travel date. The process begins with microchipping, then rabies vaccination (with a mandatory waiting period), then any required blood tests, health certificates, and permit applications. Rushing the timeline is the most common reason people hit problems."
+    },
+    {
+      "question": "How much does it cost to transport a dog from Singapore to United Arab Emirates?",
+      "answer": "The total cost depends on your dog's size, the airline, and whether you use a transport agent. For a medium-sized dog, expect to pay for: veterinary fees (vaccinations, health certificate, microchip), an IATA-compliant crate, airline cargo fees, government endorsements, and any import permits or quarantine fees at the destination. Using a door-to-door agent adds to the cost but handles the complexity for you."
+    },
+    {
+      "question": "What documents does my pet need to travel from Singapore to United Arab Emirates?",
+      "answer": "Your pet will need: proof of ISO microchip, rabies vaccination certificate, rabies titre test results, official health certificate, import permit. The health certificate must be issued by an official veterinarian within 10 days of travel. Some documents need government endorsement. Check every requirement against the current rules, because regulations change and an outdated document can mean your pet doesn't fly."
+    },
+    {
+      "question": "Are any dog breeds banned from entering United Arab Emirates?",
+      "answer": "United Arab Emirates restricts or bans certain breeds. Currently affected: Pit Bull Terrier, American Staffordshire Terrier, Staffordshire Bull Terrier, Rottweiler. This is a type-based assessment in some countries, meaning dogs that physically resemble a banned breed can be classified as that type regardless of pedigree. If your dog is a restricted breed or a mix, get specialist advice before making any arrangements."
+    },
+    {
+      "question": "Can I fly my French Bulldog or Pug from Singapore to United Arab Emirates?",
+      "answer": "Brachycephalic (flat-faced) breeds face restrictions on most airlines, particularly for cargo transport. These breeds are more vulnerable to breathing difficulties at altitude and in heat. Many airlines impose seasonal embargoes (typically summer months), and some restrict flat-faced breeds from cargo year-round. A few airlines still accept them with additional veterinary clearance. Check the specific airline's current policy before booking."
+    }
+  ],
+  "links": {
+    "sideways": [],
+    "upward": []
+  },
+  "status": "draft",
+  "version": 1,
+  "updated_at": "2026-04-16"
+}

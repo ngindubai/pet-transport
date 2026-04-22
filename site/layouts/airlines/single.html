@@ -1,0 +1,70 @@
+{{ define "title" }}{{ .Params.seo.title | default (printf "%s Pet Cargo Policy" .Params.airline_name) }}{{ end }}
+
+{{ define "main" }}
+{{ $airline := .Params }}
+
+<section class="route-hero">
+    <div class="route-hero-inner">
+        <h1>{{ $airline.content.h1 | default (printf "%s Pet Transport Policy" $airline.airline_name) }}</h1>
+        {{ if $airline.cabin_allowed }}<span class="complexity-badge">Cabin allowed</span>{{ end }}
+        {{ if $airline.cargo_allowed }}<span class="complexity-badge">Cargo available</span>{{ end }}
+        {{ if $airline.cargo_suspended }}<span class="complexity-badge" style="background:rgba(231,76,60,0.3);">Cargo suspended</span>{{ end }}
+    </div>
+</section>
+
+{{ with $airline.content.overview }}
+<section class="route-section">
+    <div class="section-inner">{{ . | markdownify }}</div>
+</section>
+{{ end }}
+
+{{/* Policy details */}}
+{{ with $airline.policy }}
+<section class="route-section" id="policy">
+    <div class="section-inner">
+        <h2>Policy Overview</h2>
+        <div class="requirements-grid">
+            {{ with .accepted_animals }}<div class="req-card"><h3>Accepted Animals</h3><p>{{ . }}</p></div>{{ end }}
+            {{ with .crate_requirements }}<div class="req-card"><h3>Crate Requirements</h3><p>{{ . }}</p></div>{{ end }}
+            {{ with .size_limits }}<div class="req-card"><h3>Size and Weight Limits</h3><p>{{ . }}</p></div>{{ end }}
+            {{ with .temperature_restrictions }}<div class="req-card"><h3>Temperature Restrictions</h3><p>{{ . }}</p></div>{{ end }}
+            {{ with .brachycephalic_policy }}<div class="req-card"><h3>Brachycephalic Breeds</h3><p>{{ . }}</p></div>{{ end }}
+            {{ with .cost_range }}<div class="req-card"><h3>Cost Estimate</h3><p>{{ . }}</p></div>{{ end }}
+            {{ with .booking_process }}<div class="req-card"><h3>How to Book</h3><p>{{ . }}</p></div>{{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+
+{{/* Routes served */}}
+{{ with $airline.routes_served }}
+<section class="route-section" id="routes">
+    <div class="section-inner">
+        <h2>Routes Served</h2>
+        <div class="route-grid">
+            {{ range . }}
+            {{ partial "route-card.html" . }}
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+
+{{ with $airline.content.sections }}
+{{ range . }}
+<section class="route-section">
+    <div class="section-inner">
+        {{ with .heading }}<h2>{{ . }}</h2>{{ end }}
+        {{ .body | markdownify }}
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ with $airline.faqs }}
+{{ partial "faq-accordion.html" (dict "faqs" .) }}
+{{ end }}
+
+{{ partial "quote-form.html" $ }}
+
+{{ end }}

@@ -1,0 +1,149 @@
+{
+  "title": "Pet Import Guide: Australia",
+  "description": "Complete guide to importing your dog or cat to Australia. Import requirements, quarantine, breed restrictions, and step-by-step process.",
+  "name": "Australia",
+  "code": "AU",
+  "slug": "australia",
+  "pet_friendliness": "strict",
+  "overview": "Importing a pet to Australia is strict. One of the biggest factors is the mandatory quarantine requirement. Here's what you need to know.",
+  "import_requirements": {
+    "microchip": "Required (ISO 11784/11785). Must be implanted before or on same day as rabies vaccination",
+    "rabies_vaccination": "Required",
+    "rabies_titre_test": "Required for: Groups 3, 4, 5, 6 (all except Groups 1 and 2)",
+    "quarantine": "Mandatory. varies days. Facility: Mickleham Post Entry Quarantine Facility",
+    "import_permit": "Required. Must be obtained BEFORE travel. Permit specifies conditions for import.",
+    "health_certificate": "Government-issued veterinary health certificate (country-specific format). Valid 10 days."
+  },
+  "sections": [
+    {
+      "heading": "Import requirements for Australia",
+      "body": "**Microchip:** Required (ISO 11784/11785). Must be implanted before or on same day as rabies vaccination\n\n**Rabies Vaccination:** Required\n\n**Rabies Titre Test:** Required for: Groups 3, 4, 5, 6 (all except Groups 1 and 2)\n\n**Quarantine:** Mandatory. varies days. Facility: Mickleham Post Entry Quarantine Facility\n\n**Import Permit:** Required. Must be obtained BEFORE travel. Permit specifies conditions for import.\n\n**Health Certificate:** Government-issued veterinary health certificate (country-specific format). Valid 10 days."
+    },
+    {
+      "heading": "Breed restrictions in Australia",
+      "body": "Governed by: No federal breed ban for imports. State-level legislation."
+    },
+    {
+      "heading": "Routes to Australia",
+      "body": "We have detailed guides for the following routes:\n\n- [Hong Kong to Australia](/routes/hong-kong-to-australia/)\n- [Singapore to Australia](/routes/singapore-to-australia/)\n- [South Africa to Australia](/routes/south-africa-to-australia/)\n- [United Arab Emirates to Australia](/routes/united-arab-emirates-to-australia/)\n- [United Kingdom to Australia](/routes/united-kingdom-to-australia/)\n- [United States to Australia](/routes/united-states-to-australia/)"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What vaccinations does my pet need to enter Australia?",
+      "answer": "At minimum, a rabies vaccination is required. Required Your pet must also be microchipped before vaccination."
+    },
+    {
+      "question": "Is there quarantine in Australia?",
+      "answer": "Mandatory. varies days. Facility: Mickleham Post Entry Quarantine Facility"
+    },
+    {
+      "question": "Which airlines fly pets to Australia?",
+      "answer": "Multiple airlines serve pet cargo to Australia. Check our route-specific guides for airline details on your particular origin-destination pair."
+    }
+  ],
+  "airlines": [
+    {
+      "name": "Emirates",
+      "type": "cargo_only"
+    },
+    {
+      "name": "British Airways",
+      "type": "cargo_only"
+    },
+    {
+      "name": "Singapore Airlines",
+      "type": "cargo_only"
+    },
+    {
+      "name": "Qantas",
+      "type": "cargo_only"
+    },
+    {
+      "name": "Air France",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "United Airlines",
+      "type": "cabin_only"
+    },
+    {
+      "name": "Delta Air Lines",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "American Airlines",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "Cathay Pacific",
+      "type": "cargo_only"
+    },
+    {
+      "name": "Etihad Airways",
+      "type": "cargo_only"
+    },
+    {
+      "name": "Air Canada",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "Korean Air",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "Japan Airlines (JAL)",
+      "type": "cargo_only"
+    },
+    {
+      "name": "Thai Airways",
+      "type": "cargo_only"
+    },
+    {
+      "name": "Garuda Indonesia",
+      "type": "cabin_and_cargo"
+    },
+    {
+      "name": "Philippine Airlines",
+      "type": "cabin_and_cargo"
+    }
+  ],
+  "inbound_routes": [
+    {
+      "slug": "hong-kong-to-australia",
+      "origin": "Hong Kong",
+      "origin_code": "HK",
+      "complexity": "very_high"
+    },
+    {
+      "slug": "singapore-to-australia",
+      "origin": "Singapore",
+      "origin_code": "SG",
+      "complexity": "very_high"
+    },
+    {
+      "slug": "south-africa-to-australia",
+      "origin": "South Africa",
+      "origin_code": "ZA",
+      "complexity": "very_high"
+    },
+    {
+      "slug": "united-arab-emirates-to-australia",
+      "origin": "United Arab Emirates",
+      "origin_code": "AE",
+      "complexity": "extreme"
+    },
+    {
+      "slug": "united-kingdom-to-australia",
+      "origin": "United Kingdom",
+      "origin_code": "GB",
+      "complexity": "very_high"
+    },
+    {
+      "slug": "united-states-to-australia",
+      "origin": "United States",
+      "origin_code": "US",
+      "complexity": "very_high"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+---
+title: "Bringing Your Pet to the UK: What You Need to Know"
+description: "UK pet import requirements for dogs and cats. AHC, tapeworm treatment, approved entry ports, and which breeds are banned. No quarantine if paperwork is correct."
+type: "countries"
+layout: "single"
+slug: "united-kingdom"
+url: "/pet-transport/countries/united-kingdom/"
+country_name: "United Kingdom"
+country_code: "GB"
+pet_friendliness: "moderate"
+seo:
+  title: "Bringing Your Pet to the UK: What You Need to Know | Pet Transport Global"
+  description: "UK pet import requirements for dogs and cats. AHC, tapeworm treatment, approved entry ports, and which breeds are banned. No quarantine if paperwork is correct."
+import_requirements:
+  microchip: "ISO 11784/11785. Must be implanted BEFORE rabies vaccination. Vaccine is invalid if microchipped after"
+  rabies_vaccination: "Required. 21-day wait after first vaccination."
+  titre_test: "Required for pets from unlisted/high-risk countries. Not needed for P1 listed countries."
+  quarantine: "Not required for compliant pets. Penalty quarantine (up to Up to 120 (4 months)) if documentation is wrong."
+  import_permit: "Not required. Health certificate / travel document serves this function."
+  health_certificate: "Animal Health Certificate (AHC) or EU Pet Passport. Valid for 10 days from issue. Must be endorsed by official authority."
+  banned_breeds: "Banned/restricted: Pit Bull Terrier, Japanese Tosa, Dogo Argentino, Fila Brasileiro. Type-based assessment in most cases."
+  approved_ports: "Heathrow Airport (LHR), Gatwick Airport (LGW), Manchester Airport (MAN), Edinburgh Airport (EDI)"
+content:
+  h1: "Pet Import to the United Kingdom"
+  overview: |
+    Importing a pet to the United Kingdom is manageable, but there are specific steps you cannot skip. The microchip must be in before the rabies vaccination. The tapeworm treatment for dogs must happen within a strict 24 to 120 hour window before arrival. The Animal Health Certificate is valid for only 10 days. Get any of these wrong and your pet could face penalty quarantine of up to four months, at your expense.
+    
+    The good news is that the UK does not require routine quarantine for pets arriving with correct documentation from any country. Thousands of families relocate with dogs and cats to the UK every year without incident. The process is well-documented. But it is unforgiving of mistakes.
+    
+    If you're coming from an EU country, you can use either an EU pet passport or an AHC. If you're coming from outside the EU, you need an AHC issued by an official veterinarian in your country of departure. Note: GB-issued pet passports are no longer valid for entry into EU countries since Brexit.
+  sections:
+    - heading: "The tapeworm timing rule (don't get this wrong)"
+      body: |
+        Dogs entering the UK must receive a tapeworm treatment, specifically using praziquantel or an equivalent active against Echinococcus multilocularis. That's standard. The strict part is the timing: treatment must be administered by a vet between 24 and 120 hours before your dog's scheduled arrival time in Great Britain. Not departure time. Arrival time.
+        
+        This is the rule that catches people out most often. If your flight is delayed and your dog arrives outside that window, the treatment is considered non-compliant. Book the tapeworm appointment so that it falls at least a day before your flight, and build in a buffer for delays.
+    - heading: "Approved entry routes"
+      body: |
+        Not all airlines and routes are approved for pet entry into the UK. You must use an approved travel route, listed on GOV.UK. This applies to air, ferry, and Eurotunnel. Check the approved routes list before booking your pet's transport, not after. Heathrow, Gatwick, Manchester, and Edinburgh are among the approved air entry points.
+    - heading: "Post-Brexit changes for pet passports"
+      body: |
+        Before Brexit, UK-issued pet passports worked across the EU. They no longer do for travel from GB to the EU. If you're moving from the UK to Europe with your pet, you now need an Animal Health Certificate issued by an APHA-authorised vet. GB-issued pet passports are valid within GB only. This catches UK residents returning from Europe by surprise too: you'll need an AHC for each trip from 2023 onwards.
+faqs:
+  - question: "Do I need to quarantine my dog when entering the UK?"
+    answer: |
+      No. The UK doesn't require routine quarantine. If your dog arrives with a valid AHC or EU pet passport, microchip, up-to-date rabies vaccination, and tapeworm treatment administered within the right window, your dog comes straight home with you. Penalty quarantine (up to four months, at your expense) applies if documentation is wrong or incomplete.
+  - question: "What is a tapeworm treatment and why is the timing so strict?"
+    answer: |
+      Dogs entering the UK must receive a praziquantel-based tapeworm treatment from a vet between 24 and 120 hours before their scheduled arrival time in Great Britain. The timing is measured against your dog's arrival time, not departure. Treatment outside this window is non-compliant even if it was administered by a vet. Book the appointment carefully and build in buffer time for flight delays.
+  - question: "Can I use my EU pet passport to bring my pet to the UK?"
+    answer: |
+      Yes. EU-issued pet passports are accepted for entry into Great Britain. However, GB-issued pet passports are NOT valid for travel into the EU. Post-Brexit, British pet owners travelling to Europe need an Animal Health Certificate (AHC) issued by an APHA-authorised vet for each trip.
+  - question: "Which dog breeds are banned from entering the UK?"
+    answer: |
+      The Dangerous Dogs Act 1991 bans import of Pit Bull Terriers, Japanese Tosa, Dogo Argentino, and Fila Brasileiro. The assessment is type-based, not registration-based. A dog that substantially resembles one of these types can be classified as that type even without a pedigree. In England and Wales, the XL Bully is also on the restricted list (since 2024) and owners must hold a Certificate of Exemption.
+  - question: "How far in advance should I start preparing my pet for UK import?"
+    answer: |
+      For most countries, allow 8-12 weeks minimum. The critical steps are: microchip first, then rabies vaccination with a 21-day wait, then the AHC issued within 10 days of travel. If your pet is coming from an unlisted country and needs a titre test, the timeline extends by at least 3 months (90-day wait after a passing titre test result). Start with the microchip immediately.
+  - question: "Do cats need tapeworm treatment to enter the UK?"
+    answer: |
+      No. The tapeworm treatment requirement applies to dogs only. Cats, ferrets, and other pets do not require the praziquantel treatment. Cats still need a valid AHC or EU pet passport, microchip, and up-to-date rabies vaccination.
+---

@@ -1,0 +1,150 @@
+{
+  "origin_name": "United States",
+  "destination_name": "Singapore",
+  "route_data": {
+    "origin": {
+      "code": "US",
+      "country": "United States",
+      "export_requirements": {
+        "export_permit": "No formal export permit. USDA endorsement of health certificate serves as export documentation."
+      }
+    },
+    "destination": {
+      "code": "SG",
+      "country": "Singapore",
+      "import_requirements": {
+        "microchip": "Required (ISO 11784/11785). Must be implanted before rabies vaccination",
+        "rabies_vaccination": "Required",
+        "titre_test": "Required for: Category B and C countries. Not required for: Category A countries. Minimum: 0.5 IU/ml",
+        "quarantine": "Check requirements",
+        "import_permit": "Check requirements",
+        "health_certificate": "Required. Veterinary health certificate. Issued by: Government veterinarian or government-endorsed veterinarian in country of export. Certificate must state: species, breed, age, sex, microchip number, vaccination records, health status"
+      },
+      "breed_restrictions": []
+    },
+    "airlines": [
+      {
+        "name": "Emirates",
+        "type": "cargo_only",
+        "policy_summary": "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Snub-nosed (brachycephalic) breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
+      },
+      {
+        "name": "British Airways",
+        "type": "cargo_only",
+        "policy_summary": "Cargo transport available"
+      }
+    ],
+    "timeline_steps": [
+      {
+        "step": 1,
+        "action": "Get your pet microchipped (ISO 11784/11785)",
+        "timing": "Before any vaccinations. Must be done first.",
+        "responsible": "Your veterinarian"
+      },
+      {
+        "step": 2,
+        "action": "Rabies vaccination",
+        "timing": "At least 21 days before travel (after microchip)",
+        "responsible": "Your veterinarian"
+      },
+      {
+        "step": 3,
+        "action": "Rabies titre test (RNATT blood test)",
+        "timing": "Blood drawn 30+ days after vaccination. 90-day wait after successful result.",
+        "responsible": "Your veterinarian + approved laboratory"
+      },
+      {
+        "step": 4,
+        "action": "Obtain health certificate / veterinary clearance",
+        "timing": "Within 10 days of travel (check destination-specific requirements)",
+        "responsible": "Official veterinarian"
+      },
+      {
+        "step": 5,
+        "action": "Government endorsement of health certificate (United States)",
+        "timing": "After health certificate issued, before travel",
+        "responsible": "Government veterinary authority"
+      },
+      {
+        "step": 6,
+        "action": "Book IATA-compliant flight and arrange pet cargo/cabin booking",
+        "timing": "2-4 weeks before travel. Confirm pet space availability.",
+        "responsible": "You (or your pet transport agent)"
+      },
+      {
+        "step": 7,
+        "action": "Travel day: arrive early, present all documentation",
+        "timing": "3-4 hours before departure for cargo pets",
+        "responsible": "You + airline cargo desk"
+      }
+    ],
+    "cost_factors": [
+      "Airline cargo/cabin fees (varies by carrier, pet weight, and crate size)",
+      "IATA-compliant travel crate (purchase or hire)",
+      "Veterinary fees (vaccinations, health certificate, microchip)",
+      "Government endorsement/USDA endorsement fee (if applicable)",
+      "Pet transport agent fee (if using a relocation service)"
+    ],
+    "key_warnings": [
+      "Brachycephalic (flat-faced) breeds face cargo restrictions on most airlines. Check breed-specific policies before booking.",
+      "Microchip MUST be implanted before rabies vaccination. Vaccination given before microchip is invalid and the clock restarts."
+    ],
+    "route_complexity": "moderate",
+    "estimated_timeline_weeks": "6-10"
+  },
+  "seo": {
+    "title": "Pet Transport from United States to Singapore | Complete Guide",
+    "description": "How to transport your dog or cat from United States to Singapore. Import requirements, airline options, costs, and step-by-step process."
+  },
+  "content": {
+    "h1": "Pet Transport from United States to Singapore",
+    "overview": "If you're relocating from United States to Singapore with a dog, here's what you need to know.\n\nExpect to start preparations 6-10 weeks before your travel date. A rabies titre test (blood test) is required, which means an additional waiting period after vaccination. Airlines serving this route include Emirates and British Airways.\n\nThe process is manageable if you start early and follow the steps in order.",
+    "sections": [
+      {
+        "heading": "Why United States to Singapore pet transport needs planning",
+        "body": "Compared to some international routes, United States to Singapore is relatively straightforward. That doesn't mean you can leave it to the last minute."
+      },
+      {
+        "heading": "Advice from experience: United States to Singapore",
+        "body": "Start the microchip and vaccination process as early as possible. The biggest mistake people make is leaving it too late. Once you miss a deadline, the entire timeline pushes back.\n\nAll airlines on this route transport pets as cargo, not in the cabin. That means your pet flies in a temperature-controlled hold in an IATA-approved crate. It's standard practice and well-regulated.\n\nUse a pet transport agent if you're not confident handling the paperwork yourself. A good agent knows the current rules, has relationships with airline cargo departments, and can troubleshoot problems before they become disasters."
+      },
+      {
+        "heading": "The day your pet flies",
+        "body": "Arrive at the airport at least 3 hours before departure if your pet is travelling as cargo. You'll need to present all original documents: health certificate, vaccination records, microchip number, and any import permits.\n\nYour pet's crate must be clean, labelled with your contact details and the consignee's details at the destination, and have food and water containers attached. Live animal stickers and orientation arrows are required.\n\nOn arrival in Singapore, you (or your agent) collect your pet from the cargo terminal. There may be an inspection by veterinary authorities at the airport. Have copies of all paperwork ready."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Does Singapore require quarantine for pets from United States?",
+      "answer": "It depends on your specific circumstances. Check requirements. Check with the destination authorities or a pet transport specialist for your exact situation."
+    },
+    {
+      "question": "Which airlines transport pets from United States to Singapore?",
+      "answer": "Airlines operating pet cargo on this route include Emirates, British Airways. All transport pets as manifested cargo in temperature-controlled holds, not in the cabin. You'll need an IATA-compliant crate and should book cargo space well in advance. Some airlines have seasonal restrictions and brachycephalic breed embargoes."
+    },
+    {
+      "question": "How far in advance should I start preparing to move my pet from United States to Singapore?",
+      "answer": "Start at least 6-10 weeks before your planned travel date. The process begins with microchipping, then rabies vaccination (with a mandatory waiting period), then any required blood tests, health certificates, and permit applications. Rushing the timeline is the most common reason people hit problems."
+    },
+    {
+      "question": "How much does it cost to transport a dog from United States to Singapore?",
+      "answer": "The total cost depends on your dog's size, the airline, and whether you use a transport agent. For a medium-sized dog, expect to pay for: veterinary fees (vaccinations, health certificate, microchip), an IATA-compliant crate, airline cargo fees, government endorsements, and any import permits or quarantine fees at the destination. Using a door-to-door agent adds to the cost but handles the complexity for you."
+    },
+    {
+      "question": "What documents does my pet need to travel from United States to Singapore?",
+      "answer": "Your pet will need: proof of ISO microchip, rabies vaccination certificate, rabies titre test results, official health certificate. The health certificate must be issued by an official veterinarian within 10 days of travel. Some documents need government endorsement. Check every requirement against the current rules, because regulations change and an outdated document can mean your pet doesn't fly."
+    },
+    {
+      "question": "Can I fly my French Bulldog or Pug from United States to Singapore?",
+      "answer": "Brachycephalic (flat-faced) breeds face restrictions on most airlines, particularly for cargo transport. These breeds are more vulnerable to breathing difficulties at altitude and in heat. Many airlines impose seasonal embargoes (typically summer months), and some restrict flat-faced breeds from cargo year-round. A few airlines still accept them with additional veterinary clearance. Check the specific airline's current policy before booking."
+    }
+  ],
+  "links": {
+    "sideways": [],
+    "upward": []
+  },
+  "status": "draft",
+  "version": 1,
+  "updated_at": "2026-04-16"
+}

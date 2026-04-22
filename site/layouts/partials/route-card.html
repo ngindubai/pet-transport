@@ -1,0 +1,19 @@
+{{/* Route card partial — used in origin hubs, country guides, and related routes grids */}}
+{{/* Expects .route parameter with: origin, destination, origin_code, destination_code, complexity, slug */}}
+
+{{ $route := . }}
+<a href="{{ $route.slug }}" class="text-decoration-none">
+    <div class="card border-0 shadow-sm h-100">
+        <div class="card-body text-center">
+            <div class="mb-2">
+                <span class="badge bg-light text-dark fs-6">{{ $route.origin_code }}</span>
+                <span class="text-muted mx-1">&rarr;</span>
+                <span class="badge bg-light text-dark fs-6">{{ $route.destination_code }}</span>
+            </div>
+            <h5 class="card-title mb-1">{{ $route.origin }} to {{ $route.destination }}</h5>
+            {{ with $route.complexity }}
+            <span class="badge bg-primary">{{ . | title }}</span>
+            {{ end }}
+        </div>
+    </div>
+</a>

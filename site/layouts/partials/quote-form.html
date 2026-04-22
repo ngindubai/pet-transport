@@ -1,0 +1,99 @@
+{{/* Quote form partial — included on every route page and core pages */}}
+{{/* Pre-populates origin/destination from route data when available */}}
+
+<section id="quote-form" class="container-fluid block-padding">
+    <div class="container">
+        <div class="section-heading text-center">
+            <p class="subtitle">Start your journey</p>
+            <h2>Get Your Free Quote</h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="contact-form3 bg-secondary">
+                    <div class="contact-image bg-secondary">
+                        <i class="flaticon-dog-in-front-of-a-man bg-secondary"></i>
+                    </div>
+                    <h4 class="text-center mt-3 text-light">Enter your pet's details and route</h4>
+                    <p class="text-center text-light" style="font-size:0.9em;opacity:0.85;">Quotes are tailored to your specific journey.</p>
+
+                    <form class="quote-form" action="{{ .Site.Params.quoteFormEndpoint }}" method="POST" novalidate>
+                        {{/* Cloudflare Turnstile widget placeholder */}}
+                        <div class="turnstile-widget" data-sitekey=""></div>
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Moving from <span class="required">*</span></label>
+                                    <select name="origin_country" class="form-control input-field" required>
+                                        <option value="">Select country</option>
+                                        {{ range hugo.Data.countries }}
+                                        <option value="{{ .code }}" {{ if and (isset $.Params "origin_code") (eq $.Params.origin_code .code) }}selected{{ end }}>{{ .name }}</option>
+                                        {{ end }}
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Moving to <span class="required">*</span></label>
+                                    <select name="destination_country" class="form-control input-field" required>
+                                        <option value="">Select country</option>
+                                        {{ range hugo.Data.countries }}
+                                        <option value="{{ .code }}" {{ if and (isset $.Params "destination_code") (eq $.Params.destination_code .code) }}selected{{ end }}>{{ .name }}</option>
+                                        {{ end }}
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Pet type <span class="required">*</span></label>
+                                    <select name="pet_type" class="form-control input-field" required>
+                                        <option value="">Select</option>
+                                        <option value="dog">Dog</option>
+                                        <option value="cat">Cat</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Breed</label>
+                                    <input type="text" name="breed" class="form-control input-field" placeholder="e.g. Labrador Retriever" autocomplete="off">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Approx. weight (kg)</label>
+                                    <input type="number" name="pet_weight_kg" class="form-control input-field" min="0" max="200" step="0.5" placeholder="e.g. 25">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Preferred travel date</label>
+                                    <input type="date" name="travel_date" class="form-control input-field">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Your name <span class="required">*</span></label>
+                                    <input type="text" name="name" class="form-control input-field" required autocomplete="name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Email <span class="required">*</span></label>
+                                    <input type="email" name="email" class="form-control input-field" required autocomplete="email">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Phone</label>
+                                    <input type="tel" name="phone" class="form-control input-field" autocomplete="tel">
+                                </div>
+                                <div class="col-md-12">
+                                    <label>Additional details</label>
+                                    <textarea name="message" class="textarea-field form-control" rows="3" placeholder="Any special requirements, multiple pets, health conditions..."></textarea>
+                                </div>
+                            </div>
+
+                            {{/* Honeypot field for basic bot protection */}}
+                            <div style="display:none;" aria-hidden="true">
+                                <input type="text" name="website" tabindex="-1" autocomplete="off">
+                            </div>
+
+                            <button type="submit" class="btn btn-quaternary btn-block mt-3">Get My Quote</button>
+                            <p class="text-center text-light mt-2" style="font-size:0.82em;opacity:0.7;">No obligation. Your details are kept private and never shared.</p>
+                        </div>
+                    </form>
+
+                    <div class="quote-success" hidden>
+                        <p class="text-center text-light">Your quote is being prepared. We will email you a detailed breakdown for your route, typically within a few hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

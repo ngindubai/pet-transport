@@ -1,0 +1,73 @@
+---
+title: "Flying with a Scottish Fold | Airline Restrictions & Advice"
+description: "Which airlines accept Scottish Fold as cargo or cabin? Seasonal embargoes, breed bans, and what you need before booking your flat-faced cat."
+type: "breeds"
+layout: "single"
+slug: "scottish-fold"
+breed_name: "Scottish Fold"
+brachycephalic: true
+species: "cat"
+banned_countries: []
+restricted_countries: []
+airline_restrictions:
+  - airline_name: "British Airways"
+    policy: "Complete cargo ban"
+    notes: "Not accepted in cargo year-round"
+  - airline_name: "Virgin Atlantic"
+    policy: "Complete cargo ban"
+    notes: "Not accepted in cargo year-round"
+  - airline_name: "Singapore Airlines"
+    policy: "Complete cargo ban"
+    notes: "Not accepted in cargo year-round"
+  - airline_name: "Qantas (English Bulldog year-round)"
+    policy: "Complete cargo ban"
+    notes: "Not accepted in cargo year-round"
+  - airline_name: "Emirates"
+    policy: "Seasonal cargo embargo"
+    notes: "Not accepted in cargo during peak summer months"
+  - airline_name: "Etihad"
+    policy: "Seasonal cargo embargo"
+    notes: "Not accepted in cargo during peak summer months"
+  - airline_name: "Lufthansa (summer restrictions)"
+    policy: "Seasonal cargo embargo"
+    notes: "Not accepted in cargo during peak summer months"
+  - airline_name: "KLM (summer)"
+    policy: "Seasonal cargo embargo"
+    notes: "Not accepted in cargo during peak summer months"
+  - airline_name: "Air France (summer)"
+    policy: "Seasonal cargo embargo"
+    notes: "Not accepted in cargo during peak summer months"
+  - airline_name: "Japan Airlines (English Bulldog year-round, French Bulldog May-Oct)"
+    policy: "Seasonal cargo embargo"
+    notes: "Not accepted in cargo during peak summer months"
+  - airline_name: "Delta (domestic only, with health cert within 10 days)"
+    policy: "Accepted with vet clearance"
+    notes: "Fitness-to-fly certificate required from licensed vet"
+  - airline_name: "American Airlines (varies by route)"
+    policy: "Accepted with vet clearance"
+    notes: "Fitness-to-fly certificate required from licensed vet"
+  - airline_name: "United (cabin only, cargo suspended)"
+    policy: "Accepted with vet clearance"
+    notes: "Fitness-to-fly certificate required from licensed vet"
+content:
+  h1: "Scottish Fold Air Travel Guide"
+  overview: |
+    Scottish Fold is a brachycephalic (flat-faced) breed. The short skull structure compresses the airway, which creates real risks during air transport: reduced oxygen tolerance, heat stress, and difficulty breathing under the physical stress of travel.
+    
+    Most major international airlines impose restrictions on brachycephalic breeds. Some ban them from cargo year-round. Others apply seasonal embargoes (typically during summer months). A small number will accept them as cabin or cargo pets with a fitness-to-fly certificate from a licensed vet.
+    
+    If you need to fly your dog internationally, the airline policy is one constraint. The destination country's import rules are another entirely. Both apply.
+    
+    Check the current airline policy directly before booking. Policies change and online guides can be out of date. This page reflects the most recently verified information, but confirmation from the airline is essential.
+faqs:
+  - question: "Can I fly my Scottish Fold in the cabin?"
+    answer: "Some airlines allow small brachycephalic breeds in the cabin if they meet the weight and size limits for under-seat carriers. The risk in the cabin is generally lower than cargo because the environment is more controlled. Check each airline's current cabin policy for brachycephalic breeds. Rules vary by airline and route."
+  - question: "Which airlines will accept a Scottish Fold as cargo?"
+    answer: "British Airways, Virgin Atlantic, and Singapore Airlines do not accept brachycephalic breeds in cargo year-round. Other airlines apply seasonal embargoes during hot months. Emirates, Lufthansa, and Air France may accept flat-faced breeds with a vet-issued fitness-to-fly certificate, subject to route and season. Always verify with the airline before booking."
+  - question: "What is a fitness-to-fly certificate for a Scottish Fold?"
+    answer: "A fitness-to-fly certificate is a written assessment from a licensed veterinarian confirming that your dog is in good enough health to withstand air transport. For brachycephalic breeds, the vet must specifically assess airway health. Some airlines require pre-approval from their veterinary team in addition to the certificate. The certificate does not guarantee acceptance: the airline makes the final call."
+  - question: "Are there countries that will not accept a Scottish Fold?"
+    answer: "Scottish Fold is not subject to specific country breed bans as a brachycephalic breed. The restrictions you'll face are from airlines, not destination governments. However, always check the destination country's current import rules for any specific breed-related notes."
+  - question: "What's the safest way to fly a Scottish Fold internationally?"
+    answer: "If the route allows it, a small Scottish Fold travelling as a cabin pet in an under-seat carrier faces fewer risks than cargo. Avoid peak summer travel if possible. Choose a direct flight over connections. Use a vet who specialises in brachycephalic breeds to assess your dog's fitness before booking. Work with a pet transport agent who knows which airlines are currently accepting flat-faced breeds on your specific route."
+---
