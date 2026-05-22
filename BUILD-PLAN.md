@@ -3,6 +3,21 @@
 > For full stage detail, always reference `cascading-build-plan-pet=transport.html` first.
 > This file is a quick-reference checklist and session log. Update it at the end of every session.
 
+---
+
+## THE BLOCK RHYTHM (read this before every session)
+
+- **One "go" = one block.** Never more.
+- **A block = 25 routes** (or one equivalent non-route unit: a country guide, an airline policy update, a blog post).
+- Every block runs the full quality gate: **research → write → template rotation (A–E) → humanise → QA scan → commit**.
+- After commit + push to `main`: **stop and wait**. Push does NOT deploy. The site only updates when Gareth manually triggers the workflow in GitHub Actions.
+- **Bulk-generation scripts are banned.** Anything that writes more than 25 pages in one run violates the plan.
+- See `CLAUDE.md` → "The cascading build plan is law" for the full rules.
+
+**Where we are:** 5,147 quality routes complete. 32,683 routes remaining = ~1,308 blocks of 25 to reach full coverage. No deadline pressure. Quality over speed.
+
+---
+
 ## Phase 0 — Research
 
 - [x] 0.1: Worker souls adapted for pet transport domain
@@ -65,7 +80,11 @@
 
 ## Current Status
 
-**6,258 pages built.** Phase 4 COMPLETE. Phase 5 COMPLETE. Phase 6 COMPLETE. **Phase 7 Template Diversification in progress — Chunks 1-12 done (120 pages).** 75 countries. 5,462 routes. 64 breed guides. 409 blog articles. 145 airline pages. FAQPage schema on all templates. Cost calculator live. CWV optimised. Testimonials live. Form connected to garethsomers@outlook.com via submit.php. GA4 (G-4DR6QX6PNJ) live. Phone field on all forms. /thank-you/ page live. Sitemaps updated: blog=409, routes=5462, hubs=316, pages=60.
+**5,147 quality routes complete** (each with template variant A–E, ~1,500–1,900 words, route-specific regulatory data). 32,683 routes remaining. 75 countries researched. 64 breed guides. 409 blog articles. 145 airline pages. 
+
+**On 2026-05-22, 32,686 thin placeholder route files were deleted from the repo.** They will be rebuilt block-by-block (25 routes per "go") through the cascading build plan. Deploy is now manual-only (workflow_dispatch). Nothing reaches the live site until Gareth clicks "Run workflow" in GitHub Actions.
+
+**Next block when Gareth says "go":** Read `cascading-build-plan-pet=transport.html` for the next 25-route block, load relevant workers, execute the full quality gate.
 
 ## Phase 5 Progress
 

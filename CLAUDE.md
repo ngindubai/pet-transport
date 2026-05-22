@@ -38,17 +38,17 @@
   - Python 3.11 (route/content generators at repo root)
   - GitHub Actions (auto-build + FTP deploy)
   - Hostinger (hosting, accessed via FTP)
-- **Repository:** GitHub (user is setting this up)
-- **Deploy pipeline:** Push to `main` → GitHub Actions runs `hugo --gc --minify` → FTP uploads `site/public/` to Hostinger → live within ~5-10 min
+- **Repository:** https://github.com/ngindubai/pet-transport (private)
+- **Deploy pipeline:** **MANUAL ONLY.** Pushing to `main` does NOT publish. To deploy: GitHub repo → Actions tab → "Build and Deploy to Hostinger" → Run workflow. This is deliberate — protects against accidentally publishing thin or WIP content.
 
 ---
 
 ## CURRENT STATUS (update this when it changes)
 
-- **Routes built:** 37,832 of 37,830 country pairs (effectively complete — May 2026)
-- **Total pages live:** ~38,000+ (routes + airline pages + breed guides + country guides + blog)
-- **Phase 0, 1, 2 complete.** Route generation phase finished.
-- **What's next:** Quality content (blog posts, deeper country guides), enquiry form, monitoring/SEO tracking
+- **Quality routes built:** 5,147 of 37,830 country pairs (~14%). Each has unique researched content, one of 5 template variants (A–E), 1,500+ words, regulatory specifics.
+- **Remaining:** 32,683 routes to be built block-by-block per the cascading build plan.
+- **Live on pettransportglobal.com:** Nothing from this repo yet. Site still shows older template. First deploy will happen only when a block of quality content is ready and Gareth manually triggers it.
+- **What's next:** Resume the cascading build plan. Build the next block of 25 routes when Gareth says "go".
 - **Live tracker:** [build_state.json](build_state.json) — machine-readable progress
 - **Plan files:** [BUILD-PLAN.md](BUILD-PLAN.md), [cascading-build-plan-pet=transport.html](cascading-build-plan-pet=transport.html)
 
@@ -72,8 +72,24 @@
 - Do not refactor, rename, reformat, or "improve" anything not asked for.
 - If you notice something worth fixing elsewhere, mention it at the end in a note. Do not touch it.
 
+### The cascading build plan is law
+- **Never bulk-generate content.** No "generate all remaining routes" scripts. No mass `for country in countries: write_page()` loops. Bulk generation is what produces thin, indistinguishable, AI-detectable content that gets the whole site penalised.
+- Work happens **one block at a time**, from the cascading build plan ([cascading-build-plan-pet=transport.html](cascading-build-plan-pet=transport.html) + [BUILD-PLAN.md](BUILD-PLAN.md)).
+- A **block = 25 routes** (or one equivalent unit of work for non-route blocks like a country guide, an airline policy update, a blog post).
+- Each block follows the **quality gate** (see below). No shortcuts.
+- When Gareth says **"go"** or **"next block"**: read the build plan, identify the next block, execute it fully through every gate, commit, then stop and wait.
+
+### Quality gate (every block, no exceptions)
+1. **Research** — pull actual current regulations from `data/*.json` and named agency sources. If data is missing or stale, flag it and stop. Never invent.
+2. **Write** — load `the-wordsmith.md` for voice. Each page is genuinely different in structure, examples, opening, and detail focus. No template-filled paragraphs.
+3. **Rotate templates** — assign one of 5 variants (A–E) across the block so consecutive routes don't look identical.
+4. **Humanise** — run the content mentally through `the-chameleon.md` rules (sentence rhythm, banned vocab, no em dashes, varied openings).
+5. **QA scan** — `the-auditor.md` checks: YMYL claims sourced, no safety guarantees, regulatory accuracy, British English, word count threshold (1,200+ for routes).
+6. **Commit** with a clear message naming the block.
+7. **Stop.** Do not auto-continue to the next block. Wait for Gareth's next "go".
+
 ### Confirm only for destructive actions
-Auto-proceed for: writing new files, editing files in scope, running generators, committing, **pushing to `main`** (this triggers auto-deploy — that's intended).
+Auto-proceed for: writing new files, editing files in scope, running generators **scoped to a single block**, committing, pushing to `main` (safe — push does NOT auto-deploy).
 
 Stop and ask explicit confirmation for:
 - Deleting files or directories
@@ -82,14 +98,17 @@ Stop and ask explicit confirmation for:
 - Removing dependencies
 - Changing deploy pipeline (`.github/workflows/deploy.yml`)
 - Modifying Hostinger FTP secrets
-- Mass content deletion or rewriting (>5 files of existing live content)
+- **Triggering the deploy workflow** (manual deploy = live site update; Gareth chooses when)
+- Any generator script that would write more than 25 pages in one run
 
 ### Always show what changed
-After any coding/content task, end with:
+After any block, end with:
+- **Block:** (e.g. "Routes 5,148–5,172: UK → 25 EU destinations")
 - **Files changed:** (list)
-- **What was modified:** (one line per file)
-- **Live URL impact:** (which pages will update after auto-deploy)
-- **Follow-up needed:** (if any)
+- **Quality gates passed:** (research / write / template rotation / humanise / QA)
+- **Word count range:** (e.g. 1,420 – 1,890)
+- **Committed as:** (commit message)
+- **Next block in plan:** (preview of what "go" will do)
 
 ### Think before you write code
 For architecture, debugging, or non-trivial features: work through the problem step by step before writing code. Show reasoning. Flag uncertainty. Then implement.
@@ -160,8 +179,8 @@ pet-transport/
 │   └── public/                    # Hugo build output (gitignored)
 ├── data/                          # Source JSON for generators
 ├── workforce/                     # Worker soul files (domain experts)
-├── .github/workflows/deploy.yml   # CI/CD pipeline
-├── generate_*.py                  # Python generators (repo root)
+├── .github/workflows/deploy.yml   # CI/CD pipeline (manual trigger only)
+├── generate_*.py                  # Python generators (repo root) — per-block use only
 ├── CLAUDE.md                      # THIS FILE
 ├── WORKFLOW.md                    # Step-by-step session guide
 ├── BUILD-PLAN.md                  # Session log + remaining tasks
@@ -187,23 +206,30 @@ Treat these as **source of truth**. Do not edit without explicit approval — th
 
 ## SESSION PROTOCOLS
 
-### When Gareth says "go" or "next task"
-1. Read [BUILD-PLAN.md](BUILD-PLAN.md) and [build_state.json](build_state.json)
-2. Identify the next TODO
-3. State what you're about to do
-4. Do it
-5. Commit + push (auto-deploys)
-6. Summarise in plain English
+### When Gareth says "go" or "next block"
+1. Read [BUILD-PLAN.md](BUILD-PLAN.md) and [build_state.json](build_state.json) and [cascading-build-plan-pet=transport.html](cascading-build-plan-pet=transport.html)
+2. Identify the next block (next 25 routes, or next non-route unit)
+3. State exactly which 25 routes you're about to build and which workers you'll load
+4. Execute the full quality gate (research → write → template rotation → humanise → QA)
+5. Commit + push to `main` (this does NOT deploy — it's safe)
+6. Update `build_state.json` with new count
+7. Summarise the block in plain English. **Stop.** Wait for next "go".
+
+### When Gareth says "deploy"
+1. Confirm what's about to go live (new routes, page count delta, any structural changes)
+2. Wait for explicit "yes deploy" before proceeding
+3. Tell Gareth: "Go to https://github.com/ngindubai/pet-transport/actions → click 'Build and Deploy to Hostinger' → Run workflow → select main → Run"
+4. Watch the run, report success/failure with the run URL
 
 ### When Gareth says "session end" or "wrap up"
-1. Update [BUILD-PLAN.md](BUILD-PLAN.md) with a session log entry: date, what was done, files changed, page count, next priority
+1. Update [BUILD-PLAN.md](BUILD-PLAN.md) with a session log entry: date, blocks completed, files changed, current route count, next priority
 2. Update [build_state.json](build_state.json) with current counts
 3. Update [MEMORY.md](MEMORY.md) if any significant decision was made
 4. Commit + push
-5. Summarise: what's now live, what's queued for next session
+5. Summarise: what was built this session, what's queued, whether a deploy is recommended
 
 ### When something takes >2 attempts
-Log it. Append to `ERRORS.md` (create if missing):
+Log it. Append to `ERRORS.md`:
 - What didn't work
 - What worked instead
 - Note for next time
@@ -220,25 +246,40 @@ Never contradict a logged decision without flagging it first.
 
 ---
 
+## WORKING FROM THE CLAUDE APP (PHONE / REMOTE)
+
+When Gareth is using Claude app (not VS Code) the workflow is:
+
+1. Claude reads repo files via the **GitHub connector** (read-only by default).
+2. For a "go" block, Claude generates the 25 new route `.md` files and commits them to a **new branch** (e.g. `block/routes-5148-5172`), then opens a pull request.
+3. Gareth reviews the PR on GitHub (mobile-friendly), merges into `main` when happy.
+4. Merge does NOT deploy. Deploy is still the manual Actions trigger.
+5. Same quality gate applies. No bulk-generation in chat. One block per "go".
+
+**If the GitHub connector is unavailable:** Claude generates the block's markdown in chat. Gareth copy-pastes each file into the GitHub web UI (Add file → Create new file). Slower but works from any device.
+
+---
+
 ## DEPLOY PIPELINE (HOW IT WORKS)
 
 ```
-You / Claude edits files
+Gareth commits + pushes to main
    ↓
-git commit + git push to main
+(nothing happens automatically — push is safe)
    ↓
-GitHub Actions triggers (~10 sec)
+Gareth (later, when a block is QA'd and ready):
+   GitHub → Actions → Build and Deploy to Hostinger → Run workflow
    ↓
-hugo --gc --minify (builds site/public/)
+GitHub Actions runs hugo --gc --minify (builds site/public/)
    ↓
 python split_sitemap.py (creates section sitemaps)
    ↓
 FTP-Deploy-Action uploads site/public/ → Hostinger /public_html/
    ↓
-Live on pettransportglobal.com (~5-10 min total)
+Live on pettransportglobal.com (~5-30 min depending on changed files)
 ```
 
-**You do not need to run Hugo locally.** Pushing to `main` is the deploy. Full guide: [WORKFLOW.md](WORKFLOW.md).
+**You do not need to run Hugo locally.** Deploy is a deliberate click in GitHub Actions, not a side effect of pushing. Full guide: [WORKFLOW.md](WORKFLOW.md).
 
 ---
 
