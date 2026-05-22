@@ -36,10 +36,59 @@
 - **Stack:**
   - Hugo v0.160.1-extended (static site generator)
   - Python 3.11 (route/content generators at repo root)
-  - GitHub Actions (auto-build + FTP deploy)
+  - GitHub Actions (auto-build + incremental FTP deploy)
   - Hostinger (hosting, accessed via FTP)
 - **Repository:** https://github.com/ngindubai/pet-transport (private)
-- **Deploy pipeline:** **AUTOMATIC.** Every merge/push to `main` triggers GitHub Actions to build the Hugo site and deploy to Hostinger via FTP. No manual trigger needed. Gareth controls what goes live by deciding when to say "deploy" (which merges the PR to main).
+
+---
+
+## DEPLOY PIPELINE — INCREMENTAL FTP (ESTABLISHED 2026-05-22)
+
+**This is the proven, working deploy method. Do not change it without explicit approval.**
+
+### How it works
+
+```
+Push/merge to main
+   ↓
+GitHub Actions triggers automatically
+   ↓
+Hugo --gc --minify builds site/public/ (~6,200+ pages)
+   ↓
+python split_sitemap.py creates section sitemaps
+   ↓
+FTP Deploy Action checks .ftp-deploy-sync-state.json on Hostinger
+   ↓
+Only NEW or CHANGED files are uploaded (seconds, not hours)
+   ↓
+Updated state file uploaded to Hostinger
+   ↓
+Live on pettransportglobal.com
+```
+
+### Why incremental — DO NOT attempt full-site FTP uploads
+
+The site has 6,200+ pages. A full FTP upload takes 2-3 hours and Hostinger's shared hosting drops the connection before it finishes. This was discovered on 2026-05-22 after multiple failed deploy attempts.
+
+The solution is the `.ftp-deploy-sync-state.json` file on Hostinger. This file tracks what's already deployed. The FTP Deploy Action reads it, diffs against the local build, and only uploads files that changed. A single new blog article deploys in under 60 seconds.
+
+The state file was bootstrapped by `generate_ftp_state.py` which runs automatically on first deploy (when no state file exists on the server). After the first successful deploy, the FTP action manages the state file itself.
+
+### Critical rules
+
+- **Never delete `.ftp-deploy-sync-state.json` from Hostinger.** If deleted, the next deploy attempts a full upload which will fail.
+- **Never set `dangerous-clean-slate: true`** in the workflow. This wipes all files on Hostinger including the state file.
+- **Never attempt to upload the entire `site/public/` directory manually or via a script.** Always use the incremental FTP action via GitHub Actions.
+- **The `.github/workflows/deploy.yml` file cannot be edited via the MCP connector** (GitHub returns 403). If the workflow needs changes, provide the complete updated file contents and ask Gareth to paste it via the GitHub web editor.
+
+### Deploy speed expectations
+
+| Change type | Expected deploy time |
+|---|---|
+| 1 new blog article | 30–60 seconds |
+| 25 new route pages | 2–5 minutes |
+| Template change (affects all pages) | 30–60 minutes (re-uploads all changed HTML) |
+| First deploy after state file deletion | Will fail — regenerate state file first |
 
 ---
 
@@ -47,8 +96,9 @@
 
 - **Quality routes built:** 5,461 of 37,830 country pairs (~14%). Each has unique researched content, one of 5 template variants (A–E), 1,500+ words, regulatory specifics.
 - **Remaining:** 32,369 routes to be built block-by-block per the cascading build plan.
-- **Blog:** 409 articles live. Content plan (252 new articles, Jun 2026 – May 2027) starts Mon 1 Jun 2026.
-- **What's next:** Day 1 blog article (international-pet-transport-guide) ready for review and publish.
+- **Blog:** 411 articles (409 existing + 2 content plan articles: Day 1 and Day 2).
+- **Content plan:** 252 new articles, Jun 2026 – May 2027. Days 1–2 published. Day 3 is next.
+- **Deploy pipeline:** Working. Incremental FTP via GitHub Actions. Tested and confirmed 2026-05-22.
 - **Live tracker:** [build_state.json](build_state.json) — machine-readable progress
 - **Plan files:** [BUILD-PLAN.md](BUILD-PLAN.md), [cascading-build-plan-pet=transport.html](cascading-build-plan-pet=transport.html)
 
@@ -61,6 +111,7 @@
 - **Show options before acting** on anything significant (new feature, structural change, new file type). Give 2-3 approaches, wait for choice.
 - **Admit uncertainty.** If you don't know whether a regulation, airline policy, or technical fact is current, say so. Do not invent plausible-sounding details. YMYL site — wrong info hurts pets.
 - **Use British English** in all site content (the site targets UK/AU/NZ primarily, plus US — but voice is British).
+- **When editing files that need Gareth to paste (e.g. deploy.yml), always provide the COMPLETE file contents.** Never give partial diffs or "find and replace this line" instructions. Full file, every time.
 
 ---
 
@@ -80,9 +131,7 @@ The HTML preview must:
 2. Build the standalone HTML preview using the site's actual nav/footer/CSS structure
 3. Present the HTML file as an artifact for Gareth to open and review
 4. Wait for explicit approval ("publish it" or feedback on what to change)
-5. Only after approval: commit the `.md` file to a branch and open a PR
-
-Do not commit the article to the repo until Gareth has reviewed and approved the HTML preview.
+5. Only after approval: commit the `.md` file directly to `main` (triggers auto-deploy)
 
 ---
 
@@ -118,7 +167,7 @@ Do not commit the article to the repo until Gareth has reviewed and approved the
 - Work happens **one block at a time**, from the cascading build plan ([cascading-build-plan-pet=transport.html](cascading-build-plan-pet=transport.html) + [BUILD-PLAN.md](BUILD-PLAN.md)).
 - A **block = 25 routes** (or one equivalent unit of work for non-route blocks like a country guide, an airline policy update, a blog post).
 - Each block follows the **quality gate** (see below). No shortcuts.
-- When Gareth says **"go"** or **"next block"**: read the build plan, identify the next block, execute it fully through every gate, commit to a branch, open a PR, then stop and wait.
+- When Gareth says **"go"** or **"next block"**: read the build plan, identify the next block, execute it fully through every gate, then stop and wait.
 
 ### Quality gate (every block, no exceptions)
 1. **Research** — pull actual current regulations from `data/*.json` and named agency sources. If data is missing or stale, flag it and stop. Never invent.
@@ -127,14 +176,13 @@ Do not commit the article to the repo until Gareth has reviewed and approved the
 4. **Humanise** — run the content mentally through `the-chameleon.md` rules (sentence rhythm, banned vocab, no em dashes, varied openings).
 5. **QA scan** — `the-auditor.md` checks: YMYL claims sourced, no safety guarantees, regulatory accuracy, British English, word count threshold (1,200+ for routes).
 6. **HTML preview** — build the standalone HTML preview and present it to Gareth for approval before committing.
-7. **Commit to branch + open PR** only after Gareth approves the preview.
-8. **Stop.** Do not auto-continue to the next block. Wait for Gareth's "deploy" or next "go".
+7. **Commit directly to `main`** only after Gareth approves the preview. This triggers the incremental deploy automatically.
+8. **Stop.** Do not auto-continue to the next block. Wait for Gareth's next "go".
 
 ### Confirm only for destructive actions
-Auto-proceed for: writing new files, editing files in scope, committing to a branch, opening a PR.
+Auto-proceed for: writing new files, editing files in scope, committing approved content to `main`.
 
 Stop and ask explicit confirmation for:
-- Merging a PR to `main` (this triggers a live deploy — Gareth decides when)
 - Deleting files or directories
 - `git reset --hard`, `git push --force`, rewriting history
 - Dropping data files or overwriting `data/*.json`
@@ -145,11 +193,13 @@ Stop and ask explicit confirmation for:
 
 ### Always show what changed
 After any block, end with:
-- **Block:** (e.g. "Routes 5,148–5,172: UK → 25 EU destinations")
+- **Block:** (e.g. "Blog Day 2: Cost guide" or "Routes 5,148–5,172: UK → 25 EU destinations")
 - **Files changed:** (list)
 - **Quality gates passed:** (research / write / template rotation / humanise / QA / HTML preview)
 - **Word count range:** (e.g. 1,420 – 1,890)
-- **PR opened:** (link)
+- **Committed to main:** (commit SHA or link)
+- **Live URL:** (the page URL on pettransportglobal.com)
+- **Actions run:** (link to the GitHub Actions run to monitor deploy)
 - **Next block in plan:** (preview of what "go" will do)
 
 ### Think before you write code
@@ -194,9 +244,10 @@ Voice guide: [workforce/content/the-wordsmith.md](workforce/content/the-wordsmit
 - **Templating:** Go templates (Hugo's native)
 - **Content language:** Markdown + YAML front matter
 - **Generators:** Python 3.11 (no other language)
-- **CI/CD:** GitHub Actions
-- **Deploy:** FTP to Hostinger via `SamKirkland/FTP-Deploy-Action@v4.3.5`
-- **Hosting:** Hostinger shared hosting
+- **CI/CD:** GitHub Actions (incremental FTP deploy)
+- **Deploy:** `SamKirkland/FTP-Deploy-Action@v4.3.5` with `.ftp-deploy-sync-state.json` for incremental uploads
+- **State file generator:** `generate_ftp_state.py` (bootstraps the state file on first deploy)
+- **Hosting:** Hostinger shared hosting (FTP, port 21, IP in GitHub Secrets)
 - **No JS frameworks. No React. No Next.js. No Tailwind build step.** Site uses the existing template's vanilla CSS/JS in `site/static/`.
 
 If a task seems to need a different tool, flag it and explain why. Use the locked stack unless Gareth explicitly approves an addition.
@@ -223,10 +274,13 @@ pet-transport/
 ├── workforce/                     # Worker soul files (domain experts)
 ├── .github/workflows/deploy.yml   # CI/CD pipeline (auto-deploys on push to main)
 ├── generate_*.py                  # Python generators (repo root) — per-block use only
+├── generate_ftp_state.py          # FTP state file bootstrapper (runs on first deploy only)
+├── split_sitemap.py               # Splits Hugo sitemap into section sitemaps
 ├── CLAUDE.md                      # THIS FILE
 ├── WORKFLOW.md                    # Step-by-step session guide
 ├── BUILD-PLAN.md                  # Session log + remaining tasks
 ├── build_state.json               # Machine-readable progress
+├── ERRORS.md                      # Failed approaches log
 └── MEMORY.md                      # Decision log (read at session start)
 ```
 
@@ -249,44 +303,26 @@ Treat these as **source of truth**. Do not edit without explicit approval — th
 ## SESSION PROTOCOLS
 
 ### When Gareth says "go" or "next block"
-1. Read [BUILD-PLAN.md](BUILD-PLAN.md) and [build_state.json](build_state.json) and [cascading-build-plan-pet=transport.html](cascading-build-plan-pet=transport.html)
-2. Identify the next block (next 25 routes, or next non-route unit)
-3. State exactly which 25 routes you're about to build and which workers you'll load
-4. Execute the full quality gate (research → write → template rotation → humanise → QA)
-5. Build the HTML preview and present it for review. Stop and wait for approval.
-6. After approval: commit to a new branch (e.g. `block/routes-5148-5172`) and open a PR against `main`
-7. Update `build_state.json` with new count
-8. Summarise the block in plain English. **Stop.** Wait for Gareth's "deploy" or next "go".
-
-### When Gareth says "deploy"
-1. State exactly what is in the PR about to go live (routes added, page count, any structural changes)
-2. Wait for explicit confirmation ("yes" or "deploy it")
-3. Merge the PR to `main`
-4. GitHub Actions automatically runs: hugo build → split sitemap → FTP to Hostinger
-5. Report the Actions run URL and confirm when live (~5-30 min depending on file count)
+1. Read [BUILD-PLAN.md](BUILD-PLAN.md) and [build_state.json](build_state.json) and the content plan
+2. Identify the next article or block
+3. Write the content following the full quality gate
+4. Build the HTML preview and present it for review. Stop and wait for approval.
+5. After approval: commit directly to `main`. Deploy triggers automatically.
+6. Provide the live URL and the Actions run link so Gareth can verify.
+7. **Stop.** Wait for Gareth's next "go".
 
 ### When Gareth says "session end" or "wrap up"
-1. Update [BUILD-PLAN.md](BUILD-PLAN.md) with a session log entry: date, blocks completed, files changed, current route count, next priority
+1. Update [BUILD-PLAN.md](BUILD-PLAN.md) with a session log entry
 2. Update [build_state.json](build_state.json) with current counts
 3. Update [MEMORY.md](MEMORY.md) if any significant decision was made
-4. Commit + push to main
-5. Summarise: what was built this session, what's queued, whether a deploy is recommended
+4. Commit to main
+5. Summarise: what was built, what's queued, what's next
 
 ### When something takes >2 attempts
-Log it. Append to `ERRORS.md`:
-- What didn't work
-- What worked instead
-- Note for next time
-
-Check `ERRORS.md` before suggesting approaches to similar tasks.
+Log it in [ERRORS.md](ERRORS.md). Check `ERRORS.md` before suggesting approaches to similar tasks.
 
 ### When a decision is made
-Append to [MEMORY.md](MEMORY.md):
-- What was decided
-- Why
-- What was rejected and why
-
-Never contradict a logged decision without flagging it first.
+Append to [MEMORY.md](MEMORY.md). Never contradict a logged decision without flagging it first.
 
 ---
 
@@ -294,59 +330,17 @@ Never contradict a logged decision without flagging it first.
 
 This is the primary workflow. Gareth works from iPad, iPhone, or any device using the Claude app or claude.ai. No desktop or VS Code required.
 
-The GitHub MCP connector is active on this project and has write access to the repo. Claude can read files, create branches, commit files, open PRs, and merge PRs entirely from chat.
+The GitHub MCP connector is active on this project and has write access to the repo (except `.github/workflows/` which requires manual editing via GitHub web UI).
 
-**The daily loop:**
-1. Gareth says **"go"** — Claude reads the build plan, builds the next block, produces the HTML preview
+**The daily content loop:**
+1. Gareth says **"go"** — Claude reads the content plan, writes the next article, produces the HTML preview
 2. Gareth opens the HTML preview in a browser and reviews design + content
-3. Gareth says **"publish it"** — Claude commits the `.md` to a branch, opens a PR
-4. Gareth says **"deploy"** — Claude merges the PR to `main`, GitHub Actions builds and deploys automatically
-5. Site is live on pettransportglobal.com within 5-30 minutes, no further action needed
+3. Gareth says **"publish it"** — Claude commits the `.md` directly to `main`
+4. GitHub Actions builds Hugo and deploys only the new/changed files to Hostinger (under 60 seconds)
+5. Claude provides the live URL and Actions link for Gareth to verify
+6. Done. Say "go" again for the next article.
 
-**No copy-paste. No file manager. No FTP. No terminal.**
-
----
-
-## DEPLOY PIPELINE (HOW IT WORKS)
-
-```
-Claude merges PR to main (on Gareth's "deploy" command)
-   ↓
-GitHub Actions triggers automatically (push to main)
-   ↓
-Hugo --gc --minify builds site/public/
-   ↓
-python split_sitemap.py creates section sitemaps
-   ↓
-FTP-Deploy-Action uploads site/public/ → Hostinger /public_html/
-   ↓
-Live on pettransportglobal.com (~5-30 min depending on changed files)
-```
-
-No manual trigger needed. The PR merge is the only human decision point.
-
----
-
-## WORKER SOULS (DOMAIN EXPERTS)
-
-Reference these files when working in their domain. Don't load them all every session — load only what's needed for the current task.
-
-| Worker | Domain | File |
-|--------|--------|------|
-| The Architect | Orchestration, phase planning | [workforce/leadership/the-architect.md](workforce/leadership/the-architect.md) |
-| The Auditor | YMYL compliance, QA | [workforce/leadership/the-auditor.md](workforce/leadership/the-auditor.md) |
-| The Wordsmith | Copywriting, voice | [workforce/content/the-wordsmith.md](workforce/content/the-wordsmith.md) |
-| The Chameleon | Anti-AI humaniser (mandatory on all content) | [workforce/content/the-chameleon.md](workforce/content/the-chameleon.md) |
-| The Interrogator | FAQ generation | [workforce/content/the-interrogator.md](workforce/content/the-interrogator.md) |
-| The Geographer | Country regulations, quarantine | [workforce/intelligence/the-geographer.md](workforce/intelligence/the-geographer.md) |
-| The Scout | Keyword research | [workforce/intelligence/the-scout.md](workforce/intelligence/the-scout.md) |
-| The Spider | Web scraping | [workforce/intelligence/the-spider.md](workforce/intelligence/the-spider.md) |
-| The Builder | Hugo templates, generation | [workforce/development/the-builder.md](workforce/development/the-builder.md) |
-| The Librarian | Data management | [workforce/development/the-librarian.md](workforce/development/the-librarian.md) |
-| The Optimiser | On-page SEO, schema | [workforce/seo/the-optimiser.md](workforce/seo/the-optimiser.md) |
-| The Connector | Internal linking | [workforce/seo/the-connector.md](workforce/seo/the-connector.md) |
-| The Analyst | Performance tracking | [workforce/monitoring/the-analyst.md](workforce/monitoring/the-analyst.md) |
-| The Watchdog | Site health | [workforce/monitoring/the-watchdog.md](workforce/monitoring/the-watchdog.md) |
+**No branches or PRs needed for single articles.** Commit directly to `main` for speed. The incremental deploy only uploads changed files, so a bad article can be fixed by committing a correction (which also deploys in under 60 seconds).
 
 ---
 
@@ -358,10 +352,12 @@ Reference these files when working in their domain. Don't load them all every se
 - Hugo content **must** live in `site/content/`. Anything outside is invisible to the build.
 - `site/public/` is **gitignored** — never commit build output.
 - `data/*.json` files are source of truth — flag before editing.
-- **Every push to `main` auto-deploys to Hostinger.** There is no manual trigger. Merging a PR = going live.
+- **Every push to `main` auto-deploys to Hostinger** via incremental FTP. Only changed files are uploaded.
+- **Do NOT delete `.ftp-deploy-sync-state.json` from Hostinger.** It tracks deployed files. Deleting it forces a full re-upload which will fail.
 - Hostinger FTP credentials live in GitHub Secrets (`FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`). Never paste these into chat or commit them.
+- **`.github/workflows/deploy.yml` cannot be edited via the MCP connector** (GitHub 403). Always provide full file contents for Gareth to paste via the GitHub web editor.
 - The site has a template originally in `template-source/`. That directory is reference only — do not edit, do not delete.
-- The GitHub MCP connector has write access to this repo. Claude can commit and merge from any Claude app session.
+- The GitHub MCP connector has write access to this repo (except workflow files).
 - **Never use Gareth's real name as an author on any published content.** Use the author personas defined above.
 
 ---
