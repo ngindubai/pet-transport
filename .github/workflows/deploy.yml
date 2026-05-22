@@ -1,11 +1,10 @@
 name: Build and Deploy to Hostinger
 
-# Manual-only deploy. Pushing to main does NOT publish.
-# To deploy: GitHub repo → Actions tab → "Build and Deploy to Hostinger"
-# → Run workflow → select main → Run.
-# This protects the live site from accidental publication of WIP/thin content.
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   build-and-deploy:
