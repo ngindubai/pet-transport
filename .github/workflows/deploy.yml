@@ -11,26 +11,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1 — Checkout repo
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # 2 — Set up Python (for split_sitemap.py)
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      # 3 — Set up Hugo (extended, v0.160.1 matches local dev)
       - name: Set up Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.160.1'
           extended: true
 
-      # 4 — Build Hugo site
       - name: Build Hugo site
         run: |
           cd site
@@ -38,11 +34,25 @@ jobs:
         env:
           HUGO_ENVIRONMENT: production
 
-      # 5 — Split sitemap into section sitemaps
       - name: Split sitemap
         run: python split_sitemap.py
 
-      # 6 — Deploy built site to Hostinger via FTP
+      - name: Check if state file exists on server
+        id: check_state
+        continue-on-error: true
+        run: |
+          curl -s --ftp-pasv --user "${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}" "ftp://${{ secrets.FTP_SERVER }}/public_html/.ftp-deploy-sync-state.json" -o /dev/null
+          echo "exists=$?" >> $GITHUB_OUTPUT
+
+      - name: Generate and upload state file (first run only)
+        if: steps.check_state.outcome == 'failure'
+        run: |
+          echo "No state file found on server. Generating from build output..."
+          python generate_ftp_state.py site/public
+          echo "Uploading state file to server..."
+          curl -s --ftp-pasv --user "${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}" -T "site/public/.ftp-deploy-sync-state.json" "ftp://${{ secrets.FTP_SERVER }}/public_html/.ftp-deploy-sync-state.json"
+          echo "State file uploaded. FTP Deploy Action will now do incremental syncs."
+
       - name: Deploy to Hostinger via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
