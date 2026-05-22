@@ -1,8 +1,9 @@
 ---
 title: "Pet Export Guide: Shipping from Spain"
-description: "Guide to exporting your dog or cat from Spain. Export requirements, airlines, and routes."
+description: "Exporting your pet from Spain: EU export health certificate requirements, airline options, and routes from Spain to popular international destinations."
 type: "origins"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 country_name: "Spain"
 country_code: "ES"
 overview: |
@@ -25,7 +26,7 @@ sections:
     body: |
       We have detailed guides for the following routes:
       
-      - [Spain to United Kingdom](/routes/spain-to-united-kingdom/)
+      - [Spain to United Kingdom](/pet-transport/spain-to-united-kingdom/)
 faqs:
   - question: "What do I need to export my pet from Spain?"
     answer: "For EU destinations, you need a valid EU Pet Passport with current rabies vaccination. For non-EU destinations like the UK (post-Brexit), you need a health certificate endorsed by the regional veterinary authority, issued within 10 days of travel."

@@ -7,9 +7,17 @@ site/.hugo_build.lock
 *.pyc
 __pycache__/
 
+# Virtual environment
+.venv/
+venv/
+env/
+
 # OS files
 .DS_Store
 Thumbs.db
 
 # Editor
 .vscode/settings.json
+
+# Raw asset shopping (not used by Hugo build — store separately in Dropbox/Drive)
+Images/

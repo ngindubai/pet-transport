@@ -1,83 +1,131 @@
-{{ define "title" }}{{ .Params.seo.title | default (printf "Transporting %s Internationally" .Params.breed_name) }}{{ end }}
+{{ define "title" }}{{ .Params.seo.title | default (printf "Transporting %s Internationally | Pet Transport Global" .Params.breed_name) }}{{ end }}
+
+{{ define "schema" }}
+{{ with .Params.faqs }}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {{ range $i, $faq := . }}{{ if $i }},{{ end }}
+        {
+            "@type": "Question",
+            "name": {{ $faq.question | jsonify }},
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": {{ $faq.answer | jsonify }}
+            }
+        }
+        {{ end }}
+    ]
+}
+</script>
+{{ end }}
+{{ end }}
 
 {{ define "main" }}
 {{ $breed := .Params }}
 
-<section class="route-hero">
-    <div class="route-hero-inner">
-        <h1>{{ $breed.content.h1 | default (printf "Transporting %s Internationally" $breed.breed_name) }}</h1>
-        {{ if $breed.brachycephalic }}<span class="complexity-badge" style="background:rgba(231,76,60,0.3);">Brachycephalic breed</span>{{ end }}
-    </div>
-</section>
-
-{{ with $breed.content.overview }}
-<section class="route-section">
-    <div class="section-inner">{{ . | markdownify }}</div>
-</section>
-{{ end }}
-
-{{/* Country restrictions */}}
-{{ with $breed.banned_countries }}
-<section class="route-section" id="country-bans">
-    <div class="section-inner">
-        <h2>Countries That Ban This Breed</h2>
-        <p>The following countries ban or restrict {{ $breed.breed_name }} from entry. Check the country guide for details on exemptions or permits.</p>
-        <ul>
-            {{ range . }}
-            <li><a href="/pet-transport/countries/{{ .slug }}/">{{ .name }}</a> &mdash; {{ .restriction_type }}</li>
-            {{ end }}
-        </ul>
-    </div>
-</section>
-{{ end }}
-
-{{ with $breed.restricted_countries }}
-<section class="route-section" id="country-restrictions">
-    <div class="section-inner">
-        <h2>Countries with Restrictions</h2>
-        <ul>
-            {{ range . }}
-            <li><a href="/pet-transport/countries/{{ .slug }}/">{{ .name }}</a> &mdash; {{ .restriction_type }}</li>
-            {{ end }}
-        </ul>
-    </div>
-</section>
-{{ end }}
-
-{{/* Airline restrictions */}}
-{{ with $breed.airline_restrictions }}
-<section class="route-section" id="airline-restrictions">
-    <div class="section-inner">
-        <h2>Airline Restrictions for {{ $breed.breed_name }}</h2>
-        <div class="airline-cards">
-            {{ range . }}
-            <div class="airline-card">
-                <h3>{{ .airline_name }}</h3>
-                <span class="airline-type">{{ .policy }}</span>
-                {{ with .notes }}<p>{{ . }}</p>{{ end }}
+{{/* ── HERO ─────────────────────────────────────────────────────────────── */}}
+<div class="ptg-inner-hero">
+    <div class="container">
+        <nav aria-label="breadcrumb" class="ptg-inner-breadcrumb">
+            <ol class="breadcrumb mb-2">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="/pet-transport/breeds/">Breed Guides</a></li>
+                <li class="breadcrumb-item active">{{ $breed.breed_name }}</li>
+            </ol>
+        </nav>
+        <div data-aos="fade-up">
+            <div class="ptg-inner-badge-row mb-2">
+                <span class="ptg-inner-type-badge"><i class="fas fa-paw me-1"></i>Breed Guide</span>
+                {{ if $breed.brachycephalic }}<span class="ptg-inner-status-badge ptg-status-warn"><i class="fas fa-exclamation-triangle me-1"></i>Brachycephalic breed</span>{{ end }}
             </div>
-            {{ end }}
+            <h1 class="ptg-inner-h1">{{ $breed.content.h1 | default (printf "Transporting %s Internationally" $breed.breed_name) }}</h1>
+            <a href="#quote-form" class="btn btn-warning btn-sm mt-2">Get a quote for your route</a>
         </div>
     </div>
-</section>
-{{ end }}
+</div>
 
-{{/* Transport considerations */}}
-{{ with $breed.content.sections }}
-{{ range . }}
-<section class="route-section">
-    <div class="section-inner">
-        {{ with .heading }}<h2>{{ . }}</h2>{{ end }}
-        {{ .body | markdownify }}
+{{/* ── MAIN CONTENT ─────────────────────────────────────────────────────── */}}
+<div class="page ptg-inner-page">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+
+                {{/* Overview */}}
+                {{ with $breed.content.overview }}
+                <section class="ptg-inner-section" data-aos="fade-up">
+                    {{ . | markdownify }}
+                </section>
+                {{ end }}
+
+                {{/* Countries banning this breed */}}
+                {{ with $breed.banned_countries }}
+                <section class="ptg-inner-section" id="country-bans" data-aos="fade-up">
+                    <h2>Countries That Ban This Breed</h2>
+                    <p>The following countries ban or restrict {{ $breed.breed_name }} from entry. Check the individual country guide for details on permits or exemptions.</p>
+                    <ul class="ptg-inner-list">
+                        {{ range . }}
+                        <li><a href="/pet-transport/countries/{{ .slug }}/">{{ .name }}</a> — {{ .restriction_type }}</li>
+                        {{ end }}
+                    </ul>
+                </section>
+                {{ end }}
+
+                {{ with $breed.restricted_countries }}
+                <section class="ptg-inner-section" id="country-restrictions" data-aos="fade-up">
+                    <h2>Countries with Restrictions</h2>
+                    <ul class="ptg-inner-list">
+                        {{ range . }}
+                        <li><a href="/pet-transport/countries/{{ .slug }}/">{{ .name }}</a> — {{ .restriction_type }}</li>
+                        {{ end }}
+                    </ul>
+                </section>
+                {{ end }}
+
+                {{/* Airline restrictions */}}
+                {{ with $breed.airline_restrictions }}
+                <section class="ptg-inner-section" id="airline-restrictions" data-aos="fade-up">
+                    <h2>Airline Restrictions for {{ $breed.breed_name }}</h2>
+                    <div class="row g-3 mt-1">
+                        {{ range . }}
+                        <div class="col-md-6">
+                            <div class="ptg-policy-card{{ if eq .policy "banned" }} ptg-policy-card--warn{{ end }}">
+                                <div class="ptg-policy-card-icon"><i class="fas fa-plane"></i></div>
+                                <div>
+                                    <h5>{{ .airline_name }}</h5>
+                                    <span class="ptg-inner-tag">{{ .policy }}</span>
+                                    {{ with .notes }}<p class="mt-1 mb-0">{{ . }}</p>{{ end }}
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </section>
+                {{ end }}
+
+                {{/* Additional content sections */}}
+                {{ with $breed.content.sections }}
+                {{ range . }}
+                <section class="ptg-inner-section" data-aos="fade-up">
+                    {{ with .heading }}<h2>{{ . }}</h2>{{ end }}
+                    {{ .body | markdownify }}
+                </section>
+                {{ end }}
+                {{ end }}
+
+            </div>
+        </div>
     </div>
-</section>
-{{ end }}
-{{ end }}
+</div>
 
+{{/* FAQ */}}
 {{ with $breed.faqs }}
 {{ partial "faq-accordion.html" (dict "faqs" .) }}
 {{ end }}
 
+{{/* Quote form */}}
 {{ partial "quote-form.html" $ }}
 
 {{ end }}

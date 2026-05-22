@@ -3,10 +3,11 @@ title: "Flying with a French Bulldog: Which Airlines Will Take Them"
 description: "French Bulldogs face stricter airline restrictions than most breeds. Here's which airlines accept them, which ban them from cargo, and how to plan an international move."
 date: "2026-04-12"
 type: "blog"
+author: "Gareth - Founder, PetTransportGlobal"
 slug: "flying-with-a-french-bulldog-what-airlines-accept"
 url: "/blog/flying-with-a-french-bulldog-what-airlines-accept/"
 seo:
-  title: "Flying with a French Bulldog: Airline Restrictions and What You Need to Know | Pet Transport Global"
+  title: "Flying with a French Bulldog | Pet Transport Global"
   description: "French Bulldogs face stricter airline restrictions than most breeds. Here's which airlines accept them, which ban them from cargo, and how to plan an international move."
 tags:
   - "breeds"
@@ -16,7 +17,7 @@ tags:
 
 The French Bulldog is the most popular dog breed in several countries. It's also one of the most restricted when it comes to air travel.
 
-If you own a Frenchie and you're planning an international move, you need to know the airline landscape before you book anything.
+If you own a Frenchie and you're planning an international move, you need to know the airline options before you book anything.
 
 ## Why French Bulldogs are restricted
 

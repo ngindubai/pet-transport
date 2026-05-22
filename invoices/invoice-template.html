@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice {{INVOICE_NUMBER}} | PetTransportGlobal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* ─── Reset & Base ──────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f4f5f7;
+      color: #1a1a2e;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* ─── Page Wrapper ──────────────────────────────── */
+    .invoice-page {
+      max-width: 860px;
+      margin: 40px auto;
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+    }
+
+    /* ─── Header Bar ────────────────────────────────── */
+    .invoice-header {
+      background: #1a1a2e;
+      padding: 36px 48px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-paw {
+      width: 48px;
+      height: 48px;
+      background: #e8913a;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .brand-paw svg {
+      width: 26px;
+      height: 26px;
+      fill: #ffffff;
+    }
+
+    .brand-name {
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .brand-name span { color: #e8913a; }
+
+    .brand-tagline {
+      color: rgba(255,255,255,0.55);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .invoice-label-block { text-align: right; }
+
+    .invoice-title {
+      color: #e8913a;
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .invoice-number {
+      color: rgba(255,255,255,0.7);
+      font-size: 12px;
+      font-weight: 600;
+      margin-top: 4px;
+      letter-spacing: 0.05em;
+    }
+
+    /* ─── Accent Strip ──────────────────────────────── */
+    .accent-strip {
+      height: 4px;
+      background: linear-gradient(90deg, #e8913a 0%, #2a9d6e 100%);
+    }
+
+    /* ─── Info Band ─────────────────────────────────── */
+    .info-band {
+      background: #f8f9fb;
+      border-bottom: 1px solid #eaecef;
+      padding: 18px 48px;
+      display: flex;
+      gap: 48px;
+    }
+
+    .info-item label {
+      display: block;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #999;
+      margin-bottom: 2px;
+    }
+
+    .info-item .value {
+      font-size: 13px;
+      font-weight: 600;
+      color: #1a1a2e;
+    }
+
+    .status-badge {
+      display: inline-block;
+      background: #fff3e0;
+      color: #e8913a;
+      border: 1px solid #e8913a;
+      border-radius: 20px;
+      padding: 2px 12px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    /* ─── Parties ───────────────────────────────────── */
+    .parties {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      padding: 36px 48px 28px;
+      border-bottom: 1px solid #eaecef;
+    }
+
+    .party-block:first-child {
+      border-right: 1px solid #eaecef;
+      padding-right: 36px;
+    }
+
+    .party-block:last-child { padding-left: 36px; }
+
+    .party-label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.10em;
+      color: #e8913a;
+      margin-bottom: 10px;
+    }
+
+    .party-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin-bottom: 4px;
+    }
+
+    .party-detail {
+      font-size: 12.5px;
+      color: #555;
+      line-height: 1.7;
+    }
+
+    .party-detail a { color: #2a9d6e; text-decoration: none; }
+
+    /* ─── Flight Info Banner ─────────────────────────── */
+    .flight-banner {
+      margin: 0 48px 28px;
+      background: linear-gradient(135deg, #1a1a2e 0%, #243060 100%);
+      border-radius: 8px;
+      padding: 20px 28px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .flight-route {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex: 1;
+    }
+
+    .flight-city { text-align: center; }
+
+    .flight-city .iata {
+      font-size: 22px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: 0.05em;
+    }
+
+    .flight-city .city-name {
+      font-size: 10px;
+      color: rgba(255,255,255,0.6);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .flight-city .time {
+      font-size: 13px;
+      color: #e8913a;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    .flight-city .date {
+      font-size: 11px;
+      color: rgba(255,255,255,0.5);
+    }
+
+    .flight-arrow {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .flight-label {
+      font-size: 10px;
+      color: rgba(255,255,255,0.5);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      text-align: center;
+      margin-top: 6px;
+    }
+
+    .flight-pets {
+      text-align: right;
+      flex-shrink: 0;
+    }
+
+    .flight-pets .pets-count {
+      font-size: 20px;
+      font-weight: 800;
+      color: #2a9d6e;
+    }
+
+    .flight-pets .pets-label {
+      font-size: 11px;
+      color: rgba(255,255,255,0.6);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* ─── Line Items Table ───────────────────────────── */
+    .items-section { padding: 0 48px 28px; }
+
+    .items-table { width: 100%; border-collapse: collapse; }
+
+    .items-table thead tr { background: #1a1a2e; color: #ffffff; }
+
+    .items-table thead th {
+      padding: 12px 16px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .items-table thead th:last-child { text-align: right; }
+
+    .items-table tbody tr { border-bottom: 1px solid #eaecef; }
+
+    .items-table tbody tr:last-child { border-bottom: none; }
+
+    .items-table tbody td { padding: 18px 16px; vertical-align: top; }
+
+    .item-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin-bottom: 4px;
+    }
+
+    .item-desc { font-size: 12px; color: #666; line-height: 1.6; }
+
+    .item-tag {
+      display: inline-block;
+      background: #e8f6ef;
+      color: #2a9d6e;
+      border-radius: 4px;
+      padding: 1px 8px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .item-amount {
+      text-align: right;
+      font-size: 16px;
+      font-weight: 700;
+      color: #1a1a2e;
+      white-space: nowrap;
+    }
+
+    /* ─── Totals ─────────────────────────────────────── */
+    .totals-section {
+      padding: 0 48px 36px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .totals-box { width: 300px; }
+
+    .totals-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 7px 0;
+      font-size: 13px;
+      border-bottom: 1px solid #eaecef;
+      color: #555;
+    }
+
+    .totals-row:last-child { border-bottom: none; }
+
+    .totals-row.total-due {
+      padding: 14px 0 0;
+      font-size: 16px;
+      font-weight: 800;
+      color: #1a1a2e;
+      border-bottom: none;
+    }
+
+    .totals-row.total-due .amount {
+      color: #e8913a;
+      font-size: 20px;
+    }
+
+    /* ─── Payment Instructions ───────────────────────── */
+    .payment-section {
+      margin: 0 48px 36px;
+      background: #f8f9fb;
+      border-left: 3px solid #e8913a;
+      border-radius: 0 6px 6px 0;
+      padding: 18px 24px;
+    }
+
+    .payment-title {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #e8913a;
+      margin-bottom: 10px;
+    }
+
+    .payment-detail { font-size: 12.5px; color: #444; line-height: 1.8; }
+
+    .payment-detail strong { color: #1a1a2e; }
+
+    /* ─── Notes ──────────────────────────────────────── */
+    .notes-section { margin: 0 48px 36px; }
+
+    .notes-title {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #999;
+      margin-bottom: 8px;
+    }
+
+    .notes-text { font-size: 12px; color: #666; line-height: 1.7; }
+
+    /* ─── Footer ─────────────────────────────────────── */
+    .invoice-footer {
+      background: #1a1a2e;
+      padding: 20px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-brand { color: rgba(255,255,255,0.5); font-size: 11.5px; }
+
+    .footer-brand strong { color: #e8913a; }
+
+    .footer-thank { color: rgba(255,255,255,0.5); font-size: 11px; font-style: italic; }
+
+    /* ─── Print Styles ───────────────────────────────── */
+    @media print {
+      body { background: #ffffff; }
+      .invoice-page { max-width: 100%; margin: 0; box-shadow: none; border-radius: 0; }
+      .print-btn { display: none !important; }
+    }
+
+    .print-btn-wrapper { text-align: center; margin: 24px auto; max-width: 860px; }
+
+    .print-btn {
+      background: #1a1a2e;
+      color: #ffffff;
+      border: none;
+      padding: 12px 32px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .print-btn:hover { background: #e8913a; }
+  </style>
+</head>
+<body>
+
+  <div class="print-btn-wrapper">
+    <button class="print-btn" onclick="window.print()">&#128438; Save as PDF / Print</button>
+  </div>
+
+  <div class="invoice-page">
+
+    <!-- HEADER -->
+    <div class="invoice-header">
+      <div class="brand-logo">
+        <div class="brand-paw">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="20" cy="14" rx="6" ry="8"/>
+            <ellipse cx="44" cy="14" rx="6" ry="8"/>
+            <ellipse cx="10" cy="30" rx="5" ry="7"/>
+            <ellipse cx="54" cy="30" rx="5" ry="7"/>
+            <path d="M32 24 C16 24 10 38 12 48 C14 56 22 60 32 60 C42 60 50 56 52 48 C54 38 48 24 32 24Z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="brand-name">PetTransport<span>Global</span></div>
+          <div class="brand-tagline">International Pet Relocation Specialists</div>
+        </div>
+      </div>
+      <div class="invoice-label-block">
+        <div class="invoice-title">Invoice</div>
+        <div class="invoice-number">{{INVOICE_NUMBER}}</div>
+      </div>
+    </div>
+
+    <div class="accent-strip"></div>
+
+    <!-- INFO BAND -->
+    <div class="info-band">
+      <div class="info-item">
+        <label>Invoice Number</label>
+        <div class="value">{{INVOICE_NUMBER}}</div>
+      </div>
+      <div class="info-item">
+        <label>Issue Date</label>
+        <div class="value">{{ISSUE_DATE}}</div>
+      </div>
+      <div class="info-item">
+        <label>Due Date</label>
+        <div class="value">{{DUE_DATE}}</div>
+      </div>
+      <div class="info-item">
+        <label>Currency</label>
+        <div class="value">USD ($)</div>
+      </div>
+      <div class="info-item">
+        <label>Status</label>
+        <div class="value"><span class="status-badge">{{STATUS}}</span></div>
+      </div>
+    </div>
+
+    <!-- PARTIES -->
+    <div class="parties">
+      <div class="party-block">
+        <div class="party-label">From</div>
+        <div class="party-name">PetTransportGlobal</div>
+        <div class="party-detail">
+          International Pet Relocation Specialists<br>
+          <a href="https://pettransportglobal.com">pettransportglobal.com</a><br>
+          WhatsApp: <a href="https://wa.me/447703577246">+44 7703 577246</a>
+        </div>
+      </div>
+      <div class="party-block">
+        <div class="party-label">Billed To</div>
+        <div class="party-name">{{CLIENT_NAME}}</div>
+        <div class="party-detail">
+          {{CLIENT_ADDRESS_LINE_1}}<br>
+          {{CLIENT_ADDRESS_LINE_2}}<br>
+          {{CLIENT_EMAIL}}<br>
+          {{CLIENT_PHONE}}
+        </div>
+      </div>
+    </div>
+
+    <!-- FLIGHT BANNER -->
+    <div class="flight-banner">
+      <div class="flight-route">
+        <div class="flight-city">
+          <div class="iata">{{ORIGIN_IATA}}</div>
+          <div class="city-name">{{ORIGIN_CITY}}</div>
+          <div class="time">{{DEPARTURE_TIME}}</div>
+          <div class="date">{{DEPARTURE_DATE}}</div>
+        </div>
+        <div class="flight-arrow">
+          <div style="width:100%;height:1px;background:linear-gradient(90deg,#e8913a,#2a9d6e);position:relative;">
+            <span style="position:absolute;top:-10px;left:50%;transform:translateX(-50%);color:#e8913a;font-size:18px;">&#9992;</span>
+          </div>
+          <div class="flight-label">{{FLIGHT_TYPE}}</div>
+        </div>
+        <div class="flight-city" style="text-align:right;">
+          <div class="iata">{{DEST_IATA}}</div>
+          <div class="city-name">{{DEST_CITY}}</div>
+          <div class="time">{{ARRIVAL_TIME}}</div>
+          <div class="date">{{ARRIVAL_DATE}}</div>
+        </div>
+      </div>
+      <div class="flight-pets" style="margin-left:24px;">
+        <div class="pets-count">{{PET_COUNT}}</div>
+        <div class="pets-label">{{PASSENGER_COUNT}}</div>
+      </div>
+    </div>
+
+    <!-- LINE ITEMS — duplicate <tr> blocks as needed -->
+    <div class="items-section">
+      <table class="items-table">
+        <thead>
+          <tr>
+            <th style="width:60%;">Description</th>
+            <th style="width:15%;text-align:center;">Qty</th>
+            <th style="width:25%;">Amount (USD)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="item-tag">{{PACKAGE_NAME}}</div>
+              <div class="item-name">{{ITEM_TITLE}}</div>
+              <div class="item-desc">{{ITEM_DESCRIPTION}}</div>
+            </td>
+            <td style="text-align:center;vertical-align:middle;font-weight:600;">{{QTY}}</td>
+            <td class="item-amount" style="vertical-align:middle;">${{AMOUNT}}</td>
+          </tr>
+          <!-- Add more rows here as needed -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- TOTALS -->
+    <div class="totals-section">
+      <div class="totals-box">
+        <div class="totals-row">
+          <span>Subtotal</span>
+          <span>${{SUBTOTAL}}</span>
+        </div>
+        <div class="totals-row">
+          <span>Tax / VAT</span>
+          <span>${{TAX}}</span>
+        </div>
+        <div class="totals-row total-due">
+          <span>Total Due</span>
+          <span class="amount">${{TOTAL}}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAYMENT INSTRUCTIONS -->
+    <div class="payment-section">
+      <div class="payment-title">Payment Instructions</div>
+      <div class="payment-detail">
+        Please transfer the total amount of <strong>${{TOTAL}} USD</strong> by <strong>{{DUE_DATE}}</strong>.<br>
+        <strong>Bank Transfer:</strong> {{BANK_DETAILS}}<br>
+        <strong>Reference:</strong> {{INVOICE_NUMBER}}<br><br>
+        For payment queries, contact us via WhatsApp at <strong>+44 7703 577246</strong> or visit <strong>pettransportglobal.com</strong>.
+      </div>
+    </div>
+
+    <!-- NOTES -->
+    <div class="notes-section">
+      <div class="notes-title">Notes &amp; Terms</div>
+      <div class="notes-text">
+        All prices are in US Dollars (USD). Full payment is required before confirmation of bookings with the airline.
+        Cancellations made within 72 hours of the departure date are non-refundable. Any changes to travel dates or
+        itinerary may be subject to additional charges. PetTransportGlobal acts as an agent coordinating transport
+        on behalf of the client. All travel is subject to applicable airline conditions of carriage and government
+        import/export regulations in force at the time of travel.
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="invoice-footer">
+      <div class="footer-brand">
+        <strong>PetTransportGlobal</strong> &bull; pettransportglobal.com &bull; +44 7703 577246
+      </div>
+      <div class="footer-thank">Thank you for choosing us to care for your pets.</div>
+    </div>
+
+  </div>
+
+</body>
+</html>

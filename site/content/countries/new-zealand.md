@@ -1,8 +1,9 @@
 ---
-title: "Pet Import Guide: New Zealand"
+title: "Pet Import Rules: New Zealand | PetTransportGlobal"
 description: "Complete guide to importing your dog or cat to New Zealand. Import requirements, quarantine, breed restrictions, and step-by-step process."
 type: "countries"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 slug: "new-zealand"
 url: "/pet-transport/countries/new-zealand/"
 country_name: "New Zealand"
@@ -37,6 +38,9 @@ faqs:
     answer: "Yes. All imported cats and dogs must complete a minimum 10-day quarantine at the MPI facility at Auckland Airport. There are no exemptions."
   - question: "How long does it take to prepare a pet for import to New Zealand?"
     answer: "Allow a minimum of 8 to 10 months. The 180-day wait after the titre test is the longest single requirement. Factor in time for two rabies vaccinations, blood tests, and permit processing."
+  - question: "What breeds are banned or restricted in New Zealand?"
+    answer: "New Zealand bans American Pit Bull Terriers, Dogo Argentinos, Brazilian Fila dogs, Japanese Tosa Inus, and Perro de Presa Canarios. If you own one of these breeds, importation is not permitted under any circumstances. Check the New Zealand Dog Control Act 1996 for the current list before making any plans."
+
 airlines:
   - name: "Air New Zealand"
     type: "cargo_only"
@@ -51,4 +55,12 @@ airlines:
   - name: "Korean Air"
     type: "cabin_and_cargo"
 inbound_routes: []
+routes_incoming:
+  - slug: "/pet-transport/united-kingdom-to-new-zealand/"
+    origin: "United Kingdom"
+    destination: "New Zealand"
+    origin_code: "GB"
+    destination_code: "NZ"
+    complexity: "high"
+
 ---

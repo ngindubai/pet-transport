@@ -92,4 +92,63 @@
             });
         }
     }
+
+    // ===== MOBILE MEGAMENU TOGGLE =====
+    // On small screens the hover megamenu is hidden; tap the trigger to reveal.
+    var megaTriggers = document.querySelectorAll('.ptg-mega-trigger');
+    megaTriggers.forEach(function (trigger) {
+        trigger.addEventListener('click', function (e) {
+            if (window.innerWidth >= 1200) return; // desktop uses CSS hover
+            e.preventDefault();
+            var parent = trigger.closest('.ptg-mega-parent');
+            if (!parent) return;
+            var isOpen = parent.classList.contains('ptg-open');
+            // Close all open megamenus first
+            document.querySelectorAll('.ptg-mega-parent.ptg-open').forEach(function (el) {
+                el.classList.remove('ptg-open');
+            });
+            if (!isOpen) parent.classList.add('ptg-open');
+        });
+    });
+
+    // ===== RESPONSIVE HERO VIDEO =====
+    // Phones (< 576px):  portrait 9:16 crop — fills the screen correctly.
+    // Tablets (576–991px): landscape 480p video.
+    // Desktop (≥ 992px):  landscape 720p video.
+    // Sources injected by JS so only the appropriate file is ever requested.
+    (function () {
+        var vid = document.getElementById('hero-vid');
+        if (!vid) return;
+
+        // Respect reduced-motion — skip loading so file is never requested
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+        var w = window.innerWidth;
+        var webm, mp4;
+        if (w < 576) {
+            // Portrait crop fills phone screens properly
+            webm = '/videos/hero-portrait.webm';
+            mp4  = '/videos/hero-portrait.mp4';
+            vid.classList.add('hero-video--portrait');
+        } else if (w < 992) {
+            webm = '/videos/hero-mobile.webm';
+            mp4  = '/videos/hero-mobile.mp4';
+        } else {
+            webm = '/videos/hero.webm';
+            mp4  = '/videos/hero.mp4';
+        }
+
+        var s1 = document.createElement('source');
+        s1.type = 'video/webm';
+        s1.src  = webm;
+        vid.appendChild(s1);
+
+        var s2 = document.createElement('source');
+        s2.type = 'video/mp4';
+        s2.src  = mp4;
+        vid.appendChild(s2);
+
+        vid.load();
+    }());
+
 })();

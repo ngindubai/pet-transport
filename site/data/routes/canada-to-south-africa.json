@@ -22,7 +22,10 @@
       },
       "breed_restrictions": []
     },
-    "airlines": [],
+    "airlines": [
+      "Air Canada (cargo)",
+      "South African Airways (cargo)"
+    ],
     "timeline_steps": [
       {
         "step": 1,

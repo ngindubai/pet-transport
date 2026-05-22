@@ -1,8 +1,9 @@
 ---
 title: "Pet Export Guide: Shipping from Singapore"
-description: "Guide to exporting your dog or cat from Singapore. Export requirements, airlines, and routes."
+description: "Exporting your pet from Singapore: AVS health certificate requirements, airline options, and routes from Singapore to popular destinations worldwide."
 type: "origins"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 country_name: "Singapore"
 country_code: "SG"
 overview: |
@@ -21,7 +22,30 @@ sections:
     body: |
       We have detailed guides for the following routes:
       
-      - [Singapore to Australia](/routes/singapore-to-australia/)
+      - [Singapore to Australia](/pet-transport/singapore-to-australia/)
+      - [Singapore to Brazil](/pet-transport/singapore-to-brazil/)
+      - [Singapore to Canada](/pet-transport/singapore-to-canada/)
+      - [Singapore to Denmark](/pet-transport/singapore-to-denmark/)
+      - [Singapore to France](/pet-transport/singapore-to-france/)
+      - [Singapore to Germany](/pet-transport/singapore-to-germany/)
+      - [Singapore to Greece](/pet-transport/singapore-to-greece/)
+      - [Singapore to Hong Kong](/pet-transport/singapore-to-hong-kong/)
+      - [Singapore to India](/pet-transport/singapore-to-india/)
+      - [Singapore to Indonesia](/pet-transport/singapore-to-indonesia/)
+      - [Singapore to Italy](/pet-transport/singapore-to-italy/)
+      - [Singapore to Japan](/pet-transport/singapore-to-japan/)
+      - [Singapore to Malaysia](/pet-transport/singapore-to-malaysia/)
+      - [Singapore to Mexico](/pet-transport/singapore-to-mexico/)
+      - [Singapore to Netherlands](/pet-transport/singapore-to-netherlands/)
+      - [Singapore to Philippines](/pet-transport/singapore-to-philippines/)
+      - [Singapore to Portugal](/pet-transport/singapore-to-portugal/)
+      - [Singapore to South Africa](/pet-transport/singapore-to-south-africa/)
+      - [Singapore to South Korea](/pet-transport/singapore-to-south-korea/)
+      - [Singapore to Switzerland](/pet-transport/singapore-to-switzerland/)
+      - [Singapore to Thailand](/pet-transport/singapore-to-thailand/)
+      - [Singapore to United Arab Emirates](/pet-transport/singapore-to-united-arab-emirates/)
+      - [Singapore to United Kingdom](/pet-transport/singapore-to-united-kingdom/)
+      - [Singapore to United States](/pet-transport/singapore-to-united-states/)
 faqs:
   - question: "What do I need to export my pet from Singapore?"
     answer: "You'll need a health certificate from an official veterinarian, proof of microchip and vaccinations, and any government endorsement required by your destination country. Must be obtained before departure from Singapore"

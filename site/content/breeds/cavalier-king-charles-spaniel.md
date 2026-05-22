@@ -1,8 +1,9 @@
 ---
-title: "Flying with a Cavalier King Charles Spaniel | Airline Restrictions & Advice"
+title: "Transporting Cavalier King Charles"
 description: "Which airlines accept Cavalier King Charles Spaniel as cargo or cabin? Seasonal embargoes, breed bans, and what you need before booking your flat-faced dog."
 type: "breeds"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 slug: "cavalier-king-charles-spaniel"
 breed_name: "Cavalier King Charles Spaniel"
 brachycephalic: true

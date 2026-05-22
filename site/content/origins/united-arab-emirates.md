@@ -3,6 +3,7 @@ title: "Pet Export Guide: Shipping from United Arab Emirates"
 description: "Guide to exporting your dog or cat from United Arab Emirates. Export requirements, airlines, and routes."
 type: "origins"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 country_name: "United Arab Emirates"
 country_code: "AE"
 overview: |
@@ -23,9 +24,30 @@ sections:
     body: |
       We have detailed guides for the following routes:
       
-      - [United Arab Emirates to Australia](/routes/united-arab-emirates-to-australia/)
-      - [United Arab Emirates to United Kingdom](/routes/united-arab-emirates-to-united-kingdom/)
-      - [United Arab Emirates to United States](/routes/united-arab-emirates-to-united-states/)
+      - [United Arab Emirates to Australia](/pet-transport/united-arab-emirates-to-australia/)
+      - [United Arab Emirates to Brazil](/pet-transport/united-arab-emirates-to-brazil/)
+      - [United Arab Emirates to Canada](/pet-transport/united-arab-emirates-to-canada/)
+      - [United Arab Emirates to Denmark](/pet-transport/united-arab-emirates-to-denmark/)
+      - [United Arab Emirates to France](/pet-transport/united-arab-emirates-to-france/)
+      - [United Arab Emirates to Germany](/pet-transport/united-arab-emirates-to-germany/)
+      - [United Arab Emirates to Greece](/pet-transport/united-arab-emirates-to-greece/)
+      - [United Arab Emirates to Hong Kong](/pet-transport/united-arab-emirates-to-hong-kong/)
+      - [United Arab Emirates to India](/pet-transport/united-arab-emirates-to-india/)
+      - [United Arab Emirates to Indonesia](/pet-transport/united-arab-emirates-to-indonesia/)
+      - [United Arab Emirates to Italy](/pet-transport/united-arab-emirates-to-italy/)
+      - [United Arab Emirates to Japan](/pet-transport/united-arab-emirates-to-japan/)
+      - [United Arab Emirates to Malaysia](/pet-transport/united-arab-emirates-to-malaysia/)
+      - [United Arab Emirates to Mexico](/pet-transport/united-arab-emirates-to-mexico/)
+      - [United Arab Emirates to Netherlands](/pet-transport/united-arab-emirates-to-netherlands/)
+      - [United Arab Emirates to Philippines](/pet-transport/united-arab-emirates-to-philippines/)
+      - [United Arab Emirates to Portugal](/pet-transport/united-arab-emirates-to-portugal/)
+      - [United Arab Emirates to Singapore](/pet-transport/united-arab-emirates-to-singapore/)
+      - [United Arab Emirates to South Africa](/pet-transport/united-arab-emirates-to-south-africa/)
+      - [United Arab Emirates to South Korea](/pet-transport/united-arab-emirates-to-south-korea/)
+      - [United Arab Emirates to Switzerland](/pet-transport/united-arab-emirates-to-switzerland/)
+      - [United Arab Emirates to Thailand](/pet-transport/united-arab-emirates-to-thailand/)
+      - [United Arab Emirates to United Kingdom](/pet-transport/united-arab-emirates-to-united-kingdom/)
+      - [United Arab Emirates to United States](/pet-transport/united-arab-emirates-to-united-states/)
 faqs:
   - question: "What do I need to export my pet from United Arab Emirates?"
     answer: "You'll need a health certificate from an official veterinarian, proof of microchip and vaccinations, and any government endorsement required by your destination country. Contact municipality for specific export clearance process"

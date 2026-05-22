@@ -3,10 +3,11 @@ title: "IATA Crates for Pet Travel: Sizing, Rules and What Airlines Check"
 description: "Every pet travelling by air cargo needs an IATA-compliant crate. Here's the sizing formula, what airlines actually check, and the mistakes that get crates rejected."
 date: "2026-04-14"
 type: "blog"
+author: "Gareth - Founder, PetTransportGlobal"
 slug: "iata-crate-guide-international-pet-transport"
 url: "/blog/iata-crate-guide-international-pet-transport/"
 seo:
-  title: "IATA Pet Crate Requirements: Size Guide for International Air Travel | Pet Transport Global"
+  title: "IATA Crates for Pet Travel: Sizing | Pet Transport Global"
   description: "Every pet travelling by air cargo needs an IATA-compliant crate. Here's the sizing formula, what airlines actually check, and the mistakes that get crates rejected."
 tags:
   - "equipment"

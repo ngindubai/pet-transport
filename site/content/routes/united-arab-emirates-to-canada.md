@@ -1,8 +1,10 @@
 ---
+template_variant: "A"
 title: "Pet Transport from United Arab Emirates to Canada | Complete Guide"
 description: "How to transport your dog or cat from United Arab Emirates to Canada. Import requirements, airline options, costs, and step-by-step process."
 type: "routes"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 slug: "united-arab-emirates-to-canada"
 origin_name: "United Arab Emirates"
 destination_name: "Canada"
@@ -65,11 +67,35 @@ route_data:
     - "Temperature embargoes apply during Gulf summer months (June to September). Airlines may refuse pet cargo when ground temperatures exceed 30C."
   route_complexity: "moderate"
   estimated_timeline_weeks: "6-10"
+faqs:
+  - question: "How long does it take to prepare a pet for transport from United Arab Emirates to Canada?"
+    answer: "Allow 6-10 weeks from your first vet appointment to travel day. The main variable is how quickly your pet's health certificate can be issued and endorsed."
+  - question: "Is there quarantine when my pet enters Canada?"
+    answer: "No routine quarantine for pets entering Canada with the correct documentation. No routine quarantine"
+  - question: "Do I need an import permit to bring my pet into Canada?"
+    answer: "Personal pet imports (1-2 animals) do not require an import permit. Commercial imports (for sale, breeding, adoption, fostering, or more than 2 dogs) require CFIA import permit."
+  - question: "What health certificate does my pet need for this route?"
+    answer: "Required Your United Arab Emirates vet must be approved to issue official veterinary certificates. The certificate must be issued within the timeframe required by Canada: usually 10 days before travel. Present the original at check-in."
+  - question: "Does my pet need a microchip to travel from United Arab Emirates to Canada?"
+    answer: "Required (ISO 11784/11785 recommended) The microchip must be in place before the rabies vaccination is given. If your pet was microchipped after its rabies jab, the vaccination is invalid and must be repeated."
 content:
   h1: "Pet Transport from United Arab Emirates to Canada"
   overview: |
-    
+    Pet transport from United Arab Emirates to Canada is a moderately complex route. The documentation is specific and there are a few stages to work through, but families who plan ahead get their pets there without major issues.
+
+    At minimum, your pet needs a microchip (ISO 11784/11785 standard), a current rabies vaccination, an approved import permit from the destination authority, and a government-endorsed health certificate issued close to your travel date. Allow 6-10 weeks from starting preparation to travel day.
+
+    Use the step-by-step timeline below to plan your preparation, and get in touch if you want us to coordinate the process for you.
+
 links:
-  sideways: []
-  upward: []
+  sideways:
+    - url: "/pet-transport/canada-to-united-arab-emirates/"
+      text: "Pet Transport Canada to United Arab Emirates"
+  upward:
+    - url: "/pet-transport/origins/pet-export-guide-shipping-from-united-arab-emirates/"
+      text: "Shipping from United Arab Emirates"
+    - url: "/pet-transport/countries/canada/"
+      text: "Importing to Canada"
+
+
 ---

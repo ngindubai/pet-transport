@@ -22,7 +22,10 @@
       },
       "breed_restrictions": []
     },
-    "airlines": [],
+    "airlines": [
+      "Cathay Pacific (cargo)",
+      "Air Canada (cargo)"
+    ],
     "timeline_steps": [
       {
         "step": 1,

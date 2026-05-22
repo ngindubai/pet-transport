@@ -77,20 +77,39 @@ All worker souls created, competitor scraped, government portals scraped, airlin
 - Block 19: All 89 P1 routes complete (132 pages, deployed 21 April 2025)
 - Block 20: 23 airline guide pages (190 pages total)
 - Block 21: 35 breed guide pages (202 pages total, deployed)
+- Blog: 12 articles live in site/content/blog/
 
-### Phase 2 — Next Stage (Block 22 onwards): TODO
-- 2.1: P2 country regulation data (15 additional countries)
-- 2.2: ~500 P2 route pages
-- 2.3: 15 P2 origin hubs + 15 P2 country guides
-- 2.6: Internal link graph rebuild (route ↔ country ↔ airline ↔ breed)
-- 2.7: Blog launch (12 articles, targeting research-intent queries)
-- 2.8: Backlink campaign
-- 2.9: Full QA + regulatory audit (all 800+ pages)
-- 2.10: Site health monitoring setup
+### Review #1 Fixes (2026-04-22): ALL DONE
+- 208 pages live, all 6 critical YMYL issues resolved (author attribution, FAQs, overviews, broken links, trust pages)
+
+### Block 22 / Task 2.1: DONE (2026-04-23)
+- P2 country regulation data — 15 additional countries added to data/countries_pet_regulations.json
+- Database now: 25 countries (10 P1 + 15 P2)
+- P2 countries: Japan, Thailand, Philippines, Malaysia, India, Portugal, Netherlands, Italy, Denmark, Mexico, Brazil, Switzerland, Indonesia, South Korea, Greece
+
+### Design Fixes Applied (2026-04-23): LIVE
+- Equal-height listing cards (.blog-box flexbox)
+- Hero column split: col-lg-7 (text) + col-lg-5 (form) — dog visible on desktop
+- Country carousel: new glass-dark country-feature-card design replacing plain adopt-cards
+- Country card data: pulled from import_requirements.quarantine and import_requirements.rabies_vaccination
+- Country card equal height: -webkit-line-clamp on stat values + owl-item flex stretch
+
+### Phase 2 — Next Stage (Block 23): TODO
+- 2.2: ~500 P2 route pages (Block 23) — NEXT
+- 2.3: 15 P2 origin hubs + 15 P2 country guides (Block 24)
+- 2.6: Internal link graph rebuild (Block 25)
+- 2.9: Full QA + regulatory audit (Block 28)
 
 ## P1 Country Matrix (all routes DONE)
-Countries: UK, UAE, Australia, USA, Singapore, France, Hong Kong, Saudi Arabia, Germany, Netherlands
-10x10 grid = 90 combinations, 89 unique routes (no self-routes)
+Countries: UK, UAE, Australia, USA, Singapore, France, Hong Kong, South Africa, Canada, Germany
+10x10 grid = 90 combinations, 89 unique routes (no self-routes) + 3 bonus routes = 92 route files live
+
+## P2 Countries (data ready, pages not yet generated)
+Japan, Thailand, Philippines, Malaysia, India, Portugal, Netherlands, Italy, Denmark, Mexico, Brazil, Switzerland, Indonesia, South Korea, Greece
+
+## Partial/Early P2 Countries (country + origins pages exist, not full route matrix)
+- New Zealand (NZ): country guide, origins hub, UK-to-NZ and NZ-to-UK routes only
+- Spain (ES): country guide, origins hub, spain-to-uk route only
 
 ## Open Strategic Decisions (Gareth's TODO list)
 1. Domain purchase — pending

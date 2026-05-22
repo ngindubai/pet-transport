@@ -1,0 +1,310 @@
+{{/*
+  Template E — Data-Forward
+  Visual: Research brief. Stats strip hero. Tables dominate. Right sidebar with TL;DR.
+  Section order: Stats hero → TL;DR → Master requirements table → Timeline (Gantt-style bars) →
+                 Cost invoice mock → Airlines data table → Warnings (compact list) →
+                 Content sections → Related guides → FAQ bottom list → Quote form
+  Schema: HowTo (set in single.html router)
+*/}}
+{{ $rd := .Params.route_data }}
+
+<article class="tpl-route-e">
+
+{{/* ── STATS STRIP HERO ──────────────────────────────────────────────── */}}
+<div class="tpl-e-hero">
+    <div class="container">
+        <nav aria-label="breadcrumb" class="tpl-e-breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="/pet-transport/routes/">Routes</a></li>
+                <li class="breadcrumb-item active">{{ .Params.origin_name }} → {{ .Params.destination_name }}</li>
+            </ol>
+        </nav>
+        <div class="tpl-e-hero-title-row" data-aos="fade-up">
+            <div>
+                <h1 class="tpl-e-h1">{{ .Params.content.h1 | default (printf "Pet Transport: %s to %s" .Params.origin_name .Params.destination_name) }}</h1>
+            </div>
+        </div>
+        <div class="tpl-e-stats-strip" data-aos="fade-up" data-aos-delay="100">
+            {{ with $rd.estimated_timeline_weeks }}
+            <div class="tpl-e-stat">
+                <span class="tpl-e-stat-val">{{ . }}</span>
+                <span class="tpl-e-stat-label">weeks<br>typical</span>
+            </div>
+            {{ end }}
+            {{ with $rd.route_complexity }}
+            <div class="tpl-e-stat">
+                <span class="tpl-e-stat-val tpl-e-stat-val--text">{{ . | title }}</span>
+                <span class="tpl-e-stat-label">route<br>complexity</span>
+            </div>
+            {{ end }}
+            {{ with $rd.destination.import_requirements }}
+            <div class="tpl-e-stat">
+                <span class="tpl-e-stat-val">{{ if .quarantine }}Yes{{ else }}No{{ end }}</span>
+                <span class="tpl-e-stat-label">quarantine<br>required</span>
+            </div>
+            {{ end }}
+            {{ with $rd.destination.breed_restrictions }}
+            <div class="tpl-e-stat">
+                <span class="tpl-e-stat-val">{{ len . }}</span>
+                <span class="tpl-e-stat-label">restricted<br>breed(s)</span>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+{{/* ── MAIN LAYOUT: CONTENT + RIGHT SIDEBAR ────────────────────────── */}}
+<div class="page">
+    <div class="container">
+        <div class="row">
+
+            {{/* Main content */}}
+            <div class="col-lg-8">
+
+                {{/* TL;DR paragraph */}}
+                {{ with .Params.content.overview }}
+                <section class="tpl-e-section mb-5" data-aos="fade-up">
+                    <div class="tpl-e-tldr">
+                        <span class="tpl-e-tldr-label">TL;DR</span>
+                        <div class="tpl-e-tldr-body">{{ . | markdownify }}</div>
+                    </div>
+                </section>
+                {{ end }}
+
+                {{/* Master requirements table */}}
+                <section class="tpl-e-section mb-5" data-aos="fade-up">
+                    <h2>All Requirements — {{ $rd.origin.country }} to {{ $rd.destination.country }}</h2>
+                    <div class="table-responsive">
+                        <table class="table tpl-e-master-table">
+                            <thead>
+                                <tr>
+                                    <th>Requirement</th>
+                                    <th>{{ $rd.origin.country }} rule (exit)</th>
+                                    <th>{{ $rd.destination.country }} rule (entry)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Microchip</td>
+                                    <td>ISO 11784/11785 required</td>
+                                    <td>{{ with $rd.destination.import_requirements }}{{ with .microchip }}{{ . }}{{ else }}Required{{ end }}{{ end }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Rabies vaccination</td>
+                                    <td>Current vaccination required before departure</td>
+                                    <td>{{ with $rd.destination.import_requirements }}{{ with .rabies_vaccination }}{{ . }}{{ else }}Required{{ end }}{{ end }}</td>
+                                </tr>
+                                {{ with $rd.destination.import_requirements }}{{ with .titre_test }}
+                                <tr>
+                                    <td>Rabies titre test</td>
+                                    <td>—</td>
+                                    <td>{{ . }}</td>
+                                </tr>
+                                {{ end }}{{ end }}
+                                <tr>
+                                    <td>Health certificate</td>
+                                    <td>{{ with $rd.origin.export_requirements }}{{ with .health_certificate }}{{ . }}{{ else }}Required from official vet{{ end }}{{ end }}</td>
+                                    <td>{{ with $rd.destination.import_requirements }}{{ with .health_certificate }}{{ . }}{{ else }}Required{{ end }}{{ end }}</td>
+                                </tr>
+                                {{ with $rd.destination.import_requirements }}{{ with .quarantine }}
+                                <tr>
+                                    <td>Quarantine</td>
+                                    <td>—</td>
+                                    <td>{{ . }}</td>
+                                </tr>
+                                {{ end }}{{ end }}
+                                {{ with $rd.destination.import_requirements }}{{ with .import_permit }}
+                                <tr>
+                                    <td>Import permit</td>
+                                    <td>—</td>
+                                    <td>{{ . }}</td>
+                                </tr>
+                                {{ end }}{{ end }}
+                                {{ with $rd.origin.export_requirements }}{{ with .export_permit }}
+                                <tr>
+                                    <td>Export permit</td>
+                                    <td>{{ . }}</td>
+                                    <td>—</td>
+                                </tr>
+                                {{ end }}{{ end }}
+                                {{ with $rd.origin.export_requirements }}{{ with .endorsement }}
+                                <tr>
+                                    <td>Government endorsement</td>
+                                    <td>{{ . }}</td>
+                                    <td>—</td>
+                                </tr>
+                                {{ end }}{{ end }}
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                {{/* Timeline — Gantt-style horizontal bar representation */}}
+                {{ with $rd.timeline_steps }}
+                <section class="tpl-e-section mb-5" data-aos="fade-up">
+                    <h2>Preparation Timeline</h2>
+                    <div class="tpl-e-gantt">
+                        {{ range . }}
+                        <div class="tpl-e-gantt-row">
+                            <div class="tpl-e-gantt-label">
+                                <span class="tpl-e-gantt-num">{{ .step }}</span>
+                                <span class="tpl-e-gantt-action">{{ .action }}</span>
+                            </div>
+                            <div class="tpl-e-gantt-bar-wrap">
+                                <div class="tpl-e-gantt-bar">
+                                    <span class="tpl-e-gantt-timing">{{ .timing }}</span>
+                                </div>
+                                {{ with .responsible }}<span class="tpl-e-gantt-resp">{{ . }}</span>{{ end }}
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </section>
+                {{ end }}
+
+                {{/* Cost — itemised invoice mock */}}
+                {{ with $rd.cost_factors }}
+                <section class="tpl-e-section mb-5" data-aos="fade-up">
+                    <h2>Cost Estimate — Line Items</h2>
+                    <div class="tpl-e-invoice">
+                        <div class="tpl-e-invoice-header">
+                            <span>Item</span><span>Notes</span>
+                        </div>
+                        {{ range $i, $c := . }}
+                        <div class="tpl-e-invoice-row {{ if eq (mod $i 2) 1 }}tpl-e-invoice-alt{{ end }}">
+                            <span class="tpl-e-invoice-num">{{ add $i 1 }}</span>
+                            <span class="tpl-e-invoice-item">{{ $c }}</span>
+                        </div>
+                        {{ end }}
+                        <div class="tpl-e-invoice-footer">
+                            Total cost is route-specific. Request a quote for your pet's exact costs.
+                        </div>
+                    </div>
+                </section>
+                {{ end }}
+
+                {{/* Airlines — data table with policy type */}}
+                {{ with $rd.airlines }}
+                <section class="tpl-e-section mb-5" data-aos="fade-up">
+                    <h2>Airlines — Policy Data</h2>
+                    <div class="table-responsive">
+                        <table class="table tpl-e-airline-table">
+                            <thead>
+                                <tr><th>Airline</th><th>Transport type</th><th>Policy summary</th></tr>
+                            </thead>
+                            <tbody>
+                                {{ range . }}
+                                <tr>
+                                    <td><strong>{{ .name }}</strong></td>
+                                    <td><span class="tpl-e-type-badge">{{ .type | replace "_" " " | title }}</span></td>
+                                    <td>{{ .policy_summary }}</td>
+                                </tr>
+                                {{ end }}
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                {{ end }}
+
+                {{/* Breed restrictions */}}
+                {{ with $rd.destination.breed_restrictions }}
+                <section class="tpl-e-section mb-5" data-aos="fade-up">
+                    <h2>Restricted Breeds: {{ $rd.destination.country }}</h2>
+                    <table class="table tpl-e-breed-table">
+                        <thead><tr><th>Breed</th><th>Status in {{ $rd.destination.country }}</th></tr></thead>
+                        <tbody>
+                            {{ range . }}
+                            <tr><td>{{ . }}</td><td><span class="tpl-e-status-banned">Restricted/Banned</span></td></tr>
+                            {{ end }}
+                        </tbody>
+                    </table>
+                </section>
+                {{ end }}
+
+                {{/* Warnings — compact list */}}
+                {{ with $rd.key_warnings }}
+                <section class="tpl-e-section mb-5" data-aos="fade-up">
+                    <h2>Regulatory Risk Notes</h2>
+                    <ul class="tpl-e-warn-list">
+                        {{ range . }}<li>{{ . }}</li>{{ end }}
+                    </ul>
+                </section>
+                {{ end }}
+
+                {{/* Content sections */}}
+                {{ with .Params.content.sections }}
+                {{ range . }}
+                <section class="tpl-e-section mb-5" data-aos="fade-up">
+                    {{ with .heading }}<h2>{{ . }}</h2>{{ end }}
+                    {{ .body | markdownify }}
+                </section>
+                {{ end }}
+                {{ end }}
+
+                {{/* Related country guides */}}
+                {{ with .Params.links }}
+                <section class="tpl-e-section mb-5">
+                    {{ with .upward }}
+                    <h2>Country Reference Guides</h2>
+                    <ul class="tpl-e-guide-list">
+                        {{ range . }}<li><a href="{{ .url }}">{{ .text }}</a></li>{{ end }}
+                    </ul>
+                    {{ end }}
+                </section>
+                {{ end }}
+
+                {{/* FAQ — bottom list (simple definition-list style) */}}
+                {{ with .Params.faqs }}
+                <section class="tpl-e-section mb-5" data-aos="fade-up">
+                    <h2>Frequently Asked Questions</h2>
+                    <dl class="tpl-e-faq-list">
+                        {{ range . }}
+                        <dt class="tpl-e-faq-q">{{ .question }}</dt>
+                        <dd class="tpl-e-faq-a">{{ .answer | markdownify }}</dd>
+                        {{ end }}
+                    </dl>
+                </section>
+                {{ end }}
+
+                {{/* Quote form */}}
+                {{ partial "quote-form.html" . }}
+
+            </div>
+
+            {{/* ── RIGHT SIDEBAR: TL;DR + links ───────────────────────── */}}
+            <div class="col-lg-4">
+                <div class="tpl-e-sidebar sticky-top" style="top:100px;">
+
+                    {{/* TL;DR card */}}
+                    <div class="tpl-e-sidebar-card mb-4">
+                        <h5 class="tpl-e-sidebar-h">Quick reference</h5>
+                        <ul class="list-unstyled tpl-e-sidebar-list">
+                            <li><strong>From:</strong> {{ $rd.origin.country }}</li>
+                            <li><strong>To:</strong> {{ $rd.destination.country }}</li>
+                            {{ with $rd.route_complexity }}<li><strong>Complexity:</strong> {{ . | title }}</li>{{ end }}
+                            {{ with $rd.estimated_timeline_weeks }}<li><strong>Timeline:</strong> {{ . }} weeks</li>{{ end }}
+                            {{ with $rd.destination.import_requirements }}
+                            {{ if .quarantine }}<li class="tpl-e-sidebar-warn"><strong>Quarantine:</strong> Required</li>{{ end }}
+                            {{ end }}
+                        </ul>
+                        <a href="#quote-form" class="btn btn-primary w-100 mt-2">Request quote</a>
+                    </div>
+
+                    {{/* Related routes */}}
+                    {{ with .Params.links }}{{ with .sideways }}
+                    <div class="tpl-e-sidebar-card mb-4">
+                        <h5 class="tpl-e-sidebar-h">Related routes</h5>
+                        <ul class="list-unstyled">
+                            {{ range . }}<li class="mb-2"><a href="{{ .url }}">{{ .text }}</a></li>{{ end }}
+                        </ul>
+                    </div>
+                    {{ end }}{{ end }}
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</article>

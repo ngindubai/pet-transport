@@ -1,8 +1,10 @@
 ---
+template_variant: "E"
 title: "Pet Transport from Singapore to Hong Kong | Complete Guide"
-description: "How to transport your dog or cat from Singapore to Hong Kong. Import requirements, airline options, costs, and step-by-step process."
+description: "How to transport your dog or cat from Singapore to Hong Kong. Import requirements, airline options, costs, and step-by-step process Complete guide: Hong Kong im"
 type: "routes"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 slug: "singapore-to-hong-kong"
 origin_name: "Singapore"
 destination_name: "Hong Kong"
@@ -100,11 +102,35 @@ route_data:
     - "Microchip MUST be implanted before rabies vaccination. Vaccination given before microchip is invalid and the clock restarts."
   route_complexity: "moderate"
   estimated_timeline_weeks: "6-10"
+faqs:
+  - question: "How long does it take to prepare a pet for transport from Singapore to Hong Kong?"
+    answer: "The process takes 6-10 weeks from start to finish. The rabies titre test requires a 3-6 month waiting period after the blood draw before your pet can travel, so start early."
+  - question: "Does my pet need to go into quarantine when entering Hong Kong?"
+    answer: "Yes. Check requirements Plan your trip around the quarantine period and factor in the cost, which is owner-paid."
+  - question: "Do I need an import permit to bring my pet into Hong Kong?"
+    answer: "Required. Must be obtained BEFORE travel. Permit specifies conditions and quarantine requirements."
+  - question: "What health certificate does my pet need for this route?"
+    answer: "Required. Official veterinary health certificate. Issued by: Government veterinarian in country of export. Certificate must confirm: vaccination status, microchip number, health status, absence of infectious disease Your Singapore vet must be approved to issue official veterinary certificates. The certificate must be issued within the timeframe required by Hong Kong: usually 10 days before travel. Present the original at check-in."
+  - question: "Is a rabies titre test required for pets entering Hong Kong?"
+    answer: "Yes. Required for: Pets from Group 2 and Group 3 countries. Not required for: Pets from Group 1 countries (rabies-free: UK, Australia, Japan, NZ, etc.). Minimum: 0.5 IU/ml The microchip must be implanted before the first rabies vaccination for the vaccination to be valid. Start this process as early as possible."
 content:
   h1: "Pet Transport from Singapore to Hong Kong"
   overview: |
-    
+    Pet transport from Singapore to Hong Kong is a moderately complex route. The documentation is specific and there are a few stages to work through, but families who plan ahead get their pets there without major issues.
+
+    At minimum, your pet needs a microchip (ISO 11784/11785 standard), a current rabies vaccination, a rabies titre test with a waiting period after the result, an approved import permit from the destination authority, and a government-endorsed health certificate issued close to your travel date. Allow 6-10 weeks from starting preparation to travel day.
+
+    Mandatory quarantine of 120 days applies for most origins. Approved countries (Australia, New Zealand, Ireland, Fiji, Hawaii, Japan, UK, Singapore) may qualify for shorter periods. Use our step-by-step guide below to track what you need to do and when.
+
 links:
-  sideways: []
-  upward: []
+  sideways:
+    - url: "/pet-transport/hong-kong-to-singapore/"
+      text: "Pet Transport Hong Kong to Singapore"
+  upward:
+    - url: "/pet-transport/origins/pet-export-guide-shipping-from-singapore/"
+      text: "Shipping from Singapore"
+    - url: "/pet-transport/countries/hong-kong/"
+      text: "Importing to Hong Kong"
+
+
 ---

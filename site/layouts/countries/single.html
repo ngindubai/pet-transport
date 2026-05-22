@@ -1,4 +1,27 @@
-{{ define "title" }}{{ .Params.seo.title | default (printf "%s Pet Import Requirements" .Params.country_name) }}{{ end }}
+{{ define "title" }}{{ .Params.seo.title | default (printf "%s Pet Import Requirements | Pet Transport Global" (.Params.country_name | default .Params.destination_country)) }}{{ end }}
+
+{{ define "schema" }}
+{{ with .Params.faqs }}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {{ range $i, $faq := . }}{{ if $i }},{{ end }}
+        {
+            "@type": "Question",
+            "name": {{ $faq.question | jsonify }},
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": {{ $faq.answer | jsonify }}
+            }
+        }
+        {{ end }}
+    ]
+}
+</script>
+{{ end }}
+{{ end }}
 
 {{ define "main" }}
 {{ $country := .Params }}

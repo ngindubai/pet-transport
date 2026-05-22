@@ -1,8 +1,9 @@
 ---
 title: "Pet Export Guide: Shipping from United Kingdom"
-description: "Guide to exporting your dog or cat from United Kingdom. Export requirements, airlines, and routes."
+description: "Exporting your pet from the UK: APHA health certificate requirements, airline options, and routes from the United Kingdom to popular destinations."
 type: "origins"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 country_name: "United Kingdom"
 country_code: "GB"
 overview: |
@@ -23,10 +24,31 @@ sections:
     body: |
       We have detailed guides for the following routes:
       
-      - [United Kingdom to Australia](/routes/united-kingdom-to-australia/)
-      - [United Kingdom to France](/routes/united-kingdom-to-france/)
-      - [United Kingdom to Singapore](/routes/united-kingdom-to-singapore/)
-      - [United Kingdom to United Arab Emirates](/routes/united-kingdom-to-united-arab-emirates/)
+      - [United Kingdom to Australia](/pet-transport/united-kingdom-to-australia/)
+      - [United Kingdom to Brazil](/pet-transport/united-kingdom-to-brazil/)
+      - [United Kingdom to Canada](/pet-transport/united-kingdom-to-canada/)
+      - [United Kingdom to Denmark](/pet-transport/united-kingdom-to-denmark/)
+      - [United Kingdom to France](/pet-transport/united-kingdom-to-france/)
+      - [United Kingdom to Germany](/pet-transport/united-kingdom-to-germany/)
+      - [United Kingdom to Greece](/pet-transport/united-kingdom-to-greece/)
+      - [United Kingdom to Hong Kong](/pet-transport/united-kingdom-to-hong-kong/)
+      - [United Kingdom to India](/pet-transport/united-kingdom-to-india/)
+      - [United Kingdom to Indonesia](/pet-transport/united-kingdom-to-indonesia/)
+      - [United Kingdom to Italy](/pet-transport/united-kingdom-to-italy/)
+      - [United Kingdom to Japan](/pet-transport/united-kingdom-to-japan/)
+      - [United Kingdom to Malaysia](/pet-transport/united-kingdom-to-malaysia/)
+      - [United Kingdom to Mexico](/pet-transport/united-kingdom-to-mexico/)
+      - [United Kingdom to Netherlands](/pet-transport/united-kingdom-to-netherlands/)
+      - [United Kingdom to New Zealand](/pet-transport/united-kingdom-to-new-zealand/)
+      - [United Kingdom to Philippines](/pet-transport/united-kingdom-to-philippines/)
+      - [United Kingdom to Portugal](/pet-transport/united-kingdom-to-portugal/)
+      - [United Kingdom to Singapore](/pet-transport/united-kingdom-to-singapore/)
+      - [United Kingdom to South Africa](/pet-transport/united-kingdom-to-south-africa/)
+      - [United Kingdom to South Korea](/pet-transport/united-kingdom-to-south-korea/)
+      - [United Kingdom to Switzerland](/pet-transport/united-kingdom-to-switzerland/)
+      - [United Kingdom to Thailand](/pet-transport/united-kingdom-to-thailand/)
+      - [United Kingdom to United Arab Emirates](/pet-transport/united-kingdom-to-united-arab-emirates/)
+      - [United Kingdom to United States](/pet-transport/united-kingdom-to-united-states/)
 faqs:
   - question: "What do I need to export my pet from United Kingdom?"
     answer: "You'll need a health certificate from an official veterinarian, proof of microchip and vaccinations, and any government endorsement required by your destination country. Post-Brexit, UK to EU pet travel requires AHC instead of pet passport. Book AHC appointment with vet well in advance."

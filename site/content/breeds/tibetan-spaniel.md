@@ -3,6 +3,7 @@ title: "Flying with a Tibetan Spaniel | Airline Restrictions & Advice"
 description: "Which airlines accept Tibetan Spaniel as cargo or cabin? Seasonal embargoes, breed bans, and what you need before booking your flat-faced dog."
 type: "breeds"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 slug: "tibetan-spaniel"
 breed_name: "Tibetan Spaniel"
 brachycephalic: true

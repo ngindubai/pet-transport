@@ -1,8 +1,10 @@
 ---
+template_variant: "C"
 title: "Pet Transport from Germany to United Arab Emirates | Complete Guide"
 description: "How to transport your dog or cat from Germany to United Arab Emirates. Import requirements, airline options, costs, and step-by-step process."
 type: "routes"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 slug: "germany-to-united-arab-emirates"
 origin_name: "Germany"
 destination_name: "United Arab Emirates"
@@ -104,11 +106,35 @@ route_data:
     - "Temperature embargoes apply during Gulf summer months (June to September). Airlines may refuse pet cargo when ground temperatures exceed 30C."
   route_complexity: "moderate"
   estimated_timeline_weeks: "6-10"
+faqs:
+  - question: "How long does it take to prepare a pet for transport from Germany to United Arab Emirates?"
+    answer: "The process takes 6-10 weeks from start to finish. The rabies titre test requires a 3-6 month waiting period after the blood draw before your pet can travel, so start early."
+  - question: "Is there quarantine when my pet enters United Arab Emirates?"
+    answer: "No routine quarantine for pets entering United Arab Emirates with the correct documentation. No routine quarantine. Penalty quarantine up to varies days if non-compliant"
+  - question: "Do I need an import permit to bring my pet into United Arab Emirates?"
+    answer: "Required. Import permit MUST be obtained before travel. Different emirates have different application processes. Allow 1-2 weeks for processing."
+  - question: "What health certificate does my pet need for this route?"
+    answer: "Required. Veterinary health certificate / Official health certificate. Issued by: Government veterinarian or government-endorsed veterinarian in country of export. Certificate must confirm: rabies vaccination status, microchip number, pet is free from infectious disease, fit to travel Your Germany vet must be approved to issue official veterinary certificates. The certificate must be issued within the timeframe required by United Arab Emirates: usually 10 days before travel. Present the original at check-in."
+  - question: "Is a rabies titre test required for pets entering United Arab Emirates?"
+    answer: "Yes. Required for: Pets from certain non-approved or high-risk countries. Not required for: Pets from approved countries (UK, USA, Canada, Australia, EU countries, etc.). Minimum: 0.5 IU/ml The microchip must be implanted before the first rabies vaccination for the vaccination to be valid. Start this process as early as possible."
 content:
   h1: "Pet Transport from Germany to United Arab Emirates"
   overview: |
-    
+    Pet transport from Germany to United Arab Emirates is a moderately complex route. The documentation is specific and there are a few stages to work through, but families who plan ahead get their pets there without major issues.
+
+    At minimum, your pet needs a microchip (ISO 11784/11785 standard), a current rabies vaccination, a rabies titre test with a waiting period after the result, an approved import permit from the destination authority, and a government-endorsed health certificate issued close to your travel date. Allow 6-10 weeks from starting preparation to travel day.
+
+    Use the step-by-step timeline below to plan your preparation, and get in touch if you want us to coordinate the process for you.
+
 links:
-  sideways: []
-  upward: []
+  sideways:
+    - url: "/pet-transport/united-arab-emirates-to-germany/"
+      text: "Pet Transport United Arab Emirates to Germany"
+  upward:
+    - url: "/pet-transport/origins/pet-export-guide-shipping-from-germany/"
+      text: "Shipping from Germany"
+    - url: "/pet-transport/countries/united-arab-emirates/"
+      text: "Importing to United Arab Emirates"
+
+
 ---

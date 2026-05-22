@@ -3,6 +3,7 @@ title: "Flying with a Brussels Griffon | Airline Restrictions & Advice"
 description: "Which airlines accept Brussels Griffon as cargo or cabin? Seasonal embargoes, breed bans, and what you need before booking your flat-faced dog."
 type: "breeds"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 slug: "brussels-griffon"
 breed_name: "Brussels Griffon"
 brachycephalic: true

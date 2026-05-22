@@ -1,12 +1,13 @@
 ---
 title: "Australia Pet Quarantine: What Actually Happens at Mickleham"
-description: "Australia requires mandatory quarantine for every imported dog and cat. Here's what happens at Mickleham, how long it takes, and what the 180-day titre test rule actually means."
+description: "Australia requires mandatory quarantine for every imported dog and cat. What happens at Mickleham, how long it takes, and what the 180-day titre test rule means."
 date: "2026-04-11"
 type: "blog"
+author: "Gareth - Founder, PetTransportGlobal"
 slug: "australia-pet-quarantine-explained"
 url: "/blog/australia-pet-quarantine-explained/"
 seo:
-  title: "Australia Pet Quarantine Explained: Mickleham, Costs and the 180-Day Rule | Pet Transport Global"
+  title: "Australia Pet Quarantine | Pet Transport Global"
   description: "Australia requires mandatory quarantine for every imported dog and cat. Here's what happens at Mickleham, how long it takes, and what the 180-day titre test rule actually means."
 tags:
   - "australia"

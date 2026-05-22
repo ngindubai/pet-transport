@@ -1,8 +1,10 @@
 ---
+template_variant: "C"
 title: "Pet Transport from France to Australia | Complete Guide"
-description: "How to transport your dog or cat from France to Australia. Import requirements, airline options, costs, and step-by-step process."
+description: "How to transport your dog or cat from France to Australia. Import requirements, airline options, costs, and step-by-step process Complete guide: Australia impor"
 type: "routes"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 slug: "france-to-australia"
 origin_name: "France"
 destination_name: "Australia"
@@ -97,11 +99,35 @@ route_data:
     - "Australia has the strictest pet import process globally. Expect a minimum 180-day preparation period. Pets can only enter through Melbourne (Mickleham quarantine facility)."
   route_complexity: "very_high"
   estimated_timeline_weeks: "26-30"
+faqs:
+  - question: "How long does it take to prepare a pet for transport from France to Australia?"
+    answer: "Allow at least 26-30 weeks: more if your pet is not yet vaccinated. The timeline is driven by mandatory waiting periods that cannot be shortened."
+  - question: "Does my pet need to go into quarantine when entering Australia?"
+    answer: "Yes. Mandatory quarantine. Facility: Mickleham Post Entry Quarantine Facility. Location: Melbourne, Victoria Plan your trip around the quarantine period and factor in the cost, which is owner-paid."
+  - question: "Do I need an import permit to bring my pet into Australia?"
+    answer: "Required. Must be obtained BEFORE travel. Permit specifies conditions for import."
+  - question: "What health certificate does my pet need for this route?"
+    answer: "Required. Government-issued veterinary health certificate (country-specific format). Issued by: Government veterinarian in country of export. Certificate format is NON-NEGOTIABLE. Must use exact DAFF-approved format for the specific country of export. Your France vet must be approved to issue official veterinary certificates. The certificate must be issued within the timeframe required by Australia: usually 10 days before travel. Present the original at check-in."
+  - question: "Is a rabies titre test required for pets entering Australia?"
+    answer: "Yes. Required for: Groups 3, 4, 5, 6 (all except Groups 1 and 2). Minimum: 0.5 IU/ml The microchip must be implanted before the first rabies vaccination for the vaccination to be valid. Start this process as early as possible."
 content:
   h1: "Pet Transport from France to Australia"
   overview: |
-    
+    Moving a pet from France to Australia is one of the most involved international pet moves you can make. Australia maintains strict biosecurity rules and every step in the preparation process is mandatory.
+
+    At minimum, your pet needs a microchip (ISO 11784/11785 standard), a current rabies vaccination, a rabies titre test with a waiting period after the result, an approved import permit from the destination authority, and a government-endorsed health certificate issued close to your travel date. Allow 26-30 weeks from starting preparation to travel day.
+
+    Mandatory quarantine applies: all pets must complete a stay at the Mickleham Post-Entry Quarantine Facility in Melbourne. The facility is government-run and owner-paid. Plan for at least 10 days. Use our step-by-step guide below to track what you need to do and when.
+
 links:
-  sideways: []
-  upward: []
+  sideways:
+    - url: "/pet-transport/australia-to-france/"
+      text: "Pet Transport Australia to France"
+  upward:
+    - url: "/pet-transport/origins/pet-export-guide-shipping-from-france/"
+      text: "Shipping from France"
+    - url: "/pet-transport/countries/australia/"
+      text: "Importing to Australia"
+
+
 ---

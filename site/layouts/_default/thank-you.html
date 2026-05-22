@@ -1,0 +1,42 @@
+{{ define "main" }}
+<section class="thank-you-section" style="min-height: 70vh; display: flex; align-items: center; padding: 150px 0 80px;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 col-md-9 text-center">
+
+                <div class="thank-you-icon" style="margin-bottom: 2rem;">
+                    <span style="display: inline-flex; align-items: center; justify-content: center; width: 96px; height: 96px; border-radius: 50%; background: #1a6b4a;">
+                        <i class="fas fa-check" style="font-size: 2.6rem; color: #fff;"></i>
+                    </span>
+                </div>
+
+                <h1 style="font-size: 2.2rem; color: #1e3a5f; margin-bottom: 1rem;">{{ .Title }}</h1>
+
+                <p style="font-size: 1.18rem; color: #333; margin-bottom: 1.5rem; line-height: 1.7;">
+                    {{ .Params.lead }}
+                </p>
+
+                {{ .Content }}
+
+                <div style="margin-top: 2.5rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+                    <a href="/" class="btn btn-primary btn-lg">Back to Home</a>
+                    <a href="/pet-transport/routes/" class="btn btn-outline-secondary btn-lg">Browse Routes</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/* GA4 lead conversion event — fires on every thank-you page load */}}
+{{ if and (not hugo.IsServer) .Site.Params.googleAnalyticsId }}
+<script>
+  if (typeof gtag === 'function') {
+    gtag('event', 'generate_lead', {
+      'event_category': 'enquiry',
+      'event_label': document.referrer || 'direct'
+    });
+  }
+</script>
+{{ end }}
+{{ end }}

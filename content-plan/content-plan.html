@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetTransportGlobal — 12-Month Content & SEO/GEO Plan</title>
+<style>
+  :root {
+    --pr: #1F4E5C;
+    --pr-light: #2A6B7E;
+    --ac: #E8913A;
+    --ac-light: #F2AE65;
+    --green: #2A9D6E;
+    --green-bg: #DCF4E8;
+    --dark: #1A2B33;
+    --bg: #F6F4EE;
+    --card: #ffffff;
+    --border: #E2DDD2;
+    --text: #1A2B33;
+    --muted: #6B7480;
+    --amber: #B45309;
+    --amber-bg: #FEF3C7;
+    --blue: #1D6FA5;
+    --blue-bg: #DDEEF8;
+    --red: #B91C1C;
+    --red-bg: #FEE2E2;
+    --purple: #6D4AAD;
+    --purple-bg: #ECE4F7;
+    --grey-bg: #EFEDE6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .top {
+    background: linear-gradient(135deg, var(--pr) 0%, var(--pr-light) 100%);
+    color: white;
+    padding: 28px 32px;
+    border-bottom: 4px solid var(--ac);
+  }
+  .top .ar-sub { font-size: 13px; color: var(--ac); margin-bottom: 4px; font-weight: 600; }
+  .top h1 { margin: 0 0 6px; font-size: 28px; font-weight: 800; letter-spacing: -0.02em; }
+  .top p { margin: 0; color: rgba(255,255,255,0.78); font-size: 14px; max-width: 880px; }
+  .top .meta-row {
+    margin-top: 14px; display: flex; gap: 18px; flex-wrap: wrap;
+    font-size: 12px; color: rgba(255,255,255,0.85);
+  }
+  .top .meta-row span strong { color: var(--ac); font-weight: 700; }
+
+  .wrap { max-width: 1500px; margin: 0 auto; padding: 24px 32px; }
+
+  .summary-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px; margin-bottom: 22px;
+  }
+  .stat-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 14px 16px;
+  }
+  .stat-card .label {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em;
+    color: var(--muted); font-weight: 700;
+  }
+  .stat-card .val { font-size: 24px; font-weight: 800; color: var(--pr); margin-top: 4px; }
+  .stat-card .sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+  .controls {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 16px;
+    display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
+  }
+  .controls label { font-size: 12px; font-weight: 600; color: var(--muted); display: block; margin-bottom: 4px; }
+  .controls select, .controls input[type="text"] {
+    border: 1px solid var(--border); border-radius: 8px; padding: 7px 10px;
+    font-size: 13px; background: white; min-width: 140px;
+  }
+  .controls input[type="text"] { min-width: 220px; }
+  .ctrl-group { display: flex; flex-direction: column; }
+  .ctrl-spacer { flex: 1; }
+  .btn {
+    background: var(--pr); color: white; border: none; border-radius: 8px;
+    padding: 9px 16px; font-weight: 700; font-size: 13px; cursor: pointer;
+    transition: background 0.15s;
+  }
+  .btn:hover { background: var(--pr-light); }
+  .btn-gold { background: var(--ac); color: white; }
+  .btn-gold:hover { background: var(--ac-light); }
+  .btn-ghost { background: transparent; color: var(--pr); border: 1px solid var(--border); }
+  .btn-ghost:hover { background: var(--grey-bg); }
+
+  .legend {
+    display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; align-items: center;
+    margin-bottom: 14px; padding: 8px 14px;
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+  }
+  .legend strong { color: var(--muted); margin-right: 6px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .pill {
+    display: inline-block; padding: 3px 9px; border-radius: 999px;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.02em;
+  }
+  .pill-not    { background: var(--grey-bg); color: var(--muted); }
+  .pill-prog   { background: var(--blue-bg); color: var(--blue); }
+  .pill-draft  { background: var(--amber-bg); color: var(--amber); }
+  .pill-pub    { background: var(--green-bg); color: var(--green); }
+  .pill-comm   { background: var(--purple-bg); color: var(--purple); }
+  .pill-tx     { background: #FFE4E6; color: #BE123C; }
+  .pill-info   { background: var(--blue-bg); color: var(--blue); }
+
+  .holiday-strip {
+    background: #FFF8EC; border: 1px solid var(--ac-light);
+    border-radius: 12px; padding: 10px 14px; margin-bottom: 14px;
+    font-size: 12px; color: var(--dark);
+  }
+  .holiday-strip strong { color: var(--ac); margin-right: 8px; }
+  .holiday-strip span { margin-right: 14px; white-space: nowrap; }
+
+  .table-wrap {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; overflow: hidden;
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  thead th {
+    background: var(--pr); color: white; text-align: left; padding: 10px 12px;
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;
+    position: sticky; top: 0; z-index: 5;
+  }
+  tbody tr { border-top: 1px solid var(--border); }
+  tbody tr:hover { background: #FAFAF6; }
+  tbody td { padding: 10px 12px; vertical-align: top; }
+  td.day-num { color: var(--muted); font-weight: 600; width: 50px; font-variant-numeric: tabular-nums; }
+  td.date-cell { width: 100px; font-size: 12px; color: var(--muted); }
+  td.date-cell .dow { display: block; color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; }
+  td.title-cell { min-width: 280px; }
+  td.title-cell .title { font-weight: 700; color: var(--pr); display: block; }
+  td.title-cell .slug { font-size: 11px; color: var(--muted); font-family: ui-monospace, "SF Mono", Menlo, monospace; display: block; margin-top: 2px; }
+  td.cluster-cell { white-space: nowrap; }
+  td.kw-cell { font-size: 12px; max-width: 320px; }
+  td.kw-cell .pkw { font-weight: 700; color: var(--dark); display: block; }
+  td.kw-cell .vol { font-size: 11px; color: var(--muted); }
+  td.kw-cell .skw { font-size: 11px; color: var(--muted); margin-top: 4px; display: block; }
+  td.author-cell { font-size: 12px; white-space: nowrap; }
+  td.status-cell { width: 110px; }
+  td.action-cell { width: 90px; text-align: right; }
+  .row-btn {
+    background: transparent; border: 1px solid var(--border); border-radius: 6px;
+    padding: 5px 10px; font-size: 12px; color: var(--pr); font-weight: 600; cursor: pointer;
+  }
+  .row-btn:hover { background: var(--grey-bg); }
+  .empty-state { padding: 40px; text-align: center; color: var(--muted); }
+  .empty-state code { background: var(--grey-bg); padding: 3px 6px; border-radius: 4px; font-size: 12px; }
+
+  .write-bar {
+    position: sticky; bottom: 16px;
+    background: var(--pr); color: white; border-radius: 14px;
+    box-shadow: 0 8px 32px rgba(31, 78, 92, 0.35);
+    padding: 14px 18px; margin: 22px 0 0;
+    display: flex; align-items: center; gap: 14px; z-index: 50;
+  }
+  .write-bar .wb-info { flex: 1; min-width: 0; }
+  .write-bar .wb-label { font-size: 11px; color: var(--ac); text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em; }
+  .write-bar .wb-title { font-size: 16px; font-weight: 700; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .write-bar .wb-meta { font-size: 12px; color: rgba(255,255,255,0.7); margin-top: 2px; }
+  .write-bar button { white-space: nowrap; }
+
+  .modal-bg {
+    position: fixed; inset: 0; background: rgba(26, 43, 51, 0.6);
+    display: none; align-items: center; justify-content: center;
+    z-index: 100; padding: 20px;
+  }
+  .modal-bg.open { display: flex; }
+  .modal {
+    background: white; border-radius: 14px;
+    max-width: 880px; width: 100%; max-height: 90vh; overflow-y: auto;
+  }
+  .modal-head {
+    padding: 16px 22px; border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; gap: 12px;
+  }
+  .modal-head h3 { margin: 0; font-size: 18px; color: var(--pr); flex: 1; }
+  .modal-close { background: none; border: none; font-size: 22px; color: var(--muted); cursor: pointer; line-height: 1; }
+  .modal-body { padding: 18px 22px; font-size: 13px; }
+  .modal-body h4 {
+    margin: 16px 0 6px; font-size: 12px; text-transform: uppercase;
+    letter-spacing: 0.05em; color: var(--muted);
+  }
+  .modal-body pre {
+    background: var(--grey-bg); border: 1px solid var(--border);
+    border-radius: 8px; padding: 12px; white-space: pre-wrap; word-wrap: break-word;
+    font-size: 12px; line-height: 1.5; max-height: 320px; overflow-y: auto;
+  }
+  .modal-foot { padding: 14px 22px; border-top: 1px solid var(--border); display: flex; gap: 10px; justify-content: flex-end; }
+
+  .toast {
+    position: fixed; bottom: 90px; left: 50%; transform: translateX(-50%);
+    background: var(--dark); color: white; padding: 10px 20px; border-radius: 999px;
+    font-size: 13px; z-index: 200; opacity: 0; pointer-events: none; transition: opacity 0.2s;
+  }
+  .toast.show { opacity: 1; }
+
+  @media (max-width: 980px) {
+    .wrap { padding: 16px; }
+    .top { padding: 22px 18px; }
+    td.kw-cell, td.cluster-cell { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="ar-sub">Annual editorial calendar</div>
+  <h1>PetTransportGlobal — 12-Month Content &amp; SEO/GEO Plan</h1>
+  <p>Daily article calendar (Mon-Fri, ~252 working days) for pettransportglobal.com. Dual-layer keyword targeting on every row: traditional SEO keywords plus model-specific phrasings for ChatGPT, Claude, Gemini, and Grok. Status persists per row in your browser.</p>
+  <div class="meta-row">
+    <span><strong>Start:</strong> Mon 1 Jun 2026</span>
+    <span><strong>End:</strong> Fri 28 May 2027</span>
+    <span><strong>Working days:</strong> 252 (after UK bank holidays)</span>
+    <span><strong>Author voice:</strong> Gareth, Founder · single-author</span>
+    <span><strong>Plan version:</strong> 1.0</span>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="summary-grid" id="summary-grid">
+    <div class="stat-card"><div class="label">Total articles</div><div class="val" id="stat-total">—</div><div class="sub">across 12 months</div></div>
+    <div class="stat-card"><div class="label">Published</div><div class="val" id="stat-pub">0</div><div class="sub">marked complete</div></div>
+    <div class="stat-card"><div class="label">In progress</div><div class="val" id="stat-prog">0</div><div class="sub">currently writing</div></div>
+    <div class="stat-card"><div class="label">Drafted</div><div class="val" id="stat-draft">0</div><div class="sub">awaiting publish</div></div>
+    <div class="stat-card"><div class="label">Not started</div><div class="val" id="stat-not">—</div><div class="sub">in queue</div></div>
+    <div class="stat-card"><div class="label">Commercial</div><div class="val" id="stat-comm">—</div><div class="sub">revenue-driving</div></div>
+    <div class="stat-card"><div class="label">Transactional</div><div class="val" id="stat-tx">—</div><div class="sub">process / how-to</div></div>
+    <div class="stat-card"><div class="label">Informational</div><div class="val" id="stat-info">—</div><div class="sub">authority-building</div></div>
+  </div>
+
+  <div class="legend">
+    <strong>Status</strong>
+    <span class="pill pill-not">Not started</span>
+    <span class="pill pill-prog">In progress</span>
+    <span class="pill pill-draft">Drafted</span>
+    <span class="pill pill-pub">Published</span>
+    <span style="margin-left:18px;"></span>
+    <strong>Intent</strong>
+    <span class="pill pill-comm">Commercial</span>
+    <span class="pill pill-tx">Transactional</span>
+    <span class="pill pill-info">Informational</span>
+  </div>
+
+  <div class="holiday-strip" id="holiday-strip">
+    <strong>UK bank holidays excluded:</strong>
+    <span>25 May 2026 (Spring)</span>
+    <span>31 Aug 2026 (Summer)</span>
+    <span>25 Dec 2026 (Christmas)</span>
+    <span>28 Dec 2026 (Boxing Day sub.)</span>
+    <span>1 Jan 2027 (New Year)</span>
+    <span>2 Apr 2027 (Good Friday)</span>
+    <span>5 Apr 2027 (Easter Monday)</span>
+    <span>3 May 2027 (Early May)</span>
+    <span style="color:var(--muted);">Calendar: England &amp; Wales.</span>
+  </div>
+
+  <div class="controls">
+    <div class="ctrl-group">
+      <label>Cluster</label>
+      <select id="filter-cluster"><option value="">All clusters</option></select>
+    </div>
+    <div class="ctrl-group">
+      <label>Quarter</label>
+      <select id="filter-quarter">
+        <option value="">All</option>
+        <option value="Q1">Q1 (Jun-Aug 2026)</option>
+        <option value="Q2">Q2 (Sep-Nov 2026)</option>
+        <option value="Q3">Q3 (Dec 2026-Feb 2027)</option>
+        <option value="Q4">Q4 (Mar-May 2027)</option>
+      </select>
+    </div>
+    <div class="ctrl-group">
+      <label>Intent</label>
+      <select id="filter-intent">
+        <option value="">All</option>
+        <option value="commercial">Commercial</option>
+        <option value="transactional">Transactional</option>
+        <option value="informational">Informational</option>
+      </select>
+    </div>
+    <div class="ctrl-group">
+      <label>Status</label>
+      <select id="filter-status">
+        <option value="">All</option>
+        <option value="not-started">Not started</option>
+        <option value="in-progress">In progress</option>
+        <option value="drafted">Drafted</option>
+        <option value="published">Published</option>
+      </select>
+    </div>
+    <div class="ctrl-group" style="flex:1; min-width:220px;">
+      <label>Search title or keyword</label>
+      <input type="text" id="filter-search" placeholder="e.g. quarantine, DEFRA, Sydney, brachycephalic">
+    </div>
+    <div class="ctrl-spacer"></div>
+    <button class="btn-ghost btn" onclick="exportPlan()">Export JSON</button>
+    <button class="btn-ghost btn" onclick="resetStatus()">Reset status</button>
+  </div>
+
+  <div class="table-wrap">
+    <table id="plan-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Date</th>
+          <th>Cluster</th>
+          <th>Title</th>
+          <th>Primary keyword</th>
+          <th>Intent</th>
+          <th>Type</th>
+          <th>Status</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="plan-tbody">
+        <tr><td colspan="9"><div class="empty-state">
+          <strong>Plan rows will appear here.</strong><br>
+          Q1 rows arrive in <code>Chunk 3</code>. Q2 in <code>Chunk 4</code>. Q3 in <code>Chunk 5</code>. Q4 + appendix in <code>Chunk 6</code>.
+        </div></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="write-bar" id="write-bar" style="display:none;">
+    <div class="wb-info">
+      <div class="wb-label">Next up to write</div>
+      <div class="wb-title" id="wb-title">—</div>
+      <div class="wb-meta" id="wb-meta">—</div>
+    </div>
+    <button class="btn btn-gold" onclick="openWriteModal()">Open writing brief →</button>
+  </div>
+
+</div>
+
+<div class="modal-bg" id="modal-bg" onclick="closeModalIfBg(event)">
+  <div class="modal">
+    <div class="modal-head">
+      <h3 id="modal-title">Writing brief</h3>
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+    <div class="modal-foot">
+      <button class="btn btn-ghost" onclick="copyPrompt()">Copy AI prompt</button>
+      <button class="btn" onclick="markStatus('in-progress')">Mark in progress</button>
+      <button class="btn btn-gold" onclick="markStatus('drafted')">Mark drafted</button>
+      <button class="btn" onclick="markStatus('published')" style="background:var(--green);">Mark published</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<section style="max-width:1500px;margin:48px auto 80px;padding:0 32px;">
+  <div style="background:#fff;border:1px solid var(--border);border-radius:14px;padding:32px;box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+    <h2 style="font-size:24px;color:var(--pr);margin:0 0 6px;">How to use this plan</h2>
+    <ol style="color:#333;line-height:1.7;font-size:14px;">
+      <li>Filter to <strong>"Not started"</strong> in the Status dropdown above. The "Write next →" bar at the bottom auto-points to the next chronological row.</li>
+      <li>Click <strong>"Open writing brief"</strong> on any row to see the full brief: cluster, primary keyword, LLM phrasings, the pre-written 40-60 word direct-answer block, H2 outline, schema requirements, and internal links.</li>
+      <li>Click <strong>"Copy AI prompt"</strong> in the modal to get a copy-paste prompt for ChatGPT or Claude. The prompt has all 12 GEO/AEO + humanisation rules baked in.</li>
+      <li>Mark <strong>In progress → Drafted → Published</strong> as you go. Status saves to <code>localStorage</code> as <code>ptg_content_plan_status_v1</code>.</li>
+      <li><strong>Export JSON</strong> to back up status snapshots into Git.</li>
+    </ol>
+    <p style="margin-top:24px;color:var(--muted);font-size:12px;border-top:1px solid var(--border);padding-top:16px;">
+      Plan generated for <strong>pettransportglobal.com</strong> · 12-month coverage <strong>1 Jun 2026 → 28 May 2027</strong> · 252 working days · 22 clusters · single author voice (Gareth, Founder).
+      Source data: Semrush UK broad-match export + GSC 90-day queries / pages / countries.
+      Holiday calendar: England &amp; Wales.
+    </p>
+  </div>
+</section>
+
+<script>
+window.PLAN_ROWS = window.PLAN_ROWS || [];
+
+window.CLUSTERS = [
+  { id: "core-head-terms",       name: "Core 'pet transport' head terms",       intent: "commercial" },
+  { id: "routes-uk-anchored",    name: "High-volume route pages (UK-anchored)", intent: "commercial" },
+  { id: "cost-pricing",          name: "Cost, pricing & budget",                intent: "commercial" },
+  { id: "quote-agency-choice",   name: "Quote, agency & company choice",        intent: "commercial" },
+  { id: "country-guides",        name: "Country import & export guides",        intent: "informational" },
+  { id: "quarantine",            name: "Quarantine rules & timelines",          intent: "informational" },
+  { id: "pet-passports",         name: "Pet passports & health certificates",   intent: "informational" },
+  { id: "defra-regulator",       name: "DEFRA & regulator-specific",            intent: "informational" },
+  { id: "airline-policies",      name: "Airline pet policies",                  intent: "commercial" },
+  { id: "cargo-cabin-manifest",  name: "Cargo vs cabin vs manifest",            intent: "informational" },
+  { id: "iata-crate",            name: "IATA, crates & equipment",              intent: "transactional" },
+  { id: "breed-restrictions",    name: "Breed & brachycephalic restrictions",   intent: "informational" },
+  { id: "multi-pet",             name: "Multi-pet & household moves",           intent: "transactional" },
+  { id: "welfare",               name: "Welfare: senior, anxious, brachy",      intent: "informational" },
+  { id: "door-to-door",          name: "Door-to-door & ground logistics",       intent: "commercial" },
+  { id: "insurance",             name: "Pet transport insurance",               intent: "commercial" },
+  { id: "emergency-urgent",      name: "Emergency & last-minute",               intent: "commercial" },
+  { id: "process-timeline",      name: "Process, timeline & planning",          intent: "transactional" },
+  { id: "choose-transporter",    name: "Choosing a transporter / vetting",      intent: "commercial" },
+  { id: "uk-regional",           name: "UK regional & domestic",                intent: "commercial" },
+  { id: "public-transport",      name: "Pets on public transport (UK)",         intent: "informational" },
+  { id: "refresh-seasonal",      name: "Refresh & seasonal",                    intent: "informational" },
+  { id: "routes-us",             name: "High-volume route pages (US-anchored)", intent: "commercial" },
+  { id: "routes-uk",             name: "High-volume route pages (UK-anchored)", intent: "commercial" },
+  { id: "airlines",              name: "Airline pet policies",                  intent: "commercial" },
+  { id: "brachycephalic",        name: "Brachycephalic & breed restrictions",   intent: "informational" },
+  { id: "vetting",               name: "Vetting transporters",                  intent: "commercial" },
+  { id: "refresh-vetting",       name: "Refresh & methodology",                 intent: "informational" }
+];
+
+// ========== NORMALISE Q4 ROWS to canonical schema ==========
+// Q4 uses a shorter field set (topic_title, cluster, primary_kw, kw_volume, etc.).
+// Map those to the canonical fields the renderer expects so all 253 rows render.
+function normalisePlanRows() {
+  const rows = window.PLAN_ROWS || [];
+  const clusterLookup = {};
+  (window.CLUSTERS || []).forEach(c => clusterLookup[c.id] = c);
+  // assign sequential day_number where missing
+  rows.forEach((r, i) => {
+    if (r.day_number == null) r.day_number = i + 1;
+    // title / slug
+    if (!r.title && r.topic_title) r.title = r.topic_title;
+    if (!r.url_slug && r.title) {
+      r.url_slug = r.title.toLowerCase()
+        .replace(/[^a-z0-9 -]/g, '')
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-')
+        .slice(0, 70);
+    }
+    if (!r.title_tag) r.title_tag = r.title;
+    // keywords
+    if (!r.primary_seo_keyword && r.primary_kw) r.primary_seo_keyword = r.primary_kw;
+    if (r.primary_volume == null && r.kw_volume != null) r.primary_volume = r.kw_volume;
+    if (!r.secondary_seo_keywords && Array.isArray(r.secondary_kw)) r.secondary_seo_keywords = r.secondary_kw;
+    // llm phrasings
+    if (!r.llm_layer_keywords && Array.isArray(r.llm_phrasings)) {
+      r.llm_layer_keywords = r.llm_phrasings.map(p => ({ model: p.model, phrasing: p.phrase || p.phrasing }));
+    }
+    // h2 outline
+    if (!r.h2_outline && Array.isArray(r.h2_questions)) r.h2_outline = r.h2_questions;
+    // schema
+    if (!r.schema_required && Array.isArray(r.schema_types)) r.schema_required = r.schema_types;
+    // external links from sources[]
+    if (!r.external_links && Array.isArray(r.sources)) {
+      r.external_links = r.sources.map(s => (s.name || '') + (s.date ? ' — ' + s.date : ''));
+    }
+    // cluster_id / cluster_name
+    if (!r.cluster_id && r.cluster) r.cluster_id = r.cluster;
+    if (!r.cluster_name && r.cluster_id) {
+      const c = clusterLookup[r.cluster_id];
+      r.cluster_name = c ? c.name : r.cluster_id;
+    }
+    // intent (default from cluster, fallback informational)
+    if (!r.intent) {
+      const c = clusterLookup[r.cluster_id];
+      r.intent = (c && c.intent) || 'informational';
+    }
+    r.intent = String(r.intent).toLowerCase();
+    // quarter from iso_date
+    if (!r.quarter && r.iso_date) {
+      const d = new Date(r.iso_date + 'T00:00:00');
+      const y = d.getFullYear(), m = d.getMonth() + 1;
+      if (y === 2026 && m >= 6 && m <= 8) r.quarter = 'Q1';
+      else if (y === 2026 && m >= 9 && m <= 11) r.quarter = 'Q2';
+      else if ((y === 2026 && m === 12) || (y === 2027 && m <= 2)) r.quarter = 'Q3';
+      else if (y === 2027 && m >= 3 && m <= 5) r.quarter = 'Q4';
+    }
+  });
+}
+
+const STORAGE_KEY = 'ptg_content_plan_status_v1';
+let statusMap = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+let activeRowId = null;
+let filters = { cluster: '', quarter: '', intent: '', status: '', search: '' };
+
+function saveStatus() { localStorage.setItem(STORAGE_KEY, JSON.stringify(statusMap)); }
+function getStatus(id) { return statusMap[id] || 'not-started'; }
+function setStatus(id, s) { statusMap[id] = s; saveStatus(); }
+
+function populateClusterFilter() {
+  const sel = document.getElementById('filter-cluster');
+  CLUSTERS.forEach(c => {
+    const o = document.createElement('option');
+    o.value = c.id; o.textContent = c.name;
+    sel.appendChild(o);
+  });
+}
+
+function fmtDate(iso) {
+  if (!iso) return '';
+  const d = new Date(iso + 'T00:00:00');
+  return d.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: '2-digit' });
+}
+function pillForStatus(s) {
+  const map = {
+    'not-started': ['pill-not', 'Not started'],
+    'in-progress': ['pill-prog', 'In progress'],
+    'drafted':     ['pill-draft','Drafted'],
+    'published':   ['pill-pub',  'Published']
+  };
+  const [cls, label] = map[s] || map['not-started'];
+  return `<span class="pill ${cls}">${label}</span>`;
+}
+function pillForIntent(i) {
+  const map = {
+    'commercial':   ['pill-comm', 'Commercial'],
+    'transactional':['pill-tx',   'Transactional'],
+    'informational':['pill-info', 'Informational']
+  };
+  const [cls, label] = map[i] || map['informational'];
+  return `<span class="pill ${cls}">${label}</span>`;
+}
+
+function rowMatchesFilters(r) {
+  if (filters.cluster && r.cluster_id !== filters.cluster) return false;
+  if (filters.quarter && r.quarter !== filters.quarter) return false;
+  if (filters.intent && r.intent !== filters.intent) return false;
+  if (filters.status && getStatus(r.id) !== filters.status) return false;
+  if (filters.search) {
+    const q = filters.search.toLowerCase();
+    const hay = [r.title, r.primary_seo_keyword, (r.secondary_seo_keywords||[]).join(' '), r.cluster_name].join(' ').toLowerCase();
+    if (!hay.includes(q)) return false;
+  }
+  return true;
+}
+
+function render() {
+  const rows = (window.PLAN_ROWS || []).filter(rowMatchesFilters);
+  const tbody = document.getElementById('plan-tbody');
+
+  if (!window.PLAN_ROWS || window.PLAN_ROWS.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="9"><div class="empty-state">
+      <strong>Plan rows will appear here.</strong><br>
+      Q1 rows arrive in <code>Chunk 3</code>. Q2 in <code>Chunk 4</code>. Q3 in <code>Chunk 5</code>. Q4 + appendix in <code>Chunk 6</code>.
+    </div></td></tr>`;
+  } else if (rows.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="9"><div class="empty-state">No rows match the current filters.</div></td></tr>`;
+  } else {
+    tbody.innerHTML = rows.map(r => {
+      const st = getStatus(r.id);
+      const dow = r.day_of_week || '';
+      const date = fmtDate(r.iso_date);
+      const skw = (r.secondary_seo_keywords || []).slice(0, 3).join(', ');
+      return `<tr data-id="${r.id}">
+        <td class="day-num">${r.day_number}</td>
+        <td class="date-cell">${date}<span class="dow">${dow}</span></td>
+        <td class="cluster-cell"><span class="pill" style="background:var(--grey-bg);color:var(--pr);">${r.cluster_name || '—'}</span></td>
+        <td class="title-cell"><span class="title">${r.title || '<em>untitled</em>'}</span><span class="slug">/${r.url_slug || '—'}</span></td>
+        <td class="kw-cell"><span class="pkw">${r.primary_seo_keyword || '—'}</span><span class="vol">${r.primary_volume ? r.primary_volume + ' searches/mo · KD ' + (r.primary_kd || 0) : ''}</span>${skw ? '<span class="skw">+ ' + skw + '</span>' : ''}</td>
+        <td>${pillForIntent(r.intent)}</td>
+        <td class="author-cell">${r.content_type || '—'}</td>
+        <td class="status-cell">${pillForStatus(st)}</td>
+        <td class="action-cell"><button class="row-btn" onclick="openRow('${r.id}')">Open</button></td>
+      </tr>`;
+    }).join('');
+  }
+
+  renderSummary();
+  renderWriteBar();
+}
+
+function renderSummary() {
+  const all = window.PLAN_ROWS || [];
+  const byStatus = { 'not-started': 0, 'in-progress': 0, 'drafted': 0, 'published': 0 };
+  const byIntent = { commercial: 0, transactional: 0, informational: 0 };
+  all.forEach(r => {
+    byStatus[getStatus(r.id)]++;
+    if (byIntent[r.intent] !== undefined) byIntent[r.intent]++;
+  });
+  document.getElementById('stat-total').textContent = all.length || '—';
+  document.getElementById('stat-pub').textContent = byStatus['published'];
+  document.getElementById('stat-prog').textContent = byStatus['in-progress'];
+  document.getElementById('stat-draft').textContent = byStatus['drafted'];
+  document.getElementById('stat-not').textContent = byStatus['not-started'] || (all.length ? 0 : '—');
+  document.getElementById('stat-comm').textContent = byIntent.commercial || (all.length ? 0 : '—');
+  document.getElementById('stat-tx').textContent = byIntent.transactional || (all.length ? 0 : '—');
+  document.getElementById('stat-info').textContent = byIntent.informational || (all.length ? 0 : '—');
+}
+
+function renderWriteBar() {
+  const next = (window.PLAN_ROWS || []).find(r => getStatus(r.id) === 'not-started');
+  const bar = document.getElementById('write-bar');
+  if (!next) { bar.style.display = 'none'; return; }
+  bar.style.display = 'flex';
+  document.getElementById('wb-title').textContent = next.title || '(untitled)';
+  document.getElementById('wb-meta').textContent =
+    `Day ${next.day_number} · ${fmtDate(next.iso_date)} · ${next.cluster_name} · ${next.content_type || '—'} · ${(next.word_count_target || '—')} words`;
+  bar.dataset.rowId = next.id;
+}
+
+function openRow(id) {
+  activeRowId = id;
+  const r = (window.PLAN_ROWS || []).find(x => x.id === id);
+  if (!r) return;
+  document.getElementById('modal-title').textContent = `Day ${r.day_number} · ${r.title}`;
+  document.getElementById('modal-body').innerHTML = renderBriefBody(r);
+  document.getElementById('modal-bg').classList.add('open');
+}
+
+function openWriteModal() {
+  const bar = document.getElementById('write-bar');
+  if (bar.dataset.rowId) openRow(bar.dataset.rowId);
+}
+
+function closeModal() { document.getElementById('modal-bg').classList.remove('open'); }
+function closeModalIfBg(e) { if (e.target.id === 'modal-bg') closeModal(); }
+
+function renderBriefBody(r) {
+  const sec = (label, val) => `<h4>${label}</h4><div>${val || '—'}</div>`;
+  const list = arr => (arr && arr.length) ? '<ul>' + arr.map(x => `<li>${x}</li>`).join('') + '</ul>' : '—';
+  const llmList = arr => (arr && arr.length)
+    ? '<ul>' + arr.map(x => `<li><strong>${x.model}:</strong> "${x.phrasing}"</li>`).join('') + '</ul>'
+    : '—';
+
+  return `
+    <div style="display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted);">
+      <span><strong>Date:</strong> ${fmtDate(r.iso_date)} (${r.day_of_week})</span>
+      <span><strong>Cluster:</strong> ${r.cluster_name}</span>
+      <span><strong>Intent:</strong> ${r.intent}</span>
+      <span><strong>Type:</strong> ${r.content_type || '—'}</span>
+      <span><strong>Status:</strong> ${getStatus(r.id)}</span>
+      <span><strong>Word target:</strong> ${r.word_count_target || '—'}</span>
+    </div>
+
+    ${sec('URL', '<code>https://pettransportglobal.com/blog/' + (r.url_slug || '') + '/</code>')}
+    ${sec('Title tag', r.title_tag || r.title)}
+    ${sec('Meta description', r.meta_description ? '<em>' + r.meta_description + '</em>' : '—')}
+    ${sec('Primary SEO keyword', `<strong>${r.primary_seo_keyword || '—'}</strong> &nbsp; <span style="color:var(--muted);">${r.primary_volume ? r.primary_volume + ' searches/mo' + (r.primary_kd ? ' · KD ' + r.primary_kd : '') : ''}</span>`)}
+    ${sec('Secondary SEO keywords', list(r.secondary_seo_keywords))}
+    ${sec('LLM-layer phrasings (per model)', llmList(r.llm_layer_keywords))}
+    ${sec('Direct-answer block (40-60 words, opens article)', r.direct_answer_40_60_words ? '<em>'+r.direct_answer_40_60_words+'</em>' : '—')}
+    ${sec('H2 / H3 outline (question-formed)', list(r.h2_outline))}
+    ${sec('Schema required', list(r.schema_required))}
+    ${sec('Internal links', list(r.internal_links))}
+    ${sec('External authority sources', list(r.external_links))}
+    ${sec('GEO / AI-Overview play', r.ai_overview_play)}
+
+    <h4>Copy-paste AI writing prompt</h4>
+    <pre id="ai-prompt">${buildPrompt(r)}</pre>
+  `;
+}
+
+function buildPrompt(r) {
+  const llm = (r.llm_layer_keywords || []).map(x => `  - [${x.model}] "${x.phrasing}"`).join('\n');
+  const skw = (r.secondary_seo_keywords || []).map(k => '  - ' + k).join('\n');
+  const h2s = (r.h2_outline || []).map(h => '  - ' + h).join('\n');
+  const ilinks = (r.internal_links || []).map(l => '  - ' + l).join('\n');
+  const elinks = (r.external_links || []).map(l => '  - ' + l).join('\n');
+
+  return `Write a ${r.word_count_target || '1,500'}-word article for pettransportglobal.com.
+
+Title: ${r.title}
+URL: https://pettransportglobal.com/blog/${r.url_slug || ''}/
+Author: Gareth, Founder, PetTransportGlobal (single author voice across the site)
+Cluster: ${r.cluster_name}
+Intent: ${r.intent}
+Content type: ${r.content_type || 'guide'}
+
+PRIMARY SEO KEYWORD: ${r.primary_seo_keyword}
+SECONDARY SEO KEYWORDS:
+${skw || '  (none)'}
+
+LLM-LAYER PHRASINGS — these are how real people phrase this question to each model. Weave at least 3 of them verbatim or near-verbatim into H2/H3s, FAQ questions, or first-sentence patterns:
+${llm || '  (none)'}
+
+DIRECT-ANSWER BLOCK (open the article with this 40-60 word paragraph immediately after the H1, marked with class "direct-answer"):
+${r.direct_answer_40_60_words || '(write a 40-60 word direct, factual answer)'}
+
+H2 / H3 OUTLINE (question-formed, real-user voice):
+${h2s || '  (build from the brief)'}
+
+REQUIRED SCHEMA: ${(r.schema_required || []).join(', ')}
+
+INTERNAL LINKS (3-8, varied anchor text, no exact-match repetition):
+${ilinks || '  (link to relevant route, country, airline, breed pages)'}
+
+EXTERNAL AUTHORITY SOURCES (1-3, named + dated, opens new tab):
+${elinks || '  (DEFRA, USDA APHIS, Australian DAFF, EU TRACES, IATA Live Animals Regulations, CDC, named airline policy page)'}
+
+GEO / AEO RULES (apply all):
+- Open with the 40-60 word direct-answer block. This is what LLMs lift.
+- 60% of subheadings are questions phrased the way real owners ask.
+- Include one definition sentence near the top in [Entity] is a [category] that [differentiator] format.
+- Procedural sections use numbered steps (helps Gemini and Google AI Overviews).
+- Schema must match visible content. Include FAQPage with 4-8 Q&As; each answer 40-80 words; question text matches a body H2/H3 verbatim.
+- Add datePublished and dateModified. Print a visible "Last verified: [date]" line.
+- Speakable schema on the .direct-answer paragraph.
+- End with a 4-6 line key-takeaways block.
+- Every regulatory claim cites a named, dated official source (DEFRA, USDA APHIS, DAFF, EU TRACES, IATA, CDC, named airline policy). Date-stamp the article and the regulation.
+- Real figures, real timelines, real crate dimensions in cm. No vague reassurance.
+
+YMYL / SAFETY (NON-NEGOTIABLE):
+- Never promise a pet will arrive safely or stress-free. Acceptable framing: "experienced handlers", "IATA-compliant crates", "we work to reduce stress and risk".
+- Acknowledge the rules change. Tell the reader to verify against the linked official source close to travel.
+- Avoid clinical language. Owners are anxious. Warm, expert, plain-spoken tone.
+
+HUMANISATION (mandatory, every paragraph):
+- NO em dashes (— or –) anywhere. Use commas, full stops, colons, or brackets to restructure.
+- NO AI-tell phrases: do not use "delve", "in today's fast-paced world", "it's worth noting", "it is important to note", "navigating the complexities of", "whether you're X or Y", "in conclusion", "to summarise", "comprehensive", "crucial", "vital", "seamless", "leverage", "robust", "game-changer", "cutting-edge", "streamline", "navigate the landscape", "realm", "testament", "underscore", "foster", "facilitate", "embark on a journey".
+- Vary sentence length deliberately. Mix short punchy sentences (5-10 words) with longer analytical ones (20-30 words). Avoid uniform rhythm.
+- Use contractions naturally where a human would: "you're", "it's", "don't", "won't", "isn't". Not in schema markup.
+- Open paragraphs with the key point first, not a setup clause.
+- Concrete detail over generic reassurance. Real crate sizes, real route timelines, real costs in GBP and USD.
+- Read every paragraph aloud. If it sounds machine-written, rewrite it.
+- Match the existing PetTransportGlobal voice across the site: warm, expert, plain-spoken. One consistent author voice across all 252 articles.
+
+GEO / AI-Overview angle for this specific article: ${r.ai_overview_play || '(see brief)'}
+`;
+}
+
+function copyPrompt() {
+  const el = document.getElementById('ai-prompt');
+  if (!el) return;
+  navigator.clipboard.writeText(el.textContent).then(() => toast('Prompt copied to clipboard'));
+}
+
+function markStatus(s) {
+  if (!activeRowId) return;
+  setStatus(activeRowId, s);
+  toast('Status: ' + s);
+  closeModal();
+  render();
+}
+
+function bindFilters() {
+  document.getElementById('filter-cluster').addEventListener('change', e => { filters.cluster = e.target.value; render(); });
+  document.getElementById('filter-quarter').addEventListener('change', e => { filters.quarter = e.target.value; render(); });
+  document.getElementById('filter-intent').addEventListener('change', e => { filters.intent = e.target.value; render(); });
+  document.getElementById('filter-status').addEventListener('change', e => { filters.status = e.target.value; render(); });
+  document.getElementById('filter-search').addEventListener('input', e => { filters.search = e.target.value; render(); });
+}
+
+function exportPlan() {
+  const out = (window.PLAN_ROWS || []).map(r => ({ ...r, status: getStatus(r.id) }));
+  const blob = new Blob([JSON.stringify(out, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'pettransportglobal-content-plan.json';
+  a.click(); URL.revokeObjectURL(url);
+}
+
+function resetStatus() {
+  if (!confirm('Reset all article statuses to "not started"?')) return;
+  statusMap = {}; saveStatus(); render();
+}
+
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 1800);
+}
+
+populateClusterFilter();
+bindFilters();
+render();
+</script>
+
+<script src="plan-rows-q1.js" onerror="console.log('q1 not loaded yet')"></script>
+<script src="plan-rows-q2.js" onerror="console.log('q2 not loaded yet')"></script>
+<script src="plan-rows-q3.js" onerror="console.log('q3 not loaded yet')"></script>
+<script src="plan-rows-q4.js" onerror="console.log('q4 not loaded yet')"></script>
+<script>normalisePlanRows(); render();</script>
+
+<!-- ========== APPENDIX SECTION (Chunk 15) ========== -->
+<section id="appendix" style="max-width:1500px;margin:48px auto 80px;padding:0 32px;">
+  <div style="background:#fff;border:1px solid var(--border);border-radius:14px;padding:32px;box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+    <h2 style="font-size:24px;color:var(--pr);margin:0 0 6px;">Appendix: QA, Clusters, Holidays, Unassigned</h2>
+    <h3 style="font-size:16px;color:var(--ac);margin:18px 0 6px;">Cluster Volume Table</h3>
+    <div class="table-wrap" style="margin-bottom:18px;">
+      <table>
+        <thead><tr><th>Cluster</th><th>Rows</th><th>Total Vol.</th></tr></thead>
+        <tbody id="cluster-vol-tbody"></tbody>
+      </table>
+    </div>
+    <h3 style="font-size:16px;color:var(--ac);margin:18px 0 6px;">Bank Holidays (England & Wales, 2026-2027)</h3>
+    <ul style="color:#333;line-height:1.7;font-size:14px;">
+      <li>25 May 2026 (Spring)</li>
+      <li>31 Aug 2026 (Summer)</li>
+      <li>25 Dec 2026 (Christmas)</li>
+      <li>28 Dec 2026 (Boxing Day substitute)</li>
+      <li>1 Jan 2027 (New Year)</li>
+      <li>2 Apr 2027 (Good Friday)</li>
+      <li>5 Apr 2027 (Easter Monday)</li>
+      <li>3 May 2027 (Early May)</li>
+    </ul>
+    <h3 style="font-size:16px;color:var(--ac);margin:18px 0 6px;">QA Stats</h3>
+    <ul style="color:#333;line-height:1.7;font-size:14px;">
+      <li><strong>Rows:</strong> 253 (Mon 1 Jun 2026 → Fri 28 May 2027)</li>
+      <li><strong>Clusters:</strong> 22</li>
+      <li><strong>Duplicate IDs:</strong> 0</li>
+      <li><strong>Duplicate Dates:</strong> 0</li>
+      <li><strong>Internal links:</strong> ~1500</li>
+      <li><strong>External sources:</strong> ~750</li>
+      <li><strong>Single author voice:</strong> Gareth, Founder, PetTransportGlobal</li>
+    </ul>
+    <h3 style="font-size:16px;color:var(--ac);margin:18px 0 6px;">Unassigned / Parking-Lot Keywords</h3>
+    <ul style="color:#333;line-height:1.7;font-size:14px;">
+      <li>Pet transport to India (city-level: Mumbai, Delhi, Bangalore)</li>
+      <li>Pet transport to Middle East (Qatar, Kuwait, Oman, Bahrain, Lebanon, Jordan)</li>
+      <li>Pet transport to Africa (Egypt, Morocco, Kenya, Nigeria, Ghana, Tanzania, Uganda, South Africa — city-level)</li>
+      <li>Pet transport to Caribbean (Jamaica, Barbados, Trinidad, Bahamas)</li>
+      <li>Pet transport to Asia-Pacific (Malaysia, Taiwan, South Korea, Japan, Thailand, Philippines, Indonesia, Vietnam, Singapore, Hong Kong — city-level)</li>
+      <li>Pet transport to South America (Brazil, Chile, Peru, Colombia, Argentina, Ecuador — city-level)</li>
+      <li>Pet transport insurance (deep-dive: exclusions, claims, case studies)</li>
+      <li>Pet transport scams (case studies, red flags, enforcement actions)</li>
+      <li>Pet transport for senior pets (welfare, sedation, crate adaptation)</li>
+      <li>Pet transport for puppies and kittens (age, vaccination, crate size)</li>
+      <li>Pet transport by ferry, train, road (non-airline)</li>
+      <li>Pet transport for rare breeds, snub-nosed cats, and exotics</li>
+      <li>Pet transport operator directory (Bronze/Silver/Gold vetting framework)</li>
+    </ul>
+    <p style="margin-top:24px;color:var(--muted);font-size:12px;border-top:1px solid var(--border);padding-top:16px;">
+      Appendix generated for <strong>pettransportglobal.com</strong> · QA complete as of <strong>21 May 2026</strong> · 253 working days · 22 clusters · single author voice (Gareth, Founder).
+    </p>
+  </div>
+</section>
+<script>
+// ========== APPENDIX CLUSTER VOLUME TABLE POPULATION ==========
+function populateClusterVolTable() {
+  if (!window.PLAN_ROWS || !window.CLUSTERS) return;
+  const clusterMap = {};
+  window.CLUSTERS.forEach(c => clusterMap[c.id] = { name: c.name, rows: 0, vol: 0 });
+  window.PLAN_ROWS.forEach(r => {
+    const cid = r.cluster_id || r.cluster;
+    if (clusterMap[cid]) {
+      clusterMap[cid].rows++;
+      clusterMap[cid].vol += (r.primary_volume || 0);
+    }
+  });
+  const arr = Object.values(clusterMap).sort((a,b) => b.rows - a.rows);
+  const tbody = document.getElementById('cluster-vol-tbody');
+  tbody.innerHTML = arr.map(c => `<tr><td>${c.name}</td><td>${c.rows}</td><td>${c.vol}</td></tr>`).join('');
+}
+if (document.readyState !== 'loading') populateClusterVolTable();
+else document.addEventListener('DOMContentLoaded', populateClusterVolTable);
+</script>
+</body>
+</html>

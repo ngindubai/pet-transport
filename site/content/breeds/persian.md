@@ -3,6 +3,7 @@ title: "Flying with a Persian | Airline Restrictions & Advice"
 description: "Which airlines accept Persian as cargo or cabin? Seasonal embargoes, breed bans, and what you need before booking your flat-faced cat."
 type: "breeds"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 slug: "persian"
 breed_name: "Persian"
 brachycephalic: true

@@ -10,6 +10,7 @@ title = "Pet Transport Global | International Pet Transport"
 enableRobotsTXT = true
 enableGitInfo = false
 timeout = "120s"
+buildFuture = true
 
 # Taxonomies disabled — we use section-based routing
 [taxonomies]
@@ -54,9 +55,9 @@ timeout = "120s"
   brand = "Pet Transport Global"
   tagline = "International Pet Transport"
   description = "Professional international pet transport services. Route-specific guides for shipping dogs and cats between countries."
-  quoteFormEndpoint = ""  # TODO: Cloudflare Worker URL when deployed
+  quoteFormEndpoint = "/submit.php"  # PHP mail handler in static/
+  googleAnalyticsId = "G-4DR6QX6PNJ"
   googleSearchConsole = ""  # TODO: GSC verification code
-  contactEmail = ""  # TODO: Update when confirmed
 
   # Social (optional, add when ready)
   # instagram = ""

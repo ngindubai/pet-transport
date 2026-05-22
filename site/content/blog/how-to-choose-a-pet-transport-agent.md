@@ -3,10 +3,11 @@ title: "How to Choose a Pet Transport Agent: What to Ask, What to Check"
 description: "Not all pet transport agents are equal. Here's how to check accreditation, what questions to ask before committing, and the red flags to watch for."
 date: "2026-04-18"
 type: "blog"
+author: "Gareth - Founder, PetTransportGlobal"
 slug: "how-to-choose-a-pet-transport-agent"
 url: "/blog/how-to-choose-a-pet-transport-agent/"
 seo:
-  title: "Choosing a Pet Transport Agent: IPATA Accreditation, Questions to Ask | Pet Transport Global"
+  title: "How to Choose a Pet Transport Agent | Pet Transport Global"
   description: "Not all pet transport agents are equal. Here's how to check accreditation, what questions to ask before committing, and the red flags to watch for."
 tags:
   - "planning"

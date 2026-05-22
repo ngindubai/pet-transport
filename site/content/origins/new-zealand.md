@@ -1,8 +1,9 @@
 ---
 title: "Pet Export Guide: Shipping from New Zealand"
-description: "Guide to exporting your dog or cat from New Zealand. Export requirements, airlines, and routes."
+description: "Exporting your pet from New Zealand: MPI health certificate requirements, airline options, and routes from New Zealand to international destinations."
 type: "origins"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 country_name: "New Zealand"
 country_code: "NZ"
 overview: |
@@ -25,7 +26,7 @@ sections:
     body: |
       We have detailed guides for the following routes:
       
-      - [New Zealand to United Kingdom](/routes/new-zealand-to-united-kingdom/)
+      - [New Zealand to United Kingdom](/pet-transport/new-zealand-to-united-kingdom/)
 faqs:
   - question: "What do I need to export my pet from New Zealand?"
     answer: "You'll need a health certificate from an official veterinarian, proof of microchip and any vaccinations required by your destination country. New Zealand is rabies-free, so your pet won't have a rabies vaccination history unless you arrange one specifically for export."

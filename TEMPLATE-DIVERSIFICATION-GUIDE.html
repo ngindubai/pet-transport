@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PetTransportGlobal — Template Diversification & Indexation Build Guide</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --panel2:#1c232c; --line:#30363d;
+    --ink:#e6edf3; --mute:#9da7b3; --acc:#58a6ff; --warn:#f0883e;
+    --bad:#f85149; --good:#3fb950; --code:#161b22;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
+  .wrap{max-width:1080px;margin:0 auto;padding:48px 32px}
+  h1{font-size:34px;letter-spacing:-.5px;margin:0 0 8px}
+  h2{font-size:24px;margin:48px 0 12px;padding-top:24px;border-top:1px solid var(--line)}
+  h3{font-size:18px;margin:28px 0 8px;color:var(--acc)}
+  h4{font-size:15px;margin:20px 0 6px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute)}
+  p,li{color:var(--ink)}
+  .lead{color:var(--mute);font-size:17px;max-width:780px}
+  .grid{display:grid;gap:16px}
+  .g2{grid-template-columns:1fr 1fr}
+  .g3{grid-template-columns:1fr 1fr 1fr}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px}
+  .card h3{margin-top:0}
+  .pill{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:600;background:#21262d;color:var(--mute);margin-right:6px}
+  .pill.warn{background:#3a2a14;color:var(--warn)}
+  .pill.bad{background:#3a1d1d;color:var(--bad)}
+  .pill.good{background:#1d3a26;color:var(--good)}
+  .pill.acc{background:#16314e;color:var(--acc)}
+  table{width:100%;border-collapse:collapse;margin:14px 0}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top;font-size:14px}
+  th{color:var(--mute);text-transform:uppercase;font-size:11px;letter-spacing:.07em;font-weight:600}
+  code,pre{font-family:'SF Mono',Consolas,Menlo,monospace;font-size:13px}
+  code{background:var(--code);padding:2px 6px;border-radius:4px;color:#ffa657}
+  pre{background:var(--code);border:1px solid var(--line);border-radius:8px;padding:14px;overflow:auto;color:#e6edf3}
+  pre code{background:none;padding:0;color:inherit}
+  .callout{border-left:3px solid var(--warn);background:#1c1814;padding:14px 16px;border-radius:0 8px 8px 0;margin:14px 0}
+  .callout.bad{border-color:var(--bad);background:#1c1414}
+  .callout.good{border-color:var(--good);background:#141c16}
+  .callout.acc{border-color:var(--acc);background:#141a22}
+  ul{padding-left:22px}
+  ol{padding-left:22px}
+  .num{display:inline-flex;width:22px;height:22px;border-radius:6px;background:#21262d;color:var(--acc);justify-content:center;align-items:center;font-size:12px;font-weight:700;margin-right:6px}
+  hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+  .toc a{color:var(--acc);text-decoration:none}
+  .toc a:hover{text-decoration:underline}
+  .meta{color:var(--mute);font-size:13px}
+  .kbd{font-family:monospace;background:#21262d;border:1px solid var(--line);border-bottom-width:2px;border-radius:4px;padding:1px 6px;font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<p class="meta">PetTransportGlobal · Template Diversification & Crawl/Indexation Survival Guide · v1.0</p>
+<h1>PetTransportGlobal — Template Diversification & Indexation Build Guide</h1>
+<p class="lead">This document is fed into the build chat. It instructs the agent to stop using a single Hugo template across thousands of nearly identical route pages, introduce 5 distinct templates with 5 content-structure souls, rotate them deterministically across the site, and back-fill existing pages so Google indexes them as distinct documents rather than templated boilerplate.</p>
+
+<div class="callout bad">
+<strong>The problem in one line.</strong> ~5,000 route pages, 75 country pages, plus airline / breed / origin pages all share one Hugo layout per content type. Same DOM order, same H2 sequence, same sidebar, same FAQ block position, same data-table location. That is a template footprint Google can fingerprint and use to throttle crawl + skip indexation.
+</div>
+
+<h2 id="toc">Contents</h2>
+<ol class="toc">
+  <li><a href="#audit">Current state audit</a></li>
+  <li><a href="#why">Why one template causes deindexation</a></li>
+  <li><a href="#design">Design constraint: same brand, different skeletons</a></li>
+  <li><a href="#templates">The 5 route templates</a></li>
+  <li><a href="#country-templates">The 5 country-page templates</a></li>
+  <li><a href="#souls">Content structure souls (5 per silo)</a></li>
+  <li><a href="#rotation">Deterministic rotation algorithm</a></li>
+  <li><a href="#workflow">Per-page workflow the chat must follow</a></li>
+  <li><a href="#hugo">Hugo wiring</a></li>
+  <li><a href="#backfill">Phased back-fill plan</a></li>
+  <li><a href="#qa">QA, fingerprint test, indexation monitoring</a></li>
+  <li><a href="#rules">Hard rules (do not violate)</a></li>
+</ol>
+
+<h2 id="audit">1. Current state audit</h2>
+
+<table>
+  <thead><tr><th>Silo</th><th>Pages</th><th>Templates in use</th><th>Risk</th></tr></thead>
+  <tbody>
+    <tr><td>Routes (<code>/routes/COUNTRY-to-COUNTRY/</code>)</td><td>~5,000+</td><td><code>layouts/routes/single.html</code> (1)</td><td><span class="pill bad">Critical</span></td></tr>
+    <tr><td>Countries (<code>/countries/COUNTRY/</code>)</td><td>75</td><td><code>layouts/countries/single.html</code> (1)</td><td><span class="pill bad">High</span></td></tr>
+    <tr><td>Airlines</td><td>varies</td><td>1 layout (single)</td><td><span class="pill warn">Medium</span></td></tr>
+    <tr><td>Breeds</td><td>varies</td><td>1 layout</td><td><span class="pill warn">Medium</span></td></tr>
+    <tr><td>Origins</td><td>varies</td><td>1 layout</td><td><span class="pill warn">Medium</span></td></tr>
+    <tr><td>Blog</td><td>50+</td><td>1 layout</td><td><span class="pill">Low</span> (varied prose)</td></tr>
+  </tbody>
+</table>
+
+<h3>Repetition fingerprint (route pages)</h3>
+<p>Every <code>routes/single.html</code> page emits, in this exact order:</p>
+<ol>
+  <li>Jumbotron hero with <code>AR → AU</code> badge pair</li>
+  <li>"Get Your Quote" yellow accent card</li>
+  <li>Overview paragraph</li>
+  <li><code>&lt;h2&gt;Step-by-Step Process&lt;/h2&gt;</code> — numbered cards</li>
+  <li><code>&lt;h2&gt;{country} Import Requirements&lt;/h2&gt;</code> — 6-cell grid</li>
+  <li><code>&lt;h2&gt;Exporting from {country}&lt;/h2&gt;</code></li>
+  <li><code>&lt;h2&gt;Cost Factors&lt;/h2&gt;</code></li>
+  <li><code>&lt;h2&gt;Breed Restrictions&lt;/h2&gt;</code> (where present)</li>
+  <li><code>&lt;h2&gt;Important Warnings&lt;/h2&gt;</code></li>
+  <li>FAQ accordion</li>
+  <li>Right sidebar with on-page nav + route summary + related routes + quote CTA</li>
+</ol>
+<p>5,000 pages, identical skeleton, identical microformats, identical CSS class sequence. Google's near-duplicate detector sees a content cluster, samples it, and indexes a tiny fraction.</p>
+
+<h2 id="why">2. Why one template causes deindexation</h2>
+<p>Three distinct signals pile up:</p>
+<ul>
+  <li><strong>Boilerplate ratio.</strong> Per route, the unique text is roughly 600–900 words. The shared template chrome plus repeated section labels is more than half the rendered HTML. Pages tip below the unique-content threshold.</li>
+  <li><strong>DOM template fingerprint.</strong> Same nesting, same class names, same H2 sequence. Trivial to cluster.</li>
+  <li><strong>Crawl budget waste.</strong> If Google decides 100 sampled routes look the same, it stops fetching the rest. The famous GSC status "Discovered, not indexed" follows.</li>
+</ul>
+
+<h2 id="design">3. Design constraint: same brand, different skeletons</h2>
+<p>All 5 templates must:</p>
+<ul>
+  <li>Use the existing palette (primary blue, secondary gold, light/dark cards already in <code>maincolors.css</code>).</li>
+  <li>Use the existing fonts (Roboto + Montserrat).</li>
+  <li>Pass the existing accessibility + mobile-first checks.</li>
+  <li>Continue to render the same data fields from the route JSON. Nothing is dropped.</li>
+</ul>
+<p>What changes:</p>
+<ul>
+  <li>Section <strong>order</strong>.</li>
+  <li>Section <strong>visual treatment</strong> (cards vs tables vs side-by-side vs accordion vs stepper).</li>
+  <li>Hero <strong>composition</strong> (full-width image vs split vs minimalist banner vs map vs data-strip).</li>
+  <li>Sidebar <strong>presence and content</strong> (left, right, top, none, sticky-bottom).</li>
+  <li>FAQ <strong>placement and format</strong> (accordion mid-page, two-column block, inline Q&A, expander grid, end-of-page list).</li>
+  <li>Internal-link block <strong>position and visual style</strong>.</li>
+</ul>
+
+<h2 id="templates">4. The 5 route templates</h2>
+<p>Each template gets its own Hugo layout file in <code>site/layouts/routes/</code> and its own scoped CSS block in <code>site/assets/css/main.css</code> under a single root class.</p>
+
+<div class="grid g2">
+  <div class="card">
+    <span class="pill acc">Template A — Field Manual</span>
+    <h3>Layout file: <code>route-a-fieldmanual.html</code></h3>
+    <p><strong>Hero:</strong> Slim banner, two-line title, route badges left-aligned, complexity + weeks chip strip beneath.</p>
+    <p><strong>Sidebar:</strong> None. Full-width single column.</p>
+    <p><strong>Section order:</strong> Hero → Overview → Documents checklist (top, not buried) → Timeline (vertical stepper) → Import requirements (table, not card grid) → Export requirements (table) → Costs (single line + breakdown table) → Warnings (red-bordered call-outs) → FAQ accordion → Related routes inline grid (bottom).</p>
+    <p><strong>Visual signature:</strong> Tabular, dense, no big icons. Looks like an operations manual.</p>
+  </div>
+  <div class="card">
+    <span class="pill acc">Template B — Visual Journey</span>
+    <h3>Layout file: <code>route-b-journey.html</code></h3>
+    <p><strong>Hero:</strong> Full-bleed image, centered title, big animated route arrow with origin/destination flag emojis. CTA button row.</p>
+    <p><strong>Sidebar:</strong> Right sidebar with sticky route summary card and "what other owners did" block.</p>
+    <p><strong>Section order:</strong> Hero → Quick-answer summary box (3 bullet facts) → Timeline as horizontal scroll cards → Import requirements as 2-col card grid → Cost calculator widget (range slider, JS) → Export requirements (collapsible) → Breed restrictions (alert) → Warnings (chip strip, not boxes) → FAQ → Inline quote form.</p>
+    <p><strong>Visual signature:</strong> Marketing-style, image-led, larger negative space.</p>
+  </div>
+  <div class="card">
+    <span class="pill acc">Template C — Comparison Brief</span>
+    <h3>Layout file: <code>route-c-comparison.html</code></h3>
+    <p><strong>Hero:</strong> Split hero. Left half is origin (flag, name, exit summary). Right half is destination (flag, name, entry summary). Title bar bridges them.</p>
+    <p><strong>Sidebar:</strong> Left rail with vertical step indicator (1–8 dots tracking scroll).</p>
+    <p><strong>Section order:</strong> Hero → Side-by-side compare (export vs import in one table) → Single timeline list → Cost table → Airlines that fly the route (logo grid, real names) → Documents checklist (split: origin docs vs destination docs) → Warnings → FAQ as Q-then-A blocks (no accordion) → Related routes.</p>
+    <p><strong>Visual signature:</strong> Side-by-side comparisons. Heavy use of two-column layouts.</p>
+  </div>
+  <div class="card">
+    <span class="pill acc">Template D — Conversational Q&amp;A</span>
+    <h3>Layout file: <code>route-d-qa.html</code></h3>
+    <p><strong>Hero:</strong> Minimal. White background, large H1 phrased as a question ("Moving your dog from {origin} to {destination}?"), short answer paragraph beneath, single CTA.</p>
+    <p><strong>Sidebar:</strong> None on desktop, floating CTA bar at bottom on mobile.</p>
+    <p><strong>Section order:</strong> Hero → "What does this involve?" Q+A → "How long does it take?" Q+A with timeline embedded inside the answer → "What does it cost?" Q+A with cost table inside the answer → "What documents do I need?" Q+A with checklist inside → "Which airlines?" Q+A → "What about breed restrictions?" Q+A → "What can go wrong?" Q+A → "What do I do next?" Q+A with quote CTA.</p>
+    <p><strong>Visual signature:</strong> Each section is structurally a question, not a noun. Eliminates "Step-by-Step Process" / "Import Requirements" templated H2 fingerprint entirely.</p>
+  </div>
+  <div class="card">
+    <span class="pill acc">Template E — Data-Forward</span>
+    <h3>Layout file: <code>route-e-data.html</code></h3>
+    <p><strong>Hero:</strong> Stats strip hero. Origin name, destination name, 4 large stats (typical weeks, complexity, lowest cost, restricted breeds count). No image.</p>
+    <p><strong>Sidebar:</strong> Right sidebar with TL;DR and downloadable checklist link.</p>
+    <p><strong>Section order:</strong> Hero stats → TL;DR paragraph → All requirements as ONE master table (column = requirement, column = origin rule, column = destination rule, column = source) → Timeline as Gantt-style horizontal bar → Cost as itemised invoice mock → Airlines as data table with weight limits column → Warnings → Linked guides → FAQ at the very bottom.</p>
+    <p><strong>Visual signature:</strong> Looks like a research brief. Tables dominate. Reads like a data sheet.</p>
+  </div>
+</div>
+
+<h2 id="country-templates">5. The 5 country-page templates</h2>
+<p>Same principle applied to <code>/countries/{country}/</code>. Files in <code>site/layouts/countries/</code>:</p>
+
+<table>
+  <thead><tr><th>ID</th><th>File</th><th>Hero</th><th>Section signature</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>C-A</td><td><code>country-a-overview.html</code></td>
+      <td>Country flag panel + 3 stats</td>
+      <td>Overview → Why it matters → Inbound rules → Outbound rules → Top routes (linked) → Quarantine deep dive → FAQ → Embassies/contacts</td>
+    </tr>
+    <tr>
+      <td>C-B</td><td><code>country-b-routebook.html</code></td>
+      <td>Map of all outbound + inbound routes (SVG)</td>
+      <td>Map → Inbound routes table → Outbound routes table → Notable airlines → Cost ranges across all routes → FAQ</td>
+    </tr>
+    <tr>
+      <td>C-C</td><td><code>country-c-quarantine.html</code></td>
+      <td>Quarantine warning banner if applicable, else "No quarantine"</td>
+      <td>Quarantine status (lead) → Vaccination calendar → Documents checklist → Cost panel → Routes from this country → Routes to this country → Common mistakes → FAQ</td>
+    </tr>
+    <tr>
+      <td>C-D</td><td><code>country-d-narrative.html</code></td>
+      <td>Long-form intro paragraph hero, no image</td>
+      <td>Narrative intro → "If you're moving to..." → "If you're moving from..." → Realistic timeline story → Cost story → Pitfall stories → FAQ → Related guides</td>
+    </tr>
+    <tr>
+      <td>C-E</td><td><code>country-e-checklist.html</code></td>
+      <td>Big interactive checklist hero</td>
+      <td>Pre-departure checklist → On-arrival checklist → Documents checklist → Cost ladder → Routes index → FAQ at bottom</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="souls">6. Content structure souls (5 per silo)</h2>
+<p>Templates change the layout. Souls change the <em>writing structure</em>. Both must rotate together. Souls are markdown files the chat reads <strong>before writing the page body</strong>. Path: <code>workforce/content/souls/</code>.</p>
+
+<h3>Route souls (paired with templates A–E)</h3>
+
+<div class="grid g2">
+  <div class="card">
+    <span class="pill">Soul 1 — The Operator</span>
+    <h4>Default partner: Template A</h4>
+    <p>Voice: senior pet logistics coordinator. Direct, sequential, procedural. No marketing softeners. Opens with a single declarative sentence stating route status (open / restricted / quarantine-mandatory). Uses second-person sparingly. Terminology: "consignment", "manifested cargo", "endorsement", "AVA", "DAFF", "APHIS" — actual industry vocabulary.</p>
+    <p>Section openers (must vary across pages): "First step.", "Before any of this matters,", "The order matters here:", "What most owners get wrong:", "Realistic timing:".</p>
+    <p>Banned: "ultimate guide", "everything you need to know", "in this article we will".</p>
+  </div>
+  <div class="card">
+    <span class="pill">Soul 2 — The Owner-Story</span>
+    <h4>Default partner: Template B</h4>
+    <p>Voice: an owner who has done this route, writing for the next owner. Mixes lived detail ("the vet in Buenos Aires made us re-do the titre because the lab wasn't on the AQIS approved list") with concrete process. First-person plural is allowed sparingly.</p>
+    <p>Opens with a moment ("Three months out, we thought we had everything sorted.") not a definition.</p>
+    <p>Banned: bullet lists in the first 200 words. Story first, then structure.</p>
+  </div>
+  <div class="card">
+    <span class="pill">Soul 3 — The Comparison Analyst</span>
+    <h4>Default partner: Template C</h4>
+    <p>Voice: contrasts origin and destination at every turn. Sentences habitually use "whereas", "by contrast", "the difference at this stage is". Opens with the single biggest delta between the two countries (often quarantine or rabies titre).</p>
+    <p>Eliminates lone facts. Every fact about origin is paired with the corresponding fact about destination.</p>
+  </div>
+  <div class="card">
+    <span class="pill">Soul 4 — The Conversational Advisor</span>
+    <h4>Default partner: Template D</h4>
+    <p>Voice: writes in answers, not declarations. Each section literally begins with the question a worried owner would ask. Uses "you" and "your" naturally. Short paragraphs (2–3 sentences max). No H2s phrased as nouns.</p>
+    <p>Mandatory pattern: every numeric claim is followed by a one-sentence "in plain terms" gloss.</p>
+  </div>
+  <div class="card">
+    <span class="pill">Soul 5 — The Brief Writer</span>
+    <h4>Default partner: Template E</h4>
+    <p>Voice: dry, evidence-led, source-cited. Writes like a country risk briefing. Each major claim has a parenthetical source ("(IATA Live Animals Regs, Ed. 50)" / "(Australia DAFF, current schedule)"). TL;DR up top, three sentences.</p>
+    <p>Almost no adverbs. No CTAs in body — just the sidebar handles conversion.</p>
+  </div>
+</div>
+
+<h3>Country souls (paired with templates C-A through C-E)</h3>
+<ol>
+  <li><strong>The Country Profile</strong> — encyclopaedic, neutral, leads with regulatory status. Pairs with C-A.</li>
+  <li><strong>The Route Hub Curator</strong> — leads with "from here you can move pets to" matrix. Pairs with C-B.</li>
+  <li><strong>The Quarantine Specialist</strong> — quarantine-first framing, even for countries without quarantine ("Why this country is unusually straightforward"). Pairs with C-C.</li>
+  <li><strong>The Local Storyteller</strong> — narrative, lived, regional. Pairs with C-D.</li>
+  <li><strong>The Practical Checklist</strong> — every paragraph reduces to a checkbox. Pairs with C-E.</li>
+</ol>
+
+<h2 id="rotation">7. Deterministic rotation algorithm</h2>
+<p>Rotation must be reproducible (same page always gets the same template, so re-builds don't churn). Use the page slug.</p>
+
+<pre><code>{{/* In Hugo: layouts/routes/single.html becomes a router */}}
+{{ $slug := .File.ContentBaseName }}
+{{ $hash := 0 }}
+{{ range $i, $c := split $slug "" }}
+  {{ $hash = add $hash (mul (printf "%d" (int (printf "%X" (.))) | int) (add $i 1)) }}
+{{ end }}
+{{ $variant := mod $hash 5 }}
+{{ if eq $variant 0 }}{{ partial "routes/route-a-fieldmanual.html" . }}
+{{ else if eq $variant 1 }}{{ partial "routes/route-b-journey.html" . }}
+{{ else if eq $variant 2 }}{{ partial "routes/route-c-comparison.html" . }}
+{{ else if eq $variant 3 }}{{ partial "routes/route-d-qa.html" . }}
+{{ else }}{{ partial "routes/route-e-data.html" . }}
+{{ end }}</code></pre>
+
+<p><strong>Better:</strong> assign template_variant in the route's front matter when the page is generated, so chat can override per-page if needed.</p>
+
+<pre><code>---
+template_variant: "C"
+content_soul: 3
+---</code></pre>
+
+<p>And the layout becomes:</p>
+
+<pre><code>{{ $variant := .Params.template_variant | default "A" }}
+{{ partial (printf "routes/route-%s.html" (lower $variant)) . }}</code></pre>
+
+<h3>Distribution targets across the route corpus</h3>
+<table>
+  <thead><tr><th>Template</th><th>Target share</th><th>Rationale</th></tr></thead>
+  <tbody>
+    <tr><td>A — Field Manual</td><td>22%</td><td>Workhorse for high-volume tier-3/4 routes</td></tr>
+    <tr><td>B — Visual Journey</td><td>20%</td><td>Best for high-search routes (e.g. UK→Australia, USA→UK)</td></tr>
+    <tr><td>C — Comparison</td><td>20%</td><td>Strong for cross-region pairs</td></tr>
+    <tr><td>D — Q&amp;A</td><td>18%</td><td>Best for low-volume long-tail (people-also-ask alignment)</td></tr>
+    <tr><td>E — Data-Forward</td><td>20%</td><td>Best for complex routes (quarantine countries, brachy restrictions)</td></tr>
+  </tbody>
+</table>
+
+<h2 id="workflow">8. Per-page workflow the chat must follow</h2>
+
+<div class="callout acc">
+This is the loop the build agent runs for every page touched. Do not deviate.
+</div>
+
+<ol>
+  <li><strong>Read the front matter.</strong> Note <code>template_variant</code> and <code>content_soul</code>. If absent, compute from slug hash and write back.</li>
+  <li><strong>Load the soul file</strong> from <code>workforce/content/souls/route-soul-{N}.md</code>. Read it in full before writing any prose.</li>
+  <li><strong>Open one nearby existing page</strong> with the same template_variant. Compare opening sentences. The new page's opener must not match the prior one's structure (use the soul's "section openers" list).</li>
+  <li><strong>Write or rewrite the body</strong> following the soul's structure rules. The Wordsmith handles voice. The Chameleon (humaniser) runs after.</li>
+  <li><strong>Verify the H2 set.</strong> The set of H2 strings on the page must come from the template's section list, not the universal default list. No H2 may appear identically on more than 30% of pages in that template's bucket.</li>
+  <li><strong>Verify the FAQ block.</strong> At least 2 of the 6 FAQs must be route-specific (mention origin or destination by name and a route-specific number).</li>
+  <li><strong>Internal links.</strong> Use the rotation in §7 also for the related-route block: pull links from a different template bucket so the related-page previews look visually different.</li>
+  <li><strong>Build + spot-render</strong> with <code>hugo --gc --minify</code>. Verify no template errors.</li>
+  <li><strong>Mark page done</strong> in the back-fill register (see §10).</li>
+</ol>
+
+<h2 id="hugo">9. Hugo wiring</h2>
+
+<h3>File layout to add</h3>
+<pre><code>site/
+  layouts/
+    routes/
+      single.html              # router (slim, 6 lines, dispatches to partial)
+      _route-shared/
+        head-meta.html         # canonical + schema, shared
+        faq-block-1.html       # accordion variant
+        faq-block-2.html       # 2-col block variant
+        faq-block-3.html       # inline Q-then-A variant
+        faq-block-4.html       # expander grid variant
+        faq-block-5.html       # bottom list variant
+        cost-table-1.html ...  # five visual variants
+        timeline-vertical.html
+        timeline-horizontal.html
+        timeline-gantt.html
+        timeline-stepper.html
+        timeline-narrative.html
+    partials/
+      routes/
+        route-a-fieldmanual.html
+        route-b-journey.html
+        route-c-comparison.html
+        route-d-qa.html
+        route-e-data.html
+      countries/
+        country-a-overview.html
+        country-b-routebook.html
+        country-c-quarantine.html
+        country-d-narrative.html
+        country-e-checklist.html
+  assets/
+    css/
+      variants/
+        route-a.css
+        route-b.css
+        route-c.css
+        route-d.css
+        route-e.css
+        country-a.css ... e.css</code></pre>
+
+<h3>CSS isolation</h3>
+<p>Every variant CSS file is scoped under a single root class (e.g. <code>.tpl-route-a {…}</code>). The partial wraps everything in <code>&lt;article class="tpl-route-a"&gt;</code>. No bleed.</p>
+
+<h3>Schema</h3>
+<p>Schema.org JSON-LD must vary too. Templates A and E emit <code>HowTo</code>. Template C emits <code>HowTo</code> + <code>ComparisonTable</code> microdata. Template D emits <code>FAQPage</code> as the dominant entity. Template B emits <code>Service</code> + <code>HowTo</code>. Diversity here is a meaningful signal.</p>
+
+<h2 id="backfill">10. Phased back-fill plan</h2>
+<p>5,000 routes cannot be re-edited in one session. Tier them.</p>
+
+<table>
+  <thead><tr><th>Tier</th><th>What</th><th>Pages</th><th>Action</th></tr></thead>
+  <tbody>
+    <tr><td>T0</td><td>Top-traffic routes (GSC top 200 by impressions)</td><td>~200</td><td>Manual rewrite by chat against assigned template + soul. One per chat turn.</td></tr>
+    <tr><td>T1</td><td>Indexed but low-impression</td><td>~600</td><td>Programmatic: assign variant in front matter, regenerate body via chat in batches of 25.</td></tr>
+    <tr><td>T2</td><td>"Discovered, not indexed" pages</td><td>~unknown until GSC pull</td><td>Highest priority for Template D or E (most differentiated). Rewrite body 60%+.</td></tr>
+    <tr><td>T3</td><td>Long-tail routes</td><td>remainder</td><td>Add front-matter variant; let layout handle the visual change; touch body lightly.</td></tr>
+  </tbody>
+</table>
+
+<h3>Back-fill register</h3>
+<p>Maintain <code>data/backfill_register.json</code>:</p>
+<pre><code>{
+  "argentina-to-australia": {
+    "template_variant": "C",
+    "content_soul": 3,
+    "rewritten_at": "2026-05-08",
+    "h2_unique_pct": 0.83,
+    "boilerplate_ratio": 0.41
+  }
+}</code></pre>
+
+<h2 id="qa">11. QA, fingerprint test, indexation monitoring</h2>
+
+<h3>Fingerprint test (run weekly)</h3>
+<p>Script: <code>scripts/fingerprint_audit.py</code> (to be created).</p>
+<ol>
+  <li>Crawl each rendered page in <code>public/</code>.</li>
+  <li>Extract the H2 sequence, the class-name sequence (DOM skeleton hash), the visible-text length, and the boilerplate-text length.</li>
+  <li>Cluster pages by skeleton hash. <strong>Pass:</strong> no cluster contains more than 25% of pages in its silo. <strong>Fail:</strong> any cluster &gt; 40%.</li>
+  <li>Report H2 strings appearing on &gt;30% of pages within a template variant. These must be paraphrased.</li>
+</ol>
+
+<h3>Indexation monitoring</h3>
+<ul>
+  <li>Pull GSC <em>Index Coverage</em> weekly. Track "Discovered, not indexed" + "Crawled, not indexed" counts.</li>
+  <li>Sample 50 pages per template variant via the URL Inspection API monthly.</li>
+  <li>When a variant outperforms the others on indexation rate, increase its share in the rotation by 5% in the next quarterly pass.</li>
+</ul>
+
+<h3>Build verification (every deploy)</h3>
+<pre><code>cd "c:\Users\garet\Desktop\pet-transport\site"
+hugo --gc --minify
+# then:
+python ../scripts/fingerprint_audit.py public/
+surge "c:\Users\garet\Desktop\pet-transport\site\public" pettransportglobal.surge.sh</code></pre>
+
+<h2 id="rules">12. Hard rules (do not violate)</h2>
+
+<div class="callout bad">
+<h4 style="margin-top:0">Absolute don'ts</h4>
+<ul>
+  <li>Do not collapse two templates into one because "they look similar". They must remain structurally distinct.</li>
+  <li>Do not introduce a 6th template. Keep the rotation at 5. Drift erodes the design system.</li>
+  <li>Do not let any template's share fall below 15% or rise above 25%.</li>
+  <li>Do not write H2s like "Step-by-Step Process" identically across &gt;30% of pages within a template bucket. Paraphrase.</li>
+  <li>Do not reuse the FAQ block from <code>partials/faq-accordion.html</code> on every template. Use the variant matched to the template.</li>
+  <li>Do not skip the soul file load step. The chat must read the soul before writing prose.</li>
+  <li>Do not back-fill more than 25 pages in a single chat session. Quality dies.</li>
+</ul>
+</div>
+
+<div class="callout good">
+<h4 style="margin-top:0">Absolute musts</h4>
+<ul>
+  <li>Front matter on every route must include <code>template_variant</code> and <code>content_soul</code>.</li>
+  <li>Every page rewrite logs to <code>data/backfill_register.json</code>.</li>
+  <li>Every variant CSS is scoped under <code>.tpl-route-{x}</code>.</li>
+  <li>The fingerprint audit must run before every Surge deploy.</li>
+  <li>Schema.org type varies per template (see §9).</li>
+</ul>
+</div>
+
+<hr>
+
+<p class="meta">End of guide. Feed this document into the build chat as the first attached file. Then say "Continue the diversification back-fill, starting with Tier T0."</p>
+
+</div>
+</body>
+</html>

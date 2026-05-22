@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IPATA Member Outreach Directory — Pet Transport Global</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f4f6f9;
+    color: #333;
+    font-size: 14px;
+  }
+
+  header {
+    background: #1a1a2e;
+    color: #fff;
+    padding: 24px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  header .logo svg { width: 36px; height: 36px; }
+
+  header h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  header p {
+    font-size: 12px;
+    color: #aab;
+    margin-top: 2px;
+  }
+
+  .badge {
+    background: #e8913a;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 32px auto;
+    padding: 0 24px;
+  }
+
+  .notice {
+    background: #fff3cd;
+    border-left: 4px solid #e8913a;
+    padding: 14px 18px;
+    border-radius: 4px;
+    margin-bottom: 28px;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .notice strong { color: #1a1a2e; }
+
+  .notice a { color: #1a1a2e; font-weight: 600; }
+
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #1a1a2e;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e8913a;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-title .count {
+    background: #1a1a2e;
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 10px;
+  }
+
+  .section { margin-bottom: 36px; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 14px;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px 18px;
+    border: 1px solid #e5e8ef;
+    transition: box-shadow 0.15s;
+  }
+
+  .card:hover { box-shadow: 0 3px 12px rgba(0,0,0,0.1); }
+
+  .card .company {
+    font-weight: 700;
+    font-size: 13px;
+    color: #1a1a2e;
+    margin-bottom: 4px;
+  }
+
+  .card .region {
+    font-size: 11px;
+    color: #888;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .card a.website {
+    display: inline-block;
+    font-size: 12px;
+    color: #2a9d6e;
+    font-weight: 600;
+    text-decoration: none;
+    word-break: break-all;
+  }
+
+  .card a.website:hover { text-decoration: underline; }
+
+  .card .actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+  }
+
+  .btn-primary {
+    background: #1a1a2e;
+    color: #fff;
+  }
+
+  .btn-primary:hover { background: #2d2d50; }
+
+  .btn-secondary {
+    background: #f0f2f5;
+    color: #333;
+    border: 1px solid #dde;
+  }
+
+  .status-select {
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #dde;
+    background: #f9f9fb;
+    color: #333;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .priority-tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .tag-priority { background: #fde8d8; color: #c0551a; }
+  .tag-airline { background: #d8eaf9; color: #1a5a8e; }
+  .tag-destination { background: #d8f5e8; color: #1a6e45; }
+  .tag-global { background: #f0e8ff; color: #5a2d8e; }
+
+  .search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+
+  .search-bar input {
+    flex: 1;
+    padding: 10px 16px;
+    border: 1px solid #dde;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+  }
+
+  .search-bar input:focus { outline: none; border-color: #1a1a2e; }
+
+  .stats {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+  }
+
+  .stat-box {
+    background: #fff;
+    border: 1px solid #e5e8ef;
+    border-radius: 8px;
+    padding: 14px 20px;
+    text-align: center;
+    min-width: 120px;
+  }
+
+  .stat-box .num {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a1a2e;
+  }
+
+  .stat-box .label {
+    font-size: 11px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 2px;
+  }
+
+  footer {
+    background: #1a1a2e;
+    color: #aab;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    margin-top: 40px;
+  }
+
+  @media (max-width: 600px) {
+    header { flex-direction: column; gap: 12px; padding: 16px; }
+    .container { padding: 0 12px; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="20" cy="20" r="20" fill="#e8913a"/>
+      <ellipse cx="14" cy="13" rx="3.5" ry="5" fill="#fff" transform="rotate(-20 14 13)"/>
+      <ellipse cx="26" cy="13" rx="3.5" ry="5" fill="#fff" transform="rotate(20 26 13)"/>
+      <ellipse cx="20" cy="22" rx="7" ry="8" fill="#fff"/>
+      <ellipse cx="10" cy="26" rx="3" ry="4.5" fill="#fff" transform="rotate(-15 10 26)"/>
+      <ellipse cx="30" cy="26" rx="3" ry="4.5" fill="#fff" transform="rotate(15 30 26)"/>
+    </svg>
+    <div>
+      <h1>IPATA Outreach Directory</h1>
+      <p>Pet Transport Global — Internal Reference</p>
+    </div>
+  </div>
+  <span class="badge">IPATA Members</span>
+</header>
+
+<div class="container">
+
+  <div class="notice">
+    <strong>Note:</strong> The full IPATA member directory (searchable by country and airport) is at
+    <a href="https://www.ipata.org/find-ipata-pet-shippers" target="_blank">ipata.org/find-ipata-pet-shippers</a>.
+    This document lists known members captured from the IPATA website, organised by region and relevance.
+    Routes served are not published by IPATA — contact each company directly to confirm coverage.
+    Last updated: May 2026.
+  </div>
+
+  <div class="stats">
+    <div class="stat-box"><div class="num">9</div><div class="label">Europe / Origin</div></div>
+    <div class="stat-box"><div class="num">6</div><div class="label">Australia / Destination</div></div>
+    <div class="stat-box"><div class="num">10</div><div class="label">Airlines</div></div>
+    <div class="stat-box"><div class="num">18</div><div class="label">Global Operators</div></div>
+    <div class="stat-box"><div class="num">43</div><div class="label">Total Listed</div></div>
+  </div>
+
+  <!-- EUROPE / ORIGIN PRIORITY -->
+  <div class="section">
+    <div class="section-title">
+      Europe and Mediterranean <span class="count">Priority — Route Origin</span>
+    </div>
+    <div class="grid">
+
+      <div class="card">
+        <span class="priority-tag tag-priority">Priority Contact</span>
+        <div class="company">JCS Livestock (Manchester)</div>
+        <div class="region">UK — Europe handling specialists</div>
+        <a class="website" href="http://www.jcslivestock.com" target="_blank">jcslivestock.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-priority">Priority Contact</span>
+        <div class="company">Ladyhaye International Pet Travel</div>
+        <div class="region">UK — International specialist</div>
+        <a class="website" href="http://www.ladyhaye.co.uk" target="_blank">ladyhaye.co.uk</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-priority">Priority Contact</span>
+        <div class="company">PBS Pet Travel</div>
+        <div class="region">UK — Formerly PBS International Freight</div>
+        <a class="website" href="http://www.pbspettravel.co.uk" target="_blank">pbspettravel.co.uk</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-priority">Priority Contact</span>
+        <div class="company">Airpets UK</div>
+        <div class="region">UK — 2025 IPATA Best Operational Service Provider</div>
+        <a class="website" href="http://www.airpets.com" target="_blank">airpets.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="company">Extrordinair</div>
+        <div class="region">UK</div>
+        <a class="website" href="http://www.extrordinair.co.uk" target="_blank">extrordinair.co.uk</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="company">Skymaster Air Cargo Ltd</div>
+        <div class="region">UK</div>
+        <a class="website" href="http://www.skymaster.co.uk" target="_blank">skymaster.co.uk</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="company">Starwood Animal Transport Ltd</div>
+        <div class="region">UK</div>
+        <a class="website" href="http://www.skykennels.com" target="_blank">skykennels.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="company">ZooLogistics BV</div>
+        <div class="region">Netherlands</div>
+        <a class="website" href="http://www.zoologistics.com" target="_blank">zoologistics.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="company">Animals First GesmbH</div>
+        <div class="region">Austria</div>
+        <a class="website" href="http://www.animalsfirst.at" target="_blank">animalsfirst.at</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="company">Care 4 Cargo GmbH</div>
+        <div class="region">Germany</div>
+        <a class="website" href="https://care4petshipping.com" target="_blank">care4petshipping.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="company">N.A. Nissen Spedition and Transport</div>
+        <div class="region">Denmark</div>
+        <a class="website" href="http://www.nanissen.dk" target="_blank">nanissen.dk</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="company">IFA Skyfast</div>
+        <div class="region">Belgium</div>
+        <a class="website" href="http://www.skyfast.be" target="_blank">skyfast.be</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="company">BLISS Pet Services</div>
+        <div class="region">Europe</div>
+        <a class="website" href="http://www.blisspets.eu" target="_blank">blisspets.eu</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="company">BDM SA — Air Transport Animal</div>
+        <div class="region">France</div>
+        <a class="website" href="http://www.airtransportanimal.com/en" target="_blank">airtransportanimal.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="company">Join The Moment Transitarios</div>
+        <div class="region">Spain</div>
+        <a class="website" href="http://www.jtmsa.com/en" target="_blank">jtmsa.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="company">Cwm Cadno Pet Services</div>
+        <div class="region">Europe</div>
+        <a class="website" href="http://www.pet-travel.eu" target="_blank">pet-travel.eu</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- AUSTRALIA / DESTINATION -->
+  <div class="section">
+    <div class="section-title">
+      Australia <span class="count">Destination Partners and Receiving Agents</span>
+    </div>
+    <div class="grid">
+
+      <div class="card">
+        <span class="priority-tag tag-destination">Australia</span>
+        <div class="company">Jetpets Animal Transport</div>
+        <div class="region">Australia — National coverage</div>
+        <a class="website" href="http://www.jetpets.com.au" target="_blank">jetpets.com.au</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-destination">Australia</span>
+        <div class="company">Dogtainers Australia</div>
+        <div class="region">Australia — National coverage</div>
+        <a class="website" href="http://www.dogtainers.com.au" target="_blank">dogtainers.com.au</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-destination">Australia</span>
+        <div class="company">Aeropets Pty Ltd</div>
+        <div class="region">Australia</div>
+        <a class="website" href="http://www.aeropets.com.au" target="_blank">aeropets.com.au</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-destination">Australia</span>
+        <div class="company">Petflyers</div>
+        <div class="region">Australia</div>
+        <a class="website" href="http://www.petflyers.com.au" target="_blank">petflyers.com.au</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-destination">Australia</span>
+        <div class="company">Pet Express Transport Services (PETS)</div>
+        <div class="region">Australia</div>
+        <a class="website" href="http://www.petex.com.au" target="_blank">petex.com.au</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- AIRLINES -->
+  <div class="section">
+    <div class="section-title">
+      Airlines — IPATA Member Carriers <span class="count">Direct Cargo Booking</span>
+    </div>
+    <div class="grid">
+
+      <div class="card">
+        <span class="priority-tag tag-airline">Airline</span>
+        <div class="company">Emirates SkyCargo</div>
+        <div class="region">MLA via DXB to MEL — 2025 IPATA Asia/Oceania Best Airline</div>
+        <a class="website" href="https://www.skycargo.com/product/emirates-pets/" target="_blank">skycargo.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-airline">Airline</span>
+        <div class="company">Qatar Airways Cargo</div>
+        <div class="region">MLA via DOH to MEL</div>
+        <a class="website" href="http://www.qrcargo.com" target="_blank">qrcargo.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-airline">Airline</span>
+        <div class="company">Etihad Airways Cargo</div>
+        <div class="region">Via AUH to MEL</div>
+        <a class="website" href="http://www.etihadcargo.com" target="_blank">etihadcargo.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-airline">Airline</span>
+        <div class="company">Lufthansa Cargo</div>
+        <div class="region">Via FRA/MUC — 2025 IPATA Europe Best Airline</div>
+        <a class="website" href="https://www.lufthansa-cargo.com" target="_blank">lufthansa-cargo.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-airline">Airline</span>
+        <div class="company">IAG Cargo</div>
+        <div class="region">British Airways / Iberia — Via LHR</div>
+        <a class="website" href="https://www.iagcargo.com/en/page/product/pets" target="_blank">iagcargo.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-airline">Airline</span>
+        <div class="company">Air France / KLM Cargo</div>
+        <div class="region">Via CDG / AMS</div>
+        <a class="website" href="https://afklcargo.com" target="_blank">afklcargo.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-airline">Airline</span>
+        <div class="company">Cargolux Airlines International</div>
+        <div class="region">Luxembourg — Cargo specialist</div>
+        <a class="website" href="http://www.cargolux.com" target="_blank">cargolux.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-airline">Airline</span>
+        <div class="company">Garuda Indonesia Cargo</div>
+        <div class="region">Via CGK — Southeast Asia routing</div>
+        <a class="website" href="http://cargo.garuda-indonesia.com" target="_blank">cargo.garuda-indonesia.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-airline">Airline</span>
+        <div class="company">Malaysia Airlines Cargo (MASkargo)</div>
+        <div class="region">Via KUL — Southeast Asia routing</div>
+        <a class="website" href="http://www.maskargo.com" target="_blank">maskargo.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- GLOBAL OPERATORS -->
+  <div class="section">
+    <div class="section-title">
+      Global Operators <span class="count">International Coverage</span>
+    </div>
+    <div class="grid">
+
+      <div class="card">
+        <span class="priority-tag tag-global">Global</span>
+        <div class="company">Starwood Animal Transport Services</div>
+        <div class="region">USA — International specialist</div>
+        <a class="website" href="http://www.starwoodpet.com" target="_blank">starwoodpet.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-global">Global</span>
+        <div class="company">Air Animal Inc — Pet Moving Services</div>
+        <div class="region">USA — Worldwide service</div>
+        <a class="website" href="http://www.airanimal.com" target="_blank">airanimal.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-global">Global</span>
+        <div class="company">World Wide Pet Transport</div>
+        <div class="region">Global</div>
+        <a class="website" href="http://www.worldwidepettransport.com" target="_blank">worldwidepettransport.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-global">Global</span>
+        <div class="company">Professional Pet Transport Worldwide</div>
+        <div class="region">Global</div>
+        <a class="website" href="https://www.professionalpettransportworldwide.com" target="_blank">professionalpettransportworldwide.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-global">Global</span>
+        <div class="company">Happy Tails Travel Inc</div>
+        <div class="region">USA — International service</div>
+        <a class="website" href="http://www.happytailstravel.com" target="_blank">happytailstravel.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-global">Global</span>
+        <div class="company">AirVets Pet Relocation</div>
+        <div class="region">USA</div>
+        <a class="website" href="http://www.airvets.com" target="_blank">airvets.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-global">Global</span>
+        <div class="company">Animal Travel Services</div>
+        <div class="region">International</div>
+        <a class="website" href="http://www.animal-travel.com" target="_blank">animal-travel.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-global">Global</span>
+        <div class="company">Tailwind Global Pet</div>
+        <div class="region">Global</div>
+        <a class="website" href="https://tailwindglobalpet.com" target="_blank">tailwindglobalpet.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-global">Global</span>
+        <div class="company">Transcontinental Pet Movers</div>
+        <div class="region">South Africa — International specialist</div>
+        <a class="website" href="https://www.transconpet.com" target="_blank">transconpet.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-global">Global</span>
+        <div class="company">Expat Logistics</div>
+        <div class="region">International</div>
+        <a class="website" href="https://expatlogistics.com" target="_blank">expatlogistics.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-global">Global</span>
+        <div class="company">Pet Relocator</div>
+        <div class="region">International</div>
+        <a class="website" href="http://www.petrelocator.com" target="_blank">petrelocator.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="priority-tag tag-global">Global</span>
+        <div class="company">Paws en Route</div>
+        <div class="region">International</div>
+        <a class="website" href="https://pawsenroute.com" target="_blank">pawsenroute.com</a>
+        <div class="actions">
+          <select class="status-select"><option>Not contacted</option><option>Emailed</option><option>Replied</option><option>Quoted</option><option>Rejected</option></select>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FULL DIRECTORY LINK -->
+  <div class="notice" style="background:#e8f5ee; border-left-color:#2a9d6e; margin-top:0;">
+    <strong>Find more members:</strong> The complete IPATA searchable directory lets you filter by country and airport code.
+    Search by <strong>MLA</strong> (Malta origin) and <strong>MEL</strong> (Melbourne destination) to find any members not listed here.
+    <br><br>
+    <a href="https://www.ipata.org/find-ipata-pet-shippers" target="_blank" style="color:#2a9d6e; font-weight:700;">
+      ipata.org/find-ipata-pet-shippers
+    </a>
+  </div>
+
+</div>
+
+<footer>
+  Pet Transport Global &mdash; Internal Reference Document &mdash; May 2026 &mdash; Source: IPATA (ipata.org)
+</footer>
+
+</body>
+</html>

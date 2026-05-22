@@ -1,8 +1,9 @@
 ---
-title: "American Staffordshire Terrier Import Restrictions by Country | Pet Transport Global"
+title: "Transporting American Staffordshire"
 description: "Which countries ban or restrict American Staffordshire Terrier import, and what it means for international relocation. Country-by-country breakdown with current regulations."
 type: "breeds"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 slug: "american-staffordshire-terrier"
 breed_name: "American Staffordshire Terrier"
 brachycephalic: false

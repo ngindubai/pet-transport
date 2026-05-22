@@ -3,10 +3,11 @@ title: "UK to USA Pet Transport: Dogs, Cats and the CDC Process"
 description: "Moving your pet from the UK to the USA? Dogs need a CDC form; cats need almost nothing. Here's the full process, airlines, and what to expect at the US border."
 date: "2026-04-20"
 type: "blog"
+author: "Gareth - Founder, PetTransportGlobal"
 slug: "uk-to-usa-pet-transport-cats-and-dogs"
 url: "/blog/uk-to-usa-pet-transport-cats-and-dogs/"
 seo:
-  title: "UK to USA Pet Transport: CDC Form, Airline Options and Route Guide | Pet Transport Global"
+  title: "UK to USA Pet Transport: Dogs | Pet Transport Global"
   description: "Moving your pet from the UK to the USA? Dogs need a CDC form; cats need almost nothing. Here's the full process, airlines, and what to expect at the US border."
 tags:
   - "routes"

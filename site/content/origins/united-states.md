@@ -1,8 +1,9 @@
 ---
 title: "Pet Export Guide: Shipping from United States"
-description: "Guide to exporting your dog or cat from United States. Export requirements, airlines, and routes."
+description: "Exporting your pet from the United States: USDA APHIS health certificate requirements, airline options, and routes from the USA to destinations worldwide."
 type: "origins"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 country_name: "United States"
 country_code: "US"
 overview: |
@@ -23,8 +24,30 @@ sections:
     body: |
       We have detailed guides for the following routes:
       
-      - [United States to Australia](/routes/united-states-to-australia/)
-      - [United States to United Kingdom](/routes/united-states-to-united-kingdom/)
+      - [United States to Australia](/pet-transport/united-states-to-australia/)
+      - [United States to Brazil](/pet-transport/united-states-to-brazil/)
+      - [United States to Canada](/pet-transport/united-states-to-canada/)
+      - [United States to Denmark](/pet-transport/united-states-to-denmark/)
+      - [United States to France](/pet-transport/united-states-to-france/)
+      - [United States to Germany](/pet-transport/united-states-to-germany/)
+      - [United States to Greece](/pet-transport/united-states-to-greece/)
+      - [United States to Hong Kong](/pet-transport/united-states-to-hong-kong/)
+      - [United States to India](/pet-transport/united-states-to-india/)
+      - [United States to Indonesia](/pet-transport/united-states-to-indonesia/)
+      - [United States to Italy](/pet-transport/united-states-to-italy/)
+      - [United States to Japan](/pet-transport/united-states-to-japan/)
+      - [United States to Malaysia](/pet-transport/united-states-to-malaysia/)
+      - [United States to Mexico](/pet-transport/united-states-to-mexico/)
+      - [United States to Netherlands](/pet-transport/united-states-to-netherlands/)
+      - [United States to Philippines](/pet-transport/united-states-to-philippines/)
+      - [United States to Portugal](/pet-transport/united-states-to-portugal/)
+      - [United States to Singapore](/pet-transport/united-states-to-singapore/)
+      - [United States to South Africa](/pet-transport/united-states-to-south-africa/)
+      - [United States to South Korea](/pet-transport/united-states-to-south-korea/)
+      - [United States to Switzerland](/pet-transport/united-states-to-switzerland/)
+      - [United States to Thailand](/pet-transport/united-states-to-thailand/)
+      - [United States to United Arab Emirates](/pet-transport/united-states-to-united-arab-emirates/)
+      - [United States to United Kingdom](/pet-transport/united-states-to-united-kingdom/)
 faqs:
   - question: "What do I need to export my pet from United States?"
     answer: "You'll need a health certificate from an official veterinarian, proof of microchip and vaccinations, and any government endorsement required by your destination country. USDA-accredited vet required. Not all vets are accredited. Find accredited vets at USDA APHIS website."

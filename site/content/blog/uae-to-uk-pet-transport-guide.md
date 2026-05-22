@@ -3,6 +3,7 @@ title: "UAE to UK Pet Transport: The Complete Guide"
 description: "Moving your pet from the UAE to the UK? Here's the documentation process, tapeworm timing rule, which airlines operate the route, and realistic costs."
 date: "2026-04-16"
 type: "blog"
+author: "Gareth - Founder, PetTransportGlobal"
 slug: "uae-to-uk-pet-transport-guide"
 url: "/blog/uae-to-uk-pet-transport-guide/"
 seo:

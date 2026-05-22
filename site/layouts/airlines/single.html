@@ -1,70 +1,187 @@
-{{ define "title" }}{{ .Params.seo.title | default (printf "%s Pet Cargo Policy" .Params.airline_name) }}{{ end }}
+{{ define "title" }}{{ if .Params.seo.title }}{{ .Params.seo.title }}{{ else if .Params.airline_name }}{{ printf "%s Pet Cargo Policy | Pet Transport Global" .Params.airline_name }}{{ else }}{{ .Title }}{{ end }}{{ end }}
+
+{{ define "schema" }}
+{{ with .Params.faqs }}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {{ range $i, $faq := . }}{{ if $i }},{{ end }}
+        {
+            "@type": "Question",
+            "name": {{ $faq.question | jsonify }},
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": {{ $faq.answer | jsonify }}
+            }
+        }
+        {{ end }}
+    ]
+}
+</script>
+{{ end }}
+{{ end }}
 
 {{ define "main" }}
 {{ $airline := .Params }}
 
-<section class="route-hero">
-    <div class="route-hero-inner">
-        <h1>{{ $airline.content.h1 | default (printf "%s Pet Transport Policy" $airline.airline_name) }}</h1>
-        {{ if $airline.cabin_allowed }}<span class="complexity-badge">Cabin allowed</span>{{ end }}
-        {{ if $airline.cargo_allowed }}<span class="complexity-badge">Cargo available</span>{{ end }}
-        {{ if $airline.cargo_suspended }}<span class="complexity-badge" style="background:rgba(231,76,60,0.3);">Cargo suspended</span>{{ end }}
-    </div>
-</section>
-
-{{ with $airline.content.overview }}
-<section class="route-section">
-    <div class="section-inner">{{ . | markdownify }}</div>
-</section>
-{{ end }}
-
-{{/* Policy details */}}
-{{ with $airline.policy }}
-<section class="route-section" id="policy">
-    <div class="section-inner">
-        <h2>Policy Overview</h2>
-        <div class="requirements-grid">
-            {{ with .accepted_animals }}<div class="req-card"><h3>Accepted Animals</h3><p>{{ . }}</p></div>{{ end }}
-            {{ with .crate_requirements }}<div class="req-card"><h3>Crate Requirements</h3><p>{{ . }}</p></div>{{ end }}
-            {{ with .size_limits }}<div class="req-card"><h3>Size and Weight Limits</h3><p>{{ . }}</p></div>{{ end }}
-            {{ with .temperature_restrictions }}<div class="req-card"><h3>Temperature Restrictions</h3><p>{{ . }}</p></div>{{ end }}
-            {{ with .brachycephalic_policy }}<div class="req-card"><h3>Brachycephalic Breeds</h3><p>{{ . }}</p></div>{{ end }}
-            {{ with .cost_range }}<div class="req-card"><h3>Cost Estimate</h3><p>{{ . }}</p></div>{{ end }}
-            {{ with .booking_process }}<div class="req-card"><h3>How to Book</h3><p>{{ . }}</p></div>{{ end }}
+{{/* ── HERO ─────────────────────────────────────────────────────────────── */}}
+<div class="ptg-inner-hero">
+    <div class="container">
+        <nav aria-label="breadcrumb" class="ptg-inner-breadcrumb">
+            <ol class="breadcrumb mb-2">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="/pet-transport/airlines/">Airlines</a></li>
+                <li class="breadcrumb-item active">{{ $airline.airline_name }}</li>
+            </ol>
+        </nav>
+        <div data-aos="fade-up">
+            <div class="ptg-inner-badge-row mb-2">
+                <span class="ptg-inner-type-badge"><i class="fas fa-plane me-1"></i>Airline Guide</span>
+                {{ if $airline.cabin_allowed }}<span class="ptg-inner-status-badge ptg-status-ok"><i class="fas fa-check-circle me-1"></i>Cabin travel available</span>{{ end }}
+                {{ if $airline.cargo_allowed }}<span class="ptg-inner-status-badge ptg-status-ok"><i class="fas fa-box me-1"></i>Cargo available</span>{{ end }}
+                {{ if $airline.cargo_suspended }}<span class="ptg-inner-status-badge ptg-status-warn"><i class="fas fa-exclamation-triangle me-1"></i>Cargo suspended</span>{{ end }}
+            </div>
+            <h1 class="ptg-inner-h1">{{ $airline.content.h1 | default (printf "%s Pet Transport Policy" $airline.airline_name) }}</h1>
+            {{ with $airline.hub }}<p class="ptg-inner-sub"><i class="fas fa-map-marker-alt me-2"></i>Main hub: {{ . }}</p>{{ end }}
+            <a href="#quote-form" class="btn btn-warning btn-sm mt-2">Get a quote for your route</a>
         </div>
     </div>
-</section>
-{{ end }}
+</div>
 
-{{/* Routes served */}}
-{{ with $airline.routes_served }}
-<section class="route-section" id="routes">
-    <div class="section-inner">
-        <h2>Routes Served</h2>
-        <div class="route-grid">
-            {{ range . }}
-            {{ partial "route-card.html" . }}
-            {{ end }}
+{{/* ── MAIN CONTENT ─────────────────────────────────────────────────────── */}}
+<div class="page ptg-inner-page">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+
+                {{/* Overview */}}
+                {{ with $airline.content.overview }}
+                <section class="ptg-inner-section" data-aos="fade-up">
+                    {{ . | markdownify }}
+                </section>
+                {{ end }}
+
+                {{/* Policy quick-facts grid */}}
+                {{ with $airline.policy }}
+                <section class="ptg-inner-section" id="policy" data-aos="fade-up">
+                    <h2>Policy at a Glance</h2>
+                    <div class="row g-3 mt-1">
+                        {{ with .accepted_animals }}
+                        <div class="col-md-6">
+                            <div class="ptg-policy-card">
+                                <div class="ptg-policy-card-icon"><i class="fas fa-paw"></i></div>
+                                <div>
+                                    <h5>Accepted Animals</h5>
+                                    <p>{{ . }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                        {{ with .crate_requirements }}
+                        <div class="col-md-6">
+                            <div class="ptg-policy-card">
+                                <div class="ptg-policy-card-icon"><i class="fas fa-box-open"></i></div>
+                                <div>
+                                    <h5>Crate Requirements</h5>
+                                    <p>{{ . }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                        {{ with .size_limits }}
+                        <div class="col-md-6">
+                            <div class="ptg-policy-card">
+                                <div class="ptg-policy-card-icon"><i class="fas fa-weight"></i></div>
+                                <div>
+                                    <h5>Size &amp; Weight Limits</h5>
+                                    <p>{{ . }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                        {{ with .temperature_restrictions }}
+                        <div class="col-md-6">
+                            <div class="ptg-policy-card ptg-policy-card--warn">
+                                <div class="ptg-policy-card-icon"><i class="fas fa-thermometer-half"></i></div>
+                                <div>
+                                    <h5>Temperature Restrictions</h5>
+                                    <p>{{ . }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                        {{ with .brachycephalic_policy }}
+                        <div class="col-md-6">
+                            <div class="ptg-policy-card ptg-policy-card--warn">
+                                <div class="ptg-policy-card-icon"><i class="fas fa-dog"></i></div>
+                                <div>
+                                    <h5>Brachycephalic Breeds</h5>
+                                    <p>{{ . }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                        {{ with .cost_range }}
+                        <div class="col-md-6">
+                            <div class="ptg-policy-card">
+                                <div class="ptg-policy-card-icon"><i class="fas fa-pound-sign"></i></div>
+                                <div>
+                                    <h5>Cost Estimate</h5>
+                                    <p>{{ . }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                        {{ with .booking_process }}
+                        <div class="col-md-12">
+                            <div class="ptg-policy-card">
+                                <div class="ptg-policy-card-icon"><i class="fas fa-calendar-check"></i></div>
+                                <div>
+                                    <h5>How to Book</h5>
+                                    <p>{{ . }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </section>
+                {{ end }}
+
+                {{/* Additional content sections */}}
+                {{ with $airline.content.sections }}
+                {{ range . }}
+                <section class="ptg-inner-section" data-aos="fade-up">
+                    {{ with .heading }}<h2>{{ . }}</h2>{{ end }}
+                    {{ .body | markdownify }}
+                </section>
+                {{ end }}
+                {{ end }}
+
+                {{/* Routes served */}}
+                {{ with $airline.routes_served }}
+                <section class="ptg-inner-section" id="routes" data-aos="fade-up">
+                    <h2>Routes Served</h2>
+                    <div class="row g-3">
+                        {{ range . }}
+                        {{ partial "route-card.html" . }}
+                        {{ end }}
+                    </div>
+                </section>
+                {{ end }}
+
+            </div>
         </div>
     </div>
-</section>
-{{ end }}
+</div>
 
-{{ with $airline.content.sections }}
-{{ range . }}
-<section class="route-section">
-    <div class="section-inner">
-        {{ with .heading }}<h2>{{ . }}</h2>{{ end }}
-        {{ .body | markdownify }}
-    </div>
-</section>
-{{ end }}
-{{ end }}
-
+{{/* FAQ */}}
 {{ with $airline.faqs }}
 {{ partial "faq-accordion.html" (dict "faqs" .) }}
 {{ end }}
 
+{{/* Quote form */}}
 {{ partial "quote-form.html" $ }}
 
 {{ end }}

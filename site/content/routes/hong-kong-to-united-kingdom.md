@@ -1,8 +1,9 @@
 ---
 title: "Pet Transport from Hong Kong to United Kingdom | Complete Guide"
-description: "How to transport your dog or cat from Hong Kong to United Kingdom. Import requirements, airline options, costs, and step-by-step process."
+description: "How to transport your dog or cat from Hong Kong to United Kingdom. Import requirements, airline options, costs, and step-by-step process Complete guide: United "
 type: "routes"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 slug: "hong-kong-to-united-kingdom"
 origin_name: "Hong Kong"
 destination_name: "United Kingdom"
@@ -109,11 +110,35 @@ route_data:
     - "Arriving with incorrect documentation results in penalty quarantine of up to 4 months at the owner's expense."
   route_complexity: "moderate"
   estimated_timeline_weeks: "6-10"
+faqs:
+  - question: "How long does it take to prepare a pet for transport from Hong Kong to United Kingdom?"
+    answer: "The process takes 6-10 weeks from start to finish. The rabies titre test requires a 3-6 month waiting period after the blood draw before your pet can travel, so start early."
+  - question: "Is there quarantine when my pet enters United Kingdom?"
+    answer: "No routine quarantine for pets entering United Kingdom with the correct documentation. No routine quarantine. Penalty quarantine up to Up to 120 (4 months) days if non-compliant"
+  - question: "Do I need an import permit to bring my pet into United Kingdom?"
+    answer: "Pet travel document (AHC or pet passport) serves as permit equivalent"
+  - question: "What health certificate does my pet need for this route?"
+    answer: "Required. Animal Health Certificate (AHC) or EU Pet Passport. Issued by: Official veterinarian in country of departure. Valid for 10 days from issue. From EU countries: EU pet passport OR AHC accepted. From non-EU countries: AHC or equivalent. GB-issued pet passports NOT valid for EU entry (post-Brexit). Your Hong Kong vet must be approved to issue official veterinary certificates. The certificate must be issued within the timeframe required by United Kingdom: usually 10 days before travel. Present the original at check-in."
+  - question: "Is a rabies titre test required for pets entering United Kingdom?"
+    answer: "Yes. Required for: Pets from unlisted countries (countries not on UK Part 1 or Part 2 lists). Not required for: Pets from listed countries (all P1 countries are listed). Minimum: 0.5 IU/ml. 90-day wait after blood draw The microchip must be implanted before the first rabies vaccination for the vaccination to be valid. Start this process as early as possible."
 content:
   h1: "Pet Transport from Hong Kong to United Kingdom"
   overview: |
-    
+    Pet transport from Hong Kong to United Kingdom is a moderately complex route. The documentation is specific and there are a few stages to work through, but families who plan ahead get their pets there without major issues.
+
+    At minimum, your pet needs a microchip (ISO 11784/11785 standard), a current rabies vaccination, a rabies titre test with a waiting period after the result, an approved import permit from the destination authority, and a government-endorsed health certificate issued close to your travel date. Allow 6-10 weeks from starting preparation to travel day.
+
+    Use the step-by-step timeline below to plan your preparation, and get in touch if you want us to coordinate the process for you.
+
 links:
-  sideways: []
-  upward: []
+  sideways:
+    - url: "/pet-transport/united-kingdom-to-hong-kong/"
+      text: "Pet Transport United Kingdom to Hong Kong"
+  upward:
+    - url: "/pet-transport/origins/pet-export-guide-shipping-from-hong-kong/"
+      text: "Shipping from Hong Kong"
+    - url: "/pet-transport/countries/united-kingdom/"
+      text: "Importing to United Kingdom"
+
+
 ---

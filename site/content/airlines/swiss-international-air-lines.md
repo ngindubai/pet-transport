@@ -1,8 +1,9 @@
 ---
 title: "Swiss International Air Lines Pet Cargo Policy | Pet Transport Global"
-description: "Swiss International Air Lines pet transport policy: cabin rules, cargo service, breed restrictions, crate requirements, and how to book your pet on Swiss International Air Lines."
+description: "Swiss International Air Lines pet transport policy: cabin and cargo rules, breed restrictions, crate requirements, and how to book your pet on SWISS."
 type: "airlines"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 slug: "swiss-international-air-lines"
 airline_name: "Swiss International Air Lines"
 hub: "Zurich (ZRH)"

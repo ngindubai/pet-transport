@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Master To-Do List — PetTransportGlobal</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; padding: 20px; background: #0d1117; color: #c9d1d9; }
+  .container { max-width: 900px; margin: 0 auto; }
+  h1 { color: #58a6ff; border-bottom: 1px solid #30363d; padding-bottom: 12px; }
+  h2 { color: #79c0ff; margin-top: 32px; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  .meta { color: #8b949e; font-size: 13px; margin-bottom: 24px; }
+  .section { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+  .section h2 { margin-top: 0; }
+  .item { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 1px solid #21262d; }
+  .item:last-child { border-bottom: none; }
+  .item input[type=checkbox] { margin-top: 3px; flex-shrink: 0; width: 16px; height: 16px; accent-color: #3fb950; cursor: pointer; }
+  .item-body { flex: 1; }
+  .item-title { font-size: 14px; color: #e6edf3; margin-bottom: 3px; }
+  .item-title.done { text-decoration: line-through; color: #8b949e; }
+  .item-note { font-size: 12px; color: #8b949e; }
+  code { background: #21262d; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+  .badge { display: inline-block; padding: 1px 7px; border-radius: 10px; font-size: 11px; font-weight: 600; margin-left: 6px; }
+  .b-red { background: rgba(248,81,73,0.15); color: #f85149; }
+  .b-yellow { background: rgba(210,153,34,0.15); color: #d2a520; }
+  .b-blue { background: rgba(88,166,255,0.15); color: #58a6ff; }
+  .b-green { background: rgba(63,185,80,0.15); color: #3fb950; }
+  .b-purple { background: rgba(188,140,255,0.15); color: #bc8cff; }
+  .progress-wrap { background: #21262d; border-radius: 4px; height: 6px; margin: 8px 0 4px; }
+  .progress-bar { background: #3fb950; border-radius: 4px; height: 6px; transition: width 0.3s; }
+  .progress-label { font-size: 11px; color: #8b949e; }
+  .note-block { background: rgba(56,139,253,0.06); border-left: 3px solid #58a6ff; padding: 10px 14px; border-radius: 4px; font-size: 13px; margin: 8px 0 0; }
+  .warn-block { background: rgba(210,153,34,0.06); border-left: 3px solid #d2a520; padding: 10px 14px; border-radius: 4px; font-size: 13px; margin: 8px 0 0; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Master To-Do List</h1>
+<p class="meta">PetTransportGlobal — items to action on next deploy. Last updated: 2026-04-30</p>
+
+<!-- DEPLOY CHECKLIST -->
+<div class="section">
+  <h2>Next Deploy — Do These in Order <span class="badge b-red">Blocking</span></h2>
+
+  <div class="item">
+    <input type="checkbox" id="d1">
+    <div class="item-body">
+      <div class="item-title">Run <code>build.bat</code> before uploading</div>
+      <div class="item-note">From repo root: <code>C:\Users\garet\Desktop\pet-transport\</code> — runs Hugo + sitemap split in one command. Do not upload the old <code>site/public/</code> without a fresh build.</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <input type="checkbox" id="d2">
+    <div class="item-body">
+      <div class="item-title">Upload <code>site/public/</code> contents to Hostinger root</div>
+      <div class="item-note">Upload the <em>contents</em> of <code>site/public/</code> — not the folder itself. Hostinger file manager or FTP. Root should contain: <code>index.html</code>, <code>sitemap.xml</code>, <code>sitemap-routes.xml</code>, <code>robots.txt</code>, <code>pet-transport/</code>, <code>blog/</code>, etc.</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <input type="checkbox" id="d3">
+    <div class="item-body">
+      <div class="item-title">Verify site loads after upload</div>
+      <div class="item-note">Check: <code>https://pettransportglobal.com/</code> loads home page. Check one P1 route: <code>/pet-transport/united-kingdom-to-australia/</code>. Check one blog article: <code>/blog/uk-to-australia-pet-transport-complete-guide/</code></div>
+    </div>
+  </div>
+
+  <div class="item">
+    <input type="checkbox" id="d4">
+    <div class="item-body">
+      <div class="item-title">Verify <code>sitemap.xml</code> is the new index format</div>
+      <div class="item-note">Open <code>https://pettransportglobal.com/sitemap.xml</code> — should show <code>&lt;sitemapindex&gt;</code> XML with 4 child sitemaps, not a flat <code>&lt;urlset&gt;</code>. Also verify <code>/sitemap-routes.xml</code> loads with 2,345 URLs.</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <input type="checkbox" id="d5">
+    <div class="item-body">
+      <div class="item-title">Verify <code>robots.txt</code> has Sitemap directive</div>
+      <div class="item-note">Open <code>https://pettransportglobal.com/robots.txt</code> — should contain: <code>Sitemap: https://pettransportglobal.com/sitemap.xml</code></div>
+    </div>
+  </div>
+</div>
+
+<!-- GSC ACTIONS -->
+<div class="section">
+  <h2>Google Search Console — Do After Deploy <span class="badge b-yellow">Important</span></h2>
+
+  <div class="item">
+    <input type="checkbox" id="g1">
+    <div class="item-body">
+      <div class="item-title">Submit sitemap index to GSC</div>
+      <div class="item-note">GSC → Sitemaps → Add sitemap: <code>https://pettransportglobal.com/sitemap.xml</code></div>
+    </div>
+  </div>
+
+  <div class="item">
+    <input type="checkbox" id="g2">
+    <div class="item-body">
+      <div class="item-title">Submit section sitemaps to GSC (separately)</div>
+      <div class="item-note">
+        Also add each section sitemap individually for better tracking:<br>
+        <code>https://pettransportglobal.com/sitemap-routes.xml</code> (2,345 URLs)<br>
+        <code>https://pettransportglobal.com/sitemap-hubs.xml</code> (166 URLs)<br>
+        <code>https://pettransportglobal.com/sitemap-blog.xml</code> (50 URLs)
+      </div>
+    </div>
+  </div>
+
+  <div class="item">
+    <input type="checkbox" id="g3">
+    <div class="item-body">
+      <div class="item-title">Request indexing for top 5 P1 routes via URL Inspection</div>
+      <div class="item-note">
+        GSC → URL Inspection → paste URL → "Request Indexing" for each:<br>
+        1. <code>/pet-transport/united-kingdom-to-australia/</code><br>
+        2. <code>/pet-transport/united-arab-emirates-to-united-kingdom/</code><br>
+        3. <code>/pet-transport/australia-to-united-kingdom/</code><br>
+        4. <code>/pet-transport/united-states-to-united-kingdom/</code><br>
+        5. <code>/pet-transport/united-kingdom-to-united-states/</code>
+      </div>
+    </div>
+  </div>
+
+  <div class="item">
+    <input type="checkbox" id="g4">
+    <div class="item-body">
+      <div class="item-title">Request indexing for home, about, contact pages</div>
+      <div class="item-note">URL Inspection → Request Indexing for: <code>/</code> (home), <code>/about/</code>, <code>/contact/</code></div>
+    </div>
+  </div>
+
+  <div class="item">
+    <input type="checkbox" id="g5">
+    <div class="item-body">
+      <div class="item-title">Test FAQ schema on 3 route pages + 2 blog articles</div>
+      <div class="item-note">Use Google Rich Results Test: <code>https://search.google.com/test/rich-results</code> — paste a route URL and a blog URL. Should show FAQ rich result detected.</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <input type="checkbox" id="g6">
+    <div class="item-body">
+      <div class="item-title">Check GSC Coverage report at Week 2</div>
+      <div class="item-note">Check: how many pages are "Indexed" vs "Excluded". Target: 50–200 pages indexed by week 2. If under 10 — check robots.txt and canonical tags. Populate <code>phase3-performance-baseline.html</code> with the actual numbers.</div>
+    </div>
+  </div>
+</div>
+
+<!-- MONITORING -->
+<div class="section">
+  <h2>First Performance Review — 30 Days Post-Deploy <span class="badge b-blue">Scheduled</span></h2>
+
+  <div class="item">
+    <input type="checkbox" id="p1">
+    <div class="item-body">
+      <div class="item-title">Populate <code>phase3-performance-baseline.html</code> with live GSC data</div>
+      <div class="item-note">Fill in: Impressions (30d), Clicks (30d), Avg. Position for the 15 P1 routes table + 10 blog articles. Also update the indexing benchmarks actual column.</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <input type="checkbox" id="p2">
+    <div class="item-body">
+      <div class="item-title">Identify any pages stuck in "Discovered but not indexed" state</div>
+      <div class="item-note">GSC → Pages → filter by "Discovered - currently not indexed". If routes are stuck here it may indicate crawl budget issues with 2,345 route pages. Action: reduce crawl depth or add more internal links on routes.</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <input type="checkbox" id="p3">
+    <div class="item-body">
+      <div class="item-title">Complete the 20-route content quality table in the baseline report</div>
+      <div class="item-note">Open <code>phase3-performance-baseline.html</code> → Content Quality Gate table → manually review each of the 20 listed routes on the live site and fill in the Pass/Fail columns.</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <input type="checkbox" id="p4">
+    <div class="item-body">
+      <div class="item-title">Task 3.6: Upgrade any P1 routes with ranking data showing position 10–30</div>
+      <div class="item-note">P1 routes in position 10–30 are ripe for content upgrades: add more specific regulatory info, expand the FAQ block, add a cost breakdown section. These are the easiest wins.</div>
+    </div>
+  </div>
+</div>
+
+<!-- NICE TO HAVE -->
+<div class="section">
+  <h2>Backlog — No Rush <span class="badge b-purple">Backlog</span></h2>
+
+  <div class="item">
+    <input type="checkbox" id="b1">
+    <div class="item-body">
+      <div class="item-title">Add GA4 event tracking to quote form</div>
+      <div class="item-note">Add a <code>form_submit</code> event to the quote form button in the Hugo template so you can track enquiries in Google Analytics. Without this, you have no conversion data.</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <input type="checkbox" id="b2">
+    <div class="item-body">
+      <div class="item-title">Register for Google Search Console email alerts</div>
+      <div class="item-note">GSC → Settings → Email preferences → enable alerts for manual actions, security issues, and coverage drops. Free and takes 2 minutes.</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <input type="checkbox" id="b3">
+    <div class="item-body">
+      <div class="item-title">Add Bing Webmaster Tools</div>
+      <div class="item-note">Submit sitemap to Bing Webmaster Tools too — Bing has ~6% search share and is often faster to index new sites than Google. Free, 5 minutes.</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <input type="checkbox" id="b4">
+    <div class="item-body">
+      <div class="item-title">Start backlink outreach (Task 2.8 playbook)</div>
+      <div class="item-note">Playbook is in <code>backlink-campaign.html</code>. Start with Tier 1 targets (expat forums and relocation blogs). The Global Pet Transport Guide 2026 (<code>/blog/global-pet-transport-guide-2026/</code>) is the link magnet — lead with that.</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <input type="checkbox" id="b5">
+    <div class="item-body">
+      <div class="item-title">Set up a simple enquiry tracking spreadsheet</div>
+      <div class="item-note">Until GA4 form tracking is live, log incoming enquiries manually: date, email, origin country, destination country, pet type. Even 5 data points reveals which routes are converting.</div>
+    </div>
+  </div>
+</div>
+
+<p class="meta" style="margin-top:32px;">Master to-do list — PetTransportGlobal | Updated 2026-04-30 | Add new items here as they arise.</p>
+
+</div>
+</body>
+</html>

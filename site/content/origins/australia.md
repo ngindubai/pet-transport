@@ -1,8 +1,9 @@
 ---
 title: "Pet Export Guide: Shipping from Australia"
-description: "Guide to exporting your dog or cat from Australia. Export requirements, airlines, and routes."
+description: "Exporting your pet from Australia: export health certificate requirements, airline options, and routes from Australia to popular destinations worldwide."
 type: "origins"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 country_name: "Australia"
 country_code: "AU"
 overview: |
@@ -25,8 +26,30 @@ sections:
     body: |
       We have detailed guides for the following routes:
       
-      - [Australia to Singapore](/routes/australia-to-singapore/)
-      - [Australia to United Kingdom](/routes/australia-to-united-kingdom/)
+      - [Australia to Brazil](/pet-transport/australia-to-brazil/)
+      - [Australia to Canada](/pet-transport/australia-to-canada/)
+      - [Australia to Denmark](/pet-transport/australia-to-denmark/)
+      - [Australia to France](/pet-transport/australia-to-france/)
+      - [Australia to Germany](/pet-transport/australia-to-germany/)
+      - [Australia to Greece](/pet-transport/australia-to-greece/)
+      - [Australia to Hong Kong](/pet-transport/australia-to-hong-kong/)
+      - [Australia to India](/pet-transport/australia-to-india/)
+      - [Australia to Indonesia](/pet-transport/australia-to-indonesia/)
+      - [Australia to Italy](/pet-transport/australia-to-italy/)
+      - [Australia to Japan](/pet-transport/australia-to-japan/)
+      - [Australia to Malaysia](/pet-transport/australia-to-malaysia/)
+      - [Australia to Mexico](/pet-transport/australia-to-mexico/)
+      - [Australia to Netherlands](/pet-transport/australia-to-netherlands/)
+      - [Australia to Philippines](/pet-transport/australia-to-philippines/)
+      - [Australia to Portugal](/pet-transport/australia-to-portugal/)
+      - [Australia to Singapore](/pet-transport/australia-to-singapore/)
+      - [Australia to South Africa](/pet-transport/australia-to-south-africa/)
+      - [Australia to South Korea](/pet-transport/australia-to-south-korea/)
+      - [Australia to Switzerland](/pet-transport/australia-to-switzerland/)
+      - [Australia to Thailand](/pet-transport/australia-to-thailand/)
+      - [Australia to United Arab Emirates](/pet-transport/australia-to-united-arab-emirates/)
+      - [Australia to United Kingdom](/pet-transport/australia-to-united-kingdom/)
+      - [Australia to United States](/pet-transport/australia-to-united-states/)
 faqs:
   - question: "What do I need to export my pet from Australia?"
     answer: "You'll need a health certificate from an official veterinarian, proof of microchip and vaccinations, and any government endorsement required by your destination country. Required for live animal exports from Australia"

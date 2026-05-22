@@ -3,6 +3,7 @@ title: "Pet Transport from United Arab Emirates to United States | Complete Guid
 description: "How to transport your dog or cat from United Arab Emirates to United States. Import requirements, airline options, costs, and step-by-step process."
 type: "routes"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 slug: "united-arab-emirates-to-united-states"
 origin_name: "United Arab Emirates"
 destination_name: "United States"
@@ -72,11 +73,35 @@ route_data:
     - "United Arab Emirates is classified as a CDC high-risk country for dog rabies. Additional requirements apply: dogs must arrive at a CDC-registered animal care facility, have FAVN titre test results, and a CDC Dog Import Form."
   route_complexity: "high"
   estimated_timeline_weeks: "6-10"
+faqs:
+  - question: "How long does it take to prepare a pet for transport from United Arab Emirates to United States?"
+    answer: "Allow 6-10 weeks from your first vet appointment to travel day. The main variable is how quickly your pet's health certificate can be issued and endorsed."
+  - question: "Does my pet need to go into quarantine when entering United States?"
+    answer: "Yes. Quarantine may be shortened if dog receives US-licensed rabies vaccine and meets titre requirements during quarantine Plan your trip around the quarantine period and factor in the cost, which is owner-paid."
+  - question: "Do I need an import permit to bring my pet into United States?"
+    answer: "No formal import permit. CDC Dog Import Form is the registration mechanism."
+  - question: "What health certificate does my pet need for this route?"
+    answer: "No standalone health certificate requirement. The CDC certification forms include health attestation. Your United Arab Emirates vet must be approved to issue official veterinary certificates. The certificate must be issued within the timeframe required by United States: usually 10 days before travel. Present the original at check-in."
+  - question: "Does my pet need a microchip to travel from United Arab Emirates to United States?"
+    answer: "Required (Universal scanner detectable). MUST be implanted BEFORE rabies vaccination or vaccine is considered invalid The microchip must be in place before the rabies vaccination is given. If your pet was microchipped after its rabies jab, the vaccination is invalid and must be repeated."
 content:
   h1: "Pet Transport from United Arab Emirates to United States"
   overview: |
-    
+    Moving a pet from United Arab Emirates to United States is a high-complexity route. The preparation involves several stages and the timeline is longer than most people expect.
+
+    At minimum, your pet needs a microchip (ISO 11784/11785 standard), a current rabies vaccination, and a government-endorsed health certificate issued close to your travel date. Allow 6-10 weeks from starting preparation to travel day.
+
+    No general quarantine for dogs and cats, but dogs must meet the CDC rabies vaccination requirements. Puppies under 6 months from certain countries face additional rules. Use our step-by-step guide below to track what you need to do and when.
+
 links:
-  sideways: []
-  upward: []
+  sideways:
+    - url: "/pet-transport/united-states-to-united-arab-emirates/"
+      text: "Pet Transport United States to United Arab Emirates"
+  upward:
+    - url: "/pet-transport/origins/pet-export-guide-shipping-from-united-arab-emirates/"
+      text: "Shipping from United Arab Emirates"
+    - url: "/pet-transport/countries/united-states/"
+      text: "Importing to United States"
+
+
 ---

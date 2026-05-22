@@ -13,8 +13,11 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 text-center my-auto">
-                <img src="/img/logo.png" class="logo-footer img-fluid" alt="{{ .Site.Params.brand }}">
-                <ul class="social-list text-center list-inline">
+                <a class="ptg-logo ptg-logo-footer" href="/">
+                    <i class="fas fa-paw ptg-logo-icon" aria-hidden="true"></i>
+                    <span class="ptg-logo-text">PetTransport<strong class="ptg-logo-accent">Global</strong></span>
+                </a>
+                <ul class="social-list text-center list-inline mt-3">
                     {{ with .Site.Params.instagram }}<li class="list-inline-item"><a title="Instagram" href="{{ . }}"><i class="fab fa-instagram"></i></a></li>{{ end }}
                     {{ with .Site.Params.facebook }}<li class="list-inline-item"><a title="Facebook" href="{{ . }}"><i class="fab fa-facebook-f"></i></a></li>{{ end }}
                 </ul>
@@ -41,18 +44,19 @@
                 </ul>
             </div>
             <div class="col-lg-3">
-                <h5>Contact</h5>
+                <h5>Legal</h5>
                 <hr class="small-divider left">
                 <ul class="list-unstyled mt-3">
-                    <li class="mb-1"><i class="fas fa-envelope margin-icon"></i><a href="mailto:{{ .Site.Params.contactEmail | default "hello@pettransportglobal.com" }}">{{ .Site.Params.contactEmail | default "hello@pettransportglobal.com" }}</a></li>
-                    <li><i class="fas fa-phone margin-icon"></i>{{ .Site.Params.contactPhone | default "+44 (0) 123 456 789" }}</li>
+                    <li class="mb-1"><a href="/privacy/">Privacy Policy</a></li>
+                    <li class="mb-1"><a href="/terms/">Terms &amp; Conditions</a></li>
+                    <li><a href="https://wa.me/447703577246" target="_blank" rel="noopener"><i class="fab fa-whatsapp me-1"></i>WhatsApp Us</a></li>
                 </ul>
             </div>
         </div>
         <hr>
         <div class="row">
             <div class="credits col-sm-12">
-                <p>&copy; {{ now.Year }} {{ .Site.Params.brand }}. All rights reserved.</p>
+                <p>&copy; {{ now.Year }} {{ .Site.Params.brand }}. All rights reserved. &nbsp;&middot;&nbsp; <a href="/privacy/" style="color:#888;">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="/terms/" style="color:#888;">Terms &amp; Conditions</a></p>
                 <p class="mt-1" style="font-size:0.85em;color:#888;">Information on this site is for guidance only. Regulations change frequently. Always verify current requirements with the relevant government authority before travelling with your pet.</p>
             </div>
         </div>

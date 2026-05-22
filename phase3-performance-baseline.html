@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phase 3 Performance Baseline — PetTransportGlobal</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; padding: 20px; background: #0d1117; color: #c9d1d9; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  h1 { color: #58a6ff; border-bottom: 1px solid #30363d; padding-bottom: 12px; }
+  h2 { color: #79c0ff; margin-top: 32px; }
+  h3 { color: #a5d6ff; }
+  .meta { color: #8b949e; font-size: 13px; margin-bottom: 24px; }
+  .card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+  .card h3 { margin-top: 0; }
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-bottom: 20px; }
+  .stat { background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 14px; text-align: center; }
+  .stat-num { font-size: 28px; font-weight: 700; color: #58a6ff; }
+  .stat-label { font-size: 12px; color: #8b949e; margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th { background: #21262d; color: #79c0ff; padding: 10px 12px; text-align: left; border-bottom: 2px solid #30363d; }
+  td { padding: 9px 12px; border-bottom: 1px solid #21262d; }
+  tr:hover td { background: #161b22; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+  .b-blue { background: rgba(88,166,255,0.15); color: #58a6ff; }
+  .b-green { background: rgba(63,185,80,0.15); color: #3fb950; }
+  .b-yellow { background: rgba(210,153,34,0.15); color: #d2a520; }
+  .b-red { background: rgba(248,81,73,0.15); color: #f85149; }
+  .b-purple { background: rgba(188,140,255,0.15); color: #bc8cff; }
+  .note { background: rgba(56,139,253,0.06); border-left: 3px solid #58a6ff; padding: 12px 16px; border-radius: 4px; font-size: 14px; margin: 12px 0; }
+  .warn { background: rgba(210,153,34,0.06); border-left: 3px solid #d2a520; padding: 12px 16px; border-radius: 4px; font-size: 14px; margin: 12px 0; }
+  .checklist li { margin: 6px 0; }
+  .checklist input[type=checkbox] { margin-right: 8px; }
+  code { background: #21262d; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+  .progress-bar { background: #21262d; border-radius: 4px; height: 8px; margin: 4px 0; }
+  .progress-fill { background: #58a6ff; border-radius: 4px; height: 8px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>PetTransportGlobal — Phase 3 Performance Baseline</h1>
+<p class="meta">Created: 2026-04-30 | Updated each performance review | Next review: 30 days post-deployment</p>
+
+<div class="note">
+  <strong>Purpose:</strong> This document establishes the baseline for Task 3.5 (First Performance Review). 
+  It records the site state at Phase 3 completion, sets keyword tracking targets for P1 routes, 
+  and defines the success metrics for Phase 3 Gate Review (Task 3.8). 
+  Populate the "GSC Data" columns once the site has been deployed and indexed.
+</div>
+
+<!-- SITE INVENTORY -->
+<h2>Site Inventory at Phase 3 Completion</h2>
+
+<div class="stat-grid">
+  <div class="stat"><div class="stat-num">2,580</div><div class="stat-label">Total pages (Hugo build)</div></div>
+  <div class="stat"><div class="stat-num">2,345</div><div class="stat-label">Route pages</div></div>
+  <div class="stat"><div class="stat-num">50</div><div class="stat-label">Country hubs (25 origin + 25 country)</div></div>
+  <div class="stat"><div class="stat-num">50</div><div class="stat-label">P3 country hubs</div></div>
+  <div class="stat"><div class="stat-num">36</div><div class="stat-label">Breed guide pages</div></div>
+  <div class="stat"><div class="stat-num">23</div><div class="stat-label">Airline guide pages</div></div>
+  <div class="stat"><div class="stat-num">50</div><div class="stat-label">Blog articles</div></div>
+  <div class="stat"><div class="stat-num">3</div><div class="stat-label">Resource pages</div></div>
+</div>
+
+<div class="card">
+  <h3>Sitemap Structure</h3>
+  <table>
+    <tr><th>Sitemap File</th><th>URLs</th><th>Priority</th><th>Submit to GSC</th></tr>
+    <tr><td><code>sitemap.xml</code> (index)</td><td>—</td><td>—</td><td><span class="badge b-green">✓ Yes — index</span></td></tr>
+    <tr><td><code>sitemap-routes.xml</code></td><td>2,345</td><td>0.8</td><td><span class="badge b-blue">Submit separately</span></td></tr>
+    <tr><td><code>sitemap-hubs.xml</code></td><td>166</td><td>0.7</td><td><span class="badge b-blue">Submit separately</span></td></tr>
+    <tr><td><code>sitemap-blog.xml</code></td><td>50</td><td>0.6</td><td><span class="badge b-blue">Submit separately</span></td></tr>
+    <tr><td><code>sitemap-pages.xml</code></td><td>9</td><td>0.5–1.0</td><td><span class="badge b-yellow">Optional</span></td></tr>
+  </table>
+  <p class="meta" style="margin-top:12px;">Run <code>python split_sitemap.py</code> after every Hugo build to regenerate section sitemaps.</p>
+</div>
+
+<!-- P1 KEYWORD TRACKING -->
+<h2>P1 Route Keyword Tracking (High-Priority Targets)</h2>
+
+<div class="note">
+  These are the 15 highest-priority routes from the keyword matrix. Track rankings for these first. 
+  Populate GSC columns after 4–8 weeks of indexing.
+</div>
+
+<div class="card">
+  <table>
+    <tr>
+      <th>#</th>
+      <th>Route</th>
+      <th>Primary Target Keyword</th>
+      <th>Vol. Estimate</th>
+      <th>Competition</th>
+      <th>GSC Impressions (30d)</th>
+      <th>GSC Clicks (30d)</th>
+      <th>Avg. Position</th>
+      <th>Status</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>UK → Australia</td>
+      <td>pet transport uk to australia</td>
+      <td><span class="badge b-green">High (500+)</span></td>
+      <td><span class="badge b-yellow">Medium</span></td>
+      <td>—</td><td>—</td><td>—</td>
+      <td><span class="badge b-purple">Pending index</span></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>UAE → UK</td>
+      <td>pet transport uae to uk</td>
+      <td><span class="badge b-green">High</span></td>
+      <td><span class="badge b-yellow">Medium</span></td>
+      <td>—</td><td>—</td><td>—</td>
+      <td><span class="badge b-purple">Pending index</span></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Australia → UK</td>
+      <td>pet transport australia to uk</td>
+      <td><span class="badge b-green">High</span></td>
+      <td><span class="badge b-yellow">Medium</span></td>
+      <td>—</td><td>—</td><td>—</td>
+      <td><span class="badge b-purple">Pending index</span></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>USA → UK</td>
+      <td>pet transport usa to uk</td>
+      <td><span class="badge b-green">High</span></td>
+      <td><span class="badge b-red">High</span></td>
+      <td>—</td><td>—</td><td>—</td>
+      <td><span class="badge b-purple">Pending index</span></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>UK → USA</td>
+      <td>pet transport uk to usa</td>
+      <td><span class="badge b-green">High</span></td>
+      <td><span class="badge b-red">High</span></td>
+      <td>—</td><td>—</td><td>—</td>
+      <td><span class="badge b-purple">Pending index</span></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>UAE → Australia</td>
+      <td>pet transport uae to australia</td>
+      <td><span class="badge b-blue">Medium</span></td>
+      <td><span class="badge b-green">Low</span></td>
+      <td>—</td><td>—</td><td>—</td>
+      <td><span class="badge b-purple">Pending index</span></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Singapore → Australia</td>
+      <td>pet transport singapore to australia</td>
+      <td><span class="badge b-blue">Medium</span></td>
+      <td><span class="badge b-green">Low</span></td>
+      <td>—</td><td>—</td><td>—</td>
+      <td><span class="badge b-purple">Pending index</span></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>South Africa → UK</td>
+      <td>pet transport south africa to uk</td>
+      <td><span class="badge b-blue">Medium</span></td>
+      <td><span class="badge b-green">Low</span></td>
+      <td>—</td><td>—</td><td>—</td>
+      <td><span class="badge b-purple">Pending index</span></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Hong Kong → UK</td>
+      <td>pet transport hong kong to uk</td>
+      <td><span class="badge b-blue">Medium</span></td>
+      <td><span class="badge b-green">Low</span></td>
+      <td>—</td><td>—</td><td>—</td>
+      <td><span class="badge b-purple">Pending index</span></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>UK → Singapore</td>
+      <td>pet transport uk to singapore</td>
+      <td><span class="badge b-blue">Medium</span></td>
+      <td><span class="badge b-yellow">Medium</span></td>
+      <td>—</td><td>—</td><td>—</td>
+      <td><span class="badge b-purple">Pending index</span></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>UK → UAE</td>
+      <td>pet transport uk to uae</td>
+      <td><span class="badge b-blue">Medium</span></td>
+      <td><span class="badge b-yellow">Medium</span></td>
+      <td>—</td><td>—</td><td>—</td>
+      <td><span class="badge b-purple">Pending index</span></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>UK → France</td>
+      <td>pet transport uk to france</td>
+      <td><span class="badge b-blue">Medium</span></td>
+      <td><span class="badge b-red">High</span></td>
+      <td>—</td><td>—</td><td>—</td>
+      <td><span class="badge b-purple">Pending index</span></td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>South Africa → Australia</td>
+      <td>pet transport south africa to australia</td>
+      <td><span class="badge b-yellow">Low-Med</span></td>
+      <td><span class="badge b-green">Low</span></td>
+      <td>—</td><td>—</td><td>—</td>
+      <td><span class="badge b-purple">Pending index</span></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Hong Kong → Australia</td>
+      <td>pet transport hong kong to australia</td>
+      <td><span class="badge b-yellow">Low-Med</span></td>
+      <td><span class="badge b-green">Low</span></td>
+      <td>—</td><td>—</td><td>—</td>
+      <td><span class="badge b-purple">Pending index</span></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Germany → Australia</td>
+      <td>pet transport germany to australia</td>
+      <td><span class="badge b-yellow">Low-Med</span></td>
+      <td><span class="badge b-green">Low</span></td>
+      <td>—</td><td>—</td><td>—</td>
+      <td><span class="badge b-purple">Pending index</span></td>
+    </tr>
+  </table>
+</div>
+
+<!-- BLOG KEYWORD TARGETS -->
+<h2>Blog Keyword Targets (Top 10)</h2>
+
+<div class="card">
+  <table>
+    <tr>
+      <th>Article</th>
+      <th>Target Keyword</th>
+      <th>Search Intent</th>
+      <th>GSC Clicks (30d)</th>
+      <th>Avg. Position</th>
+    </tr>
+    <tr><td>Australia pet quarantine explained</td><td>australia pet quarantine</td><td>Informational</td><td>—</td><td>—</td></tr>
+    <tr><td>Rabies titre test guide</td><td>rabies titre test pets international travel</td><td>Informational</td><td>—</td><td>—</td></tr>
+    <tr><td>How much does pet transport cost</td><td>how much does international pet transport cost</td><td>Commercial</td><td>—</td><td>—</td></tr>
+    <tr><td>UK to Australia complete guide</td><td>uk to australia pet transport guide</td><td>Commercial</td><td>—</td><td>—</td></tr>
+    <tr><td>IATA crate guide</td><td>iata pet crate requirements</td><td>Informational</td><td>—</td><td>—</td></tr>
+    <tr><td>Brachycephalic dogs international travel</td><td>flying with french bulldog internationally</td><td>Informational</td><td>—</td><td>—</td></tr>
+    <tr><td>Pet health certificate guide</td><td>international pet health certificate</td><td>Informational</td><td>—</td><td>—</td></tr>
+    <tr><td>Japan 180-day rule</td><td>moving pets to japan requirements</td><td>Informational</td><td>—</td><td>—</td></tr>
+    <tr><td>Pet transport agents guide</td><td>pet transport agent uk</td><td>Commercial</td><td>—</td><td>—</td></tr>
+    <tr><td>EU pet travel post-Brexit</td><td>uk pet travel eu after brexit</td><td>Informational</td><td>—</td><td>—</td></tr>
+  </table>
+</div>
+
+<!-- INDEXING TARGETS -->
+<h2>Indexing Benchmarks</h2>
+
+<div class="card">
+  <table>
+    <tr><th>Metric</th><th>Week 2</th><th>Month 1</th><th>Month 3</th><th>Month 6</th><th>Actual (populate)</th></tr>
+    <tr><td>Pages indexed (GSC Coverage)</td><td>50–200</td><td>500–1,000</td><td>1,500–2,000</td><td>2,400+</td><td>—</td></tr>
+    <tr><td>Total impressions (28d)</td><td>&lt;500</td><td>1,000–5,000</td><td>10,000–40,000</td><td>50,000+</td><td>—</td></tr>
+    <tr><td>Total clicks (28d)</td><td>&lt;20</td><td>50–200</td><td>300–1,000</td><td>2,000+</td><td>—</td></tr>
+    <tr><td>Enquiry form submissions</td><td>0</td><td>1–5</td><td>10–30</td><td>50+</td><td>—</td></tr>
+    <tr><td>Routes with position &lt;20</td><td>0–5</td><td>10–30</td><td>100–300</td><td>500+</td><td>—</td></tr>
+    <tr><td>Pages with crawl errors (GSC)</td><td>0</td><td>&lt;10</td><td>&lt;20</td><td>&lt;50</td><td>—</td></tr>
+  </table>
+  <p class="meta" style="margin-top:10px;">Benchmarks are estimates for a new domain in a competitive niche with no backlinks yet. Adjust based on actual GSC data at week 2.</p>
+</div>
+
+<!-- GSC SETUP CHECKLIST -->
+<h2>Google Search Console Setup Checklist</h2>
+
+<div class="card">
+  <ul class="checklist">
+    <li><input type="checkbox"> Domain verified (TXT record at Hostinger DNS) <span class="badge b-green">Done</span></li>
+    <li><input type="checkbox"> Sitemap index submitted: <code>https://pettransportglobal.com/sitemap.xml</code></li>
+    <li><input type="checkbox"> Section sitemap submitted: <code>https://pettransportglobal.com/sitemap-routes.xml</code> (2,345 URLs)</li>
+    <li><input type="checkbox"> Section sitemap submitted: <code>https://pettransportglobal.com/sitemap-hubs.xml</code> (166 URLs)</li>
+    <li><input type="checkbox"> Section sitemap submitted: <code>https://pettransportglobal.com/sitemap-blog.xml</code> (50 URLs)</li>
+    <li><input type="checkbox"> URL Inspection: manually inspect top 5 P1 route pages to force crawl</li>
+    <li><input type="checkbox"> URL Inspection: manually inspect home page, about page, contact page</li>
+    <li><input type="checkbox"> Coverage report checked: 0 "Excluded" or "Error" items after week 2</li>
+    <li><input type="checkbox"> Rich results test: run on 3 route pages, 2 blog articles — FAQ schema present?</li>
+    <li><input type="checkbox"> Core Web Vitals: check LCP, CLS, INP for home page in GSC</li>
+    <li><input type="checkbox"> Performance filter: set date range to 28 days, country = all, after month 1</li>
+    <li><input type="checkbox"> Manually request indexing via URL Inspection for top 15 P1 routes (listed above)</li>
+  </ul>
+</div>
+
+<!-- CONTENT QUALITY GATE -->
+<h2>Content Quality Gate (for Phase 3 Gate Review)</h2>
+
+<div class="note">
+  Gate Review (Task 3.8) requires sampling 20 P3 route pages for template creep.
+  The question: do P3 routes feel copy-paste, or do they have genuine variation?
+</div>
+
+<div class="card">
+  <h3>Sample Pages to Review for Task 3.8</h3>
+  <table>
+    <tr><th>Route</th><th>URL</th><th>Unique Hook Present?</th><th>Varied Structure?</th><th>FAQs Relevant?</th><th>Pass/Fail</th></tr>
+    <tr><td>Ireland → Australia</td><td>/pet-transport/ireland-to-australia/</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+    <tr><td>Norway → Singapore</td><td>/pet-transport/norway-to-singapore/</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+    <tr><td>Turkey → Germany</td><td>/pet-transport/turkey-to-germany/</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+    <tr><td>Argentina → Japan</td><td>/pet-transport/argentina-to-japan/</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+    <tr><td>Nigeria → UK</td><td>/pet-transport/nigeria-to-united-kingdom/</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+    <tr><td>Vietnam → Australia</td><td>/pet-transport/vietnam-to-australia/</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+    <tr><td>Chile → Canada</td><td>/pet-transport/chile-to-canada/</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+    <tr><td>Kenya → UAE</td><td>/pet-transport/kenya-to-united-arab-emirates/</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+    <tr><td>Egypt → Germany</td><td>/pet-transport/egypt-to-germany/</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+    <tr><td>Malta → Singapore</td><td>/pet-transport/malta-to-singapore/</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+    <tr><td>Romania → Australia</td><td>/pet-transport/romania-to-australia/</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+    <tr><td>Sri Lanka → UK</td><td>/pet-transport/sri-lanka-to-united-kingdom/</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+    <tr><td>Colombia → Spain</td><td>/pet-transport/colombia-to-spain/</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+    <tr><td>Cyprus → Germany</td><td>/pet-transport/cyprus-to-germany/</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+    <tr><td>Saudi Arabia → Singapore</td><td>/pet-transport/saudi-arabia-to-singapore/</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+    <tr><td>Israel → Canada</td><td>/pet-transport/israel-to-canada/</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+    <tr><td>Kuwait → Australia</td><td>/pet-transport/kuwait-to-australia/</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+    <tr><td>Greece → UK</td><td>/pet-transport/greece-to-united-kingdom/</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+    <tr><td>Czech Republic → USA</td><td>/pet-transport/czech-republic-to-united-states/</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+    <tr><td>Poland → Australia</td><td>/pet-transport/poland-to-australia/</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+  </table>
+  <p class="meta" style="margin-top:10px;">Complete this table manually: open each URL in the built site, read the intro paragraph, check FAQs, and note if the content feels unique or templated.</p>
+</div>
+
+<!-- LEAD GEN TRACKING -->
+<h2>Lead Generation Baseline</h2>
+
+<div class="card">
+  <h3>Quote Form</h3>
+  <table>
+    <tr><th>Week</th><th>Form Views</th><th>Form Submissions</th><th>Conversion Rate</th><th>Top Source Routes</th></tr>
+    <tr><td>Week 1 post-deploy</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+    <tr><td>Month 1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+    <tr><td>Month 3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+  </table>
+  <p class="meta" style="margin-top:10px;">Form analytics require GA4 event tracking. Add a <code>form_submit</code> event to the quote form button to track this in Google Analytics.</p>
+</div>
+
+<!-- BUILD COMMANDS -->
+<h2>Build and Deploy Reference</h2>
+
+<div class="card">
+  <h3>Standard Build (run from repo root)</h3>
+  <pre style="background:#0d1117;padding:14px;border-radius:6px;overflow-x:auto;font-size:13px;">
+# Full build + sitemap split:
+build.bat
+
+# Or manually:
+cd site
+hugo --gc --minify
+cd ..
+python split_sitemap.py
+
+# Then upload site\public\ to Hostinger
+  </pre>
+
+  <h3>Post-Upload Checklist</h3>
+  <ul class="checklist">
+    <li><input type="checkbox"> Upload <code>site/public/</code> contents to Hostinger root (not the folder itself)</li>
+    <li><input type="checkbox"> Verify <code>https://pettransportglobal.com/</code> loads correctly</li>
+    <li><input type="checkbox"> Verify <code>https://pettransportglobal.com/sitemap.xml</code> returns sitemap index XML</li>
+    <li><input type="checkbox"> Verify <code>https://pettransportglobal.com/sitemap-routes.xml</code> returns route URLs</li>
+    <li><input type="checkbox"> Verify <code>https://pettransportglobal.com/robots.txt</code> contains Sitemap directive</li>
+    <li><input type="checkbox"> Check one P1 route page renders: <code>/pet-transport/united-kingdom-to-australia/</code></li>
+    <li><input type="checkbox"> Check one blog article renders: <code>/blog/uk-to-australia-pet-transport-complete-guide/</code></li>
+    <li><input type="checkbox"> Submit all sitemaps in Google Search Console</li>
+  </ul>
+</div>
+
+<!-- NEXT STEPS -->
+<h2>Next Steps After Deployment</h2>
+<div class="card">
+  <ol>
+    <li><strong>Upload to Hostinger</strong> — upload <code>site/public/</code> via file manager</li>
+    <li><strong>Submit sitemaps to GSC</strong> — all 4 section sitemaps + index</li>
+    <li><strong>Request indexing</strong> — URL Inspection for top 15 P1 routes + home page</li>
+    <li><strong>Task 3.6 (Content upgrades)</strong> — review P1 routes for content depth opportunities once ranking data arrives</li>
+    <li><strong>Task 3.8 (Gate Review)</strong> — run the 20-page content sample check (table above), complete performance review at 30 days</li>
+  </ol>
+</div>
+
+<p class="meta" style="margin-top:40px;">Generated: 2026-04-30 | PetTransportGlobal Phase 3 Performance Baseline</p>
+</div>
+</body>
+</html>

@@ -1,7 +1,32 @@
-{{ define "title" }}{{ .Params.seo.title | default (printf "Pet Transport from %s" .Params.country_name) }}{{ end }}
+{{ define "title" }}{{ .Params.seo.title | default (printf "Pet Transport from %s | Pet Transport Global" (.Params.country_name | default .Params.origin_country)) }}{{ end }}
+
+{{ define "schema" }}
+{{ with .Params.faqs }}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {{ range $i, $faq := . }}{{ if $i }},{{ end }}
+        {
+            "@type": "Question",
+            "name": {{ $faq.question | jsonify }},
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": {{ $faq.answer | jsonify }}
+            }
+        }
+        {{ end }}
+    ]
+}
+</script>
+{{ end }}
+{{ end }}
 
 {{ define "main" }}
 {{ $hub := .Params }}
+{{ $routes := ($hub.content).routes_outgoing | default $hub.routes_outgoing }}
+{{ $airlines := $hub.airlines_available | default $hub.airlines }}
 
 {{/* Reuse country hero images: static/images/countries/country-{code}.jpg */}}
 {{ $specificPath := printf "static/images/countries/country-%s.jpg" (.Params.country_code | lower) }}
@@ -73,14 +98,14 @@
                 {{ end }}
 
                 {{/* Overview */}}
-                {{ with $hub.content.overview }}
+                {{ with ($hub.content).overview | default $hub.overview }}
                 <div class="mb-4">
                     {{ . | markdownify }}
                 </div>
                 {{ end }}
 
                 {{/* Routes from this country */}}
-                {{ with $hub.routes_outgoing }}
+                {{ with $routes }}
                 <div id="routes" class="mb-5">
                     <div class="section-heading text-start">
                         <h2>All Routes from {{ $hub.country_name }}</h2>
@@ -96,7 +121,7 @@
                 {{ end }}
 
                 {{/* Airlines */}}
-                {{ with $hub.airlines_available }}
+                {{ with $airlines }}
                 <div id="airlines" class="mb-5">
                     <div class="section-heading text-start">
                         <h2>Airlines Available from {{ $hub.country_name }}</h2>
@@ -115,13 +140,19 @@
                 {{ end }}
 
                 {{/* Content sections */}}
-                {{ with $hub.content.sections }}
+                {{ $sections := ($hub.content).sections | default $hub.sections }}
+                {{ with $sections }}
                 {{ range . }}
                 <div class="mb-4">
                     {{ with .heading }}<h2>{{ . }}</h2>{{ end }}
                     {{ .body | markdownify }}
                 </div>
                 {{ end }}
+                {{ end }}
+
+                {{/* FAQs */}}
+                {{ with .Params.faqs }}
+                {{ partial "faq-accordion.html" (dict "faqs" .) }}
                 {{ end }}
 
                 {{/* Quote form */}}
@@ -135,9 +166,9 @@
                         <div class="widget1-title"><h4>On this page</h4></div>
                         <div class="widget1-body">
                             <ul class="colored-icons">
-                                {{ if $hub.export_requirements }}<li><a href="#export-requirements"><i class="flaticon-clipboard text-primary"></i> Export requirements</a></li>{{ end }}
-                                {{ if $hub.routes_outgoing }}<li><a href="#routes"><i class="flaticon-plane text-primary"></i> Routes</a></li>{{ end }}
-                                {{ if $hub.airlines_available }}<li><a href="#airlines"><i class="flaticon-airline text-primary"></i> Airlines</a></li>{{ end }}
+                                {{ if or $hub.export_requirements (index $hub "export_requirements") }}<li><a href="#export-requirements"><i class="flaticon-clipboard text-primary"></i> Export requirements</a></li>{{ end }}
+                                {{ if or $hub.routes_outgoing $hub.sections }}<li><a href="#routes"><i class="flaticon-plane text-primary"></i> Routes</a></li>{{ end }}
+                                {{ if or $hub.airlines_available $hub.airlines }}<li><a href="#airlines"><i class="flaticon-airline text-primary"></i> Airlines</a></li>{{ end }}
                                 <li><a href="#quote-section"><i class="flaticon-mail text-primary"></i> Get a quote</a></li>
                             </ul>
                         </div>
@@ -148,8 +179,8 @@
                         <div class="widget1-body">
                             <ul class="list-unstyled mb-0">
                                 {{ with $hub.country_code }}<li><strong>Code:</strong> {{ . }}</li>{{ end }}
-                                {{ with $hub.routes_outgoing }}<li><strong>Routes:</strong> {{ len . }} available</li>{{ end }}
-                                {{ with $hub.airlines_available }}<li><strong>Airlines:</strong> {{ len . }} carriers</li>{{ end }}
+                                {{ with $routes }}<li><strong>Routes:</strong> {{ len . }} available</li>{{ end }}
+                                {{ with $airlines }}<li><strong>Airlines:</strong> {{ len . }} carriers</li>{{ end }}
                             </ul>
                         </div>
                     </div>

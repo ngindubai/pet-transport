@@ -3,6 +3,7 @@ title: "Flying with a American Bulldog | Airline Restrictions & Advice"
 description: "Which airlines accept American Bulldog as cargo or cabin? Seasonal embargoes, breed bans, and what you need before booking your flat-faced dog."
 type: "breeds"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 slug: "american-bulldog"
 breed_name: "American Bulldog"
 brachycephalic: true

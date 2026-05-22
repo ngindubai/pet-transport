@@ -1,8 +1,9 @@
 ---
-title: "Staffordshire Bull Terrier Import Restrictions by Country | Pet Transport Global"
+title: "Transporting Staffordshire Bull Terrier"
 description: "Which countries ban or restrict Staffordshire Bull Terrier import, and what it means for international relocation. Country-by-country breakdown with current regulations."
 type: "breeds"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 slug: "staffordshire-bull-terrier"
 breed_name: "Staffordshire Bull Terrier"
 brachycephalic: false

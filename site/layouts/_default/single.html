@@ -1,8 +1,36 @@
+{{ define "title" }}{{ if .Params.seo.title }}{{ .Params.seo.title }}{{ else }}{{ .Title }} | {{ .Site.Params.brand }}{{ end }}{{ end }}
+
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": {{ .Title | jsonify }},
+    "description": {{ .Params.description | default .Title | jsonify }},
+    "datePublished": "{{ .Date.Format "2006-01-02" }}",
+    "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+    "author": {
+        "@type": "Organization",
+        "name": "PetTransportGlobal"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "PetTransportGlobal",
+        "url": "https://pettransportglobal.com"
+    }
+}
+</script>
+{{ end }}
+
 {{ define "main" }}
 <section class="route-section">
     <div class="section-inner">
         <h1>{{ .Title }}</h1>
         {{ .Content }}
+        {{/* FAQs if defined */}}
+        {{ with .Params.faqs }}
+        {{ partial "faq-accordion.html" (dict "faqs" .) }}
+        {{ end }}
     </div>
 </section>
 {{ end }}

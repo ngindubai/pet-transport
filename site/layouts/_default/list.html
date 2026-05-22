@@ -37,7 +37,7 @@
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="blog-box">
                     <a href="{{ $p.Permalink }}">
-                        <div class="image"><img src="/images/{{ $img }}" alt="{{ $p.Title }}"></div>
+                        <div class="image"><img src="/images/{{ $img }}" alt="{{ $p.Title }}" loading="lazy"></div>
                     </a>
                     <div class="blog-box-caption">
                         <a href="{{ $p.Permalink }}"><h4>{{ $p.Title }}</h4></a>
@@ -71,7 +71,7 @@
             <div class="col-lg-3 col-md-6 mb-4" data-filter-title="{{ $p.Title | lower }}">
                 <div class="blog-box">
                     <a href="{{ $p.Permalink }}">
-                        <div class="image"><img src="/images/{{ $img }}" alt="{{ $p.Title }}"></div>
+                        <div class="image"><img src="/images/{{ $img }}" alt="{{ $p.Title }}" loading="lazy"></div>
                     </a>
                     <div class="blog-box-caption">
                         <a href="{{ $p.Permalink }}"><h4>{{ $p.Title }}</h4></a>

@@ -1,0 +1,60 @@
+name: Build and Deploy to Hostinger
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:       # allow manual trigger from GitHub UI
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1 — Checkout repo
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0    # full history for Hugo lastmod
+
+      # 2 — Set up Python (for split_sitemap.py)
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # 3 — Set up Hugo (extended, v0.160.1 matches local dev)
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.160.1'
+          extended: true
+
+      # 4 — Build Hugo site
+      - name: Build Hugo site
+        run: |
+          cd site
+          hugo --gc --minify
+        env:
+          HUGO_ENVIRONMENT: production
+
+      # 5 — Split sitemap into section sitemaps
+      - name: Split sitemap
+        run: python split_sitemap.py
+
+      # 6 — Deploy built site to Hostinger via FTP
+      #     Required GitHub Secrets:
+      #       FTP_SERVER   — e.g. ftp.pettransportglobal.com
+      #       FTP_USERNAME — your Hostinger FTP username
+      #       FTP_PASSWORD — your Hostinger FTP password
+      - name: Deploy to Hostinger via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./site/public/
+          server-dir: /public_html/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**

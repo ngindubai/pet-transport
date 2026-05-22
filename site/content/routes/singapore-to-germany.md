@@ -1,8 +1,10 @@
 ---
+template_variant: "B"
 title: "Pet Transport from Singapore to Germany | Complete Guide"
-description: "How to transport your dog or cat from Singapore to Germany. Import requirements, airline options, costs, and step-by-step process."
+description: "How to transport your dog or cat from Singapore to Germany. Import requirements, airline options, costs, and step-by-step process Complete guide: Germany import"
 type: "routes"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 slug: "singapore-to-germany"
 origin_name: "Singapore"
 destination_name: "Germany"
@@ -77,11 +79,35 @@ route_data:
     - "Microchip MUST be implanted before rabies vaccination. Vaccination given before microchip is invalid and the clock restarts."
   route_complexity: "moderate"
   estimated_timeline_weeks: "6-10"
+faqs:
+  - question: "How long does it take to prepare a pet for transport from Singapore to Germany?"
+    answer: "The process takes 6-10 weeks from start to finish. The rabies titre test requires a 3-6 month waiting period after the blood draw before your pet can travel, so start early."
+  - question: "Is there quarantine when my pet enters Germany?"
+    answer: "No routine quarantine for pets entering Germany with the correct documentation. No routine quarantine. Penalty quarantine up to varies days if non-compliant"
+  - question: "Do I need an import permit to bring my pet into Germany?"
+    answer: "No formal import permit. EU pet passport (intra-EU) or Animal Health Certificate (from third countries) serves as documentation."
+  - question: "What health certificate does my pet need for this route?"
+    answer: "Required Your Singapore vet must be approved to issue official veterinary certificates. The certificate must be issued within the timeframe required by Germany: usually 10 days before travel. Present the original at check-in."
+  - question: "Is a rabies titre test required for pets entering Germany?"
+    answer: "Yes. Required for: Pets from unlisted third countries (countries not on EU Annex II list). Not required for: Pets from EU member states, listed third countries (all P1 countries are listed). Minimum: 0.5 IU/ml. 90-day wait after blood draw The microchip must be implanted before the first rabies vaccination for the vaccination to be valid. Start this process as early as possible."
 content:
   h1: "Pet Transport from Singapore to Germany"
   overview: |
-    
+    Pet transport from Singapore to Germany is a moderately complex route. The documentation is specific and there are a few stages to work through, but families who plan ahead get their pets there without major issues.
+
+    At minimum, your pet needs a microchip (ISO 11784/11785 standard), a current rabies vaccination, a rabies titre test with a waiting period after the result, and a government-endorsed health certificate issued close to your travel date. Allow 6-10 weeks from starting preparation to travel day.
+
+    Use the step-by-step timeline below to plan your preparation, and get in touch if you want us to coordinate the process for you.
+
 links:
-  sideways: []
-  upward: []
+  sideways:
+    - url: "/pet-transport/germany-to-singapore/"
+      text: "Pet Transport Germany to Singapore"
+  upward:
+    - url: "/pet-transport/origins/pet-export-guide-shipping-from-singapore/"
+      text: "Shipping from Singapore"
+    - url: "/pet-transport/countries/germany/"
+      text: "Importing to Germany"
+
+
 ---

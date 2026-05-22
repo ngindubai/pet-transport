@@ -50,9 +50,20 @@
     <meta name="google-site-verification" content="{{ . }}">
     {{ end }}
 
-    {{/* Cloudflare Web Analytics */}}
-    {{ if not hugo.IsServer }}
-    {{/* TODO: Add Cloudflare analytics beacon when site ID available */}}
+    {{/* Google Analytics 4 — only on live site, not local dev server */}}
+    {{ if and (not hugo.IsServer) .Site.Params.googleAnalyticsId }}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalyticsId }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ .Site.Params.googleAnalyticsId }}', {
+        // Capture landing page, referrer and traffic source automatically.
+        // Link GA4 to Google Search Console in GA4 > Admin > Search Console
+        // to unlock organic keyword data.
+        send_page_view: true
+      });
+    </script>
     {{ end }}
 </head>
 <body id="top">
@@ -65,12 +76,12 @@
     {{ partial "footer.html" . }}
 
     {{/* Core JS */}}
-    <script src="/vendor/jquery/jquery.min.js"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/js/custom.js"></script>
-    <script src="/js/plugins.js"></script>
-    <script src="/js/prefixfree.min.js"></script>
-    <script src="/js/counter.js"></script>
+    <script src="/vendor/jquery/jquery.min.js" defer></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js" defer></script>
+    <script src="/js/custom.js" defer></script>
+    <script src="/js/plugins.js" defer></script>
+    <script src="/js/prefixfree.min.js" defer></script>
+    <script src="/js/counter.js" defer></script>
 
     {{/* Extra JS (LayerSlider etc.) */}}
     {{ block "extra_js" . }}{{ end }}
@@ -78,5 +89,11 @@
     {{/* Site-specific JS */}}
     {{ $js := resources.Get "js/main.js" | minify | fingerprint }}
     <script src="{{ $js.RelPermalink }}" defer></script>
+
+    {{/* WhatsApp floating button */}}
+    <a class="ptg-wa-float" href="https://wa.me/447703577246" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="ptg-wa-tooltip">Chat with us</span>
+    </a>
 </body>
 </html>

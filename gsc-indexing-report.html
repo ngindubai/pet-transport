@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GSC Indexing Review & Action Plan — PetTransportGlobal</title>
+  <style>
+    :root {
+      --green: #1a7f4f;
+      --green-light: #e8f5ee;
+      --amber: #b45309;
+      --amber-light: #fef3c7;
+      --red: #b91c1c;
+      --red-light: #fee2e2;
+      --blue: #1d4ed8;
+      --blue-light: #dbeafe;
+      --grey: #374151;
+      --grey-light: #f9fafb;
+      --border: #e5e7eb;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 15px;
+      line-height: 1.65;
+      color: var(--grey);
+      background: #f3f4f6;
+    }
+    .page-wrap {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+    }
+    header {
+      background: var(--green);
+      color: #fff;
+      padding: 36px 40px 32px;
+      border-radius: 12px;
+      margin-bottom: 28px;
+    }
+    header h1 { font-size: 1.7rem; font-weight: 700; margin-bottom: 6px; }
+    header p { opacity: 0.85; font-size: 0.95rem; }
+    header .meta { margin-top: 14px; display: flex; gap: 24px; flex-wrap: wrap; }
+    header .meta span {
+      background: rgba(255,255,255,0.15);
+      border-radius: 6px;
+      padding: 4px 12px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    /* Stat cards */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .stat-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px 18px;
+      border: 1px solid var(--border);
+    }
+    .stat-card .label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; color: #6b7280; font-weight: 600; margin-bottom: 4px; }
+    .stat-card .value { font-size: 2rem; font-weight: 700; line-height: 1; }
+    .stat-card .sub { font-size: 0.8rem; color: #6b7280; margin-top: 4px; }
+    .stat-card.green .value { color: var(--green); }
+    .stat-card.amber .value { color: var(--amber); }
+    .stat-card.red .value { color: var(--red); }
+    .stat-card.blue .value { color: var(--blue); }
+
+    /* Sections */
+    .section {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      padding: 28px 30px;
+      margin-bottom: 20px;
+    }
+    .section h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section h2 .badge {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+    .badge.amber { background: var(--amber-light); color: var(--amber); }
+    .badge.red { background: var(--red-light); color: var(--red); }
+    .badge.green { background: var(--green-light); color: var(--green); }
+    .badge.blue { background: var(--blue-light); color: var(--blue); }
+
+    h3 { font-size: 1rem; font-weight: 700; color: #1f2937; margin: 20px 0 8px; }
+    h3:first-of-type { margin-top: 0; }
+    p { margin-bottom: 12px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul, ol { padding-left: 22px; margin-bottom: 12px; }
+    li { margin-bottom: 6px; }
+
+    .callout {
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      border-left: 4px solid;
+    }
+    .callout.amber { background: var(--amber-light); border-color: var(--amber); }
+    .callout.red { background: var(--red-light); border-color: var(--red); }
+    .callout.green { background: var(--green-light); border-color: var(--green); }
+    .callout.blue { background: var(--blue-light); border-color: var(--blue); }
+    .callout strong { display: block; margin-bottom: 4px; }
+
+    /* Verdict bar */
+    .verdict {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      background: var(--amber-light);
+      border: 1px solid #fcd34d;
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin-bottom: 20px;
+    }
+    .verdict .icon { font-size: 2rem; flex-shrink: 0; line-height: 1; }
+    .verdict .body .title { font-weight: 700; font-size: 1.05rem; color: var(--amber); margin-bottom: 4px; }
+    .verdict .body p { color: #78350f; margin: 0; }
+
+    /* Phase plan */
+    .phase-block {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin-bottom: 14px;
+      overflow: hidden;
+    }
+    .phase-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 13px 18px;
+      background: var(--grey-light);
+      border-bottom: 1px solid var(--border);
+    }
+    .phase-header .phase-num {
+      background: var(--green);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.82rem;
+      padding: 3px 9px;
+      border-radius: 4px;
+    }
+    .phase-header .phase-title { font-weight: 700; font-size: 0.95rem; }
+    .phase-header .phase-time { margin-left: auto; font-size: 0.8rem; color: #6b7280; font-weight: 600; }
+    .phase-body { padding: 16px 18px; }
+    .phase-body ul { margin: 0; padding-left: 20px; }
+    .phase-body li { margin-bottom: 5px; font-size: 0.9rem; }
+    .phase-body li code { background: #f3f4f6; padding: 1px 5px; border-radius: 3px; font-size: 0.82rem; }
+
+    /* Tool table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin: 12px 0;
+    }
+    th {
+      background: var(--grey-light);
+      text-align: left;
+      padding: 9px 12px;
+      font-weight: 700;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      border-bottom: 2px solid var(--border);
+    }
+    td {
+      padding: 9px 12px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: var(--grey-light); }
+    td code { background: #f3f4f6; padding: 1px 5px; border-radius: 3px; font-size: 0.8rem; }
+
+    .priority-high { color: var(--red); font-weight: 700; }
+    .priority-med { color: var(--amber); font-weight: 700; }
+    .priority-low { color: var(--green); font-weight: 700; }
+
+    /* Progress indicator */
+    .coverage-bar-wrap { margin: 14px 0; }
+    .coverage-bar-wrap .bar-label { display: flex; justify-content: space-between; font-size: 0.82rem; color: #6b7280; margin-bottom: 5px; }
+    .coverage-bar { height: 22px; background: #e5e7eb; border-radius: 6px; overflow: hidden; display: flex; }
+    .coverage-bar .seg { height: 100%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; color: #fff; white-space: nowrap; overflow: hidden; }
+    .coverage-bar .seg.indexed { background: var(--green); }
+    .coverage-bar .seg.crawled-ni { background: #f59e0b; }
+    .coverage-bar .seg.canonical { background: #94a3b8; }
+    .coverage-bar .seg.redirect { background: #cbd5e1; }
+    .coverage-bar .seg.untracked { background: #e5e7eb; }
+
+    .legend { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+    .legend-item { display: flex; align-items: center; gap: 6px; font-size: 0.8rem; }
+    .legend-dot { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
+
+    footer {
+      text-align: center;
+      font-size: 0.78rem;
+      color: #9ca3af;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+
+  <header>
+    <h1>GSC Indexing: Review &amp; Resolution Plan</h1>
+    <p>PetTransportGlobal.com — Google Search Console Coverage Analysis</p>
+    <div class="meta">
+      <span>Generated: 7 May 2026</span>
+      <span>Data source: Google Search Console</span>
+      <span>Site pages built: 6,028</span>
+    </div>
+  </header>
+
+  <!-- Stat strip -->
+  <div class="stats-grid">
+    <div class="stat-card blue">
+      <div class="label">Total Pages Built</div>
+      <div class="value">6,028</div>
+      <div class="sub">Across all sections</div>
+    </div>
+    <div class="stat-card green">
+      <div class="label">Indexed by Google</div>
+      <div class="value">1,680</div>
+      <div class="sub">27.9% of built pages</div>
+    </div>
+    <div class="stat-card amber">
+      <div class="label">Crawled, Not Indexed</div>
+      <div class="value">1,215</div>
+      <div class="sub">Google saw, didn't include</div>
+    </div>
+    <div class="stat-card red">
+      <div class="label">Not Indexed (Total)</div>
+      <div class="value">1,239</div>
+      <div class="sub">All three exclusion reasons</div>
+    </div>
+  </div>
+
+  <!-- Coverage bar -->
+  <div class="section">
+    <h2>Coverage Breakdown <span class="badge blue">Visual</span></h2>
+
+    <p>Of the 6,028 pages Hugo has built, Google Search Console is currently aware of 2,919 (48.4%). The remaining ~3,109 have not yet been crawled at all — they are in the crawl queue or waiting to be discovered via sitemaps.</p>
+
+    <div class="coverage-bar-wrap">
+      <div class="bar-label"><span>Page coverage across all built pages (6,028 total)</span></div>
+      <div class="coverage-bar">
+        <div class="seg indexed" style="width: 27.9%">1,680 indexed</div>
+        <div class="seg crawled-ni" style="width: 20.2%">1,215 crawled</div>
+        <div class="seg canonical" style="width: 0.4%"></div>
+        <div class="seg untracked" style="width: 51.5%">~3,109 not yet crawled</div>
+      </div>
+      <div class="legend">
+        <div class="legend-item"><div class="legend-dot" style="background:var(--green)"></div> Indexed (1,680)</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#f59e0b"></div> Crawled, not indexed (1,215)</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#94a3b8"></div> Canonical / redirect issues (24)</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#e5e7eb; border:1px solid #d1d5db"></div> Not yet crawled (~3,109)</div>
+      </div>
+    </div>
+
+    <h3>Content section breakdown (pages built)</h3>
+    <table>
+      <tr>
+        <th>Section</th>
+        <th>Pages built</th>
+        <th>Likely Google priority</th>
+        <th>Index risk level</th>
+      </tr>
+      <tr>
+        <td>Routes</td>
+        <td>5,342</td>
+        <td>Medium — high volume, lower authority each</td>
+        <td class="priority-high">High — programmatic duplication risk</td>
+      </tr>
+      <tr>
+        <td>Blog articles</td>
+        <td>334</td>
+        <td>High — unique editorial content</td>
+        <td class="priority-low">Low — should index well</td>
+      </tr>
+      <tr>
+        <td>Origin hubs</td>
+        <td>78</td>
+        <td>High — strong topical authority pages</td>
+        <td class="priority-low">Low</td>
+      </tr>
+      <tr>
+        <td>Country guides</td>
+        <td>76</td>
+        <td>High — destination authority pages</td>
+        <td class="priority-low">Low</td>
+      </tr>
+      <tr>
+        <td>Airline guides</td>
+        <td>113</td>
+        <td>Medium-high — branded searches</td>
+        <td class="priority-med">Medium</td>
+      </tr>
+      <tr>
+        <td>Breed guides</td>
+        <td>65</td>
+        <td>Medium-high — long-tail niche queries</td>
+        <td class="priority-low">Low</td>
+      </tr>
+      <tr>
+        <td>Resources</td>
+        <td>5</td>
+        <td>High — tools + calculators</td>
+        <td class="priority-low">Low</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Data analysis from CSV export -->
+  <div class="section">
+    <h2>Export Data Analysis — What the CSV Actually Shows <span class="badge green">Updated: 7 May 2026</span></h2>
+
+    <p>You exported the "Crawled - currently not indexed" URL list from GSC. Analysing all 1,215 URLs against the site content reveals findings that are significantly more reassuring than the raw number suggests.</p>
+
+    <h3>Finding 1: The spike is entirely explained by the recent batch upload</h3>
+    <p>The Chart.csv data shows the timeline precisely:</p>
+    <table>
+      <tr><th>Date</th><th>Crawled-not-indexed count</th><th>What happened</th></tr>
+      <tr><td>1 May 2026</td><td>37</td><td>Pre-existing baseline — a small number of older pages Google hadn't decided on</td></tr>
+      <tr><td>2 May 2026</td><td><strong>1,215</strong></td><td>Overnight jump — Google crawled the newly uploaded batch and held them back</td></tr>
+      <tr><td>3–4 May 2026</td><td>1,215</td><td>Stable — Google evaluated and maintained its position on these pages</td></tr>
+    </table>
+    <div class="callout green">
+      <strong>What this means:</strong> The 1,178 new non-indexed pages appeared in a single 24-hour window. This is entirely consistent with normal Google behaviour after a large batch upload. Google's crawler is extremely active on the site (it processed ~1,200 new pages overnight), but its indexing pipeline applies a quality filter before committing pages to the index. This is not a retroactive rejection of existing pages — the core site was unaffected.
+    </div>
+
+    <h3>Finding 2: Almost exclusively route pages — no other sections affected</h3>
+    <p>Of all 1,215 URLs in the non-indexed export, the page type breakdown is striking:</p>
+    <table>
+      <tr><th>Section</th><th>Non-indexed pages</th><th>Assessment</th></tr>
+      <tr><td>/routes/</td><td>~1,214</td><td class="priority-high">Concentrated here — see Finding 3</td></tr>
+      <tr><td>/airlines/</td><td>1 (Singapore Airlines)</td><td class="priority-med">Anomaly — investigate individually in GSC URL Inspection</td></tr>
+      <tr><td>/blog/</td><td>0</td><td class="priority-low">Good — editorial content is indexing</td></tr>
+      <tr><td>/origins/ (hubs)</td><td>0</td><td class="priority-low">Good — hub pages are indexing</td></tr>
+      <tr><td>/countries/</td><td>0</td><td class="priority-low">Good — country guides are indexing</td></tr>
+      <tr><td>/breeds/</td><td>0</td><td class="priority-low">Good — breed pages are indexing</td></tr>
+      <tr><td>/resources/</td><td>0</td><td class="priority-low">Good</td></tr>
+    </table>
+    <div class="callout green">
+      <strong>This is a very positive signal.</strong> The issue is contained entirely within /routes/. Blog articles, hub pages, country guides, breed guides, and resource pages are not in the non-indexed list. That means Google does not have a site-wide quality concern — it is applying its filter selectively to route pages at scale, which is expected behaviour for programmatic content.
+    </div>
+
+    <h3>Finding 3: The non-indexed routes are almost exclusively obscure P3/P4 country pairs</h3>
+    <p>Reviewing the actual route URLs, a clear pattern emerges. Every visible non-indexed route is a low-search-volume, obscure country pair from the P3/P4 expansion batches:</p>
+    <table>
+      <tr><th>Example non-indexed routes</th><th>Route tier</th><th>Realistic search demand</th></tr>
+      <tr><td>norway-to-ecuador, oman-to-ghana, myanmar-to-turkey</td><td>P3/P4</td><td>Near zero</td></tr>
+      <tr><td>jordan-to-peru, ghana-to-luxembourg, nepal-to-costa-rica</td><td>P3/P4</td><td>Near zero</td></tr>
+      <tr><td>mauritius-to-cyprus, zimbabwe-to-oman, cambodia-to-jordan</td><td>P4</td><td>Near zero</td></tr>
+      <tr><td>ecuador-to-bangladesh, ethiopia-to-bulgaria, croatia-to-zimbabwe</td><td>P4</td><td>Near zero</td></tr>
+    </table>
+    <p>Critically, <strong>no P1 core routes appear anywhere in the non-indexed list</strong>. Routes like UK–Australia, US–UK, Canada–Australia, or Germany–USA — the high-volume corridors built first — are not present. Those pages are indexed and working.</p>
+    <div class="callout amber">
+      <strong>Why Google is filtering these routes:</strong> Even though the route page content is substantive (destination-specific regulatory data, proper FAQs, internal links), Google applies a commercial intent and demand signal when deciding what to index. A page about transporting a pet from Jordan to Peru almost certainly has no real search query history associated with it. Google's system recognises that no one is searching for this, and deprioritises indexing it. This is not a content quality failure — it is Google rationing its index.
+    </div>
+
+    <h3>Finding 4: The Singapore Airlines anomaly</h3>
+    <p>One non-route page appears in the list: <code>/pet-transport/airlines/singapore-airlines/</code>. This is unexpected — airline guide pages for major carriers should have clear search demand and unique content. Possible causes:</p>
+    <ul>
+      <li>The page was recently re-uploaded or modified, putting it back in Google's re-evaluation queue</li>
+      <li>A canonical tag issue on that specific page pointing to the wrong URL</li>
+      <li>Temporary — Google may index it on the next crawl pass</li>
+    </ul>
+    <p>Use GSC URL Inspection on <code>https://pettransportglobal.com/pet-transport/airlines/singapore-airlines/</code> to see the exact reason and request indexing manually.</p>
+
+    <h3>Finding 5: Content quality of the route pages is not thin</h3>
+    <p>Reviewing the actual markdown files for routes matching the non-indexed URLs (e.g. argentina-to-norway, which matches the pattern), the pages contain: destination-specific import regulations (microchip requirements, rabies vaccination timing, titre test rules, quarantine status), 4–6 destination-accurate FAQs, a timeline section with step-by-step preparation, and 3–4 internal links to hub and country pages. This is not thin content in the traditional sense. The issue is <strong>structural template similarity at scale</strong> — 5,342 pages sharing the same content architecture, even with unique regulatory data in each, triggers Google's duplicate/low-differentiation filter for the lowest-demand routes.</p>
+  </div>
+
+  <!-- Updated verdict -->
+  <div class="verdict" style="background: var(--green-light); border-color: #86efac;">
+    <div class="icon" style="color: var(--green)">✓</div>
+    <div class="body">
+      <div class="title" style="color: var(--green)">Revised Verdict: Less alarming than it first appeared — targeted action needed, not emergency response</div>
+      <p style="color: #166534;">The CSV export confirms the 1,215 non-indexed pages are almost all obscure P3/P4 routes that appeared overnight after a large batch upload. Core pages (blog, hubs, country guides, breeds) are not affected. P1 priority routes are not in the list. This is a programmatic SEO at-scale problem isolated to the long tail — not a site-wide quality rejection. The right response is patience, a fix for the Singapore Airlines anomaly, and a strategic noindex decision for the most obscure routes in 4–6 weeks if the count hasn't improved.</p>
+    </div>
+  </div>
+
+  <!-- Diagnosis -->
+  <div class="section">
+    <h2>What "Crawled - Currently Not Indexed" Actually Means <span class="badge amber">Diagnosis</span></h2>
+
+    <p>This status means Google's crawler visited the URL successfully (no errors, no blocks in robots.txt, page loaded fine) but the indexing pipeline — a separate system — evaluated the page and decided not to include it in the search index.</p>
+
+    <p>This is very different from a crawl error. The page is reachable. The problem is the content or signals attached to it. Google will re-evaluate these pages on future crawl passes; if nothing changes, they'll stay out of the index indefinitely.</p>
+
+    <h3>The most likely causes for this site specifically</h3>
+
+    <div class="callout amber">
+      <strong>1. Programmatic content at scale — thin content signal (Highest risk)</strong>
+      With 5,342 route pages generated from templates, Google's "helpful content" system is likely running similarity checks. Even with variation in regulatory details and copy, pages that share a skeletal structure, similar section headings, and near-identical FAQ patterns may be flagged as offering insufficient unique value. This is the single biggest risk factor for a programmatic SEO site of this size on a one-year-old domain.
+    </div>
+
+    <div class="callout amber">
+      <strong>2. Crawl budget vs. indexing decision — authority lag</strong>
+      Google allocates crawl budget based on domain authority and PageRank. At one year old, pettransportglobal.com is still building authority. When Google encounters a large batch of new pages (yesterday's upload), it will crawl them quickly to check if they exist — but it won't necessarily index them all. It holds a percentage back and re-evaluates over weeks as the domain earns more trust signals (backlinks, engagement, dwell time).
+    </div>
+
+    <div class="callout amber">
+      <strong>3. Internal PageRank dilution</strong>
+      5,342 route pages is a large number for the current domain authority. The internal PageRank is spread very thin across them. Pages with almost no inbound internal links — especially P3/P4 routes for low-traffic corridors — have weak signals and are candidates for this status.
+    </div>
+
+    <div class="callout blue">
+      <strong>4. The batch upload timing (lower urgency — wait and see)</strong>
+      You uploaded a large batch yesterday. The spike visible in the GSC graph is entirely consistent with Google crawling a fresh batch — it will assess and index progressively over the coming weeks. Some of those 1,215 pages will move into the index without any action on your part.
+    </div>
+
+    <div class="callout red">
+      <strong>5. "Alternate page with proper canonical tag" (23 pages) — needs investigation</strong>
+      Separate from the main issue, 23 pages are being treated as duplicates by Google despite having canonical tags. This suggests either incorrect canonical tags (pointing to a different URL than intended), or two pages with near-identical content where Google is ignoring your stated canonical. These are worth investigating directly.
+    </div>
+
+    <h3>What this is NOT</h3>
+    <ul>
+      <li>Not a manual penalty — a penalty shows under "Manual Actions" in GSC, not coverage</li>
+      <li>Not a robots.txt block — those show as "Blocked by robots.txt"</li>
+      <li>Not a server error — those show as "Server error (5xx)"</li>
+      <li>Not caused by noindex tags — those show as "Excluded by noindex tag"</li>
+    </ul>
+  </div>
+
+  <!-- How to find which pages -->
+  <div class="section">
+    <h2>How to Find Out Which Pages Are Indexed <span class="badge blue">Diagnosis Tools</span></h2>
+
+    <p>There are four approaches, from lowest to highest effort, depending on what you need to know.</p>
+
+    <h3>Method 1 — GSC Coverage export (recommended starting point)</h3>
+    <ol>
+      <li>Go to <strong>Google Search Console &gt; Indexing &gt; Pages</strong></li>
+      <li>Click <strong>"Crawled - currently not indexed"</strong> to filter to that group</li>
+      <li>Scroll down to the URL list — click <strong>"Export"</strong> (top right) and download as CSV</li>
+      <li>Repeat for "Indexed" to get the full indexed URL list</li>
+      <li>Open both CSVs in Excel — the non-indexed list will tell you which sections (routes vs. hubs vs. blog) dominate the problem</li>
+    </ol>
+    <div class="callout blue">
+      <strong>What to look for in the export:</strong> If non-indexed pages cluster heavily in /routes/, that confirms thin content is the issue. If they're spread across all sections, authority lag is more likely. If blog and hub pages are also excluded, there may be a site-wide quality signal being applied.
+    </div>
+
+    <h3>Method 2 — Google site: operator (quick estimate)</h3>
+    <p>In Google search, type: <code>site:pettransportglobal.com</code></p>
+    <p>This returns an approximate count of indexed pages and lets you browse them. It is not perfectly accurate (Google deliberately undercounts), but it gives a directional read. You can narrow it with: <code>site:pettransportglobal.com/pet-transport/routes/</code> to see how many route pages are indexed.</p>
+
+    <h3>Method 3 — GSC URL Inspection (for specific pages)</h3>
+    <p>In GSC, paste any individual URL into the <strong>URL Inspection</strong> tool. This gives you the exact status: whether it's indexed, when it was last crawled, what the rendered HTML looked like to Googlebot, and whether there's a canonical issue. Use this for:</p>
+    <ul>
+      <li>Checking your highest-priority P1 routes (the original 89)</li>
+      <li>Spot-checking pages from the "not indexed" CSV export</li>
+      <li>Verifying the 23 "alternate canonical" pages</li>
+    </ul>
+
+    <h3>Method 4 — Python script via GSC API (bulk audit)</h3>
+    <p>For a comprehensive view, a Python script using the Google Search Console API can pull the coverage status of all known URLs programmatically. This approach requires setting up OAuth credentials in Google Cloud Console (service account with GSC read access), but once set up it gives you a full database of indexed vs. non-indexed pages you can analyse locally.</p>
+    <p>This is worthwhile if the manual export (Method 1) reveals the problem is widespread across sections, as it lets you cross-reference against content quality metrics automatically. It is probably overkill if the issue is clearly concentrated in /routes/.</p>
+
+    <h3>Priority pages to check manually right now</h3>
+    <table>
+      <tr><th>Page type</th><th>Why check</th><th>GSC action</th></tr>
+      <tr>
+        <td>P1 route pages (original 89 routes)</td>
+        <td>These are the oldest pages with most authority — they should all be indexed. If any aren't, that's a content quality issue, not just an age issue.</td>
+        <td>URL Inspection for 5-10 samples</td>
+      </tr>
+      <tr>
+        <td>Origin hub pages (78)</td>
+        <td>Hub pages are your strongest authority pages — they should almost all be indexed.</td>
+        <td>Coverage export, filter by /origins/</td>
+      </tr>
+      <tr>
+        <td>Blog articles (334)</td>
+        <td>Editorial content should index faster — if blog posts are excluded, the site-wide quality signal is worse than expected.</td>
+        <td>Coverage export, filter by /blog/</td>
+      </tr>
+      <tr>
+        <td>The 23 "alternate canonical" pages</td>
+        <td>These are a separate, fixable technical issue — find and fix them.</td>
+        <td>Coverage report, "Alternate page with proper canonical" filter, export URLs</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Action plan -->
+  <div class="section">
+    <h2>Resolution Plan <span class="badge green">Action Plan</span></h2>
+
+    <p>The plan below is sequenced by impact and effort. Do not jump to Phase 3 (content upgrades) before completing Phase 1 (diagnosis) — you need the data to know where to focus.</p>
+
+    <div class="phase-block" style="border-color: var(--green);">
+      <div class="phase-header" style="background: var(--green-light);">
+        <span class="phase-num" style="background: var(--green);">Phase 1</span>
+        <span class="phase-title">Diagnose — COMPLETE (export analysed above)</span>
+        <span class="phase-time" style="color: var(--green); font-weight:700;">Done ✓</span>
+      </div>
+      <div class="phase-body">
+        <p style="font-size:0.9rem; color:#166534; margin-bottom:8px;"><strong>The CSV export has been analysed.</strong> Key conclusions from the data:</p>
+        <ul>
+          <li>Non-indexed pages are <strong>99.9% /routes/ only</strong> — no blog, hub, country, or breed pages affected</li>
+          <li>All visible non-indexed routes are <strong>obscure P3/P4 country pairs</strong> — no P1 core routes present</li>
+          <li>The spike from 37 → 1,215 happened in a <strong>single day</strong>, matching the batch upload date exactly</li>
+          <li>One anomaly: the Singapore Airlines page — requires individual GSC URL Inspection</li>
+          <li>Content quality of the route pages is substantive (not thin) — the issue is structural template similarity at scale for low-demand routes</li>
+          <li>Remaining action: Export the 23 "Alternate page with proper canonical" URLs from GSC and inspect those in URL Inspection to find canonical mismatches</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase-block">
+      <div class="phase-header">
+        <span class="phase-num">Phase 2</span>
+        <span class="phase-title">Quick wins — Fix canonical issues &amp; re-request indexing for priority pages</span>
+        <span class="phase-time">This week — after Phase 1</span>
+      </div>
+      <div class="phase-body">
+        <ul>
+          <li>Fix the 23 canonical mismatches found in Phase 1 — update front matter <code>canonical</code> fields or deduplicate the near-identical content pairs</li>
+          <li>Use GSC URL Inspection to manually request indexing for the 10-20 highest-value non-indexed pages (your top P1 routes + homepage + key hub pages) — Google is more likely to index pages you actively nominate</li>
+          <li>Verify that your sitemap index is correctly submitted in GSC and all section sitemaps are showing no errors (<strong>Indexing &gt; Sitemaps</strong> in GSC)</li>
+          <li>Check that the sitemap was re-uploaded to Hostinger after the last build — the sitemaps must reflect the current site exactly</li>
+          <li>Confirm no routes or pages have accidental <code>noindex</code> in their front matter by running a grep: <code>grep -r "noindex" site/content/</code></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase-block">
+      <div class="phase-header">
+        <span class="phase-num">Phase 3</span>
+        <span class="phase-title">Content quality — Audit and upgrade non-indexed route pages</span>
+        <span class="phase-time">Next 2-4 weeks</span>
+      </div>
+      <div class="phase-body">
+        <ul>
+          <li>Sample 20-30 non-indexed route pages from the Phase 1 export — read them critically as a first-time visitor, not as a builder</li>
+          <li>Assess: are these pages genuinely useful to someone planning this specific journey? Or do they read as slightly rearranged versions of each other?</li>
+          <li>For P3/P4 routes with very low search volume (e.g. Nepal to Ecuador), consider applying <code>noindex</code> in front matter — this concentrates crawl budget on your strongest pages and signals to Google that you're not trying to inflate low-quality page counts</li>
+          <li>For P1/P2 routes still not indexed after 6+ weeks, write improved versions with: a concrete intro paragraph specific to that corridor, updated regulatory data with source citation, and a unique lead-capture angle</li>
+          <li>Prioritise routes where there is a real search audience: UK-Australia, US-UK, Canada-Europe corridors</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase-block">
+      <div class="phase-header">
+        <span class="phase-num">Phase 4</span>
+        <span class="phase-title">Authority building — Improve signals for route pages</span>
+        <span class="phase-time">Ongoing — next 4-8 weeks</span>
+      </div>
+      <div class="phase-body">
+        <ul>
+          <li>Internal linking audit: use <code>diagnose_links.py</code> to confirm route pages have at minimum 2-3 inbound internal links each — orphaned or near-orphaned pages are harder for Google to prioritise</li>
+          <li>Add contextual cross-links from blog articles to relevant route pages — a blog post about "moving to Australia with a dog" should link to the UK-Australia, US-Australia, Canada-Australia route pages</li>
+          <li>Submit the site to Google's rich results test for a sample of route + FAQ schema pages — confirm FAQ schema is valid and rendering in search results (rich results provide a click-through rate boost)</li>
+          <li>Continue the backlink campaign: a link from a pet relocation forum, expat community site, or national moving service to even a handful of route pages will lift domain authority across all pages</li>
+          <li>If GSC shows the domain is earning organic clicks (check <strong>Performance &gt; Search results</strong>), identify which pages are ranking on pages 2-3 (positions 11-30) — those are worth content upgrades as they're already trusted</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase-block">
+      <div class="phase-header">
+        <span class="phase-num">Phase 5</span>
+        <span class="phase-title">Strategic review — Consider a noindex pruning strategy</span>
+        <span class="phase-time">30-60 days after Phase 1</span>
+      </div>
+      <div class="phase-body">
+        <ul>
+          <li>If, after 30 days, the "Crawled - currently not indexed" count has not meaningfully reduced, run a content quality audit on the lowest-tier P4 routes (very obscure country pairs)</li>
+          <li>Applying <code>noindex, follow</code> to the bottom 20-30% of routes (by search intent value) is a standard strategy for programmatic SEO sites — it trades raw page count for index quality signal, which often unlocks more indexing of the pages you keep</li>
+          <li>This should be a deliberate data-informed decision — not done now, but planned for if indexing stalls</li>
+          <li>An alternative is consolidation: merge several very similar low-volume route pages into a "country-to-country" guide page that covers multiple origin cities — e.g. one page for all UK cities to Canada, rather than 15 individual city-pair pages</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Timeline summary -->
+  <div class="section">
+    <h2>Expected Timeline <span class="badge green">Realistic Expectations</span></h2>
+
+    <table>
+      <tr><th>Timeframe</th><th>What to expect</th></tr>
+      <tr>
+        <td><strong>0-2 weeks</strong></td>
+        <td>The pages from yesterday's upload will continue being crawled. Some will move into the index naturally as Google re-evaluates. Expect the "Crawled - currently not indexed" count to fluctuate daily. Do not panic if it rises slightly before it falls.</td>
+      </tr>
+      <tr>
+        <td><strong>2-4 weeks</strong></td>
+        <td>After Phase 1 diagnosis and Phase 2 quick wins, you should see movement on the canonical issues. Manual indexing requests for priority pages often take 1-3 weeks to process.</td>
+      </tr>
+      <tr>
+        <td><strong>4-8 weeks</strong></td>
+        <td>If Phase 3 content upgrades are underway, improved pages should start re-entering the index. Watch GSC weekly for the trend line in "Indexed" count.</td>
+      </tr>
+      <tr>
+        <td><strong>2-3 months</strong></td>
+        <td>At this point you have enough GSC performance data (impressions, clicks, positions) to make informed decisions about which pages to upgrade vs. prune. The originally planned Task 5.1 (full index coverage audit) can be completed properly.</td>
+      </tr>
+      <tr>
+        <td><strong>Ongoing</strong></td>
+        <td>A programmatic SEO site at 6,000+ pages will never have a 100% index rate. A realistic healthy target for this domain at one year old is 40-60% of built pages indexed. Currently at 27.9% — improving but not alarming.</td>
+      </tr>
+    </table>
+
+    <div class="callout green">
+      <strong>Positive signal worth noting:</strong> The GSC graph shows the indexed count spiking to nearly 3K at the far right (end of April / early May) before settling. This suggests Google has been actively crawling and indexing the new batch, but its quality filter has held back roughly half. That is normal behaviour for a large programmatic upload. The fact that 1,680 pages passed the filter is encouraging — it means the underlying content quality is not triggering a blanket rejection.
+    </div>
+  </div>
+
+  <!-- The 3 GSC issue types -->
+  <div class="section">
+    <h2>All Three GSC Exclusion Reasons Explained <span class="badge blue">Reference</span></h2>
+
+    <table>
+      <tr>
+        <th>GSC Status</th>
+        <th>Count</th>
+        <th>What it means</th>
+        <th>Action</th>
+      </tr>
+      <tr>
+        <td><strong>Crawled - currently not indexed</strong></td>
+        <td>1,215</td>
+        <td>Google crawled the page but its quality/usefulness threshold was not met at the time of evaluation. Not a penalty. Re-evaluated on future crawls.</td>
+        <td class="priority-high">Priority — follow Phase 1-3 plan above</td>
+      </tr>
+      <tr>
+        <td><strong>Alternate page with proper canonical tag</strong></td>
+        <td>23</td>
+        <td>Google found two pages it considers near-duplicate. Your canonical tag points to one as the "master", so Google is correctly deferring to it. However, if the canonical target is wrong, you may be suppressing pages you want indexed.</td>
+        <td class="priority-med">Investigate in Phase 2 — find the 23 URLs and verify canonical tags are correct</td>
+      </tr>
+      <tr>
+        <td><strong>Page with redirect</strong></td>
+        <td>1</td>
+        <td>A URL in the sitemap (or linked to) redirects to another URL. Google doesn't index redirect sources.</td>
+        <td class="priority-low">Low urgency — identify the URL, update the sitemap/internal link to point to the destination URL directly</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Monitoring setup -->
+  <div class="section">
+    <h2>Ongoing Monitoring Setup <span class="badge blue">Monitoring</span></h2>
+
+    <p>Once this diagnosis is underway, set up a simple weekly check to track progress:</p>
+
+    <ol>
+      <li><strong>GSC weekly check:</strong> Every Monday, note the "Indexed" count from GSC &gt; Indexing &gt; Pages. Track in a simple spreadsheet: date, indexed, crawled-not-indexed, total built.</li>
+      <li><strong>Performance check:</strong> GSC &gt; Performance &gt; Search results — watch for total clicks and impressions growing. Even without indexing every page, organic traffic growing week-on-week means the indexed pages are working.</li>
+      <li><strong>New page monitoring:</strong> After any large upload to Hostinger, wait 48 hours then check GSC &gt; Sitemaps to confirm the sitemap has been re-fetched.</li>
+      <li><strong>site: operator spot check:</strong> Monthly, run <code>site:pettransportglobal.com/pet-transport/routes/</code> in Google to get a rough route indexing count. Compare month-on-month.</li>
+    </ol>
+
+    <div class="callout blue">
+      <strong>Note on the existing site_health_monitor.py:</strong> The monitoring script already set up in the project (<code>site_health_monitor.py</code>) handles internal link and build health. It does not currently interface with the GSC API. If the index rate remains stubbornly low after Phase 1-3, extending this script to call the GSC Search Analytics API and log indexed page counts would give automated weekly tracking without manual GSC visits.
+    </div>
+  </div>
+
+  <!-- TL;DR box -->
+  <div class="section">
+    <h2>TL;DR Summary <span class="badge green">Summary</span></h2>
+
+    <ul>
+      <li><strong>Is it a crisis?</strong> No — and the CSV export confirms it. The problem is isolated to obscure P3/P4 route pages from a recent batch upload. Every other section of the site (blog, hubs, country guides, breeds) is unaffected.</li>
+      <li><strong>Should you worry?</strong> Barely. The 1,215 non-indexed pages are almost all low-demand routes (Norway→Ecuador, Oman→Ghana, etc.) that no real user is actively searching for. Google holding these back is not surprising — it may even be correct.</li>
+      <li><strong>What you know from the data:</strong> The spike is 100% explained by the batch upload (37 → 1,215 in one day). P1 routes, hub pages, blog articles, country guides, and breed pages are NOT in the non-indexed list. The core site is healthy.</li>
+      <li><strong>Immediate action (this week):</strong> Use GSC URL Inspection on the Singapore Airlines page (<code>/pet-transport/airlines/singapore-airlines/</code>) — it's the only non-route page affected and shouldn't be. Request manual indexing. Also export and fix the 23 canonical mismatch pages.</li>
+      <li><strong>4–6 week decision:</strong> If the non-indexed count hasn't dropped by at least 20–30% naturally, apply <code>noindex</code> to the most obscure P4 route pairs (Zimbabwe, Mauritius, Cambodia, Myanmar combinations with similarly low-traffic destinations). This concentrates crawl budget on the routes that actually have search demand.</li>
+      <li><strong>Don't over-react:</strong> Do not rewrite route content en masse, do not delete pages, do not restructure the site. The indexing filter is doing its job on the long tail. Focus energy on pages that rank positions 5–20 in GSC Performance — those are where revenue comes from.
+    </ul>
+  </div>
+
+  <footer>
+    PetTransportGlobal — Internal SEO Report &bull; Generated 7 May 2026 &bull; Updated with CSV export analysis 7 May 2026 &bull; Data: Google Search Console Coverage Report + GSC Drilldown Export
+  </footer>
+
+</div>
+</body>
+</html>

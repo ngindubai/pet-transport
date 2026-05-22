@@ -1,8 +1,9 @@
 ---
 title: "Emirates SkyCargo (cargo division) Pet Cargo Policy | Pet Transport Global"
-description: "Emirates SkyCargo (cargo division) pet transport policy: cabin rules, cargo service, breed restrictions, crate requirements, and how to book your pet on Emirates SkyCargo (cargo division)."
+description: "Emirates SkyCargo pet transport policy: cargo service details, breed restrictions, crate requirements, and how to book your pet as air cargo."
 type: "airlines"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 slug: "emirates-skycargo-cargo-division"
 airline_name: "Emirates SkyCargo (cargo division)"
 hub: ""

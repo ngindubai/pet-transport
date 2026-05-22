@@ -3,6 +3,7 @@ title: "Flying with a French Bulldog | Airline Restrictions & Advice"
 description: "Which airlines accept French Bulldog as cargo or cabin? Seasonal embargoes, breed bans, and what you need before booking your flat-faced dog."
 type: "breeds"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 slug: "french-bulldog"
 breed_name: "French Bulldog"
 brachycephalic: true

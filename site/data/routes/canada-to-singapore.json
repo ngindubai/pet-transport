@@ -22,7 +22,10 @@
       },
       "breed_restrictions": []
     },
-    "airlines": [],
+    "airlines": [
+      "Air Canada (cargo)",
+      "Singapore Airlines (cargo)"
+    ],
     "timeline_steps": [
       {
         "step": 1,

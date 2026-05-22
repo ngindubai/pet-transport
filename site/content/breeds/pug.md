@@ -3,6 +3,7 @@ title: "Flying with a Pug | Airline Restrictions & Advice"
 description: "Which airlines accept Pug as cargo or cabin? Seasonal embargoes, breed bans, and what you need before booking your flat-faced dog."
 type: "breeds"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 slug: "pug"
 breed_name: "Pug"
 brachycephalic: true

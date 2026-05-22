@@ -1,0 +1,304 @@
+{{/*
+  Template C — Comparison Brief
+  Visual: Side-by-side everywhere. Split hero (origin vs destination). Left scroll-progress rail.
+  Section order: Split Hero → Side-by-side requirements table → Timeline list →
+                 Cost table → Airlines grid → Documents split checklist →
+                 Warnings → FAQ as Q-then-A blocks → Related routes
+  Schema: HowTo (set in single.html router)
+*/}}
+{{ $rd := .Params.route_data }}
+
+<article class="tpl-route-c">
+
+{{/* ── SPLIT HERO: ORIGIN LEFT / DESTINATION RIGHT ─────────────────────── */}}
+<div class="tpl-c-hero">
+    <div class="tpl-c-hero-half tpl-c-hero-origin">
+        <div class="tpl-c-hero-half-inner">
+            <span class="tpl-c-country-code">{{ $rd.origin.code }}</span>
+            <span class="tpl-c-country-label">{{ $rd.origin.country }}</span>
+            <span class="tpl-c-hero-role">Departing from</span>
+        </div>
+    </div>
+    <div class="tpl-c-hero-bridge">
+        <div class="tpl-c-bridge-content" data-aos="zoom-in">
+            <h1>{{ .Params.content.h1 | default (printf "Pet Transport: %s to %s" .Params.origin_name .Params.destination_name) }}</h1>
+            <div class="tpl-c-bridge-chips">
+                {{ with $rd.route_complexity }}<span class="badge bg-secondary me-1">{{ . | title }}</span>{{ end }}
+                {{ with $rd.estimated_timeline_weeks }}<span class="badge bg-primary">{{ . }} weeks</span>{{ end }}
+            </div>
+            <a href="#quote-form" class="btn btn-secondary mt-2">Get a Quote</a>
+        </div>
+    </div>
+    <div class="tpl-c-hero-half tpl-c-hero-destination">
+        <div class="tpl-c-hero-half-inner">
+            <span class="tpl-c-country-code">{{ $rd.destination.code }}</span>
+            <span class="tpl-c-country-label">{{ $rd.destination.country }}</span>
+            <span class="tpl-c-hero-role">Arriving in</span>
+        </div>
+    </div>
+</div>
+
+{{/* ── BREADCRUMB ───────────────────────────────────────────────────────── */}}
+<div class="container mt-2 mb-3">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item"><a href="/pet-transport/routes/">Routes</a></li>
+            <li class="breadcrumb-item active">{{ .Params.origin_name }} to {{ .Params.destination_name }}</li>
+        </ol>
+    </nav>
+</div>
+
+{{/* ── MAIN LAYOUT: LEFT RAIL + CONTENT ────────────────────────────────── */}}
+<div class="page">
+    <div class="container">
+        <div class="row">
+
+            {{/* Left scroll-progress rail */}}
+            <div class="col-lg-1 d-none d-lg-block">
+                <div class="tpl-c-scroll-rail sticky-top" style="top:120px;" aria-hidden="true">
+                    <div class="tpl-c-rail-dot tpl-c-rail-dot--active" data-target="#c-compare"></div>
+                    <div class="tpl-c-rail-dot" data-target="#c-timeline"></div>
+                    <div class="tpl-c-rail-dot" data-target="#c-costs"></div>
+                    <div class="tpl-c-rail-dot" data-target="#c-airlines"></div>
+                    <div class="tpl-c-rail-dot" data-target="#c-docs"></div>
+                    <div class="tpl-c-rail-dot" data-target="#c-warnings"></div>
+                    <div class="tpl-c-rail-dot" data-target="#c-faq"></div>
+                </div>
+            </div>
+
+            {{/* Main content */}}
+            <div class="col-lg-11">
+
+                {{/* Overview */}}
+                {{ with .Params.content.overview }}
+                <section class="tpl-c-section mb-5" data-aos="fade-up">
+                    {{ . | markdownify }}
+                </section>
+                {{ end }}
+
+                {{/* Side-by-side comparison table: export (origin) vs import (destination) */}}
+                <section class="tpl-c-section mb-5" id="c-compare" data-aos="fade-up">
+                    <h2>{{ $rd.origin.country }} vs {{ $rd.destination.country }}: Requirements Compared</h2>
+                    <div class="table-responsive">
+                        <table class="table tpl-c-compare-table">
+                            <thead>
+                                <tr>
+                                    <th>Requirement</th>
+                                    <th class="tpl-c-col-origin">{{ $rd.origin.country }} (exit)</th>
+                                    <th class="tpl-c-col-dest">{{ $rd.destination.country }} (entry)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Microchip</td>
+                                    <td>Required (ISO standard)</td>
+                                    <td>{{ with $rd.destination.import_requirements }}{{ with .microchip }}{{ . }}{{ else }}Check official guidance{{ end }}{{ end }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Rabies vaccination</td>
+                                    <td>Required before departure</td>
+                                    <td>{{ with $rd.destination.import_requirements }}{{ with .rabies_vaccination }}{{ . }}{{ else }}—{{ end }}{{ end }}</td>
+                                </tr>
+                                {{ with $rd.destination.import_requirements }}{{ with .titre_test }}
+                                <tr>
+                                    <td>Rabies titre test</td>
+                                    <td>—</td>
+                                    <td>{{ . }}</td>
+                                </tr>
+                                {{ end }}{{ end }}
+                                <tr>
+                                    <td>Health certificate</td>
+                                    <td>{{ with $rd.origin.export_requirements }}{{ with .health_certificate }}{{ . }}{{ else }}Required from official vet{{ end }}{{ end }}</td>
+                                    <td>{{ with $rd.destination.import_requirements }}{{ with .health_certificate }}{{ . }}{{ else }}Required{{ end }}{{ end }}</td>
+                                </tr>
+                                {{ with $rd.destination.import_requirements }}{{ with .quarantine }}
+                                <tr>
+                                    <td>Quarantine</td>
+                                    <td>—</td>
+                                    <td>{{ . }}</td>
+                                </tr>
+                                {{ end }}{{ end }}
+                                {{ with $rd.origin.export_requirements }}{{ with .export_permit }}
+                                <tr>
+                                    <td>Export permit</td>
+                                    <td>{{ . }}</td>
+                                    <td>—</td>
+                                </tr>
+                                {{ end }}{{ end }}
+                                {{ with $rd.origin.export_requirements }}{{ with .endorsement }}
+                                <tr>
+                                    <td>Government endorsement</td>
+                                    <td>{{ . }}</td>
+                                    <td>—</td>
+                                </tr>
+                                {{ end }}{{ end }}
+                                {{ with $rd.destination.import_requirements }}{{ with .import_permit }}
+                                <tr>
+                                    <td>Import permit</td>
+                                    <td>—</td>
+                                    <td>{{ . }}</td>
+                                </tr>
+                                {{ end }}{{ end }}
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                {{/* Timeline — single numbered list */}}
+                {{ with $rd.timeline_steps }}
+                <section class="tpl-c-section mb-5" id="c-timeline" data-aos="fade-up">
+                    <h2>Timeline from Start to Arrival</h2>
+                    <ol class="tpl-c-timeline-list">
+                        {{ range . }}
+                        <li class="tpl-c-tl-item">
+                            <span class="tpl-c-tl-action">{{ .action }}</span>
+                            <span class="tpl-c-tl-timing"><i class="fas fa-clock me-1" aria-hidden="true"></i>{{ .timing }}</span>
+                            {{ with .responsible }}<span class="tpl-c-tl-resp">{{ . }}</span>{{ end }}
+                        </li>
+                        {{ end }}
+                    </ol>
+                </section>
+                {{ end }}
+
+                {{/* Cost table */}}
+                {{ with $rd.cost_factors }}
+                <section class="tpl-c-section mb-5" id="c-costs" data-aos="fade-up">
+                    <h2>Cost Breakdown</h2>
+                    <table class="table tpl-c-cost-table">
+                        <thead><tr><th>#</th><th>Factor</th></tr></thead>
+                        <tbody>
+                            {{ range $i, $c := . }}
+                            <tr><td>{{ add $i 1 }}</td><td>{{ $c }}</td></tr>
+                            {{ end }}
+                        </tbody>
+                    </table>
+                </section>
+                {{ end }}
+
+                {{/* Airlines grid */}}
+                {{ with $rd.airlines }}
+                <section class="tpl-c-section mb-5" id="c-airlines" data-aos="fade-up">
+                    <h2>Airlines That Serve This Route</h2>
+                    <div class="row">
+                        {{ range . }}
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="tpl-c-airline-card">
+                                <strong class="tpl-c-airline-name">{{ .name }}</strong>
+                                <span class="tpl-c-airline-type">{{ .type | replace "_" " " | title }}</span>
+                                <p class="tpl-c-airline-policy">{{ .policy_summary }}</p>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </section>
+                {{ end }}
+
+                {{/* Documents checklist — split: origin docs vs destination docs */}}
+                <section class="tpl-c-section mb-5" id="c-docs" data-aos="fade-up">
+                    <h2>Documents Checklist</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="tpl-c-doc-col tpl-c-doc-col--origin">
+                                <h5>Leaving {{ $rd.origin.country }}</h5>
+                                <ul class="tpl-c-doc-list">
+                                    {{ with $rd.origin.export_requirements }}
+                                    {{ with .health_certificate }}<li>Health certificate</li>{{ end }}
+                                    {{ with .export_permit }}<li>Export permit</li>{{ end }}
+                                    {{ with .endorsement }}<li>Government endorsement</li>{{ end }}
+                                    {{ with .vet_inspection }}<li>Veterinary inspection record</li>{{ end }}
+                                    {{ end }}
+                                    <li>Microchip documentation</li>
+                                    <li>Vaccination records</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="tpl-c-doc-col tpl-c-doc-col--dest">
+                                <h5>Entering {{ $rd.destination.country }}</h5>
+                                <ul class="tpl-c-doc-list">
+                                    {{ with $rd.destination.import_requirements }}
+                                    {{ with .health_certificate }}<li>Health certificate ({{ . | truncate 60 }})</li>{{ end }}
+                                    {{ with .import_permit }}<li>Import permit</li>{{ end }}
+                                    {{ with .titre_test }}<li>Titre test certificate</li>{{ end }}
+                                    {{ with .microchip }}<li>Microchip verification</li>{{ end }}
+                                    {{ with .rabies_vaccination }}<li>Rabies vaccination record</li>{{ end }}
+                                    {{ end }}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {{/* Breed restrictions */}}
+                {{ with $rd.destination.breed_restrictions }}
+                <section class="tpl-c-section mb-5" data-aos="fade-up">
+                    <div class="tpl-c-breed-block">
+                        <h5><i class="fas fa-ban me-2" aria-hidden="true"></i>Restricted breeds — {{ $rd.destination.country }}</h5>
+                        <div class="tpl-c-breed-list">
+                            {{ range . }}<span class="tpl-c-breed-tag">{{ . }}</span>{{ end }}
+                        </div>
+                    </div>
+                </section>
+                {{ end }}
+
+                {{/* Warnings */}}
+                {{ with $rd.key_warnings }}
+                <section class="tpl-c-section mb-5" id="c-warnings" data-aos="fade-up">
+                    <h2>What Owners on This Route Often Miss</h2>
+                    {{ range . }}
+                    <div class="tpl-c-warning">
+                        <i class="fas fa-exclamation-circle me-2" aria-hidden="true"></i>{{ . }}
+                    </div>
+                    {{ end }}
+                </section>
+                {{ end }}
+
+                {{/* Content sections */}}
+                {{ with .Params.content.sections }}
+                {{ range . }}
+                <section class="tpl-c-section mb-5" data-aos="fade-up">
+                    {{ with .heading }}<h2>{{ . }}</h2>{{ end }}
+                    {{ .body | markdownify }}
+                </section>
+                {{ end }}
+                {{ end }}
+
+                {{/* FAQ — Q-then-A blocks (no accordion) */}}
+                {{ with .Params.faqs }}
+                <section class="tpl-c-section mb-5" id="c-faq" data-aos="fade-up">
+                    <h2>Questions Owners Ask About This Route</h2>
+                    {{ range . }}
+                    <div class="tpl-c-qa-block">
+                        <p class="tpl-c-question">{{ .question }}</p>
+                        <div class="tpl-c-answer">{{ .answer | markdownify }}</div>
+                    </div>
+                    {{ end }}
+                </section>
+                {{ end }}
+
+                {{/* Related routes */}}
+                {{ with .Params.links }}
+                <section class="tpl-c-section mb-5">
+                    {{ with .sideways }}
+                    <h2>Compare with Similar Routes</h2>
+                    <div class="tpl-c-related-grid">
+                        {{ range . }}<a href="{{ .url }}" class="tpl-c-related-link">{{ .text }}</a>{{ end }}
+                    </div>
+                    {{ end }}
+                    {{ with .upward }}
+                    <div class="mt-3">
+                        {{ range . }}<a href="{{ .url }}" class="tpl-c-country-link me-3">{{ .text }}</a>{{ end }}
+                    </div>
+                    {{ end }}
+                </section>
+                {{ end }}
+
+                {{/* Quote form */}}
+                {{ partial "quote-form.html" . }}
+
+            </div>
+        </div>
+    </div>
+</div>
+</article>

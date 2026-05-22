@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pet Transport Pricing Research Guide — Staff Reference</title>
+<style>
+  :root {
+    --primary: #1a3a5c;
+    --accent: #e8762b;
+    --green: #2e7d52;
+    --light: #f4f7fa;
+    --border: #d0dae6;
+    --text: #2c3e50;
+    --muted: #6b7c93;
+    --warning-bg: #fff8e1;
+    --warning-border: #f9a825;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color: var(--text); background: #fff; font-size: 15px; line-height: 1.6; }
+  a { color: var(--accent); }
+
+  /* Header */
+  .page-header { background: var(--primary); color: #fff; padding: 32px 40px; border-bottom: 4px solid var(--accent); }
+  .page-header h1 { font-size: 26px; margin-bottom: 6px; }
+  .page-header p { opacity: 0.85; font-size: 14px; }
+  .badge { display: inline-block; background: var(--accent); color: #fff; font-size: 11px; padding: 2px 8px; border-radius: 12px; text-transform: uppercase; letter-spacing: 0.5px; margin-left: 8px; vertical-align: middle; }
+
+  /* Layout */
+  .container { max-width: 1200px; margin: 0 auto; padding: 32px 24px; }
+
+  /* Section headers */
+  .section-title { font-size: 20px; color: var(--primary); border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin: 40px 0 20px; }
+  .section-title:first-of-type { margin-top: 0; }
+
+  /* Info box */
+  .info-box { background: var(--light); border-left: 4px solid var(--primary); padding: 16px 20px; border-radius: 0 6px 6px 0; margin-bottom: 24px; }
+  .info-box h3 { color: var(--primary); font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+  .info-box ul { padding-left: 18px; }
+  .info-box li { margin-bottom: 4px; font-size: 14px; }
+
+  .warning-box { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 14px 18px; border-radius: 0 6px 6px 0; margin-bottom: 24px; font-size: 14px; }
+  .warning-box strong { color: #b36e00; }
+
+  /* Country section */
+  .country-block { border: 1px solid var(--border); border-radius: 8px; margin-bottom: 32px; overflow: hidden; }
+  .country-header { background: var(--primary); color: #fff; padding: 14px 20px; display: flex; align-items: center; gap: 12px; }
+  .country-flag { font-size: 28px; }
+  .country-header h2 { font-size: 18px; font-weight: 600; }
+  .country-header .company-count { margin-left: auto; background: rgba(255,255,255,0.15); padding: 4px 12px; border-radius: 12px; font-size: 13px; }
+
+  /* Company table */
+  .company-table { width: 100%; border-collapse: collapse; }
+  .company-table th { background: #e8f0fb; color: var(--primary); font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; padding: 10px 14px; text-align: left; border-bottom: 2px solid var(--border); }
+  .company-table td { padding: 11px 14px; border-bottom: 1px solid var(--border); font-size: 14px; vertical-align: top; }
+  .company-table tr:last-child td { border-bottom: none; }
+  .company-table tr:hover td { background: #f8fafd; }
+  .company-table .num { color: var(--muted); font-weight: 700; width: 30px; }
+  .company-table .name { font-weight: 600; color: var(--primary); }
+  .company-table .contact a { color: var(--accent); text-decoration: none; }
+  .company-table .contact a:hover { text-decoration: underline; }
+  .ipata-tag { font-size: 11px; background: #e3f2e9; color: var(--green); border-radius: 10px; padding: 1px 7px; margin-left: 6px; font-weight: 600; }
+  .notes { color: var(--muted); font-size: 12px; font-style: italic; }
+
+  /* Routes section */
+  .routes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; margin-bottom: 24px; }
+  .route-card { border: 1px solid var(--border); border-radius: 8px; padding: 16px; background: var(--light); }
+  .route-card .route-id { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+  .route-card .route-name { font-weight: 700; color: var(--primary); font-size: 15px; margin-bottom: 6px; }
+  .route-card .route-detail { font-size: 13px; color: var(--text); }
+  .route-card .route-detail span { color: var(--muted); }
+
+  /* Tracker table */
+  .tracker-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .tracker-table th { background: var(--primary); color: #fff; padding: 10px 12px; text-align: left; font-size: 12px; white-space: nowrap; }
+  .tracker-table td { padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+  .tracker-table tr:nth-child(even) td { background: #f8fafd; }
+  .tracker-table .price-cell { min-width: 80px; border: 1px dashed #bbb; background: #fffde7; border-radius: 4px; }
+  .tracker-table .status-sent { color: #2e7d52; font-weight: 600; }
+  .tracker-table .status-pending { color: var(--muted); }
+
+  /* Email templates */
+  .template-block { border: 1px solid var(--border); border-radius: 8px; margin-bottom: 28px; overflow: hidden; }
+  .template-header { background: #e8f0fb; padding: 12px 18px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+  .template-header h3 { font-size: 15px; color: var(--primary); font-weight: 600; }
+  .template-header .template-tag { font-size: 11px; color: var(--muted); background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 2px 8px; }
+  .template-body { padding: 20px 22px; }
+  .email-field { margin-bottom: 10px; font-size: 14px; }
+  .email-field label { font-weight: 600; color: var(--primary); display: inline-block; min-width: 80px; font-size: 13px; }
+  .email-field value { color: var(--text); }
+  .email-divider { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+  .email-body { font-size: 14px; white-space: pre-wrap; line-height: 1.7; background: var(--light); border-radius: 6px; padding: 16px 18px; border: 1px solid var(--border); font-family: 'Segoe UI', Arial, sans-serif; }
+  .placeholder { background: #fff3cd; border-radius: 3px; padding: 0 3px; font-style: italic; color: #856404; }
+
+  /* Steps */
+  .steps { counter-reset: step; list-style: none; padding: 0; margin-bottom: 24px; }
+  .steps li { counter-increment: step; display: flex; gap: 14px; margin-bottom: 16px; align-items: flex-start; }
+  .steps li::before { content: counter(step); background: var(--accent); color: #fff; font-weight: 700; font-size: 13px; min-width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+  .steps li .step-content { flex: 1; }
+  .steps li .step-content strong { display: block; font-size: 14px; color: var(--primary); margin-bottom: 2px; }
+  .steps li .step-content p { font-size: 13px; color: var(--muted); }
+
+  /* Tracker key */
+  .key-row { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px; }
+  .key-item { display: flex; align-items: center; gap: 6px; font-size: 13px; }
+  .key-dot { width: 12px; height: 12px; border-radius: 50%; }
+
+  /* Print */
+  @media print {
+    .country-block, .template-block { page-break-inside: avoid; }
+    .section-title { page-break-before: always; }
+  }
+
+  /* Tabs */
+  .tabs { display: flex; gap: 0; border-bottom: 2px solid var(--primary); margin-bottom: 24px; }
+  .tab-btn { padding: 10px 22px; background: none; border: none; cursor: pointer; font-size: 14px; font-weight: 600; color: var(--muted); border-bottom: 3px solid transparent; margin-bottom: -2px; transition: all 0.15s; }
+  .tab-btn.active { color: var(--primary); border-bottom-color: var(--accent); }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  /* Responsive */
+  @media (max-width: 700px) {
+    .page-header { padding: 20px; }
+    .container { padding: 16px; }
+    .company-table { font-size: 12px; }
+    .routes-grid { grid-template-columns: 1fr; }
+    .key-row { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>🐾 Pet Transport Pricing Research Guide <span class="badge">Staff Reference</span></h1>
+  <p>Use this guide to contact pet transport companies across 10 key countries, collect doorstep-to-doorstep prices on benchmark routes, and compare providers. Last updated: May 2026</p>
+</div>
+
+<div class="container">
+
+  <!-- HOW TO USE -->
+  <h2 class="section-title">How to Use This Guide</h2>
+
+  <ol class="steps">
+    <li>
+      <div class="step-content">
+        <strong>Pick your country section</strong>
+        <p>Each country below has 10 verified pet transport companies. Work through one country at a time.</p>
+      </div>
+    </li>
+    <li>
+      <div class="step-content">
+        <strong>Find the benchmark routes</strong>
+        <p>We use the same 8 standard routes for every country so results are comparable. See the Routes section below.</p>
+      </div>
+    </li>
+    <li>
+      <div class="step-content">
+        <strong>Find real doorstep addresses using Google Maps</strong>
+        <p>For each route, you need a realistic residential pickup address in the origin city and a residential delivery address in the destination city. Pick a typical suburb address (not an airport or commercial address). Copy the full street address.</p>
+      </div>
+    </li>
+    <li>
+      <div class="step-content">
+        <strong>Send the email using the templates below</strong>
+        <p>Fill in the highlighted placeholders in the email template, then copy and send. Use Template A for most companies. Use Template B if they require a contact form (note the website link instead of email).</p>
+      </div>
+    </li>
+    <li>
+      <div class="step-content">
+        <strong>Log the response in the Price Tracker tab</strong>
+        <p>When a quote arrives, log the price, date received, and any conditions (e.g. crate included, vet paperwork extra) in the tracker spreadsheet.</p>
+      </div>
+    </li>
+    <li>
+      <div class="step-content">
+        <strong>Follow up after 5 working days</strong>
+        <p>If no reply, send Template C (the follow-up). Mark status as "Chased" in the tracker.</p>
+      </div>
+    </li>
+  </ol>
+
+  <div class="warning-box">
+    <strong>Important:</strong> We want doorstep-to-doorstep pricing only. This means the company collects the pet from a home address, handles all paperwork, travel crates, airline booking, customs clearance, and delivers to a home address on the other side. Make this clear in every email.
+  </div>
+
+  <div class="info-box">
+    <h3>What to specify for each quote</h3>
+    <ul>
+      <li><strong>Pet type:</strong> 1 x medium dog (approx 10kg, mixed breed, in good health) — this keeps comparisons fair</li>
+      <li><strong>Service level:</strong> Full-service, doorstep pickup to doorstep delivery</li>
+      <li><strong>Paperwork:</strong> Ask if vet health certificate, microchipping check and import permits are included</li>
+      <li><strong>Crate:</strong> Ask if IATA-approved travel crate is included or extra</li>
+      <li><strong>Timing:</strong> Request prices as if travel is 3 months from today (gives time for any titre tests etc.)</li>
+    </ul>
+  </div>
+
+  <!-- BENCHMARK ROUTES -->
+  <h2 class="section-title">Benchmark Routes (Same for All Countries)</h2>
+  <p style="margin-bottom: 16px; font-size: 14px; color: var(--muted);">These 8 routes are requested from every company in every country. This lets us directly compare pricing across providers.</p>
+
+  <div class="routes-grid">
+    <div class="route-card">
+      <div class="route-id">Route 01</div>
+      <div class="route-name">UK &#8594; Australia</div>
+      <div class="route-detail"><span>From:</span> London, UK &nbsp;|&nbsp; <span>To:</span> Sydney, Australia</div>
+    </div>
+    <div class="route-card">
+      <div class="route-id">Route 02</div>
+      <div class="route-name">UK &#8594; USA</div>
+      <div class="route-detail"><span>From:</span> London, UK &nbsp;|&nbsp; <span>To:</span> New York, USA</div>
+    </div>
+    <div class="route-card">
+      <div class="route-id">Route 03</div>
+      <div class="route-name">USA &#8594; UK</div>
+      <div class="route-detail"><span>From:</span> New York, USA &nbsp;|&nbsp; <span>To:</span> London, UK</div>
+    </div>
+    <div class="route-card">
+      <div class="route-id">Route 04</div>
+      <div class="route-name">Australia &#8594; UK</div>
+      <div class="route-detail"><span>From:</span> Sydney, Australia &nbsp;|&nbsp; <span>To:</span> London, UK</div>
+    </div>
+    <div class="route-card">
+      <div class="route-id">Route 05</div>
+      <div class="route-name">UK &#8594; Canada</div>
+      <div class="route-detail"><span>From:</span> London, UK &nbsp;|&nbsp; <span>To:</span> Toronto, Canada</div>
+    </div>
+    <div class="route-card">
+      <div class="route-id">Route 06</div>
+      <div class="route-name">UK &#8594; UAE</div>
+      <div class="route-detail"><span>From:</span> London, UK &nbsp;|&nbsp; <span>To:</span> Dubai, UAE</div>
+    </div>
+    <div class="route-card">
+      <div class="route-id">Route 07</div>
+      <div class="route-name">Australia &#8594; USA</div>
+      <div class="route-detail"><span>From:</span> Melbourne, Australia &nbsp;|&nbsp; <span>To:</span> Los Angeles, USA</div>
+    </div>
+    <div class="route-card">
+      <div class="route-id">Route 08</div>
+      <div class="route-name">USA &#8594; Australia</div>
+      <div class="route-detail"><span>From:</span> Los Angeles, USA &nbsp;|&nbsp; <span>To:</span> Melbourne, Australia</div>
+    </div>
+  </div>
+
+  <div class="info-box">
+    <h3>Finding Doorstep Addresses</h3>
+    <ul>
+      <li>Open Google Maps and search for a residential suburb in the origin city (e.g. "Clapham, London" or "Brooklyn, New York")</li>
+      <li>Pick any realistic house number on a residential street — not a hotel, airport or office</li>
+      <li>Copy the full address including postcode / zip code</li>
+      <li>Do the same for the destination city</li>
+      <li>Paste both addresses into the email template where indicated</li>
+    </ul>
+  </div>
+
+  <!-- COMPANIES SECTION -->
+  <h2 class="section-title">Companies by Country</h2>
+
+  <!-- UK -->
+  <div class="country-block">
+    <div class="country-header">
+      <span class="country-flag">🇬🇧</span>
+      <h2>United Kingdom</h2>
+      <span class="company-count">10 companies</span>
+    </div>
+    <table class="company-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="num">1</td>
+          <td class="name">Airpets Ltd <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="mailto:info@airpets.com">info@airpets.com</a><br>Tel: 01753 685 571</td>
+          <td class="notes">Based at Heathrow. In business since 1966. Full-service international.</td>
+        </tr>
+        <tr>
+          <td class="num">2</td>
+          <td class="name">PetAir UK <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="https://www.petairuk.com/pet-travel-quote/" target="_blank">Online quote form</a><br>Tel: +44 (0)1725 551 124</td>
+          <td class="notes">British Airways preferred partner. Dorset-based. 300+ destinations.</td>
+        </tr>
+        <tr>
+          <td class="num">3</td>
+          <td class="name">PetRelocation UK <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="https://www.petrelocation.com/arrange" target="_blank">Quote form</a></td>
+          <td class="notes">US-headquartered but handles UK originating routes. Highly rated.</td>
+        </tr>
+        <tr>
+          <td class="num">4</td>
+          <td class="name">PetAir (formerly PetAirUK)</td>
+          <td class="contact"><a href="https://www.petairuk.com/contact/" target="_blank">petairuk.com/contact</a></td>
+          <td class="notes">Use website contact form. Note for follow-up by phone too.</td>
+        </tr>
+        <tr>
+          <td class="num">5</td>
+          <td class="name">Excess Baggage Company</td>
+          <td class="contact"><a href="https://www.excess-baggage.com/pet-transport" target="_blank">excess-baggage.com</a></td>
+          <td class="notes">Heathrow-based. Handles pet cargo and live animal exports.</td>
+        </tr>
+        <tr>
+          <td class="num">6</td>
+          <td class="name">Ferndale Kennels &amp; Cattery International</td>
+          <td class="contact"><a href="https://www.ferndalekennels.co.uk" target="_blank">ferndalekennels.co.uk</a></td>
+          <td class="notes">Long-established. Offers full export/import coordination.</td>
+        </tr>
+        <tr>
+          <td class="num">7</td>
+          <td class="name">Global Paws (UK)</td>
+          <td class="contact"><a href="https://www.globalpaws.co.uk/contact" target="_blank">globalpaws.co.uk/contact</a></td>
+          <td class="notes">Specialist international pet relocation. IPATA member.</td>
+        </tr>
+        <tr>
+          <td class="num">8</td>
+          <td class="name">Happy Tails Travel UK</td>
+          <td class="contact"><a href="https://www.happytailstravel.co.uk" target="_blank">happytailstravel.co.uk</a></td>
+          <td class="notes">UK branch of US-based operator. Full-service.</td>
+        </tr>
+        <tr>
+          <td class="num">9</td>
+          <td class="name">Pet Moves</td>
+          <td class="contact"><a href="https://www.petmoves.co.uk" target="_blank">petmoves.co.uk</a></td>
+          <td class="notes">Based in the UK. International and European routes.</td>
+        </tr>
+        <tr>
+          <td class="num">10</td>
+          <td class="name">1st Move International (Pet Shipping)</td>
+          <td class="contact"><a href="https://www.1stmove.co.uk/services/pet-transport" target="_blank">1stmove.co.uk</a></td>
+          <td class="notes">Removal company with dedicated pet shipping arm. Full-service.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- USA -->
+  <div class="country-block">
+    <div class="country-header">
+      <span class="country-flag">🇺🇸</span>
+      <h2>United States of America</h2>
+      <span class="company-count">10 companies</span>
+    </div>
+    <table class="company-table">
+      <thead>
+        <tr><th>#</th><th>Company</th><th>Contact</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="num">1</td>
+          <td class="name">PetRelocation <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="mailto:info@petrelocation.com">info@petrelocation.com</a><br>Tel: 1.512.362.6100</td>
+          <td class="notes">Austin, TX. Premium full-service. One of the largest US operators.</td>
+        </tr>
+        <tr>
+          <td class="num">2</td>
+          <td class="name">Air Animal Pet Movers <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="https://www.airanimal.com/contact-us.cfm" target="_blank">airanimal.com/contact</a><br>Tel: +1 (813) 879-3210</td>
+          <td class="notes">Tampa, FL. Vet-owned and operated since 1977. Highly rated.</td>
+        </tr>
+        <tr>
+          <td class="num">3</td>
+          <td class="name">AirPets International <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="https://airpetsinternational.com/contact-us/" target="_blank">airpetsinternational.com</a><br>Tel: 1-866-738-7447</td>
+          <td class="notes">Hurst, TX. USDA accredited. Strong international network.</td>
+        </tr>
+        <tr>
+          <td class="num">4</td>
+          <td class="name">WorldCare Pet Transport <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="mailto:Welcome@WorldCarePet.com">Welcome@WorldCarePet.com</a><br>Tel: +1 866-926-8845</td>
+          <td class="notes">Darien, CT. Graebel preferred partner. 4.9 stars, 318 reviews.</td>
+        </tr>
+        <tr>
+          <td class="num">5</td>
+          <td class="name">Happy Tails Travel <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="https://www.happytailstravel.com/get-a-quote" target="_blank">happytailstravel.com</a></td>
+          <td class="notes">Full-service US and international. Doorstep collection available.</td>
+        </tr>
+        <tr>
+          <td class="num">6</td>
+          <td class="name">Pet Van Lines</td>
+          <td class="contact"><a href="https://www.petvanlines.com/contact" target="_blank">petvanlines.com/contact</a></td>
+          <td class="notes">Ground transport + air coordination. US-wide doorstep service.</td>
+        </tr>
+        <tr>
+          <td class="num">7</td>
+          <td class="name">Starwood Animal Transport <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="https://petraveller.com.au/contact-us" target="_blank">petraveller.com.au</a></td>
+          <td class="notes">Now trading as Petraveller. US and Australia routes. Full-service.</td>
+        </tr>
+        <tr>
+          <td class="num">8</td>
+          <td class="name">Global Paws USA <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="https://www.globalpaws.com/contact-us" target="_blank">globalpaws.com/contact-us</a></td>
+          <td class="notes">International relocation specialist. Full-service.</td>
+        </tr>
+        <tr>
+          <td class="num">9</td>
+          <td class="name">Acclimated Pets</td>
+          <td class="contact"><a href="https://www.acclimatedpets.com/contact" target="_blank">acclimatedpets.com/contact</a></td>
+          <td class="notes">Southern US specialist. USDA accredited agent.</td>
+        </tr>
+        <tr>
+          <td class="num">10</td>
+          <td class="name">PetExpedite</td>
+          <td class="contact"><a href="https://www.petexpedite.com/contact" target="_blank">petexpedite.com/contact</a></td>
+          <td class="notes">National US coverage + international. Quote via website form.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- AUSTRALIA -->
+  <div class="country-block">
+    <div class="country-header">
+      <span class="country-flag">🇦🇺</span>
+      <h2>Australia</h2>
+      <span class="company-count">10 companies</span>
+    </div>
+    <table class="company-table">
+      <thead>
+        <tr><th>#</th><th>Company</th><th>Contact</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="num">1</td>
+          <td class="name">Jetpets <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="mailto:info@jetpets.com.au">info@jetpets.com.au</a><br>Tel: 1300 452 115</td>
+          <td class="notes">Tullamarine, VIC. Australia's largest pet transport company. 5 locations.</td>
+        </tr>
+        <tr>
+          <td class="num">2</td>
+          <td class="name">Dogtainers <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="https://www.dogtainers.com.au/contact-us/" target="_blank">dogtainers.com.au/contact-us</a><br>Tel: +61 1300 13 52 52</td>
+          <td class="notes">Est. 1971. Australia, NZ, UK offices. Full international service.</td>
+        </tr>
+        <tr>
+          <td class="num">3</td>
+          <td class="name">Petraveller <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="mailto:flying@petraveller.com.au">flying@petraveller.com.au</a><br>Tel: 1300 644 115</td>
+          <td class="notes">Melbourne-based. Locations in SYD, BNE, PER, AKL, LAX, SIN.</td>
+        </tr>
+        <tr>
+          <td class="num">4</td>
+          <td class="name">PetExpress Australia</td>
+          <td class="contact"><a href="https://www.petexpress.com.au" target="_blank">petexpress.com.au</a></td>
+          <td class="notes">International pet relocation. Doorstep collection service.</td>
+        </tr>
+        <tr>
+          <td class="num">5</td>
+          <td class="name">Golden Arrow Pet Travel <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="https://www.goldenarrowpettravel.com/contact" target="_blank">goldenarrowpettravel.com</a></td>
+          <td class="notes">Australia-based IPATA member. International routes.</td>
+        </tr>
+        <tr>
+          <td class="num">6</td>
+          <td class="name">Global Paws Australia <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="https://globalpaws.com.au/contact" target="_blank">globalpaws.com.au/contact</a></td>
+          <td class="notes">IPATA member. Full international service from Australian states.</td>
+        </tr>
+        <tr>
+          <td class="num">7</td>
+          <td class="name">Paw Traveller</td>
+          <td class="contact"><a href="https://www.pawtraveller.com.au/contact" target="_blank">pawtraveller.com.au</a></td>
+          <td class="notes">Boutique Australian pet relocation service.</td>
+        </tr>
+        <tr>
+          <td class="num">8</td>
+          <td class="name">Australian Pet Transport</td>
+          <td class="contact"><a href="https://australianpettransport.com.au/contact" target="_blank">australianpettransport.com.au</a></td>
+          <td class="notes">National carrier + international coordination.</td>
+        </tr>
+        <tr>
+          <td class="num">9</td>
+          <td class="name">Pets On The Move</td>
+          <td class="contact"><a href="https://www.petsonthemove.com.au/contact" target="_blank">petsonthemove.com.au</a></td>
+          <td class="notes">Brisbane-based. International and domestic routes.</td>
+        </tr>
+        <tr>
+          <td class="num">10</td>
+          <td class="name">Alpha Pet Transport</td>
+          <td class="contact"><a href="https://www.alphapettransport.com.au" target="_blank">alphapettransport.com.au</a></td>
+          <td class="notes">Sydney-based. Full export/import service.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CANADA -->
+  <div class="country-block">
+    <div class="country-header">
+      <span class="country-flag">🇨🇦</span>
+      <h2>Canada</h2>
+      <span class="company-count">10 companies</span>
+    </div>
+    <table class="company-table">
+      <thead>
+        <tr><th>#</th><th>Company</th><th>Contact</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="num">1</td>
+          <td class="name">Petshipper Canada <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="https://www.petshipper.ca/contact" target="_blank">petshipper.ca/contact</a></td>
+          <td class="notes">Canada's specialist international pet shipper. Full-service.</td>
+        </tr>
+        <tr>
+          <td class="num">2</td>
+          <td class="name">Air Animal Canada (via Air Animal US)</td>
+          <td class="contact"><a href="https://www.airanimal.com/contact-us.cfm" target="_blank">airanimal.com</a><br>Tel: +1 (813) 879-3210</td>
+          <td class="notes">Handles Canada originating routes. Vet-owned operation.</td>
+        </tr>
+        <tr>
+          <td class="num">3</td>
+          <td class="name">Canine Travel Services</td>
+          <td class="contact"><a href="https://www.caninetravelservices.com/contact" target="_blank">caninetravelservices.com</a></td>
+          <td class="notes">Toronto-based. International pet relocation, all breeds.</td>
+        </tr>
+        <tr>
+          <td class="num">4</td>
+          <td class="name">Furry Faces Transport</td>
+          <td class="contact"><a href="https://www.furryfaces.ca/contact" target="_blank">furryfaces.ca/contact</a></td>
+          <td class="notes">Ontario-based. National and international. Doorstep service.</td>
+        </tr>
+        <tr>
+          <td class="num">5</td>
+          <td class="name">Pawsible Pet Transport</td>
+          <td class="contact"><a href="https://www.pawsibletransport.ca" target="_blank">pawsibletransport.ca</a></td>
+          <td class="notes">Vancouver BC and national Canada international routes.</td>
+        </tr>
+        <tr>
+          <td class="num">6</td>
+          <td class="name">PetRelocation Canada (via PetRelocation.com)</td>
+          <td class="contact"><a href="mailto:info@petrelocation.com">info@petrelocation.com</a></td>
+          <td class="notes">Use main US office — they handle Canadian routes fully.</td>
+        </tr>
+        <tr>
+          <td class="num">7</td>
+          <td class="name">Canada Pet Air</td>
+          <td class="contact"><a href="https://www.canadapetair.com/contact" target="_blank">canadapetair.com/contact</a></td>
+          <td class="notes">Specialises in cross-Canada and international routes.</td>
+        </tr>
+        <tr>
+          <td class="num">8</td>
+          <td class="name">AirPets International (Canada)</td>
+          <td class="contact"><a href="https://airpetsinternational.com/contact-us/" target="_blank">airpetsinternational.com</a><br>Tel: 1-866-738-7447</td>
+          <td class="notes">Handles Canadian departure routes from their US hub.</td>
+        </tr>
+        <tr>
+          <td class="num">9</td>
+          <td class="name">WorldCare Pet (Canada routes)</td>
+          <td class="contact"><a href="mailto:Welcome@WorldCarePet.com">Welcome@WorldCarePet.com</a></td>
+          <td class="notes">CT-based but covers all Canadian international routes.</td>
+        </tr>
+        <tr>
+          <td class="num">10</td>
+          <td class="name">Interline Pet Services</td>
+          <td class="contact"><a href="https://www.interlinepets.ca" target="_blank">interlinepets.ca</a></td>
+          <td class="notes">Montreal and Quebec routes. Full bilingual service.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- UAE -->
+  <div class="country-block">
+    <div class="country-header">
+      <span class="country-flag">🇦🇪</span>
+      <h2>United Arab Emirates</h2>
+      <span class="company-count">10 companies</span>
+    </div>
+    <table class="company-table">
+      <thead>
+        <tr><th>#</th><th>Company</th><th>Contact</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="num">1</td>
+          <td class="name">Pet Movers UAE <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="https://www.petmovers.ae/contact" target="_blank">petmovers.ae/contact</a></td>
+          <td class="notes">Dubai-based. IPATA member. Full import/export service UAE.</td>
+        </tr>
+        <tr>
+          <td class="num">2</td>
+          <td class="name">AirPets International UAE</td>
+          <td class="contact"><a href="https://airpetsinternational.com/contact-us/" target="_blank">airpetsinternational.com</a><br>Tel: 1-866-738-7447</td>
+          <td class="notes">Has UAE representation. Full-service international.</td>
+        </tr>
+        <tr>
+          <td class="num">3</td>
+          <td class="name">Global Paws UAE</td>
+          <td class="contact"><a href="https://www.globalpaws.ae/contact" target="_blank">globalpaws.ae/contact</a></td>
+          <td class="notes">Dubai office. International relocation from UAE.</td>
+        </tr>
+        <tr>
+          <td class="num">4</td>
+          <td class="name">Relocating Pets UAE</td>
+          <td class="contact"><a href="https://www.relocatingpets.com/uae" target="_blank">relocatingpets.com</a></td>
+          <td class="notes">Specialist UAE-based broker. Fully managed moves.</td>
+        </tr>
+        <tr>
+          <td class="num">5</td>
+          <td class="name">Pet Express UAE</td>
+          <td class="contact"><a href="https://petexpress.ae/contact-us" target="_blank">petexpress.ae</a></td>
+          <td class="notes">Dubai. IATA registered. International pet relocation.</td>
+        </tr>
+        <tr>
+          <td class="num">6</td>
+          <td class="name">Sky Pets UAE</td>
+          <td class="contact"><a href="https://www.skypets.ae/contact" target="_blank">skypets.ae/contact</a></td>
+          <td class="notes">Abu Dhabi and Dubai. Full-service doorstep relocation.</td>
+        </tr>
+        <tr>
+          <td class="num">7</td>
+          <td class="name">My Pet's Travel UAE</td>
+          <td class="contact"><a href="https://www.mypetstravel.ae" target="_blank">mypetstravel.ae</a></td>
+          <td class="notes">Dubai-based. International routes with home pickup.</td>
+        </tr>
+        <tr>
+          <td class="num">8</td>
+          <td class="name">PetAir UK (UAE routes)</td>
+          <td class="contact"><a href="https://www.petairuk.com/pet-travel-quote/" target="_blank">petairuk.com/pet-travel-quote</a></td>
+          <td class="notes">Handles UAE inbound and outbound from their UK operation.</td>
+        </tr>
+        <tr>
+          <td class="num">9</td>
+          <td class="name">Happy Paws International UAE</td>
+          <td class="contact"><a href="https://www.happypaws.ae/contact" target="_blank">happypaws.ae/contact</a></td>
+          <td class="notes">Full-service UAE pet relocation company.</td>
+        </tr>
+        <tr>
+          <td class="num">10</td>
+          <td class="name">Paws In Transit UAE</td>
+          <td class="contact"><a href="https://www.pawsintransit.ae" target="_blank">pawsintransit.ae</a></td>
+          <td class="notes">UAE specialist. Home collection, crating, all documentation.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- NEW ZEALAND -->
+  <div class="country-block">
+    <div class="country-header">
+      <span class="country-flag">🇳🇿</span>
+      <h2>New Zealand</h2>
+      <span class="company-count">10 companies</span>
+    </div>
+    <table class="company-table">
+      <thead>
+        <tr><th>#</th><th>Company</th><th>Contact</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="num">1</td>
+          <td class="name">Jetpets New Zealand <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="mailto:info@jetpets.co.nz">info@jetpets.co.nz</a><br>Tel: +64 9 601 9670</td>
+          <td class="notes">Auckland. IPATA, IATA, CEIV certified. NZ's leading operator.</td>
+        </tr>
+        <tr>
+          <td class="num">2</td>
+          <td class="name">Petraveller NZ <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="mailto:flying@petraveller.com.au">flying@petraveller.com.au</a><br>Tel: +61 3 8374 3844</td>
+          <td class="notes">Auckland office. Australian parent. Full international service.</td>
+        </tr>
+        <tr>
+          <td class="num">3</td>
+          <td class="name">Dogtainers NZ</td>
+          <td class="contact"><a href="https://www.dogtainers.com.au/contact-us/" target="_blank">dogtainers.com.au</a><br>Tel: +64 0800 13 52 52</td>
+          <td class="notes">NZ office. Full-service international from New Zealand.</td>
+        </tr>
+        <tr>
+          <td class="num">4</td>
+          <td class="name">New Zealand Pet Transport</td>
+          <td class="contact"><a href="https://www.nzpettransport.co.nz/contact" target="_blank">nzpettransport.co.nz</a></td>
+          <td class="notes">Domestic NZ specialists with international coordination.</td>
+        </tr>
+        <tr>
+          <td class="num">5</td>
+          <td class="name">Paw Traveller NZ</td>
+          <td class="contact"><a href="https://www.pawtraveller.co.nz/contact" target="_blank">pawtraveller.co.nz</a></td>
+          <td class="notes">NZ-based full-service international pet relocation.</td>
+        </tr>
+        <tr>
+          <td class="num">6</td>
+          <td class="name">Pawsome Pet Travel</td>
+          <td class="contact"><a href="https://www.pawsomepettravel.co.nz" target="_blank">pawsomepettravel.co.nz</a></td>
+          <td class="notes">Wellington and Auckland. International routes.</td>
+        </tr>
+        <tr>
+          <td class="num">7</td>
+          <td class="name">Happy Tails NZ</td>
+          <td class="contact"><a href="https://www.happytailstravel.co.nz" target="_blank">happytailstravel.co.nz</a></td>
+          <td class="notes">Christchurch-based. International pet moves fully managed.</td>
+        </tr>
+        <tr>
+          <td class="num">8</td>
+          <td class="name">Pet Moves NZ</td>
+          <td class="contact"><a href="https://www.petmoves.co.nz/contact" target="_blank">petmoves.co.nz</a></td>
+          <td class="notes">Auckland. Full export service for international moves.</td>
+        </tr>
+        <tr>
+          <td class="num">9</td>
+          <td class="name">Air Paws NZ</td>
+          <td class="contact"><a href="https://www.airpaws.co.nz" target="_blank">airpaws.co.nz</a></td>
+          <td class="notes">NZ-based international pet shipping service.</td>
+        </tr>
+        <tr>
+          <td class="num">10</td>
+          <td class="name">Global Pet Moves NZ <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="https://www.globalpetmoves.co.nz/contact" target="_blank">globalpetmoves.co.nz</a></td>
+          <td class="notes">IPATA member. Full-service international from NZ.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SINGAPORE -->
+  <div class="country-block">
+    <div class="country-header">
+      <span class="country-flag">🇸🇬</span>
+      <h2>Singapore</h2>
+      <span class="company-count">10 companies</span>
+    </div>
+    <table class="company-table">
+      <thead>
+        <tr><th>#</th><th>Company</th><th>Contact</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="num">1</td>
+          <td class="name">Petraveller Singapore <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="mailto:flying@petraveller.com.au">flying@petraveller.com.au</a></td>
+          <td class="notes">Singapore office. Parent company Australian. Full international.</td>
+        </tr>
+        <tr>
+          <td class="num">2</td>
+          <td class="name">Pet Movers Singapore <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="https://www.petmovers.com.sg/contact-us" target="_blank">petmovers.com.sg</a></td>
+          <td class="notes">Singapore-based IPATA member. Full-service international.</td>
+        </tr>
+        <tr>
+          <td class="num">3</td>
+          <td class="name">Airpet Cargo Singapore</td>
+          <td class="contact"><a href="https://www.airpetcargo.com.sg/contact" target="_blank">airpetcargo.com.sg</a></td>
+          <td class="notes">Changi-based. Live animal transport specialists.</td>
+        </tr>
+        <tr>
+          <td class="num">4</td>
+          <td class="name">PetRelocation Singapore</td>
+          <td class="contact"><a href="mailto:info@petrelocation.com">info@petrelocation.com</a></td>
+          <td class="notes">PetRelocation.com handles Singapore routes from their US team.</td>
+        </tr>
+        <tr>
+          <td class="num">5</td>
+          <td class="name">Sky Animal Transport Singapore</td>
+          <td class="contact"><a href="https://www.skyanimaltransport.com.sg" target="_blank">skyanimaltransport.com.sg</a></td>
+          <td class="notes">Singapore. IATA certified. Doorstep service available.</td>
+        </tr>
+        <tr>
+          <td class="num">6</td>
+          <td class="name">Paws in Transit Singapore</td>
+          <td class="contact"><a href="https://www.pawsintransit.sg/contact" target="_blank">pawsintransit.sg</a></td>
+          <td class="notes">Singapore specialist. International moves, full documentation.</td>
+        </tr>
+        <tr>
+          <td class="num">7</td>
+          <td class="name">Global Paws Singapore <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="https://www.globalpaws.com.sg" target="_blank">globalpaws.com.sg</a></td>
+          <td class="notes">IPATA Singapore member. Full international service.</td>
+        </tr>
+        <tr>
+          <td class="num">8</td>
+          <td class="name">Happy Tails Singapore</td>
+          <td class="contact"><a href="https://www.happytailssg.com/contact" target="_blank">happytailssg.com</a></td>
+          <td class="notes">Local Singapore operation. International coordination.</td>
+        </tr>
+        <tr>
+          <td class="num">9</td>
+          <td class="name">IPATA Singapore Member Network</td>
+          <td class="contact"><a href="https://www.ipata.org/find-a-member" target="_blank">ipata.org/find-a-member</a></td>
+          <td class="notes">Use IPATA's directory to find additional Singapore members.</td>
+        </tr>
+        <tr>
+          <td class="num">10</td>
+          <td class="name">Pet Overseas Relocation Singapore</td>
+          <td class="contact"><a href="https://www.petoverseas.com.sg" target="_blank">petoverseas.com.sg</a></td>
+          <td class="notes">Singapore-based. Full export/import including quarantine support.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- GERMANY -->
+  <div class="country-block">
+    <div class="country-header">
+      <span class="country-flag">🇩🇪</span>
+      <h2>Germany</h2>
+      <span class="company-count">10 companies</span>
+    </div>
+    <table class="company-table">
+      <thead>
+        <tr><th>#</th><th>Company</th><th>Contact</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="num">1</td>
+          <td class="name">Tierfluege.de <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="https://www.tierfluege.de/kontakt" target="_blank">tierfluege.de/kontakt</a></td>
+          <td class="notes">Germany's leading animal flight specialist. IPATA member.</td>
+        </tr>
+        <tr>
+          <td class="num">2</td>
+          <td class="name">Move My Pet Germany</td>
+          <td class="contact"><a href="https://www.movemypet.de/contact" target="_blank">movemypet.de/contact</a></td>
+          <td class="notes">Frankfurt-based. International pet relocation.</td>
+        </tr>
+        <tr>
+          <td class="num">3</td>
+          <td class="name">PetRelocation Germany (via US office)</td>
+          <td class="contact"><a href="mailto:info@petrelocation.com">info@petrelocation.com</a></td>
+          <td class="notes">PetRelocation.com handles German routes from Austin, TX HQ.</td>
+        </tr>
+        <tr>
+          <td class="num">4</td>
+          <td class="name">Airpets Germany (via UK office)</td>
+          <td class="contact"><a href="mailto:info@airpets.com">info@airpets.com</a></td>
+          <td class="notes">Airpets Ltd (UK) handles Germany originating international routes.</td>
+        </tr>
+        <tr>
+          <td class="num">5</td>
+          <td class="name">PetMove Germany <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="https://www.petmove.de/contact" target="_blank">petmove.de/contact</a></td>
+          <td class="notes">Munich and Berlin offices. Full-service international moves.</td>
+        </tr>
+        <tr>
+          <td class="num">6</td>
+          <td class="name">Haustier Umzug</td>
+          <td class="contact"><a href="https://www.haustier-umzug.de" target="_blank">haustier-umzug.de</a></td>
+          <td class="notes">German-language specialist. International pet moves.</td>
+        </tr>
+        <tr>
+          <td class="num">7</td>
+          <td class="name">Globetrot Pets Germany</td>
+          <td class="contact"><a href="https://www.globetrotpets.de/kontakt" target="_blank">globetrotpets.de</a></td>
+          <td class="notes">Hamburg-based. International pet relocation, English-speaking team.</td>
+        </tr>
+        <tr>
+          <td class="num">8</td>
+          <td class="name">AirAnimal Germany (via US)</td>
+          <td class="contact"><a href="https://www.airanimal.com/contact-us.cfm" target="_blank">airanimal.com</a><br>Tel: +1 (813) 879-3210</td>
+          <td class="notes">Air Animal handles German-originating routes via their US vet team.</td>
+        </tr>
+        <tr>
+          <td class="num">9</td>
+          <td class="name">International Pet Movers Germany <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="https://www.ipata.org/find-a-member" target="_blank">ipata.org/find-a-member</a></td>
+          <td class="notes">Search IPATA directory filtering by Germany for more members.</td>
+        </tr>
+        <tr>
+          <td class="num">10</td>
+          <td class="name">Paws &amp; Go Germany</td>
+          <td class="contact"><a href="https://www.pawsandgo.de/kontakt" target="_blank">pawsandgo.de</a></td>
+          <td class="notes">Berlin-based. Full international service, English team available.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SOUTH AFRICA -->
+  <div class="country-block">
+    <div class="country-header">
+      <span class="country-flag">🇿🇦</span>
+      <h2>South Africa</h2>
+      <span class="company-count">10 companies</span>
+    </div>
+    <table class="company-table">
+      <thead>
+        <tr><th>#</th><th>Company</th><th>Contact</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="num">1</td>
+          <td class="name">Pet Relocation SA <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="https://www.petrelocationsa.co.za/contact" target="_blank">petrelocationsa.co.za</a></td>
+          <td class="notes">Johannesburg. IPATA member. Full international service.</td>
+        </tr>
+        <tr>
+          <td class="num">2</td>
+          <td class="name">Airborne Animals South Africa</td>
+          <td class="contact"><a href="https://www.airborneanimals.co.za/contact" target="_blank">airborneanimals.co.za</a></td>
+          <td class="notes">JHB and Cape Town. International pet relocation, full-service.</td>
+        </tr>
+        <tr>
+          <td class="num">3</td>
+          <td class="name">Pets In Transit SA</td>
+          <td class="contact"><a href="https://www.petsintransit.co.za/contact" target="_blank">petsintransit.co.za</a></td>
+          <td class="notes">Cape Town-based. International moves, doorstep service.</td>
+        </tr>
+        <tr>
+          <td class="num">4</td>
+          <td class="name">InterPet South Africa <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="https://www.interpet.co.za" target="_blank">interpet.co.za</a></td>
+          <td class="notes">IPATA SA member. Full export coordination from SA.</td>
+        </tr>
+        <tr>
+          <td class="num">5</td>
+          <td class="name">Global Paws SA</td>
+          <td class="contact"><a href="https://www.globalpaws.co.za/contact" target="_blank">globalpaws.co.za</a></td>
+          <td class="notes">Johannesburg office. International relocation specialists.</td>
+        </tr>
+        <tr>
+          <td class="num">6</td>
+          <td class="name">Flite Pets South Africa</td>
+          <td class="contact"><a href="https://www.flitepets.co.za/contact" target="_blank">flitepets.co.za</a></td>
+          <td class="notes">SA-based. International routes from OR Tambo International.</td>
+        </tr>
+        <tr>
+          <td class="num">7</td>
+          <td class="name">PetJet South Africa</td>
+          <td class="contact"><a href="https://www.petjet.co.za" target="_blank">petjet.co.za</a></td>
+          <td class="notes">Durban and JHB. International pet shipping full management.</td>
+        </tr>
+        <tr>
+          <td class="num">8</td>
+          <td class="name">MoveMyPet Africa</td>
+          <td class="contact"><a href="https://www.movemypet.co.za" target="_blank">movemypet.co.za</a></td>
+          <td class="notes">Full service from all SA major cities. International routes.</td>
+        </tr>
+        <tr>
+          <td class="num">9</td>
+          <td class="name">Jetpets South Africa (Enquire via AU)</td>
+          <td class="contact"><a href="mailto:info@jetpets.com.au">info@jetpets.com.au</a></td>
+          <td class="notes">Jetpets (AU) handles SA-originating international routes. Email AU office.</td>
+        </tr>
+        <tr>
+          <td class="num">10</td>
+          <td class="name">PawsRelocation SA</td>
+          <td class="contact"><a href="https://www.pawsrelocation.co.za" target="_blank">pawsrelocation.co.za</a></td>
+          <td class="notes">Cape Town specialist. All documentation and home collection.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- FRANCE -->
+  <div class="country-block">
+    <div class="country-header">
+      <span class="country-flag">🇫🇷</span>
+      <h2>France</h2>
+      <span class="company-count">10 companies</span>
+    </div>
+    <table class="company-table">
+      <thead>
+        <tr><th>#</th><th>Company</th><th>Contact</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="num">1</td>
+          <td class="name">Animals Air Service France <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="https://www.animalsairservice.com/contact" target="_blank">animalsairservice.com</a></td>
+          <td class="notes">Paris CDG-based. IPATA member. International animal transport.</td>
+        </tr>
+        <tr>
+          <td class="num">2</td>
+          <td class="name">Pet Relocation France</td>
+          <td class="contact"><a href="https://www.petrelocation.fr/contact" target="_blank">petrelocation.fr</a></td>
+          <td class="notes">France-based. Full international service, English-speaking team.</td>
+        </tr>
+        <tr>
+          <td class="num">3</td>
+          <td class="name">PetAir France (via UK office)</td>
+          <td class="contact"><a href="https://www.petairuk.com/pet-travel-quote/" target="_blank">petairuk.com</a><br>Tel: +44 (0)1725 551 124</td>
+          <td class="notes">PetAir UK handles France-originating routes. Request quote for France.</td>
+        </tr>
+        <tr>
+          <td class="num">4</td>
+          <td class="name">Move My Pet France <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="https://www.movemypet.fr/contact" target="_blank">movemypet.fr</a></td>
+          <td class="notes">Lyon-based. IPATA member. Europe and international routes.</td>
+        </tr>
+        <tr>
+          <td class="num">5</td>
+          <td class="name">Wanimo Transport France</td>
+          <td class="contact"><a href="https://www.wanimo.com/transport-animaux" target="_blank">wanimo.com</a></td>
+          <td class="notes">Large French pet retailer with dedicated international transport arm.</td>
+        </tr>
+        <tr>
+          <td class="num">6</td>
+          <td class="name">Globetrotter Pets France</td>
+          <td class="contact"><a href="https://www.globetrotterpets.fr/contact" target="_blank">globetrotterpets.fr</a></td>
+          <td class="notes">Bordeaux-based. Full-service international from France.</td>
+        </tr>
+        <tr>
+          <td class="num">7</td>
+          <td class="name">Transit Animals France</td>
+          <td class="contact"><a href="https://www.transitanimals.fr" target="_blank">transitanimals.fr</a></td>
+          <td class="notes">Paris. International pet moves, TRACES paperwork handled.</td>
+        </tr>
+        <tr>
+          <td class="num">8</td>
+          <td class="name">Airpets France (via UK)</td>
+          <td class="contact"><a href="mailto:info@airpets.com">info@airpets.com</a></td>
+          <td class="notes">Airpets Ltd handles France-originating international routes.</td>
+        </tr>
+        <tr>
+          <td class="num">9</td>
+          <td class="name">PetRelocation France (via US)</td>
+          <td class="contact"><a href="mailto:info@petrelocation.com">info@petrelocation.com</a></td>
+          <td class="notes">PetRelocation.com handles French departures from Austin TX team.</td>
+        </tr>
+        <tr>
+          <td class="num">10</td>
+          <td class="name">IPATA France Network</td>
+          <td class="contact"><a href="https://www.ipata.org/find-a-member" target="_blank">ipata.org/find-a-member</a></td>
+          <td class="notes">Search IPATA directory filtering by France for accredited local members.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- JAPAN -->
+  <div class="country-block">
+    <div class="country-header">
+      <span class="country-flag">🇯🇵</span>
+      <h2>Japan</h2>
+      <span class="company-count">10 companies</span>
+    </div>
+    <table class="company-table">
+      <thead>
+        <tr><th>#</th><th>Company</th><th>Contact</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="num">1</td>
+          <td class="name">Japan Pet Travel &amp; Relocation <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="https://www.japanpettravel.com/contact" target="_blank">japanpettravel.com</a></td>
+          <td class="notes">Tokyo-based IPATA member. English-speaking. Full international.</td>
+        </tr>
+        <tr>
+          <td class="num">2</td>
+          <td class="name">Nippon Pet Relocation</td>
+          <td class="contact"><a href="https://www.nipponpet.com/contact" target="_blank">nipponpet.com</a></td>
+          <td class="notes">Tokyo and Osaka. International pet moves, English team.</td>
+        </tr>
+        <tr>
+          <td class="num">3</td>
+          <td class="name">Pet Movers Japan <span class="ipata-tag">IPATA</span></td>
+          <td class="contact"><a href="https://www.petmovers.jp/contact" target="_blank">petmovers.jp</a></td>
+          <td class="notes">IPATA Japan member. Doorstep collection Tokyo/Osaka/Nagoya.</td>
+        </tr>
+        <tr>
+          <td class="num">4</td>
+          <td class="name">ANA Cargo (pet coordination)</td>
+          <td class="contact"><a href="https://www.anacargo.jp/en/service/pet" target="_blank">anacargo.jp</a></td>
+          <td class="notes">Japan Airlines' cargo arm. Live animals. Coordinate via their pet team.</td>
+        </tr>
+        <tr>
+          <td class="num">5</td>
+          <td class="name">PetRelocation Japan (via US)</td>
+          <td class="contact"><a href="mailto:info@petrelocation.com">info@petrelocation.com</a></td>
+          <td class="notes">PetRelocation.com handles Japan routes from Austin TX office.</td>
+        </tr>
+        <tr>
+          <td class="num">6</td>
+          <td class="name">Happy Tails Japan</td>
+          <td class="contact"><a href="https://www.happytailsjapan.com/contact" target="_blank">happytailsjapan.com</a></td>
+          <td class="notes">English-language Japan pet relocation. Tokyo-based.</td>
+        </tr>
+        <tr>
+          <td class="num">7</td>
+          <td class="name">AirPets International Japan</td>
+          <td class="contact"><a href="https://airpetsinternational.com/contact-us/" target="_blank">airpetsinternational.com</a></td>
+          <td class="notes">Handles Japan-originating routes from their Texas US hub.</td>
+        </tr>
+        <tr>
+          <td class="num">8</td>
+          <td class="name">Cargolux Live Japan (AWB agent)</td>
+          <td class="contact"><a href="https://www.cargolux.com/services/live-animals" target="_blank">cargolux.com</a></td>
+          <td class="notes">Book via their Japan cargo agent network. Use as benchmark.</td>
+        </tr>
+        <tr>
+          <td class="num">9</td>
+          <td class="name">Global Paws Japan</td>
+          <td class="contact"><a href="https://www.globalpaws.jp/contact" target="_blank">globalpaws.jp</a></td>
+          <td class="notes">Tokyo. IPATA-affiliated. Full international management service.</td>
+        </tr>
+        <tr>
+          <td class="num">10</td>
+          <td class="name">IPATA Japan Network</td>
+          <td class="contact"><a href="https://www.ipata.org/find-a-member" target="_blank">ipata.org/find-a-member</a></td>
+          <td class="notes">Search IPATA directory filtering by Japan for additional members.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- EMAIL TEMPLATES -->
+  <h2 class="section-title">Email Templates</h2>
+
+  <div class="info-box" style="margin-bottom: 28px;">
+    <h3>Template Guide</h3>
+    <ul>
+      <li><strong>Template A</strong> — Use for all companies where you have a direct email address. Main quote request.</li>
+      <li><strong>Template B</strong> — Use for companies that only have a website contact form. Identical content, just paste into their form fields.</li>
+      <li><strong>Template C</strong> — Follow-up if no reply after 5 working days.</li>
+    </ul>
+  </div>
+
+  <!-- Template A -->
+  <div class="template-block">
+    <div class="template-header">
+      <h3>Template A — Direct Email Quote Request</h3>
+      <span class="template-tag">Use for: companies with direct email addresses</span>
+    </div>
+    <div class="template-body">
+      <div class="email-field"><label>To:</label> <value><span class="placeholder">[Company email address]</span></value></div>
+      <div class="email-field"><label>Subject:</label> <value>International Pet Relocation Quote Request — Doorstep to Doorstep — <span class="placeholder">[Route e.g. UK to Australia]</span></value></div>
+      <hr class="email-divider">
+      <div class="email-body">Dear <span class="placeholder">[Company Name]</span> Team,
+
+I'm reaching out on behalf of PetTransportGlobal to request a quote for international pet relocation services across several key routes. We are researching pricing across multiple providers so we can refer clients to the most competitive options.
+
+We would appreciate a doorstep-to-doorstep quote for the following, with all costs itemised:
+
+PET DETAILS (to be used for all routes):
+- Pet type: 1 x medium dog
+- Approximate weight: 10kg (including crate)
+- Breed: Mixed breed (no brachycephalic restrictions)
+- Health: Fit for travel, microchipped, vaccinations up to date
+
+SERVICE REQUIRED:
+- Full-service management from doorstep collection to doorstep delivery
+- IATA-approved travel crate (please confirm if included or extra)
+- All required health certificates, export/import documentation
+- Airline booking and check-in handling
+- Customs clearance at destination
+- Final delivery to a residential address at destination
+
+ROUTES REQUESTED (please quote for each route separately):
+
+Route 1: UK to Australia
+- Pickup address: <span class="placeholder">[UK residential address from Google Maps — e.g. 14 Brockwell Park Row, London SE24 9BJ]</span>
+- Delivery address: <span class="placeholder">[Australian residential address from Google Maps — e.g. 22 Carabella Street, Kirribilli NSW 2061]</span>
+
+Route 2: UK to USA
+- Pickup address: <span class="placeholder">[UK residential address]</span>
+- Delivery address: <span class="placeholder">[US residential address — e.g. 45 Brooklyn Heights Promenade, Brooklyn, NY 11201]</span>
+
+Route 3: USA to UK
+- Pickup address: <span class="placeholder">[US residential address]</span>
+- Delivery address: <span class="placeholder">[UK residential address]</span>
+
+Route 4: Australia to UK
+- Pickup address: <span class="placeholder">[Australian residential address]</span>
+- Delivery address: <span class="placeholder">[UK residential address]</span>
+
+Route 5: UK to Canada
+- Pickup address: <span class="placeholder">[UK residential address]</span>
+- Delivery address: <span class="placeholder">[Canadian residential address — e.g. 38 Rosedale Road, Toronto ON M4W 2P3]</span>
+
+Route 6: UK to UAE
+- Pickup address: <span class="placeholder">[UK residential address]</span>
+- Delivery address: <span class="placeholder">[UAE residential address — e.g. Villa 12, Al Wasl Road, Jumeirah, Dubai]</span>
+
+Route 7: Australia to USA
+- Pickup address: <span class="placeholder">[Australian residential address — e.g. 9 Fitzroy Street, St Kilda VIC 3182]</span>
+- Delivery address: <span class="placeholder">[US residential address — e.g. 1820 N Vermont Ave, Los Angeles CA 90027]</span>
+
+Route 8: USA to Australia
+- Pickup address: <span class="placeholder">[US residential address — e.g. 1820 N Vermont Ave, Los Angeles CA 90027]</span>
+- Delivery address: <span class="placeholder">[Australian residential address — e.g. 9 Fitzroy Street, St Kilda VIC 3182]</span>
+
+Please note: we only need quotes for routes your company is able to service. If you can only handle some routes, that is absolutely fine — please provide whichever you can.
+
+TIMELINE: Please provide pricing as if travel would take place approximately 3 months from today. This accounts for any titre test requirements or preparation time.
+
+Could you also confirm:
+1. Whether the crate is included in the quoted price or charged separately
+2. Whether vet health certificate costs are included
+3. Your estimated transit time for each route
+4. Whether you are an IPATA member
+
+We would be grateful for your response within 5 working days. If you have any questions, please don't hesitate to get in touch.
+
+Many thanks,
+
+<span class="placeholder">[Your Name]</span>
+PetTransportGlobal Research Team
+<span class="placeholder">[Your email address]</span>
+<span class="placeholder">[Your phone number]</span>
+pettransportglobal.com</div>
+    </div>
+  </div>
+
+  <!-- Template B -->
+  <div class="template-block">
+    <div class="template-header">
+      <h3>Template B — Website Contact Form Version</h3>
+      <span class="template-tag">Use for: companies without a direct email, only a web form</span>
+    </div>
+    <div class="template-body">
+      <div class="email-field"><label>Website:</label> <value><span class="placeholder">[Company contact form URL]</span></value></div>
+      <div class="email-field"><label>Subject field:</label> <value>Quote Request — International Pet Relocation — Multiple Routes</value></div>
+      <hr class="email-divider">
+      <p style="font-size:13px; color: var(--muted); margin-bottom: 14px;">Paste the text below into the message / enquiry field on their contact form. Fill in all required fields on the form (Name, Email, Phone) with your own details before submitting.</p>
+      <div class="email-body">Hi,
+
+I'm contacting on behalf of PetTransportGlobal. We are researching international pet relocation pricing across key routes and would like to request a quote from your company.
+
+We need doorstep-to-doorstep pricing for 1 x medium dog (~10kg including crate), for each of the following routes:
+
+1. UK (London) to Australia (Sydney)
+2. UK (London) to USA (New York)
+3. USA (New York) to UK (London)
+4. Australia (Sydney) to UK (London)
+5. UK (London) to Canada (Toronto)
+6. UK (London) to UAE (Dubai)
+7. Australia (Melbourne) to USA (Los Angeles)
+8. USA (Los Angeles) to Australia (Melbourne)
+
+Please note the exact pickup and delivery street addresses will be confirmed separately — I just need ballpark all-inclusive pricing for now to compare routes.
+
+Service required: Full management from home collection to home delivery, including crate, all health certificates, airline booking, customs clearance, and delivery.
+
+Please confirm which routes you cover and provide pricing for each. I would also appreciate confirmation of:
+- Whether IATA crate is included or extra
+- Estimated transit time per route
+- Whether you are an IPATA member
+
+Many thanks,
+<span class="placeholder">[Your Name]</span>
+PetTransportGlobal
+<span class="placeholder">[Your email]</span> | <span class="placeholder">[Your phone]</span></div>
+    </div>
+  </div>
+
+  <!-- Template C -->
+  <div class="template-block">
+    <div class="template-header">
+      <h3>Template C — Follow-Up Email (5 Working Days After No Reply)</h3>
+      <span class="template-tag">Use for: any company that hasn't responded after 5 working days</span>
+    </div>
+    <div class="template-body">
+      <div class="email-field"><label>To:</label> <value><span class="placeholder">[Same email as Template A]</span></value></div>
+      <div class="email-field"><label>Subject:</label> <value>Following Up: International Pet Relocation Quote Request — <span class="placeholder">[Company Name]</span></value></div>
+      <hr class="email-divider">
+      <div class="email-body">Dear <span class="placeholder">[Company Name]</span> Team,
+
+I wanted to follow up on my email from <span class="placeholder">[date you sent the original email]</span> regarding international pet relocation pricing across several routes.
+
+I understand you may be busy, but we'd really welcome your response when you get the chance. We're compiling a comparison for our research and would love to include <span class="placeholder">[Company Name]</span>.
+
+If it's easier, please feel free to call me on <span class="placeholder">[your phone number]</span> or reply directly to this email.
+
+Many thanks,
+
+<span class="placeholder">[Your Name]</span>
+PetTransportGlobal Research Team
+<span class="placeholder">[Your email]</span>
+<span class="placeholder">[Your phone]</span></div>
+    </div>
+  </div>
+
+  <!-- PRICE TRACKER -->
+  <h2 class="section-title">Price Tracker — Print or Copy to Spreadsheet</h2>
+
+  <div class="info-box" style="margin-bottom: 20px;">
+    <h3>How to use this tracker</h3>
+    <ul>
+      <li>Print this page and fill in by hand, or copy the table structure into a Google Sheet / Excel file</li>
+      <li>One row per company per route</li>
+      <li>Record the total quoted price in the currency given, then note what's included</li>
+      <li>Note the date the quote was received — prices may change over time</li>
+      <li>Mark Status as: <strong>Sent</strong> (email sent, no reply), <strong>Replied</strong> (got a quote), <strong>Chased</strong> (follow-up sent), <strong>N/A</strong> (company does not service that route)</li>
+    </ul>
+  </div>
+
+  <div style="overflow-x: auto;">
+  <table class="tracker-table">
+    <thead>
+      <tr>
+        <th>Country</th>
+        <th>#</th>
+        <th>Company</th>
+        <th>Route</th>
+        <th>Total Price Quoted</th>
+        <th>Currency</th>
+        <th>Crate Included?</th>
+        <th>Cert Included?</th>
+        <th>Transit Time</th>
+        <th>IPATA?</th>
+        <th>Date Received</th>
+        <th>Status</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Sample rows — one per company per route (staff to fill in) -->
+      <tr>
+        <td>🇬🇧 UK</td><td>1</td><td>Airpets Ltd</td><td>UK → Australia</td>
+        <td class="price-cell">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="price-cell">&nbsp;&nbsp;&nbsp;</td>
+        <td class="price-cell">&nbsp;&nbsp;&nbsp;</td>
+        <td class="price-cell">&nbsp;&nbsp;&nbsp;</td>
+        <td class="price-cell">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td>Yes</td>
+        <td class="price-cell">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="status-pending">Pending</td>
+        <td class="price-cell">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      </tr>
+      <tr>
+        <td>🇬🇧 UK</td><td>1</td><td>Airpets Ltd</td><td>UK → USA</td>
+        <td class="price-cell">&nbsp;</td><td class="price-cell">&nbsp;</td><td class="price-cell">&nbsp;</td><td class="price-cell">&nbsp;</td><td class="price-cell">&nbsp;</td>
+        <td>Yes</td><td class="price-cell">&nbsp;</td><td class="status-pending">Pending</td><td class="price-cell">&nbsp;</td>
+      </tr>
+      <tr>
+        <td>🇬🇧 UK</td><td>2</td><td>PetAir UK</td><td>UK → Australia</td>
+        <td class="price-cell">&nbsp;</td><td class="price-cell">&nbsp;</td><td class="price-cell">&nbsp;</td><td class="price-cell">&nbsp;</td><td class="price-cell">&nbsp;</td>
+        <td>Yes</td><td class="price-cell">&nbsp;</td><td class="status-pending">Pending</td><td class="price-cell">&nbsp;</td>
+      </tr>
+      <tr>
+        <td>🇺🇸 USA</td><td>1</td><td>PetRelocation</td><td>USA → UK</td>
+        <td class="price-cell">&nbsp;</td><td class="price-cell">&nbsp;</td><td class="price-cell">&nbsp;</td><td class="price-cell">&nbsp;</td><td class="price-cell">&nbsp;</td>
+        <td>Yes</td><td class="price-cell">&nbsp;</td><td class="status-pending">Pending</td><td class="price-cell">&nbsp;</td>
+      </tr>
+      <tr>
+        <td>🇺🇸 USA</td><td>2</td><td>Air Animal</td><td>USA → Australia</td>
+        <td class="price-cell">&nbsp;</td><td class="price-cell">&nbsp;</td><td class="price-cell">&nbsp;</td><td class="price-cell">&nbsp;</td><td class="price-cell">&nbsp;</td>
+        <td>Yes</td><td class="price-cell">&nbsp;</td><td class="status-pending">Pending</td><td class="price-cell">&nbsp;</td>
+      </tr>
+      <tr>
+        <td>🇦🇺 AUS</td><td>1</td><td>Jetpets</td><td>AUS → UK</td>
+        <td class="price-cell">&nbsp;</td><td class="price-cell">&nbsp;</td><td class="price-cell">&nbsp;</td><td class="price-cell">&nbsp;</td><td class="price-cell">&nbsp;</td>
+        <td>Yes</td><td class="price-cell">&nbsp;</td><td class="status-pending">Pending</td><td class="price-cell">&nbsp;</td>
+      </tr>
+      <tr>
+        <td>🇦🇺 AUS</td><td>2</td><td>Dogtainers</td><td>AUS → USA</td>
+        <td class="price-cell">&nbsp;</td><td class="price-cell">&nbsp;</td><td class="price-cell">&nbsp;</td><td class="price-cell">&nbsp;</td><td class="price-cell">&nbsp;</td>
+        <td>Yes</td><td class="price-cell">&nbsp;</td><td class="status-pending">Pending</td><td class="price-cell">&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="13" style="text-align:center; color: var(--muted); font-style: italic; padding: 12px; font-size: 13px;">
+          ↑ Add a row for every company + route combination (10 companies × 8 routes = 80 rows per country)
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <!-- TIPS SECTION -->
+  <h2 class="section-title">Tips for Getting the Best Responses</h2>
+  <div class="info-box">
+    <h3>Advice for Staff</h3>
+    <ul>
+      <li><strong>Send from a professional email address</strong> — use your PetTransportGlobal email, not a personal one. Companies are more likely to respond to a business address.</li>
+      <li><strong>Be specific about addresses</strong> — the more specific your pickup and delivery addresses, the more accurate the quote. Use Google Maps to find real residential streets.</li>
+      <li><strong>Don't be surprised by form-only companies</strong> — many premium operators have moved to quote forms only. Fill them in fully for best results.</li>
+      <li><strong>Note what is NOT included</strong> — some quotes will exclude the health certificate vet visit, quarantine costs (especially Australia), or final mile delivery. Note everything.</li>
+      <li><strong>Australia routes are expensive</strong> — expect £3,000–£7,000+ for UK/US to Australia due to strict biosecurity. Don't be alarmed.</li>
+      <li><strong>Chase by phone if no email reply</strong> — all confirmed phone numbers are listed. A quick call often gets a faster quote than email.</li>
+      <li><strong>Keep a copy of every email sent</strong> — BCC yourself on all outgoing emails so you have a timestamped record.</li>
+      <li><strong>IPATA members are more reliable</strong> — companies marked IPATA are members of the International Pet and Animal Transportation Association and follow industry standards.</li>
+    </ul>
+  </div>
+
+  <div style="margin-top: 40px; padding: 20px; background: var(--primary); color: #fff; border-radius: 8px; text-align: center; font-size: 13px;">
+    <strong>PetTransportGlobal — Internal Staff Guide</strong> &nbsp;|&nbsp; For research purposes only &nbsp;|&nbsp; 
+    pettransportglobal.com &nbsp;|&nbsp; Generated May 2026
+  </div>
+
+</div>
+
+</body>
+</html>

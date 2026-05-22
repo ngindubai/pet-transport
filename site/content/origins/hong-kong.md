@@ -1,8 +1,9 @@
 ---
 title: "Pet Export Guide: Shipping from Hong Kong"
-description: "Guide to exporting your dog or cat from Hong Kong. Export requirements, airlines, and routes."
+description: "Exporting your pet from Hong Kong: AFCD health certificate requirements, airline options, and routes from Hong Kong to popular destinations worldwide."
 type: "origins"
 layout: "single"
+author: "Gareth - Founder, PetTransportGlobal"
 country_name: "Hong Kong"
 country_code: "HK"
 overview: |
@@ -21,8 +22,30 @@ sections:
     body: |
       We have detailed guides for the following routes:
       
-      - [Hong Kong to Australia](/routes/hong-kong-to-australia/)
-      - [Hong Kong to United Kingdom](/routes/hong-kong-to-united-kingdom/)
+      - [Hong Kong to Australia](/pet-transport/hong-kong-to-australia/)
+      - [Hong Kong to Brazil](/pet-transport/hong-kong-to-brazil/)
+      - [Hong Kong to Canada](/pet-transport/hong-kong-to-canada/)
+      - [Hong Kong to Denmark](/pet-transport/hong-kong-to-denmark/)
+      - [Hong Kong to France](/pet-transport/hong-kong-to-france/)
+      - [Hong Kong to Germany](/pet-transport/hong-kong-to-germany/)
+      - [Hong Kong to Greece](/pet-transport/hong-kong-to-greece/)
+      - [Hong Kong to India](/pet-transport/hong-kong-to-india/)
+      - [Hong Kong to Indonesia](/pet-transport/hong-kong-to-indonesia/)
+      - [Hong Kong to Italy](/pet-transport/hong-kong-to-italy/)
+      - [Hong Kong to Japan](/pet-transport/hong-kong-to-japan/)
+      - [Hong Kong to Malaysia](/pet-transport/hong-kong-to-malaysia/)
+      - [Hong Kong to Mexico](/pet-transport/hong-kong-to-mexico/)
+      - [Hong Kong to Netherlands](/pet-transport/hong-kong-to-netherlands/)
+      - [Hong Kong to Philippines](/pet-transport/hong-kong-to-philippines/)
+      - [Hong Kong to Portugal](/pet-transport/hong-kong-to-portugal/)
+      - [Hong Kong to Singapore](/pet-transport/hong-kong-to-singapore/)
+      - [Hong Kong to South Africa](/pet-transport/hong-kong-to-south-africa/)
+      - [Hong Kong to South Korea](/pet-transport/hong-kong-to-south-korea/)
+      - [Hong Kong to Switzerland](/pet-transport/hong-kong-to-switzerland/)
+      - [Hong Kong to Thailand](/pet-transport/hong-kong-to-thailand/)
+      - [Hong Kong to United Arab Emirates](/pet-transport/hong-kong-to-united-arab-emirates/)
+      - [Hong Kong to United Kingdom](/pet-transport/hong-kong-to-united-kingdom/)
+      - [Hong Kong to United States](/pet-transport/hong-kong-to-united-states/)
 faqs:
   - question: "What do I need to export my pet from Hong Kong?"
     answer: "You'll need a health certificate from an official veterinarian, proof of microchip and vaccinations, and any government endorsement required by your destination country. Required for all live animal exports from Hong Kong"
