@@ -43,10 +43,6 @@ jobs:
         run: python split_sitemap.py
 
       # 6 — Deploy built site to Hostinger via FTP
-      #     Required GitHub Secrets:
-      #       FTP_SERVER   — e.g. ftp.pettransportglobal.com
-      #       FTP_USERNAME — your Hostinger FTP username
-      #       FTP_PASSWORD — your Hostinger FTP password
       - name: Deploy to Hostinger via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -55,6 +51,11 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./site/public/
           server-dir: /public_html/
+          dangerous-clean-slate: false
+          security: loose
+          port: 21
+          timeout: 60000
+          log-level: verbose
           exclude: |
             **/.git*
             **/.git*/**
