@@ -45,10 +45,10 @@
 
 ## CURRENT STATUS (update this when it changes)
 
-- **Quality routes built:** 5,147 of 37,830 country pairs (~14%). Each has unique researched content, one of 5 template variants (A–E), 1,500+ words, regulatory specifics.
-- **Remaining:** 32,683 routes to be built block-by-block per the cascading build plan.
-- **Live on pettransportglobal.com:** Nothing from this repo yet. Site still shows older template. First deploy will happen only when a block of quality content is ready and Gareth says "deploy".
-- **What's next:** Resume the cascading build plan. Build the next block of 25 routes when Gareth says "go".
+- **Quality routes built:** 5,461 of 37,830 country pairs (~14%). Each has unique researched content, one of 5 template variants (A–E), 1,500+ words, regulatory specifics.
+- **Remaining:** 32,369 routes to be built block-by-block per the cascading build plan.
+- **Blog:** 409 articles live. Content plan (252 new articles, Jun 2026 – May 2027) starts Mon 1 Jun 2026.
+- **What's next:** Day 1 blog article (international-pet-transport-guide) ready for review and publish.
 - **Live tracker:** [build_state.json](build_state.json) — machine-readable progress
 - **Plan files:** [BUILD-PLAN.md](BUILD-PLAN.md), [cascading-build-plan-pet=transport.html](cascading-build-plan-pet=transport.html)
 
@@ -60,8 +60,49 @@
 - **Match length to task.** Simple question → short answer. Complex task → full answer. Never pad.
 - **Show options before acting** on anything significant (new feature, structural change, new file type). Give 2-3 approaches, wait for choice.
 - **Admit uncertainty.** If you don't know whether a regulation, airline policy, or technical fact is current, say so. Do not invent plausible-sounding details. YMYL site — wrong info hurts pets.
-- **Match Gareth's voice in any user-facing copy** (see Content Rules below).
 - **Use British English** in all site content (the site targets UK/AU/NZ primarily, plus US — but voice is British).
+
+---
+
+## REVIEW BEFORE PUBLISH — NON-NEGOTIABLE
+
+**Every blog article or page must be presented as a rendered HTML file for review before it is committed to the repo.**
+
+The HTML preview must:
+- Replicate the actual site design faithfully: real nav (with logo, megamenus), real footer, real CSS classes from the template
+- Render the article body exactly as it will appear on the live site (h1, h2, h3, paragraphs, tables, blockquotes, author byline)
+- Include the author byline block (name, title, date) styled to match the site
+- Be delivered as a downloadable `.html` artifact so Gareth can open it in a browser
+- Not use placeholder text or lorem ipsum anywhere
+
+**Workflow:**
+1. Write the article (markdown content + YAML front matter)
+2. Build the standalone HTML preview using the site's actual nav/footer/CSS structure
+3. Present the HTML file as an artifact for Gareth to open and review
+4. Wait for explicit approval ("publish it" or feedback on what to change)
+5. Only after approval: commit the `.md` file to a branch and open a PR
+
+Do not commit the article to the repo until Gareth has reviewed and approved the HTML preview.
+
+---
+
+## AUTHOR PERSONAS — NON-NEGOTIABLE
+
+**Never use Gareth's name as an author on any page or article.** Use one of the personas below instead, matched to the topic cluster. These are the editorial voices of PetTransportGlobal. Each has a specialism that signals topical authority.
+
+| Persona | Name | Title | Use for |
+|---|---|---|---|
+| **The Logistics Lead** | Marcus Webb | Senior Pet Relocation Consultant, PetTransportGlobal | Route guides, airline policies, cargo logistics, costs and quotes, process and timeline articles |
+| **The Regulations Expert** | Dr. Sarah Okafor | International Animal Health Consultant, PetTransportGlobal | Country import/export guides, quarantine rules, titre tests, DEFRA/APHIS/DAFF regulatory content, pet passports and health certificates |
+| **The Welfare Advisor** | Emma Hartley | Certified Animal Behaviourist & Pet Travel Adviser, PetTransportGlobal | Breed welfare guides, brachycephalic restrictions, anxiety and sedation, senior and anxious pets, welfare during transit |
+| **The Planning Guide** | James Osei | Pet Transport Planning Specialist, PetTransportGlobal | Checklists, timelines, documentation prep, choosing a transport company, insurance, multi-pet moves, emergency and urgent moves |
+
+**Assignment rules:**
+- Match the persona to the dominant topic of the article. If in doubt, use Marcus Webb (the general logistics lead).
+- A single article always has one author. Do not list two personas.
+- Use the full name and title in the byline: e.g. `Marcus Webb — Senior Pet Relocation Consultant, PetTransportGlobal`
+- The persona name appears in the YAML front matter as `author:` and in the visible byline on the page.
+- These personas are consistent across all 252 content plan articles and all future content. Do not invent new personas.
 
 ---
 
@@ -85,8 +126,9 @@
 3. **Rotate templates** — assign one of 5 variants (A–E) across the block so consecutive routes don't look identical.
 4. **Humanise** — run the content mentally through `the-chameleon.md` rules (sentence rhythm, banned vocab, no em dashes, varied openings).
 5. **QA scan** — `the-auditor.md` checks: YMYL claims sourced, no safety guarantees, regulatory accuracy, British English, word count threshold (1,200+ for routes).
-6. **Commit to branch + open PR** with a clear message naming the block.
-7. **Stop.** Do not auto-continue to the next block. Wait for Gareth's "deploy" or next "go".
+6. **HTML preview** — build the standalone HTML preview and present it to Gareth for approval before committing.
+7. **Commit to branch + open PR** only after Gareth approves the preview.
+8. **Stop.** Do not auto-continue to the next block. Wait for Gareth's "deploy" or next "go".
 
 ### Confirm only for destructive actions
 Auto-proceed for: writing new files, editing files in scope, committing to a branch, opening a PR.
@@ -105,7 +147,7 @@ Stop and ask explicit confirmation for:
 After any block, end with:
 - **Block:** (e.g. "Routes 5,148–5,172: UK → 25 EU destinations")
 - **Files changed:** (list)
-- **Quality gates passed:** (research / write / template rotation / humanise / QA)
+- **Quality gates passed:** (research / write / template rotation / humanise / QA / HTML preview)
 - **Word count range:** (e.g. 1,420 – 1,890)
 - **PR opened:** (link)
 - **Next block in plan:** (preview of what "go" will do)
@@ -125,7 +167,7 @@ This is a **YMYL** site (Your Money or Your Life — pets). Wrong information ha
 4. **No em dashes.** Use commas, full stops, or "and".
 5. **No banned vocabulary:** delve, meticulous, comprehensive, tailored, navigate, leverage, seamless, robust, vital, crucial, utilize, intricate, paramount, pivotal, embark, foster, elevate, unleash, unlock, harness, streamline, holistic, ensure (overused), realm, landscape (figurative), testament.
 6. **Vary sentence rhythm.** Mix short and long. Don't start consecutive sentences the same way. Don't use the same paragraph structure across route pages — these are 38,000 pages of pet transport routes, none should read like find-and-replace.
-7. **Author attribution.** All route/country/airline/breed pages credit "Gareth, Founder, PetTransportGlobal". Trust signals matter.
+7. **Author attribution.** Use the correct persona from the Author Personas section above. Never use Gareth's name. Never use a real person's name that is not listed as a persona.
 8. **British English.** Colour, organise, kerb, behaviour, recognise. (Quotes from US sources stay in US English.)
 
 Full anti-AI rules: [workforce/content/the-chameleon.md](workforce/content/the-chameleon.md)
@@ -211,9 +253,10 @@ Treat these as **source of truth**. Do not edit without explicit approval — th
 2. Identify the next block (next 25 routes, or next non-route unit)
 3. State exactly which 25 routes you're about to build and which workers you'll load
 4. Execute the full quality gate (research → write → template rotation → humanise → QA)
-5. Commit to a new branch (e.g. `block/routes-5148-5172`) and open a PR against `main`
-6. Update `build_state.json` with new count
-7. Summarise the block in plain English. **Stop.** Wait for Gareth's "deploy" or next "go".
+5. Build the HTML preview and present it for review. Stop and wait for approval.
+6. After approval: commit to a new branch (e.g. `block/routes-5148-5172`) and open a PR against `main`
+7. Update `build_state.json` with new count
+8. Summarise the block in plain English. **Stop.** Wait for Gareth's "deploy" or next "go".
 
 ### When Gareth says "deploy"
 1. State exactly what is in the PR about to go live (routes added, page count, any structural changes)
@@ -254,10 +297,11 @@ This is the primary workflow. Gareth works from iPad, iPhone, or any device usin
 The GitHub MCP connector is active on this project and has write access to the repo. Claude can read files, create branches, commit files, open PRs, and merge PRs entirely from chat.
 
 **The daily loop:**
-1. Gareth says **"go"** — Claude reads the build plan, builds the next block, commits to a branch, opens a PR
-2. Gareth reviews the PR summary in chat (Claude describes what changed)
-3. Gareth says **"deploy"** — Claude merges the PR to `main`, GitHub Actions builds and deploys automatically
-4. Site is live on pettransportglobal.com within 5-30 minutes, no further action needed
+1. Gareth says **"go"** — Claude reads the build plan, builds the next block, produces the HTML preview
+2. Gareth opens the HTML preview in a browser and reviews design + content
+3. Gareth says **"publish it"** — Claude commits the `.md` to a branch, opens a PR
+4. Gareth says **"deploy"** — Claude merges the PR to `main`, GitHub Actions builds and deploys automatically
+5. Site is live on pettransportglobal.com within 5-30 minutes, no further action needed
 
 **No copy-paste. No file manager. No FTP. No terminal.**
 
@@ -318,6 +362,7 @@ Reference these files when working in their domain. Don't load them all every se
 - Hostinger FTP credentials live in GitHub Secrets (`FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`). Never paste these into chat or commit them.
 - The site has a template originally in `template-source/`. That directory is reference only — do not edit, do not delete.
 - The GitHub MCP connector has write access to this repo. Claude can commit and merge from any Claude app session.
+- **Never use Gareth's real name as an author on any published content.** Use the author personas defined above.
 
 ---
 
