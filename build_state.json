@@ -2,7 +2,7 @@
   "last_updated": "2026-05-22",
   "routes_built": 5461,
   "routes_remaining": 32371,
-  "total_site_pages": 6258,
+  "total_site_pages": 6259,
   "completed_chunks": 12,
   "next_chunk": 13,
   "next_chunk_tier": "A",
@@ -12,5 +12,8 @@
   "tier_c_remaining": 7720,
   "tier_d_remaining": 23512,
   "sitemap_last_split": "2026-05-09",
-  "notes": "Chunks 1-12 complete. Generator covers 195 countries, 37,830 pairs. 32,371 unbuilt. Run 'python generate_all_remaining.py' to generate all at once."
+  "blog_articles": 410,
+  "content_plan_start": "2026-06-01",
+  "content_plan_articles_written": 1,
+  "notes": "Chunks 1-12 complete. Blog Day 1 (international-pet-transport-guide) published. FTP deploy fixed 2026-05-22."
 }
