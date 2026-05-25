@@ -72,8 +72,6 @@ The site has 6,200+ pages. A full FTP upload takes 2-3 hours and Hostinger's sha
 
 The solution is the `.ftp-deploy-sync-state.json` file on Hostinger. This file tracks what's already deployed. The FTP Deploy Action reads it, diffs against the local build, and only uploads files that changed. A single new blog article deploys in under 60 seconds.
 
-The state file was bootstrapped by `generate_ftp_state.py` which runs automatically on first deploy (when no state file exists on the server). After the first successful deploy, the FTP action manages the state file itself.
-
 ### Critical rules
 
 - **Never delete `.ftp-deploy-sync-state.json` from Hostinger.** If deleted, the next deploy attempts a full upload which will fail.
@@ -152,6 +150,32 @@ The HTML preview must:
 - Use the full name and title in the byline: e.g. `Marcus Webb — Senior Pet Relocation Consultant, PetTransportGlobal`
 - The persona name appears in the YAML front matter as `author:` and in the visible byline on the page.
 - These personas are consistent across all 252 content plan articles and all future content. Do not invent new personas.
+
+---
+
+## QUOTING SYSTEM
+
+PetTransportGlobal produces PDF quotes for clients. The design is locked and must be reproduced exactly for every quote. Full specification is in **[quotedesign.md](quotedesign.md)** — read it before producing any quote.
+
+### Key rules (summary — full detail in quotedesign.md)
+
+- **No client name on the quote.** Do not open with "Dear [Name]" or reference the client by name anywhere in the document.
+- **No Gareth's name or founder credit.** The footer says PetTransportGlobal only.
+- **Payment is in full and upfront before any work begins.** Never offer a deposit or instalment. The reason: PetTransportGlobal pays suppliers in full before work starts, so a 50% deposit would not cover costs.
+- **Default margin: 20%** unless Gareth specifies otherwise for a particular job.
+- **Always split into two quotes when boarding is relevant:** Quote 1 (transport & documentation), Quote 2 (boarding — framed as optional, client may arrange their own).
+- **Quote reference format:** `PTG-YYYYMMDD-NNN`
+- **Valid for 30 days.**
+- **Currency:** Euro (EUR) for Turkey-origin quotes. Use local currency as appropriate for other origins.
+- **Logo:** Solid paw print SVG (Font Awesome 6 fa-paw path) — see quotedesign.md for the exact path data.
+- **Rendering:** HTML → PDF via Playwright/Chromium with embedded woff2 fonts. Use `render.py` and `measure.py` in `/home/claude/`. Always run `measure.py` after render to confirm no page overflow before presenting to Gareth.
+
+### To produce a quote from scratch
+1. Read [quotedesign.md](quotedesign.md) in full.
+2. Confirm margin, currency, services, and origin/destination with Gareth.
+3. Calculate all figures — double-check every line.
+4. Adapt the last `quote.html`, update all figures, ref number, date, and route.
+5. Render → measure → visual check → present to Gareth.
 
 ---
 
@@ -277,6 +301,7 @@ pet-transport/
 ├── generate_ftp_state.py          # FTP state file bootstrapper (runs on first deploy only)
 ├── split_sitemap.py               # Splits Hugo sitemap into section sitemaps
 ├── CLAUDE.md                      # THIS FILE
+├── quotedesign.md                 # PDF quote design specification (read before producing any quote)
 ├── WORKFLOW.md                    # Step-by-step session guide
 ├── BUILD-PLAN.md                  # Session log + remaining tasks
 ├── build_state.json               # Machine-readable progress
@@ -359,6 +384,7 @@ The GitHub MCP connector is active on this project and has write access to the r
 - The site has a template originally in `template-source/`. That directory is reference only — do not edit, do not delete.
 - The GitHub MCP connector has write access to this repo (except workflow files).
 - **Never use Gareth's real name as an author on any published content.** Use the author personas defined above.
+- **Quote design is locked.** See [quotedesign.md](quotedesign.md) before producing any client-facing PDF quote.
 
 ---
 
@@ -371,4 +397,4 @@ The GitHub MCP connector is active on this project and has write access to the r
 
 ---
 
-*Last updated: 2026-05-22*
+*Last updated: 2026-05-25*
