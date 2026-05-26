@@ -13,6 +13,18 @@
 
 ---
 
+## EM DASH BAN — ABSOLUTE, NO EXCEPTIONS
+
+**Never use em dashes (— or –) anywhere, ever.** This applies to:
+- All site content (articles, route pages, country guides, airline pages, breed guides)
+- All client-facing messages (WhatsApp, email, quotes, cover letters)
+- All internal documents (CLAUDE.md, BUILD-PLAN.md, MEMORY.md, quotedesign.md)
+- All chat responses from Claude to Gareth
+
+Use commas, full stops, colons, brackets, or restructure the sentence instead. There are no circumstances under which an em dash is acceptable. Not in headings, not in table cells, not in JSON, not in HTML attributes, not anywhere.
+
+---
+
 ## ABOUT THE USER
 
 - **Name:** Gareth
@@ -106,7 +118,7 @@ Respond, draft emails, produce quotes, etc. as required.
 Always close with a clearly labelled section:
 
 ---
-**📋 UPDATE THE TRACKER — paste this into Windows PowerShell and press Enter:**
+**TRACKER UPDATE — paste this into Windows PowerShell and press Enter:**
 
 ```powershell
 Invoke-WebRequest -Uri "https://script.google.com/macros/s/AKfycbxJ0NgVVj1F3GK9K7qz5jG1OByfG3GcORJlQgxoM4jqyiwVmfArEercQ-OwAUDzv-_lIw/exec" -Method POST -ContentType "application/json" -Body '{ ...full JSON... }' -UseBasicParsing
@@ -114,7 +126,7 @@ Invoke-WebRequest -Uri "https://script.google.com/macros/s/AKfycbxJ0NgVVj1F3GK9K
 ---
 
 For **new rows**: the webhook appends the row above the PIPELINE SUMMARY line.
-For **updates to existing rows**: the webhook currently only adds rows, so generate the PowerShell to add an updated version. Note in the command description that the old row should be manually deleted after the new one lands. (Future: update script to support row editing by REF.)
+For **updates to existing rows**: the webhook finds the matching REF and overwrites that row in place.
 
 ### Notes on apostrophes / single quotes
 
@@ -128,6 +140,10 @@ fileId: 1AWlrcecS7B5z_1qujwgK_bu4LKNgWM48JGrnm7Yetbk
 ```
 
 This returns a markdown table of all rows. Parse it to find: the last PTG-XXX number, the current status of any referenced client, their notes, quote refs, and next actions.
+
+### Email reading via Claude in Chrome
+
+Claude in Chrome can read Gareth's personal Outlook account (garethsomers@outlook.com) by opening outlook.live.com in a browser tab. When asked to check supplier emails or log responses for an enquiry, navigate to the inbox and sent items, read the relevant threads, extract quote figures from any online quote links (Xero, Quotient, etc.), and include all findings in the tracker update.
 
 ---
 
@@ -166,9 +182,9 @@ Live on pettransportglobal.com
 
 | Change type | Expected deploy time |
 |---|---|
-| 1 new blog article | 30–60 seconds |
-| 25 new route pages | 2–5 minutes |
-| Template change (affects all pages) | 30–60 minutes |
+| 1 new blog article | 30-60 seconds |
+| 25 new route pages | 2-5 minutes |
+| Template change (affects all pages) | 30-60 minutes |
 | First deploy after state file deletion | Will fail — regenerate state file first |
 
 ---
@@ -176,7 +192,7 @@ Live on pettransportglobal.com
 ## CURRENT STATUS (update this when it changes)
 
 - **Quality routes built:** 5,461 of 37,830 country pairs (~14%).
-- **Blog:** 411 articles. Content plan: 252 new articles Jun 2026–May 2027. Day 3 is next.
+- **Blog:** 411 articles. Content plan: 252 new articles Jun 2026-May 2027. Day 3 is next.
 - **Deploy pipeline:** Working. Incremental FTP via GitHub Actions. Confirmed 2026-05-22.
 - **Enquiry tracker:** Live. PTG-001 to PTG-005 in sheet. Webhook v2 deployed and confirmed working.
 - **Live tracker:** [build_state.json](build_state.json)
@@ -187,11 +203,24 @@ Live on pettransportglobal.com
 ## COMMUNICATION DEFAULTS
 
 - **No filler.** Never start with "Great question!", "Of course!", "Certainly!". Start with the answer.
-- **Match length to task.** Simple question → short answer. Complex task → full answer. Never pad.
+- **Match length to task.** Simple question = short answer. Complex task = full answer. Never pad.
 - **Show options before acting** on anything significant.
 - **Admit uncertainty.** Do not invent plausible-sounding details. YMYL site — wrong info hurts pets.
 - **Use British English** in all site content.
 - **When editing files that need Gareth to paste, always provide the COMPLETE file contents.**
+- **No em dashes anywhere.** See EM DASH BAN section above.
+
+---
+
+## CLIENT COMMUNICATION TONE
+
+All messages to clients (WhatsApp, email, cover letters) must match the tone Gareth uses: conversational, direct, warm but not cheesy. Specific rules:
+
+- No sign-offs like "More soon", "Warm regards", "Kind regards" unless Gareth asks for them
+- No filler phrases: "I wanted to flag", "I just wanted to reach out", "I hope this finds you well"
+- No em dashes anywhere (see EM DASH BAN)
+- Write as a person would text or email a client they have already spoken to
+- Short sentences. Plain words. No fluff.
 
 ---
 
@@ -234,6 +263,7 @@ Full specification in **[quotedesign.md](quotedesign.md)** — read it before pr
 - Quote reference format: `PTG-YYYYMMDD-NNN`. Valid 30 days.
 - Currency: EUR for Turkey-origin. Local currency for other origins.
 - Rendering: HTML to PDF via Playwright/Chromium. Use `render.py` and `measure.py` in `/home/claude/`.
+- No em dashes in any quote content, ever.
 
 ### To produce a quote
 1. Read [quotedesign.md](quotedesign.md).
@@ -269,7 +299,7 @@ Never bulk-generate content. One block at a time (25 routes or equivalent). Full
 1. No safety guarantees.
 2. Named, dated sources for every regulatory claim.
 3. Warm, expert tone.
-4. No em dashes.
+4. **No em dashes. Ever. Anywhere. See EM DASH BAN at the top of this file.**
 5. No banned vocabulary: delve, meticulous, comprehensive, tailored, navigate, leverage, seamless, robust, vital, crucial, utilize, intricate, paramount, pivotal, embark, foster, elevate, unleash, unlock, harness, streamline, holistic, realm, landscape (figurative), testament.
 6. Vary sentence rhythm.
 7. Use correct author persona. Never use Gareth's name.
@@ -282,7 +312,7 @@ Never bulk-generate content. One block at a time (25 routes or equivalent). Full
 - Unique `title` and `description` per page.
 - One `<h1>` per page containing primary keyword.
 - Target keyword in first 100 words, one H2, meta description.
-- Internal links: route → origin hub + destination country guide + relevant airlines.
+- Internal links: route to origin hub + destination country guide + relevant airlines.
 - FAQ schema from `faqs:` front matter.
 - No duplicate content.
 
@@ -350,6 +380,7 @@ pet-transport/
 - Never use Gareth's real name as author on published content.
 - Quote design is locked — see quotedesign.md.
 - Enquiry tracker webhook v2 is live — see ENQUIRY TRACKING SYSTEM section. Always read the sheet before responding to any client enquiry.
+- No em dashes anywhere, ever. See EM DASH BAN at the top of this file.
 
 ---
 
