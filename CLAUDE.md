@@ -46,19 +46,26 @@
 
 ### Overview
 
-All client enquiries are tracked in a Google Sheet. When a new enquiry comes in, Gareth pastes it into this chat. Claude reads the live sheet, determines the next REF number, and produces a PowerShell command that Gareth pastes into Windows PowerShell to add the row directly to the sheet via webhook. No file downloads or uploads needed.
+All client enquiries are tracked in a live Google Sheet. Every time Gareth pastes a new enquiry or an update on an existing client into this chat, Claude must:
+
+1. **Read the sheet first** — always, without being asked
+2. **Use the sheet as the source of truth** for all client context (status, notes, quote refs, next actions)
+3. **Respond to the enquiry** using the context from the sheet
+4. **End every response** with a PowerShell command that updates the sheet to reflect what just happened
+
+This is non-negotiable. Every client interaction ends with a PowerShell command. No exceptions.
 
 ### Key details
 
 - **Google Sheet:** https://docs.google.com/spreadsheets/d/1AWlrcecS7B5z_1qujwgK_bu4LKNgWM48JGrnm7Yetbk/edit
 - **Sheet file ID:** `1AWlrcecS7B5z_1qujwgK_bu4LKNgWM48JGrnm7Yetbk`
-- **Webhook URL:** `https://script.google.com/macros/s/AKfycby1b4a4UcMmwBqgl0AUmAzaefwR8APcnK5vfL4NZI-_t4wK9HiNwK8K44hUBEGSaSg/exec`
+- **Webhook URL (v2 — current):** `https://script.google.com/macros/s/AKfycbxJ0NgVVj1F3GK9K7qz5jG1OByfG3GcORJlQgxoM4jqyiwVmfArEercQ-OwAUDzv-_lIw/exec`
 - **Sheet name:** `Enquiry Tracker`
-- **REF format:** PTG-001, PTG-002, PTG-003... (increment from last row in sheet)
+- **REF format:** PTG-001, PTG-002, PTG-003... (zero-padded to 3 digits, increment from last data row)
 
-### Column order (18 columns, must match exactly)
+### Column order (18 columns — must match exactly)
 
-| # | Field | Key in JSON |
+| # | Field | JSON key |
 |---|---|---|
 | 1 | REF | `ref` |
 | 2 | DATE IN | `date_in` |
@@ -83,29 +90,44 @@ All client enquiries are tracked in a Google Sheet. When a new enquiry comes in,
 
 `New enquiry` / `Info requested` / `Awaiting quotes` / `Quote sent` / `Quote accepted` / `In progress` / `Completed` / `On hold` / `Lost / no reply`
 
-### Process — follow this every time a new enquiry comes in
+### Process — every single client interaction, without exception
 
-1. **Read the sheet first.** Use the Google Drive connector:
-   - Tool: `Google Drive: read_file_content`, fileId: `1AWlrcecS7B5z_1qujwgK_bu4LKNgWM48JGrnm7Yetbk`
-   - Find the last PTG-XXX number and increment by 1 for the new row.
+**Step 1 — Read the sheet**
+Use `Google Drive: read_file_content` with fileId `1AWlrcecS7B5z_1qujwgK_bu4LKNgWM48JGrnm7Yetbk` before doing anything else. This gives the current state of all enquiries: who they are, what stage they are at, what has already been sent or said.
 
-2. **Build the JSON** from the enquiry details. Use today's date for `date_in` and `last_updated`. Set `status` appropriately (`New enquiry` or `Info requested` if a response has already been sent).
+**Step 2 — Determine what changed**
+- New enquiry: assign the next PTG number (highest existing + 1), build a full new row
+- Existing enquiry update: identify the correct PTG row, update the relevant fields (status, notes, next action, last updated, quote ref/value if a quote was sent)
 
-3. **Generate the PowerShell command** in this exact format — one block Gareth can copy and paste straight into Windows PowerShell:
+**Step 3 — Handle the enquiry**
+Respond, draft emails, produce quotes, etc. as required.
+
+**Step 4 — End every response with a PowerShell command**
+Always close with a clearly labelled section:
+
+---
+**📋 UPDATE THE TRACKER — paste this into Windows PowerShell and press Enter:**
 
 ```powershell
-Invoke-WebRequest -Uri "https://script.google.com/macros/s/AKfycby1b4a4UcMmwBqgl0AUmAzaefwR8APcnK5vfL4NZI-_t4wK9HiNwK8K44hUBEGSaSg/exec" -Method POST -ContentType "application/json" -Body '{"ref":"PTG-00X","date_in":"DD/MM/YYYY","client_name":"...","email":"...","phone":"...","origin":"...","destination":"...","pet_type":"...","breed":"...","weight":"...","travel_date":"...","notes":"...","status":"...","quote_ref":"","quote_value":"","currency":"...","next_action":"...","last_updated":"DD/MM/YYYY"}' -UseBasicParsing
+Invoke-WebRequest -Uri "https://script.google.com/macros/s/AKfycbxJ0NgVVj1F3GK9K7qz5jG1OByfG3GcORJlQgxoM4jqyiwVmfArEercQ-OwAUDzv-_lIw/exec" -Method POST -ContentType "application/json" -Body '{ ...full JSON... }' -UseBasicParsing
+```
+---
+
+For **new rows**: the webhook appends the row above the PIPELINE SUMMARY line.
+For **updates to existing rows**: the webhook currently only adds rows, so generate the PowerShell to add an updated version. Note in the command description that the old row should be manually deleted after the new one lands. (Future: update script to support row editing by REF.)
+
+### Notes on apostrophes / single quotes
+
+Single quotes inside the JSON body will break the PowerShell command. Always replace apostrophes in any field value with a space or remove them. Example: "owner's dog" becomes "owners dog".
+
+### How Claude reads the sheet
+
+```
+Tool: Google Drive: read_file_content
+fileId: 1AWlrcecS7B5z_1qujwgK_bu4LKNgWM48JGrnm7Yetbk
 ```
 
-4. **Tell Gareth:** "Open Windows PowerShell (search for it in the Start menu), paste this command and press Enter. The row will appear in the sheet immediately."
-
-5. **After Gareth confirms** it worked, read the sheet again to verify the row is there.
-
-### Important notes on the webhook
-
-- Claude cannot call the webhook directly — Google's robots.txt blocks automated requests from Claude's servers. The PowerShell command runs from Gareth's own machine and goes through fine.
-- The Apps Script is deployed as "Anyone" access — no login needed.
-- **Single quotes in the notes field will break the command.** If any field contains an apostrophe (e.g. "owner's dog"), remove it or replace with a space before putting it in the JSON. Write "owners dog" not "owner's dog".
+This returns a markdown table of all rows. Parse it to find: the last PTG-XXX number, the current status of any referenced client, their notes, quote refs, and next actions.
 
 ---
 
@@ -133,10 +155,6 @@ Updated state file uploaded to Hostinger
 Live on pettransportglobal.com
 ```
 
-### Why incremental — DO NOT attempt full-site FTP uploads
-
-The site has 6,200+ pages. A full FTP upload takes 2-3 hours and Hostinger's shared hosting drops the connection before it finishes. This was discovered on 2026-05-22 after multiple failed deploy attempts.
-
 ### Critical rules
 
 - **Never delete `.ftp-deploy-sync-state.json` from Hostinger.**
@@ -160,7 +178,7 @@ The site has 6,200+ pages. A full FTP upload takes 2-3 hours and Hostinger's sha
 - **Quality routes built:** 5,461 of 37,830 country pairs (~14%).
 - **Blog:** 411 articles. Content plan: 252 new articles Jun 2026–May 2027. Day 3 is next.
 - **Deploy pipeline:** Working. Incremental FTP via GitHub Actions. Confirmed 2026-05-22.
-- **Enquiry tracker:** Live. 5 enquiries logged (PTG-001 to PTG-005). Webhook deployed.
+- **Enquiry tracker:** Live. PTG-001 to PTG-005 in sheet. Webhook v2 deployed and confirmed working.
 - **Live tracker:** [build_state.json](build_state.json)
 - **Plan files:** [BUILD-PLAN.md](BUILD-PLAN.md), [cascading-build-plan-pet=transport.html](cascading-build-plan-pet=transport.html)
 
@@ -298,13 +316,11 @@ pet-transport/
 
 ## SESSION PROTOCOLS
 
-### New enquiry comes in
-1. Read the tracker sheet (Google Drive connector, fileId `1AWlrcecS7B5z_1qujwgK_bu4LKNgWM48JGrnm7Yetbk`)
-2. Determine next REF number
-3. Build JSON from enquiry details
-4. Generate PowerShell command
-5. Present to Gareth to paste into PowerShell
-6. Verify row appeared in sheet
+### Every client enquiry interaction
+1. Read the tracker sheet immediately (Google Drive connector)
+2. Use sheet as source of truth for client context
+3. Handle the enquiry (respond, quote, draft email, etc.)
+4. End the response with a PowerShell command to update the sheet
 
 ### "go" or "next block"
 1. Read BUILD-PLAN.md and build_state.json
@@ -333,7 +349,7 @@ pet-transport/
 - .github/workflows/deploy.yml cannot be edited via MCP connector (403).
 - Never use Gareth's real name as author on published content.
 - Quote design is locked — see quotedesign.md.
-- Enquiry tracker webhook is live — see ENQUIRY TRACKING SYSTEM section.
+- Enquiry tracker webhook v2 is live — see ENQUIRY TRACKING SYSTEM section. Always read the sheet before responding to any client enquiry.
 
 ---
 
