@@ -25,6 +25,43 @@ Use commas, full stops, colons, brackets, or restructure the sentence instead. T
 
 ---
 
+## WHATSAPP AND EMAIL ACCESS RULES — NON-NEGOTIABLE
+
+These rules govern how Claude reads and interacts with Gareth's WhatsApp and email accounts via Claude in Chrome.
+
+### What Claude may do
+
+- **Read** WhatsApp messages and email threads to build context
+- **Draft** messages and emails for Gareth to review and send himself
+- **Log** information from messages into the tracker
+
+### What Claude must never do
+
+- **Never send a WhatsApp message** to anyone unless Gareth explicitly instructs it in that specific conversation
+- **Never send an email** to anyone unless Gareth explicitly instructs it in that specific conversation
+- **Never delete** any WhatsApp message or email, ever, under any circumstances
+- **Never reply** to any message or email automatically or proactively
+
+### WhatsApp reading rules
+
+- Claude may only read WhatsApp conversations with phone numbers that appear in the tracker spreadsheet
+- Do not open, read, or reference any WhatsApp conversation with a number not in the tracker
+- When Gareth says "check WhatsApp", read the conversation list and identify any messages from tracked phone numbers only
+- New enquiries: Gareth will instruct Claude when to add a new number/enquiry to the tracker. Do not add new entries from WhatsApp without explicit instruction.
+
+### Email reading rules
+
+- Claude may read all emails in the inbox and sent items to build full context on supplier conversations
+- Read threads completely so all quotes, replies, and follow-ups are captured
+- Extract quote figures from any linked online quotes (Xero, Quotient, etc.) by opening the link
+- Never compose or send any email without explicit instruction from Gareth
+
+### WhatsApp access method
+
+WhatsApp Web (web.whatsapp.com) must be open and logged in in Chrome before Claude can read it. Claude uses Claude in Chrome to read the page. Gareth keeps a tab open at web.whatsapp.com for this purpose.
+
+---
+
 ## ABOUT THE USER
 
 - **Name:** Gareth
@@ -130,7 +167,7 @@ For **updates to existing rows**: the webhook finds the matching REF and overwri
 
 ### Notes on apostrophes / single quotes
 
-Single quotes inside the JSON body will break the PowerShell command. Always replace apostrophes in any field value with a space or remove them. Example: "owner's dog" becomes "owners dog".
+Single quotes inside the JSON body will break the PowerShell command. Always replace apostrophes in any field value with a space or remove them. Example: "owners dog" not "owner's dog".
 
 ### How Claude reads the sheet
 
@@ -143,7 +180,20 @@ This returns a markdown table of all rows. Parse it to find: the last PTG-XXX nu
 
 ### Email reading via Claude in Chrome
 
-Claude in Chrome can read Gareth's personal Outlook account (garethsomers@outlook.com) by opening outlook.live.com in a browser tab. When asked to check supplier emails or log responses for an enquiry, navigate to the inbox and sent items, read the relevant threads, extract quote figures from any online quote links (Xero, Quotient, etc.), and include all findings in the tracker update.
+Claude in Chrome reads Gareth's personal Outlook account (garethsomers@outlook.com) by opening outlook.live.com in a browser tab. When asked to check supplier emails or log responses for an enquiry:
+- Read all emails in the inbox and sent items to get full context on supplier conversations
+- Read threads completely so all quotes, replies, and follow-ups are captured
+- Open any linked online quotes (Xero, Quotient, etc.) to extract itemised figures
+- Include all findings in the tracker update
+- Never send or delete any email
+
+### WhatsApp reading via Claude in Chrome
+
+Claude in Chrome reads WhatsApp Web (web.whatsapp.com) when Gareth has a tab open and asks for a check. Rules:
+- Only read conversations with phone numbers that appear in the tracker spreadsheet
+- Never open conversations with numbers not in the tracker
+- Never send, delete, or reply to any message
+- New enquiries are only added to the tracker when Gareth explicitly instructs it
 
 ---
 
@@ -194,7 +244,7 @@ Live on pettransportglobal.com
 - **Quality routes built:** 5,461 of 37,830 country pairs (~14%).
 - **Blog:** 411 articles. Content plan: 252 new articles Jun 2026-May 2027. Day 3 is next.
 - **Deploy pipeline:** Working. Incremental FTP via GitHub Actions. Confirmed 2026-05-22.
-- **Enquiry tracker:** Live. PTG-001 to PTG-005 in sheet. Webhook v2 deployed and confirmed working.
+- **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v2 deployed and confirmed working.
 - **Live tracker:** [build_state.json](build_state.json)
 - **Plan files:** [BUILD-PLAN.md](BUILD-PLAN.md), [cascading-build-plan-pet=transport.html](cascading-build-plan-pet=transport.html)
 
@@ -381,6 +431,7 @@ pet-transport/
 - Quote design is locked — see quotedesign.md.
 - Enquiry tracker webhook v2 is live — see ENQUIRY TRACKING SYSTEM section. Always read the sheet before responding to any client enquiry.
 - No em dashes anywhere, ever. See EM DASH BAN at the top of this file.
+- Never send WhatsApp messages or emails without explicit instruction. Never delete anything. Read only. See WHATSAPP AND EMAIL ACCESS RULES.
 
 ---
 
