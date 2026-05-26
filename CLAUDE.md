@@ -95,26 +95,19 @@ WhatsApp Web (web.whatsapp.com) must be open and logged in in Chrome before Clau
 
 ### Overview
 
-All client enquiries are tracked in a live Google Sheet. Every time Gareth pastes a new enquiry or an update on an existing client into this chat, Claude must:
-
-1. **Read the sheet first** — always, without being asked
-2. **Use the sheet as the source of truth** for all client context (status, notes, quote refs, next actions)
-3. **Respond to the enquiry** using the context from the sheet
-4. **End every response** with a PowerShell command that updates the sheet to reflect what just happened
-
-This is non-negotiable. Every client interaction ends with a PowerShell command. No exceptions.
+All client enquiries are tracked in a live Google Sheet. Every client interaction must end with a tracker update. The webhook accepts two formats: POST (desktop) and GET (mobile). Always provide both.
 
 ### Key details
 
 - **Google Sheet:** https://docs.google.com/spreadsheets/d/1AWlrcecS7B5z_1qujwgK_bu4LKNgWM48JGrnm7Yetbk/edit
 - **Sheet file ID:** `1AWlrcecS7B5z_1qujwgK_bu4LKNgWM48JGrnm7Yetbk`
-- **Webhook URL (v2 — current):** `https://script.google.com/macros/s/AKfycbxJ0NgVVj1F3GK9K7qz5jG1OByfG3GcORJlQgxoM4jqyiwVmfArEercQ-OwAUDzv-_lIw/exec`
+- **Webhook URL (v4, current):** `https://script.google.com/macros/s/AKfycbxJ0NgVVj1F3GK9K7qz5jG1OByfG3GcORJlQgxoM4jqyiwVmfArEercQ-OwAUDzv-_lIw/exec`
 - **Sheet name:** `Enquiry Tracker`
-- **REF format:** PTG-001, PTG-002, PTG-003... (zero-padded to 3 digits, increment from last data row)
+- **REF format:** PTG-001, PTG-002, PTG-003... (zero-padded to 3 digits, increment from highest existing)
 
 ### Column order (18 columns — must match exactly)
 
-| # | Field | JSON key |
+| # | Field | JSON key / URL param |
 |---|---|---|
 | 1 | REF | `ref` |
 | 2 | DATE IN | `date_in` |
@@ -142,32 +135,53 @@ This is non-negotiable. Every client interaction ends with a PowerShell command.
 ### Process — every single client interaction, without exception
 
 **Step 1 — Read the sheet**
-Use `Google Drive: read_file_content` with fileId `1AWlrcecS7B5z_1qujwgK_bu4LKNgWM48JGrnm7Yetbk` before doing anything else. This gives the current state of all enquiries: who they are, what stage they are at, what has already been sent or said.
+Use `Google Drive: read_file_content` with fileId `1AWlrcecS7B5z_1qujwgK_bu4LKNgWM48JGrnm7Yetbk` before doing anything else.
 
 **Step 2 — Determine what changed**
-- New enquiry: assign the next PTG number (highest existing + 1), build a full new row
-- Existing enquiry update: identify the correct PTG row, update the relevant fields (status, notes, next action, last updated, quote ref/value if a quote was sent)
+- New enquiry: assign the next PTG number (highest existing + 1)
+- Existing enquiry: identify the correct PTG row, update the relevant fields
 
 **Step 3 — Handle the enquiry**
-Respond, draft emails, produce quotes, etc. as required.
+Respond, draft messages, produce quotes, etc.
 
-**Step 4 — End every response with a PowerShell command**
-Always close with a clearly labelled section:
+**Step 4 — End every response with BOTH update formats**
+
+Always close with this section, providing both options every time:
 
 ---
-**TRACKER UPDATE — paste this into Windows PowerShell and press Enter:**
 
+**TRACKER UPDATE**
+
+**Desktop (Windows PowerShell):**
 ```powershell
-Invoke-WebRequest -Uri "https://script.google.com/macros/s/AKfycbxJ0NgVVj1F3GK9K7qz5jG1OByfG3GcORJlQgxoM4jqyiwVmfArEercQ-OwAUDzv-_lIw/exec" -Method POST -ContentType "application/json" -Body '{ ...full JSON... }' -UseBasicParsing
+Invoke-WebRequest -Uri "https://script.google.com/macros/s/AKfycbxJ0NgVVj1F3GK9K7qz5jG1OByfG3GcORJlQgxoM4jqyiwVmfArEercQ-OwAUDzv-_lIw/exec" -Method POST -ContentType "application/json" -Body '{"ref":"PTG-00X","date_in":"DD/MM/YYYY",...all 18 fields...}' -UseBasicParsing
 ```
+
+**Mobile (iPhone / iPad — tap this link):**
+`https://script.google.com/macros/s/AKfycbxJ0NgVVj1F3GK9K7qz5jG1OByfG3GcORJlQgxoM4jqyiwVmfArEercQ-OwAUDzv-_lIw/exec?ref=PTG-00X&date_in=DD%2FMM%2FYYYY&...all 18 fields URL-encoded...`
+
 ---
 
-For **new rows**: the webhook appends the row above the PIPELINE SUMMARY line.
-For **updates to existing rows**: the webhook finds the matching REF and overwrites that row in place.
+### How the webhook works
+
+- **POST** (PowerShell, desktop): sends JSON body. Used on Windows PC.
+- **GET** (tappable link, mobile): sends same 18 fields as URL parameters. Used on iPhone/iPad.
+- Both call the same upsert logic: if the REF exists in the sheet it overwrites that row; if it is new it inserts above the PIPELINE SUMMARY line.
+- On first tap on a new device, Google shows a one-sentence warning page with a Dismiss button. Tap Dismiss once. It will not appear again on that device.
+- A green "Tracker updated" confirmation page loads on success.
+
+### Building the mobile link
+
+URL-encode all field values. Key rules:
+- Spaces become `+` or `%20`
+- Forward slashes in dates become `%2F` (so 26/05/2026 becomes `26%2F05%2F2026`)
+- Ampersands in values become `%26`
+- Do not include apostrophes in any field value
+- Keep notes fields concise to avoid URL length issues (under 500 chars for the notes param)
 
 ### Notes on apostrophes / single quotes
 
-Single quotes inside the JSON body will break the PowerShell command. Always replace apostrophes in any field value with a space or remove them. Example: "owners dog" not "owner's dog".
+Single quotes break the PowerShell JSON body. Always replace apostrophes with a space or remove them in both formats. Example: "owners dog" not "owner's dog".
 
 ### How Claude reads the sheet
 
@@ -176,24 +190,15 @@ Tool: Google Drive: read_file_content
 fileId: 1AWlrcecS7B5z_1qujwgK_bu4LKNgWM48JGrnm7Yetbk
 ```
 
-This returns a markdown table of all rows. Parse it to find: the last PTG-XXX number, the current status of any referenced client, their notes, quote refs, and next actions.
+Parse to find: the last PTG-XXX number, current status of any referenced client, notes, quote refs, next actions.
 
 ### Email reading via Claude in Chrome
 
-Claude in Chrome reads Gareth's personal Outlook account (garethsomers@outlook.com) by opening outlook.live.com in a browser tab. When asked to check supplier emails or log responses for an enquiry:
-- Read all emails in the inbox and sent items to get full context on supplier conversations
-- Read threads completely so all quotes, replies, and follow-ups are captured
-- Open any linked online quotes (Xero, Quotient, etc.) to extract itemised figures
-- Include all findings in the tracker update
-- Never send or delete any email
+Claude in Chrome reads Gareth's personal Outlook account (garethsomers@outlook.com) at outlook.live.com. Read all inbox and sent items for full supplier context. Open linked Xero/Quotient quotes to extract figures. Never send or delete anything.
 
 ### WhatsApp reading via Claude in Chrome
 
-Claude in Chrome reads WhatsApp Web (web.whatsapp.com) when Gareth has a tab open and asks for a check. Rules:
-- Only read conversations with phone numbers that appear in the tracker spreadsheet
-- Never open conversations with numbers not in the tracker
-- Never send, delete, or reply to any message
-- New enquiries are only added to the tracker when Gareth explicitly instructs it
+Claude in Chrome reads WhatsApp Web (web.whatsapp.com). Only read conversations with phone numbers in the tracker. Never send, delete, or reply. New enquiries added to tracker only on Gareth's explicit instruction.
 
 ---
 
@@ -244,7 +249,7 @@ Live on pettransportglobal.com
 - **Quality routes built:** 5,461 of 37,830 country pairs (~14%).
 - **Blog:** 411 articles. Content plan: 252 new articles Jun 2026-May 2027. Day 3 is next.
 - **Deploy pipeline:** Working. Incremental FTP via GitHub Actions. Confirmed 2026-05-22.
-- **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v2 deployed and confirmed working.
+- **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 deployed. Both POST (desktop) and GET (mobile) confirmed working.
 - **Live tracker:** [build_state.json](build_state.json)
 - **Plan files:** [BUILD-PLAN.md](BUILD-PLAN.md), [cascading-build-plan-pet=transport.html](cascading-build-plan-pet=transport.html)
 
@@ -399,8 +404,8 @@ pet-transport/
 ### Every client enquiry interaction
 1. Read the tracker sheet immediately (Google Drive connector)
 2. Use sheet as source of truth for client context
-3. Handle the enquiry (respond, quote, draft email, etc.)
-4. End the response with a PowerShell command to update the sheet
+3. Handle the enquiry (respond, quote, draft message, etc.)
+4. End the response with BOTH the PowerShell command AND the tappable mobile link
 
 ### "go" or "next block"
 1. Read BUILD-PLAN.md and build_state.json
@@ -429,7 +434,7 @@ pet-transport/
 - .github/workflows/deploy.yml cannot be edited via MCP connector (403).
 - Never use Gareth's real name as author on published content.
 - Quote design is locked — see quotedesign.md.
-- Enquiry tracker webhook v2 is live — see ENQUIRY TRACKING SYSTEM section. Always read the sheet before responding to any client enquiry.
+- Enquiry tracker webhook v4 is live. Always provide both POST (desktop) and GET (mobile link) formats at the end of every client interaction.
 - No em dashes anywhere, ever. See EM DASH BAN at the top of this file.
 - Never send WhatsApp messages or emails without explicit instruction. Never delete anything. Read only. See WHATSAPP AND EMAIL ACCESS RULES.
 
