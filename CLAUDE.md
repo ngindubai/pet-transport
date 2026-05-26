@@ -42,6 +42,73 @@
 
 ---
 
+## ENQUIRY TRACKING SYSTEM
+
+### Overview
+
+All client enquiries are tracked in a Google Sheet. When a new enquiry comes in, Gareth pastes it into this chat. Claude reads the live sheet, determines the next REF number, and produces a PowerShell command that Gareth pastes into Windows PowerShell to add the row directly to the sheet via webhook. No file downloads or uploads needed.
+
+### Key details
+
+- **Google Sheet:** https://docs.google.com/spreadsheets/d/1AWlrcecS7B5z_1qujwgK_bu4LKNgWM48JGrnm7Yetbk/edit
+- **Sheet file ID:** `1AWlrcecS7B5z_1qujwgK_bu4LKNgWM48JGrnm7Yetbk`
+- **Webhook URL:** `https://script.google.com/macros/s/AKfycby1b4a4UcMmwBqgl0AUmAzaefwR8APcnK5vfL4NZI-_t4wK9HiNwK8K44hUBEGSaSg/exec`
+- **Sheet name:** `Enquiry Tracker`
+- **REF format:** PTG-001, PTG-002, PTG-003... (increment from last row in sheet)
+
+### Column order (18 columns, must match exactly)
+
+| # | Field | Key in JSON |
+|---|---|---|
+| 1 | REF | `ref` |
+| 2 | DATE IN | `date_in` |
+| 3 | CLIENT NAME | `client_name` |
+| 4 | EMAIL | `email` |
+| 5 | PHONE | `phone` |
+| 6 | ORIGIN | `origin` |
+| 7 | DESTINATION | `destination` |
+| 8 | PET TYPE | `pet_type` |
+| 9 | BREED | `breed` |
+| 10 | WEIGHT (KG) | `weight` |
+| 11 | TRAVEL DATE | `travel_date` |
+| 12 | NOTES | `notes` |
+| 13 | STATUS | `status` |
+| 14 | QUOTE REF | `quote_ref` |
+| 15 | QUOTE VALUE | `quote_value` |
+| 16 | CURRENCY | `currency` |
+| 17 | NEXT ACTION | `next_action` |
+| 18 | LAST UPDATED | `last_updated` |
+
+### Status values (use exactly as written)
+
+`New enquiry` / `Info requested` / `Awaiting quotes` / `Quote sent` / `Quote accepted` / `In progress` / `Completed` / `On hold` / `Lost / no reply`
+
+### Process — follow this every time a new enquiry comes in
+
+1. **Read the sheet first.** Use the Google Drive connector:
+   - Tool: `Google Drive: read_file_content`, fileId: `1AWlrcecS7B5z_1qujwgK_bu4LKNgWM48JGrnm7Yetbk`
+   - Find the last PTG-XXX number and increment by 1 for the new row.
+
+2. **Build the JSON** from the enquiry details. Use today's date for `date_in` and `last_updated`. Set `status` appropriately (`New enquiry` or `Info requested` if a response has already been sent).
+
+3. **Generate the PowerShell command** in this exact format — one block Gareth can copy and paste straight into Windows PowerShell:
+
+```powershell
+Invoke-WebRequest -Uri "https://script.google.com/macros/s/AKfycby1b4a4UcMmwBqgl0AUmAzaefwR8APcnK5vfL4NZI-_t4wK9HiNwK8K44hUBEGSaSg/exec" -Method POST -ContentType "application/json" -Body '{"ref":"PTG-00X","date_in":"DD/MM/YYYY","client_name":"...","email":"...","phone":"...","origin":"...","destination":"...","pet_type":"...","breed":"...","weight":"...","travel_date":"...","notes":"...","status":"...","quote_ref":"","quote_value":"","currency":"...","next_action":"...","last_updated":"DD/MM/YYYY"}' -UseBasicParsing
+```
+
+4. **Tell Gareth:** "Open Windows PowerShell (search for it in the Start menu), paste this command and press Enter. The row will appear in the sheet immediately."
+
+5. **After Gareth confirms** it worked, read the sheet again to verify the row is there.
+
+### Important notes on the webhook
+
+- Claude cannot call the webhook directly — Google's robots.txt blocks automated requests from Claude's servers. The PowerShell command runs from Gareth's own machine and goes through fine.
+- The Apps Script is deployed as "Anyone" access — no login needed.
+- **Single quotes in the notes field will break the command.** If any field contains an apostrophe (e.g. "owner's dog"), remove it or replace with a space before putting it in the JSON. Write "owners dog" not "owner's dog".
+
+---
+
 ## DEPLOY PIPELINE — INCREMENTAL FTP (ESTABLISHED 2026-05-22)
 
 **This is the proven, working deploy method. Do not change it without explicit approval.**
@@ -70,14 +137,12 @@ Live on pettransportglobal.com
 
 The site has 6,200+ pages. A full FTP upload takes 2-3 hours and Hostinger's shared hosting drops the connection before it finishes. This was discovered on 2026-05-22 after multiple failed deploy attempts.
 
-The solution is the `.ftp-deploy-sync-state.json` file on Hostinger. This file tracks what's already deployed. The FTP Deploy Action reads it, diffs against the local build, and only uploads files that changed. A single new blog article deploys in under 60 seconds.
-
 ### Critical rules
 
-- **Never delete `.ftp-deploy-sync-state.json` from Hostinger.** If deleted, the next deploy attempts a full upload which will fail.
-- **Never set `dangerous-clean-slate: true`** in the workflow. This wipes all files on Hostinger including the state file.
-- **Never attempt to upload the entire `site/public/` directory manually or via a script.** Always use the incremental FTP action via GitHub Actions.
-- **The `.github/workflows/deploy.yml` file cannot be edited via the MCP connector** (GitHub returns 403). If the workflow needs changes, provide the complete updated file contents and ask Gareth to paste it via the GitHub web editor.
+- **Never delete `.ftp-deploy-sync-state.json` from Hostinger.**
+- **Never set `dangerous-clean-slate: true`** in the workflow.
+- **Never attempt to upload the entire `site/public/` directory manually.**
+- **The `.github/workflows/deploy.yml` file cannot be edited via the MCP connector** (GitHub returns 403). Provide the complete updated file and ask Gareth to paste it via the GitHub web editor.
 
 ### Deploy speed expectations
 
@@ -85,19 +150,18 @@ The solution is the `.ftp-deploy-sync-state.json` file on Hostinger. This file t
 |---|---|
 | 1 new blog article | 30–60 seconds |
 | 25 new route pages | 2–5 minutes |
-| Template change (affects all pages) | 30–60 minutes (re-uploads all changed HTML) |
+| Template change (affects all pages) | 30–60 minutes |
 | First deploy after state file deletion | Will fail — regenerate state file first |
 
 ---
 
 ## CURRENT STATUS (update this when it changes)
 
-- **Quality routes built:** 5,461 of 37,830 country pairs (~14%). Each has unique researched content, one of 5 template variants (A–E), 1,500+ words, regulatory specifics.
-- **Remaining:** 32,369 routes to be built block-by-block per the cascading build plan.
-- **Blog:** 411 articles (409 existing + 2 content plan articles: Day 1 and Day 2).
-- **Content plan:** 252 new articles, Jun 2026 – May 2027. Days 1–2 published. Day 3 is next.
-- **Deploy pipeline:** Working. Incremental FTP via GitHub Actions. Tested and confirmed 2026-05-22.
-- **Live tracker:** [build_state.json](build_state.json) — machine-readable progress
+- **Quality routes built:** 5,461 of 37,830 country pairs (~14%).
+- **Blog:** 411 articles. Content plan: 252 new articles Jun 2026–May 2027. Day 3 is next.
+- **Deploy pipeline:** Working. Incremental FTP via GitHub Actions. Confirmed 2026-05-22.
+- **Enquiry tracker:** Live. 5 enquiries logged (PTG-001 to PTG-005). Webhook deployed.
+- **Live tracker:** [build_state.json](build_state.json)
 - **Plan files:** [BUILD-PLAN.md](BUILD-PLAN.md), [cascading-build-plan-pet=transport.html](cascading-build-plan-pet=transport.html)
 
 ---
@@ -106,175 +170,110 @@ The solution is the `.ftp-deploy-sync-state.json` file on Hostinger. This file t
 
 - **No filler.** Never start with "Great question!", "Of course!", "Certainly!". Start with the answer.
 - **Match length to task.** Simple question → short answer. Complex task → full answer. Never pad.
-- **Show options before acting** on anything significant (new feature, structural change, new file type). Give 2-3 approaches, wait for choice.
-- **Admit uncertainty.** If you don't know whether a regulation, airline policy, or technical fact is current, say so. Do not invent plausible-sounding details. YMYL site — wrong info hurts pets.
-- **Use British English** in all site content (the site targets UK/AU/NZ primarily, plus US — but voice is British).
-- **When editing files that need Gareth to paste (e.g. deploy.yml), always provide the COMPLETE file contents.** Never give partial diffs or "find and replace this line" instructions. Full file, every time.
+- **Show options before acting** on anything significant.
+- **Admit uncertainty.** Do not invent plausible-sounding details. YMYL site — wrong info hurts pets.
+- **Use British English** in all site content.
+- **When editing files that need Gareth to paste, always provide the COMPLETE file contents.**
 
 ---
 
 ## REVIEW BEFORE PUBLISH — NON-NEGOTIABLE
 
-**Every blog article or page must be presented as a rendered HTML file for review before it is committed to the repo.**
-
-The HTML preview must:
-- Replicate the actual site design faithfully: real nav (with logo, megamenus), real footer, real CSS classes from the template
-- Render the article body exactly as it will appear on the live site (h1, h2, h3, paragraphs, tables, blockquotes, author byline)
-- Include the author byline block (name, title, date) styled to match the site
-- Be delivered as a downloadable `.html` artifact so Gareth can open it in a browser
-- Not use placeholder text or lorem ipsum anywhere
+Every blog article or page must be presented as a rendered HTML file for review before it is committed to the repo.
 
 **Workflow:**
-1. Write the article (markdown content + YAML front matter)
-2. Build the standalone HTML preview using the site's actual nav/footer/CSS structure
-3. Present the HTML file as an artifact for Gareth to open and review
-4. Wait for explicit approval ("publish it" or feedback on what to change)
-5. Only after approval: commit the `.md` file directly to `main` (triggers auto-deploy)
+1. Write the article (markdown + YAML front matter)
+2. Build standalone HTML preview using the site's actual nav/footer/CSS
+3. Present as downloadable `.html` artifact for Gareth to review in a browser
+4. Wait for explicit approval
+5. Only after approval: commit `.md` directly to `main`
 
 ---
 
 ## AUTHOR PERSONAS — NON-NEGOTIABLE
 
-**Never use Gareth's name as an author on any page or article.** Use one of the personas below instead, matched to the topic cluster. These are the editorial voices of PetTransportGlobal. Each has a specialism that signals topical authority.
+**Never use Gareth's name as an author.** Use one of the personas below.
 
 | Persona | Name | Title | Use for |
 |---|---|---|---|
-| **The Logistics Lead** | Marcus Webb | Senior Pet Relocation Consultant, PetTransportGlobal | Route guides, airline policies, cargo logistics, costs and quotes, process and timeline articles |
-| **The Regulations Expert** | Dr. Sarah Okafor | International Animal Health Consultant, PetTransportGlobal | Country import/export guides, quarantine rules, titre tests, DEFRA/APHIS/DAFF regulatory content, pet passports and health certificates |
-| **The Welfare Advisor** | Emma Hartley | Certified Animal Behaviourist & Pet Travel Adviser, PetTransportGlobal | Breed welfare guides, brachycephalic restrictions, anxiety and sedation, senior and anxious pets, welfare during transit |
-| **The Planning Guide** | James Osei | Pet Transport Planning Specialist, PetTransportGlobal | Checklists, timelines, documentation prep, choosing a transport company, insurance, multi-pet moves, emergency and urgent moves |
-
-**Assignment rules:**
-- Match the persona to the dominant topic of the article. If in doubt, use Marcus Webb (the general logistics lead).
-- A single article always has one author. Do not list two personas.
-- Use the full name and title in the byline: e.g. `Marcus Webb — Senior Pet Relocation Consultant, PetTransportGlobal`
-- The persona name appears in the YAML front matter as `author:` and in the visible byline on the page.
-- These personas are consistent across all 252 content plan articles and all future content. Do not invent new personas.
+| **The Logistics Lead** | Marcus Webb | Senior Pet Relocation Consultant, PetTransportGlobal | Route guides, airline policies, cargo logistics, costs, quotes, process and timeline articles |
+| **The Regulations Expert** | Dr. Sarah Okafor | International Animal Health Consultant, PetTransportGlobal | Country import/export guides, quarantine, titre tests, DEFRA/APHIS/DAFF, pet passports |
+| **The Welfare Advisor** | Emma Hartley | Certified Animal Behaviourist & Pet Travel Adviser, PetTransportGlobal | Breed welfare, brachycephalic, anxiety, sedation, senior pets, welfare during transit |
+| **The Planning Guide** | James Osei | Pet Transport Planning Specialist, PetTransportGlobal | Checklists, timelines, documentation, choosing a company, insurance, multi-pet, emergency moves |
 
 ---
 
 ## QUOTING SYSTEM
 
-PetTransportGlobal produces PDF quotes for clients. The design is locked and must be reproduced exactly for every quote. Full specification is in **[quotedesign.md](quotedesign.md)** — read it before producing any quote.
+Full specification in **[quotedesign.md](quotedesign.md)** — read it before producing any quote.
 
-### Key rules (summary — full detail in quotedesign.md)
+### Key rules
 
-- **No client name on the quote.** Do not open with "Dear [Name]" or reference the client by name anywhere in the document.
-- **No Gareth's name or founder credit.** The footer says PetTransportGlobal only.
-- **Payment is in full and upfront before any work begins.** Never offer a deposit or instalment. The reason: PetTransportGlobal pays suppliers in full before work starts, so a 50% deposit would not cover costs.
-- **Default margin: 20%** unless Gareth specifies otherwise for a particular job.
-- **Always split into two quotes when boarding is relevant:** Quote 1 (transport & documentation), Quote 2 (boarding — framed as optional, client may arrange their own).
-- **Quote reference format:** `PTG-YYYYMMDD-NNN`
-- **Valid for 30 days.**
-- **Currency:** Euro (EUR) for Turkey-origin quotes. Use local currency as appropriate for other origins.
-- **Logo:** Solid paw print SVG (Font Awesome 6 fa-paw path) — see quotedesign.md for the exact path data.
-- **Rendering:** HTML → PDF via Playwright/Chromium with embedded woff2 fonts. Use `render.py` and `measure.py` in `/home/claude/`. Always run `measure.py` after render to confirm no page overflow before presenting to Gareth.
+- No client name on the quote. No Gareth's name or founder credit.
+- Payment in full and upfront before any work begins.
+- Default margin: 20% unless Gareth specifies otherwise.
+- Split into two quotes when boarding is relevant.
+- Quote reference format: `PTG-YYYYMMDD-NNN`. Valid 30 days.
+- Currency: EUR for Turkey-origin. Local currency for other origins.
+- Rendering: HTML to PDF via Playwright/Chromium. Use `render.py` and `measure.py` in `/home/claude/`.
 
-### To produce a quote from scratch
-1. Read [quotedesign.md](quotedesign.md) in full.
-2. Confirm margin, currency, services, and origin/destination with Gareth.
-3. Calculate all figures — double-check every line.
-4. Adapt the last `quote.html`, update all figures, ref number, date, and route.
-5. Render → measure → visual check → present to Gareth.
+### To produce a quote
+1. Read [quotedesign.md](quotedesign.md).
+2. Confirm margin, currency, services, origin/destination.
+3. Calculate all figures.
+4. Adapt last `quote.html`, update figures, ref, date, route.
+5. Render, measure, visual check, present to Gareth.
 
 ---
 
 ## BEHAVIOR RULES
 
 ### Stay in scope
-- Only modify files, functions, and lines directly related to the current task.
-- Do not refactor, rename, reformat, or "improve" anything not asked for.
-- If you notice something worth fixing elsewhere, mention it at the end in a note. Do not touch it.
+Only modify files directly related to the current task. Mention improvements elsewhere as a note — do not touch them.
 
 ### The cascading build plan is law
-- **Never bulk-generate content.** No "generate all remaining routes" scripts. No mass `for country in countries: write_page()` loops. Bulk generation is what produces thin, indistinguishable, AI-detectable content that gets the whole site penalised.
-- Work happens **one block at a time**, from the cascading build plan ([cascading-build-plan-pet=transport.html](cascading-build-plan-pet=transport.html) + [BUILD-PLAN.md](BUILD-PLAN.md)).
-- A **block = 25 routes** (or one equivalent unit of work for non-route blocks like a country guide, an airline policy update, a blog post).
-- Each block follows the **quality gate** (see below). No shortcuts.
-- When Gareth says **"go"** or **"next block"**: read the build plan, identify the next block, execute it fully through every gate, then stop and wait.
+Never bulk-generate content. One block at a time (25 routes or equivalent). Full quality gate every time.
 
-### Quality gate (every block, no exceptions)
-1. **Research** — pull actual current regulations from `data/*.json` and named agency sources. If data is missing or stale, flag it and stop. Never invent.
-2. **Write** — load `the-wordsmith.md` for voice. Each page is genuinely different in structure, examples, opening, and detail focus. No template-filled paragraphs.
-3. **Rotate templates** — assign one of 5 variants (A–E) across the block so consecutive routes don't look identical.
-4. **Humanise** — run the content mentally through `the-chameleon.md` rules (sentence rhythm, banned vocab, no em dashes, varied openings).
-5. **QA scan** — `the-auditor.md` checks: YMYL claims sourced, no safety guarantees, regulatory accuracy, British English, word count threshold (1,200+ for routes).
-6. **HTML preview** — build the standalone HTML preview and present it to Gareth for approval before committing.
-7. **Commit directly to `main`** only after Gareth approves the preview. This triggers the incremental deploy automatically.
-8. **Stop.** Do not auto-continue to the next block. Wait for Gareth's next "go".
-
-### Confirm only for destructive actions
-Auto-proceed for: writing new files, editing files in scope, committing approved content to `main`.
-
-Stop and ask explicit confirmation for:
-- Deleting files or directories
-- `git reset --hard`, `git push --force`, rewriting history
-- Dropping data files or overwriting `data/*.json`
-- Removing dependencies
-- Changing deploy pipeline (`.github/workflows/deploy.yml`)
-- Modifying Hostinger FTP secrets
-- Any generator script that would write more than 25 pages in one run
-
-### Always show what changed
-After any block, end with:
-- **Block:** (e.g. "Blog Day 2: Cost guide" or "Routes 5,148–5,172: UK → 25 EU destinations")
-- **Files changed:** (list)
-- **Quality gates passed:** (research / write / template rotation / humanise / QA / HTML preview)
-- **Word count range:** (e.g. 1,420 – 1,890)
-- **Committed to main:** (commit SHA or link)
-- **Live URL:** (the page URL on pettransportglobal.com)
-- **Actions run:** (link to the GitHub Actions run to monitor deploy)
-- **Next block in plan:** (preview of what "go" will do)
-
-### Think before you write code
-For architecture, debugging, or non-trivial features: work through the problem step by step before writing code. Show reasoning. Flag uncertainty. Then implement.
+### Quality gate
+1. Research — real regulations from data files and named sources
+2. Write — load the-wordsmith.md for voice
+3. Rotate templates — A to E
+4. Humanise — the-chameleon.md rules
+5. QA scan — the-auditor.md checks
+6. HTML preview — present to Gareth for approval
+7. Commit to main only after approval
+8. Stop and wait for next "go"
 
 ---
 
 ## CONTENT RULES (NON-NEGOTIABLE)
 
-This is a **YMYL** site (Your Money or Your Life — pets). Wrong information harms animals.
-
-1. **No safety guarantees.** Never promise an animal will arrive safely or stress-free. Allowed: "experienced handlers", "IATA-compliant crates", "reduce risk", "follow regulations".
-2. **Named, dated sources for every regulatory claim.** USDA APHIS, UK APHA, Australian DAFF, EU TRACES, etc. Cite the agency.
-3. **Warm, expert tone — not clinical, not corporate.** Pet owners are anxious. "Your dog needs a rabies titre test at least 3 months before travel" not "Rabies FAVN test per OIE standard required 90 days pre-export."
-4. **No em dashes.** Use commas, full stops, or "and".
-5. **No banned vocabulary:** delve, meticulous, comprehensive, tailored, navigate, leverage, seamless, robust, vital, crucial, utilize, intricate, paramount, pivotal, embark, foster, elevate, unleash, unlock, harness, streamline, holistic, ensure (overused), realm, landscape (figurative), testament.
-6. **Vary sentence rhythm.** Mix short and long. Don't start consecutive sentences the same way. Don't use the same paragraph structure across route pages — these are 38,000 pages of pet transport routes, none should read like find-and-replace.
-7. **Author attribution.** Use the correct persona from the Author Personas section above. Never use Gareth's name. Never use a real person's name that is not listed as a persona.
-8. **British English.** Colour, organise, kerb, behaviour, recognise. (Quotes from US sources stay in US English.)
-
-Full anti-AI rules: [workforce/content/the-chameleon.md](workforce/content/the-chameleon.md)
-Voice guide: [workforce/content/the-wordsmith.md](workforce/content/the-wordsmith.md)
+1. No safety guarantees.
+2. Named, dated sources for every regulatory claim.
+3. Warm, expert tone.
+4. No em dashes.
+5. No banned vocabulary: delve, meticulous, comprehensive, tailored, navigate, leverage, seamless, robust, vital, crucial, utilize, intricate, paramount, pivotal, embark, foster, elevate, unleash, unlock, harness, streamline, holistic, realm, landscape (figurative), testament.
+6. Vary sentence rhythm.
+7. Use correct author persona. Never use Gareth's name.
+8. British English throughout.
 
 ---
 
 ## SEO RULES (NON-NEGOTIABLE)
 
-- Every page: unique `title` and `description` in YAML front matter.
-- Route page title: `Pet Transport [Origin] to [Destination] | PetTransportGlobal` (rotate variants to avoid duplicates).
-- Meta description: 140-160 chars, reassurance hook + call to action.
-- One `<h1>` per page, contains primary keyword.
-- Target keyword in: first 100 words, one H2, meta description.
-- Internal links: route page → origin hub + destination country guide + relevant airlines.
-- FAQ schema (JSON-LD) auto-generated by Hugo template from `faqs:` front matter.
-- No duplicate content across routes.
+- Unique `title` and `description` per page.
+- One `<h1>` per page containing primary keyword.
+- Target keyword in first 100 words, one H2, meta description.
+- Internal links: route → origin hub + destination country guide + relevant airlines.
+- FAQ schema from `faqs:` front matter.
+- No duplicate content.
 
 ---
 
-## TECH STACK (LOCKED — DO NOT SUGGEST ALTERNATIVES)
+## TECH STACK (LOCKED)
 
-- **Static site generator:** Hugo v0.160.1-extended
-- **Templating:** Go templates (Hugo's native)
-- **Content language:** Markdown + YAML front matter
-- **Generators:** Python 3.11 (no other language)
-- **CI/CD:** GitHub Actions (incremental FTP deploy)
-- **Deploy:** `SamKirkland/FTP-Deploy-Action@v4.3.5` with `.ftp-deploy-sync-state.json` for incremental uploads
-- **State file generator:** `generate_ftp_state.py` (bootstraps the state file on first deploy)
-- **Hosting:** Hostinger shared hosting (FTP, port 21, IP in GitHub Secrets)
-- **No JS frameworks. No React. No Next.js. No Tailwind build step.** Site uses the existing template's vanilla CSS/JS in `site/static/`.
-
-If a task seems to need a different tool, flag it and explain why. Use the locked stack unless Gareth explicitly approves an addition.
+- Hugo v0.160.1-extended, Python 3.11, GitHub Actions, Hostinger FTP
+- No JS frameworks, no React, no Next.js, no Tailwind build step
 
 ---
 
@@ -282,119 +281,69 @@ If a task seems to need a different tool, flag it and explain why. Use the locke
 
 ```
 pet-transport/
-├── site/                          # Hugo root
-│   ├── content/                   # All page content
-│   │   ├── routes/                # 37,830+ route pages
-│   │   ├── countries/             # Destination guides
-│   │   ├── origins/               # Origin hubs
-│   │   ├── airlines/              # Airline policy pages
-│   │   ├── breeds/                # Breed transport guides
-│   │   ├── blog/                  # Articles
-│   │   └── resources/             # Resource pages
-│   ├── layouts/                   # Hugo templates
-│   ├── static/                    # CSS, JS, images, fonts
-│   └── public/                    # Hugo build output (gitignored)
-├── data/                          # Source JSON for generators
-├── workforce/                     # Worker soul files (domain experts)
-├── .github/workflows/deploy.yml   # CI/CD pipeline (auto-deploys on push to main)
-├── generate_*.py                  # Python generators (repo root) — per-block use only
-├── generate_ftp_state.py          # FTP state file bootstrapper (runs on first deploy only)
-├── split_sitemap.py               # Splits Hugo sitemap into section sitemaps
-├── CLAUDE.md                      # THIS FILE
-├── quotedesign.md                 # PDF quote design specification (read before producing any quote)
-├── WORKFLOW.md                    # Step-by-step session guide
-├── BUILD-PLAN.md                  # Session log + remaining tasks
-├── build_state.json               # Machine-readable progress
-├── ERRORS.md                      # Failed approaches log
-└── MEMORY.md                      # Decision log (read at session start)
+├── site/content/         # All page content (routes, countries, origins, airlines, breeds, blog)
+├── site/layouts/         # Hugo templates
+├── site/static/          # CSS, JS, images, fonts
+├── data/                 # Source JSON for generators
+├── workforce/            # Worker soul files
+├── CLAUDE.md             # THIS FILE
+├── quotedesign.md        # PDF quote design spec
+├── BUILD-PLAN.md         # Session log + remaining tasks
+├── build_state.json      # Machine-readable progress
+├── ERRORS.md             # Failed approaches log
+└── MEMORY.md             # Decision log
 ```
-
----
-
-## KEY DATA FILES
-
-| File | Contents |
-|------|----------|
-| `data/countries_pet_regulations.json` | Pet import/export rules per country |
-| `data/govt_import_regulations.json` | Official agency regulations |
-| `data/airline_pet_policies.json` | 23+ airline pet cargo/cabin policies |
-| `data/breed_restrictions.json` | Breed bans + brachycephalic airline rules |
-| `data/route_keyword_matrix.json` | SEO keyword clusters per route |
-
-Treat these as **source of truth**. Do not edit without explicit approval — they feed every generated page.
 
 ---
 
 ## SESSION PROTOCOLS
 
-### When Gareth says "go" or "next block"
-1. Read [BUILD-PLAN.md](BUILD-PLAN.md) and [build_state.json](build_state.json) and the content plan
-2. Identify the next article or block
-3. Write the content following the full quality gate
-4. Build the HTML preview and present it for review. Stop and wait for approval.
-5. After approval: commit directly to `main`. Deploy triggers automatically.
-6. Provide the live URL and the Actions run link so Gareth can verify.
-7. **Stop.** Wait for Gareth's next "go".
+### New enquiry comes in
+1. Read the tracker sheet (Google Drive connector, fileId `1AWlrcecS7B5z_1qujwgK_bu4LKNgWM48JGrnm7Yetbk`)
+2. Determine next REF number
+3. Build JSON from enquiry details
+4. Generate PowerShell command
+5. Present to Gareth to paste into PowerShell
+6. Verify row appeared in sheet
 
-### When Gareth says "session end" or "wrap up"
-1. Update [BUILD-PLAN.md](BUILD-PLAN.md) with a session log entry
-2. Update [build_state.json](build_state.json) with current counts
-3. Update [MEMORY.md](MEMORY.md) if any significant decision was made
-4. Commit to main
-5. Summarise: what was built, what's queued, what's next
+### "go" or "next block"
+1. Read BUILD-PLAN.md and build_state.json
+2. Write content through full quality gate
+3. Present HTML preview, wait for approval
+4. Commit to main, provide live URL and Actions link
+5. Stop and wait
 
-### When something takes >2 attempts
-Log it in [ERRORS.md](ERRORS.md). Check `ERRORS.md` before suggesting approaches to similar tasks.
-
-### When a decision is made
-Append to [MEMORY.md](MEMORY.md). Never contradict a logged decision without flagging it first.
+### "session end" or "wrap up"
+1. Update BUILD-PLAN.md, build_state.json, MEMORY.md
+2. Commit to main
+3. Summarise what was built and what is next
 
 ---
 
-## WORKING FROM THE CLAUDE APP (PHONE / TABLET / REMOTE)
+## PERMANENT FACTS
 
-This is the primary workflow. Gareth works from iPad, iPhone, or any device using the Claude app or claude.ai. No desktop or VS Code required.
-
-The GitHub MCP connector is active on this project and has write access to the repo (except `.github/workflows/` which requires manual editing via GitHub web UI).
-
-**The daily content loop:**
-1. Gareth says **"go"** — Claude reads the content plan, writes the next article, produces the HTML preview
-2. Gareth opens the HTML preview in a browser and reviews design + content
-3. Gareth says **"publish it"** — Claude commits the `.md` directly to `main`
-4. GitHub Actions builds Hugo and deploys only the new/changed files to Hostinger (under 60 seconds)
-5. Claude provides the live URL and Actions link for Gareth to verify
-6. Done. Say "go" again for the next article.
-
-**No branches or PRs needed for single articles.** Commit directly to `main` for speed. The incremental deploy only uploads changed files, so a bad article can be fixed by committing a correction (which also deploys in under 60 seconds).
-
----
-
-## PERMANENT FACTS (ALWAYS TRUE — APPLY EVERY SESSION)
-
-- Domain is **pettransportglobal.com** (Hostinger). Old surge.sh references in `MEMORY.md` are stale.
-- Slugs are lowercase, hyphen-separated, no underscores.
-- All Python generators live at the **repo root**, not in `scripts/`.
-- Hugo content **must** live in `site/content/`. Anything outside is invisible to the build.
-- `site/public/` is **gitignored** — never commit build output.
-- `data/*.json` files are source of truth — flag before editing.
-- **Every push to `main` auto-deploys to Hostinger** via incremental FTP. Only changed files are uploaded.
-- **Do NOT delete `.ftp-deploy-sync-state.json` from Hostinger.** It tracks deployed files. Deleting it forces a full re-upload which will fail.
-- Hostinger FTP credentials live in GitHub Secrets (`FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`). Never paste these into chat or commit them.
-- **`.github/workflows/deploy.yml` cannot be edited via the MCP connector** (GitHub 403). Always provide full file contents for Gareth to paste via the GitHub web editor.
-- The site has a template originally in `template-source/`. That directory is reference only — do not edit, do not delete.
-- The GitHub MCP connector has write access to this repo (except workflow files).
-- **Never use Gareth's real name as an author on any published content.** Use the author personas defined above.
-- **Quote design is locked.** See [quotedesign.md](quotedesign.md) before producing any client-facing PDF quote.
+- Domain: pettransportglobal.com (Hostinger). Old surge.sh references are stale.
+- Slugs: lowercase, hyphen-separated, no underscores.
+- Python generators at repo root, not in scripts/.
+- Hugo content must live in site/content/.
+- site/public/ is gitignored — never commit build output.
+- Every push to main auto-deploys via incremental FTP.
+- Do NOT delete .ftp-deploy-sync-state.json from Hostinger.
+- FTP credentials in GitHub Secrets only — never in chat or commits.
+- .github/workflows/deploy.yml cannot be edited via MCP connector (403).
+- Never use Gareth's real name as author on published content.
+- Quote design is locked — see quotedesign.md.
+- Enquiry tracker webhook is live — see ENQUIRY TRACKING SYSTEM section.
 
 ---
 
-## WHAT TO DO WHEN YOU'RE STUCK
+## WHAT TO DO WHEN STUCK
 
 1. Re-read this file.
-2. Read [MEMORY.md](MEMORY.md) for prior decisions.
-3. Check [ERRORS.md](ERRORS.md) for prior failures on similar tasks.
-4. Ask Gareth one specific question. Do not present a wall of options.
+2. Read MEMORY.md for prior decisions.
+3. Check ERRORS.md for prior failures.
+4. Ask Gareth one specific question.
 
 ---
 
-*Last updated: 2026-05-25*
+*Last updated: 2026-05-26*
