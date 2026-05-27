@@ -1,9 +1,9 @@
 ---
-template_variant: "C"
-title: "Pet Relocation Hong Kong to Japan | Requirements & Guide"
-description: "How to ship your dog or cat from Hong Kong to Japan. Japan import rules, vaccinations, permits, and airline options explained."
+title: "Pet Transport from Hong Kong to Japan | AQS 180-Day Protocol, AFCD Export & Guide"
+description: "Shipping your pet from Hong Kong to Japan: AFCD export permit, full AQS 180-day protocol required, Cathay Pacific and ANA cargo from Hong Kong to Tokyo."
 type: "routes"
 layout: "single"
+template_variant: "C"
 author: "Gareth - Founder, PetTransportGlobal"
 slug: "hong-kong-to-japan"
 origin_name: "Hong Kong"
@@ -13,140 +13,143 @@ route_data:
     code: "HK"
     country: "Hong Kong"
     export_requirements:
-      export_permit: "Required for all live animal exports from Hong Kong"
-      health_certificate: "Must meet destination country requirements"
+      export_permit: "Permission to Export Animals required from AFCD. Apply 2+ weeks before departure."
+      health_certificate: "AFCD-endorsed health certificate in MAFF format. Issued within 10 days of travel AND within 7 days of Japan arrival per AQS dual-window rules."
   destination:
     code: "JP"
     country: "Japan"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or on the same day as rabies vaccination."
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 30-day wait after vaccination before travel. Must be vaccinated at least 30 days before import."
-      titre_test: "Required. Minimum: 0.5 IU/ml. 180-day wait from test date before entry"
-      quarantine: "Mandatory quarantine. 14 days. Facility: MAFF quarantine station. 14-day quarantine is mandatory at MAFF-designated facility."
-      import_permit: "Required. Issued by: MAFF (Animal Quarantine Service). Apply: Apply 2-4 weeks before travel. Formal import permit required from MAFF."
-      health_certificate: "Required. Health Certificate. Issued by: Official veterinarian in country of origin. Valid for 10 days from issue. Issued within 10 days of travel. Must list microchip number and vaccination details."
+      microchip: "Required (ISO 11784/11785). Before any rabies vaccination — non-negotiable."
+      rabies_vaccination: "Two vaccinations required. Both after microchip. At least 30 days apart. At least 30 days after second before titre test."
+      titre_test: "Required. FAVN at AQS-approved laboratory. Minimum 0.5 IU/ml. 180-day mandatory wait from blood draw. Hong Kong is non-designated for AQS."
+      quarantine: "Minimum 12 hours on arrival. 2-7 days in practice for non-designated countries."
+      import_permit: "Advance AQS notification at least 40 days before arrival. No separate permit."
+      health_certificate: "MAFF-format certificate endorsed by AFCD. Dual window: within 10 days of travel AND within 7 days of Japan arrival."
+      entry_point: "Narita (NRT), Haneda (HND), or Kansai (KIX)."
+      authority: "Japan AQS, MAFF. aqs.maff.go.jp"
   airlines:
     - name: "Cathay Pacific"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Japan Airlines (JAL)"
+      policy_summary: "Direct HKG-NRT/HND. Cathay Pacific Cargo. Hong Kong's national carrier with deep AFCD export familiarity and strong Tokyo routes."
+    - name: "ANA"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported as checked baggage in temperature-controlled hold. Brachycephalic breeds: French Bulldogs BANNED from cargo (May-October). English Bulldogs banned year-round. Summer restrictions: May-October temperature embargoes on some routes"
-    - name: "Emirates"
+      policy_summary: "Direct HKG-NRT/HND. ANA Cargo. Japanese carrier with deep AQS import familiarity at Tokyo airports."
+    - name: "JAL"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Singapore Airlines"
+      policy_summary: "Direct HKG-NRT. JAL Cargo. AQS-experienced at Narita arrival."
+    - name: "Japan Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
+      policy_summary: "JAL Cargo HKG-NRT. Short 4-hour flight. Good option alongside Cathay."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step: must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Microchip (ISO) before any vaccination"
+      timing: "Week 0"
+      responsible: "HK vet"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 30-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "First rabies vaccination"
+      timing: "Week 0-2"
+      responsible: "HK vet"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 180-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "30-day wait"
+      timing: "Weeks 2-6"
+      responsible: "N/A"
     - step: 4
-      action: "Apply for import permit from Japan"
-      timing: "Apply early: Apply 2-4 weeks before travel"
-      responsible: "You (or your pet transport agent)"
+      action: "Second rabies vaccination"
+      timing: "Week 6+"
+      responsible: "HK vet"
     - step: 5
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "30-day wait"
+      timing: "Weeks 6-10"
+      responsible: "N/A"
     - step: 6
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "FAVN titre test at AQS-approved laboratory"
+      timing: "Week 10+. 180-day clock starts from blood draw."
+      responsible: "HK vet + AQS-approved lab"
     - step: 7
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "180-day wait from blood draw date"
+      timing: "Weeks 10-36"
+      responsible: "N/A"
     - step: 8
-      action: "Quarantine on arrival (14 days)"
-      timing: "Immediately on arrival: mandatory"
-      responsible: "Japan quarantine authority"
+      action: "Apply for AFCD Permission to Export Animals"
+      timing: "2+ weeks before departure. Can run during wait."
+      responsible: "You or agent"
+    - step: 9
+      action: "AQS advance notification (40+ days before arrival)"
+      timing: "During the 180-day wait period."
+      responsible: "You or agent"
+    - step: 10
+      action: "Book Cathay Pacific or ANA Cargo HKG-NRT"
+      timing: "Week 34+"
+      responsible: "You or agent"
+    - step: 11
+      action: "AFCD-endorsed MAFF health certificate"
+      timing: "Within 10 days of travel AND 7 days before NRT arrival."
+      responsible: "AFCD-authorised vet + AFCD"
+    - step: 12
+      action: "Arrive NRT. AQS inspection and quarantine."
+      timing: "Min 12 hours. Typically 2-7 days."
+      responsible: "AQS Japan"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (Japan)"
-    - "Quarantine facility fees (owner-paid at destination)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Cathay Pacific or ANA Cargo fees HKG-NRT"
+    - "IATA-compliant crate"
+    - "FAVN titre test at AQS-approved lab"
+    - "AFCD export permit fee"
+    - "AQS quarantine fees on arrival"
+    - "Agent fee (strongly recommended)"
   key_warnings:
-    - "Mandatory quarantine required on arrival. Plan for separation from your pet."
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
+    - "Microchip before first vaccination — wrong order = restart entire AQS sequence."
+    - "180-day wait from blood draw, not result date."
+    - "Health certificate dual window: within 10 days of HK departure AND within 7 days of Japan arrival."
+    - "AQS advance notification: hard 40-day deadline."
   route_complexity: "very_high"
-  estimated_timeline_weeks: "33-39"
+  estimated_timeline_weeks: "36-42"
 content:
   h1: "Pet Transport from Hong Kong to Japan"
   overview: |
-    Getting your dog from Hong Kong to Japan is entirely achievable, but the preparation timeline is not flexible.
-    
-    This route is one of the most demanding international pet transport routes. Start preparations at least 33 weeks before your travel date: some steps have fixed waiting periods that cannot be shortened. Japan requires mandatory quarantine (14 days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    We've laid out every step below so you know exactly what to prepare and when.
+    Hong Kong to Japan is a short flight — about 4 hours on Cathay Pacific — but the regulatory process is anything but short. Japan's AQS classifies Hong Kong as non-designated, triggering the full 180-day protocol: two vaccinations, titre test, 180-day wait, 40-day advance notification, and quarantine on arrival.
+
+    Cathay Pacific and ANA both fly direct HKG-NRT, so once the 36-42 weeks of preparation are behind you, the journey itself is clean.
   sections:
-    - heading: "Understanding Japan's pet import rules"
+    - heading: "Why the full AQS protocol applies from Hong Kong"
       body: |
-        This is one of the more demanding international pet transport corridors. Japan runs a strict biosecurity programme and there are no shortcuts through it.
-        
-        All pets must complete quarantine on arrival in Japan (at MAFF quarantine station) for 14 days. This is non-negotiable and is entirely separate from the pre-travel preparation.
-        
-        Japan is rabies-free. MAFF (Ministry of Agriculture, Forestry and Fisheries) is the regulatory authority.
-    - heading: "Step-by-step: what to do first"
+        | Category | Countries | Protocol |
+        |---|---|---|
+        | AQS Designated | UK, Australia, NZ, Ireland, Iceland, Hawaii, Guam, Fiji | Faster process — no 180-day wait |
+        | AQS Non-Designated | All others incl. Hong Kong | Full 180-day protocol |
+
+        Hong Kong is not on Japan's AQS designated country list. Despite being geographically close and having a sophisticated veterinary system, the full non-designated protocol applies. There's no shortcut: two vaccinations, titre test at an AQS-approved lab, 180-day wait from blood draw, 40-day advance notification, and quarantine on arrival.
+    - heading: "Cathay Pacific vs ANA: the 4-hour hop"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Both Cathay Pacific Cargo and ANA Cargo operate direct HKG-NRT services, making this one of the shorter long-haul routes for pet cargo. Cathay Pacific brings strong AFCD export documentation familiarity from the Hong Kong departure side. ANA brings deep AQS inspection expertise at Narita and Haneda on the arrival end.
+
+        JAL Cargo also operates HKG-NRT and is equally AQS-familiar at Tokyo. The choice comes down to schedule availability on your travel date.
+    - heading: "Health certificate dual window: plan carefully"
+      body: |
+        The AFCD health certificate for Japan must meet two simultaneous timing windows: issued within 10 days of Hong Kong departure, AND within 7 days of Japan arrival. With a 4-hour HKG-NRT flight, both windows align comfortably if the AFCD vet appointment is booked in the 7 days before departure.
+
+        AFCD endorsement takes additional processing time beyond the vet appointment — allow 2-3 days for endorsement in normal periods. Book the vet appointment 5-7 days before departure to give AFCD enough time to endorse before you fly.
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Hong Kong to Japan?"
-    answer: "Allow at least 33 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Japan?"
-    answer: "Yes, quarantine is mandatory in Japan. Your pet will stay for 14 days at MAFF quarantine station on arrival. This is non-negotiable and the cost is paid by the owner."
-  - question: "Is a rabies titre test required for pets entering Japan?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 180-day waiting period after a successful result before your pet can enter Japan. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into Japan?"
-    answer: "Yes, an import permit is required from Japan's authority (MAFF (Animal Quarantine Service)). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Hong Kong. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Japan's authority for the exact format required."
+  - question: "How long does it take to prepare a pet for Hong Kong to Japan?"
+    answer: "Allow 36-42 weeks. Two vaccinations (30 days apart), titre test at an AQS-approved lab (blood drawn 30 days after the second vaccination), 180-day wait from blood draw, and 40 days advance AQS notification."
+  - question: "Is Hong Kong a designated country for Japan AQS?"
+    answer: "No. Hong Kong is non-designated, meaning the full 180-day protocol applies: microchip first, two vaccinations, FAVN titre test at an AQS-approved lab, 180-day wait, 40-day advance notification, and MAFF-format health certificate."
+  - question: "What is the health certificate dual window?"
+    answer: "The AFCD health certificate must be issued within 10 days of Hong Kong departure AND within 7 days of Japan arrival. With a 4-hour HKG-NRT flight, book the AFCD vet appointment 5-7 days before departure to meet both windows comfortably."
+  - question: "Which airline is best from Hong Kong to Tokyo?"
+    answer: "Cathay Pacific Cargo and ANA Cargo both offer direct HKG-NRT services. Cathay has strong AFCD export familiarity; ANA has deep AQS arrival expertise at Narita. JAL Cargo is also a solid option on the same route."
+  - question: "Is there quarantine on arrival in Japan from Hong Kong?"
+    answer: "Yes. AQS quarantine is mandatory for all non-designated country arrivals. Minimum 12 hours, typically 2-7 days depending on documentation completeness. Quarantine fees are charged per day."
 links:
   sideways:
     - url: "/pet-transport/japan-to-hong-kong/"
       text: "Pet Transport Japan to Hong Kong"
   upward:
-    - url: "/pet-transport/origins/pet-export-guide-shipping-from-hong-kong/"
+    - url: "/pet-transport/origins/hong-kong-pet-export-guide/"
       text: "Shipping from Hong Kong"
     - url: "/pet-transport/countries/japan/"
       text: "Importing to Japan"
     - url: "/pet-transport/airlines/cathay-pacific/"
       text: "Cathay Pacific pet policy"
-    - url: "/pet-transport/airlines/japan-airlines-jal/"
-      text: "Japan Airlines (JAL) pet policy"
+    - url: "/pet-transport/airlines/ana/"
+      text: "ANA pet policy"
 ---
