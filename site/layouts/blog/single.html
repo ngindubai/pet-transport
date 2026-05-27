@@ -1,0 +1,163 @@
+{{ define "title" }}{{ if .Params.seo.title }}{{ .Params.seo.title }}{{ else }}{{ .Title }} | {{ .Site.Params.brand }}{{ end }}{{ end }}
+
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": {{ .Title | jsonify }},
+    "description": {{ .Params.description | default .Title | jsonify }},
+    "datePublished": "{{ .Date.Format "2006-01-02" }}",
+    "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+    "author": {
+        "@type": "Person",
+        "name": "Gareth",
+        "jobTitle": "Founder",
+        "worksFor": { "@type": "Organization", "name": "PetTransportGlobal" }
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "PetTransportGlobal",
+        "url": "https://pettransportglobal.com"
+    }
+}
+</script>
+{{ with .Params.faqs }}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {{ range $i, $faq := . }}{{ if $i }},{{ end }}
+        {
+            "@type": "Question",
+            "name": {{ $faq.question | jsonify }},
+            "acceptedAnswer": { "@type": "Answer", "text": {{ $faq.answer | jsonify }} }
+        }
+        {{ end }}
+    ]
+}
+</script>
+{{ end }}
+{{ end }}
+
+{{ define "main" }}
+
+{{/* ── Inner hero banner ── */}}
+<div class="ptg-inner-hero">
+    <div class="container">
+        <nav aria-label="breadcrumb" class="ptg-inner-breadcrumb mb-2">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="/blog/">Blog</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ .Title | truncate 50 }}</li>
+            </ol>
+        </nav>
+        <div class="ptg-inner-badge-row mb-2">
+            {{ with .Params.tags }}
+            {{ range first 2 . }}
+            <span class="ptg-inner-type-badge">{{ . }}</span>
+            {{ end }}
+            {{ end }}
+        </div>
+        <h1 class="ptg-inner-h1">{{ .Title }}</h1>
+        <p class="ptg-inner-sub">
+            By Gareth, Founder &nbsp;&middot;&nbsp;
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
+            &nbsp;&middot;&nbsp; {{ .ReadingTime }} min read
+        </p>
+    </div>
+</div>
+
+{{/* ── Page body ── */}}
+<div class="page">
+    <div class="container">
+        <div class="row">
+
+            {{/* Main content column */}}
+            <div class="col-lg-8 page-with-sidebar">
+
+                {{/* Quick quote CTA */}}
+                <div class="card accent-left mb-4 p-3 bg-light">
+                    <p class="mb-0">Need help moving your pet internationally? <a href="/#quote-form" class="btn btn-primary btn-sm ms-2">Get a free quote</a></p>
+                </div>
+
+                {{/* Article body */}}
+                <div class="ptg-blog-body">
+                    {{ .Content }}
+                </div>
+
+                {{/* FAQs */}}
+                {{ with .Params.faqs }}
+                <div class="mt-4">
+                    {{ partial "faq-accordion.html" (dict "faqs" .) }}
+                </div>
+                {{ end }}
+
+                {{/* Author bio */}}
+                <div class="card p-3 mt-5 bg-light">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="service-icon-circle" style="width:52px;height:52px;flex-shrink:0;">
+                            <i class="fas fa-user" style="font-size:1.2rem;"></i>
+                        </div>
+                        <div>
+                            <strong>Gareth</strong> &mdash; Founder, PetTransportGlobal<br>
+                            <span style="font-size:0.88rem;color:#6c757d;">Gareth writes every article on this site. If you have a question about moving a pet, <a href="/#quote-form">get in touch</a>.</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            {{/* Sidebar */}}
+            <div class="col-lg-4">
+                <div class="sidebar sticky-top" style="top:100px;">
+
+                    {{/* Get a quote widget */}}
+                    <div class="widget1 bg-primary text-light p-3 rounded mb-4">
+                        <h5 class="text-light">Moving your pet abroad?</h5>
+                        <p style="font-size:0.88rem;color:rgba(255,255,255,0.82);margin-bottom:12px;">We coordinate the paperwork, the airline booking, and the quarantine so you don't have to.</p>
+                        <a href="/#quote-form" class="btn btn-secondary btn-block">Get a free quote</a>
+                    </div>
+
+                    {{/* Tags */}}
+                    {{ with .Params.tags }}
+                    <div class="widget1 bg-light p-3 rounded mb-4">
+                        <h5>Topics</h5>
+                        <div class="d-flex flex-wrap gap-2">
+                            {{ range . }}
+                            <span class="ptg-inner-type-badge" style="font-size:0.78rem;">{{ . }}</span>
+                            {{ end }}
+                        </div>
+                    </div>
+                    {{ end }}
+
+                    {{/* Related pages */}}
+                    <div class="widget1 bg-light p-3 rounded mb-4">
+                        <h5>Useful links</h5>
+                        <ul class="list-unstyled colored-icons">
+                            <li class="mb-2"><a href="/pet-transport/routes/"><i class="fas fa-map-marked-alt me-2"></i>Browse all routes</a></li>
+                            <li class="mb-2"><a href="/pet-transport/countries/"><i class="fas fa-globe me-2"></i>Country import guides</a></li>
+                            <li class="mb-2"><a href="/pet-transport/airlines/"><i class="fas fa-plane me-2"></i>Airline pet policies</a></li>
+                            <li class="mb-2"><a href="/blog/"><i class="fas fa-newspaper me-2"></i>All articles</a></li>
+                        </ul>
+                    </div>
+
+                    {{/* WhatsApp CTA */}}
+                    <div class="widget1 p-3 rounded mb-4" style="background:#f0fff4;border:1px solid #b7ebc8;">
+                        <h5 style="color:#1a6b4a;"><i class="fab fa-whatsapp me-2" style="color:#25d366;"></i>Chat on WhatsApp</h5>
+                        <p style="font-size:0.87rem;color:#374151;margin-bottom:10px;">Quick question? Message us directly and we'll reply within a few hours.</p>
+                        <a href="https://wa.me/447703577246" target="_blank" rel="noopener" class="btn btn-sm" style="background:#25d366;color:#fff;font-weight:600;">Start a chat</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{{/* Quote form */}}
+{{ partial "quote-form.html" . }}
+
+{{ end }}
