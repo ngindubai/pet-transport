@@ -19,10 +19,15 @@
     {{/* Schema.org */}}
     {{ block "schema" . }}{{ end }}
 
-    {{/* Fonts */}}
+    {{/* Google Fonts — base site fonts */}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,600,700%7CMontserrat:400,500,600,700&display=swap" rel="stylesheet">
+
+    {{/* Route-template design fonts — loaded on route pages only to avoid homepage bloat */}}
+    {{ if eq .Type "routes" }}
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;0,9..40,700;1,9..40,300&family=IBM+Plex+Mono:wght@400;600&family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,600;1,8..60,300&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    {{ end }}
 
     {{/* Flaticon + FontAwesome */}}
     <link href="/fonts/flaticon/flaticon.css" rel="stylesheet">
@@ -37,6 +42,11 @@
 
     {{/* Color scheme */}}
     <link href="/styles/maincolors.css" rel="stylesheet">
+
+    {{/* Route template design system — 6 distinctive visual templates */}}
+    {{ if eq .Type "routes" }}
+    <link href="/css/route-templates.css" rel="stylesheet">
+    {{ end }}
 
     {{/* Site override CSS */}}
     {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
@@ -58,9 +68,6 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', '{{ .Site.Params.googleAnalyticsId }}', {
-        // Capture landing page, referrer and traffic source automatically.
-        // Link GA4 to Google Search Console in GA4 > Admin > Search Console
-        // to unlock organic keyword data.
         send_page_view: true
       });
     </script>
@@ -89,6 +96,20 @@
     {{/* Site-specific JS */}}
     {{ $js := resources.Get "js/main.js" | minify | fingerprint }}
     <script src="{{ $js.RelPermalink }}" defer></script>
+
+    {{/* FAQ accordion JS — activates on route template pages */}}
+    {{ if eq .Type "routes" }}
+    <script>
+    document.querySelectorAll('.ptg-faq-q').forEach(function(q) {
+      q.addEventListener('click', function() {
+        var item = this.closest('.ptg-faq-item');
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.ptg-faq-item.open').forEach(function(el) { el.classList.remove('open'); });
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+    </script>
+    {{ end }}
 
     {{/* WhatsApp floating button */}}
     <a class="ptg-wa-float" href="https://wa.me/447703577246" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
