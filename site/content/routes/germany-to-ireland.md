@@ -9,7 +9,7 @@ slug: "germany-to-ireland"
 origin_name: "Germany"
 destination_name: "Ireland"
 route_data:
-    origin:
+  origin:
     code: "DE"
     country: "Germany"
     export_requirements:
@@ -48,7 +48,7 @@ route_data:
       responsible: "German vet"
     - step: 2
       action: "If travelling with a dog: book vet appointment for tapeworm treatment"
-      timing: "24-120 hours before Ireland arrival. Exact timing matters — too early or too late fails."
+      timing: "24-120 hours before Ireland arrival. Exact timing matters - too early or too late fails."
       responsible: "German vet"
     - step: 3
       action: "Book Aer Lingus or Lufthansa Cargo FRA-DUB"
@@ -65,14 +65,14 @@ route_data:
     - "No permit fees"
   key_warnings:
     - "Dogs require tapeworm treatment (Praziquantel) by a vet, 24-120 hours before Ireland arrival. The timing window is strict at both ends."
-    - "Ryanair does not accept pets. Many German travellers assume all Ireland routes accept pets — they don't on budget carriers."
+    - "Ryanair does not accept pets. Many German travellers assume all Ireland routes accept pets - they don't on budget carriers."
     - "Cats are exempt from the tapeworm treatment requirement."
   route_complexity: "low"
   estimated_timeline_weeks: "1-2"
 content:
   h1: "Pet Transport from Germany to Ireland"
   overview: |
-    Germany to Ireland is straightforward for EU pets — with one catch for dog owners. Ireland requires all dogs arriving from EU countries to have a tapeworm treatment (Praziquantel, minimum 23.4mg) administered by a vet between 24 and 120 hours before arrival. That treatment window needs planning. Everything else is EU standard.
+    Germany to Ireland is straightforward for EU pets - with one catch for dog owners. Ireland requires all dogs arriving from EU countries to have a tapeworm treatment (Praziquantel, minimum 23.4mg) administered by a vet between 24 and 120 hours before arrival. That treatment window needs planning. Everything else is EU standard.
   sections:
     - heading: "Compliance data: Germany to Ireland"
       body: |
