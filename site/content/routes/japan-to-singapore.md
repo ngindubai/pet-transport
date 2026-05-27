@@ -1,9 +1,9 @@
 ---
-template_variant: "D"
-title: "Pet Transport from Japan to Singapore | PetTransportGlobal"
-description: "Pet relocation from Japan to Singapore: Singapore import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport from Japan to Singapore | AQS Export, AVS Category C & Full Guide"
+description: "Moving your pet from Japan to Singapore: AQS export certificate, AVS import permit, titre test and 30-day quarantine required, ANA and Singapore Airlines cargo."
 type: "routes"
 layout: "single"
+template_variant: "B"
 author: "Gareth - Founder, PetTransportGlobal"
 slug: "japan-to-singapore"
 origin_name: "Japan"
@@ -13,119 +13,134 @@ route_data:
     code: "JP"
     country: "Japan"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      export_permit: "No formal export permit for personal pets. AQS issues the export health certificate."
+      health_certificate: "AQS-issued health certificate in AVS format. Issued within 10 days of travel AND within 7 days of Singapore arrival per AVS rules."
   destination:
     code: "SG"
     country: "Singapore"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before rabies vaccination"
-      rabies_vaccination: "Required"
-      titre_test: "Required for: Category B and C countries. Not required for: Category A countries. Minimum: 0.5 IU/ml"
-      quarantine: "Check current requirements with destination authority"
-      import_permit: "Check with destination authority"
-      health_certificate: "Required. Veterinary health certificate. Issued by: Government veterinarian or government-endorsed veterinarian in country of export. Certificate must state: species, breed, age, sex, microchip number, vaccination records, health status"
+      microchip: "Required (ISO 11784/11785). Before vaccination."
+      rabies_vaccination: "Required for Category C countries. At least 30 days before titre test and within 12 months of export."
+      titre_test: "Japan is likely Category C for AVS Singapore. FAVN/ELISA at AVS-approved laboratory. Minimum 0.5 IU/ml. 6-month wait from blood draw. Verify current Japan category at nparks.gov.sg/avs."
+      quarantine: "30 days mandatory at AVS-approved Singapore Quarantine Station (SQS). Pre-booking required. Owner pays."
+      import_permit: "Required. AVS import permit. Apply 30+ days before arrival."
+      health_certificate: "AQS-endorsed health certificate in AVS format. Dual window: within 10 days of travel AND within 7 days of Singapore arrival."
+      entry_point: "Singapore Changi Airport (SIN). Changi APQS."
+      authority: "AVS Singapore. nparks.gov.sg/avs"
   airlines:
     - name: "Japan Airlines (JAL)"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported as checked baggage in temperature-controlled hold. Brachycephalic breeds: French Bulldogs BANNED from cargo (May-October). English Bulldogs banned year-round. Summer restrictions: May-October temperature embargoes on some routes"
+      policy_summary: "Direct NRT-SIN. JAL Cargo. Japanese national carrier with AQS export familiarity at Narita. Strong option for Japan departures."
+    - name: "ANA"
+      type: "cargo_only"
+      policy_summary: "Direct NRT/HND-SIN. ANA Cargo. AQS-experienced at Tokyo. Deep familiarity with Japan export documentation."
     - name: "Singapore Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Emirates"
-      type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
+      policy_summary: "Direct SIN-NRT reverse. Singapore Airlines Cargo. AVS import familiarity at Changi on arrival."
     - name: "Cathay Pacific"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
+      policy_summary: "Via Hong Kong HKG to SIN. Longer routing."
+    - name: "Emirates"
+      type: "cargo_only"
+      policy_summary: "Via Dubai DXB to SIN. Summer heat restrictions may apply."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step: must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Verify current AVS Category for Japan at nparks.gov.sg/avs"
+      timing: "Do this first. Determines your entire timeline."
+      responsible: "You or agent"
     - step: 2
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Microchip and vaccination confirmed (30+ days before titre test blood draw)"
+      timing: "Week 0-6"
+      responsible: "Japanese vet"
     - step: 3
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "FAVN titre test at AVS-approved laboratory"
+      timing: "Week 6+ (30+ days post-vaccination)"
+      responsible: "Japanese vet + approved lab"
     - step: 4
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "6-month wait from blood draw"
+      timing: "Weeks 6-32"
+      responsible: "N/A"
     - step: 5
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Apply for AVS import permit (30+ days)"
+      timing: "Start during waiting period."
+      responsible: "You or agent"
+    - step: 6
+      action: "Pre-book SQS 30-day quarantine slot"
+      timing: "As early as possible."
+      responsible: "You or agent"
+    - step: 7
+      action: "Book ANA or Singapore Airlines Cargo NRT-SIN"
+      timing: "Week 30+"
+      responsible: "You or agent"
+    - step: 8
+      action: "AQS-endorsed health certificate in AVS format"
+      timing: "Within 10 days of travel AND 7 days before SIN arrival."
+      responsible: "AQS Japan"
+    - step: 9
+      action: "Arrive Singapore. 30-day quarantine at SQS."
+      timing: "Pre-paid."
+      responsible: "AVS SQS"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "ANA or Singapore Airlines Cargo fees NRT-SIN"
+    - "IATA-compliant crate"
+    - "FAVN titre test"
+    - "AVS import permit"
+    - "30-day SQS quarantine fees (owner pays)"
+    - "AQS health certificate"
+    - "Agent fee (strongly recommended)"
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "Japan likely Category C for AVS: titre test + 6-month wait + 30-day quarantine all apply."
+    - "Health certificate dual window is tight: within 10 days of travel AND within 7 days of Singapore arrival."
+    - "Pre-book SQS quarantine early. Limited spaces."
+    - "Verify Japan's current AVS category at nparks.gov.sg/avs."
+  route_complexity: "very_high"
+  estimated_timeline_weeks: "36-44"
 content:
   h1: "Pet Transport from Japan to Singapore"
   overview: |
-    The Japan to Singapore route is one many expats and returning families complete each year with their pets.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date: some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Use this guide to map out your preparation timeline and avoid the most common mistakes.
+    Japan to Singapore sounds simple on paper — a 7-hour flight between two of Asia's most organised countries. In practice, AVS Singapore likely classifies Japan as Category C, meaning a titre test, a 6-month wait, and 30 days of mandatory quarantine on arrival. Total preparation: 36-44 weeks.
+
+    ANA and Singapore Airlines both fly direct from Tokyo to Changi, so once the waiting period is behind you, the logistics are clean.
   sections:
-    - heading: "Key requirements for moving your pet to Singapore"
+    - heading: "Two meticulous systems, one demanding route"
       body: |
-        Compared to some international pet transport routes, Japan to Singapore is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        National Parks Board (NParks) Animal and Veterinary Service (AVS) regulates all animal imports. Singapore maintains rabies-free status through a rigorous 4-tier category system. AVS website blocked automated extraction; data compiled from AVS published guidelines and official category system documentation. Singapore has strict housing rules: HDB flats (public housing, ~80% of population) only allow approved small dog breeds and cats (since 2024).
-    - heading: "From experience: Japan to Singapore pet transport"
+        Japan's AQS has one of the world's most rigorous pet import systems. Singapore's AVS is equally thorough on the import side. Moving a pet between them requires satisfying both.
+
+        From Japan, the AQS export health certificate must be in AVS Singapore's required format and issued within a dual timing window: within 10 days of travel from Japan AND within 7 days of arrival in Singapore. With a 7-hour NRT-SIN flight, these windows overlap comfortably — but plan the AQS appointment accordingly.
+
+        From Singapore's perspective, Japan is likely Category C. The FAVN titre test and a 6-month wait from blood draw apply. Then 30 days of mandatory quarantine at the Singapore Quarantine Station on arrival, regardless of how thorough the pre-travel documentation is. Pre-book the quarantine slot early; spaces fill ahead of the application deadlines.
+    - heading: "ANA or Singapore Airlines: which to choose"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        ANA Cargo from Narita or Haneda to Changi is the most direct option from Japan, with ANA's cargo team having daily familiarity with AQS export documentation requirements. JAL Cargo operates the same route and is equally AQS-experienced.
+
+        Singapore Airlines Cargo runs the same NRT-SIN route in the opposite direction. As the Changi national carrier, their arrival-side knowledge of AVS import procedures is deep. All three are solid choices for this route.
+    - heading: "Managing the three parallel tracks"
+      body: |
+        While the 6-month wait ticks down, three administrative tracks need to run simultaneously. AVS import permit application (30+ days, via AVS e-service). SQS quarantine pre-booking (limited spaces, book as soon as your approximate travel month is known). Cargo booking and AQS health certificate arrangement (4-6 weeks before departure).
+
+        An experienced agent who has managed Japan–Singapore moves handles these tracks as routine. Going it alone is possible but requires close attention to overlapping deadlines.
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Japan to Singapore?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Singapore?"
-    answer: "No routine quarantine is required in Singapore for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Singapore?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Singapore. Start this process as early as possible."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Japan. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Singapore's authority for the exact format required."
+  - question: "How long does it take to prepare a pet for Japan to Singapore?"
+    answer: "Allow 36-44 weeks if Japan is Category C for AVS. The 6-month wait after the titre test blood draw is the main constraint. The AVS import permit, SQS quarantine pre-booking, and AQS health certificate all run alongside this."
+  - question: "Is 30-day quarantine required from Japan to Singapore?"
+    answer: "Likely yes, if Japan is Category C for AVS. Verify at nparks.gov.sg/avs. Category C requires 30 days quarantine at an SQS-approved facility, paid by the owner. Pre-booking is mandatory."
+  - question: "What is the health certificate dual window?"
+    answer: "AVS requires the health certificate to be issued within 7 days of Singapore arrival. Japan AQS issues it within 10 days of travel from Japan. With a 7-hour NRT-SIN flight, both windows are typically met if the AQS appointment is planned in the 7 days before departure."
+  - question: "Which airline is best from Tokyo to Singapore?"
+    answer: "ANA Cargo, JAL Cargo, and Singapore Airlines Cargo all operate direct NRT-SIN services. ANA and JAL have strong AQS export familiarity at Tokyo; Singapore Airlines has deep AVS Changi import expertise."
+  - question: "Do I need an agent for this route?"
+    answer: "Not required, but strongly recommended. Japan-to-Singapore involves AQS export documentation, dual-window health certificates, AVS import permits, and SQS quarantine booking running simultaneously. An agent with specific experience on this corridor manages all tracks and prevents costly errors."
 links:
   sideways:
     - url: "/pet-transport/singapore-to-japan/"
       text: "Pet Transport Singapore to Japan"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-japan-export-guide/"
+    - url: "/pet-transport/origins/japan-pet-export-guide/"
       text: "Shipping from Japan"
     - url: "/pet-transport/countries/singapore/"
       text: "Importing to Singapore"
-    - url: "/pet-transport/airlines/japan-airlines-jal/"
-      text: "Japan Airlines (JAL) pet policy"
+    - url: "/pet-transport/airlines/ana/"
+      text: "ANA pet policy"
     - url: "/pet-transport/airlines/singapore-airlines/"
       text: "Singapore Airlines pet policy"
 ---

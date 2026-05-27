@@ -1,9 +1,9 @@
 ---
-template_variant: "D"
-title: "Pet Relocation Germany to New Zealand | Requirements & Guide"
-description: "How to ship your dog or cat from Germany to New Zealand. New Zealand import rules, vaccinations, permits, and airline options explained."
+title: "Pet Transport from Germany to New Zealand | MPI NZSTAP Protocol, Titre Test & Guide"
+description: "Moving your pet from Germany to New Zealand: MPI NZSTAP import permit, FAVN titre test mandatory, 180-day wait, 10-day quarantine — full preparation guide from Germany."
 type: "routes"
 layout: "single"
+template_variant: "E"
 author: "Gareth - Founder, PetTransportGlobal"
 slug: "germany-to-new-zealand"
 origin_name: "Germany"
@@ -13,136 +13,151 @@ route_data:
     code: "DE"
     country: "Germany"
     export_requirements:
-      export_permit: "No formal export permit for pets. Health certificate and EU pet passport serve as documentation."
+      export_permit: "No formal export permit for personal pets from Germany."
+      health_certificate: "Official health certificate endorsed by German competent veterinary authority in MPI format. Issued within 10 days of travel."
   destination:
     code: "NZ"
     country: "New Zealand"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or on same day as first rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 28-day wait after vaccination before travel. Vaccination schedule must be complete before titre test blood draw."
-      titre_test: "Required for: All pets from all countries (no exemptions). Not required for: None. Minimum: 0.5 IU/ml. 180-day wait from test date before entry"
-      quarantine: "Mandatory quarantine. 10 (minimum) at MPI Levin facility days. Facility: MPI Levin Quarantine Facility, Levin, Manawatu (the only approved facility). Mandatory 10-day quarantine for all arriving cats and dogs. Pre-booking required well in advance as capacity is limited. Book before flights."
-      import_permit: "Required. Issued by: Ministry for Primary Industries (MPI), Biosecurity New Zealand. Apply for import permit before booking flights. Permit specifies all conditions. Non-compliance results in re-export or destruction."
-      health_certificate: "Required. Government veterinary health certificate. Issued by: Government (official) veterinarian in country of export. Valid for 14 days from issue. Must use MPI-specified format for the exact country of export. No standard format accepted. Download the correct template from the MPI website."
+      microchip: "Required (ISO 11784/11785). Before or on same day as first vaccination."
+      rabies_vaccination: "Two inactivated-virus vaccinations required. Both after microchip. At least 28 days apart. Both must be complete before titre test."
+      titre_test: "Mandatory from all countries. FAVN at MPI-approved laboratory. Minimum 0.5 IU/ml. Blood drawn 30+ days after second vaccination. 180-day wait from blood draw date. No exemptions."
+      quarantine: "Mandatory 10 days at MPI-approved quarantine facility on arrival. Owner pre-books and pays."
+      import_permit: "NZSTAP import approval required from MPI before travel. Apply early."
+      health_certificate: "German authority-endorsed health certificate in MPI format. Within 10 days of travel."
+      entry_point: "Auckland International Airport (AKL) primary. Christchurch (CHC) also handles some imports."
+      authority: "Ministry for Primary Industries (MPI), Biosecurity New Zealand. nzstap.mpi.govt.nz"
   airlines:
+    - name: "Air New Zealand"
+      type: "cargo_only"
+      policy_summary: "Air New Zealand Cargo FRA-AKL via connections. National carrier of destination. Strong MPI quarantine familiarity at Auckland arrival."
     - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Qantas"
       type: "cargo_only"
-      policy_summary: "Cargo: QantasFreighter network for pet transport. Brachycephalic breeds restricted year-round. Temperature embargoes: seasonal restrictions during Australian summer (Dec-Feb)"
-    - name: "Emirates"
-      type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
+      policy_summary: "Lufthansa Cargo via Asian hubs to AKL. Brachycephalic breeds restricted year-round."
     - name: "Singapore Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
+      policy_summary: "Via Singapore SIN to AKL. Temperature-controlled cargo. Common routing for Europe-NZ pet moves."
+    - name: "Emirates"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Via Dubai DXB to AKL. Summer heat embargoes may apply."
+    - name: "Qantas"
+      type: "cargo_only"
+      policy_summary: "Via Sydney or Melbourne to AKL. Qantas Freight handles pet connections to New Zealand."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Microchip (before or same day as first vaccination)"
+      timing: "Week 0"
+      responsible: "German vet"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 28-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "First rabies vaccination (inactivated virus)"
+      timing: "Week 0-2"
+      responsible: "German vet"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Second rabies vaccination (28+ days after first)"
+      timing: "Week 4+"
+      responsible: "German vet"
     - step: 4
-      action: "Apply for import permit from New Zealand"
-      timing: "Apply early: allow 4-6 weeks"
-      responsible: "You (or your pet transport agent)"
+      action: "Apply for NZSTAP import approval from MPI"
+      timing: "Apply early. Processing takes time. Start before titre test."
+      responsible: "You or agent via nzstap.mpi.govt.nz"
     - step: 5
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "FAVN titre test at MPI-approved laboratory"
+      timing: "Week 8+ (30+ days after second vaccination)"
+      responsible: "German vet + MPI-approved lab"
     - step: 6
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "180-day wait from blood draw"
+      timing: "Weeks 8-34"
+      responsible: "N/A"
     - step: 7
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Pre-book MPI quarantine facility (10 days)"
+      timing: "As early as possible."
+      responsible: "You or agent"
     - step: 8
-      action: "Quarantine on arrival (10 (minimum) at MPI Levin facility days)"
-      timing: "Immediately on arrival (mandatory)"
-      responsible: "New Zealand quarantine authority"
+      action: "Book Air New Zealand or Singapore Airlines Cargo FRA-AKL"
+      timing: "Week 32+"
+      responsible: "You or agent"
+    - step: 9
+      action: "German authority-endorsed MPI health certificate"
+      timing: "Within 10 days of travel."
+      responsible: "DENV-authorised vet + German authority"
+    - step: 10
+      action: "Arrive Auckland. 10-day MPI quarantine."
+      timing: "Pre-paid."
+      responsible: "MPI-approved facility"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (New Zealand)"
-    - "Quarantine facility fees (owner-paid at destination)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Cargo fees FRA-AKL (long-haul, varies by carrier and routing)"
+    - "IATA-compliant crate"
+    - "FAVN titre test (MPI-approved lab)"
+    - "NZSTAP application fee"
+    - "10-day MPI quarantine fees (owner pays)"
+    - "German authority health certificate endorsement"
+    - "Agent fee (strongly recommended)"
   key_warnings:
-    - "Mandatory quarantine required on arrival. Plan for separation from your pet."
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
+    - "New Zealand requires titre test + 180-day wait from ALL countries. No exemptions for Germany."
+    - "10-day quarantine on arrival is mandatory in addition to the pre-travel 180-day wait."
+    - "Apply for NZSTAP approval early — processing is not instant."
+    - "Pre-book MPI quarantine facility before travel — spaces are limited."
   route_complexity: "very_high"
-  estimated_timeline_weeks: "26-32"
+  estimated_timeline_weeks: "38-44"
 content:
   h1: "Pet Transport from Germany to New Zealand"
   overview: |
-    Moving a pet from Germany to New Zealand involves more paperwork than most owners expect.
-    
-    This route is one of the most demanding international pet transport routes. Start preparations at least 26 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. New Zealand requires mandatory quarantine (10 (minimum) at MPI Levin facility days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Start early and follow the steps in sequence. Missing a deadline pushes the whole timeline back.
+    New Zealand treats every country equally. Germany's EU membership and advanced veterinary system make no difference: the full NZSTAP protocol applies. Two vaccinations, a titre test, a 180-day wait, and a mandatory 10-day quarantine on arrival. Allow 38-44 weeks.
   sections:
-    - heading: "Understanding New Zealand's pet import rules"
+    - heading: "Key compliance data: Germany to New Zealand"
       body: |
-        This is one of the more demanding international pet transport corridors. New Zealand runs a strict biosecurity programme and there are no shortcuts through it.
-        
-        All pets must complete quarantine on arrival in New Zealand (at MPI Levin Quarantine Facility, Levin, Manawatu (the only approved facility)) for 10 (minimum) at MPI Levin facility days. This is non-negotiable and is entirely separate from the pre-travel preparation.
-        
-        New Zealand is rabies-free with one of the world's strictest pet import systems. All dogs and cats must complete mandatory quarantine at the government-approved facility (Levin MAF Quarantine Station, now MPI). Import permit required in advance. Only cats and dogs permitted from most countries; birds require separate approval. Authority: Ministry for Primary Industries (MPI), Biosecurity New Zealand.
-    - heading: "Step-by-step: what to do first"
+        | Requirement | Detail |
+        |---|---|
+        | Microchip | ISO 11784/11785, before or same day as first vaccination |
+        | Vaccination | Two inactivated-virus rabies, 28+ days apart |
+        | Titre test | FAVN, MPI-approved lab, 0.5+ IU/ml, 30+ days after second vax |
+        | Post-titre wait | 180 days from blood draw. No exemptions. |
+        | NZSTAP permit | Required from MPI before travel |
+        | Quarantine on arrival | 10 days mandatory at MPI facility, owner pays |
+        | Health certificate | German authority-endorsed in MPI format, within 10 days |
+        | Entry airport | Auckland AKL (primary) |
+        | Total preparation | 38-44 weeks |
+        | Complexity | Very high |
+
+        Source: MPI Biosecurity New Zealand, nzstap.mpi.govt.nz. Verify before starting.
+    - heading: "Routing from Frankfurt to Auckland"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        | Airline | Route | Notes |
+        |---|---|---|
+        | Air New Zealand Cargo | FRA via connections to AKL | National carrier. Strong MPI quarantine familiarity at AKL. |
+        | Singapore Airlines Cargo | FRA via SIN to AKL | Common Europe-NZ routing. Temperature-controlled hold. |
+        | Lufthansa Cargo | FRA via Asian hub to AKL | Brachycephalic breeds restricted year-round. |
+        | Emirates SkyCargo | FRA via DXB to AKL | Summer heat restrictions may apply at DXB. |
+        | Qantas Freight | FRA via SYD/MEL to AKL | Australian hub connection to NZ. |
+
+        No direct Frankfurt-Auckland cargo service exists. All routes involve at least one transit. Singapore Airlines via Changi is one of the most commonly used for European pets heading to New Zealand. Air New Zealand is worth contacting early given their AKL quarantine familiarity.
+    - heading: "NZSTAP: apply before anything else"
+      body: |
+        New Zealand's Standard Treatment and Approval Process (NZSTAP) is the government approval that must be in place before your pet can travel to New Zealand. Apply via the MPI portal at nzstap.mpi.govt.nz. Processing is not instant — start the application early, ideally before or during the vaccination sequence.
+
+        The NZSTAP approval specifies the conditions your pet must meet. The health certificate issued in Germany must match those conditions exactly. Any discrepancy between the NZSTAP approval and the certificate causes problems at Auckland.
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Germany to New Zealand?"
-    answer: "Allow at least 26 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering New Zealand?"
-    answer: "Yes, quarantine is mandatory in New Zealand. Your pet will stay for 10 (minimum) at MPI Levin facility days at MPI Levin Quarantine Facility, Levin, Manawatu (the only approved facility) on arrival. This is non-negotiable and the cost is paid by the owner."
-  - question: "Is a rabies titre test required for pets entering New Zealand?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter New Zealand. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into New Zealand?"
-    answer: "Yes, an import permit is required from New Zealand's authority (Ministry for Primary Industries (MPI), Biosecurity New Zealand). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Germany. The certificate must be issued within 14 days of travel. Present the original (not a copy) at check-in. Check New Zealand's authority for the exact format required."
+  - question: "Does Germany get any special treatment for New Zealand pet imports?"
+    answer: "No. New Zealand requires the NZSTAP protocol from all countries without exception. Germany's EU membership and veterinary standards make no difference: two vaccinations, FAVN titre test, 180-day wait, and 10-day quarantine on arrival all apply."
+  - question: "What is NZSTAP and when should I apply?"
+    answer: "NZSTAP is New Zealand's Standard Treatment and Approval Process for importing pets. Apply via MPI at nzstap.mpi.govt.nz as early as possible — ideally when you start the vaccination sequence. Processing takes time and your pet cannot travel without the approval."
+  - question: "Is the 10-day quarantine really mandatory even after the 180-day wait?"
+    answer: "Yes. The 10-day quarantine at an MPI-approved facility is mandatory on arrival in New Zealand, separate from and in addition to the 180-day pre-travel waiting period. It must be pre-booked and fees are paid by the owner."
+  - question: "How long does preparation take for Germany to New Zealand?"
+    answer: "Allow 38-44 weeks. Two vaccinations, the titre test (30 days after second vaccination), the 180-day wait from blood draw, plus NZSTAP approval and 10-day quarantine on arrival."
+  - question: "Which airline should I use from Frankfurt to Auckland?"
+    answer: "No direct service exists. Singapore Airlines via Changi and Air New Zealand via a Pacific hub are the most commonly used options. Air New Zealand has strong MPI quarantine familiarity at Auckland; Singapore Airlines has reliable temperature-controlled cargo on this corridor."
 links:
   sideways:
     - url: "/pet-transport/new-zealand-to-germany/"
       text: "Pet Transport New Zealand to Germany"
   upward:
-    - url: "/pet-transport/origins/pet-export-guide-shipping-from-germany/"
+    - url: "/pet-transport/origins/germany-pet-export-guide/"
       text: "Shipping from Germany"
     - url: "/pet-transport/countries/new-zealand/"
       text: "Importing to New Zealand"
-    - url: "/pet-transport/airlines/lufthansa/"
-      text: "Lufthansa pet policy"
-    - url: "/pet-transport/airlines/qantas/"
-      text: "Qantas pet policy"
+    - url: "/pet-transport/airlines/air-new-zealand/"
+      text: "Air New Zealand pet policy"
+    - url: "/pet-transport/airlines/singapore-airlines/"
+      text: "Singapore Airlines pet policy"
 ---
