@@ -1,9 +1,9 @@
 ---
-template_variant: "A"
-title: "Pet Relocation Japan to South Africa | Requirements & Guide"
-description: "Complete guide to pet transport from Japan to South Africa. Import requirements, quarantine rules, airline options, and step-by-step timeline."
+title: "Pet Transport from Japan to South Africa | AQS Export, DALRRD Import & Guide"
+description: "Shipping your pet from Japan to South Africa: AQS export certificate, DALRRD import permit, no titre test from Japan (bilateral agreement), Emirates and Singapore Airlines cargo."
 type: "routes"
 layout: "single"
+template_variant: "B"
 author: "Gareth - Founder, PetTransportGlobal"
 slug: "japan-to-south-africa"
 origin_name: "Japan"
@@ -13,131 +13,117 @@ route_data:
     code: "JP"
     country: "Japan"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      export_permit: "No formal export permit for personal pets. AQS issues the export health certificate."
+      health_certificate: "AQS-issued health certificate in DALRRD format. Within 10 days of travel."
   destination:
     code: "ZA"
     country: "South Africa"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. Vaccination must be documented on health certificate. Booster must be within manufacturer's validity period."
-      titre_test: "Required for: Pets from countries without bilateral veterinary agreements. Not required for: Pets from most P1 countries with bilateral agreements (UK, USA, EU, Australia, etc.). Minimum: 0.5 IU/ml"
-      quarantine: "No routine quarantine for pets arriving with correct documentation from approved countries. Pets with incomplete documentation may be quarantined at owner's expense."
-      import_permit: "Required. Must be obtained BEFORE travel. Application requires destination address in South Africa, description of pet, planned port of entry."
-      health_certificate: "Required. Official veterinary health certificate. Issued by: Government veterinarian in country of export. Certificate must confirm: vaccination status, microchip, health status, parasite treatment, absence of notifiable diseases"
+      microchip: "Required (ISO 11784/11785). Before vaccination."
+      rabies_vaccination: "Required. At least 30 days before import and within 12 months."
+      titre_test: "Verify current DALRRD requirements for Japan-origin pets at dalrrd.gov.za. Japan may have a bilateral arrangement reducing this requirement — confirm before planning."
+      quarantine: "No routine quarantine for compliant pets with DALRRD permit. DALRRD inspection at Port of Entry."
+      import_permit: "Required. DALRRD Veterinary Import Permit. Apply 4-8 weeks in advance."
+      health_certificate: "AQS-endorsed health certificate in DALRRD format. Within 10 days of travel."
+      entry_point: "O.R. Tambo International Airport (JNB) or Cape Town International (CPT)."
+      authority: "DALRRD, South Africa. dalrrd.gov.za"
   airlines:
-    - name: "Japan Airlines (JAL)"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported as checked baggage in temperature-controlled hold. Brachycephalic breeds: French Bulldogs BANNED from cargo (May-October). English Bulldogs banned year-round. Summer restrictions: May-October temperature embargoes on some routes"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
     - name: "Emirates"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
+      policy_summary: "Emirates SkyCargo NRT via DXB to JNB. Most common Japan-SA routing. Summer DXB heat embargoes may restrict brachycephalic breeds."
     - name: "Singapore Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
+      policy_summary: "Via Singapore SIN to JNB. Singapore Airlines Cargo. Reliable temperature-controlled hold. Good alternative."
+    - name: "Qatar Airways"
+      type: "cargo_only"
+      policy_summary: "Via Doha DOH to JNB. Qatar Airways Cargo. Seasonal restrictions."
     - name: "Cathay Pacific"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
+      policy_summary: "Via Hong Kong HKG to JNB. Longer routing."
+    - name: "ANA"
+      type: "cargo_only"
+      policy_summary: "ANA Cargo connections NRT to JNB via hub. AQS export familiarity at Tokyo."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step: must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Verify DALRRD titre test requirement for Japan at dalrrd.gov.za"
+      timing: "Do this first. Determines timeline."
+      responsible: "You or agent"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Confirm vaccination is 30-365 days before planned SA arrival"
+      timing: "Calculate from planned arrival date."
+      responsible: "Japanese vet"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Apply for DALRRD Veterinary Import Permit"
+      timing: "4-8 weeks. Start immediately."
+      responsible: "You or agent"
     - step: 4
-      action: "Apply for import permit from South Africa"
-      timing: "Apply early: allow 4-6 weeks"
-      responsible: "You (or your pet transport agent)"
+      action: "Book Emirates or Singapore Airlines Cargo NRT-JNB"
+      timing: "2-4 weeks before travel."
+      responsible: "You or agent"
     - step: 5
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "AQS-endorsed health certificate in DALRRD format"
+      timing: "Within 10 days of travel."
+      responsible: "AQS Japan"
     - step: 6
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 7
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "DALRRD inspection at JNB on arrival."
+      timing: "Travel day."
+      responsible: "DALRRD"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (South Africa)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Emirates or Singapore Airlines Cargo NRT-JNB"
+    - "IATA-compliant crate"
+    - "DALRRD import permit fee"
+    - "AQS health certificate"
+    - "Agent fee (recommended)"
   key_warnings:
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
+    - "Verify DALRRD titre test status for Japan before planning — determines your timeline entirely."
+    - "DALRRD import permit takes 4-8 weeks. Apply immediately."
+    - "Vaccination must be 30-365 days before SA arrival."
   route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+  estimated_timeline_weeks: "6-26"
 content:
   h1: "Pet Transport from Japan to South Africa"
   overview: |
-    International pet transport from Japan to South Africa comes down to documentation timing more than anything else.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date: some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    We've laid out every step below so you know exactly what to prepare and when.
+    Japan to South Africa is a long-haul route that requires a DALRRD import permit and an AQS export health certificate. Whether a titre test is required depends on current DALRRD policy for Japan-origin pets — verify at dalrrd.gov.za before committing to any timeline. The DALRRD permit takes 4-8 weeks regardless, so start that immediately.
+
+    Emirates via Dubai and Singapore Airlines via Changi are the main routing options for NRT-JNB cargo.
   sections:
-    - heading: "Understanding South Africa's pet import rules"
+    - heading: "The titre test question: verify with DALRRD directly"
       body: |
-        Compared to some international pet transport routes, Japan to South Africa is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        Department of Agriculture, Land Reform and Rural Development (DALRRD) regulates pet imports. South Africa has rabies present in several provinces (KwaZulu-Natal, Eastern Cape, Limpopo particularly). DALRRD portal blocked automated extraction; data compiled from published DALRRD guidelines and cross-referenced with established pet transport operator information. South Africa's outbound classification by other countries is notably affected by its rabies-endemic status.
-    - heading: "Practical advice for shipping your pet from Japan"
+        South Africa maintains bilateral veterinary agreements with certain countries that remove or reduce titre test requirements for imported pets. Whether Japan is on the current bilateral agreement list should be confirmed directly at dalrrd.gov.za or through an experienced agent before you plan anything.
+
+        If no titre test is required from Japan: preparation is 6-10 weeks (DALRRD permit plus AQS certificate). If a titre test is required: add the vaccination sequence and a mandatory waiting period, pushing the timeline to 22-26 weeks. That's a significant difference — confirm the status first.
+    - heading: "AQS export certificate: what Japan issues"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        AQS Japan issues the export health certificate for all live animal exports. For South Africa, the certificate must be in DALRRD's required format. AQS offices at Narita and Haneda handle these regularly and know the documentation requirements for various destinations.
+
+        The certificate must be issued within 10 days of travel. Book the AQS appointment with that window clearly in mind. The DALRRD health certificate conditions must match those specified in your DALRRD import permit exactly — ensure the permit is in hand before finalising the AQS certificate.
+    - heading: "Emirates vs Singapore Airlines: the long haul"
+      body: |
+        No direct Tokyo-Johannesburg cargo service exists. Emirates via Dubai International (DXB) is the most commonly used routing for Japan-South Africa pet cargo. Singapore Airlines via Changi is the main alternative, with a strong temperature-controlled cargo operation on the Changi-Johannesburg corridor.
+
+        For brachycephalic breeds, be aware of Emirates' summer DXB heat embargoes (typically May-September), which can restrict acceptance. Singapore Airlines via Changi doesn't have the same heat embargo issues and is the better choice for flat-nosed breeds.
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Japan to South Africa?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering South Africa?"
-    answer: "No routine quarantine is required in South Africa for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering South Africa?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter South Africa. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into South Africa?"
-    answer: "Yes, an import permit is required from South Africa's authority (the relevant government body). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Japan. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check South Africa's authority for the exact format required."
+  - question: "Does my pet need a titre test to enter South Africa from Japan?"
+    answer: "Verify at dalrrd.gov.za before planning. South Africa has bilateral agreements with some countries reducing this requirement. Whether Japan is currently on that list should be confirmed directly with DALRRD or an experienced agent."
+  - question: "What is the DALRRD import permit?"
+    answer: "South Africa requires a Veterinary Import Permit from DALRRD for all live animal imports. Apply through DALRRD at dalrrd.gov.za. Allow 4-8 weeks. Your pet cannot enter South Africa without it."
+  - question: "Is there quarantine on arrival in South Africa from Japan?"
+    answer: "No routine quarantine for compliant pets with a valid DALRRD permit. DALRRD inspection at O.R. Tambo International Airport. With correct documentation, your pet is released the same day."
+  - question: "Which airline is best from Tokyo to Johannesburg?"
+    answer: "Emirates via Dubai and Singapore Airlines via Changi are the two main options. Emirates has strong HKG-JNB cargo experience; Singapore Airlines is preferred for brachycephalic breeds due to DXB summer heat embargo restrictions on Emirates."
+  - question: "How long does preparation take?"
+    answer: "6-10 weeks if no titre test is required (DALRRD permit plus AQS certificate). 22-26 weeks if a titre test and mandatory wait apply. Verify the current DALRRD requirement for Japan-origin pets before planning."
 links:
   sideways:
     - url: "/pet-transport/south-africa-to-japan/"
       text: "Pet Transport South Africa to Japan"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-japan-export-guide/"
+    - url: "/pet-transport/origins/japan-pet-export-guide/"
       text: "Shipping from Japan"
     - url: "/pet-transport/countries/south-africa/"
       text: "Importing to South Africa"
-    - url: "/pet-transport/airlines/japan-airlines-jal/"
-      text: "Japan Airlines (JAL) pet policy"
-    - url: "/pet-transport/airlines/british-airways/"
-      text: "British Airways pet policy"
+    - url: "/pet-transport/airlines/emirates/"
+      text: "Emirates pet policy"
+    - url: "/pet-transport/airlines/singapore-airlines/"
+      text: "Singapore Airlines pet policy"
 ---

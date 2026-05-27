@@ -1,9 +1,9 @@
 ---
-template_variant: "A"
-title: "Pet Relocation France to Switzerland | Requirements & Guide"
-description: "Pet relocation from France to Switzerland: Switzerland import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport from France to Switzerland | EU-CH Agreement, No Titre Test & Guide"
+description: "Moving your pet from France to Switzerland: bilateral EU-CH agreement means EU Pet Passport accepted, no titre test, no quarantine — TGV, road, or Air France options."
 type: "routes"
 layout: "single"
+template_variant: "D"
 author: "Gareth - Founder, PetTransportGlobal"
 slug: "france-to-switzerland"
 origin_name: "France"
@@ -13,110 +13,104 @@ route_data:
     code: "FR"
     country: "France"
     export_requirements:
-      export_permit: "No formal export permit. Health certificate and EU pet passport serve as documentation."
+      export_permit: "No export permit required."
+      health_certificate: "EU Pet Passport accepted in Switzerland under the bilateral agreement."
   destination:
     code: "CH"
     country: "Switzerland"
     import_requirements:
-      microchip: "Required (ISO 11784/11785)"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel"
-      titre_test: "Not required from EU and certain approved countries."
-      quarantine: "No routine quarantine for compliant pets"
-      import_permit: "Health certificate"
-      health_certificate: "Required. Issued by: Official veterinarian. Valid for 10 days from issue"
+      microchip: "Required (ISO 11784/11785). Recorded in EU Pet Passport."
+      rabies_vaccination: "Required and current within validity period."
+      titre_test: "Not required. Switzerland accepts the EU Pet Passport under its bilateral veterinary agreement with the EU."
+      quarantine: "Not required."
+      import_permit: "Not required for personal pets."
+      health_certificate: "EU Pet Passport accepted."
+      entry_point: "No designated border control post. Standard road, rail, or air entry."
+      authority: "FSVO (BLV), Switzerland. Bilateral EU-CH veterinary agreement."
   airlines:
+    - name: "TGV / SNCF Rail (recommended)"
+      type: "cabin_and_cargo"
+      policy_summary: "Cabin: TGV and SNCF connect Paris to Geneva in 3h10m, Paris to Zurich in about 4h. Small pets in carrier on SNCF. Lyon to Geneva is under 2h. Rail is the most practical option for most France-Switzerland pet moves."
+    - name: "SWISS"
+      type: "cabin_and_cargo"
+      policy_summary: "Cabin: SWISS allows small pets in cabin on Paris CDG to Zurich ZRH (about 1 hour). Adds airport complexity to a short trip."
     - name: "Air France"
       type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Lufthansa"
+      policy_summary: "Cabin pets on Air France Paris-Zurich route. Short flight."
+    - name: "Driving"
       type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Emirates"
-      type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Most France-Switzerland moves happen by road. Lyon to Geneva is 1h30m. Paris to Basel is 3h30m. Keep EU passport accessible at the border."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step: must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Is the EU Pet Passport current (microchip, valid vaccination)?"
+      timing: "Check immediately. If yes, travel is possible within days."
+      responsible: "Your vet"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Choose: road (most common), TGV, or fly"
+      timing: "Book rail or air 1-2 weeks ahead if needed."
+      responsible: "You"
     - step: 3
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
-    - step: 4
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 5
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Travel. Swiss border: EU passport accessible."
+      timing: "Day of travel."
+      responsible: "You"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "SNCF/TGV ticket Paris-Geneva or Paris-Zurich (EUR 30-100)"
+    - "Air France or SWISS cabin pet fee if flying (EUR 50-80)"
+    - "No permit fees"
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "low"
-  estimated_timeline_weeks: "4-10"
+    - "Switzerland is not in the EU. The EU Pet Passport is accepted via bilateral agreement, not as an EU right."
+    - "Rabies vaccination must be current. An expired vaccination invalidates the passport for entry."
+    - "France's Categorie 1 and 2 dog restrictions and Swiss cantonal breed restrictions may affect certain breeds."
+  route_complexity: "very_low"
+  estimated_timeline_weeks: "0-1"
 content:
   h1: "Pet Transport from France to Switzerland"
   overview: |
-    Pet transport from France to Switzerland follows a clear process once you know what Switzerland requires.
-    
-    This route is relatively straightforward compared to some international routes. Start preparations at least 4 weeks before your travel date: some steps have fixed waiting periods that cannot be shortened.
-    
-    Getting the timing right is critical. Work backwards from your travel date and add a buffer.
+    France to Switzerland is treated as equivalent to an intra-EU move under the bilateral veterinary agreement. Your EU Pet Passport is accepted at the Swiss border. No titre test, no quarantine, no permits.
+
+    Most people drive. Lyon to Geneva is 90 minutes. Paris to Basel is 3.5 hours. Rail is the next-best option: TGV from Paris to Geneva is just over 3 hours, with your pet in the carriage beside you.
   sections:
-    - heading: "Why this route needs early planning"
+    - heading: "Is the EU Pet Passport really enough for Switzerland?"
       body: |
-        Compared to some international pet transport routes, France to Switzerland is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        Not EU member, but follows similar standards. AFSM (State Secretariat for Economic Affairs) oversees imports.
-    - heading: "From experience: France to Switzerland pet transport"
+        Yes. Switzerland's bilateral veterinary agreement with the EU means the EU Pet Passport — recording your pet's ISO microchip and a current rabies vaccination — is accepted at Swiss border crossings for personal pets. The acceptance is well-established and robust.
+
+        Switzerland is not an EU member, but it has aligned its pet movement rules closely with EU Regulation 576/2013 through the bilateral agreement. FSVO (the Swiss Federal Food Safety and Veterinary Office) recognises EU veterinary certification without requiring a separate Swiss health certificate.
+
+        Keep the passport accessible at the border crossing, particularly if driving. Switzerland does conduct occasional customs checks.
+    - heading: "The three practical options"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        **Drive:** The most common choice for France-Switzerland. Lyon to Geneva is 1 hour 30 minutes. Paris to Basel is 3 hours 30 minutes. Strasbourg to Basel is 30 minutes. Your pet is in the car throughout.
+
+        **TGV / SNCF:** Paris to Geneva in 3 hours 10 minutes. Paris to Zurich in about 4 hours. SNCF allows small pets in carriers on TGV services. The train crosses into Switzerland without stopping for customs — border formalities happen at the Swiss station if at all. Keep the EU passport accessible.
+
+        **Fly:** Paris CDG to Zurich ZRH on Air France or SWISS is about 1 hour. Small pets in cabin on both airlines. The airport adds significant overhead to a journey that takes 4 hours by train. Useful if you're already flying.
+    - heading: "Breed restrictions: France and Switzerland"
+      body: |
+        France's Categorie 1 dogs (fighting-type, undefined breed or cross) are prohibited from keeping in France and cannot legally depart. Categorie 2 (Staffordshire Bull Terriers, American Staffordshire Terriers, Rottweilers, Tosa Inus) have ownership requirements.
+
+        Switzerland applies breed restrictions at the cantonal level. Several cantons restrict or prohibit Pit Bull Terrier types and certain other breeds. Check the rules for your destination Swiss canton before travel if you have a potentially restricted breed.
 faqs:
-  - question: "How long does it take to prepare a pet for transport from France to Switzerland?"
-    answer: "Allow at least 4 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Switzerland?"
-    answer: "No routine quarantine is required in Switzerland for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Switzerland?"
-    answer: "No, Switzerland does not require a rabies titre test for most pets arriving from France. Your pet still needs a valid rabies vaccination and microchip. Check the current requirements with the destination authority before travel."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in France. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Switzerland's authority for the exact format required."
+  - question: "Do I need anything other than an EU Pet Passport to take my pet from France to Switzerland?"
+    answer: "No. A valid EU Pet Passport with current microchip and rabies vaccination is sufficient. Switzerland accepts it under the bilateral EU-CH veterinary agreement."
+  - question: "Is there any waiting period before my pet can enter Switzerland from France?"
+    answer: "No. No titre test and no waiting period apply. If the EU Pet Passport and vaccination are current, travel is possible within days."
+  - question: "Can I drive from France to Switzerland with my pet?"
+    answer: "Yes. Keep the EU Pet Passport accessible at the border crossing. Switzerland conducts occasional customs checks, but routine inspection of every pet is not standard practice."
+  - question: "Can I take my pet on the TGV from Paris to Geneva?"
+    answer: "Yes. SNCF allows small pets in carriers on TGV services. Check current SNCF pet policies for your specific service before booking."
+  - question: "Does Switzerland have breed restrictions?"
+    answer: "Yes, at the cantonal level. Several Swiss cantons restrict Pit Bull Terrier-type dogs and certain other breeds. Check the rules for the specific canton you're relocating to."
 links:
   sideways:
     - url: "/pet-transport/switzerland-to-france/"
       text: "Pet Transport Switzerland to France"
   upward:
-    - url: "/pet-transport/origins/pet-export-guide-shipping-from-france/"
+    - url: "/pet-transport/origins/france-pet-export-guide/"
       text: "Shipping from France"
     - url: "/pet-transport/countries/switzerland/"
       text: "Importing to Switzerland"
     - url: "/pet-transport/airlines/air-france/"
       text: "Air France pet policy"
-    - url: "/pet-transport/airlines/lufthansa/"
-      text: "Lufthansa pet policy"
+    - url: "/pet-transport/airlines/swiss/"
+      text: "SWISS pet policy"
 ---
