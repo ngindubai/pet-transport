@@ -1,9 +1,9 @@
 ---
-template_variant: "C"
-title: "Pet Transport from Hong Kong to Singapore | Complete Guide"
-description: "How to transport your dog or cat from Hong Kong to Singapore. Import requirements, airline options, costs, and step-by-step process Complete guide: Singapore im"
+title: "Pet Transport from Hong Kong to Singapore | AFCD Export, AVS Import & Guide"
+description: "Moving your pet from Hong Kong to Singapore: AFCD export permit, AVS import permit, Category A status likely, Singapore Airlines and Cathay Pacific cargo."
 type: "routes"
 layout: "single"
+template_variant: "C"
 author: "Gareth - Founder, PetTransportGlobal"
 slug: "hong-kong-to-singapore"
 origin_name: "Hong Kong"
@@ -13,119 +13,125 @@ route_data:
     code: "HK"
     country: "Hong Kong"
     export_requirements:
-      export_permit: "Required for all live animal exports from Hong Kong"
+      export_permit: "Permission to Export Animals required from AFCD. Apply 2+ weeks before departure."
+      health_certificate: "Official health certificate from AFCD-authorised vet, endorsed by AFCD, in AVS format. Within 7 days of departure."
   destination:
     code: "SG"
     country: "Singapore"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before rabies vaccination"
-      rabies_vaccination: "Required"
-      titre_test: "Required for: Category B and C countries. Not required for: Category A countries. Minimum: 0.5 IU/ml"
-      quarantine: "Check requirements"
-      import_permit: "Check requirements"
-      health_certificate: "Required. Veterinary health certificate. Issued by: Government veterinarian or government-endorsed veterinarian in country of export. Certificate must state: species, breed, age, sex, microchip number, vaccination records, health status"
+      microchip: "Required (ISO 11784/11785). Before vaccination."
+      rabies_vaccination: "Hong Kong is Category A for AVS Singapore (rabies-free territory). Rabies vaccination not required for Category A origin pets."
+      titre_test: "Not required for Category A countries. Hong Kong is classified as Category A (rabies-free) by AVS Singapore."
+      quarantine: "Category A: 10 days at AVS-approved Singapore Animal Quarantine Station (SQS). Pre-booking required. Owner pays."
+      import_permit: "Required. AVS import permit via e-service portal. Apply 30+ days before arrival."
+      health_certificate: "AFCD-endorsed health certificate in AVS format. Within 7 days of HK departure."
+      entry_point: "Singapore Changi Airport (SIN). Changi Animal and Plant Quarantine Station."
+      authority: "Animal and Veterinary Service (AVS), NParks Singapore. nparks.gov.sg/avs"
   airlines:
-    - name: "Emirates"
-      type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Snub-nosed (brachycephalic) breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo transport available"
-    - name: "Lufthansa"
+    - name: "Cathay Pacific"
       type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo transport available. Transport of large animals to certain destinations not possible due to local circumstances. Fighting dog breeds subject to special rules"
+      policy_summary: "Direct HKG-SIN. Cathay Pacific Cargo. Short 3.5-hour flight. Small pets may be eligible for cabin on some services — confirm current policy."
     - name: "Singapore Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as cargo in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Qantas"
-      type: "cargo_only"
-      policy_summary: "Cargo transport available. Brachycephalic breeds restricted year-round. Temperature embargoes: seasonal restrictions during Australian summer (Dec-Feb)"
-    - name: "KLM Royal Dutch Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Pets can travel in the hold as checked baggage or via KLM Cargo"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo transport available. Brachycephalic breeds subject to restrictions/seasonal embargoes. French regulations on dangerous dog breeds apply"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Swiss International Air Lines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets travel in hold. Swiss WorldCargo for freight."
-    - name: "Japan Airlines (JAL)"
-      type: "cargo_only"
-      policy_summary: "Cargo: JAL Pet Policy: pets transported as checked baggage in temperature-controlled hold. Brachycephalic breeds: French Bulldogs BANNED from cargo (May-October). English Bulldogs banned year-round.. Summer restrictions: May-October temperature embargoes on some routes"
-    - name: "Thai Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets as checked baggage or Thai Cargo for larger animals. Brachycephalic breeds restricted during hot season (March-May). Some breed restrictions apply"
-    - name: "Philippine Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Pets as checked baggage or PAL Cargo. Brachycephalic breeds restricted from cargo. Temperature restrictions during extreme heat"
+      policy_summary: "Direct HKG-SIN. Singapore Airlines Cargo. National carrier of destination with deep AVS import familiarity at Changi."
+    - name: "Scoot"
+      type: "no_pets"
+      policy_summary: "Scoot does not accept pets. Not suitable."
+    - name: "HK Express"
+      type: "no_pets"
+      policy_summary: "HK Express does not accept pets. Not suitable."
   timeline_steps:
     - step: 1
-      action: "Get your pet microchipped (ISO 11784/11785)"
-      timing: "Before any vaccinations. Must be done first."
-      responsible: "Your veterinarian"
+      action: "Verify current AVS Category A status for Hong Kong at nparks.gov.sg/avs"
+      timing: "Do this first. Category determines your protocol."
+      responsible: "You or agent"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "At least 21 days before travel (after microchip)"
-      responsible: "Your veterinarian"
+      action: "Apply for AVS import permit"
+      timing: "30+ days before arrival."
+      responsible: "You or agent"
     - step: 3
-      action: "Rabies titre test (RNATT blood test)"
-      timing: "Blood drawn 30+ days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Pre-book SQS quarantine (10 days, Category A)"
+      timing: "As early as possible. Limited spaces."
+      responsible: "You or agent"
     - step: 4
-      action: "Obtain health certificate / veterinary clearance"
-      timing: "Within 10 days of travel (check destination-specific requirements)"
-      responsible: "Official veterinarian"
+      action: "Apply for AFCD Permission to Export Animals"
+      timing: "2+ weeks before departure."
+      responsible: "You or agent via AFCD"
     - step: 5
-      action: "Book IATA-compliant flight and arrange pet cargo/cabin booking"
-      timing: "2-4 weeks before travel. Confirm pet space availability."
-      responsible: "You (or your pet transport agent)"
+      action: "Book Cathay Pacific or Singapore Airlines HKG-SIN"
+      timing: "2-4 weeks before travel."
+      responsible: "You or agent"
     - step: 6
-      action: "Travel day: arrive early, present all documentation"
-      timing: "3-4 hours before departure for cargo pets"
-      responsible: "You + airline cargo desk"
+      action: "AFCD-endorsed health certificate in AVS format"
+      timing: "Within 7 days of HK departure."
+      responsible: "AFCD-authorised vet + AFCD"
+    - step: 7
+      action: "Travel to Singapore. 10-day quarantine at SQS."
+      timing: "Pre-paid and pre-booked."
+      responsible: "AVS-approved SQS"
   cost_factors:
-    - "Airline cargo/cabin fees (varies by carrier, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees (vaccinations, health certificate, microchip)"
-    - "Government endorsement/USDA endorsement fee (if applicable)"
-    - "Pet transport agent fee (if using a relocation service)"
+    - "Cathay Pacific or Singapore Airlines cargo fees HKG-SIN (short route)"
+    - "IATA-compliant crate"
+    - "AFCD export permit fee"
+    - "AVS import permit fee"
+    - "10-day SQS quarantine fees (Category A, owner pays)"
+    - "Agent fee"
   key_warnings:
-    - "Brachycephalic (flat-faced) breeds face cargo restrictions on most airlines. Check breed-specific policies before booking."
-    - "Microchip MUST be implanted before rabies vaccination. Vaccination given before microchip is invalid and the clock restarts."
+    - "Even Category A pets must complete 10 days quarantine in Singapore. No exemptions."
+    - "Pre-booking the SQS quarantine slot is mandatory before travel."
+    - "Both an AFCD export permit AND an AVS import permit are required."
+    - "Verify HK Category A status at nparks.gov.sg/avs before starting."
   route_complexity: "moderate"
   estimated_timeline_weeks: "6-10"
-faqs:
-  - question: "How long does it take to prepare a pet for transport from Hong Kong to Singapore?"
-    answer: "The process takes 6-10 weeks from start to finish. The rabies titre test requires a 3-6 month waiting period after the blood draw before your pet can travel, so start early."
-  - question: "Does my pet need to go into quarantine when entering Singapore?"
-    answer: "Yes. Check requirements Plan your trip around the quarantine period and factor in the cost, which is owner-paid."
-  - question: "Do I need an import permit to bring my pet into Singapore?"
-    answer: "Check requirements"
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Required. Veterinary health certificate. Issued by: Government veterinarian or government-endorsed veterinarian in country of export. Certificate must state: species, breed, age, sex, microchip number, vaccination records, health status Your Hong Kong vet must be approved to issue official veterinary certificates. The certificate must be issued within the timeframe required by Singapore: usually 10 days before travel. Present the original at check-in."
-  - question: "Is a rabies titre test required for pets entering Singapore?"
-    answer: "Yes. Required for: Category B and C countries. Not required for: Category A countries. Minimum: 0.5 IU/ml The microchip must be implanted before the first rabies vaccination for the vaccination to be valid. Start this process as early as possible."
 content:
   h1: "Pet Transport from Hong Kong to Singapore"
   overview: |
-    Pet transport from Hong Kong to Singapore is a moderately complex route. The documentation is specific and there are a few stages to work through, but families who plan ahead get their pets there without major issues.
+    Hong Kong holds Category A status with Singapore's AVS, which means no titre test and no extended pre-travel waiting period. The practical catch: Category A still requires 10 days of quarantine at a Singapore Animal Quarantine Station on arrival. Pre-booking is mandatory and spaces fill up.
 
-    At minimum, your pet needs a microchip (ISO 11784/11785 standard), a current rabies vaccination, a rabies titre test with a waiting period after the result, an approved import permit from the destination authority, and a government-endorsed health certificate issued close to your travel date. Allow 6-10 weeks from starting preparation to travel day.
+    The flight is short — 3.5 hours — but the documentation involves two permit applications, one from each country.
+  sections:
+    - heading: "Category A: the advantage and the catch"
+      body: |
+        | Factor | Category A (Hong Kong) | Category C (e.g. Germany) |
+        |---|---|---|
+        | Titre test required | No | Yes |
+        | Pre-travel wait | None | 6 months |
+        | Vaccination requirement | No rabies vax required | Yes |
+        | Quarantine on arrival | 10 days | 30 days |
+        | Import permit | Required | Required |
+        | AVS export licence | N/A — this is for origin | Required (Singapore exports) |
 
-    Singapore requires a 30-day quarantine for most dogs and cats unless your pet qualifies for Group A (approved country of origin with short-term stay). Check Singapore AVS rules for your origin country. Use our step-by-step guide below to track what you need to do and when.
+        Category A halves the quarantine from 30 to 10 days and removes the titre test entirely. It doesn't eliminate quarantine. Budget for 10 days at the Singapore Quarantine Station (SQS) and pre-book early — spaces are limited.
+    - heading: "Two permits: AFCD and AVS"
+      body: |
+        Hong Kong and Singapore both operate formal animal movement permit systems. From Hong Kong, the AFCD Permission to Export Animals (apply via afcd.gov.hk, 2+ weeks). From Singapore's side, the AVS import permit (apply via nparks.gov.sg/avs, 30+ days before arrival).
 
+        Both need to be in hand before your pet travels. Start both in parallel. The AFCD permit is quicker; the AVS permit takes longer. The SQS quarantine pre-booking should also run in parallel — limited slots fill ahead of the permit timelines.
+    - heading: "Cathay Pacific vs Singapore Airlines: the 3.5-hour hop"
+      body: |
+        Both carriers fly direct HKG-SIN frequently throughout the day. Cathay Pacific has AFCD Kowloon cargo familiarity; Singapore Airlines has deep AVS Changi import familiarity. For a short route like this, both are excellent and the choice really comes down to schedule and cargo space availability on your date.
+faqs:
+  - question: "Does my pet need a titre test to enter Singapore from Hong Kong?"
+    answer: "No. Hong Kong is Category A for AVS Singapore (rabies-free territory). No titre test and no extended pre-travel waiting period are required."
+  - question: "Is there quarantine when bringing a pet from Hong Kong to Singapore?"
+    answer: "Yes. Category A pets must complete 10 days quarantine at an AVS-approved Singapore Animal Quarantine Station. This is mandatory and cannot be shortened. Pre-booking is required and spaces are limited."
+  - question: "What permits are needed for Hong Kong to Singapore?"
+    answer: "Two: AFCD Permission to Export Animals from Hong Kong (apply via afcd.gov.hk, 2+ weeks) and an AVS import permit from Singapore (apply via nparks.gov.sg/avs, 30+ days before arrival). Both must be obtained before travel."
+  - question: "How long does preparation take?"
+    answer: "6-10 weeks. The AVS import permit (30+ days), SQS quarantine pre-booking, and AFCD export permit all run in parallel. The 10-day quarantine on arrival is additional time on top."
+  - question: "Which airline is best for Hong Kong to Singapore?"
+    answer: "Cathay Pacific and Singapore Airlines both offer direct daily services. Both are capable for pet cargo on this short-haul route. The choice comes down to schedule and cargo availability."
 links:
   sideways:
     - url: "/pet-transport/singapore-to-hong-kong/"
       text: "Pet Transport Singapore to Hong Kong"
   upward:
-    - url: "/pet-transport/origins/pet-export-guide-shipping-from-hong-kong/"
+    - url: "/pet-transport/origins/hong-kong-pet-export-guide/"
       text: "Shipping from Hong Kong"
     - url: "/pet-transport/countries/singapore/"
       text: "Importing to Singapore"
-
-
+    - url: "/pet-transport/airlines/cathay-pacific/"
+      text: "Cathay Pacific pet policy"
+    - url: "/pet-transport/airlines/singapore-airlines/"
+      text: "Singapore Airlines pet policy"
 ---

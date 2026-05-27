@@ -1,9 +1,9 @@
 ---
-template_variant: "C"
-title: "Shipping Dogs & Cats from Japan to France | PetTransportGlobal"
-description: "Complete guide to pet transport from Japan to France. Import requirements, quarantine rules, airline options, and step-by-step timeline."
+title: "Pet Transport from Japan to France | AQS Export, EU Titre Test & Full Guide"
+description: "Shipping your pet from Japan to France: AQS export health certificate, EU FAVN titre test and 3-month wait required, Air France and Lufthansa cargo from Tokyo to Paris."
 type: "routes"
 layout: "single"
+template_variant: "A"
 author: "Gareth - Founder, PetTransportGlobal"
 slug: "japan-to-france"
 origin_name: "Japan"
@@ -13,123 +13,127 @@ route_data:
     code: "JP"
     country: "Japan"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      export_permit: "No formal export permit for personal pets. AQS issues the export health certificate."
+      health_certificate: "AQS-issued export health certificate in EU Annex IV format. Issued within 10 days of travel."
   destination:
     code: "FR"
     country: "France"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or at same time as rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Standard EU protocol. 21-day wait from first vaccination."
-      titre_test: "Required for: Pets from unlisted third countries. Not required for: Pets from EU and listed third countries (all P1 countries listed). Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No routine quarantine. Non-compliant animals may be quarantined or returned at owner's expense."
-      import_permit: "No formal import permit. EU pet passport or AHC serves as documentation."
-      health_certificate: "Required"
+      microchip: "Required (ISO 11784/11785). Before first rabies vaccination."
+      rabies_vaccination: "Required. 21-day wait from first vaccination. Current and within validity."
+      titre_test: "Required. Japan is a non-listed third country under EU Regulation 576/2013. FAVN at EU-approved lab. Minimum 0.5 IU/ml. Blood drawn 30+ days post-vaccination. 3-month mandatory wait."
+      quarantine: "No quarantine for compliant pets. DGAL documentary check at CDG BCP on arrival."
+      import_permit: "Not required."
+      health_certificate: "AQS-endorsed EU Annex IV certificate. Within 10 days of travel."
+      entry_point: "Paris Charles de Gaulle (CDG)."
+      authority: "DGAL France. EU Regulation 576/2013."
   airlines:
-    - name: "Japan Airlines (JAL)"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported as checked baggage in temperature-controlled hold. Brachycephalic breeds: French Bulldogs BANNED from cargo (May-October). English Bulldogs banned year-round. Summer restrictions: May-October temperature embargoes on some routes"
     - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Emirates"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
+      policy_summary: "Direct NRT/HND-CDG. Air France Cargo. National carrier of destination. Strong CDG BCP arrival familiarity."
+    - name: "ANA"
+      type: "cargo_only"
+      policy_summary: "ANA Cargo NRT/HND to CDG. Japanese carrier with AQS export familiarity at Tokyo. Direct service."
+    - name: "JAL"
+      type: "cargo_only"
+      policy_summary: "JAL Cargo NRT to CDG. AQS-experienced at Tokyo departure."
     - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
+      type: "cargo_only"
+      policy_summary: "Via Frankfurt FRA to CDG. Brachycephalic breeds restricted."
     - name: "Singapore Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
+      policy_summary: "Via Singapore SIN to CDG. Longer routing."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step: must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "STEP 1: Microchip confirmed before vaccination"
+      timing: "Standard in Japan."
+      responsible: "Japanese vet"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "STEP 2: Rabies vaccination current"
+      timing: "If lapsed, vaccinate and wait 30 days."
+      responsible: "Japanese vet"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "STEP 3: FAVN titre test at EU-approved laboratory"
+      timing: "Blood drawn 30+ days post-vaccination. 2-4 weeks results."
+      responsible: "Japanese vet + EU-approved lab"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "STEP 4: 3-month mandatory wait from blood draw date"
+      timing: "Non-negotiable."
+      responsible: "N/A"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "STEP 5: Book Air France or ANA Cargo NRT-CDG"
+      timing: "Once wait complete."
+      responsible: "You or agent"
     - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "STEP 6: AQS-endorsed EU Annex IV health certificate"
+      timing: "Within 10 days of travel. AQS appointment in advance."
+      responsible: "AQS Japan"
+    - step: 7
+      action: "STEP 7: Cargo check-in Tokyo. CDG BCP inspection on arrival."
+      timing: "3-4 hours before departure."
+      responsible: "You + cargo + DGAL"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Air France or ANA Cargo fees NRT-CDG"
+    - "IATA-compliant crate"
+    - "FAVN titre test at EU-approved lab"
+    - "AQS health certificate fees"
+    - "Agent fee (recommended)"
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "Japan is non-listed for EU entry. Titre test + 3-month wait mandatory despite Japan's rigorous veterinary system."
+    - "AQS health certificate must be issued within 10 days of travel. Book AQS appointment well in advance."
+    - "3-month wait from blood draw date, not results date."
+  route_complexity: "high"
+  estimated_timeline_weeks: "22-26"
 content:
   h1: "Pet Transport from Japan to France"
   overview: |
-    Getting your dog from Japan to France is entirely achievable, but the preparation timeline is not flexible.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date: some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Start early and follow the steps in sequence. Missing a deadline pushes the whole timeline back.
+    Japan's AQS issues a thorough export health certificate, but the EU still classifies Japan as non-listed under Regulation 576/2013 — which means your pet needs a FAVN titre test and a 3-month wait before entering France. No quarantine on arrival, and direct Air France cargo from Tokyo makes the logistics manageable. Preparation runs 22-26 weeks.
   sections:
-    - heading: "Understanding France's pet import rules"
+    - heading: "Regulatory compliance steps"
       body: |
-        Compared to some international pet transport routes, Japan to France is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        France follows EU harmonised pet movement rules. Direction Generale de l'Alimentation (DGAL) under the Ministry of Agriculture oversees implementation. France is one of the most pet-friendly countries in Europe with high pet ownership, though some rental properties restrict pets. France has its own breed-specific legislation (Categories 1 and 2) that is notably strict.
-    - heading: "From experience: Japan to France pet transport"
+        | Step | Requirement | Timing | Key rule |
+        |---|---|---|---|
+        | 1 | ISO microchip before vaccination | Week 0 | Standard in Japan |
+        | 2 | Rabies vaccination current | Week 0-2 | 21-day wait from first vax |
+        | 3 | FAVN titre test EU-approved lab | Week 6+ | Blood drawn 30+ days post-vax |
+        | 4 | 3-month wait from blood draw | Weeks 6-19 | Non-negotiable |
+        | 5 | Book Air France/ANA Cargo NRT-CDG | Week 18+ | N/A |
+        | 6 | AQS EU Annex IV health certificate | Within 10 days travel | AQS appointment |
+        | 7 | CDG BCP inspection on arrival | Travel day | N/A |
+
+        Source: EU Regulation 576/2013; Japan AQS aqs.maff.go.jp.
+    - heading: "Air France vs ANA from Tokyo"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Two direct carrier options from Tokyo Narita to Paris CDG. Air France Cargo, as the French national carrier, has established CDG BCP arrival processes and regular DGAL inspection relationships. ANA Cargo brings deep AQS export documentation familiarity from the Tokyo end — as Japan's own carrier, their Narita cargo team processes AQS health certificates daily.
+
+        Both are direct NRT-CDG services. The choice comes down to schedule availability on your travel date. Book 4-6 weeks ahead for cargo space on this busy long-haul route.
+    - heading: "AQS export certificate: Japan's departure document"
+      body: |
+        AQS issues the export health certificate from Japan for all live animal exports. For France, it must be in EU Annex IV format — the template required for non-listed third countries entering the EU. The certificate must be issued within 10 days of travel.
+
+        AQS offices at Narita and Haneda handle these exports regularly. Book your AQS appointment at least 2 weeks before your planned travel date to ensure availability. The certificate lists microchip number, full vaccination history, FAVN titre test result (laboratory report and date), and current health status.
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Japan to France?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering France?"
-    answer: "No routine quarantine is required in France for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering France?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter France. Start this process as early as possible."
-  - question: "Can I take my cat to France from Japan?"
-    answer: "Yes, cats can be transported from Japan to France. The same microchip, vaccination, and health certificate requirements apply as for dogs, though some rules (such as tapeworm treatment) apply to dogs only. Check the full requirements for cats with the destination authority."
+  - question: "Does my pet need a titre test to enter France from Japan?"
+    answer: "Yes. Japan is non-listed under EU Regulation 576/2013. A FAVN titre test at an EU-approved laboratory is mandatory, minimum 0.5 IU/ml, followed by a 3-month mandatory waiting period from the blood draw date."
+  - question: "Is there quarantine when moving a pet from Japan to France?"
+    answer: "No quarantine for fully compliant pets. An official vet conducts a documentary check at the CDG Border Control Post on arrival. With correct documentation, your pet is released the same day."
+  - question: "How long does preparation take?"
+    answer: "Allow 22-26 weeks. The FAVN titre test and the 3-month mandatory wait are the main steps."
+  - question: "Which airline is best from Tokyo to Paris?"
+    answer: "Air France Cargo and ANA Cargo both operate direct NRT-CDG. Air France has CDG BCP arrival experience; ANA has AQS export familiarity at Narita. Both are solid choices."
+  - question: "What is the AQS export health certificate?"
+    answer: "Japan's Animal Quarantine Service issues this certificate for all live animal exports. For France, it must be in EU Annex IV format for non-listed third countries. Issued within 10 days of travel at AQS offices at Narita or Haneda."
 links:
   sideways:
     - url: "/pet-transport/france-to-japan/"
       text: "Pet Transport France to Japan"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-japan-export-guide/"
+    - url: "/pet-transport/origins/japan-pet-export-guide/"
       text: "Shipping from Japan"
     - url: "/pet-transport/countries/france/"
       text: "Importing to France"
-    - url: "/pet-transport/airlines/japan-airlines-jal/"
-      text: "Japan Airlines (JAL) pet policy"
     - url: "/pet-transport/airlines/air-france/"
       text: "Air France pet policy"
+    - url: "/pet-transport/airlines/ana/"
+      text: "ANA pet policy"
 ---
