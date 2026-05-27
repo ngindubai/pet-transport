@@ -1,9 +1,9 @@
 ---
-template_variant: "A"
-title: "Moving Your Pet from China to Germany | Complete Guide"
-description: "Complete guide to pet transport from China to Germany. Import requirements, quarantine rules, airline options, and step-by-step timeline."
+title: "Pet Transport from China to Germany | GACC Export, EU Titre Test & Data Guide"
+description: "Shipping your pet from China to Germany: GACC export health certificate, EU FAVN titre test and 3-month wait, Air China and Lufthansa cargo from Beijing or Shanghai."
 type: "routes"
 layout: "single"
+template_variant: "E"
 author: "Gareth - Founder, PetTransportGlobal"
 slug: "china-to-germany"
 origin_name: "China"
@@ -13,113 +13,128 @@ route_data:
     code: "CN"
     country: "China"
     export_requirements:
-      export_permit: "Export permit from GACC. Required particularly for purebred/registered breeds."
-      health_certificate: "Export health certificate in destination-country required format."
+      export_permit: "GACC export health certificate required. Issued by a GACC-authorised vet at a GACC-designated departure airport."
+      health_certificate: "GACC-endorsed health certificate in EU Annex IV format. Issued within 10 days of travel."
   destination:
     code: "DE"
     country: "Germany"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or at same time as rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Standard EU 21-day wait from date of first vaccination before travel. No additional Germany-specific requirements beyond EU framework."
-      titre_test: "Required for: Pets from unlisted third countries (countries not on EU Annex II list). Not required for: Pets from EU member states, listed third countries (all P1 countries are listed). Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No quarantine for pets entering with correct EU documentation. Non-compliant animals may be returned, quarantined at owner's expense, or in worst case euthanised."
-      import_permit: "No formal import permit. EU pet passport (intra-EU) or Animal Health Certificate (from third countries) serves as documentation."
-      health_certificate: "Required"
+      microchip: "Required (ISO 11784/11785 15-digit). Before first rabies vaccination."
+      rabies_vaccination: "Required. 21-day wait from first vaccination. Current within validity."
+      titre_test: "Required. China is non-listed under EU Regulation 576/2013. FAVN at EU-approved lab. Minimum 0.5 IU/ml. Blood drawn 30+ days post-vaccination. 3-month mandatory wait."
+      quarantine: "No quarantine for fully compliant pets. Documentary check at Frankfurt BCP."
+      import_permit: "Not required. EU Regulation 576/2013."
+      health_certificate: "GACC-endorsed EU Annex IV certificate. Within 10 days of travel."
+      entry_point: "Frankfurt Airport (FRA) — primary German BCP."
+      authority: "BMEL Germany. EU Regulation 576/2013."
   airlines:
-    - name: "Air China"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin on domestic China routes. International: cargo only via Air China Cargo. Strict crate size and documentation requirements. China-specific import/export permits required. Advance booking of cargo space essential."
     - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Emirates"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "British Airways"
+      policy_summary: "Direct PEK/PVG/CAN-FRA. Lufthansa Cargo. Strong Frankfurt BCP arrival familiarity. Brachycephalic breeds restricted year-round."
+    - name: "Air China"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
+      policy_summary: "Air China Cargo PEK-FRA. Chinese national carrier with GACC export familiarity at Beijing. Direct service."
+    - name: "China Eastern"
+      type: "cargo_only"
+      policy_summary: "China Eastern Cargo PVG-FRA. Shanghai hub. GACC-experienced."
+    - name: "China Southern"
+      type: "cargo_only"
+      policy_summary: "China Southern Cargo CAN-FRA. Guangzhou hub."
     - name: "Singapore Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
+      policy_summary: "Via Singapore SIN to FRA. Temperature-controlled. Alternative routing."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Microchip (15-digit ISO) confirmed before vaccination"
+      timing: "Week 0"
+      responsible: "Chinese vet"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Rabies vaccination current"
+      timing: "Week 0-2"
+      responsible: "Chinese vet"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "FAVN titre test at EU-approved laboratory"
+      timing: "Week 6+ (30+ days post-vaccination)"
+      responsible: "Chinese vet + EU-approved lab"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "3-month wait from blood draw"
+      timing: "Weeks 6-19"
+      responsible: "N/A"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Book Lufthansa or Air China Cargo PEK/PVG-FRA"
+      timing: "Week 18+"
+      responsible: "You or agent"
     - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "GACC-endorsed EU Annex IV health certificate"
+      timing: "Within 10 days of travel. Departure from GACC-designated airport."
+      responsible: "GACC-authorised vet + GACC"
+    - step: 7
+      action: "Cargo check-in. Frankfurt BCP inspection on arrival."
+      timing: "3-4 hours before departure."
+      responsible: "You + cargo + German BCP vet"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Lufthansa or Air China Cargo fees PEK/PVG-FRA"
+    - "IATA-compliant crate"
+    - "FAVN titre test at EU-approved lab"
+    - "GACC health certificate fees"
+    - "Agent fee (recommended)"
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "China is non-listed for EU entry. Titre test + 3-month wait mandatory."
+    - "Departure must be from a GACC-designated airport. Confirm your departure city is approved."
+    - "GACC health certificate must be in EU Annex IV format. Confirm format with GACC and your agent."
+    - "3-month wait from blood draw, not result date."
+  route_complexity: "high"
+  estimated_timeline_weeks: "22-26"
 content:
   h1: "Pet Transport from China to Germany"
   overview: |
-    International pet transport from China to Germany comes down to documentation timing more than anything else.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    The paperwork is the hard part. Once everything is in order, the journey itself is well-managed.
+    China to Germany is demanding on the Chinese departure side — GACC controls all live animal exports rigorously — and the EU non-listed protocol applies on arrival in Germany, meaning a FAVN titre test and 3-month wait. No quarantine in Germany, but preparation runs 22-26 weeks. Direct cargo routes exist from Beijing, Shanghai, and Guangzhou to Frankfurt.
   sections:
-    - heading: "What to know about the China to Germany route"
+    - heading: "Key compliance data: China to Germany"
       body: |
-        Compared to some international pet transport routes, China to Germany is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        Germany follows EU harmonised pet movement rules (Regulation 576/2013, transitioning to new rules under Regulation 2026/131 from 22 April 2026). Federal Ministry of Food and Agriculture (BMEL) oversees. Individual Bundeslaender may have additional animal welfare rules. Germany is considered pet-friendly with high dog ownership rates.
-    - heading: "From experience: China to Germany pet transport"
+        | Requirement | Detail |
+        |---|---|
+        | EU classification for China | Non-listed third country |
+        | Microchip | ISO 15-digit, before first vaccination |
+        | Rabies vaccination | Required, current, 21-day wait from first |
+        | Titre test | FAVN, EU-approved lab, 0.5+ IU/ml, 30+ days post-vax |
+        | Post-titre wait | 3 months from blood draw date |
+        | Import permit (DE) | Not required |
+        | Quarantine (DE) | Not required for compliant pets |
+        | GACC export document | GACC-endorsed EU Annex IV health certificate |
+        | Departure airport | GACC-designated airports only |
+        | Entry airport | Frankfurt FRA (primary German BCP) |
+        | Total preparation | 22-26 weeks |
+        | Complexity | High |
+
+        Source: EU Regulation 576/2013; GACC China gacc.gov.cn.
+    - heading: "Airlines PEK/PVG/CAN to FRA"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        | Airline | Route | Notes |
+        |---|---|---|
+        | Lufthansa Cargo | PEK/PVG/CAN-FRA direct | Strong FRA BCP experience. Brachy breeds banned. |
+        | Air China Cargo | PEK-FRA direct | GACC Beijing export familiarity. |
+        | China Eastern Cargo | PVG-FRA direct | Shanghai hub. GACC-experienced. |
+        | China Southern Cargo | CAN-FRA direct | Guangzhou hub. |
+        | Singapore Airlines Cargo | Via SIN to FRA | Longer routing. Temperature-controlled. |
+
+        Chinese carriers — Air China, China Eastern, China Southern — each have strong GACC export documentation familiarity at their respective hub airports. Lufthansa brings the strongest Frankfurt BCP arrival expertise. Choice depends on your departure city.
+    - heading: "GACC export health certificate: China's departure requirement"
+      body: |
+        All live animal exports from China go through GACC (General Administration of Customs of China). The export health certificate must be issued by a GACC-authorised veterinarian at a GACC-designated departure airport. The certificate must be in EU Annex IV format for Germany.
+
+        Your departure must be from a GACC-approved airport. Not every Chinese airport is designated for live animal exports — confirm your departure city is on the GACC approved list before booking cargo. Beijing Capital/Daxing, Shanghai Pudong, and Guangzhou Baiyun are among the main approved departure points.
 faqs:
-  - question: "How long does it take to prepare a pet for transport from China to Germany?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Germany?"
-    answer: "No routine quarantine is required in Germany for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Germany?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Germany. Start this process as early as possible."
-  - question: "Can I take my cat to Germany from China?"
-    answer: "Yes, cats can be transported from China to Germany. The same microchip, vaccination, and health certificate requirements apply as for dogs, though some rules (such as tapeworm treatment) apply to dogs only. Check the full requirements for cats with the destination authority."
+  - question: "Does my pet need a titre test to enter Germany from China?"
+    answer: "Yes. China is non-listed under EU Regulation 576/2013. A FAVN titre test at an EU-approved laboratory is mandatory (minimum 0.5 IU/ml), followed by a 3-month mandatory wait from the blood draw date."
+  - question: "Is there quarantine when moving a pet from China to Germany?"
+    answer: "No quarantine for fully compliant pets. An official vet conducts a documentary check at Frankfurt Airport Border Control Post on arrival. With correct documentation, your pet is released the same day."
+  - question: "What is the GACC health certificate?"
+    answer: "GACC (General Administration of Customs of China) issues the export health certificate for all live animal exports from China. For Germany, it must be in EU Annex IV format. It's issued at GACC-designated departure airports within 10 days of travel."
+  - question: "Which airports in China can I depart from?"
+    answer: "Departure must be from a GACC-designated airport approved for live animal exports. Beijing Capital/Daxing, Shanghai Pudong, and Guangzhou Baiyun are among the main approved points. Confirm your departure city with GACC or your agent before booking cargo."
+  - question: "How long does preparation take for China to Germany?"
+    answer: "Allow 22-26 weeks. The FAVN titre test and the 3-month mandatory wait from blood draw are the main steps. The GACC health certificate and cargo booking add 2-4 weeks."
 links:
   sideways:
     - url: "/pet-transport/germany-to-china/"
@@ -131,4 +146,6 @@ links:
       text: "Importing to Germany"
     - url: "/pet-transport/airlines/lufthansa/"
       text: "Lufthansa pet policy"
+    - url: "/pet-transport/airlines/air-china/"
+      text: "Air China pet policy"
 ---

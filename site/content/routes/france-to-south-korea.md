@@ -1,9 +1,9 @@
 ---
-template_variant: "B"
-title: "Pet Relocation France to South Korea | Requirements & Guide"
-description: "Complete guide to pet transport from France to South Korea. Import requirements, quarantine rules, airline options, and step-by-step timeline."
+title: "Pet Transport from France to South Korea | APQA Requirements, No Titre Test & Guide"
+description: "Moving your pet from France to South Korea: no titre test from EU France, APQA 5-day notification, Air France and Korean Air cargo from Paris to Seoul."
 type: "routes"
 layout: "single"
+template_variant: "A"
 author: "Gareth - Founder, PetTransportGlobal"
 slug: "france-to-south-korea"
 origin_name: "France"
@@ -13,131 +13,118 @@ route_data:
     code: "FR"
     country: "France"
     export_requirements:
-      export_permit: "No formal export permit. Health certificate and EU pet passport serve as documentation."
+      export_permit: "No formal export permit for personal pets from France."
+      health_certificate: "Official health certificate endorsed by DDPP in APQA format. Within 10 days of travel."
   destination:
     code: "KR"
     country: "South Korea"
     import_requirements:
-      microchip: "Required (ISO 11784/11785)"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 30-day wait after vaccination before travel"
-      titre_test: "Required. Minimum: 0.5 IU/ml. 180-day wait from test date before entry"
-      quarantine: "Mandatory quarantine. 10 days. Facility: APQA facility"
-      import_permit: "Required. Issued by: Animal and Plant Quarantine Agency"
-      health_certificate: "Required. Issued by: Official veterinarian. Valid for 14 days from issue"
+      microchip: "Required (ISO 11784/11785 15-digit). Before vaccination."
+      rabies_vaccination: "Required and current. Post-microchip."
+      titre_test: "Not required for pets from EU member states. France is EU — APQA treats EU countries as low-risk. No titre test, no extended wait."
+      quarantine: "No routine quarantine for compliant pets from France. APQA inspection at Incheon on arrival."
+      import_permit: "Not required for companion animals. Advance APQA notification at least 5 days before arrival mandatory."
+      health_certificate: "DDPP-endorsed health certificate in APQA format. Within 10 days of travel."
+      entry_point: "Seoul Incheon International Airport (ICN). APQA quarantine station."
+      authority: "Animal and Plant Quarantine Agency (APQA), South Korea."
   airlines:
     - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
-    - name: "Emirates"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
+      policy_summary: "Air France Cargo CDG-ICN direct. National carrier of origin with strong CDG cargo. Primary recommendation."
+    - name: "Korean Air"
+      type: "cargo_only"
+      policy_summary: "Korean Air Cargo CDG-ICN direct. Korean national carrier with deep APQA familiarity at Incheon."
+    - name: "Asiana Airlines"
+      type: "cargo_only"
+      policy_summary: "Asiana Cargo CDG-ICN. Alternative Korean carrier."
     - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
+      type: "cargo_only"
+      policy_summary: "Via Frankfurt FRA to ICN. Brachycephalic breeds restricted."
     - name: "Singapore Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Via Singapore SIN to ICN. Temperature-controlled cargo."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step: must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "STEP 1: Confirm microchip (15-digit ISO) is current and pre-vaccination"
+      timing: "Standard for French pets."
+      responsible: "French vet"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 30-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "STEP 2: Confirm rabies vaccination is current"
+      timing: "If lapsed, vaccinate. No extended wait required for EU pets."
+      responsible: "French vet"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 180-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "STEP 3: Submit APQA advance notification (at least 5 days before arrival at ICN)"
+      timing: "As soon as travel date is confirmed."
+      responsible: "You or agent"
     - step: 4
-      action: "Apply for import permit from South Korea"
-      timing: "Apply early: allow 4-6 weeks"
-      responsible: "You (or your pet transport agent)"
+      action: "STEP 4: Book Air France or Korean Air Cargo CDG-ICN"
+      timing: "2-4 weeks before travel."
+      responsible: "You or agent"
     - step: 5
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "STEP 5: DDPP-endorsed health certificate in APQA format"
+      timing: "Within 10 days of travel."
+      responsible: "DDPP-authorised vet + DDPP"
     - step: 6
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 7
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
-    - step: 8
-      action: "Quarantine on arrival (10 days)"
-      timing: "Immediately on arrival: mandatory"
-      responsible: "South Korea quarantine authority"
+      action: "STEP 6: Cargo check-in CDG. APQA inspection at ICN on arrival."
+      timing: "3-4 hours before departure."
+      responsible: "You + cargo + APQA"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (South Korea)"
-    - "Quarantine facility fees (owner-paid at destination)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Air France or Korean Air Cargo fees CDG-ICN"
+    - "IATA-compliant crate"
+    - "DDPP health certificate endorsement"
+    - "APQA inspection fee at ICN"
+    - "Agent fee (optional)"
   key_warnings:
-    - "Mandatory quarantine required on arrival. Plan for separation from your pet."
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "very_high"
-  estimated_timeline_weeks: "33-39"
+    - "The 5-day APQA advance notification is mandatory. Missing it causes delays at Incheon."
+    - "No titre test required from France — preparation is 3-6 weeks rather than 22+."
+    - "Health certificate must be in APQA-accepted format and within 10 days of travel."
+  route_complexity: "low"
+  estimated_timeline_weeks: "3-6"
 content:
   h1: "Pet Transport from France to South Korea"
   overview: |
-    Shipping your dog or cat from France to South Korea is a process that rewards early planning.
-    
-    This route is one of the most demanding international pet transport routes. Start preparations at least 33 weeks before your travel date: some steps have fixed waiting periods that cannot be shortened. South Korea requires mandatory quarantine (10 days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Getting the timing right is critical. Work backwards from your travel date and add a buffer.
+    France to South Korea benefits from APQA's EU low-risk classification. No titre test, no extended waiting period, no quarantine. Preparation runs 3-6 weeks if your pet's microchip and vaccinations are current. Direct cargo from Paris to Seoul Incheon on both Air France and Korean Air.
   sections:
-    - heading: "Understanding South Korea's pet import rules"
+    - heading: "Regulatory requirements: France to South Korea at a glance"
       body: |
-        This is one of the more demanding international pet transport corridors. South Korea runs a strict biosecurity programme and there are no shortcuts through it.
-        
-        All pets must complete quarantine on arrival in South Korea (at APQA facility) for 10 days. This is non-negotiable and is entirely separate from the pre-travel preparation.
-        
-        Animal and Plant Quarantine Agency (APQA) regulates imports. Large pet-owning culture.
-    - heading: "Things to sort before you book"
+        | Requirement | Status |
+        |---|---|
+        | Microchip (ISO 15-digit) | Required — before vaccination |
+        | Rabies vaccination | Required — current |
+        | Titre test | NOT required (EU country) |
+        | Quarantine | NOT required for compliant pets |
+        | APQA advance notification | Required — at least 5 days before ICN arrival |
+        | Health certificate | DDPP-endorsed, APQA format, within 10 days |
+        | Import permit | Not required |
+        | Complexity | Low |
+        | Preparation time | 3-6 weeks |
+
+        Source: APQA South Korea. Verify before starting.
+    - heading: "Air France or Korean Air: two direct options"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Air France Cargo operates direct CDG-ICN. As France's national carrier, their Charles de Gaulle cargo team handles live animal departures regularly. Korean Air Cargo operates the same route as the Korean national carrier, with deep APQA arrival familiarity at Incheon. Both are direct services and both are reliable for this route. The choice comes down to schedule availability on your preferred travel date.
+    - heading: "The 5-day APQA notification: the one thing to get right"
+      body: |
+        APQA requires advance notification to the quarantine station at Seoul Incheon at least 5 full days before your pet arrives. This is the administrative step most commonly missed in France-to-Korea moves — not because it's difficult, but because it gets overlooked in the focus on health certificates and cargo booking.
+
+        Your cargo agent handles this as standard. If you're managing the move yourself, submit the notification the moment your cargo space is confirmed and your travel date is set. Five days is the minimum; earlier is better.
 faqs:
-  - question: "How long does it take to prepare a pet for transport from France to South Korea?"
-    answer: "Allow at least 33 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering South Korea?"
-    answer: "Yes, quarantine is mandatory in South Korea. Your pet will stay for 10 days at APQA facility on arrival. This is non-negotiable and the cost is paid by the owner."
-  - question: "Is a rabies titre test required for pets entering South Korea?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 180-day waiting period after a successful result before your pet can enter South Korea. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into South Korea?"
-    answer: "Yes, an import permit is required from South Korea's authority (Animal and Plant Quarantine Agency). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in France. The certificate must be issued within 14 days of travel. Present the original (not a copy) at check-in. Check South Korea's authority for the exact format required."
+  - question: "Does my pet need a titre test to enter South Korea from France?"
+    answer: "No. France is an EU member state and APQA treats EU countries as low-risk. No titre test and no extended waiting period are required."
+  - question: "How long does preparation take?"
+    answer: "3-6 weeks if your pet's microchip and vaccinations are current. The main timing constraints are the APQA 5-day advance notification and the DDPP-endorsed health certificate within 10 days of travel."
+  - question: "What is the APQA advance notification?"
+    answer: "APQA requires the quarantine station at Seoul Incheon to be notified at least 5 days before your pet's arrival. Your cargo agent submits this. Missing it causes inspection delays at Incheon."
+  - question: "Is there quarantine for pets arriving from France in South Korea?"
+    answer: "No routine quarantine. APQA conducts an inspection at Incheon on arrival. With complete documentation from an EU country, your pet is typically released the same day."
+  - question: "Which airline is best from Paris to Seoul?"
+    answer: "Air France Cargo and Korean Air Cargo both operate direct CDG-ICN services. Air France has CDG departure familiarity; Korean Air has APQA Incheon arrival familiarity. Both are sound choices."
 links:
   sideways:
     - url: "/pet-transport/south-korea-to-france/"
       text: "Pet Transport South Korea to France"
   upward:
-    - url: "/pet-transport/origins/pet-export-guide-shipping-from-france/"
+    - url: "/pet-transport/origins/france-pet-export-guide/"
       text: "Shipping from France"
     - url: "/pet-transport/countries/south-korea/"
       text: "Importing to South Korea"
