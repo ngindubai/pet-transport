@@ -1,13 +1,13 @@
 {
-  "last_updated": "2026-05-22",
-  "routes_built": 5461,
-  "routes_remaining": 32371,
-  "total_site_pages": 6259,
-  "completed_chunks": 12,
-  "next_chunk": 13,
+  "last_updated": "2026-05-27",
+  "routes_built": 5471,
+  "routes_remaining": 32361,
+  "total_site_pages": 6269,
+  "completed_chunks": 13,
+  "next_chunk": 14,
   "next_chunk_tier": "A",
-  "next_chunk_template": "Legacy",
-  "tier_a_remaining": 45,
+  "next_chunk_template": "A-FieldManual",
+  "tier_a_remaining": 35,
   "tier_b_remaining": 1094,
   "tier_c_remaining": 7720,
   "tier_d_remaining": 23512,
@@ -15,5 +15,5 @@
   "blog_articles": 410,
   "content_plan_start": "2026-06-01",
   "content_plan_articles_written": 1,
-  "notes": "Chunks 1-12 complete. Blog Day 1 (international-pet-transport-guide) published. FTP deploy fixed 2026-05-22."
+  "notes": "Chunk 13 complete 2026-05-27. Built: south-korea-to-netherlands, netherlands-to-south-korea, south-korea-to-switzerland, switzerland-to-south-korea, south-korea-to-new-zealand, new-zealand-to-south-korea, south-korea-to-china, china-to-south-korea, ireland-to-south-korea, south-korea-to-ireland. Next chunk 14: Tier A, Template A-FieldManual."
 }
