@@ -1,9 +1,9 @@
 ---
-template_variant: "D"
-title: "Pet Transport from France to Germany | Complete Guide"
-description: "How to transport your dog or cat from France to Germany. Import requirements, airline options, costs, and step-by-step process Complete guide: Germany import ru"
+title: "Pet Transport from France to Germany | EU Pet Passport, No Titre Test & Full Guide"
+description: "Moving your pet from France to Germany: EU pet passport accepted, no titre test, no quarantine, TGV rail option, Air France and Lufthansa — the simplest international move."
 type: "routes"
 layout: "single"
+template_variant: "C"
 author: "Gareth - Founder, PetTransportGlobal"
 slug: "france-to-germany"
 origin_name: "France"
@@ -13,113 +13,115 @@ route_data:
     code: "FR"
     country: "France"
     export_requirements:
-      export_permit: "No formal export permit. Health certificate and EU pet passport serve as documentation."
+      export_permit: "No export permit required for intra-EU pet movement."
+      health_certificate: "EU Pet Passport sufficient for movement to Germany."
   destination:
     code: "DE"
     country: "Germany"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or at same time as rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Standard EU 21-day wait from date of first vaccination before travel. No additional Germany-specific requirements beyond EU framework."
-      titre_test: "Required for: Pets from unlisted third countries (countries not on EU Annex II list). Not required for: Pets from EU member states, listed third countries (all P1 countries are listed). Minimum: 0.5 IU/ml. 90-day wait after blood draw"
-      quarantine: "No routine quarantine. Penalty quarantine up to varies days if non-compliant"
-      import_permit: "No formal import permit. EU pet passport (intra-EU) or Animal Health Certificate (from third countries) serves as documentation."
-      health_certificate: "Required"
+      microchip: "Required (ISO 11784/11785). Must be recorded in the EU Pet Passport."
+      rabies_vaccination: "Required and current. Standard EU protocol: 21-day wait from first vaccination, no wait for valid booster."
+      titre_test: "Not required. France is an EU member state. No titre test for intra-EU movement."
+      quarantine: "Not required. EU free movement applies."
+      import_permit: "Not required. EU Regulation 576/2013 governs this movement."
+      health_certificate: "EU Pet Passport sufficient."
+      entry_point: "No border control post inspection required."
+      authority: "Bundesministerium für Ernährung und Landwirtschaft (BMEL), Germany. EU Regulation 576/2013."
   airlines:
-    - name: "Lufthansa"
+    - name: "TGV / SNCF Rail (recommended)"
       type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo transport available. Transport of large animals to certain destinations not possible due to local circumstances. Fighting dog breeds subject to special rules"
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as cargo in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
+      policy_summary: "Cabin: TGV and SNCF allow small pets in a carrier on board. Paris to Frankfurt takes under 4 hours. This is the most pet-friendly option for France-Germany travel — no cargo separation, no airport. Dogs allowed with ticket."
     - name: "Air France"
       type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo transport available. Brachycephalic breeds subject to restrictions/seasonal embargoes. French regulations on dangerous dog breeds apply"
-    - name: "United Airlines"
-      type: "cabin_only"
-      policy_summary: "Small pets allowed in cabin"
-    - name: "American Airlines"
+      policy_summary: "Cabin: small pets in cabin on Air France intra-European routes. Paris CDG to Frankfurt FRA or Munich MUC. Quick flights (1 hour) but airport handling less relaxed than rail."
+    - name: "Lufthansa"
       type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: American Airlines Cargo handles pet transport"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Etihad Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as cargo through Etihad Cargo. Brachycephalic breeds subject to seasonal restrictions. Temperature embargoes during Abu Dhabi summer months"
-    - name: "Air Canada"
+      policy_summary: "Cabin: small pets in cabin on Lufthansa intra-EU routes. Frankfurt or Munich from Paris. Pets up to 8kg in carrier permitted in cabin."
+    - name: "Eurowings"
       type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Air Canada Cargo handles pet transport in heated/pressurized hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "South African Airways"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Pets travel as checked excess baggage in hold or through SAA cargo"
-    - name: "Thai Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets as checked baggage or Thai Cargo for larger animals. Brachycephalic breeds restricted during hot season (March-May). Some breed restrictions apply"
+      policy_summary: "Cabin pets on intra-EU Eurowings routes from Paris or Lyon to German cities. Lower-cost option."
+    - name: "easyJet"
+      type: "no_pets"
+      policy_summary: "easyJet does not accept pets. Not suitable."
   timeline_steps:
     - step: 1
-      action: "Get your pet microchipped (ISO 11784/11785)"
-      timing: "Before any vaccinations. Must be done first."
-      responsible: "Your veterinarian"
+      action: "Confirm EU Pet Passport is current with valid rabies vaccination"
+      timing: "Immediate. A vet visit to verify."
+      responsible: "Your vet"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "At least 21 days before travel (after microchip)"
-      responsible: "Your veterinarian"
+      action: "Choose transport: rail (Paris-Frankfurt TGV) or air"
+      timing: "Book 1-3 weeks ahead."
+      responsible: "You"
     - step: 3
-      action: "Rabies titre test (RNATT blood test)"
-      timing: "Blood drawn 30+ days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
-    - step: 4
-      action: "Obtain health certificate / veterinary clearance"
-      timing: "Within 10 days of travel (check destination-specific requirements)"
-      responsible: "Official veterinarian"
-    - step: 5
-      action: "Book IATA-compliant flight and arrange pet cargo/cabin booking"
-      timing: "2-4 weeks before travel. Confirm pet space availability."
-      responsible: "You (or your pet transport agent)"
-    - step: 6
-      action: "Travel day: arrive early, present all documentation"
-      timing: "3-4 hours before departure for cargo pets"
-      responsible: "You + airline cargo desk"
+      action: "Travel. No border inspection."
+      timing: "Day of travel."
+      responsible: "You"
   cost_factors:
-    - "Airline cargo/cabin fees (varies by carrier, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees (vaccinations, health certificate, microchip)"
-    - "Government endorsement/USDA endorsement fee (if applicable)"
-    - "Pet transport agent fee (if using a relocation service)"
+    - "TGV ticket Paris to Frankfurt (EUR 40-120, pet supplement varies)"
+    - "Air France or Lufthansa cabin pet fee (EUR 50-70 typically)"
+    - "EU Pet Passport update if vaccination expired (vet fee EUR 20-60)"
   key_warnings:
-    - "Brachycephalic (flat-faced) breeds face cargo restrictions on most airlines. Check breed-specific policies before booking."
-    - "Microchip MUST be implanted before rabies vaccination. Vaccination given before microchip is invalid and the clock restarts."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "6-10"
-faqs:
-  - question: "How long does it take to prepare a pet for transport from France to Germany?"
-    answer: "The process takes 6-10 weeks from start to finish. The rabies titre test requires a 3-6 month waiting period after the blood draw before your pet can travel, so start early."
-  - question: "Is there quarantine when my pet enters Germany?"
-    answer: "No routine quarantine for pets entering Germany with the correct documentation. No routine quarantine. Penalty quarantine up to varies days if non-compliant"
-  - question: "Do I need an import permit to bring my pet into Germany?"
-    answer: "No formal import permit. EU pet passport (intra-EU) or Animal Health Certificate (from third countries) serves as documentation."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Required Your France vet must be approved to issue official veterinary certificates. The certificate must be issued within the timeframe required by Germany: usually 10 days before travel. Present the original at check-in."
-  - question: "Is a rabies titre test required for pets entering Germany?"
-    answer: "Yes. Required for: Pets from unlisted third countries (countries not on EU Annex II list). Not required for: Pets from EU member states, listed third countries (all P1 countries are listed). Minimum: 0.5 IU/ml. 90-day wait after blood draw The microchip must be implanted before the first rabies vaccination for the vaccination to be valid. Start this process as early as possible."
+    - "Confirm the rabies vaccination in your pet's EU passport is current. An expired vaccination means the passport is not valid for travel."
+    - "France has breed restrictions (Categorie 1 and 2). Germany has Länder-level breed bans for certain types. Check breed-specific rules if you have a restricted breed."
+    - "Keep the EU Pet Passport accessible even when driving — random inspections do occur at EU internal borders."
+  route_complexity: "very_low"
+  estimated_timeline_weeks: "0-1"
 content:
   h1: "Pet Transport from France to Germany"
   overview: |
-    Pet transport from France to Germany is a moderately complex route. The documentation is specific and there are a few stages to work through, but families who plan ahead get their pets there without major issues.
+    France to Germany is about as simple as international pet travel gets. Both are EU member states. A valid EU Pet Passport covering microchip and rabies vaccination is all you need. No quarantine, no titre test, no import permits.
 
-    At minimum, your pet needs a microchip (ISO 11784/11785 standard), a current rabies vaccination, a rabies titre test with a waiting period after the result, and a government-endorsed health certificate issued close to your travel date. Allow 6-10 weeks from starting preparation to travel day.
+    The decision is really just how you want to travel. TGV from Paris to Frankfurt takes under four hours with your pet beside you. Flying takes one hour but adds airport complexity.
+  sections:
+    - heading: "Rail vs air: the France-Germany comparison"
+      body: |
+        | Factor | Rail (TGV/SNCF) | Air (Air France/Lufthansa) |
+        |---|---|---|
+        | Journey time Paris-Frankfurt | ~3h 45min | ~1h 20min flight, plus airport |
+        | Pet in cabin | Yes — carrier under seat | Yes — under seat for small pets |
+        | Pet separation | None | None for cabin pets |
+        | Cargo option | N/A | Yes, for larger animals |
+        | Airport check-in time | None | 2 hours |
+        | Stress level for pet | Lower | Higher (noise, check-in, security) |
+        | Cost | EUR 40-120 + pet supplement | EUR 80-200 + pet fee |
+        | Breed restrictions | Very few | Airline-specific brachycephalic rules |
+        | Overall convenience | High | Moderate |
 
-    Use the step-by-step timeline below to plan your preparation, and get in touch if you want us to coordinate the process for you.
+        For most France-Germany moves, rail wins unless your final destination is remote from Frankfurt or Paris.
+    - heading: "What the EU Pet Passport must show"
+      body: |
+        Three things must be in order before you travel. Microchip number recorded and matching the chip in your pet. Rabies vaccination documented as current (not expired, within the manufacturer's stated validity period). And the passport issued by an EU-authorised veterinarian.
 
+        Germany's BMEL enforces EU Regulation 576/2013. Random inspections do happen at internal EU crossings. If your passport shows an expired vaccination, your pet can be refused onward travel.
+
+        If you've lost the passport or it's out of date, your vet issues a replacement and re-vaccinates if needed. A 21-day wait from the new vaccination applies before travel.
+    - heading: "Breed-specific rules to check before you go"
+      body: |
+        France operates a two-category restricted dog system. Categorie 1 (fighting dogs and crosses with a specific physical profile) are banned in France and cannot leave or enter as a legal pet. Categorie 2 includes Staffordshire Bull Terriers, American Staffordshire Terriers, Rottweilers, and Tosa Inus — these require a permit, sterilisation, and owner registration in France.
+
+        Germany applies breed restrictions at Länder (state) level. Bayern, Hessen, Nordrhein-Westfalen, and others all have their own lists. Pit Bull Terrier types, American Staffordshire Terriers, and Staffordshire Bull Terriers are commonly restricted. Check the specific rules for the German state you're moving to.
+faqs:
+  - question: "Do I need any documents beyond the EU Pet Passport to take my pet from France to Germany?"
+    answer: "No. A valid EU Pet Passport showing a current microchip and rabies vaccination is sufficient for pet movement between France and Germany. No titre test, import permit, or quarantine applies under EU Regulation 576/2013."
+  - question: "Can I take my pet on the TGV from Paris to Germany?"
+    answer: "Yes. SNCF TGV allows small pets in carriers on board for a supplementary fee, and larger dogs with a ticket, muzzle, and lead. This is often the most practical option for France-Germany pet travel."
+  - question: "How long does it take to prepare for this move?"
+    answer: "If your EU Pet Passport and vaccinations are current, you can travel within days. The only preparation needed is booking your transport. If the rabies vaccination has lapsed, allow 21 days from the new vaccination before travel."
+  - question: "Does Germany have breed bans that might affect my dog?"
+    answer: "Yes. German breed restrictions operate at the Länder (state) level. States including Bayern, Hessen, and Nordrhein-Westfalen have lists of restricted breeds requiring permits or banned outright. Check the specific rules for the German state you're relocating to before travel."
+  - question: "What if my pet is too large to travel in cabin?"
+    answer: "Larger pets travel in the cargo hold on air routes. On rail, most train companies permit dogs of any size with a ticket, muzzle, and lead (varies by service). Check with SNCF and DB for current large-dog policies on your specific service."
 links:
   sideways:
     - url: "/pet-transport/germany-to-france/"
       text: "Pet Transport Germany to France"
   upward:
-    - url: "/pet-transport/origins/pet-export-guide-shipping-from-france/"
+    - url: "/pet-transport/origins/france-pet-export-guide/"
       text: "Shipping from France"
     - url: "/pet-transport/countries/germany/"
       text: "Importing to Germany"
-
-
+    - url: "/pet-transport/airlines/air-france/"
+      text: "Air France pet policy"
+    - url: "/pet-transport/airlines/lufthansa/"
+      text: "Lufthansa pet policy"
 ---
