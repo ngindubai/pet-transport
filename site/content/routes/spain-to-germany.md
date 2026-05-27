@@ -1,9 +1,9 @@
 ---
-template_variant: "A"
-title: "Pet Transport from Spain to Germany | PetTransportGlobal"
-description: "Complete guide to pet transport from Spain to Germany. Import requirements, quarantine rules, airline options, and step-by-step timeline."
+title: "Pet Transport from Spain to Germany | EU Pet Passport, No Titre Test & Classic Guide"
+description: "Moving your pet from Spain to Germany: EU pet passport accepted, no titre test, no quarantine, Iberia and Lufthansa cargo options from Madrid or Barcelona."
 type: "routes"
 layout: "single"
+template_variant: "legacy"
 author: "Gareth - Founder, PetTransportGlobal"
 slug: "spain-to-germany"
 origin_name: "Spain"
@@ -13,107 +13,104 @@ route_data:
     code: "ES"
     country: "Spain"
     export_requirements:
-      export_permit: "No export permit required for cats and dogs."
-      health_certificate: "AHC required for export to non-EU countries. EU pet passport valid for intra-EU movement."
+      export_permit: "No export permit required for intra-EU movement."
+      health_certificate: "EU Pet Passport sufficient for movement to Germany."
   destination:
     code: "DE"
     country: "Germany"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or at same time as rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Standard EU 21-day wait from date of first vaccination before travel. No additional Germany-specific requirements beyond EU framework."
-      titre_test: "Required for: Pets from unlisted third countries (countries not on EU Annex II list). Not required for: Pets from EU member states, listed third countries (all P1 countries are listed). Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No quarantine for pets entering with correct EU documentation. Non-compliant animals may be returned, quarantined at owner's expense, or in worst case euthanised."
-      import_permit: "No formal import permit. EU pet passport (intra-EU) or Animal Health Certificate (from third countries) serves as documentation."
-      health_certificate: "Required"
+      microchip: "Required (ISO 11784/11785). Must be recorded in the EU Pet Passport before the first rabies vaccination."
+      rabies_vaccination: "Required and current. Standard EU protocol: 21-day wait from first vaccination if no prior valid vaccination; no wait for booster within validity period."
+      titre_test: "Not required. Spain is an EU member state. No titre test for intra-EU movement under EU Regulation 576/2013."
+      quarantine: "Not required. EU free movement applies to compliant pets."
+      import_permit: "Not required."
+      health_certificate: "EU Pet Passport sufficient. German authorities accept EU Pet Passports issued in any EU member state."
+      entry_point: "No border control post inspection required for intra-EU movement. Frankfurt Airport (FRA) or Munich Airport (MUC) are common arrival points for those flying."
+      authority: "Bundesministerium f\u00fcr Ern\u00e4hrung und Landwirtschaft (BMEL), Germany. EU Regulation 576/2013."
   airlines:
-    - name: "Air France"
+    - name: "Iberia"
       type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
+      policy_summary: "Cabin: small pets (up to 8kg in carrier) on Iberia intra-European routes. Madrid MAD to Frankfurt FRA or Munich MUC. Cabin pet supplement typically EUR 50-70. Larger pets in cargo hold. Iberia is Spain's national carrier and the most direct option for Madrid departures."
     - name: "Lufthansa"
       type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Emirates"
-      type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
+      policy_summary: "Cabin: small pets on Lufthansa intra-European routes from Madrid or Barcelona to Frankfurt and Munich. Brachycephalic breeds restricted from cargo year-round. Strong Frankfurt hub cargo operation."
+    - name: "Vueling"
       type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Cabin: Vueling accepts small pets on intra-EU routes. Multiple Spanish cities to German destinations. Confirm current pet policy before booking."
+    - name: "Drive (for northern Spain)"
+      type: "cabin_and_cargo"
+      policy_summary: "San Sebasti\u00e1n to Frankfurt is approximately 14 hours by road. Barcelona to Frankfurt is about 12 hours. Practical for those in northern Spain with larger dogs; others will find flying more efficient."
+    - name: "Air France via CDG"
+      type: "cabin_and_cargo"
+      policy_summary: "Via Paris CDG. Useful if direct Spain-Germany options are full. Small pets in cabin on Spanish leg; connect at CDG to Frankfurt or Munich."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm EU Pet Passport shows current microchip and valid rabies vaccination"
+      timing: "Immediate. Visit your Spanish vet to verify before booking travel."
+      responsible: "Your Spanish vet"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Check breed against German L\u00e4nder breed restrictions for your destination state"
+      timing: "Before booking. Germany applies restrictions at the state level."
+      responsible: "You or your vet"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Book Iberia or Lufthansa cabin pet space MAD/BCN to FRA/MUC"
+      timing: "2-4 weeks ahead. Cabin pet spaces are limited per flight."
+      responsible: "You"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
-    - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Travel to Germany. No border inspection required."
+      timing: "Day of travel."
+      responsible: "You"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Iberia or Lufthansa ticket Madrid or Barcelona to Frankfurt or Munich (EUR 80-250 depending on route and timing)"
+    - "Cabin pet supplement: typically EUR 50-80 per flight"
+    - "Cargo hold fee for larger pets (varies by airline and pet weight/size)"
+    - "Drive costs if taking the road: fuel plus any tolls on Spanish motorways"
+    - "EU Pet Passport update if vaccination has lapsed (Spanish vet fee, typically EUR 20-60)"
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "Germany applies breed restrictions at the L\u00e4nder (state) level. Bayern, Nordrhein-Westfalen, Hessen, and other states have their own breed lists. Check the rules for the specific German state you're moving to before travel."
+    - "Spain's PPP (Perros Potencialmente Peligrosos) list doesn't match Germany's L\u00e4nder restrictions. Being on Spain's list doesn't automatically mean you're restricted in Germany, but some breeds appear on both."
+    - "Confirm the rabies vaccination in the EU passport is current. An expired vaccination makes the passport invalid for travel and will cause problems at German entry if checked."
+    - "Cabin pet spaces are limited. Book 4-6 weeks ahead to secure your spot on Iberia or Lufthansa."
+    - "Brachycephalic breeds (English and French Bulldogs, Pugs) are restricted from Lufthansa cargo year-round. Use Iberia cargo for these breeds if the pet is too large for cabin."
+  route_complexity: "very_low"
+  estimated_timeline_weeks: "0-1"
 content:
   h1: "Pet Transport from Spain to Germany"
   overview: |
-    Shipping your pet from Spain to Germany is a process that rewards early planning.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    The paperwork is the hard part. Once everything is in order, the journey itself is well-managed.
+    Spain to Germany is clean and simple. Both EU member states operating under the same regulations. Your EU Pet Passport is the complete documentation. No titre test, no quarantine, no import permit.
+
+    The main practical decision is which airline and whether cabin or cargo. Iberia and Lufthansa both serve the Spain-Germany corridor well with pet-friendly cabin policies for small animals.
   sections:
-    - heading: "What to know about the Spain to Germany route"
+    - heading: "EU Pet Passport: the only document you need"
       body: |
-        Compared to some international pet transport routes, Spain to Germany is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        Germany follows EU harmonised pet movement rules (Regulation 576/2013, transitioning to new rules under Regulation 2026/131 from 22 April 2026). Federal Ministry of Food and Agriculture (BMEL) oversees. Individual Bundeslaender may have additional animal welfare rules. Germany is considered pet-friendly with high dog ownership rates.
-    - heading: "Things to sort before you book"
+        Germany applies EU Regulation 576/2013 identically to Spain. A Spanish-issued EU Pet Passport is fully recognised at any German entry point. The requirements are the same: ISO microchip recorded in the passport, current rabies vaccination within the manufacturer's validity period.
+
+        If the vaccination has lapsed, book a booster with your Spanish vet. A booster within the previous vaccination's validity period takes effect immediately — no waiting period. A first vaccination in a new course requires a 21-day wait before travel.
+
+        Lost the passport? Your vet issues a replacement, re-vaccinates if records aren't available, and you wait 21 days from the new vaccination. Start this process the moment you know you're moving.
+    - heading: "Breed restrictions: the German state-level system"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Germany doesn't have a single national breed ban. Instead, each of the 16 L\u00e4nder (federal states) has its own legislation. The breeds most commonly restricted across multiple states include Pit Bull Terriers, American Staffordshire Terriers, Staffordshire Bull Terriers, Bull Terriers, and Rottweilers, though the exact rules vary by state.
+
+        Bayern (Bavaria) and Nordrhein-Westfalen have some of the more comprehensive lists. If you're moving with a breed that might fall under restricted categories, look up the specific rules for your destination German state before travel. Your new local Veterin\u00e4ramt (veterinary office) can advise on registration requirements on arrival.
+    - heading: "Iberia vs Lufthansa: choosing your carrier"
+      body: |
+        Both airlines are strong options for Spain-Germany pet moves. Iberia, as Spain's national carrier, connects Madrid to Frankfurt and Munich several times daily with cabin pet acceptance for small animals. Lufthansa offers the same from both Madrid and Barcelona and has a particularly strong Frankfurt cargo operation for larger pets.
+
+        For flat-nosed breeds (Bulldogs, Pugs, French Bulldogs), be aware that Lufthansa restricts brachycephalic breeds from cargo year-round on all routes. If your pet is too large for the cabin and is a brachycephalic breed, use Iberia cargo instead.
+
+        Vueling serves smaller Spanish cities to German destinations and allows cabin pets on intra-EU routes. Check current pet policies before booking as they can change.
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Spain to Germany?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Germany?"
-    answer: "No routine quarantine is required in Germany for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Germany?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Germany. Start this process as early as possible."
-  - question: "Can I take my cat to Germany from Spain?"
-    answer: "Yes, cats can be transported from Spain to Germany. The same microchip, vaccination, and health certificate requirements apply as for dogs, though some rules (such as tapeworm treatment) apply to dogs only. Check the full requirements for cats with the destination authority."
+  - question: "Do I need any documents other than an EU Pet Passport to take my pet from Spain to Germany?"
+    answer: "No. A valid EU Pet Passport with current ISO microchip and rabies vaccination is all that's required under EU Regulation 576/2013. No titre test, import permit, or quarantine applies to intra-EU pet movement."
+  - question: "Does Spain's PPP breed restriction affect me in Germany?"
+    answer: "Not directly. Germany applies its own L\u00e4nder-level breed restrictions independently of Spain's PPP system. Some breeds appear on both lists; others appear on one but not the other. Check the specific rules for the German state you're relocating to."
+  - question: "How long does preparation take for Spain to Germany?"
+    answer: "If your EU Pet Passport and vaccinations are current, preparation takes days. If the rabies vaccination has lapsed, allow 21 days from a new vaccination before travel."
+  - question: "Can I take my large dog from Spain to Germany?"
+    answer: "Yes. Large dogs travel in the cargo hold on Iberia or Lufthansa. Lufthansa restricts brachycephalic breeds from cargo year-round; use Iberia for flat-nosed breeds. Alternatively, driving is practical from northern Spain for large dogs."
+  - question: "Which German states have the strictest breed restrictions?"
+    answer: "Bayern and Nordrhein-Westfalen are among the most restrictive. Both have lists of breeds requiring registration or prohibited from keeping. Check the specific L\u00e4nder legislation for your destination state."
 links:
   sideways:
     - url: "/pet-transport/germany-to-spain/"
@@ -123,8 +120,8 @@ links:
       text: "Shipping from Spain"
     - url: "/pet-transport/countries/germany/"
       text: "Importing to Germany"
-    - url: "/pet-transport/airlines/air-france/"
-      text: "Air France pet policy"
+    - url: "/pet-transport/airlines/iberia/"
+      text: "Iberia pet policy"
     - url: "/pet-transport/airlines/lufthansa/"
       text: "Lufthansa pet policy"
 ---

@@ -1,9 +1,9 @@
 ---
-template_variant: "C"
-title: "Pet Transport from Ireland to France | PetTransportGlobal"
-description: "How to ship your dog or cat from Ireland to France. France import rules, vaccinations, permits, and airline options explained."
+title: "Pet Transport from Ireland to France | EU Pet Passport, Tapeworm & Data Guide"
+description: "Shipping your pet from Ireland to France: EU pet passport, dog tapeworm treatment on return, no titre test, Aer Lingus cargo from Dublin — full data guide."
 type: "routes"
 layout: "single"
+template_variant: "E"
 author: "Gareth - Founder, PetTransportGlobal"
 slug: "ireland-to-france"
 origin_name: "Ireland"
@@ -13,107 +13,112 @@ route_data:
     code: "IE"
     country: "Ireland"
     export_requirements:
-      export_permit: "No export permit required for pet cats and dogs."
-      health_certificate: "EU pets can use existing EU passport. Non-EU destinations require destination-country AHC."
+      export_permit: "No export permit required for intra-EU movement."
+      health_certificate: "EU Pet Passport sufficient for movement to France."
   destination:
     code: "FR"
     country: "France"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or at same time as rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Standard EU protocol. 21-day wait from first vaccination."
-      titre_test: "Required for: Pets from unlisted third countries. Not required for: Pets from EU and listed third countries (all P1 countries listed). Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No routine quarantine. Non-compliant animals may be quarantined or returned at owner's expense."
-      import_permit: "No formal import permit. EU pet passport or AHC serves as documentation."
-      health_certificate: "Required"
+      microchip: "Required (ISO 11784/11785). Recorded in EU Pet Passport."
+      rabies_vaccination: "Required and current. Standard EU protocol."
+      titre_test: "Not required. Ireland is an EU member state."
+      quarantine: "Not required."
+      import_permit: "Not required."
+      health_certificate: "EU Pet Passport sufficient."
+      entry_point: "No border control post inspection for intra-EU movement."
+      authority: "DGAL France. EU Regulation 576/2013."
   airlines:
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
+    - name: "Aer Lingus"
+      type: "cabin_and_cargo"
+      policy_summary: "Cabin: small pets on Aer Lingus Dublin-Paris CDG route (around 1h45m). Cargo also available for larger pets. Ireland's national carrier with good Dublin cargo familiarity."
     - name: "Air France"
       type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Emirates"
-      type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Cabin: small pets on Air France Dublin-Paris CDG. Direct service. Strong CDG arrival handling."
+    - name: "Ryanair"
+      type: "no_pets"
+      policy_summary: "Ryanair does not accept pets on any route. Not suitable."
+    - name: "EasyJet"
+      type: "no_pets"
+      policy_summary: "easyJet does not accept pets. Not suitable."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Verify EU Pet Passport: microchip recorded, rabies vaccination current"
+      timing: "Week 0. Vet visit if in doubt."
+      responsible: "Your Irish vet"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Book Aer Lingus or Air France cabin pet space DUB-CDG"
+      timing: "3-6 weeks ahead. Cabin pet spaces are limited."
+      responsible: "You"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Travel to France. DGAL check if requested on arrival."
+      timing: "Day of travel."
+      responsible: "You"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
-    - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "NOTE: If returning to Ireland, dog tapeworm treatment required (24-120h before Ireland arrival)"
+      timing: "On return journey. NOT required for going to France."
+      responsible: "French vet on return"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Aer Lingus or Air France ticket DUB-CDG (EUR 80-200)"
+    - "Cabin pet fee: EUR 50-80 typically"
+    - "EU Pet Passport renewal if expired (vet fee)"
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "Ireland's tapeworm treatment rule applies to dogs arriving IN Ireland, not departing from it. No tapeworm treatment is required to enter France from Ireland."
+    - "Ryanair and easyJet do not accept pets. Most Dublin-Paris budget flights are not suitable for pets."
+    - "France has Categorie 1 (banned) and Categorie 2 (restricted) dog breeds. Check French rules if you have a Rottweiler, Staffordshire Bull Terrier, or similar."
+    - "Cabin pet spaces on DUB-CDG are limited. Book 4-6 weeks ahead."
+  route_complexity: "very_low"
+  estimated_timeline_weeks: "0-1"
 content:
   h1: "Pet Transport from Ireland to France"
   overview: |
-    International pet transport from Ireland to France comes down to documentation timing more than anything else.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Start early and follow the steps in sequence. Missing a deadline pushes the whole timeline back.
+    Ireland to France is an EU-to-EU move under Regulation 576/2013. EU Pet Passport, current microchip, current rabies vaccination — that's the complete documentation list. No titre test, no quarantine.
+
+    The important note: Ryanair and easyJet, which dominate Dublin-Paris routes, don't accept pets. Use Aer Lingus or Air France.
   sections:
-    - heading: "Why this route needs early planning"
+    - heading: "Key data: Ireland to France compliance"
       body: |
-        Compared to some international pet transport routes, Ireland to France is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        France follows EU harmonised pet movement rules. Direction Generale de l'Alimentation (DGAL) under the Ministry of Agriculture oversees implementation. France is one of the most pet-friendly countries in Europe with high pet ownership, though some rental properties restrict pets. France has its own breed-specific legislation (Categories 1 and 2) that is notably strict.
-    - heading: "From experience: Ireland to France pet transport"
+        | Requirement | Status | Notes |
+        |---|---|---|
+        | EU Pet Passport | Required | Microchip + current vax |
+        | Microchip | Required | ISO 11784/11785 |
+        | Rabies vaccination | Required | Must be current |
+        | Titre test | NOT required | EU to EU |
+        | Tapeworm treatment | NOT required (outbound) | Only for returning to Ireland |
+        | Quarantine | NOT required | |
+        | Import permit | NOT required | |
+        | Border inspection | Not routine | Random checks possible |
+        | Complexity | Very low | |
+        | Preparation time | Days if passport current | |
+
+        Source: EU Regulation 576/2013; DGAL France.
+    - heading: "Airlines DUB to CDG: what works and what doesn't"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        | Airline | Route | Pets? | Notes |
+        |---|---|---|---|
+        | Aer Lingus | DUB-CDG direct | Yes (cabin + cargo) | Irish national carrier. Cabin small pets, cargo larger. |
+        | Air France | DUB-CDG direct | Yes (cabin) | French carrier. Good CDG handling. |
+        | Ryanair | DUB-CDG/BVA | No | Largest operator but no pets accepted on any route. |
+        | easyJet | DUB-CDG | No | Budget carrier. No pets. |
+
+        The paradox of this route: the cheapest and most frequent Dublin-Paris flights (Ryanair, easyJet) accept no pets. Book Aer Lingus or Air France — both are reliable for this move. Pet cabin spaces are limited; book 4-6 weeks ahead.
+    - heading: "The tapeworm rule: what applies and what doesn't"
+      body: |
+        Ireland requires all dogs arriving in Ireland to have a Praziquantel tapeworm treatment administered by a vet between 24 and 120 hours before arrival. This applies to dogs coming INTO Ireland, not going out.
+
+        Moving from Ireland to France, no tapeworm treatment is required. France does not have a reciprocal rule.
+
+        If you plan to return to Ireland later — permanently or for visits — the tapeworm requirement applies on the return trip. Keep that in mind when planning any subsequent travel back.
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Ireland to France?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering France?"
-    answer: "No routine quarantine is required in France for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering France?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter France. Start this process as early as possible."
-  - question: "Can I take my cat to France from Ireland?"
-    answer: "Yes, cats can be transported from Ireland to France. The same microchip, vaccination, and health certificate requirements apply as for dogs, though some rules (such as tapeworm treatment) apply to dogs only. Check the full requirements for cats with the destination authority."
+  - question: "Do I need a tapeworm treatment to take my dog from Ireland to France?"
+    answer: "No. The tapeworm treatment requirement applies to dogs arriving in Ireland, not departing from it. France does not require a tapeworm treatment for dogs entering from other EU countries."
+  - question: "Can I use Ryanair to fly my pet from Dublin to Paris?"
+    answer: "No. Ryanair does not accept pets on any route. Use Aer Lingus or Air France for the Dublin-Paris move with a pet."
+  - question: "How much cabin pet space is available on Dublin-Paris flights?"
+    answer: "Airlines typically allow 2-3 pets per flight in cabin. Spaces are limited. Book 4-6 weeks ahead to secure your pet's space alongside your own ticket."
+  - question: "Is there a border inspection when flying from Ireland to France?"
+    answer: "No scheduled inspection. Ireland and France are both EU member states under Regulation 576/2013. An official may conduct a random documentary check, but routine inspection of all arriving pets is not standard."
+  - question: "What paperwork do I need?"
+    answer: "Just the EU Pet Passport showing a current ISO microchip and a current rabies vaccination. That's the complete documentation requirement for EU-to-EU pet movement."
 links:
   sideways:
     - url: "/pet-transport/france-to-ireland/"
@@ -123,8 +128,8 @@ links:
       text: "Shipping from Ireland"
     - url: "/pet-transport/countries/france/"
       text: "Importing to France"
-    - url: "/pet-transport/airlines/british-airways/"
-      text: "British Airways pet policy"
+    - url: "/pet-transport/airlines/aer-lingus/"
+      text: "Aer Lingus pet policy"
     - url: "/pet-transport/airlines/air-france/"
       text: "Air France pet policy"
 ---

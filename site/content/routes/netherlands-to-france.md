@@ -1,9 +1,9 @@
 ---
-template_variant: "E"
-title: "Moving Your Pet from Netherlands to France | Complete Guide"
-description: "Complete guide to pet transport from Netherlands to France. Import requirements, quarantine rules, airline options, and step-by-step timeline."
+title: "Pet Transport from Netherlands to France | EU Pet Passport, Rail vs Air Comparison"
+description: "Moving your pet from the Netherlands to France: EU pet passport, no titre test, Thalys rail vs KLM flight comparison — clean data guide."
 type: "routes"
 layout: "single"
+template_variant: "C"
 author: "Gareth - Founder, PetTransportGlobal"
 slug: "netherlands-to-france"
 origin_name: "Netherlands"
@@ -13,116 +13,100 @@ route_data:
     code: "NL"
     country: "Netherlands"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      export_permit: "No export permit required for intra-EU movement."
+      health_certificate: "EU Pet Passport sufficient."
   destination:
     code: "FR"
     country: "France"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or at same time as rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Standard EU protocol. 21-day wait from first vaccination."
-      titre_test: "Required for: Pets from unlisted third countries. Not required for: Pets from EU and listed third countries (all P1 countries listed). Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No routine quarantine. Non-compliant animals may be quarantined or returned at owner's expense."
-      import_permit: "No formal import permit. EU pet passport or AHC serves as documentation."
-      health_certificate: "Required"
+      microchip: "Required (ISO 11784/11785). Recorded in EU Pet Passport."
+      rabies_vaccination: "Required and current. Standard EU protocol."
+      titre_test: "Not required. Netherlands is an EU member state."
+      quarantine: "Not required."
+      import_permit: "Not required."
+      health_certificate: "EU Pet Passport sufficient."
+      entry_point: "No border control post inspection for intra-EU movement."
+      authority: "DGAL France. EU Regulation 576/2013."
   airlines:
+    - name: "Thalys / SNCF Rail"
+      type: "cabin_and_cargo"
+      policy_summary: "Cabin: Amsterdam Centraal to Paris Gare du Nord takes 2h30m on Thalys. Small pets in carriers allowed. Dogs with ticket. Direct, no changes required. Best option for this corridor."
     - name: "KLM"
       type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Air France"
+      policy_summary: "Cabin: small pets (up to 8kg in carrier) on KLM Amsterdam-Paris CDG route. Flight is about 1 hour. Airport overhead makes door-to-door comparable to Thalys for central Amsterdam to central Paris."
+    - name: "Transavia"
       type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Emirates"
-      type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
+      policy_summary: "Cabin pets on some Transavia Netherlands-France routes. Lower cost but less predictable pet policy — confirm before booking."
+    - name: "Drive"
       type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
+      policy_summary: "Amsterdam to Paris by car via A16 is about 4 hours. No border inspection. Pet stays in the vehicle throughout."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step: must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Verify EU Pet Passport: current microchip and valid rabies vaccination"
+      timing: "Immediate. Book a vet visit if vaccination expiry is in question."
+      responsible: "Your Dutch vet"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Choose Thalys, KLM, or drive"
+      timing: "Book 1-2 weeks ahead for rail or air."
+      responsible: "You"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
-    - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
-    - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Travel. No border inspection."
+      timing: "Day of travel."
+      responsible: "You"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Thalys Amsterdam-Paris (EUR 35-100 + any pet supplement)"
+    - "KLM cabin pet fee (EUR 50-70)"
+    - "Drive: fuel only (approx EUR 25-40 in fuel AMS-Paris)"
+    - "EU Pet Passport renewal if expired (vet fee EUR 20-60)"
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "Confirm rabies vaccination in the EU passport is current before any transport booking."
+    - "France's Categorie 1 and 2 breed restrictions apply. The Netherlands restricts Pit Bull Terrier types domestically — these restrictions don't transfer France, but check French rules for your specific breed."
+    - "Thalys is the fastest and most pet-friendly option for this specific corridor."
+  route_complexity: "very_low"
+  estimated_timeline_weeks: "0-1"
 content:
   h1: "Pet Transport from Netherlands to France"
   overview: |
-    Shipping your dog from Netherlands to France is a process that rewards early planning.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date: some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Start early and follow the steps in sequence. Missing a deadline pushes the whole timeline back.
+    Netherlands to France is a pure EU-to-EU move. One valid EU Pet Passport. No titre test, no quarantine, no permits. The comparison that matters on this route is Thalys vs KLM vs drive — not the paperwork.
   sections:
-    - heading: "Understanding France's pet import rules"
+    - heading: "Transport options compared: Amsterdam to Paris"
       body: |
-        Compared to some international pet transport routes, Netherlands to France is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        France follows EU harmonised pet movement rules. Direction Generale de l'Alimentation (DGAL) under the Ministry of Agriculture oversees implementation. France is one of the most pet-friendly countries in Europe with high pet ownership, though some rental properties restrict pets. France has its own breed-specific legislation (Categories 1 and 2) that is notably strict.
-    - heading: "Practical advice for shipping your pet from Netherlands"
+        | Factor | Thalys Rail | KLM | Drive |
+        |---|---|---|---|
+        | Journey time | 2h30m door-to-station | 1h flight + airport | 4h city-to-city |
+        | Pet in cabin | Yes (carrier) | Yes (carrier) | In car |
+        | Pet separation | None | None | None |
+        | Stress level | Low | Moderate (airport) | Lowest |
+        | Cost (pet) | EUR 35-100 + supplement | EUR 80-200 + EUR 50-70 fee | Fuel only |
+        | Best for | Small/medium dogs, cats | Small pets, if already flying | Larger dogs, multiple pets |
+
+        Thalys from Amsterdam Centraal to Paris Gare du Nord in 2 hours 30 minutes is the default recommendation for most Netherlands-France pet moves. Direct, no changes, your pet beside you.
+    - heading: "The EU Pet Passport: three things to check"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        France and the Netherlands both implement EU Regulation 576/2013. The requirements are identical: ISO microchip recorded in the passport, current rabies vaccination within the manufacturer's validity period, passport issued by an EU-authorised vet.
+
+        Check the vaccination expiry date first. Not the passport issue date — the vaccination record page. If the next booster is due in the next month, get it before you travel. A booster within the validity period of the previous vaccination takes effect immediately, with no waiting period.
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Netherlands to France?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering France?"
-    answer: "No routine quarantine is required in France for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering France?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter France. Start this process as early as possible."
-  - question: "Can I take my cat to France from Netherlands?"
-    answer: "Yes, cats can be transported from Netherlands to France. The same microchip, vaccination, and health certificate requirements apply as for dogs, though some rules (such as tapeworm treatment) apply to dogs only. Check the full requirements for cats with the destination authority."
+  - question: "Do I need any documents other than an EU Pet Passport for Netherlands to France?"
+    answer: "No. A valid EU Pet Passport with current microchip and rabies vaccination is all that's required. No titre test, import permit, or quarantine applies."
+  - question: "Is Thalys better than flying for this route?"
+    answer: "For most people: yes. Thalys Amsterdam-Paris takes 2h30m, your pet is in the cabin with you the whole way, and there's no airport overhead. KLM's 1-hour flight adds 2-3 hours of airport time, making door-to-door time comparable or longer."
+  - question: "Can I drive from the Netherlands to France with my pet?"
+    answer: "Yes. EU free movement applies at the border. No pet inspection stops. Amsterdam to Paris is about 4 hours via the A16. Keep the EU Pet Passport accessible."
+  - question: "Does France have breed restrictions the Netherlands doesn't?"
+    answer: "France restricts Categorie 2 dogs (Rottweilers, Staffordshire Bull Terriers, American Staffordshire Terriers) and bans Categorie 1. The Netherlands' Pit Bull Terrier restriction is domestic legislation and doesn't automatically apply in France. Check French breed rules for your specific dog."
+  - question: "How long does preparation take?"
+    answer: "Days if your EU Pet Passport and vaccinations are current. The only delay would be if the rabies vaccination has lapsed, requiring a 21-day wait from a new vaccination."
 links:
   sideways:
     - url: "/pet-transport/france-to-netherlands/"
       text: "Pet Transport France to Netherlands"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-netherlands-export-guide/"
+    - url: "/pet-transport/origins/netherlands-pet-export-guide/"
       text: "Shipping from Netherlands"
     - url: "/pet-transport/countries/france/"
       text: "Importing to France"
-    - url: "/pet-transport/airlines/klm-royal-dutch-airlines/"
+    - url: "/pet-transport/airlines/klm/"
       text: "KLM pet policy"
     - url: "/pet-transport/airlines/air-france/"
       text: "Air France pet policy"

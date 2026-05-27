@@ -1,9 +1,9 @@
 ---
-template_variant: "E"
-title: "Moving Your Pet from Portugal to France | Complete Guide"
-description: "Pet relocation from Portugal to France: France import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport from Portugal to France | EU Pet Passport, No Titre Test & Q&A Guide"
+description: "Moving your pet from Portugal to France: EU pet passport accepted, no titre test, no quarantine, TAP and drive options — Q&A guide for Portuguese pet owners."
 type: "routes"
 layout: "single"
+template_variant: "D"
 author: "Gareth - Founder, PetTransportGlobal"
 slug: "portugal-to-france"
 origin_name: "Portugal"
@@ -13,117 +13,101 @@ route_data:
     code: "PT"
     country: "Portugal"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      export_permit: "No export permit required for intra-EU movement."
+      health_certificate: "EU Pet Passport sufficient."
   destination:
     code: "FR"
     country: "France"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or at same time as rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Standard EU protocol. 21-day wait from first vaccination."
-      titre_test: "Required for: Pets from unlisted third countries. Not required for: Pets from EU and listed third countries (all P1 countries listed). Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No routine quarantine. Non-compliant animals may be quarantined or returned at owner's expense."
-      import_permit: "No formal import permit. EU pet passport or AHC serves as documentation."
-      health_certificate: "Required"
+      microchip: "Required (ISO 11784/11785). Recorded in EU Pet Passport."
+      rabies_vaccination: "Required and current. Standard EU protocol."
+      titre_test: "Not required. Portugal is an EU member state."
+      quarantine: "Not required."
+      import_permit: "Not required."
+      health_certificate: "EU Pet Passport sufficient."
+      entry_point: "No border control post inspection for intra-EU movement."
+      authority: "DGAL France. EU Regulation 576/2013."
   airlines:
+    - name: "TAP Air Portugal"
+      type: "cabin_and_cargo"
+      policy_summary: "Cabin: TAP allows small pets in cabin on Lisbon-Paris and Porto-Paris routes. Flight is about 2h20m. Small pets up to 8kg in carrier. The most direct option from Portugal."
     - name: "Air France"
       type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Emirates"
-      type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
+      policy_summary: "Cabin: Air France operates Lisbon-Paris and Porto-Paris. Small pets in carrier. Direct, good cabin pet policy."
+    - name: "Iberia"
       type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
+      policy_summary: "Cabin: via Madrid MAD. Iberia allows small pets in cabin on intra-EU routes. Useful if TAP or Air France unavailable."
+    - name: "Drive"
       type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Lisbon to Paris via Madrid takes about 18-20 hours — practical for a multi-day drive with overnight stops. Lisbon to Biarritz is about 8 hours. Pet stays in the vehicle throughout."
+    - name: "easyJet"
+      type: "no_pets"
+      policy_summary: "easyJet does not accept pets in cabin or cargo on any route. Not suitable."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step: must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Check EU Pet Passport: microchip recorded, rabies vaccination current"
+      timing: "Immediate. Vet visit if in doubt."
+      responsible: "Your Portuguese vet"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Book TAP or Air France Lisbon/Porto-Paris"
+      timing: "1-4 weeks ahead. Cabin pet space is limited."
+      responsible: "You"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
-    - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
-    - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Travel to France. No border inspection."
+      timing: "Day of travel."
+      responsible: "You"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "TAP or Air France ticket Lisbon/Porto to Paris (EUR 80-250)"
+    - "Cabin pet fee: EUR 50-80 supplemental charge"
+    - "Drive: fuel (approx EUR 60-100 for Lisbon-Biarritz)"
+    - "EU Pet Passport update if lapsed (vet fee)"
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "Book cabin pet space early — airlines limit the number of pets per flight. TAP and Air France both have cabin pet policies but spaces fill quickly."
+    - "Confirm the rabies vaccination in the EU passport is current before booking anything."
+    - "France's Categorie 1 and 2 breed restrictions apply. Portugal has its own DL 315/2009 dangerous dog legislation — check French rules specifically for your breed."
+  route_complexity: "very_low"
+  estimated_timeline_weeks: "0-1"
 content:
   h1: "Pet Transport from Portugal to France"
   overview: |
-    Pet transport from Portugal to France follows a clear process once you know what France requires.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date: some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Getting the timing right is critical. Work backwards from your travel date and add a buffer.
+    Portugal to France is an EU-to-EU move. The EU Pet Passport is everything you need. The practical questions are all about travel logistics — flying is the fastest, driving gives the most flexibility for large or multiple pets.
   sections:
-    - heading: "Why this route needs early planning"
+    - heading: "The questions people ask us most about Portugal to France"
       body: |
-        Compared to some international pet transport routes, Portugal to France is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        France follows EU harmonised pet movement rules. Direction Generale de l'Alimentation (DGAL) under the Ministry of Agriculture oversees implementation. France is one of the most pet-friendly countries in Europe with high pet ownership, though some rental properties restrict pets. France has its own breed-specific legislation (Categories 1 and 2) that is notably strict.
-    - heading: "From experience: Portugal to France pet transport"
+        The documentation questions are easy ones — EU passport, current vaccination, that's it. The questions that take more thought are about the journey itself.
+
+        **How early should I book cabin pet space?** 4-6 weeks ahead if possible. TAP and Air France both limit the number of pets per flight — usually 2-3 animals — and those spots go. Don't book the human ticket and assume the pet will follow.
+
+        **Is the drive realistic?** Lisbon to Paris is 18-20 hours including stops. Most people split it over two days, stopping in Salamanca or Burgos. The Pyrenees crossing at Irun is the most convenient border point. Your pet rides in the car throughout — no border stops, no cargo holds, just road time.
+
+        **What if my pet is too big for cabin?** Pets over 8kg (including carrier) go in the hold on TAP and Air France. This still works well for the Lisbon-Paris route, which is a direct 2h20m flight. Your dog or cat is in a temperature-controlled hold, not separated from you by 10,000 miles.
+    - heading: "What France's DGAL looks for"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Random pet document checks do occur at EU internal borders and at some rail and ferry terminals. DGAL inspectors check: EU Pet Passport, microchip matching, current rabies vaccination. That's the full list for an EU-origin pet.
+
+        Portugal doesn't have a rabies problem. France doesn't either. But the vaccination requirement exists because EU Regulation 576/2013 applies uniformly across all member states, regardless of each country's actual rabies status. It's a legal requirement, not a practical risk assessment.
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Portugal to France?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering France?"
-    answer: "No routine quarantine is required in France for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering France?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter France. Start this process as early as possible."
-  - question: "Can I take my cat to France from Portugal?"
-    answer: "Yes, cats can be transported from Portugal to France. The same microchip, vaccination, and health certificate requirements apply as for dogs, though some rules (such as tapeworm treatment) apply to dogs only. Check the full requirements for cats with the destination authority."
+  - question: "Do I need any paperwork beyond the EU Pet Passport for Portugal to France?"
+    answer: "No. A valid EU Pet Passport with current ISO microchip and rabies vaccination is all that's required under EU Regulation 576/2013. No titre test, permit, or quarantine applies."
+  - question: "Which airline is best for taking a pet from Portugal to France?"
+    answer: "TAP Air Portugal and Air France both operate direct Lisbon/Porto to Paris routes with cabin pet acceptance for small animals. TAP is the national carrier from Portugal; Air France has the French arrival advantage. Book pet space 4-6 weeks ahead — cabin pet slots fill quickly."
+  - question: "Can I take a large dog from Portugal to France?"
+    answer: "Yes. Dogs too large for the cabin (over 8kg including carrier) travel in the temperature-controlled hold on TAP or Air France. Alternatively, driving is often the most practical option for large dogs — Lisbon to Biarritz is about 8 hours."
+  - question: "Is there any border inspection when driving from Portugal to France?"
+    answer: "No scheduled inspection. EU free movement applies. Keep the EU Pet Passport accessible in the vehicle, but no routine pet check occurs at the Portugal-Spain or Spain-France road borders."
+  - question: "How far in advance should I book cabin pet space?"
+    answer: "4-6 weeks ahead. Airlines limit the number of pets per flight (typically 2-3 animals in cabin), and those spots go well before the general cabin fills. Book the pet space at the same time as your human ticket."
 links:
   sideways:
     - url: "/pet-transport/france-to-portugal/"
       text: "Pet Transport France to Portugal"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-portugal-export-guide/"
+    - url: "/pet-transport/origins/portugal-pet-export-guide/"
       text: "Shipping from Portugal"
     - url: "/pet-transport/countries/france/"
       text: "Importing to France"
+    - url: "/pet-transport/airlines/tap-air-portugal/"
+      text: "TAP Air Portugal pet policy"
     - url: "/pet-transport/airlines/air-france/"
       text: "Air France pet policy"
-    - url: "/pet-transport/airlines/emirates/"
-      text: "Emirates pet policy"
 ---

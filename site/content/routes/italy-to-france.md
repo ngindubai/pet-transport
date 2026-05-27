@@ -1,9 +1,9 @@
 ---
-template_variant: "E"
-title: "Moving Your Pet from Italy to France | Complete Guide"
-description: "How to ship your dog or cat from Italy to France. France import rules, vaccinations, permits, and airline options explained."
+title: "Pet Transport from Italy to France | EU Pet Passport, No Titre Test & Journey Guide"
+description: "Moving your pet from Italy to France: EU pet passport accepted, no titre test, no quarantine, Trenitalia and Air France options — a warm journey guide."
 type: "routes"
 layout: "single"
+template_variant: "B"
 author: "Gareth - Founder, PetTransportGlobal"
 slug: "italy-to-france"
 origin_name: "Italy"
@@ -13,117 +13,105 @@ route_data:
     code: "IT"
     country: "Italy"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      export_permit: "No export permit required for intra-EU movement."
+      health_certificate: "EU Pet Passport sufficient."
   destination:
     code: "FR"
     country: "France"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or at same time as rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Standard EU protocol. 21-day wait from first vaccination."
-      titre_test: "Required for: Pets from unlisted third countries. Not required for: Pets from EU and listed third countries (all P1 countries listed). Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No routine quarantine. Non-compliant animals may be quarantined or returned at owner's expense."
-      import_permit: "No formal import permit. EU pet passport or AHC serves as documentation."
-      health_certificate: "Required"
+      microchip: "Required (ISO 11784/11785). Recorded in EU Pet Passport."
+      rabies_vaccination: "Required and current. Standard EU protocol."
+      titre_test: "Not required. Italy is an EU member state."
+      quarantine: "Not required."
+      import_permit: "Not required."
+      health_certificate: "EU Pet Passport sufficient."
+      entry_point: "No border control post inspection for intra-EU movement."
+      authority: "DGAL France. EU Regulation 576/2013."
   airlines:
+    - name: "Rail (TGV / Frecciarossa)"
+      type: "cabin_and_cargo"
+      policy_summary: "Cabin: Frecciarossa connects Milan to Paris in about 7 hours. Turin to Paris is under 5 hours. Small pets in carriers on Trenitalia and SNCF services. Dogs permitted with ticket. Best option for Milan or Turin departures."
+    - name: "Drive"
+      type: "cabin_and_cargo"
+      policy_summary: "Milan to Nice is 4 hours. Turin to Marseille is 3.5 hours. The Mont Blanc Tunnel or Ventimiglia crossings are the main options. Your pet stays in the car throughout — no inspection at the Italian-French border."
     - name: "Air France"
       type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Emirates"
-      type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
+      policy_summary: "Cabin: small pets on Air France Italy-France routes. Rome FCO or Milan MXP to Paris CDG. Flights under 2 hours but airport adds overhead."
+    - name: "ITA Airways"
       type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
+      policy_summary: "Cabin: small pets in carrier on ITA Airways intra-EU routes from Italian airports."
+    - name: "Vueling"
       type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Cabin pets on Vueling intra-EU routes. Useful for routes from Italian cities where Air France or ITA isn't direct."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step: must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm EU Pet Passport shows current microchip and valid rabies vaccination"
+      timing: "Check immediately. A quick vet visit to verify."
+      responsible: "Your Italian vet"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Choose your route: rail from Milan/Turin, drive through the Alps, or fly"
+      timing: "Book rail or air 1-3 weeks ahead. No booking needed to drive."
+      responsible: "You"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
-    - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
-    - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Travel. No border inspection required."
+      timing: "Day of travel."
+      responsible: "You"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Rail: Trenitalia/SNCF ticket Milan-Paris (EUR 60-200 depending on service and class)"
+    - "Drive: fuel + any tunnel tolls (Mont Blanc tunnel toll approx EUR 50 one-way)"
+    - "Air France or ITA cabin pet fee (EUR 50-70 supplement)"
+    - "EU Pet Passport renewal if expired (vet fee EUR 20-60)"
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "Rabies vaccination must be current and within the manufacturer's validity period. An expired vaccination makes the EU Pet Passport invalid for travel."
+    - "France's Categorie 1 and 2 breed restrictions apply. Check your breed against French rules if you have a Rottweiler, Staffordshire Bull Terrier, or similar breed."
+    - "If driving through the Mont Blanc Tunnel, confirm current tunnel pet rules before travel."
+  route_complexity: "very_low"
+  estimated_timeline_weeks: "0-1"
 content:
   h1: "Pet Transport from Italy to France"
   overview: |
-    The Italy to France route is one many expats and returning families complete each year with their pets.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date: some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Start early and follow the steps in sequence. Missing a deadline pushes the whole timeline back.
+    Italy to France is a beautiful move in every sense. The paperwork is minimal — both EU countries, one valid EU Pet Passport. The journey options are genuinely good: a fast train through the Alps, a scenic drive along the Riviera, or a short flight. Your main task is simply choosing how you want to travel.
+
+    If your pet's passport is current, you could book this trip for next week.
   sections:
-    - heading: "Key requirements for moving your pet to France"
+    - heading: "Your pet's journey from Italy to France"
       body: |
-        Compared to some international pet transport routes, Italy to France is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        France follows EU harmonised pet movement rules. Direction Generale de l'Alimentation (DGAL) under the Ministry of Agriculture oversees implementation. France is one of the most pet-friendly countries in Europe with high pet ownership, though some rental properties restrict pets. France has its own breed-specific legislation (Categories 1 and 2) that is notably strict.
-    - heading: "Step-by-step: what to do first"
+        Start with the paperwork check, because it's quick. EU Pet Passport. ISO microchip number recorded and matching. Rabies vaccination current and within validity. Those three things. If they're all in order, the administrative side of this move is done.
+
+        Now for the interesting part: how do you get there?
+
+        The Frecciarossa high-speed train from Milan Centrale to Paris Gare de Lyon takes about 7 hours. Turin to Paris is a bit under 5 hours. It's a comfortable journey through some of Europe's most dramatic rail scenery, with your pet in a carrier under the seat beside you. Trenitalia and SNCF both allow small pets in carriers on international services. Larger dogs travel with a ticket, muzzle, and lead on most services.
+
+        Driving gives you more flexibility, particularly for larger dogs. Milan to Nice via the A26/A10 takes about 4 hours. Turin to Marseille via Ventimiglia is 3.5 hours. You cross the Italian-French border without stopping for a pet inspection — EU free movement applies. Keep the passport accessible in the car, but you won't typically be waved over for a pet check at an internal EU border.
+
+        Flying works if you're already in a city with direct France connections. Air France from Rome or Milan to Paris is under 2 hours. The airport overhead (check-in, security, boarding) makes door-to-door time competitive with rail only for city-centre-to-airport situations. Small pets go in cabin; larger pets in cargo.
+    - heading: "What France will want to see"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        France applies EU Regulation 576/2013. An official from DGAL might check your documents at a motorway stop or on arrival by rail — it's uncommon but it happens. They want to see: EU Pet Passport, microchip number matching your pet when scanned, current rabies vaccination.
+
+        If you're bringing a dog and your breed is on France's Categorie 2 list (Rottweilers, Staffordshire Bull Terriers, American Staffordshire Terriers), you need to know the French rules for keeping these dogs — muzzle in public, owner registration. They're not banned, but they're regulated. Categorie 1 (undefined fighting-type breed appearance) dogs cannot legally be imported.
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Italy to France?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering France?"
-    answer: "No routine quarantine is required in France for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering France?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter France. Start this process as early as possible."
-  - question: "Can I take my cat to France from Italy?"
-    answer: "Yes, cats can be transported from Italy to France. The same microchip, vaccination, and health certificate requirements apply as for dogs, though some rules (such as tapeworm treatment) apply to dogs only. Check the full requirements for cats with the destination authority."
+  - question: "Do I need anything beyond an EU Pet Passport to take my pet from Italy to France?"
+    answer: "No. A valid EU Pet Passport with current microchip and rabies vaccination is all that's required under EU Regulation 576/2013. No titre test, import permit, or quarantine applies."
+  - question: "Can I take my dog on the Frecciarossa from Milan to Paris?"
+    answer: "Yes. Trenitalia and SNCF allow small pets in carriers on international services. Larger dogs travel with a ticket. Check current Trenitalia and SNCF pet policies for your specific service before booking."
+  - question: "Is there a border inspection when driving from Italy to France?"
+    answer: "No scheduled inspection. EU free movement applies at the Italy-France border. Keep the EU Pet Passport accessible in the vehicle for any random check."
+  - question: "What if my pet's EU passport rabies vaccination has expired?"
+    answer: "Visit your Italian vet for a booster. A booster given within the validity period of the previous vaccination takes effect immediately, with no additional waiting period. A new vaccination course (first-ever, or after a long lapse) requires a 21-day wait before travel."
+  - question: "Does France have breed restrictions that might affect my dog?"
+    answer: "France restricts Categorie 1 (fighting-type appearance) and Categorie 2 dogs (including Rottweilers, Staffordshire Bull Terriers, American Staffordshire Terriers). Category 1 dogs are prohibited; Category 2 requires owner registration and muzzle in public. Check your specific breed against French legislation before travel."
 links:
   sideways:
     - url: "/pet-transport/france-to-italy/"
       text: "Pet Transport France to Italy"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-italy-export-guide/"
+    - url: "/pet-transport/origins/italy-pet-export-guide/"
       text: "Shipping from Italy"
     - url: "/pet-transport/countries/france/"
       text: "Importing to France"
+    - url: "/pet-transport/airlines/ita-airways/"
+      text: "ITA Airways pet policy"
     - url: "/pet-transport/airlines/air-france/"
       text: "Air France pet policy"
-    - url: "/pet-transport/airlines/emirates/"
-      text: "Emirates pet policy"
 ---
