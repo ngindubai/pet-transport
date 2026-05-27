@@ -1,7 +1,6 @@
 ---
-template_variant: "A"
-title: "Pet Relocation South Korea to New Zealand | Requirements & Guide"
-description: "How to ship your dog or cat from South Korea to New Zealand. New Zealand import rules, vaccinations, permits, and airline options explained."
+title: "Pet Transport from South Korea to New Zealand | AQS, Titre Test & 180-Day Wait"
+description: "Shipping your pet from South Korea to New Zealand: MPI NZSTAP protocol, FAVN titre test mandatory, 180-day wait, Air New Zealand cargo, and full preparation guide."
 type: "routes"
 layout: "single"
 author: "Gareth - Founder, PetTransportGlobal"
@@ -13,139 +12,129 @@ route_data:
     code: "KR"
     country: "South Korea"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      export_permit: "No formal export permit for personal pets. APQA issues the export health certificate."
+      health_certificate: "APQA-issued health certificate in NZ MPI format, within 10 days of travel. Must confirm microchip, two rabies vaccinations, titre test result, and health status."
   destination:
     code: "NZ"
     country: "New Zealand"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or on same day as first rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 28-day wait after vaccination before travel. Vaccination schedule must be complete before titre test blood draw."
-      titre_test: "Required for: All pets from all countries (no exemptions). Not required for: None. Minimum: 0.5 IU/ml. 180-day wait from test date before entry"
-      quarantine: "Mandatory quarantine. 10 (minimum) at MPI Levin facility days. Facility: MPI Levin Quarantine Facility, Levin, Manawatu (the only approved facility). Mandatory 10-day quarantine for all arriving cats and dogs. Pre-booking required well in advance as capacity is limited. Book before flights."
-      import_permit: "Required. Issued by: Ministry for Primary Industries (MPI), Biosecurity New Zealand. Apply for import permit before booking flights. Permit specifies all conditions. Non-compliance results in re-export or destruction."
-      health_certificate: "Required. Government veterinary health certificate. Issued by: Government (official) veterinarian in country of export. Valid for 14 days from issue. Must use MPI-specified format for the exact country of export. No standard format accepted. Download the correct template from the MPI website."
+      microchip: "Required (ISO 11784/11785). Must be implanted before or on the same day as the first rabies vaccination."
+      rabies_vaccination: "Two vaccinations required. Both administered after microchipping. At least 28 days apart. Must be inactivated virus type."
+      titre_test: "Mandatory for all countries. FAVN test at an MPI-approved laboratory. Minimum result 0.5 IU/ml. Blood drawn at least 30 days after the second vaccination. 180-day wait from blood draw date before entry. No exemptions."
+      quarantine: "Mandatory. Minimum 10 days at an MPI-approved quarantine facility at owner's expense. This is in addition to the 180-day wait which happens before travel."
+      import_permit: "Required. NZSTAP (New Zealand Standard Treatment and Approval Process) approval needed before travel. Apply via Biosecurity New Zealand."
+      health_certificate: "APQA-issued health certificate in MPI format, within 10 days of travel."
+      entry_point: "Auckland International Airport (AKL) is the primary entry point. Christchurch (CHC) also handles some imports."
+      authority: "Ministry for Primary Industries (MPI), Biosecurity New Zealand. nzstap.mpi.govt.nz"
   airlines:
+    - name: "Air New Zealand"
+      type: "cargo_only"
+      policy_summary: "Air New Zealand operates ICN-AKL via connections. Air New Zealand Cargo handles live animal imports. Familiar with MPI quarantine requirements at Auckland."
     - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
+      type: "cargo_only"
+      policy_summary: "Korean Air Cargo from Incheon to Auckland, typically via a Pacific hub. Check current routing availability and live animal cargo acceptance."
     - name: "Qantas"
       type: "cargo_only"
-      policy_summary: "Cargo: QantasFreighter network for pet transport. Brachycephalic breeds restricted year-round. Temperature embargoes: seasonal restrictions during Australian summer (Dec-Feb)"
-    - name: "Emirates"
-      type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
+      policy_summary: "Via Sydney or Melbourne. Qantas Freight handles pets to New Zealand via Australian connections."
     - name: "Singapore Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
+      policy_summary: "Via Singapore SIN to Auckland AKL. Temperature-controlled cargo. Reliable option for ICN-AKL routing."
     - name: "Cathay Pacific"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Via Hong Kong HKG to Auckland. Cathay Pacific Cargo. Good animal handling record."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "ISO microchip implanted (if not done). Must be before or same day as first vaccination."
+      timing: "Starting point for the entire sequence."
+      responsible: "Your vet"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 28-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "First rabies vaccination (inactivated virus)"
+      timing: "After microchip. At least 28 days before second vaccination."
+      responsible: "Your vet"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Second rabies vaccination"
+      timing: "At least 28 days after first."
+      responsible: "Your vet"
     - step: 4
-      action: "Apply for import permit from New Zealand"
-      timing: "Apply early: allow 4-6 weeks"
-      responsible: "You (or your pet transport agent)"
+      action: "Apply for NZSTAP import approval"
+      timing: "Apply early. Can take several weeks to process. Do not delay."
+      responsible: "You or agent, via MPI"
     - step: 5
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "FAVN titre test at MPI-approved laboratory"
+      timing: "Blood drawn at least 30 days after second vaccination. Allow 2-4 weeks for results."
+      responsible: "Your vet + MPI-approved lab"
     - step: 6
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "180-day wait from blood draw date"
+      timing: "Non-negotiable. No exemptions."
+      responsible: "N/A"
     - step: 7
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Book Air New Zealand or other carrier cargo ICN-AKL"
+      timing: "Book once travel window confirmed post-wait."
+      responsible: "You or agent"
     - step: 8
-      action: "Quarantine on arrival (10 (minimum) at MPI Levin facility days)"
-      timing: "Immediately on arrival (mandatory)"
-      responsible: "New Zealand quarantine authority"
+      action: "Obtain APQA health certificate in MPI format"
+      timing: "Within 10 days of travel."
+      responsible: "Official vet + APQA"
+    - step: 9
+      action: "Travel to Auckland. 10-day MPI quarantine at approved facility."
+      timing: "Pre-book and pay quarantine facility in advance."
+      responsible: "MPI-approved facility + you"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (New Zealand)"
-    - "Quarantine facility fees (owner-paid at destination)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Airline cargo fees ICN-AKL"
+    - "IATA-compliant crate"
+    - "FAVN titre test fees"
+    - "MPI NZSTAP application fee"
+    - "MPI 10-day quarantine facility fees (paid by owner)"
+    - "APQA health certificate fees"
+    - "Agent fee (strongly recommended for NZ complexity)"
   key_warnings:
-    - "Mandatory quarantine required on arrival. Plan for separation from your pet."
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
+    - "New Zealand requires a titre test and 180-day wait for ALL countries without exception. There is no fast-track entry."
+    - "10-day quarantine is mandatory on arrival, even after the 180-day pre-travel wait."
+    - "Apply for NZSTAP approval early — processing takes time and your pet can't travel without it."
+    - "MPI requirements are strict and enforced. An IPATA-registered agent with NZ experience is strongly recommended."
   route_complexity: "very_high"
-  estimated_timeline_weeks: "26-32"
+  estimated_timeline_weeks: "38-44"
 content:
   h1: "Pet Transport from South Korea to New Zealand"
   overview: |
-    Moving a pet from South Korea to New Zealand involves more paperwork than most owners expect.
-    
-    This route is one of the most demanding international pet transport routes. Start preparations at least 26 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. New Zealand requires mandatory quarantine (10 (minimum) at MPI Levin facility days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    We've laid out every step below so you know exactly what to prepare and when.
+    New Zealand is one of the most demanding pet import destinations in the world. Every country, without exception, must pass through the same protocol: two rabies vaccinations, a FAVN titre test, a 180-day wait from blood draw, and a mandatory 10-day quarantine at an MPI-approved facility on arrival.
+
+    From South Korea, the minimum timeline is around 38-44 weeks. This is not a route you can plan at short notice. Start the process the moment you know you're moving to New Zealand.
   sections:
-    - heading: "Understanding New Zealand's pet import rules"
+    - heading: "New Zealand's NZSTAP protocol: what South Korea triggers"
       body: |
-        This is one of the more demanding international pet transport corridors. New Zealand runs a strict biosecurity programme and there are no shortcuts through it.
-        
-        All pets must complete quarantine on arrival in New Zealand (at MPI Levin Quarantine Facility, Levin, Manawatu (the only approved facility)) for 10 (minimum) at MPI Levin facility days. This is non-negotiable and is entirely separate from the pre-travel preparation.
-        
-        New Zealand is rabies-free with one of the world's strictest pet import systems. All dogs and cats must complete mandatory quarantine at the government-approved facility (Levin MAF Quarantine Station, now MPI). Import permit required in advance. Only cats and dogs permitted from most countries; birds require separate approval. Authority: Ministry for Primary Industries (MPI), Biosecurity New Zealand.
-    - heading: "Things to sort before you book"
+        New Zealand's Biosecurity team treats every origin country equally when it comes to the core requirements. Two vaccinations, titre test, 180-day wait, 10-day quarantine. South Korea gets no special treatment here.
+
+        The starting point is an ISO microchip, implanted before or on the same day as the first vaccination. Then two inactivated-virus rabies vaccinations at least 28 days apart. Then the FAVN titre test — blood drawn at a minimum of 30 days after the second vaccination, at an MPI-approved laboratory. Then the 180-day wait from that blood draw date.
+
+        Apply for NZSTAP import approval from the Ministry for Primary Industries (MPI) early in this process. Processing takes time and you cannot travel without it.
+    - heading: "Flights and cargo options from Seoul to Auckland"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Incheon to Auckland is a long haul with no direct cargo flight available, so all routings involve at least one transit. Air New Zealand is the obvious airline to contact first, given they're the receiving national carrier. Singapore Airlines via Singapore and Cathay Pacific via Hong Kong are both capable alternatives with temperature-controlled cargo holds.
+
+        Korean Air Cargo has a direct equity interest in this corridor and is worth consulting. Given the complexity of MPI requirements, a pet transport agent with specific New Zealand experience is strongly recommended for managing the cargo booking alongside the paperwork.
 faqs:
-  - question: "How long does it take to prepare a pet for transport from South Korea to New Zealand?"
-    answer: "Allow at least 26 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering New Zealand?"
-    answer: "Yes, quarantine is mandatory in New Zealand. Your pet will stay for 10 (minimum) at MPI Levin facility days at MPI Levin Quarantine Facility, Levin, Manawatu (the only approved facility) on arrival. This is non-negotiable and the cost is paid by the owner."
-  - question: "Is a rabies titre test required for pets entering New Zealand?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter New Zealand. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into New Zealand?"
-    answer: "Yes, an import permit is required from New Zealand's authority (Ministry for Primary Industries (MPI), Biosecurity New Zealand). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in South Korea. The certificate must be issued within 14 days of travel. Present the original (not a copy) at check-in. Check New Zealand's authority for the exact format required."
+  - question: "How long does it take to move a pet from South Korea to New Zealand?"
+    answer: "Allow 38-44 weeks minimum. The 180-day wait after the titre test blood draw is the longest single step, and the 10-day mandatory quarantine on arrival in New Zealand adds time at the end. Apply for NZSTAP approval early, as that also takes processing time."
+  - question: "Is there a titre test exemption for pets from South Korea entering New Zealand?"
+    answer: "No. New Zealand requires a FAVN titre test and 180-day wait from all countries, including South Korea. There are no exemptions, fast-track options, or waivers."
+  - question: "Does my pet have to go into quarantine when arriving in New Zealand from South Korea?"
+    answer: "Yes. A minimum 10-day quarantine at an MPI-approved facility is mandatory for all pets arriving by air, regardless of origin country. This is in addition to the 180-day pre-travel wait. Quarantine must be pre-booked and fees are paid by the owner."
+  - question: "What is NZSTAP and do I need it?"
+    answer: "NZSTAP is New Zealand's Standard Treatment and Approval Process for importing cats and dogs. You must receive NZSTAP approval from MPI before your pet can travel to New Zealand. Apply early via the MPI website at nzstap.mpi.govt.nz."
+  - question: "Should I use a pet transport agent for this route?"
+    answer: "Strongly recommended. New Zealand's import process involves NZSTAP applications, MPI documentation in a specific format, quarantine facility pre-booking, and cargo coordination. An IPATA-registered agent with verified NZ experience can prevent costly errors."
 links:
   sideways:
     - url: "/pet-transport/new-zealand-to-south-korea/"
       text: "Pet Transport New Zealand to South Korea"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-south-korea-export-guide/"
+    - url: "/pet-transport/origins/south-korea-pet-export-guide/"
       text: "Shipping from South Korea"
     - url: "/pet-transport/countries/new-zealand/"
       text: "Importing to New Zealand"
+    - url: "/pet-transport/airlines/air-new-zealand/"
+      text: "Air New Zealand pet policy"
     - url: "/pet-transport/airlines/korean-air/"
       text: "Korean Air pet policy"
-    - url: "/pet-transport/airlines/qantas/"
-      text: "Qantas pet policy"
 ---
