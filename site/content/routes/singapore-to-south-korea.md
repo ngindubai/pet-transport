@@ -1,9 +1,9 @@
 ---
-template_variant: "D"
-title: "Shipping Dogs & Cats from Singapore to South Korea | PetTransportGlobal"
-description: "Pet relocation from Singapore to South Korea: South Korea import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport from Singapore to South Korea | AVS Export, APQA Import & Guide"
+description: "Moving your pet from Singapore to South Korea: AVS export licence, APQA requirements, titre test may apply, Singapore Airlines and Korean Air cargo to Seoul."
 type: "routes"
 layout: "single"
+template_variant: "B"
 author: "Gareth - Founder, PetTransportGlobal"
 slug: "singapore-to-south-korea"
 origin_name: "Singapore"
@@ -13,131 +13,113 @@ route_data:
     code: "SG"
     country: "Singapore"
     export_requirements:
-      health_certificate: "Must meet destination country requirements. Contact destination authority for specific format."
+      export_permit: "AVS Export Licence required. Apply via CITES e-Licence System. Allow 2+ weeks."
+      health_certificate: "Official health certificate by AVS-accredited vet, endorsed by AVS. In APQA format. Within 7 days of departure."
   destination:
     code: "KR"
     country: "South Korea"
     import_requirements:
-      microchip: "Required (ISO 11784/11785)"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 30-day wait after vaccination before travel"
-      titre_test: "Required. Minimum: 0.5 IU/ml. 180-day wait from test date before entry"
-      quarantine: "Mandatory quarantine. 10 days. Facility: APQA facility"
-      import_permit: "Required. Issued by: Animal and Plant Quarantine Agency"
-      health_certificate: "Required. Issued by: Official veterinarian. Valid for 14 days from issue"
+      microchip: "Required (ISO 11784/11785 15-digit). Before vaccination."
+      rabies_vaccination: "Required and current. Post-microchip."
+      titre_test: "Singapore is not an EU country. APQA may require a titre test for Singapore-origin pets. Verify current APQA classification for Singapore at APQA before starting."
+      quarantine: "May apply depending on APQA classification for Singapore. Verify at APQA."
+      import_permit: "Not required for companion animals. APQA advance notification at least 5 days before ICN arrival mandatory."
+      health_certificate: "AVS-endorsed health certificate in APQA format. Within 7 days of Singapore departure."
+      entry_point: "Seoul Incheon International Airport (ICN). APQA quarantine station."
+      authority: "Animal and Plant Quarantine Agency (APQA), South Korea."
   airlines:
     - name: "Singapore Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
+      policy_summary: "Direct SIN-ICN. Singapore Airlines Cargo. National carrier with strong AVS export familiarity at Changi."
     - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
-    - name: "Emirates"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "Direct SIN-ICN. Korean Air Cargo. Korean national carrier with APQA Incheon familiarity."
+    - name: "Asiana Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
+      policy_summary: "Direct SIN-ICN. Asiana Cargo. Alternative Korean option."
     - name: "Cathay Pacific"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Via Hong Kong HKG to ICN. Longer routing."
+    - name: "Emirates"
+      type: "cargo_only"
+      policy_summary: "Via Dubai DXB to ICN. Summer restrictions may apply."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step: must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Verify current APQA classification for Singapore"
+      timing: "Do this first. Determines if titre test is required."
+      responsible: "You or agent"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 30-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "If titre test required: vaccination, blood draw, mandatory wait"
+      timing: "Adds 12-22+ weeks."
+      responsible: "Singapore vet + approved lab"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 180-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Submit APQA advance notification (5+ days before ICN arrival)"
+      timing: "As soon as travel date confirmed."
+      responsible: "You or agent"
     - step: 4
-      action: "Apply for import permit from South Korea"
-      timing: "Apply early: allow 4-6 weeks"
-      responsible: "You (or your pet transport agent)"
+      action: "Apply for AVS Export Licence"
+      timing: "2+ weeks before departure."
+      responsible: "You or agent via CITES e-Licence"
     - step: 5
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Book Singapore Airlines or Korean Air SIN-ICN"
+      timing: "2-4 weeks before travel."
+      responsible: "You or agent"
     - step: 6
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "AVS-endorsed health certificate in APQA format"
+      timing: "Within 7 days of Singapore departure."
+      responsible: "AVS-accredited vet + AVS"
     - step: 7
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
-    - step: 8
-      action: "Quarantine on arrival (10 days)"
-      timing: "Immediately on arrival: mandatory"
-      responsible: "South Korea quarantine authority"
+      action: "APQA inspection at ICN on arrival."
+      timing: "Travel day."
+      responsible: "APQA"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (South Korea)"
-    - "Quarantine facility fees (owner-paid at destination)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Singapore Airlines or Korean Air Cargo SIN-ICN"
+    - "IATA-compliant crate"
+    - "AVS Export Licence fee"
+    - "AVS-endorsed health certificate"
+    - "Titre test if required"
+    - "Agent fee"
   key_warnings:
-    - "Mandatory quarantine required on arrival. Plan for separation from your pet."
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "very_high"
-  estimated_timeline_weeks: "33-39"
+    - "APQA classification for Singapore determines if a titre test is required. Verify before planning."
+    - "AVS Export Licence is mandatory regardless of APQA requirements."
+    - "5-day APQA advance notification is mandatory. Don't overlook it."
+  route_complexity: "moderate"
+  estimated_timeline_weeks: "4-22"
 content:
   h1: "Pet Transport from Singapore to South Korea"
   overview: |
-    Moving to South Korea from Singapore with a dog or cat means starting the paperwork months before your flight.
-    
-    This route is one of the most demanding international pet transport routes. Start preparations at least 33 weeks before your travel date: some steps have fixed waiting periods that cannot be shortened. South Korea requires mandatory quarantine (10 days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Use this guide to map out your preparation timeline and avoid the most common mistakes.
+    Singapore to South Korea is a short flight — around 6 hours — but the documentation requires two separate permits: an AVS Export Licence from Singapore and APQA compliance on the Korean side. Whether a titre test is required depends on Singapore's current APQA classification. Verify that first; it determines your entire timeline.
   sections:
-    - heading: "Why this route needs early planning"
+    - heading: "The key question: what is Singapore's APQA classification?"
       body: |
-        This is one of the more demanding international pet transport corridors. South Korea runs a strict biosecurity programme and there are no shortcuts through it.
-        
-        All pets must complete quarantine on arrival in South Korea (at APQA facility) for 10 days. This is non-negotiable and is entirely separate from the pre-travel preparation.
-        
-        Animal and Plant Quarantine Agency (APQA) regulates imports. Large pet-owning culture.
-    - heading: "From experience: Singapore to South Korea pet transport"
+        APQA South Korea classifies countries based on rabies status and bilateral agreements. EU countries get simplified entry (no titre test). Singapore is not an EU country, which means its APQA classification may require a titre test.
+
+        Check the current APQA classification for Singapore directly with APQA before starting any preparation. If Singapore is classified as low-risk: 3-6 weeks preparation. If a titre test is required: 14-22 weeks. The classification determines everything else.
+    - heading: "Two permits: AVS and APQA notification"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Singapore requires an AVS Export Licence for all live animal exports. Apply via the CITES e-Licence System at nparks.gov.sg/avs at least 2 weeks before departure. Your agent can handle this.
+
+        South Korea's APQA requires advance notification at least 5 days before your pet arrives at Incheon. This is separate from any titre test or health certificate process — it's a simple notification that must be submitted. Your cargo agent does this routinely; confirm it's done before travel day.
+    - heading: "Singapore Airlines vs Korean Air on SIN-ICN"
+      body: |
+        Both operate direct daily services between Changi and Incheon. Singapore Airlines has strong AVS Changi export familiarity; Korean Air has deep APQA Incheon import familiarity. On a short-haul route like this, both are equally capable. Book based on schedule and cargo availability.
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Singapore to South Korea?"
-    answer: "Allow at least 33 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering South Korea?"
-    answer: "Yes, quarantine is mandatory in South Korea. Your pet will stay for 10 days at APQA facility on arrival. This is non-negotiable and the cost is paid by the owner."
-  - question: "Is a rabies titre test required for pets entering South Korea?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 180-day waiting period after a successful result before your pet can enter South Korea. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into South Korea?"
-    answer: "Yes, an import permit is required from South Korea's authority (Animal and Plant Quarantine Agency). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Singapore. The certificate must be issued within 14 days of travel. Present the original (not a copy) at check-in. Check South Korea's authority for the exact format required."
+  - question: "Does my Singapore pet need a titre test to enter South Korea?"
+    answer: "It depends on APQA's current classification for Singapore. Check with APQA before starting. EU countries are titre-test-exempt; Singapore's status as a non-EU country may mean a titre test is required."
+  - question: "What is the AVS Export Licence?"
+    answer: "An AVS Export Licence is mandatory for all live animal exports from Singapore. Apply via the CITES e-Licence System at nparks.gov.sg/avs at least 2 weeks before departure."
+  - question: "How long does preparation take?"
+    answer: "3-6 weeks if no titre test is required. 14-22 weeks if APQA requires a titre test from Singapore-origin pets. Verify the APQA classification first."
+  - question: "What is the 5-day APQA notification?"
+    answer: "APQA must be notified at least 5 days before your pet arrives at Seoul Incheon Airport. Your cargo agent submits this. Missing it causes inspection delays."
+  - question: "Which airline is best from Singapore to Seoul?"
+    answer: "Singapore Airlines Cargo and Korean Air Cargo both operate direct SIN-ICN services. Singapore Airlines has strong Changi AVS export familiarity; Korean Air has APQA Incheon import expertise. Both are solid."
 links:
   sideways:
     - url: "/pet-transport/south-korea-to-singapore/"
       text: "Pet Transport South Korea to Singapore"
   upward:
-    - url: "/pet-transport/origins/pet-export-guide-shipping-from-singapore/"
+    - url: "/pet-transport/origins/singapore-pet-export-guide/"
       text: "Shipping from Singapore"
     - url: "/pet-transport/countries/south-korea/"
       text: "Importing to South Korea"

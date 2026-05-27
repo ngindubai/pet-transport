@@ -1,9 +1,9 @@
 ---
-template_variant: "D"
-title: "Pet Relocation Ireland to Germany | Requirements & Guide"
-description: "Complete guide to pet transport from Ireland to Germany. Import requirements, quarantine rules, airline options, and step-by-step timeline."
+title: "Pet Transport from Ireland to Germany | EU Pet Passport, Tapeworm Rule & Guide"
+description: "Moving your pet from Ireland to Germany: EU pet passport accepted, no titre test, tapeworm treatment for dogs arriving in Ireland doesn't apply here, Aer Lingus cargo."
 type: "routes"
 layout: "single"
+template_variant: "A"
 author: "Gareth - Founder, PetTransportGlobal"
 slug: "ireland-to-germany"
 origin_name: "Ireland"
@@ -13,107 +13,105 @@ route_data:
     code: "IE"
     country: "Ireland"
     export_requirements:
-      export_permit: "No export permit required for pet cats and dogs."
-      health_certificate: "EU pets can use existing EU passport. Non-EU destinations require destination-country AHC."
+      export_permit: "No export permit required for intra-EU movement."
+      health_certificate: "EU Pet Passport sufficient."
   destination:
     code: "DE"
     country: "Germany"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or at same time as rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Standard EU 21-day wait from date of first vaccination before travel. No additional Germany-specific requirements beyond EU framework."
-      titre_test: "Required for: Pets from unlisted third countries (countries not on EU Annex II list). Not required for: Pets from EU member states, listed third countries (all P1 countries are listed). Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No quarantine for pets entering with correct EU documentation. Non-compliant animals may be returned, quarantined at owner's expense, or in worst case euthanised."
-      import_permit: "No formal import permit. EU pet passport (intra-EU) or Animal Health Certificate (from third countries) serves as documentation."
-      health_certificate: "Required"
+      microchip: "Required (ISO 11784/11785). Recorded in EU Pet Passport."
+      rabies_vaccination: "Required and current. Standard EU protocol."
+      titre_test: "Not required. Ireland is an EU member state."
+      quarantine: "Not required. EU free movement applies."
+      import_permit: "Not required."
+      health_certificate: "EU Pet Passport sufficient."
+      entry_point: "No border control post inspection for intra-EU movement."
+      authority: "BMEL Germany. EU Regulation 576/2013."
   airlines:
+    - name: "Aer Lingus"
+      type: "cargo_only"
+      policy_summary: "Aer Lingus Cargo DUB-FRA. Ireland's national carrier. Good cargo infrastructure at Dublin."
+    - name: "Lufthansa"
+      type: "cargo_only"
+      policy_summary: "Lufthansa Cargo DUB-FRA. Strong Frankfurt operation. Brachycephalic breeds restricted."
+    - name: "Ryanair"
+      type: "no_pets"
+      policy_summary: "Ryanair does not accept pets. Not suitable."
     - name: "British Airways"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Emirates"
-      type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Via London LHR to FRA. Longer routing."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "STEP 1: Confirm EU Pet Passport is current"
+      timing: "Check microchip number and rabies vaccination date."
+      responsible: "Irish vet"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "STEP 2: Choose transport — Aer Lingus Cargo or Lufthansa Cargo DUB-FRA"
+      timing: "Book 2-4 weeks ahead."
+      responsible: "You or agent"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
-    - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
-    - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "STEP 3: Travel. No border inspection in Germany."
+      timing: "Day of travel."
+      responsible: "You"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Aer Lingus or Lufthansa Cargo fees DUB-FRA"
+    - "IATA-compliant crate if cargo"
+    - "EU Pet Passport update if vaccination lapsed (vet fee)"
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "Ireland's tapeworm treatment rule applies to dogs arriving IN Ireland, not leaving. No tapeworm treatment is needed when going from Ireland to Germany."
+    - "Ryanair does not accept pets. Use Aer Lingus or Lufthansa."
+    - "Germany applies Länder-level breed restrictions. Check rules for your destination German state if you have a potentially restricted breed."
+  route_complexity: "very_low"
+  estimated_timeline_weeks: "0-1"
 content:
   h1: "Pet Transport from Ireland to Germany"
   overview: |
-    International pet transport from Ireland to Germany comes down to documentation timing more than anything else.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Start early and follow the steps in sequence. Missing a deadline pushes the whole timeline back.
+    Ireland to Germany is straightforward. Both EU member states, both operating under EU Regulation 576/2013. A valid EU Pet Passport is all you need. No titre test, no quarantine, no import permits.
+
+    The tapeworm treatment rule that applies to dogs entering Ireland does not apply when leaving Ireland for Germany. German authorities do not require this treatment at entry.
+
+    Aer Lingus Cargo and Lufthansa Cargo both handle the Dublin-Frankfurt route with pets. Ryanair, which operates the vast majority of Ireland-Germany flights, accepts no pets.
   sections:
-    - heading: "Key requirements for moving your pet to Germany"
+    - heading: "Regulatory compliance: what this move requires"
       body: |
-        Compared to some international pet transport routes, Ireland to Germany is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        Germany follows EU harmonised pet movement rules (Regulation 576/2013, transitioning to new rules under Regulation 2026/131 from 22 April 2026). Federal Ministry of Food and Agriculture (BMEL) oversees. Individual Bundeslaender may have additional animal welfare rules. Germany is considered pet-friendly with high dog ownership rates.
-    - heading: "Practical advice for shipping your pet from Ireland"
+        | Requirement | Detail |
+        |---|---|
+        | EU Pet Passport | Required — current |
+        | ISO Microchip | Required — recorded in passport |
+        | Rabies vaccination | Required — current and within validity |
+        | Titre test | NOT required (EU to EU) |
+        | Tapeworm treatment | NOT required (this applies to dogs entering Ireland, not leaving) |
+        | Quarantine | NOT required |
+        | Import permit | NOT required |
+        | Border inspection | NOT required (intra-EU) |
+        | Preparation time | Days if passport is current |
+
+        Source: BMEL Germany; EU Regulation 576/2013.
+    - heading: "Airlines: Dublin to Frankfurt"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Aer Lingus Cargo operates DUB-FRA with live animal acceptance. As Ireland's national carrier, their Dublin cargo team is familiar with Irish export documentation and Frankfurt cargo arrival requirements.
+
+        Lufthansa Cargo operates the same route from the German side, with strong Frankfurt cargo infrastructure and BCP arrival experience. Brachycephalic breeds (Bulldogs, Pugs, French Bulldogs) are restricted from Lufthansa cargo year-round; use Aer Lingus for flat-nosed breeds.
+
+        Ryanair dominates Ireland-Germany passenger traffic but takes no pets. This is frequently the source of confusion for people planning their own moves. Check your personal travel ticket against your pet's cargo booking — they will likely be on different airlines.
+    - heading: "The tapeworm rule: what applies and what doesn't"
+      body: |
+        Ireland requires all dogs arriving from EU countries to have a tapeworm treatment administered 24-120 hours before Irish arrival. This rule is about dogs entering Ireland, not leaving it.
+
+        If you're moving from Ireland to Germany, no tapeworm treatment is required. Germany does not have a reciprocal incoming tapeworm treatment requirement for EU pets.
+
+        If you subsequently plan to bring your dog back to Ireland later, the tapeworm rule will apply on the return trip. Keep that in mind if the move is temporary.
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Ireland to Germany?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Germany?"
-    answer: "No routine quarantine is required in Germany for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Germany?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Germany. Start this process as early as possible."
-  - question: "Can I take my cat to Germany from Ireland?"
-    answer: "Yes, cats can be transported from Ireland to Germany. The same microchip, vaccination, and health certificate requirements apply as for dogs, though some rules (such as tapeworm treatment) apply to dogs only. Check the full requirements for cats with the destination authority."
+  - question: "Do I need any documents other than an EU Pet Passport to take my pet from Ireland to Germany?"
+    answer: "No. A valid EU Pet Passport with current microchip and rabies vaccination is all that's required for intra-EU movement under EU Regulation 576/2013."
+  - question: "Does my dog need a tapeworm treatment to go from Ireland to Germany?"
+    answer: "No. The tapeworm treatment requirement applies to dogs arriving in Ireland, not departing from it. Germany does not require incoming tapeworm treatment from EU countries."
+  - question: "Can I use Ryanair to send my pet from Dublin to Frankfurt?"
+    answer: "No. Ryanair does not accept pets on any route. Use Aer Lingus Cargo or Lufthansa Cargo for the Dublin-Frankfurt pet move."
+  - question: "Is there quarantine on arrival in Germany from Ireland?"
+    answer: "No. EU free movement applies. No quarantine and no border inspection post check is required for intra-EU pet movement with a valid EU Pet Passport."
+  - question: "How long does preparation take for Ireland to Germany?"
+    answer: "If the EU Pet Passport and vaccinations are current, you can travel within days. The only delay would be if the rabies vaccination has lapsed, in which case allow 21 days from a new vaccination."
 links:
   sideways:
     - url: "/pet-transport/germany-to-ireland/"
@@ -123,8 +121,8 @@ links:
       text: "Shipping from Ireland"
     - url: "/pet-transport/countries/germany/"
       text: "Importing to Germany"
-    - url: "/pet-transport/airlines/british-airways/"
-      text: "British Airways pet policy"
+    - url: "/pet-transport/airlines/aer-lingus/"
+      text: "Aer Lingus pet policy"
     - url: "/pet-transport/airlines/lufthansa/"
       text: "Lufthansa pet policy"
 ---
