@@ -1,13 +1,13 @@
 {
   "last_updated": "2026-05-27",
-  "routes_built": 5491,
-  "routes_remaining": 32341,
-  "total_site_pages": 6289,
-  "completed_chunks": 15,
-  "next_chunk": 16,
+  "routes_built": 5501,
+  "routes_remaining": 32331,
+  "total_site_pages": 6299,
+  "completed_chunks": 16,
+  "next_chunk": 17,
   "next_chunk_tier": "A",
   "next_chunk_template": "B-Journey",
-  "tier_a_remaining": 15,
+  "tier_a_remaining": 200,
   "tier_b_remaining": 1094,
   "tier_c_remaining": 7720,
   "tier_d_remaining": 23512,
@@ -15,5 +15,5 @@
   "blog_articles": 410,
   "content_plan_start": "2026-06-01",
   "content_plan_articles_written": 1,
-  "notes": "Chunk 15 complete 2026-05-27. Template rotation B,C,D,E,A,B,C,D,E,A. Routes: south-africa-to-germany(B), japan-to-germany(C), germany-to-south-korea(D), south-korea-to-germany(E), france-to-hong-kong(A), france-to-south-africa(B), france-to-japan(C), singapore-to-hong-kong(D), singapore-to-south-africa(E), singapore-to-japan(A). Next chunk 16: Tier A (15 remaining), continue rotation from B."
+  "notes": "Chunk 16 complete 2026-05-27. Template rotation B,C,D,E,A,B,C,D,E,A. Routes: hong-kong-to-france(B), hong-kong-to-singapore(C), south-africa-to-france(D), south-africa-to-singapore(E), japan-to-france(A), japan-to-singapore(B), germany-to-netherlands(C), germany-to-switzerland(D), germany-to-new-zealand(E), germany-to-china(A). Next chunk 17: Tier A, continue rotation from B."
 }
