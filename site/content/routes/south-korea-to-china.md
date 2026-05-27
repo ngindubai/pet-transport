@@ -1,7 +1,6 @@
 ---
-template_variant: "E"
-title: "Moving Your Pet from South Korea to China | Complete Guide"
-description: "How to ship your dog or cat from South Korea to China. China import rules, vaccinations, permits, and airline options explained."
+title: "Pet Transport from South Korea to China | GACC 180-Day Protocol, Titre Test & Airlines"
+description: "Moving your pet from South Korea to China: GACC titre test mandatory, 180-day wait, 30-day quarantine for dogs, airline cargo from Incheon, and full preparation guide."
 type: "routes"
 layout: "single"
 author: "Gareth - Founder, PetTransportGlobal"
@@ -13,137 +12,130 @@ route_data:
     code: "KR"
     country: "South Korea"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      export_permit: "No formal export permit for personal pets. APQA issues the export health certificate."
+      health_certificate: "APQA health certificate in GACC format, issued within 10 days of travel. Must confirm 15-digit microchip, two vaccinations, titre test result, and current health status."
   destination:
     code: "CN"
     country: "China"
     import_requirements:
-      microchip: "Required (ISO 15 digit). Must be implanted before vaccinations"
-      rabies_vaccination: "Required. Must be administered at least 30 days before travel but within 12 months."
-      titre_test: "Required for: All dogs and cats from most countries. Minimum: 0.5 IU/ml. 180-day wait from test date before entry"
-      quarantine: "Mandatory quarantine. 30 days for dogs, 7 days for cats from approved countriesountries) - check current rules days. Facility: GACC-approved quarantine facility. Quarantine is mandatory. Facility and duration depends on origin country and species. Cats from some listed countries may be 7 days. Dogs typically 30 days."
-      import_permit: "Required. Import permit must be obtained before travel. Very limited entry airports: Beijing, Shanghai, Guangzhou main points. Must declare on arrival customs form."
-      health_certificate: "Required. Official Veterinary Health Certificate. Issued by: Official government veterinarian. Valid for 14 days from issue. Must include microchip, vaccination records, titre test results, rabies-free status of origin region, and parasite treatment."
+      microchip: "Required (ISO 15-digit). Must be implanted before any vaccination."
+      rabies_vaccination: "Required. At least 30 days before travel. Must be administered after microchipping and within 12 months of travel."
+      titre_test: "Required for most countries, including South Korea. FAVN test at a GACC-approved laboratory. Minimum result 0.5 IU/ml. Blood drawn at least 30 days after most recent vaccination. 180-day wait from blood draw date before entry into China."
+      quarantine: "Mandatory. Dogs: 30 days at a GACC-approved quarantine facility in China, at owner's expense. Cats from some approved countries: 7 days. South Korea is not on the reduced quarantine list for cats, so 30-day quarantine likely applies."
+      import_permit: "Required. Only one dog or one cat per person per year. Import declaration required at customs."
+      health_certificate: "APQA-issued health certificate in GACC format, within 10 days of travel."
+      entry_point: "Beijing (PEK/PKX), Shanghai (PVG), Guangzhou (CAN), or other GACC-designated ports of entry. Confirm approved entry airports with GACC before travel."
+      authority: "General Administration of Customs of China (GACC). Very strict enforcement. Source: GACC website and official GACC circulars."
   airlines:
     - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
+      type: "cargo_only"
+      policy_summary: "Korean Air Cargo operates ICN to multiple Chinese cities (PEK, PVG, CAN). Familiar with GACC import documentation. Direct routes available."
+    - name: "Asiana Airlines"
+      type: "cargo_only"
+      policy_summary: "Asiana Airlines Cargo from Incheon to Chinese hubs. Direct services to Beijing and Shanghai."
+    - name: "China Southern Airlines"
+      type: "cargo_only"
+      policy_summary: "China Southern Cargo from ICN to CAN (Guangzhou) and other Chinese cities. Chinese carrier familiar with GACC handling requirements."
     - name: "Air China"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin on domestic China routes. International: cargo only via Air China Cargo. Strict crate size and documentation requirements. China-specific import/export permits required. Advance booking of cargo space essential."
-    - name: "Emirates"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "Air China Cargo ICN-PEK. Beijing-based carrier. Familiar with Beijing customs arrival procedures."
+    - name: "China Eastern Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "China Eastern Cargo ICN-PVG (Shanghai). Shanghai hub. GACC-experienced handling."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "ISO 15-digit microchip implanted before any vaccination"
+      timing: "Starting point for entire sequence."
+      responsible: "Your vet"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Rabies vaccination (must be within 12 months of travel)"
+      timing: "After microchip. At least 30 days before titre test blood draw."
+      responsible: "Your vet"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "FAVN titre test at GACC-approved laboratory"
+      timing: "Blood drawn at least 30 days after last vaccination. 2-4 weeks for results."
+      responsible: "Your vet + GACC-approved lab"
     - step: 4
-      action: "Apply for import permit from China"
-      timing: "Apply early: allow 4-6 weeks"
-      responsible: "You (or your pet transport agent)"
+      action: "180-day wait from blood draw date"
+      timing: "Mandatory. Cannot be shortened."
+      responsible: "N/A"
     - step: 5
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Apply for import declaration and confirm entry airport with GACC"
+      timing: "At least 4-6 weeks before travel."
+      responsible: "You or agent"
     - step: 6
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Book Korean Air or Asiana Cargo ICN to Chinese city"
+      timing: "Once travel date confirmed."
+      responsible: "You or agent"
     - step: 7
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Obtain APQA health certificate in GACC format"
+      timing: "Within 10 days of travel."
+      responsible: "Official vet + APQA"
     - step: 8
-      action: "Quarantine on arrival (30 days for dogs, 7 days for cats from approved countriesountries) - check current rules days)"
-      timing: "Immediately on arrival (mandatory)"
-      responsible: "China quarantine authority"
+      action: "Arrive at GACC-designated entry port. 30-day quarantine at approved facility."
+      timing: "Pre-book and pay quarantine facility before travel."
+      responsible: "GACC facility + you"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (China)"
-    - "Quarantine facility fees (owner-paid at destination)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Airline cargo fees ICN to Chinese city"
+    - "IATA-compliant crate"
+    - "FAVN titre test fees"
+    - "APQA health certificate and endorsement"
+    - "GACC-approved quarantine facility fees (30 days, at owner's expense)"
+    - "Import customs duties"
+    - "Agent fee (strongly recommended)"
   key_warnings:
-    - "Mandatory quarantine required on arrival. Plan for separation from your pet."
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
+    - "China's 30-day quarantine for dogs is strictly enforced and paid by the owner. Budget for this when planning."
+    - "Only one dog or one cat per person per year is permitted. Multi-pet households face significant restrictions."
+    - "GACC requirements change frequently. Always verify current rules with an agent or GACC directly before making arrangements."
+    - "The 180-day wait from titre test blood draw cannot be shortened under any circumstances."
   route_complexity: "very_high"
-  estimated_timeline_weeks: "26-32"
+  estimated_timeline_weeks: "36-44"
 content:
   h1: "Pet Transport from South Korea to China"
   overview: |
-    Pet transport from South Korea to China follows a clear process once you know what China requires.
-    
-    This route is one of the most demanding international pet transport routes. Start preparations at least 26 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. China requires mandatory quarantine (30 days for dogs, 7 days for cats from approved countriesountries) - check current rules days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    We've laid out every step below so you know exactly what to prepare and when.
+    Moving a pet from South Korea to China is one of the more demanding routes in East Asia. China's General Administration of Customs (GACC) requires a FAVN titre test, a 180-day wait from blood draw, and a mandatory 30-day quarantine for dogs on arrival. For cats, the quarantine is 7 days if you're arriving from an approved country — check with GACC whether South Korea qualifies.
+
+    Allow at least 36-44 weeks from starting the process to your pet arriving in China. And note the one-per-person-per-year rule: GACC only permits one dog or one cat per passport holder.
   sections:
-    - heading: "Understanding China's pet import rules"
+    - heading: "GACC requirements: what South Korea triggers"
       body: |
-        This is one of the more demanding international pet transport corridors. China runs a strict biosecurity programme and there are no shortcuts through it.
-        
-        All pets must complete quarantine on arrival in China (at GACC-approved quarantine facility) for 30 days for dogs, 7 days for cats from approved countriesountries) - check current rules days. This is non-negotiable and is entirely separate from the pre-travel preparation.
-        
-        China has strict pet import controls. Only dogs and cats. Limited approved entry points. Mandatory quarantine applies. Allow 4-6 months lead time. Dogs limited to 1 per household in many cities.
-    - heading: "From experience: South Korea to China pet transport"
+        South Korea is not on China's simplified entry list, so pets from Korea face the full GACC protocol. The sequence is fixed: ISO 15-digit microchip (before any vaccination), then rabies vaccination, then FAVN titre test at a GACC-approved laboratory with blood drawn at least 30 days post-vaccination, then 180 days from the blood draw date before travel.
+
+        On arrival in China, dogs face 30 days of mandatory quarantine at a GACC-approved facility. This is a separate and additional requirement on top of the pre-travel waiting period. Quarantine costs are paid by the owner and vary by city and facility.
+
+        GACC also restricts entry to specific approved airports. Confirm your intended arrival airport is on the approved list before booking flights.
+    - heading: "One-per-person rule and breed restrictions"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        China enforces a strict one dog or one cat per person per year import limit. If you're moving as a family with two dogs, this creates a real challenge. Consult a specialist agent early if you have more than one pet.
+
+        Some breeds are also restricted in specific Chinese cities. Beijing, for example, bans a range of large breeds. Shanghai and other cities have their own lists. Confirm breed restrictions for your destination city well before making travel arrangements.
+    - heading: "Airlines from Incheon to China"
+      body: |
+        Seoul Incheon is well-connected to China. Korean Air Cargo and Asiana Airlines Cargo both serve multiple Chinese cities directly from ICN. Air China, China Southern, and China Eastern all operate cargo services from Seoul, and as Chinese carriers they have strong familiarity with GACC arrival procedures.
+
+        Confirm which entry airport you're using before booking cargo. Your pet must arrive at a GACC-designated port of entry, and not all Chinese airports are approved for live animal imports.
 faqs:
-  - question: "How long does it take to prepare a pet for transport from South Korea to China?"
-    answer: "Allow at least 26 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering China?"
-    answer: "Yes, quarantine is mandatory in China. Your pet will stay for 30 days for dogs, 7 days for cats from approved countriesountries) - check current rules days at GACC-approved quarantine facility on arrival. This is non-negotiable and the cost is paid by the owner."
-  - question: "Is a rabies titre test required for pets entering China?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter China. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into China?"
-    answer: "Yes, an import permit is required from China's authority (the relevant government body). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in South Korea. The certificate must be issued within 14 days of travel. Present the original (not a copy) at check-in. Check China's authority for the exact format required."
+  - question: "How long does it take to move a pet from South Korea to China?"
+    answer: "Allow 36-44 weeks. The FAVN titre test (blood drawn 30 days post-vaccination) and the 180-day pre-travel wait are the longest steps. Then add 30 days of mandatory quarantine on arrival in China."
+  - question: "Is there a titre test requirement for pets entering China from South Korea?"
+    answer: "Yes. China's GACC requires a FAVN titre test from pets originating in South Korea. Blood must be drawn at a GACC-approved laboratory at least 30 days after the last rabies vaccination. A 180-day wait from the blood draw date applies before entry."
+  - question: "Does my dog have to go into quarantine when arriving in China from Korea?"
+    answer: "Yes. Dogs face a mandatory 30-day quarantine at a GACC-approved facility in China, paid by the owner. This is separate from the pre-travel waiting period. Quarantine facilities must be pre-booked."
+  - question: "Can I bring two dogs from South Korea to China?"
+    answer: "China's GACC limits imports to one dog or one cat per person per year. Two dogs require two separate individuals as importers. Consult a specialist agent for multi-pet household situations."
+  - question: "Which airlines handle pet cargo from Seoul to China?"
+    answer: "Korean Air Cargo and Asiana Airlines Cargo both operate direct ICN-China routes. Air China, China Southern, and China Eastern are Chinese carriers with strong familiarity with GACC arrival procedures. Choose an airline routing to a GACC-approved entry airport for your destination city."
 links:
   sideways:
     - url: "/pet-transport/china-to-south-korea/"
       text: "Pet Transport China to South Korea"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-south-korea-export-guide/"
+    - url: "/pet-transport/origins/south-korea-pet-export-guide/"
       text: "Shipping from South Korea"
     - url: "/pet-transport/countries/china/"
       text: "Importing to China"
     - url: "/pet-transport/airlines/korean-air/"
       text: "Korean Air pet policy"
+    - url: "/pet-transport/airlines/air-china/"
+      text: "Air China pet policy"
 ---

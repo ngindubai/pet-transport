@@ -1,7 +1,6 @@
 ---
-template_variant: "C"
-title: "Pet Relocation New Zealand to South Korea | Requirements & Guide"
-description: "Pet relocation from New Zealand to South Korea: South Korea import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport from New Zealand to South Korea | MPI Export, APQA Import & Guide"
+description: "Shipping your pet from New Zealand to South Korea: MPI health certificate, no titre test from NZ, APQA advance notification, and airlines from Auckland to Incheon."
 type: "routes"
 layout: "single"
 author: "Gareth - Founder, PetTransportGlobal"
@@ -13,129 +12,97 @@ route_data:
     code: "NZ"
     country: "New Zealand"
     export_requirements:
-      export_permit: "No export permit for cats and dogs from New Zealand."
-      health_certificate: "MPI issues AHC or equivalent for export."
+      export_permit: "No export permit required for personal pets from New Zealand."
+      health_certificate: "MPI (Ministry for Primary Industries) Animal Health Certificate, issued by an MPI-authorised vet within 10 days of travel. Must match APQA format requirements."
   destination:
     code: "KR"
     country: "South Korea"
     import_requirements:
-      microchip: "Required (ISO 11784/11785)"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 30-day wait after vaccination before travel"
-      titre_test: "Required. Minimum: 0.5 IU/ml. 180-day wait from test date before entry"
-      quarantine: "Mandatory quarantine. 10 days. Facility: APQA facility"
-      import_permit: "Required. Issued by: Animal and Plant Quarantine Agency"
-      health_certificate: "Required. Issued by: Official veterinarian. Valid for 14 days from issue"
+      microchip: "Required (ISO 11784/11785 15-digit). Must be in place before any vaccination."
+      rabies_vaccination: "Required. Valid and current rabies vaccination, administered after microchipping."
+      titre_test: "Not required for pets from New Zealand. South Korea's APQA accepts New Zealand as a country with recognised rabies-free or low-risk status. No titre test, no extended waiting period."
+      quarantine: "No routine quarantine for properly documented pets from New Zealand. APQA inspection at Incheon International Airport on arrival. Release typically same day."
+      import_permit: "Not required for companion animals. Advance APQA notification at Incheon required at least 5 days before arrival."
+      health_certificate: "MPI-issued health certificate in APQA format, within 10 days of travel. Must include microchip number, vaccination details, and current health status."
+      entry_point: "Seoul Incheon International Airport (ICN). APQA quarantine station handles all air cargo arrivals."
+      authority: "Animal and Plant Quarantine Agency (APQA), South Korea."
   airlines:
+    - name: "Air New Zealand"
+      type: "cargo_only"
+      policy_summary: "Air New Zealand operates AKL-ICN via connections. Air New Zealand Cargo handles live animals. Natural first choice for departure from Auckland."
+    - name: "Korean Air"
+      type: "cargo_only"
+      policy_summary: "Korean Air Cargo from Auckland to Incheon via Pacific connections. Experienced with APQA requirements at ICN."
     - name: "Qantas"
       type: "cargo_only"
-      policy_summary: "Cargo: QantasFreighter network for pet transport. Brachycephalic breeds restricted year-round. Temperature embargoes: seasonal restrictions during Australian summer (Dec-Feb)"
-    - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
-    - name: "Emirates"
-      type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
+      policy_summary: "Via Sydney or Melbourne to Seoul. Qantas Freight handles connections from New Zealand."
     - name: "Singapore Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
+      policy_summary: "Via Singapore SIN to Incheon ICN. Temperature-controlled cargo. Good animal handling record."
     - name: "Cathay Pacific"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Via Hong Kong HKG to Incheon. Cathay Pacific Cargo. Reliable pet cargo service."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm microchip and vaccinations are current"
+      timing: "Check at vet visit. Most NZ pets already microchipped."
+      responsible: "Your vet"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 30-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Submit advance APQA notification to Incheon"
+      timing: "At least 5 days before arrival in South Korea."
+      responsible: "You or transport agent"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 180-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Book Air New Zealand or Korean Air Cargo AKL-ICN"
+      timing: "2-4 weeks before travel."
+      responsible: "You or agent"
     - step: 4
-      action: "Apply for import permit from South Korea"
-      timing: "Apply early: allow 4-6 weeks"
-      responsible: "You (or your pet transport agent)"
+      action: "Obtain MPI health certificate in APQA format"
+      timing: "Within 10 days of travel. Book MPI-authorised vet appointment in advance."
+      responsible: "MPI-authorised vet"
     - step: 5
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
-    - step: 6
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 7
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
-    - step: 8
-      action: "Quarantine on arrival (10 days)"
-      timing: "Immediately on arrival (mandatory)"
-      responsible: "South Korea quarantine authority"
+      action: "Travel day: cargo check-in Auckland. APQA inspection at Incheon on arrival."
+      timing: "Cargo desk 3-4 hours before departure."
+      responsible: "You + Air NZ Cargo + APQA"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (South Korea)"
-    - "Quarantine facility fees (owner-paid at destination)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Air New Zealand or Korean Air Cargo fees AKL-ICN"
+    - "IATA-compliant crate"
+    - "MPI health certificate fees"
+    - "APQA inspection fee at Incheon"
+    - "Agent fee (optional)"
   key_warnings:
-    - "Mandatory quarantine required on arrival. Plan for separation from your pet."
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "very_high"
-  estimated_timeline_weeks: "33-39"
+    - "APQA advance notification (5 days minimum) is mandatory. Late submission delays your pet's release at Incheon."
+    - "MPI health certificate must be issued within 10 days of travel and in the format APQA accepts."
+    - "All cargo routing from NZ to Korea requires at least one transit stop. Confirm live animal procedures at transit hubs."
+  route_complexity: "low"
+  estimated_timeline_weeks: "3-6"
 content:
   h1: "Pet Transport from New Zealand to South Korea"
   overview: |
-    Moving to South Korea from New Zealand with a dog or cat means starting the paperwork months before your flight.
-    
-    This route is one of the most demanding international pet transport routes. Start preparations at least 33 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. South Korea requires mandatory quarantine (10 days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Use this guide to map out your preparation timeline and avoid the most common mistakes.
+    New Zealand to South Korea works in your favour on the regulatory side. South Korea's APQA treats New Zealand as a low-risk origin, which means no titre test is required and no mandatory waiting period applies. For most NZ pet owners, the preparation is 3-6 weeks rather than 6 months.
+
+    The logistics involve at least one transit stop — there's no direct Auckland-Seoul cargo flight — but Air New Zealand and Korean Air both handle this corridor regularly.
   sections:
-    - heading: "Key requirements for moving your pet to South Korea"
+    - heading: "Why NZ pets have an easier path into South Korea"
       body: |
-        This is one of the more demanding international pet transport corridors. South Korea runs a strict biosecurity programme and there are no shortcuts through it.
-        
-        All pets must complete quarantine on arrival in South Korea (at APQA facility) for 10 days. This is non-negotiable and is entirely separate from the pre-travel preparation.
-        
-        Animal and Plant Quarantine Agency (APQA) regulates imports. Large pet-owning culture.
-    - heading: "From experience: New Zealand to South Korea pet transport"
+        APQA categorises origin countries based on rabies risk. New Zealand, being effectively rabies-free and maintaining high veterinary standards, is treated as a recognised low-risk origin. This removes the titre test and waiting period requirements that plague pet moves from many other countries.
+
+        The requirements are simple: ISO-compliant microchip, current rabies vaccination (post-microchip), advance APQA notification at least 5 days before arrival, and an MPI-issued health certificate in APQA's required format within 10 days of travel. When the paperwork is right, APQA inspection at Incheon is typically completed the same day.
+    - heading: "Cargo routes from Auckland to Seoul Incheon"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        There's no direct Auckland-Seoul cargo service, so all routings involve at least one transit. The two most practical options are Air New Zealand (your national carrier, with strong cargo infrastructure) connecting via a Pacific hub, and Korean Air Cargo connecting from Auckland via their Pacific network to Incheon.
+
+        Singapore Airlines via Singapore and Cathay Pacific via Hong Kong are also used on this corridor. Whichever airline you choose, confirm live animal cargo acceptance and temperature-controlled hold availability before booking. Pacific routes can be affected by seasonal temperature embargoes for some animal cargo.
 faqs:
-  - question: "How long does it take to prepare a pet for transport from New Zealand to South Korea?"
-    answer: "Allow at least 33 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering South Korea?"
-    answer: "Yes, quarantine is mandatory in South Korea. Your pet will stay for 10 days at APQA facility on arrival. This is non-negotiable and the cost is paid by the owner."
-  - question: "Is a rabies titre test required for pets entering South Korea?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 180-day waiting period after a successful result before your pet can enter South Korea. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into South Korea?"
-    answer: "Yes, an import permit is required from South Korea's authority (Animal and Plant Quarantine Agency). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in New Zealand. The certificate must be issued within 14 days of travel. Present the original (not a copy) at check-in. Check South Korea's authority for the exact format required."
+  - question: "Does my pet need a titre test to enter South Korea from New Zealand?"
+    answer: "No. South Korea's APQA does not require a titre test for pets from New Zealand. New Zealand is treated as a low-risk origin, removing both the titre test requirement and any mandatory waiting period."
+  - question: "Is there quarantine when bringing a pet from New Zealand to South Korea?"
+    answer: "No routine quarantine applies for properly documented pets from NZ. APQA conducts an inspection at Incheon International Airport on arrival. With complete documentation, your pet is typically released the same day."
+  - question: "How long does preparation take?"
+    answer: "3-6 weeks if your pet's microchip and vaccinations are already current. The primary time driver is arranging the MPI health certificate within 10 days of travel and booking cargo space."
+  - question: "What is the APQA advance notification requirement?"
+    answer: "The APQA quarantine station at Incheon must be notified at least 5 days before your pet arrives. Your cargo agent can handle this. Submitting late causes delays when your pet arrives."
+  - question: "Which airline should I use for pet cargo from Auckland to Seoul?"
+    answer: "Air New Zealand and Korean Air Cargo are the two primary options from Auckland, both connecting via a Pacific hub to Incheon. Book as far in advance as possible, as live animal cargo space can be limited on long-haul Pacific routes."
 links:
   sideways:
     - url: "/pet-transport/south-korea-to-new-zealand/"
@@ -145,8 +112,8 @@ links:
       text: "Shipping from New Zealand"
     - url: "/pet-transport/countries/south-korea/"
       text: "Importing to South Korea"
-    - url: "/pet-transport/airlines/qantas/"
-      text: "Qantas pet policy"
+    - url: "/pet-transport/airlines/air-new-zealand/"
+      text: "Air New Zealand pet policy"
     - url: "/pet-transport/airlines/korean-air/"
       text: "Korean Air pet policy"
 ---

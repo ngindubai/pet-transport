@@ -1,7 +1,6 @@
 ---
-template_variant: "E"
-title: "Shipping Dogs & Cats from South Korea to Ireland | PetTransportGlobal"
-description: "How to ship your dog or cat from South Korea to Ireland. Ireland import rules, vaccinations, permits, and airline options explained."
+title: "Pet Transport from South Korea to Ireland | APQA Export, EU Titre Test & Full Guide"
+description: "Moving your pet from South Korea to Ireland: APQA health certificate, EU FAVN titre test and 3-month wait required, Dublin BCP inspection, and airline options from Incheon."
 type: "routes"
 layout: "single"
 author: "Gareth - Founder, PetTransportGlobal"
@@ -13,120 +12,120 @@ route_data:
     code: "KR"
     country: "South Korea"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      export_permit: "No formal export permit for personal pets. APQA issues the export health certificate."
+      health_certificate: "APQA-endorsed health certificate in EU Annex IV format (for non-listed third countries), issued within 10 days of travel. Must confirm microchip, vaccinations, titre test, and health status."
   destination:
     code: "IE"
     country: "Ireland"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or on same day as rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. 21-day wait from first vaccination. Boosters given in-time have no additional wait."
-      titre_test: "Required for: Pets from non-EU/non-listed countries. Not required for: Pets from EU member states and approved listed countries. Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No routine quarantine for compliant pets from listed/EU countries."
-      import_permit: "EU Pet Passport or Animal Health Certificate (AHC) serves as the travel document. No separate import permit needed."
-      health_certificate: "Required. EU Pet Passport or Animal Health Certificate (AHC). Issued by: Official or authorised veterinarian. Valid for 10 days from issue. EU pet passport valid indefinitely as long as vaccinations are current. AHC valid 10 days for entry."
+      microchip: "Required (ISO 11784/11785). Must be implanted before the first rabies vaccination."
+      rabies_vaccination: "Required. Minimum age 12 weeks. Administered after microchipping."
+      titre_test: "Required. Ireland applies EU Regulation 576/2013. South Korea is a non-listed third country. FAVN rabies titre test at an EU-approved laboratory, minimum 0.5 IU/ml. Blood drawn at least 30 days after last vaccination. Mandatory 3-month waiting period from blood draw date."
+      quarantine: "No quarantine for fully compliant pets. DAFM Border Control Post inspection at Dublin Airport on arrival."
+      import_permit: "Not required. EU Regulation 576/2013 conditions apply."
+      health_certificate: "EU Annex IV health certificate endorsed by APQA, issued within 10 days of travel."
+      entry_point: "Dublin Airport (DUB). Ireland's designated Border Control Post for pet imports."
+      authority: "Department of Agriculture, Food and the Marine (DAFM), Ireland. EU Regulation 576/2013."
   airlines:
-    - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
-    - name: "British Airways"
+    - name: "Aer Lingus"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
+      policy_summary: "Aer Lingus does not have direct ICN-DUB cargo service. Pet cargo from Seoul routes through European hubs for connection to Dublin."
+    - name: "Lufthansa"
+      type: "cargo_only"
+      policy_summary: "Via Frankfurt FRA to Dublin DUB. Brachycephalic breeds restricted from cargo year-round. Strong cargo network for European connections."
+    - name: "KLM"
+      type: "cargo_only"
+      policy_summary: "Via Amsterdam AMS to Dublin DUB. KLM Cargo Live Animals. Reliable European hub connection."
+    - name: "Korean Air"
+      type: "cargo_only"
+      policy_summary: "Korean Air Cargo from ICN to European hubs, then connection to Dublin. Experienced with EU import documentation."
     - name: "Emirates"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Via Dubai DXB to Dublin DUB. Emirates SkyCargo. Brachycephalic restrictions apply."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "ISO microchip implanted (if not done)"
+      timing: "Before any vaccination."
+      responsible: "Your vet"
     - step: 2
       action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      timing: "After microchip. Record all details including batch number."
+      responsible: "Your vet"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "FAVN titre test at EU-approved laboratory"
+      timing: "Blood drawn at least 30 days after last vaccination. 2-4 weeks for results."
+      responsible: "Your vet + EU-approved lab"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "3-month mandatory wait from blood draw date"
+      timing: "Cannot be shortened."
+      responsible: "N/A"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Book cargo flight ICN to Dublin via European hub"
+      timing: "Once waiting period is complete."
+      responsible: "You or agent"
     - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Obtain APQA-endorsed EU Annex IV health certificate"
+      timing: "Within 10 days of travel."
+      responsible: "Official vet + APQA"
+    - step: 7
+      action: "Cargo check-in Incheon. DAFM inspection at Dublin on arrival."
+      timing: "3-4 hours before departure for cargo."
+      responsible: "You + cargo airline + DAFM"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Airline cargo fees ICN-DUB via European hub"
+    - "IATA-compliant crate"
+    - "FAVN titre test laboratory fee"
+    - "APQA health certificate and endorsement fees"
+    - "Veterinary fees"
+    - "Agent fee (recommended for documentation accuracy)"
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "Ireland applies full EU non-listed country protocol to South Korea. The titre test and 3-month wait are mandatory, no exceptions."
+    - "Microchip must be implanted before the first rabies vaccination. Wrong order means the vaccination doesn't count for EU purposes."
+    - "All Seoul to Dublin routings require a European hub connection. Factor transit handling time and procedures into your planning."
+    - "Always verify current DAFM and EU import requirements before travel."
+  route_complexity: "high"
+  estimated_timeline_weeks: "22-26"
 content:
   h1: "Pet Transport from South Korea to Ireland"
   overview: |
-    If you're relocating from South Korea to Ireland and taking your pet, the good news is thousands of families do this every year.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    We've laid out every step below so you know exactly what to prepare and when.
+    Ireland sits within the EU, which means pets arriving from South Korea face the full EU non-listed country protocol under Regulation 576/2013. A FAVN titre test and a 3-month waiting period are mandatory. Start preparations at least 22 weeks before your intended travel date.
+
+    There's no direct Seoul-Dublin cargo route, so all pets travel via a European hub — Frankfurt, Amsterdam, or Dubai are the most commonly used connecting points.
   sections:
-    - heading: "Why this route needs early planning"
+    - heading: "EU non-listed country rules: what Ireland applies to Korean-origin pets"
       body: |
-        Compared to some international pet transport routes, South Korea to Ireland is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        EU member. Ireland uses the EU pet travel scheme. Part 1 listed country for UK entry. Large population of pets moving between Ireland, UK, and Europe.
-    - heading: "Things to sort before you book"
+        Ireland, as an EU member state, applies Regulation 576/2013 to pet imports. South Korea is not on the EU's approved country list, which triggers the non-listed country protocol.
+
+        The sequence: ISO microchip first (before any vaccination), then rabies vaccination, then FAVN titre test with blood drawn at least 30 days post-vaccination at an EU-approved laboratory, then 3 months from the blood draw date before entry. The health certificate must be in EU Annex IV format, endorsed by APQA, and issued within 10 days of travel.
+
+        DAFM inspects your documentation at the Border Control Post at Dublin Airport on arrival. If everything is in order, your pet is released without quarantine.
+    - heading: "Getting from Seoul to Dublin"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        There's no direct Incheon-Dublin cargo flight, so you're routing via at least one European hub. Frankfurt via Lufthansa and Amsterdam via KLM are both well-used options for this type of routing. Lufthansa restricts brachycephalic breeds from cargo year-round, so if that applies to your pet, KLM or Emirates via Dubai may be better choices.
+
+        Korean Air Cargo operates from Incheon to European hubs and can connect onward to Dublin. An experienced agent who handles Korean departures will know which hubs have reliable live animal handling for transit cargo.
 faqs:
-  - question: "How long does it take to prepare a pet for transport from South Korea to Ireland?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Ireland?"
-    answer: "No routine quarantine is required in Ireland for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Ireland?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Ireland. Start this process as early as possible."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in South Korea. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Ireland's authority for the exact format required."
+  - question: "Does my pet need a titre test to enter Ireland from South Korea?"
+    answer: "Yes. Ireland applies EU Regulation 576/2013, which classifies South Korea as a non-listed country. A FAVN titre test at an EU-approved laboratory is required, minimum 0.5 IU/ml, followed by a mandatory 3-month waiting period from the blood draw date."
+  - question: "Is there quarantine when moving a pet from South Korea to Ireland?"
+    answer: "No quarantine for fully compliant pets. DAFM conducts a documentary inspection at Dublin Airport Border Control Post on arrival. With all documentation correct, your pet is released the same day."
+  - question: "How long does preparation take for South Korea to Ireland?"
+    answer: "Allow 22-26 weeks minimum. The FAVN titre test (blood drawn at least 30 days post-vaccination) and the mandatory 3-month waiting period are the longest steps."
+  - question: "Which airline should I use for pet cargo from Seoul to Dublin?"
+    answer: "No direct Seoul-Dublin cargo route exists. Lufthansa via Frankfurt, KLM via Amsterdam, and Emirates via Dubai are the most commonly used connections. Confirm live animal transit procedures at your chosen hub before booking."
+  - question: "What is the APQA health certificate in EU Annex IV format?"
+    answer: "EU Annex IV is the specific veterinary certificate format required for pets entering the EU from non-listed third countries. It must be issued by an official veterinarian (authorised by APQA in South Korea) within 10 days of travel, and must include your pet's microchip, vaccination history, titre test result, and health status."
 links:
   sideways:
     - url: "/pet-transport/ireland-to-south-korea/"
       text: "Pet Transport Ireland to South Korea"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-south-korea-export-guide/"
+    - url: "/pet-transport/origins/south-korea-pet-export-guide/"
       text: "Shipping from South Korea"
     - url: "/pet-transport/countries/ireland/"
       text: "Importing to Ireland"
-    - url: "/pet-transport/airlines/korean-air/"
-      text: "Korean Air pet policy"
-    - url: "/pet-transport/airlines/british-airways/"
-      text: "British Airways pet policy"
+    - url: "/pet-transport/airlines/lufthansa/"
+      text: "Lufthansa pet policy"
+    - url: "/pet-transport/airlines/klm/"
+      text: "KLM pet policy"
 ---
