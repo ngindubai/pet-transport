@@ -1,9 +1,9 @@
 ---
-template_variant: "A"
-title: "Pet Transport from Germany to Japan | PetTransportGlobal"
-description: "Pet relocation from Germany to Japan: Japan import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport from Germany to Japan | AQS 180-Day Protocol & Step-by-Step Guide"
+description: "Moving your pet from Germany to Japan: Japan's mandatory 180-day AQS protocol, FAVN titre test, UVAC-equivalent German endorsement, Lufthansa cargo from Frankfurt."
 type: "routes"
 layout: "single"
+template_variant: "D"
 author: "Gareth - Founder, PetTransportGlobal"
 slug: "germany-to-japan"
 origin_name: "Germany"
@@ -13,139 +13,139 @@ route_data:
     code: "DE"
     country: "Germany"
     export_requirements:
-      export_permit: "No formal export permit for pets. Health certificate and EU pet passport serve as documentation."
+      export_permit: "No formal export permit for personal pets. Official health certificate from DENV-authorised vet, endorsed by the competent German veterinary authority in MAFF format."
+      health_certificate: "MAFF-format official health certificate endorsed by German competent veterinary authority. Issued within 10 days of travel."
   destination:
     code: "JP"
     country: "Japan"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or on the same day as rabies vaccination."
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 30-day wait after vaccination before travel. Must be vaccinated at least 30 days before import."
-      titre_test: "Required. Minimum: 0.5 IU/ml. 180-day wait from test date before entry"
-      quarantine: "Mandatory quarantine. 14 days. Facility: MAFF quarantine station. 14-day quarantine is mandatory at MAFF-designated facility."
-      import_permit: "Required. Issued by: MAFF (Animal Quarantine Service). Apply: Apply 2-4 weeks before travel. Formal import permit required from MAFF."
-      health_certificate: "Required. Health Certificate. Issued by: Official veterinarian in country of origin. Valid for 10 days from issue. Issued within 10 days of travel. Must list microchip number and vaccination details."
+      microchip: "Required (ISO 11784/11785). Must be implanted before or on the same day as the first rabies vaccination. Sequence is mandatory."
+      rabies_vaccination: "Two vaccinations required. Both administered after microchip. At least 30 days between first and second. At least 30 days after the second vaccination before titre test blood draw."
+      titre_test: "Required. FAVN at an AQS-approved laboratory. Minimum 0.5 IU/ml. 180-day mandatory wait from blood draw date. Germany is a non-designated country for AQS purposes."
+      quarantine: "Minimum 12 hours on arrival at AQS Japan. In practice 2-7 days for non-designated country pets. AQS inspection mandatory."
+      import_permit: "No separate permit. Advance import notification required to AQS at least 40 days before arrival."
+      health_certificate: "MAFF-format certificate endorsed by German competent authority. Issued within 10 days of travel."
+      entry_point: "Narita (NRT), Haneda (HND), or Kansai (KIX) — all AQS-designated airports."
+      authority: "Japan Animal Quarantine Service (AQS), Ministry of Agriculture, Forestry and Fisheries (MAFF). aqs.maff.go.jp"
   airlines:
     - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
+      type: "cargo_only"
+      policy_summary: "Direct FRA-NRT/HND. Lufthansa Cargo is the primary option for Germany-Japan. Strong FRA live animal operation and well-established FRA-Tokyo route. Brachycephalic breeds restricted year-round."
+    - name: "ANA (All Nippon Airways)"
+      type: "cargo_only"
+      policy_summary: "ANA Cargo from Frankfurt via connections to NRT or HND. Japanese carrier with deep AQS documentation familiarity at arrival."
     - name: "Japan Airlines (JAL)"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported as checked baggage in temperature-controlled hold. Brachycephalic breeds: French Bulldogs BANNED from cargo (May-October). English Bulldogs banned year-round. Summer restrictions: May-October temperature embargoes on some routes"
-    - name: "Emirates"
-      type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
+      policy_summary: "JAL Cargo from European hubs to NRT/HND. Experienced with AQS inspection protocol at Japan airports."
     - name: "Singapore Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "British Airways"
+      policy_summary: "Via Singapore SIN to NRT/HND. Temperature-controlled cargo. Longer routing."
+    - name: "Emirates"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
+      policy_summary: "Via Dubai DXB to NRT. Summer heat embargoes may restrict."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step: must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Is the microchip implanted and was it implanted before any rabies vaccination?"
+      timing: "Verify immediately. If yes and vaccination records are post-chip, proceed. If not, restart sequence."
+      responsible: "German vet"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 30-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Are there two rabies vaccinations on record, given at least 30 days apart, both after the chip?"
+      timing: "If yes, proceed to titre test check. If not, complete the sequence."
+      responsible: "German vet"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 180-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Was the titre test blood drawn at an AQS-approved laboratory, at least 30 days after the second vaccination?"
+      timing: "If yes and result was 0.5+ IU/ml, is the 180-day wait from that blood draw date complete?"
+      responsible: "German vet + AQS-approved lab"
     - step: 4
-      action: "Apply for import permit from Japan"
-      timing: "Apply early: Apply 2-4 weeks before travel"
-      responsible: "You (or your pet transport agent)"
+      action: "Is the 180-day wait from the blood draw date complete?"
+      timing: "Count from the blood draw date, not the results date."
+      responsible: "You"
     - step: 5
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Submit AQS advance import notification (at least 40 days before arrival)"
+      timing: "Via AQS portal or through agent."
+      responsible: "You or agent"
     - step: 6
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Book Lufthansa Cargo FRA-NRT"
+      timing: "Once travel date confirmed."
+      responsible: "You or agent"
     - step: 7
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Obtain MAFF-format health certificate endorsed by German competent authority"
+      timing: "Within 10 days of travel."
+      responsible: "DENV-authorised vet + German authority"
     - step: 8
-      action: "Quarantine on arrival (14 days)"
-      timing: "Immediately on arrival: mandatory"
-      responsible: "Japan quarantine authority"
+      action: "Arrive at NRT/HND. AQS inspection. Quarantine (min 12 hours, typically 2-7 days)."
+      timing: "Present all original documents."
+      responsible: "AQS"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (Japan)"
-    - "Quarantine facility fees (owner-paid at destination)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Lufthansa Cargo fees FRA-NRT (direct, fee varies by pet size and crate)"
+    - "IATA-compliant crate"
+    - "FAVN titre test (EU-approved and AQS-approved lab)"
+    - "German authority health certificate endorsement fees"
+    - "AQS quarantine facility fees on arrival"
+    - "Agent fee (strongly recommended for Japan)"
   key_warnings:
-    - "Mandatory quarantine required on arrival. Plan for separation from your pet."
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
+    - "Germany is non-designated for AQS. The full 180-day protocol applies without exception."
+    - "Microchip before vaccination is an absolute requirement. Any vaccination given before the chip does not count."
+    - "AQS advance notification must be submitted at least 40 days before arrival. Missing this causes significant problems."
+    - "The 180-day wait runs from the blood draw date, not the result date or the vaccination date."
   route_complexity: "very_high"
-  estimated_timeline_weeks: "33-39"
+  estimated_timeline_weeks: "36-42"
 content:
   h1: "Pet Transport from Germany to Japan"
   overview: |
-    Shipping your dog or cat from Germany to Japan is a process that rewards early planning.
-    
-    This route is one of the most demanding international pet transport routes. Start preparations at least 33 weeks before your travel date: some steps have fixed waiting periods that cannot be shortened. Japan requires mandatory quarantine (14 days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Start early and follow the steps in sequence. Missing a deadline pushes the whole timeline back.
+    Germany to Japan is one of the most demanding pet relocations in the world. Japan's AQS non-designated country protocol applies: two vaccinations, a titre test, a 180-day wait, 40 days advance notification, and quarantine on arrival. Allow 36-42 weeks.
+
+    Lufthansa operates direct cargo from Frankfurt to Narita, which at least makes the logistics clean. The process is demanding, but it is predictable once the sequence is clear.
   sections:
-    - heading: "Key requirements for moving your pet to Japan"
+    - heading: "The five questions that decide where you are in the process"
       body: |
-        This is one of the more demanding international pet transport corridors. Japan runs a strict biosecurity programme and there are no shortcuts through it.
-        
-        All pets must complete quarantine on arrival in Japan (at MAFF quarantine station) for 14 days. This is non-negotiable and is entirely separate from the pre-travel preparation.
-        
-        Japan is rabies-free. MAFF (Ministry of Agriculture, Forestry and Fisheries) is the regulatory authority.
-    - heading: "Step-by-step: what to do first"
+        If you're reading this because you have a move to Japan approaching, walk through these five questions in order.
+
+        First: is your pet's ISO microchip implanted and confirmed before any rabies vaccination in the records? If the chip came after any vaccination, those vaccinations don't count for AQS purposes.
+
+        Second: are there two rabies vaccinations on record, both post-chip, at least 30 days apart? If only one, you need a second.
+
+        Third: was the titre test blood drawn at an AQS-approved laboratory? Not every EU-approved lab is AQS-approved. The approved list is at aqs.maff.go.jp.
+
+        Fourth: was the result 0.5 IU/ml or above? If below, you revaccinate and restart the titre test — and the 180-day clock restarts too.
+
+        Fifth: has the 180-day wait from the blood draw date passed? Count from the blood draw, not the results, not the vaccination.
+
+        If all five answers are yes and the 40-day advance notification is submitted, you can book and travel.
+    - heading: "Lufthansa from Frankfurt: the practical route"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Direct Lufthansa Cargo from Frankfurt (FRA) to Tokyo Narita (NRT) or Haneda (HND) is the standard choice for German-origin Japan moves. Lufthansa's Frankfurt live animal team is well-versed in AQS documentation requirements and the FRA-Tokyo route runs regularly.
+
+        ANA Cargo and JAL Cargo are both worth contacting if Lufthansa's schedule doesn't fit your window. They operate the Japan end of the route with strong AQS familiarity.
+
+        For flat-nosed breeds (Bulldogs, Pugs, French Bulldogs), Lufthansa restricts brachycephalic dogs from cargo year-round. Consider ANA or JAL cargo instead, and confirm their current brachycephalic breed policies before booking.
+    - heading: "The MAFF health certificate and German authority endorsement"
+      body: |
+        The health certificate must be in MAFF-specified format. Your regular German vet prepares it; the German competent veterinary authority (Veterinäramt at the Landratsamt or equivalent) endorses it. This endorsement is not the same as your vet's signature. It's an official government endorsement.
+
+        Allow at least one week for the endorsement process. The certificate is only valid for 10 days from issue, so the vet appointment and the Veterinäramt endorsement need to be in the week before travel.
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Germany to Japan?"
-    answer: "Allow at least 33 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Japan?"
-    answer: "Yes, quarantine is mandatory in Japan. Your pet will stay for 14 days at MAFF quarantine station on arrival. This is non-negotiable and the cost is paid by the owner."
-  - question: "Is a rabies titre test required for pets entering Japan?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 180-day waiting period after a successful result before your pet can enter Japan. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into Japan?"
-    answer: "Yes, an import permit is required from Japan's authority (MAFF (Animal Quarantine Service)). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Germany. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Japan's authority for the exact format required."
+  - question: "How long does it take to prepare a pet for Germany to Japan?"
+    answer: "Allow 36-42 weeks from starting the process. Two vaccinations, a titre test (blood drawn 30 days after the second vaccination), 180 days from blood draw, plus 40 days advance AQS notification and health certificate preparation."
+  - question: "Does Germany's EU status help with Japan's AQS?"
+    answer: "No. Japan's AQS classifies all countries individually. Germany is non-designated, meaning the full 180-day protocol applies regardless of EU membership or German veterinary standards."
+  - question: "Which laboratory should I use for the AQS titre test from Germany?"
+    answer: "The titre test must be at an AQS-approved laboratory. In Europe, SCELAB (France), Sciensano (Belgium), and several others are AQS-approved. Check the current list at aqs.maff.go.jp before booking — the list is updated periodically."
+  - question: "What is the AQS advance notification and how do I submit it?"
+    answer: "You must notify the AQS quarantine station at your arrival airport (Narita, Haneda, or Kansai) at least 40 days before your pet arrives. Include microchip number, vaccination records, titre test details, and flight information. Your agent handles this, or you submit directly via the AQS portal."
+  - question: "How long is quarantine in Japan for a German pet?"
+    answer: "Minimum 12 hours for a non-designated country arrival with complete documentation. In practice, expect 2-7 days as AQS reviews all documents and inspects the animal. Quarantine fees are charged per day at the AQS facility."
 links:
   sideways:
     - url: "/pet-transport/japan-to-germany/"
       text: "Pet Transport Japan to Germany"
   upward:
-    - url: "/pet-transport/origins/pet-export-guide-shipping-from-germany/"
+    - url: "/pet-transport/origins/germany-pet-export-guide/"
       text: "Shipping from Germany"
     - url: "/pet-transport/countries/japan/"
       text: "Importing to Japan"
     - url: "/pet-transport/airlines/lufthansa/"
       text: "Lufthansa pet policy"
-    - url: "/pet-transport/airlines/japan-airlines-jal/"
-      text: "Japan Airlines (JAL) pet policy"
+    - url: "/pet-transport/airlines/ana/"
+      text: "ANA pet policy"
 ---

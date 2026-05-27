@@ -1,9 +1,9 @@
 ---
-template_variant: "A"
-title: "Pet Transport from Singapore to France | Complete Guide"
-description: "How to transport your dog or cat from Singapore to France. Import requirements, airline options, costs, and step-by-step process Complete guide: France import r"
+title: "Pet Transport from Singapore to France | AVS Export, EU Titre Test & Airlines"
+description: "Shipping your pet from Singapore to France: AVS export licence, EU FAVN titre test and 3-month wait, DDPP Paris entry inspection — field manual guide."
 type: "routes"
 layout: "single"
+template_variant: "A"
 author: "Gareth - Founder, PetTransportGlobal"
 slug: "singapore-to-france"
 origin_name: "Singapore"
@@ -13,101 +13,134 @@ route_data:
     code: "SG"
     country: "Singapore"
     export_requirements:
-      endorsement: "Must meet destination country requirements. Contact destination authority for specific format."
+      export_permit: "AVS Export Licence required. Apply via CITES e-Licence System through AVS. Allow 2+ weeks."
+      health_certificate: "Official health certificate by AVS-accredited vet, endorsed by AVS. Must be in EU Annex IV format for non-listed countries. Issued within 7 days of Singapore departure AND within 10 days of France arrival."
   destination:
     code: "FR"
     country: "France"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or at same time as rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Standard EU protocol. 21-day wait from first vaccination."
-      titre_test: "Required for: Pets from unlisted third countries. Not required for: Pets from EU and listed third countries (all P1 countries listed). Minimum: 0.5 IU/ml. 90-day wait after blood draw"
-      quarantine: "No routine quarantine. Penalty quarantine up to varies days if non-compliant"
-      import_permit: "No formal import permit. EU pet passport or AHC serves as documentation."
-      health_certificate: "Required"
+      microchip: "Required (ISO 11784/11785). Before the first rabies vaccination."
+      rabies_vaccination: "Required. Minimum age 12 weeks. 21-day wait from first vaccination. Must be current and within validity period."
+      titre_test: "Required. Singapore is non-listed under EU Regulation 576/2013. FAVN titre test at EU-approved laboratory. Minimum 0.5 IU/ml. Blood drawn 30+ days after last vaccination. 3-month mandatory wait from blood draw date."
+      quarantine: "No quarantine for fully compliant pets. Official vet check at the designated French Border Control Post on arrival."
+      import_permit: "Not required. EU Regulation 576/2013 governs."
+      health_certificate: "EU Annex IV format, endorsed by AVS. Within 10 days of France arrival."
+      entry_point: "Paris Charles de Gaulle (CDG) — France's main Border Control Post for animal imports."
+      authority: "DGAL (Direction générale de l'alimentation), France. EU Regulation 576/2013."
   airlines:
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo transport available. Transport of large animals to certain destinations not possible due to local circumstances. Fighting dog breeds subject to special rules"
     - name: "Singapore Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as cargo in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
+      policy_summary: "Direct SIN-CDG. Singapore Airlines Cargo handles live animals. National carrier of origin with strong Changi departure processes. Primary recommendation for this route."
     - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo transport available. Brachycephalic breeds subject to restrictions/seasonal embargoes. French regulations on dangerous dog breeds apply"
-    - name: "Cathay Pacific"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Etihad Airways"
+      policy_summary: "Direct CDG-SIN reverse. Air France Cargo on the same route. Good CDG arrival handling and familiarity with DGAL BCP procedures."
+    - name: "Lufthansa"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as cargo through Etihad Cargo. Brachycephalic breeds subject to seasonal restrictions. Temperature embargoes during Abu Dhabi summer months"
-    - name: "Thai Airways"
+      policy_summary: "Via Frankfurt FRA to CDG or directly FRA to France depending on French destination city. Brachycephalic breeds restricted year-round."
+    - name: "Emirates"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets as checked baggage or Thai Cargo for larger animals. Brachycephalic breeds restricted during hot season (March-May). Some breed restrictions apply"
+      policy_summary: "Via Dubai DXB to CDG. Summer heat embargoes may restrict acceptance."
+    - name: "Qatar Airways"
+      type: "cargo_only"
+      policy_summary: "Via Doha DOH to CDG. Seasonal brachycephalic restrictions apply."
   timeline_steps:
     - step: 1
-      action: "Get your pet microchipped (ISO 11784/11785)"
-      timing: "Before any vaccinations. Must be done first."
-      responsible: "Your veterinarian"
+      action: "STEP 1: Verify microchip (ISO 11784/11785) — implanted before any vaccination"
+      timing: "Start here. Non-negotiable."
+      responsible: "Singapore vet"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "At least 21 days before travel (after microchip)"
-      responsible: "Your veterinarian"
+      action: "STEP 2: Confirm rabies vaccination is current and post-microchip"
+      timing: "If lapsed, vaccinate and wait 30 days before titre test."
+      responsible: "Singapore vet"
     - step: 3
-      action: "Rabies titre test (RNATT blood test)"
-      timing: "Blood drawn 30+ days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "STEP 3: FAVN titre test at EU-approved laboratory"
+      timing: "Blood drawn 30+ days after last vaccination. 2-4 weeks for results."
+      responsible: "Singapore vet + EU-approved lab"
     - step: 4
-      action: "Obtain health certificate / veterinary clearance"
-      timing: "Within 10 days of travel (check destination-specific requirements)"
-      responsible: "Official veterinarian"
+      action: "STEP 4: 3-month mandatory wait (from blood draw date, not result date)"
+      timing: "Cannot be shortened."
+      responsible: "N/A"
     - step: 5
-      action: "Book IATA-compliant flight and arrange pet cargo/cabin booking"
-      timing: "2-4 weeks before travel. Confirm pet space availability."
-      responsible: "You (or your pet transport agent)"
+      action: "STEP 5: Apply for AVS Export Licence"
+      timing: "At least 2 weeks before departure."
+      responsible: "You or agent via CITES e-Licence"
     - step: 6
-      action: "Travel day: arrive early, present all documentation"
-      timing: "3-4 hours before departure for cargo pets"
-      responsible: "You + airline cargo desk"
+      action: "STEP 6: Book Singapore Airlines or Air France Cargo SIN-CDG"
+      timing: "Once 3-month wait is complete."
+      responsible: "You or agent"
+    - step: 7
+      action: "STEP 7: AVS-endorsed EU Annex IV health certificate"
+      timing: "Within 7 days of Singapore departure AND within 10 days of France arrival."
+      responsible: "AVS-accredited vet + AVS endorsement"
+    - step: 8
+      action: "STEP 8: Depart Singapore. DGAL BCP check at CDG on arrival."
+      timing: "Cargo check-in 3-4 hours before departure."
+      responsible: "You + cargo airline + DGAL"
   cost_factors:
-    - "Airline cargo/cabin fees (varies by carrier, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees (vaccinations, health certificate, microchip)"
-    - "Government endorsement/USDA endorsement fee (if applicable)"
-    - "Pet transport agent fee (if using a relocation service)"
+    - "Singapore Airlines or Air France Cargo fees SIN-CDG"
+    - "IATA-compliant crate"
+    - "FAVN titre test (EU-approved lab)"
+    - "AVS Export Licence fee"
+    - "AVS-endorsed health certificate"
+    - "Agent fee (recommended)"
   key_warnings:
-    - "Brachycephalic (flat-faced) breeds face cargo restrictions on most airlines. Check breed-specific policies before booking."
-    - "Microchip MUST be implanted before rabies vaccination. Vaccination given before microchip is invalid and the clock restarts."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "6-10"
-faqs:
-  - question: "How long does it take to prepare a pet for transport from Singapore to France?"
-    answer: "The process takes 6-10 weeks from start to finish. The rabies titre test requires a 3-6 month waiting period after the blood draw before your pet can travel, so start early."
-  - question: "Is there quarantine when my pet enters France?"
-    answer: "No routine quarantine for pets entering France with the correct documentation. No routine quarantine. Penalty quarantine up to varies days if non-compliant"
-  - question: "Do I need an import permit to bring my pet into France?"
-    answer: "No formal import permit. EU pet passport or AHC serves as documentation."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Required Your Singapore vet must be approved to issue official veterinary certificates. The certificate must be issued within the timeframe required by France: usually 10 days before travel. Present the original at check-in."
-  - question: "Is a rabies titre test required for pets entering France?"
-    answer: "Yes. Required for: Pets from unlisted third countries. Not required for: Pets from EU and listed third countries (all P1 countries listed). Minimum: 0.5 IU/ml. 90-day wait after blood draw The microchip must be implanted before the first rabies vaccination for the vaccination to be valid. Start this process as early as possible."
+    - "Non-listed country status applies: titre test + 3-month wait are mandatory. No EU country exempts Singapore."
+    - "Health certificate dual-window: within 7 days of SG departure AND within 10 days of France arrival. Both must be met."
+    - "AVS Export Licence is mandatory before departure. Missing it = no departure."
+  route_complexity: "high"
+  estimated_timeline_weeks: "22-26"
 content:
   h1: "Pet Transport from Singapore to France"
   overview: |
-    Pet transport from Singapore to France is a moderately complex route. The documentation is specific and there are a few stages to work through, but families who plan ahead get their pets there without major issues.
+    Singapore to France triggers the standard EU non-listed country protocol: FAVN titre test, 3-month wait, then compliant entry at the Charles de Gaulle Border Control Post. No quarantine, but the pre-travel timeline is 22-26 weeks.
 
-    At minimum, your pet needs a microchip (ISO 11784/11785 standard), a current rabies vaccination, a rabies titre test with a waiting period after the result, and a government-endorsed health certificate issued close to your travel date. Allow 6-10 weeks from starting preparation to travel day.
+    Direct cargo flights exist on both Singapore Airlines and Air France. Once the waiting period is behind you, the logistics are clean.
+  sections:
+    - heading: "Regulatory compliance sequence"
+      body: |
+        | Step | Action | Timing | Consequence if skipped |
+        |---|---|---|---|
+        | 1 | ISO microchip implanted before vaccination | Week 0 | Vaccination does not count for EU purposes |
+        | 2 | Rabies vaccination | Week 0-2 | Cannot proceed to titre test |
+        | 3 | FAVN titre test at EU-approved lab | Week 6+ (30 days post-vax) | Result invalid if non-approved lab used |
+        | 4 | 3-month wait from blood draw date | Weeks 6-19 | Entry refused at French BCP |
+        | 5 | AVS Export Licence (2+ weeks) | Parallel | Cannot depart Singapore |
+        | 6 | Book cargo flight SIN-CDG | Week 18+ | N/A |
+        | 7 | AVS-endorsed EU Annex IV health cert | Within 7 days of SG departure | Refused at BCP |
+        | 8 | Arrival CDG BCP check | Travel day | N/A |
 
-    Use the step-by-step timeline below to plan your preparation, and get in touch if you want us to coordinate the process for you.
+        Source: EU Regulation 576/2013; AVS Singapore nparks.gov.sg/avs.
+    - heading: "Airlines: SIN-CDG direct options"
+      body: |
+        Two direct carrier options exist for Singapore-Paris Charles de Gaulle pet cargo.
 
+        Singapore Airlines Cargo on the SIN-CDG route. As Singapore's national carrier, their Changi cargo team is deeply familiar with AVS export documentation requirements. They also have good relationships with the CDG cargo handling teams.
+
+        Air France Cargo operates the same route in the opposite direction, but their cargo holds run both ways. Air France's CDG cargo operation is well-established for live animal arrivals and familiar with DGAL BCP procedures on the French side.
+
+        For flat-nosed breeds, check brachycephalic policies with your chosen carrier before booking. Lufthansa via Frankfurt is an alternative if direct services are full, but involves an additional cargo transfer.
+faqs:
+  - question: "Does my pet need a titre test to enter France from Singapore?"
+    answer: "Yes. France applies EU Regulation 576/2013 and Singapore is a non-listed third country. An FAVN titre test at an EU-approved laboratory is mandatory, minimum 0.5 IU/ml, followed by a 3-month waiting period from the blood draw date."
+  - question: "Is there quarantine when bringing a pet from Singapore to France?"
+    answer: "No quarantine for fully compliant pets. An official veterinarian conducts a documentary check at the Charles de Gaulle Border Control Post on arrival. Compliant pets are released the same day."
+  - question: "What is the AVS Export Licence?"
+    answer: "Singapore requires an AVS Export Licence for all live animal exports. Apply via the CITES e-Licence System on the AVS portal at nparks.gov.sg/avs. Allow at least 2 weeks. Your agent can handle this application on your behalf."
+  - question: "How long does the France-Singapore health certificate window last?"
+    answer: "The AVS requires the health certificate to be issued within 7 days of Singapore departure. The EU requires it within 10 days of France arrival. Both windows must be met simultaneously. With a typical SIN-CDG flight time, these usually align — plan the vet appointment date carefully."
+  - question: "Which airline is best for pet cargo from Singapore to Paris?"
+    answer: "Singapore Airlines Cargo and Air France Cargo both operate direct SIN-CDG services. Singapore Airlines has the advantage of deep familiarity with AVS Changi export procedures; Air France has strong CDG BCP relationships on the French side. Either is a solid choice."
 links:
   sideways:
     - url: "/pet-transport/france-to-singapore/"
       text: "Pet Transport France to Singapore"
   upward:
-    - url: "/pet-transport/origins/pet-export-guide-shipping-from-singapore/"
+    - url: "/pet-transport/origins/singapore-pet-export-guide/"
       text: "Shipping from Singapore"
     - url: "/pet-transport/countries/france/"
       text: "Importing to France"
-
-
+    - url: "/pet-transport/airlines/singapore-airlines/"
+      text: "Singapore Airlines pet policy"
+    - url: "/pet-transport/airlines/air-france/"
+      text: "Air France pet policy"
 ---
