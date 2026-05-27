@@ -1,9 +1,9 @@
 ---
-template_variant: "D"
-title: "Shipping Dogs & Cats from Germany to South Korea | PetTransportGlobal"
-description: "Complete guide to pet transport from Germany to South Korea. Import requirements, quarantine rules, airline options, and step-by-step timeline."
+title: "Pet Transport from Germany to South Korea | APQA Import Requirements & Guide"
+description: "Moving your pet from Germany to South Korea: no titre test from EU Germany, APQA advance notification, 5-day rule, Lufthansa and Korean Air cargo from Frankfurt."
 type: "routes"
 layout: "single"
+template_variant: "D"
 author: "Gareth - Founder, PetTransportGlobal"
 slug: "germany-to-south-korea"
 origin_name: "Germany"
@@ -13,131 +13,116 @@ route_data:
     code: "DE"
     country: "Germany"
     export_requirements:
-      export_permit: "No formal export permit for pets. Health certificate and EU pet passport serve as documentation."
+      export_permit: "No formal export permit for personal pets."
+      health_certificate: "Official health certificate from a DENV-authorised vet, endorsed by the German competent veterinary authority. In APQA format. Issued within 10 days of travel."
   destination:
     code: "KR"
     country: "South Korea"
     import_requirements:
-      microchip: "Required (ISO 11784/11785)"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 30-day wait after vaccination before travel"
-      titre_test: "Required. Minimum: 0.5 IU/ml. 180-day wait from test date before entry"
-      quarantine: "Mandatory quarantine. 10 days. Facility: APQA facility"
-      import_permit: "Required. Issued by: Animal and Plant Quarantine Agency"
-      health_certificate: "Required. Issued by: Official veterinarian. Valid for 14 days from issue"
+      microchip: "Required (ISO 11784/11785 15-digit). Before vaccination."
+      rabies_vaccination: "Required. Valid and current. Administered after microchipping."
+      titre_test: "Not required for pets from EU member states including Germany. APQA treats EU countries as low-risk origins. No titre test, no extended waiting period."
+      quarantine: "No routine quarantine for properly documented pets from Germany. APQA inspection at Incheon International Airport on arrival. Same-day release if documentation complete."
+      import_permit: "Not required for companion animals. Advance APQA notification at Incheon required at least 5 days before arrival."
+      health_certificate: "German competent authority-endorsed health certificate in APQA format, within 10 days of travel."
+      entry_point: "Seoul Incheon International Airport (ICN). APQA quarantine station."
+      authority: "Animal and Plant Quarantine Agency (APQA), South Korea."
   airlines:
     - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
-    - name: "Emirates"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
+      policy_summary: "Direct FRA-ICN. Lufthansa Cargo. Strong Frankfurt cargo operation. Brachycephalic breeds restricted year-round."
+    - name: "Korean Air"
+      type: "cargo_only"
+      policy_summary: "Korean Air Cargo FRA-ICN. The Korean national carrier with deep APQA import familiarity at Incheon. Direct service."
+    - name: "Asiana Airlines"
+      type: "cargo_only"
+      policy_summary: "Asiana Airlines Cargo from Frankfurt to Incheon. Direct service."
     - name: "Singapore Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "British Airways"
+      policy_summary: "Via Singapore SIN to ICN. Temperature-controlled cargo. Alternative if direct services full."
+    - name: "Emirates"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Via Dubai DXB to ICN. Emirates SkyCargo. Summer heat embargoes may restrict."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step: must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Does your pet have a current ISO microchip?"
+      timing: "Yes for most German pets. Verify it matches all records."
+      responsible: "Your vet"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 30-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Is the rabies vaccination current and within validity?"
+      timing: "If yes, proceed. If lapsed, vaccinate — no waiting period required beyond standard validity."
+      responsible: "Your vet"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 180-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Submit advance APQA notification to Incheon (at least 5 days before arrival)"
+      timing: "Do this as soon as travel date is confirmed."
+      responsible: "You or your agent"
     - step: 4
-      action: "Apply for import permit from South Korea"
-      timing: "Apply early: allow 4-6 weeks"
-      responsible: "You (or your pet transport agent)"
+      action: "Book Lufthansa or Korean Air Cargo FRA-ICN"
+      timing: "2-4 weeks before travel."
+      responsible: "You or agent"
     - step: 5
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Obtain German authority-endorsed health certificate in APQA format"
+      timing: "Within 10 days of travel."
+      responsible: "DENV-authorised vet + German authority"
     - step: 6
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 7
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
-    - step: 8
-      action: "Quarantine on arrival (10 days)"
-      timing: "Immediately on arrival: mandatory"
-      responsible: "South Korea quarantine authority"
+      action: "Cargo check-in Frankfurt. APQA inspection at Incheon on arrival."
+      timing: "3-4 hours before departure."
+      responsible: "You + cargo airline + APQA"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (South Korea)"
-    - "Quarantine facility fees (owner-paid at destination)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Lufthansa or Korean Air Cargo fees FRA-ICN"
+    - "IATA-compliant crate"
+    - "Health certificate and German authority endorsement fees"
+    - "APQA inspection fee at Incheon"
+    - "Agent fee (optional)"
   key_warnings:
-    - "Mandatory quarantine required on arrival. Plan for separation from your pet."
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "very_high"
-  estimated_timeline_weeks: "33-39"
+    - "The 5-day APQA advance notification is mandatory. Submitting late causes delays at Incheon."
+    - "No titre test is required from Germany — this makes preparation 3-6 weeks rather than 22+."
+    - "Health certificate must be issued within 10 days of travel and in APQA-acceptable format."
+  route_complexity: "low"
+  estimated_timeline_weeks: "3-6"
 content:
   h1: "Pet Transport from Germany to South Korea"
   overview: |
-    Moving a pet from Germany to South Korea involves more paperwork than most owners expect.
-    
-    This route is one of the most demanding international pet transport routes. Start preparations at least 33 weeks before your travel date: some steps have fixed waiting periods that cannot be shortened. South Korea requires mandatory quarantine (10 days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Getting the timing right is critical. Work backwards from your travel date and add a buffer.
+    Germany to South Korea benefits from APQA's treatment of EU countries as low-risk origins. There's no titre test requirement, no extended waiting period, and no quarantine on arrival. Preparation runs 3-6 weeks if your pet's microchip and vaccinations are current.
+
+    The main questions: is the APQA advance notification submitted on time? Is the health certificate in the right format?
   sections:
-    - heading: "Understanding South Korea's pet import rules"
+    - heading: "What does APQA actually require from German pets?"
       body: |
-        This is one of the more demanding international pet transport corridors. South Korea runs a strict biosecurity programme and there are no shortcuts through it.
-        
-        All pets must complete quarantine on arrival in South Korea (at APQA facility) for 10 days. This is non-negotiable and is entirely separate from the pre-travel preparation.
-        
-        Animal and Plant Quarantine Agency (APQA) regulates imports. Large pet-owning culture.
-    - heading: "Practical advice for shipping your pet from Germany"
+        South Korea's Animal and Plant Quarantine Agency maintains a country classification system based on rabies risk. Germany, as an EU member state with a well-documented and controlled rabies vaccination programme, sits in the low-risk category. For APQA purposes, this removes the titre test requirement entirely.
+
+        The practical checklist is short. ISO 11784/11785 microchip (15-digit), confirmed implanted before any vaccination. Current rabies vaccination in a valid veterinary record. Advance APQA notification to the quarantine station at Incheon Airport at least 5 days before arrival — this is the step most often missed. Official health certificate from a German competent authority-endorsed vet, in APQA format, issued within 10 days of travel.
+
+        That's the list. APQA's inspector at Incheon checks the microchip, the vaccination record, and the certificate on arrival. With everything in order, your pet is typically released the same day.
+    - heading: "Which airline? Frankfurt to Incheon"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        You have two strong direct options from Frankfurt. Lufthansa Cargo on FRA-ICN brings the obvious advantage of Frankfurt's well-run live animal cargo centre — one of Europe's busiest and most experienced for international pet shipments. Korean Air Cargo operates the same direct route and brings the advantage of being the Korean national carrier with deep APQA familiarity at the Incheon end.
+
+        For most moves, the choice comes down to availability on your preferred travel date. Book 3-4 weeks in advance. Both airlines occasionally restrict cargo acceptance during peak periods.
+
+        Brachycephalic breeds — Bulldogs, Pugs, French Bulldogs — are restricted from Lufthansa cargo year-round. Korean Air Cargo is the better option for flat-nosed breeds on this route.
+    - heading: "The 5-day APQA notification: don't skip it"
+      body: |
+        The advance notification to the APQA quarantine station at Incheon is the administrative step most commonly forgotten in Germany-to-Korea moves. It must be submitted at least 5 full days before your pet arrives in South Korea. Your cargo agent handles this as standard, but confirm it's submitted before travel day.
+
+        Missing it doesn't mean your pet gets turned away — but it does mean delays at the Incheon inspection point while APQA processes the notification retroactively. That's stressful and avoidable.
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Germany to South Korea?"
-    answer: "Allow at least 33 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering South Korea?"
-    answer: "Yes, quarantine is mandatory in South Korea. Your pet will stay for 10 days at APQA facility on arrival. This is non-negotiable and the cost is paid by the owner."
-  - question: "Is a rabies titre test required for pets entering South Korea?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 180-day waiting period after a successful result before your pet can enter South Korea. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into South Korea?"
-    answer: "Yes, an import permit is required from South Korea's authority (Animal and Plant Quarantine Agency). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Germany. The certificate must be issued within 14 days of travel. Present the original (not a copy) at check-in. Check South Korea's authority for the exact format required."
+  - question: "Does my pet need a titre test to enter South Korea from Germany?"
+    answer: "No. Germany is an EU member state and APQA treats EU countries as low-risk origins for rabies. No titre test and no extended waiting period are required."
+  - question: "How long does preparation take for Germany to South Korea?"
+    answer: "3-6 weeks if your pet's microchip and vaccinations are current. The main timing constraint is the APQA advance notification (5 days before arrival) and the health certificate issued within 10 days of travel."
+  - question: "What is the APQA advance notification?"
+    answer: "The APQA quarantine station at Seoul Incheon Airport must be notified at least 5 days before your pet arrives. Your cargo agent handles this as part of the booking. Missing it causes delays at Incheon inspection."
+  - question: "Is there quarantine for pets arriving from Germany in South Korea?"
+    answer: "No routine quarantine. APQA conducts an inspection at Incheon on arrival. With complete documentation, your pet is typically released the same day."
+  - question: "Which airline is best for pet cargo from Frankfurt to Seoul?"
+    answer: "Lufthansa Cargo and Korean Air Cargo both operate direct FRA-ICN services. Lufthansa has strong Frankfurt cargo infrastructure; Korean Air has deep APQA familiarity at Incheon. Brachycephalic breeds should use Korean Air, as Lufthansa restricts them from cargo year-round."
 links:
   sideways:
     - url: "/pet-transport/south-korea-to-germany/"
       text: "Pet Transport South Korea to Germany"
   upward:
-    - url: "/pet-transport/origins/pet-export-guide-shipping-from-germany/"
+    - url: "/pet-transport/origins/germany-pet-export-guide/"
       text: "Shipping from Germany"
     - url: "/pet-transport/countries/south-korea/"
       text: "Importing to South Korea"
