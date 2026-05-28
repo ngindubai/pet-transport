@@ -1,0 +1,578 @@
+[
+  {
+    "slug": "/pet-transport/argentina-to-australia/",
+    "origin": "Argentina",
+    "destination": "Australia",
+    "origin_code": "AR",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/austria-to-australia/",
+    "origin": "Austria",
+    "destination": "Australia",
+    "origin_code": "AT",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/bahrain-to-australia/",
+    "origin": "Bahrain",
+    "destination": "Australia",
+    "origin_code": "BH",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/bangladesh-to-australia/",
+    "origin": "Bangladesh",
+    "destination": "Australia",
+    "origin_code": "BD",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/belgium-to-australia/",
+    "origin": "Belgium",
+    "destination": "Australia",
+    "origin_code": "BE",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/brazil-to-australia/",
+    "origin": "Brazil",
+    "destination": "Australia",
+    "origin_code": "BR",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/bulgaria-to-australia/",
+    "origin": "Bulgaria",
+    "destination": "Australia",
+    "origin_code": "BG",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/cambodia-to-australia/",
+    "origin": "Cambodia",
+    "destination": "Australia",
+    "origin_code": "KH",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/canada-to-australia/",
+    "origin": "Canada",
+    "destination": "Australia",
+    "origin_code": "CA",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/chile-to-australia/",
+    "origin": "Chile",
+    "destination": "Australia",
+    "origin_code": "CL",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/china-to-australia/",
+    "origin": "China",
+    "destination": "Australia",
+    "origin_code": "CN",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/colombia-to-australia/",
+    "origin": "Colombia",
+    "destination": "Australia",
+    "origin_code": "CO",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/costa-rica-to-australia/",
+    "origin": "Costa Rica",
+    "destination": "Australia",
+    "origin_code": "CR",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/croatia-to-australia/",
+    "origin": "Croatia",
+    "destination": "Australia",
+    "origin_code": "HR",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/cyprus-to-australia/",
+    "origin": "Cyprus",
+    "destination": "Australia",
+    "origin_code": "CY",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/czech-republic-to-australia/",
+    "origin": "Czech Republic",
+    "destination": "Australia",
+    "origin_code": "CZ",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/denmark-to-australia/",
+    "origin": "Denmark",
+    "destination": "Australia",
+    "origin_code": "DK",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/ecuador-to-australia/",
+    "origin": "Ecuador",
+    "destination": "Australia",
+    "origin_code": "EC",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/egypt-to-australia/",
+    "origin": "Egypt",
+    "destination": "Australia",
+    "origin_code": "EG",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/ethiopia-to-australia/",
+    "origin": "Ethiopia",
+    "destination": "Australia",
+    "origin_code": "ET",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/finland-to-australia/",
+    "origin": "Finland",
+    "destination": "Australia",
+    "origin_code": "FI",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/france-to-australia/",
+    "origin": "France",
+    "destination": "Australia",
+    "origin_code": "FR",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/germany-to-australia/",
+    "origin": "Germany",
+    "destination": "Australia",
+    "origin_code": "DE",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/ghana-to-australia/",
+    "origin": "Ghana",
+    "destination": "Australia",
+    "origin_code": "GH",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/greece-to-australia/",
+    "origin": "Greece",
+    "destination": "Australia",
+    "origin_code": "GR",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/hong-kong-to-australia/",
+    "origin": "Hong Kong",
+    "destination": "Australia",
+    "origin_code": "HK",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/hungary-to-australia/",
+    "origin": "Hungary",
+    "destination": "Australia",
+    "origin_code": "HU",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/india-to-australia/",
+    "origin": "India",
+    "destination": "Australia",
+    "origin_code": "IN",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/indonesia-to-australia/",
+    "origin": "Indonesia",
+    "destination": "Australia",
+    "origin_code": "ID",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/ireland-to-australia/",
+    "origin": "Ireland",
+    "destination": "Australia",
+    "origin_code": "IE",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/israel-to-australia/",
+    "origin": "Israel",
+    "destination": "Australia",
+    "origin_code": "IL",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/italy-to-australia/",
+    "origin": "Italy",
+    "destination": "Australia",
+    "origin_code": "IT",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/japan-to-australia/",
+    "origin": "Japan",
+    "destination": "Australia",
+    "origin_code": "JP",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/jordan-to-australia/",
+    "origin": "Jordan",
+    "destination": "Australia",
+    "origin_code": "JO",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/kenya-to-australia/",
+    "origin": "Kenya",
+    "destination": "Australia",
+    "origin_code": "KE",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/kuwait-to-australia/",
+    "origin": "Kuwait",
+    "destination": "Australia",
+    "origin_code": "KW",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/luxembourg-to-australia/",
+    "origin": "Luxembourg",
+    "destination": "Australia",
+    "origin_code": "LU",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/malaysia-to-australia/",
+    "origin": "Malaysia",
+    "destination": "Australia",
+    "origin_code": "MY",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/malta-to-australia/",
+    "origin": "Malta",
+    "destination": "Australia",
+    "origin_code": "MT",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/mauritius-to-australia/",
+    "origin": "Mauritius",
+    "destination": "Australia",
+    "origin_code": "MU",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/mexico-to-australia/",
+    "origin": "Mexico",
+    "destination": "Australia",
+    "origin_code": "MX",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/morocco-to-australia/",
+    "origin": "Morocco",
+    "destination": "Australia",
+    "origin_code": "MA",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/myanmar-to-australia/",
+    "origin": "Myanmar",
+    "destination": "Australia",
+    "origin_code": "MM",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/nepal-to-australia/",
+    "origin": "Nepal",
+    "destination": "Australia",
+    "origin_code": "NP",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/netherlands-to-australia/",
+    "origin": "Netherlands",
+    "destination": "Australia",
+    "origin_code": "NL",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/new-zealand-to-australia/",
+    "origin": "New Zealand",
+    "destination": "Australia",
+    "origin_code": "NZ",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/nigeria-to-australia/",
+    "origin": "Nigeria",
+    "destination": "Australia",
+    "origin_code": "NG",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/norway-to-australia/",
+    "origin": "Norway",
+    "destination": "Australia",
+    "origin_code": "NO",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/oman-to-australia/",
+    "origin": "Oman",
+    "destination": "Australia",
+    "origin_code": "OM",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/pakistan-to-australia/",
+    "origin": "Pakistan",
+    "destination": "Australia",
+    "origin_code": "PK",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/peru-to-australia/",
+    "origin": "Peru",
+    "destination": "Australia",
+    "origin_code": "PE",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/philippines-to-australia/",
+    "origin": "Philippines",
+    "destination": "Australia",
+    "origin_code": "PH",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/poland-to-australia/",
+    "origin": "Poland",
+    "destination": "Australia",
+    "origin_code": "PL",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/portugal-to-australia/",
+    "origin": "Portugal",
+    "destination": "Australia",
+    "origin_code": "PT",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/qatar-to-australia/",
+    "origin": "Qatar",
+    "destination": "Australia",
+    "origin_code": "QA",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/romania-to-australia/",
+    "origin": "Romania",
+    "destination": "Australia",
+    "origin_code": "RO",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/saudi-arabia-to-australia/",
+    "origin": "Saudi Arabia",
+    "destination": "Australia",
+    "origin_code": "SA",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/singapore-to-australia/",
+    "origin": "Singapore",
+    "destination": "Australia",
+    "origin_code": "SG",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/slovakia-to-australia/",
+    "origin": "Slovakia",
+    "destination": "Australia",
+    "origin_code": "SK",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/south-africa-to-australia/",
+    "origin": "South Africa",
+    "destination": "Australia",
+    "origin_code": "ZA",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/south-korea-to-australia/",
+    "origin": "South Korea",
+    "destination": "Australia",
+    "origin_code": "KR",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/spain-to-australia/",
+    "origin": "Spain",
+    "destination": "Australia",
+    "origin_code": "ES",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/sri-lanka-to-australia/",
+    "origin": "Sri Lanka",
+    "destination": "Australia",
+    "origin_code": "LK",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/sweden-to-australia/",
+    "origin": "Sweden",
+    "destination": "Australia",
+    "origin_code": "SE",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/switzerland-to-australia/",
+    "origin": "Switzerland",
+    "destination": "Australia",
+    "origin_code": "CH",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/taiwan-to-australia/",
+    "origin": "Taiwan",
+    "destination": "Australia",
+    "origin_code": "TW",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/tanzania-to-australia/",
+    "origin": "Tanzania",
+    "destination": "Australia",
+    "origin_code": "TZ",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/thailand-to-australia/",
+    "origin": "Thailand",
+    "destination": "Australia",
+    "origin_code": "TH",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/turkey-to-australia/",
+    "origin": "Turkey",
+    "destination": "Australia",
+    "origin_code": "TR",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/united-arab-emirates-to-australia/",
+    "origin": "United Arab Emirates",
+    "destination": "Australia",
+    "origin_code": "AE",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/vietnam-to-australia/",
+    "origin": "Vietnam",
+    "destination": "Australia",
+    "origin_code": "VN",
+    "destination_code": "AU",
+    "complexity": "medium"
+  },
+  {
+    "slug": "/pet-transport/zimbabwe-to-australia/",
+    "origin": "Zimbabwe",
+    "destination": "Australia",
+    "origin_code": "ZW",
+    "destination_code": "AU",
+    "complexity": "medium"
+  }
+]
