@@ -10,6 +10,88 @@ Programmatic SEO site at pettransportglobal.com. Built with Hugo (static site). 
 
 ---
 
+## ⚠️ ONE MANUAL ACTION REQUIRED: Update GitHub Actions workflow
+
+The script `rebuild_link_graph_v3.py` was added and needs to run BEFORE every Hugo build.
+Claude cannot update `.github/workflows/build-to-live.yml` directly (requires `workflows` permission).
+
+**You need to manually edit `.github/workflows/build-to-live.yml` in GitHub UI once:**
+
+Replace the current content with this:
+
+```yaml
+name: Build Hugo to live branch
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Rebuild internal link graph
+        run: python rebuild_link_graph_v3.py
+
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.160.1'
+          extended: true
+
+      - name: Build Hugo site
+        run: |
+          cd site
+          hugo --gc --minify
+        env:
+          HUGO_ENVIRONMENT: production
+
+      - name: Split sitemap
+        run: python split_sitemap.py
+
+      - name: Publish built site to live branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site/public
+          publish_branch: live
+          force_orphan: true
+          commit_message: "Deploy: ${{ github.sha }}"
+```
+
+Until this is done, run `rebuild_link_graph_v3.py` manually before each push (or use `build.bat`).
+
+---
+
+## Build pipeline (local)
+
+```bash
+# Full local build — runs link graph rebuild + hugo + sitemap split
+build.bat               # Windows
+make build              # Linux/macOS
+```
+
+Or step by step:
+```bash
+python rebuild_link_graph_v3.py   # Step 1: regenerate all internal links
+cd site && hugo --gc --minify     # Step 2: hugo build
+cd .. && python split_sitemap.py  # Step 3: split sitemap
+```
+
+---
+
 ## How to say "go" — three modes
 
 ### Mode 1: Build the next 10 quality routes (Tier A or B)
@@ -131,13 +213,15 @@ links:
 
 ## After writing route files
 ```bash
-# Hugo build check (run from site/ directory)
+build.bat       # Windows — runs link graph rebuild + hugo + sitemap
+make build      # Linux/macOS
+```
+
+Or manually:
+```bash
+python rebuild_link_graph_v3.py
 cd site && hugo --gc --minify
-
-# Sitemap split
 cd .. && python split_sitemap.py
-
-# Git push (triggers GitHub Actions -> auto-deploy to Hostinger)
 git add site/content/routes/
 git commit -m "feat: build chunk [N] — [origin] routes ([template])"
 git push
@@ -152,25 +236,6 @@ python generate_all_remaining.py --dry-run
 ```
 
 Or open `pet-transport-build-plan.html` in a browser — it shows built/remaining with progress bars per country.
-
----
-
-## GitHub Actions setup (one-time)
-`.github/workflows/deploy.yml` is already created. Before first push, add these secrets to GitHub repo settings:
-- `FTP_SERVER` — Hostinger FTP hostname (e.g. `ftp.pettransportglobal.com`)
-- `FTP_USERNAME` — Hostinger FTP username
-- `FTP_PASSWORD` — Hostinger FTP password
-
-Settings -> Secrets and variables -> Actions -> New repository secret.
-
----
-
-## GitHub MCP setup for Claude app (one-time)
-To push files to GitHub directly from the Claude app, configure the GitHub MCP server in Claude.ai:
-1. Go to Claude.ai -> Settings -> Integrations (or MCP Servers)
-2. Add GitHub MCP server with your Personal Access Token
-3. Grant access to the `pettransportglobal` repo
-4. Claude can then read and write files, commit, and push without VS Code
 
 ---
 
