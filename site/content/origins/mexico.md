@@ -1,94 +1,91 @@
 ---
-title: "Shipping Your Pet from Mexico | Export Guide"
-description: "Complete guide to exporting your pet from Mexico. Export requirements, airlines, and route guides for 10 international destinations."
+title: "Mexico Pet Export Guide"
+description: "Complete guide to exporting your pet from Mexico."
 type: "origins"
 layout: "single"
 author: "Gareth - Founder, PetTransportGlobal"
 country_name: "Mexico"
 country_code: "MX"
-content:
-  h1: "Pet Transport from Mexico"
-  overview: |
-    Exporting a pet from Mexico is relatively straightforward, especially for the USA, Canada, and Europe. SENASICA endorses all export health certificates. We have guides for 10 routes from Mexico.
+overview: |
+  Pet export from Mexico requires a SENASICA-endorsed health certificate. We cover 58 routes from Mexico.
 export_requirements:
-  export_permit: "No formal export permit for pets. Health certificate issued by an accredited veterinarian and endorsed by SENASICA is required for international travel. Certificate must meet destination country requirements."
-  health_certificate: "Required. Official veterinary health certificate endorsed by SENASICA before departure."
-  endorsement: "SENASICA endorsement required"
-  issuing_authority: "Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria (SENASICA)"
-  last_verified: "2026-04-23"
+  export_permit: "Official health certificate endorsed by SENASICA required."
+  issuing_authority: "National Service of Agro-Alimentary Health, Safety and Quality"
+  last_verified: "2026-04-24"
 sections:
   - heading: "Export requirements from Mexico"
     body: |
-      **Export Permit:** No formal export permit for pets. Health certificate issued by an accredited veterinarian and endorsed by SENASICA is required for international travel. Certificate must meet destination country requirements.
+      **Health Certificate:** Official health certificate endorsed by SENASICA.
 
-      **Health Certificate:** Required. Official veterinary health certificate endorsed by SENASICA before departure.
+      **Issuing Authority:** National Service of Agro-Alimentary Health, Safety and Quality
 
-      **Government Endorsement:** SENASICA endorsement required
-
-      **Issuing Authority:** Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria (SENASICA)
-
-      **Last Verified:** 2026-04-23
+      **Last Verified:** 2026-04-24
   - heading: "Popular routes from Mexico"
     body: |
       We have detailed guides for the following routes:
       
+      - [Mexico to Argentina](/pet-transport/mexico-to-argentina/)
       - [Mexico to Australia](/pet-transport/mexico-to-australia/)
+      - [Mexico to Austria](/pet-transport/mexico-to-austria/)
+      - [Mexico to Bahrain](/pet-transport/mexico-to-bahrain/)
+      - [Mexico to Bangladesh](/pet-transport/mexico-to-bangladesh/)
+      - [Mexico to Belgium](/pet-transport/mexico-to-belgium/)
+      - [Mexico to Bulgaria](/pet-transport/mexico-to-bulgaria/)
+      - [Mexico to Cambodia](/pet-transport/mexico-to-cambodia/)
       - [Mexico to Canada](/pet-transport/mexico-to-canada/)
+      - [Mexico to Chile](/pet-transport/mexico-to-chile/)
+      - [Mexico to China](/pet-transport/mexico-to-china/)
+      - [Mexico to Colombia](/pet-transport/mexico-to-colombia/)
+      - [Mexico to Costa Rica](/pet-transport/mexico-to-costa-rica/)
+      - [Mexico to Croatia](/pet-transport/mexico-to-croatia/)
+      - [Mexico to Cyprus](/pet-transport/mexico-to-cyprus/)
+      - [Mexico to Czech Republic](/pet-transport/mexico-to-czech-republic/)
+      - [Mexico to Ecuador](/pet-transport/mexico-to-ecuador/)
+      - [Mexico to Egypt](/pet-transport/mexico-to-egypt/)
+      - [Mexico to Ethiopia](/pet-transport/mexico-to-ethiopia/)
+      - [Mexico to Finland](/pet-transport/mexico-to-finland/)
       - [Mexico to France](/pet-transport/mexico-to-france/)
       - [Mexico to Germany](/pet-transport/mexico-to-germany/)
+      - [Mexico to Ghana](/pet-transport/mexico-to-ghana/)
       - [Mexico to Hong Kong](/pet-transport/mexico-to-hong-kong/)
+      - [Mexico to Hungary](/pet-transport/mexico-to-hungary/)
+      - [Mexico to Ireland](/pet-transport/mexico-to-ireland/)
+      - [Mexico to Israel](/pet-transport/mexico-to-israel/)
+      - [Mexico to Jordan](/pet-transport/mexico-to-jordan/)
+      - [Mexico to Kenya](/pet-transport/mexico-to-kenya/)
+      - [Mexico to Kuwait](/pet-transport/mexico-to-kuwait/)
+      - [Mexico to Luxembourg](/pet-transport/mexico-to-luxembourg/)
+      - [Mexico to Malta](/pet-transport/mexico-to-malta/)
+      - [Mexico to Mauritius](/pet-transport/mexico-to-mauritius/)
+      - [Mexico to Morocco](/pet-transport/mexico-to-morocco/)
+      - [Mexico to Myanmar](/pet-transport/mexico-to-myanmar/)
+      - [Mexico to Nepal](/pet-transport/mexico-to-nepal/)
+      - [Mexico to New Zealand](/pet-transport/mexico-to-new-zealand/)
+      - [Mexico to Nigeria](/pet-transport/mexico-to-nigeria/)
+      - [Mexico to Norway](/pet-transport/mexico-to-norway/)
+      - [Mexico to Oman](/pet-transport/mexico-to-oman/)
+      - [Mexico to Pakistan](/pet-transport/mexico-to-pakistan/)
+      - [Mexico to Peru](/pet-transport/mexico-to-peru/)
+      - [Mexico to Poland](/pet-transport/mexico-to-poland/)
+      - [Mexico to Qatar](/pet-transport/mexico-to-qatar/)
+      - [Mexico to Romania](/pet-transport/mexico-to-romania/)
+      - [Mexico to Saudi Arabia](/pet-transport/mexico-to-saudi-arabia/)
       - [Mexico to Singapore](/pet-transport/mexico-to-singapore/)
+      - [Mexico to Slovakia](/pet-transport/mexico-to-slovakia/)
       - [Mexico to South Africa](/pet-transport/mexico-to-south-africa/)
+      - [Mexico to Spain](/pet-transport/mexico-to-spain/)
+      - [Mexico to Sri Lanka](/pet-transport/mexico-to-sri-lanka/)
+      - [Mexico to Sweden](/pet-transport/mexico-to-sweden/)
+      - [Mexico to Taiwan](/pet-transport/mexico-to-taiwan/)
+      - [Mexico to Tanzania](/pet-transport/mexico-to-tanzania/)
+      - [Mexico to Turkey](/pet-transport/mexico-to-turkey/)
       - [Mexico to United Arab Emirates](/pet-transport/mexico-to-united-arab-emirates/)
-      - [Mexico to United Kingdom](/pet-transport/mexico-to-united-kingdom/)
-      - [Mexico to United States](/pet-transport/mexico-to-united-states/)
+      - [Mexico to Vietnam](/pet-transport/mexico-to-vietnam/)
+      - [Mexico to Zimbabwe](/pet-transport/mexico-to-zimbabwe/)
 faqs:
   - question: "What do I need to export my pet from Mexico?"
-    answer: "No formal export permit for pets. Health certificate issued by an accredited veterinarian and endorsed by SENASICA is required for international travel. Certificate must meet destination country requirements. Required. Official veterinary health certificate endorsed by SENASICA before departure."
+    answer: "You need a SENASICA-endorsed health certificate. Check destination requirements for additional permits."
   - question: "Where can I get a pet health certificate in Mexico?"
-    answer: "Any government-approved veterinarian in Mexico can issue a health certificate for pet export. The certificate then needs endorsement from Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria (SENASICA) before departure."
-  - question: "How long does pet export take from Mexico?"
-    answer: "Allow at least 4-8 weeks from starting preparations to travel day. Some steps require waiting periods that cannot be shortened. Start the process as early as possible."
-airlines:
-  - name: "Aeromexico"
-    type: "cabin_and_cargo"
-  - name: "American Airlines"
-    type: "cabin_and_cargo"
-  - name: "Delta Air Lines"
-    type: "cabin_and_cargo"
-  - name: "United Airlines"
-    type: "cabin_only"
-  - name: "Air France"
-    type: "cabin_and_cargo"
-  - name: "Lufthansa"
-    type: "cabin_and_cargo"
-  - name: "British Airways"
-    type: "cargo_only"
-  - name: "Iberia"
-    type: "cabin_and_cargo"
-  - name: "KLM"
-    type: "cabin_and_cargo"
-  - name: "Air Canada"
-    type: "cabin_and_cargo"
+    answer: "Any government-approved veterinarian in Mexico can issue a health certificate. SENASICA endorsement is required before departure."
 outbound_routes:
-  - slug: "mexico-to-australia"
-    destination: "Australia"
-  - slug: "mexico-to-canada"
-    destination: "Canada"
-  - slug: "mexico-to-france"
-    destination: "France"
-  - slug: "mexico-to-germany"
-    destination: "Germany"
-  - slug: "mexico-to-hong-kong"
-    destination: "Hong Kong"
-  - slug: "mexico-to-singapore"
-    destination: "Singapore"
-  - slug: "mexico-to-south-africa"
-    destination: "South Africa"
-  - slug: "mexico-to-united-arab-emirates"
-    destination: "United Arab Emirates"
-  - slug: "mexico-to-united-kingdom"
-    destination: "United Kingdom"
-  - slug: "mexico-to-united-states"
-    destination: "United States"
 ---

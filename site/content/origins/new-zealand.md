@@ -1,51 +1,105 @@
 ---
-title: "Pet Export Guide: Shipping from New Zealand"
-description: "Exporting your pet from New Zealand: MPI health certificate requirements, airline options, and routes from New Zealand to international destinations."
+title: "New Zealand Pet Export Guide"
+description: "Complete guide to exporting your pet from New Zealand."
 type: "origins"
 layout: "single"
 author: "Gareth - Founder, PetTransportGlobal"
 country_name: "New Zealand"
 country_code: "NZ"
 overview: |
-  Shipping your pet from New Zealand is straightforward compared to importing, but you still need correct documentation. New Zealand's Ministry for Primary Industries (MPI) oversees animal exports. Here's what you need to arrange before your pet can leave.
+  Pet export from New Zealand requires an MPI-endorsed health certificate. We cover 72 routes from New Zealand.
+export_requirements:
+  export_permit: "Official health certificate endorsed by MPI required."
+  issuing_authority: "Ministry for Primary Industries"
+  last_verified: "2026-04-24"
 sections:
   - heading: "Export requirements from New Zealand"
     body: |
-      **Export Permit:** Not required for cats and dogs leaving New Zealand, but destination country requirements must be met
-      
-      **Health Certificate:** Must meet destination country requirements. An official veterinarian must issue the certificate within 10 days of departure
-      
-      **Government Endorsement:** MPI endorsement may be required depending on destination country
-      
-      **Microchip:** ISO-compliant microchip must be in place before any required vaccinations
-      
-      **Rabies:** New Zealand is rabies-free. Rabies vaccination is not required for export but most destination countries require it. Allow enough lead time for the destination's vaccination protocol
-      
-      **Last Verified:** 2026-04-16
+      **Health Certificate:** Official health certificate endorsed by MPI.
+
+      **Issuing Authority:** Ministry for Primary Industries
+
+      **Last Verified:** 2026-04-24
   - heading: "Popular routes from New Zealand"
     body: |
       We have detailed guides for the following routes:
       
-      - [New Zealand to United Kingdom](/pet-transport/new-zealand-to-united-kingdom/)
+      - [New Zealand to Argentina](/pet-transport/new-zealand-to-argentina/)
+      - [New Zealand to Australia](/pet-transport/new-zealand-to-australia/)
+      - [New Zealand to Austria](/pet-transport/new-zealand-to-austria/)
+      - [New Zealand to Bahrain](/pet-transport/new-zealand-to-bahrain/)
+      - [New Zealand to Bangladesh](/pet-transport/new-zealand-to-bangladesh/)
+      - [New Zealand to Belgium](/pet-transport/new-zealand-to-belgium/)
+      - [New Zealand to Brazil](/pet-transport/new-zealand-to-brazil/)
+      - [New Zealand to Bulgaria](/pet-transport/new-zealand-to-bulgaria/)
+      - [New Zealand to Cambodia](/pet-transport/new-zealand-to-cambodia/)
+      - [New Zealand to Canada](/pet-transport/new-zealand-to-canada/)
+      - [New Zealand to Chile](/pet-transport/new-zealand-to-chile/)
+      - [New Zealand to China](/pet-transport/new-zealand-to-china/)
+      - [New Zealand to Colombia](/pet-transport/new-zealand-to-colombia/)
+      - [New Zealand to Costa Rica](/pet-transport/new-zealand-to-costa-rica/)
+      - [New Zealand to Croatia](/pet-transport/new-zealand-to-croatia/)
+      - [New Zealand to Cyprus](/pet-transport/new-zealand-to-cyprus/)
+      - [New Zealand to Czech Republic](/pet-transport/new-zealand-to-czech-republic/)
+      - [New Zealand to Denmark](/pet-transport/new-zealand-to-denmark/)
+      - [New Zealand to Ecuador](/pet-transport/new-zealand-to-ecuador/)
+      - [New Zealand to Egypt](/pet-transport/new-zealand-to-egypt/)
+      - [New Zealand to Ethiopia](/pet-transport/new-zealand-to-ethiopia/)
+      - [New Zealand to Finland](/pet-transport/new-zealand-to-finland/)
+      - [New Zealand to France](/pet-transport/new-zealand-to-france/)
+      - [New Zealand to Germany](/pet-transport/new-zealand-to-germany/)
+      - [New Zealand to Ghana](/pet-transport/new-zealand-to-ghana/)
+      - [New Zealand to Greece](/pet-transport/new-zealand-to-greece/)
+      - [New Zealand to Hong Kong](/pet-transport/new-zealand-to-hong-kong/)
+      - [New Zealand to Hungary](/pet-transport/new-zealand-to-hungary/)
+      - [New Zealand to India](/pet-transport/new-zealand-to-india/)
+      - [New Zealand to Indonesia](/pet-transport/new-zealand-to-indonesia/)
+      - [New Zealand to Ireland](/pet-transport/new-zealand-to-ireland/)
+      - [New Zealand to Israel](/pet-transport/new-zealand-to-israel/)
+      - [New Zealand to Italy](/pet-transport/new-zealand-to-italy/)
+      - [New Zealand to Japan](/pet-transport/new-zealand-to-japan/)
+      - [New Zealand to Jordan](/pet-transport/new-zealand-to-jordan/)
+      - [New Zealand to Kenya](/pet-transport/new-zealand-to-kenya/)
+      - [New Zealand to Kuwait](/pet-transport/new-zealand-to-kuwait/)
+      - [New Zealand to Luxembourg](/pet-transport/new-zealand-to-luxembourg/)
+      - [New Zealand to Malaysia](/pet-transport/new-zealand-to-malaysia/)
+      - [New Zealand to Malta](/pet-transport/new-zealand-to-malta/)
+      - [New Zealand to Mauritius](/pet-transport/new-zealand-to-mauritius/)
+      - [New Zealand to Mexico](/pet-transport/new-zealand-to-mexico/)
+      - [New Zealand to Morocco](/pet-transport/new-zealand-to-morocco/)
+      - [New Zealand to Myanmar](/pet-transport/new-zealand-to-myanmar/)
+      - [New Zealand to Nepal](/pet-transport/new-zealand-to-nepal/)
+      - [New Zealand to Netherlands](/pet-transport/new-zealand-to-netherlands/)
+      - [New Zealand to Nigeria](/pet-transport/new-zealand-to-nigeria/)
+      - [New Zealand to Norway](/pet-transport/new-zealand-to-norway/)
+      - [New Zealand to Oman](/pet-transport/new-zealand-to-oman/)
+      - [New Zealand to Pakistan](/pet-transport/new-zealand-to-pakistan/)
+      - [New Zealand to Peru](/pet-transport/new-zealand-to-peru/)
+      - [New Zealand to Philippines](/pet-transport/new-zealand-to-philippines/)
+      - [New Zealand to Poland](/pet-transport/new-zealand-to-poland/)
+      - [New Zealand to Portugal](/pet-transport/new-zealand-to-portugal/)
+      - [New Zealand to Qatar](/pet-transport/new-zealand-to-qatar/)
+      - [New Zealand to Romania](/pet-transport/new-zealand-to-romania/)
+      - [New Zealand to Saudi Arabia](/pet-transport/new-zealand-to-saudi-arabia/)
+      - [New Zealand to Singapore](/pet-transport/new-zealand-to-singapore/)
+      - [New Zealand to Slovakia](/pet-transport/new-zealand-to-slovakia/)
+      - [New Zealand to South Africa](/pet-transport/new-zealand-to-south-africa/)
+      - [New Zealand to South Korea](/pet-transport/new-zealand-to-south-korea/)
+      - [New Zealand to Spain](/pet-transport/new-zealand-to-spain/)
+      - [New Zealand to Sri Lanka](/pet-transport/new-zealand-to-sri-lanka/)
+      - [New Zealand to Sweden](/pet-transport/new-zealand-to-sweden/)
+      - [New Zealand to Switzerland](/pet-transport/new-zealand-to-switzerland/)
+      - [New Zealand to Taiwan](/pet-transport/new-zealand-to-taiwan/)
+      - [New Zealand to Tanzania](/pet-transport/new-zealand-to-tanzania/)
+      - [New Zealand to Thailand](/pet-transport/new-zealand-to-thailand/)
+      - [New Zealand to Turkey](/pet-transport/new-zealand-to-turkey/)
+      - [New Zealand to United Arab Emirates](/pet-transport/new-zealand-to-united-arab-emirates/)
+      - [New Zealand to Vietnam](/pet-transport/new-zealand-to-vietnam/)
+      - [New Zealand to Zimbabwe](/pet-transport/new-zealand-to-zimbabwe/)
 faqs:
   - question: "What do I need to export my pet from New Zealand?"
-    answer: "You'll need a health certificate from an official veterinarian, proof of microchip and any vaccinations required by your destination country. New Zealand is rabies-free, so your pet won't have a rabies vaccination history unless you arrange one specifically for export."
+    answer: "You need an MPI-endorsed health certificate. Check destination requirements for additional permits."
   - question: "Where can I get a pet health certificate in New Zealand?"
-    answer: "Any MPI-approved veterinarian in New Zealand can issue a health certificate for pet export. For some destinations, the certificate needs endorsement from MPI before departure."
-airlines:
-  - name: "Air New Zealand"
-    type: "cabin_and_cargo"
-  - name: "Qantas"
-    type: "cargo_only"
-  - name: "Emirates"
-    type: "cargo_only"
-  - name: "Singapore Airlines"
-    type: "cargo_only"
-  - name: "Cathay Pacific"
-    type: "cargo_only"
-  - name: "LATAM Airlines"
-    type: "cargo_only"
+    answer: "Any government-approved veterinarian in New Zealand can issue a health certificate. MPI endorsement is required before departure."
 outbound_routes:
-  - slug: "new-zealand-to-united-kingdom"
-    destination: "United Kingdom"
 ---

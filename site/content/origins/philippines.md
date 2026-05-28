@@ -1,94 +1,99 @@
 ---
-title: "Shipping Your Pet from Philippines | Export Guide"
-description: "Complete guide to exporting your pet from Philippines. Export requirements, airlines, and route guides for 10 international destinations."
+title: "Philippines Pet Export Guide"
+description: "Complete guide to exporting your pet from Philippines."
 type: "origins"
 layout: "single"
 author: "Gareth - Founder, PetTransportGlobal"
 country_name: "Philippines"
 country_code: "PH"
-content:
-  h1: "Pet Transport from Philippines"
-  overview: |
-    The Bureau of Animal Industry (BAI) oversees all pet exports from the Philippines. Export clearance must be obtained before you fly. We have guides for 10 routes from the Philippines.
+overview: |
+  Pet export from Philippines requires a BAI-endorsed health certificate. We cover 66 routes from Philippines.
 export_requirements:
-  export_permit: "Export clearance required from the Bureau of Animal Industry (BAI). Owners must apply with proof of ownership, health certificate, and vaccination records."
-  health_certificate: "Required. Export health certificate from BAI. Certificate must meet destination country format."
-  endorsement: "BAI endorsement required on all export health certificates"
-  issuing_authority: "Bureau of Animal Industry (BAI)"
-  last_verified: "2026-04-23"
+  export_permit: "Official health certificate endorsed by BAI required."
+  issuing_authority: "Bureau of Animal Industry"
+  last_verified: "2026-04-24"
 sections:
   - heading: "Export requirements from Philippines"
     body: |
-      **Export Permit:** Export clearance required from the Bureau of Animal Industry (BAI). Owners must apply with proof of ownership, health certificate, and vaccination records.
+      **Health Certificate:** Official health certificate endorsed by BAI.
 
-      **Health Certificate:** Required. Export health certificate from BAI. Certificate must meet destination country format.
+      **Issuing Authority:** Bureau of Animal Industry
 
-      **Government Endorsement:** BAI endorsement required on all export health certificates
-
-      **Issuing Authority:** Bureau of Animal Industry (BAI)
-
-      **Last Verified:** 2026-04-23
+      **Last Verified:** 2026-04-24
   - heading: "Popular routes from Philippines"
     body: |
       We have detailed guides for the following routes:
       
+      - [Philippines to Argentina](/pet-transport/philippines-to-argentina/)
       - [Philippines to Australia](/pet-transport/philippines-to-australia/)
+      - [Philippines to Austria](/pet-transport/philippines-to-austria/)
+      - [Philippines to Bahrain](/pet-transport/philippines-to-bahrain/)
+      - [Philippines to Bangladesh](/pet-transport/philippines-to-bangladesh/)
+      - [Philippines to Belgium](/pet-transport/philippines-to-belgium/)
+      - [Philippines to Bulgaria](/pet-transport/philippines-to-bulgaria/)
+      - [Philippines to Cambodia](/pet-transport/philippines-to-cambodia/)
       - [Philippines to Canada](/pet-transport/philippines-to-canada/)
+      - [Philippines to Chile](/pet-transport/philippines-to-chile/)
+      - [Philippines to China](/pet-transport/philippines-to-china/)
+      - [Philippines to Colombia](/pet-transport/philippines-to-colombia/)
+      - [Philippines to Costa Rica](/pet-transport/philippines-to-costa-rica/)
+      - [Philippines to Croatia](/pet-transport/philippines-to-croatia/)
+      - [Philippines to Cyprus](/pet-transport/philippines-to-cyprus/)
+      - [Philippines to Czech Republic](/pet-transport/philippines-to-czech-republic/)
+      - [Philippines to Denmark](/pet-transport/philippines-to-denmark/)
+      - [Philippines to Ecuador](/pet-transport/philippines-to-ecuador/)
+      - [Philippines to Egypt](/pet-transport/philippines-to-egypt/)
+      - [Philippines to Ethiopia](/pet-transport/philippines-to-ethiopia/)
+      - [Philippines to Finland](/pet-transport/philippines-to-finland/)
       - [Philippines to France](/pet-transport/philippines-to-france/)
       - [Philippines to Germany](/pet-transport/philippines-to-germany/)
+      - [Philippines to Ghana](/pet-transport/philippines-to-ghana/)
+      - [Philippines to Greece](/pet-transport/philippines-to-greece/)
       - [Philippines to Hong Kong](/pet-transport/philippines-to-hong-kong/)
+      - [Philippines to Hungary](/pet-transport/philippines-to-hungary/)
+      - [Philippines to Ireland](/pet-transport/philippines-to-ireland/)
+      - [Philippines to Israel](/pet-transport/philippines-to-israel/)
+      - [Philippines to Italy](/pet-transport/philippines-to-italy/)
+      - [Philippines to Japan](/pet-transport/philippines-to-japan/)
+      - [Philippines to Jordan](/pet-transport/philippines-to-jordan/)
+      - [Philippines to Kenya](/pet-transport/philippines-to-kenya/)
+      - [Philippines to Kuwait](/pet-transport/philippines-to-kuwait/)
+      - [Philippines to Luxembourg](/pet-transport/philippines-to-luxembourg/)
+      - [Philippines to Malaysia](/pet-transport/philippines-to-malaysia/)
+      - [Philippines to Malta](/pet-transport/philippines-to-malta/)
+      - [Philippines to Mauritius](/pet-transport/philippines-to-mauritius/)
+      - [Philippines to Morocco](/pet-transport/philippines-to-morocco/)
+      - [Philippines to Myanmar](/pet-transport/philippines-to-myanmar/)
+      - [Philippines to Nepal](/pet-transport/philippines-to-nepal/)
+      - [Philippines to Netherlands](/pet-transport/philippines-to-netherlands/)
+      - [Philippines to New Zealand](/pet-transport/philippines-to-new-zealand/)
+      - [Philippines to Nigeria](/pet-transport/philippines-to-nigeria/)
+      - [Philippines to Norway](/pet-transport/philippines-to-norway/)
+      - [Philippines to Oman](/pet-transport/philippines-to-oman/)
+      - [Philippines to Pakistan](/pet-transport/philippines-to-pakistan/)
+      - [Philippines to Peru](/pet-transport/philippines-to-peru/)
+      - [Philippines to Poland](/pet-transport/philippines-to-poland/)
+      - [Philippines to Portugal](/pet-transport/philippines-to-portugal/)
+      - [Philippines to Qatar](/pet-transport/philippines-to-qatar/)
+      - [Philippines to Romania](/pet-transport/philippines-to-romania/)
+      - [Philippines to Saudi Arabia](/pet-transport/philippines-to-saudi-arabia/)
       - [Philippines to Singapore](/pet-transport/philippines-to-singapore/)
+      - [Philippines to Slovakia](/pet-transport/philippines-to-slovakia/)
       - [Philippines to South Africa](/pet-transport/philippines-to-south-africa/)
+      - [Philippines to Spain](/pet-transport/philippines-to-spain/)
+      - [Philippines to Sri Lanka](/pet-transport/philippines-to-sri-lanka/)
+      - [Philippines to Sweden](/pet-transport/philippines-to-sweden/)
+      - [Philippines to Taiwan](/pet-transport/philippines-to-taiwan/)
+      - [Philippines to Tanzania](/pet-transport/philippines-to-tanzania/)
+      - [Philippines to Thailand](/pet-transport/philippines-to-thailand/)
+      - [Philippines to Turkey](/pet-transport/philippines-to-turkey/)
       - [Philippines to United Arab Emirates](/pet-transport/philippines-to-united-arab-emirates/)
-      - [Philippines to United Kingdom](/pet-transport/philippines-to-united-kingdom/)
-      - [Philippines to United States](/pet-transport/philippines-to-united-states/)
+      - [Philippines to Vietnam](/pet-transport/philippines-to-vietnam/)
+      - [Philippines to Zimbabwe](/pet-transport/philippines-to-zimbabwe/)
 faqs:
   - question: "What do I need to export my pet from Philippines?"
-    answer: "Export clearance required from the Bureau of Animal Industry (BAI). Owners must apply with proof of ownership, health certificate, and vaccination records. Required. Export health certificate from BAI. Certificate must meet destination country format."
+    answer: "You need a BAI-endorsed health certificate. Check destination requirements for additional permits."
   - question: "Where can I get a pet health certificate in Philippines?"
-    answer: "Any government-approved veterinarian in Philippines can issue a health certificate for pet export. The certificate then needs endorsement from Bureau of Animal Industry (BAI) before departure."
-  - question: "How long does pet export take from Philippines?"
-    answer: "Allow at least 4-8 weeks from starting preparations to travel day. Some steps require waiting periods that cannot be shortened. Start the process as early as possible."
-airlines:
-  - name: "Philippine Airlines"
-    type: "cabin_and_cargo"
-  - name: "Cebu Pacific"
-    type: "cargo_only"
-  - name: "Cathay Pacific"
-    type: "cargo_only"
-  - name: "Singapore Airlines"
-    type: "cargo_only"
-  - name: "Emirates"
-    type: "cargo_only"
-  - name: "Korean Air"
-    type: "cabin_and_cargo"
-  - name: "Japan Airlines (JAL)"
-    type: "cargo_only"
-  - name: "Qantas"
-    type: "cargo_only"
-  - name: "British Airways"
-    type: "cargo_only"
-  - name: "Air France"
-    type: "cabin_and_cargo"
+    answer: "Any government-approved veterinarian in Philippines can issue a health certificate. BAI endorsement is required before departure."
 outbound_routes:
-  - slug: "philippines-to-australia"
-    destination: "Australia"
-  - slug: "philippines-to-canada"
-    destination: "Canada"
-  - slug: "philippines-to-france"
-    destination: "France"
-  - slug: "philippines-to-germany"
-    destination: "Germany"
-  - slug: "philippines-to-hong-kong"
-    destination: "Hong Kong"
-  - slug: "philippines-to-singapore"
-    destination: "Singapore"
-  - slug: "philippines-to-south-africa"
-    destination: "South Africa"
-  - slug: "philippines-to-united-arab-emirates"
-    destination: "United Arab Emirates"
-  - slug: "philippines-to-united-kingdom"
-    destination: "United Kingdom"
-  - slug: "philippines-to-united-states"
-    destination: "United States"
 ---

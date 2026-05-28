@@ -1,94 +1,91 @@
 ---
-title: "Shipping Your Pet from Malaysia | Export Guide"
-description: "Complete guide to exporting your pet from Malaysia. Export requirements, airlines, and route guides for 10 international destinations."
+title: "Malaysia Pet Export Guide"
+description: "Complete guide to exporting your pet from Malaysia."
 type: "origins"
 layout: "single"
 author: "Gareth - Founder, PetTransportGlobal"
 country_name: "Malaysia"
 country_code: "MY"
-content:
-  h1: "Pet Transport from Malaysia"
-  overview: |
-    Pet export from Malaysia requires a DVS-endorsed health certificate. Most owners use a licensed pet transport agent to handle the paperwork. We cover 10 routes from Malaysia.
+overview: |
+  Pet export from Malaysia requires a DVS Malaysia-endorsed health certificate. We cover 58 routes from Malaysia.
 export_requirements:
-  export_permit: "No export permit required for household pets. A health certificate from an accredited veterinarian, endorsed by DVS, is required. Some destinations require additional documentation."
-  health_certificate: "Required. Official veterinary health certificate endorsed by the Department of Veterinary Services (DVS)."
-  endorsement: "DVS endorsement required"
-  issuing_authority: "Department of Veterinary Services (DVS)"
-  last_verified: "2026-04-23"
+  export_permit: "Official health certificate endorsed by DVS Malaysia required."
+  issuing_authority: "Department of Veterinary Services"
+  last_verified: "2026-04-24"
 sections:
   - heading: "Export requirements from Malaysia"
     body: |
-      **Export Permit:** No export permit required for household pets. A health certificate from an accredited veterinarian, endorsed by DVS, is required. Some destinations require additional documentation.
+      **Health Certificate:** Official health certificate endorsed by DVS Malaysia.
 
-      **Health Certificate:** Required. Official veterinary health certificate endorsed by the Department of Veterinary Services (DVS).
+      **Issuing Authority:** Department of Veterinary Services
 
-      **Government Endorsement:** DVS endorsement required
-
-      **Issuing Authority:** Department of Veterinary Services (DVS)
-
-      **Last Verified:** 2026-04-23
+      **Last Verified:** 2026-04-24
   - heading: "Popular routes from Malaysia"
     body: |
       We have detailed guides for the following routes:
       
+      - [Malaysia to Argentina](/pet-transport/malaysia-to-argentina/)
       - [Malaysia to Australia](/pet-transport/malaysia-to-australia/)
+      - [Malaysia to Austria](/pet-transport/malaysia-to-austria/)
+      - [Malaysia to Bahrain](/pet-transport/malaysia-to-bahrain/)
+      - [Malaysia to Bangladesh](/pet-transport/malaysia-to-bangladesh/)
+      - [Malaysia to Belgium](/pet-transport/malaysia-to-belgium/)
+      - [Malaysia to Bulgaria](/pet-transport/malaysia-to-bulgaria/)
+      - [Malaysia to Cambodia](/pet-transport/malaysia-to-cambodia/)
       - [Malaysia to Canada](/pet-transport/malaysia-to-canada/)
+      - [Malaysia to Chile](/pet-transport/malaysia-to-chile/)
+      - [Malaysia to China](/pet-transport/malaysia-to-china/)
+      - [Malaysia to Colombia](/pet-transport/malaysia-to-colombia/)
+      - [Malaysia to Costa Rica](/pet-transport/malaysia-to-costa-rica/)
+      - [Malaysia to Croatia](/pet-transport/malaysia-to-croatia/)
+      - [Malaysia to Cyprus](/pet-transport/malaysia-to-cyprus/)
+      - [Malaysia to Czech Republic](/pet-transport/malaysia-to-czech-republic/)
+      - [Malaysia to Ecuador](/pet-transport/malaysia-to-ecuador/)
+      - [Malaysia to Egypt](/pet-transport/malaysia-to-egypt/)
+      - [Malaysia to Ethiopia](/pet-transport/malaysia-to-ethiopia/)
+      - [Malaysia to Finland](/pet-transport/malaysia-to-finland/)
       - [Malaysia to France](/pet-transport/malaysia-to-france/)
       - [Malaysia to Germany](/pet-transport/malaysia-to-germany/)
+      - [Malaysia to Ghana](/pet-transport/malaysia-to-ghana/)
       - [Malaysia to Hong Kong](/pet-transport/malaysia-to-hong-kong/)
+      - [Malaysia to Hungary](/pet-transport/malaysia-to-hungary/)
+      - [Malaysia to Ireland](/pet-transport/malaysia-to-ireland/)
+      - [Malaysia to Israel](/pet-transport/malaysia-to-israel/)
+      - [Malaysia to Jordan](/pet-transport/malaysia-to-jordan/)
+      - [Malaysia to Kenya](/pet-transport/malaysia-to-kenya/)
+      - [Malaysia to Kuwait](/pet-transport/malaysia-to-kuwait/)
+      - [Malaysia to Luxembourg](/pet-transport/malaysia-to-luxembourg/)
+      - [Malaysia to Malta](/pet-transport/malaysia-to-malta/)
+      - [Malaysia to Mauritius](/pet-transport/malaysia-to-mauritius/)
+      - [Malaysia to Morocco](/pet-transport/malaysia-to-morocco/)
+      - [Malaysia to Myanmar](/pet-transport/malaysia-to-myanmar/)
+      - [Malaysia to Nepal](/pet-transport/malaysia-to-nepal/)
+      - [Malaysia to New Zealand](/pet-transport/malaysia-to-new-zealand/)
+      - [Malaysia to Nigeria](/pet-transport/malaysia-to-nigeria/)
+      - [Malaysia to Norway](/pet-transport/malaysia-to-norway/)
+      - [Malaysia to Oman](/pet-transport/malaysia-to-oman/)
+      - [Malaysia to Pakistan](/pet-transport/malaysia-to-pakistan/)
+      - [Malaysia to Peru](/pet-transport/malaysia-to-peru/)
+      - [Malaysia to Poland](/pet-transport/malaysia-to-poland/)
+      - [Malaysia to Qatar](/pet-transport/malaysia-to-qatar/)
+      - [Malaysia to Romania](/pet-transport/malaysia-to-romania/)
+      - [Malaysia to Saudi Arabia](/pet-transport/malaysia-to-saudi-arabia/)
       - [Malaysia to Singapore](/pet-transport/malaysia-to-singapore/)
+      - [Malaysia to Slovakia](/pet-transport/malaysia-to-slovakia/)
       - [Malaysia to South Africa](/pet-transport/malaysia-to-south-africa/)
+      - [Malaysia to Spain](/pet-transport/malaysia-to-spain/)
+      - [Malaysia to Sri Lanka](/pet-transport/malaysia-to-sri-lanka/)
+      - [Malaysia to Sweden](/pet-transport/malaysia-to-sweden/)
+      - [Malaysia to Taiwan](/pet-transport/malaysia-to-taiwan/)
+      - [Malaysia to Tanzania](/pet-transport/malaysia-to-tanzania/)
+      - [Malaysia to Turkey](/pet-transport/malaysia-to-turkey/)
       - [Malaysia to United Arab Emirates](/pet-transport/malaysia-to-united-arab-emirates/)
-      - [Malaysia to United Kingdom](/pet-transport/malaysia-to-united-kingdom/)
-      - [Malaysia to United States](/pet-transport/malaysia-to-united-states/)
+      - [Malaysia to Vietnam](/pet-transport/malaysia-to-vietnam/)
+      - [Malaysia to Zimbabwe](/pet-transport/malaysia-to-zimbabwe/)
 faqs:
   - question: "What do I need to export my pet from Malaysia?"
-    answer: "No export permit required for household pets. A health certificate from an accredited veterinarian, endorsed by DVS, is required. Some destinations require additional documentation. Required. Official veterinary health certificate endorsed by the Department of Veterinary Services (DVS)."
+    answer: "You need a DVS Malaysia-endorsed health certificate. Check destination requirements for additional permits."
   - question: "Where can I get a pet health certificate in Malaysia?"
-    answer: "Any government-approved veterinarian in Malaysia can issue a health certificate for pet export. The certificate then needs endorsement from Department of Veterinary Services (DVS) before departure."
-  - question: "How long does pet export take from Malaysia?"
-    answer: "Allow at least 4-8 weeks from starting preparations to travel day. Some steps require waiting periods that cannot be shortened. Start the process as early as possible."
-airlines:
-  - name: "Malaysia Airlines"
-    type: "cabin_and_cargo"
-  - name: "AirAsia"
-    type: "cargo_only"
-  - name: "Singapore Airlines"
-    type: "cargo_only"
-  - name: "Cathay Pacific"
-    type: "cargo_only"
-  - name: "Emirates"
-    type: "cargo_only"
-  - name: "British Airways"
-    type: "cargo_only"
-  - name: "Lufthansa"
-    type: "cabin_and_cargo"
-  - name: "Air France"
-    type: "cabin_and_cargo"
-  - name: "Qantas"
-    type: "cargo_only"
-  - name: "Korean Air"
-    type: "cabin_and_cargo"
+    answer: "Any government-approved veterinarian in Malaysia can issue a health certificate. DVS Malaysia endorsement is required before departure."
 outbound_routes:
-  - slug: "malaysia-to-australia"
-    destination: "Australia"
-  - slug: "malaysia-to-canada"
-    destination: "Canada"
-  - slug: "malaysia-to-france"
-    destination: "France"
-  - slug: "malaysia-to-germany"
-    destination: "Germany"
-  - slug: "malaysia-to-hong-kong"
-    destination: "Hong Kong"
-  - slug: "malaysia-to-singapore"
-    destination: "Singapore"
-  - slug: "malaysia-to-south-africa"
-    destination: "South Africa"
-  - slug: "malaysia-to-united-arab-emirates"
-    destination: "United Arab Emirates"
-  - slug: "malaysia-to-united-kingdom"
-    destination: "United Kingdom"
-  - slug: "malaysia-to-united-states"
-    destination: "United States"
 ---
