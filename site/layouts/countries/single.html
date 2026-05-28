@@ -29,7 +29,8 @@
 {{/* Load routes_incoming from data/incoming/[slug].json, falling back to frontmatter */}}
 {{ $slug := .File.ContentBaseName }}
 {{ $dataRoutes := index .Site.Data.incoming $slug }}
-{{ $routes := cond (and $dataRoutes (gt (len $dataRoutes) 0)) $dataRoutes $country.routes_incoming }}
+{{ $routes := $country.routes_incoming }}
+{{ if $dataRoutes }}{{ $routes = $dataRoutes }}{{ end }}
 
 {{/* Check for country-specific hero: static/images/countries/country-{code}.jpg */}}
 {{ $specificPath := printf "static/images/countries/country-%s.jpg" (.Params.country_code | lower) }}
