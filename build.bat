@@ -3,7 +3,14 @@ REM build.bat — full build + sitemap split for PetTransportGlobal
 REM Run from repo root: C:\Users\garet\Desktop\pet-transport\
 REM Usage: build.bat
 
-echo [1/2] Building Hugo site...
+echo [1/3] Rebuilding internal link graph...
+python rebuild_link_graph_v3.py
+if errorlevel 1 (
+    echo WARNING: link graph rebuild failed — check output above
+)
+
+echo.
+echo [2/3] Building Hugo site...
 cd site
 hugo --gc --minify
 if errorlevel 1 (
@@ -12,7 +19,7 @@ if errorlevel 1 (
 cd ..
 
 echo.
-echo [2/2] Splitting sitemap into sections...
+echo [3/3] Splitting sitemap into sections...
 python split_sitemap.py
 
 echo.
