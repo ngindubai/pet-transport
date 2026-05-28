@@ -1,94 +1,101 @@
 ---
-title: "Shipping Your Pet from Switzerland | Export Guide"
-description: "Complete guide to exporting your pet from Switzerland. Export requirements, airlines, and route guides for 10 international destinations."
+title: "Switzerland Pet Export Guide"
+description: "Complete guide to exporting your pet from Switzerland."
 type: "origins"
 layout: "single"
 author: "Gareth - Founder, PetTransportGlobal"
 country_name: "Switzerland"
 country_code: "CH"
-content:
-  h1: "Pet Transport from Switzerland"
-  overview: |
-    Switzerland participates in the EU Pet Travel Scheme. For EU/EFTA destinations, an EU Pet Passport is accepted. For other destinations, the FSVO-endorsed health certificate is required. We have guides for 10 routes from Switzerland.
+overview: |
+  Pet export from Switzerland requires an FSVO-endorsed health certificate. We cover 68 routes from Switzerland.
 export_requirements:
-  export_permit: "Switzerland is not an EU member but participates in the EU Pet Travel Scheme for movement between Switzerland and EU/EFTA countries. An EU Pet Passport or equivalent is accepted. For non-EU/EFTA destinations, an export health certificate endorsed by FSVO is required."
-  health_certificate: "EU Pet Passport or FSVO-endorsed health certificate required depending on destination."
-  endorsement: "FSVO endorsement required for non-EU/EFTA destinations"
+  export_permit: "Official health certificate endorsed by FSVO required."
   issuing_authority: "Federal Food Safety and Veterinary Office (FSVO)"
-  last_verified: "2026-04-23"
+  last_verified: "2026-04-24"
 sections:
   - heading: "Export requirements from Switzerland"
     body: |
-      **Export Permit:** Switzerland is not an EU member but participates in the EU Pet Travel Scheme for movement between Switzerland and EU/EFTA countries. An EU Pet Passport or equivalent is accepted. For non-EU/EFTA destinations, an export health certificate endorsed by FSVO is required.
-
-      **Health Certificate:** EU Pet Passport or FSVO-endorsed health certificate required depending on destination.
-
-      **Government Endorsement:** FSVO endorsement required for non-EU/EFTA destinations
+      **Health Certificate:** Official health certificate endorsed by FSVO.
 
       **Issuing Authority:** Federal Food Safety and Veterinary Office (FSVO)
 
-      **Last Verified:** 2026-04-23
+      **Last Verified:** 2026-04-24
   - heading: "Popular routes from Switzerland"
     body: |
       We have detailed guides for the following routes:
       
+      - [Switzerland to Argentina](/pet-transport/switzerland-to-argentina/)
       - [Switzerland to Australia](/pet-transport/switzerland-to-australia/)
+      - [Switzerland to Austria](/pet-transport/switzerland-to-austria/)
+      - [Switzerland to Bahrain](/pet-transport/switzerland-to-bahrain/)
+      - [Switzerland to Bangladesh](/pet-transport/switzerland-to-bangladesh/)
+      - [Switzerland to Belgium](/pet-transport/switzerland-to-belgium/)
+      - [Switzerland to Bulgaria](/pet-transport/switzerland-to-bulgaria/)
+      - [Switzerland to Cambodia](/pet-transport/switzerland-to-cambodia/)
       - [Switzerland to Canada](/pet-transport/switzerland-to-canada/)
+      - [Switzerland to Chile](/pet-transport/switzerland-to-chile/)
+      - [Switzerland to China](/pet-transport/switzerland-to-china/)
+      - [Switzerland to Colombia](/pet-transport/switzerland-to-colombia/)
+      - [Switzerland to Costa Rica](/pet-transport/switzerland-to-costa-rica/)
+      - [Switzerland to Croatia](/pet-transport/switzerland-to-croatia/)
+      - [Switzerland to Cyprus](/pet-transport/switzerland-to-cyprus/)
+      - [Switzerland to Czech Republic](/pet-transport/switzerland-to-czech-republic/)
+      - [Switzerland to Denmark](/pet-transport/switzerland-to-denmark/)
+      - [Switzerland to Ecuador](/pet-transport/switzerland-to-ecuador/)
+      - [Switzerland to Egypt](/pet-transport/switzerland-to-egypt/)
+      - [Switzerland to Ethiopia](/pet-transport/switzerland-to-ethiopia/)
+      - [Switzerland to Finland](/pet-transport/switzerland-to-finland/)
       - [Switzerland to France](/pet-transport/switzerland-to-france/)
       - [Switzerland to Germany](/pet-transport/switzerland-to-germany/)
+      - [Switzerland to Ghana](/pet-transport/switzerland-to-ghana/)
+      - [Switzerland to Greece](/pet-transport/switzerland-to-greece/)
       - [Switzerland to Hong Kong](/pet-transport/switzerland-to-hong-kong/)
+      - [Switzerland to Hungary](/pet-transport/switzerland-to-hungary/)
+      - [Switzerland to India](/pet-transport/switzerland-to-india/)
+      - [Switzerland to Ireland](/pet-transport/switzerland-to-ireland/)
+      - [Switzerland to Israel](/pet-transport/switzerland-to-israel/)
+      - [Switzerland to Italy](/pet-transport/switzerland-to-italy/)
+      - [Switzerland to Japan](/pet-transport/switzerland-to-japan/)
+      - [Switzerland to Jordan](/pet-transport/switzerland-to-jordan/)
+      - [Switzerland to Kenya](/pet-transport/switzerland-to-kenya/)
+      - [Switzerland to Kuwait](/pet-transport/switzerland-to-kuwait/)
+      - [Switzerland to Luxembourg](/pet-transport/switzerland-to-luxembourg/)
+      - [Switzerland to Malta](/pet-transport/switzerland-to-malta/)
+      - [Switzerland to Mauritius](/pet-transport/switzerland-to-mauritius/)
+      - [Switzerland to Morocco](/pet-transport/switzerland-to-morocco/)
+      - [Switzerland to Myanmar](/pet-transport/switzerland-to-myanmar/)
+      - [Switzerland to Nepal](/pet-transport/switzerland-to-nepal/)
+      - [Switzerland to Netherlands](/pet-transport/switzerland-to-netherlands/)
+      - [Switzerland to New Zealand](/pet-transport/switzerland-to-new-zealand/)
+      - [Switzerland to Nigeria](/pet-transport/switzerland-to-nigeria/)
+      - [Switzerland to Norway](/pet-transport/switzerland-to-norway/)
+      - [Switzerland to Oman](/pet-transport/switzerland-to-oman/)
+      - [Switzerland to Pakistan](/pet-transport/switzerland-to-pakistan/)
+      - [Switzerland to Peru](/pet-transport/switzerland-to-peru/)
+      - [Switzerland to Philippines](/pet-transport/switzerland-to-philippines/)
+      - [Switzerland to Poland](/pet-transport/switzerland-to-poland/)
+      - [Switzerland to Portugal](/pet-transport/switzerland-to-portugal/)
+      - [Switzerland to Qatar](/pet-transport/switzerland-to-qatar/)
+      - [Switzerland to Romania](/pet-transport/switzerland-to-romania/)
+      - [Switzerland to Saudi Arabia](/pet-transport/switzerland-to-saudi-arabia/)
       - [Switzerland to Singapore](/pet-transport/switzerland-to-singapore/)
+      - [Switzerland to Slovakia](/pet-transport/switzerland-to-slovakia/)
       - [Switzerland to South Africa](/pet-transport/switzerland-to-south-africa/)
+      - [Switzerland to South Korea](/pet-transport/switzerland-to-south-korea/)
+      - [Switzerland to Spain](/pet-transport/switzerland-to-spain/)
+      - [Switzerland to Sri Lanka](/pet-transport/switzerland-to-sri-lanka/)
+      - [Switzerland to Sweden](/pet-transport/switzerland-to-sweden/)
+      - [Switzerland to Taiwan](/pet-transport/switzerland-to-taiwan/)
+      - [Switzerland to Tanzania](/pet-transport/switzerland-to-tanzania/)
+      - [Switzerland to Thailand](/pet-transport/switzerland-to-thailand/)
+      - [Switzerland to Turkey](/pet-transport/switzerland-to-turkey/)
       - [Switzerland to United Arab Emirates](/pet-transport/switzerland-to-united-arab-emirates/)
-      - [Switzerland to United Kingdom](/pet-transport/switzerland-to-united-kingdom/)
-      - [Switzerland to United States](/pet-transport/switzerland-to-united-states/)
+      - [Switzerland to Vietnam](/pet-transport/switzerland-to-vietnam/)
+      - [Switzerland to Zimbabwe](/pet-transport/switzerland-to-zimbabwe/)
 faqs:
   - question: "What do I need to export my pet from Switzerland?"
-    answer: "Switzerland is not an EU member but participates in the EU Pet Travel Scheme for movement between Switzerland and EU/EFTA countries. An EU Pet Passport or equivalent is accepted. For non-EU/EFTA destinations, an export health certificate endorsed by FSVO is required. EU Pet Passport or FSVO-endorsed health certificate required depending on destination."
+    answer: "You need an FSVO-endorsed health certificate. Check destination requirements for additional permits."
   - question: "Where can I get a pet health certificate in Switzerland?"
-    answer: "Any government-approved veterinarian in Switzerland can issue a health certificate for pet export. The certificate then needs endorsement from Federal Food Safety and Veterinary Office (FSVO) before departure."
-  - question: "How long does pet export take from Switzerland?"
-    answer: "Allow at least 4-8 weeks from starting preparations to travel day. Some steps require waiting periods that cannot be shortened. Start the process as early as possible."
-airlines:
-  - name: "Swiss International Air Lines"
-    type: "cabin_and_cargo"
-  - name: "Lufthansa"
-    type: "cabin_and_cargo"
-  - name: "Air France"
-    type: "cabin_and_cargo"
-  - name: "British Airways"
-    type: "cargo_only"
-  - name: "KLM"
-    type: "cabin_and_cargo"
-  - name: "Emirates"
-    type: "cargo_only"
-  - name: "Singapore Airlines"
-    type: "cargo_only"
-  - name: "Qantas"
-    type: "cargo_only"
-  - name: "Delta Air Lines"
-    type: "cabin_and_cargo"
-  - name: "Cathay Pacific"
-    type: "cargo_only"
+    answer: "Any government-approved veterinarian in Switzerland can issue a health certificate. FSVO endorsement is required before departure."
 outbound_routes:
-  - slug: "switzerland-to-australia"
-    destination: "Australia"
-  - slug: "switzerland-to-canada"
-    destination: "Canada"
-  - slug: "switzerland-to-france"
-    destination: "France"
-  - slug: "switzerland-to-germany"
-    destination: "Germany"
-  - slug: "switzerland-to-hong-kong"
-    destination: "Hong Kong"
-  - slug: "switzerland-to-singapore"
-    destination: "Singapore"
-  - slug: "switzerland-to-south-africa"
-    destination: "South Africa"
-  - slug: "switzerland-to-united-arab-emirates"
-    destination: "United Arab Emirates"
-  - slug: "switzerland-to-united-kingdom"
-    destination: "United Kingdom"
-  - slug: "switzerland-to-united-states"
-    destination: "United States"
 ---
