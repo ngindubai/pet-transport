@@ -1,94 +1,94 @@
 ---
-title: "Shipping Your Pet from South Korea | Export Guide"
-description: "Complete guide to exporting your pet from South Korea. Export requirements, airlines, and route guides for 10 international destinations."
+title: "South Korea Pet Export Guide"
+description: "Complete guide to exporting your pet from South Korea."
 type: "origins"
 layout: "single"
 author: "Gareth - Founder, PetTransportGlobal"
 country_name: "South Korea"
 country_code: "KR"
-content:
-  h1: "Pet Transport from South Korea"
-  overview: |
-    APQA handles all pet export endorsements in South Korea. The process is well-organised and most certificates are turned around within a few days. We have guides for 10 routes from South Korea.
+overview: |
+  Pet export from South Korea requires an APQA-endorsed health certificate. We cover 60 routes from South Korea.
 export_requirements:
-  export_permit: "No dedicated export permit for household pets. An export health certificate from a government-approved veterinarian, endorsed by APQA, is required. Some destinations require specific disease test results."
-  health_certificate: "Required. Official export health certificate endorsed by APQA (Animal and Plant Quarantine Agency)."
-  endorsement: "APQA endorsement required"
+  export_permit: "Official health certificate endorsed by APQA required."
   issuing_authority: "Animal and Plant Quarantine Agency (APQA)"
-  last_verified: "2026-04-23"
+  last_verified: "2026-04-24"
 sections:
   - heading: "Export requirements from South Korea"
     body: |
-      **Export Permit:** No dedicated export permit for household pets. An export health certificate from a government-approved veterinarian, endorsed by APQA, is required. Some destinations require specific disease test results.
-
-      **Health Certificate:** Required. Official export health certificate endorsed by APQA (Animal and Plant Quarantine Agency).
-
-      **Government Endorsement:** APQA endorsement required
+      **Health Certificate:** Official health certificate endorsed by APQA.
 
       **Issuing Authority:** Animal and Plant Quarantine Agency (APQA)
 
-      **Last Verified:** 2026-04-23
+      **Last Verified:** 2026-04-24
   - heading: "Popular routes from South Korea"
     body: |
       We have detailed guides for the following routes:
       
+      - [South Korea to Argentina](/pet-transport/south-korea-to-argentina/)
       - [South Korea to Australia](/pet-transport/south-korea-to-australia/)
+      - [South Korea to Austria](/pet-transport/south-korea-to-austria/)
+      - [South Korea to Bahrain](/pet-transport/south-korea-to-bahrain/)
+      - [South Korea to Bangladesh](/pet-transport/south-korea-to-bangladesh/)
+      - [South Korea to Belgium](/pet-transport/south-korea-to-belgium/)
+      - [South Korea to Bulgaria](/pet-transport/south-korea-to-bulgaria/)
+      - [South Korea to Cambodia](/pet-transport/south-korea-to-cambodia/)
       - [South Korea to Canada](/pet-transport/south-korea-to-canada/)
+      - [South Korea to Chile](/pet-transport/south-korea-to-chile/)
+      - [South Korea to China](/pet-transport/south-korea-to-china/)
+      - [South Korea to Colombia](/pet-transport/south-korea-to-colombia/)
+      - [South Korea to Costa Rica](/pet-transport/south-korea-to-costa-rica/)
+      - [South Korea to Croatia](/pet-transport/south-korea-to-croatia/)
+      - [South Korea to Cyprus](/pet-transport/south-korea-to-cyprus/)
+      - [South Korea to Czech Republic](/pet-transport/south-korea-to-czech-republic/)
+      - [South Korea to Denmark](/pet-transport/south-korea-to-denmark/)
+      - [South Korea to Ecuador](/pet-transport/south-korea-to-ecuador/)
+      - [South Korea to Egypt](/pet-transport/south-korea-to-egypt/)
+      - [South Korea to Ethiopia](/pet-transport/south-korea-to-ethiopia/)
+      - [South Korea to Finland](/pet-transport/south-korea-to-finland/)
       - [South Korea to France](/pet-transport/south-korea-to-france/)
       - [South Korea to Germany](/pet-transport/south-korea-to-germany/)
+      - [South Korea to Ghana](/pet-transport/south-korea-to-ghana/)
       - [South Korea to Hong Kong](/pet-transport/south-korea-to-hong-kong/)
+      - [South Korea to Hungary](/pet-transport/south-korea-to-hungary/)
+      - [South Korea to Ireland](/pet-transport/south-korea-to-ireland/)
+      - [South Korea to Israel](/pet-transport/south-korea-to-israel/)
+      - [South Korea to Japan](/pet-transport/south-korea-to-japan/)
+      - [South Korea to Jordan](/pet-transport/south-korea-to-jordan/)
+      - [South Korea to Kenya](/pet-transport/south-korea-to-kenya/)
+      - [South Korea to Kuwait](/pet-transport/south-korea-to-kuwait/)
+      - [South Korea to Luxembourg](/pet-transport/south-korea-to-luxembourg/)
+      - [South Korea to Malta](/pet-transport/south-korea-to-malta/)
+      - [South Korea to Mauritius](/pet-transport/south-korea-to-mauritius/)
+      - [South Korea to Morocco](/pet-transport/south-korea-to-morocco/)
+      - [South Korea to Myanmar](/pet-transport/south-korea-to-myanmar/)
+      - [South Korea to Nepal](/pet-transport/south-korea-to-nepal/)
+      - [South Korea to New Zealand](/pet-transport/south-korea-to-new-zealand/)
+      - [South Korea to Nigeria](/pet-transport/south-korea-to-nigeria/)
+      - [South Korea to Norway](/pet-transport/south-korea-to-norway/)
+      - [South Korea to Oman](/pet-transport/south-korea-to-oman/)
+      - [South Korea to Pakistan](/pet-transport/south-korea-to-pakistan/)
+      - [South Korea to Peru](/pet-transport/south-korea-to-peru/)
+      - [South Korea to Philippines](/pet-transport/south-korea-to-philippines/)
+      - [South Korea to Poland](/pet-transport/south-korea-to-poland/)
+      - [South Korea to Qatar](/pet-transport/south-korea-to-qatar/)
+      - [South Korea to Romania](/pet-transport/south-korea-to-romania/)
+      - [South Korea to Saudi Arabia](/pet-transport/south-korea-to-saudi-arabia/)
       - [South Korea to Singapore](/pet-transport/south-korea-to-singapore/)
+      - [South Korea to Slovakia](/pet-transport/south-korea-to-slovakia/)
       - [South Korea to South Africa](/pet-transport/south-korea-to-south-africa/)
+      - [South Korea to Spain](/pet-transport/south-korea-to-spain/)
+      - [South Korea to Sri Lanka](/pet-transport/south-korea-to-sri-lanka/)
+      - [South Korea to Sweden](/pet-transport/south-korea-to-sweden/)
+      - [South Korea to Taiwan](/pet-transport/south-korea-to-taiwan/)
+      - [South Korea to Tanzania](/pet-transport/south-korea-to-tanzania/)
+      - [South Korea to Turkey](/pet-transport/south-korea-to-turkey/)
       - [South Korea to United Arab Emirates](/pet-transport/south-korea-to-united-arab-emirates/)
-      - [South Korea to United Kingdom](/pet-transport/south-korea-to-united-kingdom/)
-      - [South Korea to United States](/pet-transport/south-korea-to-united-states/)
+      - [South Korea to Vietnam](/pet-transport/south-korea-to-vietnam/)
+      - [South Korea to Zimbabwe](/pet-transport/south-korea-to-zimbabwe/)
 faqs:
   - question: "What do I need to export my pet from South Korea?"
-    answer: "No dedicated export permit for household pets. An export health certificate from a government-approved veterinarian, endorsed by APQA, is required. Some destinations require specific disease test results. Required. Official export health certificate endorsed by APQA (Animal and Plant Quarantine Agency)."
+    answer: "You need an APQA-endorsed health certificate. Check destination requirements for additional permits."
   - question: "Where can I get a pet health certificate in South Korea?"
-    answer: "Any government-approved veterinarian in South Korea can issue a health certificate for pet export. The certificate then needs endorsement from Animal and Plant Quarantine Agency (APQA) before departure."
-  - question: "How long does pet export take from South Korea?"
-    answer: "Allow at least 4-8 weeks from starting preparations to travel day. Some steps require waiting periods that cannot be shortened. Start the process as early as possible."
-airlines:
-  - name: "Korean Air"
-    type: "cabin_and_cargo"
-  - name: "Asiana Airlines"
-    type: "cabin_and_cargo"
-  - name: "Japan Airlines (JAL)"
-    type: "cargo_only"
-  - name: "Cathay Pacific"
-    type: "cargo_only"
-  - name: "Singapore Airlines"
-    type: "cargo_only"
-  - name: "Emirates"
-    type: "cargo_only"
-  - name: "Lufthansa"
-    type: "cabin_and_cargo"
-  - name: "British Airways"
-    type: "cargo_only"
-  - name: "Qantas"
-    type: "cargo_only"
-  - name: "Air France"
-    type: "cabin_and_cargo"
+    answer: "Any government-approved veterinarian in South Korea can issue a health certificate. APQA endorsement is required before departure."
 outbound_routes:
-  - slug: "south-korea-to-australia"
-    destination: "Australia"
-  - slug: "south-korea-to-canada"
-    destination: "Canada"
-  - slug: "south-korea-to-france"
-    destination: "France"
-  - slug: "south-korea-to-germany"
-    destination: "Germany"
-  - slug: "south-korea-to-hong-kong"
-    destination: "Hong Kong"
-  - slug: "south-korea-to-singapore"
-    destination: "Singapore"
-  - slug: "south-korea-to-south-africa"
-    destination: "South Africa"
-  - slug: "south-korea-to-united-arab-emirates"
-    destination: "United Arab Emirates"
-  - slug: "south-korea-to-united-kingdom"
-    destination: "United Kingdom"
-  - slug: "south-korea-to-united-states"
-    destination: "United States"
 ---
