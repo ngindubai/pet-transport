@@ -1,7 +1,7 @@
 ---
 title: "Pet Insurance for International Moves: What to Buy, What it Covers, and When it Kicks In"
 description: "Moving internationally with a pet creates insurance gaps. What policies cover during transit, quarantine, and the first months in a new country -- and what to look for."
-date: "2026-06-21"
+date: "2026-05-28"
 type: "blog"
 author: "Gareth - Founder, PetTransportGlobal"
 slug: "pet-insurance-for-international-moves"
@@ -22,7 +22,7 @@ faqs:
     answer: "No. Pet insurance is well-established in the UK, USA, Australia, Western Europe, and parts of Asia. In many African countries, Middle Eastern countries, and parts of Latin America and Southeast Asia, specialist pet insurance is limited or unavailable. In these destinations, the alternative is maintaining a dedicated emergency fund for veterinary costs."
 ---
 
-International pet relocation creates an insurance gap that most owners do not notice until something goes wrong. Your current policy may not cover transit. Your new country may not have the same insurance products you are used to. And quarantine costs -- which can run to thousands of pounds -- are almost never covered.
+International pet relocation creates an insurance gap that most owners do not notice until something goes wrong. Your current policy may not cover transit. Your new country may not have the same insurance products you are used to. And quarantine costs — which can run to thousands of pounds — are almost never covered.
 
 ## The Transit Gap
 
@@ -62,4 +62,4 @@ For destinations where insurance is unavailable or expensive: maintain a dedicat
 
 ---
 
-*Sources: UK Association of British Insurers pet insurance guidance; comparative international pet insurance market research. Data current as of June 2026.*
+*Sources: UK Association of British Insurers pet insurance guidance; comparative international pet insurance market research. Data current as of May 2026.*

@@ -1,7 +1,7 @@
 ---
 title: "CITES Permits for Exotic Pets: What International Travellers Need to Know"
 description: "If your pet is a species listed under CITES Appendix I, II, or III, you need export and import permits for international travel. Guide to what CITES covers, how to apply, and common mistakes."
-date: "2026-06-09"
+date: "2026-05-28"
 type: "blog"
 author: "Gareth - Founder, PetTransportGlobal"
 slug: "cites-permits-exotic-pets"
@@ -23,16 +23,16 @@ faqs:
     answer: "It depends on the species and its CITES status. Grey parrots (Psittacus erithacus) are CITES Appendix I and require both export and import permits. Many other parrot species are Appendix II and require at minimum an export permit. The permits must be obtained before travel. Applications can take 3-6 months for some species and jurisdictions."
 ---
 
-Most people relocating with dogs and cats do not encounter CITES. But if your companion animal is a parrot, tortoise, chameleon, monitor lizard, iguana, or any other non-domestic species, there is a reasonable chance it is covered by the Convention on International Trade in Endangered Species (CITES) -- and moving it internationally without the right permits is a criminal offence in most countries.
+Most people relocating with dogs and cats do not encounter CITES. But if your companion animal is a parrot, tortoise, chameleon, monitor lizard, iguana, or any other non-domestic species, there is a reasonable chance it is covered by the Convention on International Trade in Endangered Species (CITES) — and moving it internationally without the right permits is a criminal offence in most countries.
 
 ## What CITES Is
 
-CITES is an international treaty with 183 signatory countries. It regulates international trade in specimens of species that are threatened or may become threatened. "Trade" in CITES terms includes non-commercial movement -- relocating your own pet counts.
+CITES is an international treaty with 183 signatory countries. It regulates international trade in specimens of species that are threatened or may become threatened. "Trade" in CITES terms includes non-commercial movement — relocating your own pet counts.
 
 Species are listed in three appendices:
 
 | Appendix | Status | Permits Required |
-|----------|--------|-----------------|
+|----------|--------|------------------|
 | I | Threatened with extinction | Export permit + import permit (non-commercial) |
 | II | Not threatened but regulated | Export permit (import varies by country) |
 | III | Locally protected in some countries | Certificate of origin / export permit |
@@ -40,7 +40,7 @@ Species are listed in three appendices:
 ## Common Pet Species That Are CITES-Listed
 
 | Species | CITES Status |
-|---------|-------------|
+|---------|--------------|
 | African Grey Parrot | Appendix I |
 | Blue-fronted Amazon | Appendix II |
 | Most other Amazon species | Appendix II |
@@ -48,7 +48,6 @@ Species are listed in three appendices:
 | Cockatoos (most species) | Appendix I or II |
 | Hermann's Tortoise | Appendix II |
 | Russian Tortoise | Appendix II |
-| Spur-thighed Tortoise | Appendix II |
 | Chameleons (most species) | Appendix II |
 | Monitor Lizards (most species) | Appendix II |
 | Ball Python | Appendix II |
@@ -74,7 +73,7 @@ Species are listed in three appendices:
 
 ## Application Timelines
 
-CITES permit applications take **3-6 months** for Appendix I species in some jurisdictions. Start early. Applications require documentation of legal acquisition -- captive breeding certificates, original purchase receipts, and in some cases DNA testing or ring numbers.
+CITES permit applications take **3-6 months** for Appendix I species in some jurisdictions. Start early. Applications require documentation of legal acquisition — captive breeding certificates, original purchase receipts, and in some cases DNA testing or ring numbers.
 
 ## If You Do Not Have a Permit
 
@@ -87,4 +86,4 @@ Do not improvise or assume permits are not needed. Check first.
 
 ---
 
-*Sources: CITES official website (cites.org); APHA CITES permit guidance; US Fish and Wildlife Service CITES import/export information. Data current as of June 2026.*
+*Sources: CITES official website (cites.org); APHA CITES permit guidance; US Fish and Wildlife Service CITES import/export information. Data current as of May 2026.*
