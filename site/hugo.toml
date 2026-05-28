@@ -10,7 +10,11 @@ title = "Pet Transport Global | International Pet Transport"
 enableRobotsTXT = true
 enableGitInfo = false
 timeout = "120s"
-buildFuture = true
+# NOTE: buildFuture was previously true, causing future-dated pages to
+# be published with unreliable lastmod timestamps in the sitemap.
+# Set to false so only pages dated today or earlier are built.
+# Pages with future dates should have their dates corrected in frontmatter.
+buildFuture = false
 
 # Taxonomies disabled — we use section-based routing
 [taxonomies]
