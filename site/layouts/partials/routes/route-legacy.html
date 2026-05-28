@@ -1,244 +1,319 @@
 {{/*
-  route-legacy.html — Preserved original single-template layout.
-  Called by routes/single.html when template_variant is absent or "legacy".
-  All existing route pages without template_variant in front matter render through this.
+  route-legacy.html — Legacy template using tpl-legacy-* CSS classes.
+  Full col-9/col-3 layout with sticky sidebar. Jumbotron hero.
+  All styling from route-templates.css. No Google Fonts. No custom spacing overrides.
 */}}
 {{ $rd := .Params.route_data }}
 
-{{/* Check for route-specific hero: static/images/routes/route-{slug}.jpg */}}
 {{ $specificPath := printf "static/images/routes/route-%s.jpg" .File.ContentBaseName }}
 {{ $heroImgUrl := cond (os.FileExists $specificPath) (printf "/images/routes/route-%s.jpg" .File.ContentBaseName) "/img/jumbotron.jpg" }}
 
-{{/* Jumbotron Hero */}}
-<div class="jumbotron jumbotron-fluid" style="background-image:url('{{ $heroImgUrl }}');">
+<article class="tpl-route-legacy">
+
+{{/* ── HERO ──────────────────────────────────────────────────────────── */}}
+<div class="tpl-legacy-hero">
     <div class="container">
-        <div class="jumbo-heading" data-aos="fade-up">
+        <nav aria-label="breadcrumb" class="mb-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/" style="color:rgba(255,255,255,.6);font-size:.8rem;">Home</a></li>
+                <li class="breadcrumb-item"><a href="/pet-transport/routes/" style="color:rgba(255,255,255,.6);font-size:.8rem;">Routes</a></li>
+                <li class="breadcrumb-item active" style="color:rgba(255,255,255,.4);font-size:.8rem;">{{ .Params.origin_country | default .Params.origin_name }} to {{ .Params.destination_country | default .Params.destination_name }}</li>
+            </ol>
+        </nav>
+        <div data-aos="fade-up">
+            {{ if $rd }}
             <div class="mb-3">
-                <span class="badge bg-primary me-1 p-2" style="font-size:1rem;">{{ $rd.origin.code }}</span>
-                <span style="font-size:1.5rem;color:#fff;" aria-hidden="true">&rarr;</span>
-                <span class="badge bg-primary ms-1 p-2" style="font-size:1rem;">{{ $rd.destination.code }}</span>
+                <span class="badge bg-primary me-1 p-2" style="font-size:.85rem;">{{ $rd.origin.code }}</span>
+                <span style="font-size:1.3rem;color:#fff;" aria-hidden="true">&rarr;</span>
+                <span class="badge bg-primary ms-1 p-2" style="font-size:.85rem;">{{ $rd.destination.code }}</span>
             </div>
-            <h1>{{ .Params.content.h1 | default (printf "Pet Transport: %s to %s" .Params.origin_name .Params.destination_name) }}</h1>
-            <div class="mt-2">
-                {{ with $rd.route_complexity }}<span class="badge bg-secondary me-2">{{ . | title }} complexity</span>{{ end }}
-                {{ with $rd.estimated_timeline_weeks }}<span class="badge bg-secondary">{{ . }} weeks typical</span>{{ end }}
+            {{ end }}
+            <h1 class="tpl-legacy-h1">{{ .Title }}</h1>
+            <div class="tpl-legacy-meta">
+                {{ if $rd }}
+                {{ with $rd.route_complexity }}<span class="tpl-legacy-tag">{{ . | title }} complexity</span>{{ end }}
+                {{ with $rd.estimated_timeline_weeks }}<span class="tpl-legacy-tag">{{ . }} weeks typical</span>{{ end }}
+                {{ end }}
+                {{ with .Params.route_complexity }}<span class="tpl-legacy-tag tpl-legacy-tag-amber">{{ . | title }} complexity</span>{{ end }}
             </div>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/">Home</a></li>
-                    <li class="breadcrumb-item"><a href="/pet-transport/routes/">Routes</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">{{ .Params.origin_name }} to {{ .Params.destination_name }}</li>
-                </ol>
-            </nav>
         </div>
     </div>
 </div>
 
-{{/* Page Content */}}
+{{/* ── PAGE BODY ──────────────────────────────────────────────────────── */}}
 <div class="page">
     <div class="container">
         <div class="row">
-            {{/* Main content column */}}
+
+            {{/* ── MAIN CONTENT ──────────────────────────────────────────── */}}
             <div class="col-lg-9 page-with-sidebar">
 
-                {{/* Quick quote CTA */}}
-                <div class="card accent-left mb-4 p-3 bg-light">
-                    <p class="mb-0">Planning to move your pet from {{ .Params.origin_name }} to {{ .Params.destination_name }}? <a href="#quote-form" class="btn btn-primary btn-sm ms-2">Get Your Quote</a></p>
+                {{/* Quick CTA bar */}}
+                <div class="tpl-legacy-section" style="background:#1e3a5f;border-radius:var(--ptg-radius);padding:1rem 1.5rem;margin-bottom:1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;">
+                    <p class="mb-0" style="color:rgba(255,255,255,.85);font-size:.9rem;">Planning this move? We can guide you through every step.</p>
+                    <a href="#quote-form" class="btn btn-secondary btn-sm">Get Your Quote</a>
                 </div>
+
+                {{/* CASE 1: Structured route_data (old YAML-driven pages) */}}
+                {{ if $rd }}
 
                 {{/* Overview */}}
                 {{ with .Params.content.overview }}
-                <div class="mb-5">
+                <div class="tpl-legacy-section mb-4">
                     {{ . | markdownify }}
                 </div>
                 {{ end }}
 
-                {{/* Step-by-step timeline */}}
+                {{/* Step timeline */}}
                 {{ with $rd.timeline_steps }}
-                <div id="timeline" class="mb-5">
+                <div class="tpl-legacy-section mb-4" id="timeline">
                     <h2>Step-by-Step Process</h2>
-                    <hr class="small-divider left">
                     {{ range . }}
-                    <div class="card mb-3 p-3">
-                        <div class="d-flex align-items-start">
-                            <div class="me-3">
-                                <span class="badge bg-primary rounded-circle p-2" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;">{{ .step }}</span>
-                            </div>
-                            <div>
-                                <h5 class="mb-1">{{ .action }}</h5>
-                                <p class="text-muted mb-0"><i class="fas fa-clock me-1"></i>{{ .timing }}</p>
-                                {{ with .responsible }}<p class="mb-0" style="font-size:0.85em;"><strong>Responsible:</strong> {{ . }}</p>{{ end }}
-                            </div>
+                    <div class="tpl-legacy-step">
+                        <div class="tpl-legacy-step-num" aria-hidden="true">{{ .step }}</div>
+                        <div class="tpl-legacy-step-body">
+                            <span class="tpl-legacy-step-action">{{ .action }}</span>
+                            <span class="tpl-legacy-step-timing"><i class="fas fa-clock me-1"></i>{{ .timing }}</span>
+                            {{ with .responsible }}<span style="font-size:.75rem;color:#9a9a9a;font-style:italic;">{{ . }}</span>{{ end }}
                         </div>
                     </div>
                     {{ end }}
                 </div>
                 {{ end }}
 
-                {{/* Destination import requirements */}}
+                {{/* Import requirements */}}
                 {{ with $rd.destination.import_requirements }}
-                <div id="import-requirements" class="mb-5">
+                <div class="tpl-legacy-section mb-4" id="import-requirements">
                     <h2>{{ $rd.destination.country }} Import Requirements</h2>
-                    <hr class="small-divider left">
-                    <p>What {{ $rd.destination.country }} requires for pets entering the country.</p>
                     <div class="row">
                         {{ with .microchip }}
-                        <div class="col-md-6 mb-3"><div class="card p-3 h-100"><h5><i class="flaticon-pet me-2"></i>Microchip</h5><p class="mb-0">{{ . }}</p></div></div>
+                        <div class="col-md-6 mb-3"><div class="tpl-legacy-req-card h-100"><h5><i class="flaticon-pet me-2"></i>Microchip</h5><p>{{ . }}</p></div></div>
                         {{ end }}
                         {{ with .rabies_vaccination }}
-                        <div class="col-md-6 mb-3"><div class="card p-3 h-100"><h5><i class="flaticon-syringe me-2"></i>Rabies Vaccination</h5><p class="mb-0">{{ . }}</p></div></div>
+                        <div class="col-md-6 mb-3"><div class="tpl-legacy-req-card h-100"><h5><i class="flaticon-syringe me-2"></i>Rabies Vaccination</h5><p>{{ . }}</p></div></div>
                         {{ end }}
                         {{ with .titre_test }}
-                        <div class="col-md-6 mb-3"><div class="card p-3 h-100"><h5><i class="flaticon-veterinarian-hospital me-2"></i>Rabies Titre Test</h5><p class="mb-0">{{ . }}</p></div></div>
+                        <div class="col-md-6 mb-3"><div class="tpl-legacy-req-card h-100"><h5>Rabies Titre Test</h5><p>{{ . }}</p></div></div>
                         {{ end }}
                         {{ with .quarantine }}
-                        <div class="col-md-6 mb-3"><div class="card p-3 h-100"><h5><i class="flaticon-pet-shelter me-2"></i>Quarantine</h5><p class="mb-0">{{ . }}</p></div></div>
+                        <div class="col-md-6 mb-3"><div class="tpl-legacy-req-card tpl-legacy-req-card--warn h-100"><h5>Quarantine</h5><p>{{ . }}</p></div></div>
                         {{ end }}
                         {{ with .import_permit }}
-                        <div class="col-md-6 mb-3"><div class="card p-3 h-100"><h5><i class="fas fa-file-alt me-2"></i>Import Permit</h5><p class="mb-0">{{ . }}</p></div></div>
+                        <div class="col-md-6 mb-3"><div class="tpl-legacy-req-card h-100"><h5>Import Permit</h5><p>{{ . }}</p></div></div>
                         {{ end }}
                         {{ with .health_certificate }}
-                        <div class="col-md-6 mb-3"><div class="card p-3 h-100"><h5><i class="fas fa-notes-medical me-2"></i>Health Certificate</h5><p class="mb-0">{{ . }}</p></div></div>
+                        <div class="col-md-6 mb-3"><div class="tpl-legacy-req-card h-100"><h5>Health Certificate</h5><p>{{ . }}</p></div></div>
                         {{ end }}
                     </div>
                 </div>
                 {{ end }}
 
-                {{/* Origin export requirements */}}
+                {{/* Export requirements */}}
                 {{ with $rd.origin.export_requirements }}
-                <div id="export-requirements" class="mb-5">
+                <div class="tpl-legacy-section mb-4" id="export-requirements">
                     <h2>Exporting from {{ $rd.origin.country }}</h2>
-                    <hr class="small-divider left">
-                    <p>What you need from {{ $rd.origin.country }} before your pet can leave.</p>
                     <div class="row">
-                        {{ with .export_permit }}
-                        <div class="col-md-6 mb-3"><div class="card p-3 h-100"><h5>Export Permit</h5><p class="mb-0">{{ . }}</p></div></div>
-                        {{ end }}
-                        {{ with .vet_inspection }}
-                        <div class="col-md-6 mb-3"><div class="card p-3 h-100"><h5>Veterinary Inspection</h5><p class="mb-0">{{ . }}</p></div></div>
-                        {{ end }}
-                        {{ with .endorsement }}
-                        <div class="col-md-6 mb-3"><div class="card p-3 h-100"><h5>Government Endorsement</h5><p class="mb-0">{{ . }}</p></div></div>
-                        {{ end }}
+                        {{ with .export_permit }}<div class="col-md-6 mb-3"><div class="tpl-legacy-req-card h-100"><h5>Export Permit</h5><p>{{ . }}</p></div></div>{{ end }}
+                        {{ with .vet_inspection }}<div class="col-md-6 mb-3"><div class="tpl-legacy-req-card h-100"><h5>Vet Inspection</h5><p>{{ . }}</p></div></div>{{ end }}
+                        {{ with .endorsement }}<div class="col-md-6 mb-3"><div class="tpl-legacy-req-card h-100"><h5>Government Endorsement</h5><p>{{ . }}</p></div></div>{{ end }}
                     </div>
                 </div>
                 {{ end }}
 
                 {{/* Cost factors */}}
                 {{ with $rd.cost_factors }}
-                <div id="costs" class="mb-5">
+                <div class="tpl-legacy-section mb-4" id="costs">
                     <h2>Cost Factors</h2>
-                    <hr class="small-divider left">
-                    <p>Costs vary depending on pet size, transport method, and whether you use a transport agent.</p>
                     <ul class="custom ps-0">
-                        {{ range . }}
-                        <li>{{ . }}</li>
-                        {{ end }}
+                        {{ range . }}<li>{{ . }}</li>{{ end }}
                     </ul>
                 </div>
                 {{ end }}
 
                 {{/* Breed restrictions */}}
                 {{ with $rd.destination.breed_restrictions }}
-                <div id="breed-restrictions" class="mb-5">
+                <div class="tpl-legacy-section mb-4" id="breed-restrictions">
                     <h2>Breed Restrictions</h2>
-                    <hr class="small-divider left">
-                    <p>{{ $rd.destination.country }} restricts or bans the following breeds from entry:</p>
                     <ul class="checkmark ps-0">
-                        {{ range . }}
-                        <li>{{ . }}</li>
-                        {{ end }}
+                        {{ range . }}<li>{{ . }}</li>{{ end }}
                     </ul>
-                    <div class="alert alert-primary mt-3">
-                        <i class="fas fa-exclamation-triangle me-2"></i>If your pet is a restricted breed or a mix involving a restricted breed, contact us before making travel arrangements.
+                    <div class="tpl-legacy-warning mt-3">
+                        <i class="fas fa-exclamation-triangle me-2"></i>Contact us before booking if your pet is a restricted breed.
                     </div>
                 </div>
                 {{ end }}
 
                 {{/* Key warnings */}}
                 {{ with $rd.key_warnings }}
-                <div id="warnings" class="mb-5">
+                <div class="tpl-legacy-section mb-4" id="warnings">
                     <h2>Important Warnings</h2>
-                    <hr class="small-divider left">
                     {{ range . }}
-                    <div class="alert alert-secondary mb-2">
-                        <i class="fas fa-exclamation-circle me-2"></i>{{ . }}
-                    </div>
+                    <div class="tpl-legacy-warning"><i class="fas fa-exclamation-circle me-2"></i>{{ . }}</div>
                     {{ end }}
                 </div>
                 {{ end }}
 
-                {{/* Content sections from Wordsmith */}}
+                {{/* Content sections */}}
                 {{ with .Params.content.sections }}
                 {{ range . }}
-                <div class="mb-5">
-                    {{ with .heading }}<h2>{{ . }}</h2><hr class="small-divider left">{{ end }}
+                <div class="tpl-legacy-section mb-4">
+                    {{ with .heading }}<h2>{{ . }}</h2>{{ end }}
                     {{ .body | markdownify }}
                 </div>
                 {{ end }}
                 {{ end }}
 
-                {{/* FAQs */}}
+                {{/* CASE 2: Prose-only pages (Chunk 13 style — plain markdown body, structured front matter) */}}
+                {{ else }}
+
+                {{/* Requirements at a glance bar */}}
+                {{ if or .Params.quarantine_required .Params.route_complexity }}
+                <div style="background:#f4f4f4;border-radius:var(--ptg-radius);padding:1rem 1.5rem;margin-bottom:1.5rem;display:flex;flex-wrap:wrap;gap:1.25rem;">
+                    {{ with .Params.route_complexity }}
+                    <div style="display:flex;flex-direction:column;">
+                        <span style="font-size:.62rem;text-transform:uppercase;letter-spacing:.1em;color:#9a9a9a;font-family:'Montserrat',sans-serif;font-weight:700;">Complexity</span>
+                        <span style="font-family:'Montserrat',sans-serif;font-weight:700;color:#222;font-size:.9rem;">{{ . | title }}</span>
+                    </div>
+                    {{ end }}
+                    {{ with .Params.min_weeks }}
+                    <div style="display:flex;flex-direction:column;">
+                        <span style="font-size:.62rem;text-transform:uppercase;letter-spacing:.1em;color:#9a9a9a;font-family:'Montserrat',sans-serif;font-weight:700;">Min. Timeline</span>
+                        <span style="font-family:'Montserrat',sans-serif;font-weight:700;color:#222;font-size:.9rem;">{{ . }} weeks</span>
+                    </div>
+                    {{ end }}
+                    {{ if .Params.quarantine_required }}
+                    <div style="display:flex;flex-direction:column;">
+                        <span style="font-size:.62rem;text-transform:uppercase;letter-spacing:.1em;color:#9a9a9a;font-family:'Montserrat',sans-serif;font-weight:700;">Quarantine</span>
+                        <span style="font-family:'Montserrat',sans-serif;font-weight:700;color:#e8913a;font-size:.9rem;">{{ .Params.quarantine_days | default "Required" }}</span>
+                    </div>
+                    {{ end }}
+                    {{ if .Params.titre_test_required }}
+                    <div style="display:flex;flex-direction:column;">
+                        <span style="font-size:.62rem;text-transform:uppercase;letter-spacing:.1em;color:#9a9a9a;font-family:'Montserrat',sans-serif;font-weight:700;">Titre Test</span>
+                        <span style="font-family:'Montserrat',sans-serif;font-weight:700;color:#e8913a;font-size:.9rem;">Required</span>
+                    </div>
+                    {{ end }}
+                </div>
+                {{ end }}
+
+                {{/* Route-specific approved entry airports */}}
+                {{ with .Params.route_data }}
+                {{ with .approved_entry_airports }}
+                <div class="tpl-legacy-section mb-4">
+                    <h2>Approved Entry Airports</h2>
+                    <ul class="custom ps-0">
+                        {{ range . }}<li>{{ . }}</li>{{ end }}
+                    </ul>
+                </div>
+                {{ end }}
+                {{ end }}
+
+                {{/* Main prose body */}}
+                <div class="tpl-legacy-section mb-4">
+                    {{ .Content }}
+                </div>
+
+                {{ end }}
+
+                {{/* FAQs — both cases */}}
                 {{ with .Params.faqs }}
-                {{ partial "faq-accordion.html" (dict "faqs" .) }}
+                <div class="tpl-legacy-section mb-4">
+                    <h2>Frequently Asked Questions</h2>
+                    {{ partial "faq-accordion.html" (dict "faqs" .) }}
+                </div>
+                {{ end }}
+
+                {{/* Official links */}}
+                {{ with .Params.links }}
+                {{ if kindIs "slice" . }}
+                <div class="tpl-legacy-section mb-4">
+                    <h2>Official Resources</h2>
+                    <ul class="custom ps-0">
+                        {{ range . }}<li><a href="{{ .url }}" target="_blank" rel="noopener">{{ .label }}</a></li>{{ end }}
+                    </ul>
+                </div>
+                {{ end }}
                 {{ end }}
 
             </div>
 
-            {{/* Sidebar */}}
+            {{/* ── SIDEBAR ──────────────────────────────────────────────── */}}
             <div class="col-lg-3">
                 <div class="sidebar sticky-top" style="top:100px;">
-                    {{/* Quick nav */}}
-                    <div class="widget1 bg-light p-3 rounded mb-4">
-                        <h5>On this page</h5>
-                        <ul class="list-unstyled colored-icons">
-                            {{ with $rd.timeline_steps }}<li><a href="#timeline"><i class="fas fa-list-ol me-2"></i>Step-by-step process</a></li>{{ end }}
+
+                    {{/* Route summary card */}}
+                    <div class="widget1 bg-primary text-light p-3 rounded mb-3">
+                        <h5 class="text-light" style="font-family:'Montserrat',sans-serif;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;">Route Summary</h5>
+                        <ul class="list-unstyled text-light mb-3" style="font-size:.85rem;">
+                            <li class="mb-1"><strong>From:</strong> {{ .Params.origin_country | default .Params.origin_name }}</li>
+                            <li class="mb-1"><strong>To:</strong> {{ .Params.destination_country | default .Params.destination_name }}</li>
+                            {{ with .Params.route_complexity }}<li class="mb-1"><strong>Complexity:</strong> {{ . | title }}</li>{{ end }}
+                            {{ with .Params.min_weeks }}<li class="mb-1"><strong>Min. timeline:</strong> {{ . }} weeks</li>{{ end }}
+                            {{ if .Params.quarantine_required }}<li class="mb-1"><strong>Quarantine:</strong> {{ .Params.quarantine_days | default "Required" }}</li>{{ end }}
+                        </ul>
+                        <a href="#quote-form" class="btn btn-secondary btn-sm w-100">Get a Quote</a>
+                    </div>
+
+                    {{/* Approved labs if titre test required */}}
+                    {{ with .Params.route_data }}
+                    {{ with .approved_labs }}
+                    <div class="widget1 bg-light p-3 rounded mb-3">
+                        <h5 style="font-family:'Montserrat',sans-serif;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:#1a6b4a;">Approved Titre Test Labs</h5>
+                        <ul class="list-unstyled mb-0" style="font-size:.82rem;">
+                            {{ range . }}<li class="mb-1">{{ . }}</li>{{ end }}
+                        </ul>
+                    </div>
+                    {{ end }}
+
+                    {{/* Airlines */}}
+                    {{ with .airlines }}
+                    <div class="widget1 bg-light p-3 rounded mb-3">
+                        <h5 style="font-family:'Montserrat',sans-serif;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:#1a6b4a;">Airlines on This Route</h5>
+                        <ul class="list-unstyled mb-0" style="font-size:.82rem;">
+                            {{ range . }}<li class="mb-1">{{ . }}</li>{{ end }}
+                        </ul>
+                    </div>
+                    {{ end }}
+                    {{ end }}
+
+                    {{/* On this page nav — structured pages */}}
+                    {{ if $rd }}
+                    <div class="widget1 bg-light p-3 rounded mb-3">
+                        <h5 style="font-family:'Montserrat',sans-serif;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:#1a6b4a;">On This Page</h5>
+                        <ul class="list-unstyled colored-icons mb-0" style="font-size:.82rem;">
+                            {{ with $rd.timeline_steps }}<li><a href="#timeline"><i class="fas fa-list-ol me-2"></i>Step-by-step</a></li>{{ end }}
                             {{ with $rd.destination.import_requirements }}<li><a href="#import-requirements"><i class="fas fa-file-import me-2"></i>Import requirements</a></li>{{ end }}
                             {{ with $rd.origin.export_requirements }}<li><a href="#export-requirements"><i class="fas fa-file-export me-2"></i>Export requirements</a></li>{{ end }}
-                            {{ with $rd.cost_factors }}<li><a href="#costs"><i class="fas fa-pound-sign me-2"></i>Cost factors</a></li>{{ end }}
-                            {{ with $rd.destination.breed_restrictions }}<li><a href="#breed-restrictions"><i class="fas fa-ban me-2"></i>Breed restrictions</a></li>{{ end }}
-                            {{ with $rd.key_warnings }}<li><a href="#warnings"><i class="fas fa-exclamation-triangle me-2"></i>Warnings</a></li>{{ end }}
+                            {{ with $rd.cost_factors }}<li><a href="#costs"><i class="fas fa-pound-sign me-2"></i>Costs</a></li>{{ end }}
                             <li><a href="#quote-form"><i class="fas fa-envelope me-2"></i>Get a quote</a></li>
                         </ul>
                     </div>
+                    {{ end }}
 
-                    {{/* Route summary */}}
-                    <div class="widget1 bg-primary text-light p-3 rounded mb-4" style="border-radius:8px !important;">
-                        <h5 class="text-light">Route summary</h5>
-                        <ul class="list-unstyled text-light">
-                            <li class="mb-2"><strong>From:</strong> {{ $rd.origin.country }}</li>
-                            <li class="mb-2"><strong>To:</strong> {{ $rd.destination.country }}</li>
-                            {{ with $rd.route_complexity }}<li class="mb-2"><strong>Complexity:</strong> {{ . | title }}</li>{{ end }}
-                            {{ with $rd.estimated_timeline_weeks }}<li class="mb-2"><strong>Timeline:</strong> {{ . }} weeks</li>{{ end }}
-                        </ul>
-                        <a href="#quote-form" class="btn btn-secondary btn-block mt-2">Get a quote</a>
-                    </div>
-
-                    {{/* Related routes */}}
+                    {{/* Sidebar related routes — old YAML style */}}
                     {{ with .Params.links }}
+                    {{ if kindIs "map" . }}
                     {{ with .sideways }}
-                    <div class="widget1 bg-light p-3 rounded mb-4">
-                        <h5>Related Routes</h5>
-                        <ul class="list-unstyled">
-                            {{ range . }}
-                            <li class="mb-2"><a href="{{ .url }}">{{ .text }}</a></li>
-                            {{ end }}
+                    <div class="widget1 bg-light p-3 rounded mb-3">
+                        <h5 style="font-family:'Montserrat',sans-serif;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:#1a6b4a;">Related Routes</h5>
+                        <ul class="list-unstyled mb-0" style="font-size:.82rem;">
+                            {{ range . }}<li class="mb-1"><a href="{{ .url }}">{{ .text }}</a></li>{{ end }}
                         </ul>
                     </div>
                     {{ end }}
                     {{ with .upward }}
-                    <div class="widget1 bg-light p-3 rounded mb-4">
-                        <h5>Country Guides</h5>
-                        <ul class="list-unstyled">
-                            {{ range . }}
-                            <li class="mb-2"><a href="{{ .url }}">{{ .text }}</a></li>
-                            {{ end }}
+                    <div class="widget1 bg-light p-3 rounded mb-3">
+                        <h5 style="font-family:'Montserrat',sans-serif;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:#1a6b4a;">Country Guides</h5>
+                        <ul class="list-unstyled mb-0" style="font-size:.82rem;">
+                            {{ range . }}<li class="mb-1"><a href="{{ .url }}">{{ .text }}</a></li>{{ end }}
                         </ul>
                     </div>
                     {{ end }}
                     {{ end }}
+                    {{ end }}
+
                 </div>
-            </div>
+            </div>{{/* end sidebar */}}
 
         </div>
     </div>
@@ -246,3 +321,5 @@
 
 {{/* Quote form */}}
 {{ partial "quote-form.html" . }}
+
+</article>
