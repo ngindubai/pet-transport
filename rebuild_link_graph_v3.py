@@ -257,10 +257,12 @@ def update_country_guide(filepath, routes):
     new_block = build_routes_incoming_yaml(routes)
 
     if "routes_incoming:" in content:
-        # Replace the existing block
-        # Matches routes_incoming: through to the next top-level YAML key or closing ---
+        # Replace the existing block.
+        # BUG FIX: must stop at \n--- (closing frontmatter delimiter) as well as
+        # at the next top-level YAML key. Previously \Z consumed the closing ---
+        # which caused Hugo to error with "EOF looking for end YAML front matter delimiter".
         pattern = re.compile(
-            r'^routes_incoming:.*?(?=^[a-z_]+:|\Z)',
+            r'^routes_incoming:.*?(?=^[a-z_]+:|\n---|\Z)',
             re.MULTILINE | re.DOTALL,
         )
         if pattern.search(content):
