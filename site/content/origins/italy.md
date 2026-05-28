@@ -1,94 +1,100 @@
 ---
-title: "Shipping Your Pet from Italy | Export Guide"
-description: "Complete guide to exporting your pet from Italy. Export requirements, airlines, and route guides for 10 international destinations."
+title: "Italy Pet Export Guide"
+description: "Complete guide to exporting your pet from Italy. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"
 author: "Gareth - Founder, PetTransportGlobal"
 country_name: "Italy"
 country_code: "IT"
-content:
-  h1: "Pet Transport from Italy"
-  overview: |
-    Italy is an EU member state. The Ministry of Health administers pet export documentation. For EU travel: EU Pet Passport. For non-EU destinations: an endorsed AHC. We cover 10 routes from Italy.
+overview: |
+  Italy uses the EU Pet Travel Scheme. For non-EU destinations, a Ministry of Health-endorsed AHC is required.
 export_requirements:
-  export_permit: "EU Pet Travel Scheme applies. EU Pet Passport for EU/EFTA travel. Non-EU destinations require EU AHC endorsed by the Ministry of Health."
-  health_certificate: "EU AHC for non-EU travel. EU Pet Passport for EU/EFTA travel."
-  endorsement: "Ministry of Health endorsement required for non-EU destinations"
-  issuing_authority: "Ministero della Salute (Ministry of Health)"
-  last_verified: "2026-04-23"
+  export_permit: "Italy uses the EU Pet Travel Scheme. EU Pet Passport for EU/EFTA travel. For non-EU destinations, an EU AHC endorsed by the Ministry of Health is required."
+  issuing_authority: "Ministry of Health (Italy)"
+  last_verified: "2026-04-24"
 sections:
   - heading: "Export requirements from Italy"
     body: |
-      **Export Permit:** EU Pet Travel Scheme applies. EU Pet Passport for EU/EFTA travel. Non-EU destinations require EU AHC endorsed by the Ministry of Health.
+      **Export Requirements:** Italy uses the EU Pet Travel Scheme. EU Pet Passport for EU/EFTA travel. For non-EU destinations, an EU AHC endorsed by the Ministry of Health is required.
 
-      **Health Certificate:** EU AHC for non-EU travel. EU Pet Passport for EU/EFTA travel.
+      **Issuing Authority:** Ministry of Health (Italy)
 
-      **Government Endorsement:** Ministry of Health endorsement required for non-EU destinations
-
-      **Issuing Authority:** Ministero della Salute (Ministry of Health)
-
-      **Last Verified:** 2026-04-23
+      **Last Verified:** 2026-04-24
   - heading: "Popular routes from Italy"
     body: |
       We have detailed guides for the following routes:
       
+      - [Italy to Argentina](/pet-transport/italy-to-argentina/)
       - [Italy to Australia](/pet-transport/italy-to-australia/)
+      - [Italy to Austria](/pet-transport/italy-to-austria/)
+      - [Italy to Bahrain](/pet-transport/italy-to-bahrain/)
+      - [Italy to Bangladesh](/pet-transport/italy-to-bangladesh/)
+      - [Italy to Belgium](/pet-transport/italy-to-belgium/)
+      - [Italy to Bulgaria](/pet-transport/italy-to-bulgaria/)
+      - [Italy to Cambodia](/pet-transport/italy-to-cambodia/)
       - [Italy to Canada](/pet-transport/italy-to-canada/)
+      - [Italy to Chile](/pet-transport/italy-to-chile/)
+      - [Italy to China](/pet-transport/italy-to-china/)
+      - [Italy to Colombia](/pet-transport/italy-to-colombia/)
+      - [Italy to Costa Rica](/pet-transport/italy-to-costa-rica/)
+      - [Italy to Croatia](/pet-transport/italy-to-croatia/)
+      - [Italy to Cyprus](/pet-transport/italy-to-cyprus/)
+      - [Italy to Czech Republic](/pet-transport/italy-to-czech-republic/)
+      - [Italy to Denmark](/pet-transport/italy-to-denmark/)
+      - [Italy to Ecuador](/pet-transport/italy-to-ecuador/)
+      - [Italy to Egypt](/pet-transport/italy-to-egypt/)
+      - [Italy to Ethiopia](/pet-transport/italy-to-ethiopia/)
+      - [Italy to Finland](/pet-transport/italy-to-finland/)
       - [Italy to France](/pet-transport/italy-to-france/)
       - [Italy to Germany](/pet-transport/italy-to-germany/)
+      - [Italy to Ghana](/pet-transport/italy-to-ghana/)
+      - [Italy to Greece](/pet-transport/italy-to-greece/)
       - [Italy to Hong Kong](/pet-transport/italy-to-hong-kong/)
+      - [Italy to Hungary](/pet-transport/italy-to-hungary/)
+      - [Italy to India](/pet-transport/italy-to-india/)
+      - [Italy to Ireland](/pet-transport/italy-to-ireland/)
+      - [Italy to Israel](/pet-transport/italy-to-israel/)
+      - [Italy to Japan](/pet-transport/italy-to-japan/)
+      - [Italy to Jordan](/pet-transport/italy-to-jordan/)
+      - [Italy to Kenya](/pet-transport/italy-to-kenya/)
+      - [Italy to Kuwait](/pet-transport/italy-to-kuwait/)
+      - [Italy to Luxembourg](/pet-transport/italy-to-luxembourg/)
+      - [Italy to Malta](/pet-transport/italy-to-malta/)
+      - [Italy to Mauritius](/pet-transport/italy-to-mauritius/)
+      - [Italy to Morocco](/pet-transport/italy-to-morocco/)
+      - [Italy to Myanmar](/pet-transport/italy-to-myanmar/)
+      - [Italy to Nepal](/pet-transport/italy-to-nepal/)
+      - [Italy to Netherlands](/pet-transport/italy-to-netherlands/)
+      - [Italy to New Zealand](/pet-transport/italy-to-new-zealand/)
+      - [Italy to Nigeria](/pet-transport/italy-to-nigeria/)
+      - [Italy to Norway](/pet-transport/italy-to-norway/)
+      - [Italy to Oman](/pet-transport/italy-to-oman/)
+      - [Italy to Pakistan](/pet-transport/italy-to-pakistan/)
+      - [Italy to Peru](/pet-transport/italy-to-peru/)
+      - [Italy to Philippines](/pet-transport/italy-to-philippines/)
+      - [Italy to Poland](/pet-transport/italy-to-poland/)
+      - [Italy to Portugal](/pet-transport/italy-to-portugal/)
+      - [Italy to Qatar](/pet-transport/italy-to-qatar/)
+      - [Italy to Romania](/pet-transport/italy-to-romania/)
+      - [Italy to Saudi Arabia](/pet-transport/italy-to-saudi-arabia/)
       - [Italy to Singapore](/pet-transport/italy-to-singapore/)
+      - [Italy to Slovakia](/pet-transport/italy-to-slovakia/)
       - [Italy to South Africa](/pet-transport/italy-to-south-africa/)
+      - [Italy to Spain](/pet-transport/italy-to-spain/)
+      - [Italy to Sri Lanka](/pet-transport/italy-to-sri-lanka/)
+      - [Italy to Sweden](/pet-transport/italy-to-sweden/)
+      - [Italy to Switzerland](/pet-transport/italy-to-switzerland/)
+      - [Italy to Taiwan](/pet-transport/italy-to-taiwan/)
+      - [Italy to Tanzania](/pet-transport/italy-to-tanzania/)
+      - [Italy to Thailand](/pet-transport/italy-to-thailand/)
+      - [Italy to Turkey](/pet-transport/italy-to-turkey/)
       - [Italy to United Arab Emirates](/pet-transport/italy-to-united-arab-emirates/)
-      - [Italy to United Kingdom](/pet-transport/italy-to-united-kingdom/)
-      - [Italy to United States](/pet-transport/italy-to-united-states/)
+      - [Italy to Vietnam](/pet-transport/italy-to-vietnam/)
+      - [Italy to Zimbabwe](/pet-transport/italy-to-zimbabwe/)
 faqs:
   - question: "What do I need to export my pet from Italy?"
-    answer: "EU Pet Travel Scheme applies. EU Pet Passport for EU/EFTA travel. Non-EU destinations require EU AHC endorsed by the Ministry of Health. EU AHC for non-EU travel. EU Pet Passport for EU/EFTA travel."
+    answer: "Italy uses the EU Pet Travel Scheme. EU Pet Passport for EU/EFTA travel. For non-EU destinations, a Ministry of Health-endorsed AHC is required."
   - question: "Where can I get a pet health certificate in Italy?"
-    answer: "Any government-approved veterinarian in Italy can issue a health certificate for pet export. The certificate then needs endorsement from Ministero della Salute (Ministry of Health) before departure."
-  - question: "How long does pet export take from Italy?"
-    answer: "Allow at least 4-8 weeks from starting preparations to travel day. Some steps require waiting periods that cannot be shortened. Start the process as early as possible."
-airlines:
-  - name: "ITA Airways"
-    type: "cabin_and_cargo"
-  - name: "Lufthansa"
-    type: "cabin_and_cargo"
-  - name: "Air France"
-    type: "cabin_and_cargo"
-  - name: "British Airways"
-    type: "cargo_only"
-  - name: "KLM"
-    type: "cabin_and_cargo"
-  - name: "Emirates"
-    type: "cargo_only"
-  - name: "Singapore Airlines"
-    type: "cargo_only"
-  - name: "Qantas"
-    type: "cargo_only"
-  - name: "Delta Air Lines"
-    type: "cabin_and_cargo"
-  - name: "Etihad Airways"
-    type: "cargo_only"
+    answer: "Any government-approved veterinarian in Italy can issue a health certificate. The certificate needs Ministry of Health endorsement for non-EU destinations."
 outbound_routes:
-  - slug: "italy-to-australia"
-    destination: "Australia"
-  - slug: "italy-to-canada"
-    destination: "Canada"
-  - slug: "italy-to-france"
-    destination: "France"
-  - slug: "italy-to-germany"
-    destination: "Germany"
-  - slug: "italy-to-hong-kong"
-    destination: "Hong Kong"
-  - slug: "italy-to-singapore"
-    destination: "Singapore"
-  - slug: "italy-to-south-africa"
-    destination: "South Africa"
-  - slug: "italy-to-united-arab-emirates"
-    destination: "United Arab Emirates"
-  - slug: "italy-to-united-kingdom"
-    destination: "United Kingdom"
-  - slug: "italy-to-united-states"
-    destination: "United States"
 ---

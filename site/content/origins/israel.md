@@ -6,60 +6,100 @@ layout: "single"
 author: "Gareth - Founder, PetTransportGlobal"
 country_name: "Israel"
 country_code: "IL"
-content:
-  h1: "Pet Transport from Israel"
-  overview: |
-    Pet export from Israel requires an IVS-endorsed health certificate. Some destinations also require a titre test. We cover 0 routes from Israel.
+overview: |
+  Pet export from Israel requires a VSAH-endorsed health certificate.
 export_requirements:
-  export_permit: "No formal export permit required for household pets. An official health certificate from a licensed veterinarian, endorsed by the Israeli Veterinary Services (IVS), is required for international travel."
-  health_certificate: "Official health certificate endorsed by IVS. Must meet destination country format and requirements."
-  endorsement: "Israeli Veterinary Services (IVS) endorsement required"
-  issuing_authority: "Israeli Veterinary Services (IVS)"
+  export_permit: "Official health certificate endorsed by VSAH required."
+  issuing_authority: "Veterinary Services and Animal Health (VSAH)"
   last_verified: "2026-04-24"
 sections:
   - heading: "Export requirements from Israel"
     body: |
-      **Export Permit:** No formal export permit required for household pets. An official health certificate from a licensed veterinarian, endorsed by the Israeli Veterinary Services (IVS), is required for international travel.
+      **Health Certificate:** Official health certificate endorsed by VSAH.
 
-      **Health Certificate:** Official health certificate endorsed by IVS. Must meet destination country format and requirements.
-
-      **Government Endorsement:** Israeli Veterinary Services (IVS) endorsement required
-
-      **Issuing Authority:** Israeli Veterinary Services (IVS)
+      **Issuing Authority:** Veterinary Services and Animal Health (VSAH)
 
       **Last Verified:** 2026-04-24
   - heading: "Popular routes from Israel"
     body: |
       We have detailed guides for the following routes:
-
-      Routes from Israel are being added. Check back soon.
+      
+      - [Israel to Argentina](/pet-transport/israel-to-argentina/)
+      - [Israel to Australia](/pet-transport/israel-to-australia/)
+      - [Israel to Austria](/pet-transport/israel-to-austria/)
+      - [Israel to Bahrain](/pet-transport/israel-to-bahrain/)
+      - [Israel to Bangladesh](/pet-transport/israel-to-bangladesh/)
+      - [Israel to Belgium](/pet-transport/israel-to-belgium/)
+      - [Israel to Brazil](/pet-transport/israel-to-brazil/)
+      - [Israel to Bulgaria](/pet-transport/israel-to-bulgaria/)
+      - [Israel to Cambodia](/pet-transport/israel-to-cambodia/)
+      - [Israel to Canada](/pet-transport/israel-to-canada/)
+      - [Israel to Chile](/pet-transport/israel-to-chile/)
+      - [Israel to China](/pet-transport/israel-to-china/)
+      - [Israel to Colombia](/pet-transport/israel-to-colombia/)
+      - [Israel to Costa Rica](/pet-transport/israel-to-costa-rica/)
+      - [Israel to Croatia](/pet-transport/israel-to-croatia/)
+      - [Israel to Cyprus](/pet-transport/israel-to-cyprus/)
+      - [Israel to Czech Republic](/pet-transport/israel-to-czech-republic/)
+      - [Israel to Denmark](/pet-transport/israel-to-denmark/)
+      - [Israel to Ecuador](/pet-transport/israel-to-ecuador/)
+      - [Israel to Egypt](/pet-transport/israel-to-egypt/)
+      - [Israel to Ethiopia](/pet-transport/israel-to-ethiopia/)
+      - [Israel to Finland](/pet-transport/israel-to-finland/)
+      - [Israel to France](/pet-transport/israel-to-france/)
+      - [Israel to Germany](/pet-transport/israel-to-germany/)
+      - [Israel to Ghana](/pet-transport/israel-to-ghana/)
+      - [Israel to Greece](/pet-transport/israel-to-greece/)
+      - [Israel to Hong Kong](/pet-transport/israel-to-hong-kong/)
+      - [Israel to Hungary](/pet-transport/israel-to-hungary/)
+      - [Israel to India](/pet-transport/israel-to-india/)
+      - [Israel to Indonesia](/pet-transport/israel-to-indonesia/)
+      - [Israel to Ireland](/pet-transport/israel-to-ireland/)
+      - [Israel to Italy](/pet-transport/israel-to-italy/)
+      - [Israel to Japan](/pet-transport/israel-to-japan/)
+      - [Israel to Jordan](/pet-transport/israel-to-jordan/)
+      - [Israel to Kenya](/pet-transport/israel-to-kenya/)
+      - [Israel to Kuwait](/pet-transport/israel-to-kuwait/)
+      - [Israel to Luxembourg](/pet-transport/israel-to-luxembourg/)
+      - [Israel to Malaysia](/pet-transport/israel-to-malaysia/)
+      - [Israel to Malta](/pet-transport/israel-to-malta/)
+      - [Israel to Mauritius](/pet-transport/israel-to-mauritius/)
+      - [Israel to Mexico](/pet-transport/israel-to-mexico/)
+      - [Israel to Morocco](/pet-transport/israel-to-morocco/)
+      - [Israel to Myanmar](/pet-transport/israel-to-myanmar/)
+      - [Israel to Nepal](/pet-transport/israel-to-nepal/)
+      - [Israel to Netherlands](/pet-transport/israel-to-netherlands/)
+      - [Israel to New Zealand](/pet-transport/israel-to-new-zealand/)
+      - [Israel to Nigeria](/pet-transport/israel-to-nigeria/)
+      - [Israel to Norway](/pet-transport/israel-to-norway/)
+      - [Israel to Oman](/pet-transport/israel-to-oman/)
+      - [Israel to Pakistan](/pet-transport/israel-to-pakistan/)
+      - [Israel to Peru](/pet-transport/israel-to-peru/)
+      - [Israel to Philippines](/pet-transport/israel-to-philippines/)
+      - [Israel to Poland](/pet-transport/israel-to-poland/)
+      - [Israel to Portugal](/pet-transport/israel-to-portugal/)
+      - [Israel to Qatar](/pet-transport/israel-to-qatar/)
+      - [Israel to Romania](/pet-transport/israel-to-romania/)
+      - [Israel to Saudi Arabia](/pet-transport/israel-to-saudi-arabia/)
+      - [Israel to Singapore](/pet-transport/israel-to-singapore/)
+      - [Israel to Slovakia](/pet-transport/israel-to-slovakia/)
+      - [Israel to South Africa](/pet-transport/israel-to-south-africa/)
+      - [Israel to South Korea](/pet-transport/israel-to-south-korea/)
+      - [Israel to Spain](/pet-transport/israel-to-spain/)
+      - [Israel to Sri Lanka](/pet-transport/israel-to-sri-lanka/)
+      - [Israel to Sweden](/pet-transport/israel-to-sweden/)
+      - [Israel to Switzerland](/pet-transport/israel-to-switzerland/)
+      - [Israel to Taiwan](/pet-transport/israel-to-taiwan/)
+      - [Israel to Tanzania](/pet-transport/israel-to-tanzania/)
+      - [Israel to Thailand](/pet-transport/israel-to-thailand/)
+      - [Israel to Turkey](/pet-transport/israel-to-turkey/)
+      - [Israel to United Arab Emirates](/pet-transport/israel-to-united-arab-emirates/)
+      - [Israel to Vietnam](/pet-transport/israel-to-vietnam/)
+      - [Israel to Zimbabwe](/pet-transport/israel-to-zimbabwe/)
 faqs:
   - question: "What do I need to export my pet from Israel?"
-    answer: "No formal export permit required for household pets. An official health certificate from a licensed veterinarian, endorsed by the Israeli Veterinary Services (IVS), is required for international travel. Official health certificate endorsed by IVS. Must meet destination country format and requirements."
+    answer: "A VSAH-endorsed health certificate is required. Check destination country requirements for additional testing or permits."
   - question: "Where can I get a pet health certificate in Israel?"
-    answer: "Any government-approved veterinarian in Israel can issue a health certificate for pet export. The certificate then needs endorsement from Israeli Veterinary Services (IVS) before departure."
-  - question: "How long does pet export take from Israel?"
-    answer: "Allow at least 4-8 weeks from starting preparations to travel day. Some steps require waiting periods that cannot be shortened. Start the process as early as possible."
-airlines:
-  - name: "El Al"
-    type: "cabin_and_cargo"
-  - name: "Arkia Airlines"
-    type: "cargo_only"
-  - name: "Turkish Airlines"
-    type: "cabin_and_cargo"
-  - name: "Lufthansa"
-    type: "cabin_and_cargo"
-  - name: "British Airways"
-    type: "cargo_only"
-  - name: "Air France"
-    type: "cabin_and_cargo"
-  - name: "Emirates"
-    type: "cargo_only"
-  - name: "Swiss International Air Lines"
-    type: "cabin_and_cargo"
-  - name: "KLM"
-    type: "cabin_and_cargo"
-  - name: "easyJet"
-    type: "cargo_only"
+    answer: "Any government-approved veterinarian in Israel can issue a health certificate. The certificate needs VSAH endorsement before departure."
 outbound_routes:
 ---

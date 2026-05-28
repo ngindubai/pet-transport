@@ -1,94 +1,93 @@
 ---
-title: "Shipping Your Pet from Japan | Export Guide"
-description: "Complete guide to exporting your pet from Japan. Export requirements, airlines, and route guides for 10 international destinations."
+title: "Japan Pet Export Guide"
+description: "Complete guide to exporting your pet from Japan. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"
 author: "Gareth - Founder, PetTransportGlobal"
 country_name: "Japan"
 country_code: "JP"
-content:
-  h1: "Pet Transport from Japan"
-  overview: |
-    Moving your pet from Japan involves paperwork that must be done in a specific sequence. MAFF (the Ministry of Agriculture, Forestry and Fisheries) is the authority that endorses all export health certificates. We have detailed guides for 10 routes from Japan below.
+overview: |
+  Pet export from Japan requires an AQS-endorsed health certificate.
 export_requirements:
-  export_permit: "No formal export permit required for cats and dogs. A veterinary health certificate endorsed by MAFF is required. The certificate must meet the destination country's format. Certain destinations require rabies vaccination proof and microchip documentation."
-  health_certificate: "Required. Official export health certificate signed by an accredited veterinarian and endorsed by MAFF (Ministry of Agriculture, Forestry and Fisheries)."
-  endorsement: "MAFF endorsement required on all export health certificates"
-  issuing_authority: "Ministry of Agriculture, Forestry and Fisheries (MAFF)"
-  last_verified: "2026-04-23"
+  export_permit: "Official health certificate endorsed by AQS required."
+  issuing_authority: "Animal Quarantine Service (AQS)"
+  last_verified: "2026-04-24"
 sections:
   - heading: "Export requirements from Japan"
     body: |
-      **Export Permit:** No formal export permit required for cats and dogs. A veterinary health certificate endorsed by MAFF is required. The certificate must meet the destination country's format. Certain destinations require rabies vaccination proof and microchip documentation.
+      **Health Certificate:** Official health certificate endorsed by AQS.
 
-      **Health Certificate:** Required. Official export health certificate signed by an accredited veterinarian and endorsed by MAFF (Ministry of Agriculture, Forestry and Fisheries).
+      **Issuing Authority:** Animal Quarantine Service (AQS)
 
-      **Government Endorsement:** MAFF endorsement required on all export health certificates
-
-      **Issuing Authority:** Ministry of Agriculture, Forestry and Fisheries (MAFF)
-
-      **Last Verified:** 2026-04-23
+      **Last Verified:** 2026-04-24
   - heading: "Popular routes from Japan"
     body: |
       We have detailed guides for the following routes:
       
+      - [Japan to Argentina](/pet-transport/japan-to-argentina/)
       - [Japan to Australia](/pet-transport/japan-to-australia/)
+      - [Japan to Austria](/pet-transport/japan-to-austria/)
+      - [Japan to Bahrain](/pet-transport/japan-to-bahrain/)
+      - [Japan to Bangladesh](/pet-transport/japan-to-bangladesh/)
+      - [Japan to Belgium](/pet-transport/japan-to-belgium/)
+      - [Japan to Bulgaria](/pet-transport/japan-to-bulgaria/)
+      - [Japan to Cambodia](/pet-transport/japan-to-cambodia/)
       - [Japan to Canada](/pet-transport/japan-to-canada/)
+      - [Japan to Chile](/pet-transport/japan-to-chile/)
+      - [Japan to China](/pet-transport/japan-to-china/)
+      - [Japan to Colombia](/pet-transport/japan-to-colombia/)
+      - [Japan to Costa Rica](/pet-transport/japan-to-costa-rica/)
+      - [Japan to Croatia](/pet-transport/japan-to-croatia/)
+      - [Japan to Cyprus](/pet-transport/japan-to-cyprus/)
+      - [Japan to Czech Republic](/pet-transport/japan-to-czech-republic/)
+      - [Japan to Denmark](/pet-transport/japan-to-denmark/)
+      - [Japan to Ecuador](/pet-transport/japan-to-ecuador/)
+      - [Japan to Egypt](/pet-transport/japan-to-egypt/)
+      - [Japan to Ethiopia](/pet-transport/japan-to-ethiopia/)
+      - [Japan to Finland](/pet-transport/japan-to-finland/)
       - [Japan to France](/pet-transport/japan-to-france/)
       - [Japan to Germany](/pet-transport/japan-to-germany/)
+      - [Japan to Ghana](/pet-transport/japan-to-ghana/)
       - [Japan to Hong Kong](/pet-transport/japan-to-hong-kong/)
+      - [Japan to Hungary](/pet-transport/japan-to-hungary/)
+      - [Japan to Ireland](/pet-transport/japan-to-ireland/)
+      - [Japan to Israel](/pet-transport/japan-to-israel/)
+      - [Japan to Jordan](/pet-transport/japan-to-jordan/)
+      - [Japan to Kenya](/pet-transport/japan-to-kenya/)
+      - [Japan to Kuwait](/pet-transport/japan-to-kuwait/)
+      - [Japan to Luxembourg](/pet-transport/japan-to-luxembourg/)
+      - [Japan to Malta](/pet-transport/japan-to-malta/)
+      - [Japan to Mauritius](/pet-transport/japan-to-mauritius/)
+      - [Japan to Morocco](/pet-transport/japan-to-morocco/)
+      - [Japan to Myanmar](/pet-transport/japan-to-myanmar/)
+      - [Japan to Nepal](/pet-transport/japan-to-nepal/)
+      - [Japan to New Zealand](/pet-transport/japan-to-new-zealand/)
+      - [Japan to Nigeria](/pet-transport/japan-to-nigeria/)
+      - [Japan to Norway](/pet-transport/japan-to-norway/)
+      - [Japan to Oman](/pet-transport/japan-to-oman/)
+      - [Japan to Pakistan](/pet-transport/japan-to-pakistan/)
+      - [Japan to Peru](/pet-transport/japan-to-peru/)
+      - [Japan to Philippines](/pet-transport/japan-to-philippines/)
+      - [Japan to Poland](/pet-transport/japan-to-poland/)
+      - [Japan to Qatar](/pet-transport/japan-to-qatar/)
+      - [Japan to Romania](/pet-transport/japan-to-romania/)
+      - [Japan to Saudi Arabia](/pet-transport/japan-to-saudi-arabia/)
       - [Japan to Singapore](/pet-transport/japan-to-singapore/)
+      - [Japan to Slovakia](/pet-transport/japan-to-slovakia/)
       - [Japan to South Africa](/pet-transport/japan-to-south-africa/)
+      - [Japan to Spain](/pet-transport/japan-to-spain/)
+      - [Japan to Sri Lanka](/pet-transport/japan-to-sri-lanka/)
+      - [Japan to Sweden](/pet-transport/japan-to-sweden/)
+      - [Japan to Taiwan](/pet-transport/japan-to-taiwan/)
+      - [Japan to Tanzania](/pet-transport/japan-to-tanzania/)
+      - [Japan to Turkey](/pet-transport/japan-to-turkey/)
       - [Japan to United Arab Emirates](/pet-transport/japan-to-united-arab-emirates/)
-      - [Japan to United Kingdom](/pet-transport/japan-to-united-kingdom/)
-      - [Japan to United States](/pet-transport/japan-to-united-states/)
+      - [Japan to Vietnam](/pet-transport/japan-to-vietnam/)
+      - [Japan to Zimbabwe](/pet-transport/japan-to-zimbabwe/)
 faqs:
   - question: "What do I need to export my pet from Japan?"
-    answer: "No formal export permit required for cats and dogs. A veterinary health certificate endorsed by MAFF is required. The certificate must meet the destination country's format. Certain destinations require rabies vaccination proof and microchip documentation. Required. Official export health certificate signed by an accredited veterinarian and endorsed by MAFF (Ministry of Agriculture, Forestry and Fisheries)."
+    answer: "An AQS-endorsed health certificate is required. Check destination country requirements for additional testing or permits."
   - question: "Where can I get a pet health certificate in Japan?"
-    answer: "Any government-approved veterinarian in Japan can issue a health certificate for pet export. The certificate then needs endorsement from Ministry of Agriculture, Forestry and Fisheries (MAFF) before departure."
-  - question: "How long does pet export take from Japan?"
-    answer: "Allow at least 4-8 weeks from starting preparations to travel day. Some steps require waiting periods that cannot be shortened. Start the process as early as possible."
-airlines:
-  - name: "Japan Airlines (JAL)"
-    type: "cargo_only"
-  - name: "ANA (All Nippon Airways)"
-    type: "cargo_only"
-  - name: "Korean Air"
-    type: "cabin_and_cargo"
-  - name: "Cathay Pacific"
-    type: "cargo_only"
-  - name: "Singapore Airlines"
-    type: "cargo_only"
-  - name: "Emirates"
-    type: "cargo_only"
-  - name: "Lufthansa"
-    type: "cabin_and_cargo"
-  - name: "British Airways"
-    type: "cargo_only"
-  - name: "Qantas"
-    type: "cargo_only"
-  - name: "Air France"
-    type: "cabin_and_cargo"
+    answer: "Any government-approved veterinarian in Japan can issue a health certificate. The certificate needs AQS endorsement before departure."
 outbound_routes:
-  - slug: "japan-to-australia"
-    destination: "Australia"
-  - slug: "japan-to-canada"
-    destination: "Canada"
-  - slug: "japan-to-france"
-    destination: "France"
-  - slug: "japan-to-germany"
-    destination: "Germany"
-  - slug: "japan-to-hong-kong"
-    destination: "Hong Kong"
-  - slug: "japan-to-singapore"
-    destination: "Singapore"
-  - slug: "japan-to-south-africa"
-    destination: "South Africa"
-  - slug: "japan-to-united-arab-emirates"
-    destination: "United Arab Emirates"
-  - slug: "japan-to-united-kingdom"
-    destination: "United Kingdom"
-  - slug: "japan-to-united-states"
-    destination: "United States"
 ---
