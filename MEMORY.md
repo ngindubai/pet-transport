@@ -1,11 +1,11 @@
 # MEMORY.md — PetTransportGlobal
 
 ## Site Overview
-- **Domain:** pettransportglobal.surge.sh (surge.sh hosting, pending domain purchase)
+- **Domain:** pettransportglobal.com (Hostinger hosting)
 - **Type:** Programmatic SEO — international pet transport route pages
-- **Total pages:** 202 live (May 2025)
-- **Stack:** Hugo static site generator + Python generation scripts + surge.sh deploy
-- **Git:** `C:\Users\garet\Desktop\pet-transport\` (standalone VS Code instance)
+- **Stack:** Hugo static site generator + Python generation scripts
+- **Git:** `C:\Users\garet\Desktop\pet-transport\` (VS Code / GitHub Copilot)
+- **Deploy:** Push to `main` → GitHub Actions builds Hugo → pushes compiled output to `live` branch → Hostinger Git OAuth auto-deploys
 
 ## Build Decisions
 
@@ -14,13 +14,12 @@
 - Python scripts at **repo root** (not in `scripts/` folder)
 - All Hugo content in `site/content/[section]/`
 - Build command: `hugo --gc --minify` from `site/`
-- Deploy command: `surge public pettransportglobal.surge.sh` from `site/`
-- NOTE: surge deploy requires an interactive terminal session. Cannot be run from subagents.
+- CI workflow: `.github/workflows/build-to-live.yml`
 
 ### Slug Pattern
-- Routes: `[origin-country]-to-[destination-country]` — e.g. `uk-to-australia`
+- Routes: `[origin-country]-to-[destination-country]` — e.g. `united-kingdom-to-australia`
 - Countries: `[country-slug]` — e.g. `australia`
-- Origins: `from-[country-slug]` — e.g. `from-uk`
+- Origins: `[country-slug]` or `[country-slug]-pet-export-guide` — e.g. `united-kingdom.md`
 - Airlines: `[airline-slug]` — e.g. `emirates`
 - Breeds: `[breed-slug]` — e.g. `french-bulldog`
 
@@ -30,18 +29,6 @@
 - Airline policies: `data/airline_pet_policies.json`
 - Breed restrictions: `data/breed_restrictions.json`
 - Route keyword matrix: `data/route_keyword_matrix.json`
-- Schema + tech stack: `data/schema_and_tech_stack.json`
-
-### Front Matter Format (Hugo)
-```yaml
----
-title: "Pet Transport UK to Australia | PetTransportGlobal"
-description: "140-160 char description with keyword and reassurance hook"
-slug: "uk-to-australia"
-date: 2025-01-01
-draft: false
----
-```
 
 ### Python Script Convention
 All generation scripts use skip-if-exists:
@@ -63,70 +50,64 @@ if os.path.exists(output_path):
 - No em dashes (zero tolerance)
 - No unverified regulatory claims — every quarantine period, vaccine requirement, or breed ban must cite a named, dated official source
 
+## Build Pipeline
+
+### Local build (Windows)
+```
+build.bat
+```
+Runs: rebuild_link_graph_v3.py → hugo --gc --minify → split_sitemap.py
+
+### CI build (GitHub Actions)
+`.github/workflows/build-to-live.yml` runs on every push to main:
+1. Set up Python 3.12
+2. `python rebuild_link_graph_v3.py` — regenerate all internal links
+3. Hugo build
+4. `python split_sitemap.py` — split into section sitemaps
+5. Force-push compiled output to `live` branch
+
+### Key scripts
+| Script | Purpose |
+|--------|---------|
+| `rebuild_link_graph_v3.py` | Scan all routes, update origin hubs + country guides with correct links |
+| `split_sitemap.py` | Split Hugo's flat sitemap.xml into sitemap-routes/hubs/blog/pages.xml |
+| `build.bat` | Windows local build (all 3 steps above) |
+| `Makefile` | Linux/macOS local build (`make build`) |
+
+## SEO Status (as of 2026-05-28)
+
+### Issues fixed this session
+1. **Duplicate FAQPage schema** — removed microdata from `faq-accordion.html` partial; JSON-LD in `blog/single.html` is now the sole FAQPage declaration. Affects all 413 blog posts.
+2. **Future-dated content** — disabled `buildFuture = true` in hugo.toml. 16 articles dated June 2026 will need their frontmatter dates corrected.
+3. **Internal link graph** — `rebuild_link_graph_v3.py` now wires all 5,152 routes to their origin hubs and destination country guides on every build.
+
+### GSC status
+- ~1,873 pages "Discovered — currently not indexed" (crawl budget issue, not sitemap)
+- Sitemaps: sitemap.xml (index) → sitemap-routes.xml, sitemap-hubs.xml, sitemap-blog.xml, sitemap-pages.xml
+- All sitemaps present and referenced in robots.txt
+- Root cause of non-indexing: thin internal link graph (now fixed by v3 rebuild script)
+
 ## Build Status
 
-### Phase 0 — Research (Blocks 1-9): ALL DONE
-All worker souls created, competitor scraped, government portals scraped, airline policies scraped, keyword matrix built, all databases assembled.
+### Live page counts (approximate, 2026-05-28)
+- Route pages: ~5,152
+- Blog articles: ~413
+- Country guides: ~89
+- Origin hubs: ~89
+- Airline guides: ~23
+- Breed guides: ~35
+- Total: ~5,800+
 
-### Phase 1 — Foundation (Blocks 10-21): ALL DONE
-- Block 10-11: Hugo scaffolding + 6 templates + quote form
-- Block 12-15: 15 Tier 1 routes (initial batch), content + SEO pass
-- Block 16: 10 country guides + 10 origin hubs
-- Block 17: SEO pass + humanisation + internal linking
-- Block 18: QA + first deploy
-- Block 19: All 89 P1 routes complete (132 pages, deployed 21 April 2025)
-- Block 20: 23 airline guide pages (190 pages total)
-- Block 21: 35 breed guide pages (202 pages total, deployed)
-- Blog: 12 articles live in site/content/blog/
-
-### Review #1 Fixes (2026-04-22): ALL DONE
-- 208 pages live, all 6 critical YMYL issues resolved (author attribution, FAQs, overviews, broken links, trust pages)
-
-### Block 22 / Task 2.1: DONE (2026-04-23)
-- P2 country regulation data — 15 additional countries added to data/countries_pet_regulations.json
-- Database now: 25 countries (10 P1 + 15 P2)
-- P2 countries: Japan, Thailand, Philippines, Malaysia, India, Portugal, Netherlands, Italy, Denmark, Mexico, Brazil, Switzerland, Indonesia, South Korea, Greece
-
-### Design Fixes Applied (2026-04-23): LIVE
-- Equal-height listing cards (.blog-box flexbox)
-- Hero column split: col-lg-7 (text) + col-lg-5 (form) — dog visible on desktop
-- Country carousel: new glass-dark country-feature-card design replacing plain adopt-cards
-- Country card data: pulled from import_requirements.quarantine and import_requirements.rabies_vaccination
-- Country card equal height: -webkit-line-clamp on stat values + owl-item flex stretch
-
-### Phase 2 — Next Stage (Block 23): TODO
-- 2.2: ~500 P2 route pages (Block 23) — NEXT
-- 2.3: 15 P2 origin hubs + 15 P2 country guides (Block 24)
-- 2.6: Internal link graph rebuild (Block 25)
-- 2.9: Full QA + regulatory audit (Block 28)
-
-## P1 Country Matrix (all routes DONE)
-Countries: UK, UAE, Australia, USA, Singapore, France, Hong Kong, South Africa, Canada, Germany
-10x10 grid = 90 combinations, 89 unique routes (no self-routes) + 3 bonus routes = 92 route files live
-
-## P2 Countries (data ready, pages not yet generated)
-Japan, Thailand, Philippines, Malaysia, India, Portugal, Netherlands, Italy, Denmark, Mexico, Brazil, Switzerland, Indonesia, South Korea, Greece
-
-## Partial/Early P2 Countries (country + origins pages exist, not full route matrix)
-- New Zealand (NZ): country guide, origins hub, UK-to-NZ and NZ-to-UK routes only
-- Spain (ES): country guide, origins hub, spain-to-uk route only
-
-## Open Strategic Decisions (Gareth's TODO list)
-1. Domain purchase — pending
-2. Business name — pending
-3. Operator model vs marketplace model (affects all CTA copy and pricing display)
-4. Payment processing (Stripe, GoCardless, etc.)
-5. IPATA membership (~$400/year) — would add trust signal
+### Open build tasks
+- Fix frontmatter dates on 16 blog articles dated June 2026 (dropped from build due to buildFuture=false)
+- Continue expanding route matrix (33,545 routes remaining per build plan)
+- Monitor GSC indexing rate after link graph fix deploys
 
 ## Mistakes to Avoid
-- `hugo server` and `surge` both require live terminal (can't run from subagent in background)
+- Never run hugo from repo root — always `cd site` first
 - Build plan filename has `=` sign: `cascading-build-plan-pet=transport.html`
-- Deploy from `site/` directory, not repo root
-- Deploy command: `surge public pettransportglobal.surge.sh` (NOT `surge .`)
+- `rebuild_link_graph_v3.py` must run BEFORE hugo build (origin hub links need to exist as source)
 - Never fabricate quarantine periods or vaccine requirements — sources are mandatory
 - Anti-template gate: route pages that feel identical will hurt SEO and user trust
-
-## Session Log
-| Date | Block | Description | Pages |
-|------|-------|-------------|-------|
-| Pre-migration | 1-21 | Phase 0 + 1 complete | 202 |
+- The `live` branch is compiled output only — never edit it directly
+- Race condition on simultaneous CI runs: if two pushes fire close together, one deploy may fail with ref lock error — this is normal, re-trigger if needed
