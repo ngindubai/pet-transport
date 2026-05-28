@@ -26,6 +26,11 @@
 {{ define "main" }}
 {{ $country := .Params }}
 
+{{/* Load routes_incoming from data/incoming/[slug].json, falling back to frontmatter */}}
+{{ $slug := .File.ContentBaseName }}
+{{ $dataRoutes := index .Site.Data.incoming $slug }}
+{{ $routes := cond (and $dataRoutes (gt (len $dataRoutes) 0)) $dataRoutes $country.routes_incoming }}
+
 {{/* Check for country-specific hero: static/images/countries/country-{code}.jpg */}}
 {{ $specificPath := printf "static/images/countries/country-%s.jpg" (.Params.country_code | lower) }}
 {{ $heroImgUrl := cond (os.FileExists $specificPath) (printf "/images/countries/country-%s.jpg" (.Params.country_code | lower)) "/img/jumbotron.jpg" }}
@@ -162,8 +167,8 @@
                 {{ end }}
                 {{ end }}
 
-                {{/* Routes to this country */}}
-                {{ with $country.routes_incoming }}
+                {{/* Routes to this country — loaded from data/incoming/ or frontmatter */}}
+                {{ with $routes }}
                 <div id="routes" class="mb-5">
                     <div class="section-heading text-start">
                         <h2>Routes to {{ $country.country_name }}</h2>
@@ -196,7 +201,7 @@
                         <div class="widget1-body">
                             <ul class="colored-icons">
                                 <li><a href="#import-requirements"><i class="flaticon-clipboard text-primary"></i> Import requirements</a></li>
-                                {{ if $country.routes_incoming }}<li><a href="#routes"><i class="flaticon-plane text-primary"></i> Routes</a></li>{{ end }}
+                                {{ if $routes }}<li><a href="#routes"><i class="flaticon-plane text-primary"></i> Routes</a></li>{{ end }}
                                 <li><a href="#quote-section"><i class="flaticon-mail text-primary"></i> Get a quote</a></li>
                             </ul>
                         </div>
