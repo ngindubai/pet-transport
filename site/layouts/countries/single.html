@@ -26,11 +26,8 @@
 {{ define "main" }}
 {{ $country := .Params }}
 
-{{/* Load routes_incoming from data/incoming/[slug].json, falling back to frontmatter */}}
-{{ $slug := .File.ContentBaseName }}
-{{ $dataRoutes := index .Site.Data.incoming $slug }}
+{{/* routes_incoming is injected into frontmatter by rebuild_link_graph_v3.py at build time */}}
 {{ $routes := $country.routes_incoming }}
-{{ if $dataRoutes }}{{ $routes = $dataRoutes }}{{ end }}
 
 {{/* Check for country-specific hero: static/images/countries/country-{code}.jpg */}}
 {{ $specificPath := printf "static/images/countries/country-%s.jpg" (.Params.country_code | lower) }}
@@ -168,7 +165,7 @@
                 {{ end }}
                 {{ end }}
 
-                {{/* Routes to this country — loaded from data/incoming/ or frontmatter */}}
+                {{/* Routes to this country — injected into frontmatter by rebuild_link_graph_v3.py */}}
                 {{ with $routes }}
                 <div id="routes" class="mb-5">
                     <div class="section-heading text-start">
