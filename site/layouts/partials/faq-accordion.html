@@ -1,4 +1,5 @@
-{{/* FAQ accordion partial — renders FAQPage schema + Bootstrap 5 accordion */}}
+{{/* FAQ accordion partial — renders Bootstrap 5 accordion */}}
+{{/* Schema is handled by the page-level JSON-LD in the layout head */}}
 {{/* Expects .faqs parameter: array of {question, answer} objects */}}
 
 {{ $faqs := .faqs | default slice }}
@@ -8,16 +9,16 @@
         <h2>Frequently Asked Questions</h2>
     </div>
 
-    <div class="accordion" id="faqAccordion" itemscope itemtype="https://schema.org/FAQPage">
+    <div class="accordion" id="faqAccordion">
         {{ range $i, $faq := $faqs }}
-        <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="accordion-item">
             <h2 class="accordion-header" id="faq-head-{{ $i }}">
                 <button class="accordion-button{{ if ne $i 0 }} collapsed{{ end }}" type="button" data-bs-toggle="collapse" data-bs-target="#faq-body-{{ $i }}" aria-expanded="{{ if eq $i 0 }}true{{ else }}false{{ end }}" aria-controls="faq-body-{{ $i }}">
-                    <span itemprop="name">{{ $faq.question }}</span>
+                    {{ $faq.question }}
                 </button>
             </h2>
-            <div id="faq-body-{{ $i }}" class="accordion-collapse collapse{{ if eq $i 0 }} show{{ end }}" aria-labelledby="faq-head-{{ $i }}" data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                <div class="accordion-body" itemprop="text">{{ $faq.answer | markdownify }}</div>
+            <div id="faq-body-{{ $i }}" class="accordion-collapse collapse{{ if eq $i 0 }} show{{ end }}" aria-labelledby="faq-head-{{ $i }}" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">{{ $faq.answer | markdownify }}</div>
             </div>
         </div>
         {{ end }}
