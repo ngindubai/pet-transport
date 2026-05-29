@@ -1,18 +1,13 @@
 {{/*
   Template D — Conversational Q&A
-  Visual: Minimal white hero. H1 as question. No sidebar. Each section is a Q+A answer.
-  Section order: Hero → What does this involve? → How long? (timeline inside) →
-                 What does it cost? → What documents? (import requirements) →
-                 Leaving [origin]? (export requirements) → Which airlines? →
-                 Breed restrictions? (conditional) → What could go wrong? (warnings) →
-                 Content sections → Full FAQ → What do I do next? (CTA)
-  Schema: FAQPage (set in single.html router — dominant entity for this template)
+  All <section> tags replaced with <div> to prevent site global
+  section { background:#fff; padding-top:90px } from overriding template CSS.
 */}}
 {{ $rd := .Params.route_data }}
 
 <article class="tpl-route-d">
 
-{{/* ── MINIMAL HERO — H1 AS QUESTION ──────────────────────────────────── */}}
+{{/* ── HERO ──────────────────────────────────────────────────────────── */}}
 <div class="tpl-d-hero">
     <div class="container">
         <nav aria-label="breadcrumb" class="mb-3">
@@ -22,196 +17,158 @@
                 <li class="breadcrumb-item active">{{ .Params.origin_name }} to {{ .Params.destination_name }}</li>
             </ol>
         </nav>
-        <div class="tpl-d-hero-inner" data-aos="fade-up">
-            <h1 class="tpl-d-h1">Moving your pet from {{ .Params.origin_name }} to {{ .Params.destination_name }}?</h1>
-            {{ with .Params.content.overview }}
-            <p class="tpl-d-hero-lead">{{ . | markdownify }}</p>
-            {{ end }}
-            <div class="tpl-d-hero-meta">
+        <div data-aos="fade-up">
+            <div class="tpl-d-tag">Route guide</div>
+            <h1 class="tpl-d-h1">{{ .Params.content.h1 | default (printf "Pet Transport: %s to %s" .Params.origin_name .Params.destination_name) }}</h1>
+            <div class="tpl-d-meta">
                 {{ with $rd.route_complexity }}<span class="tpl-d-meta-pill">{{ . | title }} complexity</span>{{ end }}
-                {{ with $rd.estimated_timeline_weeks }}<span class="tpl-d-meta-pill">{{ . }} weeks typical</span>{{ end }}
+                {{ with $rd.estimated_timeline_weeks }}<span class="tpl-d-meta-pill amber">{{ . }} weeks</span>{{ end }}
             </div>
-            <a href="#quote-form" class="btn btn-primary mt-3">Get a free quote</a>
         </div>
     </div>
 </div>
 
-{{/* ── Q&A BODY ────────────────────────────────────────────────────────── */}}
+{{/* ── PAGE BODY ───────────────────────────────────────────────────────── */}}
 <div class="page">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-9">
 
-                {{/* Q1: What does this route involve? */}}
-                <section class="tpl-d-qa mb-5" data-aos="fade-up">
-                    <h2 class="tpl-d-question">What does moving a pet on this route actually involve?</h2>
-                    <div class="tpl-d-answer">
-                        <p>The {{ .Params.origin_name }}–{{ .Params.destination_name }} route
-                        {{ if $rd.destination.import_requirements }}{{ with $rd.destination.import_requirements.quarantine }}requires quarantine on arrival, so planning well ahead matters.{{ else }}does not require quarantine if your documents are in order.{{ end }}{{ end }}
-                        {{ with $rd.route_complexity }}In plain terms, this is a {{ . }} route, meaning {{ if eq . "high" }}there are several regulatory hurdles to clear, and most owners work with a specialist agent{{ else if eq . "medium" }}there is a reasonable amount of paperwork, but it is manageable with a clear plan{{ else }}the requirements are relatively straightforward compared to many international moves{{ end }}.{{ end }}</p>
-                        {{ with $rd.estimated_timeline_weeks }}<p>Most owners start the process around <strong>{{ . }} weeks</strong> before the flight date. That window is not arbitrary — it accounts for vaccination waiting periods, titre test processing, and document endorsement.</p>{{ end }}
-                    </div>
-                </section>
+                {{/* Summary strip */}}
+                <div class="tpl-d-summary-strip mb-4">
+                    {{ with $rd.estimated_timeline_weeks }}<div class="tpl-d-summary-item"><span class="tpl-d-summary-label">Timeline</span><span class="tpl-d-summary-val amber">{{ . }} weeks</span></div>{{ end }}
+                    {{ with $rd.route_complexity }}<div class="tpl-d-summary-item"><span class="tpl-d-summary-label">Complexity</span><span class="tpl-d-summary-val">{{ . | title }}</span></div>{{ end }}
+                    {{ with $rd.destination.import_requirements }}<div class="tpl-d-summary-item"><span class="tpl-d-summary-label">Quarantine</span><span class="tpl-d-summary-val">{{ if .quarantine }}Required{{ else }}Not required{{ end }}</span></div>{{ end }}
+                </div>
 
-                {{/* Q2: How long does it take? — timeline embedded */}}
+                {{/* Overview */}}
+                {{ with .Params.content.overview }}
+                <div class="tpl-d-section mb-4" data-aos="fade-up">
+                    {{ . | markdownify }}
+                </div>
+                {{ end }}
+
+                {{/* Timeline as step cards */}}
                 {{ with $rd.timeline_steps }}
-                <section class="tpl-d-qa mb-5" data-aos="fade-up">
-                    <h2 class="tpl-d-question">How long does the whole process take?</h2>
-                    <div class="tpl-d-answer">
-                        <p>Here is how the preparation unfolds from start to travel day:</p>
-                        <div class="tpl-d-timeline">
-                            {{ range . }}
-                            <div class="tpl-d-tl-row">
-                                <div class="tpl-d-tl-num">{{ .step }}</div>
-                                <div class="tpl-d-tl-content">
-                                    <strong>{{ .action }}</strong>
-                                    <span class="tpl-d-tl-timing">{{ .timing }}</span>
-                                    {{ with .responsible }}<span class="tpl-d-tl-resp">{{ . }}</span>{{ end }}
-                                </div>
-                            </div>
-                            {{ end }}
+                <div class="tpl-d-section mb-4" id="timeline" data-aos="fade-up">
+                    <h2>How long does it take?</h2>
+                    <div class="tpl-d-step-grid">
+                        {{ range . }}
+                        <div class="tpl-d-step-card">
+                            <div class="tpl-d-step-num">{{ .step }}</div>
+                            <div class="tpl-d-step-action">{{ .action }}</div>
+                            <div class="tpl-d-step-timing">{{ .timing }}</div>
+                            {{ with .responsible }}<div class="tpl-d-step-resp">{{ . }}</div>{{ end }}
                         </div>
+                        {{ end }}
                     </div>
-                </section>
+                </div>
                 {{ end }}
 
-                {{/* Q3: What does it cost? */}}
-                {{ with $rd.cost_factors }}
-                <section class="tpl-d-qa mb-5" data-aos="fade-up">
-                    <h2 class="tpl-d-question">What should I expect to pay?</h2>
-                    <div class="tpl-d-answer">
-                        <p>Costs vary considerably depending on your pet's size, the airline, and whether you use a pet relocation agent. The main factors to price up are:</p>
-                        <ul class="tpl-d-cost-list">
-                            {{ range . }}<li>{{ . }}</li>{{ end }}
-                        </ul>
-                    </div>
-                </section>
-                {{ end }}
-
-                {{/* Q4: What documents does my pet need? — destination import requirements */}}
+                {{/* Import requirements as Q&A cards */}}
                 {{ with $rd.destination.import_requirements }}
-                <section class="tpl-d-qa mb-5" data-aos="fade-up">
-                    <h2 class="tpl-d-question">What paperwork does {{ $rd.destination.country }} require for my pet?</h2>
-                    <div class="tpl-d-answer">
-                        {{ with .microchip }}<p><strong>Microchip:</strong> {{ . }}</p>{{ end }}
-                        {{ with .rabies_vaccination }}<p><strong>Rabies vaccination:</strong> {{ . }}</p>{{ end }}
-                        {{ with .titre_test }}<p><strong>Titre test:</strong> {{ . }}</p>{{ end }}
-                        {{ with .health_certificate }}<p><strong>Health certificate:</strong> {{ . }}</p>{{ end }}
-                        {{ with .import_permit }}<p><strong>Import permit:</strong> {{ . }}</p>{{ end }}
-                        {{ with .quarantine }}<p><strong>Quarantine:</strong> {{ . }}</p>{{ end }}
-                    </div>
-                </section>
+                <div class="tpl-d-section mb-4" data-aos="fade-up">
+                    <h2>What does {{ $rd.destination.country }} require?</h2>
+                    <ul class="tpl-d-req-list">
+                        {{ with .microchip }}<li class="tpl-d-req-item"><span class="tpl-d-req-label">Microchip</span><span class="tpl-d-req-text">{{ . }}</span></li>{{ end }}
+                        {{ with .rabies_vaccination }}<li class="tpl-d-req-item"><span class="tpl-d-req-label">Vaccination</span><span class="tpl-d-req-text">{{ . }}</span></li>{{ end }}
+                        {{ with .titre_test }}<li class="tpl-d-req-item"><span class="tpl-d-req-label">Titre test</span><span class="tpl-d-req-text">{{ . }}</span></li>{{ end }}
+                        {{ with .quarantine }}<li class="tpl-d-req-item"><span class="tpl-d-req-label">Quarantine</span><span class="tpl-d-req-text">{{ . }}</span></li>{{ end }}
+                        {{ with .import_permit }}<li class="tpl-d-req-item"><span class="tpl-d-req-label">Import permit</span><span class="tpl-d-req-text">{{ . }}</span></li>{{ end }}
+                        {{ with .health_certificate }}<li class="tpl-d-req-item"><span class="tpl-d-req-label">Health cert</span><span class="tpl-d-req-text">{{ . }}</span></li>{{ end }}
+                    </ul>
+                </div>
                 {{ end }}
 
-                {{/* Q5: What do I need to sort before leaving origin? */}}
+                {{/* Export requirements */}}
                 {{ with $rd.origin.export_requirements }}
-                <section class="tpl-d-qa mb-5" data-aos="fade-up">
-                    <h2 class="tpl-d-question">What do I need to arrange before leaving {{ $rd.origin.country }}?</h2>
-                    <div class="tpl-d-answer">
-                        {{ with .export_permit }}<p><strong>Export permit:</strong> {{ . }}</p>{{ end }}
-                        {{ with .vet_inspection }}<p><strong>Veterinary inspection:</strong> {{ . }}</p>{{ end }}
-                        {{ with .endorsement }}<p><strong>Government endorsement:</strong> {{ . }}</p>{{ end }}
-                        {{ with .health_certificate }}<p><strong>Export health certificate:</strong> {{ . }}</p>{{ end }}
-                    </div>
-                </section>
+                <div class="tpl-d-section mb-4" data-aos="fade-up">
+                    <h2>Before leaving {{ $rd.origin.country }}</h2>
+                    <ul class="tpl-d-req-list">
+                        {{ with .export_permit }}<li class="tpl-d-req-item"><span class="tpl-d-req-label">Export permit</span><span class="tpl-d-req-text">{{ . }}</span></li>{{ end }}
+                        {{ with .health_certificate }}<li class="tpl-d-req-item"><span class="tpl-d-req-label">Health cert</span><span class="tpl-d-req-text">{{ . }}</span></li>{{ end }}
+                        {{ with .endorsement }}<li class="tpl-d-req-item"><span class="tpl-d-req-label">Endorsement</span><span class="tpl-d-req-text">{{ . }}</span></li>{{ end }}
+                    </ul>
+                </div>
                 {{ end }}
 
-                {{/* Q6: Which airlines? */}}
+                {{/* Cost factors */}}
+                {{ with $rd.cost_factors }}
+                <div class="tpl-d-section mb-4" data-aos="fade-up">
+                    <h2>What should I budget for?</h2>
+                    <ul class="tpl-d-cost-list">
+                        {{ range . }}<li class="tpl-d-cost-item">{{ . }}</li>{{ end }}
+                    </ul>
+                </div>
+                {{ end }}
+
+                {{/* Airlines */}}
                 {{ with $rd.airlines }}
-                <section class="tpl-d-qa mb-5" data-aos="fade-up">
-                    <h2 class="tpl-d-question">Which airlines can my pet travel on?</h2>
-                    <div class="tpl-d-answer">
-                        <p>Several airlines serve routes between {{ $.Params.origin_name }} and {{ $.Params.destination_name }}, each with different policies on pets in cabin versus cargo hold:</p>
-                        {{ range . }}
-                        <div class="tpl-d-airline-row">
-                            <strong>{{ .name }}</strong>
-                            <span class="tpl-d-airline-type">{{ .type | replace "_" " " | title }}</span>
-                            <p class="tpl-d-airline-policy">{{ .policy_summary }}</p>
+                <div class="tpl-d-section mb-4" data-aos="fade-up">
+                    <h2>Which airlines can my pet travel on?</h2>
+                    {{ range . }}
+                    <div class="tpl-d-qa-card">
+                        <div class="tpl-d-qa-q">{{ .name }}</div>
+                        <div class="tpl-d-qa-a">
+                            <span class="tpl-d-qa-a-label">{{ .type | replace "_" " " | title }}</span>
+                            {{ .policy_summary }}
                         </div>
-                        {{ end }}
                     </div>
-                </section>
+                    {{ end }}
+                </div>
                 {{ end }}
 
-                {{/* Q7: Breed restrictions? (conditional) */}}
-                {{ with $rd.destination.breed_restrictions }}
-                <section class="tpl-d-qa mb-5" data-aos="fade-up">
-                    <h2 class="tpl-d-question">Does {{ $rd.destination.country }} restrict any breeds?</h2>
-                    <div class="tpl-d-answer">
-                        <p>Yes. {{ $rd.destination.country }} bans or restricts entry for the following breeds. In plain terms, if your dog is on this list — or a confirmed cross — you need specialist advice before booking anything:</p>
-                        <ul class="tpl-d-breed-list">
-                            {{ range . }}<li>{{ . }}</li>{{ end }}
-                        </ul>
-                        <p>Contact us before making any bookings if your dog is one of these breeds or closely resembles one.</p>
-                    </div>
-                </section>
-                {{ end }}
-
-                {{/* Q8: What could go wrong? — warnings */}}
+                {{/* Warnings */}}
                 {{ with $rd.key_warnings }}
-                <section class="tpl-d-qa mb-5" data-aos="fade-up">
-                    <h2 class="tpl-d-question">What are the most common mistakes on this route?</h2>
-                    <div class="tpl-d-answer">
+                <div class="tpl-d-section mb-4" data-aos="fade-up">
+                    <h2>What do owners on this route often miss?</h2>
+                    <div class="tpl-d-warn-list">
                         {{ range . }}
-                        <div class="tpl-d-warning-row">
-                            <i class="fas fa-exclamation-triangle me-2" aria-hidden="true"></i>{{ . }}
-                        </div>
+                        <div class="tpl-d-warn-item"><span class="tpl-d-warn-icon">&#9888;</span>{{ . }}</div>
                         {{ end }}
                     </div>
-                </section>
+                </div>
                 {{ end }}
 
-                {{/* Content sections from Wordsmith */}}
+                {{/* Content sections */}}
                 {{ with .Params.content.sections }}
                 {{ range . }}
-                <section class="tpl-d-qa mb-5" data-aos="fade-up">
-                    {{ with .heading }}<h2 class="tpl-d-question">{{ . }}</h2>{{ end }}
-                    <div class="tpl-d-answer">{{ .body | markdownify }}</div>
-                </section>
+                <div class="tpl-d-section mb-4" data-aos="fade-up">
+                    {{ with .heading }}<h2>{{ . }}</h2>{{ end }}
+                    {{ .body | markdownify }}
+                </div>
                 {{ end }}
                 {{ end }}
 
-                {{/* Full FAQ section */}}
+                {{/* FAQs */}}
                 {{ with .Params.faqs }}
-                <section class="tpl-d-qa mb-5" id="faq-section" data-aos="fade-up">
-                    <h2 class="tpl-d-question">Other questions owners ask about this route</h2>
-                    <div class="tpl-d-answer">
-                        {{ range . }}
-                        <div class="tpl-d-faq-item">
-                            <p class="tpl-d-faq-q"><strong>{{ .question }}</strong></p>
-                            <div class="tpl-d-faq-a">{{ .answer | markdownify }}</div>
-                        </div>
-                        {{ end }}
+                <div class="tpl-d-section mb-4" id="faq-section" data-aos="fade-up">
+                    <h2>Other questions owners ask</h2>
+                    {{ range . }}
+                    <div class="tpl-d-qa-card">
+                        <div class="tpl-d-qa-q">{{ .question }}</div>
+                        <div class="tpl-d-qa-a">{{ .answer | markdownify }}</div>
                     </div>
-                </section>
+                    {{ end }}
+                </div>
                 {{ end }}
 
                 {{/* Related routes */}}
                 {{ with .Params.links }}
-                <section class="tpl-d-qa mb-4">
+                <div class="tpl-d-section mb-4">
                     {{ with .sideways }}
-                    <h2 class="tpl-d-question">Which similar routes might be relevant?</h2>
-                    <div class="tpl-d-answer">
-                        <ul class="tpl-d-related-list">
-                            {{ range . }}<li><a href="{{ .url }}">{{ .text }}</a></li>{{ end }}
-                        </ul>
+                    <h2>Related routes</h2>
+                    <div class="tpl-d-route-pills">
+                        {{ range . }}<a href="{{ .url }}" class="tpl-d-route-pill">{{ .text }}</a>{{ end }}
                     </div>
                     {{ end }}
                     {{ with .upward }}
-                    <div class="mt-3">
-                        {{ range . }}<a href="{{ .url }}" class="tpl-d-country-link me-3">{{ .text }}</a>{{ end }}
+                    <div class="mt-3 tpl-d-route-pills">
+                        {{ range . }}<a href="{{ .url }}" class="tpl-d-route-pill">{{ .text }}</a>{{ end }}
                     </div>
                     {{ end }}
-                </section>
+                </div>
                 {{ end }}
-
-                {{/* Final CTA section */}}
-                <section class="tpl-d-cta-section mb-5" data-aos="fade-up">
-                    <h2 class="tpl-d-question">What should I do next?</h2>
-                    <div class="tpl-d-answer">
-                        <p>The best first step is a free consultation. You'll get a clear picture of the timeline, the costs, and exactly which documents apply to your pet's breed, age, and vaccination history.</p>
-                    </div>
-                </section>
 
                 {{/* Quote form */}}
                 {{ partial "quote-form.html" . }}
@@ -219,10 +176,5 @@
             </div>
         </div>
     </div>
-</div>
-
-{{/* Mobile floating CTA bar */}}
-<div class="tpl-d-mobile-cta d-lg-none" aria-label="Get a quote">
-    <a href="#quote-form" class="btn btn-secondary w-100">Get your free quote</a>
 </div>
 </article>
