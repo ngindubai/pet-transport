@@ -223,9 +223,9 @@
                 </div>
                 {{ end }}
 
-                {{/* Official links */}}
+                {{/* Official links — handle both slice and map formats */}}
                 {{ with .Params.links }}
-                {{ if kindIs "slice" . }}
+                {{ if reflect.IsSlice . }}
                 <div class="tpl-legacy-section mb-4">
                     <h2>Official Resources</h2>
                     <ul class="custom ps-0">
@@ -290,9 +290,9 @@
                     </div>
                     {{ end }}
 
-                    {{/* Sidebar related routes — old YAML style */}}
+                    {{/* Sidebar related routes — map format with sideways/upward keys */}}
                     {{ with .Params.links }}
-                    {{ if kindIs "map" . }}
+                    {{ if reflect.IsMap . }}
                     {{ with .sideways }}
                     <div class="widget1 bg-light p-3 rounded mb-3">
                         <h5 style="font-family:'Montserrat',sans-serif;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:#1a6b4a;">Related Routes</h5>
