@@ -21,6 +21,17 @@
 }
 </script>
 {{ end }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ .Site.BaseURL }}"},
+    {"@type": "ListItem", "position": 2, "name": "Countries", "item": "{{ .Site.BaseURL }}pet-transport/countries/"},
+    {"@type": "ListItem", "position": 3, "name": "{{ .Params.country_name }}", "item": "{{ .Permalink }}"}
+  ]
+}
+</script>
 {{ end }}
 
 {{ define "main" }}
@@ -56,6 +67,9 @@
         <div class="row">
             {{/* Main column */}}
             <div class="col-lg-9">
+
+                {{/* Verified date stamp */}}
+                {{ partial "verified-date.html" . }}
 
                 {{/* Overview */}}
                 {{ with $country.content.overview }}
@@ -165,7 +179,7 @@
                 {{ end }}
                 {{ end }}
 
-                {{/* Routes to this country — injected into frontmatter by rebuild_link_graph_v3.py */}}
+                {{/* Routes to this country */}}
                 {{ with $routes }}
                 <div id="routes" class="mb-5">
                     <div class="section-heading text-start">

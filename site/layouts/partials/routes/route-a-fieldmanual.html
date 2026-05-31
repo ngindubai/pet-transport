@@ -1,10 +1,10 @@
 {{/*
   Template A — Field Manual
   Visual: Operations manual. Dense, tabular, slim banner. Single column, no sidebar.
-  Section order: Hero → Overview → Documents table (top) → Stepper timeline →
+  Section order: Hero → Verified stamp → Overview → Documents table (top) → Stepper timeline →
                  Import table → Export table → Costs table → Warnings → Content sections →
                  FAQ accordion → Related routes grid → Quote form
-  Schema: HowTo (set in single.html router)
+  Schema: HowTo + FAQPage + BreadcrumbList (set in single.html router)
 */}}
 {{ $rd := .Params.route_data }}
 
@@ -41,6 +41,9 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-10">
+
+                {{/* Verified date stamp */}}
+                {{ partial "verified-date.html" . }}
 
                 {{/* Overview */}}
                 {{ with .Params.content.overview }}
