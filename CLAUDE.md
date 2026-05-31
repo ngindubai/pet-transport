@@ -202,16 +202,16 @@ Claude in Chrome reads WhatsApp Web (web.whatsapp.com). Only read conversations 
 
 ---
 
-## DEPLOY PIPELINE — INCREMENTAL FTP (ESTABLISHED 2026-05-22)
+## DEPLOY PIPELINE — AUTOMATIC ON PUSH (CONFIRMED 2026-05-31)
 
-**This is the proven, working deploy method. Do not change it without explicit approval.**
+**Every push to main triggers the workflow automatically. No manual step required.**
 
 ### How it works
 
 ```
 Push/merge to main
    ↓
-GitHub Actions triggers automatically
+GitHub Actions triggers automatically (on: push, branches: [main])
    ↓
 Hugo --gc --minify builds site/public/ (~6,200+ pages)
    ↓
@@ -223,7 +223,7 @@ Only NEW or CHANGED files are uploaded (seconds, not hours)
    ↓
 Updated state file uploaded to Hostinger
    ↓
-Live on pettransportglobal.com
+Live on pettransportglobal.com within ~80 seconds for most changes
 ```
 
 ### Critical rules
@@ -248,7 +248,8 @@ Live on pettransportglobal.com
 
 - **Quality routes built:** 5,461 of 37,830 country pairs (~14%).
 - **Blog:** 411 articles. Content plan: 252 new articles Jun 2026-May 2027. Day 3 is next.
-- **Deploy pipeline:** Working. Incremental FTP via GitHub Actions. Confirmed 2026-05-22.
+- **Deploy pipeline:** Automatic on push to main. Confirmed working 2026-05-31.
+- **GEO implementation:** All 4 phases complete (P1 Organization schema + robots, P2 universal route schema, P3 llms.txt + freshness + methodology page, P4 methodology link + airline/breed cross-links).
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 deployed. Both POST (desktop) and GET (mobile) confirmed working.
 - **Live tracker:** [build_state.json](build_state.json)
 - **Plan files:** [BUILD-PLAN.md](BUILD-PLAN.md), [cascading-build-plan-pet=transport.html](cascading-build-plan-pet=transport.html)
@@ -411,7 +412,7 @@ pet-transport/
 1. Read BUILD-PLAN.md and build_state.json
 2. Write content through full quality gate
 3. Present HTML preview, wait for approval
-4. Commit to main, provide live URL and Actions link
+4. Commit to main — deploy is automatic
 5. Stop and wait
 
 ### "session end" or "wrap up"
@@ -428,7 +429,7 @@ pet-transport/
 - Python generators at repo root, not in scripts/.
 - Hugo content must live in site/content/.
 - site/public/ is gitignored — never commit build output.
-- Every push to main auto-deploys via incremental FTP.
+- **Every push to main triggers an automatic deploy via incremental FTP. No manual trigger needed.**
 - Do NOT delete .ftp-deploy-sync-state.json from Hostinger.
 - FTP credentials in GitHub Secrets only — never in chat or commits.
 - .github/workflows/deploy.yml cannot be edited via MCP connector (403).
@@ -449,4 +450,4 @@ pet-transport/
 
 ---
 
-*Last updated: 2026-05-26*
+*Last updated: 2026-05-31*
