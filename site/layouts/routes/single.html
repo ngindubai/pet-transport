@@ -1,8 +1,46 @@
 {{ define "title" }}{{ .Params.seo.title | default (printf "Pet Transport from %s to %s: Guide | Pet Transport Global" .Params.origin_name .Params.destination_name) }}{{ end }}
 
 {{ define "schema" }}
-{{ $variant := .Params.template_variant | default "legacy" }}
-{{ if eq $variant "D" }}
+{{/* Universal schema: emit BOTH HowTo and FAQPage on every variant that has the data.
+     BreadcrumbList added on all route pages.
+     Replaces the old variant-D-only / non-D-only split. */}}
+
+{{/* --- BreadcrumbList (always) --- */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ .Site.BaseURL }}"},
+    {"@type": "ListItem", "position": 2, "name": "Routes", "item": "{{ .Site.BaseURL }}pet-transport/routes/"},
+    {"@type": "ListItem", "position": 3, "name": "{{ .Params.origin_name }} to {{ .Params.destination_name }}", "item": "{{ .Permalink }}"}  
+  ]
+}
+</script>
+
+{{/* --- HowTo (whenever timeline_steps exists) --- */}}
+{{ with .Params.route_data.timeline_steps }}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to transport your pet from {{ $.Params.origin_name }} to {{ $.Params.destination_name }}",
+    "description": "Step-by-step guide to shipping your dog or cat from {{ $.Params.origin_name }} to {{ $.Params.destination_name }}, including regulations, vaccinations, and airline options.",
+    "step": [
+        {{ range $i, $step := . }}{{ if $i }},{{ end }}
+        {
+            "@type": "HowToStep",
+            "position": {{ add $i 1 }},
+            "name": {{ $step.action | jsonify }},
+            "text": {{ printf "%s. Timing: %s." $step.action $step.timing | jsonify }}
+        }
+        {{ end }}
+    ]
+}
+</script>
+{{ end }}
+
+{{/* --- FAQPage (whenever faqs exists) --- */}}
 {{ with .Params.faqs }}
 <script type="application/ld+json">
 {
@@ -20,28 +58,7 @@
 }
 </script>
 {{ end }}
-{{ else }}
-{{ with .Params.route_data.timeline_steps }}
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-    "name": "How to transport your pet from {{ $.Params.origin_name }} to {{ $.Params.destination_name }}",
-    "description": "Step-by-step guide to shipping your dog or cat from {{ $.Params.origin_name }} to {{ $.Params.destination_name }}, including regulations, vaccinations, and airline options.",
-    "step": [
-        {{ range $i, $step := . }}{{ if $i }},{{ end }}
-        {
-            "@type": "HowToStep",
-            "position": {{ add $i 1 }},
-            "name": "{{ $step.action }}",
-            "text": "{{ $step.action }}. Timing: {{ $step.timing }}."
-        }
-        {{ end }}
-    ]
-}
-</script>
-{{ end }}
-{{ end }}
+
 {{ end }}
 
 {{ define "main" }}

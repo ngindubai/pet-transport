@@ -16,7 +16,47 @@
     <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
     {{ with .Params.og_image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
 
-    {{/* Schema.org */}}
+    {{/* Site-wide Organization + WebSite schema — renders on every page */}}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "Pet Transport Global",
+          "url": "https://pettransportglobal.com/",
+          "logo": "https://pettransportglobal.com/images/logo.png",
+          "description": "Professional international pet transport services. Route-specific guides for shipping dogs and cats between countries.",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "telephone": "+447703577246",
+            "availableLanguage": "English"
+          },
+          "sameAs": [
+            "TODO: Facebook URL",
+            "TODO: Instagram URL",
+            "TODO: LinkedIn URL"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "name": "Pet Transport Global",
+          "url": "https://pettransportglobal.com/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://pettransportglobal.com/pet-transport/routes/{search_term_string}/"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        }
+      ]
+    }
+    </script>
+
+    {{/* Page-level schema (route, country, blog, etc.) */}}
     {{ block "schema" . }}{{ end }}
 
     {{/* Google Fonts — brand fonts only: Montserrat (headings) + Roboto (body) */}}
