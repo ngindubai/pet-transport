@@ -50,8 +50,9 @@
             {{/* ── MAIN CONTENT ─────────────────────────────────────────── */}}
             <div class="col-lg-8 page-with-sidebar">
 
-                {{/* Verified date stamp */}}
+                {{/* Verified date stamp + data source link */}}
                 {{ partial "verified-date.html" . }}
+                {{ partial "data-source-link.html" . }}
 
                 {{/* Quick-answer summary box */}}
                 <div class="tpl-b-summary-box mb-4" data-aos="fade-up">
@@ -140,7 +141,10 @@
                     <div class="tpl-b-breed-alert">
                         <h5>Breed restrictions: {{ $rd.destination.country }}</h5>
                         <div class="tpl-b-breed-chips">
-                            {{ range . }}<span class="tpl-b-breed-chip">{{ . }}</span>{{ end }}
+                            {{ range . }}
+                            {{ $slug := . | lower | replaceRE "[^a-z0-9]+" "-" | strings.TrimRight "-" }}
+                            <a href="/pet-transport/breeds/{{ $slug }}/" class="tpl-b-breed-chip">{{ . }}</a>
+                            {{ end }}
                         </div>
                     </div>
                 </div>
@@ -195,6 +199,9 @@
                         </ul>
                         <a href="#quote-form" class="btn btn-secondary w-100 mt-2">Get a quote</a>
                     </div>
+
+                    {{/* Airline + breed links */}}
+                    {{ partial "airline-breed-sidebar.html" . }}
 
                     {{ with .Params.links }}
                     {{ with .sideways }}

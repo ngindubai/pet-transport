@@ -1,6 +1,6 @@
 {{/*
   Template D — Conversational Q&A
-  FAQ-led structure. Verified date stamp added for P3 GEO compliance.
+  FAQ-led structure. Verified date stamp + data source link + airline/breed sidebar added.
 */}}
 {{ $rd := .Params.route_data }}
 
@@ -34,8 +34,9 @@
         <div class="row">
             <div class="col-lg-8">
 
-                {{/* Verified date stamp */}}
+                {{/* Verified date stamp + data source link */}}
                 {{ partial "verified-date.html" . }}
+                {{ partial "data-source-link.html" . }}
 
                 {{/* At-a-glance stat strip */}}
                 {{ with $rd }}
@@ -168,6 +169,10 @@
                         {{ end }}
                         <a href="#quote-form" class="btn btn-secondary w-100 mt-2">Get a quote</a>
                     </div>
+
+                    {{/* Airline + breed links */}}
+                    {{ partial "airline-breed-sidebar.html" . }}
+
                     {{ with .Params.links }}
                     {{ with .sideways }}
                     <div class="tpl-d-sidebar-card mb-4">

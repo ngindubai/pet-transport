@@ -10,7 +10,7 @@
 
 <article class="tpl-route-legacy">
 
-{{/* ── HERO ──────────────────────────────────────────────────────────── */}}
+{{/* ── HERO ──────────────────────────────────────────────────────────────── */}}
 <div class="tpl-legacy-hero">
     <div class="container">
         <nav aria-label="breadcrumb" class="mb-3">
@@ -40,12 +40,12 @@
     </div>
 </div>
 
-{{/* ── PAGE BODY ──────────────────────────────────────────────────────── */}}
+{{/* ── PAGE BODY ────────────────────────────────────────────────────────────── */}}
 <div class="page">
     <div class="container">
         <div class="row">
 
-            {{/* ── MAIN CONTENT ──────────────────────────────────────────── */}}
+            {{/* ── MAIN CONTENT ────────────────────────────────────────────────────── */}}
             <div class="col-lg-9 page-with-sidebar">
 
                 {{/* Quick CTA bar */}}
@@ -53,6 +53,10 @@
                     <p class="mb-0" style="color:rgba(255,255,255,.85);font-size:.9rem;">Planning this move? We can guide you through every step.</p>
                     <a href="#quote-form" class="btn btn-secondary btn-sm">Get Your Quote</a>
                 </div>
+
+                {{/* Verified date stamp + data source link */}}
+                {{ partial "verified-date.html" . }}
+                {{ partial "data-source-link.html" . }}
 
                 {{/* CASE 1: Structured route_data (old YAML-driven pages) */}}
                 {{ if $rd }}
@@ -130,12 +134,15 @@
                 </div>
                 {{ end }}
 
-                {{/* Breed restrictions */}}
+                {{/* Breed restrictions with links */}}
                 {{ with $rd.destination.breed_restrictions }}
                 <div class="tpl-legacy-section mb-4" id="breed-restrictions">
                     <h2>Breed Restrictions</h2>
                     <ul class="checkmark ps-0">
-                        {{ range . }}<li>{{ . }}</li>{{ end }}
+                        {{ range . }}
+                        {{ $slug := . | lower | replaceRE "[^a-z0-9]+" "-" | strings.TrimRight "-" }}
+                        <li><a href="/pet-transport/breeds/{{ $slug }}/">{{ . }}</a></li>
+                        {{ end }}
                     </ul>
                     <div class="tpl-legacy-warning mt-3">
                         <i class="fas fa-exclamation-triangle me-2"></i>Contact us before booking if your pet is a restricted breed.
@@ -163,7 +170,7 @@
                 {{ end }}
                 {{ end }}
 
-                {{/* CASE 2: Prose-only pages (Chunk 13 style — plain markdown body, structured front matter) */}}
+                {{/* CASE 2: Prose-only pages */}}
                 {{ else }}
 
                 {{/* Requirements at a glance bar */}}
@@ -237,7 +244,7 @@
 
             </div>
 
-            {{/* ── SIDEBAR ──────────────────────────────────────────────── */}}
+            {{/* ── SIDEBAR ──────────────────────────────────────────────────── */}}
             <div class="col-lg-3">
                 <div class="sidebar sticky-top" style="top:100px;">
 
@@ -254,21 +261,14 @@
                         <a href="#quote-form" class="btn btn-secondary btn-sm w-100">Get a Quote</a>
                     </div>
 
+                    {{/* Airline + breed links */}}
+                    {{ partial "airline-breed-sidebar.html" . }}
+
                     {{/* Approved labs if titre test required */}}
                     {{ with .Params.route_data }}
                     {{ with .approved_labs }}
                     <div class="widget1 bg-light p-3 rounded mb-3">
                         <h5 style="font-family:'Montserrat',sans-serif;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:#1a6b4a;">Approved Titre Test Labs</h5>
-                        <ul class="list-unstyled mb-0" style="font-size:.82rem;">
-                            {{ range . }}<li class="mb-1">{{ . }}</li>{{ end }}
-                        </ul>
-                    </div>
-                    {{ end }}
-
-                    {{/* Airlines */}}
-                    {{ with .airlines }}
-                    <div class="widget1 bg-light p-3 rounded mb-3">
-                        <h5 style="font-family:'Montserrat',sans-serif;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:#1a6b4a;">Airlines on This Route</h5>
                         <ul class="list-unstyled mb-0" style="font-size:.82rem;">
                             {{ range . }}<li class="mb-1">{{ . }}</li>{{ end }}
                         </ul>

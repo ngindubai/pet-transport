@@ -1,7 +1,7 @@
 {{/*
   Template A — Field Manual
   Visual: Operations manual. Dense, tabular, slim banner. Single column, no sidebar.
-  Section order: Hero → Verified stamp → Overview → Documents table (top) → Stepper timeline →
+  Section order: Hero → Verified stamp → Data source link → Overview → Documents table (top) → Stepper timeline →
                  Import table → Export table → Costs table → Warnings → Content sections →
                  FAQ accordion → Related routes grid → Quote form
   Schema: HowTo + FAQPage + BreadcrumbList (set in single.html router)
@@ -10,7 +10,7 @@
 
 <article class="tpl-route-a">
 
-{{/* ── SLIM BANNER HERO ─────────────────────────────────────────────────── */}}
+{{/* ── SLIM BANNER HERO ───────────────────────────────────────────────────────── */}}
 <div class="tpl-a-hero">
     <div class="container">
         <nav aria-label="breadcrumb" class="tpl-a-breadcrumb">
@@ -36,14 +36,15 @@
     </div>
 </div>
 
-{{/* ── MAIN CONTENT (full-width, single column) ────────────────────────── */}}
+{{/* ── MAIN CONTENT (full-width, single column) ─────────────────────────────────── */}}
 <div class="page">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-10">
 
-                {{/* Verified date stamp */}}
+                {{/* Verified date stamp + data source link */}}
                 {{ partial "verified-date.html" . }}
+                {{ partial "data-source-link.html" . }}
 
                 {{/* Overview */}}
                 {{ with .Params.content.overview }}
@@ -149,7 +150,10 @@
                 <section class="tpl-a-section mb-5" data-aos="fade-up">
                     <h2>Restricted Breeds: {{ $rd.destination.country }}</h2>
                     <ul class="tpl-a-list">
-                        {{ range . }}<li>{{ . }}</li>{{ end }}
+                        {{ range . }}
+                        {{ $slug := . | lower | replaceRE "[^a-z0-9]+" "-" | strings.TrimRight "-" }}
+                        <li><a href="/pet-transport/breeds/{{ $slug }}/">{{ . }}</a></li>
+                        {{ end }}
                     </ul>
                     <div class="tpl-a-warn-box">
                         <i class="fas fa-exclamation-triangle me-2" aria-hidden="true"></i>
@@ -184,6 +188,9 @@
                 {{ with .Params.faqs }}
                 {{ partial "faq-accordion.html" (dict "faqs" .) }}
                 {{ end }}
+
+                {{/* Airline + breed sidebar widgets (inline for single-column layout) */}}
+                {{ partial "airline-breed-sidebar.html" . }}
 
                 {{/* Related routes — inline grid at the bottom */}}
                 {{ with .Params.links }}

@@ -58,8 +58,9 @@
             {{/* Main content */}}
             <div class="col-lg-8">
 
-                {{/* Verified date stamp */}}
+                {{/* Verified date stamp + data source link */}}
                 {{ partial "verified-date.html" . }}
+                {{ partial "data-source-link.html" . }}
 
                 {{/* Overview */}}
                 {{ with .Params.content.overview }}
@@ -120,8 +121,9 @@
                             <thead><tr><th>Airline</th><th>Type</th><th>Policy</th></tr></thead>
                             <tbody>
                                 {{ range . }}
+                                {{ $slug := .name | lower | replaceRE "[^a-z0-9]+" "-" | strings.TrimRight "-" }}
                                 <tr>
-                                    <td><span class="tpl-c-airline-name">{{ .name }}</span></td>
+                                    <td><a href="/pet-transport/airlines/{{ $slug }}/" class="tpl-c-airline-name">{{ .name }}</a></td>
                                     <td><span class="tpl-c-airline-type {{ .type }}">{{ .type | replace "_" " " | title }}</span></td>
                                     <td>{{ .policy_summary }}</td>
                                 </tr>
@@ -208,6 +210,10 @@
                         {{ with $rd.estimated_timeline_weeks }}<div class="tpl-c-stat-pair"><span>Timeline</span><strong>{{ . }} weeks</strong></div>{{ end }}
                         <a href="#quote-form" class="btn btn-primary w-100 mt-3">Get a quote</a>
                     </div>
+
+                    {{/* Airline + breed links */}}
+                    {{ partial "airline-breed-sidebar.html" . }}
+
                     {{ with .Params.links }}
                     {{ with .sideways }}
                     <div class="tpl-c-sidebar-card mb-4">

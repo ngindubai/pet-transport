@@ -1,7 +1,6 @@
 {{/*
   Template E — Data-Forward
-  Stats-dense layout. Verified date stamp added for P3 GEO compliance.
-  Note: original file preserved; only verified-date partial added after hero.
+  Stats-dense layout. Verified date stamp + data source link + airline/breed sidebar added.
 */}}
 {{ $rd := .Params.route_data }}
 
@@ -40,8 +39,9 @@
         <div class="row">
             <div class="col-lg-8">
 
-                {{/* Verified date stamp */}}
+                {{/* Verified date stamp + data source link */}}
                 {{ partial "verified-date.html" . }}
+                {{ partial "data-source-link.html" . }}
 
                 {{/* Overview */}}
                 {{ with .Params.content.overview }}
@@ -110,7 +110,7 @@
                 </div>
                 {{ end }}
 
-                {{/* Airlines */}}
+                {{/* Airlines with links */}}
                 {{ with $rd.airlines }}
                 <div class="tpl-e-section mb-4" data-aos="fade-up">
                     <h2>Airlines: Pet Policy Summary</h2>
@@ -119,8 +119,9 @@
                             <thead><tr><th>Airline</th><th>Type</th><th>Policy summary</th></tr></thead>
                             <tbody>
                                 {{ range . }}
+                                {{ $slug := .name | lower | replaceRE "[^a-z0-9]+" "-" | strings.TrimRight "-" }}
                                 <tr>
-                                    <td>{{ .name }}</td>
+                                    <td><a href="/pet-transport/airlines/{{ $slug }}/">{{ .name }}</a></td>
                                     <td>{{ .type | replace "_" " " | title }}</td>
                                     <td>{{ .policy_summary }}</td>
                                 </tr>
@@ -141,12 +142,15 @@
                 </div>
                 {{ end }}
 
-                {{/* Breed restrictions */}}
+                {{/* Breed restrictions with links */}}
                 {{ with $rd.destination.breed_restrictions }}
                 <div class="tpl-e-section mb-4" data-aos="fade-up">
                     <h2>Restricted Breeds: {{ $rd.destination.country }}</h2>
                     <ul>
-                        {{ range . }}<li>{{ . }}</li>{{ end }}
+                        {{ range . }}
+                        {{ $slug := . | lower | replaceRE "[^a-z0-9]+" "-" | strings.TrimRight "-" }}
+                        <li><a href="/pet-transport/breeds/{{ $slug }}/">{{ . }}</a></li>
+                        {{ end }}
                     </ul>
                 </div>
                 {{ end }}
@@ -214,6 +218,10 @@
                         {{ end }}
                         <a href="#quote-form" class="btn btn-secondary w-100 mt-3">Get a quote</a>
                     </div>
+
+                    {{/* Airline + breed links */}}
+                    {{ partial "airline-breed-sidebar.html" . }}
+
                     {{ with .Params.links }}
                     {{ with .sideways }}
                     <div class="tpl-e-sidebar-card mb-4">

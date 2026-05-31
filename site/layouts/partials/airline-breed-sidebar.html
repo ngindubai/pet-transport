@@ -1,0 +1,51 @@
+{{/*
+  Partial: airline-breed-sidebar.html
+  Renders airline guide links and breed guide links in route page sidebars.
+  GEO P4 — strengthens route ↔ airline ↔ breed cross-links.
+
+  Airline links: built from route_data.airlines[].name, slugified to match
+  the /pet-transport/airlines/[slug]/ URL pattern.
+
+  Breed links: built from destination.breed_restrictions[] names where they
+  map to known breed guide slugs, plus a fallback to the breeds index.
+
+  Usage: {{ partial "airline-breed-sidebar.html" . }}
+*/}}
+{{ $rd := .Params.route_data }}
+
+{{/* Airline guide links */}}
+{{ with $rd.airlines }}
+<div class="widget1 bg-light p-3 rounded mb-3">
+  <h5 style="font-family:'Montserrat',sans-serif;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:#1a6b4a;">Airline guides</h5>
+  <ul class="list-unstyled mb-0" style="font-size:.82rem;">
+    {{ range . }}
+    {{ $name := .name | default . }}
+    {{ $slug := $name | lower | replaceRE "[^a-z0-9]+" "-" | strings.TrimRight "-" }}
+    <li class="mb-1"><a href="/pet-transport/airlines/{{ $slug }}/">{{ $name }}</a></li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
+
+{{/* Breed guide links */}}
+{{ with $rd.destination.breed_restrictions }}
+<div class="widget1 bg-light p-3 rounded mb-3">
+  <h5 style="font-family:'Montserrat',sans-serif;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:#b91c1c;">Breed restrictions</h5>
+  <ul class="list-unstyled mb-0" style="font-size:.82rem;">
+    {{ range . }}
+    {{ $slug := . | lower | replaceRE "[^a-z0-9]+" "-" | strings.TrimRight "-" }}
+    <li class="mb-1"><a href="/pet-transport/breeds/{{ $slug }}/">{{ . }}</a></li>
+    {{ end }}
+  </ul>
+  <a href="/pet-transport/breeds/" style="font-size:.78rem;color:#1a6b4a;display:block;margin-top:6px;">All breed guides &rarr;</a>
+</div>
+{{ end }}
+
+{{/* Always show breeds index link if no breed restrictions listed */}}
+{{ if not $rd.destination.breed_restrictions }}
+<div class="widget1 bg-light p-3 rounded mb-3">
+  <h5 style="font-family:'Montserrat',sans-serif;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:#1a6b4a;">Breed guides</h5>
+  <p style="font-size:.82rem;margin-bottom:6px;">Check breed-specific airline rules and country bans.</p>
+  <a href="/pet-transport/breeds/" style="font-size:.82rem;color:#1a6b4a;">Browse all breed guides &rarr;</a>
+</div>
+{{ end }}
