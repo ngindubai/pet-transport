@@ -58,6 +58,9 @@
             {{/* Main content */}}
             <div class="col-lg-8">
 
+                {{/* Verified date stamp */}}
+                {{ partial "verified-date.html" . }}
+
                 {{/* Overview */}}
                 {{ with .Params.content.overview }}
                 <div class="tpl-c-section mb-4" data-aos="fade-up">

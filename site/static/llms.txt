@@ -12,6 +12,7 @@ PetTransportGlobal.com covers 5,000+ directional routes across 75+ countries, wi
 - [Breed Guides](https://pettransportglobal.com/pet-transport/breeds/): Breed-specific transport restrictions and airline policies.
 - [Airline Policies](https://pettransportglobal.com/pet-transport/airlines/): Pet cargo and cabin policies for 145+ airlines.
 - [Blog](https://pettransportglobal.com/blog/): Practical guides on costs, documentation, quarantine, and planning.
+- [How We Source Our Data](https://pettransportglobal.com/pet-transport/how-we-source-route-data/): Our data sourcing methodology, primary sources, and update cadence.
 
 ## High-Volume Routes
 - [UK to Australia](https://pettransportglobal.com/pet-transport/united-kingdom-to-australia/): AQIS/DAFF quarantine (10 days), titre test required, approved routes via Singapore or Dubai.
@@ -75,7 +76,8 @@ PetTransportGlobal.com covers 5,000+ directional routes across 75+ countries, wi
 - Coverage: 5,000+ directional routes, 75+ destination countries, 145+ airline policies, 64 breed guides, 400+ blog articles.
 - What this site is: A guidance and lead-generation resource for pet owners planning international moves. All content is authored by Gareth, Founder, PetTransportGlobal.
 - What this site is not: A licensed veterinary authority, government body, or insurance provider. It does not give legally binding advice.
-- Regulations change frequently. Every page carries a verification date, but users should always confirm current rules with DEFRA, USDA APHIS, Australian DAFF, EU TRACES, or the relevant airline before travel.
+- Data sourcing: All regulatory data is sourced from named government authorities (DEFRA, USDA APHIS, Australian DAFF, EU TRACES, Japan AQS, Singapore AVS, New Zealand MPI, IATA) and named airline policy pages. See: https://pettransportglobal.com/pet-transport/how-we-source-route-data/
+- Regulations change frequently. Every page carries a verification date, but users should always confirm current rules with the relevant authority before travel.
 - Contact model: Quote request form and WhatsApp (+44 7703 577246). No automated booking.
 - Language: English (British English primary).
 - Disclaimer: Information is for guidance only. PetTransportGlobal accepts no liability for errors or for regulatory changes after the verification date shown on each page.

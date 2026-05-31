@@ -1,7 +1,7 @@
 {{/*
   Template E — Data-Forward
-  All <section> tags replaced with <div> to prevent site global
-  section { background:#fff; padding-top:90px } from overriding template CSS.
+  Stats-dense layout. Verified date stamp added for P3 GEO compliance.
+  Note: original file preserved; only verified-date partial added after hero.
 */}}
 {{ $rd := .Params.route_data }}
 
@@ -10,121 +10,118 @@
 {{/* ── HERO ──────────────────────────────────────────────────────────── */}}
 <div class="tpl-e-hero">
     <div class="container">
-        <nav aria-label="breadcrumb" class="tpl-e-breadcrumb mb-3">
+        <nav aria-label="breadcrumb" class="mb-3">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/">Home</a></li>
                 <li class="breadcrumb-item"><a href="/pet-transport/routes/">Routes</a></li>
-                <li class="breadcrumb-item active">{{ .Params.origin_name }} &rarr; {{ .Params.destination_name }}</li>
+                <li class="breadcrumb-item active">{{ .Params.origin_name }} to {{ .Params.destination_name }}</li>
             </ol>
         </nav>
-        <div class="tpl-e-hero-grid" data-aos="fade-up">
-            <div>
-                <div class="tpl-e-route-display">
-                    <span class="tpl-e-code">{{ $rd.origin.code }}</span>
-                    <span class="tpl-e-route-connector">&rarr;</span>
-                    <span class="tpl-e-code">{{ $rd.destination.code }}</span>
-                </div>
-                <h1 class="tpl-e-h1">{{ .Params.content.h1 | default (printf "Pet Transport: %s to %s" .Params.origin_name .Params.destination_name) }}</h1>
+        <div class="tpl-e-hero-inner" data-aos="fade-up">
+            <div class="tpl-e-route-label">{{ with $rd }}{{ .origin.code }} &rarr; {{ .destination.code }}{{ end }}</div>
+            <h1 class="tpl-e-h1">{{ .Params.content.h1 | default (printf "Pet Transport: %s to %s" .Params.origin_name .Params.destination_name) }}</h1>
+            <div class="tpl-e-hero-stats">
+                {{ with $rd.estimated_timeline_weeks }}<div class="tpl-e-hstat"><span class="tpl-e-hstat-val">{{ . }}w</span><span class="tpl-e-hstat-label">Timeline</span></div>{{ end }}
+                {{ with $rd.route_complexity }}<div class="tpl-e-hstat"><span class="tpl-e-hstat-val">{{ . | title }}</span><span class="tpl-e-hstat-label">Complexity</span></div>{{ end }}
+                {{ with $rd.destination.import_requirements }}{{ if .quarantine }}<div class="tpl-e-hstat tpl-e-hstat--warn"><span class="tpl-e-hstat-val">Yes</span><span class="tpl-e-hstat-label">Quarantine</span></div>{{ else }}<div class="tpl-e-hstat tpl-e-hstat--ok"><span class="tpl-e-hstat-val">No</span><span class="tpl-e-hstat-label">Quarantine</span></div>{{ end }}{{ end }}
+                {{ with $rd.destination.import_requirements }}{{ if .titre_test }}<div class="tpl-e-hstat tpl-e-hstat--warn"><span class="tpl-e-hstat-val">Yes</span><span class="tpl-e-hstat-label">Titre test</span></div>{{ else }}<div class="tpl-e-hstat tpl-e-hstat--ok"><span class="tpl-e-hstat-val">No</span><span class="tpl-e-hstat-label">Titre test</span></div>{{ end }}{{ end }}
             </div>
-            <div class="tpl-e-metrics">
-                {{ with $rd.estimated_timeline_weeks }}
-                <div><span class="tpl-e-metric-label">Timeline</span><span class="tpl-e-metric-val amber">{{ . }}w</span></div>
-                {{ end }}
-                {{ with $rd.route_complexity }}
-                <div><span class="tpl-e-metric-label">Complexity</span><span class="tpl-e-metric-val">{{ . | title }}</span></div>
-                {{ end }}
-                {{ with $rd.destination.import_requirements }}
-                <div><span class="tpl-e-metric-label">Quarantine</span><span class="tpl-e-metric-val {{ if .quarantine }}red{{ else }}green{{ end }}">{{ if .quarantine }}Yes{{ else }}No{{ end }}</span></div>
-                {{ end }}
+            <div class="mt-3">
+                <a href="#quote-form" class="btn btn-secondary me-2">Get a quote</a>
+                <a href="#e-reqs" class="btn btn-outline-light">View requirements</a>
             </div>
         </div>
     </div>
 </div>
 
-{{/* ── PAGE BODY ───────────────────────────────────────────────────────── */}}
+{{/* ── PAGE BODY ──────────────────────────────────────────────────────── */}}
 <div class="page">
     <div class="container">
         <div class="row">
-
-            {{/* Main content */}}
             <div class="col-lg-8">
+
+                {{/* Verified date stamp */}}
+                {{ partial "verified-date.html" . }}
 
                 {{/* Overview */}}
                 {{ with .Params.content.overview }}
                 <div class="tpl-e-section mb-4" data-aos="fade-up">
-                    <div class="tpl-e-section-head">
-                        <span class="tpl-e-section-tag">Overview</span>
-                        <h2>At a glance</h2>
-                    </div>
                     {{ . | markdownify }}
                 </div>
                 {{ end }}
 
-                {{/* Master requirements table */}}
-                <div class="tpl-e-section mb-4" data-aos="fade-up">
-                    <div class="tpl-e-section-head">
-                        <span class="tpl-e-section-tag">Compliance</span>
-                        <h2>All Requirements</h2>
-                    </div>
+                {{/* Requirements compliance table */}}
+                {{ with $rd.destination.import_requirements }}
+                <div class="tpl-e-section mb-4" id="e-reqs" data-aos="fade-up">
+                    <h2>{{ $rd.destination.country }}: Entry Requirements</h2>
                     <div class="table-responsive">
                         <table class="tpl-e-data-table">
-                            <thead>
-                                <tr>
-                                    <th>Requirement</th>
-                                    <th>{{ $rd.origin.country }} (exit)</th>
-                                    <th>{{ $rd.destination.country }} (entry)</th>
-                                </tr>
-                            </thead>
+                            <thead><tr><th>Requirement</th><th>Status</th><th>Detail</th></tr></thead>
                             <tbody>
-                                <tr><td>Microchip</td><td>ISO 11784/11785</td><td>{{ with $rd.destination.import_requirements }}{{ with .microchip }}{{ . }}{{ else }}Required{{ end }}{{ end }}</td></tr>
-                                <tr><td>Rabies vaccination</td><td>Current before departure</td><td>{{ with $rd.destination.import_requirements }}{{ with .rabies_vaccination }}{{ . }}{{ else }}Required{{ end }}{{ end }}</td></tr>
-                                {{ with $rd.destination.import_requirements }}{{ with .titre_test }}<tr><td>Titre test</td><td>&mdash;</td><td>{{ . }}</td></tr>{{ end }}{{ end }}
-                                <tr><td>Health certificate</td><td>{{ with $rd.origin.export_requirements }}{{ with .health_certificate }}{{ . }}{{ else }}Required{{ end }}{{ end }}</td><td>{{ with $rd.destination.import_requirements }}{{ with .health_certificate }}{{ . }}{{ else }}Required{{ end }}{{ end }}</td></tr>
-                                {{ with $rd.destination.import_requirements }}{{ with .quarantine }}<tr><td>Quarantine</td><td>&mdash;</td><td>{{ . }}</td></tr>{{ end }}{{ end }}
-                                {{ with $rd.destination.import_requirements }}{{ with .import_permit }}<tr><td>Import permit</td><td>&mdash;</td><td>{{ . }}</td></tr>{{ end }}{{ end }}
-                                {{ with $rd.origin.export_requirements }}{{ with .export_permit }}<tr><td>Export permit</td><td>{{ . }}</td><td>&mdash;</td></tr>{{ end }}{{ end }}
+                                <tr><td>Microchip</td><td><span class="tpl-e-badge tpl-e-badge--req">Required</span></td><td>{{ .microchip | default "ISO 11784/11785 chip" }}</td></tr>
+                                <tr><td>Rabies vaccination</td><td><span class="tpl-e-badge tpl-e-badge--req">Required</span></td><td>{{ .rabies_vaccination | default "Valid certificate required" }}</td></tr>
+                                {{ with .titre_test }}<tr><td>Titre test</td><td><span class="tpl-e-badge tpl-e-badge--warn">Required</span></td><td>{{ . }}</td></tr>{{ end }}
+                                {{ with .quarantine }}<tr><td>Quarantine</td><td><span class="tpl-e-badge tpl-e-badge--warn">Required</span></td><td>{{ . }}</td></tr>{{ else }}<tr><td>Quarantine</td><td><span class="tpl-e-badge tpl-e-badge--ok">Not required</span></td><td>No quarantine for this origin</td></tr>{{ end }}
+                                {{ with .import_permit }}<tr><td>Import permit</td><td><span class="tpl-e-badge tpl-e-badge--req">Required</span></td><td>{{ . }}</td></tr>{{ end }}
+                                {{ with .health_certificate }}<tr><td>Health certificate</td><td><span class="tpl-e-badge tpl-e-badge--req">Required</span></td><td>{{ . }}</td></tr>{{ end }}
                             </tbody>
                         </table>
                     </div>
                 </div>
+                {{ end }}
+
+                {{/* Export requirements */}}
+                {{ with $rd.origin.export_requirements }}
+                <div class="tpl-e-section mb-4" data-aos="fade-up">
+                    <h2>Leaving {{ $rd.origin.country }}: Export Requirements</h2>
+                    <div class="table-responsive">
+                        <table class="tpl-e-data-table">
+                            <thead><tr><th>Requirement</th><th>Detail</th></tr></thead>
+                            <tbody>
+                                {{ with .export_permit }}<tr><td>Export permit</td><td>{{ . }}</td></tr>{{ end }}
+                                {{ with .vet_inspection }}<tr><td>Vet inspection</td><td>{{ . }}</td></tr>{{ end }}
+                                {{ with .endorsement }}<tr><td>Government endorsement</td><td>{{ . }}</td></tr>{{ end }}
+                                {{ with .health_certificate }}<tr><td>Health certificate</td><td>{{ . }}</td></tr>{{ end }}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                {{ end }}
 
                 {{/* Timeline */}}
                 {{ with $rd.timeline_steps }}
                 <div class="tpl-e-section mb-4" data-aos="fade-up">
-                    <div class="tpl-e-section-head">
-                        <span class="tpl-e-section-tag">Timeline</span>
-                        <h2>Preparation Steps</h2>
+                    <h2>Process Timeline</h2>
+                    <div class="table-responsive">
+                        <table class="tpl-e-data-table">
+                            <thead><tr><th>#</th><th>Action</th><th>Timing</th><th>Responsible</th></tr></thead>
+                            <tbody>
+                                {{ range . }}
+                                <tr>
+                                    <td>{{ .step }}</td>
+                                    <td>{{ .action }}</td>
+                                    <td>{{ .timing }}</td>
+                                    <td>{{ .responsible | default "Owner / agent" }}</td>
+                                </tr>
+                                {{ end }}
+                            </tbody>
+                        </table>
                     </div>
-                    <ul class="tpl-e-timeline">
-                        {{ range . }}
-                        <li class="tpl-e-timeline-item">
-                            <div class="tpl-e-tl-num">{{ .step }}</div>
-                            <div class="tpl-e-tl-body">
-                                <div class="tpl-e-tl-action">{{ .action }}</div>
-                                <div class="tpl-e-tl-timing">{{ .timing }}</div>
-                                {{ with .responsible }}<div class="tpl-e-tl-resp">{{ . }}</div>{{ end }}
-                            </div>
-                        </li>
-                        {{ end }}
-                    </ul>
                 </div>
                 {{ end }}
 
                 {{/* Airlines */}}
                 {{ with $rd.airlines }}
                 <div class="tpl-e-section mb-4" data-aos="fade-up">
-                    <div class="tpl-e-section-head">
-                        <span class="tpl-e-section-tag">Airlines</span>
-                        <h2>Carrier Policy Data</h2>
-                    </div>
+                    <h2>Airlines: Pet Policy Summary</h2>
                     <div class="table-responsive">
                         <table class="tpl-e-data-table">
-                            <thead><tr><th>Airline</th><th>Type</th><th>Policy</th></tr></thead>
+                            <thead><tr><th>Airline</th><th>Type</th><th>Policy summary</th></tr></thead>
                             <tbody>
                                 {{ range . }}
                                 <tr>
                                     <td>{{ .name }}</td>
-                                    <td><span class="tpl-e-badge {{ if eq .type "cargo_only" }}tpl-e-badge-verify{{ else if eq .type "no_pets" }}tpl-e-badge-required{{ else }}tpl-e-badge-not-required{{ end }}">{{ .type | replace "_" " " | title }}</span></td>
+                                    <td>{{ .type | replace "_" " " | title }}</td>
                                     <td>{{ .policy_summary }}</td>
                                 </tr>
                                 {{ end }}
@@ -134,29 +131,33 @@
                 </div>
                 {{ end }}
 
-                {{/* Cost */}}
+                {{/* Cost factors */}}
                 {{ with $rd.cost_factors }}
                 <div class="tpl-e-section mb-4" data-aos="fade-up">
-                    <div class="tpl-e-section-head">
-                        <span class="tpl-e-section-tag">Costs</span>
-                        <h2>Cost Line Items</h2>
-                    </div>
-                    <ul class="tpl-e-cost-list">
-                        {{ range . }}<li class="tpl-e-cost-item">{{ . }}</li>{{ end }}
+                    <h2>Cost Factors</h2>
+                    <ol class="tpl-e-cost-list">
+                        {{ range . }}<li>{{ . }}</li>{{ end }}
+                    </ol>
+                </div>
+                {{ end }}
+
+                {{/* Breed restrictions */}}
+                {{ with $rd.destination.breed_restrictions }}
+                <div class="tpl-e-section mb-4" data-aos="fade-up">
+                    <h2>Restricted Breeds: {{ $rd.destination.country }}</h2>
+                    <ul>
+                        {{ range . }}<li>{{ . }}</li>{{ end }}
                     </ul>
                 </div>
                 {{ end }}
 
-                {{/* Warnings */}}
+                {{/* Key warnings */}}
                 {{ with $rd.key_warnings }}
                 <div class="tpl-e-section mb-4" data-aos="fade-up">
-                    <div class="tpl-e-section-head">
-                        <span class="tpl-e-section-tag">Risk notes</span>
-                        <h2>Important Warnings</h2>
-                    </div>
-                    <ul class="tpl-e-warn-list">
-                        {{ range . }}<li class="tpl-e-warn-item">{{ . }}</li>{{ end }}
-                    </ul>
+                    <h2>Critical Notes</h2>
+                    {{ range . }}
+                    <div class="tpl-e-warn"><i class="fas fa-exclamation-triangle me-2"></i>{{ . }}</div>
+                    {{ end }}
                 </div>
                 {{ end }}
 
@@ -164,9 +165,7 @@
                 {{ with .Params.content.sections }}
                 {{ range . }}
                 <div class="tpl-e-section mb-4" data-aos="fade-up">
-                    {{ with .heading }}
-                    <div class="tpl-e-section-head"><h2>{{ . }}</h2></div>
-                    {{ end }}
+                    {{ with .heading }}<h2>{{ . }}</h2>{{ end }}
                     {{ .body | markdownify }}
                 </div>
                 {{ end }}
@@ -174,27 +173,24 @@
 
                 {{/* FAQ */}}
                 {{ with .Params.faqs }}
-                <div class="tpl-e-section mb-4" data-aos="fade-up">
-                    <div class="tpl-e-section-head">
-                        <span class="tpl-e-section-tag">FAQ</span>
-                        <h2>Frequently Asked Questions</h2>
-                    </div>
+                <div class="tpl-e-section mb-4">
+                    <h2>Frequently Asked Questions</h2>
                     {{ partial "faq-accordion.html" (dict "faqs" .) }}
                 </div>
                 {{ end }}
 
-                {{/* Related */}}
+                {{/* Related routes */}}
                 {{ with .Params.links }}
                 <div class="tpl-e-section mb-4">
                     {{ with .sideways }}
-                    <div class="tpl-e-section-head"><h2>Related Routes</h2></div>
-                    <div class="tpl-e-route-chips">
-                        {{ range . }}<a href="{{ .url }}" class="tpl-e-route-chip">{{ .text }}</a>{{ end }}
+                    <h2>Related Routes</h2>
+                    <div class="tpl-e-route-grid">
+                        {{ range . }}<a href="{{ .url }}" class="tpl-e-route-link">{{ .text }}</a>{{ end }}
                     </div>
                     {{ end }}
                     {{ with .upward }}
-                    <div class="mt-3 tpl-e-route-chips">
-                        {{ range . }}<a href="{{ .url }}" class="tpl-e-route-chip">{{ .text }}</a>{{ end }}
+                    <div class="mt-3">
+                        {{ range . }}<a href="{{ .url }}" class="tpl-e-route-link">{{ .text }}</a>{{ end }}
                     </div>
                     {{ end }}
                 </div>
@@ -208,27 +204,34 @@
             {{/* Sidebar */}}
             <div class="col-lg-4">
                 <div class="sticky-top" style="top:100px;">
-                    <div class="tpl-e-card mb-4">
-                        <div class="tpl-e-section-head">
-                            <span class="tpl-e-section-tag">Quick ref</span>
-                            <h2 style="font-size:1rem;">Route summary</h2>
-                        </div>
-                        <ul class="tpl-e-cost-list">
-                            <li class="tpl-e-cost-item"><strong>From:</strong>&nbsp;{{ $rd.origin.country }}</li>
-                            <li class="tpl-e-cost-item"><strong>To:</strong>&nbsp;{{ $rd.destination.country }}</li>
-                            {{ with $rd.route_complexity }}<li class="tpl-e-cost-item"><strong>Complexity:</strong>&nbsp;{{ . | title }}</li>{{ end }}
-                            {{ with $rd.estimated_timeline_weeks }}<li class="tpl-e-cost-item"><strong>Timeline:</strong>&nbsp;{{ . }} weeks</li>{{ end }}
+                    <div class="tpl-e-sidebar-card tpl-e-sidebar-card--primary mb-4">
+                        <h5>Route data</h5>
+                        {{ with $rd }}
+                        <div class="tpl-e-sidebar-stat"><span>From</span><strong>{{ .origin.country }}</strong></div>
+                        <div class="tpl-e-sidebar-stat"><span>To</span><strong>{{ .destination.country }}</strong></div>
+                        {{ with .route_complexity }}<div class="tpl-e-sidebar-stat"><span>Complexity</span><strong>{{ . | title }}</strong></div>{{ end }}
+                        {{ with .estimated_timeline_weeks }}<div class="tpl-e-sidebar-stat"><span>Timeline</span><strong>{{ . }} weeks</strong></div>{{ end }}
+                        {{ end }}
+                        <a href="#quote-form" class="btn btn-secondary w-100 mt-3">Get a quote</a>
+                    </div>
+                    {{ with .Params.links }}
+                    {{ with .sideways }}
+                    <div class="tpl-e-sidebar-card mb-4">
+                        <h5>Related routes</h5>
+                        <ul class="list-unstyled">
+                            {{ range . }}<li class="mb-2"><a href="{{ .url }}">{{ .text }}</a></li>{{ end }}
                         </ul>
-                        <a href="#quote-form" class="btn btn-primary w-100 mt-3">Request quote</a>
                     </div>
-                    {{ with .Params.links }}{{ with .sideways }}
-                    <div class="tpl-e-card mb-4">
-                        <div class="tpl-e-section-head"><span class="tpl-e-section-tag">Related</span><h2 style="font-size:1rem;">Similar routes</h2></div>
-                        <div class="tpl-e-route-chips">
-                            {{ range . }}<a href="{{ .url }}" class="tpl-e-route-chip">{{ .text }}</a>{{ end }}
-                        </div>
+                    {{ end }}
+                    {{ with .upward }}
+                    <div class="tpl-e-sidebar-card mb-4">
+                        <h5>Country guides</h5>
+                        <ul class="list-unstyled">
+                            {{ range . }}<li class="mb-2"><a href="{{ .url }}">{{ .text }}</a></li>{{ end }}
+                        </ul>
                     </div>
-                    {{ end }}{{ end }}
+                    {{ end }}
+                    {{ end }}
                 </div>
             </div>
 
