@@ -25,6 +25,24 @@ Use commas, full stops, colons, brackets, or restructure the sentence instead. T
 
 ---
 
+## MANDATORY DOCS UPDATE — EVERY COMMIT
+
+**This rule fires on every single commit to main, no exceptions.**
+
+Whenever content is committed (a blog article, route pages, any site file), the same commit or the immediately following commit must update all three of these files to reflect the new state:
+
+1. **`BUILD-PLAN.md`** — add a session log row: date, what was built, new page count, what is next
+2. **`build_state.json`** — update `routes_built`, `blog_articles`, `total_site_pages`, `last_updated`, `content_plan_articles_written`, and the `notes` field
+3. **`MEMORY.md`** — update "Current State" block (routes, blog count, phase progress, content plan day)
+
+The CURRENT STATUS section in **this file (CLAUDE.md)** must also be kept accurate and updated any time the numbers change.
+
+**Why this matters:** When these docs drift from reality, the next session starts with false context and wastes time on a repo audit. Every commit is also a docs commit.
+
+**When committing via the MCP tool:** Bundle the content files and the three docs files into a single `push_files` call so it is one atomic commit. Never leave a dangling content commit without a matching docs update.
+
+---
+
 ## WHATSAPP AND EMAIL ACCESS RULES — NON-NEGOTIABLE
 
 These rules govern how Claude reads and interacts with Gareth's WhatsApp and email accounts via Claude in Chrome.
@@ -213,7 +231,7 @@ Push/merge to main
    ↓
 GitHub Actions triggers automatically (on: push, branches: [main])
    ↓
-Hugo --gc --minify builds site/public/ (~6,200+ pages)
+Hugo --gc --minify builds site/public/ (~6,300+ pages)
    ↓
 python split_sitemap.py creates section sitemaps
    ↓
@@ -244,10 +262,11 @@ Live on pettransportglobal.com within ~80 seconds for most changes
 
 ---
 
-## CURRENT STATUS (update this when it changes)
+## CURRENT STATUS (keep this accurate — update on every commit)
 
-- **Quality routes built:** 5,461 of 37,830 country pairs (~14%).
-- **Blog:** 411 articles. Content plan: 252 new articles Jun 2026-May 2027. Day 3 is next.
+- **Quality routes built:** 5,521 of ~37,830 country pairs (~14.6%)
+- **Blog articles:** 412. Content plan in progress: Day 4 is next (`pet-transport-uk-to-spain`)
+- **Phase 7 route chunks:** 18 complete. Chunk 19 is next (Template B, Tier A).
 - **Deploy pipeline:** Automatic on push to main. Confirmed working 2026-05-31.
 - **GEO implementation:** All 4 phases complete (P1 Organization schema + robots, P2 universal route schema, P3 llms.txt + freshness + methodology page, P4 methodology link + airline/breed cross-links).
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 deployed. Both POST (desktop) and GET (mobile) confirmed working.
@@ -290,6 +309,7 @@ Every blog article or page must be presented as a rendered HTML file for review 
 3. Present as downloadable `.html` artifact for Gareth to review in a browser
 4. Wait for explicit approval
 5. Only after approval: commit `.md` directly to `main`
+6. In that same commit (or the next one): update BUILD-PLAN.md, build_state.json, MEMORY.md
 
 ---
 
@@ -346,7 +366,8 @@ Never bulk-generate content. One block at a time (25 routes or equivalent). Full
 5. QA scan — the-auditor.md checks
 6. HTML preview — present to Gareth for approval
 7. Commit to main only after approval
-8. Stop and wait for next "go"
+8. **Update BUILD-PLAN.md, build_state.json, MEMORY.md in the same commit** (see MANDATORY DOCS UPDATE)
+9. Stop and wait for next "go"
 
 ---
 
@@ -412,7 +433,7 @@ pet-transport/
 1. Read BUILD-PLAN.md and build_state.json
 2. Write content through full quality gate
 3. Present HTML preview, wait for approval
-4. Commit to main — deploy is automatic
+4. Commit to main with docs update bundled in — deploy is automatic
 5. Stop and wait
 
 ### "session end" or "wrap up"
@@ -438,6 +459,7 @@ pet-transport/
 - Enquiry tracker webhook v4 is live. Always provide both POST (desktop) and GET (mobile link) formats at the end of every client interaction.
 - No em dashes anywhere, ever. See EM DASH BAN at the top of this file.
 - Never send WhatsApp messages or emails without explicit instruction. Never delete anything. Read only. See WHATSAPP AND EMAIL ACCESS RULES.
+- **Every commit must include a BUILD-PLAN.md + build_state.json + MEMORY.md update. See MANDATORY DOCS UPDATE.**
 
 ---
 
@@ -450,4 +472,4 @@ pet-transport/
 
 ---
 
-*Last updated: 2026-05-31*
+*Last updated: 2026-06-01*
