@@ -27,8 +27,7 @@ route_data:
       health_certificate: "EU AHC (GB format). Must be completed by an Official Veterinarian in Germany. Must be certified by the German competent authority (Veterinaramt). Valid 10 days from vet examination."
       tapeworm_treatment: "Required for dogs travelling to Great Britain. Treatment with praziquantel (or equivalent) must be given by a vet between 24 and 120 hours before arrival in GB. Recorded in the AHC. Cats are exempt."
       entry_points: "Must enter GB through an approved Border Control Post (BCP). Key BCPs: Eurotunnel Folkestone, Dover, Heathrow (cargo). Not all UK ports accept live animals. Confirm your entry route before booking."
-      authority: "UK APHA (Animal and Plant Health Agency) governs GB pet imports."
-note_northern_ireland: "Different rules apply for Northern Ireland (NI). NI remains aligned with EU pet travel rules. Check with DAERA (NI) for current requirements if your destination is Northern Ireland."
+      authority: "UK APHA (Animal and Plant Health Agency) governs GB pet imports. Note: Northern Ireland follows EU pet travel rules; check with DAERA for NI destinations."
   airlines:
     - name: "Lufthansa"
       type: "cabin_and_cargo"
