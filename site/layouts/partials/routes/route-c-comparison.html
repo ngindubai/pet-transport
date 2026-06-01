@@ -58,16 +58,18 @@
             {{/* Main content */}}
             <div class="col-lg-8">
 
-                {{/* Verified date stamp + data source link */}}
-                {{ partial "verified-date.html" . }}
-                {{ partial "data-source-link.html" . }}
-
-                {{/* Overview */}}
-                {{ with .Params.content.overview }}
-                <div class="tpl-c-section mb-4" data-aos="fade-up">
-                    {{ . | markdownify }}
+                {{/* Intro block: verified stamp, data source, and lead overview grouped into one panel */}}
+                <div class="tpl-c-intro" data-aos="fade-up">
+                    <div class="tpl-c-intro-meta">
+                        {{ partial "verified-date.html" . }}
+                        {{ partial "data-source-link.html" . }}
+                    </div>
+                    {{ with .Params.content.overview }}
+                    <div class="tpl-c-lead">
+                        {{ . | markdownify }}
+                    </div>
+                    {{ end }}
                 </div>
-                {{ end }}
 
                 {{/* Comparison table */}}
                 <div class="tpl-c-section mb-4" id="c-compare" data-aos="fade-up">
