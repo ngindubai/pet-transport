@@ -1,7 +1,7 @@
 ---
-template_variant: "E"
-title: "Moving Your Pet from New Zealand to Singapore | Complete Guide"
-description: "Pet relocation from New Zealand to Singapore: Singapore import requirements, timeline, airlines, costs, and documentation checklist."
+template_variant: "C"
+title: "Pet Transport from New Zealand to Singapore | Requirements & Airline Comparison"
+description: "Moving your pet from New Zealand to Singapore: AVS import permit, mandatory quarantine (30 days dogs, 10 days cats), no titre test, Singapore Airlines vs Air NZ compared."
 type: "routes"
 layout: "single"
 author: "Gareth - Founder, PetTransportGlobal"
@@ -13,117 +13,118 @@ route_data:
     code: "NZ"
     country: "New Zealand"
     export_requirements:
-      export_permit: "No export permit for cats and dogs from New Zealand."
-      health_certificate: "MPI issues AHC or equivalent for export."
+      export_permit: "No formal export permit required for personal pet exports from New Zealand."
+      health_certificate: "AVS-compatible health certificate issued by MPI-authorised vet, endorsed by MPI. Issued within 5 days of Singapore arrival (tight window)."
   destination:
     code: "SG"
     country: "Singapore"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before rabies vaccination"
-      rabies_vaccination: "Required"
-      titre_test: "Required for: Category B and C countries. Not required for: Category A countries. Minimum: 0.5 IU/ml"
-      quarantine: "Check current requirements with destination authority"
-      import_permit: "Check with destination authority"
-      health_certificate: "Required. Veterinary health certificate. Issued by: Government veterinarian or government-endorsed veterinarian in country of export. Certificate must state: species, breed, age, sex, microchip number, vaccination records, health status"
+      microchip: "Required. ISO 11784/11785."
+      rabies_vaccination: "Required. Current and valid."
+      titre_test: "Not required. New Zealand is a Category A country under AVS classification."
+      quarantine: "Mandatory. Dogs: 30 days at AVS-approved facility. Cats: 10 days. Owner-paid."
+      import_permit: "Required. Apply to AVS (Animal and Veterinary Service) at least 4-6 weeks before travel."
+      health_certificate: "AVS-format, MPI-endorsed, issued within 5 days of Singapore arrival."
+      authority: "AVS (Animal and Veterinary Service, under NParks) governs Singapore pet imports."
   airlines:
-    - name: "Qantas"
-      type: "cargo_only"
-      policy_summary: "Cargo: QantasFreighter network for pet transport. Brachycephalic breeds restricted year-round. Temperature embargoes: seasonal restrictions during Australian summer (Dec-Feb)"
     - name: "Singapore Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Emirates"
+      policy_summary: "Cargo: AKL or CHC to SIN direct. Live animal facility at Changi. Standard choice for NZ-SG. No cabin pets on international routes."
+    - name: "Air New Zealand"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "Cargo: AKL to SIN. Direct services available. Live animal processes at Auckland."
+    - name: "Qantas"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
+      policy_summary: "Cargo: Via Sydney (SYD) to SIN. One transfer. Brachycephalic breeds restricted year-round."
     - name: "Cathay Pacific"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Cargo: Via HKG to SIN. One transfer. An alternative if direct services are unavailable."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Apply for AVS import permit"
+      timing: "6+ weeks before travel. AVS processing takes 4-6 weeks."
+      responsible: "You or your agent"
     - step: 2
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Book Singapore Airlines or Air NZ cargo space AKL-SIN"
+      timing: "4-6 weeks before travel."
+      responsible: "You or your cargo agent"
     - step: 3
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Obtain MPI-endorsed AVS health certificate within 5 days of SIN arrival"
+      timing: "Extremely tight 5-day window. Vet exam + MPI endorsement must both complete within this period."
+      responsible: "MPI-authorised vet + MPI"
     - step: 4
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 5
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Mandatory quarantine on arrival at Singapore"
+      timing: "30 days for dogs, 10 days for cats. Immediate on arrival. Owner-paid."
+      responsible: "AVS quarantine facility"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Cargo fee AKL-SIN"
+    - "IATA crate"
+    - "AVS import permit fee"
+    - "MPI vet fee + endorsement fee"
+    - "30-day AVS quarantine facility cost (dogs, typically SGD 2,000-4,000)"
+    - "Agent fee (strongly recommended for 5-day cert window)"
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "30-day mandatory quarantine for dogs. 10 days for cats. Non-negotiable and owner-paid. Budget for this before committing to the move."
+    - "Health certificate validity is 5 days in Singapore, tighter than most destinations (10 days for UK, Australia, Canada). The vet exam and MPI endorsement must both happen within this window."
+    - "AVS import permit must be obtained before travel. Apply at least 6 weeks in advance."
+  route_complexity: "high"
+  estimated_timeline_weeks: "10-16"
 content:
   h1: "Pet Transport from New Zealand to Singapore"
   overview: |
-    Moving to Singapore from New Zealand with a dog or cat means starting the paperwork months before your flight.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Getting the timing right is critical. Work backwards from your travel date and add a buffer.
+    New Zealand to Singapore looks short on a map but involves mandatory quarantine and one of the tightest health certificate windows of any destination (5 days). New Zealand is a Category A country under Singapore's AVS system, which means no titre test. But quarantine is non-negotiable: 30 days for dogs, 10 days for cats.
+
+    Budget for the quarantine cost and plan the 5-day certificate window carefully before you book.
   sections:
-    - heading: "Why this route needs early planning"
+    - heading: "At a glance: NZ to Singapore vs comparable destinations"
       body: |
-        Compared to some international pet transport routes, New Zealand to Singapore is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        National Parks Board (NParks) Animal and Veterinary Service (AVS) regulates all animal imports. Singapore maintains rabies-free status through a rigorous 4-tier category system. AVS website blocked automated extraction; data compiled from AVS published guidelines and official category system documentation. Singapore has strict housing rules: HDB flats (public housing, ~80% of population) only allow approved small dog breeds and cats (since 2024).
-    - heading: "Practical advice for shipping your pet from New Zealand"
+        | Requirement | NZ to Singapore | NZ to Canada | NZ to UK | NZ to Australia |
+        |---|---|---|---|---|
+        | Titre test | Not required (Cat A) | Not required | Not required | Not required |
+        | Quarantine | 30 days (dogs) / 10 days (cats) | None | None | None |
+        | Import permit | AVS permit required | No (personal) | Not required | DAFF permit |
+        | Health cert validity | 5 days | 10 days | 10 days | 10 days |
+        | Complexity | High | Low | Low-moderate | Very low |
+        | Timeline | 10-16 weeks | 2-6 weeks | 4-8 weeks | 2-6 weeks |
+
+        Singapore is the hardest destination of the major expat corridors from New Zealand. The quarantine requirement and the 5-day health certificate window make it significantly more involved than Canada, the UK, or Australia.
+    - heading: "Airline comparison: NZ to Singapore"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        | Airline | Route | Pet policy | Transfers | Notes |
+        |---|---|---|---|---|
+        | Singapore Airlines | AKL-SIN | Cargo only | Direct | Best choice. SQ's live animal facility at Changi is one of Asia's best |
+        | Air New Zealand | AKL-SIN | Cargo only | Direct | NZ carrier with direct SIN service. Live animal cargo accepted |
+        | Qantas | AKL-SYD-SIN | Cargo only | 1 (SYD) | Via Sydney. Brachycephalic restricted year-round |
+        | Cathay Pacific | AKL-HKG-SIN | Cargo only | 1 (HKG) | Via Hong Kong. Alternative if SQ/ANZ unavailable |
+
+        Singapore Airlines is the strongest choice. Changi Airport's cargo facility is purpose-built for live animals, with temperature control and dedicated handling. Budget carriers (Scoot, Jetstar Asia) do not accept pets.
+    - heading: "Quarantine in Singapore: what to expect"
+      body: |
+        Every dog from New Zealand must spend 30 days in mandatory quarantine at an AVS-approved facility on arrival in Singapore. Every cat spends 10 days. These periods reflect Singapore's rabies-free status and AVS's biosecurity assessment.
+
+        You cannot be present with your pet during quarantine in most circumstances. AVS-approved facility staff provide care and monitoring. Owner-paid costs typically run SGD 2,000-4,000 for a 30-day dog quarantine depending on size and the specific facility. Budget for this before you commit.
+
+        The quarantine cannot be shortened. Pets arrive at Singapore Changi Airport and go directly to the quarantine facility. You collect your pet only after the quarantine period ends.
 faqs:
-  - question: "How long does it take to prepare a pet for transport from New Zealand to Singapore?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Singapore?"
-    answer: "No routine quarantine is required in Singapore for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Singapore?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Singapore. Start this process as early as possible."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in New Zealand. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Singapore's authority for the exact format required."
+  - question: "How long does my dog quarantine in Singapore from New Zealand?"
+    answer: "30 days. Mandatory quarantine at an AVS-approved facility is required for all dogs arriving from New Zealand. Cats face 10 days. This cannot be waived. Owner-paid costs typically run SGD 2,000-4,000 for 30 days."
+  - question: "Does my pet need a titre test to enter Singapore from New Zealand?"
+    answer: "No. New Zealand is classified as a Category A country by Singapore's AVS, which means no titre test is required. The main requirements are current rabies vaccination, an AVS import permit, and the MPI-endorsed health certificate."
+  - question: "Why is the health certificate validity only 5 days for Singapore?"
+    answer: "Singapore's AVS sets its own health certificate requirements independently. The 5-day window is stricter than most destinations (which allow 10 days). It means the vet examination must be as close as possible to the arrival date. A pet transport agent familiar with this corridor can time it correctly."
+  - question: "Which airline should I use from New Zealand to Singapore?"
+    answer: "Singapore Airlines is the strongest option, with a direct AKL-SIN service and a purpose-built live animal facility at Changi. Air New Zealand also operates direct AKL-SIN cargo. Budget carriers on this route do not accept pets."
 links:
   sideways:
     - url: "/pet-transport/singapore-to-new-zealand/"
       text: "Pet Transport Singapore to New Zealand"
   upward:
-    - url: "/pet-transport/origins/new-zealand-pet-export-guide/"
+    - url: "/pet-transport/origins/pet-export-guide-shipping-from-new-zealand/"
       text: "Shipping from New Zealand"
     - url: "/pet-transport/countries/singapore/"
       text: "Importing to Singapore"
-    - url: "/pet-transport/airlines/qantas/"
-      text: "Qantas pet policy"
     - url: "/pet-transport/airlines/singapore-airlines/"
       text: "Singapore Airlines pet policy"
+    - url: "/pet-transport/airlines/air-new-zealand/"
+      text: "Air New Zealand pet policy"
 ---

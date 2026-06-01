@@ -1,7 +1,7 @@
 ---
-template_variant: "E"
-title: "Pet Transport from Singapore to Australia | Complete Guide"
-description: "How to transport your dog or cat from Singapore to Australia. Import requirements, airline options, costs, and step-by-step process Complete guide: Australia im"
+template_variant: "C"
+title: "Pet Transport from Singapore to Australia | Requirements & Airline Comparison"
+description: "Moving your pet from Singapore to Australia: mandatory quarantine, rabies titre test, DAFF import permit, Singapore Airlines vs Qantas cargo compared."
 type: "routes"
 layout: "single"
 author: "Gareth - Founder, PetTransportGlobal"
@@ -13,124 +13,119 @@ route_data:
     code: "SG"
     country: "Singapore"
     export_requirements:
-      endorsement: "Must meet destination country requirements. Contact destination authority for specific format."
+      export_permit: "AVS export endorsement required. Pets leaving Singapore must have AVS clearance and an official health certificate endorsed by AVS."
+      health_certificate: "DAFF-compatible health certificate, issued by an AVS-authorised vet and endorsed by AVS. Must use exact DAFF-approved format for Singapore. Issued within 10 days of Australian arrival."
   destination:
     code: "AU"
     country: "Australia"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or on same day as rabies vaccination"
-      rabies_vaccination: "Minimum age: 12 weeks. Vaccination schedule must be completed before titre test blood draw"
-      titre_test: "Required for: Groups 3, 4, 5, 6 (all except Groups 1 and 2). Minimum: 0.5 IU/ml"
-      quarantine: "Mandatory quarantine. Facility: Mickleham Post Entry Quarantine Facility. Location: Melbourne, Victoria"
-      import_permit: "Required. Must be obtained BEFORE travel. Permit specifies conditions for import."
-      health_certificate: "Required. Government-issued veterinary health certificate (country-specific format). Issued by: Government veterinarian in country of export. Certificate format is NON-NEGOTIABLE. Must use exact DAFF-approved format for the specific country of export."
+      microchip: "Required. ISO 11784/11785. Must be implanted before first rabies vaccination."
+      rabies_vaccination: "Required. Current and valid."
+      titre_test: "Required. Singapore is a Group 3 country under DAFF classification. FAVN or ELISA titre test, minimum 0.5 IU/ml. Blood drawn at least 30 days after vaccination. 90-day waiting period after successful titre test result before Australian entry."
+      quarantine: "Mandatory. 10 days at Mickleham Post Entry Quarantine Facility, Melbourne. Owner-paid."
+      import_permit: "Required. DAFF import permit must be obtained before travel."
+      health_certificate: "AVS-endorsed DAFF-format certificate. Issued within 10 days of Australian arrival."
+      authority: "DAFF (Department of Agriculture, Fisheries and Forestry) governs Australian pet imports. AVS governs Singapore exports."
   airlines:
-    - name: "Emirates"
-      type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Snub-nosed (brachycephalic) breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo transport available"
     - name: "Singapore Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as cargo in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
+      policy_summary: "Cargo: SIN to SYD, MEL, BNE, PER direct. Live animal facility at Changi. The standard carrier for SG-AU pet moves. No cabin pets on this route."
     - name: "Qantas"
       type: "cargo_only"
-      policy_summary: "Cargo transport available. Brachycephalic breeds restricted year-round. Temperature embargoes: seasonal restrictions during Australian summer (Dec-Feb)"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo transport available. Brachycephalic breeds subject to restrictions/seasonal embargoes. French regulations on dangerous dog breeds apply"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Etihad Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as cargo through Etihad Cargo. Brachycephalic breeds subject to seasonal restrictions. Temperature embargoes during Abu Dhabi summer months"
-    - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo"
-    - name: "Japan Airlines (JAL)"
-      type: "cargo_only"
-      policy_summary: "Cargo: JAL Pet Policy: pets transported as checked baggage in temperature-controlled hold. Brachycephalic breeds: French Bulldogs BANNED from cargo (May-October). English Bulldogs banned year-round.. Summer restrictions: May-October temperature embargoes on some routes"
-    - name: "Thai Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets as checked baggage or Thai Cargo for larger animals. Brachycephalic breeds restricted during hot season (March-May). Some breed restrictions apply"
-    - name: "Garuda Indonesia"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets transported as checked baggage in pressurised, temperature-controlled hold. Brachycephalic breeds: check specific restrictions. Weight limits apply per aircraft type"
-    - name: "Philippine Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Pets as checked baggage or PAL Cargo. Brachycephalic breeds restricted from cargo. Temperature restrictions during extreme heat"
+      policy_summary: "Cargo: SIN to SYD, MEL. Direct services. Brachycephalic breeds restricted year-round. Seasonal temperature embargoes (Dec-Feb Australia summer)."
+    - name: "Jetstar"
+      type: "no_pets"
+      policy_summary: "Does not accept pets in hold. Not suitable."
+    - name: "Scoot"
+      type: "no_pets"
+      policy_summary: "Does not accept pets. Not suitable."
   timeline_steps:
     - step: 1
-      action: "Get your pet microchipped (ISO 11784/11785)"
-      timing: "Before any vaccinations. Must be done first."
-      responsible: "Your veterinarian"
+      action: "Microchip and rabies vaccination confirmed"
+      timing: "Microchip must precede vaccination."
+      responsible: "Your vet in Singapore"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "At least 21 days before travel (after microchip)"
-      responsible: "Your veterinarian"
+      action: "Titre test blood draw (30+ days after vaccination)"
+      timing: "90-day wait from blood draw before Australian entry. This is the longest part of the process."
+      responsible: "Your vet + DAFF-approved laboratory"
     - step: 3
-      action: "Rabies titre test (RNATT blood test)"
-      timing: "Blood drawn 30+ days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Apply for DAFF import permit"
+      timing: "Apply during the 90-day wait. DAFF processing takes 4-6 weeks."
+      responsible: "You or your agent"
     - step: 4
-      action: "Apply for import permit from Australia"
-      timing: "Lead time: Check with authorities"
-      responsible: "You (or your pet transport agent)"
+      action: "Book Singapore Airlines cargo space SIN to Australian city"
+      timing: "4-6 weeks before travel."
+      responsible: "You or your cargo agent"
     - step: 5
-      action: "Obtain health certificate / veterinary clearance"
-      timing: "Within 10 days of travel (check destination-specific requirements)"
-      responsible: "Official veterinarian"
+      action: "Obtain AVS-endorsed DAFF health certificate within 10 days of Australian arrival"
+      timing: "AVS-authorised vet + AVS endorsement within 10-day window."
+      responsible: "AVS vet + AVS"
     - step: 6
-      action: "Book IATA-compliant flight and arrange pet cargo/cabin booking"
-      timing: "2-4 weeks before travel. Confirm pet space availability."
-      responsible: "You (or your pet transport agent)"
-    - step: 7
-      action: "Travel day: arrive early, present all documentation"
-      timing: "3-4 hours before departure for cargo pets"
-      responsible: "You + airline cargo desk"
-    - step: 8
-      action: "Quarantine on arrival (varies days)"
-      timing: "Immediately on arrival"
-      responsible: "Australia quarantine authorities"
+      action: "Mandatory 10-day quarantine at Mickleham on arrival"
+      timing: "Immediately on arrival. Owner-paid."
+      responsible: "DAFF quarantine facility"
   cost_factors:
-    - "Airline cargo/cabin fees (varies by carrier, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees (vaccinations, health certificate, microchip)"
-    - "Rabies titre test (laboratory fee)"
-    - "Import permit application fee (Australia)"
-    - "Quarantine facility fees (owner-paid)"
-    - "Government endorsement/USDA endorsement fee (if applicable)"
-    - "Pet transport agent fee (if using a relocation service)"
+    - "Singapore Airlines cargo fee SIN to AU city"
+    - "IATA crate"
+    - "AVS export endorsement fee"
+    - "DAFF import permit fee"
+    - "Titre test + DAFF-approved lab fee"
+    - "10-day Mickleham quarantine cost (owner-paid)"
+    - "Agent fee (recommended)"
   key_warnings:
-    - "Mandatory quarantine in Australia: Plan for separation from your pet."
-    - "Brachycephalic (flat-faced) breeds face cargo restrictions on most airlines. Check breed-specific policies before booking."
-    - "Microchip MUST be implanted before rabies vaccination. Vaccination given before microchip is invalid and the clock restarts."
-    - "Australian airlines may restrict pet cargo during peak summer (December to February) when temperatures exceed safe thresholds."
-    - "Australia has the strictest pet import process globally. Expect a minimum 180-day preparation period. Pets can only enter through Melbourne (Mickleham quarantine facility)."
+    - "90-day titre test wait plus 10-day quarantine on arrival: this route has a minimum 5-6 month preparation timeline. Start immediately when you know your move date."
+    - "Only Melbourne (Mickleham) accepts international pet arrivals for quarantine. All pets must fly into Melbourne for the quarantine period, even if your final destination is Sydney, Brisbane, or Perth."
+    - "Singapore is a Group 3 country, not Group 2. The titre test is mandatory; it cannot be waived."
   route_complexity: "very_high"
-  estimated_timeline_weeks: "26-30"
-faqs:
-  - question: "How long does it take to prepare a pet for transport from Singapore to Australia?"
-    answer: "Allow at least 26-30 weeks: more if your pet is not yet vaccinated. The timeline is driven by mandatory waiting periods that cannot be shortened."
-  - question: "Does my pet need to go into quarantine when entering Australia?"
-    answer: "Yes. Mandatory quarantine. Facility: Mickleham Post Entry Quarantine Facility. Location: Melbourne, Victoria Plan your trip around the quarantine period and factor in the cost, which is owner-paid."
-  - question: "Do I need an import permit to bring my pet into Australia?"
-    answer: "Required. Must be obtained BEFORE travel. Permit specifies conditions for import."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Required. Government-issued veterinary health certificate (country-specific format). Issued by: Government veterinarian in country of export. Certificate format is NON-NEGOTIABLE. Must use exact DAFF-approved format for the specific country of export. Your Singapore vet must be approved to issue official veterinary certificates. The certificate must be issued within the timeframe required by Australia: usually 10 days before travel. Present the original at check-in."
-  - question: "Is a rabies titre test required for pets entering Australia?"
-    answer: "Yes. Required for: Groups 3, 4, 5, 6 (all except Groups 1 and 2). Minimum: 0.5 IU/ml The microchip must be implanted before the first rabies vaccination for the vaccination to be valid. Start this process as early as possible."
+  estimated_timeline_weeks: "22-28"
 content:
   h1: "Pet Transport from Singapore to Australia"
   overview: |
-    Moving a pet from Singapore to Australia is one of the most involved international pet moves you can make. Australia maintains strict biosecurity rules and every step in the preparation process is mandatory.
+    Singapore to Australia is one of the most demanding international pet moves from Southeast Asia. Australia's DAFF classifies Singapore as a Group 3 country, which means a mandatory titre test and 90-day wait before entry, plus 10 days of mandatory quarantine on arrival at Melbourne's Mickleham facility. The total preparation timeline is 22-28 weeks minimum.
 
-    At minimum, your pet needs a microchip (ISO 11784/11785 standard), a current rabies vaccination, a rabies titre test with a waiting period after the result, an approved import permit from the destination authority, and a government-endorsed health certificate issued close to your travel date. Allow 26-30 weeks from starting preparation to travel day.
+    Singapore Airlines operates direct SIN-Australia services and is the standard choice for this route. But the compliance process is what needs the most attention.
+  sections:
+    - heading: "At a glance: SG to Australia vs comparable routes"
+      body: |
+        | Requirement | SG to Australia | UK to Australia | NZ to Australia | HK to Australia |
+        |---|---|---|---|---|
+        | DAFF country group | Group 3 | Group 2 | Group 1 | Group 3 |
+        | Titre test | Required | Required | Not required | Required |
+        | Titre test wait | 90 days | 90 days | N/A | 90 days |
+        | Quarantine | 10 days | 10 days | None | 10 days |
+        | Import permit | DAFF permit | DAFF permit | DAFF permit | DAFF permit |
+        | Complexity | Very high | Very high | Very low | Very high |
+        | Timeline | 22-28 weeks | 26-32 weeks | 2-6 weeks | 22-28 weeks |
 
-    Mandatory quarantine applies: all pets must complete a stay at the Mickleham Post-Entry Quarantine Facility in Melbourne. The facility is government-run and owner-paid. Plan for at least 10 days. Use our step-by-step guide below to track what you need to do and when.
+        Singapore sits in the same Group 3 as Hong Kong. New Zealand is the notable outlier: Group 1 means no titre test and no quarantine. All other major expat origins (UK, Singapore, HK, US) involve both.
+    - heading: "Airline comparison: Singapore to Australia"
+      body: |
+        | Airline | Route | Pet policy | Transfers | Notes |
+        |---|---|---|---|---|
+        | Singapore Airlines | SIN-SYD, SIN-MEL, SIN-BNE, SIN-PER | Cargo only | Direct | Best choice. Live animal facility at Changi, well-practised on this corridor |
+        | Qantas | SIN-SYD, SIN-MEL | Cargo only | Direct | Reliable alternative. Brachycephalic restricted year-round, summer embargoes Dec-Feb |
+        | Jetstar | SIN-Australia | No pets | N/A | Not suitable |
+        | Scoot | SIN-Australia | No pets | N/A | Not suitable |
 
+        Singapore Airlines is the strongest choice. Changi's live animal cargo facility is purpose-built, and SQ's SIN-Australia services are direct on most routes. Qantas is a solid alternative if SQ is unavailable on your dates.
+    - heading: "Group 3 status: what it means and why quarantine is mandatory"
+      body: |
+        DAFF divides the world into 6 groups based on disease risk. Group 1 (NZ, UK, Ireland and a few others) have the lowest requirements. Singapore is Group 3, meaning: titre test required, 90-day wait from blood draw before entry, and 10 days mandatory quarantine at Mickleham on arrival.
+
+        The 90-day clock starts on the date of the blood draw, not the date results come back. Results from a DAFF-approved lab typically take 2-4 weeks. So the full sequence is: vaccination, wait 30 days, blood draw, wait for results (2-4 weeks), wait for 90-day clock from blood draw date, then travel. That adds up to roughly 5-6 months before your first eligible travel date.
+
+        Quarantine at Mickleham is mandatory regardless of how compliant your documentation is. All pets from Group 3 countries do 10 days there. Melbourne is the only approved quarantine entry point for international pets. If your Australian destination is Sydney, Brisbane, or Perth, your pet must fly into Melbourne first, complete quarantine, and then travel domestically to join you.
+faqs:
+  - question: "How long does it take to move a pet from Singapore to Australia?"
+    answer: "At least 22-28 weeks. The 90-day titre test wait accounts for most of it. Add the 30-day post-vaccination wait before the blood draw, lab results time, DAFF import permit processing, and Mickleham quarantine on arrival. Start as soon as you know your move date."
+  - question: "Is quarantine mandatory for pets from Singapore entering Australia?"
+    answer: "Yes. Singapore is a Group 3 country under DAFF's classification. All pets from Singapore must complete 10 days mandatory quarantine at the Mickleham Post Entry Quarantine Facility in Melbourne. This is non-negotiable and owner-paid."
+  - question: "Does my pet need a titre test to go from Singapore to Australia?"
+    answer: "Yes. Singapore is Group 3. A rabies titre test (FAVN or ELISA, minimum 0.5 IU/ml) is required. Blood must be drawn at least 30 days after vaccination. The 90-day waiting period starts from the date of the blood draw, not the date results arrive."
+  - question: "Which Australian city can my pet fly into from Singapore?"
+    answer: "Pets from Singapore must fly into Melbourne for the mandatory 10-day quarantine at Mickleham. Melbourne is the only approved international quarantine entry point for live animal imports into Australia. After quarantine, your pet can travel domestically to Sydney, Brisbane, Perth, or elsewhere."
+  - question: "Which airline is best for Singapore to Australia pet transport?"
+    answer: "Singapore Airlines is the standard choice. They have direct SIN-SYD, SIN-MEL, SIN-BNE and SIN-PER services and a dedicated live animal facility at Changi. Qantas also serves the route directly. Budget carriers (Jetstar, Scoot) do not accept pets."
 links:
   sideways:
     - url: "/pet-transport/australia-to-singapore/"
@@ -140,6 +135,8 @@ links:
       text: "Shipping from Singapore"
     - url: "/pet-transport/countries/australia/"
       text: "Importing to Australia"
-
-
+    - url: "/pet-transport/airlines/singapore-airlines/"
+      text: "Singapore Airlines pet policy"
+    - url: "/pet-transport/airlines/qantas/"
+      text: "Qantas pet policy"
 ---

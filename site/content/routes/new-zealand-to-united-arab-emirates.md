@@ -1,7 +1,7 @@
 ---
-template_variant: "B"
-title: "Pet Transport from New Zealand to United Arab Emirates | PetTransportGlobal"
-description: "How to ship your dog or cat from New Zealand to United Arab Emirates. United Arab Emirates import rules, vaccinations, permits, and airline options explained."
+template_variant: "C"
+title: "Pet Transport from New Zealand to the UAE | Requirements & Airline Comparison"
+description: "Moving your pet from New Zealand to the UAE: MOCCAE import permit, microchip, rabies vaccination, Emirates vs Etihad vs Qantas cargo compared."
 type: "routes"
 layout: "single"
 author: "Gareth - Founder, PetTransportGlobal"
@@ -13,129 +13,118 @@ route_data:
     code: "NZ"
     country: "New Zealand"
     export_requirements:
-      export_permit: "No export permit for cats and dogs from New Zealand."
-      health_certificate: "MPI issues AHC or equivalent for export."
+      export_permit: "No formal export permit required for personal pet exports from New Zealand."
+      health_certificate: "UAE-compatible official veterinary health certificate issued by an MPI-authorised vet and endorsed by MPI. Issued within 10 days of UAE arrival."
   destination:
     code: "AE"
     country: "United Arab Emirates"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Vaccination must be administered after microchipping. Titre test may be required from certain countries."
-      titre_test: "Required for: Pets from certain non-approved or high-risk countries. Not required for: Pets from approved countries (UK, USA, Canada, Australia, EU countries, etc.). Minimum: 0.5 IU/ml"
-      quarantine: "No routine quarantine for pets from approved countries with correct documentation. Pets with incomplete documentation may be quarantined at owner's expense."
-      import_permit: "Required. Import permit MUST be obtained before travel. Different emirates have different application processes. Allow 1-2 weeks for processing."
-      health_certificate: "Required. Veterinary health certificate / Official health certificate. Issued by: Government veterinarian or government-endorsed veterinarian in country of export. Certificate must confirm: rabies vaccination status, microchip number, pet is free from infectious disease, fit to travel"
+      microchip: "Required. ISO 11784/11785."
+      rabies_vaccination: "Required. Current and valid."
+      titre_test: "Not required for pets from New Zealand under standard UAE import rules."
+      quarantine: "No routine quarantine for compliant pets. Veterinary inspection on arrival."
+      import_permit: "Required. Import permit from MOCCAE (Ministry of Climate Change and Environment) before travel. Apply via the UAE government portal."
+      health_certificate: "Official health certificate endorsed by MPI and then legalised by the UAE Embassy in New Zealand (or a recognised apostille process). Check current UAE Embassy requirements before departure."
+      authority: "MOCCAE (UAE Ministry of Climate Change and Environment) governs all live animal imports."
   airlines:
-    - name: "Qantas"
-      type: "cargo_only"
-      policy_summary: "Cargo: QantasFreighter network for pet transport. Brachycephalic breeds restricted year-round. Temperature embargoes: seasonal restrictions during Australian summer (Dec-Feb)"
     - name: "Emirates"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "Cargo: Emirates SkyCargo from AKL via SYD or directly to DXB. Temperature-controlled hold. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Summer heat embargoes (June-September) may restrict certain breeds."
+    - name: "Etihad Airways"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
+      policy_summary: "Cargo: Via AUH. Connection via Sydney or Singapore typically. Temperature-controlled throughout. Brachycephalic restrictions apply."
+    - name: "Qantas"
+      type: "cargo_only"
+      policy_summary: "Cargo: AKL-SYD, then partner carrier to DXB or AUH. Two-leg journey. Brachycephalic restricted year-round."
     - name: "Singapore Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Cargo: AKL-SIN-DXB. Via Singapore. One transfer. Good live animal handling at Changi."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Apply for MOCCAE import permit via UAE government portal"
+      timing: "4-6 weeks before travel."
+      responsible: "You or your agent"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Arrange health certificate legalisation at UAE Embassy in NZ"
+      timing: "Allow 2-3 weeks for legalisation process. Time this with the 10-day validity window."
+      responsible: "You or your agent"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Book Emirates or Etihad cargo space to DXB or AUH"
+      timing: "4-6 weeks before travel."
+      responsible: "You or your cargo agent"
     - step: 4
-      action: "Apply for import permit from United Arab Emirates"
-      timing: "Apply early: allow 4-6 weeks"
-      responsible: "You (or your pet transport agent)"
-    - step: 5
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
-    - step: 6
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 7
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Obtain MPI-endorsed health certificate within 10 days of UAE arrival"
+      timing: "MPI vet exam + MPI endorsement + UAE legalisation all within 10-day window. Tight. Use an agent."
+      responsible: "MPI-authorised vet + MPI + UAE Embassy"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (United Arab Emirates)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Cargo fee AKL to DXB or AUH (long-haul, typically NZD 3,000-7,000+ depending on pet size)"
+    - "IATA crate"
+    - "MOCCAE import permit fee"
+    - "UAE Embassy legalisation fee"
+    - "MPI vet fee + endorsement fee"
+    - "Agent fee (strongly recommended)"
   key_warnings:
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
+    - "UAE health certificate legalisation at the UAE Embassy adds time and cost on top of the MPI endorsement. Factor both into your 10-day window. A pet transport agent is strongly recommended."
+    - "Summer embargoes (June-September in the UAE) restrict certain breeds on Emirates and Etihad due to extreme heat. Check breed restrictions before booking summer departures."
+    - "Breed restrictions apply in the UAE: certain breed types are restricted or prohibited. Confirm your breed is permitted before committing to the move."
   route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+  estimated_timeline_weeks: "6-12"
 content:
-  h1: "Pet Transport from New Zealand to United Arab Emirates"
+  h1: "Pet Transport from New Zealand to the UAE"
   overview: |
-    Shipping your dog or cat from New Zealand to United Arab Emirates is a process that rewards early planning.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Getting the timing right is critical. Work backwards from your travel date and add a buffer.
+    New Zealand to the UAE is a route favoured by expat families relocating to Dubai or Abu Dhabi. No titre test, no quarantine, but there are two layers of documentation to manage on the export side: the MPI-endorsed health certificate and UAE Embassy legalisation. Emirates and Etihad both offer cargo services from Australia with connections from New Zealand.
   sections:
-    - heading: "What to know about the New Zealand to United Arab Emirates route"
+    - heading: "At a glance: NZ to UAE vs other Middle East and expat destinations"
       body: |
-        Compared to some international pet transport routes, New Zealand to United Arab Emirates is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        UAE pet import regulations are managed at both federal (MOCCAE) and emirate (municipality) level. Dubai and Abu Dhabi have the most established processes. Government portals blocked automated extraction; data compiled from MOCCAE published guidelines, embassy documentation, and established pet transport operator information. Verify all requirements with the relevant municipality before travel.
-    - heading: "Step-by-step: what to do first"
+        | Requirement | NZ to UAE | NZ to Singapore | NZ to UK | NZ to Australia |
+        |---|---|---|---|---|
+        | Titre test | Not required | Not required | Not required | Not required |
+        | Quarantine | None | 30 days (dogs) | None | None |
+        | Import permit | MOCCAE permit | AVS permit | Not required | DAFF permit |
+        | Embassy legalisation | Required | No | No | No |
+        | Health cert validity | 10 days | 5 days | 10 days | 10 days |
+        | Complexity | Moderate | High | Low-moderate | Very low |
+
+        The UAE adds an embassy legalisation step that most destinations do not require. This makes the documentation chain longer but the overall process is manageable with good planning.
+    - heading: "Airline comparison: NZ to UAE"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        | Airline | Route | Pet policy | Transfers | Notes |
+        |---|---|---|---|---|
+        | Emirates | AKL-SYD-DXB or direct | Cargo only | 0-1 | Best network. Direct AKL-DXB not always available; via SYD common |
+        | Etihad | AKL via connections-AUH | Cargo only | 1+ | Via Singapore or Sydney. AUH destination |
+        | Singapore Airlines | AKL-SIN-DXB | Cargo only | 1 (SIN) | Single transfer, good live animal handling at Changi |
+        | Qantas | AKL-SYD + partner to DXB | Cargo only | 1+ (SYD) | Two-leg minimum. Brachycephalic restricted year-round |
+
+        Emirates is the natural choice for Dubai destinations. If the final destination is Abu Dhabi, Etihad is more direct. Both observe summer heat embargoes for certain breeds (June-September).
+    - heading: "MOCCAE permit and UAE Embassy legalisation: the two-step export process"
+      body: |
+        Bringing a pet into the UAE requires two things the UK, Canada, and Australia do not: an import permit from MOCCAE and legalisation of the health certificate by the UAE Embassy.
+
+        The MOCCAE import permit is applied for through the UAE government's online portal. Processing takes 4-6 weeks. The permit specifies conditions the pet must meet.
+
+        The health certificate legalisation involves presenting the MPI-endorsed certificate to the UAE Embassy in Wellington for an official stamp. This takes an additional 2-3 weeks and costs a legalisation fee. The entire process (MPI cert + UAE Embassy stamp) must result in a valid document that is still within the 10-day health certificate window on the day you arrive in the UAE.
+
+        In practice, almost every family moving a pet from New Zealand to the UAE uses a pet transport agent to coordinate these steps. The timing is tight and the consequences of an unendorsed certificate are significant.
 faqs:
-  - question: "How long does it take to prepare a pet for transport from New Zealand to United Arab Emirates?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering United Arab Emirates?"
-    answer: "No routine quarantine is required in United Arab Emirates for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering United Arab Emirates?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter United Arab Emirates. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into United Arab Emirates?"
-    answer: "Yes, an import permit is required from United Arab Emirates's authority (the relevant government body). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in New Zealand. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check United Arab Emirates's authority for the exact format required."
+  - question: "Do I need an import permit to bring my pet from New Zealand to the UAE?"
+    answer: "Yes. An import permit from MOCCAE (UAE Ministry of Climate Change and Environment) is required before your pet can enter the UAE. Apply via the UAE government portal at least 4-6 weeks before travel."
+  - question: "Does my pet need a titre test to enter the UAE from New Zealand?"
+    answer: "No. A titre test is not required for pets from New Zealand under current UAE import rules. The main requirements are current microchip, current rabies vaccination, the MOCCAE import permit, and the MPI-endorsed health certificate with UAE Embassy legalisation."
+  - question: "Which airline should I use for New Zealand to Dubai pet transport?"
+    answer: "Emirates is the strongest option for Dubai (DXB) destinations, with direct or one-stop services from Auckland and an established live animal cargo process. Etihad is the natural choice for Abu Dhabi (AUH). Both observe summer heat embargoes for certain breeds from June to September."
+  - question: "What is the UAE Embassy legalisation requirement?"
+    answer: "The UAE requires the official veterinary health certificate to be legalised (stamped) by the UAE Embassy in the country of export. In New Zealand, this means presenting the MPI-endorsed certificate to the UAE Embassy in Wellington. Allow 2-3 weeks for this process, on top of the MPI endorsement time."
 links:
   sideways:
     - url: "/pet-transport/united-arab-emirates-to-new-zealand/"
-      text: "Pet Transport United Arab Emirates to New Zealand"
+      text: "Pet Transport UAE to New Zealand"
   upward:
-    - url: "/pet-transport/origins/new-zealand-pet-export-guide/"
+    - url: "/pet-transport/origins/pet-export-guide-shipping-from-new-zealand/"
       text: "Shipping from New Zealand"
     - url: "/pet-transport/countries/united-arab-emirates/"
-      text: "Importing to United Arab Emirates"
-    - url: "/pet-transport/airlines/qantas/"
-      text: "Qantas pet policy"
+      text: "Importing to the UAE"
     - url: "/pet-transport/airlines/emirates/"
       text: "Emirates pet policy"
+    - url: "/pet-transport/airlines/etihad-airways/"
+      text: "Etihad Airways pet policy"
 ---
