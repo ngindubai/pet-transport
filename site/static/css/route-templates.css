@@ -161,7 +161,7 @@
 .tpl-route-c { font-family: 'Roboto', sans-serif; background: #fff; color: #6f6f6f; }
 .tpl-route-c h1,.tpl-route-c h2,.tpl-route-c h3,.tpl-route-c h4,.tpl-route-c h5 { font-family: 'Montserrat', sans-serif; color: #222; }
 
-.tpl-c-hero { background: #1e3a5f; padding: 2.5rem 0 2.25rem; }
+.tpl-c-hero { background: #1e3a5f; padding: 88px 0 2.25rem; }
 .tpl-c-hero-inner { display: flex; align-items: flex-start; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
 .tpl-c-hero-left { flex: 1; min-width: 280px; }
 .tpl-c-hero-right { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.12); border-radius: var(--ptg-radius); padding: 1rem 1.3rem; min-width: 195px; flex-shrink: 0; }
@@ -181,6 +181,16 @@
 .tpl-c-breadcrumb .breadcrumb-item a { color: rgba(255,255,255,.5); font-size: .78rem; }
 .tpl-c-breadcrumb .breadcrumb-item.active { color: rgba(255,255,255,.3); font-size: .78rem; }
 .tpl-c-breadcrumb .breadcrumb-item + .breadcrumb-item::before { color: rgba(255,255,255,.2); }
+
+/* C intro block: groups verified stamp + data source + lead overview into one panel.
+   Fixes the bare white gap under the hero and gives the opening copy real hierarchy. */
+.tpl-c-intro { background: #f4f4f4; border-radius: var(--ptg-radius); border-left: 4px solid #e8913a; padding: 1.6rem 2rem 1.4rem; margin-bottom: 1.5rem; }
+.tpl-c-intro-meta { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem 1rem; margin-bottom: 1rem; }
+.tpl-c-intro-meta .ptg-verified-date { margin-bottom: 0 !important; }
+.tpl-c-intro-meta p { margin: 0 !important; }
+.tpl-c-lead p { font-family: 'Roboto', sans-serif; color: #3a3a3a; font-size: 1.06rem; line-height: 1.7; margin-bottom: .85rem; }
+.tpl-c-lead p:first-of-type { font-size: 1.18rem; font-weight: 500; color: #222; line-height: 1.55; }
+.tpl-c-lead p:last-child { margin-bottom: 0; }
 
 .tpl-route-c .page { background: #fff; padding: 3rem 0; }
 
@@ -425,4 +435,7 @@
   .tpl-b-timeline-card { min-width: 148px; }
   .tpl-a-stepper { padding-left: 2.4rem; }
   .tpl-d-cost-list { grid-template-columns: 1fr; }
+  .tpl-c-hero { padding-top: 80px; }
+  .tpl-c-intro { padding: 1.3rem 1.4rem 1.1rem; }
+  .tpl-c-lead p:first-of-type { font-size: 1.08rem; }
 }
