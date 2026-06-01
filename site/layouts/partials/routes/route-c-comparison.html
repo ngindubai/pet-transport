@@ -4,48 +4,76 @@
   section { background:#fff; padding-top:90px } from overriding template CSS.
 */}}
 {{ $rd := .Params.route_data }}
+{{ $hasQuarantine := false }}
+{{ with $rd.destination.import_requirements }}{{ if .quarantine }}{{ $hasQuarantine = true }}{{ end }}{{ end }}
 
 <article class="tpl-route-c">
 
-{{/* ── HERO ──────────────────────────────────────────────────────────── */}}
+{{/* ── HERO — flight-path design ───────────────────────────────────────── */}}
 <div class="tpl-c-hero">
-    <div class="container">
-        <nav aria-label="breadcrumb" class="tpl-c-breadcrumb mb-3">
+    <span class="tpl-c-hero-glow" aria-hidden="true"></span>
+    <span class="tpl-c-hero-grid" aria-hidden="true"></span>
+    <div class="container tpl-c-hero-container">
+        <nav aria-label="breadcrumb" class="tpl-c-breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/">Home</a></li>
                 <li class="breadcrumb-item"><a href="/pet-transport/routes/">Routes</a></li>
                 <li class="breadcrumb-item active">{{ .Params.origin_name }} to {{ .Params.destination_name }}</li>
             </ol>
         </nav>
-        <div class="tpl-c-hero-inner" data-aos="fade-up">
-            <div class="tpl-c-hero-left">
-                <div class="tpl-c-route-tag">{{ $rd.origin.code }} &rarr; {{ $rd.destination.code }}</div>
-                <h1 class="tpl-c-h1">{{ .Params.content.h1 | default (printf "Pet Transport: %s to %s" .Params.origin_name .Params.destination_name) }}</h1>
-                <div class="tpl-c-cta-strip">
-                    <a href="#quote-form" class="tpl-c-btn tpl-c-btn-primary">Get a Quote</a>
-                    <a href="#c-compare" class="tpl-c-btn tpl-c-btn-outline">See Requirements</a>
-                </div>
+
+        {{/* Flight-path route visual: ORIGIN ✈ DESTINATION, built from country codes */}}
+        <div class="tpl-c-flightpath" data-aos="fade-up" role="img" aria-label="Route from {{ .Params.origin_name }} to {{ .Params.destination_name }}">
+            <div class="tpl-c-fp-node">
+                <span class="tpl-c-fp-code">{{ $rd.origin.code }}</span>
+                <span class="tpl-c-fp-place">{{ .Params.origin_name }}</span>
             </div>
-            <div class="tpl-c-hero-right">
-                {{ with $rd.estimated_timeline_weeks }}
-                <div class="tpl-c-hero-stat">
-                    <span class="tpl-c-hero-stat-label">Typical timeline</span>
-                    <span class="tpl-c-hero-stat-val amber">{{ . }} weeks</span>
-                </div>
-                {{ end }}
-                {{ with $rd.route_complexity }}
-                <div class="tpl-c-hero-stat">
-                    <span class="tpl-c-hero-stat-label">Complexity</span>
-                    <span class="tpl-c-hero-stat-val">{{ . | title }}</span>
-                </div>
-                {{ end }}
-                {{ with $rd.destination.import_requirements }}
-                <div class="tpl-c-hero-stat">
-                    <span class="tpl-c-hero-stat-label">Quarantine</span>
-                    <span class="tpl-c-hero-stat-val">{{ if .quarantine }}Required{{ else }}Not required{{ end }}</span>
-                </div>
-                {{ end }}
+            <div class="tpl-c-fp-arc" aria-hidden="true">
+                <svg viewBox="0 0 240 60" preserveAspectRatio="none" class="tpl-c-fp-svg">
+                    <path d="M6 50 Q120 -8 234 50" fill="none" stroke="rgba(232,145,58,.55)" stroke-width="2" stroke-dasharray="5 5"/>
+                </svg>
+                <span class="tpl-c-fp-plane"><i class="fas fa-plane"></i></span>
+                <span class="tpl-c-fp-dot tpl-c-fp-dot-start"></span>
+                <span class="tpl-c-fp-dot tpl-c-fp-dot-end"></span>
             </div>
+            <div class="tpl-c-fp-node tpl-c-fp-node-dest">
+                <span class="tpl-c-fp-code">{{ $rd.destination.code }}</span>
+                <span class="tpl-c-fp-place">{{ .Params.destination_name }}</span>
+            </div>
+        </div>
+
+        <h1 class="tpl-c-h1">{{ .Params.content.h1 | default (printf "Pet Transport: %s to %s" .Params.origin_name .Params.destination_name) }}</h1>
+        <p class="tpl-c-hero-sub">A clear, regularly verified guide to moving your dog or cat from {{ .Params.origin_name }} to {{ .Params.destination_name }} &mdash; requirements, timeline, airlines and costs in one place.</p>
+
+        <div class="tpl-c-trust">
+            <span class="tpl-c-trust-item"><i class="fas fa-shield-alt"></i> IATA-aligned guidance</span>
+            <span class="tpl-c-trust-item"><i class="fas fa-route"></i> 5,500+ route guides</span>
+            <span class="tpl-c-trust-item"><i class="fas fa-headset"></i> Door-to-door support</span>
+        </div>
+
+        {{/* Integrated stat rail (spans full width — no floating card) */}}
+        <div class="tpl-c-statrail">
+            {{ with $rd.estimated_timeline_weeks }}
+            <div class="tpl-c-statrail-item">
+                <span class="tpl-c-statrail-label">Typical timeline</span>
+                <span class="tpl-c-statrail-val amber">{{ . }} weeks</span>
+            </div>
+            {{ end }}
+            {{ with $rd.route_complexity }}
+            <div class="tpl-c-statrail-item">
+                <span class="tpl-c-statrail-label">Complexity</span>
+                <span class="tpl-c-statrail-val"><span class="tpl-c-complexity {{ . }}">{{ . | replace "_" " " | title }}</span></span>
+            </div>
+            {{ end }}
+            <div class="tpl-c-statrail-item">
+                <span class="tpl-c-statrail-label">Quarantine</span>
+                <span class="tpl-c-statrail-val">{{ if $hasQuarantine }}Required{{ else }}Not required{{ end }}</span>
+            </div>
+        </div>
+
+        <div class="tpl-c-cta-strip">
+            <a href="#quote-form" class="tpl-c-btn tpl-c-btn-primary"><i class="fas fa-paper-plane me-2"></i>Get a Free Quote</a>
+            <a href="#c-compare" class="tpl-c-btn tpl-c-btn-outline">See Requirements</a>
         </div>
     </div>
 </div>
