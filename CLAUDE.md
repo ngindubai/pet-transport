@@ -1,4 +1,4 @@
-# CLAUDE.md — PetTransportGlobal
+# CLAUDE.md - PetTransportGlobal
 
 > Single source of truth for any AI assistant working on this project (Claude app, VS Code Copilot, Cursor, etc.). Read this in full at the start of every session.
 
@@ -13,9 +13,9 @@
 
 ---
 
-## EM DASH BAN — ABSOLUTE, NO EXCEPTIONS
+## EM DASH BAN - ABSOLUTE, NO EXCEPTIONS
 
-**Never use em dashes (— or –) anywhere, ever.** This applies to:
+**Never use em dashes anywhere, ever.** This applies to:
 - All site content (articles, route pages, country guides, airline pages, breed guides)
 - All client-facing messages (WhatsApp, email, quotes, cover letters)
 - All internal documents (CLAUDE.md, BUILD-PLAN.md, MEMORY.md, quotedesign.md)
@@ -25,25 +25,52 @@ Use commas, full stops, colons, brackets, or restructure the sentence instead. T
 
 ---
 
-## MANDATORY DOCS UPDATE — EVERY COMMIT
+## DEPLOY IS AUTOMATIC + LIVE LINK REVIEW GATE - NON-NEGOTIABLE
+
+**Confirmed 2026-06-02. This replaces the old "request to deploy" manual step. There is no manual deploy trigger any more.**
+
+### The model
+
+1. Push (or merge) to `main`.
+2. GitHub Actions builds and deploys to Hostinger automatically. No manual "Run workflow" click.
+3. **The safety gate is no longer "wait before deploying". The safety gate is REVIEW AFTER DEPLOY.**
+
+### LIVE LINK REVIEW GATE (fires after every build batch, no exceptions)
+
+After every job that changes or adds pages (a content block, a blog article, route pages, a template change, a fix), once the push is made Claude must:
+
+1. Post, in the chat, the **full live URL of every new or changed page** so Gareth can click and review each one. Example: `https://www.pettransportglobal.com/pet-transport/denmark-to-switzerland/`.
+2. Group the links clearly (new pages vs changed pages) and give the expected deploy time so Gareth knows when they will be live (see Deploy speed table below).
+3. State plainly that these are now live and need a review, since there is no pre-publish hold.
+4. If a template or sitewide change went out, name a representative sample of affected URLs (you cannot list thousands) plus the home page, so Gareth can spot-check.
+
+**Why:** Deploy is automatic, so nothing stops thin or broken content reaching the live site except this review. Posting the live links every time is the control that catches problems fast. Skipping the link post is treated as a failed job.
+
+### This pairs with the MANDATORY DOCS UPDATE rule below
+
+Every build batch = (1) push content, (2) update the three docs + build_state.json in the same commit, (3) post the live review links. All three happen together, every time.
+
+---
+
+## MANDATORY DOCS UPDATE - EVERY COMMIT
 
 **This rule fires on every single commit to main, no exceptions.**
 
 Whenever content is committed (a blog article, route pages, any site file), the same commit or the immediately following commit must update all three of these files to reflect the new state:
 
-1. **`BUILD-PLAN.md`** — add a session log row: date, what was built, new page count, what is next
-2. **`build_state.json`** — update `routes_built`, `blog_articles`, `total_site_pages`, `last_updated`, `content_plan_articles_written`, and the `notes` field
-3. **`MEMORY.md`** — update "Current State" block (routes, blog count, phase progress, content plan day)
+1. **`BUILD-PLAN.md`** - add a session log row: date, what was built, new page count, what is next
+2. **`build_state.json`** - update `routes_built`, `blog_articles`, `total_site_pages`, `last_updated`, `content_plan_articles_written`, and the `notes` field
+3. **`MEMORY.md`** - update "Current State" block (routes, blog count, phase progress, content plan day)
 
 The CURRENT STATUS section in **this file (CLAUDE.md)** must also be kept accurate and updated any time the numbers change.
 
-**Why this matters:** When these docs drift from reality, the next session starts with false context and wastes time on a repo audit. Every commit is also a docs commit.
+**Why this matters:** When these docs drift from reality, the next session starts with false context and wastes time on a repo audit. Every commit is also a docs commit. **And every build batch also ends with the LIVE LINK REVIEW GATE above.**
 
-**When committing via the MCP tool:** Bundle the content files and the three docs files into a single `push_files` call so it is one atomic commit. Never leave a dangling content commit without a matching docs update.
+**When committing via the MCP tool:** Bundle the content files and the three docs files into a single `push_files` call so it is one atomic commit. Never leave a dangling content commit without a matching docs update. Then post the live review links in chat.
 
 ---
 
-## WHATSAPP AND EMAIL ACCESS RULES — NON-NEGOTIABLE
+## WHATSAPP AND EMAIL ACCESS RULES - NON-NEGOTIABLE
 
 These rules govern how Claude reads and interacts with Gareth's WhatsApp and email accounts via Claude in Chrome.
 
@@ -90,7 +117,7 @@ WhatsApp Web (web.whatsapp.com) must be open and logged in in Chrome before Clau
   - For any manual task Gareth has to do (in a terminal, in GitHub, in Hostinger, in the Claude app), give **step-by-step click-this, type-this instructions**. Number every step.
   - Never say "just run X" without showing the exact command and explaining what it does in one line.
   - If something fails, diagnose it yourself. Do not ask Gareth to read error logs unless you've already tried to understand them.
-  - When you finish a task, summarise in plain English: what changed, what's live, what's next.
+  - When you finish a task, summarise in plain English: what changed, what's live, what's next. Always include the live review links.
 
 ---
 
@@ -99,7 +126,7 @@ WhatsApp Web (web.whatsapp.com) must be open and logged in in Chrome before Clau
 - **Site:** pettransportglobal.com (live, on Hostinger)
 - **Type:** Programmatic SEO lead-generation site for international pet transport
 - **Goal:** Capture enquiries from pet owners relocating internationally, via organic search
-- **Audience:** Anxious pet owners about to ship their dog or cat overseas — needs warm, expert reassurance
+- **Audience:** Anxious pet owners about to ship their dog or cat overseas. Needs warm, expert reassurance
 - **Stack:**
   - Hugo v0.160.1-extended (static site generator)
   - Python 3.11 (route/content generators at repo root)
@@ -123,7 +150,7 @@ All client enquiries are tracked in a live Google Sheet. Every client interactio
 - **Sheet name:** `Enquiry Tracker`
 - **REF format:** PTG-001, PTG-002, PTG-003... (zero-padded to 3 digits, increment from highest existing)
 
-### Column order (18 columns — must match exactly)
+### Column order (18 columns - must match exactly)
 
 | # | Field | JSON key / URL param |
 |---|---|---|
@@ -150,19 +177,19 @@ All client enquiries are tracked in a live Google Sheet. Every client interactio
 
 `New enquiry` / `Info requested` / `Awaiting quotes` / `Quote sent` / `Quote accepted` / `In progress` / `Completed` / `On hold` / `Lost / no reply`
 
-### Process — every single client interaction, without exception
+### Process - every single client interaction, without exception
 
-**Step 1 — Read the sheet**
+**Step 1 - Read the sheet**
 Use `Google Drive: read_file_content` with fileId `1AWlrcecS7B5z_1qujwgK_bu4LKNgWM48JGrnm7Yetbk` before doing anything else.
 
-**Step 2 — Determine what changed**
+**Step 2 - Determine what changed**
 - New enquiry: assign the next PTG number (highest existing + 1)
 - Existing enquiry: identify the correct PTG row, update the relevant fields
 
-**Step 3 — Handle the enquiry**
+**Step 3 - Handle the enquiry**
 Respond, draft messages, produce quotes, etc.
 
-**Step 4 — End every response with BOTH update formats**
+**Step 4 - End every response with BOTH update formats**
 
 Always close with this section, providing both options every time:
 
@@ -175,7 +202,7 @@ Always close with this section, providing both options every time:
 Invoke-WebRequest -Uri "https://script.google.com/macros/s/AKfycbxJ0NgVVj1F3GK9K7qz5jG1OByfG3GcORJlQgxoM4jqyiwVmfArEercQ-OwAUDzv-_lIw/exec" -Method POST -ContentType "application/json" -Body '{"ref":"PTG-00X","date_in":"DD/MM/YYYY",...all 18 fields...}' -UseBasicParsing
 ```
 
-**Mobile (iPhone / iPad — tap this link):**
+**Mobile (iPhone / iPad - tap this link):**
 `https://script.google.com/macros/s/AKfycbxJ0NgVVj1F3GK9K7qz5jG1OByfG3GcORJlQgxoM4jqyiwVmfArEercQ-OwAUDzv-_lIw/exec?ref=PTG-00X&date_in=DD%2FMM%2FYYYY&...all 18 fields URL-encoded...`
 
 ---
@@ -220,36 +247,34 @@ Claude in Chrome reads WhatsApp Web (web.whatsapp.com). Only read conversations 
 
 ---
 
-## DEPLOY PIPELINE — AUTOMATIC ON PUSH (CONFIRMED 2026-05-31)
+## DEPLOY PIPELINE - AUTOMATIC ON PUSH (CONFIRMED 2026-06-02)
 
-**Every push to main triggers the workflow automatically. No manual step required.**
+**Every push to main triggers the workflow automatically. No manual step required. The review step happens AFTER deploy, not before (see LIVE LINK REVIEW GATE at the top of this file).**
 
 ### How it works
 
 ```
 Push/merge to main
-   ↓
-GitHub Actions triggers automatically (on: push, branches: [main])
-   ↓
-Hugo --gc --minify builds site/public/ (~6,300+ pages)
-   ↓
-python split_sitemap.py creates section sitemaps
-   ↓
-FTP Deploy Action checks .ftp-deploy-sync-state.json on Hostinger
-   ↓
-Only NEW or CHANGED files are uploaded (seconds, not hours)
-   ↓
-Updated state file uploaded to Hostinger
-   ↓
-Live on pettransportglobal.com within ~80 seconds for most changes
+   -> GitHub Actions triggers automatically (on: push, branches: [main])
+   -> Hugo --gc --minify builds site/public/ (~6,300+ pages)
+   -> python split_sitemap.py creates section sitemaps
+   -> FTP Deploy Action checks .ftp-deploy-sync-state.json on Hostinger
+   -> Only NEW or CHANGED files are uploaded (seconds, not hours)
+   -> Updated state file uploaded to Hostinger
+   -> Live on pettransportglobal.com within ~80 seconds for most changes
+   -> CLAUDE POSTS THE LIVE REVIEW LINKS IN CHAT (LIVE LINK REVIEW GATE)
 ```
+
+### One workflow only
+
+There is exactly one active deploy workflow: **`.github/workflows/deploy.yml`** ("Build and Deploy to Hostinger"), triggered on push to main and on manual `workflow_dispatch`. The older `build-to-live.yml` (which published a `live` branch on push) has been retired to avoid two pipelines racing on the same push. If a second push-triggered workflow ever reappears, disable it: two builds on one push can collide on the sitemap and the FTP state file.
 
 ### Critical rules
 
 - **Never delete `.ftp-deploy-sync-state.json` from Hostinger.**
 - **Never set `dangerous-clean-slate: true`** in the workflow.
 - **Never attempt to upload the entire `site/public/` directory manually.**
-- **The `.github/workflows/deploy.yml` file cannot be edited via the MCP connector** (GitHub returns 403). Provide the complete updated file and ask Gareth to paste it via the GitHub web editor.
+- **The `.github/workflows/*.yml` files cannot be edited via the MCP connector** (GitHub returns 403). Provide the complete updated file and ask Gareth to paste it via the GitHub web editor.
 
 ### Deploy speed expectations
 
@@ -258,16 +283,17 @@ Live on pettransportglobal.com within ~80 seconds for most changes
 | 1 new blog article | 30-60 seconds |
 | 25 new route pages | 2-5 minutes |
 | Template change (affects all pages) | 30-60 minutes |
-| First deploy after state file deletion | Will fail — regenerate state file first |
+| First deploy after state file deletion | Will fail. Regenerate state file first |
 
 ---
 
-## CURRENT STATUS (keep this accurate — update on every commit)
+## CURRENT STATUS (keep this accurate - update on every commit)
 
-- **Quality routes built:** 5,521 of ~37,830 country pairs (~14.6%)
+- **Quality routes built:** 5,524 of ~37,830 country pairs (~14.6%)
 - **Blog articles:** 412. Content plan in progress: Day 4 is next (`pet-transport-uk-to-spain`)
+- **Total site pages:** ~6,322 (build_state.json figure plus 3 route fixes on 2026-06-02; verified totals come from the deployed sitemap.xml)
 - **Phase 7 route chunks:** 18 complete. Chunk 19 is next (Template B, Tier A).
-- **Deploy pipeline:** Automatic on push to main. Confirmed working 2026-05-31.
+- **Deploy pipeline:** Automatic on push to main. Confirmed working 2026-06-02. Single workflow (deploy.yml). Live link review gate active.
 - **GEO implementation:** All 4 phases complete (P1 Organization schema + robots, P2 universal route schema, P3 llms.txt + freshness + methodology page, P4 methodology link + airline/breed cross-links).
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 deployed. Both POST (desktop) and GET (mobile) confirmed working.
 - **Live tracker:** [build_state.json](build_state.json)
@@ -280,10 +306,11 @@ Live on pettransportglobal.com within ~80 seconds for most changes
 - **No filler.** Never start with "Great question!", "Of course!", "Certainly!". Start with the answer.
 - **Match length to task.** Simple question = short answer. Complex task = full answer. Never pad.
 - **Show options before acting** on anything significant.
-- **Admit uncertainty.** Do not invent plausible-sounding details. YMYL site — wrong info hurts pets.
+- **Admit uncertainty.** Do not invent plausible-sounding details. YMYL site. Wrong info hurts pets.
 - **Use British English** in all site content.
 - **When editing files that need Gareth to paste, always provide the COMPLETE file contents.**
 - **No em dashes anywhere.** See EM DASH BAN section above.
+- **End every build batch with the live review links.** See LIVE LINK REVIEW GATE.
 
 ---
 
@@ -299,21 +326,23 @@ All messages to clients (WhatsApp, email, cover letters) must match the tone Gar
 
 ---
 
-## REVIEW BEFORE PUBLISH — NON-NEGOTIABLE
+## REVIEW AFTER PUBLISH - NON-NEGOTIABLE
 
-Every blog article or page must be presented as a rendered HTML file for review before it is committed to the repo.
+Deploy is automatic, so the review moves to after publish, not before.
 
 **Workflow:**
-1. Write the article (markdown + YAML front matter)
-2. Build standalone HTML preview using the site's actual nav/footer/CSS
-3. Present as downloadable `.html` artifact for Gareth to review in a browser
-4. Wait for explicit approval
-5. Only after approval: commit `.md` directly to `main`
-6. In that same commit (or the next one): update BUILD-PLAN.md, build_state.json, MEMORY.md
+1. Write the content (markdown + YAML front matter)
+2. Run the full quality gate (research, voice, template rotation, humanise, QA)
+3. Commit `.md` to `main` (bundled with the three docs updates)
+4. Deploy fires automatically
+5. **Post every new/changed live URL in chat for Gareth to review (LIVE LINK REVIEW GATE)**
+6. If a problem is found on the live page, fix and re-push immediately, then post the corrected link again
+
+(Optional, on request: for a single high-stakes article Gareth can still ask for an HTML preview before the push. Default is now push then review live.)
 
 ---
 
-## AUTHOR PERSONAS — NON-NEGOTIABLE
+## AUTHOR PERSONAS - NON-NEGOTIABLE
 
 **Never use Gareth's name as an author.** Use one of the personas below.
 
@@ -328,7 +357,7 @@ Every blog article or page must be presented as a rendered HTML file for review 
 
 ## QUOTING SYSTEM
 
-Full specification in **[quotedesign.md](quotedesign.md)** — read it before producing any quote.
+Full specification in **[quotedesign.md](quotedesign.md)** - read it before producing any quote.
 
 ### Key rules
 
@@ -353,20 +382,20 @@ Full specification in **[quotedesign.md](quotedesign.md)** — read it before pr
 ## BEHAVIOR RULES
 
 ### Stay in scope
-Only modify files directly related to the current task. Mention improvements elsewhere as a note — do not touch them.
+Only modify files directly related to the current task. Mention improvements elsewhere as a note. Do not touch them.
 
 ### The cascading build plan is law
 Never bulk-generate content. One block at a time (25 routes or equivalent). Full quality gate every time.
 
 ### Quality gate
-1. Research — real regulations from data files and named sources
-2. Write — load the-wordsmith.md for voice
-3. Rotate templates — A to E
-4. Humanise — the-chameleon.md rules
-5. QA scan — the-auditor.md checks
-6. HTML preview — present to Gareth for approval
-7. Commit to main only after approval
-8. **Update BUILD-PLAN.md, build_state.json, MEMORY.md in the same commit** (see MANDATORY DOCS UPDATE)
+1. Research - real regulations from data files and named sources
+2. Write - load the-wordsmith.md for voice
+3. Rotate templates - A to E
+4. Humanise - the-chameleon.md rules
+5. QA scan - the-auditor.md checks
+6. Commit to main (bundled with docs update). Deploy is automatic
+7. **Update BUILD-PLAN.md, build_state.json, MEMORY.md in the same commit** (see MANDATORY DOCS UPDATE)
+8. **Post every new/changed live URL in chat for review** (see LIVE LINK REVIEW GATE)
 9. Stop and wait for next "go"
 
 ---
@@ -406,17 +435,17 @@ Never bulk-generate content. One block at a time (25 routes or equivalent). Full
 
 ```
 pet-transport/
-├── site/content/         # All page content (routes, countries, origins, airlines, breeds, blog)
-├── site/layouts/         # Hugo templates
-├── site/static/          # CSS, JS, images, fonts
-├── data/                 # Source JSON for generators
-├── workforce/            # Worker soul files
-├── CLAUDE.md             # THIS FILE
-├── quotedesign.md        # PDF quote design spec
-├── BUILD-PLAN.md         # Session log + remaining tasks
-├── build_state.json      # Machine-readable progress
-├── ERRORS.md             # Failed approaches log
-└── MEMORY.md             # Decision log
+  site/content/         # All page content (routes, countries, origins, airlines, breeds, blog)
+  site/layouts/         # Hugo templates
+  site/static/          # CSS, JS, images, fonts
+  data/                 # Source JSON for generators
+  workforce/            # Worker soul files
+  CLAUDE.md             # THIS FILE
+  quotedesign.md        # PDF quote design spec
+  BUILD-PLAN.md         # Session log + remaining tasks
+  build_state.json      # Machine-readable progress
+  ERRORS.md             # Failed approaches log
+  MEMORY.md             # Decision log
 ```
 
 ---
@@ -432,14 +461,15 @@ pet-transport/
 ### "go" or "next block"
 1. Read BUILD-PLAN.md and build_state.json
 2. Write content through full quality gate
-3. Present HTML preview, wait for approval
-4. Commit to main with docs update bundled in — deploy is automatic
+3. Commit to main with docs update bundled in. Deploy is automatic
+4. **Post every new/changed live URL in chat for review** (LIVE LINK REVIEW GATE)
 5. Stop and wait
 
 ### "session end" or "wrap up"
 1. Update BUILD-PLAN.md, build_state.json, MEMORY.md
 2. Commit to main
-3. Summarise what was built and what is next
+3. Post the live review links for anything changed this session
+4. Summarise what was built and what is next
 
 ---
 
@@ -449,13 +479,15 @@ pet-transport/
 - Slugs: lowercase, hyphen-separated, no underscores.
 - Python generators at repo root, not in scripts/.
 - Hugo content must live in site/content/.
-- site/public/ is gitignored — never commit build output.
+- site/public/ is gitignored. Never commit build output.
 - **Every push to main triggers an automatic deploy via incremental FTP. No manual trigger needed.**
+- **After every build batch, post the live URLs of all new/changed pages in chat for review. See LIVE LINK REVIEW GATE.**
+- Exactly one deploy workflow is active: deploy.yml. The old build-to-live.yml has been retired.
 - Do NOT delete .ftp-deploy-sync-state.json from Hostinger.
-- FTP credentials in GitHub Secrets only — never in chat or commits.
-- .github/workflows/deploy.yml cannot be edited via MCP connector (403).
+- FTP credentials in GitHub Secrets only. Never in chat or commits.
+- .github/workflows/*.yml cannot be edited via MCP connector (403). Provide full file for Gareth to paste via GitHub web editor.
 - Never use Gareth's real name as author on published content.
-- Quote design is locked — see quotedesign.md.
+- Quote design is locked. See quotedesign.md.
 - Enquiry tracker webhook v4 is live. Always provide both POST (desktop) and GET (mobile link) formats at the end of every client interaction.
 - No em dashes anywhere, ever. See EM DASH BAN at the top of this file.
 - Never send WhatsApp messages or emails without explicit instruction. Never delete anything. Read only. See WHATSAPP AND EMAIL ACCESS RULES.
@@ -472,4 +504,4 @@ pet-transport/
 
 ---
 
-*Last updated: 2026-06-01*
+*Last updated: 2026-06-02*
