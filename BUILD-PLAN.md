@@ -16,7 +16,7 @@
 - **Bulk-generation scripts are banned.** Anything that writes more than 25 pages in one run violates the plan.
 - See `CLAUDE.md` for the full rules.
 
-**Where we are:** 5,524 quality routes complete. ~32,308 routes remaining. Blog: 412 articles. Total pages ~6,322. Content plan: Day 4 is next.
+**Where we are:** 5,534 quality routes complete. ~32,298 routes remaining. Blog: 412 articles. Total pages ~6,332. Content plan: Day 4 is next.
 
 ---
 
@@ -66,13 +66,13 @@
 
 **Goal:** Assign template variants A-E to all non-US/non-UK route pages.
 
-**Status: Chunks 1-18 complete (2026-05-28). Chunk 19 is next.**
+**Status: Chunks 1-19 complete. Chunk 20 is next.**
 
-- Chunk 19 template: B (Visual Journey)
+- Chunk 20 template: C (Comparison Brief)
 - Tier: A
-- Next routes: per `cascading-build-plan-pet=transport.html` Chunk 19 list
+- Next routes: per `cascading-build-plan-pet=transport.html` Chunk 20 list
 
-**Template rotation:** B, C, D, E, A, B, C, D, E, A, ...
+**Template rotation:** B, C, D, E, A, B, C, D, E, A, ... (Chunk 19=B, Chunk 20=C)
 
 ## Content Plan - Daily Blog Articles
 
@@ -119,5 +119,6 @@ If any of these three is missed, the job is not done.
 | 2026-05-09 | Phase 7 scaffolding | Master build plan v2 generated. 5,461 routes, 14% coverage. | 6,258 | Build plan HTML covers all 39,006 pairs |
 | 2026-05-10 to 2026-05-28 | Phase 7 Chunks 13-18 | 60 new route pages (10 per chunk). Routes built: 5,521. Templates rotated B-E-A. 3 content plan articles published (Days 1-3). SEO fixes: duplicate FAQPage schema removed, buildFuture disabled, rebuild_link_graph_v3.py added. | 6,319 | build_state.json updated to Chunk 18 done. |
 | 2026-06-01 | Docs audit | Synced BUILD-PLAN.md, MEMORY.md, CLAUDE.md with actual repo state. Confirmed Day 4 is next content plan article. | 6,319 | No new content built this session. |
-| 2026-06-02 | 404 fix | Added 3 missing route pages that were returning 404: denmark-to-switzerland (B), indonesia-to-denmark (E), philippines-to-switzerland (C). All with full route_data, FAQs, links, correct EU/non-listed protocols. Routes 5,521 to 5,524. | 6,322 | Live review links posted in chat. |
-| 2026-06-02 | Workflow + docs policy | Confirmed auto-deploy as the model (no manual trigger). Added LIVE LINK REVIEW GATE: after every build batch, post live URLs of all new/changed pages for review. Retired duplicate build-to-live.yml so only deploy.yml fires on push. Updated CLAUDE.md, BUILD-PLAN.md, MEMORY.md, build_state.json. Documented that these docs update on every build batch, every time. | 6,322 | build-to-live.yml edit must be pasted by Gareth via GitHub web editor (MCP cannot edit workflow files, 403). |
+| 2026-06-02 | 404 fix | Added 3 missing route pages that were returning 404: denmark-to-switzerland (B), indonesia-to-denmark (E), philippines-to-switzerland (C). Routes 5,521 to 5,524. | 6,322 | Live review links posted in chat. |
+| 2026-06-02 | Workflow + docs policy | Auto-deploy confirmed, LIVE LINK REVIEW GATE added, build-to-live.yml retired, all docs synced. | 6,322 | |
+| 2026-06-02 | Chunk 19 | 10 Tier A quality routes, Template B (Visual Journey): germany-to-uk, germany-to-us, hk-to-uk, hk-to-us, hk-to-canada, hk-to-germany, hk-to-nz, hk-to-singapore, nz-to-australia, nz-to-uk, nz-to-us, nz-to-germany (12 files, 10 core chunk + 2 bonus NZ). Full content sections, correct regulatory data, FAQs. Routes 5,524 to 5,534. Sitemap verified pending next build. | 6,332 | Live review links posted in chat below. |

@@ -1,9 +1,9 @@
 ---
-title: "Pet Transport from New Zealand to Germany | MPI Export, EU Titre Test & Guide"
-description: "Shipping your pet from New Zealand to Germany: MPI export health certificate, EU FAVN titre test and 3-month wait required, Air New Zealand and Singapore Airlines cargo."
+template_variant: "B"
+title: "Pet Transport from New Zealand to Germany | MPI Export & EU Non-Listed Rules"
+description: "Moving your pet from New Zealand to Germany: EU non-listed country rules, titre test, 3-month wait, Air NZ and Singapore Airlines cargo options from Auckland."
 type: "routes"
 layout: "single"
-template_variant: "D"
 author: "Gareth - Founder, PetTransportGlobal"
 slug: "new-zealand-to-germany"
 origin_name: "New Zealand"
@@ -13,125 +13,117 @@ route_data:
     code: "NZ"
     country: "New Zealand"
     export_requirements:
-      export_permit: "No formal export permit for personal pets from New Zealand."
-      health_certificate: "MPI-issued official health certificate in EU Annex IV format. Issued within 10 days of travel."
+      export_permit: "No formal export permit required for personal pet exports from New Zealand."
+      health_certificate: "EU Annex IV non-listed country format health certificate, issued by an MPI-authorised vet and endorsed by MPI. Issued within 10 days of German/EU arrival."
   destination:
     code: "DE"
     country: "Germany"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Before first rabies vaccination."
-      rabies_vaccination: "Required. 21-day wait from first vaccination. Current within validity."
-      titre_test: "Required. New Zealand is a non-listed country under EU Regulation 576/2013. FAVN at EU-approved lab. Minimum 0.5 IU/ml. Blood drawn 30+ days post-vaccination. 3-month mandatory wait from blood draw date."
-      quarantine: "No quarantine for fully compliant pets. Documentary check at Frankfurt Airport BCP."
-      import_permit: "Not required. EU Regulation 576/2013."
-      health_certificate: "MPI-endorsed EU Annex IV certificate. Within 10 days of travel."
-      entry_point: "Frankfurt Airport (FRA) — Germany's primary BCP."
-      authority: "BMEL Germany. EU Regulation 576/2013."
+      microchip: "Required. ISO 11784/11785."
+      rabies_vaccination: "Required. Current and valid."
+      titre_test: "Required. New Zealand is not on the EU listed country schedule. FAVN or ELISA titre test, minimum 0.5 IU/ml. Blood drawn at least 30 days after vaccination. 3-month waiting period from blood draw date before EU entry."
+      quarantine: "No quarantine if documentation is fully compliant."
+      import_permit: "Not required for personal pets."
+      health_certificate: "EU Annex IV non-listed country format, MPI-endorsed, within 10 days of arrival."
+      authority: "German BMEL/LVA at port of entry. MPI governs NZ exports."
   airlines:
     - name: "Air New Zealand"
       type: "cargo_only"
-      policy_summary: "Air New Zealand Cargo AKL-FRA via connections. National carrier with MPI export familiarity. Strong cargo on this corridor."
+      policy_summary: "Cargo: AKL to FRA via connections (Singapore, Hong Kong, or Middle East hub). No direct AKL-FRA service. Long multi-leg journey."
     - name: "Singapore Airlines"
       type: "cargo_only"
-      policy_summary: "Via Singapore SIN to FRA. Temperature-controlled cargo. Common routing for NZ-Europe pet moves."
-    - name: "Emirates"
-      type: "cargo_only"
-      policy_summary: "Via Dubai DXB to FRA. Summer heat embargoes may apply."
-    - name: "Qatar Airways"
-      type: "cargo_only"
-      policy_summary: "Via Doha DOH to FRA. Good animal handling."
+      policy_summary: "Cargo: AKL-SIN-FRA. Single transfer at Singapore. Strong live animal handling at SIN and FRA. A popular choice for NZ-Germany pet moves."
     - name: "Lufthansa"
       type: "cargo_only"
-      policy_summary: "Via Asian hub to FRA. Brachycephalic breeds restricted year-round."
+      policy_summary: "Cargo: Via partner connections from NZ. Frankfurt hub. Animal Lounge at FRA."
+    - name: "Emirates"
+      type: "cargo_only"
+      policy_summary: "Cargo: AKL-DXB-FRA. Dubai transfer. Temperature-controlled throughout."
   timeline_steps:
     - step: 1
-      action: "Is microchip confirmed ISO-compliant and pre-vaccination?"
-      timing: "Verify immediately."
-      responsible: "NZ vet"
+      action: "Microchip and rabies vaccination confirmed"
+      timing: "Microchip must precede vaccination."
+      responsible: "Your vet in New Zealand"
     - step: 2
-      action: "Is rabies vaccination current? (Most NZ pets may not be vaccinated — start here)"
-      timing: "If not vaccinated, start vaccination course now. 21-day wait before travel eligibility begins."
-      responsible: "NZ vet"
+      action: "Titre test blood draw (30+ days after vaccination)"
+      timing: "3-month wait from blood draw before EU entry. EU-approved labs may need sample shipped from NZ."
+      responsible: "Your vet + EU-approved laboratory"
     - step: 3
-      action: "FAVN titre test at EU-approved laboratory"
-      timing: "Blood drawn 30+ days after last vaccination. 2-4 weeks results."
-      responsible: "NZ vet + EU-approved lab"
-    - step: 4
-      action: "3-month mandatory wait from blood draw date"
-      timing: "Cannot be shortened."
+      action: "3-month waiting period"
+      timing: "Mandatory. From blood draw date."
       responsible: "N/A"
+    - step: 4
+      action: "Book cargo flight AKL to FRA"
+      timing: "4-8 weeks before travel."
+      responsible: "You or your cargo agent"
     - step: 5
-      action: "Book Air New Zealand or Singapore Airlines Cargo AKL-FRA"
-      timing: "Once wait complete."
-      responsible: "You or agent"
-    - step: 6
-      action: "MPI-endorsed EU Annex IV health certificate"
-      timing: "Within 10 days of travel."
+      action: "Obtain MPI-endorsed EU Annex IV health certificate within 10 days of German arrival"
+      timing: "MPI vet examination + MPI endorsement within 10-day window."
       responsible: "MPI-authorised vet + MPI"
-    - step: 7
-      action: "Cargo check-in Auckland. Frankfurt BCP inspection on arrival."
-      timing: "3-4 hours before departure."
-      responsible: "You + cargo + German BCP vet"
   cost_factors:
-    - "Air New Zealand or Singapore Airlines Cargo AKL-FRA"
-    - "IATA-compliant crate"
-    - "FAVN titre test (EU-approved lab)"
-    - "MPI health certificate fees"
-    - "Agent fee (recommended for long-haul)"
+    - "Long-haul cargo fee AKL to FRA (one of the longer routes globally)"
+    - "IATA crate"
+    - "Titre test + EU-approved lab fee"
+    - "MPI vet fee + MPI endorsement fee"
+    - "Agent fee (strongly recommended)"
   key_warnings:
-    - "Many NZ pets are not rabies vaccinated. If unvaccinated, start the course now — titre test eligibility comes 30 days after vaccination."
-    - "New Zealand is non-listed for EU entry. Titre test + 3-month wait apply despite NZ's rabies-free status."
-    - "3-month wait from blood draw, not result date."
+    - "New Zealand is NOT on the EU listed country schedule despite its excellent biosecurity reputation. The titre test and 3-month wait apply regardless."
+    - "Auckland to Frankfurt is a very long journey (22-30 hours depending on routing). Choose a single-transfer routing and confirm live animal handling at the transit airport."
+    - "EU-approved titre test laboratories may not be available in New Zealand. Confirm current approved labs before starting the titre test process."
   route_complexity: "high"
-  estimated_timeline_weeks: "22-26"
+  estimated_timeline_weeks: "22-28"
 content:
   h1: "Pet Transport from New Zealand to Germany"
   overview: |
-    New Zealand is rabies-free, but the EU doesn't base its listed-country status on rabies-free status alone. New Zealand is non-listed under EU Regulation 576/2013, which means the FAVN titre test and 3-month wait apply. There's also a practical wrinkle: many New Zealand pets have never been rabies vaccinated, because there's no domestic rabies to vaccinate against. That adds time to the start of the process.
+    New Zealand to Germany combines a very long physical journey with the EU non-listed country requirements. Despite New Zealand's strong biosecurity reputation, it is not on the EU's listed country schedule. That means a titre test, a 3-month waiting period, and an EU Annex IV health certificate are all required. Total preparation: 22-28 weeks minimum.
 
-    Allow 22-26 weeks. Air New Zealand and Singapore Airlines both handle the long Auckland-Frankfurt corridor well.
+    This surprises many New Zealand pet owners who are used to the simple trans-Tasman rules for Australia. Germany and other EU countries apply their own framework, regardless of how the destination country views your origin.
   sections:
-    - heading: "The rabies vaccination question for NZ pets"
+    - heading: "EU non-listed status: why New Zealand still requires a titre test for Europe"
       body: |
-        New Zealand is one of the world's few genuinely rabies-free countries. The result: many dogs and cats in New Zealand have never received a rabies vaccination. There's no need for one domestically.
+        New Zealand is not on the EU's listed country schedule under EU Regulation 576/2013. The listed countries are generally those that the EU has assessed as having equivalent rabies control frameworks. New Zealand, despite being rabies-free, has not yet been assessed and listed.
 
-        Moving to Germany changes that. The EU requires a current rabies vaccination and a titre test. If your pet has never been vaccinated, you start from the beginning: vaccination, then a 30-day wait before the titre test blood draw, then the 3-month mandatory wait from the blood draw.
+        The consequence: pets from New Zealand entering Germany (or any EU country) must meet the full non-listed country requirements. These are: ISO microchip, current rabies vaccination, FAVN or ELISA titre test with a result of at least 0.5 IU/ml, and a 3-calendar-month wait from the date of the titre test blood draw before the pet can enter the EU.
 
-        If your pet has been vaccinated — perhaps for a previous overseas trip — verify the record is in EU-compatible format and check the expiry date. If within validity, you can proceed to the titre test.
-    - heading: "MPI health certificate: New Zealand's departure document"
+        The 3-month clock is fixed. It starts on the blood draw date. It cannot be shortened. Allow 22-28 weeks from starting preparations to your travel date.
+    - heading: "Routing Auckland to Frankfurt: managing the long journey"
       body: |
-        New Zealand's Ministry for Primary Industries (MPI) issues the export health certificate for live animals. For Germany, it must be in EU Annex IV format — the template for non-listed third countries entering the EU. MPI-authorised vets prepare the certificate; it's issued within 10 days of travel.
+        There is no direct Auckland-Frankfurt service. Every NZ-Germany pet move involves at least one connection. The most used options:
 
-        Book the MPI vet appointment with the 10-day window in mind. Frankfurt Airport's Border Control Post inspects all documentation on arrival. The certificate must be original with wet signatures and stamps — not a copy.
-    - heading: "Which airline from Auckland to Frankfurt?"
+        Via Singapore (SIN): Singapore Airlines cargo from AKL to SIN, connecting to FRA. Single transfer. Singapore's Changi handles live animals well, and SIN-FRA is a major route. This is the most popular routing.
+
+        Via Dubai (DXB): Emirates cargo AKL-DXB-FRA. Temperature-controlled throughout. An alternative to the Singapore routing.
+
+        Via Hong Kong (HKG): Cathay Pacific or Lufthansa cargo via HKG to FRA. One transfer, good live animal handling at HKG.
+
+        The total journey runs 22-30 hours depending on route. Minimise transfers. One connection is preferable to two.
+    - heading: "MPI health certificate: what New Zealand requires on the export side"
       body: |
-        No direct Auckland-Frankfurt service operates. All routings involve at least one transit.
+        MPI (New Zealand's Ministry for Primary Industries) authorises vets to sign export health certificates. The certificate must be in EU Annex IV non-listed country format and endorsed by MPI before departure.
 
-        Air New Zealand Cargo via a Pacific or Asian hub connection is the natural first choice — as NZ's own carrier, their Auckland cargo team is familiar with MPI export documentation. Singapore Airlines via Changi is the most commonly used third-party option for New Zealand to Europe pet moves, with a well-established temperature-controlled cargo operation at Changi.
+        The certificate is valid for 10 days from the vet examination to the date of arrival in Germany. MPI endorsement takes a few working days. Factor both the vet appointment and the MPI processing into your 10-day window.
 
-        Emirates via Dubai adds summer heat embargo risk. Qatar via Doha is a reliable alternative if other options are full.
+        An MPI-authorised vet in Auckland or wherever you are based can issue the certificate. Not every vet is authorised, so confirm status before booking.
 faqs:
-  - question: "Does my pet need a titre test to enter Germany from New Zealand?"
-    answer: "Yes. New Zealand is non-listed under EU Regulation 576/2013. A FAVN titre test at an EU-approved laboratory is mandatory (minimum 0.5 IU/ml), followed by a 3-month mandatory wait from the blood draw date."
-  - question: "My NZ pet has never been vaccinated against rabies. Where do I start?"
-    answer: "Start with the rabies vaccination. After that, a 30-day wait before the titre test blood draw, then the 3-month mandatory wait. Allow 22-26 weeks total from the vaccination date."
-  - question: "Is there quarantine when arriving in Germany from New Zealand?"
-    answer: "No quarantine for fully compliant pets. An official veterinarian conducts a documentary check at Frankfurt Airport Border Control Post on arrival. With correct documentation, your pet is released the same day."
-  - question: "How long does preparation take?"
-    answer: "Allow 22-26 weeks. If your pet is unvaccinated, add 3-4 weeks from the vaccination to the titre test eligibility window."
-  - question: "Which airline is best from Auckland to Frankfurt?"
-    answer: "Air New Zealand Cargo and Singapore Airlines Cargo (via Changi) are the two most commonly used options for this long-haul route. Both handle New Zealand-origin European pet moves regularly."
+  - question: "Does my pet need a titre test to move from New Zealand to Germany?"
+    answer: "Yes. Despite New Zealand being rabies-free, it is not on the EU listed country schedule. Under EU Regulation 576/2013, pets from non-listed countries require a FAVN or ELISA titre test (minimum 0.5 IU/ml) and a 3-month waiting period from the blood draw date before entering the EU, including Germany."
+  - question: "How long does it take to prepare for a New Zealand to Germany pet move?"
+    answer: "Allow 22-28 weeks minimum. The titre test requires a 30-day post-vaccination wait before the blood draw, 3-4 weeks for laboratory results, then a 3-month fixed waiting period from the blood draw date. Add health certificate, cargo booking, and MPI endorsement time on top."
+  - question: "Which airline should I use for Auckland to Frankfurt pet cargo?"
+    answer: "Singapore Airlines Cargo (via Singapore) is the most popular choice for this route: single transfer, strong live animal handling at Changi, and established SIN-FRA connections. Emirates via Dubai and Cathay Pacific via Hong Kong are alternatives."
+  - question: "Is there quarantine for pets entering Germany from New Zealand?"
+    answer: "No quarantine, provided all documentation is correct: valid titre test result, 3-month wait observed, EU Annex IV health certificate endorsed by MPI, valid microchip and rabies vaccination. If any documentation is incomplete, the German authorities may refuse entry or impose quarantine at the owner's cost."
 links:
   sideways:
     - url: "/pet-transport/germany-to-new-zealand/"
       text: "Pet Transport Germany to New Zealand"
   upward:
-    - url: "/pet-transport/origins/new-zealand-pet-export-guide/"
+    - url: "/pet-transport/origins/pet-export-guide-shipping-from-new-zealand/"
       text: "Shipping from New Zealand"
     - url: "/pet-transport/countries/germany/"
       text: "Importing to Germany"
-    - url: "/pet-transport/airlines/air-new-zealand/"
-      text: "Air New Zealand pet policy"
     - url: "/pet-transport/airlines/singapore-airlines/"
       text: "Singapore Airlines pet policy"
+    - url: "/pet-transport/airlines/lufthansa/"
+      text: "Lufthansa pet policy"
 ---

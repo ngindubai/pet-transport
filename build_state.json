@@ -1,13 +1,13 @@
 {
   "last_updated": "2026-06-02",
-  "routes_built": 5524,
-  "routes_remaining": 32308,
-  "total_site_pages": 6322,
-  "completed_chunks": 18,
-  "next_chunk": 19,
+  "routes_built": 5534,
+  "routes_remaining": 32298,
+  "total_site_pages": 6332,
+  "completed_chunks": 19,
+  "next_chunk": 20,
   "next_chunk_tier": "A",
-  "next_chunk_template": "B-Journey",
-  "tier_a_remaining": 180,
+  "next_chunk_template": "C-Comparison",
+  "tier_a_remaining": 170,
   "tier_b_remaining": 1094,
   "tier_c_remaining": 7720,
   "tier_d_remaining": 23512,
@@ -15,5 +15,5 @@
   "blog_articles": 412,
   "content_plan_start": "2026-06-01",
   "content_plan_articles_written": 3,
-  "notes": "2026-06-02: Added 3 missing route pages that were returning 404 (denmark-to-switzerland, indonesia-to-denmark, philippines-to-switzerland). Routes 5521 -> 5524, pages 6319 -> 6322. NEW SAFETY GATE: deploy is automatic on push to main; after every build batch the live URLs of all new/changed pages must be posted in chat for review (see CLAUDE.md LIVE LINK REVIEW GATE). Counts here are build_state.json + 3 known additions, not a fresh census (GitHub directory API caps at 1000 entries/folder, so a verified total comes from the deployed sitemap.xml). Chunk 18 complete 2026-05-28. Next chunk 19: Tier A, continue rotation from B."
+  "notes": "Chunk 19 complete 2026-06-02. Template B (Visual Journey), Tier A. Routes: germany-to-united-kingdom, germany-to-united-states, hong-kong-to-united-kingdom, hong-kong-to-united-states, hong-kong-to-canada, hong-kong-to-germany, hong-kong-to-new-zealand, hong-kong-to-singapore, new-zealand-to-australia, new-zealand-to-united-kingdom, new-zealand-to-united-states, new-zealand-to-germany (10 quality chunk routes plus 2 bonus NZ routes). All with full content sections, FAQs, correct regulatory data. Routes 5524 -> 5534, pages 6322 -> 6332. Next chunk 20: Template C (Comparison Brief), Tier A. Live link review gate: all new page URLs posted in chat. Sitemap note: verified count pending next build/sitemap fetch."
 }

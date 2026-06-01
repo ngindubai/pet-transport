@@ -9,10 +9,10 @@
 
 ## Current State (2026-06-02)
 
-- **Routes built:** 5,524 of ~37,830 country pairs (~14.6%)
+- **Routes built:** 5,534 of ~37,830 country pairs (~14.6%)
 - **Blog articles:** 412
-- **Total pages:** ~6,322 (build_state.json figure plus 3 route fixes on 2026-06-02; verified totals come from the deployed sitemap.xml)
-- **Phase 7 progress:** Chunks 1-18 complete. Chunk 19 is next (Template B, Tier A routes).
+- **Total pages:** ~6,332 (build_state.json figure; verified totals come from the deployed sitemap.xml after next build)
+- **Phase 7 progress:** Chunks 1-19 complete. Chunk 20 is next (Template C, Tier A).
 - **Content plan:** Day 4 is next (`pet-transport-uk-to-spain`, 2026-06-04)
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
 
@@ -99,6 +99,7 @@ Every build batch does three things together, every time: (1) bundle BUILD-PLAN.
 | 2026-06-02 | LIVE LINK REVIEW GATE adopted | Deploy is automatic, so the safety gate moves to after publish: post live URLs of all new/changed pages in chat for review after every build batch |
 | 2026-06-02 | Retired build-to-live.yml | Two workflows both fired on push (deploy.yml + build-to-live.yml). Kept deploy.yml only so builds do not race on the sitemap and FTP state file |
 | 2026-06-02 | Docs update every build batch (not just session end) | Stops the three docs drifting from reality between sessions |
+| 2026-06-02 | Chunk 19 complete | 10 Tier A quality routes (Template B), Germany/HK/NZ corridors |
 
 ## Mistakes to Avoid
 - Never run hugo from repo root. Always `cd site` first (or the workflow handles it)

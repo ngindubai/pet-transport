@@ -1,7 +1,7 @@
 ---
-template_variant: "A"
-title: "Pet Relocation Hong Kong to New Zealand | Requirements & Guide"
-description: "Complete guide to pet transport from Hong Kong to New Zealand. Import requirements, quarantine rules, airline options, and step-by-step timeline."
+template_variant: "B"
+title: "Pet Transport from Hong Kong to New Zealand | AFCD Export & MPI Import Rules"
+description: "Moving your pet from Hong Kong to New Zealand: AFCD export permit, MPI import permit, mandatory quarantine, Cathay Pacific and Air NZ cargo options."
 type: "routes"
 layout: "single"
 author: "Gareth - Founder, PetTransportGlobal"
@@ -13,126 +13,107 @@ route_data:
     code: "HK"
     country: "Hong Kong"
     export_requirements:
-      export_permit: "Required for all live animal exports from Hong Kong"
-      health_certificate: "Must meet destination country requirements"
+      export_permit: "Required. AFCD live animal export licence. Allow 2-3 weeks."
+      health_certificate: "MPI-format health certificate issued by AFCD-authorised vet, endorsed by AFCD."
   destination:
     code: "NZ"
     country: "New Zealand"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or on same day as first rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 28-day wait after vaccination before travel. Vaccination schedule must be complete before titre test blood draw."
-      titre_test: "Required for: All pets from all countries (no exemptions). Not required for: None. Minimum: 0.5 IU/ml. 180-day wait from test date before entry"
-      quarantine: "Mandatory quarantine. 10 (minimum) at MPI Levin facility days. Facility: MPI Levin Quarantine Facility, Levin, Manawatu (the only approved facility). Mandatory 10-day quarantine for all arriving cats and dogs. Pre-booking required well in advance as capacity is limited. Book before flights."
-      import_permit: "Required. Issued by: Ministry for Primary Industries (MPI), Biosecurity New Zealand. Apply for import permit before booking flights. Permit specifies all conditions. Non-compliance results in re-export or destruction."
-      health_certificate: "Required. Government veterinary health certificate. Issued by: Government (official) veterinarian in country of export. Valid for 14 days from issue. Must use MPI-specified format for the exact country of export. No standard format accepted. Download the correct template from the MPI website."
+      microchip: "Required. ISO 11784/11785."
+      rabies_vaccination: "Required. Must be current."
+      titre_test: "Required. FAVN or ELISA. Minimum 0.5 IU/ml. Blood drawn 30+ days after vaccination. 6-month waiting period after titre test before NZ entry is permitted (longer than Australia or EU)."
+      quarantine: "Mandatory 10-day quarantine at MPI-approved facility on arrival. Only Auckland is currently an approved MPI port of entry for cats and dogs."
+      import_permit: "Required. MPI import permit must be obtained before travel."
+      health_certificate: "MPI Approved Country Scheme (ACS) format or Standard Clearance format depending on Hong Kong's current status. Confirm with MPI before preparing documentation."
+      authority: "MPI (Ministry for Primary Industries) governs all NZ animal imports."
   airlines:
     - name: "Cathay Pacific"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
+      policy_summary: "Cargo: HKG to Auckland (AKL) direct or via Sydney. Live animal cargo capability. AKL is the only approved MPI entry point for pets."
+    - name: "Air New Zealand"
+      type: "cargo_only"
+      policy_summary: "Cargo: Air New Zealand Cargo from HKG via connections. AKL hub. No cabin pets on international routes."
     - name: "Qantas"
       type: "cargo_only"
-      policy_summary: "Cargo: QantasFreighter network for pet transport. Brachycephalic breeds restricted year-round. Temperature embargoes: seasonal restrictions during Australian summer (Dec-Feb)"
-    - name: "Emirates"
-      type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Cargo: Via Sydney. An indirect option if direct services are unavailable."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Microchip and rabies vaccination confirmed"
+      timing: "Microchip first, then vaccination."
+      responsible: "Your vet in HK"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 28-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Titre test blood draw (30+ days after vaccination)"
+      timing: "6-month wait from blood draw date before NZ entry. This is the longest waiting period of any major destination."
+      responsible: "Your vet + approved lab"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Apply for MPI import permit"
+      timing: "Apply during the 6-month wait period. MPI processing takes 4-6 weeks."
+      responsible: "You or your agent"
     - step: 4
-      action: "Apply for import permit from New Zealand"
-      timing: "Apply early: allow 4-6 weeks"
-      responsible: "You (or your pet transport agent)"
+      action: "Apply for AFCD export permit"
+      timing: "3+ weeks before travel."
+      responsible: "You or your agent"
     - step: 5
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Book cargo flight HKG to AKL"
+      timing: "4-6 weeks before travel."
+      responsible: "You or your cargo agent"
     - step: 6
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Obtain AFCD-endorsed MPI health certificate within 45 days of NZ arrival"
+      timing: "MPI allows a 45-day validity window (longer than most destinations)."
+      responsible: "Authorised vet + AFCD"
     - step: 7
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
-    - step: 8
-      action: "Quarantine on arrival (10 (minimum) at MPI Levin facility days)"
-      timing: "Immediately on arrival (mandatory)"
-      responsible: "New Zealand quarantine authority"
+      action: "Mandatory 10-day quarantine on arrival at Auckland"
+      timing: "Immediately on arrival. Owner-paid. Budget for facility costs."
+      responsible: "MPI quarantine facility"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (New Zealand)"
-    - "Quarantine facility fees (owner-paid at destination)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Cargo fee HKG-AKL"
+    - "IATA crate"
+    - "AFCD export permit fee"
+    - "MPI import permit fee"
+    - "Titre test and lab fee"
+    - "10-day MPI quarantine facility cost (owner-paid)"
+    - "Agent fee (strongly recommended)"
   key_warnings:
-    - "Mandatory quarantine required on arrival. Plan for separation from your pet."
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
+    - "New Zealand has a 6-month titre test waiting period. Longer than Australia (3 months) and the EU (3 months). Minimum total preparation is 8-10 months."
+    - "Only Auckland (AKL) is an approved MPI port of entry. Do not book a NZ destination other than Auckland for the initial leg."
+    - "10-day quarantine is mandatory. You cannot be present with your pet. Budget for facility costs."
   route_complexity: "very_high"
-  estimated_timeline_weeks: "26-32"
+  estimated_timeline_weeks: "36-44"
 content:
   h1: "Pet Transport from Hong Kong to New Zealand"
   overview: |
-    Getting your pet from Hong Kong to New Zealand is entirely achievable, but the preparation timeline is not flexible.
-    
-    This route is one of the most demanding international pet transport routes. Start preparations at least 26 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. New Zealand requires mandatory quarantine (10 (minimum) at MPI Levin facility days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Getting the timing right is critical. Work backwards from your travel date and add a buffer.
+    New Zealand to Hong Kong is one of the more demanding pet transport routes because of New Zealand's biosecurity system. New Zealand applies a 6-month waiting period after the titre test, which is the longest mandatory wait of any major destination. Add the AFCD export process in Hong Kong and the 10-day mandatory quarantine on arrival, and the total preparation time runs to 8-10 months minimum.
+
+    Start this process the moment you know you are relocating. There is no way to compress the 6-month wait.
   sections:
-    - heading: "Why this route needs early planning"
+    - heading: "The 6-month titre test wait: New Zealand's biosecurity approach"
       body: |
-        This is one of the more demanding international pet transport corridors. New Zealand runs a strict biosecurity programme and there are no shortcuts through it.
-        
-        All pets must complete quarantine on arrival in New Zealand (at MPI Levin Quarantine Facility, Levin, Manawatu (the only approved facility)) for 10 (minimum) at MPI Levin facility days. This is non-negotiable and is entirely separate from the pre-travel preparation.
-        
-        New Zealand is rabies-free with one of the world's strictest pet import systems. All dogs and cats must complete mandatory quarantine at the government-approved facility (Levin MAF Quarantine Station, now MPI). Import permit required in advance. Only cats and dogs permitted from most countries; birds require separate approval. Authority: Ministry for Primary Industries (MPI), Biosecurity New Zealand.
-    - heading: "Practical advice for shipping your pet from Hong Kong"
+        New Zealand's MPI (Ministry for Primary Industries) takes an unusually strict approach to rabies risk. While Australia requires a 3-month wait after a successful titre test, and the EU also requires 3 months, New Zealand requires 6 calendar months from the date the titre test blood is drawn.
+
+        The clock starts on the blood draw date. If you draw blood on 1 June and the result is compliant, the earliest your pet can arrive in New Zealand is 1 December. There are no exceptions and no shortcuts.
+
+        This is not a bureaucratic quirk. New Zealand is rabies-free and intends to remain that way. The 6-month period reflects MPI's assessment of the incubation risk period.
+    - heading: "The mandatory 10-day quarantine"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Even with a compliant titre test and all documentation correct, every pet arriving in New Zealand from Hong Kong spends 10 days in mandatory quarantine at an MPI-approved facility. The standard facility is the Biosecurity New Zealand quarantine station.
+
+        You cannot be present with your pet during quarantine. MPI staff provide care. Owner-paid costs typically run to NZD 1,500-2,500 for 10 days, depending on the animal and facility.
+
+        Only Auckland International Airport is currently an approved MPI port of entry for cats and dogs. All pet cargo from Hong Kong must arrive at AKL. If your final New Zealand destination is Wellington, Christchurch, or elsewhere, a domestic transfer happens after quarantine.
+    - heading: "AFCD export on top of NZ requirements"
+      body: |
+        The AFCD export process in Hong Kong adds another coordination layer. The AFCD export permit takes 2-3 weeks. The health certificate must be in MPI format, endorsed by AFCD, and issued within 45 days of New Zealand arrival (MPI allows a longer window than most destinations).
+
+        Given the 6-month titre test wait, the AFCD export permit is typically applied for closer to the end of the waiting period, not at the start. Your agent will time this to your confirmed flight booking.
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Hong Kong to New Zealand?"
-    answer: "Allow at least 26 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering New Zealand?"
-    answer: "Yes, quarantine is mandatory in New Zealand. Your pet will stay for 10 (minimum) at MPI Levin facility days at MPI Levin Quarantine Facility, Levin, Manawatu (the only approved facility) on arrival. This is non-negotiable and the cost is paid by the owner."
-  - question: "Is a rabies titre test required for pets entering New Zealand?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter New Zealand. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into New Zealand?"
-    answer: "Yes, an import permit is required from New Zealand's authority (Ministry for Primary Industries (MPI), Biosecurity New Zealand). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Hong Kong. The certificate must be issued within 14 days of travel. Present the original (not a copy) at check-in. Check New Zealand's authority for the exact format required."
+  - question: "How long does it take to move a pet from Hong Kong to New Zealand?"
+    answer: "At least 36-44 weeks (8-10 months). The 6-month titre test waiting period is fixed. Add microchipping, vaccination, and titre test preparation before the clock starts, plus AFCD export permit processing, MPI permit, and flight booking after it ends. Start the process as early as possible."
+  - question: "Is quarantine mandatory for pets entering New Zealand from Hong Kong?"
+    answer: "Yes. All pets entering New Zealand from Hong Kong must complete a mandatory 10-day quarantine at an MPI-approved facility on arrival in Auckland. This is non-negotiable. Owner-paid costs typically run to NZD 1,500-2,500."
+  - question: "Why is the New Zealand wait longer than Australia?"
+    answer: "MPI sets the waiting period at 6 months, while Australia's DAFF uses 3 months. New Zealand is rabies-free and applies its own biosecurity assessment independent of other countries. The 6-month period reflects their view of the minimum safe waiting period after titre test confirmation."
+  - question: "Which airline should I use for Hong Kong to New Zealand pet transport?"
+    answer: "Cathay Pacific is the primary option, with direct or via-Sydney HKG-AKL service and established live animal cargo processes. Air New Zealand Cargo also serves the corridor. All international pets must arrive at Auckland, not other New Zealand airports."
 links:
   sideways:
     - url: "/pet-transport/new-zealand-to-hong-kong/"
@@ -144,6 +125,6 @@ links:
       text: "Importing to New Zealand"
     - url: "/pet-transport/airlines/cathay-pacific/"
       text: "Cathay Pacific pet policy"
-    - url: "/pet-transport/airlines/qantas/"
-      text: "Qantas pet policy"
+    - url: "/pet-transport/airlines/air-new-zealand/"
+      text: "Air New Zealand pet policy"
 ---
