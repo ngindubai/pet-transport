@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-05-28",
-  "routes_built": 5521,
-  "routes_remaining": 32311,
-  "total_site_pages": 6319,
+  "last_updated": "2026-06-02",
+  "routes_built": 5524,
+  "routes_remaining": 32308,
+  "total_site_pages": 6322,
   "completed_chunks": 18,
   "next_chunk": 19,
   "next_chunk_tier": "A",
@@ -12,8 +12,8 @@
   "tier_c_remaining": 7720,
   "tier_d_remaining": 23512,
   "sitemap_last_split": "2026-05-09",
-  "blog_articles": 410,
+  "blog_articles": 412,
   "content_plan_start": "2026-06-01",
-  "content_plan_articles_written": 1,
-  "notes": "Chunk 18 complete 2026-05-28. Template rotation B,C,D,E,A,B,C,D,E,A. Routes: hong-kong-to-south-africa(B), hong-kong-to-japan(C), south-africa-to-hong-kong(D), south-africa-to-japan(E), japan-to-hong-kong(A), japan-to-south-africa(B), france-to-netherlands(C), france-to-switzerland(D), france-to-new-zealand(E), france-to-china(A). Next chunk 19: Tier A, continue rotation from B."
+  "content_plan_articles_written": 3,
+  "notes": "2026-06-02: Added 3 missing route pages that were returning 404 (denmark-to-switzerland, indonesia-to-denmark, philippines-to-switzerland). Routes 5521 -> 5524, pages 6319 -> 6322. NEW SAFETY GATE: deploy is automatic on push to main; after every build batch the live URLs of all new/changed pages must be posted in chat for review (see CLAUDE.md LIVE LINK REVIEW GATE). Counts here are build_state.json + 3 known additions, not a fresh census (GitHub directory API caps at 1000 entries/folder, so a verified total comes from the deployed sitemap.xml). Chunk 18 complete 2026-05-28. Next chunk 19: Tier A, continue rotation from B."
 }
