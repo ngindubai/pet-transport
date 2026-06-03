@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-02",
-  "routes_built": 5544,
-  "routes_remaining": 32288,
-  "total_site_pages": 6342,
+  "last_updated": "2026-06-03",
+  "routes_built": 5172,
+  "routes_remaining": 32658,
+  "total_site_pages": 5957,
   "completed_chunks": 20,
   "next_chunk": 21,
   "next_chunk_tier": "A",
@@ -15,5 +15,17 @@
   "blog_articles": 412,
   "content_plan_start": "2026-06-01",
   "content_plan_articles_written": 3,
-  "notes": "Chunk 20 complete 2026-06-02. Template C (Comparison Brief), Tier A. Routes: new-zealand-to-canada, new-zealand-to-singapore, new-zealand-to-united-arab-emirates, singapore-to-australia, singapore-to-canada, singapore-to-germany, singapore-to-new-zealand, singapore-to-united-kingdom, singapore-to-united-states, singapore-to-hong-kong, singapore-to-france (10 core + 1 bonus). All with comparison tables, airline comparison tables, full regulatory data, FAQs. Routes 5534 -> 5544, pages 6332 -> 6342. Next chunk 21: Template D (Conversational Q&A), Tier A."
+  "notes": "Chunk 20 complete 2026-06-02. Template C (Comparison Brief), Tier A. Routes: new-zealand-to-canada, new-zealand-to-singapore, new-zealand-to-united-arab-emirates, singapore-to-australia, singapore-to-canada, singapore-to-germany, singapore-to-new-zealand, singapore-to-united-kingdom, singapore-to-united-states, singapore-to-hong-kong, singapore-to-france (10 core + 1 bonus). All with comparison tables, airline comparison tables, full regulatory data, FAQs. Routes 5534 -> 5544, pages 6332 -> 6342. Next chunk 21: Template D (Conversational Q&A), Tier A. SUPERSEDED 2026-06-03 truth audit: count fields reconciled from disk by verify_build_state.py (routes_built 5544 -> 5172, total_site_pages 6342 -> 5957 were inflated by hand-incrementing). No site pages changed. Blog Day 4 (UK to Spain) is replace-in-place of uk-to-spain-pet-transport-complete-guide.md, not a new article.",
+  "counts": {
+    "route_pairs": 5172,
+    "blog": 412,
+    "countries": 75,
+    "origins": 77,
+    "airlines": 145,
+    "breeds": 64,
+    "static_pages": 6,
+    "total_markdown_files": 5957,
+    "note": "total_site_pages counts content .md source files. The full deployed total (including Hugo taxonomy and list pages) is verified from sitemap.xml after a build."
+  },
+  "counts_method": "Reconciled from disk by verify_build_state.py. Never hand-edit count fields; run 'python verify_build_state.py --write' instead."
 }

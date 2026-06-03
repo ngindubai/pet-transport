@@ -59,10 +59,12 @@ Every build batch = (1) push content, (2) update the three docs + build_state.js
 Whenever content is committed (a blog article, route pages, any site file), the same commit or the immediately following commit must update all three of these files to reflect the new state:
 
 1. **`BUILD-PLAN.md`** - add a session log row: date, what was built, new page count, what is next
-2. **`build_state.json`** - update `routes_built`, `blog_articles`, `total_site_pages`, `last_updated`, `content_plan_articles_written`, and the `notes` field
+2. **`build_state.json`** - update `last_updated`, `content_plan_articles_written`, the `notes` field, and reconcile the count fields. **Never type the count numbers by hand.** Run `python verify_build_state.py --write`, which recounts `routes_built`, `blog_articles` and `total_site_pages` straight from disk. Hand-incrementing these is exactly what caused the four-way count drift fixed on 2026-06-03.
 3. **`MEMORY.md`** - update "Current State" block (routes, blog count, phase progress, content plan day)
 
 The CURRENT STATUS section in **this file (CLAUDE.md)** must also be kept accurate and updated any time the numbers change.
+
+**Anti-drift guard:** `verify_build_state.py` is the single source of truth for counts. It counts content from disk, compares to `build_state.json`, and fails if they diverge. A SessionStart hook runs `python verify_build_state.py` at the start of every web session, so drift is caught immediately. Run it before trusting any number, and `--write` to reconcile after a build.
 
 **Why this matters:** When these docs drift from reality, the next session starts with false context and wastes time on a repo audit. Every commit is also a docs commit. **And every build batch also ends with the LIVE LINK REVIEW GATE above.**
 
@@ -289,10 +291,11 @@ There is exactly one active deploy workflow: **`.github/workflows/deploy.yml`** 
 
 ## CURRENT STATUS (keep this accurate - update on every commit)
 
-- **Quality routes built:** 5,524 of ~37,830 country pairs (~14.6%)
-- **Blog articles:** 412. Content plan in progress: Day 4 is next (`pet-transport-uk-to-spain`)
-- **Total site pages:** ~6,322 (build_state.json figure plus 3 route fixes on 2026-06-02; verified totals come from the deployed sitemap.xml)
-- **Phase 7 route chunks:** 18 complete. Chunk 19 is next (Template B, Tier A).
+- **Quality routes built:** 5,172 of ~37,830 country pairs (~13.7%). True on-disk count, reconciled 2026-06-03 by `verify_build_state.py`. The earlier 5,524/5,544 figures were inflated by hand-incrementing.
+- **Blog articles:** 412. Content plan in progress: Day 4 is next (`pet-transport-uk-to-spain`, REPLACE IN PLACE of the existing `uk-to-spain-pet-transport-complete-guide.md`, not a new page).
+- **Total .md source files:** 5,957 (build_state.json `total_site_pages`). Full deployed total, including Hugo taxonomy and list pages, comes from the live sitemap.xml.
+- **Phase 7 route chunks:** 20 complete. Chunk 21 is next (Template D, Conversational Q&A, Tier A). ~160 Tier A routes remain.
+- **Counts:** Never hand-edited. Run `python verify_build_state.py` to check drift, `--write` to reconcile from disk. A SessionStart hook runs the check at the start of every web session.
 - **Deploy pipeline:** Automatic on push to main. Confirmed working 2026-06-02. Single workflow (deploy.yml). Live link review gate active.
 - **GEO implementation:** All 4 phases complete (P1 Organization schema + robots, P2 universal route schema, P3 llms.txt + freshness + methodology page, P4 methodology link + airline/breed cross-links).
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 deployed. Both POST (desktop) and GET (mobile) confirmed working.
