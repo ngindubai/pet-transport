@@ -34,7 +34,9 @@
 - Day 2: `cost-to-transport-a-pet-2026`
 - Day 3: `pet-transport-uk-to-australia`
 
-**Next: Day 4** - `pet-transport-uk-to-spain` (REPLACE IN PLACE: upgrade the existing `uk-to-spain-pet-transport-complete-guide.md` to full quality and keep its URL. Do not publish a duplicate. See MEMORY.md Content Plan.)
+**Day 4 - DONE** - `uk-to-spain-pet-transport-complete-guide` (replaced in place 2026-06-04)
+
+**Next: Day 5** - `pet-transport-uk-to-usa` - Pet Transport UK to USA: What 2026 Actually Looks Like Post-CDC Reset
 
 ## Session Log
 
@@ -44,3 +46,4 @@
 | 2026-06-02 | Chunk 20 | 11 Tier A routes, Template C (Comparison Brief). NZ-Canada/SG/UAE, Singapore corridors (AU/CA/DE/NZ/UK/US/HK/FR). All with comparison tables and airline comparison tables. | 6,342 | Live links to be posted. |
 | 2026-06-03 | Truth audit | No site pages. Added `verify_build_state.py` + SessionStart hook (anti-drift). Reconciled all four docs to true disk counts: routes 5,544 -> 5,172, total 6,342 -> 5,957. Logged legacy debt (248 Gareth-authored blogs, em dashes in 5 blog + 69 route files). Recorded Day 4 = replace-in-place. | 5,957 | Docs/script/hook only, no deploy, no live links. |
 | 2026-06-04 | Legacy cleanup 1: em-dash sweep | No pages added/removed. Removed all em dashes from site/content: 74 blog+route files via Python sweeper + 11 pet-transport files + 4 static pages. Zero em dashes remain. Counts unchanged: 5,172 routes, 412 blog, 5,957 total. | 5,957 | Changed pages on all routes/blog/static with em dashes. Deploy will run; no new pages to review. |
+| 2026-06-04 | Blog Day 4 | uk-to-spain-pet-transport-complete-guide.md replaced in place. Full rewrite 743 -> 2115 words. Title: "Pet Transport UK to Spain: 2026 Costs, Paperwork and Driving vs Flying". Author fixed to Marcus Webb. Covers AHC, Eurotunnel vs flying, cost table, timeline, Brexit mistakes, 6 FAQs. Content plan articles: 3 -> 4. Day 5 next (UK to USA). | 5,957 | Existing page updated live. |

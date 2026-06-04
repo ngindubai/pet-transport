@@ -13,7 +13,7 @@
 - **Blog articles:** 412
 - **Total .md source files:** 5,957 (build_state.json `total_site_pages`). The full deployed page total, including Hugo taxonomy and list pages, is verified from the live sitemap.xml after a build.
 - **Phase 7 progress:** Chunks 1-20 complete. **Chunk 21 is next** (Template D, Conversational Q&A, Tier A). ~160 Tier A routes remain.
-- **Content plan:** Day 4 is next (`pet-transport-uk-to-spain`). Day 4 is a **replace-in-place** of the existing `uk-to-spain-pet-transport-complete-guide.md`, not a new article (see Content Plan section).
+- **Content plan:** Day 4 complete (uk-to-spain-pet-transport-complete-guide.md replaced in place, 2026-06-04). **Day 5 is next:** `pet-transport-uk-to-usa`.
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
 
@@ -106,7 +106,7 @@ Every build batch does three things together, every time: (1) bundle BUILD-PLAN.
 | 2026-06-02 | Docs update every build batch (not just session end) | Stops the three docs drifting from reality between sessions |
 | 2026-06-02 | Chunk 19 complete | 10 Tier A quality routes (Template B), Germany/HK/NZ corridors |
 | 2026-06-03 | Truth audit + anti-drift safeguards | Docs had drifted four ways on the route count (5524/5534/5544 vs ~5172 on disk). Root cause: routes_built was a hand-incremented tally never reconciled to disk. Added verify_build_state.py (single source of truth, counts from disk, `--write` reconciles) and a SessionStart hook that runs it every session. All four docs corrected to true numbers |
-| 2026-06-03 | Day 4 UK-to-Spain = replace in place | Existing thin uk-to-spain-pet-transport-complete-guide.md will be upgraded in place rather than publishing a duplicate `pet-transport-uk-to-spain` page |
+| 2026-06-03 | Day 4 UK-to-Spain = replace in place | Existing thin uk-to-spain-pet-transport-complete-guide.md upgraded in place; no duplicate page. Done 2026-06-04: full rewrite 743 -> 2115 words, Marcus Webb author, costs + driving vs flying angle, 6 FAQs |
 | 2026-06-04 | Em-dash sweep complete | Removed all em dashes from site/content: 74 blog+route files + 11 pet-transport + 4 static (89 files). Python sweeper logic: table rows -> colon, headings/bold labels -> colon, author fields -> comma, prose -> comma. Zero em dashes remain |
 
 ## Mistakes to Avoid
