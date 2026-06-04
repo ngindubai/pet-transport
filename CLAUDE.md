@@ -296,8 +296,8 @@ Earlier versions of these docs claimed the opposite (deploy.yml active, build-to
 ## CURRENT STATUS (keep this accurate - update on every commit)
 
 - **Quality routes built:** 5,172 of ~37,830 country pairs (~13.7%). True on-disk count, reconciled 2026-06-03 by `verify_build_state.py`. The earlier 5,524/5,544 figures were inflated by hand-incrementing.
-- **Blog articles:** 412. Content plan in progress: Day 4 is next (`pet-transport-uk-to-spain`, REPLACE IN PLACE of the existing `uk-to-spain-pet-transport-complete-guide.md`, not a new page).
-- **Total .md source files:** 5,957 (build_state.json `total_site_pages`). Full deployed total, including Hugo taxonomy and list pages, comes from the live sitemap.xml.
+- **Blog articles:** 413. Content plan Days 1-5 complete. Day 6 is next (`europe-to-uk-pet-transport`).
+- **Total .md source files:** 5,958 (build_state.json `total_site_pages`). Full deployed total, including Hugo taxonomy and list pages, comes from the live sitemap.xml.
 - **Phase 7 route chunks:** 20 complete. Chunk 21 is next (Template D, Conversational Q&A, Tier A). ~160 Tier A routes remain.
 - **Counts:** Never hand-edited. Run `python verify_build_state.py` to check drift, `--write` to reconcile from disk. A SessionStart hook runs the check at the start of every web session.
 - **Deploy pipeline:** Automatic on push to main via `build-to-live.yml` (builds Hugo, publishes the `live` branch, Hostinger serves it). Verified on GitHub 2026-06-04. `deploy.yml` (FTP) is currently disabled. Live link review gate active.

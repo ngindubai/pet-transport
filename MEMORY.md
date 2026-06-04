@@ -10,10 +10,10 @@
 ## Current State (2026-06-04, reconciled from disk by verify_build_state.py)
 
 - **Routes built:** 5,172 of ~37,830 country pairs (~13.7%). This is the true on-disk count (5,162 in `routes/` + 10 route pairs in `pet-transport/`). The old 5,534/5,544 figures were inflated by hand-incrementing and have been corrected.
-- **Blog articles:** 412
-- **Total .md source files:** 5,957 (build_state.json `total_site_pages`). The full deployed page total, including Hugo taxonomy and list pages, is verified from the live sitemap.xml after a build.
+- **Blog articles:** 413
+- **Total .md source files:** 5,958 (build_state.json `total_site_pages`). The full deployed page total, including Hugo taxonomy and list pages, is verified from the live sitemap.xml after a build.
 - **Phase 7 progress:** Chunks 1-20 complete. **Chunk 21 is next** (Template D, Conversational Q&A, Tier A). ~160 Tier A routes remain.
-- **Content plan:** Day 4 complete (uk-to-spain-pet-transport-complete-guide.md replaced in place, 2026-06-04). **Day 5 is next:** `pet-transport-uk-to-usa`.
+- **Content plan:** Days 1-5 complete. Day 5 was pet-transport-uk-to-usa.md (new article, 2266 words, 2026-06-05). **Day 6 is next:** `europe-to-uk-pet-transport`.
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
 
@@ -88,7 +88,9 @@ Every build batch does three things together, every time: (1) bundle BUILD-PLAN.
 - **Total:** 252 articles, Mon-Fri
 - **Published Days 1-3** (slugs: international-pet-transport-guide, cost-to-transport-a-pet-2026, pet-transport-uk-to-australia)
 - **Day 7** (`how-to-choose-a-pet-transport-company`) also exists from a prior batch. Skip when reached in sequence
-- **Next: Day 4** - `pet-transport-uk-to-spain` - Pet Transport UK to Spain: 2026 Costs, Paperwork and Driving vs Flying. **DECISION (2026-06-03): replace in place.** A UK-to-Spain article already exists at `uk-to-spain-pet-transport-complete-guide.md` (thin, 743 words, authored as Gareth, contains em dashes). Day 4 upgrades that existing file to full quality and keeps its URL. Do NOT publish a second `pet-transport-uk-to-spain` page (duplicate content). This mirrors the Day 7 "already exists" handling.
+- Day 4: `uk-to-spain-pet-transport-complete-guide` replaced in place 2026-06-04 (full rewrite 743 -> 2115 words, Marcus Webb)
+- Day 5: `pet-transport-uk-to-usa` published 2026-06-05 (new article, 2266 words, Marcus Webb, post-CDC reset angle)
+- **Next: Day 6** - `europe-to-uk-pet-transport` - per content plan Q1
 - Blog layout: `site/layouts/blog/single.html`. col-lg-8 content + col-lg-4 sidebar. Applies to all blog posts.
 
 ## Key Decisions Log
