@@ -295,10 +295,10 @@ Earlier versions of these docs claimed the opposite (deploy.yml active, build-to
 
 ## CURRENT STATUS (keep this accurate - update on every commit)
 
-- **Quality routes built:** 5,182 of ~37,830 country pairs (~13.7%). True on-disk count, reconciled by `verify_build_state.py`.
+- **Quality routes built:** 5,193 of ~37,830 country pairs (~13.7%). True on-disk count, reconciled by `verify_build_state.py`.
 - **Blog articles:** 413. Content plan Days 1-5 complete. Day 6 is next (`europe-to-uk-pet-transport`).
-- **Total .md source files:** 5,968 (build_state.json `total_site_pages`). Full deployed total, including Hugo taxonomy and list pages, comes from the live sitemap.xml.
-- **Phase 7 route chunks:** 21 complete. Chunk 22 is next (Template E, Tier A). ~150 Tier A routes remain.
+- **Total .md source files:** 5,979 (build_state.json `total_site_pages`). Full deployed total, including Hugo taxonomy and list pages, comes from the live sitemap.xml.
+- **Phase 7 route chunks:** 22 complete. Chunk 23 is next (Template A, Tier A). ~139 Tier A routes remain.
 - **Counts:** Never hand-edited. Run `python verify_build_state.py` to check drift, `--write` to reconcile from disk. A SessionStart hook runs the check at the start of every web session.
 - **Deploy pipeline:** Automatic on push to main via `build-to-live.yml` (builds Hugo, publishes the `live` branch, Hostinger serves it). Verified on GitHub 2026-06-04. `deploy.yml` (FTP) is currently disabled. Live link review gate active.
 - **GEO implementation:** All 4 phases complete (P1 Organization schema + robots, P2 universal route schema, P3 llms.txt + freshness + methodology page, P4 methodology link + airline/breed cross-links).

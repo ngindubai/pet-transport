@@ -15,18 +15,19 @@
 - **Every build batch also updates BUILD-PLAN.md, build_state.json and MEMORY.md in the same commit.** This is mandatory. See `CLAUDE.md` MANDATORY DOCS UPDATE.
 - **Bulk-generation scripts are banned.**
 
-**Where we are (reconciled from disk 2026-06-04):** 5,182 quality routes complete. ~32,648 routes remaining. Blog: 413 articles. Total .md source files: 5,968 (full deployed total verified from sitemap.xml after a build). Content plan: Day 6 is next. Counts come from `python verify_build_state.py`, never hand-edited.
+**Where we are (reconciled from disk 2026-06-04):** 5,193 quality routes complete. ~32,637 routes remaining. Blog: 413 articles. Total .md source files: 5,979 (full deployed total verified from sitemap.xml after a build). Content plan: Day 6 is next. Counts come from `python verify_build_state.py`, never hand-edited.
 
 ---
 
 ## Phase 7 - Template Diversification Rollout
 
-**Status: Chunks 1-21 complete. Chunk 22 is next.**
+**Status: Chunks 1-22 complete. Chunk 23 is next.**
 
 - Chunk 21 template: D (Conversational Q&A) - DONE 2026-06-04
-- Chunk 22 template: E (next in rotation)
-- Tier: A (~150 Tier A routes remain)
-- Template rotation: ...B(19), C(20), D(21), E(22), A(23)...
+- Chunk 22 template: E (Data-Forward) - DONE 2026-06-04
+- Chunk 23 template: A (Field Manual) - next in rotation
+- Tier: A (~139 Tier A routes remain)
+- Template rotation: ...C(20), D(21), E(22), A(23), B(24)...
 
 ## Content Plan - Daily Blog Articles
 
@@ -53,3 +54,4 @@
 | 2026-06-04 | Template + deploy-truth fixes | No .md pages added/removed. (1) Blog template single.html now renders persona authors (was hardcoded Gareth) in byline, bio, JSON-LD. (2) Cleared rendered em dashes the content sweep missed: blog template, Template-C partial, Template-A heading (~1019 pages), breeds template, llms.txt, countries data file. Verified 0 em dashes in built HTML via local Hugo 0.160.1 build. (3) Corrected deploy docs: build-to-live.yml is the active pipeline (publishes `live` branch, Hostinger serves it); deploy.yml FTP is disabled. | 5,957 | Template changes affect all blog + Template-A/C route pages. |
 | 2026-06-05 | Blog Day 5 | pet-transport-uk-to-usa.md published. New article, 2,266 words, Marcus Webb. Post-CDC reset angle: CDC Dog Import Form, UK low-risk classification, APHIS endorsement process, airline options (BA/IAG, Delta, AA; United cargo suspended), cats with no federal requirements, Hawaii HDOA 5-day programme, cost table, 6 FAQs. Content plan Day 5 complete; Day 6 next (Europe to UK). | 5,958 | New page. Live link posted. |
 | 2026-06-04 | Chunk 21 | 10 Tier A routes, Template D (Conversational Q&A). All top-priority P1 routes (scores 8-10): UK-AU, UAE-UK, UK-UAE, USA-AU, UAE-USA, AU-UK, UK-USA, UK-FR, UK-SG, USA-UK. Full regulatory data, QA passed, zero em dashes. | 5,968 | Live links posted. |
+| 2026-06-04 | Chunk 22 | 11 Tier A routes, Template E (Data-Forward). Scores 6-7: UK-HK, USA-UAE, USA-SG, AU-USA, FR-UK, ZA-UK, ZA-USA, UK-CA, UK-DE, USA-DE, CA-UK. Grounded in route_keyword_matrix regulatory notes. QA passed, zero em dashes. | 5,979 | Live links posted. |
