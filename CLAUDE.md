@@ -249,34 +249,38 @@ Claude in Chrome reads WhatsApp Web (web.whatsapp.com). Only read conversations 
 
 ---
 
-## DEPLOY PIPELINE - AUTOMATIC ON PUSH (CONFIRMED 2026-06-02)
+## DEPLOY PIPELINE - AUTOMATIC ON PUSH (verified against GitHub 2026-06-04)
 
 **Every push to main triggers the workflow automatically. No manual step required. The review step happens AFTER deploy, not before (see LIVE LINK REVIEW GATE at the top of this file).**
 
-### How it works
+### How it works (ACTUAL state, verified on GitHub 2026-06-04)
 
 ```
 Push/merge to main
-   -> GitHub Actions triggers automatically (on: push, branches: [main])
-   -> Hugo --gc --minify builds site/public/ (~6,300+ pages)
+   -> GitHub Actions triggers build-to-live.yml automatically (on: push, branches: [main])
+   -> python rebuild_link_graph_v3.py wires the internal link graph
+   -> Hugo --gc --minify builds site/public/ (~5,950 pages)
    -> python split_sitemap.py creates section sitemaps
-   -> FTP Deploy Action checks .ftp-deploy-sync-state.json on Hostinger
-   -> Only NEW or CHANGED files are uploaded (seconds, not hours)
-   -> Updated state file uploaded to Hostinger
-   -> Live on pettransportglobal.com within ~80 seconds for most changes
+   -> peaceiris/actions-gh-pages publishes site/public/ to the `live` branch (orphan)
+   -> Hostinger serves the `live` branch -> live on pettransportglobal.com
    -> CLAUDE POSTS THE LIVE REVIEW LINKS IN CHAT (LIVE LINK REVIEW GATE)
 ```
 
-### One workflow only
+### Which workflow is active (IMPORTANT - docs were previously backwards)
 
-There is exactly one active deploy workflow: **`.github/workflows/deploy.yml`** ("Build and Deploy to Hostinger"), triggered on push to main and on manual `workflow_dispatch`. The older `build-to-live.yml` (which published a `live` branch on push) has been retired to avoid two pipelines racing on the same push. If a second push-triggered workflow ever reappears, disable it: two builds on one push can collide on the sitemap and the FTP state file.
+Verified on GitHub on 2026-06-04:
+
+- **`build-to-live.yml` ("Build Hugo to live branch") is the ACTIVE pipeline.** It fires on push to main, builds Hugo, and publishes the built site to the `live` branch, which Hostinger serves. This is what actually updates the live site. It was confirmed working (the UK-to-Spain blog and the June route chunks are live via this path).
+- **`deploy.yml` ("Build and Deploy to Hostinger", FTP) is DISABLED (`disabled_manually`).** It was the intended FTP-to-Hostinger pipeline but is currently switched off on GitHub. It does NOT run on push.
+
+Earlier versions of these docs claimed the opposite (deploy.yml active, build-to-live.yml retired). That was wrong. Corrected 2026-06-04. If you want to switch the canonical pipeline back to the FTP deploy, re-enable deploy.yml in GitHub (Actions tab -> the workflow -> Enable) and disable build-to-live.yml, then update this section.
 
 ### Critical rules
 
-- **Never delete `.ftp-deploy-sync-state.json` from Hostinger.**
-- **Never set `dangerous-clean-slate: true`** in the workflow.
+- **Do not edit the `live` branch directly.** It is orphan build output, overwritten on every push to main.
+- **If re-enabling the FTP deploy (deploy.yml): never delete `.ftp-deploy-sync-state.json` from Hostinger, and never set `dangerous-clean-slate: true`.**
 - **Never attempt to upload the entire `site/public/` directory manually.**
-- **The `.github/workflows/*.yml` files cannot be edited via the MCP connector** (GitHub returns 403). Provide the complete updated file and ask Gareth to paste it via the GitHub web editor.
+- **The `.github/workflows/*.yml` files cannot be edited via the MCP connector** (GitHub returns 403). Provide the complete updated file and ask Gareth to paste it via the GitHub web editor. Enabling/disabling a workflow is done in the GitHub Actions tab, not by editing the file.
 
 ### Deploy speed expectations
 
@@ -296,7 +300,7 @@ There is exactly one active deploy workflow: **`.github/workflows/deploy.yml`** 
 - **Total .md source files:** 5,957 (build_state.json `total_site_pages`). Full deployed total, including Hugo taxonomy and list pages, comes from the live sitemap.xml.
 - **Phase 7 route chunks:** 20 complete. Chunk 21 is next (Template D, Conversational Q&A, Tier A). ~160 Tier A routes remain.
 - **Counts:** Never hand-edited. Run `python verify_build_state.py` to check drift, `--write` to reconcile from disk. A SessionStart hook runs the check at the start of every web session.
-- **Deploy pipeline:** Automatic on push to main. Confirmed working 2026-06-02. Single workflow (deploy.yml). Live link review gate active.
+- **Deploy pipeline:** Automatic on push to main via `build-to-live.yml` (builds Hugo, publishes the `live` branch, Hostinger serves it). Verified on GitHub 2026-06-04. `deploy.yml` (FTP) is currently disabled. Live link review gate active.
 - **GEO implementation:** All 4 phases complete (P1 Organization schema + robots, P2 universal route schema, P3 llms.txt + freshness + methodology page, P4 methodology link + airline/breed cross-links).
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 deployed. Both POST (desktop) and GET (mobile) confirmed working.
 - **Live tracker:** [build_state.json](build_state.json)
@@ -483,10 +487,10 @@ pet-transport/
 - Python generators at repo root, not in scripts/.
 - Hugo content must live in site/content/.
 - site/public/ is gitignored. Never commit build output.
-- **Every push to main triggers an automatic deploy via incremental FTP. No manual trigger needed.**
+- **Every push to main triggers an automatic build+publish via `build-to-live.yml` (the `live` branch, served by Hostinger). No manual trigger needed. `deploy.yml` (FTP) is currently disabled. Verified 2026-06-04.**
 - **After every build batch, post the live URLs of all new/changed pages in chat for review. See LIVE LINK REVIEW GATE.**
-- Exactly one deploy workflow is active: deploy.yml. The old build-to-live.yml has been retired.
-- Do NOT delete .ftp-deploy-sync-state.json from Hostinger.
+- The active deploy workflow is build-to-live.yml (publishes the `live` branch, served by Hostinger). deploy.yml (FTP) is disabled. Verified on GitHub 2026-06-04. (Earlier docs had this backwards.)
+- Do NOT delete .ftp-deploy-sync-state.json from Hostinger (only relevant if deploy.yml is re-enabled).
 - FTP credentials in GitHub Secrets only. Never in chat or commits.
 - .github/workflows/*.yml cannot be edited via MCP connector (403). Provide full file for Gareth to paste via GitHub web editor.
 - Never use Gareth's real name as author on published content.

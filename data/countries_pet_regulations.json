@@ -2322,7 +2322,7 @@
       "rabies_status": "rabies-free",
       "pet_friendliness": "high",
       "notes": "EU member. Ireland uses the EU pet travel scheme. Part 1 listed country for UK entry. Large population of pets moving between Ireland, UK, and Europe.",
-      "official_source": "Department of Agriculture, Food and the Marine (DAFM) — gov.ie/en/organisation/department-of-agriculture-food-and-the-marine/",
+      "official_source": "Department of Agriculture, Food and the Marine (DAFM): gov.ie/en/organisation/department-of-agriculture-food-and-the-marine/",
       "import_requirements": {
         "microchip": {
           "required": true,
@@ -2415,7 +2415,7 @@
         }
       },
       "key_contacts": {
-        "authority": "DAFM — Veterinary Policy, Trade and Laboratory Division",
+        "authority": "DAFM: Veterinary Policy, Trade and Laboratory Division",
         "website": "gov.ie",
         "email": "animalhealthcert@agriculture.gov.ie"
       }
@@ -2429,7 +2429,7 @@
       "rabies_status": "rabies-free",
       "pet_friendliness": "high",
       "notes": "EEA/Schengen member but not EU. Norway follows EU pet travel rules for dogs, cats, and ferrets. Part 1 listed country for UK entry.",
-      "official_source": "Norwegian Food Safety Authority (Mattilsynet) — mattilsynet.no",
+      "official_source": "Norwegian Food Safety Authority (Mattilsynet): mattilsynet.no",
       "import_requirements": {
         "microchip": {
           "required": true,
@@ -2517,7 +2517,7 @@
       "rabies_status": "rabies-free",
       "pet_friendliness": "high",
       "notes": "EU member. Sweden follows standard EU pet travel rules. No routine quarantine for compliant pets.",
-      "official_source": "Swedish Board of Agriculture (Jordbruksverket) — jordbruksverket.se",
+      "official_source": "Swedish Board of Agriculture (Jordbruksverket): jordbruksverket.se",
       "import_requirements": {
         "microchip": {
           "required": true,
@@ -2595,7 +2595,7 @@
       "rabies_status": "rabies-free",
       "pet_friendliness": "high",
       "notes": "EU member. Austria follows standard EU pet travel rules. No routine quarantine.",
-      "official_source": "Federal Ministry of Social Affairs, Health, Care and Consumer Protection (BMSGPK) — sozialministerium.at",
+      "official_source": "Federal Ministry of Social Affairs, Health, Care and Consumer Protection (BMSGPK): sozialministerium.at",
       "import_requirements": {
         "microchip": {
           "required": true,
@@ -2656,7 +2656,7 @@
         }
       },
       "key_contacts": {
-        "authority": "BMSGPK — Veterinary Services",
+        "authority": "BMSGPK: Veterinary Services",
         "website": "sozialministerium.at"
       }
     },
@@ -2669,7 +2669,7 @@
       "rabies_status": "rabies-free",
       "pet_friendliness": "high",
       "notes": "EU member. Home of many EU and NATO staff, making it a significant pet relocation market. Standard EU rules apply.",
-      "official_source": "FASFC (Federal Agency for the Safety of the Food Chain / AFSCA) — favv.be",
+      "official_source": "FASFC (Federal Agency for the Safety of the Food Chain / AFSCA): favv.be",
       "import_requirements": {
         "microchip": {
           "required": true,
@@ -2743,7 +2743,7 @@
       "rabies_status": "rabies-free (mainland, border surveillance ongoing)",
       "pet_friendliness": "moderate",
       "notes": "EU member. Poland follows standard EU pet travel rules. Large diaspora population means significant pet movement between Poland and UK, Germany, Ireland.",
-      "official_source": "Main Veterinary Inspectorate (Główny Inspektorat Weterynarii) — wetgiw.gov.pl",
+      "official_source": "Main Veterinary Inspectorate (Główny Inspektorat Weterynarii): wetgiw.gov.pl",
       "import_requirements": {
         "microchip": {
           "required": true,
@@ -2817,7 +2817,7 @@
       "rabies_status": "rabies-endemic",
       "pet_friendliness": "moderate",
       "notes": "Not EU member. Turkey (officially Turkiye) has a large expat community, especially in Istanbul and coastal areas. Import requirements are more relaxed than many countries but documentation is required.",
-      "official_source": "Turkish Ministry of Agriculture and Forestry (TRGM) — tarimorman.gov.tr",
+      "official_source": "Turkish Ministry of Agriculture and Forestry (TRGM): tarimorman.gov.tr",
       "import_requirements": {
         "microchip": {
           "required": true,
@@ -2893,7 +2893,7 @@
       "rabies_status": "rabies-controlled (wildlife reservoir in some areas)",
       "pet_friendliness": "moderate",
       "notes": "Israel has strict import rules for pets. Pre-approval from the Veterinary Services is required before travel. Allow at least 3-6 months lead time.",
-      "official_source": "Israel Ministry of Agriculture and Rural Development — veterinary.moag.gov.il",
+      "official_source": "Israel Ministry of Agriculture and Rural Development: veterinary.moag.gov.il",
       "import_requirements": {
         "microchip": {
           "required": true,
@@ -2969,7 +2969,7 @@
         }
       },
       "key_contacts": {
-        "authority": "Israeli Veterinary Services (IVS) — Ministry of Agriculture",
+        "authority": "Israeli Veterinary Services (IVS): Ministry of Agriculture",
         "website": "veterinary.moag.gov.il"
       }
     },
@@ -2982,7 +2982,7 @@
       "rabies_status": "rabies-endemic",
       "pet_friendliness": "low-moderate",
       "notes": "Large expat community. Dogs are less culturally common than in Western countries, but expats routinely bring dogs and cats. Strict documentation and embassy attestation required.",
-      "official_source": "Ministry of Environment, Water and Agriculture (MEWA) — mewa.gov.sa",
+      "official_source": "Ministry of Environment, Water and Agriculture (MEWA): mewa.gov.sa",
       "import_requirements": {
         "microchip": {
           "required": true,
@@ -2996,7 +2996,7 @@
           "notes": "Valid rabies vaccination within the past 12 months."
         },
         "rabies_titre_test": {
-          "required_for": "Varies — check current MEWA requirements as rules change periodically",
+          "required_for": "Varies, check current MEWA requirements as rules change periodically",
           "notes": "Titre test not universally required but may be demanded by customs officer. Best to have recent titre results available."
         },
         "quarantine": {
@@ -3045,7 +3045,7 @@
         }
       },
       "key_contacts": {
-        "authority": "MEWA — Ministry of Environment, Water and Agriculture",
+        "authority": "MEWA: Ministry of Environment, Water and Agriculture",
         "website": "mewa.gov.sa"
       }
     },
@@ -3058,7 +3058,7 @@
       "rabies_status": "rabies-endemic",
       "pet_friendliness": "moderate",
       "notes": "Growing expat community (majority of Qatar population is expat). Pet transport into Qatar is common but requires careful documentation and embassy attestation.",
-      "official_source": "Ministry of Environment and Climate Change (MECC) — mecc.gov.qa",
+      "official_source": "Ministry of Environment and Climate Change (MECC): mecc.gov.qa",
       "import_requirements": {
         "microchip": {
           "required": true,
@@ -3119,7 +3119,7 @@
         }
       },
       "key_contacts": {
-        "authority": "MECC — Ministry of Environment and Climate Change",
+        "authority": "MECC: Ministry of Environment and Climate Change",
         "website": "mecc.gov.qa"
       }
     },
@@ -3132,7 +3132,7 @@
       "rabies_status": "rabies-endemic",
       "pet_friendliness": "low-moderate",
       "notes": "Large expat population. Pet import possible but documentation requirements are strict. Embassy attestation required.",
-      "official_source": "Public Authority for Agricultural Affairs and Fish Resources (PAM) — paaafr.gov.kw",
+      "official_source": "Public Authority for Agricultural Affairs and Fish Resources (PAM): paaafr.gov.kw",
       "import_requirements": {
         "microchip": {
           "required": true,
@@ -3144,7 +3144,7 @@
           "notes": "Rabies vaccination required and current."
         },
         "rabies_titre_test": {
-          "required_for": "May be required — check current PAM requirements",
+          "required_for": "May be required, check current PAM requirements",
           "notes": "Carry titre test results. Requirements can change."
         },
         "quarantine": {
@@ -3189,7 +3189,7 @@
         }
       },
       "key_contacts": {
-        "authority": "PAM — Public Authority for Agricultural Affairs and Fish Resources",
+        "authority": "PAM: Public Authority for Agricultural Affairs and Fish Resources",
         "website": "paaafr.gov.kw"
       }
     },
@@ -3202,7 +3202,7 @@
       "rabies_status": "rabies-endemic",
       "pet_friendliness": "low",
       "notes": "China has strict pet import controls. Only dogs and cats. Limited approved entry points. Mandatory quarantine applies. Allow 4-6 months lead time. Dogs limited to 1 per household in many cities.",
-      "official_source": "General Administration of Customs of China (GACC) — english.customs.gov.cn",
+      "official_source": "General Administration of Customs of China (GACC): english.customs.gov.cn",
       "import_requirements": {
         "microchip": {
           "required": true,
@@ -3226,7 +3226,7 @@
         },
         "quarantine": {
           "required": true,
-          "duration_days": "30 days (dogs); 7 days (cats, if from approved countries) — check current rules",
+          "duration_days": "30 days (dogs); 7 days (cats, if from approved countries), check current rules",
           "facility": "GACC-approved quarantine facility",
           "cost_responsibility": "Owner pays all quarantine costs",
           "notes": "Quarantine is mandatory. Facility and duration depends on origin country and species. Cats from some listed countries may be 7 days. Dogs typically 30 days."
@@ -3267,7 +3267,7 @@
         }
       },
       "key_contacts": {
-        "authority": "GACC — General Administration of Customs of China",
+        "authority": "GACC: General Administration of Customs of China",
         "website": "english.customs.gov.cn"
       }
     },
@@ -3280,7 +3280,7 @@
       "rabies_status": "rabies-free (dogs and cats; wildlife reservoir eradicated since 2013)",
       "pet_friendliness": "moderate",
       "notes": "Taiwan is rabies-free for dogs/cats and has strict biosecurity requirements. Dogs and cats from approved low-risk countries face shorter quarantine. Allow 3-6 months.",
-      "official_source": "Bureau of Animal and Plant Health Inspection and Quarantine (BAPHIQ) — baphiq.gov.tw",
+      "official_source": "Bureau of Animal and Plant Health Inspection and Quarantine (BAPHIQ): baphiq.gov.tw",
       "import_requirements": {
         "microchip": {
           "required": true,
@@ -3345,7 +3345,7 @@
         }
       },
       "key_contacts": {
-        "authority": "BAPHIQ — Bureau of Animal and Plant Health Inspection and Quarantine",
+        "authority": "BAPHIQ: Bureau of Animal and Plant Health Inspection and Quarantine",
         "website": "baphiq.gov.tw"
       }
     },
@@ -3358,7 +3358,7 @@
       "rabies_status": "rabies-endemic",
       "pet_friendliness": "moderate",
       "notes": "Growing expat community in Hanoi and Ho Chi Minh City. Pet import is allowed for dogs and cats with proper documentation. Import permit required.",
-      "official_source": "Department of Animal Health, Ministry of Agriculture and Rural Development (MARD) — cucthuy.gov.vn",
+      "official_source": "Department of Animal Health, Ministry of Agriculture and Rural Development (MARD): cucthuy.gov.vn",
       "import_requirements": {
         "microchip": {
           "required": true,
@@ -3428,7 +3428,7 @@
       "rabies_status": "rabies-endemic",
       "pet_friendliness": "low",
       "notes": "Island nation with strict biosecurity. Mandatory quarantine applies. Only animals meeting all requirements can enter. Allow 6 months minimum lead time.",
-      "official_source": "Department of Animal Production and Health (DAPH) — daph.gov.lk",
+      "official_source": "Department of Animal Production and Health (DAPH): daph.gov.lk",
       "import_requirements": {
         "microchip": {
           "required": true,
@@ -3495,7 +3495,7 @@
         }
       },
       "key_contacts": {
-        "authority": "DAPH — Department of Animal Production and Health",
+        "authority": "DAPH: Department of Animal Production and Health",
         "website": "daph.gov.lk"
       }
     },
@@ -3508,7 +3508,7 @@
       "rabies_status": "rabies-endemic (bats; dog/cat controlled in most areas)",
       "pet_friendliness": "high",
       "notes": "Argentina is relatively pet-friendly and has lower barriers to import than many countries. Growing expat community in Buenos Aires. SENASA (national food safety authority) manages pet imports.",
-      "official_source": "SENASA — Servicio Nacional de Sanidad y Calidad Agroalimentaria — senasa.gob.ar",
+      "official_source": "SENASA: Servicio Nacional de Sanidad y Calidad Agroalimentaria: senasa.gob.ar",
       "import_requirements": {
         "microchip": {
           "required": false,
@@ -3569,7 +3569,7 @@
         }
       },
       "key_contacts": {
-        "authority": "SENASA — Servicio Nacional de Sanidad y Calidad Agroalimentaria",
+        "authority": "SENASA: Servicio Nacional de Sanidad y Calidad Agroalimentaria",
         "website": "senasa.gob.ar"
       }
     },
@@ -3582,7 +3582,7 @@
       "rabies_status": "rabies-free (dogs and cats)",
       "pet_friendliness": "moderate",
       "notes": "Chile is rabies-free for companion animals and has strict biosecurity controls. SAG (Servicio Agricola y Ganadero) manages all agricultural and animal imports. Documentation must be precise.",
-      "official_source": "SAG — Servicio Agricola y Ganadero — sag.gob.cl",
+      "official_source": "SAG: Servicio Agricola y Ganadero: sag.gob.cl",
       "import_requirements": {
         "microchip": {
           "required": true,
@@ -3642,7 +3642,7 @@
         }
       },
       "key_contacts": {
-        "authority": "SAG — Servicio Agricola y Ganadero",
+        "authority": "SAG: Servicio Agricola y Ganadero",
         "website": "sag.gob.cl"
       }
     },
@@ -3655,7 +3655,7 @@
       "rabies_status": "rabies-endemic (wildlife; urban rabies controlled)",
       "pet_friendliness": "moderate",
       "notes": "Colombia has become a growing expat destination, particularly Medellin and Bogota. ICA manages animal import controls.",
-      "official_source": "ICA — Instituto Colombiano Agropecuario — ica.gov.co",
+      "official_source": "ICA: Instituto Colombiano Agropecuario: ica.gov.co",
       "import_requirements": {
         "microchip": {
           "required": true,
@@ -3710,7 +3710,7 @@
         }
       },
       "key_contacts": {
-        "authority": "ICA — Instituto Colombiano Agropecuario",
+        "authority": "ICA: Instituto Colombiano Agropecuario",
         "website": "ica.gov.co"
       }
     },
@@ -3723,7 +3723,7 @@
       "rabies_status": "rabies-endemic",
       "pet_friendliness": "low-moderate",
       "notes": "Egypt has a significant expat community in Cairo. GOVS (General Organisation for Veterinary Services) oversees animal imports. Embassy attestation of health certificate required.",
-      "official_source": "GOVS — General Organisation for Veterinary Services — govs.gov.eg",
+      "official_source": "GOVS: General Organisation for Veterinary Services: govs.gov.eg",
       "import_requirements": {
         "microchip": {
           "required": true,
@@ -3779,7 +3779,7 @@
         }
       },
       "key_contacts": {
-        "authority": "GOVS — General Organisation for Veterinary Services",
+        "authority": "GOVS: General Organisation for Veterinary Services",
         "website": "govs.gov.eg"
       }
     },
@@ -3792,7 +3792,7 @@
       "rabies_status": "rabies-endemic",
       "pet_friendliness": "moderate",
       "notes": "Nairobi is a major expat hub (UN agencies, NGOs, multinationals). Pet import is permitted with correct documentation. Directorate of Veterinary Services (DVS) is the competent authority.",
-      "official_source": "Directorate of Veterinary Services (DVS), Ministry of Agriculture — kilimo.go.ke",
+      "official_source": "Directorate of Veterinary Services (DVS), Ministry of Agriculture: kilimo.go.ke",
       "import_requirements": {
         "microchip": {
           "required": true,
@@ -3846,7 +3846,7 @@
         }
       },
       "key_contacts": {
-        "authority": "DVS — Directorate of Veterinary Services",
+        "authority": "DVS: Directorate of Veterinary Services",
         "website": "kilimo.go.ke"
       }
     },
@@ -3859,7 +3859,7 @@
       "rabies_status": "rabies-endemic",
       "pet_friendliness": "low-moderate",
       "notes": "Pet import possible but requires strict documentation. Federal Department of Veterinary and Pest Control Services (FDVPCS) manages imports. Lagos is the main entry point.",
-      "official_source": "Federal Department of Veterinary and Pest Control Services (FDVPCS) — fmard.gov.ng",
+      "official_source": "Federal Department of Veterinary and Pest Control Services (FDVPCS): fmard.gov.ng",
       "import_requirements": {
         "microchip": {
           "required": true,
@@ -3912,7 +3912,7 @@
         }
       },
       "key_contacts": {
-        "authority": "FDVPCS — Federal Department of Veterinary and Pest Control Services",
+        "authority": "FDVPCS: Federal Department of Veterinary and Pest Control Services",
         "website": "fmard.gov.ng"
       }
     },
@@ -3925,7 +3925,7 @@
       "rabies_status": "rabies-free",
       "pet_friendliness": "high",
       "notes": "EU member. Czech Republic follows standard EU pet travel rules. Growing expat community in Prague. No routine quarantine.",
-      "official_source": "State Veterinary Administration (SVA) — svscr.cz",
+      "official_source": "State Veterinary Administration (SVA): svscr.cz",
       "import_requirements": {
         "microchip": {
           "required": true,
@@ -3985,7 +3985,7 @@
         }
       },
       "key_contacts": {
-        "authority": "SVA — State Veterinary Administration",
+        "authority": "SVA: State Veterinary Administration",
         "website": "svscr.cz"
       }
     },
@@ -3998,7 +3998,7 @@
       "rabies_status": "rabies-controlled (some wildlife risk in rural areas)",
       "pet_friendliness": "moderate",
       "notes": "EU member. Romania follows standard EU pet travel rules. Large Romanian diaspora in UK/EU creates significant reverse-migration pet movement.",
-      "official_source": "National Sanitary Veterinary and Food Safety Authority (ANSVSA) — ansvsa.ro",
+      "official_source": "National Sanitary Veterinary and Food Safety Authority (ANSVSA): ansvsa.ro",
       "import_requirements": {
         "microchip": {
           "required": true,
@@ -4062,7 +4062,7 @@
         }
       },
       "key_contacts": {
-        "authority": "ANSVSA — National Sanitary Veterinary and Food Safety Authority",
+        "authority": "ANSVSA: National Sanitary Veterinary and Food Safety Authority",
         "website": "ansvsa.ro"
       }
     },
@@ -4075,7 +4075,7 @@
       "rabies_status": "rabies-free",
       "pet_friendliness": "moderate",
       "notes": "EU member island nation. Malta is rabies-free and has strict biosecurity. Additional tick treatment required for dogs. No routine quarantine for compliant pets.",
-      "official_source": "Ministry for the Environment — msdec.gov.mt / Veterinary Regulation Directorate",
+      "official_source": "Ministry for the Environment: msdec.gov.mt / Veterinary Regulation Directorate",
       "import_requirements": {
         "microchip": {
           "required": true,
@@ -4154,7 +4154,7 @@
       "rabies_status": "rabies-free",
       "pet_friendliness": "moderate",
       "notes": "EU member island nation. Cyprus has a large British expat community and significant pet transport traffic. EU standard rules plus tick treatment for dogs.",
-      "official_source": "Department of Veterinary Services, Ministry of Agriculture — moa.gov.cy",
+      "official_source": "Department of Veterinary Services, Ministry of Agriculture: moa.gov.cy",
       "import_requirements": {
         "microchip": {
           "required": true,

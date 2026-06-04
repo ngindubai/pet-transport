@@ -18,8 +18,9 @@
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
 
 ### Known legacy content debt (tracked)
-- **Em dashes:** CLEARED 2026-06-04. Removed from all 89 affected files (74 blog+routes, 11 pet-transport, 4 static). Zero em dashes remain in site/content.
-- **Author persona:** 248 of 412 blog articles are authored as "Gareth" (pre-date the 2026-05-28 persona rule). Should be backfilled to the four named personas. Discrete future block: "author persona backfill".
+- **Em dashes:** CLEARED 2026-06-04 from all rendered content: site/content (89 files), the blog/route-C/route-A/breeds templates, llms.txt, and countries_pet_regulations.json. Verified by local Hugo build: 0 em dashes in rendered HTML. Remaining em dashes are only in code comments (CSS/PHP/Hugo template headers) and vendor bootstrap.min.css, which do not render as page content.
+- **Author persona:** 248 of 412 blog articles are authored as "Gareth" (pre-date the 2026-05-28 persona rule). The blog template now renders whatever the author field says (fixed 2026-06-04), so a backfill of these 248 articles will now actually change the visible byline. Discrete future block: "author persona backfill". NOTE: llms.txt also still says "authored by Gareth, Founder" and should be updated in that block.
+- **JSON-LD double-quoting (pre-existing):** blog JSON-LD wraps jsonify values in doubled quotes (e.g. `"name": "\"Marcus Webb\""`), affecting headline, description, and author. Present on unchanged lines too, so it pre-dates this work. Likely a minifier interaction. Out of scope; fix in a dedicated SEO pass.
 
 ## Build Decisions
 
@@ -28,7 +29,7 @@
 - Python scripts at **repo root** (not in `scripts/` folder)
 - All Hugo content in `site/content/[section]/`
 - Build command: `hugo --gc --minify` from `site/`
-- CI workflow: `.github/workflows/deploy.yml`. Triggers on push to `main`. This is the only active deploy workflow.
+- CI workflow: `.github/workflows/build-to-live.yml` is the ACTIVE pipeline. Triggers on push to `main`, builds Hugo, publishes `site/public` to the `live` branch (served by Hostinger). `deploy.yml` (FTP to Hostinger) is currently `disabled_manually` on GitHub. Verified 2026-06-04. (Docs previously had this backwards.)
 
 ### Slug Patterns
 - Routes: `[origin-country]-to-[destination-country]` e.g. `united-kingdom-to-australia`
@@ -49,7 +50,7 @@
 All generation scripts use skip-if-exists to protect existing content.
 
 ### Deploy Pipeline
-Every push to `main` triggers automatic deploy. Incremental FTP. Only new/changed files uploaded. Do NOT delete `.ftp-deploy-sync-state.json` from Hostinger. There is exactly one active deploy workflow (deploy.yml); the old build-to-live.yml has been retired to stop two pipelines racing on one push.
+Every push to `main` triggers an automatic build+publish via `build-to-live.yml` (the ACTIVE workflow, verified on GitHub 2026-06-04): it builds Hugo and publishes `site/public` to the orphan `live` branch, which Hostinger serves. `deploy.yml` (the FTP-to-Hostinger workflow) is currently `disabled_manually` and does NOT run. Earlier notes claimed deploy.yml was the only active workflow and build-to-live.yml was retired; that was backwards and is corrected here. If switching back to the FTP pipeline, re-enable deploy.yml and disable build-to-live.yml in the GitHub Actions tab, and do NOT delete `.ftp-deploy-sync-state.json` from Hostinger.
 
 ### Docs + Live Link Review (added 2026-06-02)
 Every build batch does three things together, every time: (1) bundle BUILD-PLAN.md + build_state.json + MEMORY.md updates into the content commit, (2) let the automatic deploy run, (3) post the live URLs of all new/changed pages in chat for review. This keeps the docs from drifting and means nothing reaches the live site unreviewed, even though deploy is automatic. Full rules in CLAUDE.md (MANDATORY DOCS UPDATE + LIVE LINK REVIEW GATE).
@@ -108,13 +109,16 @@ Every build batch does three things together, every time: (1) bundle BUILD-PLAN.
 | 2026-06-03 | Truth audit + anti-drift safeguards | Docs had drifted four ways on the route count (5524/5534/5544 vs ~5172 on disk). Root cause: routes_built was a hand-incremented tally never reconciled to disk. Added verify_build_state.py (single source of truth, counts from disk, `--write` reconciles) and a SessionStart hook that runs it every session. All four docs corrected to true numbers |
 | 2026-06-03 | Day 4 UK-to-Spain = replace in place | Existing thin uk-to-spain-pet-transport-complete-guide.md upgraded in place; no duplicate page. Done 2026-06-04: full rewrite 743 -> 2115 words, Marcus Webb author, costs + driving vs flying angle, 6 FAQs |
 | 2026-06-04 | Em-dash sweep complete | Removed all em dashes from site/content: 74 blog+route files + 11 pet-transport + 4 static (89 files). Python sweeper logic: table rows -> colon, headings/bold labels -> colon, author fields -> comma, prose -> comma. Zero em dashes remain |
+| 2026-06-04 | Deploy docs were BACKWARDS, corrected | Verified on GitHub: build-to-live.yml is ACTIVE (publishes `live` branch, Hostinger serves it); deploy.yml (FTP) is disabled_manually. Docs (incl the 2026-06-02 "Retired build-to-live.yml" row above) had it reversed. The 2026-06-02 row is left for history but is factually wrong: build-to-live.yml was never actually retired |
+| 2026-06-04 | Blog template now uses persona authors | single.html hardcoded "Gareth" in byline, bio, and JSON-LD, ignoring the author front matter. Fixed to parse the author field (handles both "Name - Title, Org" legacy and "Name, Title, Org" formats). Persona backfill on the 248 Gareth-authored articles is now meaningful (was a no-op before) |
+| 2026-06-04 | Template + data em dashes cleared | Found rendered em dashes the content sweep missed: blog template bio (&mdash;), Template-C route partial (&mdash; in hero + table cells), Template-A route heading ("Critical Points" on ~1019 pages), breeds template, llms.txt, and countries_pet_regulations.json. All fixed. Verified via local Hugo build: 0 em dashes in rendered HTML. Remaining em dashes exist only in code comments (CSS/PHP/Hugo) and vendor bootstrap.min.css, none rendered as content |
 
 ## Mistakes to Avoid
 - Never run hugo from repo root. Always `cd site` first (or the workflow handles it)
 - Build plan filename has `=` sign: `cascading-build-plan-pet=transport.html`
 - `rebuild_link_graph_v3.py` must run BEFORE hugo build
 - Never fabricate quarantine periods or vaccine requirements
-- The `live` branch is compiled output only. Never edit it directly (and build-to-live.yml that produced it is now retired)
+- The `live` branch is compiled output only (orphan, overwritten every push). Never edit it directly. It is produced by build-to-live.yml, which is the ACTIVE deploy workflow (NOT retired; verified 2026-06-04)
 - Never delete `.ftp-deploy-sync-state.json` from Hostinger
 - `.github/workflows/*.yml` cannot be edited via MCP connector (GitHub 403). Provide full file for Gareth to paste via GitHub web editor
 - Never let a content commit go out without the BUILD-PLAN.md + build_state.json + MEMORY.md update and the live review links

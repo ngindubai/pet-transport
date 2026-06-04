@@ -43,7 +43,7 @@
         </div>
 
         <h1 class="tpl-c-h1">{{ .Params.content.h1 | default (printf "Pet Transport: %s to %s" .Params.origin_name .Params.destination_name) }}</h1>
-        <p class="tpl-c-hero-sub">A clear, regularly verified guide to moving your dog or cat from {{ .Params.origin_name }} to {{ .Params.destination_name }} &mdash; requirements, timeline, airlines and costs in one place.</p>
+        <p class="tpl-c-hero-sub">A clear, regularly verified guide to moving your dog or cat from {{ .Params.origin_name }} to {{ .Params.destination_name }}: requirements, timeline, airlines and costs in one place.</p>
 
         <div class="tpl-c-trust">
             <span class="tpl-c-trust-item"><i class="fas fa-shield-alt"></i> IATA-aligned guidance</span>
@@ -113,12 +113,12 @@
                             </thead>
                             <tbody>
                                 <tr><td>Microchip</td><td>Required (ISO standard)</td><td>{{ with $rd.destination.import_requirements }}{{ with .microchip }}{{ . }}{{ else }}Required{{ end }}{{ end }}</td></tr>
-                                <tr><td>Rabies vaccination</td><td>Required before departure</td><td>{{ with $rd.destination.import_requirements }}{{ with .rabies_vaccination }}{{ . }}{{ else }}&mdash;{{ end }}{{ end }}</td></tr>
-                                {{ with $rd.destination.import_requirements }}{{ with .titre_test }}<tr><td>Titre test</td><td>&mdash;</td><td>{{ . }}</td></tr>{{ end }}{{ end }}
+                                <tr><td>Rabies vaccination</td><td>Required before departure</td><td>{{ with $rd.destination.import_requirements }}{{ with .rabies_vaccination }}{{ . }}{{ else }}Required{{ end }}{{ end }}</td></tr>
+                                {{ with $rd.destination.import_requirements }}{{ with .titre_test }}<tr><td>Titre test</td><td>N/A</td><td>{{ . }}</td></tr>{{ end }}{{ end }}
                                 <tr><td>Health certificate</td><td>{{ with $rd.origin.export_requirements }}{{ with .health_certificate }}{{ . }}{{ else }}Required from official vet{{ end }}{{ end }}</td><td>{{ with $rd.destination.import_requirements }}{{ with .health_certificate }}{{ . }}{{ else }}Required{{ end }}{{ end }}</td></tr>
-                                {{ with $rd.destination.import_requirements }}{{ with .quarantine }}<tr><td>Quarantine</td><td>&mdash;</td><td>{{ . }}</td></tr>{{ end }}{{ end }}
-                                {{ with $rd.destination.import_requirements }}{{ with .import_permit }}<tr><td>Import permit</td><td>&mdash;</td><td>{{ . }}</td></tr>{{ end }}{{ end }}
-                                {{ with $rd.origin.export_requirements }}{{ with .export_permit }}<tr><td>Export permit</td><td>{{ . }}</td><td>&mdash;</td></tr>{{ end }}{{ end }}
+                                {{ with $rd.destination.import_requirements }}{{ with .quarantine }}<tr><td>Quarantine</td><td>N/A</td><td>{{ . }}</td></tr>{{ end }}{{ end }}
+                                {{ with $rd.destination.import_requirements }}{{ with .import_permit }}<tr><td>Import permit</td><td>N/A</td><td>{{ . }}</td></tr>{{ end }}{{ end }}
+                                {{ with $rd.origin.export_requirements }}{{ with .export_permit }}<tr><td>Export permit</td><td>{{ . }}</td><td>N/A</td></tr>{{ end }}{{ end }}
                             </tbody>
                         </table>
                     </div>

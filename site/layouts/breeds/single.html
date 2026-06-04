@@ -67,7 +67,7 @@
                     <p>The following countries ban or restrict {{ $breed.breed_name }} from entry. Check the individual country guide for details on permits or exemptions.</p>
                     <ul class="ptg-inner-list">
                         {{ range . }}
-                        <li><a href="/pet-transport/countries/{{ .slug }}/">{{ .name }}</a> — {{ .restriction_type }}</li>
+                        <li><a href="/pet-transport/countries/{{ .slug }}/">{{ .name }}</a>: {{ .restriction_type }}</li>
                         {{ end }}
                     </ul>
                 </section>
@@ -78,7 +78,7 @@
                     <h2>Countries with Restrictions</h2>
                     <ul class="ptg-inner-list">
                         {{ range . }}
-                        <li><a href="/pet-transport/countries/{{ .slug }}/">{{ .name }}</a> — {{ .restriction_type }}</li>
+                        <li><a href="/pet-transport/countries/{{ .slug }}/">{{ .name }}</a>: {{ .restriction_type }}</li>
                         {{ end }}
                     </ul>
                 </section>

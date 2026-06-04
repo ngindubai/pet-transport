@@ -1,6 +1,12 @@
 {{ define "title" }}{{ if .Params.seo.title }}{{ .Params.seo.title }}{{ else }}{{ .Title }} | {{ .Site.Params.brand }}{{ end }}{{ end }}
 
 {{ define "schema" }}
+{{ $author := .Params.author | default "Gareth, Founder, PetTransportGlobal" }}
+{{ $parts := split (replace $author " - " ", ") ", " }}
+{{ $name := index $parts 0 }}
+{{ $jobTitle := "" }}
+{{ if ge (len $parts) 2 }}{{ $jobTitle = index $parts 1 }}{{ end }}
+{{ if eq $jobTitle "PetTransportGlobal" }}{{ $jobTitle = "" }}{{ end }}
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -11,8 +17,8 @@
     "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
     "author": {
         "@type": "Person",
-        "name": "Gareth",
-        "jobTitle": "Founder",
+        "name": {{ $name | jsonify }},
+        "jobTitle": {{ $jobTitle | jsonify }},
         "worksFor": { "@type": "Organization", "name": "PetTransportGlobal" }
     },
     "publisher": {
@@ -43,6 +49,13 @@
 
 {{ define "main" }}
 
+{{ $author := .Params.author | default "Gareth, Founder, PetTransportGlobal" }}
+{{ $parts := split (replace $author " - " ", ") ", " }}
+{{ $name := index $parts 0 }}
+{{ $jobTitle := "" }}
+{{ if ge (len $parts) 2 }}{{ $jobTitle = index $parts 1 }}{{ end }}
+{{ if eq $jobTitle "PetTransportGlobal" }}{{ $jobTitle = "" }}{{ end }}
+
 {{/* ── Inner hero banner ── */}}
 <div class="ptg-inner-hero">
     <div class="container">
@@ -62,7 +75,7 @@
         </div>
         <h1 class="ptg-inner-h1">{{ .Title }}</h1>
         <p class="ptg-inner-sub">
-            By Gareth, Founder &nbsp;&middot;&nbsp;
+            By {{ $name }}{{ with $jobTitle }}, {{ . }}{{ end }} &nbsp;&middot;&nbsp;
             <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
             &nbsp;&middot;&nbsp; {{ .ReadingTime }} min read
         </p>
@@ -101,8 +114,8 @@
                             <i class="fas fa-user" style="font-size:1.2rem;"></i>
                         </div>
                         <div>
-                            <strong>Gareth</strong> &mdash; Founder, PetTransportGlobal<br>
-                            <span style="font-size:0.88rem;color:#6c757d;">Gareth writes every article on this site. If you have a question about moving a pet, <a href="/#quote-form">get in touch</a>.</span>
+                            <strong>{{ $name }}</strong>{{ with $jobTitle }}, {{ . }}{{ end }}, PetTransportGlobal<br>
+                            <span style="font-size:0.88rem;color:#6c757d;">{{ $name }} writes for PetTransportGlobal. If you have a question about moving a pet, <a href="/#quote-form">get in touch</a>.</span>
                         </div>
                     </div>
                 </div>

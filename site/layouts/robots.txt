@@ -1,4 +1,4 @@
-# AI search & retrieval — keep allowed to drive citations
+# AI search and retrieval: keep allowed to drive citations
 User-agent: OAI-SearchBot
 Allow: /
 User-agent: ChatGPT-User
