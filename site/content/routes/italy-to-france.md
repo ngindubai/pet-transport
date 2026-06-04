@@ -1,6 +1,6 @@
 ---
 title: "Pet Transport from Italy to France | EU Pet Passport, No Titre Test & Journey Guide"
-description: "Moving your pet from Italy to France: EU pet passport accepted, no titre test, no quarantine, Trenitalia and Air France options — a warm journey guide."
+description: "Moving your pet from Italy to France: EU pet passport accepted, no titre test, no quarantine, Trenitalia and Air France options, a warm journey guide."
 type: "routes"
 layout: "single"
 template_variant: "B"
@@ -33,7 +33,7 @@ route_data:
       policy_summary: "Cabin: Frecciarossa connects Milan to Paris in about 7 hours. Turin to Paris is under 5 hours. Small pets in carriers on Trenitalia and SNCF services. Dogs permitted with ticket. Best option for Milan or Turin departures."
     - name: "Drive"
       type: "cabin_and_cargo"
-      policy_summary: "Milan to Nice is 4 hours. Turin to Marseille is 3.5 hours. The Mont Blanc Tunnel or Ventimiglia crossings are the main options. Your pet stays in the car throughout — no inspection at the Italian-French border."
+      policy_summary: "Milan to Nice is 4 hours. Turin to Marseille is 3.5 hours. The Mont Blanc Tunnel or Ventimiglia crossings are the main options. Your pet stays in the car throughout, no inspection at the Italian-French border."
     - name: "Air France"
       type: "cabin_and_cargo"
       policy_summary: "Cabin: small pets on Air France Italy-France routes. Rome FCO or Milan MXP to Paris CDG. Flights under 2 hours but airport adds overhead."
@@ -70,7 +70,7 @@ route_data:
 content:
   h1: "Pet Transport from Italy to France"
   overview: |
-    Italy to France is a beautiful move in every sense. The paperwork is minimal — both EU countries, one valid EU Pet Passport. The journey options are genuinely good: a fast train through the Alps, a scenic drive along the Riviera, or a short flight. Your main task is simply choosing how you want to travel.
+    Italy to France is a beautiful move in every sense. The paperwork is minimal, both EU countries, one valid EU Pet Passport. The journey options are genuinely good: a fast train through the Alps, a scenic drive along the Riviera, or a short flight. Your main task is simply choosing how you want to travel.
 
     If your pet's passport is current, you could book this trip for next week.
   sections:
@@ -82,14 +82,14 @@ content:
 
         The Frecciarossa high-speed train from Milan Centrale to Paris Gare de Lyon takes about 7 hours. Turin to Paris is a bit under 5 hours. It's a comfortable journey through some of Europe's most dramatic rail scenery, with your pet in a carrier under the seat beside you. Trenitalia and SNCF both allow small pets in carriers on international services. Larger dogs travel with a ticket, muzzle, and lead on most services.
 
-        Driving gives you more flexibility, particularly for larger dogs. Milan to Nice via the A26/A10 takes about 4 hours. Turin to Marseille via Ventimiglia is 3.5 hours. You cross the Italian-French border without stopping for a pet inspection — EU free movement applies. Keep the passport accessible in the car, but you won't typically be waved over for a pet check at an internal EU border.
+        Driving gives you more flexibility, particularly for larger dogs. Milan to Nice via the A26/A10 takes about 4 hours. Turin to Marseille via Ventimiglia is 3.5 hours. You cross the Italian-French border without stopping for a pet inspection, EU free movement applies. Keep the passport accessible in the car, but you won't typically be waved over for a pet check at an internal EU border.
 
         Flying works if you're already in a city with direct France connections. Air France from Rome or Milan to Paris is under 2 hours. The airport overhead (check-in, security, boarding) makes door-to-door time competitive with rail only for city-centre-to-airport situations. Small pets go in cabin; larger pets in cargo.
     - heading: "What France will want to see"
       body: |
-        France applies EU Regulation 576/2013. An official from DGAL might check your documents at a motorway stop or on arrival by rail — it's uncommon but it happens. They want to see: EU Pet Passport, microchip number matching your pet when scanned, current rabies vaccination.
+        France applies EU Regulation 576/2013. An official from DGAL might check your documents at a motorway stop or on arrival by rail, it's uncommon but it happens. They want to see: EU Pet Passport, microchip number matching your pet when scanned, current rabies vaccination.
 
-        If you're bringing a dog and your breed is on France's Categorie 2 list (Rottweilers, Staffordshire Bull Terriers, American Staffordshire Terriers), you need to know the French rules for keeping these dogs — muzzle in public, owner registration. They're not banned, but they're regulated. Categorie 1 (undefined fighting-type breed appearance) dogs cannot legally be imported.
+        If you're bringing a dog and your breed is on France's Categorie 2 list (Rottweilers, Staffordshire Bull Terriers, American Staffordshire Terriers), you need to know the French rules for keeping these dogs, muzzle in public, owner registration. They're not banned, but they're regulated. Categorie 1 (undefined fighting-type breed appearance) dogs cannot legally be imported.
 faqs:
   - question: "Do I need anything beyond an EU Pet Passport to take my pet from Italy to France?"
     answer: "No. A valid EU Pet Passport with current microchip and rabies vaccination is all that's required under EU Regulation 576/2013. No titre test, import permit, or quarantine applies."

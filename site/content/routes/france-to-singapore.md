@@ -45,7 +45,7 @@ route_data:
       policy_summary: "Via Doha DOH to SIN. Seasonal brachycephalic restrictions."
   timeline_steps:
     - step: 1
-      action: "Microchip (ISO 11784/11785) — before vaccination"
+      action: "Microchip (ISO 11784/11785), before vaccination"
       timing: "Week 0"
       responsible: "French vet"
     - step: 2
@@ -70,7 +70,7 @@ route_data:
       responsible: "You or agent"
     - step: 7
       action: "Pre-book Singapore quarantine station (SQS)"
-      timing: "As early as possible — limited spaces"
+      timing: "As early as possible, limited spaces"
       responsible: "You or agent"
     - step: 8
       action: "Book Air France or Singapore Airlines Cargo CDG-SIN"
@@ -115,7 +115,7 @@ content:
         | Rabies vaccination | Required, 30+ days before titre test |
         | Titre test | FAVN/ELISA, 0.5 IU/ml minimum, EU-approved lab |
         | Post-titre wait | 6 months from blood draw date |
-        | Import permit | Required — AVS e-service, 30+ days before arrival |
+        | Import permit | Required: AVS e-service, 30+ days before arrival |
         | Quarantine on arrival | 30 days at SQS (owner pays) |
         | Health certificate | DDPP-endorsed, within 7 days of France departure |
         | Entry airport | Changi (SIN) |
@@ -150,7 +150,7 @@ content:
 
         Spaces at SQS are limited. Pre-book as early as possible once your travel window is confirmed. Your agent or the SQS directly handles the reservation. Fees are charged by AVS based on animal size and species.
 
-        Owners may visit during quarantine within AVS visiting guidelines. Your pet is inspected and cared for daily. The facility is functional, not luxurious — but it is properly managed.
+        Owners may visit during quarantine within AVS visiting guidelines. Your pet is inspected and cared for daily. The facility is functional, not luxurious, but it is properly managed.
 faqs:
   - question: "Why does my French pet need 30 days quarantine in Singapore?"
     answer: "Singapore's AVS classifies France as a Category C country. All pets from Category C countries must complete 30 days of quarantine at an AVS-approved Singapore Quarantine Station on arrival, regardless of vaccination or titre test history. This applies even after completing the 6-month pre-travel waiting period."

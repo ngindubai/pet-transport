@@ -77,7 +77,7 @@ route_data:
       timing: "7-day mandatory facility quarantine begins on arrival day."
       responsible: "You + BAI quarantine officers"
   cost_factors:
-    - "Airline cargo fee (Rome Fiumicino or Milan Malpensa to Manila — typically EUR 600-1,800 depending on pet size)"
+    - "Airline cargo fee (Rome Fiumicino or Milan Malpensa to Manila, typically EUR 600-1,800 depending on pet size)"
     - "IATA-approved travel crate (required for cargo)"
     - "Rabies titre test laboratory fee (EUR 80-150)"
     - "BAI import permit application fee"
@@ -85,7 +85,7 @@ route_data:
     - "Official veterinary health certificate and Ministry of Health endorsement"
     - "Pet transport agent fee (strongly recommended for this route)"
   key_warnings:
-    - "The 7-day quarantine on arrival is mandatory and cannot be waived. Factor this into your plans — your pet will not come home with you on arrival day."
+    - "The 7-day quarantine on arrival is mandatory and cannot be waived. Factor this into your plans, your pet will not come home with you on arrival day."
     - "Get the import permit well in advance. BAI can take several weeks to process applications."
     - "Always verify current requirements with the Bureau of Animal Industry before finalising preparations."
   route_complexity: "high"

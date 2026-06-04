@@ -20,7 +20,7 @@ route_data:
     country: "Hong Kong"
     import_requirements:
       microchip: "Required (ISO 11784/11785). Must be implanted before rabies vaccination."
-      rabies_vaccination: "Required. Must be not less than 30 days AND not more than 12 months before Hong Kong arrival. Critical dual window — both conditions must be met."
+      rabies_vaccination: "Required. Must be not less than 30 days AND not more than 12 months before Hong Kong arrival. Critical dual window, both conditions must be met."
       titre_test: "Not required. France is a Group 1 country for AFCD Hong Kong. No titre test, no extended waiting period."
       quarantine: "No routine quarantine for Group 1 country pets with compliant documentation. AFCD inspection at Hong Kong International Airport cargo facility on arrival."
       import_permit: "Required. AFCD Import Licence for animals. Apply via AFCD at least 30 days before arrival."
@@ -77,7 +77,7 @@ route_data:
   key_warnings:
     - "Vaccination window is strict: not less than 30 days AND not more than 12 months before HK arrival. Calculate precisely from your planned travel date."
     - "AFCD Import Licence must be in hand before travel. 30+ days processing. Apply immediately."
-    - "No titre test required from France — this makes preparation 4-8 weeks rather than 22+."
+    - "No titre test required from France, this makes preparation 4-8 weeks rather than 22+."
   route_complexity: "moderate"
   estimated_timeline_weeks: "4-8"
 content:
@@ -103,14 +103,14 @@ content:
       body: |
         AFCD requires the rabies vaccination to be at least 30 days old and not more than 12 months old on the date your pet arrives in Hong Kong. Neither end of the window can be bent.
 
-        Work backwards from your planned arrival date. If you plan to arrive in Hong Kong on 1 September, the vaccination must have been given between 2 September of the previous year (12 months back) and 2 August (30 days before). If your pet's current vaccination will be over 12 months old on arrival, get a booster — and plan it at least 30 days before the Hong Kong arrival date.
+        Work backwards from your planned arrival date. If you plan to arrive in Hong Kong on 1 September, the vaccination must have been given between 2 September of the previous year (12 months back) and 2 August (30 days before). If your pet's current vaccination will be over 12 months old on arrival, get a booster, and plan it at least 30 days before the Hong Kong arrival date.
 
         This dual window catches people who vaccinate right before travel (too recent) and people who assume a vet-current vaccination is AFCD-current (not necessarily true if it's over 12 months old by arrival).
     - heading: "Air France vs Cathay Pacific: both direct CDG-HKG"
       body: |
         Air France Cargo operates direct Charles de Gaulle to Hong Kong International Airport, making it the natural departure choice for French-origin pets. Their CDG cargo team handles live animals regularly, and the route is well-established.
 
-        Cathay Pacific Cargo operates the same route in both directions. As Hong Kong's own carrier, their cargo team at HKG have deep daily familiarity with AFCD import inspection procedures on arrival. Both are solid options — the choice often comes down to cargo space availability on your preferred travel date.
+        Cathay Pacific Cargo operates the same route in both directions. As Hong Kong's own carrier, their cargo team at HKG have deep daily familiarity with AFCD import inspection procedures on arrival. Both are solid options, the choice often comes down to cargo space availability on your preferred travel date.
 faqs:
   - question: "Does my pet need a titre test to enter Hong Kong from France?"
     answer: "No. France is a Group 1 country for AFCD Hong Kong. No titre test and no extended waiting period are required. The main requirements are microchip, rabies vaccination within the 30-day to 12-month window, AFCD Import Licence, and DDPP-endorsed health certificate."

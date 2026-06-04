@@ -26,7 +26,7 @@ route_data:
       quarantine: "No quarantine for compliant pets. DGAV documentary and identity check at designated Border Control Post on arrival."
       import_permit: "Not required. Entry conditions governed by EU Regulation 576/2013."
       health_certificate: "Required. EU Annex IV veterinary health certificate for non-listed countries. Issued by official veterinarian, endorsed by BAI, valid for 10 days from issue."
-      entry_point: "Lisbon Humberto Delgado Airport (LIS) — primary BCP for Portugal. Porto (OPO) may also handle certain pet imports. Confirm with DGAV before travel."
+      entry_point: "Lisbon Humberto Delgado Airport (LIS), primary BCP for Portugal. Porto (OPO) may also handle certain pet imports. Confirm with DGAV before travel."
       authority: "DGAV (Direção-Geral de Alimentação e Veterinária), Portugal. EU Regulation 576/2013 applies."
   airlines:
     - name: "Lufthansa"
@@ -63,7 +63,7 @@ route_data:
     - step: 4
       action: "3-month mandatory waiting period"
       timing: "Starts from blood draw date. Cannot be shortened."
-      responsible: "N/A — waiting period"
+      responsible: "N/A: waiting period"
     - step: 5
       action: "Book cargo space on MNL-LIS routing"
       timing: "Once 3-month wait ends and travel date is confirmed."

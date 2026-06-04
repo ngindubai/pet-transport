@@ -85,7 +85,7 @@ content:
       body: |
         Germany applies EU Regulation 576/2013 identically to Spain. A Spanish-issued EU Pet Passport is fully recognised at any German entry point. The requirements are the same: ISO microchip recorded in the passport, current rabies vaccination within the manufacturer's validity period.
 
-        If the vaccination has lapsed, book a booster with your Spanish vet. A booster within the previous vaccination's validity period takes effect immediately — no waiting period. A first vaccination in a new course requires a 21-day wait before travel.
+        If the vaccination has lapsed, book a booster with your Spanish vet. A booster within the previous vaccination's validity period takes effect immediately, no waiting period. A first vaccination in a new course requires a 21-day wait before travel.
 
         Lost the passport? Your vet issues a replacement, re-vaccinates if records aren't available, and you wait 21 days from the new vaccination. Start this process the moment you know you're moving.
     - heading: "Breed restrictions: the German state-level system"

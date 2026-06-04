@@ -23,7 +23,7 @@ route_data:
       rabies_vaccination: "Required. Administered at least 30 days before import and within 12 months. Must be post-microchip."
       titre_test: "Germany has a bilateral veterinary agreement with South Africa. No titre test required from Germany."
       quarantine: "No routine quarantine for compliant pets with DALRRD import permit. DALRRD inspection at Port of Entry."
-      import_permit: "Required. Veterinary Import Permit from DALRRD (Department of Agriculture, Land Reform and Rural Development). Apply well in advance — processing can take 4-8 weeks."
+      import_permit: "Required. Veterinary Import Permit from DALRRD (Department of Agriculture, Land Reform and Rural Development). Apply well in advance, processing can take 4-8 weeks."
       health_certificate: "Official health certificate in DALRRD format, endorsed by German competent authority, issued within 10 days of travel."
       entry_point: "O.R. Tambo International Airport (JNB) Johannesburg or Cape Town International (CPT). Both handle pet imports."
       authority: "Department of Agriculture, Land Reform and Rural Development (DALRRD), South Africa. dalrrd.gov.za"
@@ -73,7 +73,7 @@ route_data:
   key_warnings:
     - "The DALRRD import permit must be in hand before your pet travels. Processing takes 4-8 weeks. Apply immediately."
     - "No titre test is required from Germany (bilateral agreement), but the vaccination must still be 30-365 days before SA arrival."
-    - "Always verify current DALRRD requirements at dalrrd.gov.za before starting — South African requirements have been known to change."
+    - "Always verify current DALRRD requirements at dalrrd.gov.za before starting, South African requirements have been known to change."
   route_complexity: "moderate"
   estimated_timeline_weeks: "6-10"
 content:

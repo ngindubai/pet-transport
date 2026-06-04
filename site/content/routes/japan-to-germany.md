@@ -25,7 +25,7 @@ route_data:
       quarantine: "No quarantine for fully compliant pets. Official vet check at Frankfurt Airport Border Control Post on arrival."
       import_permit: "Not required. EU Regulation 576/2013 applies."
       health_certificate: "AQS-endorsed EU Annex IV health certificate, issued within 10 days of travel."
-      entry_point: "Frankfurt Airport (FRA) — Germany's primary Border Control Post."
+      entry_point: "Frankfurt Airport (FRA), Germany's primary Border Control Post."
       authority: "BMEL Germany. EU Regulation 576/2013."
   airlines:
     - name: "Lufthansa"
@@ -46,7 +46,7 @@ route_data:
   timeline_steps:
     - step: 1
       action: "Microchip confirmed ISO-compliant and pre-vaccination"
-      timing: "Standard in Japan — verify at vet visit."
+      timing: "Standard in Japan, verify at vet visit."
       responsible: "Your Japanese vet"
     - step: 2
       action: "Rabies vaccination current"
@@ -101,19 +101,19 @@ content:
         | Singapore Airlines Cargo | NRT via SIN to FRA | Cargo | Longer routing via Singapore. Reliable temperature-controlled hold. |
         | Emirates SkyCargo | NRT via DXB to FRA | Cargo | Summer heat restrictions at Dubai may apply. |
 
-        ANA is particularly worth considering for Japan departures — as Japan's own airline, their cargo teams at Narita and Haneda handle AQS export documentation regularly and know the paperwork inside out. Lufthansa's Frankfurt operation brings strong EU BCP experience on the receiving end.
-    - heading: "Why Japan is non-listed for the EU — and what it costs you"
+        ANA is particularly worth considering for Japan departures, as Japan's own airline, their cargo teams at Narita and Haneda handle AQS export documentation regularly and know the paperwork inside out. Lufthansa's Frankfurt operation brings strong EU BCP experience on the receiving end.
+    - heading: "Why Japan is non-listed for the EU, and what it costs you"
       body: |
-        It surprises many people that Japan — a country with meticulous veterinary records, near-universal pet registration, and one of the strictest pet import systems in the world — is classed as non-listed by the EU. The EU listed country register is based on regulatory equivalence assessments that Japan hasn't gone through for this purpose, not on the quality of Japan's veterinary system.
+        It surprises many people that Japan, a country with meticulous veterinary records, near-universal pet registration, and one of the strictest pet import systems in the world, is classed as non-listed by the EU. The EU listed country register is based on regulatory equivalence assessments that Japan hasn't gone through for this purpose, not on the quality of Japan's veterinary system.
 
         The practical result: your Japanese-resident pet needs a FAVN titre test (blood drawn at an EU-approved laboratory at least 30 days post-vaccination, minimum result 0.5 IU/ml), then a mandatory 3-month wait from the blood draw date before entering Germany.
 
         EU-approved labs that accept samples from Japan include several in Europe and some in Japan itself. Your vet or agent can advise on which labs are currently on the EU approved list.
     - heading: "AQS export certificate: the Japanese departure document"
       body: |
-        Japan's Animal Quarantine Service issues the export health certificate on departure. For Germany, this must be in EU Annex IV format — the specific certificate format required for non-listed third countries entering the EU. AQS staff are familiar with this format.
+        Japan's Animal Quarantine Service issues the export health certificate on departure. For Germany, this must be in EU Annex IV format, the specific certificate format required for non-listed third countries entering the EU. AQS staff are familiar with this format.
 
-        The certificate must be issued within 10 days of travel. Book the AQS appointment in advance — AQS offices at Narita and Haneda handle these regularly, but appointments fill during peak relocation periods. The certificate must show microchip number, full vaccination history, titre test result, and health status.
+        The certificate must be issued within 10 days of travel. Book the AQS appointment in advance, AQS offices at Narita and Haneda handle these regularly, but appointments fill during peak relocation periods. The certificate must show microchip number, full vaccination history, titre test result, and health status.
 faqs:
   - question: "Does my pet need a titre test to enter Germany from Japan?"
     answer: "Yes. Japan is a non-listed third country under EU Regulation 576/2013. A FAVN titre test at an EU-approved laboratory is mandatory, minimum 0.5 IU/ml, followed by a 3-month mandatory waiting period from the blood draw date."

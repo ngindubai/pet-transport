@@ -108,11 +108,11 @@ content:
       body: |
         Picture it this way: you're sitting in your Frankfurt apartment, and you've just decided you're relocating to Singapore in nine months. Your Labrador is asleep on the sofa.
 
-        Step one: get the microchip confirmed — it needs to be in before the rabies vaccination counts. Step two: the vaccination itself, followed by at least 30 days before the titre test blood draw. Step three: the FAVN titre test at an AVS-approved laboratory. Then the 6-month clock starts.
+        Step one: get the microchip confirmed, it needs to be in before the rabies vaccination counts. Step two: the vaccination itself, followed by at least 30 days before the titre test blood draw. Step three: the FAVN titre test at an AVS-approved laboratory. Then the 6-month clock starts.
 
         While the clock ticks, you're doing the administrative work: AVS import permit via their e-service portal, pre-booking a slot at Singapore's quarantine station (SQS). These take time and limited spaces fill. Don't leave them until month five of the six-month wait.
 
-        The health certificate from your German vet needs endorsement from the German competent veterinary authority. This isn't your regular vet's stamp — it's an official authority endorsement, and it needs to be done within 10 days of travel. Book the appointment with that timing in mind.
+        The health certificate from your German vet needs endorsement from the German competent veterinary authority. This isn't your regular vet's stamp, it's an official authority endorsement, and it needs to be done within 10 days of travel. Book the appointment with that timing in mind.
 
         Then the flight: Frankfurt to Singapore Changi. Lufthansa and Singapore Airlines both operate this route directly. Both are reliable for pet cargo on this corridor. Your Labrador lands at Changi and goes straight to the quarantine station. You visit daily if you want. After 30 days, he's home.
     - heading: "Quarantine at Singapore: what to expect"

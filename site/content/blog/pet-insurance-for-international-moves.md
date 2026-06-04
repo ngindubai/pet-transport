@@ -22,7 +22,7 @@ faqs:
     answer: "No. Pet insurance is well-established in the UK, USA, Australia, Western Europe, and parts of Asia. In many African countries, Middle Eastern countries, and parts of Latin America and Southeast Asia, specialist pet insurance is limited or unavailable. In these destinations, the alternative is maintaining a dedicated emergency fund for veterinary costs."
 ---
 
-International pet relocation creates an insurance gap that most owners do not notice until something goes wrong. Your current policy may not cover transit. Your new country may not have the same insurance products you are used to. And quarantine costs — which can run to thousands of pounds — are almost never covered.
+International pet relocation creates an insurance gap that most owners do not notice until something goes wrong. Your current policy may not cover transit. Your new country may not have the same insurance products you are used to. And quarantine costs, which can run to thousands of pounds, are almost never covered.
 
 ## The Transit Gap
 

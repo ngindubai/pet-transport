@@ -59,7 +59,7 @@ route_data:
     - step: 3
       action: "Wait 30 days"
       timing: "Mandatory interval between primary and second vaccination."
-      responsible: "N/A — waiting period"
+      responsible: "N/A: waiting period"
     - step: 4
       action: "Second rabies vaccination (booster)"
       timing: "At least 30 days after the first vaccination. Same records required."
@@ -67,7 +67,7 @@ route_data:
     - step: 5
       action: "Wait 30 days"
       timing: "Mandatory interval before blood draw for titre test."
-      responsible: "N/A — waiting period"
+      responsible: "N/A: waiting period"
     - step: 6
       action: "Titre test blood draw at AQS-approved laboratory"
       timing: "At least 30 days after the second vaccination. KSVS (South Korea) or other AQS-approved lab. Allow 2-4 weeks for results."
@@ -75,7 +75,7 @@ route_data:
     - step: 7
       action: "180-day mandatory waiting period"
       timing: "Begins on the blood draw date. Cannot be shortened. This is the longest step."
-      responsible: "N/A — waiting period"
+      responsible: "N/A: waiting period"
     - step: 8
       action: "AQS advance notification"
       timing: "Submit AQS advance notification form at least 40 days before intended arrival in Japan."

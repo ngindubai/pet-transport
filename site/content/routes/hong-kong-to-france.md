@@ -25,7 +25,7 @@ route_data:
       quarantine: "No quarantine for fully compliant pets. Official vet documentary check at Charles de Gaulle Border Control Post on arrival."
       import_permit: "Not required. EU Regulation 576/2013 governs."
       health_certificate: "AFCD-endorsed EU Annex IV health certificate. Dual window: within 14 days of HK departure AND within 10 days of France arrival."
-      entry_point: "Paris Charles de Gaulle (CDG) — France's primary Border Control Post for animal imports."
+      entry_point: "Paris Charles de Gaulle (CDG), France's primary Border Control Post for animal imports."
       authority: "DGAL, France. EU Regulation 576/2013."
   airlines:
     - name: "Cathay Pacific"

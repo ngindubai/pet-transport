@@ -24,7 +24,7 @@ route_data:
       quarantine: "No quarantine for fully compliant pets. NVWA documentary inspection at Amsterdam Schiphol BCP on arrival."
       import_permit: "Not required. EU Regulation 576/2013 governs entry conditions."
       health_certificate: "EU Annex IV format health certificate, issued by an APQA-authorised official veterinarian within 10 days of travel. APQA endorsement required."
-      entry_point: "Amsterdam Schiphol (AMS) — Netherlands' designated Border Control Post for pet imports. NVWA staffed inspection point."
+      entry_point: "Amsterdam Schiphol (AMS), Netherlands' designated Border Control Post for pet imports. NVWA staffed inspection point."
       authority: "NVWA (Netherlands Food and Consumer Product Safety Authority). EU Regulation 576/2013."
   airlines:
     - name: "KLM"

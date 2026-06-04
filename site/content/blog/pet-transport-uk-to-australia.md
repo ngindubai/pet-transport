@@ -37,15 +37,15 @@ Because the steps have to happen in a specific order, and some of them take a lo
 
 Here's the sequence that applies to a dog or cat coming from the UK (a Group 3 country under Australia's biosecurity framework):
 
-1. **Microchip implanted** (ISO 11784/11785, 15-digit) — must happen before any vaccination if the chip isn't already in
-2. **Rabies vaccination** — primary course completed with a licensed vet, batch number and expiry date recorded
-3. **RNATT titre test** — blood drawn at an APHA-approved laboratory (APHA Weybridge is the main UK lab for Australian routes), showing 0.5 IU/ml or above
-4. **180-day wait** — from the date of the successful blood draw, not from the result date
-5. **DAFF import permit** — apply through BICON at biosecurity.gov.au. Allow 10 to 25 working days for approval. The permit must be approved before you book cargo
-6. **Airline cargo booking** — your pet travels as manifest cargo; book directly with the airline's live animal cargo desk
-7. **APHA health certificate and endorsement** — issued by an accredited vet within 10 days of departure and endorsed by APHA (allow 5 to 7 working days via post, or same-day if attending in person)
-8. **Mickleham pre-booking** — quarantine places fill up; pre-book your 10-day slot as soon as the travel date is confirmed
-9. **Travel and arrival** — your pet is collected by DAFF at the airport and transported to Mickleham. You collect them on day 10
+1. **Microchip implanted** (ISO 11784/11785, 15-digit): must happen before any vaccination if the chip isn't already in
+2. **Rabies vaccination**: primary course completed with a licensed vet, batch number and expiry date recorded
+3. **RNATT titre test**: blood drawn at an APHA-approved laboratory (APHA Weybridge is the main UK lab for Australian routes), showing 0.5 IU/ml or above
+4. **180-day wait**: from the date of the successful blood draw, not from the result date
+5. **DAFF import permit**: apply through BICON at biosecurity.gov.au. Allow 10 to 25 working days for approval. The permit must be approved before you book cargo
+6. **Airline cargo booking**: your pet travels as manifest cargo; book directly with the airline's live animal cargo desk
+7. **APHA health certificate and endorsement**: issued by an accredited vet within 10 days of departure and endorsed by APHA (allow 5 to 7 working days via post, or same-day if attending in person)
+8. **Mickleham pre-booking**: quarantine places fill up; pre-book your 10-day slot as soon as the travel date is confirmed
+9. **Travel and arrival**: your pet is collected by DAFF at the airport and transported to Mickleham. You collect them on day 10
 
 The absolute minimum from step 1 to travel is about 26 to 28 weeks if the titre test passes first time and DAFF permit processing is fast. In practice, 30 to 32 weeks is more realistic, and 36 is safer if you have any flexibility.
 

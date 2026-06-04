@@ -46,7 +46,7 @@ route_data:
       timing: "Check microchip number and rabies vaccination date."
       responsible: "Irish vet"
     - step: 2
-      action: "STEP 2: Choose transport — Aer Lingus Cargo or Lufthansa Cargo DUB-FRA"
+      action: "STEP 2: Choose transport, Aer Lingus Cargo or Lufthansa Cargo DUB-FRA"
       timing: "Book 2-4 weeks ahead."
       responsible: "You or agent"
     - step: 3
@@ -76,9 +76,9 @@ content:
       body: |
         | Requirement | Detail |
         |---|---|
-        | EU Pet Passport | Required — current |
-        | ISO Microchip | Required — recorded in passport |
-        | Rabies vaccination | Required — current and within validity |
+        | EU Pet Passport | Required: current |
+        | ISO Microchip | Required: recorded in passport |
+        | Rabies vaccination | Required: current and within validity |
         | Titre test | NOT required (EU to EU) |
         | Tapeworm treatment | NOT required (this applies to dogs entering Ireland, not leaving) |
         | Quarantine | NOT required |
@@ -93,7 +93,7 @@ content:
 
         Lufthansa Cargo operates the same route from the German side, with strong Frankfurt cargo infrastructure and BCP arrival experience. Brachycephalic breeds (Bulldogs, Pugs, French Bulldogs) are restricted from Lufthansa cargo year-round; use Aer Lingus for flat-nosed breeds.
 
-        Ryanair dominates Ireland-Germany passenger traffic but takes no pets. This is frequently the source of confusion for people planning their own moves. Check your personal travel ticket against your pet's cargo booking — they will likely be on different airlines.
+        Ryanair dominates Ireland-Germany passenger traffic but takes no pets. This is frequently the source of confusion for people planning their own moves. Check your personal travel ticket against your pet's cargo booking, they will likely be on different airlines.
     - heading: "The tapeworm rule: what applies and what doesn't"
       body: |
         Ireland requires all dogs arriving from EU countries to have a tapeworm treatment administered 24-120 hours before Irish arrival. This rule is about dogs entering Ireland, not leaving it.

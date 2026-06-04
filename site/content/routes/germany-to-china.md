@@ -22,7 +22,7 @@ route_data:
       microchip: "Required (ISO 15-digit). Before any vaccination."
       rabies_vaccination: "Required. At least 30 days before travel. Within 12 months of travel."
       titre_test: "Required for most countries including Germany. FAVN at GACC-approved laboratory. Minimum 0.5 IU/ml. Blood drawn 30+ days after vaccination. 180-day wait from blood draw date before entry into China."
-      quarantine: "Mandatory. Dogs: 30 days at GACC-approved quarantine facility in China. Cats: 7 days if from approved countries. Germany may qualify for reduced cat quarantine — confirm with GACC."
+      quarantine: "Mandatory. Dogs: 30 days at GACC-approved quarantine facility in China. Cats: 7 days if from approved countries. Germany may qualify for reduced cat quarantine, confirm with GACC."
       import_permit: "Required. Import declaration at customs. One dog or cat per person per year."
       health_certificate: "German competent authority-endorsed certificate in GACC format. Within 10 days of travel."
       entry_point: "GACC-designated entry airports: Beijing PEK/PKX, Shanghai PVG, Guangzhou CAN, and others. Confirm approved entry airports with GACC before booking."
@@ -99,7 +99,7 @@ route_data:
 content:
   h1: "Pet Transport from Germany to China"
   overview: |
-    Germany to China is one of the most logistically demanding pet moves in the world. China's GACC requires a 180-day pre-travel wait after the titre test, a mandatory 30-day quarantine for dogs on arrival, and restricts entry to one pet per person per year. Excellent direct Lufthansa cargo from Frankfurt doesn't make the regulatory complexity any simpler — but it does make the logistics cleaner once the process is complete.
+    Germany to China is one of the most logistically demanding pet moves in the world. China's GACC requires a 180-day pre-travel wait after the titre test, a mandatory 30-day quarantine for dogs on arrival, and restricts entry to one pet per person per year. Excellent direct Lufthansa cargo from Frankfurt doesn't make the regulatory complexity any simpler, but it does make the logistics cleaner once the process is complete.
 
     Allow 36-44 weeks and engage an experienced agent early.
   sections:
@@ -112,7 +112,7 @@ content:
         | Titre test | FAVN, GACC-approved lab, 0.5+ IU/ml, 30+ days post-vaccination |
         | Post-titre wait | 180 days from blood draw. No exceptions. |
         | Dog quarantine on arrival | 30 days at GACC facility, owner pays |
-        | Cat quarantine | 7 days if approved — confirm for Germany |
+        | Cat quarantine | 7 days if approved: confirm for Germany |
         | Import limit | One dog or cat per person per year |
         | Entry airports | GACC-approved list only |
         | Health certificate | German authority-endorsed GACC format, within 10 days |
@@ -125,7 +125,7 @@ content:
 
         Air China, China Eastern, and China Southern all operate direct or connecting cargo from Frankfurt and Munich to their respective hub cities. As Chinese carriers, their cargo teams at Beijing, Shanghai, and Guangzhou have deep GACC customs familiarity on the arrival end.
 
-        Your entry airport must be on GACC's approved live animal import list. Confirm the specific airport before booking cargo — not every Chinese airport accepts live animals at customs.
+        Your entry airport must be on GACC's approved live animal import list. Confirm the specific airport before booking cargo, not every Chinese airport accepts live animals at customs.
     - heading: "The one-per-person rule and multi-pet households"
       body: |
         China's customs regulations permit one dog or one cat per passport holder per year. A family of four can theoretically import four pets, but each individual must be listed as the importer for their specific animal. In practice, this requires careful documentation and clear assignment of each pet to a family member.
@@ -135,7 +135,7 @@ faqs:
   - question: "Does my German pet need a titre test to enter China?"
     answer: "Yes. China's GACC requires a FAVN titre test for pets from most countries including Germany. Blood drawn at a GACC-approved laboratory, minimum 0.5 IU/ml, followed by a mandatory 180-day wait from the blood draw date."
   - question: "How long does the dog quarantine last in China?"
-    answer: "30 days at a GACC-approved quarantine facility in China, paid by the owner. This is mandatory for dogs from all countries and runs after arrival — separate from the 180-day pre-travel waiting period."
+    answer: "30 days at a GACC-approved quarantine facility in China, paid by the owner. This is mandatory for dogs from all countries and runs after arrival, separate from the 180-day pre-travel waiting period."
   - question: "How many pets can I bring from Germany to China?"
     answer: "One dog or one cat per person per year under China's customs regulations. Multi-pet households need careful documentation with each pet assigned to a specific named individual. More than one pet per person is not permitted."
   - question: "Which airline is best for pet cargo from Germany to China?"

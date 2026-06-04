@@ -21,7 +21,7 @@ route_data:
     import_requirements:
       microchip: "Required (ISO 11784/11785 15-digit). Before vaccination."
       rabies_vaccination: "Required and current. Post-microchip."
-      titre_test: "Not required for pets from EU member states. France is EU — APQA treats EU countries as low-risk. No titre test, no extended wait."
+      titre_test: "Not required for pets from EU member states. France is EU, APQA treats EU countries as low-risk. No titre test, no extended wait."
       quarantine: "No routine quarantine for compliant pets from France. APQA inspection at Incheon on arrival."
       import_permit: "Not required for companion animals. Advance APQA notification at least 5 days before arrival mandatory."
       health_certificate: "DDPP-endorsed health certificate in APQA format. Within 10 days of travel."
@@ -76,7 +76,7 @@ route_data:
     - "Agent fee (optional)"
   key_warnings:
     - "The 5-day APQA advance notification is mandatory. Missing it causes delays at Incheon."
-    - "No titre test required from France — preparation is 3-6 weeks rather than 22+."
+    - "No titre test required from France, preparation is 3-6 weeks rather than 22+."
     - "Health certificate must be in APQA-accepted format and within 10 days of travel."
   route_complexity: "low"
   estimated_timeline_weeks: "3-6"
@@ -89,11 +89,11 @@ content:
       body: |
         | Requirement | Status |
         |---|---|
-        | Microchip (ISO 15-digit) | Required — before vaccination |
-        | Rabies vaccination | Required — current |
+        | Microchip (ISO 15-digit) | Required: before vaccination |
+        | Rabies vaccination | Required: current |
         | Titre test | NOT required (EU country) |
         | Quarantine | NOT required for compliant pets |
-        | APQA advance notification | Required — at least 5 days before ICN arrival |
+        | APQA advance notification | Required: at least 5 days before ICN arrival |
         | Health certificate | DDPP-endorsed, APQA format, within 10 days |
         | Import permit | Not required |
         | Complexity | Low |
@@ -105,7 +105,7 @@ content:
         Air France Cargo operates direct CDG-ICN. As France's national carrier, their Charles de Gaulle cargo team handles live animal departures regularly. Korean Air Cargo operates the same route as the Korean national carrier, with deep APQA arrival familiarity at Incheon. Both are direct services and both are reliable for this route. The choice comes down to schedule availability on your preferred travel date.
     - heading: "The 5-day APQA notification: the one thing to get right"
       body: |
-        APQA requires advance notification to the quarantine station at Seoul Incheon at least 5 full days before your pet arrives. This is the administrative step most commonly missed in France-to-Korea moves — not because it's difficult, but because it gets overlooked in the focus on health certificates and cargo booking.
+        APQA requires advance notification to the quarantine station at Seoul Incheon at least 5 full days before your pet arrives. This is the administrative step most commonly missed in France-to-Korea moves, not because it's difficult, but because it gets overlooked in the focus on health certificates and cargo booking.
 
         Your cargo agent handles this as standard. If you're managing the move yourself, submit the notification the moment your cargo space is confirmed and your travel date is set. Five days is the minimum; earlier is better.
 faqs:

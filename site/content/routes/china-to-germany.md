@@ -25,7 +25,7 @@ route_data:
       quarantine: "No quarantine for fully compliant pets. Documentary check at Frankfurt BCP."
       import_permit: "Not required. EU Regulation 576/2013."
       health_certificate: "GACC-endorsed EU Annex IV certificate. Within 10 days of travel."
-      entry_point: "Frankfurt Airport (FRA) — primary German BCP."
+      entry_point: "Frankfurt Airport (FRA), primary German BCP."
       authority: "BMEL Germany. EU Regulation 576/2013."
   airlines:
     - name: "Lufthansa"
@@ -88,7 +88,7 @@ route_data:
 content:
   h1: "Pet Transport from China to Germany"
   overview: |
-    China to Germany is demanding on the Chinese departure side — GACC controls all live animal exports rigorously — and the EU non-listed protocol applies on arrival in Germany, meaning a FAVN titre test and 3-month wait. No quarantine in Germany, but preparation runs 22-26 weeks. Direct cargo routes exist from Beijing, Shanghai, and Guangzhou to Frankfurt.
+    China to Germany is demanding on the Chinese departure side, GACC controls all live animal exports rigorously, and the EU non-listed protocol applies on arrival in Germany, meaning a FAVN titre test and 3-month wait. No quarantine in Germany, but preparation runs 22-26 weeks. Direct cargo routes exist from Beijing, Shanghai, and Guangzhou to Frankfurt.
   sections:
     - heading: "Key compliance data: China to Germany"
       body: |
@@ -118,12 +118,12 @@ content:
         | China Southern Cargo | CAN-FRA direct | Guangzhou hub. |
         | Singapore Airlines Cargo | Via SIN to FRA | Longer routing. Temperature-controlled. |
 
-        Chinese carriers — Air China, China Eastern, China Southern — each have strong GACC export documentation familiarity at their respective hub airports. Lufthansa brings the strongest Frankfurt BCP arrival expertise. Choice depends on your departure city.
+        Chinese carriers, Air China, China Eastern, China Southern, each have strong GACC export documentation familiarity at their respective hub airports. Lufthansa brings the strongest Frankfurt BCP arrival expertise. Choice depends on your departure city.
     - heading: "GACC export health certificate: China's departure requirement"
       body: |
         All live animal exports from China go through GACC (General Administration of Customs of China). The export health certificate must be issued by a GACC-authorised veterinarian at a GACC-designated departure airport. The certificate must be in EU Annex IV format for Germany.
 
-        Your departure must be from a GACC-approved airport. Not every Chinese airport is designated for live animal exports — confirm your departure city is on the GACC approved list before booking cargo. Beijing Capital/Daxing, Shanghai Pudong, and Guangzhou Baiyun are among the main approved departure points.
+        Your departure must be from a GACC-approved airport. Not every Chinese airport is designated for live animal exports, confirm your departure city is on the GACC approved list before booking cargo. Beijing Capital/Daxing, Shanghai Pudong, and Guangzhou Baiyun are among the main approved departure points.
 faqs:
   - question: "Does my pet need a titre test to enter Germany from China?"
     answer: "Yes. China is non-listed under EU Regulation 576/2013. A FAVN titre test at an EU-approved laboratory is mandatory (minimum 0.5 IU/ml), followed by a 3-month mandatory wait from the blood draw date."

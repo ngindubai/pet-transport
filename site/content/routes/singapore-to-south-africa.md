@@ -89,14 +89,14 @@ route_data:
 content:
   h1: "Pet Transport from Singapore to South Africa"
   overview: |
-    Singapore to South Africa is a long-haul route that requires two separate permit applications — one from Singapore's AVS and one from South Africa's DALRRD. Whether a titre test is also required depends on current DALRRD policy for Singapore-origin pets, which should be verified directly before starting.
+    Singapore to South Africa is a long-haul route that requires two separate permit applications, one from Singapore's AVS and one from South Africa's DALRRD. Whether a titre test is also required depends on current DALRRD policy for Singapore-origin pets, which should be verified directly before starting.
   sections:
     - heading: "Key compliance data"
       body: |
         | Requirement | Detail |
         |---|---|
-        | AVS Export Licence | Required — CITES e-Licence, 2+ weeks |
-        | DALRRD Import Permit | Required — 4-8 weeks processing |
+        | AVS Export Licence | Required: CITES e-Licence, 2+ weeks |
+        | DALRRD Import Permit | Required: 4-8 weeks processing |
         | Microchip | ISO 11784/11785, before vaccination |
         | Rabies vaccination | 30-365 days before SA arrival |
         | Titre test | Verify with DALRRD for Singapore-origin pets |

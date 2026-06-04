@@ -87,7 +87,7 @@ route_data:
 content:
   h1: "Pet Transport from Japan to France"
   overview: |
-    Japan's AQS issues a thorough export health certificate, but the EU still classifies Japan as non-listed under Regulation 576/2013 — which means your pet needs a FAVN titre test and a 3-month wait before entering France. No quarantine on arrival, and direct Air France cargo from Tokyo makes the logistics manageable. Preparation runs 22-26 weeks.
+    Japan's AQS issues a thorough export health certificate, but the EU still classifies Japan as non-listed under Regulation 576/2013, which means your pet needs a FAVN titre test and a 3-month wait before entering France. No quarantine on arrival, and direct Air France cargo from Tokyo makes the logistics manageable. Preparation runs 22-26 weeks.
   sections:
     - heading: "Regulatory compliance steps"
       body: |
@@ -104,12 +104,12 @@ content:
         Source: EU Regulation 576/2013; Japan AQS aqs.maff.go.jp.
     - heading: "Air France vs ANA from Tokyo"
       body: |
-        Two direct carrier options from Tokyo Narita to Paris CDG. Air France Cargo, as the French national carrier, has established CDG BCP arrival processes and regular DGAL inspection relationships. ANA Cargo brings deep AQS export documentation familiarity from the Tokyo end — as Japan's own carrier, their Narita cargo team processes AQS health certificates daily.
+        Two direct carrier options from Tokyo Narita to Paris CDG. Air France Cargo, as the French national carrier, has established CDG BCP arrival processes and regular DGAL inspection relationships. ANA Cargo brings deep AQS export documentation familiarity from the Tokyo end, as Japan's own carrier, their Narita cargo team processes AQS health certificates daily.
 
         Both are direct NRT-CDG services. The choice comes down to schedule availability on your travel date. Book 4-6 weeks ahead for cargo space on this busy long-haul route.
     - heading: "AQS export certificate: Japan's departure document"
       body: |
-        AQS issues the export health certificate from Japan for all live animal exports. For France, it must be in EU Annex IV format — the template required for non-listed third countries entering the EU. The certificate must be issued within 10 days of travel.
+        AQS issues the export health certificate from Japan for all live animal exports. For France, it must be in EU Annex IV format, the template required for non-listed third countries entering the EU. The certificate must be issued within 10 days of travel.
 
         AQS offices at Narita and Haneda handle these exports regularly. Book your AQS appointment at least 2 weeks before your planned travel date to ensure availability. The certificate lists microchip number, full vaccination history, FAVN titre test result (laboratory report and date), and current health status.
 faqs:

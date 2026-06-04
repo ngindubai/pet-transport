@@ -1,6 +1,6 @@
 ---
 title: "Pet Transport from Ireland to France | EU Pet Passport, Tapeworm & Data Guide"
-description: "Shipping your pet from Ireland to France: EU pet passport, dog tapeworm treatment on return, no titre test, Aer Lingus cargo from Dublin — full data guide."
+description: "Shipping your pet from Ireland to France: EU pet passport, dog tapeworm treatment on return, no titre test, Aer Lingus cargo from Dublin, full data guide."
 type: "routes"
 layout: "single"
 template_variant: "E"
@@ -71,7 +71,7 @@ route_data:
 content:
   h1: "Pet Transport from Ireland to France"
   overview: |
-    Ireland to France is an EU-to-EU move under Regulation 576/2013. EU Pet Passport, current microchip, current rabies vaccination — that's the complete documentation list. No titre test, no quarantine.
+    Ireland to France is an EU-to-EU move under Regulation 576/2013. EU Pet Passport, current microchip, current rabies vaccination, that's the complete documentation list. No titre test, no quarantine.
 
     The important note: Ryanair and easyJet, which dominate Dublin-Paris routes, don't accept pets. Use Aer Lingus or Air France.
   sections:
@@ -100,14 +100,14 @@ content:
         | Ryanair | DUB-CDG/BVA | No | Largest operator but no pets accepted on any route. |
         | easyJet | DUB-CDG | No | Budget carrier. No pets. |
 
-        The paradox of this route: the cheapest and most frequent Dublin-Paris flights (Ryanair, easyJet) accept no pets. Book Aer Lingus or Air France — both are reliable for this move. Pet cabin spaces are limited; book 4-6 weeks ahead.
+        The paradox of this route: the cheapest and most frequent Dublin-Paris flights (Ryanair, easyJet) accept no pets. Book Aer Lingus or Air France, both are reliable for this move. Pet cabin spaces are limited; book 4-6 weeks ahead.
     - heading: "The tapeworm rule: what applies and what doesn't"
       body: |
         Ireland requires all dogs arriving in Ireland to have a Praziquantel tapeworm treatment administered by a vet between 24 and 120 hours before arrival. This applies to dogs coming INTO Ireland, not going out.
 
         Moving from Ireland to France, no tapeworm treatment is required. France does not have a reciprocal rule.
 
-        If you plan to return to Ireland later — permanently or for visits — the tapeworm requirement applies on the return trip. Keep that in mind when planning any subsequent travel back.
+        If you plan to return to Ireland later, permanently or for visits, the tapeworm requirement applies on the return trip. Keep that in mind when planning any subsequent travel back.
 faqs:
   - question: "Do I need a tapeworm treatment to take my dog from Ireland to France?"
     answer: "No. The tapeworm treatment requirement applies to dogs arriving in Ireland, not departing from it. France does not require a tapeworm treatment for dogs entering from other EU countries."

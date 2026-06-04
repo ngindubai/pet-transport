@@ -1,6 +1,6 @@
 ---
 title: "Pet Transport from Switzerland to Germany | EU-CH Agreement, No Titre Test & Guide"
-description: "Moving your pet from Switzerland to Germany: bilateral EU-CH agreement means EU Pet Passport accepted, no titre test, no quarantine — rail, road, or SWISS options."
+description: "Moving your pet from Switzerland to Germany: bilateral EU-CH agreement means EU Pet Passport accepted, no titre test, no quarantine, rail, road, or SWISS options."
 type: "routes"
 layout: "single"
 template_variant: "C"
@@ -97,7 +97,7 @@ content:
         Road wins for most Switzerland-Germany moves. The border crossing is straightforward and your pet stays in the vehicle throughout. Rail is excellent for Zurich-Frankfurt or Basel-Freiburg: SBB and DB both allow pets, and the journey is comfortable.
     - heading: "Swiss breed restrictions vs German breed restrictions"
       body: |
-        Switzerland applies breed restrictions at the cantonal level. Germany applies them at the Länder level. If you have a breed that's restricted in Switzerland, it may or may not be restricted in the German state you're moving to — and the lists don't perfectly overlap.
+        Switzerland applies breed restrictions at the cantonal level. Germany applies them at the Länder level. If you have a breed that's restricted in Switzerland, it may or may not be restricted in the German state you're moving to, and the lists don't perfectly overlap.
 
         Pit Bull Terrier types, American Staffordshire Terriers, and Staffordshire Bull Terriers appear on restricted lists in multiple Swiss cantons and several German Länder. Rottweilers and Tosa Inus appear on some German Länder lists. Check the specific rules for your destination state before travel if you have a potentially restricted breed.
 faqs:

@@ -25,7 +25,7 @@ route_data:
       quarantine: "Minimum 12 hours on arrival at AQS Japan. In practice 2-7 days for non-designated country pets. AQS inspection mandatory."
       import_permit: "No separate permit. Advance import notification required to AQS at least 40 days before arrival."
       health_certificate: "MAFF-format certificate endorsed by German competent authority. Issued within 10 days of travel."
-      entry_point: "Narita (NRT), Haneda (HND), or Kansai (KIX) — all AQS-designated airports."
+      entry_point: "Narita (NRT), Haneda (HND), or Kansai (KIX), all AQS-designated airports."
       authority: "Japan Animal Quarantine Service (AQS), Ministry of Agriculture, Forestry and Fisheries (MAFF). aqs.maff.go.jp"
   airlines:
     - name: "Lufthansa"
@@ -107,7 +107,7 @@ content:
 
         Third: was the titre test blood drawn at an AQS-approved laboratory? Not every EU-approved lab is AQS-approved. The approved list is at aqs.maff.go.jp.
 
-        Fourth: was the result 0.5 IU/ml or above? If below, you revaccinate and restart the titre test — and the 180-day clock restarts too.
+        Fourth: was the result 0.5 IU/ml or above? If below, you revaccinate and restart the titre test, and the 180-day clock restarts too.
 
         Fifth: has the 180-day wait from the blood draw date passed? Count from the blood draw, not the results, not the vaccination.
 
@@ -130,7 +130,7 @@ faqs:
   - question: "Does Germany's EU status help with Japan's AQS?"
     answer: "No. Japan's AQS classifies all countries individually. Germany is non-designated, meaning the full 180-day protocol applies regardless of EU membership or German veterinary standards."
   - question: "Which laboratory should I use for the AQS titre test from Germany?"
-    answer: "The titre test must be at an AQS-approved laboratory. In Europe, SCELAB (France), Sciensano (Belgium), and several others are AQS-approved. Check the current list at aqs.maff.go.jp before booking — the list is updated periodically."
+    answer: "The titre test must be at an AQS-approved laboratory. In Europe, SCELAB (France), Sciensano (Belgium), and several others are AQS-approved. Check the current list at aqs.maff.go.jp before booking, the list is updated periodically."
   - question: "What is the AQS advance notification and how do I submit it?"
     answer: "You must notify the AQS quarantine station at your arrival airport (Narita, Haneda, or Kansai) at least 40 days before your pet arrives. Include microchip number, vaccination records, titre test details, and flight information. Your agent handles this, or you submit directly via the AQS portal."
   - question: "How long is quarantine in Japan for a German pet?"

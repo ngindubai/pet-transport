@@ -2,7 +2,7 @@
 title: "Pet Transport from South Korea to Malaysia: DVS Import Permit, QIAS Export Certificate and KL Entry"
 description: "Moving a dog or cat from South Korea to Malaysia. Malaysia requires a DVS import permit obtained in advance, a government health certificate from Korea, and rabies vaccination. No quarantine on arrival. Full process guide."
 date: "2026-05-28"
-author: "Gareth — Founder, PetTransportGlobal"
+author: "Gareth, Founder, PetTransportGlobal"
 type: "route"
 slug: "south-korea-to-malaysia"
 origin_country: "South Korea"
@@ -34,7 +34,7 @@ faqs:
   - q: "What health certificate does South Korea issue for pet exports?"
     a: "QIAS (Quarantine and Inspection Agency) issues veterinary health certificates for live animal exports. The certificate must be prepared by an accredited vet in Korea and endorsed by QIAS before departure. It should list microchip number, vaccination history and a declaration of clinical health."
   - q: "Can I bring my dog into Malaysia as cabin baggage?"
-    a: "Most international carriers on this route only accept pets as cargo or checked baggage for the ICN–KUL sector. Some airlines allow small pets in-cabin on domestic segments. Check your airline's specific policy — Malaysia Airlines and Korean Air both have pet cargo programmes for this route."
+    a: "Most international carriers on this route only accept pets as cargo or checked baggage for the ICN–KUL sector. Some airlines allow small pets in-cabin on domestic segments. Check your airline's specific policy, Malaysia Airlines and Korean Air both have pet cargo programmes for this route."
 links:
   - label: "DVS Malaysia Import Permit Application"
     url: "https://www.dvs.gov.my"
@@ -44,7 +44,7 @@ links:
 
 ## South Korea to Malaysia: What to Prepare
 
-The South Korea to Malaysia corridor is a moderate-complexity move. The most important step — and the one that catches owners off guard — is the **DVS Malaysia import permit**, which must be in hand before the animal travels. Leave 6–10 weeks for the full process.
+The South Korea to Malaysia corridor is a moderate-complexity move. The most important step, and the one that catches owners off guard, is the **DVS Malaysia import permit**, which must be in hand before the animal travels. Leave 6–10 weeks for the full process.
 
 ---
 
@@ -57,7 +57,7 @@ Contact the DVS import/export division early. Applications can be submitted onli
 - Owner's contact details and Malaysian address
 - Copy of current rabies vaccination certificate
 
-The DVS issues the permit specifying health conditions that must be met before arrival. Processing takes 2–4 weeks. The permit is valid for a fixed period — confirm the expiry date and plan your travel accordingly.
+The DVS issues the permit specifying health conditions that must be met before arrival. Processing takes 2–4 weeks. The permit is valid for a fixed period, confirm the expiry date and plan your travel accordingly.
 
 ---
 
@@ -70,7 +70,7 @@ In South Korea, have your regular vet prepare a health certificate and arrange Q
 - Confirm the animal is clinically healthy
 - Be endorsed by QIAS within 10 days of departure
 
-QIAS operates endorsement counters at major cities and airports. Book the appointment in advance — the process usually takes 1–2 hours.
+QIAS operates endorsement counters at major cities and airports. Book the appointment in advance, the process usually takes 1–2 hours.
 
 ---
 
@@ -93,16 +93,16 @@ The DVS inspector will verify documents and physically inspect the animal. Clear
 
 **Malaysia Airlines (MH)** operates ICN–KUL and has a dedicated pet cargo service. MH cargo requires 48-hour advance booking and IATA-compliant crates.
 
-**AirAsia X** serves ICN–KUL and accepts small pets in the cabin on selected flights. Check current policy directly — LCC policies change.
+**AirAsia X** serves ICN–KUL and accepts small pets in the cabin on selected flights. Check current policy directly: LCC policies change.
 
 ---
 
 ## Important Notes
 
-**Timing the permit**: The DVS import permit has a validity window. Do not apply too early or the permit may expire before travel — 8 weeks out is usually right.
+**Timing the permit**: The DVS import permit has a validity window. Do not apply too early or the permit may expire before travel: 8 weeks out is usually right.
 
 **Entry airports**: KUL (KLIA) and PEN (Penang) are the standard approved entry points. Entry via smaller airports or land crossings is generally not permitted for imported pets.
 
-**Malaysia's breed restrictions**: Malaysia restricts several breeds from import — Pit Bull Terriers, American Staffordshire Terriers, Staffordshire Bull Terriers, American Bulldogs, Neapolitan Mastiffs, Japanese Tosas, Akitas, Doberman Pinschers and Rottweilers are either restricted or require special DVS approval. Check with DVS at the permit application stage.
+**Malaysia's breed restrictions**: Malaysia restricts several breeds from import: Pit Bull Terriers, American Staffordshire Terriers, Staffordshire Bull Terriers, American Bulldogs, Neapolitan Mastiffs, Japanese Tosas, Akitas, Doberman Pinschers and Rottweilers are either restricted or require special DVS approval. Check with DVS at the permit application stage.
 
 **Cost**: Expect to spend approximately USD 300–800 on the end-to-end process (permit, health cert, QIAS endorsement, airline cargo fee, crate) depending on pet size and airline.

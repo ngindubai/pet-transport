@@ -1,6 +1,6 @@
 ---
 title: "Pet Transport from Germany to Netherlands | EU Pet Passport, No Titre Test & Guide"
-description: "Moving your pet from Germany to the Netherlands: EU pet passport accepted, no titre test, no quarantine, rail and Lufthansa options — the simplest EU-to-EU move."
+description: "Moving your pet from Germany to the Netherlands: EU pet passport accepted, no titre test, no quarantine, rail and Lufthansa options, the simplest EU-to-EU move."
 type: "routes"
 layout: "single"
 template_variant: "C"
@@ -65,7 +65,7 @@ route_data:
 content:
   h1: "Pet Transport from Germany to Netherlands"
   overview: |
-    Germany to Netherlands is one of Europe's simplest cross-border pet moves. Both EU member states. Valid EU Pet Passport, current microchip and rabies vaccination — that's the complete list. No titre test, no quarantine, no permits.
+    Germany to Netherlands is one of Europe's simplest cross-border pet moves. Both EU member states. Valid EU Pet Passport, current microchip and rabies vaccination, that's the complete list. No titre test, no quarantine, no permits.
 
     The DB train from Frankfurt to Amsterdam takes about 3.5 hours and your pet stays with you the whole way. Harder to argue for the airport on this corridor.
   sections:
@@ -85,7 +85,7 @@ content:
       body: |
         Germany and the Netherlands both implement EU Regulation 576/2013. A valid EU Pet Passport recording your pet's ISO microchip number and a current rabies vaccination is all that's required for movement between EU member states.
 
-        Check the vaccination expiry date before you travel. An expired vaccination makes the passport invalid for cross-border movement. If it's lapsed, your German vet can administer a booster — but allow 21 days from a first vaccination in a new course before travelling.
+        Check the vaccination expiry date before you travel. An expired vaccination makes the passport invalid for cross-border movement. If it's lapsed, your German vet can administer a booster, but allow 21 days from a first vaccination in a new course before travelling.
     - heading: "Breed restrictions to check"
       body: |
         Both Germany and the Netherlands have breed-specific legislation. Germany applies restrictions at the Länder level (Bavaria, North Rhine-Westphalia, and others have specific banned breed lists). The Netherlands restricts certain breeds under the Ras- en Gedragskenmerken regulation, with Pit Bull Terrier-type dogs facing the strictest controls.

@@ -2,7 +2,7 @@
 title: "Pet Transport from Malaysia to Australia: DAFF Import Permit, DVS Export Certificate and Mickleham Quarantine"
 description: "Bringing a dog or cat from Malaysia to Australia. All pets need a DAFF import permit, DVS export health certificate, rabies titre test and complete 10 nights at ACDP Mickleham. Full guide for KL and Penang owners."
 date: "2026-05-28"
-author: "Gareth — Founder, PetTransportGlobal"
+author: "Gareth, Founder, PetTransportGlobal"
 type: "route"
 slug: "malaysia-to-australia"
 origin_country: "Malaysia"
@@ -38,11 +38,11 @@ faqs:
   - q: "What treatments must be given before departure to Australia?"
     a: "Your DAFF import permit will specify exact treatment requirements. Standard requirements include an approved tick treatment (applied within a specific window before departure) and an internal parasite treatment. Your vet must administer these on the exact day specified in the permit conditions and record them on the health certificate."
   - q: "How do I book quarantine at ACDP Mickleham?"
-    a: "Quarantine space at ACDP Mickleham is booked through DAFF in conjunction with your import permit. Once your permit is issued, DAFF will guide you through the quarantine booking process. Spaces are limited — book as soon as your permit is issued. You must have a confirmed quarantine booking before your pet can be cleared to travel."
+    a: "Quarantine space at ACDP Mickleham is booked through DAFF in conjunction with your import permit. Once your permit is issued, DAFF will guide you through the quarantine booking process. Spaces are limited, book as soon as your permit is issued. You must have a confirmed quarantine booking before your pet can be cleared to travel."
 links:
-  - label: "DAFF — Cats and Dogs Import to Australia"
+  - label: "DAFF, Cats and Dogs Import to Australia"
     url: "https://www.agriculture.gov.au/biosecurity-trade/import/live-animals/cats-dogs"
-  - label: "DVS Malaysia — Live Animal Export"
+  - label: "DVS Malaysia, Live Animal Export"
     url: "https://www.dvs.gov.my"
 ---
 
@@ -82,7 +82,7 @@ The 180-day countdown begins on the **blood draw date**, not the result date. Pl
 
 ## DVS Malaysia Export Health Certificate
 
-The DVS health certificate for Australia is more detailed than standard export certificates — your DAFF import permit will specify exactly what it must contain. Ensure your vet has experience with DAFF-format health certificates. The certificate must be endorsed by DVS within 5 days of departure (the specific window is stated in your permit). DVS inspectors will verify documents and may physically examine the animal.
+The DVS health certificate for Australia is more detailed than standard export certificates, your DAFF import permit will specify exactly what it must contain. Ensure your vet has experience with DAFF-format health certificates. The certificate must be endorsed by DVS within 5 days of departure (the specific window is stated in your permit). DVS inspectors will verify documents and may physically examine the animal.
 
 ---
 
@@ -94,7 +94,7 @@ The DVS health certificate for Australia is more detailed than standard export c
 
 **Cathay Pacific via HKG** is another established option.
 
-Book pet cargo 4–6 weeks in advance on Australian routes — space is limited, especially during peak relocation seasons (January–February and July–August).
+Book pet cargo 4–6 weeks in advance on Australian routes, space is limited, especially during peak relocation seasons (January–February and July–August).
 
 ---
 
@@ -102,6 +102,6 @@ Book pet cargo 4–6 weeks in advance on Australian routes — space is limited,
 
 Your pet will be collected from the aircraft by DAFF-approved handlers at Melbourne Airport and transported to ACDP Mickleham. Owners cannot accompany the animal. During the 10 nights, ACDP staff monitor health, administer any remaining required treatments, and keep you updated via phone or email.
 
-Cost for 10 nights at ACDP: approximately AUD 1,800–3,500 depending on species and accommodation tier. Book early — peak demand periods book out months in advance.
+Cost for 10 nights at ACDP: approximately AUD 1,800–3,500 depending on species and accommodation tier. Book early, peak demand periods book out months in advance.
 
 After release, a DAFF-approved transport company can collect your pet and deliver to your Australian address or arrange onward domestic flight.

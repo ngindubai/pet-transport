@@ -90,7 +90,7 @@ content:
   overview: |
     Ireland sits within the EU, which means pets arriving from South Korea face the full EU non-listed country protocol under Regulation 576/2013. A FAVN titre test and a 3-month waiting period are mandatory. Start preparations at least 22 weeks before your intended travel date.
 
-    There's no direct Seoul-Dublin cargo route, so all pets travel via a European hub — Frankfurt, Amsterdam, or Dubai are the most commonly used connecting points.
+    There's no direct Seoul-Dublin cargo route, so all pets travel via a European hub, Frankfurt, Amsterdam, or Dubai are the most commonly used connecting points.
   sections:
     - heading: "EU non-listed country rules: what Ireland applies to Korean-origin pets"
       body: |

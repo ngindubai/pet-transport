@@ -80,7 +80,7 @@ content:
   overview: |
     New Zealand to South Korea works in your favour on the regulatory side. South Korea's APQA treats New Zealand as a low-risk origin, which means no titre test is required and no mandatory waiting period applies. For most NZ pet owners, the preparation is 3-6 weeks rather than 6 months.
 
-    The logistics involve at least one transit stop — there's no direct Auckland-Seoul cargo flight — but Air New Zealand and Korean Air both handle this corridor regularly.
+    The logistics involve at least one transit stop, there's no direct Auckland-Seoul cargo flight, but Air New Zealand and Korean Air both handle this corridor regularly.
   sections:
     - heading: "Why NZ pets have an easier path into South Korea"
       body: |

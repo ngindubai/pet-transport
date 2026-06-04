@@ -30,7 +30,7 @@ route_data:
   airlines:
     - name: "KLM"
       type: "cabin_and_cargo"
-      policy_summary: "Cabin: KLM accepts small pets (up to 8kg including carrier) in cabin on European routes. CPH-AMS is a short direct flight — an easy journey for a cabin pet. Cargo: larger pets via KLM Cargo. One of the most recommended carriers for this route."
+      policy_summary: "Cabin: KLM accepts small pets (up to 8kg including carrier) in cabin on European routes. CPH-AMS is a short direct flight, an easy journey for a cabin pet. Cargo: larger pets via KLM Cargo. One of the most recommended carriers for this route."
     - name: "SAS (Scandinavian Airlines)"
       type: "cabin_and_cargo"
       policy_summary: "Cabin: SAS accepts small cabin pets on European routes including CPH-AMS. Confirms pet space at booking."
@@ -50,7 +50,7 @@ route_data:
       responsible: "Your authorised veterinarian"
     - step: 2
       action: "Book flight with confirmed cabin or cargo pet space"
-      timing: "Book early. KLM CPH-AMS is a short flight — plan cabin space when booking the ticket."
+      timing: "Book early. KLM CPH-AMS is a short flight, plan cabin space when booking the ticket."
       responsible: "You"
     - step: 3
       action: "Travel day: check in with EU Pet Passport"

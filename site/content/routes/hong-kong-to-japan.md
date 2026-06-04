@@ -19,7 +19,7 @@ route_data:
     code: "JP"
     country: "Japan"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Before any rabies vaccination — non-negotiable."
+      microchip: "Required (ISO 11784/11785). Before any rabies vaccination, non-negotiable."
       rabies_vaccination: "Two vaccinations required. Both after microchip. At least 30 days apart. At least 30 days after second before titre test."
       titre_test: "Required. FAVN at AQS-approved laboratory. Minimum 0.5 IU/ml. 180-day mandatory wait from blood draw. Hong Kong is non-designated for AQS."
       quarantine: "Minimum 12 hours on arrival. 2-7 days in practice for non-designated countries."
@@ -97,7 +97,7 @@ route_data:
     - "AQS quarantine fees on arrival"
     - "Agent fee (strongly recommended)"
   key_warnings:
-    - "Microchip before first vaccination — wrong order = restart entire AQS sequence."
+    - "Microchip before first vaccination, wrong order = restart entire AQS sequence."
     - "180-day wait from blood draw, not result date."
     - "Health certificate dual window: within 10 days of HK departure AND within 7 days of Japan arrival."
     - "AQS advance notification: hard 40-day deadline."
@@ -106,7 +106,7 @@ route_data:
 content:
   h1: "Pet Transport from Hong Kong to Japan"
   overview: |
-    Hong Kong to Japan is a short flight — about 4 hours on Cathay Pacific — but the regulatory process is anything but short. Japan's AQS classifies Hong Kong as non-designated, triggering the full 180-day protocol: two vaccinations, titre test, 180-day wait, 40-day advance notification, and quarantine on arrival.
+    Hong Kong to Japan is a short flight, about 4 hours on Cathay Pacific, but the regulatory process is anything but short. Japan's AQS classifies Hong Kong as non-designated, triggering the full 180-day protocol: two vaccinations, titre test, 180-day wait, 40-day advance notification, and quarantine on arrival.
 
     Cathay Pacific and ANA both fly direct HKG-NRT, so once the 36-42 weeks of preparation are behind you, the journey itself is clean.
   sections:
@@ -114,7 +114,7 @@ content:
       body: |
         | Category | Countries | Protocol |
         |---|---|---|
-        | AQS Designated | UK, Australia, NZ, Ireland, Iceland, Hawaii, Guam, Fiji | Faster process — no 180-day wait |
+        | AQS Designated | UK, Australia, NZ, Ireland, Iceland, Hawaii, Guam, Fiji | Faster process: no 180-day wait |
         | AQS Non-Designated | All others incl. Hong Kong | Full 180-day protocol |
 
         Hong Kong is not on Japan's AQS designated country list. Despite being geographically close and having a sophisticated veterinary system, the full non-designated protocol applies. There's no shortcut: two vaccinations, titre test at an AQS-approved lab, 180-day wait from blood draw, 40-day advance notification, and quarantine on arrival.
@@ -127,7 +127,7 @@ content:
       body: |
         The AFCD health certificate for Japan must meet two simultaneous timing windows: issued within 10 days of Hong Kong departure, AND within 7 days of Japan arrival. With a 4-hour HKG-NRT flight, both windows align comfortably if the AFCD vet appointment is booked in the 7 days before departure.
 
-        AFCD endorsement takes additional processing time beyond the vet appointment — allow 2-3 days for endorsement in normal periods. Book the vet appointment 5-7 days before departure to give AFCD enough time to endorse before you fly.
+        AFCD endorsement takes additional processing time beyond the vet appointment, allow 2-3 days for endorsement in normal periods. Book the vet appointment 5-7 days before departure to give AFCD enough time to endorse before you fly.
 faqs:
   - question: "How long does it take to prepare a pet for Hong Kong to Japan?"
     answer: "Allow 36-42 weeks. Two vaccinations (30 days apart), titre test at an AQS-approved lab (blood drawn 30 days after the second vaccination), 180-day wait from blood draw, and 40 days advance AQS notification."

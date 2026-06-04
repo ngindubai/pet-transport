@@ -107,7 +107,7 @@ content:
         The microchip must be in place before the first vaccination. The vaccination must precede the titre test blood draw by at least 30 days. The 6-month clock starts from the date of blood draw, not the date results arrive. Get the sequence right and the paperwork follows naturally; get it wrong and the clock resets.
     - heading: "GACC export permit: the China-specific complication"
       body: |
-        Unlike many countries, China requires a formal GACC export permit for pets, particularly for purebred and registered breeds. The permit process goes through the General Administration of Customs and can take 4-8 weeks. Beginning this application early — at the same time as starting the vaccination and titre test sequence — ensures it doesn't become a last-minute bottleneck.
+        Unlike many countries, China requires a formal GACC export permit for pets, particularly for purebred and registered breeds. The permit process goes through the General Administration of Customs and can take 4-8 weeks. Beginning this application early, at the same time as starting the vaccination and titre test sequence, ensures it doesn't become a last-minute bottleneck.
 
         The export health certificate must be issued by a GACC-authorised official veterinarian within 10 days of travel, in the format APQA accepts. An experienced agent who handles China departures regularly is worth engaging early in the process.
 faqs:
@@ -118,7 +118,7 @@ faqs:
   - question: "What is the GACC export permit and how long does it take?"
     answer: "The GACC export permit is a China-specific requirement for exporting pets, especially purebred or registered animals. Apply through the General Administration of Customs. Allow 4-8 weeks for processing. Start this application as early as possible alongside your titre test process."
   - question: "Is there quarantine on arrival in South Korea from China?"
-    answer: "No routine quarantine, but APQA conducts an inspection at Incheon on arrival. With all documentation in order — microchip, vaccination, titre test result, GACC export health certificate — your pet is typically released the same day."
+    answer: "No routine quarantine, but APQA conducts an inspection at Incheon on arrival. With all documentation in order, microchip, vaccination, titre test result, GACC export health certificate, your pet is typically released the same day."
   - question: "Which airlines handle pet cargo from China to South Korea?"
     answer: "Korean Air and Asiana Airlines both operate direct cargo routes from Beijing, Shanghai, and Guangzhou to Incheon. Air China, China Southern, and China Eastern are direct carriers with GACC familiarity at the Chinese departure end."
 links:

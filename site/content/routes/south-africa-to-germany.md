@@ -25,7 +25,7 @@ route_data:
       quarantine: "No quarantine for fully compliant pets. Official vet documentary check at Frankfurt Airport Border Control Post on arrival."
       import_permit: "Not required. EU Regulation 576/2013 governs."
       health_certificate: "DALRRD-endorsed EU Annex IV health certificate, issued within 10 days of travel."
-      entry_point: "Frankfurt Airport (FRA) — Germany's main Border Control Post for animal imports."
+      entry_point: "Frankfurt Airport (FRA), Germany's main Border Control Post for animal imports."
       authority: "Bundesministerium für Ernährung und Landwirtschaft (BMEL), Germany. EU Regulation 576/2013."
   airlines:
     - name: "Lufthansa"
@@ -87,13 +87,13 @@ route_data:
     - "South Africa is non-listed for EU entry. The titre test and 3-month wait are mandatory. No exemptions."
     - "The DALRRD export permit takes 4-8 weeks. Start the application at the same time as the titre test process."
     - "The 3-month wait runs from the blood draw date, not the results date."
-    - "Verify current DALRRD export permit requirements before starting — they can change."
+    - "Verify current DALRRD export permit requirements before starting, they can change."
   route_complexity: "high"
   estimated_timeline_weeks: "22-26"
 content:
   h1: "Pet Transport from South Africa to Germany"
   overview: |
-    For many South Africans relocating to Germany, the pet transport process comes as a surprise. Germany looks straightforward on a map — both countries have sophisticated veterinary systems — but EU Regulation 576/2013 classifies South Africa as a non-listed third country. That means a FAVN titre test and a 3-month mandatory wait before your pet can enter Germany.
+    For many South Africans relocating to Germany, the pet transport process comes as a surprise. Germany looks straightforward on a map, both countries have sophisticated veterinary systems, but EU Regulation 576/2013 classifies South Africa as a non-listed third country. That means a FAVN titre test and a 3-month mandatory wait before your pet can enter Germany.
 
     There's also the DALRRD export permit on the South African side, which takes 4-8 weeks on its own. Starting both processes in parallel saves a month of calendar time.
 
@@ -101,7 +101,7 @@ content:
   sections:
     - heading: "Life with the DALRRD export permit"
       body: |
-        South Africa treats all live animal exports seriously. The Veterinary Export Permit from DALRRD is not a rubber stamp — it requires an application to your provincial State Veterinarian office, documentation of your pet's health status, and processing time that can range from four to eight weeks depending on the office and how busy they are.
+        South Africa treats all live animal exports seriously. The Veterinary Export Permit from DALRRD is not a rubber stamp, it requires an application to your provincial State Veterinarian office, documentation of your pet's health status, and processing time that can range from four to eight weeks depending on the office and how busy they are.
 
         Your pet transport agent will have done this before and can submit the application on your behalf. If you're going it alone, contact the State Veterinarian in your province early. The permit must be in hand before your pet can leave South Africa, and no permit means no departure regardless of how complete the rest of your documentation is.
 
@@ -117,7 +117,7 @@ content:
       body: |
         Lufthansa operates direct cargo between Johannesburg O.R. Tambo (JNB) and Frankfurt (FRA). This removes the transit complications that come with routing through Dubai or Doha. Your pet goes on one aircraft from Johannesburg to Frankfurt, where the German Border Control Post veterinarian conducts the documentary inspection on arrival.
 
-        For pets with flat noses — English Bulldogs, French Bulldogs, Pugs — Lufthansa restricts brachycephalic breeds from cargo year-round on all routes. Emirates via Dubai is the next option for these breeds, though summer heat embargoes at DXB introduce additional complications.
+        For pets with flat noses, English Bulldogs, French Bulldogs, Pugs, Lufthansa restricts brachycephalic breeds from cargo year-round on all routes. Emirates via Dubai is the next option for these breeds, though summer heat embargoes at DXB introduce additional complications.
 faqs:
   - question: "Does my pet need a titre test to enter Germany from South Africa?"
     answer: "Yes. South Africa is a non-listed country under EU Regulation 576/2013. A FAVN titre test at an EU-approved laboratory is mandatory, minimum 0.5 IU/ml, followed by a 3-month mandatory waiting period from the blood draw date."

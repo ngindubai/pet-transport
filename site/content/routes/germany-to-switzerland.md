@@ -1,6 +1,6 @@
 ---
 title: "Pet Transport from Germany to Switzerland | EU-CH Agreement, No Titre Test & Guide"
-description: "Moving your pet from Germany to Switzerland: bilateral EU-CH pet passport agreement, no titre test, no quarantine, FSVO health check — what you need to know."
+description: "Moving your pet from Germany to Switzerland: bilateral EU-CH pet passport agreement, no titre test, no quarantine, FSVO health check, what you need to know."
 type: "routes"
 layout: "single"
 template_variant: "D"
@@ -85,7 +85,7 @@ content:
       body: |
         **Drive:** Stuttgart or Munich to Basel is about 2 hours. Basel to Zurich adds 45 minutes. Most Germany-Switzerland pet moves happen this way. Fastest, most flexible, and your pet is in the car with you throughout.
 
-        **Rail:** Frankfurt Hauptbahnhof to Zurich HB takes about 3h15m on DB/SBB ICE services. Small pets travel in carriers free of charge; dogs with a ticket. The train crosses the Swiss border without stopping for customs — passport checks happen on board or at Basel. Keep the EU Pet Passport ready.
+        **Rail:** Frankfurt Hauptbahnhof to Zurich HB takes about 3h15m on DB/SBB ICE services. Small pets travel in carriers free of charge; dogs with a ticket. The train crosses the Swiss border without stopping for customs: passport checks happen on board or at Basel. Keep the EU Pet Passport ready.
 
         **Fly:** Frankfurt to Zurich is a 55-minute flight on Lufthansa or SWISS. Useful if you're already flying. Small pets in carrier in cabin on both carriers. The airport adds complexity to what is otherwise a very simple move.
     - heading: "Swiss breed restrictions to check"

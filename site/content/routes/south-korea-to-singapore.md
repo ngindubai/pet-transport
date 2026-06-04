@@ -86,7 +86,7 @@ route_data:
 content:
   h1: "Pet Transport from South Korea to Singapore"
   overview: |
-    South Korea to Singapore is likely a Category C route for AVS, meaning titre test, 6-month wait, and 30 days mandatory quarantine on arrival. Verify South Korea's current AVS classification first — this is the single most important step before planning anything else.
+    South Korea to Singapore is likely a Category C route for AVS, meaning titre test, 6-month wait, and 30 days mandatory quarantine on arrival. Verify South Korea's current AVS classification first, this is the single most important step before planning anything else.
   sections:
     - heading: "Verify the AVS Category before planning"
       body: |

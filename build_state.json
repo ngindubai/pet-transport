@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-03",
+  "last_updated": "2026-06-04",
   "routes_built": 5172,
   "routes_remaining": 32658,
   "total_site_pages": 5957,
@@ -15,7 +15,7 @@
   "blog_articles": 412,
   "content_plan_start": "2026-06-01",
   "content_plan_articles_written": 3,
-  "notes": "Chunk 20 complete 2026-06-02. Template C (Comparison Brief), Tier A. Routes: new-zealand-to-canada, new-zealand-to-singapore, new-zealand-to-united-arab-emirates, singapore-to-australia, singapore-to-canada, singapore-to-germany, singapore-to-new-zealand, singapore-to-united-kingdom, singapore-to-united-states, singapore-to-hong-kong, singapore-to-france (10 core + 1 bonus). All with comparison tables, airline comparison tables, full regulatory data, FAQs. Routes 5534 -> 5544, pages 6332 -> 6342. Next chunk 21: Template D (Conversational Q&A), Tier A. SUPERSEDED 2026-06-03 truth audit: count fields reconciled from disk by verify_build_state.py (routes_built 5544 -> 5172, total_site_pages 6342 -> 5957 were inflated by hand-incrementing). No site pages changed. Blog Day 4 (UK to Spain) is replace-in-place of uk-to-spain-pet-transport-complete-guide.md, not a new article.",
+  "notes": "Chunk 20 complete 2026-06-02. Template C (Comparison Brief), Tier A. Routes: new-zealand-to-canada, new-zealand-to-singapore, new-zealand-to-united-arab-emirates, singapore-to-australia, singapore-to-canada, singapore-to-germany, singapore-to-new-zealand, singapore-to-united-kingdom, singapore-to-united-states, singapore-to-hong-kong, singapore-to-france (10 core + 1 bonus). All with comparison tables, airline comparison tables, full regulatory data, FAQs. Routes 5534 -> 5544, pages 6332 -> 6342. Next chunk 21: Template D (Conversational Q&A), Tier A. SUPERSEDED 2026-06-03 truth audit: count fields reconciled from disk by verify_build_state.py (routes_built 5544 -> 5172, total_site_pages 6342 -> 5957 were inflated by hand-incrementing). No site pages changed. Blog Day 4 (UK to Spain) is replace-in-place of uk-to-spain-pet-transport-complete-guide.md, not a new article. 2026-06-04 legacy cleanup batch 1: em-dash sweep. Removed em dashes from 74 blog/route files + 11 pet-transport files + 4 static pages (89 files total). Zero em dashes remain in site/content. No pages added or removed; counts unchanged.",
   "counts": {
     "route_pairs": 5172,
     "blog": 412,

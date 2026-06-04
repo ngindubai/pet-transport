@@ -3,7 +3,7 @@ title: "How Much Does It Cost to Move a Pet Internationally in 2026?"
 description: "Real 2026 pet transport costs: vet, crate, flight, customs, quarantine. UK examples for Spain, USA, Australia, UAE. Where the cheap quotes go wrong."
 date: "2026-05-28"
 type: "blog"
-author: "Marcus Webb — Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "cost-to-transport-a-pet-2026"
 url: "/blog/cost-to-transport-a-pet-2026/"
 tags:
@@ -48,7 +48,7 @@ These are total costs including vet fees, documentation, crate, airline cargo, a
 
 Some line items are set by government or airline regulation. Others have real room to move.
 
-**Fixed costs — you pay these regardless:**
+**Fixed costs: you pay these regardless:**
 
 - Rabies vaccination: £30–80 (your vet, fixed by the procedure)
 - Health certificate from an accredited vet: £150–300
@@ -56,7 +56,7 @@ Some line items are set by government or airline regulation. Others have real ro
 - IATA-compliant crate: £60–350 depending on size (one-off purchase)
 - Airline live animal cargo surcharge: set by the airline, non-negotiable per flight
 
-**Variable costs — where agent and route choice matters:**
+**Variable costs: where agent and route choice matters:**
 
 - Agent coordination fee: £400–1,500 (wide variation for the same service)
 - Door-to-door ground transport vs airport drop-off: £100–400 difference
@@ -68,17 +68,17 @@ The biggest savings most owners can make are on the agent fee, ground logistics,
 
 ## Why do quotes vary so much between transporters?
 
-Two quotes for the same route can differ by £2,000 or more. That's not always dishonesty — it's often a genuinely different scope of service.
+Two quotes for the same route can differ by £2,000 or more. That's not always dishonesty, it's often a genuinely different scope of service.
 
 A low quote typically covers airport-to-airport cargo booking only. The vet appointments, health certificate, APHA endorsement, crate sourcing, destination customs clearance, and collection at the other end are either excluded entirely or listed as extras in the small print.
 
-A higher quote from a full-service agent typically includes all of the above plus active coordination — someone managing the documentation sequence, chasing the APHA, liaising with the receiving agent, and booking cargo space before it fills up on a busy summer route.
+A higher quote from a full-service agent typically includes all of the above plus active coordination, someone managing the documentation sequence, chasing the APHA, liaising with the receiving agent, and booking cargo space before it fills up on a busy summer route.
 
 The question isn't which quote is cheaper. It's what each quote actually covers. Ask every agent for a line-by-line breakdown. If they won't provide one, that tells you something.
 
 ## Sample budgets: four real routes in 2026
 
-### UK to Spain — medium dog, self-managed with agent for paperwork only
+### UK to Spain: medium dog, self-managed with agent for paperwork only
 
 | Item | Cost |
 |---|---|
@@ -86,12 +86,12 @@ The question isn't which quote is cheaper. It's what each quote actually covers.
 | AHC from accredited vet | £220 |
 | APHA endorsement | £48 |
 | IATA crate (Labrador size) | £140 |
-| Airline cargo — Heathrow to Madrid | £420 |
+| Airline cargo: Heathrow to Madrid | £420 |
 | Agent fee (paperwork coordination only) | £450 |
 | Destination customs + collection | £180 |
 | **Total** | **£1,513** |
 
-### UK to Australia — medium dog, full-service agent
+### UK to Australia: medium dog, full-service agent
 
 | Item | Cost |
 |---|---|
@@ -100,7 +100,7 @@ The question isn't which quote is cheaper. It's what each quote actually covers.
 | APHA endorsement | £75 |
 | BICON import permit | £85 |
 | IATA crate (Labrador size) | £160 |
-| Airline cargo — LHR to MEL | £1,400 |
+| Airline cargo: LHR to MEL | £1,400 |
 | Agent fee (full service, high complexity) | £1,200 |
 | Australian quarantine (10 days, Mickleham) | AUD 2,800 (~£1,400) |
 | **Total** | **~£5,820** |

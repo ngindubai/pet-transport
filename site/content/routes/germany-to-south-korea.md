@@ -50,7 +50,7 @@ route_data:
       responsible: "Your vet"
     - step: 2
       action: "Is the rabies vaccination current and within validity?"
-      timing: "If yes, proceed. If lapsed, vaccinate — no waiting period required beyond standard validity."
+      timing: "If yes, proceed. If lapsed, vaccinate, no waiting period required beyond standard validity."
       responsible: "Your vet"
     - step: 3
       action: "Submit advance APQA notification to Incheon (at least 5 days before arrival)"
@@ -76,7 +76,7 @@ route_data:
     - "Agent fee (optional)"
   key_warnings:
     - "The 5-day APQA advance notification is mandatory. Submitting late causes delays at Incheon."
-    - "No titre test is required from Germany — this makes preparation 3-6 weeks rather than 22+."
+    - "No titre test is required from Germany, this makes preparation 3-6 weeks rather than 22+."
     - "Health certificate must be issued within 10 days of travel and in APQA-acceptable format."
   route_complexity: "low"
   estimated_timeline_weeks: "3-6"
@@ -91,21 +91,21 @@ content:
       body: |
         South Korea's Animal and Plant Quarantine Agency maintains a country classification system based on rabies risk. Germany, as an EU member state with a well-documented and controlled rabies vaccination programme, sits in the low-risk category. For APQA purposes, this removes the titre test requirement entirely.
 
-        The practical checklist is short. ISO 11784/11785 microchip (15-digit), confirmed implanted before any vaccination. Current rabies vaccination in a valid veterinary record. Advance APQA notification to the quarantine station at Incheon Airport at least 5 days before arrival — this is the step most often missed. Official health certificate from a German competent authority-endorsed vet, in APQA format, issued within 10 days of travel.
+        The practical checklist is short. ISO 11784/11785 microchip (15-digit), confirmed implanted before any vaccination. Current rabies vaccination in a valid veterinary record. Advance APQA notification to the quarantine station at Incheon Airport at least 5 days before arrival, this is the step most often missed. Official health certificate from a German competent authority-endorsed vet, in APQA format, issued within 10 days of travel.
 
         That's the list. APQA's inspector at Incheon checks the microchip, the vaccination record, and the certificate on arrival. With everything in order, your pet is typically released the same day.
     - heading: "Which airline? Frankfurt to Incheon"
       body: |
-        You have two strong direct options from Frankfurt. Lufthansa Cargo on FRA-ICN brings the obvious advantage of Frankfurt's well-run live animal cargo centre — one of Europe's busiest and most experienced for international pet shipments. Korean Air Cargo operates the same direct route and brings the advantage of being the Korean national carrier with deep APQA familiarity at the Incheon end.
+        You have two strong direct options from Frankfurt. Lufthansa Cargo on FRA-ICN brings the obvious advantage of Frankfurt's well-run live animal cargo centre, one of Europe's busiest and most experienced for international pet shipments. Korean Air Cargo operates the same direct route and brings the advantage of being the Korean national carrier with deep APQA familiarity at the Incheon end.
 
         For most moves, the choice comes down to availability on your preferred travel date. Book 3-4 weeks in advance. Both airlines occasionally restrict cargo acceptance during peak periods.
 
-        Brachycephalic breeds — Bulldogs, Pugs, French Bulldogs — are restricted from Lufthansa cargo year-round. Korean Air Cargo is the better option for flat-nosed breeds on this route.
+        Brachycephalic breeds, Bulldogs, Pugs, French Bulldogs, are restricted from Lufthansa cargo year-round. Korean Air Cargo is the better option for flat-nosed breeds on this route.
     - heading: "The 5-day APQA notification: don't skip it"
       body: |
         The advance notification to the APQA quarantine station at Incheon is the administrative step most commonly forgotten in Germany-to-Korea moves. It must be submitted at least 5 full days before your pet arrives in South Korea. Your cargo agent handles this as standard, but confirm it's submitted before travel day.
 
-        Missing it doesn't mean your pet gets turned away — but it does mean delays at the Incheon inspection point while APQA processes the notification retroactively. That's stressful and avoidable.
+        Missing it doesn't mean your pet gets turned away, but it does mean delays at the Incheon inspection point while APQA processes the notification retroactively. That's stressful and avoidable.
 faqs:
   - question: "Does my pet need a titre test to enter South Korea from Germany?"
     answer: "No. Germany is an EU member state and APQA treats EU countries as low-risk origins for rabies. No titre test and no extended waiting period are required."

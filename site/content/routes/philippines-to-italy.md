@@ -63,7 +63,7 @@ route_data:
     - step: 4
       action: "3-month mandatory waiting period"
       timing: "Starts from the blood draw date. Cannot be shortened under any circumstances."
-      responsible: "N/A — waiting period"
+      responsible: "N/A: waiting period"
     - step: 5
       action: "Book cargo space on MNL-Italy routing"
       timing: "Book once travel date is confirmed after the 3-month wait. Cargo space books up, especially during summer."

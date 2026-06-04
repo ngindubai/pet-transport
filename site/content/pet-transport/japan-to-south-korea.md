@@ -2,7 +2,7 @@
 title: "Pet Transport from Japan to South Korea: AQS Export Certificate, QIAS Registration and Incheon Entry"
 description: "Moving a dog or cat from Japan to South Korea. Korea requires QIAS pre-registration and a MAFF/AQS export health certificate. No titre test, no quarantine for compliant pets from Japan. Full guide for owners leaving Tokyo or Osaka."
 date: "2026-05-28"
-author: "Gareth — Founder, PetTransportGlobal"
+author: "Gareth, Founder, PetTransportGlobal"
 type: "route"
 slug: "japan-to-south-korea"
 origin_country: "Japan"
@@ -24,7 +24,7 @@ route_data:
   min_weeks: 3
   quarantine: false
   titre_test_required: false
-  approved_entry_airports: ["ICN (Incheon)", "GMP (Gimpo — Seoul domestic only)"]
+  approved_entry_airports: ["ICN (Incheon)", "GMP (Gimpo, Seoul domestic only)"]
   airlines: ["ANA", "JAL", "Korean Air (KE)", "Asiana Airlines"]
 faqs:
   - q: "Does Japan to South Korea require a titre test?"
@@ -34,7 +34,7 @@ faqs:
   - q: "Is the Japan to South Korea corridor commonly used?"
     a: "Yes, it is one of the most-travelled pet corridors in Northeast Asia, used by expats, military families and Korean nationals returning from assignments in Japan. The route is well-understood by both AQS and QIAS staff, which makes the process smooth for prepared owners."
   - q: "Can I take my pet in the cabin from Tokyo to Seoul?"
-    a: "ANA and JAL do not allow pets in the cabin on international routes including NRT–ICN and HND–ICN. Korean Air accepts small pets as checked baggage (in-cabin equivalent) up to 7kg combined. Asiana Airlines has similar provisions. Check current policies directly — these change seasonally."
+    a: "ANA and JAL do not allow pets in the cabin on international routes including NRT–ICN and HND–ICN. Korean Air accepts small pets as checked baggage (in-cabin equivalent) up to 7kg combined. Asiana Airlines has similar provisions. Check current policies directly, these change seasonally."
 links:
   - label: "AQS Japan Export Procedures"
     url: "https://www.maff.go.jp/aqs/english/animal/dog/export.html"
@@ -67,7 +67,7 @@ Japan's AQS issues export health certificates at airport offices. The process:
 3. AQS inspects the animal, verifies the microchip and vaccination records, and issues the export certificate
 4. The certificate is valid for 10 days from issue
 
-Book the AQS airport appointment in advance — walk-ins may face delays. AQS offices are typically located in the cargo/live animal handling areas of the airport.
+Book the AQS airport appointment in advance, walk-ins may face delays. AQS offices are typically located in the cargo/live animal handling areas of the airport.
 
 ---
 
@@ -79,7 +79,7 @@ Register at the QIAS online portal (qia.go.kr) at least 7 days before arrival. U
 
 ## Airlines on This Route
 
-**ANA** and **JAL** operate NRT–ICN and HND–ICN multiple times daily. Both accept pet cargo on these routes — contact ANA Cargo or JAL Cargo directly for booking. In-cabin is not available on international sectors.
+**ANA** and **JAL** operate NRT–ICN and HND–ICN multiple times daily. Both accept pet cargo on these routes: contact ANA Cargo or JAL Cargo directly for booking. In-cabin is not available on international sectors.
 
 **Korean Air (KE)** accepts small pets as checked excess baggage (up to 7kg combined including carrier) on NRT/HND–ICN flights. Larger pets travel as cargo.
 
@@ -89,6 +89,6 @@ Register at the QIAS online portal (qia.go.kr) at least 7 days before arrival. U
 
 ## Post-Arrival in Korea
 
-Once QIAS clears your pet at Incheon, you are free to travel onward within Korea. If you are connecting to a domestic Korean destination, allow at least 3 hours post-international arrival for QIAS clearance before your domestic departure. Gimpo (GMP) domestic terminal is a separate facility from ICN — factor in the transfer time.
+Once QIAS clears your pet at Incheon, you are free to travel onward within Korea. If you are connecting to a domestic Korean destination, allow at least 3 hours post-international arrival for QIAS clearance before your domestic departure. Gimpo (GMP) domestic terminal is a separate facility from ICN, factor in the transfer time.
 
 Korean vets are readily available in Seoul and other major cities. Registering your pet with a local clinic within the first week is advisable, particularly as Korean vet records will differ from Japanese ones.

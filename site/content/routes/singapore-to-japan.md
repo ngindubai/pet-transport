@@ -45,7 +45,7 @@ route_data:
       policy_summary: "Via Dubai DXB to NRT. Summer heat restrictions may apply."
   timeline_steps:
     - step: 1
-      action: "STEP 1: Microchip (ISO 11784/11785) — before any vaccination"
+      action: "STEP 1: Microchip (ISO 11784/11785), before any vaccination"
       timing: "Week 0. Non-negotiable first step."
       responsible: "Singapore vet"
     - step: 2
@@ -146,7 +146,7 @@ faqs:
   - question: "Is Singapore a designated country for Japan AQS?"
     answer: "No. Singapore is non-designated, meaning the full 180-day protocol applies: microchip first, two vaccinations, FAVN titre test, 180-day wait, 40-day advance notification, and MAFF health certificate."
   - question: "What AQS-approved laboratories are available in Singapore?"
-    answer: "Verify the current AQS-approved laboratory list at aqs.maff.go.jp before booking. Singapore may have AVS-accredited labs that also hold AQS approval — confirm this with your vet or agent."
+    answer: "Verify the current AQS-approved laboratory list at aqs.maff.go.jp before booking. Singapore may have AVS-accredited labs that also hold AQS approval, confirm this with your vet or agent."
   - question: "Is there quarantine on arrival in Japan from Singapore?"
     answer: "Yes. AQS inspects and quarantines all pets from non-designated countries on arrival. Minimum 12 hours, typically 2-7 days. Quarantine fees are charged per day at the AQS facility."
   - question: "Do I need an AVS Export Licence in addition to the Japanese AQS documentation?"

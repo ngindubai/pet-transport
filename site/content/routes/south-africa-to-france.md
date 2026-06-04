@@ -30,7 +30,7 @@ route_data:
   airlines:
     - name: "Air France"
       type: "cargo_only"
-      policy_summary: "Direct CDG-JNB reverse — Air France Cargo operates JNB-CDG. National carrier of destination with CDG BCP familiarity on arrival."
+      policy_summary: "Direct CDG-JNB reverse, Air France Cargo operates JNB-CDG. National carrier of destination with CDG BCP familiarity on arrival."
     - name: "Lufthansa"
       type: "cargo_only"
       policy_summary: "Via Frankfurt FRA to CDG. Strong cargo infrastructure. Brachycephalic breeds restricted."
@@ -92,7 +92,7 @@ route_data:
 content:
   h1: "Pet Transport from South Africa to France"
   overview: |
-    South Africa to France is a demanding but navigable route. The EU non-listed country protocol applies — FAVN titre test, 3-month wait — and the DALRRD export permit adds its own lead time on the South African departure side. Running both processes in parallel keeps the timeline at 22-26 weeks rather than longer.
+    South Africa to France is a demanding but navigable route. The EU non-listed country protocol applies, FAVN titre test, 3-month wait, and the DALRRD export permit adds its own lead time on the South African departure side. Running both processes in parallel keeps the timeline at 22-26 weeks rather than longer.
   sections:
     - heading: "Running DALRRD and titre test in parallel"
       body: |
@@ -100,10 +100,10 @@ content:
 
         Start both at the same time. Get the titre test blood drawn at an EU-approved laboratory as soon as your pet's vaccination record qualifies (current vaccination, 30 days elapsed). Simultaneously, contact the State Veterinarian in your province and begin the export permit application. Both processes have variable timelines; running them in parallel prevents either from becoming a bottleneck.
 
-        The health certificate — issued within 10 days of travel by a State Vet or DALRRD-authorised vet, with DALRRD endorsement — is the last document prepared. It can only be issued once the export permit is in hand and the 3-month titre test wait is over.
+        The health certificate, issued within 10 days of travel by a State Vet or DALRRD-authorised vet, with DALRRD endorsement, is the last document prepared. It can only be issued once the export permit is in hand and the 3-month titre test wait is over.
     - heading: "Which airline from Johannesburg to Paris?"
       body: |
-        Air France operates the JNB-CDG route and is a natural choice — as the French national carrier, their CDG cargo team handles BCP arrivals and DGAL inspections regularly. Lufthansa via Frankfurt is the main European alternative, with strong Frankfurt cargo infrastructure, though it adds a transit.
+        Air France operates the JNB-CDG route and is a natural choice, as the French national carrier, their CDG cargo team handles BCP arrivals and DGAL inspections regularly. Lufthansa via Frankfurt is the main European alternative, with strong Frankfurt cargo infrastructure, though it adds a transit.
 
         For brachycephalic breeds (Bulldogs, Pugs, French Bulldogs), Lufthansa restricts these breeds from cargo year-round. Air France or Emirates via Dubai are better options, though DXB summer heat embargoes introduce seasonal complications for Emirates.
 faqs:

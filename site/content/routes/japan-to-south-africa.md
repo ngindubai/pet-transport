@@ -21,7 +21,7 @@ route_data:
     import_requirements:
       microchip: "Required (ISO 11784/11785). Before vaccination."
       rabies_vaccination: "Required. At least 30 days before import and within 12 months."
-      titre_test: "Verify current DALRRD requirements for Japan-origin pets at dalrrd.gov.za. Japan may have a bilateral arrangement reducing this requirement — confirm before planning."
+      titre_test: "Verify current DALRRD requirements for Japan-origin pets at dalrrd.gov.za. Japan may have a bilateral arrangement reducing this requirement, confirm before planning."
       quarantine: "No routine quarantine for compliant pets with DALRRD permit. DALRRD inspection at Port of Entry."
       import_permit: "Required. DALRRD Veterinary Import Permit. Apply 4-8 weeks in advance."
       health_certificate: "AQS-endorsed health certificate in DALRRD format. Within 10 days of travel."
@@ -75,7 +75,7 @@ route_data:
     - "AQS health certificate"
     - "Agent fee (recommended)"
   key_warnings:
-    - "Verify DALRRD titre test status for Japan before planning — determines your timeline entirely."
+    - "Verify DALRRD titre test status for Japan before planning, determines your timeline entirely."
     - "DALRRD import permit takes 4-8 weeks. Apply immediately."
     - "Vaccination must be 30-365 days before SA arrival."
   route_complexity: "moderate"
@@ -83,7 +83,7 @@ route_data:
 content:
   h1: "Pet Transport from Japan to South Africa"
   overview: |
-    Japan to South Africa is a long-haul route that requires a DALRRD import permit and an AQS export health certificate. Whether a titre test is required depends on current DALRRD policy for Japan-origin pets — verify at dalrrd.gov.za before committing to any timeline. The DALRRD permit takes 4-8 weeks regardless, so start that immediately.
+    Japan to South Africa is a long-haul route that requires a DALRRD import permit and an AQS export health certificate. Whether a titre test is required depends on current DALRRD policy for Japan-origin pets, verify at dalrrd.gov.za before committing to any timeline. The DALRRD permit takes 4-8 weeks regardless, so start that immediately.
 
     Emirates via Dubai and Singapore Airlines via Changi are the main routing options for NRT-JNB cargo.
   sections:
@@ -91,12 +91,12 @@ content:
       body: |
         South Africa maintains bilateral veterinary agreements with certain countries that remove or reduce titre test requirements for imported pets. Whether Japan is on the current bilateral agreement list should be confirmed directly at dalrrd.gov.za or through an experienced agent before you plan anything.
 
-        If no titre test is required from Japan: preparation is 6-10 weeks (DALRRD permit plus AQS certificate). If a titre test is required: add the vaccination sequence and a mandatory waiting period, pushing the timeline to 22-26 weeks. That's a significant difference — confirm the status first.
+        If no titre test is required from Japan: preparation is 6-10 weeks (DALRRD permit plus AQS certificate). If a titre test is required: add the vaccination sequence and a mandatory waiting period, pushing the timeline to 22-26 weeks. That's a significant difference, confirm the status first.
     - heading: "AQS export certificate: what Japan issues"
       body: |
         AQS Japan issues the export health certificate for all live animal exports. For South Africa, the certificate must be in DALRRD's required format. AQS offices at Narita and Haneda handle these regularly and know the documentation requirements for various destinations.
 
-        The certificate must be issued within 10 days of travel. Book the AQS appointment with that window clearly in mind. The DALRRD health certificate conditions must match those specified in your DALRRD import permit exactly — ensure the permit is in hand before finalising the AQS certificate.
+        The certificate must be issued within 10 days of travel. Book the AQS appointment with that window clearly in mind. The DALRRD health certificate conditions must match those specified in your DALRRD import permit exactly, ensure the permit is in hand before finalising the AQS certificate.
     - heading: "Emirates vs Singapore Airlines: the long haul"
       body: |
         No direct Tokyo-Johannesburg cargo service exists. Emirates via Dubai International (DXB) is the most commonly used routing for Japan-South Africa pet cargo. Singapore Airlines via Changi is the main alternative, with a strong temperature-controlled cargo operation on the Changi-Johannesburg corridor.

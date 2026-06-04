@@ -1,6 +1,6 @@
 ---
 title: "Pet Transport from France to Germany | EU Pet Passport, No Titre Test & Full Guide"
-description: "Moving your pet from France to Germany: EU pet passport accepted, no titre test, no quarantine, TGV rail option, Air France and Lufthansa — the simplest international move."
+description: "Moving your pet from France to Germany: EU pet passport accepted, no titre test, no quarantine, TGV rail option, Air France and Lufthansa, the simplest international move."
 type: "routes"
 layout: "single"
 template_variant: "C"
@@ -30,7 +30,7 @@ route_data:
   airlines:
     - name: "TGV / SNCF Rail (recommended)"
       type: "cabin_and_cargo"
-      policy_summary: "Cabin: TGV and SNCF allow small pets in a carrier on board. Paris to Frankfurt takes under 4 hours. This is the most pet-friendly option for France-Germany travel — no cargo separation, no airport. Dogs allowed with ticket."
+      policy_summary: "Cabin: TGV and SNCF allow small pets in a carrier on board. Paris to Frankfurt takes under 4 hours. This is the most pet-friendly option for France-Germany travel, no cargo separation, no airport. Dogs allowed with ticket."
     - name: "Air France"
       type: "cabin_and_cargo"
       policy_summary: "Cabin: small pets in cabin on Air France intra-European routes. Paris CDG to Frankfurt FRA or Munich MUC. Quick flights (1 hour) but airport handling less relaxed than rail."
@@ -63,7 +63,7 @@ route_data:
   key_warnings:
     - "Confirm the rabies vaccination in your pet's EU passport is current. An expired vaccination means the passport is not valid for travel."
     - "France has breed restrictions (Categorie 1 and 2). Germany has Länder-level breed bans for certain types. Check breed-specific rules if you have a restricted breed."
-    - "Keep the EU Pet Passport accessible even when driving — random inspections do occur at EU internal borders."
+    - "Keep the EU Pet Passport accessible even when driving, random inspections do occur at EU internal borders."
   route_complexity: "very_low"
   estimated_timeline_weeks: "0-1"
 content:
@@ -78,7 +78,7 @@ content:
         | Factor | Rail (TGV/SNCF) | Air (Air France/Lufthansa) |
         |---|---|---|
         | Journey time Paris-Frankfurt | ~3h 45min | ~1h 20min flight, plus airport |
-        | Pet in cabin | Yes — carrier under seat | Yes — under seat for small pets |
+        | Pet in cabin | Yes: carrier under seat | Yes: under seat for small pets |
         | Pet separation | None | None for cabin pets |
         | Cargo option | N/A | Yes, for larger animals |
         | Airport check-in time | None | 2 hours |
@@ -97,7 +97,7 @@ content:
         If you've lost the passport or it's out of date, your vet issues a replacement and re-vaccinates if needed. A 21-day wait from the new vaccination applies before travel.
     - heading: "Breed-specific rules to check before you go"
       body: |
-        France operates a two-category restricted dog system. Categorie 1 (fighting dogs and crosses with a specific physical profile) are banned in France and cannot leave or enter as a legal pet. Categorie 2 includes Staffordshire Bull Terriers, American Staffordshire Terriers, Rottweilers, and Tosa Inus — these require a permit, sterilisation, and owner registration in France.
+        France operates a two-category restricted dog system. Categorie 1 (fighting dogs and crosses with a specific physical profile) are banned in France and cannot leave or enter as a legal pet. Categorie 2 includes Staffordshire Bull Terriers, American Staffordshire Terriers, Rottweilers, and Tosa Inus, these require a permit, sterilisation, and owner registration in France.
 
         Germany applies breed restrictions at Länder (state) level. Bayern, Hessen, Nordrhein-Westfalen, and others all have their own lists. Pit Bull Terrier types, American Staffordshire Terriers, and Staffordshire Bull Terriers are commonly restricted. Check the specific rules for the German state you're moving to.
 faqs:

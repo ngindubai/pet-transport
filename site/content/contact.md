@@ -5,7 +5,7 @@ type: "page"
 layout: "single"
 slug: "contact"
 url: "/contact/"
-author: "Gareth — Founder, PetTransportGlobal"
+author: "Gareth, Founder, PetTransportGlobal"
 ---
 
 # Contact Us

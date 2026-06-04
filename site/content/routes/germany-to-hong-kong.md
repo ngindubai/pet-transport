@@ -49,7 +49,7 @@ route_data:
       timing: "Check at vet visit."
       responsible: "German vet"
     - step: 2
-      action: "Rabies vaccination — must be 30-365 days before Hong Kong arrival"
+      action: "Rabies vaccination, must be 30-365 days before Hong Kong arrival"
       timing: "Critical window: not too recent, not too old. Plan backwards from travel date."
       responsible: "German vet"
     - step: 3
@@ -85,7 +85,7 @@ content:
   overview: |
     Germany enjoys Group 1 status with Hong Kong's AFCD, which means no titre test, no extended waiting period, and no quarantine on arrival. Compared to Japan, Australia, or New Zealand, Germany to Hong Kong is genuinely one of the more manageable long-haul pet transport routes.
 
-    The main thing that trips people up is the rabies vaccination window. It must be not less than 30 days and not more than 12 months before Hong Kong arrival. If your dog's last rabies shot was 13 months ago, it doesn't matter that the vaccine is still technically valid in Germany — AFCD won't accept it.
+    The main thing that trips people up is the rabies vaccination window. It must be not less than 30 days and not more than 12 months before Hong Kong arrival. If your dog's last rabies shot was 13 months ago, it doesn't matter that the vaccine is still technically valid in Germany, AFCD won't accept it.
   sections:
     - heading: "Germany's Group 1 status: what it means in practice"
       body: |
@@ -103,7 +103,7 @@ content:
         The AFCD Import Licence application takes a minimum of 30 days. Submit it in parallel with your flight and cargo booking, not after.
     - heading: "Cathay Pacific or Lufthansa: choosing your carrier"
       body: |
-        Both Cathay Pacific Cargo and Lufthansa Cargo operate direct Frankfurt to Hong Kong flights with pet cargo capability. Cathay Pacific is the natural first choice — as Hong Kong's own airline, their cargo staff at HKG have daily familiarity with AFCD import procedures. The Cathay Cargo team at Frankfurt is experienced with German-origin documentation.
+        Both Cathay Pacific Cargo and Lufthansa Cargo operate direct Frankfurt to Hong Kong flights with pet cargo capability. Cathay Pacific is the natural first choice, as Hong Kong's own airline, their cargo staff at HKG have daily familiarity with AFCD import procedures. The Cathay Cargo team at Frankfurt is experienced with German-origin documentation.
 
         Lufthansa's Frankfurt hub is one of Europe's best live animal cargo operations. They run the same FRA-HKG route and their cargo team knows the requirements well. Note that Lufthansa restricts brachycephalic breeds from cargo hold year-round, including on this route.
 

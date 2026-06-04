@@ -1,6 +1,6 @@
 ---
 title: "Pet Transport from Netherlands to Germany | EU Pet Passport, No Titre Test & Guide"
-description: "Moving your pet from the Netherlands to Germany: EU pet passport accepted, no titre test, no quarantine, Thalys and KLM options — the simplest international pet move."
+description: "Moving your pet from the Netherlands to Germany: EU pet passport accepted, no titre test, no quarantine, Thalys and KLM options, the simplest international pet move."
 type: "routes"
 layout: "single"
 template_variant: "B"
@@ -60,7 +60,7 @@ route_data:
   key_warnings:
     - "Check the rabies vaccination in the EU Pet Passport is current. An expired vaccination invalidates the passport for cross-border use."
     - "Germany applies Länder-level breed restrictions. If you have a breed that might be restricted, check the rules for the specific German state you're moving to."
-    - "Rail between Amsterdam and Frankfurt is genuinely competitive with flying once airport time is included — and far lower stress for your pet."
+    - "Rail between Amsterdam and Frankfurt is genuinely competitive with flying once airport time is included, and far lower stress for your pet."
   route_complexity: "very_low"
   estimated_timeline_weeks: "0-1"
 content:
@@ -76,14 +76,14 @@ content:
 
         That's the complete list for crossing from Amsterdam to Cologne, Frankfurt, Munich, or anywhere else in Germany. There's no border inspection post, no titre test, and no quarantine facility waiting on the other side.
 
-        The only thing that trips people up is an expired vaccination. The EU Pet Passport doesn't expire, but the vaccination recorded in it does. If your pet's rabies shot lapsed six months ago, the passport is not valid for travel until a booster is given and — if it's a first vaccination in a new course — 21 days have elapsed. Check the dates before you book anything.
+        The only thing that trips people up is an expired vaccination. The EU Pet Passport doesn't expire, but the vaccination recorded in it does. If your pet's rabies shot lapsed six months ago, the passport is not valid for travel until a booster is given and, if it's a first vaccination in a new course, 21 days have elapsed. Check the dates before you book anything.
     - heading: "Train, car, or plane: what works best"
       body: |
         The NS Intercity Direct from Amsterdam Centraal to Frankfurt Hauptbahnhof takes about 3 hours 40 minutes, with a change at Rotterdam or running directly depending on the service. NS allows small pets in carriers free of charge; dogs of any size travel with a ticket, muzzle, and lead on most services.
 
         Driving is equally straightforward. The A3 from Utrecht to Oberhausen crosses the German border without stopping for any pet inspection. Amsterdam to Cologne is under 3 hours. Amsterdam to Frankfurt is around 4 hours 30 minutes.
 
-        Flying is the least compelling option on this corridor. KLM and Lufthansa both allow small pets in cabin on the AMS-FRA route (a 55-minute flight), but once you add airport check-in time, security, and boarding, door-to-door time rivals the train for central city destinations — and your pet experiences significantly more stress.
+        Flying is the least compelling option on this corridor. KLM and Lufthansa both allow small pets in cabin on the AMS-FRA route (a 55-minute flight), but once you add airport check-in time, security, and boarding, door-to-door time rivals the train for central city destinations, and your pet experiences significantly more stress.
 faqs:
   - question: "Do I need any documents other than an EU Pet Passport to take my pet from Netherlands to Germany?"
     answer: "No. A valid EU Pet Passport showing a current ISO microchip and rabies vaccination is all that's required for intra-EU pet movement. No titre test, import permit, or quarantine applies."

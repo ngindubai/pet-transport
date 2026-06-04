@@ -100,9 +100,9 @@ route_data:
     - "AQS quarantine fees on arrival"
     - "Agent fee (strongly recommended)"
   key_warnings:
-    - "Microchip before any vaccination — wrong order = restart entire AQS sequence."
+    - "Microchip before any vaccination, wrong order = restart entire AQS sequence."
     - "180-day wait from blood draw, not result date."
-    - "DALRRD export permit must run in parallel with AQS preparation — 4-8 weeks."
+    - "DALRRD export permit must run in parallel with AQS preparation, 4-8 weeks."
     - "AQS advance notification: 40-day hard deadline."
     - "Health certificate dual window: 10 days of SA departure AND 7 days of Japan arrival."
   route_complexity: "very_high"
@@ -116,15 +116,15 @@ content:
       body: |
         | Requirement | Detail |
         |---|---|
-        | AQS designation for SA | Non-designated — full 180-day protocol |
+        | AQS designation for SA | Non-designated: full 180-day protocol |
         | Microchip | ISO 11784/11785, before any vaccination |
         | First rabies vaccination | After microchip |
         | 30-day wait | Between first and second vaccination |
         | Second rabies vaccination | Day 30+ after first |
         | 30-day wait | Before titre test blood draw |
         | FAVN titre test | AQS-approved lab, 0.5+ IU/ml |
-        | 180-day wait | From blood draw date — non-negotiable |
-        | AQS advance notification | 40+ days before arrival — hard deadline |
+        | 180-day wait | From blood draw date: non-negotiable |
+        | AQS advance notification | 40+ days before arrival: hard deadline |
         | DALRRD export permit | Required, 4-8 weeks, parallel track |
         | Health certificate | DALRRD-endorsed MAFF format, dual window |
         | Quarantine (JP) | Min 12 hours, typically 2-7 days |
@@ -146,7 +146,7 @@ content:
       body: |
         The 180-day AQS waiting period is long enough that the DALRRD export permit (4-8 weeks) can and should be started during it. Begin the DALRRD State Veterinarian application as soon as the titre test blood is drawn. By the time the 180-day wait concludes, the DALRRD permit should already be in hand.
 
-        The AQS advance notification (40 days before arrival) also runs during the wait period. Engage an experienced agent early — one who has handled JNB-Japan moves knows both the DALRRD and AQS paperwork sequences and can manage both tracks simultaneously without conflicts.
+        The AQS advance notification (40 days before arrival) also runs during the wait period. Engage an experienced agent early, one who has handled JNB-Japan moves knows both the DALRRD and AQS paperwork sequences and can manage both tracks simultaneously without conflicts.
 faqs:
   - question: "How long does it take to prepare a pet for South Africa to Japan?"
     answer: "Allow 38-46 weeks. Two vaccinations (30 days apart), titre test at an AQS-approved lab (30 days after second vax), 180-day wait, DALRRD export permit (4-8 weeks, parallel), and 40-day AQS advance notification."
@@ -157,7 +157,7 @@ faqs:
   - question: "Which airline is best for JNB to Tokyo?"
     answer: "Emirates SkyCargo via Dubai is the most commonly used. Singapore Airlines via Changi is the best alternative, particularly for brachycephalic breeds. Both have temperature-controlled cargo on this long-haul route."
   - question: "Can I start the DALRRD export permit application during the AQS waiting period?"
-    answer: "Yes — and you should. The DALRRD export permit takes 4-8 weeks. Starting it during the 180-day AQS wait means it's ready before you need it, without adding extra time to your critical path."
+    answer: "Yes, and you should. The DALRRD export permit takes 4-8 weeks. Starting it during the 180-day AQS wait means it's ready before you need it, without adding extra time to your critical path."
 links:
   sideways:
     - url: "/pet-transport/japan-to-south-africa/"

@@ -81,7 +81,7 @@ route_data:
 content:
   h1: "Pet Transport from Japan to Hong Kong"
   overview: |
-    Japan to Hong Kong is a short move — the flight is about 4 hours — and if Japan's AFCD Group 1 status holds, there's no titre test and no extended waiting period. The main requirements are the vaccination window (30-365 days before HK arrival), the AFCD Import Licence (30+ days processing), and the AQS export health certificate.
+    Japan to Hong Kong is a short move, the flight is about 4 hours, and if Japan's AFCD Group 1 status holds, there's no titre test and no extended waiting period. The main requirements are the vaccination window (30-365 days before HK arrival), the AFCD Import Licence (30+ days processing), and the AQS export health certificate.
 
     Verify Japan's current AFCD Group status at afcd.gov.hk first. That confirmation shapes everything else.
   sections:
@@ -100,17 +100,17 @@ content:
         Source: AFCD afcd.gov.hk; Japan AQS aqs.maff.go.jp.
     - heading: "Cathay Pacific vs ANA on NRT-HKG"
       body: |
-        Both operate direct daily services between Narita and Hong Kong. Cathay Pacific is Hong Kong's own carrier — their HKG cargo and AFCD import teams work together daily. ANA is Japan's carrier — their Narita cargo team processes AQS export documentation for international moves continuously.
+        Both operate direct daily services between Narita and Hong Kong. Cathay Pacific is Hong Kong's own carrier, their HKG cargo and AFCD import teams work together daily. ANA is Japan's carrier, their Narita cargo team processes AQS export documentation for international moves continuously.
 
         JAL Cargo also operates the same NRT-HKG route with similar AQS departure experience. On a 4-hour route with multiple daily departures, schedule fit is typically the deciding factor.
     - heading: "The vaccination window: calculating it correctly"
       body: |
         AFCD requires the rabies vaccination to be both at least 30 days old AND not more than 12 months old on the date your pet arrives in Hong Kong. Both ends of this window are firm.
 
-        If your pet's current Japanese vaccination was given 13 months ago, it fails. If you're vaccinating specifically for this trip, give it at least 31 days before your planned HK arrival date. Japan's domestic vaccination records are well-maintained — verify the exact date with your vet and calculate from your planned arrival.
+        If your pet's current Japanese vaccination was given 13 months ago, it fails. If you're vaccinating specifically for this trip, give it at least 31 days before your planned HK arrival date. Japan's domestic vaccination records are well-maintained, verify the exact date with your vet and calculate from your planned arrival.
 faqs:
   - question: "Does my Japanese pet need a titre test to enter Hong Kong?"
-    answer: "Likely not — Japan is probably Group 1 for AFCD. Verify the current classification at afcd.gov.hk before planning. If Group 1, no titre test is required. The main requirements are the vaccination dual window and the AFCD Import Licence."
+    answer: "Likely not, Japan is probably Group 1 for AFCD. Verify the current classification at afcd.gov.hk before planning. If Group 1, no titre test is required. The main requirements are the vaccination dual window and the AFCD Import Licence."
   - question: "What is the AFCD Import Licence?"
     answer: "All live animal imports into Hong Kong require an AFCD Import Licence from the Agriculture, Fisheries and Conservation Department. Apply via afcd.gov.hk at least 30 days before your pet's planned arrival."
   - question: "What is the AQS export health certificate?"

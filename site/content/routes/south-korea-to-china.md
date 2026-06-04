@@ -93,7 +93,7 @@ route_data:
 content:
   h1: "Pet Transport from South Korea to China"
   overview: |
-    Moving a pet from South Korea to China is one of the more demanding routes in East Asia. China's General Administration of Customs (GACC) requires a FAVN titre test, a 180-day wait from blood draw, and a mandatory 30-day quarantine for dogs on arrival. For cats, the quarantine is 7 days if you're arriving from an approved country — check with GACC whether South Korea qualifies.
+    Moving a pet from South Korea to China is one of the more demanding routes in East Asia. China's General Administration of Customs (GACC) requires a FAVN titre test, a 180-day wait from blood draw, and a mandatory 30-day quarantine for dogs on arrival. For cats, the quarantine is 7 days if you're arriving from an approved country, check with GACC whether South Korea qualifies.
 
     Allow at least 36-44 weeks from starting the process to your pet arriving in China. And note the one-per-person-per-year rule: GACC only permits one dog or one cat per passport holder.
   sections:

@@ -90,7 +90,7 @@ route_data:
   key_warnings:
     - "New Zealand requires a titre test and 180-day wait for ALL countries without exception. There is no fast-track entry."
     - "10-day quarantine is mandatory on arrival, even after the 180-day pre-travel wait."
-    - "Apply for NZSTAP approval early — processing takes time and your pet can't travel without it."
+    - "Apply for NZSTAP approval early, processing takes time and your pet can't travel without it."
     - "MPI requirements are strict and enforced. An IPATA-registered agent with NZ experience is strongly recommended."
   route_complexity: "very_high"
   estimated_timeline_weeks: "38-44"
@@ -105,7 +105,7 @@ content:
       body: |
         New Zealand's Biosecurity team treats every origin country equally when it comes to the core requirements. Two vaccinations, titre test, 180-day wait, 10-day quarantine. South Korea gets no special treatment here.
 
-        The starting point is an ISO microchip, implanted before or on the same day as the first vaccination. Then two inactivated-virus rabies vaccinations at least 28 days apart. Then the FAVN titre test — blood drawn at a minimum of 30 days after the second vaccination, at an MPI-approved laboratory. Then the 180-day wait from that blood draw date.
+        The starting point is an ISO microchip, implanted before or on the same day as the first vaccination. Then two inactivated-virus rabies vaccinations at least 28 days apart. Then the FAVN titre test, blood drawn at a minimum of 30 days after the second vaccination, at an MPI-approved laboratory. Then the 180-day wait from that blood draw date.
 
         Apply for NZSTAP import approval from the Ministry for Primary Industries (MPI) early in this process. Processing takes time and you cannot travel without it.
     - heading: "Flights and cargo options from Seoul to Auckland"

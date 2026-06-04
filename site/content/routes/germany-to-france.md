@@ -30,7 +30,7 @@ route_data:
   airlines:
     - name: "Deutsche Bahn / SNCF Rail"
       type: "cabin_and_cargo"
-      policy_summary: "Cabin: small pets in a carrier allowed on many DB and SNCF cross-border rail services. Dogs up to a certain size also permitted with a ticket. This is often the best option for Germany-France pet travel — no cargo, no airport stress."
+      policy_summary: "Cabin: small pets in a carrier allowed on many DB and SNCF cross-border rail services. Dogs up to a certain size also permitted with a ticket. This is often the best option for Germany-France pet travel, no cargo, no airport stress."
     - name: "Lufthansa"
       type: "cabin_and_cargo"
       policy_summary: "Cabin: small pets (up to 8kg including carrier) permitted in cabin on Lufthansa intra-European flights. Frankfurt (FRA) to Paris CDG or Lyon. Dogs in cargo hold for larger animals."
@@ -49,7 +49,7 @@ route_data:
       timing: "Check at any vet visit. Most German pets already have a valid EU passport."
       responsible: "Your veterinarian"
     - step: 2
-      action: "Choose transport mode — rail or air"
+      action: "Choose transport mode, rail or air"
       timing: "Book 2-4 weeks in advance. Rail is simpler for Germany-France."
       responsible: "You"
     - step: 3
@@ -73,14 +73,14 @@ content:
   overview: |
     Germany to France is one of the simplest international pet moves possible. Both countries are EU members. Your EU Pet Passport is all you need. No titre test, no quarantine, no advance paperwork beyond what your vet already issues.
 
-    The real decision is how to travel. Rail — Deutsche Bahn connecting to SNCF — is genuinely one of the best options for taking a pet across this border. Frankfurt to Paris takes under 4 hours. Your pet stays with you the whole time.
+    The real decision is how to travel. Rail, Deutsche Bahn connecting to SNCF, is genuinely one of the best options for taking a pet across this border. Frankfurt to Paris takes under 4 hours. Your pet stays with you the whole time.
   sections:
     - heading: "Compliance requirements at a glance"
       body: |
         | Requirement | Status |
         |---|---|
-        | Microchip (ISO 11784/11785) | Required — must be in the EU Pet Passport |
-        | Rabies vaccination | Required — current and within validity period |
+        | Microchip (ISO 11784/11785) | Required: must be in the EU Pet Passport |
+        | Rabies vaccination | Required: current and within validity period |
         | Titre test | NOT required (EU to EU movement) |
         | Quarantine | NOT required |
         | Import permit | NOT required |
@@ -95,7 +95,7 @@ content:
 
         On Deutsche Bahn, small dogs and cats in carriers travel free of charge. Larger dogs travel for half the adult fare with a muzzle and lead required. The same applies on SNCF TGV services on the French side. No cargo hold, no airport separation, no temperature embargo anxieties. Your pet sits under your seat or at your feet for the entire journey.
 
-        If you're flying, Lufthansa and Air France both permit small pets in cabin on intra-European routes. Larger animals travel in the hold. The Frankfurt to Paris CDG flight takes about 1 hour 20 minutes — short enough that most pets tolerate it well in a compliant carrier.
+        If you're flying, Lufthansa and Air France both permit small pets in cabin on intra-European routes. Larger animals travel in the hold. The Frankfurt to Paris CDG flight takes about 1 hour 20 minutes, short enough that most pets tolerate it well in a compliant carrier.
     - heading: "The EU Pet Passport: what needs to be in it"
       body: |
         For intra-EU travel, the EU Pet Passport is the complete document. It records your pet's microchip number, rabies vaccination history, and veterinary details in a standardised format recognised across all 27 EU member states.

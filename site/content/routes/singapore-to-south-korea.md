@@ -88,7 +88,7 @@ route_data:
 content:
   h1: "Pet Transport from Singapore to South Korea"
   overview: |
-    Singapore to South Korea is a short flight — around 6 hours — but the documentation requires two separate permits: an AVS Export Licence from Singapore and APQA compliance on the Korean side. Whether a titre test is required depends on Singapore's current APQA classification. Verify that first; it determines your entire timeline.
+    Singapore to South Korea is a short flight, around 6 hours, but the documentation requires two separate permits: an AVS Export Licence from Singapore and APQA compliance on the Korean side. Whether a titre test is required depends on Singapore's current APQA classification. Verify that first; it determines your entire timeline.
   sections:
     - heading: "The key question: what is Singapore's APQA classification?"
       body: |
@@ -99,7 +99,7 @@ content:
       body: |
         Singapore requires an AVS Export Licence for all live animal exports. Apply via the CITES e-Licence System at nparks.gov.sg/avs at least 2 weeks before departure. Your agent can handle this.
 
-        South Korea's APQA requires advance notification at least 5 days before your pet arrives at Incheon. This is separate from any titre test or health certificate process — it's a simple notification that must be submitted. Your cargo agent does this routinely; confirm it's done before travel day.
+        South Korea's APQA requires advance notification at least 5 days before your pet arrives at Incheon. This is separate from any titre test or health certificate process, it's a simple notification that must be submitted. Your cargo agent does this routinely; confirm it's done before travel day.
     - heading: "Singapore Airlines vs Korean Air on SIN-ICN"
       body: |
         Both operate direct daily services between Changi and Incheon. Singapore Airlines has strong AVS Changi export familiarity; Korean Air has deep APQA Incheon import familiarity. On a short-haul route like this, both are equally capable. Book based on schedule and cargo availability.

@@ -2,7 +2,7 @@
 title: "Pet Transport from South Korea to Australia: DAFF Import Permit, QIAS Export Certificate and Quarantine at Mickleham"
 description: "Moving a dog or cat from South Korea to Australia. DAFF requires an import permit, rabies titre test and pre-export preparation. All pets spend 10 days at the Australian Centre for Disease Preparedness. Full guide for owners relocating from Seoul."
 date: "2026-05-28"
-author: "Gareth — Founder, PetTransportGlobal"
+author: "Gareth, Founder, PetTransportGlobal"
 type: "route"
 slug: "south-korea-to-australia"
 origin_country: "South Korea"
@@ -28,19 +28,19 @@ route_data:
   titre_test_required: true
   titre_test_threshold: "≥ 0.5 IU/ml (FAVN method)"
   approved_labs: ["CSIRO AAHL, Australia", "VSL, UK", "ANSES, France"]
-  approved_entry_airports: ["MEL (Melbourne) — primary", "SYD (Sydney)", "BNE (Brisbane)", "PER (Perth)"]
+  approved_entry_airports: ["MEL (Melbourne), primary", "SYD (Sydney)", "BNE (Brisbane)", "PER (Perth)"]
   airlines: ["Korean Air (KE)", "Asiana Airlines", "Qantas via partner cargo", "Singapore Airlines via SIN"]
 faqs:
   - q: "Is there mandatory quarantine for pets from South Korea arriving in Australia?"
     a: "Yes. All dogs and cats entering Australia must complete a minimum 10-day quarantine at the Australian Centre for Disease Preparedness (ACDP) in Mickleham, Victoria, regardless of vaccination status or origin country. There are no exceptions and the quarantine cannot be served at home."
   - q: "How long before travel does the DAFF import permit application need to be submitted?"
-    a: "DAFF recommends applying at least 6 months before your intended travel date, and many owners apply 12 months out. Processing times vary and permits are granted for a specific window — if you miss that window, you must reapply. The permit will specify the approved quarantine facility and timing."
+    a: "DAFF recommends applying at least 6 months before your intended travel date, and many owners apply 12 months out. Processing times vary and permits are granted for a specific window, if you miss that window, you must reapply. The permit will specify the approved quarantine facility and timing."
   - q: "What rabies titre test is required for Australia?"
-    a: "Dogs and cats from South Korea must have a FAVN rabies neutralising antibody test showing ≥0.5 IU/ml. The blood sample must be taken at least 180 days before arrival in Australia (or 90 days depending on travel group — check DAFF's current country-specific requirements). Use an approved Australian laboratory or DAFF-accepted overseas lab."
+    a: "Dogs and cats from South Korea must have a FAVN rabies neutralising antibody test showing ≥0.5 IU/ml. The blood sample must be taken at least 180 days before arrival in Australia (or 90 days depending on travel group, check DAFF's current country-specific requirements). Use an approved Australian laboratory or DAFF-accepted overseas lab."
   - q: "Which airlines carry pets from Seoul to Australia?"
-    a: "Korean Air and Asiana Airlines carry pets as cargo from ICN to Australian destinations. Singapore Airlines via SIN is a reliable option with strong live animal cargo infrastructure. Confirm DAFF pre-notification requirements with your carrier — Australia requires advance notification of arriving live animals."
+    a: "Korean Air and Asiana Airlines carry pets as cargo from ICN to Australian destinations. Singapore Airlines via SIN is a reliable option with strong live animal cargo infrastructure. Confirm DAFF pre-notification requirements with your carrier, Australia requires advance notification of arriving live animals."
 links:
-  - label: "DAFF — Importing Cats and Dogs to Australia"
+  - label: "DAFF, Importing Cats and Dogs to Australia"
     url: "https://www.agriculture.gov.au/biosecurity-trade/import/live-animals/cats-dogs"
   - label: "ACDP Quarantine Facility, Mickleham"
     url: "https://www.agriculture.gov.au/biosecurity-trade/import/live-animals/cats-dogs/post-arrival-quarantine"
@@ -48,9 +48,9 @@ links:
 
 ## South Korea to Australia: A Lengthy But Well-Structured Process
 
-Australia's biosecurity requirements are among the world's strictest — and that applies to pets from South Korea just as much as from any other non-Group 1 country. The good news: the process is well-documented, DAFF staff are responsive, and if you start early and follow each step precisely, the outcome is predictable.
+Australia's biosecurity requirements are among the world's strictest, and that applies to pets from South Korea just as much as from any other non-Group 1 country. The good news: the process is well-documented, DAFF staff are responsive, and if you start early and follow each step precisely, the outcome is predictable.
 
-Budget **20–36 months** of preparation time from the date you begin. This is not an exaggeration — the title test timing, permit processing and quarantine booking all have their own lead times that must be respected.
+Budget **20–36 months** of preparation time from the date you begin. This is not an exaggeration, the title test timing, permit processing and quarantine booking all have their own lead times that must be respected.
 
 ---
 
@@ -74,7 +74,7 @@ Apply via DAFF's online system. You will need to provide:
 - Intended travel date and Australian state of destination
 - Confirmation the animal will meet all health requirements
 
-DAFF issues the permit specifying exactly what treatments are required, in what sequence, and with what timing. Follow the permit conditions exactly — any deviation requires a new permit or can result in extended quarantine.
+DAFF issues the permit specifying exactly what treatments are required, in what sequence, and with what timing. Follow the permit conditions exactly, any deviation requires a new permit or can result in extended quarantine.
 
 ---
 
@@ -82,7 +82,7 @@ DAFF issues the permit specifying exactly what treatments are required, in what 
 
 The FAVN titre test blood sample must be collected at a DAFF-approved laboratory or sent to one. The sample must show ≥0.5 IU/ml and must be collected **at least 180 days before arrival in Australia**.
 
-For South Korea-based owners, CSIRO AAHL in Australia is the reference lab — samples can be couriered from Seoul. VSL UK and ANSES France are also accepted. Confirm with DAFF which labs they currently recognise.
+For South Korea-based owners, CSIRO AAHL in Australia is the reference lab, samples can be couriered from Seoul. VSL UK and ANSES France are also accepted. Confirm with DAFF which labs they currently recognise.
 
 This 180-day window is the primary timeline driver. Start counting from the day the blood is drawn.
 
@@ -90,7 +90,7 @@ This 180-day window is the primary timeline driver. Start counting from the day 
 
 ## Step 3: QIAS Export Health Certificate
 
-Within 5 days of departure, your Korean vet prepares the health certificate. QIAS endorses it at their airport office. The DAFF import permit will specify exactly what the health certificate must contain — some treatments (tick treatment, internal parasite treatment) must be applied within specific windows before departure and recorded on the certificate.
+Within 5 days of departure, your Korean vet prepares the health certificate. QIAS endorses it at their airport office. The DAFF import permit will specify exactly what the health certificate must contain, some treatments (tick treatment, internal parasite treatment) must be applied within specific windows before departure and recorded on the certificate.
 
 ---
 
@@ -106,9 +106,9 @@ If your final destination is not Melbourne, you can book an ACDP-approved animal
 
 **Korean Air** and **Asiana Airlines** are the primary options from ICN. Both have cargo infrastructure for live animals.
 
-**Singapore Airlines via SIN** is an excellent alternative — SIN has one of the best live animal cargo facilities in Asia, and SQ's cargo team is experienced with DAFF requirements.
+**Singapore Airlines via SIN** is an excellent alternative: SIN has one of the best live animal cargo facilities in Asia, and SQ's cargo team is experienced with DAFF requirements.
 
-All carriers must be pre-notified of live animal cargo — DAFF requires advance notice of arriving animals. Confirm with your carrier at booking that they will file the necessary notification.
+All carriers must be pre-notified of live animal cargo, DAFF requires advance notice of arriving animals. Confirm with your carrier at booking that they will file the necessary notification.
 
 ---
 

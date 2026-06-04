@@ -1,8 +1,8 @@
 ---
 title: "Pet Transport from Malaysia to South Korea: QIAS Registration, DVS Certificate and Entry at Incheon"
-description: "Bringing a dog or cat from Malaysia to South Korea. Korea requires QIAS pre-registration, a government health certificate and rabies vaccination — no titre test, no quarantine for compliant pets. Full guide for owners relocating from KL."
+description: "Bringing a dog or cat from Malaysia to South Korea. Korea requires QIAS pre-registration, a government health certificate and rabies vaccination, no titre test, no quarantine for compliant pets. Full guide for owners relocating from KL."
 date: "2026-05-28"
-author: "Gareth — Founder, PetTransportGlobal"
+author: "Gareth, Founder, PetTransportGlobal"
 type: "route"
 slug: "malaysia-to-south-korea"
 origin_country: "Malaysia"
@@ -24,7 +24,7 @@ route_data:
   min_weeks: 4
   quarantine: false
   titre_test_required: false
-  approved_entry_airports: ["ICN (Incheon)", "GMP (Gimpo — domestic transfers only)"]
+  approved_entry_airports: ["ICN (Incheon)", "GMP (Gimpo, domestic transfers only)"]
   airlines: ["Malaysia Airlines (MH)", "Korean Air (KE)", "Asiana Airlines", "AirAsia X"]
 faqs:
   - q: "Do I need a titre test to bring my pet from Malaysia to South Korea?"
@@ -38,7 +38,7 @@ faqs:
 links:
   - label: "QIAS Pet Import Guide (South Korea)"
     url: "https://www.qia.go.kr/english"
-  - label: "DVS Malaysia — Live Animal Export"
+  - label: "DVS Malaysia, Live Animal Export"
     url: "https://www.dvs.gov.my"
 ---
 
@@ -46,7 +46,7 @@ links:
 
 Compared to the complex Japan corridor, moving a pet from Malaysia to South Korea is refreshingly straightforward. South Korea's QIAS (Quarantine and Inspection Agency) process is well-organised, the documentation requirements are clear, and there is no titre test or quarantine for animals arriving correctly prepared.
 
-Allow **4–8 weeks** to complete the process comfortably — most of that is scheduling the DVS appointment and waiting for the health certificate.
+Allow **4–8 weeks** to complete the process comfortably, most of that is scheduling the DVS appointment and waiting for the health certificate.
 
 ---
 
@@ -56,7 +56,7 @@ Allow **4–8 weeks** to complete the process comfortably — most of that is sc
 - **Rabies vaccination**: Valid, at least 30 days before travel (primary course must be complete)
 - **DVS Malaysia health certificate**: Government-issued, within 10 days of departure
 - **QIAS pre-registration**: Online, minimum 7 days before arrival
-- **Entry airport**: Incheon International (ICN) — the only approved entry point for live animal imports
+- **Entry airport**: Incheon International (ICN): the only approved entry point for live animal imports
 
 No quarantine, no titre test, no import permit from a Korean ministry.
 
@@ -72,7 +72,7 @@ The Department of Veterinary Services issues health certificates for live animal
 - That the animal is clinically healthy and free from signs of infectious disease
 - DVS vet signature and government stamp
 
-Book the DVS appointment 2–3 weeks before your intended travel date. The certificate is valid for 10 days from issue — plan your departure date accordingly. Take the original plus one copy.
+Book the DVS appointment 2–3 weeks before your intended travel date. The certificate is valid for 10 days from issue, plan your departure date accordingly. Take the original plus one copy.
 
 ---
 
@@ -85,7 +85,7 @@ The QIAS online registration portal (qia.go.kr) allows pet owners to pre-registe
 - Flight booking confirmation
 - Passport details
 
-QIAS will send a confirmation number. Print this and carry it with the original health certificate. On arrival at Incheon, go to the quarantine inspection counter before collecting your luggage. The inspector will check documents and issue a clearance certificate — typically 1–2 hours.
+QIAS will send a confirmation number. Print this and carry it with the original health certificate. On arrival at Incheon, go to the quarantine inspection counter before collecting your luggage. The inspector will check documents and issue a clearance certificate, typically 1–2 hours.
 
 ---
 
@@ -97,16 +97,16 @@ QIAS will send a confirmation number. Print this and carry it with the original 
 
 **AirAsia X** accepts small pets in the cabin on KUL–ICN and KUL–GMP routes depending on aircraft type and availability.
 
-Check seasonal embargoes — summer peak and Chuseok/Lunar New Year holidays see embargo periods on some carriers.
+Check seasonal embargoes, summer peak and Chuseok/Lunar New Year holidays see embargo periods on some carriers.
 
 ---
 
 ## Practical Notes for KL-Based Owners
 
-**Timing your DVS appointment**: DVS offices at Putrajaya and Kuala Lumpur process export certificates. Call ahead — waiting times vary. Some owners use accredited private veterinary clinics that can prepare documents for DVS endorsement, speeding up the process.
+**Timing your DVS appointment**: DVS offices at Putrajaya and Kuala Lumpur process export certificates. Call ahead: waiting times vary. Some owners use accredited private veterinary clinics that can prepare documents for DVS endorsement, speeding up the process.
 
 **IATA crate sizing**: Measure your pet standing, sitting and lying flat. Add 10cm to each dimension. The crate must allow the animal to stand, turn and lie in a natural position. DVS inspectors will check the crate at departure.
 
 **Arriving at Incheon**: Terminal 1 handles most international cargo. The quarantine inspection counter is on the arrivals level. If flying with the pet as checked excess baggage, retrieve the crate from the oversized baggage belt before going to quarantine.
 
-**Microchip scanning in Korea**: Korean vets use universal ISO scanners. If your pet has an older 10-digit chip, confirm it reads on ISO equipment before departure — some older chips need a special scanner. DVS can confirm this at the health cert appointment.
+**Microchip scanning in Korea**: Korean vets use universal ISO scanners. If your pet has an older 10-digit chip, confirm it reads on ISO equipment before departure: some older chips need a special scanner. DVS can confirm this at the health cert appointment.

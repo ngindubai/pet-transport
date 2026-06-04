@@ -115,7 +115,7 @@ content:
         | LHR - AMS - MVD | KLM | 18-20h | Yes | KLM Cargo. Verify current acceptance. |
         | LHR - FRA - MVD | Lufthansa | 18-20h | Yes | Lufthansa Cargo. Reliable. |
 
-        Avoid US connections unless necessary — a US transit can trigger additional USDA import requirements for your pet.
+        Avoid US connections unless necessary, a US transit can trigger additional USDA import requirements for your pet.
 faqs:
   - question: "Does my pet need a titre test to travel from the UK to Uruguay?"
     answer: "No. Uruguay does not require a titre test for pets from the United Kingdom. You need a current rabies vaccination, ISO microchip, UK Animal Health Certificate, and a MGAP import permit from Uruguay's DGSG."

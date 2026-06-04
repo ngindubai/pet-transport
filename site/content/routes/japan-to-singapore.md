@@ -98,7 +98,7 @@ route_data:
 content:
   h1: "Pet Transport from Japan to Singapore"
   overview: |
-    Japan to Singapore sounds simple on paper — a 7-hour flight between two of Asia's most organised countries. In practice, AVS Singapore likely classifies Japan as Category C, meaning a titre test, a 6-month wait, and 30 days of mandatory quarantine on arrival. Total preparation: 36-44 weeks.
+    Japan to Singapore sounds simple on paper, a 7-hour flight between two of Asia's most organised countries. In practice, AVS Singapore likely classifies Japan as Category C, meaning a titre test, a 6-month wait, and 30 days of mandatory quarantine on arrival. Total preparation: 36-44 weeks.
 
     ANA and Singapore Airlines both fly direct from Tokyo to Changi, so once the waiting period is behind you, the logistics are clean.
   sections:
@@ -106,7 +106,7 @@ content:
       body: |
         Japan's AQS has one of the world's most rigorous pet import systems. Singapore's AVS is equally thorough on the import side. Moving a pet between them requires satisfying both.
 
-        From Japan, the AQS export health certificate must be in AVS Singapore's required format and issued within a dual timing window: within 10 days of travel from Japan AND within 7 days of arrival in Singapore. With a 7-hour NRT-SIN flight, these windows overlap comfortably — but plan the AQS appointment accordingly.
+        From Japan, the AQS export health certificate must be in AVS Singapore's required format and issued within a dual timing window: within 10 days of travel from Japan AND within 7 days of arrival in Singapore. With a 7-hour NRT-SIN flight, these windows overlap comfortably, but plan the AQS appointment accordingly.
 
         From Singapore's perspective, Japan is likely Category C. The FAVN titre test and a 6-month wait from blood draw apply. Then 30 days of mandatory quarantine at the Singapore Quarantine Station on arrival, regardless of how thorough the pre-travel documentation is. Pre-book the quarantine slot early; spaces fill ahead of the application deadlines.
     - heading: "ANA or Singapore Airlines: which to choose"

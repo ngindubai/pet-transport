@@ -86,14 +86,14 @@ content:
       body: |
         South Korea's APQA classifies origin countries by their rabies risk profile. EU member states, including Ireland, are treated as low-risk origins. For pets from Ireland, this removes both the titre test requirement and any mandatory pre-entry waiting period.
 
-        In practice, you need a current microchip (ISO 11784/11785), an up-to-date rabies vaccination, and an official DAFM-endorsed health certificate in the format APQA accepts. Your DAFM-registered vet can prepare this, but it must be issued within 10 days of travel — book the appointment with that timing in mind.
+        In practice, you need a current microchip (ISO 11784/11785), an up-to-date rabies vaccination, and an official DAFM-endorsed health certificate in the format APQA accepts. Your DAFM-registered vet can prepare this, but it must be issued within 10 days of travel, book the appointment with that timing in mind.
 
         The 5-day advance APQA notification is the administrative step that's most commonly missed. Your cargo agent or transport specialist should handle this as a standard part of the booking, but confirm it's been submitted before travel day.
     - heading: "Dublin to Seoul: routing options"
       body: |
         No direct Dublin-Seoul cargo flight exists. The most efficient routings are via Dubai (Emirates SkyCargo), Doha (Qatar Airways Cargo), or Frankfurt (Lufthansa Cargo). Aer Lingus connects to partner cargo services for onward movement.
 
-        Emirates and Qatar Airways both have experience with live animal cargo on long-haul routes and serve Incheon directly from their respective hubs. Lufthansa restricts brachycephalic breeds from cargo year-round — worth knowing if that applies to your dog.
+        Emirates and Qatar Airways both have experience with live animal cargo on long-haul routes and serve Incheon directly from their respective hubs. Lufthansa restricts brachycephalic breeds from cargo year-round, worth knowing if that applies to your dog.
 
         Korean Air Cargo also operates connections from European hubs to Incheon. Whichever routing you choose, confirm that your transit hub allows live animal cargo transits before booking.
 faqs:

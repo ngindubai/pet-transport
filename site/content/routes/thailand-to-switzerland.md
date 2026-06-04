@@ -63,7 +63,7 @@ route_data:
     - step: 4
       action: "3-month mandatory waiting period"
       timing: "Starts from blood draw date. Non-negotiable under Swiss-EU rules."
-      responsible: "N/A — waiting period"
+      responsible: "N/A: waiting period"
     - step: 5
       action: "Book SWISS Cargo or alternative for BKK-ZRH"
       timing: "Once travel date confirmed and waiting period is complete."

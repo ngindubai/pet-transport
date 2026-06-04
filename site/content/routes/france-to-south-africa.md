@@ -87,7 +87,7 @@ content:
       body: |
         South Africa has bilateral veterinary agreements with a number of countries, recognising their vaccination and pet health record systems as equivalent to South African standards. France is one of them. The practical result: instead of needing a FAVN titre test and a 3-month waiting period (which adds 22+ weeks to preparation), pets from France only need a current microchip, a rabies vaccination within the 30-to-365-day window before arrival, and the DALRRD import permit.
 
-        That vaccination window matters. The rabies shot must be at least 30 days old and not more than 12 months old when your pet arrives at O.R. Tambo. If your pet's last vaccination will be over 12 months old by the time you travel, book a booster now — and plan it at least 30 days before the South Africa arrival date.
+        That vaccination window matters. The rabies shot must be at least 30 days old and not more than 12 months old when your pet arrives at O.R. Tambo. If your pet's last vaccination will be over 12 months old by the time you travel, book a booster now, and plan it at least 30 days before the South Africa arrival date.
     - heading: "The DALRRD permit: what's involved and why it takes time"
       body: |
         The Veterinary Import Permit from DALRRD is the document that authorises your specific pet to enter South Africa. It specifies the animal, the origin country, the entry port, and the health conditions that must be met. The health certificate issued in France must match the conditions in the permit exactly.

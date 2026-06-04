@@ -1,8 +1,8 @@
 ---
 title: "Pet Transport from Indonesia to South Korea: BARANTAN Export Certificate, QIAS Registration and ICN Entry"
-description: "Moving a dog or cat from Indonesia to South Korea. Korea requires QIAS pre-registration, a BARANTAN-endorsed health certificate and valid rabies vaccination — no titre test, no quarantine for compliant animals. Guide for Jakarta and Bali owners."
+description: "Moving a dog or cat from Indonesia to South Korea. Korea requires QIAS pre-registration, a BARANTAN-endorsed health certificate and valid rabies vaccination, no titre test, no quarantine for compliant animals. Guide for Jakarta and Bali owners."
 date: "2026-05-28"
-author: "Gareth — Founder, PetTransportGlobal"
+author: "Gareth, Founder, PetTransportGlobal"
 type: "route"
 slug: "indonesia-to-south-korea"
 origin_country: "Indonesia"
@@ -34,11 +34,11 @@ faqs:
   - q: "How do I get a BARANTAN export health certificate?"
     a: "Have your vet prepare the health certificate, then bring the animal and documents to your local BARANTAN office for inspection and endorsement. BARANTAN will verify the microchip, vaccination records and health status before stamping the certificate. Allow 5–10 working days and book the appointment in advance."
   - q: "Can I fly my cat in the cabin from Jakarta to Seoul?"
-    a: "Most international carriers on this route do not allow pets in the cabin for the CGK–ICN segment. Korean Air and Garuda Indonesia accept small pets as checked excess baggage (hold) and larger pets as manifest cargo. Check each airline's weight and size limits — in-cabin is generally limited to domestic segments."
+    a: "Most international carriers on this route do not allow pets in the cabin for the CGK–ICN segment. Korean Air and Garuda Indonesia accept small pets as checked excess baggage (hold) and larger pets as manifest cargo. Check each airline's weight and size limits, in-cabin is generally limited to domestic segments."
 links:
   - label: "QIAS Pet Import Guide (South Korea)"
     url: "https://www.qia.go.kr/english"
-  - label: "BARANTAN Indonesia — Live Animal Export"
+  - label: "BARANTAN Indonesia, Live Animal Export"
     url: "https://karantinapertanian.go.id"
 ---
 
@@ -65,7 +65,7 @@ BARANTAN offices are located across Indonesia in all major cities. The process:
 1. Have your vet prepare a health certificate including microchip number, vaccination dates, breed description and a declaration of clinical health
 2. Book a BARANTAN appointment and bring the animal for physical inspection
 3. BARANTAN inspectors verify documents and examine the animal
-4. Certificate is stamped and endorsed — valid for 10 days from endorsement
+4. Certificate is stamped and endorsed, valid for 10 days from endorsement
 
 For Bali-based owners, the BARANTAN office is near Ngurah Rai Airport. For Jakarta owners, the relevant BARANTAN office is at Soekarno-Hatta. Allow extra time for peak travel periods and public holidays.
 
@@ -87,4 +87,4 @@ On arrival at ICN, go to the quarantine inspection counter before luggage collec
 
 **Asiana Airlines** serves CGK–ICN with pet cargo options.
 
-**AirAsia X** connects via Kuala Lumpur — adding a transit may be an option if direct fares are not available, but ensure transit does not affect BARANTAN certificate validity (10-day window).
+**AirAsia X** connects via Kuala Lumpur: adding a transit may be an option if direct fares are not available, but ensure transit does not affect BARANTAN certificate validity (10-day window).

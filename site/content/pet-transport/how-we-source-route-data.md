@@ -8,7 +8,7 @@ draft: false
 
 # How We Source Our Route Data
 
-PetTransportGlobal covers more than 5,000 directional pet transport routes across 75 countries. Every route page, country guide, and airline policy on this site is built from named, official sources — not third-party summaries or guesswork. This page explains exactly how we research, verify, and update that information.
+PetTransportGlobal covers more than 5,000 directional pet transport routes across 75 countries. Every route page, country guide, and airline policy on this site is built from named, official sources, not third-party summaries or guesswork. This page explains exactly how we research, verify, and update that information.
 
 **Regulations verified: May 2026.** Requirements change. Always confirm current rules with the relevant authority before you travel.
 
@@ -18,14 +18,14 @@ PetTransportGlobal covers more than 5,000 directional pet transport routes acros
 
 Every import requirement, quarantine rule, and titre test timeline on this site comes directly from government or intergovernmental authorities. Our primary sources are:
 
-- **UK APHA / DEFRA** — UK pet travel and import rules: [gov.uk/bring-pet-to-great-britain](https://www.gov.uk/bring-pet-to-great-britain)
-- **USDA APHIS** — US pet import requirements: [aphis.usda.gov/pet-travel](https://www.aphis.usda.gov/pet-travel)
-- **Australian DAFF** — Australian biosecurity and import rules: [agriculture.gov.au](https://www.agriculture.gov.au/biosecurity-trade/import/live-animals/pets)
-- **EU TRACES / EU Reg 576/2013** — EU pet movement rules: [ec.europa.eu/food/animals/pet-movement](https://food.ec.europa.eu/animals/movement-pets_en)
-- **Japan AQS** — Animal Quarantine Service: [maff.go.jp/aqs](https://www.maff.go.jp/aqs/english/)
-- **Singapore AVS** — Animal and Veterinary Service: [nparks.gov.sg](https://www.nparks.gov.sg/avs)
-- **New Zealand MPI** — Ministry for Primary Industries: [mpi.govt.nz](https://www.mpi.govt.nz/travel-and-recreation/bringing-animals-to-nz/)
-- **IATA Live Animals Regulations** — Crate standards, species rules, and airline cargo policies
+- **UK APHA / DEFRA**: UK pet travel and import rules: [gov.uk/bring-pet-to-great-britain](https://www.gov.uk/bring-pet-to-great-britain)
+- **USDA APHIS**: US pet import requirements: [aphis.usda.gov/pet-travel](https://www.aphis.usda.gov/pet-travel)
+- **Australian DAFF**: Australian biosecurity and import rules: [agriculture.gov.au](https://www.agriculture.gov.au/biosecurity-trade/import/live-animals/pets)
+- **EU TRACES / EU Reg 576/2013**: EU pet movement rules: [ec.europa.eu/food/animals/pet-movement](https://food.ec.europa.eu/animals/movement-pets_en)
+- **Japan AQS**: Animal Quarantine Service: [maff.go.jp/aqs](https://www.maff.go.jp/aqs/english/)
+- **Singapore AVS**: Animal and Veterinary Service: [nparks.gov.sg](https://www.nparks.gov.sg/avs)
+- **New Zealand MPI**: Ministry for Primary Industries: [mpi.govt.nz](https://www.mpi.govt.nz/travel-and-recreation/bringing-animals-to-nz/)
+- **IATA Live Animals Regulations**: Crate standards, species rules, and airline cargo policies
 - Named airline policy pages for each carrier covered on the site
 
 For countries not covered by the above, we use the relevant national veterinary authority or ministry of agriculture.
@@ -38,7 +38,7 @@ Each route page and country guide is researched directly against the primary sou
 
 Where official sources are unclear or contradictory, we flag this on the relevant page and recommend owners contact the authority directly.
 
-All regulatory data carries a **"Regulations verified"** date stamp on the page itself. This reflects the date the content was last checked against the primary source — not the date of publication.
+All regulatory data carries a **"Regulations verified"** date stamp on the page itself. This reflects the date the content was last checked against the primary source, not the date of publication.
 
 ---
 
@@ -54,7 +54,7 @@ If you spot an error or an out-of-date regulation, please [contact us](/contact/
 
 ---
 
-## What this site is — and is not
+## What this site is: and is not
 
 PetTransportGlobal is a guidance and lead-generation resource. It is **not** a licensed veterinary authority, government body, or legal advisor.
 

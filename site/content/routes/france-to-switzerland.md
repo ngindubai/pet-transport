@@ -1,6 +1,6 @@
 ---
 title: "Pet Transport from France to Switzerland | EU-CH Agreement, No Titre Test & Guide"
-description: "Moving your pet from France to Switzerland: bilateral EU-CH agreement means EU Pet Passport accepted, no titre test, no quarantine — TGV, road, or Air France options."
+description: "Moving your pet from France to Switzerland: bilateral EU-CH agreement means EU Pet Passport accepted, no titre test, no quarantine, TGV, road, or Air France options."
 type: "routes"
 layout: "single"
 template_variant: "D"
@@ -72,7 +72,7 @@ content:
   sections:
     - heading: "Is the EU Pet Passport really enough for Switzerland?"
       body: |
-        Yes. Switzerland's bilateral veterinary agreement with the EU means the EU Pet Passport — recording your pet's ISO microchip and a current rabies vaccination — is accepted at Swiss border crossings for personal pets. The acceptance is well-established and robust.
+        Yes. Switzerland's bilateral veterinary agreement with the EU means the EU Pet Passport, recording your pet's ISO microchip and a current rabies vaccination, is accepted at Swiss border crossings for personal pets. The acceptance is well-established and robust.
 
         Switzerland is not an EU member, but it has aligned its pet movement rules closely with EU Regulation 576/2013 through the bilateral agreement. FSVO (the Swiss Federal Food Safety and Veterinary Office) recognises EU veterinary certification without requiring a separate Swiss health certificate.
 
@@ -81,7 +81,7 @@ content:
       body: |
         **Drive:** The most common choice for France-Switzerland. Lyon to Geneva is 1 hour 30 minutes. Paris to Basel is 3 hours 30 minutes. Strasbourg to Basel is 30 minutes. Your pet is in the car throughout.
 
-        **TGV / SNCF:** Paris to Geneva in 3 hours 10 minutes. Paris to Zurich in about 4 hours. SNCF allows small pets in carriers on TGV services. The train crosses into Switzerland without stopping for customs — border formalities happen at the Swiss station if at all. Keep the EU passport accessible.
+        **TGV / SNCF:** Paris to Geneva in 3 hours 10 minutes. Paris to Zurich in about 4 hours. SNCF allows small pets in carriers on TGV services. The train crosses into Switzerland without stopping for customs: border formalities happen at the Swiss station if at all. Keep the EU passport accessible.
 
         **Fly:** Paris CDG to Zurich ZRH on Air France or SWISS is about 1 hour. Small pets in cabin on both airlines. The airport adds significant overhead to a journey that takes 4 hours by train. Useful if you're already flying.
     - heading: "Breed restrictions: France and Switzerland"

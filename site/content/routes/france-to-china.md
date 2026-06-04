@@ -101,7 +101,7 @@ content:
   overview: |
     France to China is one of the most regulated pet moves you can attempt. GACC requires a 180-day wait after the titre test, a mandatory 30-day quarantine for dogs on arrival, and limits entry to one pet per person per year. Air France flies direct from Paris to Beijing, Shanghai, and Guangzhou, but the regulatory complexity is substantial regardless of the logistics.
 
-    Allow 36-44 weeks. SCELAB in France may qualify as a GACC-approved laboratory — verify this before booking the titre test.
+    Allow 36-44 weeks. SCELAB in France may qualify as a GACC-approved laboratory, verify this before booking the titre test.
   sections:
     - heading: "GACC protocol: France to China at a glance"
       body: |
@@ -112,7 +112,7 @@ content:
         | Titre test | FAVN, GACC-approved lab, 0.5+ IU/ml |
         | Post-titre wait | 180 days from blood draw |
         | Dog quarantine on arrival | 30 days at GACC facility, owner pays |
-        | Cat quarantine | 7 days if approved — confirm for France |
+        | Cat quarantine | 7 days if approved: confirm for France |
         | Import limit | One dog or cat per person per year |
         | Entry airports | GACC-approved list only |
         | Health certificate | DDPP-endorsed GACC format, within 10 days |
@@ -128,7 +128,7 @@ content:
       body: |
         Air France operates direct cargo from Paris CDG to Beijing Capital/Daxing, Shanghai Pudong, and Guangzhou Baiyun. As France's national carrier with established China routes, their CDG cargo team is familiar with GACC-bound documentation. All three Chinese entry airports are GACC-designated for live animal imports.
 
-        Chinese carriers — Air China (Beijing), China Eastern (Shanghai), China Southern (Guangzhou) — each bring strong GACC arrival familiarity at their hub cities. Contact your agent to determine which carrier and city routing best fits your final destination in China.
+        Chinese carriers, Air China (Beijing), China Eastern (Shanghai), China Southern (Guangzhou), each bring strong GACC arrival familiarity at their hub cities. Contact your agent to determine which carrier and city routing best fits your final destination in China.
 faqs:
   - question: "Does my French pet need a titre test to enter China?"
     answer: "Yes. China's GACC requires a FAVN titre test for pets from most countries including France. Minimum 0.5 IU/ml at a GACC-approved laboratory, followed by a mandatory 180-day wait from the blood draw date."

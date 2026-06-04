@@ -26,7 +26,7 @@ route_data:
       quarantine: "No quarantine for compliant pets. NVWA documentary check at Amsterdam Schiphol (AMS) Border Control Post on arrival."
       import_permit: "Not required. Conditions governed by EU Regulation 576/2013."
       health_certificate: "Required. EU Annex IV veterinary health certificate for non-listed countries, issued by an official veterinarian and endorsed by BAI within 10 days of travel."
-      entry_point: "Amsterdam Airport Schiphol (AMS) — primary EU BCP for Netherlands pet imports. One of Europe's busiest and best-equipped pet import checkpoints."
+      entry_point: "Amsterdam Airport Schiphol (AMS), primary EU BCP for Netherlands pet imports. One of Europe's busiest and best-equipped pet import checkpoints."
       authority: "NVWA (Nederlandse Voedsel en Warenautoriteit / Netherlands Food and Consumer Product Safety Authority). EU Regulation 576/2013 applies."
   airlines:
     - name: "KLM"
@@ -63,7 +63,7 @@ route_data:
     - step: 4
       action: "3-month mandatory waiting period"
       timing: "Starts from the blood draw date. Non-negotiable."
-      responsible: "N/A — waiting period"
+      responsible: "N/A: waiting period"
     - step: 5
       action: "Book KLM Cargo (or alternative) for MNL-AMS"
       timing: "Book once travel date is confirmed after the waiting period."

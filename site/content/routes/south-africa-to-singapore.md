@@ -100,7 +100,7 @@ content:
       body: |
         | Requirement | Detail |
         |---|---|
-        | AVS Category (SA) | Verify — likely C | nparks.gov.sg/avs |
+        | AVS Category (SA) | Verify: likely C | nparks.gov.sg/avs |
         | Microchip | ISO 11784/11785, before vaccination |
         | Rabies vaccination | Required, 30+ days before titre test |
         | Titre test | FAVN/ELISA, AVS-approved lab, 0.5+ IU/ml |
@@ -116,11 +116,11 @@ content:
       body: |
         This route requires three separate administrative tracks running simultaneously.
 
-        **Track 1 — Titre test and AVS wait:** Vaccination, blood draw, 6-month wait. This is the longest track and the one that sets your earliest possible travel date.
+        **Track 1: Titre test and AVS wait:** Vaccination, blood draw, 6-month wait. This is the longest track and the one that sets your earliest possible travel date.
 
-        **Track 2 — Permits:** DALRRD export permit (4-8 weeks, provincial State Vet) and AVS import permit (30+ days, via AVS e-service). Both can run during the titre test waiting period.
+        **Track 2: Permits:** DALRRD export permit (4-8 weeks, provincial State Vet) and AVS import permit (30+ days, via AVS e-service). Both can run during the titre test waiting period.
 
-        **Track 3 — Quarantine booking:** SQS quarantine pre-booking. Spaces are limited. Book as soon as you know your intended Singapore arrival month.
+        **Track 3: Quarantine booking:** SQS quarantine pre-booking. Spaces are limited. Book as soon as you know your intended Singapore arrival month.
 
         An experienced pet transport agent who has handled South Africa–Singapore moves before is worth engaging early. Managing all three tracks simultaneously is feasible but detail-intensive.
     - heading: "Airline options JNB to SIN"

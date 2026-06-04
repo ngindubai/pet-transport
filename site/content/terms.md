@@ -5,7 +5,7 @@ type: "page"
 layout: "single"
 slug: "terms"
 url: "/terms/"
-author: "Gareth — Founder, PetTransportGlobal"
+author: "Gareth, Founder, PetTransportGlobal"
 ---
 
 # Terms & Conditions
@@ -58,7 +58,7 @@ Nothing in these terms limits our liability for death or personal injury caused 
 
 ## 6. Intellectual Property
 
-All content on this site — including text, route guides, country information, templates, and design — is the property of PetTransportGlobal. You may not reproduce, republish, or redistribute our content without written permission. Brief quotations with a link back to the source page are acceptable.
+All content on this site, including text, route guides, country information, templates, and design, is the property of PetTransportGlobal. You may not reproduce, republish, or redistribute our content without written permission. Brief quotations with a link back to the source page are acceptable.
 
 ---
 

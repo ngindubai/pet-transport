@@ -23,11 +23,11 @@ faqs:
     answer: "It depends on the species and its CITES status. Grey parrots (Psittacus erithacus) are CITES Appendix I and require both export and import permits. Many other parrot species are Appendix II and require at minimum an export permit. The permits must be obtained before travel. Applications can take 3-6 months for some species and jurisdictions."
 ---
 
-Most people relocating with dogs and cats do not encounter CITES. But if your companion animal is a parrot, tortoise, chameleon, monitor lizard, iguana, or any other non-domestic species, there is a reasonable chance it is covered by the Convention on International Trade in Endangered Species (CITES) — and moving it internationally without the right permits is a criminal offence in most countries.
+Most people relocating with dogs and cats do not encounter CITES. But if your companion animal is a parrot, tortoise, chameleon, monitor lizard, iguana, or any other non-domestic species, there is a reasonable chance it is covered by the Convention on International Trade in Endangered Species (CITES), and moving it internationally without the right permits is a criminal offence in most countries.
 
 ## What CITES Is
 
-CITES is an international treaty with 183 signatory countries. It regulates international trade in specimens of species that are threatened or may become threatened. "Trade" in CITES terms includes non-commercial movement — relocating your own pet counts.
+CITES is an international treaty with 183 signatory countries. It regulates international trade in specimens of species that are threatened or may become threatened. "Trade" in CITES terms includes non-commercial movement, relocating your own pet counts.
 
 Species are listed in three appendices:
 
@@ -73,7 +73,7 @@ Species are listed in three appendices:
 
 ## Application Timelines
 
-CITES permit applications take **3-6 months** for Appendix I species in some jurisdictions. Start early. Applications require documentation of legal acquisition — captive breeding certificates, original purchase receipts, and in some cases DNA testing or ring numbers.
+CITES permit applications take **3-6 months** for Appendix I species in some jurisdictions. Start early. Applications require documentation of legal acquisition, captive breeding certificates, original purchase receipts, and in some cases DNA testing or ring numbers.
 
 ## If You Do Not Have a Permit
 

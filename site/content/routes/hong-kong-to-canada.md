@@ -95,7 +95,7 @@ content:
 
         Vancouver is typically the entry point for HKG-YVR direct flights. If your final destination in Canada is western Canada, this is the natural choice. Toronto is the main hub for central and eastern Canada.
 
-        If you are continuing to a third city within Canada after clearing customs, your pet travels on an internal Canadian flight. Confirm that Air Canada or WestJet accepts pets on the domestic leg — the rules for domestic Canadian pet travel are different from international.
+        If you are continuing to a third city within Canada after clearing customs, your pet travels on an internal Canadian flight. Confirm that Air Canada or WestJet accepts pets on the domestic leg, the rules for domestic Canadian pet travel are different from international.
 faqs:
   - question: "Do I need a titre test to bring my pet from Hong Kong to Canada?"
     answer: "No. A titre test is not required for personal pet imports from Hong Kong to Canada. The main requirements are a current rabies vaccination for dogs and a health certificate issued within 10 days of Canadian arrival."

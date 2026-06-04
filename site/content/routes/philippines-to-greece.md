@@ -26,7 +26,7 @@ route_data:
       quarantine: "No quarantine for compliant pets. Documentary check by official veterinarian at designated Border Control Post (BCP) on arrival."
       import_permit: "Not required. However, all documentation must comply with EU Regulation 576/2013 before travel."
       health_certificate: "Required. EU-format veterinary health certificate for non-listed countries (Annex IV of Regulation 577/2013). Must be issued by an official veterinarian and endorsed by BAI within 10 days of travel."
-      entry_point: "Athens International Airport (ATH) — designated EU BCP for pet imports. Inspection by MINAGRIC border veterinarian required."
+      entry_point: "Athens International Airport (ATH), designated EU BCP for pet imports. Inspection by MINAGRIC border veterinarian required."
       authority: "Ministry of Rural Development and Food (MINAGRIC), Greece. EU Regulation 576/2013 applies."
   airlines:
     - name: "Lufthansa"
@@ -63,7 +63,7 @@ route_data:
     - step: 4
       action: "3-month mandatory waiting period"
       timing: "Begins on the date blood was drawn for the titre test (not the date of the result). Cannot be shortened."
-      responsible: "N/A — waiting period"
+      responsible: "N/A: waiting period"
     - step: 5
       action: "Book flight with confirmed cargo space"
       timing: "Book as soon as your 3-month wait ends and travel date is confirmed. Cargo space on long-haul routes books up fast."

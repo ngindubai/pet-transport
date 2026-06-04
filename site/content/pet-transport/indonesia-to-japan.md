@@ -1,8 +1,8 @@
 ---
 title: "Pet Transport from Indonesia to Japan: AQS 180-Day Protocol from Jakarta"
-description: "Bringing a dog or cat from Indonesia to Japan is one of Asia's most complex pet moves. Japan's full AQS protocol applies — microchip first, two rabies vaccinations, titre test at an approved overseas lab, 180-day wait, then quarantine on arrival. Complete guide."
+description: "Bringing a dog or cat from Indonesia to Japan is one of Asia's most complex pet moves. Japan's full AQS protocol applies, microchip first, two rabies vaccinations, titre test at an approved overseas lab, 180-day wait, then quarantine on arrival. Complete guide."
 date: "2026-05-28"
-author: "Gareth — Founder, PetTransportGlobal"
+author: "Gareth, Founder, PetTransportGlobal"
 type: "route"
 slug: "indonesia-to-japan"
 origin_country: "Indonesia"
@@ -34,21 +34,21 @@ faqs:
   - q: "Is Indonesia classified as a non-designated country for AQS purposes?"
     a: "Yes. Indonesia is not on the AQS designated country list, which means the full 180-day pre-entry protocol is mandatory for dogs and cats. There is no alternative, shorter pathway. The process takes 40–52 weeks from the first microchip implant."
   - q: "Which lab do Indonesian owners typically use for the FAVN titre test?"
-    a: "The blood sample must be sent to an AQS-approved overseas laboratory — labs in Indonesia are not approved. VSL in the UK and ANSES in France are most commonly used by owners in Southeast Asia. Allow 2–3 weeks for the sample to be collected, couriered, tested and results returned. Use an approved international courier that handles biological samples."
+    a: "The blood sample must be sent to an AQS-approved overseas laboratory, labs in Indonesia are not approved. VSL in the UK and ANSES in France are most commonly used by owners in Southeast Asia. Allow 2–3 weeks for the sample to be collected, couriered, tested and results returned. Use an approved international courier that handles biological samples."
   - q: "Can Garuda Indonesia carry pets as cargo to Japan?"
-    a: "Garuda Indonesia carries pets as manifest cargo on CGK–NRT and CGK–HND routes. Advance booking with Garuda Cargo is required. Some owners use Singapore Airlines or Cathay Pacific connections via SIN or HKG — both have strong pet cargo programmes with AQS experience."
+    a: "Garuda Indonesia carries pets as manifest cargo on CGK–NRT and CGK–HND routes. Advance booking with Garuda Cargo is required. Some owners use Singapore Airlines or Cathay Pacific connections via SIN or HKG, both have strong pet cargo programmes with AQS experience."
   - q: "What does BARANTAN issue for pet exports from Indonesia?"
     a: "BARANTAN (the Indonesian agricultural quarantine agency) issues a Veterinary Health Certificate for live animal exports. The certificate must be endorsed by BARANTAN and include all vaccination details, microchip number, titre test reference and a declaration that the animal has resided in Indonesia throughout the protocol period."
 links:
   - label: "AQS Import Requirements from Non-Designated Countries"
     url: "https://www.maff.go.jp/aqs/english/animal/dog/import-other.html"
-  - label: "BARANTAN Indonesia — Live Animal Export"
+  - label: "BARANTAN Indonesia, Live Animal Export"
     url: "https://karantinapertanian.go.id"
 ---
 
 ## Indonesia to Japan: Plan a Full Year Ahead
 
-This is one of the most demanding pet relocation routes in Asia. Japan's AQS protocol for non-designated countries — which includes Indonesia — requires a minimum of **40 weeks** of preparation, and 52 weeks is a more realistic planning horizon once you account for lab turnaround times, vet scheduling and AQS advance notice filing.
+This is one of the most demanding pet relocation routes in Asia. Japan's AQS protocol for non-designated countries, which includes Indonesia, requires a minimum of **40 weeks** of preparation, and 52 weeks is a more realistic planning horizon once you account for lab turnaround times, vet scheduling and AQS advance notice filing.
 
 If you are relocating from Jakarta, Bali, Surabaya or elsewhere in Indonesia to Japan, begin the protocol the day you know you are moving.
 
@@ -56,7 +56,7 @@ If you are relocating from Jakarta, Bali, Surabaya or elsewhere in Indonesia to 
 
 ## The AQS 180-Day Protocol: Every Step
 
-**Microchip (ISO 11784/11785) — first, before anything else**
+**Microchip (ISO 11784/11785): first, before anything else**
 AQS requires the microchip to be implanted *before* any vaccination is given. A vaccination administered before the chip is in place cannot be counted. Confirm the chip reads on a universal ISO scanner at the vet clinic and get the chip number in writing.
 
 **Rabies vaccination #1**
@@ -86,7 +86,7 @@ Your pet enters the AQS quarantine facility at NRT, HND, KIX or NGO on arrival. 
 
 BARANTAN offices relevant to live animal exports are located in Jakarta (Soekarno-Hatta area), Denpasar (Bali), Surabaya and other major cities. Call or visit your nearest BARANTAN office early in the process to confirm their current requirements and the health certificate format they will accept for Japan.
 
-Some Indonesian vets experienced in international relocations can assist with BARANTAN documentation — using a vet with prior Japan export experience significantly reduces the risk of documentation errors.
+Some Indonesian vets experienced in international relocations can assist with BARANTAN documentation, using a vet with prior Japan export experience significantly reduces the risk of documentation errors.
 
 ---
 

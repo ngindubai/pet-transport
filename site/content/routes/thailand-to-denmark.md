@@ -26,7 +26,7 @@ route_data:
       quarantine: "No quarantine for compliant pets. DVFA documentary check at Copenhagen Airport BCP on arrival."
       import_permit: "Not required. Entry conditions governed by EU Regulation 576/2013."
       health_certificate: "Required. EU Annex IV veterinary health certificate for non-listed countries. Issued by official veterinarian, endorsed by DLD, valid for 10 days from issue."
-      entry_point: "Copenhagen Airport (CPH) — designated EU BCP for Denmark pet imports. DVFA inspection required."
+      entry_point: "Copenhagen Airport (CPH), designated EU BCP for Denmark pet imports. DVFA inspection required."
       authority: "DVFA (Danish Veterinary and Food Administration / Fødevarestyrelsen), Denmark. EU Regulation 576/2013 applies."
   airlines:
     - name: "Thai Airways"
@@ -63,7 +63,7 @@ route_data:
     - step: 4
       action: "3-month mandatory waiting period"
       timing: "Starts from blood draw date. Non-negotiable."
-      responsible: "N/A — waiting period"
+      responsible: "N/A: waiting period"
     - step: 5
       action: "Book cargo space (Thai Airways BKK-CPH direct or alternative)"
       timing: "Once travel date confirmed and waiting period is complete."

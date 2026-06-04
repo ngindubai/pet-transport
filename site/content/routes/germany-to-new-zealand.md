@@ -1,6 +1,6 @@
 ---
 title: "Pet Transport from Germany to New Zealand | MPI NZSTAP Protocol, Titre Test & Guide"
-description: "Moving your pet from Germany to New Zealand: MPI NZSTAP import permit, FAVN titre test mandatory, 180-day wait, 10-day quarantine — full preparation guide from Germany."
+description: "Moving your pet from Germany to New Zealand: MPI NZSTAP import permit, FAVN titre test mandatory, 180-day wait, 10-day quarantine, full preparation guide from Germany."
 type: "routes"
 layout: "single"
 template_variant: "E"
@@ -95,8 +95,8 @@ route_data:
   key_warnings:
     - "New Zealand requires titre test + 180-day wait from ALL countries. No exemptions for Germany."
     - "10-day quarantine on arrival is mandatory in addition to the pre-travel 180-day wait."
-    - "Apply for NZSTAP approval early — processing is not instant."
-    - "Pre-book MPI quarantine facility before travel — spaces are limited."
+    - "Apply for NZSTAP approval early, processing is not instant."
+    - "Pre-book MPI quarantine facility before travel, spaces are limited."
   route_complexity: "very_high"
   estimated_timeline_weeks: "38-44"
 content:
@@ -133,14 +133,14 @@ content:
         No direct Frankfurt-Auckland cargo service exists. All routes involve at least one transit. Singapore Airlines via Changi is one of the most commonly used for European pets heading to New Zealand. Air New Zealand is worth contacting early given their AKL quarantine familiarity.
     - heading: "NZSTAP: apply before anything else"
       body: |
-        New Zealand's Standard Treatment and Approval Process (NZSTAP) is the government approval that must be in place before your pet can travel to New Zealand. Apply via the MPI portal at nzstap.mpi.govt.nz. Processing is not instant — start the application early, ideally before or during the vaccination sequence.
+        New Zealand's Standard Treatment and Approval Process (NZSTAP) is the government approval that must be in place before your pet can travel to New Zealand. Apply via the MPI portal at nzstap.mpi.govt.nz. Processing is not instant, start the application early, ideally before or during the vaccination sequence.
 
         The NZSTAP approval specifies the conditions your pet must meet. The health certificate issued in Germany must match those conditions exactly. Any discrepancy between the NZSTAP approval and the certificate causes problems at Auckland.
 faqs:
   - question: "Does Germany get any special treatment for New Zealand pet imports?"
     answer: "No. New Zealand requires the NZSTAP protocol from all countries without exception. Germany's EU membership and veterinary standards make no difference: two vaccinations, FAVN titre test, 180-day wait, and 10-day quarantine on arrival all apply."
   - question: "What is NZSTAP and when should I apply?"
-    answer: "NZSTAP is New Zealand's Standard Treatment and Approval Process for importing pets. Apply via MPI at nzstap.mpi.govt.nz as early as possible — ideally when you start the vaccination sequence. Processing takes time and your pet cannot travel without the approval."
+    answer: "NZSTAP is New Zealand's Standard Treatment and Approval Process for importing pets. Apply via MPI at nzstap.mpi.govt.nz as early as possible, ideally when you start the vaccination sequence. Processing takes time and your pet cannot travel without the approval."
   - question: "Is the 10-day quarantine really mandatory even after the 180-day wait?"
     answer: "Yes. The 10-day quarantine at an MPI-approved facility is mandatory on arrival in New Zealand, separate from and in addition to the 180-day pre-travel waiting period. It must be pre-booked and fees are paid by the owner."
   - question: "How long does preparation take for Germany to New Zealand?"

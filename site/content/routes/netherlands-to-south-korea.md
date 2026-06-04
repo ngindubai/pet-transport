@@ -1,6 +1,6 @@
 ---
 title: "Pet Transport from Netherlands to South Korea | NVWA Export, APQA Import & Airlines"
-description: "Moving your pet from the Netherlands to South Korea: APQA requirements, NVWA health certificate, advance notification, no titre test from EU — full guide."
+description: "Moving your pet from the Netherlands to South Korea: APQA requirements, NVWA health certificate, advance notification, no titre test from EU, full guide."
 type: "routes"
 layout: "single"
 author: "Gareth - Founder, PetTransportGlobal"

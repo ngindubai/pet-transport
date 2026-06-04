@@ -1,6 +1,6 @@
 ---
 title: "Pet Transport from France to Netherlands | EU Pet Passport, No Titre Test & Guide"
-description: "Moving your pet from France to the Netherlands: EU pet passport accepted, no titre test, no quarantine, Thalys rail and KLM options — the simplest international pet move."
+description: "Moving your pet from France to the Netherlands: EU pet passport accepted, no titre test, no quarantine, Thalys rail and KLM options, the simplest international pet move."
 type: "routes"
 layout: "single"
 template_variant: "C"
@@ -59,14 +59,14 @@ route_data:
     - "EU Pet Passport renewal if expired (vet fee)"
   key_warnings:
     - "Confirm rabies vaccination is current in the EU passport."
-    - "Netherlands breed restrictions apply on arrival — check for restricted breeds."
+    - "Netherlands breed restrictions apply on arrival, check for restricted breeds."
     - "Thalys high-speed rail is the most practical option for most Paris-Amsterdam pet moves."
   route_complexity: "very_low"
   estimated_timeline_weeks: "0-1"
 content:
   h1: "Pet Transport from France to Netherlands"
   overview: |
-    France to Netherlands is classic EU intra-move territory. Valid EU Pet Passport, current microchip and rabies vaccination — complete. No titre test, no quarantine, no permits of any kind.
+    France to Netherlands is classic EU intra-move territory. Valid EU Pet Passport, current microchip and rabies vaccination, complete. No titre test, no quarantine, no permits of any kind.
 
     Paris to Amsterdam by Thalys high-speed rail is 3 hours 20 minutes, with your pet beside you the whole way. For most France-Netherlands pet moves, the train is the right answer.
   sections:
@@ -86,7 +86,7 @@ content:
       body: |
         The EU Pet Passport is everything you need for this move. Check three things: microchip number recorded and matching the chip in your pet; rabies vaccination current and within validity; passport issued by an EU-authorised vet.
 
-        If the vaccination has lapsed, visit your French vet for a booster. A booster within the validity period of the previous vaccination takes effect immediately — no waiting period. A new vaccination course (first vaccination ever, or after a long lapse) requires a 21-day wait before travel.
+        If the vaccination has lapsed, visit your French vet for a booster. A booster within the validity period of the previous vaccination takes effect immediately, no waiting period. A new vaccination course (first vaccination ever, or after a long lapse) requires a 21-day wait before travel.
     - heading: "Breed restrictions: France and Netherlands"
       body: |
         France operates a two-category system. Categorie 1 (fighting-type dogs) are prohibited in France and therefore cannot travel legally as pets from France. Categorie 2 (Staffordshire Bull Terriers, American Staffordshire Terriers, Rottweilers) require owner permits and registration in France.

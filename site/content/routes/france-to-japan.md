@@ -90,7 +90,7 @@ route_data:
   key_warnings:
     - "France is non-designated for AQS. Full 180-day protocol applies. No shortcuts."
     - "Microchip before first vaccination is non-negotiable. Wrong order = restart."
-    - "SCELAB in France is AQS-approved — a practical advantage for French-origin pets. Confirm current AQS approval at aqs.maff.go.jp."
+    - "SCELAB in France is AQS-approved, a practical advantage for French-origin pets. Confirm current AQS approval at aqs.maff.go.jp."
     - "40-day AQS advance notification deadline is firm."
   route_complexity: "very_high"
   estimated_timeline_weeks: "36-42"
@@ -103,9 +103,9 @@ content:
   sections:
     - heading: "SCELAB: the French advantage on this route"
       body: |
-        Japan AQS requires the FAVN titre test to be conducted at a laboratory on their approved list. SCELAB, based in Nancy, France, is an AQS-approved laboratory. For French pet owners, this means the blood draw and testing can happen domestically — no international sample shipping, no wait for foreign lab turnaround times.
+        Japan AQS requires the FAVN titre test to be conducted at a laboratory on their approved list. SCELAB, based in Nancy, France, is an AQS-approved laboratory. For French pet owners, this means the blood draw and testing can happen domestically, no international sample shipping, no wait for foreign lab turnaround times.
 
-        Your French vet draws the blood at your local practice and sends it to SCELAB. Results typically come back within 10-14 days. If the result is 0.5 IU/ml or above, the 180-day clock starts from the blood draw date. Keep the SCELAB report carefully — it's part of the final AQS health certificate documentation.
+        Your French vet draws the blood at your local practice and sends it to SCELAB. Results typically come back within 10-14 days. If the result is 0.5 IU/ml or above, the 180-day clock starts from the blood draw date. Keep the SCELAB report carefully, it's part of the final AQS health certificate documentation.
 
         Always verify SCELAB remains on the current AQS approved list at aqs.maff.go.jp before booking. The list is updated periodically.
     - heading: "Comparing airline options: Paris CDG to Tokyo Narita"
@@ -121,14 +121,14 @@ content:
         Air France direct from CDG to Narita is the cleanest option: one airline, one aircraft, no transit complications. ANA Cargo is worth considering given their AQS arrival expertise at Narita if the Air France cargo schedule doesn't fit your window.
     - heading: "The DDPP health certificate: getting the timing right"
       body: |
-        The health certificate must be in MAFF-specified format for Japan, endorsed by DDPP (the Direction Départementale de la Protection des Populations — France's regional competent authority for animal health certificates). Your French vet prepares the certificate; the DDPP endorses it.
+        The health certificate must be in MAFF-specified format for Japan, endorsed by DDPP (the Direction Départementale de la Protection des Populations, France's regional competent authority for animal health certificates). Your French vet prepares the certificate; the DDPP endorses it.
 
         It must be issued within 10 days of travel. DDPP endorsement takes additional time beyond the vet appointment. In some regions DDPP turnaround is 2-3 days; in others it can be a week. Contact your local DDPP office early to understand their current lead time and book accordingly.
 faqs:
   - question: "How long does it take to move a pet from France to Japan?"
-    answer: "Allow 36-42 weeks. Two vaccinations, a titre test (blood drawn 30 days after the second vaccination), the 180-day wait from blood draw, plus 40 days advance AQS notification and the DDPP health certificate — it's a long sequence but each step is predictable."
+    answer: "Allow 36-42 weeks. Two vaccinations, a titre test (blood drawn 30 days after the second vaccination), the 180-day wait from blood draw, plus 40 days advance AQS notification and the DDPP health certificate, it's a long sequence but each step is predictable."
   - question: "Can I get the AQS titre test done in France?"
-    answer: "Yes. SCELAB in Nancy is an AQS-approved laboratory. This is a genuine practical advantage for French pet owners — the blood draw and testing can happen domestically. Verify SCELAB remains AQS-approved at aqs.maff.go.jp before booking."
+    answer: "Yes. SCELAB in Nancy is an AQS-approved laboratory. This is a genuine practical advantage for French pet owners, the blood draw and testing can happen domestically. Verify SCELAB remains AQS-approved at aqs.maff.go.jp before booking."
   - question: "Is there quarantine when arriving in Japan from France?"
     answer: "Yes. AQS inspects and quarantines all pets from non-designated countries on arrival. The minimum is 12 hours, but expect 2-7 days in practice. Quarantine fees are charged per day at the AQS facility."
   - question: "What happens if my titre test result is below 0.5 IU/ml?"

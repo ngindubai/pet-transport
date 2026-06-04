@@ -71,7 +71,7 @@ route_data:
     - "Agent fee (optional)"
   key_warnings:
     - "APQA advance notification must be submitted at least 5 days before arrival. Late notification causes delay or refusal at Incheon."
-    - "Health certificate must be issued within 10 days of travel. FSVO endorsement appointments book up — plan ahead."
+    - "Health certificate must be issued within 10 days of travel. FSVO endorsement appointments book up, plan ahead."
     - "There is no direct Zurich-Seoul flight for pet cargo. Confirm hub transit procedures with your airline cargo team."
   route_complexity: "low"
   estimated_timeline_weeks: "3-6"
@@ -86,10 +86,10 @@ content:
       body: |
         APQA classifies origin countries by rabies risk level. Switzerland, with its well-documented rabies control programme and EU-equivalent veterinary standards, is treated similarly to EU member states for APQA purposes. The practical result: no titre test required, no mandatory waiting period, and no routine quarantine.
 
-        What you do need is a solid health certificate. The APQA inspector at Incheon checks your pet's microchip, vaccination record, and health certificate on arrival. Any discrepancy — wrong microchip number on the certificate, vaccination recorded after the chip implant date — can delay release. The FSVO-authorised vet who issues the certificate should be familiar with Asian destination requirements.
+        What you do need is a solid health certificate. The APQA inspector at Incheon checks your pet's microchip, vaccination record, and health certificate on arrival. Any discrepancy, wrong microchip number on the certificate, vaccination recorded after the chip implant date, can delay release. The FSVO-authorised vet who issues the certificate should be familiar with Asian destination requirements.
     - heading: "Getting from Zurich to Seoul Incheon"
       body: |
-        There's no direct Zurich-Seoul pet cargo flight. The route connects via a European hub — Frankfurt (Lufthansa), Amsterdam (KLM), or via SWISS's partner connections to ICN. Korean Air Cargo operates direct connections to Seoul from various European hubs.
+        There's no direct Zurich-Seoul pet cargo flight. The route connects via a European hub, Frankfurt (Lufthansa), Amsterdam (KLM), or via SWISS's partner connections to ICN. Korean Air Cargo operates direct connections to Seoul from various European hubs.
 
         For flat-nosed breeds (Bulldogs, Pugs, French Bulldogs), Lufthansa restricts brachycephalic dogs from cargo year-round. Check breed restrictions with your chosen airline before booking.
 
@@ -100,7 +100,7 @@ faqs:
   - question: "Is there quarantine for pets arriving from Switzerland in South Korea?"
     answer: "No routine quarantine applies. APQA conducts an inspection at Incheon on arrival. If your documentation is complete and correct, your pet is typically released the same day."
   - question: "How do I notify APQA in advance?"
-    answer: "The APQA quarantine station at Seoul Incheon International Airport must be notified at least 5 days before your pet arrives. Your cargo agent or pet transport specialist will usually handle this step. It's administrative but mandatory — don't skip it."
+    answer: "The APQA quarantine station at Seoul Incheon International Airport must be notified at least 5 days before your pet arrives. Your cargo agent or pet transport specialist will usually handle this step. It's administrative but mandatory, don't skip it."
   - question: "How long does preparation take for this route?"
     answer: "Allow 3-6 weeks if your pet's microchip and vaccinations are already current. The main timeline driver is arranging the FSVO-endorsed health certificate within 10 days of travel, and booking cargo space."
   - question: "Which airline handles pet cargo from Zurich to Seoul?"

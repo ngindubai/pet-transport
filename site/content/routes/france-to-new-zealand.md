@@ -33,7 +33,7 @@ route_data:
       policy_summary: "Air France Cargo CDG-AKL via connections. National carrier of origin. Good cargo operation at CDG."
     - name: "Air New Zealand"
       type: "cargo_only"
-      policy_summary: "Air New Zealand Cargo AKL-CDG reverse — connects to Paris. National carrier of destination with MPI quarantine familiarity."
+      policy_summary: "Air New Zealand Cargo AKL-CDG reverse, connects to Paris. National carrier of destination with MPI quarantine familiarity."
     - name: "Singapore Airlines"
       type: "cargo_only"
       policy_summary: "Via Singapore SIN to AKL. Most commonly used Europe-NZ routing. Reliable temperature-controlled hold."
@@ -95,14 +95,14 @@ route_data:
   key_warnings:
     - "New Zealand requires titre test + 180-day wait from ALL countries. No exemptions for EU/France."
     - "10-day quarantine on arrival is mandatory in addition to the pre-travel 180-day wait."
-    - "SCELAB in France is MPI-approved — a practical advantage for French pet owners."
+    - "SCELAB in France is MPI-approved, a practical advantage for French pet owners."
     - "Apply for NZSTAP approval early."
   route_complexity: "very_high"
   estimated_timeline_weeks: "38-44"
 content:
   h1: "Pet Transport from France to New Zealand"
   overview: |
-    New Zealand applies its NZSTAP protocol universally — no country gets an exemption. From France, this means two vaccinations, a titre test at an MPI-approved laboratory, 180-day wait, NZSTAP approval, and 10-day quarantine on arrival. Allow 38-44 weeks.
+    New Zealand applies its NZSTAP protocol universally, no country gets an exemption. From France, this means two vaccinations, a titre test at an MPI-approved laboratory, 180-day wait, NZSTAP approval, and 10-day quarantine on arrival. Allow 38-44 weeks.
 
     One advantage for French pet owners: SCELAB in Nancy is on New Zealand's MPI approved laboratory list, meaning the titre test can be done domestically.
   sections:
@@ -123,7 +123,7 @@ content:
         Source: MPI nzstap.mpi.govt.nz. Verify before starting.
     - heading: "SCELAB: the French advantage on this route too"
       body: |
-        SCELAB in Nancy, France, is on New Zealand's MPI approved laboratory list — the same AQS-approved lab that benefits French pet owners heading to Japan. For New Zealand, this means the FAVN titre test can be processed domestically. Your French vet draws the blood; SCELAB runs the test; the result counts for MPI purposes.
+        SCELAB in Nancy, France, is on New Zealand's MPI approved laboratory list, the same AQS-approved lab that benefits French pet owners heading to Japan. For New Zealand, this means the FAVN titre test can be processed domestically. Your French vet draws the blood; SCELAB runs the test; the result counts for MPI purposes.
 
         Verify SCELAB remains on the current MPI approved list at nzstap.mpi.govt.nz before booking the test. Approved laboratory lists are updated periodically.
     - heading: "Routing CDG to AKL"
@@ -145,7 +145,7 @@ faqs:
   - question: "Is the 10-day quarantine mandatory even after the 180-day wait?"
     answer: "Yes. The 10-day quarantine at an MPI-approved facility is mandatory on arrival in New Zealand, separate from and in addition to the 180-day pre-travel wait. It must be pre-booked."
   - question: "What is NZSTAP?"
-    answer: "New Zealand's Standard Treatment and Approval Process — the government approval required before your pet can travel to New Zealand. Apply via MPI at nzstap.mpi.govt.nz as early as possible. The approval conditions must match the health certificate issued in France exactly."
+    answer: "New Zealand's Standard Treatment and Approval Process, the government approval required before your pet can travel to New Zealand. Apply via MPI at nzstap.mpi.govt.nz as early as possible. The approval conditions must match the health certificate issued in France exactly."
   - question: "Which airline is best from Paris to Auckland?"
     answer: "Singapore Airlines via Changi is the most commonly used option. Air France and Air New Zealand also connect CDG to AKL via transit hubs. No direct Paris-Auckland service exists."
 links:

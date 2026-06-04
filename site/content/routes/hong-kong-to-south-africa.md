@@ -80,7 +80,7 @@ route_data:
     - "Titre test if required"
     - "Agent fee (recommended)"
   key_warnings:
-    - "Verify DALRRD titre test requirement for HK before starting — it determines your timeline."
+    - "Verify DALRRD titre test requirement for HK before starting, it determines your timeline."
     - "Two permits required: AFCD export permit AND DALRRD import permit."
     - "DALRRD permit takes 4-8 weeks. Start immediately."
   route_complexity: "moderate"
@@ -88,7 +88,7 @@ route_data:
 content:
   h1: "Pet Transport from Hong Kong to South Africa"
   overview: |
-    Hong Kong to South Africa means navigating two permit systems — AFCD on the departure side, DALRRD on the arrival side — and potentially a titre test depending on current DALRRD policy for Hong Kong-origin pets. Verify the titre test requirement first; it's the decision that shapes everything else about your timeline.
+    Hong Kong to South Africa means navigating two permit systems, AFCD on the departure side, DALRRD on the arrival side, and potentially a titre test depending on current DALRRD policy for Hong Kong-origin pets. Verify the titre test requirement first; it's the decision that shapes everything else about your timeline.
 
     No direct HKG-JNB flights exist, so cargo routes via Dubai, Doha, or Singapore are the standard options.
   sections:
@@ -96,7 +96,7 @@ content:
       body: |
         Every live animal leaving Hong Kong needs an AFCD Permission to Export Animals. Apply via the AFCD website at afcd.gov.hk at least 2 weeks before departure. The health certificate, issued by an AFCD-authorised vet and endorsed by AFCD, must be in DALRRD's required format and issued within 14 days of departure.
 
-        On the South African side, a DALRRD Veterinary Import Permit is mandatory before travel. Apply through your provincial State Veterinarian office or an experienced agent. Allow 4-8 weeks — and start both permit applications in parallel as soon as your move is confirmed.
+        On the South African side, a DALRRD Veterinary Import Permit is mandatory before travel. Apply through your provincial State Veterinarian office or an experienced agent. Allow 4-8 weeks, and start both permit applications in parallel as soon as your move is confirmed.
 
         Whether a titre test is also required depends on DALRRD's current classification of Hong Kong-origin pets. South Africa maintains bilateral agreements with some countries that remove the titre test requirement, but Hong Kong is not typically on that list. Verify at dalrrd.gov.za.
     - heading: "Routing HKG to JNB"
@@ -106,7 +106,7 @@ content:
         Emirates via Dubai is the most commonly used option for HKG-JNB pet cargo, but summer heat embargoes at Dubai International Airport can restrict brachycephalic breed acceptance between May and September. If your pet is a flat-nosed breed, confirm current Emirates heat embargo policies before booking.
 faqs:
   - question: "Does my pet need a titre test to enter South Africa from Hong Kong?"
-    answer: "Likely yes — South Africa does not have a bilateral veterinary agreement with Hong Kong that removes the titre test requirement. Verify current DALRRD requirements at dalrrd.gov.za before starting, as requirements can change."
+    answer: "Likely yes, South Africa does not have a bilateral veterinary agreement with Hong Kong that removes the titre test requirement. Verify current DALRRD requirements at dalrrd.gov.za before starting, as requirements can change."
   - question: "What permits are needed for Hong Kong to South Africa?"
     answer: "Two: AFCD Permission to Export Animals from Hong Kong (apply via afcd.gov.hk, 2+ weeks) and a DALRRD Veterinary Import Permit from South Africa (apply via State Veterinarian, 4-8 weeks). Both must be in hand before travel."
   - question: "Is there quarantine when arriving in South Africa from Hong Kong?"

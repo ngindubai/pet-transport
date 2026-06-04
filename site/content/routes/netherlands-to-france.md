@@ -1,6 +1,6 @@
 ---
 title: "Pet Transport from Netherlands to France | EU Pet Passport, Rail vs Air Comparison"
-description: "Moving your pet from the Netherlands to France: EU pet passport, no titre test, Thalys rail vs KLM flight comparison — clean data guide."
+description: "Moving your pet from the Netherlands to France: EU pet passport, no titre test, Thalys rail vs KLM flight comparison, clean data guide."
 type: "routes"
 layout: "single"
 template_variant: "C"
@@ -36,7 +36,7 @@ route_data:
       policy_summary: "Cabin: small pets (up to 8kg in carrier) on KLM Amsterdam-Paris CDG route. Flight is about 1 hour. Airport overhead makes door-to-door comparable to Thalys for central Amsterdam to central Paris."
     - name: "Transavia"
       type: "cabin_and_cargo"
-      policy_summary: "Cabin pets on some Transavia Netherlands-France routes. Lower cost but less predictable pet policy — confirm before booking."
+      policy_summary: "Cabin pets on some Transavia Netherlands-France routes. Lower cost but less predictable pet policy, confirm before booking."
     - name: "Drive"
       type: "cabin_and_cargo"
       policy_summary: "Amsterdam to Paris by car via A16 is about 4 hours. No border inspection. Pet stays in the vehicle throughout."
@@ -60,14 +60,14 @@ route_data:
     - "EU Pet Passport renewal if expired (vet fee EUR 20-60)"
   key_warnings:
     - "Confirm rabies vaccination in the EU passport is current before any transport booking."
-    - "France's Categorie 1 and 2 breed restrictions apply. The Netherlands restricts Pit Bull Terrier types domestically — these restrictions don't transfer France, but check French rules for your specific breed."
+    - "France's Categorie 1 and 2 breed restrictions apply. The Netherlands restricts Pit Bull Terrier types domestically, these restrictions don't transfer France, but check French rules for your specific breed."
     - "Thalys is the fastest and most pet-friendly option for this specific corridor."
   route_complexity: "very_low"
   estimated_timeline_weeks: "0-1"
 content:
   h1: "Pet Transport from Netherlands to France"
   overview: |
-    Netherlands to France is a pure EU-to-EU move. One valid EU Pet Passport. No titre test, no quarantine, no permits. The comparison that matters on this route is Thalys vs KLM vs drive — not the paperwork.
+    Netherlands to France is a pure EU-to-EU move. One valid EU Pet Passport. No titre test, no quarantine, no permits. The comparison that matters on this route is Thalys vs KLM vs drive, not the paperwork.
   sections:
     - heading: "Transport options compared: Amsterdam to Paris"
       body: |
@@ -85,7 +85,7 @@ content:
       body: |
         France and the Netherlands both implement EU Regulation 576/2013. The requirements are identical: ISO microchip recorded in the passport, current rabies vaccination within the manufacturer's validity period, passport issued by an EU-authorised vet.
 
-        Check the vaccination expiry date first. Not the passport issue date — the vaccination record page. If the next booster is due in the next month, get it before you travel. A booster within the validity period of the previous vaccination takes effect immediately, with no waiting period.
+        Check the vaccination expiry date first. Not the passport issue date, the vaccination record page. If the next booster is due in the next month, get it before you travel. A booster within the validity period of the previous vaccination takes effect immediately, with no waiting period.
 faqs:
   - question: "Do I need any documents other than an EU Pet Passport for Netherlands to France?"
     answer: "No. A valid EU Pet Passport with current microchip and rabies vaccination is all that's required. No titre test, import permit, or quarantine applies."

@@ -7,7 +7,7 @@
 - **Repository:** https://github.com/ngindubai/pet-transport (private)
 - **Deploy:** Push to `main` triggers GitHub Actions automatically. Hugo build + incremental FTP to Hostinger. Live within ~80 seconds for a single article. After every build batch, the live URLs of new/changed pages are posted in chat for review (LIVE LINK REVIEW GATE in CLAUDE.md).
 
-## Current State (2026-06-03, reconciled from disk by verify_build_state.py)
+## Current State (2026-06-04, reconciled from disk by verify_build_state.py)
 
 - **Routes built:** 5,172 of ~37,830 country pairs (~13.7%). This is the true on-disk count (5,162 in `routes/` + 10 route pairs in `pet-transport/`). The old 5,534/5,544 figures were inflated by hand-incrementing and have been corrected.
 - **Blog articles:** 412
@@ -17,10 +17,9 @@
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
 
-### Known legacy content debt (tracked, not yet fixed)
-Surfaced by the 2026-06-03 audit. Pre-existing, from before current rules. Do not mass-rewrite without a dedicated block:
+### Known legacy content debt (tracked)
+- **Em dashes:** CLEARED 2026-06-04. Removed from all 89 affected files (74 blog+routes, 11 pet-transport, 4 static). Zero em dashes remain in site/content.
 - **Author persona:** 248 of 412 blog articles are authored as "Gareth" (pre-date the 2026-05-28 persona rule). Should be backfilled to the four named personas. Discrete future block: "author persona backfill".
-- **Em dashes:** present in 5 blog files and 69 route files, despite the absolute em dash ban. Discrete future block: "em-dash sweep". Both are mechanical, scriptable cleanups to be done one block at a time.
 
 ## Build Decisions
 
@@ -108,6 +107,7 @@ Every build batch does three things together, every time: (1) bundle BUILD-PLAN.
 | 2026-06-02 | Chunk 19 complete | 10 Tier A quality routes (Template B), Germany/HK/NZ corridors |
 | 2026-06-03 | Truth audit + anti-drift safeguards | Docs had drifted four ways on the route count (5524/5534/5544 vs ~5172 on disk). Root cause: routes_built was a hand-incremented tally never reconciled to disk. Added verify_build_state.py (single source of truth, counts from disk, `--write` reconciles) and a SessionStart hook that runs it every session. All four docs corrected to true numbers |
 | 2026-06-03 | Day 4 UK-to-Spain = replace in place | Existing thin uk-to-spain-pet-transport-complete-guide.md will be upgraded in place rather than publishing a duplicate `pet-transport-uk-to-spain` page |
+| 2026-06-04 | Em-dash sweep complete | Removed all em dashes from site/content: 74 blog+route files + 11 pet-transport + 4 static (89 files). Python sweeper logic: table rows -> colon, headings/bold labels -> colon, author fields -> comma, prose -> comma. Zero em dashes remain |
 
 ## Mistakes to Avoid
 - Never run hugo from repo root. Always `cd site` first (or the workflow handles it)

@@ -119,7 +119,7 @@ faqs:
   - question: "How long does preparation take?"
     answer: "Allow 22-26 weeks. The FAVN titre test and the 3-month mandatory wait from blood draw are the main steps."
   - question: "Why is France-to-Korea faster than Korea-to-France?"
-    answer: "APQA gives EU countries simplified entry because it recognises EU veterinary standards. The EU does not reciprocate — South Korea is classified as non-listed, triggering the titre test and 3-month wait for entry into France."
+    answer: "APQA gives EU countries simplified entry because it recognises EU veterinary standards. The EU does not reciprocate, South Korea is classified as non-listed, triggering the titre test and 3-month wait for entry into France."
   - question: "Which airline is best from Seoul to Paris?"
     answer: "Korean Air Cargo and Air France Cargo both operate direct ICN-CDG services. Korean Air has APQA Incheon departure familiarity; Air France has CDG BCP arrival familiarity. Both are reliable."
 links:

@@ -5,7 +5,7 @@ type: "page"
 layout: "single"
 slug: "privacy"
 url: "/privacy/"
-author: "Gareth — Founder, PetTransportGlobal"
+author: "Gareth, Founder, PetTransportGlobal"
 ---
 
 # Privacy Policy
@@ -59,9 +59,9 @@ To exercise any of these rights, contact us at the email address in the site foo
 ## Third-Party Services
 
 Our site uses:
-- **Hugo** (static site generator) — no personal data processed
-- **Cloudflare** (CDN and form handling) — subject to [Cloudflare's privacy policy](https://www.cloudflare.com/privacypolicy/)
-- **Google Analytics** (traffic analysis, if active) — subject to [Google's privacy policy](https://policies.google.com/privacy)
+- **Hugo** (static site generator): no personal data processed
+- **Cloudflare** (CDN and form handling): subject to [Cloudflare's privacy policy](https://www.cloudflare.com/privacypolicy/)
+- **Google Analytics** (traffic analysis, if active): subject to [Google's privacy policy](https://policies.google.com/privacy)
 
 ## Changes to This Policy
 

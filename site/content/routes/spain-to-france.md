@@ -1,6 +1,6 @@
 ---
 title: "Pet Transport from Spain to France | EU Pet Passport, No Titre Test & Full Guide"
-description: "Moving your pet from Spain to France: EU Pet Passport accepted, no titre test, no quarantine, TGV or drive options — the simplest EU-to-EU pet move."
+description: "Moving your pet from Spain to France: EU Pet Passport accepted, no titre test, no quarantine, TGV or drive options, the simplest EU-to-EU pet move."
 type: "routes"
 layout: "single"
 template_variant: "A"
@@ -63,7 +63,7 @@ route_data:
     - "EU Pet Passport update if vaccination is lapsed (vet fee, typically EUR 20-60)."
   key_warnings:
     - "Confirm the rabies vaccination in the EU Pet Passport is current and within the manufacturer's validity period. An expired vaccination makes the passport invalid for travel."
-    - "Spain has category 1 and 2 PPP (Perros Potencialmente Peligrosos) breed restrictions. France has Categorie 1 and 2 restrictions. If you have a restricted breed, check French rules before travel — they are not identical to Spain's."
+    - "Spain has category 1 and 2 PPP (Perros Potencialmente Peligrosos) breed restrictions. France has Categorie 1 and 2 restrictions. If you have a restricted breed, check French rules before travel, they are not identical to Spain's."
     - "Microchip number in the passport must match the chip in your pet when scanned. Any discrepancy causes problems at any inspection."
     - "Keep the EU Pet Passport accessible if driving. Random checks occur at EU internal borders."
   route_complexity: "very_low"
@@ -84,14 +84,14 @@ content:
         If the vaccination has lapsed, it's a quick fix. Book a booster at your Spanish vet. If your pet has never been vaccinated or there was a long gap, a first vaccination in a new course requires a 21-day wait before travel. A booster within the validity of the previous vaccination takes effect immediately.
     - heading: "Drive, rail, or fly: the Spain-France decision"
       body: |
-        **Drive:** The default for most Spain-France pet moves. Barcelona to Perpignan is 1 hour 40 minutes on the AP-7. You cross the border — Spanish side, then French side — with your pet in the car, no stopping required. Madrid to San Sebasti\u00e1n is about 4 hours, then another hour to cross into France at Irun.
+        **Drive:** The default for most Spain-France pet moves. Barcelona to Perpignan is 1 hour 40 minutes on the AP-7. You cross the border: Spanish side, then French side: with your pet in the car, no stopping required. Madrid to San Sebasti\u00e1n is about 4 hours, then another hour to cross into France at Irun.
 
         **Rail:** Barcelona to Paris on the TGV or Renfe AVE connection takes about 6.5 hours with a change at Figueres Vilafant. SNCF and Renfe both allow small pets in carriers. It's comfortable for a calm, crated pet. Less obvious than driving for those with a larger dog.
 
         **Fly:** Iberia and Air France both carry small pets in cabin on Spanish-French routes. The flights are under 2 hours, but airport check-in, security, and boarding add 2-3 hours minimum. For most Spain-France moves, driving or rail gives a better door-to-door experience for the pet.
     - heading: "Breed restrictions: what France applies"
       body: |
-        France operates a Categorie 1 and Categorie 2 restricted dog system. Categorie 1 dogs (fighting-type appearance, undefined breed or cross) are banned. Categorie 2 includes American Staffordshire Terriers, Staffordshire Bull Terriers, Rottweilers, and Mastiffs — these require owner registration, sterilisation, muzzle in public, and a permit.
+        France operates a Categorie 1 and Categorie 2 restricted dog system. Categorie 1 dogs (fighting-type appearance, undefined breed or cross) are banned. Categorie 2 includes American Staffordshire Terriers, Staffordshire Bull Terriers, Rottweilers, and Mastiffs, these require owner registration, sterilisation, muzzle in public, and a permit.
 
         Spain's PPP (Perros Potencialmente Peligrosos) list is similar but not identical. If your dog is on Spain's list, check it against France's list specifically. Some breeds appear on one and not the other.
 faqs:
@@ -100,7 +100,7 @@ faqs:
   - question: "Can I drive from Spain to France with my pet without stopping at the border?"
     answer: "Yes. EU free movement applies. No scheduled pet inspection occurs at the Spain-France road border. Keep the EU Pet Passport accessible in the vehicle for any random check."
   - question: "How long does this move take to prepare?"
-    answer: "If your EU Pet Passport and vaccinations are current, you can travel within days — or immediately if driving. The only delay would be if the rabies vaccination has lapsed, in which case allow 21 days from a first vaccination before travel."
+    answer: "If your EU Pet Passport and vaccinations are current, you can travel within days, or immediately if driving. The only delay would be if the rabies vaccination has lapsed, in which case allow 21 days from a first vaccination before travel."
   - question: "Can I take my pet on the TGV from Barcelona to Paris?"
     answer: "Yes. The TGV/Renfe AVE connection from Barcelona (Gare de France) allows small pets in carriers. Check current SNCF and Renfe pet policies for your specific service as weight and carrier size rules apply."
   - question: "Does France have breed restrictions that Spain doesn't?"

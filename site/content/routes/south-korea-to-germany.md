@@ -1,6 +1,6 @@
 ---
 title: "Pet Transport from South Korea to Germany | APQA Export, EU Titre Test & Data Guide"
-description: "Shipping your pet from South Korea to Germany: APQA health certificate, EU FAVN titre test and 3-month wait required, Korean Air and Lufthansa cargo — compliance data."
+description: "Shipping your pet from South Korea to Germany: APQA health certificate, EU FAVN titre test and 3-month wait required, Korean Air and Lufthansa cargo, compliance data."
 type: "routes"
 layout: "single"
 template_variant: "E"
@@ -25,7 +25,7 @@ route_data:
       quarantine: "No quarantine for fully compliant pets. Documentary check at Frankfurt Airport BCP on arrival."
       import_permit: "Not required. EU Regulation 576/2013 governs."
       health_certificate: "APQA-endorsed EU Annex IV health certificate, within 10 days of travel."
-      entry_point: "Frankfurt Airport (FRA) — Germany's primary BCP."
+      entry_point: "Frankfurt Airport (FRA), Germany's primary BCP."
       authority: "BMEL Germany. EU Regulation 576/2013."
   airlines:
     - name: "Korean Air"
@@ -107,7 +107,7 @@ content:
         | Complexity | High |
 
         Source: EU Regulation 576/2013; APQA Korea. Verify before starting process.
-    - heading: "Airline options ICN to FRA — data comparison"
+    - heading: "Airline options ICN to FRA, data comparison"
       body: |
         | Airline | Route | Notes |
         |---|---|---|
@@ -120,9 +120,9 @@ content:
         Korean Air Cargo is the natural first choice: as South Korea's own airline, their Incheon cargo team handles APQA export documentation daily and know the paperwork in detail. Lufthansa brings strong Frankfurt BCP arrival expertise but restricts brachycephalic breeds year-round.
     - heading: "APQA export health certificate: what Korea issues"
       body: |
-        South Korea's APQA issues the official export health certificate required for international pet exports. For Germany, this must be in EU Annex IV format — the specific template for non-listed third countries entering the EU. APQA vets are familiar with this format.
+        South Korea's APQA issues the official export health certificate required for international pet exports. For Germany, this must be in EU Annex IV format, the specific template for non-listed third countries entering the EU. APQA vets are familiar with this format.
 
-        The certificate must be issued within 10 days of travel. It records microchip number, full vaccination history, FAVN titre test result (laboratory report number and date), and current health status. The titre test result must already be on record — the health certificate is the final step, not where you arrange the titre test.
+        The certificate must be issued within 10 days of travel. It records microchip number, full vaccination history, FAVN titre test result (laboratory report number and date), and current health status. The titre test result must already be on record, the health certificate is the final step, not where you arrange the titre test.
 faqs:
   - question: "Does my pet need a titre test to enter Germany from South Korea?"
     answer: "Yes. South Korea is a non-listed country under EU Regulation 576/2013. A FAVN titre test at an EU-approved laboratory is mandatory, minimum 0.5 IU/ml, followed by a 3-month mandatory waiting period from the blood draw date."
