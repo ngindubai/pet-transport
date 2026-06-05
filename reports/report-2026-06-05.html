@@ -181,6 +181,12 @@
       border: 1px solid #a8d8bc;
     }
 
+    .badge-ops {
+      background: var(--amber-bg);
+      color: var(--amber);
+      border: 1px solid #e8c87a;
+    }
+
     .badge-none {
       background: #f0f0f0;
       color: #888;
@@ -206,6 +212,10 @@
       margin-top: 0.25rem;
       font-family: 'Inter Tight', sans-serif;
       font-size: 0.85rem;
+    }
+
+    .commit-block {
+      margin-bottom: 0.5rem;
     }
 
     /* Page lists */
@@ -294,11 +304,11 @@
     <h1>5 June 2026</h1>
     <div class="summary-bar">
       <div class="stat">
-        <span class="stat-value">2</span>
+        <span class="stat-value">4</span>
         <span class="stat-label">sites built</span>
       </div>
       <div class="stat">
-        <span class="stat-value">38</span>
+        <span class="stat-value">79</span>
         <span class="stat-label">new pages today</span>
       </div>
       <div class="stat">
@@ -306,34 +316,40 @@
         <span class="stat-label">placeholder upgrades</span>
       </div>
       <div class="stat">
-        <span class="stat-value">55</span>
+        <span class="stat-value">96</span>
         <span class="stat-label">total pages built</span>
       </div>
     </div>
   </header>
 
-  <div class="no-flags">No red flags today. All builds completed. No HALTED, FAILED, PAUSED, or DEPLOY RISK statuses detected.</div>
+  <div class="no-flags">No red flags today. All builds completed cleanly. No HALTED, FAILED, PAUSED, RED, DEPLOY RISK, or DEPLOY RETRY NEEDED statuses detected across any site.</div>
 
-  <p class="lead">Two sites published content today. Pet Transport Global pushed 54 route pages across chunks 25 through 27 (37 brand-new files, 17 upgraded from placeholder), resolving a three-way parallel-branch deploy incident that had stalled main since chunk 24. Mortgage Compare added one knowledge-hub article on fixed-rate UAE mortgage products. Bus Hire, Funeral Repatriation, and Close Protection had no commits.</p>
+  <p class="lead">Four sites published content today. Pet Transport Global pushed 79 route pages across chunks 25 through 28 (62 brand-new files, 17 upgraded from placeholder), first resolving a three-way parallel-branch deploy incident and then immediately completing a second chunk covering Gulf, Asia, and Americas corridors. Bus Rental Global completed its Austria city build phase with 11 new pages, bringing Austria to 31 city pages total. Close Protection Hire added 5 conflict-zone capitals in Phase 3G. Mortgage Compare contributed one knowledge-hub article on UAE fixed-rate mortgages. Funeral Repatriation had one ops-only commit with no content pages.</p>
 
   <!-- PET TRANSPORT -->
   <section class="site-section">
     <div class="site-header">
       <h2>Pet Transport Global</h2>
-      <span class="badge badge-built">54 pages built</span>
+      <span class="badge badge-built">79 pages built (62 new, 17 upgrades)</span>
     </div>
     <div class="site-body">
       <div class="site-meta">
-        domain: pettransportglobal.com &nbsp;|&nbsp; branch: main &nbsp;|&nbsp; commit: c6f381f &nbsp;|&nbsp; 11:54 UTC
-        <div class="commit-msg">build: reconcile chunks 25-27 to main (deploy incident fix) + 54 routes</div>
+        domain: pettransportglobal.com &nbsp;|&nbsp; branch: main
+        <div class="commit-block">
+          <div class="commit-msg">commit c6f381f &nbsp;|&nbsp; 11:54 UTC &nbsp;/&nbsp; build: reconcile chunks 25-27 to main (deploy incident fix) + 54 routes</div>
+        </div>
+        <div class="commit-block">
+          <div class="commit-msg">commit 0dac6ce &nbsp;|&nbsp; 13:11 UTC &nbsp;/&nbsp; build: chunk 28 Tier A Template D - 25 Gulf/Asia/Americas routes</div>
+        </div>
       </div>
 
       <div class="incident-note">
-        <strong>Operational note:</strong> Three parallel routine runs each built a chunk 25 on separate feature branches and never merged to main. This commit dedupes and reconciles all three batches. Routes: 5,217 to 5,254. Pages: 6,003 to 6,040. A durable fix (routines must push to main) is still required.
+        <strong>Operational note:</strong> Three parallel routine runs each built chunk 25 on separate feature branches and never merged to main. The reconcile commit combined and deduped all three batches. Routes: 5,217 to 5,254 (chunk 25-27), then 5,254 to 5,279 (chunk 28). Pages: 6,003 to 6,065. Tier A remaining: 190. A durable fix (routines must push direct to main) is still required.
       </div>
 
+      <!-- CHUNK 25-27: 37 new routes -->
       <div class="pages-group" style="margin-top:1.25rem;">
-        <div class="pages-group-label">37 new route pages</div>
+        <div class="pages-group-label">37 new route pages (chunks 25-27: Europe, Asia, Oceania corridors)</div>
         <ul class="page-list">
           <li>
             <span class="page-title">China to United Kingdom</span>
@@ -486,6 +502,114 @@
         </ul>
       </div>
 
+      <!-- CHUNK 28: 25 new routes -->
+      <div class="pages-group">
+        <div class="pages-group-label">25 new route pages (chunk 28: Gulf, Asia, Americas corridors)</div>
+        <ul class="page-list">
+          <li>
+            <span class="page-title">Brazil to United Kingdom</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/brazil-to-united-kingdom/">pettransportglobal.com/pet-transport/brazil-to-united-kingdom/</a>
+          </li>
+          <li>
+            <span class="page-title">Brazil to United States</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/brazil-to-united-states/">pettransportglobal.com/pet-transport/brazil-to-united-states/</a>
+          </li>
+          <li>
+            <span class="page-title">Indonesia to United Kingdom</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/indonesia-to-united-kingdom/">pettransportglobal.com/pet-transport/indonesia-to-united-kingdom/</a>
+          </li>
+          <li>
+            <span class="page-title">Indonesia to United States</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/indonesia-to-united-states/">pettransportglobal.com/pet-transport/indonesia-to-united-states/</a>
+          </li>
+          <li>
+            <span class="page-title">Qatar to United Kingdom</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/qatar-to-united-kingdom/">pettransportglobal.com/pet-transport/qatar-to-united-kingdom/</a>
+          </li>
+          <li>
+            <span class="page-title">Qatar to United States</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/qatar-to-united-states/">pettransportglobal.com/pet-transport/qatar-to-united-states/</a>
+          </li>
+          <li>
+            <span class="page-title">Saudi Arabia to United Kingdom</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/saudi-arabia-to-united-kingdom/">pettransportglobal.com/pet-transport/saudi-arabia-to-united-kingdom/</a>
+          </li>
+          <li>
+            <span class="page-title">Saudi Arabia to United States</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/saudi-arabia-to-united-states/">pettransportglobal.com/pet-transport/saudi-arabia-to-united-states/</a>
+          </li>
+          <li>
+            <span class="page-title">Taiwan to United Kingdom</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/taiwan-to-united-kingdom/">pettransportglobal.com/pet-transport/taiwan-to-united-kingdom/</a>
+          </li>
+          <li>
+            <span class="page-title">Taiwan to United States</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/taiwan-to-united-states/">pettransportglobal.com/pet-transport/taiwan-to-united-states/</a>
+          </li>
+          <li>
+            <span class="page-title">Turkey to United Kingdom</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/turkey-to-united-kingdom/">pettransportglobal.com/pet-transport/turkey-to-united-kingdom/</a>
+          </li>
+          <li>
+            <span class="page-title">Turkey to United States</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/turkey-to-united-states/">pettransportglobal.com/pet-transport/turkey-to-united-states/</a>
+          </li>
+          <li>
+            <span class="page-title">United Kingdom to Brazil</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-kingdom-to-brazil/">pettransportglobal.com/pet-transport/united-kingdom-to-brazil/</a>
+          </li>
+          <li>
+            <span class="page-title">United Kingdom to Indonesia</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-kingdom-to-indonesia/">pettransportglobal.com/pet-transport/united-kingdom-to-indonesia/</a>
+          </li>
+          <li>
+            <span class="page-title">United Kingdom to Qatar</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-kingdom-to-qatar/">pettransportglobal.com/pet-transport/united-kingdom-to-qatar/</a>
+          </li>
+          <li>
+            <span class="page-title">United Kingdom to Saudi Arabia</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-kingdom-to-saudi-arabia/">pettransportglobal.com/pet-transport/united-kingdom-to-saudi-arabia/</a>
+          </li>
+          <li>
+            <span class="page-title">United Kingdom to Taiwan</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-kingdom-to-taiwan/">pettransportglobal.com/pet-transport/united-kingdom-to-taiwan/</a>
+          </li>
+          <li>
+            <span class="page-title">United Kingdom to Turkey</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-kingdom-to-turkey/">pettransportglobal.com/pet-transport/united-kingdom-to-turkey/</a>
+          </li>
+          <li>
+            <span class="page-title">United States to Brazil</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-states-to-brazil/">pettransportglobal.com/pet-transport/united-states-to-brazil/</a>
+          </li>
+          <li>
+            <span class="page-title">United States to Indonesia</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-states-to-indonesia/">pettransportglobal.com/pet-transport/united-states-to-indonesia/</a>
+          </li>
+          <li>
+            <span class="page-title">United States to Mexico</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-states-to-mexico/">pettransportglobal.com/pet-transport/united-states-to-mexico/</a>
+          </li>
+          <li>
+            <span class="page-title">United States to Qatar</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-states-to-qatar/">pettransportglobal.com/pet-transport/united-states-to-qatar/</a>
+          </li>
+          <li>
+            <span class="page-title">United States to Saudi Arabia</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-states-to-saudi-arabia/">pettransportglobal.com/pet-transport/united-states-to-saudi-arabia/</a>
+          </li>
+          <li>
+            <span class="page-title">United States to Taiwan</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-states-to-taiwan/">pettransportglobal.com/pet-transport/united-states-to-taiwan/</a>
+          </li>
+          <li>
+            <span class="page-title">United States to Turkey</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-states-to-turkey/">pettransportglobal.com/pet-transport/united-states-to-turkey/</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- UPGRADES -->
       <div class="pages-group">
         <div class="pages-group-label">17 placeholder upgrades (existing pages, full content added)</div>
         <ul class="page-list">
@@ -589,10 +713,62 @@
   <section class="site-section">
     <div class="site-header">
       <h2>Bus Rental Global</h2>
-      <span class="badge badge-none">No build today</span>
+      <span class="badge badge-built">11 new pages</span>
     </div>
     <div class="site-body">
-      <p class="no-build">No commits on main today. Last activity: 4 June 2026.</p>
+      <div class="site-meta">
+        domain: busrentalglobal.com &nbsp;|&nbsp; branch: main &nbsp;|&nbsp; commit: 3d93fee &nbsp;|&nbsp; 13:07 UTC
+        <div class="commit-msg">Phase 3: build 11 Austria city pages (Baden bei Wien, Krems, Steyr, Dornbirn, Feldkirch, Lienz, Schladming, Gmunden, Moedling, Wolfsberg, Mondsee)</div>
+      </div>
+      <div class="pages-group">
+        <div class="pages-group-label">11 new Austria city pages (Austria: 20 to 31 city pages complete)</div>
+        <ul class="page-list">
+          <li>
+            <span class="page-title">Bus Hire Baden bei Wien</span>
+            <a href="https://busrentalglobal.com/countries/austria/baden-bei-wien.html">busrentalglobal.com/countries/austria/baden-bei-wien.html</a>
+          </li>
+          <li>
+            <span class="page-title">Bus Hire Dornbirn</span>
+            <a href="https://busrentalglobal.com/countries/austria/dornbirn.html">busrentalglobal.com/countries/austria/dornbirn.html</a>
+          </li>
+          <li>
+            <span class="page-title">Bus Hire Feldkirch</span>
+            <a href="https://busrentalglobal.com/countries/austria/feldkirch.html">busrentalglobal.com/countries/austria/feldkirch.html</a>
+          </li>
+          <li>
+            <span class="page-title">Bus Hire Gmunden</span>
+            <a href="https://busrentalglobal.com/countries/austria/gmunden.html">busrentalglobal.com/countries/austria/gmunden.html</a>
+          </li>
+          <li>
+            <span class="page-title">Bus Hire Krems</span>
+            <a href="https://busrentalglobal.com/countries/austria/krems.html">busrentalglobal.com/countries/austria/krems.html</a>
+          </li>
+          <li>
+            <span class="page-title">Bus Hire Lienz</span>
+            <a href="https://busrentalglobal.com/countries/austria/lienz.html">busrentalglobal.com/countries/austria/lienz.html</a>
+          </li>
+          <li>
+            <span class="page-title">Bus Hire Moedling</span>
+            <a href="https://busrentalglobal.com/countries/austria/moedling.html">busrentalglobal.com/countries/austria/moedling.html</a>
+          </li>
+          <li>
+            <span class="page-title">Bus Hire Mondsee</span>
+            <a href="https://busrentalglobal.com/countries/austria/mondsee.html">busrentalglobal.com/countries/austria/mondsee.html</a>
+          </li>
+          <li>
+            <span class="page-title">Bus Hire Schladming</span>
+            <a href="https://busrentalglobal.com/countries/austria/schladming.html">busrentalglobal.com/countries/austria/schladming.html</a>
+          </li>
+          <li>
+            <span class="page-title">Bus Hire Steyr</span>
+            <a href="https://busrentalglobal.com/countries/austria/steyr.html">busrentalglobal.com/countries/austria/steyr.html</a>
+          </li>
+          <li>
+            <span class="page-title">Bus Hire Wolfsberg</span>
+            <a href="https://busrentalglobal.com/countries/austria/wolfsberg.html">busrentalglobal.com/countries/austria/wolfsberg.html</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -600,10 +776,14 @@
   <section class="site-section">
     <div class="site-header">
       <h2>Repatriation Funeral</h2>
-      <span class="badge badge-none">No build today</span>
+      <span class="badge badge-ops">Ops commit only</span>
     </div>
     <div class="site-body">
-      <p class="no-build">No commits on master today. Last activity: 4 June 2026.</p>
+      <div class="site-meta">
+        domain: repatriationfuneral.com &nbsp;|&nbsp; branch: master &nbsp;|&nbsp; commit: 6ffc59d &nbsp;|&nbsp; 13:20 UTC
+        <div class="commit-msg">ops: remove direction gate from Batch 26, add autonomous roadmap for Batches 26-29</div>
+      </div>
+      <p class="no-build">No content pages added today. The commit updates BUILD-PLAN with specific slug lists for Batches 26-29 so the autonomous routine no longer pauses for direction on each run. Next content build: Batch 26.</p>
     </div>
   </section>
 
@@ -611,15 +791,44 @@
   <section class="site-section">
     <div class="site-header">
       <h2>Close Protection Hire</h2>
-      <span class="badge badge-none">No build today</span>
+      <span class="badge badge-built">5 new pages</span>
     </div>
     <div class="site-body">
-      <p class="no-build">No commits on master today. Last activity: 4 June 2026.</p>
+      <div class="site-meta">
+        domain: closeprotectionhire.com &nbsp;|&nbsp; branch: master &nbsp;|&nbsp; commit: 41525c7 &nbsp;|&nbsp; 13:12 UTC
+        <div class="commit-msg">build: close-protection Phase 3G (5 critical-risk cities)</div>
+      </div>
+      <div class="pages-group">
+        <div class="pages-group-label">5 new conflict-zone city pages (site total: 309 pages)</div>
+        <ul class="page-list">
+          <li>
+            <span class="page-title">Close Protection Bamako</span>
+            <a href="https://closeprotectionhire.com/cities/bamako/">closeprotectionhire.com/cities/bamako/</a>
+          </li>
+          <li>
+            <span class="page-title">Close Protection Mogadishu</span>
+            <a href="https://closeprotectionhire.com/cities/mogadishu/">closeprotectionhire.com/cities/mogadishu/</a>
+          </li>
+          <li>
+            <span class="page-title">Close Protection Naypyidaw</span>
+            <a href="https://closeprotectionhire.com/cities/naypyidaw/">closeprotectionhire.com/cities/naypyidaw/</a>
+          </li>
+          <li>
+            <span class="page-title">Close Protection Niamey</span>
+            <a href="https://closeprotectionhire.com/cities/niamey/">closeprotectionhire.com/cities/niamey/</a>
+          </li>
+          <li>
+            <span class="page-title">Close Protection Tripoli</span>
+            <a href="https://closeprotectionhire.com/cities/tripoli/">closeprotectionhire.com/cities/tripoli/</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <footer>
-    generated: 2026-06-05T20:00:00Z &nbsp;/&nbsp; reporter: claude &nbsp;/&nbsp; source: ngindubai/pet-transport
+    generated: 2026-06-05T20:00:00Z &nbsp;/&nbsp; reporter: claude &nbsp;/&nbsp; source: ngindubai/* (5 repos)
+    &nbsp;/&nbsp; supersedes draft committed at 13:09 UTC (missed bus hire, close protection, chunk 28)
   </footer>
 
 </div>
