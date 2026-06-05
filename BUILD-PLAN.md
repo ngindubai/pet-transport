@@ -15,22 +15,23 @@
 - **Every build batch also updates BUILD-PLAN.md, build_state.json and MEMORY.md in the same commit.** This is mandatory. See `CLAUDE.md` MANDATORY DOCS UPDATE.
 - **Bulk-generation scripts are banned.**
 
-**Where we are (reconciled from disk 2026-06-04):** 5,217 quality routes complete. ~32,613 routes remaining. Blog: 413 articles. Total .md source files: 6,003 (full deployed total verified from sitemap.xml after a build). Content plan: Day 6 is next. 252 score-7+ Tier A pairs remain after Chunk 24. Counts come from `python verify_build_state.py`, never hand-edited.
+**Where we are (reconciled from disk 2026-06-05):** 5,279 quality routes complete. ~32,551 routes remaining. Blog: 413 articles. Total .md source files: 6,065. Content plan: Day 6 is next (europe-to-uk-pet-transport). 190 score-7+ Tier A pairs remain. Chunk 29 (Template E) is next. Counts come from `python verify_build_state.py`, never hand-edited.
 
 ---
 
 ## Phase 7 - Template Diversification Rollout
 
-**Status: Chunks 1-27 complete (25-27 reconciled from 3 parallel runs). Chunk 28 is next.**
+**Status: Chunks 1-28 complete. Chunk 29 is next (Template E, Tier A).**
 
 - Chunk 21 template: D (Conversational Q&A) - DONE 2026-06-04
 - Chunk 22 template: E (Data-Forward) - DONE 2026-06-04
 - Chunk 23 template: A (Field Manual) - DONE 2026-06-04 (completed the P1 matrix)
 - Chunk 24 template: B (Visual Journey) - DONE 2026-06-04 (Japan, South Korea, Switzerland, Netherlands corridors)
 - Chunks 25-27 template: C (Comparison Brief) - DONE 2026-06-05 (three parallel routine runs reconciled into one main commit; 54 unique routes deduped)
-- Chunk 28 template: D - next in rotation
-- Tier: A (215 score-7+ pairs remain)
-- Template rotation: ...D(21), E(22), A(23), B(24), C(25-27), D(28)...
+- Chunk 28 template: D (Conversational Q&A) - DONE 2026-06-05 (Gulf/Asia corridors: SA/QA/TR/ID/TW/BR x4 + USA-MX)
+- Chunk 29 template: E - next in rotation
+- Tier: A (190 score-7+ pairs remain)
+- Template rotation: ...D(21), E(22), A(23), B(24), C(25-27), D(28), E(29)...
 
 **DEPLOY INCIDENT 2026-06-05 (fixed):** Three routine runs each committed a "chunk 25" to its own `claude/*` feature branch. `build-to-live.yml` only fires on push to `main`, so none deployed and Hostinger never updated. main never advanced, so each run rebuilt chunk 25 with overlapping routes. All three combined into main here. DURABLE FIX: the routine must push to `main` (STEP 3 already says `git push origin HEAD:main`; a conflicting feature-branch instruction was overriding it). See MEMORY.md.
 
@@ -63,3 +64,4 @@
 | 2026-06-04 | Chunk 23 | 12 Tier A routes, Template A (Field Manual). Completed the P1 matrix: USA-HK, UK-ZA, USA-CA, CA-USA, USA-FR, FR-USA, USA-ZA. Plus 5 new top Tier A pairs: UK-Japan, Japan-UK, UK-NZ, Ireland-UK, UK-Netherlands. Japan 180-day process, NZ MPI regime, Ireland CTA exemption. P1 matrix now fully built (90 routes). QA passed, zero em dashes. | 5,991 | Live links posted. |
 | 2026-06-04 | Chunk 24 | 12 Tier A routes, Template B (Visual Journey). Japan corridors (USA-Japan, Japan-USA), South Korea corridors (USA-KR, UK-KR, KR-USA, KR-UK), Switzerland corridors (USA-CH, UK-CH, CH-USA, CH-UK), Netherlands corridors (NL-USA, NL-UK). Japan/Korea 180-day titre + quarantine, Switzerland no quarantine, NL EU passport still accepted for UK. QA passed, zero em dashes. | 6,003 | Live links below. |
 | 2026-06-05 | Chunks 25-27 (reconciled) | DEPLOY INCIDENT FIX. Three parallel routine runs each built a "chunk 25" on its own feature branch; none reached main so none deployed. Combined all three into one main commit: 54 unique Template C Tier A routes (overlaps deduped). Corridors: Spain, Italy, Portugal, Thailand, Malaysia, Philippines, Vietnam, NZ, China, India, Ireland, UAE, HK, Germany, France, Australia (UK and US legs, plus AU/CA/SG/UAE destinations). Net +37 new slugs, 17 placeholder upgrades. All QA passed (zero em dashes, no banned vocab, Marcus Webb author). Pushed direct to main to trigger deploy. | 6,040 | Live links posted in Slack. Durable routine fix (push to main) flagged. |
+| 2026-06-05 | Chunk 28 | 25 Tier A routes, Template D (Conversational Q&A). Gulf and Asia corridors: Saudi Arabia x4 (SA-UK, SA-US, UK-SA, US-SA), Qatar x4 (QA-UK, QA-US, UK-QA, US-QA), Turkey x4 (TR-UK, TR-US, UK-TR, US-TR), Indonesia x4 (ID-UK, ID-US, UK-ID, US-ID), Taiwan x4 (TW-UK, TW-US, UK-TW, US-TW), Brazil x4 (BR-UK, BR-US, UK-BR, US-BR), plus USA-Mexico. Key data: Saudi/Qatar dog restrictions, Turkey Staffordshire ban, Indonesia BARANTAN/quarantine, Taiwan BAPHIQ 7-day quarantine, Brazil no titre test. Zero em dashes, all Marcus Webb. Routes 5,254 -> 5,279. | 6,065 | Live links below. Chunk 29 (Template E, Tier A) is next. |

@@ -9,10 +9,10 @@
 
 ## Current State (2026-06-05, reconciled from disk by verify_build_state.py)
 
-- **Routes built:** 5,254 of ~37,830 country pairs (~13.9%). True on-disk count (5,244 in `routes/` + 10 in `pet-transport/`).
+- **Routes built:** 5,279 of ~37,830 country pairs (~13.9%). True on-disk count (5,269 in `routes/` + 10 in `pet-transport/`).
 - **Blog articles:** 413
-- **Total .md source files:** 6,040 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-27 complete. **Chunk 28 is next** (Template D, Tier A). 215 score-7+ Tier A pairs remain. Chunks 25-27 were three parallel routine runs reconciled into one main commit on 2026-06-05 (see incident below).
+- **Total .md source files:** 6,065 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Phase 7 progress:** Chunks 1-28 complete. **Chunk 29 is next** (Template E, Tier A). 190 score-7+ Tier A pairs remain. Chunk 28 = 25 Template D routes across Gulf/Asia corridors (SA/QA/TR/ID/TW/BR x4 + USA-MX).
 - **Content plan:** Days 1-5 complete. Day 5 was pet-transport-uk-to-usa.md (new article, 2266 words, 2026-06-05). **Day 6 is next:** `europe-to-uk-pet-transport`.
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
