@@ -68,7 +68,7 @@ The CURRENT STATUS section in **this file (CLAUDE.md)** must also be kept accura
 
 **Why this matters:** When these docs drift from reality, the next session starts with false context and wastes time on a repo audit. Every commit is also a docs commit. **And every build batch also ends with the LIVE LINK REVIEW GATE above.**
 
-**When committing via the MCP tool:** Bundle the content files and the three docs files into a single `push_files` call so it is one atomic commit. Never leave a dangling content commit without a matching docs update. Then post the live review links in chat.
+**When committing via the MCP tool:** Bundle the content files and the three docs files into a single `push_files` call so it is one atomic commit. When a run builds a batch of several blocks, commit the WHOLE batch once (all content plus the three docs) in that single call. Never leave a dangling content commit without a matching docs update. Then post the live review links in chat.
 
 ---
 
@@ -392,7 +392,7 @@ Full specification in **[quotedesign.md](quotedesign.md)** - read it before prod
 Only modify files directly related to the current task. Mention improvements elsewhere as a note. Do not touch them.
 
 ### The cascading build plan is law
-Never bulk-generate content. One block at a time (25 routes or equivalent). Full quality gate every time.
+Never bulk-generate content. One run builds a batch of up to 4 blocks (a block = 25 routes or one equivalent non-route unit). Floor is 1 block. Each block in the batch runs the FULL quality gate independently; quality comes first, so if a run cannot finish 4 blocks cleanly it builds as many as it can do well (minimum 1), commits those, and reports the shortfall. The whole batch is committed ONCE per run (one commit, one push, one deploy). Bulk-generation scripts remain banned: a batch is still N individually quality-gated blocks, never a mass-generation script.
 
 ### Quality gate
 1. Research - real regulations from data files and named sources
@@ -404,6 +404,8 @@ Never bulk-generate content. One block at a time (25 routes or equivalent). Full
 7. **Update BUILD-PLAN.md, build_state.json, MEMORY.md in the same commit** (see MANDATORY DOCS UPDATE)
 8. **Post every new/changed live URL in chat for review** (see LIVE LINK REVIEW GATE)
 9. Stop and wait for next "go"
+
+When a run builds a batch of up to 4 blocks, run the quality gate on each block, advancing the build pointer after each, then run steps 6 to 8 ONCE for the whole batch.
 
 ---
 
@@ -467,8 +469,8 @@ pet-transport/
 
 ### "go" or "next block"
 1. Read BUILD-PLAN.md and build_state.json
-2. Write content through full quality gate
-3. Commit to main with docs update bundled in. Deploy is automatic
+2. Write content through full quality gate, building a batch of up to 4 blocks (minimum 1), advancing the build pointer after each block
+3. Commit the whole batch to main once with docs update bundled in. Deploy is automatic
 4. **Post every new/changed live URL in chat for review** (LIVE LINK REVIEW GATE)
 5. Stop and wait
 
@@ -499,6 +501,7 @@ pet-transport/
 - No em dashes anywhere, ever. See EM DASH BAN at the top of this file.
 - Never send WhatsApp messages or emails without explicit instruction. Never delete anything. Read only. See WHATSAPP AND EMAIL ACCESS RULES.
 - **Every commit must include a BUILD-PLAN.md + build_state.json + MEMORY.md update. See MANDATORY DOCS UPDATE.**
+- **A scheduled run builds a batch of up to 4 blocks (minimum 1), committed once. Bulk-generation scripts remain banned. See BEHAVIOR RULES.**
 
 ---
 
@@ -511,4 +514,4 @@ pet-transport/
 
 ---
 
-*Last updated: 2026-06-02*
+*Last updated: 2026-06-05*
