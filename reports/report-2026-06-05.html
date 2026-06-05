@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Build Report: 5 June 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:     #1a1a1a;
+      --muted:   #5a5a5a;
+      --rule:    #e0dcd8;
+      --bg:      #faf8f5;
+      --card:    #ffffff;
+      --green:   #1a6640;
+      --green-bg:#edf7f1;
+      --amber:   #7a4800;
+      --amber-bg:#fff4e0;
+      --red:     #8b1a1a;
+      --red-bg:  #fdf0f0;
+      --blue:    #1a3a6a;
+      --blue-bg: #eef2fb;
+    }
+
+    body {
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--ink);
+      background: var(--bg);
+      padding: 2rem 1rem 4rem;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .report-header {
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .report-header .eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+
+    h1 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--ink);
+    }
+
+    .summary-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 1rem;
+      padding: 0.85rem 1rem;
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+    }
+
+    .summary-bar .stat {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .summary-bar .stat-value {
+      font-family: 'Fraunces', serif;
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1;
+    }
+
+    .summary-bar .stat-label {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 0.2rem;
+    }
+
+    /* Flags */
+    .flags-box {
+      border-left: 4px solid var(--red);
+      background: var(--red-bg);
+      padding: 1rem 1.25rem;
+      border-radius: 0 4px 4px 0;
+      margin-bottom: 2rem;
+    }
+
+    .flags-box h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--red);
+      margin-bottom: 0.5rem;
+    }
+
+    .no-flags {
+      border-left: 4px solid var(--green);
+      background: var(--green-bg);
+      padding: 0.85rem 1.25rem;
+      border-radius: 0 4px 4px 0;
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+      color: var(--green);
+      font-weight: 500;
+    }
+
+    /* Lead paragraph with drop cap */
+    .lead {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: var(--ink);
+      margin-bottom: 2.5rem;
+      max-width: 680px;
+    }
+
+    .lead::first-letter {
+      font-size: 4rem;
+      font-weight: 700;
+      float: left;
+      line-height: 0.82;
+      margin-right: 0.08em;
+      margin-top: 0.1em;
+      color: var(--ink);
+      font-family: 'Fraunces', serif;
+    }
+
+    /* Site sections */
+    .site-section {
+      margin-bottom: 2.5rem;
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.9rem 1.25rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .site-header h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 500;
+      padding: 0.2rem 0.55rem;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+
+    .badge-built {
+      background: var(--green-bg);
+      color: var(--green);
+      border: 1px solid #a8d8bc;
+    }
+
+    .badge-none {
+      background: #f0f0f0;
+      color: #888;
+      border: 1px solid #d8d8d8;
+    }
+
+    .site-body {
+      padding: 1rem 1.25rem;
+    }
+
+    .site-meta {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px dashed var(--rule);
+    }
+
+    .commit-msg {
+      font-style: italic;
+      color: var(--muted);
+      margin-top: 0.25rem;
+      font-family: 'Inter Tight', sans-serif;
+      font-size: 0.85rem;
+    }
+
+    /* Page lists */
+    .pages-group {
+      margin-bottom: 1.25rem;
+    }
+
+    .pages-group-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .page-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 0.3rem;
+    }
+
+    .page-list li {
+      font-size: 0.88rem;
+    }
+
+    .page-list a {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      color: var(--blue);
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .page-list a:hover {
+      text-decoration: underline;
+    }
+
+    .page-title {
+      display: block;
+      font-family: 'Inter Tight', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--ink);
+    }
+
+    .no-build {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-style: italic;
+      padding: 0.5rem 0;
+    }
+
+    /* Incident note */
+    .incident-note {
+      border-left: 3px solid #c47a00;
+      background: var(--amber-bg);
+      padding: 0.75rem 1rem;
+      border-radius: 0 4px 4px 0;
+      margin-top: 1rem;
+      font-size: 0.84rem;
+      color: var(--amber);
+    }
+
+    .incident-note strong {
+      font-weight: 600;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--rule);
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-family: 'JetBrains Mono', monospace;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header class="report-header">
+    <p class="eyebrow">PetTransportGlobal Group &nbsp;/&nbsp; Daily Build Report</p>
+    <h1>5 June 2026</h1>
+    <div class="summary-bar">
+      <div class="stat">
+        <span class="stat-value">2</span>
+        <span class="stat-label">sites built</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">38</span>
+        <span class="stat-label">new pages today</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">17</span>
+        <span class="stat-label">placeholder upgrades</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">55</span>
+        <span class="stat-label">total pages built</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="no-flags">No red flags today. All builds completed. No HALTED, FAILED, PAUSED, or DEPLOY RISK statuses detected.</div>
+
+  <p class="lead">Two sites published content today. Pet Transport Global pushed 54 route pages across chunks 25 through 27 (37 brand-new files, 17 upgraded from placeholder), resolving a three-way parallel-branch deploy incident that had stalled main since chunk 24. Mortgage Compare added one knowledge-hub article on fixed-rate UAE mortgage products. Bus Hire, Funeral Repatriation, and Close Protection had no commits.</p>
+
+  <!-- PET TRANSPORT -->
+  <section class="site-section">
+    <div class="site-header">
+      <h2>Pet Transport Global</h2>
+      <span class="badge badge-built">54 pages built</span>
+    </div>
+    <div class="site-body">
+      <div class="site-meta">
+        domain: pettransportglobal.com &nbsp;|&nbsp; branch: main &nbsp;|&nbsp; commit: c6f381f &nbsp;|&nbsp; 11:54 UTC
+        <div class="commit-msg">build: reconcile chunks 25-27 to main (deploy incident fix) + 54 routes</div>
+      </div>
+
+      <div class="incident-note">
+        <strong>Operational note:</strong> Three parallel routine runs each built a chunk 25 on separate feature branches and never merged to main. This commit dedupes and reconciles all three batches. Routes: 5,217 to 5,254. Pages: 6,003 to 6,040. A durable fix (routines must push to main) is still required.
+      </div>
+
+      <div class="pages-group" style="margin-top:1.25rem;">
+        <div class="pages-group-label">37 new route pages</div>
+        <ul class="page-list">
+          <li>
+            <span class="page-title">China to United Kingdom</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/china-to-united-kingdom/">pettransportglobal.com/pet-transport/china-to-united-kingdom/</a>
+          </li>
+          <li>
+            <span class="page-title">China to United States</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/china-to-united-states/">pettransportglobal.com/pet-transport/china-to-united-states/</a>
+          </li>
+          <li>
+            <span class="page-title">India to United Kingdom</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/india-to-united-kingdom/">pettransportglobal.com/pet-transport/india-to-united-kingdom/</a>
+          </li>
+          <li>
+            <span class="page-title">India to United States</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/india-to-united-states/">pettransportglobal.com/pet-transport/india-to-united-states/</a>
+          </li>
+          <li>
+            <span class="page-title">Ireland to United States</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/ireland-to-united-states/">pettransportglobal.com/pet-transport/ireland-to-united-states/</a>
+          </li>
+          <li>
+            <span class="page-title">Italy to United Kingdom</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/italy-to-united-kingdom/">pettransportglobal.com/pet-transport/italy-to-united-kingdom/</a>
+          </li>
+          <li>
+            <span class="page-title">Italy to United States</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/italy-to-united-states/">pettransportglobal.com/pet-transport/italy-to-united-states/</a>
+          </li>
+          <li>
+            <span class="page-title">Malaysia to United Kingdom</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/malaysia-to-united-kingdom/">pettransportglobal.com/pet-transport/malaysia-to-united-kingdom/</a>
+          </li>
+          <li>
+            <span class="page-title">Malaysia to United States</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/malaysia-to-united-states/">pettransportglobal.com/pet-transport/malaysia-to-united-states/</a>
+          </li>
+          <li>
+            <span class="page-title">Philippines to United Kingdom</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/philippines-to-united-kingdom/">pettransportglobal.com/pet-transport/philippines-to-united-kingdom/</a>
+          </li>
+          <li>
+            <span class="page-title">Philippines to United States</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/philippines-to-united-states/">pettransportglobal.com/pet-transport/philippines-to-united-states/</a>
+          </li>
+          <li>
+            <span class="page-title">Portugal to United Kingdom</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/portugal-to-united-kingdom/">pettransportglobal.com/pet-transport/portugal-to-united-kingdom/</a>
+          </li>
+          <li>
+            <span class="page-title">Portugal to United States</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/portugal-to-united-states/">pettransportglobal.com/pet-transport/portugal-to-united-states/</a>
+          </li>
+          <li>
+            <span class="page-title">Spain to United Kingdom</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/spain-to-united-kingdom/">pettransportglobal.com/pet-transport/spain-to-united-kingdom/</a>
+          </li>
+          <li>
+            <span class="page-title">Spain to United States</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/spain-to-united-states/">pettransportglobal.com/pet-transport/spain-to-united-states/</a>
+          </li>
+          <li>
+            <span class="page-title">Thailand to United Kingdom</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/thailand-to-united-kingdom/">pettransportglobal.com/pet-transport/thailand-to-united-kingdom/</a>
+          </li>
+          <li>
+            <span class="page-title">Thailand to United States</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/thailand-to-united-states/">pettransportglobal.com/pet-transport/thailand-to-united-states/</a>
+          </li>
+          <li>
+            <span class="page-title">United Kingdom to China</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-kingdom-to-china/">pettransportglobal.com/pet-transport/united-kingdom-to-china/</a>
+          </li>
+          <li>
+            <span class="page-title">United Kingdom to India</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-kingdom-to-india/">pettransportglobal.com/pet-transport/united-kingdom-to-india/</a>
+          </li>
+          <li>
+            <span class="page-title">United Kingdom to Italy</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-kingdom-to-italy/">pettransportglobal.com/pet-transport/united-kingdom-to-italy/</a>
+          </li>
+          <li>
+            <span class="page-title">United Kingdom to Malaysia</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-kingdom-to-malaysia/">pettransportglobal.com/pet-transport/united-kingdom-to-malaysia/</a>
+          </li>
+          <li>
+            <span class="page-title">United Kingdom to Philippines</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-kingdom-to-philippines/">pettransportglobal.com/pet-transport/united-kingdom-to-philippines/</a>
+          </li>
+          <li>
+            <span class="page-title">United Kingdom to Portugal</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-kingdom-to-portugal/">pettransportglobal.com/pet-transport/united-kingdom-to-portugal/</a>
+          </li>
+          <li>
+            <span class="page-title">United Kingdom to Spain</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-kingdom-to-spain/">pettransportglobal.com/pet-transport/united-kingdom-to-spain/</a>
+          </li>
+          <li>
+            <span class="page-title">United Kingdom to Thailand</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-kingdom-to-thailand/">pettransportglobal.com/pet-transport/united-kingdom-to-thailand/</a>
+          </li>
+          <li>
+            <span class="page-title">United Kingdom to Vietnam</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-kingdom-to-vietnam/">pettransportglobal.com/pet-transport/united-kingdom-to-vietnam/</a>
+          </li>
+          <li>
+            <span class="page-title">United States to China</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-states-to-china/">pettransportglobal.com/pet-transport/united-states-to-china/</a>
+          </li>
+          <li>
+            <span class="page-title">United States to India</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-states-to-india/">pettransportglobal.com/pet-transport/united-states-to-india/</a>
+          </li>
+          <li>
+            <span class="page-title">United States to Ireland</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-states-to-ireland/">pettransportglobal.com/pet-transport/united-states-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">United States to Italy</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-states-to-italy/">pettransportglobal.com/pet-transport/united-states-to-italy/</a>
+          </li>
+          <li>
+            <span class="page-title">United States to Malaysia</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-states-to-malaysia/">pettransportglobal.com/pet-transport/united-states-to-malaysia/</a>
+          </li>
+          <li>
+            <span class="page-title">United States to New Zealand</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-states-to-new-zealand/">pettransportglobal.com/pet-transport/united-states-to-new-zealand/</a>
+          </li>
+          <li>
+            <span class="page-title">United States to Philippines</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-states-to-philippines/">pettransportglobal.com/pet-transport/united-states-to-philippines/</a>
+          </li>
+          <li>
+            <span class="page-title">United States to Portugal</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-states-to-portugal/">pettransportglobal.com/pet-transport/united-states-to-portugal/</a>
+          </li>
+          <li>
+            <span class="page-title">United States to Spain</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-states-to-spain/">pettransportglobal.com/pet-transport/united-states-to-spain/</a>
+          </li>
+          <li>
+            <span class="page-title">United States to Thailand</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-states-to-thailand/">pettransportglobal.com/pet-transport/united-states-to-thailand/</a>
+          </li>
+          <li>
+            <span class="page-title">Vietnam to United Kingdom</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/vietnam-to-united-kingdom/">pettransportglobal.com/pet-transport/vietnam-to-united-kingdom/</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pages-group">
+        <div class="pages-group-label">17 placeholder upgrades (existing pages, full content added)</div>
+        <ul class="page-list">
+          <li>
+            <span class="page-title">Australia to Canada</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/australia-to-canada/">pettransportglobal.com/pet-transport/australia-to-canada/</a>
+          </li>
+          <li>
+            <span class="page-title">Australia to United Arab Emirates</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/australia-to-united-arab-emirates/">pettransportglobal.com/pet-transport/australia-to-united-arab-emirates/</a>
+          </li>
+          <li>
+            <span class="page-title">China to Canada</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/china-to-canada/">pettransportglobal.com/pet-transport/china-to-canada/</a>
+          </li>
+          <li>
+            <span class="page-title">France to Australia</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/france-to-australia/">pettransportglobal.com/pet-transport/france-to-australia/</a>
+          </li>
+          <li>
+            <span class="page-title">Germany to Australia</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/germany-to-australia/">pettransportglobal.com/pet-transport/germany-to-australia/</a>
+          </li>
+          <li>
+            <span class="page-title">Germany to United Arab Emirates</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/germany-to-united-arab-emirates/">pettransportglobal.com/pet-transport/germany-to-united-arab-emirates/</a>
+          </li>
+          <li>
+            <span class="page-title">Hong Kong to Australia</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/hong-kong-to-australia/">pettransportglobal.com/pet-transport/hong-kong-to-australia/</a>
+          </li>
+          <li>
+            <span class="page-title">Hong Kong to Canada</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/hong-kong-to-canada/">pettransportglobal.com/pet-transport/hong-kong-to-canada/</a>
+          </li>
+          <li>
+            <span class="page-title">India to Australia</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/india-to-australia/">pettransportglobal.com/pet-transport/india-to-australia/</a>
+          </li>
+          <li>
+            <span class="page-title">India to Canada</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/india-to-canada/">pettransportglobal.com/pet-transport/india-to-canada/</a>
+          </li>
+          <li>
+            <span class="page-title">India to Singapore</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/india-to-singapore/">pettransportglobal.com/pet-transport/india-to-singapore/</a>
+          </li>
+          <li>
+            <span class="page-title">India to United Arab Emirates</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/india-to-united-arab-emirates/">pettransportglobal.com/pet-transport/india-to-united-arab-emirates/</a>
+          </li>
+          <li>
+            <span class="page-title">Ireland to Australia</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/ireland-to-australia/">pettransportglobal.com/pet-transport/ireland-to-australia/</a>
+          </li>
+          <li>
+            <span class="page-title">Ireland to United Arab Emirates</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/ireland-to-united-arab-emirates/">pettransportglobal.com/pet-transport/ireland-to-united-arab-emirates/</a>
+          </li>
+          <li>
+            <span class="page-title">UAE to Australia</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-arab-emirates-to-australia/">pettransportglobal.com/pet-transport/united-arab-emirates-to-australia/</a>
+          </li>
+          <li>
+            <span class="page-title">UAE to Canada</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-arab-emirates-to-canada/">pettransportglobal.com/pet-transport/united-arab-emirates-to-canada/</a>
+          </li>
+          <li>
+            <span class="page-title">UAE to Singapore</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/united-arab-emirates-to-singapore/">pettransportglobal.com/pet-transport/united-arab-emirates-to-singapore/</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- MORTGAGE COMPARE -->
+  <section class="site-section">
+    <div class="site-header">
+      <h2>Mortgage Compare AE</h2>
+      <span class="badge badge-built">1 new page</span>
+    </div>
+    <div class="site-body">
+      <div class="site-meta">
+        domain: mortgagecompare.ae &nbsp;|&nbsp; branch: main &nbsp;|&nbsp; commit: b243684 &nbsp;|&nbsp; 12:51 UTC
+        <div class="commit-msg">Add knowledge-hub/best-fixed-rate-mortgage-uae.html (cluster: rates-comparison, Q1 D21)</div>
+      </div>
+      <div class="pages-group">
+        <div class="pages-group-label">1 new article</div>
+        <ul class="page-list">
+          <li>
+            <span class="page-title">Best Fixed Rate Mortgage UAE 2026</span>
+            <a href="https://mortgagecompare.ae/knowledge-hub/best-fixed-rate-mortgage-uae.html">mortgagecompare.ae/knowledge-hub/best-fixed-rate-mortgage-uae.html</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUS HIRE -->
+  <section class="site-section">
+    <div class="site-header">
+      <h2>Bus Rental Global</h2>
+      <span class="badge badge-none">No build today</span>
+    </div>
+    <div class="site-body">
+      <p class="no-build">No commits on main today. Last activity: 4 June 2026.</p>
+    </div>
+  </section>
+
+  <!-- FUNERAL REPATRIATION -->
+  <section class="site-section">
+    <div class="site-header">
+      <h2>Repatriation Funeral</h2>
+      <span class="badge badge-none">No build today</span>
+    </div>
+    <div class="site-body">
+      <p class="no-build">No commits on master today. Last activity: 4 June 2026.</p>
+    </div>
+  </section>
+
+  <!-- CLOSE PROTECTION -->
+  <section class="site-section">
+    <div class="site-header">
+      <h2>Close Protection Hire</h2>
+      <span class="badge badge-none">No build today</span>
+    </div>
+    <div class="site-body">
+      <p class="no-build">No commits on master today. Last activity: 4 June 2026.</p>
+    </div>
+  </section>
+
+  <footer>
+    generated: 2026-06-05T20:00:00Z &nbsp;/&nbsp; reporter: claude &nbsp;/&nbsp; source: ngindubai/pet-transport
+  </footer>
+
+</div>
+</body>
+</html>
