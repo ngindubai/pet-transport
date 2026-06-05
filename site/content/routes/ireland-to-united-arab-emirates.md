@@ -1,10 +1,11 @@
 ---
-template_variant: "E"
-title: "Pet Relocation Ireland to United Arab Emirates | Requirements & Guide"
-description: "Pet relocation from Ireland to United Arab Emirates: United Arab Emirates import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport Ireland to UAE | Dublin to Dubai, No Titre Test"
+description: "Move your dog or cat from Ireland to the UAE. No titre test, no quarantine for compliant pets. Emirates cargo from Dublin direct. Full MOCCAE guide."
+date: "2026-06-05"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "C"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "ireland-to-united-arab-emirates"
 origin_name: "Ireland"
 destination_name: "United Arab Emirates"
@@ -13,126 +14,113 @@ route_data:
     code: "IE"
     country: "Ireland"
     export_requirements:
-      export_permit: "No export permit required for pet cats and dogs."
-      health_certificate: "EU pets can use existing EU passport. Non-EU destinations require destination-country AHC."
+      health_certificate: "Animal Health Certificate (AHC) issued by a DAFM-authorised official vet within 10 days of travel. Current EU non-commercial format valid until 30 September 2026; new format applies from 1 October 2026. Source: DAFM, gov.ie/dafm."
+      export_permit: "Not required. Ireland is an EU member state; no export permit needed for personal pet exports."
   destination:
     code: "AE"
     country: "United Arab Emirates"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Vaccination must be administered after microchipping. Titre test may be required from certain countries."
-      titre_test: "Required for: Pets from certain non-approved or high-risk countries. Not required for: Pets from approved countries (UK, USA, Canada, Australia, EU countries, etc.). Minimum: 0.5 IU/ml"
-      quarantine: "No routine quarantine for pets from approved countries with correct documentation. Pets with incomplete documentation may be quarantined at owner's expense."
-      import_permit: "Required. Import permit MUST be obtained before travel. Different emirates have different application processes. Allow 1-2 weeks for processing."
-      health_certificate: "Required. Veterinary health certificate / Official health certificate. Issued by: Government veterinarian or government-endorsed veterinarian in country of export. Certificate must confirm: rabies vaccination status, microchip number, pet is free from infectious disease, fit to travel"
+      microchip: "Required. ISO 11784/11785 microchip. Must be implanted and readable before travel."
+      rabies_vaccination: "Required. Current and valid. Allow at least 21 days after initial vaccination before travel."
+      quarantine: "Not required for compliant pets from approved countries. Ireland is considered a low-risk approved country by UAE authorities."
+      import_permit: "Required. Import permit from the relevant municipality (Dubai: Dubai Municipality; Abu Dhabi: Abu Dhabi Agriculture and Food Safety Authority). Obtain before travel."
+      health_certificate: "Required. AHC from DAFM-authorised official vet, issued within 10 days of travel. The UAE may require the certificate to be stamped or endorsed; confirm requirements with the destination emirate's authority."
   airlines:
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
     - name: "Emirates"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Singapore Airlines"
+      policy_summary: "Direct service from Dublin to Dubai (DXB). Pets travel as manifest cargo via Emirates SkyCargo. No cabin pets on any Emirates route. Book through Emirates SkyCargo or an accredited cargo agent. Seasonal heat embargoes apply for summer months."
+    - name: "Etihad Airways"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "No direct Dublin to Abu Dhabi service. Routing via other European hubs. Pets travel via Etihad Cargo. Confirm routing and seasonal restrictions before booking."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
+      action: "Microchip your pet (ISO 11784/11785)"
+      timing: "First step. Must be done before any vaccinations."
       responsible: "Your veterinarian"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
+      action: "Rabies vaccination from a DAFM-registered vet"
+      timing: "After microchip. Allow at least 21 days before travel for the vaccination to be valid."
       responsible: "Your veterinarian"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Apply for import permit from the relevant UAE emirate authority"
+      timing: "4-6 weeks before travel. Apply as early as possible."
+      responsible: "You (or your pet transport agent)"
     - step: 4
-      action: "Apply for import permit from United Arab Emirates"
-      timing: "Apply early: allow 4-6 weeks"
+      action: "Book cargo space with Emirates SkyCargo from Dublin to Dubai"
+      timing: "4-6 weeks before travel. Confirm seasonal heat embargoes for summer travel."
       responsible: "You (or your pet transport agent)"
     - step: 5
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Source IATA-compliant travel crate and acclimatise your pet"
+      timing: "At least 3-4 weeks before travel."
+      responsible: "You"
     - step: 6
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Obtain AHC from DAFM-authorised official vet"
+      timing: "Within 10 days of travel."
+      responsible: "DAFM-authorised official veterinarian"
     - step: 7
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Travel day: check in at cargo desk, Dublin Airport"
+      timing: "3-4 hours before departure for cargo pets."
+      responsible: "You and the airline cargo desk"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (United Arab Emirates)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Emirates SkyCargo fee from Dublin to Dubai: typically EUR 500-1,200 depending on crate size and weight"
+    - "UAE import permit fee: varies by emirate, typically AED 200-500"
+    - "IATA-compliant travel crate: EUR 80-300 depending on size"
+    - "DAFM official vet appointment for AHC: EUR 80-180"
+    - "Veterinary fees for vaccinations and microchip confirmation: EUR 100-250"
+    - "Pet transport agent fee if used: EUR 400-900 for Ireland-UAE coordination"
   key_warnings:
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
+    - "Emirates imposes heat embargoes on pet cargo during summer months (typically June to September) when Dubai temperatures exceed thresholds. Check with Emirates SkyCargo before booking summer travel."
+    - "Import permit requirements differ between Dubai and Abu Dhabi. Confirm the requirements for your specific destination emirate before applying."
+    - "No cabin pets on Emirates. Cargo is the only option from Dublin."
+    - "Certain breeds are banned or restricted in the UAE regardless of origin, including many brachycephalic breeds and specific dog breeds. Verify with the relevant emirate authority before travel."
   route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+  estimated_timeline_weeks: "6-10"
 content:
-  h1: "Pet Transport from Ireland to United Arab Emirates"
+  h1: "Pet Transport from Ireland to the United Arab Emirates"
   overview: |
-    Moving to United Arab Emirates from Ireland with a dog or cat means starting the paperwork months before your flight.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    We've laid out every step below so you know exactly what to prepare and when.
+    Ireland to the UAE is a manageable relocation route for pets, and it has become one of the more common corridors as the Irish expat community in Dubai and Abu Dhabi has grown. Ireland's status as a low-risk, approved country for UAE import purposes means there is no titre test and no routine quarantine for compliant pets. The process typically takes six to ten weeks from start to travel day.
+
+    The two main steps are the import permit from the destination emirate's authority and the Animal Health Certificate from a DAFM-authorised official vet in Ireland. Emirates operates a direct service from Dublin to Dubai, which makes the routing straightforward. The main seasonal consideration is the heat embargo that Emirates applies to pet cargo during the hottest months, typically June through September, when temperatures at Dubai Airport exceed safe thresholds for animals in cargo holds.
+
+    Dubai Municipality handles permits for pets arriving into Dubai emirate. Abu Dhabi Agriculture and Food Safety Authority (ADAFSA) covers Abu Dhabi. Make sure you apply to the right authority for your specific destination, as they have separate processes and requirements.
   sections:
-    - heading: "Why this route needs early planning"
+    - heading: "UAE import requirements: what Ireland's approved status means"
       body: |
-        Compared to some international pet transport routes, Ireland to United Arab Emirates is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        UAE pet import regulations are managed at both federal (MOCCAE) and emirate (municipality) level. Dubai and Abu Dhabi have the most established processes. Government portals blocked automated extraction; data compiled from MOCCAE published guidelines, embassy documentation, and established pet transport operator information. Verify all requirements with the relevant municipality before travel.
-    - heading: "Things to sort before you book"
+        The UAE's pet import system recognises Ireland as a low-risk, approved country for dogs and cats. This classification means Irish pets do not face a titre test requirement and are not subject to routine quarantine on arrival, provided all documentation is in order. The key requirements are a readable ISO microchip, a current and valid rabies vaccination (with at least 21 days elapsed since initial vaccination), a valid import permit from the appropriate emirate authority, and an AHC issued by a DAFM-authorised official vet within ten days of travel.
+
+        The permit is issued by the local municipality of the emirate you are moving to. Dubai: Dubai Municipality Food Safety Department. Abu Dhabi: ADAFSA. Sharjah and the Northern Emirates: contact the relevant municipality. The process and fees differ between emirates, so confirm which authority you need to apply to before starting the paperwork. Applications are typically submitted online and processing takes a few weeks.
+
+        The UAE also has a list of restricted and banned dog breeds. This list is set at the federal level and includes a number of large and brachycephalic breeds. Check the Ministry of Climate Change and Environment (MOCCAE) and your destination emirate's authority for the current list before travel, as breed restrictions are enforced at the airport. Source: MOCCAE, moccae.gov.ae.
+    - heading: "Flying your pet from Dublin to Dubai with Emirates"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Emirates is the primary carrier for this route and offers the only direct service from Dublin Airport to Dubai International (DXB). All pets on Emirates travel as manifest cargo via Emirates SkyCargo. There are no in-cabin pet options on any Emirates route. The cargo hold is temperature-controlled and pressurised, but the airline imposes seasonal heat embargoes when ground temperatures at Dubai Airport exceed safe thresholds for animal welfare. These embargoes typically apply from June through September. If you are planning a summer move, contact Emirates SkyCargo directly before booking to confirm whether your travel dates fall within an embargo period.
+
+        Book cargo space through Emirates SkyCargo or an IATA-accredited cargo agent. The booking is separate from your passenger ticket. You will need your pet's crate dimensions and weight to get a cargo quote. Emirates uses the IATA Live Animals Regulations to assess crate adequacy, so size your crate using the IATA container requirements before booking to avoid issues at check-in.
+
+        If Emirates cargo capacity is unavailable, or if your destination is Abu Dhabi rather than Dubai, Etihad Airways operates cargo services. Etihad does not serve Dublin directly, so routings go via a European hub. This adds transit time and an additional connection point for your pet, so the Emirates direct service from Dublin is the cleaner option where possible.
+    - heading: "Key documents and timing"
+      body: |
+        The AHC is the most time-sensitive document on this route. It must be issued by a DAFM-authorised official vet and is valid for ten days from the date of issue. Book the vet appointment to fall within the ten-day window before your departure. DAFM maintains a register of authorised official vets on gov.ie/dafm. Some UAE entry points require additional endorsement or stamping of the health certificate; confirm this with the relevant emirate authority when you apply for your import permit.
+
+        The import permit must be in hand before you travel. Do not book flights until you have the permit confirmed, as entry without a permit will result in refusal and potential return of your pet to Ireland at your cost. Most permits are granted within two to four weeks of application, but allow more time in busy periods.
+
+        Keep all original documents with you in the cabin, not in checked luggage. On arrival in Dubai, your pet will be collected from the cargo facility, and all documents will be checked against the import permit. Discrepancies in microchip numbers, vaccination dates, or certificate formats cause delays, so cross-check every document before you travel.
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Ireland to United Arab Emirates?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering United Arab Emirates?"
-    answer: "No routine quarantine is required in United Arab Emirates for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering United Arab Emirates?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter United Arab Emirates. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into United Arab Emirates?"
-    answer: "Yes, an import permit is required from United Arab Emirates's authority (the relevant government body). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Ireland. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check United Arab Emirates's authority for the exact format required."
+  - question: "Is there quarantine for pets arriving in the UAE from Ireland?"
+    answer: "No routine quarantine for compliant pets from approved countries including Ireland. Provided your microchip, vaccination, import permit, and health certificate are all in order, your pet will be released after document checks on arrival."
+  - question: "Do I need a titre test to move my pet from Ireland to the UAE?"
+    answer: "No. Ireland is classified as a low-risk approved country for UAE import purposes. A titre test is not required. A valid rabies vaccination with at least 21 days elapsed since initial vaccination is required."
+  - question: "Can I fly my pet to Dubai with Emirates in the cabin?"
+    answer: "No. Emirates does not permit pets in the cabin on any route. Your pet will travel as manifest cargo via Emirates SkyCargo in a temperature-controlled hold. Book cargo space separately from your passenger ticket."
+  - question: "Are there heat restrictions on flying pets to Dubai in summer?"
+    answer: "Yes. Emirates imposes heat embargoes on pet cargo when Dubai ground temperatures exceed safe thresholds, typically from June through September. Contact Emirates SkyCargo directly before booking summer travel to confirm whether your dates are affected."
+  - question: "Who issues the import permit for pets coming to Dubai?"
+    answer: "Dubai Municipality's Food Safety Department issues import permits for pets entering Dubai emirate. For Abu Dhabi, the authority is ADAFSA. Apply to the correct authority for your specific destination emirate; each has its own process and fees."
 links:
   sideways:
     - url: "/pet-transport/united-arab-emirates-to-ireland/"
       text: "Pet Transport United Arab Emirates to Ireland"
   upward:
-    - url: "/pet-transport/origins/ireland-pet-export-guide/"
-      text: "Shipping from Ireland"
     - url: "/pet-transport/countries/united-arab-emirates/"
-      text: "Importing to United Arab Emirates"
-    - url: "/pet-transport/airlines/british-airways/"
-      text: "British Airways pet policy"
-    - url: "/pet-transport/airlines/emirates/"
-      text: "Emirates pet policy"
+      text: "United Arab Emirates pet import rules"
 ---

@@ -1,138 +1,149 @@
 ---
-template_variant: "E"
-title: "Pet Relocation India to United Arab Emirates | Requirements & Guide"
-description: "Pet relocation from India to United Arab Emirates: United Arab Emirates import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport India to UAE | Titre Test, Import Permit & Airline Guide"
+description: "Moving a dog or cat from India to the UAE? Titre test required from India, plus MOCCAE import permit and AQCS NOC. Full guide for Dubai and Abu Dhabi."
+date: "2026-06-05"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "C"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "india-to-united-arab-emirates"
 origin_name: "India"
 destination_name: "United Arab Emirates"
+
 route_data:
   origin:
     code: "IN"
     country: "India"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      health_certificate: "Required. Health certificate from a registered Indian vet in the UAE-approved format, endorsed by AQCS (Animal Quarantine and Certification Services, aqcsindia.gov.in). Two clinical examinations required: first approximately 7 days before travel, second within 2 days of departure. Certificate valid 14 days from issue date."
+      export_permit: "No-Objection Certificate (NOC) required from AQCS before travel. Apply to the AQCS regional office nearest your departure city. Allow 4-6 weeks. Source: aqcsindia.gov.in"
   destination:
     code: "AE"
     country: "United Arab Emirates"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Vaccination must be administered after microchipping. Titre test may be required from certain countries."
-      titre_test: "Required for: Pets from certain non-approved or high-risk countries. Not required for: Pets from approved countries (UK, USA, Canada, Australia, EU countries, etc.). Minimum: 0.5 IU/ml"
-      quarantine: "No routine quarantine for pets from approved countries with correct documentation. Pets with incomplete documentation may be quarantined at owner's expense."
-      import_permit: "Required. Import permit MUST be obtained before travel. Different emirates have different application processes. Allow 1-2 weeks for processing."
-      health_certificate: "Required. Veterinary health certificate / Official health certificate. Issued by: Government veterinarian or government-endorsed veterinarian in country of export. Certificate must confirm: rabies vaccination status, microchip number, pet is free from infectious disease, fit to travel"
+      microchip: "Required (ISO 11784/11785). Must be implanted before the rabies vaccination."
+      rabies_vaccination: "Required. Vaccination must be within its validity period on arrival. Minimum age for vaccination: 12 weeks."
+      titre_test: "Required. India is classified as a high-risk origin country by UAE authorities (MOCCAE). Titre test with a passing result (minimum 0.5 IU/ml) is required for pets from high-risk countries entering the UAE. Use a UAE-accepted laboratory. Source: MOCCAE, moccae.gov.ae"
+      quarantine: "No routine quarantine for compliant pets with correct documentation. Pets arriving with incomplete documentation may be held at the airport facility at owner's expense."
+      import_permit: "Required. Import permit must be obtained before travel. Dubai: apply to Dubai Municipality. Abu Dhabi: apply to ADAFSA (Abu Dhabi Agriculture and Food Safety Authority). Allow 1-2 weeks for processing. Source: MOCCAE/Dubai Municipality/ADAFSA"
+      health_certificate: "Required. Official health certificate from an AQCS-registered Indian vet, endorsed by AQCS. Must confirm: microchip number, rabies vaccination details, titre test result, pet is free from infectious disease, fit to travel."
   airlines:
-    - name: "Air India"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 5kg with carrier). Cargo: Larger pets via Air India Cargo. Breed restrictions apply. Temperature embargoes during extreme heat on Indian domestic sectors"
     - name: "Emirates"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
+      policy_summary: "Cargo only from India. Emirates SkyCargo operates from Delhi (DEL), Mumbai (BOM), Bangalore (BLR), Chennai (MAA), Hyderabad (HYD), and Kochi (COK) to Dubai (DXB). Pets in pressurised, temperature-controlled hold. No cabin pets on any Emirates international route. Temperature embargoes apply during Gulf summer (typically May-September)."
+    - name: "Air India"
+      type: "cargo_only"
+      policy_summary: "International cargo from major Indian airports to Dubai (DXB) and Abu Dhabi (AUH). Pets in pressurised, temperature-controlled hold via Air India Cargo. No cabin pets on international routes. Contact AI Cargo for booking."
+    - name: "Etihad Airways"
+      type: "cargo_only"
+      policy_summary: "Cargo from Indian cities to Abu Dhabi (AUH) hub. Etihad Cargo handles live animals in temperature-controlled hold. Useful option for owners relocating to Abu Dhabi or the Northern Emirates. Temperature restrictions apply in summer."
+    - name: "IndiGo"
+      type: "cargo_only"
+      policy_summary: "IndiGo does not carry pets as cargo on international routes. Domestic India sectors only for connecting to international services at major airports."
     - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Singapore Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Cargo from Indian cities via Frankfurt (FRA) hub to UAE. Connecting option if direct India-UAE cargo slots are full. Pets in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round."
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step: must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Implant ISO 11784/11785 microchip"
+      timing: "First step. Must be in place before the rabies vaccination."
+      responsible: "Your veterinarian in India"
     - step: 2
       action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      timing: "After microchipping. Blood for titre test cannot be drawn until at least 30 days after vaccination."
+      responsible: "Your veterinarian in India"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Titre test blood draw at a UAE-accepted laboratory"
+      timing: "At least 30 days after the rabies vaccination. Result must be 0.5 IU/ml or above. Allow 2-4 weeks for results."
+      responsible: "Your veterinarian plus approved laboratory"
     - step: 4
-      action: "Apply for import permit from United Arab Emirates"
-      timing: "Apply early: allow 4-6 weeks"
-      responsible: "You (or your pet transport agent)"
+      action: "Apply for UAE municipality import permit"
+      timing: "After titre test result confirmed. Apply to Dubai Municipality (for Dubai arrivals) or ADAFSA (for Abu Dhabi arrivals). Allow 1-2 weeks."
+      responsible: "Owner or pet transport agent"
     - step: 5
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Apply for AQCS No-Objection Certificate (NOC)"
+      timing: "4-6 weeks before planned travel. Apply to the relevant AQCS regional office."
+      responsible: "Owner or pet transport agent"
     - step: 6
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "First clinical examination and health certificate preparation"
+      timing: "Approximately 7 days before departure."
+      responsible: "AQCS-registered official veterinarian"
     - step: 7
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Second clinical examination, health certificate completion and AQCS endorsement"
+      timing: "Within 2 days of departure. Certificate valid 14 days from issue."
+      responsible: "Official veterinarian and AQCS"
+    - step: 8
+      action: "Book cargo space with Emirates SkyCargo, Air India Cargo, or Etihad Cargo"
+      timing: "4-6 weeks before travel. Confirm live animal acceptance, summer embargo dates, and crate requirements."
+      responsible: "You or your pet transport agent"
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (United Arab Emirates)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Airline cargo fees (India to UAE): typically AED 1,500-4,000 (USD 400-1,100) depending on pet size, crate, and route"
+    - "IATA-compliant travel crate: AED 400-1,200 depending on size"
+    - "Veterinary fees in India: microchip, vaccinations, clinical exams, health certificate preparation"
+    - "Titre test laboratory fee: approximately INR 5,000-12,000 depending on laboratory"
+    - "AQCS NOC application and health certificate endorsement fees"
+    - "UAE municipality import permit fee: varies by emirate, typically AED 100-300"
+    - "Pet transport agent fee (recommended for this route): AED 1,500-4,000"
   key_warnings:
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "India is classified as a high-risk origin country by UAE authorities. A titre test with a passing result (0.5 IU/ml) is required for Indian pets. Pets without a confirmed passing titre test will be refused entry."
+    - "The UAE import permit must be obtained before travel. Different emirates have different application processes: Dubai Municipality for Dubai arrivals, ADAFSA for Abu Dhabi. Apply well in advance."
+    - "Emirates SkyCargo suspends live animal cargo during the Gulf summer (typically May-September) due to extreme temperatures. Plan travel for October to April if possible. Check current embargo dates with the carrier before booking."
+    - "The AQCS NOC is required for all pet exports from India. Without it, the health certificate cannot be correctly endorsed and airlines will not accept the pet."
+    - "Verify current UAE import requirements with MOCCAE (moccae.gov.ae) and the relevant municipality before travel. Requirements can change."
+  route_complexity: "high"
+  estimated_timeline_weeks: "12-20"
+
 content:
-  h1: "Pet Transport from India to United Arab Emirates"
+  h1: "Pet Transport from India to the United Arab Emirates"
   overview: |
-    Getting your dog from India to United Arab Emirates is entirely achievable, but the preparation timeline is not flexible.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date: some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    The paperwork is the hard part. Once everything is in order, the journey itself is well-managed.
+    The India-to-UAE corridor is one of the busiest international pet relocation routes in the world. The Indian expat community in the UAE and broader Gulf region numbers in the millions, and a significant proportion of those families relocate with dogs and cats. The route is well-established and regularly handled by IPATA agents operating between Indian cities and Dubai, Abu Dhabi, and Sharjah.
+
+    The key requirement that catches many owners off-guard is the titre test. India is classified as a high-risk origin country by UAE authorities (MOCCAE), which means pets from India must have a rabies titre test with a passing result of 0.5 IU/ml or above before they can enter the UAE. This adds at least 6-8 weeks to the preparation timeline beyond what would otherwise be needed. A UAE municipality import permit is also required before travel. Source: MOCCAE, moccae.gov.ae.
+
+    On top of the UAE requirements, the Indian export process requires an AQCS No-Objection Certificate and two clinical examinations before your pet can leave India. The full preparation timeline from microchipping to departure is typically 12-20 weeks. Start early and plan around the Gulf summer cargo embargo, which affects most airlines from approximately May to September.
+
   sections:
-    - heading: "Why this route needs early planning"
+    - heading: "UAE import requirements for pets from India"
       body: |
-        Compared to some international pet transport routes, India to United Arab Emirates is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        UAE pet import regulations are managed at both federal (MOCCAE) and emirate (municipality) level. Dubai and Abu Dhabi have the most established processes. Government portals blocked automated extraction; data compiled from MOCCAE published guidelines, embassy documentation, and established pet transport operator information. Verify all requirements with the relevant municipality before travel.
-    - heading: "Practical advice for shipping your pet from India"
+        UAE pet import rules are managed at both federal and emirate level. At the federal level, MOCCAE (Ministry of Climate Change and Environment) sets the overarching framework. At the emirate level, Dubai Municipality handles permits for Dubai arrivals, while ADAFSA (Abu Dhabi Agriculture and Food Safety Authority) manages Abu Dhabi. Apply to the relevant authority for your destination emirate.
+
+        The import permit must be obtained before travel. Allow 1-2 weeks for processing, but apply earlier if possible. The permit specifies that your pet must arrive with a valid microchip, current rabies vaccination, and a passing titre test result. India's high-risk classification for rabies means the titre test is mandatory; this is not a rule that applies only to certain breeds or ages. All dogs and cats from India require it. Source: MOCCAE, moccae.gov.ae.
+
+        On arrival at Dubai International Airport (DXB) or Abu Dhabi International Airport (AUH), your pet will be inspected by veterinary officers. They will check the microchip, verify the import permit, review the health certificate and titre test results, and confirm vaccination records. Pets arriving with incomplete documentation may be held in the airport facility at the owner's expense while the issue is resolved. All paperwork must be in order before you travel.
+
+    - heading: "Titre test: what it involves and how to plan around it"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        The rabies titre test is a blood test that measures the level of rabies antibodies in your pet. A sample is drawn from your pet by your vet in India and sent to a UAE-accepted laboratory for analysis. The blood draw cannot happen until at least 30 days after the rabies vaccination, so the vaccination must be given first (after microchipping). Results typically take 2-4 weeks. A passing result is 0.5 IU/ml or above.
+
+        Unlike the UK's titre test pathway, there is no mandatory waiting period after a passing UAE titre test result. Once you have the passing result, you can proceed with the import permit application and finalise your travel date. This makes the UAE pathway considerably faster than the UK route, even though both require a titre test from India.
+
+        If the titre test result is below 0.5 IU/ml, your vet will advise on re-vaccination or boosting, followed by another titre test at least 30 days later. A failed result adds at minimum 6-8 weeks to the timeline. Test early to allow time for a second attempt if needed.
+
+    - heading: "The Gulf summer embargo: timing your India-UAE pet move"
+      body: |
+        This is one of the most practically important factors for this route. Emirates SkyCargo, the most direct and commonly used carrier for India-UAE pet transport, suspends live animal cargo during the Gulf summer due to extreme ground and hold temperatures. The embargo typically runs from approximately May to September, though exact dates vary by year and route. Etihad Cargo and Air India Cargo operate similar restrictions.
+
+        If your relocation date falls within the summer months, you have two options: adjust your travel date to October-April, or find an alternative routing that avoids the Gulf during the hottest periods. Some owners use northern European hub routes (via Frankfurt or Amsterdam) during summer, but this adds significant journey time and the aircraft still lands in the Gulf heat.
+
+        The most straightforward approach is to plan for an October-April travel window. For families with a fixed relocation date in summer, a pet transport agent can advise on whether any carrier will accept pets on the specific route and date, or whether temporary arrangements for the pet in India are necessary until the embargoes lift.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from India to United Arab Emirates?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering United Arab Emirates?"
-    answer: "No routine quarantine is required in United Arab Emirates for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering United Arab Emirates?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter United Arab Emirates. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into United Arab Emirates?"
-    answer: "Yes, an import permit is required from United Arab Emirates's authority (the relevant government body). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in India. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check United Arab Emirates's authority for the exact format required."
+  - question: "Why does my pet need a titre test to enter the UAE from India?"
+    answer: "UAE authorities (MOCCAE) classify India as a high-risk origin country for rabies. The titre test confirms that your pet's rabies vaccination has produced an adequate level of antibody protection (0.5 IU/ml or above). All dogs and cats from India require this before UAE entry, regardless of breed, age, or vaccination history. Source: MOCCAE, moccae.gov.ae"
+  - question: "Do I need a separate import permit for each emirate?"
+    answer: "Yes. The permit process differs by emirate. For Dubai arrivals, apply to Dubai Municipality. For Abu Dhabi, apply to ADAFSA. If you are relocating to Sharjah, Ras Al Khaimah, or other emirates, check with the relevant local authority. Apply to the correct authority for your specific destination."
+  - question: "When can my pet not travel to the UAE due to the summer embargo?"
+    answer: "Most airlines operating India-UAE cargo routes, including Emirates SkyCargo, suspend live animal transport during the Gulf summer, approximately May to September. Exact dates vary by year. Check with your carrier or agent before booking. October to April is the recommended travel window."
+  - question: "What is the AQCS NOC and why does my pet need it?"
+    answer: "AQCS (Animal Quarantine and Certification Services) issues the No-Objection Certificate required for all pet exports from India. Without it, the health certificate cannot be correctly endorsed and airlines will not carry your pet. Apply to the AQCS regional office in your city at least 4-6 weeks before travel. Source: aqcsindia.gov.in"
+  - question: "How long does the full India-to-UAE pet move take to prepare?"
+    answer: "Allow 12-20 weeks from microchipping to departure. The titre test adds at least 6-8 weeks (30-day post-vaccination wait before the blood draw, plus 2-4 weeks for results), and the AQCS NOC process takes 4-6 weeks. Unlike the UK route, there is no mandatory waiting period after a passing UAE titre test result, which keeps the total timeline shorter."
+
 links:
   sideways:
     - url: "/pet-transport/united-arab-emirates-to-india/"
       text: "Pet Transport United Arab Emirates to India"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-india-export-guide/"
-      text: "Shipping from India"
     - url: "/pet-transport/countries/united-arab-emirates/"
-      text: "Importing to United Arab Emirates"
-    - url: "/pet-transport/airlines/emirates/"
-      text: "Emirates pet policy"
+      text: "United Arab Emirates pet import rules"
 ---

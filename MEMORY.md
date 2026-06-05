@@ -7,15 +7,22 @@
 - **Repository:** https://github.com/ngindubai/pet-transport (private)
 - **Deploy:** Push to `main` triggers GitHub Actions automatically. Hugo build + incremental FTP to Hostinger. Live within ~80 seconds for a single article. After every build batch, the live URLs of new/changed pages are posted in chat for review (LIVE LINK REVIEW GATE in CLAUDE.md).
 
-## Current State (2026-06-04, reconciled from disk by verify_build_state.py)
+## Current State (2026-06-05, reconciled from disk by verify_build_state.py)
 
-- **Routes built:** 5,217 of ~37,830 country pairs (~13.8%). True on-disk count (5,207 in `routes/` + 10 in `pet-transport/`).
+- **Routes built:** 5,254 of ~37,830 country pairs (~13.9%). True on-disk count (5,244 in `routes/` + 10 in `pet-transport/`).
 - **Blog articles:** 413
-- **Total .md source files:** 6,003 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-24 complete. **Chunk 25 is next** (Template C, Tier A). The 90-route P1 priority matrix is fully built; 252 score-7+ Tier A pairs remain (China, Ireland, NZ, remaining SK/NL/CH and other corridors).
+- **Total .md source files:** 6,040 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Phase 7 progress:** Chunks 1-27 complete. **Chunk 28 is next** (Template D, Tier A). 215 score-7+ Tier A pairs remain. Chunks 25-27 were three parallel routine runs reconciled into one main commit on 2026-06-05 (see incident below).
 - **Content plan:** Days 1-5 complete. Day 5 was pet-transport-uk-to-usa.md (new article, 2266 words, 2026-06-05). **Day 6 is next:** `europe-to-uk-pet-transport`.
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
+
+### DEPLOY INCIDENT 2026-06-05: routine committed to feature branches, never to main (ROOT CAUSE + FIX)
+
+- **Symptom:** Three routine runs reported "committed + live" in Slack, but nothing ever reached the live site.
+- **Root cause:** `build-to-live.yml` triggers only on `push: branches: [main]`. The routine was committing to a per-session `claude/<random>` feature branch instead of `main`, so the GitHub Action never fired and Hostinger never updated. Because `main` never advanced, every run re-read `next_chunk: 25` and rebuilt "chunk 25" with a different, overlapping set of routes. Three branches resulted: `youthful-volta-fHktH`, `youthful-volta-ubyDO`, `eloquent-bell-grEAl`, each with 25 routes, ~54 unique after dedup.
+- **Immediate fix (done):** Combined all three batches into one commit on `main`, deduped overlapping slugs, QA'd the full set, reconciled counts from disk, pushed to `main` to trigger the deploy. Routes 5,217 -> 5,254.
+- **Durable fix (REQUIRED, owner action):** The routine's STEP 3 already says `git push origin HEAD:main`, but a conflicting "Git Development Branch Requirements" block pins it to a `claude/*` feature branch and says never push elsewhere without permission. That block wins, so work never lands on main. The routine config must be changed so the working/push branch is `main` (or a merge-to-main step added). This is cloud routine config, not in-repo, so it cannot be self-edited from a session. Until changed, every scheduled run will again strand its work on a feature branch and re-build the same chunk number.
 
 ### Known legacy content debt (tracked)
 - **Em dashes:** CLEARED 2026-06-04 from all rendered content: site/content (89 files), the blog/route-C/route-A/breeds templates, llms.txt, and countries_pet_regulations.json. Verified by local Hugo build: 0 em dashes in rendered HTML. Remaining em dashes are only in code comments (CSS/PHP/Hugo template headers) and vendor bootstrap.min.css, which do not render as page content.
