@@ -7,12 +7,12 @@
 - **Repository:** https://github.com/ngindubai/pet-transport (private)
 - **Deploy:** Push to `main` triggers GitHub Actions automatically. Hugo build + incremental FTP to Hostinger. Live within ~80 seconds for a single article. After every build batch, the live URLs of new/changed pages are posted in chat for review (LIVE LINK REVIEW GATE in CLAUDE.md).
 
-## Current State (2026-06-04, reconciled from disk by verify_build_state.py)
+## Current State (2026-06-05, reconciled from disk by verify_build_state.py)
 
-- **Routes built:** 5,217 of ~37,830 country pairs (~13.8%). True on-disk count (5,207 in `routes/` + 10 in `pet-transport/`).
+- **Routes built:** 5,225 of ~37,830 country pairs (~13.8%). True on-disk count (5,215 in `routes/` + 10 in `pet-transport/`).
 - **Blog articles:** 413
-- **Total .md source files:** 6,003 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-24 complete. **Chunk 25 is next** (Template C, Tier A). The 90-route P1 priority matrix is fully built; 252 score-7+ Tier A pairs remain (China, Ireland, NZ, remaining SK/NL/CH and other corridors).
+- **Total .md source files:** 6,011 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Phase 7 progress:** Chunks 1-25 complete. **Chunk 26 is next** (Template D, Tier A). 230 score-7+ Tier A pairs remain. Chunk 25 (Template C): 25 routes covering China, India, Ireland, UAE, HK, Germany, France, Australia corridors. Blog Day 6 (europe-to-uk-pet-transport) also next.
 - **Content plan:** Days 1-5 complete. Day 5 was pet-transport-uk-to-usa.md (new article, 2266 words, 2026-06-05). **Day 6 is next:** `europe-to-uk-pet-transport`.
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.

@@ -27,9 +27,9 @@
 - Chunk 22 template: E (Data-Forward) - DONE 2026-06-04
 - Chunk 23 template: A (Field Manual) - DONE 2026-06-04 (completed the P1 matrix)
 - Chunk 24 template: B (Visual Journey) - DONE 2026-06-04 (Japan, South Korea, Switzerland, Netherlands corridors)
-- Chunk 25 template: C (Comparison Brief) - next in rotation
-- Tier: A (252 score-7+ pairs remain)
-- Template rotation: ...D(21), E(22), A(23), B(24), C(25)...
+- Chunk 25 template: C (Comparison Brief) - DONE 2026-06-05
+- Tier: A (230 score-7+ pairs remain after this chunk)
+- Template rotation: ...D(21), E(22), A(23), B(24), C(25), D(26)...
 
 ## Content Plan - Daily Blog Articles
 
@@ -59,3 +59,4 @@
 | 2026-06-04 | Chunk 22 | 11 Tier A routes, Template E (Data-Forward). Scores 6-7: UK-HK, USA-UAE, USA-SG, AU-USA, FR-UK, ZA-UK, ZA-USA, UK-CA, UK-DE, USA-DE, CA-UK. Grounded in route_keyword_matrix regulatory notes. QA passed, zero em dashes. | 5,979 | Live links posted. |
 | 2026-06-04 | Chunk 23 | 12 Tier A routes, Template A (Field Manual). Completed the P1 matrix: USA-HK, UK-ZA, USA-CA, CA-USA, USA-FR, FR-USA, USA-ZA. Plus 5 new top Tier A pairs: UK-Japan, Japan-UK, UK-NZ, Ireland-UK, UK-Netherlands. Japan 180-day process, NZ MPI regime, Ireland CTA exemption. P1 matrix now fully built (90 routes). QA passed, zero em dashes. | 5,991 | Live links posted. |
 | 2026-06-04 | Chunk 24 | 12 Tier A routes, Template B (Visual Journey). Japan corridors (USA-Japan, Japan-USA), South Korea corridors (USA-KR, UK-KR, KR-USA, KR-UK), Switzerland corridors (USA-CH, UK-CH, CH-USA, CH-UK), Netherlands corridors (NL-USA, NL-UK). Japan/Korea 180-day titre + quarantine, Switzerland no quarantine, NL EU passport still accepted for UK. QA passed, zero em dashes. | 6,003 | Live links below. |
+| 2026-06-05 | Chunk 25 | 25 Tier A routes, Template C (Comparison Brief). China corridors (CN-UK, CN-US, CN-CA, UK-CN, US-CN). India corridors (IN-UK, IN-US, IN-AU stepping-stone via SG, IN-CA, IN-UAE, IN-SG). Ireland corridors (IE-US, IE-AU, IE-UAE, US-IE). UAE expansion (UAE-AU, UAE-CA, UAE-SG). HK corridors (HK-AU, HK-CA). Germany/France/Australia (DE-AU, DE-UAE, FR-AU, AU-CA, AU-UAE). Key facts: China GACC 6-month exit + quarantine, India NOT DAFF-approved (stepping stone via SG), Ireland Group 2 for AU (no titre), HK/UAE DAFF status requires verification. All 25 QA passed, zero em dashes. | 6,011 | Live links below. |
