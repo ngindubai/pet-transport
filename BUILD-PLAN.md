@@ -21,15 +21,16 @@
 
 ## Phase 7 - Template Diversification Rollout
 
-**Status: Chunks 1-24 complete. Chunk 25 is next.**
+**Status: Chunks 1-25 complete. Chunk 26 is next.**
 
 - Chunk 21 template: D (Conversational Q&A) - DONE 2026-06-04
 - Chunk 22 template: E (Data-Forward) - DONE 2026-06-04
 - Chunk 23 template: A (Field Manual) - DONE 2026-06-04 (completed the P1 matrix)
 - Chunk 24 template: B (Visual Journey) - DONE 2026-06-04 (Japan, South Korea, Switzerland, Netherlands corridors)
-- Chunk 25 template: C (Comparison Brief) - next in rotation
-- Tier: A (252 score-7+ pairs remain)
-- Template rotation: ...D(21), E(22), A(23), B(24), C(25)...
+- Chunk 25 template: C (Comparison Brief) - DONE 2026-06-05 (Spain, Italy, Portugal, India, China, Thailand, Malaysia corridors)
+- Chunk 26 template: D (Conversational Q&A) - next in rotation
+- Tier: A (227 score-7+ pairs remain)
+- Template rotation: ...E(22), A(23), B(24), C(25), D(26)...
 
 ## Content Plan - Daily Blog Articles
 
@@ -59,3 +60,4 @@
 | 2026-06-04 | Chunk 22 | 11 Tier A routes, Template E (Data-Forward). Scores 6-7: UK-HK, USA-UAE, USA-SG, AU-USA, FR-UK, ZA-UK, ZA-USA, UK-CA, UK-DE, USA-DE, CA-UK. Grounded in route_keyword_matrix regulatory notes. QA passed, zero em dashes. | 5,979 | Live links posted. |
 | 2026-06-04 | Chunk 23 | 12 Tier A routes, Template A (Field Manual). Completed the P1 matrix: USA-HK, UK-ZA, USA-CA, CA-USA, USA-FR, FR-USA, USA-ZA. Plus 5 new top Tier A pairs: UK-Japan, Japan-UK, UK-NZ, Ireland-UK, UK-Netherlands. Japan 180-day process, NZ MPI regime, Ireland CTA exemption. P1 matrix now fully built (90 routes). QA passed, zero em dashes. | 5,991 | Live links posted. |
 | 2026-06-04 | Chunk 24 | 12 Tier A routes, Template B (Visual Journey). Japan corridors (USA-Japan, Japan-USA), South Korea corridors (USA-KR, UK-KR, KR-USA, KR-UK), Switzerland corridors (USA-CH, UK-CH, CH-USA, CH-UK), Netherlands corridors (NL-USA, NL-UK). Japan/Korea 180-day titre + quarantine, Switzerland no quarantine, NL EU passport still accepted for UK. QA passed, zero em dashes. | 6,003 | Live links below. |
+| 2026-06-05 | Chunk 25 | 25 Tier A routes, Template C (Comparison Brief). Spain corridors (UK-ES, ES-UK, USA-ES, ES-USA), Italy corridors (UK-IT, IT-UK, USA-IT, IT-USA), Portugal corridors (UK-PT, PT-UK, USA-PT, PT-USA), India corridors (IN-UK, IN-USA, UK-IN, USA-IN), China corridors (UK-CN, USA-CN), Thailand corridors (UK-TH, TH-UK, USA-TH, TH-USA), Malaysia corridors (UK-MY, MY-UK, USA-MY). Spain/Italy/Portugal: AHC, EU rules, no quarantine, no titre test. India: AQCS 15-day quarantine, FAVN titre test for UK entry. China: GACC 6-month wait + 30-day dog quarantine. Thailand: no routine quarantine, DLD permit. Malaysia: UK is quarantine-exempt; USA gets 7-day quarantine. Verified Thailand/India data vs stale data file (web sources used). QA passed, zero em dashes. | 6,028 | Live links below. |
