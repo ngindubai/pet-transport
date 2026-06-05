@@ -15,21 +15,22 @@
 - **Every build batch also updates BUILD-PLAN.md, build_state.json and MEMORY.md in the same commit.** This is mandatory. See `CLAUDE.md` MANDATORY DOCS UPDATE.
 - **Bulk-generation scripts are banned.**
 
-**Where we are (reconciled from disk 2026-06-04):** 5,217 quality routes complete. ~32,613 routes remaining. Blog: 413 articles. Total .md source files: 6,003 (full deployed total verified from sitemap.xml after a build). Content plan: Day 6 is next. 252 score-7+ Tier A pairs remain after Chunk 24. Counts come from `python verify_build_state.py`, never hand-edited.
+**Where we are (reconciled from disk 2026-06-05):** 5,242 quality routes complete. ~32,588 routes remaining. Blog: 413 articles. Total .md source files: 6,028 (full deployed total verified from sitemap.xml after a build). Content plan: Day 6 is next. 227 score-7+ Tier A pairs remain after Chunk 25. Counts come from `python verify_build_state.py`, never hand-edited.
 
 ---
 
 ## Phase 7 - Template Diversification Rollout
 
-**Status: Chunks 1-24 complete. Chunk 25 is next.**
+**Status: Chunks 1-25 complete. Chunk 26 is next.**
 
 - Chunk 21 template: D (Conversational Q&A) - DONE 2026-06-04
 - Chunk 22 template: E (Data-Forward) - DONE 2026-06-04
 - Chunk 23 template: A (Field Manual) - DONE 2026-06-04 (completed the P1 matrix)
 - Chunk 24 template: B (Visual Journey) - DONE 2026-06-04 (Japan, South Korea, Switzerland, Netherlands corridors)
-- Chunk 25 template: C (Comparison Brief) - next in rotation
-- Tier: A (252 score-7+ pairs remain)
-- Template rotation: ...D(21), E(22), A(23), B(24), C(25)...
+- Chunk 25 template: C (Comparison Brief) - DONE 2026-06-05 (China, India, Malaysia, Thailand, Philippines, Vietnam, Ireland, NZ corridors)
+- Chunk 26 template: D (Conversational Q&A) - next in rotation
+- Tier: A (227 score-7+ pairs remain)
+- Template rotation: ...D(21), E(22), A(23), B(24), C(25), D(26)...
 
 ## Content Plan - Daily Blog Articles
 
@@ -59,3 +60,4 @@
 | 2026-06-04 | Chunk 22 | 11 Tier A routes, Template E (Data-Forward). Scores 6-7: UK-HK, USA-UAE, USA-SG, AU-USA, FR-UK, ZA-UK, ZA-USA, UK-CA, UK-DE, USA-DE, CA-UK. Grounded in route_keyword_matrix regulatory notes. QA passed, zero em dashes. | 5,979 | Live links posted. |
 | 2026-06-04 | Chunk 23 | 12 Tier A routes, Template A (Field Manual). Completed the P1 matrix: USA-HK, UK-ZA, USA-CA, CA-USA, USA-FR, FR-USA, USA-ZA. Plus 5 new top Tier A pairs: UK-Japan, Japan-UK, UK-NZ, Ireland-UK, UK-Netherlands. Japan 180-day process, NZ MPI regime, Ireland CTA exemption. P1 matrix now fully built (90 routes). QA passed, zero em dashes. | 5,991 | Live links posted. |
 | 2026-06-04 | Chunk 24 | 12 Tier A routes, Template B (Visual Journey). Japan corridors (USA-Japan, Japan-USA), South Korea corridors (USA-KR, UK-KR, KR-USA, KR-UK), Switzerland corridors (USA-CH, UK-CH, CH-USA, CH-UK), Netherlands corridors (NL-USA, NL-UK). Japan/Korea 180-day titre + quarantine, Switzerland no quarantine, NL EU passport still accepted for UK. QA passed, zero em dashes. | 6,003 | Live links below. |
+| 2026-06-05 | Chunk 25 | 25 Tier A routes, Template C (Comparison Brief). China corridors (UK/USA pairs), India corridors (UK/USA pairs), Malaysia corridors (UK/USA pairs), Thailand corridors (UK/USA pairs), Philippines corridors (UK/USA pairs + UK-inbound), Vietnam-UK and UK-Vietnam, Ireland-USA, USA-Ireland, USA-New-Zealand. Philippines 180-day titre + 30-day quarantine. Vietnam NO quarantine NO titre (simplest SEA). NZ all-countries 180-day + 10-day MPI quarantine. Ireland CDC low-risk. New EU AHC format from April 2026 for USA-Ireland. QA passed, zero em dashes. Routes 5217 -> 5242, pages 6003 -> 6028. | 6,028 | Live links below. Chunk 26 (Template D, Tier A) next. Blog Day 6 also next. |
