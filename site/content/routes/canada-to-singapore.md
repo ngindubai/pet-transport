@@ -1,95 +1,138 @@
 ---
-template_variant: "B"
-title: "Pet Transport from Canada to Singapore | Complete Guide"
-description: "How to transport your dog or cat from Canada to Singapore. Import requirements, airline options, costs, and step-by-step process Complete guide: Singapore impor"
+title: "Pet Transport Canada to Singapore: AVS Import Permit, Titre Test and SRS Quarantine"
+description: "Moving a dog or cat from Canada to Singapore in 2026. NParks AVS Category C process, titre test, 30-day government quarantine, Air Canada and Cathay Pacific cargo options."
+date: "2026-06-05"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "E"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "canada-to-singapore"
 origin_name: "Canada"
 destination_name: "Singapore"
+
 route_data:
   origin:
     code: "CA"
     country: "Canada"
     export_requirements:
-      export_permit: "No CFIA export permit required for personal pet exports. Some destination countries may require CFIA endorsement of health certificate."
+      export_permit: "No formal export permit for personal pets leaving Canada."
+      health_certificate: "Veterinary health certificate in AVS-specified format from a CFIA-accredited vet within the AVS-specified validity window."
+      authority: "CFIA: Canadian Food Inspection Agency"
+
   destination:
     code: "SG"
     country: "Singapore"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before rabies vaccination"
-      rabies_vaccination: "Required"
-      titre_test: "Required for: Category B and C countries. Not required for: Category A countries. Minimum: 0.5 IU/ml"
-      quarantine: "Check requirements"
-      import_permit: "Check requirements"
-      health_certificate: "Required. Veterinary health certificate. Issued by: Government veterinarian or government-endorsed veterinarian in country of export. Certificate must state: species, breed, age, sex, microchip number, vaccination records, health status"
+      avs_category: "Category C (Canada). Requires import permit, titre test, and 30-day government quarantine."
+      import_permit: "Required. Apply via NParks/AVS online before travel. Allow 4-6 weeks processing."
+      microchip: "Required. ISO 11784/11785."
+      rabies_vaccination: "Required. Must be current per AVS schedule."
+      titre_test: "Required. FAVN titre test. Minimum 0.5 IU/ml. Blood drawn at AVS-approved laboratory."
+      quarantine: "30 days at a Singapore government quarantine facility. More restrictive than Category B SRS. Must be pre-arranged."
+      health_certificate: "AVS-format health certificate from CFIA-accredited vet."
+      authority: "NParks AVS: National Parks Board Animal and Veterinary Service: nparks.gov.sg/avs"
+
   airlines:
+    - name: "Air Canada"
+      type: "cargo_only"
+      policy_summary: "Vancouver or Toronto to Singapore via connections (often via Hong Kong, Tokyo, or Seoul). Air Canada Cargo."
+    - name: "Cathay Pacific"
+      type: "cargo_only"
+      policy_summary: "Vancouver/Toronto to Singapore via Hong Kong. Cathay Pacific Cargo. Well-established on this corridor."
+    - name: "Singapore Airlines"
+      type: "cargo_only"
+      policy_summary: "No direct Canada to Singapore service. Via connections. Singapore Airlines Cargo."
+
   timeline_steps:
     - step: 1
-      action: "Get your pet microchipped (ISO 11784/11785)"
-      timing: "Before any vaccinations. Must be done first."
-      responsible: "Your veterinarian"
+      action: "Apply for NParks/AVS import permit online. Confirm Category C requirements."
+      timing: "At least 10-12 weeks before intended travel."
+      responsible: "Owner or agent"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "At least 21 days before travel (after microchip)"
-      responsible: "Your veterinarian"
+      action: "Confirm microchip is ISO standard"
+      timing: "Verify now."
+      responsible: "Your vet"
     - step: 3
-      action: "Rabies titre test (RNATT blood test)"
-      timing: "Blood drawn 30+ days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Confirm rabies vaccination is current"
+      timing: "Verify now."
+      responsible: "Your vet"
     - step: 4
-      action: "Obtain health certificate / veterinary clearance"
-      timing: "Within 10 days of travel (check destination-specific requirements)"
-      responsible: "Official veterinarian"
+      action: "Blood draw for FAVN titre test at AVS-approved Canadian laboratory"
+      timing: "After vaccinations confirmed current."
+      responsible: "AVS-approved laboratory"
     - step: 5
-      action: "Book IATA-compliant flight and arrange pet cargo/cabin booking"
-      timing: "2-4 weeks before travel. Confirm pet space availability."
-      responsible: "You (or your pet transport agent)"
+      action: "Pre-arrange 30-day government quarantine in Singapore"
+      timing: "Book as soon as import permit is approved."
+      responsible: "Owner or agent"
     - step: 6
-      action: "Travel day: arrive early, present all documentation"
-      timing: "3-4 hours before departure for cargo pets"
-      responsible: "You + airline cargo desk"
+      action: "CFIA-accredited vet issues health certificate in AVS format"
+      timing: "Within AVS-specified window before travel."
+      responsible: "CFIA-accredited vet"
+    - step: 7
+      action: "Book cargo space on chosen airline"
+      timing: "6-8 weeks ahead."
+      responsible: "Owner or agent"
+    - step: 8
+      action: "Travel to Singapore. 30-day government quarantine on arrival."
+      timing: "On travel date."
+      responsible: "Airline, NParks/AVS"
+
   cost_factors:
-    - "Airline cargo/cabin fees (varies by carrier, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees (vaccinations, health certificate, microchip)"
-    - "Government endorsement/USDA endorsement fee (if applicable)"
-    - "Pet transport agent fee (if using a relocation service)"
+    - "NParks/AVS import permit: SGD 26-36 (approximately CAD 30-40)"
+    - "FAVN titre test at approved Canadian lab: approximately CAD 150-300"
+    - "30-day government quarantine in Singapore: SGD 1,800-3,500 (CAD 1,700-3,300)"
+    - "Airline cargo to Singapore (with connections): CAD 1,000-2,500 depending on route and size"
+    - "Total typical range: CAD 3,500 to CAD 7,500"
+
   key_warnings:
-    - "Brachycephalic (flat-faced) breeds face cargo restrictions on most airlines. Check breed-specific policies before booking."
-    - "Microchip MUST be implanted before rabies vaccination. Vaccination given before microchip is invalid and the clock restarts."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "6-10"
-faqs:
-  - question: "How long does it take to prepare a pet for transport from Canada to Singapore?"
-    answer: "The process takes 6-10 weeks from start to finish. The rabies titre test requires a 3-6 month waiting period after the blood draw before your pet can travel, so start early."
-  - question: "Does my pet need to go into quarantine when entering Singapore?"
-    answer: "Yes. Check requirements Plan your trip around the quarantine period and factor in the cost, which is owner-paid."
-  - question: "Do I need an import permit to bring my pet into Singapore?"
-    answer: "Check requirements"
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Required. Veterinary health certificate. Issued by: Government veterinarian or government-endorsed veterinarian in country of export. Certificate must state: species, breed, age, sex, microchip number, vaccination records, health status Your Canada vet must be approved to issue official veterinary certificates. The certificate must be issued within the timeframe required by Singapore: usually 10 days before travel. Present the original at check-in."
-  - question: "Is a rabies titre test required for pets entering Singapore?"
-    answer: "Yes. Required for: Category B and C countries. Not required for: Category A countries. Minimum: 0.5 IU/ml The microchip must be implanted before the first rabies vaccination for the vaccination to be valid. Start this process as early as possible."
+    - "Canada is Category C for Singapore, which means 30 days in a government quarantine facility, not 10 days in the SRS as for Category B countries. This is a significant commitment for both pet and owner. Plan carefully."
+    - "Singapore has breed restrictions: Pit Bull types, Akita Inu, Boerboel, Dogo Argentino, Fila Brasileiro, and others are prohibited. Check the full NParks/AVS restricted breeds list before making any arrangements."
+    - "Singapore's housing rules are strict. HDB flats (approximately 80% of housing) have strict pet limits. Confirm your accommodation allows your pet before starting the process."
+    - "30 days quarantine is harder on some animals than others. Younger, healthier pets adapt more readily. Senior pets and very anxious animals may find the quarantine period particularly challenging."
+
+  route_complexity: "high"
+  estimated_timeline_weeks: "12-20"
+
 content:
-  h1: "Pet Transport from Canada to Singapore"
-  overview: |
-    Pet transport from Canada to Singapore is a moderately complex route. The documentation is specific and there are a few stages to work through, but families who plan ahead get their pets there without major issues.
+  h1: "Pet Transport Canada to Singapore: 2026 Guide"
+  overview: "Canada to Singapore requires more preparation than most destinations. Singapore classifies Canada as Category C, which means a titre test, import permit, and 30 days of government quarantine on arrival. There are no direct Canada to Singapore flights, so all routes involve a connection. This is a significant undertaking, but thousands of pets from Category C countries arrive in Singapore successfully each year with the right preparation."
 
-    At minimum, your pet needs a microchip (ISO 11784/11785 standard), a current rabies vaccination, a rabies titre test with a waiting period after the result, an approved import permit from the destination authority, and a government-endorsed health certificate issued close to your travel date. Allow 6-10 weeks from starting preparation to travel day.
+  sections:
+    - heading: "Category C: understanding the 30-day quarantine"
+      body: |
+        Singapore divides origin countries into categories A, B, and C based on their disease risk profile. Canada is Category C, the most restrictive tier for standard companion animals. This means the quarantine is 30 days in a government-run facility, rather than the 10-day Special Residential Scheme available to Category B countries.
 
-    Singapore requires a 30-day quarantine for most dogs and cats unless your pet qualifies for Group A (approved country of origin with short-term stay). Check Singapore AVS rules for your origin country. Use our step-by-step guide below to track what you need to do and when.
+        The government quarantine is managed by NParks/AVS. It is focused on biosecurity assessment and disease surveillance. Pets are housed in individual units, monitored by staff, and receive veterinary checks during the period. The facilities are professional, but it is a 30-day hold in an unfamiliar environment.
+
+        Some owners find the 30-day quarantine a major deterrent and instead explore housing their pet temporarily in a country with a lower category (such as the UK, which is Category A) before the final move to Singapore. This is a legitimate strategy but adds complexity and cost.
+
+    - heading: "Singapore: a demanding but rewarding destination for pet owners"
+      body: |
+        Singapore's strict import regime reflects its status as a disease-free island with almost no margin for error. Despite the complexity of the entry process, Singapore is genuinely pet-friendly once you are inside. Good veterinary care, green parks and trails, and a culture of pet ownership make it a popular expat destination for families with animals.
+
+        The housing constraint is the more persistent concern for long-term residents. HDB public housing limits dogs by breed and number, and the approved list is managed by NParks. If your accommodation is a condo or private house, the rules are set by the management committee, which varies. Always confirm housing compatibility before finalising a move.
+
+faqs:
+  - question: "Why is Canada Category C for Singapore, not Category B like Australia?"
+    answer: "Singapore's AVS category system is based on each country's disease risk profile and the presence of specific diseases of concern. Canada is Category C primarily because of the presence of rabies in Canadian wildlife and the associated risk assessment. Australia is Category B with a different risk profile. The categories can be updated, so check the current NParks/AVS category for Canada at nparks.gov.sg/avs before starting."
+  - question: "How long is the quarantine for pets from Canada entering Singapore?"
+    answer: "30 days at a Singapore government quarantine facility for Category C countries, including Canada. This is longer than the 10-day Special Residential Scheme quarantine available to Category B countries. The quarantine is mandatory and cannot be shortened for any reason."
+  - question: "Does my pet need a titre test to enter Singapore from Canada?"
+    answer: "Yes. An FAVN rabies titre test is required for Category C countries including Canada. The result must be at least 0.5 IU/ml. The blood draw must be done at an AVS-approved laboratory. The result is required as part of the import permit application."
+  - question: "Which airline carries pets from Canada to Singapore?"
+    answer: "There are no direct Canada to Singapore flights. Cathay Pacific via Hong Kong and Air Canada via various Asian hubs are the most common routes. Singapore Airlines does not currently serve Canada directly. Cathay Pacific Cargo is frequently used for this corridor by pet transport agents. Book cargo space early, as connections on this route can be complicated."
 
 links:
   sideways:
     - url: "/pet-transport/singapore-to-canada/"
       text: "Pet Transport Singapore to Canada"
+    - url: "/pet-transport/canada-to-australia/"
+      text: "Pet Transport Canada to Australia"
+    - url: "/pet-transport/united-states-to-singapore/"
+      text: "Pet Transport USA to Singapore"
   upward:
-    - url: "/pet-transport/origins/pet-export-guide-shipping-from-canada/"
-      text: "Shipping from Canada"
     - url: "/pet-transport/countries/singapore/"
-      text: "Importing to Singapore"
-
-
+      text: "Singapore pet import rules"
+    - url: "/pet-transport/airlines/cathay-pacific/"
+      text: "Cathay Pacific pet cargo"
 ---
