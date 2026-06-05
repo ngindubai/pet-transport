@@ -7,13 +7,15 @@
 
 ## THE BLOCK RHYTHM (read this before every session)
 
-- **One "go" = one block.** Never more.
-- **A block = 25 routes** (or one equivalent non-route unit: a country guide, an airline policy update, a blog post).
-- Every block runs the full quality gate: **research, write, template rotation (A-E), humanise, QA scan, commit**.
+- **One "go" = one batch of up to 4 blocks.** Floor is 1 block. (Changed 2026-06-05 from one block per run, to fit the 15-run routine cap; see session log.)
+- **A block = 25 routes** (or one equivalent non-route unit: a country guide, an airline policy update, a blog post). A batch = up to 4 such blocks (for example 4 route chunks, or 3 chunks plus the due blog day).
+- Every block in the batch runs the full quality gate independently: **research, write, template rotation (A-E), humanise, QA scan**. Quality first: if a run cannot finish 4 blocks cleanly, build as many as you can do well (minimum 1), commit those, and note the shortfall.
+- The whole batch is committed ONCE per run: one commit, one push, one deploy. Advance the build pointer (next_chunk / next content-plan day) across the batch.
 - After commit to `main`: deploy is **automatic** (GitHub Actions triggers on push). No manual step needed.
 - **After every build batch: post the live URLs of all new/changed pages in chat for review.** Deploy is automatic, so the review now happens AFTER publish. This is the safety gate. See `CLAUDE.md` LIVE LINK REVIEW GATE.
 - **Every build batch also updates BUILD-PLAN.md, build_state.json and MEMORY.md in the same commit.** This is mandatory. See `CLAUDE.md` MANDATORY DOCS UPDATE.
-- **Bulk-generation scripts are banned.**
+- **Bulk-generation scripts are banned.** A batch is still N individually quality-gated blocks, never a mass-generation script.
+- **Skip rule:** skip only if the build pointer shows nothing left to build (no chunks remaining and no blog day due). Do NOT skip just because a build already happened earlier today; each site now runs twice a day on purpose.
 
 **Where we are (reconciled from disk 2026-06-05):** 5,279 quality routes complete. ~32,551 routes remaining. Blog: 413 articles. Total .md source files: 6,065. Content plan: Day 6 is next (europe-to-uk-pet-transport). 190 score-7+ Tier A pairs remain. Chunk 29 (Template E) is next. Counts come from `python verify_build_state.py`, never hand-edited.
 
@@ -52,6 +54,7 @@
 
 | Date | Stage | Work Done | Pages | Notes |
 |------|-------|-----------|-------| ------|
+| 2026-06-05 | Routine config | Switched to batch builds of up to 4 blocks per run, 2 runs/day, to fit the 15-run routine cap. Docs only (CLAUDE.md BEHAVIOR RULES + this BLOCK RHYTHM). No pages added/removed, no deploy expected beyond the docs commit. | 6,065 | Instruction change only. |
 | 2026-06-02 | Chunk 19 | 12 Tier A routes, Template B (Visual Journey). Germany-UK/US, HK corridors, NZ corridors. YAML fix pushed separately (stray top-level key in germany-to-uk). | 6,332 | Live links posted. |
 | 2026-06-02 | Chunk 20 | 11 Tier A routes, Template C (Comparison Brief). NZ-Canada/SG/UAE, Singapore corridors (AU/CA/DE/NZ/UK/US/HK/FR). All with comparison tables and airline comparison tables. | 6,342 | Live links to be posted. |
 | 2026-06-03 | Truth audit | No site pages. Added `verify_build_state.py` + SessionStart hook (anti-drift). Reconciled all four docs to true disk counts: routes 5,544 -> 5,172, total 6,342 -> 5,957. Logged legacy debt (248 Gareth-authored blogs, em dashes in 5 blog + 69 route files). Recorded Day 4 = replace-in-place. | 5,957 | Docs/script/hook only, no deploy, no live links. |
