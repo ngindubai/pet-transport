@@ -7,12 +7,12 @@
 - **Repository:** https://github.com/ngindubai/pet-transport (private)
 - **Deploy:** Push to `main` triggers GitHub Actions automatically. Hugo build + incremental FTP to Hostinger. Live within ~80 seconds for a single article. After every build batch, the live URLs of new/changed pages are posted in chat for review (LIVE LINK REVIEW GATE in CLAUDE.md).
 
-## Current State (2026-06-05, reconciled from disk by verify_build_state.py)
+## Current State (2026-06-06, reconciled from disk by verify_build_state.py)
 
-- **Routes built:** 5,322 of ~37,830 country pairs (~14.1%). True on-disk count (5,312 in `routes/` + 10 in `pet-transport/`).
+- **Routes built:** 5,347 of ~37,830 country pairs (~14.1%). True on-disk count (5,337 in `routes/` + 10 in `pet-transport/`).
 - **Blog articles:** 414
-- **Total .md source files:** 6,109 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-30 complete. **Chunk 31 is next** (Template B, Visual Journey, Tier A). 140 score-7+ Tier A pairs remain. Chunk 30 = 25 Template A (Field Manual) routes: UK and US outbound to 13 priority destinations (Israel, Pakistan, Bangladesh, Colombia, Chile, Peru, Morocco, Ghana, Ethiopia, Jordan, Nepal, Sri Lanka, Nigeria). 4 data corrections vs. source file (Sri Lanka home quarantine, Israel tier split, Colombia no permit, Chile apostille).
+- **Total .md source files:** 6,134 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Phase 7 progress:** Chunks 1-31 complete. **Chunk 32 is next** (Template C, Comparison Brief, Tier A). 115 score-7+ Tier A pairs remain. Chunk 31 = 25 Template B (Visual Journey) routes: US outbound to EU (Austria, Belgium, Denmark, Finland, Greece, Hungary, Norway, Poland, Romania, Sweden), US outbound to non-EU (Argentina, Egypt, Kenya, Nigeria, Vietnam), UK outbound to EU (Austria, Finland, Greece, Hungary, Poland, Romania), UK outbound to non-EU (Argentina, Egypt, Kenya), Vietnam-to-USA. Key detail: Echinococcus tapeworm for US-FI, US-NO, UK-FI; FCDO apostille + SENASA for UK-AR; CDC high-risk for VN-US.
 - **Content plan:** Days 1-6 complete. Day 6 was pet-transport-europe-to-uk.md (2400 words, Marcus Webb, 2026-06-05). **Day 7 is next:** check content-plan/plan-rows-q1.js for slug.
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
