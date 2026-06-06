@@ -17,13 +17,13 @@
 - **Bulk-generation scripts are banned.** A batch is still N individually quality-gated blocks, never a mass-generation script.
 - **Skip rule:** skip only if the build pointer shows nothing left to build (no chunks remaining and no blog day due). Do NOT skip just because a build already happened earlier today; each site now runs twice a day on purpose.
 
-**Where we are (reconciled from disk 2026-06-06):** 5,416 quality routes complete. ~32,414 routes remaining. Blog: 415 articles. Total .md source files: 6,204. Content plan: Day 9 is next. 15 score-7+ Tier A pairs remain. Chunk 35 (Template E, Data-Forward, Tier A) is next. Counts come from `python verify_build_state.py`, never hand-edited.
+**Where we are (reconciled from disk 2026-06-06):** 5,431 quality routes complete. ~32,399 routes remaining. Blog: 416 articles. Total .md source files: 6,220. Content plan: Day 10 is next. Tier A complete. Chunk 36 (Template A, Field Manual, Tier B) is next. Counts come from `python verify_build_state.py`, never hand-edited.
 
 ---
 
 ## Phase 7 - Template Diversification Rollout
 
-**Status: Chunks 1-34 complete. Chunk 35 is next (Template E, Tier A).**
+**Status: Chunks 1-35 complete. Chunk 36 is next (Template A, Tier B).**
 
 - Chunk 21 template: D (Conversational Q&A) - DONE 2026-06-04
 - Chunk 22 template: E (Data-Forward) - DONE 2026-06-04
@@ -38,9 +38,10 @@
 - Chunk 32 template: B (Visual Journey) - DONE 2026-06-06 (Middle East bidirectional: Bahrain/Israel/Jordan/Kuwait/Oman x UK+US; Czech Republic/Poland UK inbound; UK-to-Ireland; 22 new routes)
 - Chunk 33 template: C (Comparison Brief) - DONE 2026-06-06 (Scandinavia-US, India-EU5, Japan-EU5, Africa-US, Philippines-Korea, South Korea outbound, Indonesia-Netherlands; 22 new routes)
 - Chunk 34 template: D (Conversational Q&A) - DONE 2026-06-06 (Brazil/Indonesia/Malaysia/Mexico to EU/Japan/Korea/Switzerland, Italy-KR, Thailand-KR; 25 routes; committed in merge)
-- Chunk 35 template: E (Data-Forward) - NEXT
-- Tier: A (15 score-7+ pairs remain)
-- Template rotation: ...D(21), E(22), A(23), B(24), C(25-27), D(28), E(29), A(30), D(31a), B(31b), B(32), C(33), D(34), E(35)...
+- Chunk 35 template: E (Data-Forward) - DONE 2026-06-06 (15 final Tier A routes: India/Japan/Malaysia/Philippines/South Korea/Thailand cross-corridors)
+- Chunk 36 template: A (Field Manual) - NEXT
+- Tier: B (1,094 pairs; Tier A now complete)
+- Template rotation: ...D(21), E(22), A(23), B(24), C(25-27), D(28), E(29), A(30), D(31a), B(31b), B(32), C(33), D(34), E(35), A(36)...
 
 **DEPLOY INCIDENT 2026-06-05 (fixed):** Three routine runs each committed a "chunk 25" to its own `claude/*` feature branch. `build-to-live.yml` only fires on push to `main`, so none deployed and Hostinger never updated. main never advanced, so each run rebuilt chunk 25 with overlapping routes. All three combined into main here. DURABLE FIX: the routine must push to `main` (STEP 3 already says `git push origin HEAD:main`; a conflicting feature-branch instruction was overriding it). See MEMORY.md.
 
@@ -86,3 +87,4 @@
 | 2026-06-06 | Chunk 31a | 25 routes, Template D (Conversational Q&A). Brazil/Indonesia/Malaysia/Mexico to Italy/Japan/Netherlands/Portugal/South Korea/Switzerland; Italy-to-South Korea; Thailand-to-South Korea. MAPA/BARANTAN/DVS/SENASICA export certs; EU non-listed FAVN titre + 90-day wait; Japan AQS 180-day process; South Korea QIAS 5-10 days endemic / 1-3 days EU-origin. All 25 files, zero em dashes, all Marcus Webb. Routes 5,322 -> 5,397, pages 6,109 -> 6,185. | 6,185 | Live links posted. |
 | 2026-06-06 | Chunk 31b | 25 Tier A routes (Template B, Visual Journey). US outbound to EU (Austria, Belgium, Denmark, Finland, Greece, Hungary, Norway, Poland, Romania, Sweden); US-non-EU (Argentina, Egypt, Kenya, Nigeria, Vietnam); UK-EU (Austria, Finland, Greece, Hungary, Poland, Romania); UK-non-EU (Argentina, Egypt, Kenya); Vietnam-to-USA. Tapeworm for US/UK-Finland/Norway; SENASA+FCDO apostille UK-AR; CDC high-risk VN-US; Kenya cargo-only. Routes 5,397 -> 5,416 (merged disk count), pages 6,185 -> 6,196. Tier A: 140 -> 90. | 6,196 | Live links below. Chunk 33 (Template C, Tier A) is next. Blog Day 7 next. |
 | 2026-06-06 | Chunks 32+33+34 + Blog Day 8 | Batch of 4 blocks. Chunk 32 (Template B, Visual Journey): 22 new Middle East routes - Bahrain/Israel/Jordan/Kuwait/Oman x UK+US bidirectional + Czech Republic/Poland UK-inbound + UK-to-Ireland; CDC high-risk for Jordan/Egypt/Kenya-to-US; AHC for all UK-inbound. Chunk 33 (Template C, Comparison Brief): 22 new routes - Sweden/Norway/Denmark-to-US, India-to-Netherlands/Switzerland/Italy/Portugal/South Korea, Japan-to-Netherlands/Switzerland/Italy/Portugal/South Korea, Kenya/Nigeria/Egypt-to-US, UK-to-Ireland, Philippines-to-South Korea, South Korea-to-Italy/Portugal/Japan, Indonesia-to-Netherlands. Chunk 34 (Template D, Conversational Q&A): 25 routes Brazil/Indonesia/Malaysia/Mexico to EU5+Japan+Korea+Switzerland, Italy-to-Korea, Thailand-to-Korea (committed in merge, counted here for audit). Blog Day 8: cheap-pet-transport-honest-look.md, 1800 words, Marcus Webb. Zero em dashes, no banned vocab, all QA passed. Routes -> 5,416 (disk reconciled), blog -> 415, pages -> 6,204. Tier A: 90 -> 15. | 6,204 | Live links below. Chunk 35 (Template E, Tier A) is next. Blog Day 9 next. |
+| 2026-06-06 | Chunk 35 + Blog Day 9 | Chunk 35 (Template E, Data-Forward): 15 final Tier A routes. india-to-malaysia, india-to-philippines, india-to-thailand, japan-to-india, japan-to-malaysia, japan-to-thailand, malaysia-to-india, malaysia-to-philippines, malaysia-to-thailand, philippines-to-india, south-korea-to-india, south-korea-to-malaysia, south-korea-to-philippines, south-korea-to-thailand, thailand-to-india. Key regulatory corrections from web-verified sources: India no titre test (AQCS NOC pre-departure, 15-day quarantine); Malaysia FAVN titre + 3-month wait for non-scheduled countries, 14-day quarantine (Dec 2024 update); Philippines SPSIC (not titre test), 30-day quarantine; Thailand DLD permit by email, no titre test, no mandatory quarantine; Japan rabies-free status. Blog Day 9: pet-transport-uk-to-jersey.md (1,600 words, Marcus Webb). UK to Jersey: no AHC, no pet passport, no quarantine; Condor Ferries from Poole/Portsmouth; also covers Guernsey and Isle of Man. Tier A: 15 -> 0 (Tier A complete). Routes 5,416 -> 5,431, blog 415 -> 416, pages 6,204 -> 6,220. | 6,220 | Live links below. Chunk 36 (Template A, Tier B) is next. Blog Day 10 next. |

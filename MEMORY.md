@@ -9,11 +9,11 @@
 
 ## Current State (2026-06-06, reconciled from disk by verify_build_state.py)
 
-- **Routes built:** 5,416 of ~37,830 country pairs (~14.3%). True on-disk count (5,406 in `routes/` + 10 in `pet-transport/`).
-- **Blog articles:** 415
-- **Total .md source files:** 6,204 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-34 complete. **Chunk 35 is next** (Template E, Data-Forward, Tier A). 15 score-7+ Tier A pairs remain. Chunk 32 = 22 new Template B (Visual Journey) routes: Middle East (Bahrain/Israel/Jordan/Kuwait/Oman x UK+US bidirectional) + Eastern Europe (Czech Republic/Poland UK-inbound) + UK-to-Ireland. Chunk 33 = 22 new Template C (Comparison Brief) routes: Scandinavia-to-US, India-to-EU5, Japan-to-EU5, Africa-to-US, Philippines/South Korea outbound, Indonesia-to-Netherlands. Chunk 34 = 25 Template D (Conversational Q&A) routes: Brazil/Indonesia/Malaysia/Mexico to EU5+Japan+Korea+Switzerland, Italy-to-Korea, Thailand-to-Korea (committed in merge). Blog Day 8 = cheap-pet-transport-honest-look.md (1800 words, Marcus Webb).
-- **Content plan:** Days 1-6 + Day 8 complete (7 articles written). Day 7 skipped (pre-existing). **Day 9 is next:** check content-plan/plan-rows-q1.js for slug.
+- **Routes built:** 5,431 of ~37,830 country pairs (~14.4%). True on-disk count (5,421 in `routes/` + 10 in `pet-transport/`).
+- **Blog articles:** 416
+- **Total .md source files:** 6,220 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Phase 7 progress:** Chunks 1-35 complete. **Chunk 36 is next** (Template A, Field Manual, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 35 = 15 final Tier A routes, Template E (Data-Forward): India/Japan/Malaysia/Philippines/South Korea/Thailand cross-corridors with web-verified regulatory data. Blog Day 9 = pet-transport-uk-to-jersey.md (1,600 words, Marcus Webb).
+- **Content plan:** Days 1-6 + Days 8-9 complete (8 articles written). Day 7 skipped (pre-existing). **Day 10 is next:** check content-plan/plan-rows-q1.js for slug.
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
 
