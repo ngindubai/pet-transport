@@ -10,10 +10,10 @@
 ## Current State (2026-06-06, reconciled from disk by verify_build_state.py)
 
 - **Routes built:** 5,416 of ~37,830 country pairs (~14.3%). True on-disk count (5,406 in `routes/` + 10 in `pet-transport/`).
-- **Blog articles:** 416
-- **Total .md source files:** 6,196 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-31b complete. **Chunk 33 is next** (Template C, Comparison Brief, Tier A). 90 score-7+ Tier A pairs remain. Chunk 31a = 25 Template D (Conversational Q&A) routes: Brazil/Indonesia/Malaysia/Mexico to Italy/Japan/Netherlands/Portugal/South Korea/Switzerland; Italy-to-South Korea; Thailand-to-South Korea. Key coverage: MAPA/BARANTAN/DVS/SENASICA export certs; EU non-listed FAVN titre + 90-day wait; Japan AQS 180-day pathway; South Korea QIAS (5-10 days endemic / 1-3 days EU-origin). Chunk 31b = 25 Template B (Visual Journey) routes: US/UK outbound to EU and non-EU, Vietnam-to-USA. Tapeworm for Finland/Norway; SENASA+FCDO apostille for UK-AR; CDC high-risk for VN-US.
-- **Content plan:** Days 1-6 complete. Day 6 was pet-transport-europe-to-uk.md (2400 words, Marcus Webb, 2026-06-05). **Day 7 is next:** check content-plan/plan-rows-q1.js for slug.
+- **Blog articles:** 415
+- **Total .md source files:** 6,204 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Phase 7 progress:** Chunks 1-34 complete. **Chunk 35 is next** (Template E, Data-Forward, Tier A). 15 score-7+ Tier A pairs remain. Chunk 32 = 22 new Template B (Visual Journey) routes: Middle East (Bahrain/Israel/Jordan/Kuwait/Oman x UK+US bidirectional) + Eastern Europe (Czech Republic/Poland UK-inbound) + UK-to-Ireland. Chunk 33 = 22 new Template C (Comparison Brief) routes: Scandinavia-to-US, India-to-EU5, Japan-to-EU5, Africa-to-US, Philippines/South Korea outbound, Indonesia-to-Netherlands. Chunk 34 = 25 Template D (Conversational Q&A) routes: Brazil/Indonesia/Malaysia/Mexico to EU5+Japan+Korea+Switzerland, Italy-to-Korea, Thailand-to-Korea (committed in merge). Blog Day 8 = cheap-pet-transport-honest-look.md (1800 words, Marcus Webb).
+- **Content plan:** Days 1-6 + Day 8 complete (7 articles written). Day 7 skipped (pre-existing). **Day 9 is next:** check content-plan/plan-rows-q1.js for slug.
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
 
@@ -97,7 +97,10 @@ Every build batch does three things together, every time: (1) bundle BUILD-PLAN.
 - **Day 7** (`how-to-choose-a-pet-transport-company`) also exists from a prior batch. Skip when reached in sequence
 - Day 4: `uk-to-spain-pet-transport-complete-guide` replaced in place 2026-06-04 (full rewrite 743 -> 2115 words, Marcus Webb)
 - Day 5: `pet-transport-uk-to-usa` published 2026-06-05 (new article, 2266 words, Marcus Webb, post-CDC reset angle)
-- **Next: Day 6** - `europe-to-uk-pet-transport` - per content plan Q1
+- Day 6: `pet-transport-europe-to-uk` published 2026-06-05 (new article, 2400 words, Marcus Webb)
+- Day 7: `how-to-choose-a-pet-transport-company` - SKIPPED (pre-existing article)
+- Day 8: `cheap-pet-transport-honest-look` published 2026-06-06 (new article, 1800 words, Marcus Webb, cost transparency angle)
+- **Next: Day 9** - check content-plan/plan-rows-q1.js for slug
 - Blog layout: `site/layouts/blog/single.html`. col-lg-8 content + col-lg-4 sidebar. Applies to all blog posts.
 
 ## Key Decisions Log
