@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Build Report: 6 June 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:     #1a1a1a;
+      --muted:   #5a5a5a;
+      --rule:    #e0dcd8;
+      --bg:      #faf8f5;
+      --card:    #ffffff;
+      --green:   #1a6640;
+      --green-bg:#edf7f1;
+      --amber:   #7a4800;
+      --amber-bg:#fff4e0;
+      --red:     #8b1a1a;
+      --red-bg:  #fdf0f0;
+      --blue:    #1a3a6a;
+      --blue-bg: #eef2fb;
+    }
+
+    body {
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--ink);
+      background: var(--bg);
+      padding: 2rem 1rem 4rem;
+    }
+
+    .container { max-width: 860px; margin: 0 auto; }
+
+    .report-header {
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .report-header .eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+
+    h1 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--ink);
+    }
+
+    .summary-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 1rem;
+      padding: 0.85rem 1rem;
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+    }
+
+    .summary-bar .stat { display: flex; flex-direction: column; }
+
+    .summary-bar .stat-value {
+      font-family: 'Fraunces', serif;
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1;
+    }
+
+    .summary-bar .stat-label {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 0.2rem;
+    }
+
+    /* Red flag box */
+    .flags-box {
+      border-left: 4px solid var(--red);
+      background: var(--red-bg);
+      padding: 1rem 1.25rem;
+      border-radius: 0 4px 4px 0;
+      margin-bottom: 2rem;
+    }
+
+    .flags-box .flags-heading {
+      font-family: 'Fraunces', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--red);
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.04em;
+    }
+
+    .flags-box ul {
+      margin: 0;
+      padding-left: 1.1rem;
+    }
+
+    .flags-box li {
+      font-size: 0.9rem;
+      color: var(--red);
+      margin-bottom: 0.35rem;
+      line-height: 1.55;
+    }
+
+    .flags-box li strong { font-weight: 600; }
+
+    /* Lead paragraph with drop cap */
+    .lead {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: var(--ink);
+      margin-bottom: 2.5rem;
+      max-width: 680px;
+    }
+
+    .lead::first-letter {
+      font-size: 4rem;
+      font-weight: 700;
+      float: left;
+      line-height: 0.82;
+      margin-right: 0.08em;
+      margin-top: 0.1em;
+      color: var(--ink);
+      font-family: 'Fraunces', serif;
+    }
+
+    .site-section {
+      margin-bottom: 2.5rem;
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.9rem 1.25rem;
+      border-bottom: 1px solid var(--rule);
+      gap: 0.75rem;
+    }
+
+    .site-header h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 500;
+      padding: 0.2rem 0.55rem;
+      border-radius: 20px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .badge-built { background: var(--green-bg); color: var(--green); border: 1px solid #a8d8bc; }
+    .badge-flag  { background: var(--red-bg);   color: var(--red);   border: 1px solid #e8a8a8; }
+    .badge-none  { background: #f0f0f0; color: #888; border: 1px solid #d8d8d8; }
+
+    .site-body { padding: 1rem 1.25rem; }
+
+    .site-meta {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px dashed var(--rule);
+      line-height: 1.6;
+    }
+
+    .commit-block { margin-top: 0.35rem; }
+    .commit-msg {
+      font-style: italic;
+      color: var(--muted);
+      font-family: 'Inter Tight', sans-serif;
+      font-size: 0.85rem;
+    }
+
+    .pages-group { margin-bottom: 1.25rem; }
+
+    .pages-group-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .sample-note {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-style: italic;
+      margin-bottom: 0.6rem;
+    }
+
+    .page-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 0.3rem;
+    }
+
+    .page-list li { font-size: 0.88rem; }
+
+    .page-list a {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      color: var(--blue);
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .page-list a:hover { text-decoration: underline; }
+
+    .page-title {
+      display: block;
+      font-family: 'Inter Tight', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--ink);
+    }
+
+    .no-build {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-style: italic;
+      padding: 0.5rem 0;
+    }
+
+    .incident-note {
+      border-left: 3px solid var(--red);
+      background: var(--red-bg);
+      padding: 0.75rem 1rem;
+      border-radius: 0 4px 4px 0;
+      margin-top: 1rem;
+      font-size: 0.84rem;
+      color: var(--red);
+    }
+
+    .incident-note strong { font-weight: 600; }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--rule);
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-family: 'JetBrains Mono', monospace;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header class="report-header">
+    <p class="eyebrow">PetTransportGlobal Group &nbsp;/&nbsp; Daily Build Report</p>
+    <h1>6 June 2026</h1>
+    <div class="summary-bar">
+      <div class="stat"><span class="stat-value">4</span><span class="stat-label">sites built</span></div>
+      <div class="stat"><span class="stat-value">205</span><span class="stat-label">new pages today</span></div>
+      <div class="stat"><span class="stat-value">1</span><span class="stat-label">flag requiring attention</span></div>
+    </div>
+  </header>
+
+  <!-- FLAGS BOX: always at the very top -->
+  <div class="flags-box">
+    <p class="flags-heading">FLAGS TODAY</p>
+    <ul>
+      <li>
+        <strong>mortgagecompare.ae: DEPLOY RETRY NEEDED.</strong>
+        FTP deploy timed out on workflow runs 74 and 75 (content committed at 05:20 UTC).
+        Gareth manually pushed a retry commit (90f538f) at 08:35 UTC.
+        Outcome of the retry is not confirmed. Check the GitHub Actions tab on the
+        mortgagecompare-ae repo to verify the 4 knowledge-hub articles are live before
+        treating this as resolved.
+      </li>
+    </ul>
+  </div>
+
+  <p class="lead">Four sites shipped new content today, adding 205 pages across pet transport routes, mortgage knowledge hub articles, Swiss bus hire city pages, and funeral repatriation routes. Pet Transport Global had its largest single-day output to date: four chunks covering Middle East corridors, Scandinavia, India, Japan, Africa, and LATAM combined for 94 route pages plus a new blog article. Funeral Repatriation completed all 196 UK Tier A routes and pushed 68 Ireland routes live. Close Protection had no build scheduled today.</p>
+
+  <!-- PET TRANSPORT GLOBAL -->
+  <section class="site-section">
+    <div class="site-header">
+      <h2>Pet Transport Global</h2>
+      <span class="badge badge-built">95 new pages (94 routes + 1 blog)</span>
+    </div>
+    <div class="site-body">
+      <div class="site-meta">
+        domain: pettransportglobal.com &nbsp;|&nbsp; branch: main
+        <div class="commit-block">
+          <span class="commit-msg">4edea6f &nbsp;|&nbsp; 06:46 UTC &nbsp;|&nbsp; Chunk 31 (Template B): 25 US/UK outbound + Vietnam-to-USA</span>
+        </div>
+        <div class="commit-block">
+          <span class="commit-msg">38ca698 &nbsp;|&nbsp; 07:16 UTC &nbsp;|&nbsp; Merge: chunk 31a (Template B) + chunk 31b/34 (Template D) resolved</span>
+        </div>
+        <div class="commit-block">
+          <span class="commit-msg">defe19f &nbsp;|&nbsp; 07:27 UTC &nbsp;|&nbsp; Chunks 32+33 + Blog Day 8: Middle East / Scandinavia / India / Japan / Africa</span>
+        </div>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">Chunk 31 (Template B, Visual Journey):US/UK outbound to EU + non-EU, Vietnam inbound (25 routes; representative sample)</p>
+        <p class="sample-note">Sample links below. Full batch: US to Austria, Belgium, Denmark, Finland, Greece, Hungary, Norway, Poland, Romania, Sweden; US to Argentina, Egypt, Kenya, Nigeria; UK to Austria, Finland, Greece, Hungary, Poland, Romania; UK to Argentina, Egypt, Kenya; Vietnam to USA.</p>
+        <ul class="page-list">
+          <li><span class="page-title">USA to Austria</span><a href="https://www.pettransportglobal.com/pet-transport/united-states-to-austria/" target="_blank">pettransportglobal.com/pet-transport/united-states-to-austria/</a></li>
+          <li><span class="page-title">USA to Norway</span><a href="https://www.pettransportglobal.com/pet-transport/united-states-to-norway/" target="_blank">pettransportglobal.com/pet-transport/united-states-to-norway/</a></li>
+          <li><span class="page-title">USA to Kenya</span><a href="https://www.pettransportglobal.com/pet-transport/united-states-to-kenya/" target="_blank">pettransportglobal.com/pet-transport/united-states-to-kenya/</a></li>
+          <li><span class="page-title">UK to Hungary</span><a href="https://www.pettransportglobal.com/pet-transport/united-kingdom-to-hungary/" target="_blank">pettransportglobal.com/pet-transport/united-kingdom-to-hungary/</a></li>
+          <li><span class="page-title">UK to Argentina</span><a href="https://www.pettransportglobal.com/pet-transport/united-kingdom-to-argentina/" target="_blank">pettransportglobal.com/pet-transport/united-kingdom-to-argentina/</a></li>
+          <li><span class="page-title">Vietnam to USA</span><a href="https://www.pettransportglobal.com/pet-transport/vietnam-to-united-states/" target="_blank">pettransportglobal.com/pet-transport/vietnam-to-united-states/</a></li>
+        </ul>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">Chunk 34 (Template D, Conversational Q&amp;A):LATAM + SE Asia to EU/Japan/Korea/Switzerland (25 routes; representative sample)</p>
+        <p class="sample-note">Covers Brazil, Indonesia, Malaysia, Mexico to Italy, Japan, Netherlands, Portugal, South Korea, Switzerland; plus Italy-to-South Korea and Thailand-to-South Korea.</p>
+        <ul class="page-list">
+          <li><span class="page-title">Brazil to Italy</span><a href="https://www.pettransportglobal.com/pet-transport/brazil-to-italy/" target="_blank">pettransportglobal.com/pet-transport/brazil-to-italy/</a></li>
+          <li><span class="page-title">Indonesia to Japan</span><a href="https://www.pettransportglobal.com/pet-transport/indonesia-to-japan/" target="_blank">pettransportglobal.com/pet-transport/indonesia-to-japan/</a></li>
+          <li><span class="page-title">Malaysia to Netherlands</span><a href="https://www.pettransportglobal.com/pet-transport/malaysia-to-netherlands/" target="_blank">pettransportglobal.com/pet-transport/malaysia-to-netherlands/</a></li>
+          <li><span class="page-title">Mexico to South Korea</span><a href="https://www.pettransportglobal.com/pet-transport/mexico-to-south-korea/" target="_blank">pettransportglobal.com/pet-transport/mexico-to-south-korea/</a></li>
+          <li><span class="page-title">Thailand to South Korea</span><a href="https://www.pettransportglobal.com/pet-transport/thailand-to-south-korea/" target="_blank">pettransportglobal.com/pet-transport/thailand-to-south-korea/</a></li>
+          <li><span class="page-title">Italy to South Korea</span><a href="https://www.pettransportglobal.com/pet-transport/italy-to-south-korea/" target="_blank">pettransportglobal.com/pet-transport/italy-to-south-korea/</a></li>
+        </ul>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">Chunk 32 (Template B, Visual Journey):Middle East bidirectional UK+US, Eastern Europe UK-inbound, UK-to-Ireland (22 routes; representative sample)</p>
+        <p class="sample-note">Covers Bahrain, Israel, Jordan, Kuwait, Oman bidirectional with UK and USA; Czech Republic and Poland to UK; UK to Ireland.</p>
+        <ul class="page-list">
+          <li><span class="page-title">UK to Bahrain</span><a href="https://www.pettransportglobal.com/pet-transport/united-kingdom-to-bahrain/" target="_blank">pettransportglobal.com/pet-transport/united-kingdom-to-bahrain/</a></li>
+          <li><span class="page-title">USA to Israel</span><a href="https://www.pettransportglobal.com/pet-transport/united-states-to-israel/" target="_blank">pettransportglobal.com/pet-transport/united-states-to-israel/</a></li>
+          <li><span class="page-title">Jordan to UK</span><a href="https://www.pettransportglobal.com/pet-transport/jordan-to-united-kingdom/" target="_blank">pettransportglobal.com/pet-transport/jordan-to-united-kingdom/</a></li>
+          <li><span class="page-title">Kuwait to USA</span><a href="https://www.pettransportglobal.com/pet-transport/kuwait-to-united-states/" target="_blank">pettransportglobal.com/pet-transport/kuwait-to-united-states/</a></li>
+          <li><span class="page-title">Czech Republic to UK</span><a href="https://www.pettransportglobal.com/pet-transport/czech-republic-to-united-kingdom/" target="_blank">pettransportglobal.com/pet-transport/czech-republic-to-united-kingdom/</a></li>
+          <li><span class="page-title">UK to Ireland</span><a href="https://www.pettransportglobal.com/pet-transport/united-kingdom-to-ireland/" target="_blank">pettransportglobal.com/pet-transport/united-kingdom-to-ireland/</a></li>
+        </ul>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">Chunk 33 (Template C, Comparison Brief):Scandinavia/India/Japan to US+EU, Africa to USA, Asia cross-routes (22 routes; representative sample)</p>
+        <p class="sample-note">Covers Sweden/Norway/Denmark to USA; India and Japan to Netherlands, Switzerland, Italy, Portugal, South Korea; Kenya/Nigeria/Egypt to USA; Philippines to South Korea; South Korea to Italy, Portugal, Japan; Indonesia to Netherlands.</p>
+        <ul class="page-list">
+          <li><span class="page-title">Sweden to USA</span><a href="https://www.pettransportglobal.com/pet-transport/sweden-to-united-states/" target="_blank">pettransportglobal.com/pet-transport/sweden-to-united-states/</a></li>
+          <li><span class="page-title">Norway to USA</span><a href="https://www.pettransportglobal.com/pet-transport/norway-to-united-states/" target="_blank">pettransportglobal.com/pet-transport/norway-to-united-states/</a></li>
+          <li><span class="page-title">India to Netherlands</span><a href="https://www.pettransportglobal.com/pet-transport/india-to-netherlands/" target="_blank">pettransportglobal.com/pet-transport/india-to-netherlands/</a></li>
+          <li><span class="page-title">Japan to Switzerland</span><a href="https://www.pettransportglobal.com/pet-transport/japan-to-switzerland/" target="_blank">pettransportglobal.com/pet-transport/japan-to-switzerland/</a></li>
+          <li><span class="page-title">Kenya to USA</span><a href="https://www.pettransportglobal.com/pet-transport/kenya-to-united-states/" target="_blank">pettransportglobal.com/pet-transport/kenya-to-united-states/</a></li>
+          <li><span class="page-title">Nigeria to USA</span><a href="https://www.pettransportglobal.com/pet-transport/nigeria-to-united-states/" target="_blank">pettransportglobal.com/pet-transport/nigeria-to-united-states/</a></li>
+          <li><span class="page-title">Philippines to South Korea</span><a href="https://www.pettransportglobal.com/pet-transport/philippines-to-south-korea/" target="_blank">pettransportglobal.com/pet-transport/philippines-to-south-korea/</a></li>
+          <li><span class="page-title">Indonesia to Netherlands</span><a href="https://www.pettransportglobal.com/pet-transport/indonesia-to-netherlands/" target="_blank">pettransportglobal.com/pet-transport/indonesia-to-netherlands/</a></li>
+        </ul>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">Blog Day 8 (1 article)</p>
+        <ul class="page-list">
+          <li>
+            <span class="page-title">Cheap Pet Transport: What's Realistic and What's a Red Flag</span>
+            <a href="https://www.pettransportglobal.com/blog/cheap-pet-transport-honest-look/" target="_blank">pettransportglobal.com/blog/cheap-pet-transport-honest-look/</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- MORTGAGE COMPARE AE -->
+  <section class="site-section">
+    <div class="site-header">
+      <h2>Mortgage Compare AE</h2>
+      <span class="badge badge-flag">4 new pages + DEPLOY FLAG</span>
+    </div>
+    <div class="site-body">
+      <div class="site-meta">
+        domain: mortgagecompare.ae &nbsp;|&nbsp; branch: main
+        <div class="commit-block">
+          <span class="commit-msg">e421c92 &nbsp;|&nbsp; 05:20 UTC &nbsp;|&nbsp; Add 4 knowledge-hub articles: D22-D25 (rates, Mashreq, DIB, UK expats)</span>
+        </div>
+        <div class="commit-block">
+          <span class="commit-msg">90f538f &nbsp;|&nbsp; 08:35 UTC &nbsp;|&nbsp; Retry FTP deploy: trigger fresh connection after timeouts on runs 74+75 (ops-only, no content)</span>
+        </div>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">Knowledge Hub (4 new articles)</p>
+        <ul class="page-list">
+          <li>
+            <span class="page-title">Variable Rate Mortgage UAE</span>
+            <a href="https://mortgagecompare.ae/knowledge-hub/variable-rate-mortgage-uae.html" target="_blank">mortgagecompare.ae/knowledge-hub/variable-rate-mortgage-uae.html</a>
+          </li>
+          <li>
+            <span class="page-title">Mashreq Bank Mortgage UAE</span>
+            <a href="https://mortgagecompare.ae/knowledge-hub/mashreq-bank-mortgage-uae.html" target="_blank">mortgagecompare.ae/knowledge-hub/mashreq-bank-mortgage-uae.html</a>
+          </li>
+          <li>
+            <span class="page-title">Dubai Islamic Bank Mortgage UAE</span>
+            <a href="https://mortgagecompare.ae/knowledge-hub/dib-mortgage-uae.html" target="_blank">mortgagecompare.ae/knowledge-hub/dib-mortgage-uae.html</a>
+          </li>
+          <li>
+            <span class="page-title">UK Expat Mortgage UAE</span>
+            <a href="https://mortgagecompare.ae/knowledge-hub/uk-expat-mortgage-uae.html" target="_blank">mortgagecompare.ae/knowledge-hub/uk-expat-mortgage-uae.html</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="incident-note">
+        <strong>Deploy flag:</strong> FTP deploy timed out on workflow runs 74 and 75. A retry was pushed manually at 08:35 UTC (commit 90f538f). Verify on the GitHub Actions tab that the retry completed and all 4 articles are live before marking resolved.
+      </div>
+    </div>
+  </section>
+
+  <!-- BUS RENTAL GLOBAL -->
+  <section class="site-section">
+    <div class="site-header">
+      <h2>Bus Rental Global</h2>
+      <span class="badge badge-built">6 new pages (Track 2 complete)</span>
+    </div>
+    <div class="site-body">
+      <div class="site-meta">
+        domain: busrentalglobal.com &nbsp;|&nbsp; branch: main
+        <div class="commit-block">
+          <span class="commit-msg">bfc99b1 &nbsp;|&nbsp; 07:39 UTC &nbsp;|&nbsp; Phase 3: Switzerland batch 1 (Aarau, Zug, Fribourg, Bellinzona, Solothurn, Baden):Track 2 fully complete</span>
+        </div>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">Switzerland city pages (6 new, all 11 countries now at 31 city pages each)</p>
+        <ul class="page-list">
+          <li>
+            <span class="page-title">Bus Hire in Aarau</span>
+            <a href="https://www.busrentalglobal.com/countries/switzerland/aarau.html" target="_blank">busrentalglobal.com/countries/switzerland/aarau.html</a>
+          </li>
+          <li>
+            <span class="page-title">Bus Hire in Zug</span>
+            <a href="https://www.busrentalglobal.com/countries/switzerland/zug.html" target="_blank">busrentalglobal.com/countries/switzerland/zug.html</a>
+          </li>
+          <li>
+            <span class="page-title">Bus Hire in Fribourg</span>
+            <a href="https://www.busrentalglobal.com/countries/switzerland/fribourg.html" target="_blank">busrentalglobal.com/countries/switzerland/fribourg.html</a>
+          </li>
+          <li>
+            <span class="page-title">Bus Hire in Bellinzona</span>
+            <a href="https://www.busrentalglobal.com/countries/switzerland/bellinzona.html" target="_blank">busrentalglobal.com/countries/switzerland/bellinzona.html</a>
+          </li>
+          <li>
+            <span class="page-title">Bus Hire in Solothurn</span>
+            <a href="https://www.busrentalglobal.com/countries/switzerland/solothurn.html" target="_blank">busrentalglobal.com/countries/switzerland/solothurn.html</a>
+          </li>
+          <li>
+            <span class="page-title">Bus Hire in Baden</span>
+            <a href="https://www.busrentalglobal.com/countries/switzerland/baden.html" target="_blank">busrentalglobal.com/countries/switzerland/baden.html</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUNERAL REPATRIATION -->
+  <section class="site-section">
+    <div class="site-header">
+      <h2>Funeral Repatriation</h2>
+      <span class="badge badge-built">100 new pages (UK Tier A complete + Ireland in progress)</span>
+    </div>
+    <div class="site-body">
+      <div class="site-meta">
+        domain: repatriationfuneral.com &nbsp;|&nbsp; branch: master
+        <div class="commit-block">
+          <span class="commit-msg">965e083 &nbsp;|&nbsp; 08:44 UTC &nbsp;|&nbsp; build: route matrix chunks R5-R8 (R5-R6 UK routes, R7 UK+Ireland, R8 Ireland):270 Tier A pairs total</span>
+        </div>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">R5 (25 routes): UK Tier A:origin countries andorra through ireland</p>
+        <p class="sample-note">Full batch: 25 country-to-UK route pages covering origins Andorra through Ireland alphabetically. UK Tier A is now fully complete at 196 routes.</p>
+        <ul class="page-list">
+          <li>
+            <span class="page-title">Andorra to UK</span>
+            <a href="https://www.repatriationfuneral.com/routes/andorra-to-uk/" target="_blank">repatriationfuneral.com/routes/andorra-to-uk/</a>
+          </li>
+          <li>
+            <span class="page-title">Ireland to UK</span>
+            <a href="https://www.repatriationfuneral.com/routes/ireland-to-uk/" target="_blank">repatriationfuneral.com/routes/ireland-to-uk/</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">R6 (25 routes): UK Tier A:origin countries kiribati through samoa</p>
+        <p class="sample-note">25 country-to-UK route pages covering origins Kiribati through Samoa alphabetically.</p>
+        <ul class="page-list">
+          <li>
+            <span class="page-title">Kiribati to UK</span>
+            <a href="https://www.repatriationfuneral.com/routes/kiribati-to-uk/" target="_blank">repatriationfuneral.com/routes/kiribati-to-uk/</a>
+          </li>
+          <li>
+            <span class="page-title">Samoa to UK</span>
+            <a href="https://www.repatriationfuneral.com/routes/samoa-to-uk/" target="_blank">repatriationfuneral.com/routes/samoa-to-uk/</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">R7 (25 routes): UK Tier A complete (san-marino through yemen) + Ireland begins (afghanistan through bahamas)</p>
+        <p class="sample-note">14 final UK-bound routes completing the UK Tier A matrix, plus 11 first Ireland-bound routes.</p>
+        <ul class="page-list">
+          <li>
+            <span class="page-title">Yemen to UK</span>
+            <a href="https://www.repatriationfuneral.com/routes/yemen-to-uk/" target="_blank">repatriationfuneral.com/routes/yemen-to-uk/</a>
+          </li>
+          <li>
+            <span class="page-title">Afghanistan to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/afghanistan-to-ireland/" target="_blank">repatriationfuneral.com/routes/afghanistan-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Albania to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/albania-to-ireland/" target="_blank">repatriationfuneral.com/routes/albania-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Algeria to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/algeria-to-ireland/" target="_blank">repatriationfuneral.com/routes/algeria-to-ireland/</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">R8 (25 routes): Ireland Tier A:origin countries bahrain through congo</p>
+        <p class="sample-note">25 country-to-Ireland route pages. 68 Ireland routes now live; 124 remaining.</p>
+        <ul class="page-list">
+          <li>
+            <span class="page-title">Bahrain to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/bahrain-to-ireland/" target="_blank">repatriationfuneral.com/routes/bahrain-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Congo to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/congo-to-ireland/" target="_blank">repatriationfuneral.com/routes/congo-to-ireland/</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSE PROTECTION HIRE -->
+  <section class="site-section">
+    <div class="site-header">
+      <h2>Close Protection Hire</h2>
+      <span class="badge badge-none">no build today</span>
+    </div>
+    <div class="site-body">
+      <p class="no-build">No commits on the master branch today. No build scheduled.</p>
+    </div>
+  </section>
+
+  <footer>
+    generated: 2026-06-06T20:00Z &nbsp;|&nbsp; reporter: claude-sonnet-4-6 &nbsp;|&nbsp; source: github commits, pettransportglobal.com group repos
+  </footer>
+
+</div>
+</body>
+</html>
