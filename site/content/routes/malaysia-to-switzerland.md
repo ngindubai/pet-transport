@@ -113,7 +113,7 @@ content:
 
 faqs:
   - question: "How do I find out if my dog's breed is restricted in my Swiss canton?"
-    answer: "Contact the cantonal veterinary authority (Veterinäramt or Office vétérinaire cantonal, depending on the language region) directly. Each canton publishes its rules, but they are not always easy to navigate online. Your transport agent may also have current information on restrictions in the main cantons."
+    answer: "Contact the cantonal veterinary authority (Veterinäramt or Office vétérinaire cantonal, depending on the language region) directly. Each canton publishes its rules, but they are not always easy to find online. Your transport agent may also have current information on restrictions in the main cantons."
   - question: "Does the 90-day wait apply even though Switzerland is not in the EU?"
     answer: "Yes. Switzerland has adopted animal import rules equivalent to EU standards for non-listed third countries. The 90-day wait from the blood draw date is a requirement of Swiss law, mirroring the EU regulation. It applies regardless of whether your destination is an EU member state or Switzerland."
   - question: "Can I bring my Malaysian cat to Switzerland on the same flight as me?"
