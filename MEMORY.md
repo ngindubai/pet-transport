@@ -7,12 +7,12 @@
 - **Repository:** https://github.com/ngindubai/pet-transport (private)
 - **Deploy:** Push to `main` triggers GitHub Actions automatically. Hugo build + incremental FTP to Hostinger. Live within ~80 seconds for a single article. After every build batch, the live URLs of new/changed pages are posted in chat for review (LIVE LINK REVIEW GATE in CLAUDE.md).
 
-## Current State (2026-06-05, reconciled from disk by verify_build_state.py)
+## Current State (2026-06-06, reconciled from disk by verify_build_state.py)
 
-- **Routes built:** 5,322 of ~37,830 country pairs (~14.1%). True on-disk count (5,312 in `routes/` + 10 in `pet-transport/`).
-- **Blog articles:** 414
-- **Total .md source files:** 6,109 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-30 complete. **Chunk 31 is next** (Template B, Visual Journey, Tier A). 140 score-7+ Tier A pairs remain. Chunk 30 = 25 Template A (Field Manual) routes: UK and US outbound to 13 priority destinations (Israel, Pakistan, Bangladesh, Colombia, Chile, Peru, Morocco, Ghana, Ethiopia, Jordan, Nepal, Sri Lanka, Nigeria). 4 data corrections vs. source file (Sri Lanka home quarantine, Israel tier split, Colombia no permit, Chile apostille).
+- **Routes built:** 5,397 of ~37,830 country pairs (~14.3%). True on-disk count (5,387 in `routes/` + 10 in `pet-transport/`).
+- **Blog articles:** 415
+- **Total .md source files:** 6,185 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Phase 7 progress:** Chunks 1-31 complete. **Chunk 32 is next** (Template B, Visual Journey, Tier A). Chunk 31 = 25 Template D (Conversational Q&A) routes: Brazil/Indonesia/Malaysia/Mexico to Italy/Japan/Netherlands/Portugal/South Korea/Switzerland; plus Italy-to-South Korea and Thailand-to-South Korea. Key regulatory coverage: MAPA/BARANTAN/DVS/SENASICA export certs; EU non-listed country FAVN titre + 90-day wait; Japan AQS 180-day pathway; South Korea QIAS quarantine (5-10 days for endemic origins; 1-3 days for EU-origin Italy).
 - **Content plan:** Days 1-6 complete. Day 6 was pet-transport-europe-to-uk.md (2400 words, Marcus Webb, 2026-06-05). **Day 7 is next:** check content-plan/plan-rows-q1.js for slug.
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
