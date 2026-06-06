@@ -9,10 +9,10 @@
 
 ## Current State (2026-06-06, reconciled from disk by verify_build_state.py)
 
-- **Routes built:** 5,397 of ~37,830 country pairs (~14.3%). True on-disk count (5,387 in `routes/` + 10 in `pet-transport/`).
-- **Blog articles:** 415
-- **Total .md source files:** 6,185 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-31 complete. **Chunk 32 is next** (Template B, Visual Journey, Tier A). Chunk 31 = 25 Template D (Conversational Q&A) routes: Brazil/Indonesia/Malaysia/Mexico to Italy/Japan/Netherlands/Portugal/South Korea/Switzerland; plus Italy-to-South Korea and Thailand-to-South Korea. Key regulatory coverage: MAPA/BARANTAN/DVS/SENASICA export certs; EU non-listed country FAVN titre + 90-day wait; Japan AQS 180-day pathway; South Korea QIAS quarantine (5-10 days for endemic origins; 1-3 days for EU-origin Italy).
+- **Routes built:** 5,416 of ~37,830 country pairs (~14.3%). True on-disk count (5,406 in `routes/` + 10 in `pet-transport/`).
+- **Blog articles:** 416
+- **Total .md source files:** 6,196 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Phase 7 progress:** Chunks 1-31b complete. **Chunk 33 is next** (Template C, Comparison Brief, Tier A). 90 score-7+ Tier A pairs remain. Chunk 31a = 25 Template D (Conversational Q&A) routes: Brazil/Indonesia/Malaysia/Mexico to Italy/Japan/Netherlands/Portugal/South Korea/Switzerland; Italy-to-South Korea; Thailand-to-South Korea. Key coverage: MAPA/BARANTAN/DVS/SENASICA export certs; EU non-listed FAVN titre + 90-day wait; Japan AQS 180-day pathway; South Korea QIAS (5-10 days endemic / 1-3 days EU-origin). Chunk 31b = 25 Template B (Visual Journey) routes: US/UK outbound to EU and non-EU, Vietnam-to-USA. Tapeworm for Finland/Norway; SENASA+FCDO apostille for UK-AR; CDC high-risk for VN-US.
 - **Content plan:** Days 1-6 complete. Day 6 was pet-transport-europe-to-uk.md (2400 words, Marcus Webb, 2026-06-05). **Day 7 is next:** check content-plan/plan-rows-q1.js for slug.
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
