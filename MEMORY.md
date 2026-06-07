@@ -7,12 +7,12 @@
 - **Repository:** https://github.com/ngindubai/pet-transport (private)
 - **Deploy:** Push to `main` triggers GitHub Actions automatically. Hugo build + incremental FTP to Hostinger. Live within ~80 seconds for a single article. After every build batch, the live URLs of new/changed pages are posted in chat for review (LIVE LINK REVIEW GATE in CLAUDE.md).
 
-## Current State (2026-06-06, reconciled from disk by verify_build_state.py)
+## Current State (2026-06-07, reconciled from disk by verify_build_state.py)
 
-- **Routes built:** 5,431 of ~37,830 country pairs (~14.4%). True on-disk count (5,421 in `routes/` + 10 in `pet-transport/`).
+- **Routes built:** 5,456 of ~37,830 country pairs (~14.4%). True on-disk count (5,446 in `routes/` + 10 in `pet-transport/`).
 - **Blog articles:** 416
-- **Total .md source files:** 6,220 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-35 complete. **Chunk 36 is next** (Template A, Field Manual, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 35 = 15 final Tier A routes, Template E (Data-Forward): India/Japan/Malaysia/Philippines/South Korea/Thailand cross-corridors with web-verified regulatory data. Blog Day 9 = pet-transport-uk-to-jersey.md (1,600 words, Marcus Webb).
+- **Total .md source files:** 6,245 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Phase 7 progress:** Chunks 1-36 complete. **Chunk 37 is next** (Template B, Visual Journey, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 36 = 25 Tier B routes, Template A (Field Manual): Greece/Denmark inbound, EU-to-Brazil, Thailand-to-Italy/Portugal, EU-to-Indonesia, EU-to-Malaysia, EU-to-Mexico corridors.
 - **Content plan:** Days 1-6 + Days 8-9 complete (8 articles written). Day 7 skipped (pre-existing). **Day 10 is next:** check content-plan/plan-rows-q1.js for slug.
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
