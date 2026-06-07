@@ -9,11 +9,11 @@
 
 ## Current State (2026-06-07, reconciled from disk by verify_build_state.py)
 
-- **Routes built:** 5,456 of ~37,830 country pairs (~14.4%). True on-disk count (5,446 in `routes/` + 10 in `pet-transport/`).
-- **Blog articles:** 416
-- **Total .md source files:** 6,245 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-36 complete. **Chunk 37 is next** (Template B, Visual Journey, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 36 = 25 Tier B routes, Template A (Field Manual): Greece/Denmark inbound, EU-to-Brazil, Thailand-to-Italy/Portugal, EU-to-Indonesia, EU-to-Malaysia, EU-to-Mexico corridors.
-- **Content plan:** Days 1-6 + Days 8-9 complete (8 articles written). Day 7 skipped (pre-existing). **Day 10 is next:** check content-plan/plan-rows-q1.js for slug.
+- **Routes built:** 5,506 of ~37,830 country pairs (~14.5%). True on-disk count (5,496 in `routes/` + 10 in `pet-transport/`).
+- **Blog articles:** 417
+- **Total .md source files:** 6,296 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Phase 7 progress:** Chunks 1-38 complete. **Chunk 39 is next** (Template D, Conversational Q&A, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 37 = 25 Tier B routes Template B: South America/Africa/South Asia x UK+US, UK outbound Cyprus/Malta/Mexico/Bulgaria/Croatia. Chunk 38 = 25 Tier B routes Template C: UK/US outbound to Slovakia/Luxembourg/Ecuador/Costa Rica/Tanzania/Zimbabwe/Cambodia/Myanmar/Mauritius; Mauritius/Zimbabwe/Cambodia to UK.
+- **Content plan:** Days 1-6 + Days 8-10 complete (9 articles written). Day 7 skipped (pre-existing). **Day 11 is next:** check content-plan/plan-rows-q1.js for slug.
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
 

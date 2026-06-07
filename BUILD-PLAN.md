@@ -17,7 +17,7 @@
 - **Bulk-generation scripts are banned.** A batch is still N individually quality-gated blocks, never a mass-generation script.
 - **Skip rule:** skip only if the build pointer shows nothing left to build (no chunks remaining and no blog day due). Do NOT skip just because a build already happened earlier today; each site now runs twice a day on purpose.
 
-**Where we are (reconciled from disk 2026-06-07):** 5,456 quality routes complete. ~32,374 routes remaining. Blog: 416 articles. Total .md source files: 6,245. Content plan: Day 10 is next. Chunk 36 complete. Chunk 37 (Template B, Visual Journey, Tier B) is next. Counts come from `python verify_build_state.py`, never hand-edited.
+**Where we are (reconciled from disk 2026-06-07):** 5,506 quality routes complete. ~32,324 routes remaining. Blog: 417 articles. Total .md source files: 6,296. Content plan: Day 11 is next. Chunks 37+38 complete. Chunk 39 (Template D, Conversational Q&A, Tier B) is next. Counts come from `python verify_build_state.py`, never hand-edited.
 
 ---
 
@@ -40,9 +40,13 @@
 - Chunk 34 template: D (Conversational Q&A) - DONE 2026-06-06 (Brazil/Indonesia/Malaysia/Mexico to EU/Japan/Korea/Switzerland, Italy-KR, Thailand-KR; 25 routes; committed in merge)
 - Chunk 35 template: E (Data-Forward) - DONE 2026-06-06 (15 final Tier A routes: India/Japan/Malaysia/Philippines/South Korea/Thailand cross-corridors)
 - Chunk 36 template: A (Field Manual) - DONE 2026-06-07 (Greece/Denmark inbound, EU-to-Brazil, EU-to-Indonesia, EU-to-Malaysia, EU-to-Mexico; 25 routes)
-- Chunk 37 template: B (Visual Journey) - NEXT
+- Chunk 37 template: B (Visual Journey) - DONE 2026-06-07 (South America x UK/US, Africa/South Asia x UK/US, UK outbound to Cyprus/Malta/Mexico/Bulgaria/Croatia; 25 routes)
+- Chunk 38 template: C (Comparison Brief) - DONE 2026-06-07 (UK/US outbound to Slovakia/Luxembourg/Ecuador/Costa Rica/Tanzania/Zimbabwe/Cambodia/Myanmar/Mauritius; Mauritius/Zimbabwe/Cambodia to UK; 25 routes)
+- Chunk 39 template: D (Conversational Q&A) - NEXT
+- Blog Day 10: pet-transport-uae-to-pakistan - DONE 2026-06-07 (Marcus Webb, AQD NOC, AED 3,000-6,000)
+- Blog Day 11: NEXT (check plan-rows-q1.js)
 - Tier: B (1,094 pairs; Tier A now complete)
-- Template rotation: ...D(21), E(22), A(23), B(24), C(25-27), D(28), E(29), A(30), D(31a), B(31b), B(32), C(33), D(34), E(35), A(36), B(37)...
+- Template rotation: ...D(21), E(22), A(23), B(24), C(25-27), D(28), E(29), A(30), D(31a), B(31b), B(32), C(33), D(34), E(35), A(36), B(37), C(38), D(39)...
 
 **DEPLOY INCIDENT 2026-06-05 (fixed):** Three routine runs each committed a "chunk 25" to its own `claude/*` feature branch. `build-to-live.yml` only fires on push to `main`, so none deployed and Hostinger never updated. main never advanced, so each run rebuilt chunk 25 with overlapping routes. All three combined into main here. DURABLE FIX: the routine must push to `main` (STEP 3 already says `git push origin HEAD:main`; a conflicting feature-branch instruction was overriding it). See MEMORY.md.
 
