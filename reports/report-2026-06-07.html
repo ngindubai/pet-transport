@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Build Report: 7 June 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:     #1a1a1a;
+      --muted:   #5a5a5a;
+      --rule:    #e0dcd8;
+      --bg:      #faf8f5;
+      --card:    #ffffff;
+      --green:   #1a6640;
+      --green-bg:#edf7f1;
+      --amber:   #7a4800;
+      --amber-bg:#fff4e0;
+      --red:     #8b1a1a;
+      --red-bg:  #fdf0f0;
+      --blue:    #1a3a6a;
+      --blue-bg: #eef2fb;
+    }
+
+    body {
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--ink);
+      background: var(--bg);
+      padding: 2rem 1rem 4rem;
+    }
+
+    .container { max-width: 860px; margin: 0 auto; }
+
+    .report-header {
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .report-header .eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+
+    h1 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--ink);
+    }
+
+    .summary-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 1rem;
+      padding: 0.85rem 1rem;
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+    }
+
+    .summary-bar .stat { display: flex; flex-direction: column; }
+
+    .summary-bar .stat-value {
+      font-family: 'Fraunces', serif;
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1;
+    }
+
+    .summary-bar .stat-label {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 0.2rem;
+    }
+
+    /* All-clear box */
+    .clear-box {
+      border-left: 4px solid var(--green);
+      background: var(--green-bg);
+      padding: 1rem 1.25rem;
+      border-radius: 0 4px 4px 0;
+      margin-bottom: 2rem;
+    }
+
+    .clear-box .clear-heading {
+      font-family: 'Fraunces', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 0.3rem;
+      letter-spacing: 0.04em;
+    }
+
+    .clear-box p {
+      font-size: 0.9rem;
+      color: var(--green);
+      line-height: 1.55;
+    }
+
+    /* Red flag box */
+    .flags-box {
+      border-left: 4px solid var(--red);
+      background: var(--red-bg);
+      padding: 1rem 1.25rem;
+      border-radius: 0 4px 4px 0;
+      margin-bottom: 2rem;
+    }
+
+    .flags-box .flags-heading {
+      font-family: 'Fraunces', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--red);
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.04em;
+    }
+
+    .flags-box ul {
+      margin: 0;
+      padding-left: 1.1rem;
+    }
+
+    .flags-box li {
+      font-size: 0.9rem;
+      color: var(--red);
+      margin-bottom: 0.35rem;
+      line-height: 1.55;
+    }
+
+    .flags-box li strong { font-weight: 600; }
+
+    /* Lead paragraph with drop cap */
+    .lead {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: var(--ink);
+      margin-bottom: 2.5rem;
+      max-width: 680px;
+    }
+
+    .lead::first-letter {
+      font-size: 4rem;
+      font-weight: 700;
+      float: left;
+      line-height: 0.82;
+      margin-right: 0.08em;
+      margin-top: 0.1em;
+      color: var(--ink);
+      font-family: 'Fraunces', serif;
+    }
+
+    .site-section {
+      margin-bottom: 2.5rem;
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.9rem 1.25rem;
+      border-bottom: 1px solid var(--rule);
+      gap: 0.75rem;
+    }
+
+    .site-header h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 500;
+      padding: 0.2rem 0.55rem;
+      border-radius: 20px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .badge-built { background: var(--green-bg); color: var(--green); border: 1px solid #a8d8bc; }
+    .badge-flag  { background: var(--red-bg);   color: var(--red);   border: 1px solid #e8a8a8; }
+    .badge-none  { background: #f0f0f0; color: #888; border: 1px solid #d8d8d8; }
+
+    .site-body { padding: 1rem 1.25rem; }
+
+    .site-meta {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px dashed var(--rule);
+      line-height: 1.6;
+    }
+
+    .commit-block { margin-top: 0.35rem; }
+    .commit-msg {
+      font-style: italic;
+      color: var(--muted);
+      font-family: 'Inter Tight', sans-serif;
+      font-size: 0.85rem;
+    }
+
+    .pages-group { margin-bottom: 1.25rem; }
+
+    .pages-group-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .milestone-note {
+      border-left: 3px solid var(--green);
+      background: var(--green-bg);
+      padding: 0.6rem 1rem;
+      border-radius: 0 4px 4px 0;
+      margin-bottom: 0.75rem;
+      font-size: 0.84rem;
+      color: var(--green);
+      font-weight: 500;
+    }
+
+    .page-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 0.3rem;
+    }
+
+    .page-list li { font-size: 0.88rem; }
+
+    .page-list a {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      color: var(--blue);
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .page-list a:hover { text-decoration: underline; }
+
+    .page-title {
+      display: block;
+      font-family: 'Inter Tight', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--ink);
+    }
+
+    .no-build {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-style: italic;
+      padding: 0.5rem 0;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--rule);
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-family: 'JetBrains Mono', monospace;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header class="report-header">
+    <p class="eyebrow">PetTransportGlobal Group &nbsp;/&nbsp; Daily Build Report</p>
+    <h1>7 June 2026</h1>
+    <div class="summary-bar">
+      <div class="stat"><span class="stat-value">3</span><span class="stat-label">sites built</span></div>
+      <div class="stat"><span class="stat-value">93</span><span class="stat-label">new pages today</span></div>
+      <div class="stat"><span class="stat-value">0</span><span class="stat-label">flags requiring attention</span></div>
+    </div>
+  </header>
+
+  <!-- FLAGS BOX: all clear -->
+  <div class="clear-box">
+    <p class="clear-heading">NO FLAGS TODAY</p>
+    <p>No HALTED, FAILED, PAUSED, RED, DEPLOY RISK, DEPLOY RETRY NEEDED, or SKIPPED events on any repo. All three builds completed clean.</p>
+  </div>
+
+  <p class="lead">Three sites built today, shipping 93 new pages across pet transport routes, funeral repatriation, and close protection. Pet Transport Global closed chunk 36 with 25 Tier B routes covering Greece and Denmark inbound from Asia and LATAM, plus EU outbound corridors to Brazil, Indonesia, and Malaysia. Funeral Repatriation completed the full Ireland Tier A matrix with its final 28 routes, bringing the total to 398 route pairs live. Close Protection Hire expanded four service sections with 40 new city pages, pushing the site past 500 pages. Mortgage Compare and Bus Rental had no build today.</p>
+
+  <!-- PET TRANSPORT GLOBAL -->
+  <section class="site-section">
+    <div class="site-header">
+      <h2>Pet Transport Global</h2>
+      <span class="badge badge-built">25 new route pages</span>
+    </div>
+    <div class="site-body">
+      <div class="site-meta">
+        domain: pettransportglobal.com &nbsp;|&nbsp; branch: main
+        <div class="commit-block">
+          <span class="commit-msg">f583bee &nbsp;|&nbsp; 06:38 UTC &nbsp;|&nbsp; build: chunk 36 (template-a/field-manual, tier-b) - 25 routes</span>
+        </div>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">Chunk 36 (Template A, Field Manual, Tier B): Greece/Denmark inbound + EU outbound to Brazil, Indonesia, Malaysia (25 routes, all listed)</p>
+        <ul class="page-list">
+          <li>
+            <span class="page-title">Brazil to Denmark</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/brazil-to-denmark/" target="_blank">pettransportglobal.com/pet-transport/brazil-to-denmark/</a>
+          </li>
+          <li>
+            <span class="page-title">Brazil to Greece</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/brazil-to-greece/" target="_blank">pettransportglobal.com/pet-transport/brazil-to-greece/</a>
+          </li>
+          <li>
+            <span class="page-title">Greece to Brazil</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/greece-to-brazil/" target="_blank">pettransportglobal.com/pet-transport/greece-to-brazil/</a>
+          </li>
+          <li>
+            <span class="page-title">Greece to Indonesia</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/greece-to-indonesia/" target="_blank">pettransportglobal.com/pet-transport/greece-to-indonesia/</a>
+          </li>
+          <li>
+            <span class="page-title">Greece to Malaysia</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/greece-to-malaysia/" target="_blank">pettransportglobal.com/pet-transport/greece-to-malaysia/</a>
+          </li>
+          <li>
+            <span class="page-title">Greece to Mexico</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/greece-to-mexico/" target="_blank">pettransportglobal.com/pet-transport/greece-to-mexico/</a>
+          </li>
+          <li>
+            <span class="page-title">India to Denmark</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/india-to-denmark/" target="_blank">pettransportglobal.com/pet-transport/india-to-denmark/</a>
+          </li>
+          <li>
+            <span class="page-title">India to Greece</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/india-to-greece/" target="_blank">pettransportglobal.com/pet-transport/india-to-greece/</a>
+          </li>
+          <li>
+            <span class="page-title">Indonesia to Greece</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/indonesia-to-greece/" target="_blank">pettransportglobal.com/pet-transport/indonesia-to-greece/</a>
+          </li>
+          <li>
+            <span class="page-title">Italy to Brazil</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/italy-to-brazil/" target="_blank">pettransportglobal.com/pet-transport/italy-to-brazil/</a>
+          </li>
+          <li>
+            <span class="page-title">Italy to Indonesia</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/italy-to-indonesia/" target="_blank">pettransportglobal.com/pet-transport/italy-to-indonesia/</a>
+          </li>
+          <li>
+            <span class="page-title">Japan to Greece</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/japan-to-greece/" target="_blank">pettransportglobal.com/pet-transport/japan-to-greece/</a>
+          </li>
+          <li>
+            <span class="page-title">Malaysia to Denmark</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/malaysia-to-denmark/" target="_blank">pettransportglobal.com/pet-transport/malaysia-to-denmark/</a>
+          </li>
+          <li>
+            <span class="page-title">Malaysia to Greece</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/malaysia-to-greece/" target="_blank">pettransportglobal.com/pet-transport/malaysia-to-greece/</a>
+          </li>
+          <li>
+            <span class="page-title">Mexico to Denmark</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/mexico-to-denmark/" target="_blank">pettransportglobal.com/pet-transport/mexico-to-denmark/</a>
+          </li>
+          <li>
+            <span class="page-title">Mexico to Greece</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/mexico-to-greece/" target="_blank">pettransportglobal.com/pet-transport/mexico-to-greece/</a>
+          </li>
+          <li>
+            <span class="page-title">Netherlands to Brazil</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/netherlands-to-brazil/" target="_blank">pettransportglobal.com/pet-transport/netherlands-to-brazil/</a>
+          </li>
+          <li>
+            <span class="page-title">Netherlands to Indonesia</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/netherlands-to-indonesia/" target="_blank">pettransportglobal.com/pet-transport/netherlands-to-indonesia/</a>
+          </li>
+          <li>
+            <span class="page-title">Netherlands to Malaysia</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/netherlands-to-malaysia/" target="_blank">pettransportglobal.com/pet-transport/netherlands-to-malaysia/</a>
+          </li>
+          <li>
+            <span class="page-title">Portugal to Brazil</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/portugal-to-brazil/" target="_blank">pettransportglobal.com/pet-transport/portugal-to-brazil/</a>
+          </li>
+          <li>
+            <span class="page-title">South Korea to Denmark</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/south-korea-to-denmark/" target="_blank">pettransportglobal.com/pet-transport/south-korea-to-denmark/</a>
+          </li>
+          <li>
+            <span class="page-title">South Korea to Greece</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/south-korea-to-greece/" target="_blank">pettransportglobal.com/pet-transport/south-korea-to-greece/</a>
+          </li>
+          <li>
+            <span class="page-title">Thailand to Greece</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/thailand-to-greece/" target="_blank">pettransportglobal.com/pet-transport/thailand-to-greece/</a>
+          </li>
+          <li>
+            <span class="page-title">Thailand to Italy</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/thailand-to-italy/" target="_blank">pettransportglobal.com/pet-transport/thailand-to-italy/</a>
+          </li>
+          <li>
+            <span class="page-title">Thailand to Portugal</span>
+            <a href="https://www.pettransportglobal.com/pet-transport/thailand-to-portugal/" target="_blank">pettransportglobal.com/pet-transport/thailand-to-portugal/</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- MORTGAGE COMPARE AE -->
+  <section class="site-section">
+    <div class="site-header">
+      <h2>Mortgage Compare AE</h2>
+      <span class="badge badge-none">no build today</span>
+    </div>
+    <div class="site-body">
+      <p class="no-build">No commits on the main branch today. No build scheduled.</p>
+    </div>
+  </section>
+
+  <!-- BUS RENTAL GLOBAL -->
+  <section class="site-section">
+    <div class="site-header">
+      <h2>Bus Rental Global</h2>
+      <span class="badge badge-none">no build today</span>
+    </div>
+    <div class="site-body">
+      <p class="no-build">No commits on the main branch today. No build scheduled.</p>
+    </div>
+  </section>
+
+  <!-- FUNERAL REPATRIATION -->
+  <section class="site-section">
+    <div class="site-header">
+      <h2>Funeral Repatriation</h2>
+      <span class="badge badge-built">28 new route pages</span>
+    </div>
+    <div class="site-body">
+      <div class="site-meta">
+        domain: repatriationfuneral.com &nbsp;|&nbsp; branch: master
+        <div class="commit-block">
+          <span class="commit-msg">d3e6e0d &nbsp;|&nbsp; 08:13 UTC &nbsp;|&nbsp; build: funeral chunk R13 (1 block, 28 pages, variants A-C) -- Tier A complete</span>
+        </div>
+      </div>
+
+      <div class="milestone-note">Milestone: Tier A Ireland matrix now complete. 394 total Tier A routes live (196 to UK, 196 to Ireland, 6 pre-matrix). 398 route pairs total on the site.</div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">Chunk R13: Final 28 Ireland Tier A routes (Hong Kong through Zimbabwe, all listed)</p>
+        <ul class="page-list">
+          <li>
+            <span class="page-title">Hong Kong to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/hong-kong-to-ireland/" target="_blank">repatriationfuneral.com/routes/hong-kong-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">South Korea to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/south-korea-to-ireland/" target="_blank">repatriationfuneral.com/routes/south-korea-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Sudan to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/sudan-to-ireland/" target="_blank">repatriationfuneral.com/routes/sudan-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Suriname to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/suriname-to-ireland/" target="_blank">repatriationfuneral.com/routes/suriname-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Sweden to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/sweden-to-ireland/" target="_blank">repatriationfuneral.com/routes/sweden-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Switzerland to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/switzerland-to-ireland/" target="_blank">repatriationfuneral.com/routes/switzerland-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Syria to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/syria-to-ireland/" target="_blank">repatriationfuneral.com/routes/syria-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Taiwan to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/taiwan-to-ireland/" target="_blank">repatriationfuneral.com/routes/taiwan-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Tajikistan to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/tajikistan-to-ireland/" target="_blank">repatriationfuneral.com/routes/tajikistan-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Tanzania to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/tanzania-to-ireland/" target="_blank">repatriationfuneral.com/routes/tanzania-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Timor-Leste to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/timor-leste-to-ireland/" target="_blank">repatriationfuneral.com/routes/timor-leste-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Togo to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/togo-to-ireland/" target="_blank">repatriationfuneral.com/routes/togo-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Tonga to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/tonga-to-ireland/" target="_blank">repatriationfuneral.com/routes/tonga-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Trinidad and Tobago to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/trinidad-and-tobago-to-ireland/" target="_blank">repatriationfuneral.com/routes/trinidad-and-tobago-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Tunisia to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/tunisia-to-ireland/" target="_blank">repatriationfuneral.com/routes/tunisia-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Turkmenistan to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/turkmenistan-to-ireland/" target="_blank">repatriationfuneral.com/routes/turkmenistan-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Tuvalu to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/tuvalu-to-ireland/" target="_blank">repatriationfuneral.com/routes/tuvalu-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Uganda to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/uganda-to-ireland/" target="_blank">repatriationfuneral.com/routes/uganda-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Ukraine to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/ukraine-to-ireland/" target="_blank">repatriationfuneral.com/routes/ukraine-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">United Kingdom to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/united-kingdom-to-ireland/" target="_blank">repatriationfuneral.com/routes/united-kingdom-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Uruguay to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/uruguay-to-ireland/" target="_blank">repatriationfuneral.com/routes/uruguay-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Uzbekistan to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/uzbekistan-to-ireland/" target="_blank">repatriationfuneral.com/routes/uzbekistan-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Vanuatu to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/vanuatu-to-ireland/" target="_blank">repatriationfuneral.com/routes/vanuatu-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Vatican City to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/vatican-city-to-ireland/" target="_blank">repatriationfuneral.com/routes/vatican-city-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Venezuela to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/venezuela-to-ireland/" target="_blank">repatriationfuneral.com/routes/venezuela-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Yemen to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/yemen-to-ireland/" target="_blank">repatriationfuneral.com/routes/yemen-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Zambia to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/zambia-to-ireland/" target="_blank">repatriationfuneral.com/routes/zambia-to-ireland/</a>
+          </li>
+          <li>
+            <span class="page-title">Zimbabwe to Ireland</span>
+            <a href="https://www.repatriationfuneral.com/routes/zimbabwe-to-ireland/" target="_blank">repatriationfuneral.com/routes/zimbabwe-to-ireland/</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSE PROTECTION HIRE -->
+  <section class="site-section">
+    <div class="site-header">
+      <h2>Close Protection Hire</h2>
+      <span class="badge badge-built">40 new city pages (4 blocks)</span>
+    </div>
+    <div class="site-body">
+      <div class="site-meta">
+        domain: closeprotectionhire.com &nbsp;|&nbsp; branch: master
+        <div class="commit-block">
+          <span class="commit-msg">027d2e9 &nbsp;|&nbsp; 09:27 UTC &nbsp;|&nbsp; build: matrix expansion batch3 - 40 pages across 4 blocks (07 Jun 2026)</span>
+        </div>
+      </div>
+
+      <div class="milestone-note">Site now at 517 total pages. Residential Security, Close Protection Officers, and Secure Airport Transfers each at 30 cities. Bodyguard Hire now at 40 cities.</div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">Block 1: Residential Security (10 new cities)</p>
+        <ul class="page-list">
+          <li>
+            <span class="page-title">Residential Security in Bangkok</span>
+            <a href="https://closeprotectionhire.com/residential-security/bangkok/" target="_blank">closeprotectionhire.com/residential-security/bangkok/</a>
+          </li>
+          <li>
+            <span class="page-title">Residential Security in Abu Dhabi</span>
+            <a href="https://closeprotectionhire.com/residential-security/abu-dhabi/" target="_blank">closeprotectionhire.com/residential-security/abu-dhabi/</a>
+          </li>
+          <li>
+            <span class="page-title">Residential Security in Amsterdam</span>
+            <a href="https://closeprotectionhire.com/residential-security/amsterdam/" target="_blank">closeprotectionhire.com/residential-security/amsterdam/</a>
+          </li>
+          <li>
+            <span class="page-title">Residential Security in Kuala Lumpur</span>
+            <a href="https://closeprotectionhire.com/residential-security/kuala-lumpur/" target="_blank">closeprotectionhire.com/residential-security/kuala-lumpur/</a>
+          </li>
+          <li>
+            <span class="page-title">Residential Security in Madrid</span>
+            <a href="https://closeprotectionhire.com/residential-security/madrid/" target="_blank">closeprotectionhire.com/residential-security/madrid/</a>
+          </li>
+          <li>
+            <span class="page-title">Residential Security in Toronto</span>
+            <a href="https://closeprotectionhire.com/residential-security/toronto/" target="_blank">closeprotectionhire.com/residential-security/toronto/</a>
+          </li>
+          <li>
+            <span class="page-title">Residential Security in Moscow</span>
+            <a href="https://closeprotectionhire.com/residential-security/moscow/" target="_blank">closeprotectionhire.com/residential-security/moscow/</a>
+          </li>
+          <li>
+            <span class="page-title">Residential Security in Doha</span>
+            <a href="https://closeprotectionhire.com/residential-security/doha/" target="_blank">closeprotectionhire.com/residential-security/doha/</a>
+          </li>
+          <li>
+            <span class="page-title">Residential Security in Vienna</span>
+            <a href="https://closeprotectionhire.com/residential-security/vienna/" target="_blank">closeprotectionhire.com/residential-security/vienna/</a>
+          </li>
+          <li>
+            <span class="page-title">Residential Security in Zurich</span>
+            <a href="https://closeprotectionhire.com/residential-security/zurich/" target="_blank">closeprotectionhire.com/residential-security/zurich/</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">Block 2: Close Protection Officers (10 new cities)</p>
+        <ul class="page-list">
+          <li>
+            <span class="page-title">Close Protection Officers in Bangkok</span>
+            <a href="https://closeprotectionhire.com/close-protection-officers/bangkok/" target="_blank">closeprotectionhire.com/close-protection-officers/bangkok/</a>
+          </li>
+          <li>
+            <span class="page-title">Close Protection Officers in Abu Dhabi</span>
+            <a href="https://closeprotectionhire.com/close-protection-officers/abu-dhabi/" target="_blank">closeprotectionhire.com/close-protection-officers/abu-dhabi/</a>
+          </li>
+          <li>
+            <span class="page-title">Close Protection Officers in Amsterdam</span>
+            <a href="https://closeprotectionhire.com/close-protection-officers/amsterdam/" target="_blank">closeprotectionhire.com/close-protection-officers/amsterdam/</a>
+          </li>
+          <li>
+            <span class="page-title">Close Protection Officers in Kuala Lumpur</span>
+            <a href="https://closeprotectionhire.com/close-protection-officers/kuala-lumpur/" target="_blank">closeprotectionhire.com/close-protection-officers/kuala-lumpur/</a>
+          </li>
+          <li>
+            <span class="page-title">Close Protection Officers in Madrid</span>
+            <a href="https://closeprotectionhire.com/close-protection-officers/madrid/" target="_blank">closeprotectionhire.com/close-protection-officers/madrid/</a>
+          </li>
+          <li>
+            <span class="page-title">Close Protection Officers in Toronto</span>
+            <a href="https://closeprotectionhire.com/close-protection-officers/toronto/" target="_blank">closeprotectionhire.com/close-protection-officers/toronto/</a>
+          </li>
+          <li>
+            <span class="page-title">Close Protection Officers in Moscow</span>
+            <a href="https://closeprotectionhire.com/close-protection-officers/moscow/" target="_blank">closeprotectionhire.com/close-protection-officers/moscow/</a>
+          </li>
+          <li>
+            <span class="page-title">Close Protection Officers in Doha</span>
+            <a href="https://closeprotectionhire.com/close-protection-officers/doha/" target="_blank">closeprotectionhire.com/close-protection-officers/doha/</a>
+          </li>
+          <li>
+            <span class="page-title">Close Protection Officers in Vienna</span>
+            <a href="https://closeprotectionhire.com/close-protection-officers/vienna/" target="_blank">closeprotectionhire.com/close-protection-officers/vienna/</a>
+          </li>
+          <li>
+            <span class="page-title">Close Protection Officers in Zurich</span>
+            <a href="https://closeprotectionhire.com/close-protection-officers/zurich/" target="_blank">closeprotectionhire.com/close-protection-officers/zurich/</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">Block 3: Secure Airport Transfers (10 new cities)</p>
+        <ul class="page-list">
+          <li>
+            <span class="page-title">Secure Airport Transfers in Bangkok</span>
+            <a href="https://closeprotectionhire.com/secure-airport-transfers/bangkok/" target="_blank">closeprotectionhire.com/secure-airport-transfers/bangkok/</a>
+          </li>
+          <li>
+            <span class="page-title">Secure Airport Transfers in Abu Dhabi</span>
+            <a href="https://closeprotectionhire.com/secure-airport-transfers/abu-dhabi/" target="_blank">closeprotectionhire.com/secure-airport-transfers/abu-dhabi/</a>
+          </li>
+          <li>
+            <span class="page-title">Secure Airport Transfers in Amsterdam</span>
+            <a href="https://closeprotectionhire.com/secure-airport-transfers/amsterdam/" target="_blank">closeprotectionhire.com/secure-airport-transfers/amsterdam/</a>
+          </li>
+          <li>
+            <span class="page-title">Secure Airport Transfers in Kuala Lumpur</span>
+            <a href="https://closeprotectionhire.com/secure-airport-transfers/kuala-lumpur/" target="_blank">closeprotectionhire.com/secure-airport-transfers/kuala-lumpur/</a>
+          </li>
+          <li>
+            <span class="page-title">Secure Airport Transfers in Madrid</span>
+            <a href="https://closeprotectionhire.com/secure-airport-transfers/madrid/" target="_blank">closeprotectionhire.com/secure-airport-transfers/madrid/</a>
+          </li>
+          <li>
+            <span class="page-title">Secure Airport Transfers in Toronto</span>
+            <a href="https://closeprotectionhire.com/secure-airport-transfers/toronto/" target="_blank">closeprotectionhire.com/secure-airport-transfers/toronto/</a>
+          </li>
+          <li>
+            <span class="page-title">Secure Airport Transfers in Moscow</span>
+            <a href="https://closeprotectionhire.com/secure-airport-transfers/moscow/" target="_blank">closeprotectionhire.com/secure-airport-transfers/moscow/</a>
+          </li>
+          <li>
+            <span class="page-title">Secure Airport Transfers in Doha</span>
+            <a href="https://closeprotectionhire.com/secure-airport-transfers/doha/" target="_blank">closeprotectionhire.com/secure-airport-transfers/doha/</a>
+          </li>
+          <li>
+            <span class="page-title">Secure Airport Transfers in Vienna</span>
+            <a href="https://closeprotectionhire.com/secure-airport-transfers/vienna/" target="_blank">closeprotectionhire.com/secure-airport-transfers/vienna/</a>
+          </li>
+          <li>
+            <span class="page-title">Secure Airport Transfers in Zurich</span>
+            <a href="https://closeprotectionhire.com/secure-airport-transfers/zurich/" target="_blank">closeprotectionhire.com/secure-airport-transfers/zurich/</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">Block 4: Bodyguard Hire (10 new cities)</p>
+        <ul class="page-list">
+          <li>
+            <span class="page-title">Bodyguard Hire in Buenos Aires</span>
+            <a href="https://closeprotectionhire.com/bodyguard-hire/buenos-aires/" target="_blank">closeprotectionhire.com/bodyguard-hire/buenos-aires/</a>
+          </li>
+          <li>
+            <span class="page-title">Bodyguard Hire in Cairo</span>
+            <a href="https://closeprotectionhire.com/bodyguard-hire/cairo/" target="_blank">closeprotectionhire.com/bodyguard-hire/cairo/</a>
+          </li>
+          <li>
+            <span class="page-title">Bodyguard Hire in Miami</span>
+            <a href="https://closeprotectionhire.com/bodyguard-hire/miami/" target="_blank">closeprotectionhire.com/bodyguard-hire/miami/</a>
+          </li>
+          <li>
+            <span class="page-title">Bodyguard Hire in Jakarta</span>
+            <a href="https://closeprotectionhire.com/bodyguard-hire/jakarta/" target="_blank">closeprotectionhire.com/bodyguard-hire/jakarta/</a>
+          </li>
+          <li>
+            <span class="page-title">Bodyguard Hire in Auckland</span>
+            <a href="https://closeprotectionhire.com/bodyguard-hire/auckland/" target="_blank">closeprotectionhire.com/bodyguard-hire/auckland/</a>
+          </li>
+          <li>
+            <span class="page-title">Bodyguard Hire in Tel Aviv</span>
+            <a href="https://closeprotectionhire.com/bodyguard-hire/tel-aviv/" target="_blank">closeprotectionhire.com/bodyguard-hire/tel-aviv/</a>
+          </li>
+          <li>
+            <span class="page-title">Bodyguard Hire in Manila</span>
+            <a href="https://closeprotectionhire.com/bodyguard-hire/manila/" target="_blank">closeprotectionhire.com/bodyguard-hire/manila/</a>
+          </li>
+          <li>
+            <span class="page-title">Bodyguard Hire in Washington DC</span>
+            <a href="https://closeprotectionhire.com/bodyguard-hire/washington-dc/" target="_blank">closeprotectionhire.com/bodyguard-hire/washington-dc/</a>
+          </li>
+          <li>
+            <span class="page-title">Bodyguard Hire in Milan</span>
+            <a href="https://closeprotectionhire.com/bodyguard-hire/milan/" target="_blank">closeprotectionhire.com/bodyguard-hire/milan/</a>
+          </li>
+          <li>
+            <span class="page-title">Bodyguard Hire in Melbourne</span>
+            <a href="https://closeprotectionhire.com/bodyguard-hire/melbourne/" target="_blank">closeprotectionhire.com/bodyguard-hire/melbourne/</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    generated: 2026-06-07T20:00Z &nbsp;|&nbsp; reporter: daily-build-reporter &nbsp;|&nbsp; source: github commits, ngindubai group repos
+  </footer>
+
+</div>
+</body>
+</html>
