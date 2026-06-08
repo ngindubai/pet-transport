@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Build Report: 8 June 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:     #1a1a1a;
+      --muted:   #5a5a5a;
+      --rule:    #e0dcd8;
+      --bg:      #faf8f5;
+      --card:    #ffffff;
+      --green:   #1a6640;
+      --green-bg:#edf7f1;
+      --amber:   #7a4800;
+      --amber-bg:#fff4e0;
+      --red:     #8b1a1a;
+      --red-bg:  #fdf0f0;
+      --blue:    #1a3a6a;
+      --blue-bg: #eef2fb;
+    }
+
+    body {
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--ink);
+      background: var(--bg);
+      padding: 2rem 1rem 4rem;
+    }
+
+    .container { max-width: 860px; margin: 0 auto; }
+
+    .report-header {
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .report-header .eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+
+    h1 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--ink);
+    }
+
+    .summary-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 1rem;
+      padding: 0.85rem 1rem;
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+    }
+
+    .summary-bar .stat { display: flex; flex-direction: column; }
+
+    .summary-bar .stat-value {
+      font-family: 'Fraunces', serif;
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1;
+    }
+
+    .summary-bar .stat-label {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 0.2rem;
+    }
+
+    .clear-box {
+      border-left: 4px solid var(--green);
+      background: var(--green-bg);
+      padding: 1rem 1.25rem;
+      border-radius: 0 4px 4px 0;
+      margin-bottom: 2rem;
+    }
+
+    .clear-box .clear-heading {
+      font-family: 'Fraunces', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 0.3rem;
+      letter-spacing: 0.04em;
+    }
+
+    .clear-box p {
+      font-size: 0.9rem;
+      color: var(--green);
+      line-height: 1.55;
+    }
+
+    .flags-box {
+      border-left: 4px solid var(--red);
+      background: var(--red-bg);
+      padding: 1rem 1.25rem;
+      border-radius: 0 4px 4px 0;
+      margin-bottom: 2rem;
+    }
+
+    .flags-box .flags-heading {
+      font-family: 'Fraunces', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--red);
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.04em;
+    }
+
+    .flags-box ul { margin: 0; padding-left: 1.1rem; }
+
+    .flags-box li {
+      font-size: 0.9rem;
+      color: var(--red);
+      margin-bottom: 0.35rem;
+      line-height: 1.55;
+    }
+
+    .flags-box li strong { font-weight: 600; }
+
+    .lead {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: var(--ink);
+      margin-bottom: 2.5rem;
+      max-width: 680px;
+    }
+
+    .lead::first-letter {
+      font-size: 4rem;
+      font-weight: 700;
+      float: left;
+      line-height: 0.82;
+      margin-right: 0.08em;
+      margin-top: 0.1em;
+      color: var(--ink);
+      font-family: 'Fraunces', serif;
+    }
+
+    .site-section {
+      margin-bottom: 2.5rem;
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.9rem 1.25rem;
+      border-bottom: 1px solid var(--rule);
+      gap: 0.75rem;
+    }
+
+    .site-header h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 500;
+      padding: 0.2rem 0.55rem;
+      border-radius: 20px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .badge-built  { background: var(--green-bg); color: var(--green); border: 1px solid #a8d8bc; }
+    .badge-update { background: var(--blue-bg);  color: var(--blue);  border: 1px solid #a8c0e8; }
+    .badge-flag   { background: var(--red-bg);   color: var(--red);   border: 1px solid #e8a8a8; }
+    .badge-none   { background: #f0f0f0; color: #888; border: 1px solid #d8d8d8; }
+
+    .site-body { padding: 1rem 1.25rem; }
+
+    .site-meta {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px dashed var(--rule);
+      line-height: 1.6;
+    }
+
+    .commit-block { margin-top: 0.35rem; }
+
+    .commit-msg {
+      font-style: italic;
+      color: var(--muted);
+      font-family: 'Inter Tight', sans-serif;
+      font-size: 0.85rem;
+    }
+
+    .pages-group { margin-bottom: 1.25rem; }
+
+    .pages-group-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .note-inline {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-style: italic;
+      margin-top: 0.4rem;
+    }
+
+    .page-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 0.3rem;
+    }
+
+    .page-list li { font-size: 0.88rem; }
+
+    .page-list a {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      color: var(--blue);
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .page-list a:hover { text-decoration: underline; }
+
+    .page-title {
+      display: block;
+      font-family: 'Inter Tight', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--ink);
+    }
+
+    .no-build {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-style: italic;
+      padding: 0.5rem 0;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--rule);
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-family: 'JetBrains Mono', monospace;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header class="report-header">
+    <p class="eyebrow">PetTransportGlobal Group &nbsp;/&nbsp; Daily Build Report</p>
+    <h1>8 June 2026</h1>
+    <div class="summary-bar">
+      <div class="stat"><span class="stat-value">4</span><span class="stat-label">sites built</span></div>
+      <div class="stat"><span class="stat-value">145</span><span class="stat-label">new pages today</span></div>
+      <div class="stat"><span class="stat-value">75</span><span class="stat-label">route rewrites (Pet Transport)</span></div>
+      <div class="stat"><span class="stat-value">0</span><span class="stat-label">flags requiring attention</span></div>
+    </div>
+  </header>
+
+  <!-- FLAGS BOX: all clear -->
+  <div class="clear-box">
+    <p class="clear-heading">NO FLAGS TODAY</p>
+    <p>No HALTED, FAILED, PAUSED, RED, DEPLOY RISK, DEPLOY RETRY NEEDED, or SKIPPED events on any repo. All four builds completed clean.</p>
+  </div>
+
+  <p class="lead">Four sites built today, shipping 145 new pages and 75 template rewrites across pet transport, mortgage guides, funeral repatriation routes, and close protection city pages. Pet Transport Global added a full Singapore pet export guide as blog article 418, and rewrote 75 existing Tier B routes across chunks 39 to 41 with refreshed templates covering Argentina, Australia, Brazil, Chile, Colombia, Hong Kong, and further South American and Asian origins to EU5 destinations. Mortgage Compare published four knowledge-hub articles covering ADIB and RAKBANK home finance, Sharjah mortgage calculations, and 1-year fixed rates. Funeral Repatriation completed batches R18 to R21, adding 100 new corridor pages and bringing the site to 598 route pairs live. Close Protection Hire shipped 40 new city pages across four service categories, reaching 597 pages total. Bus Rental Global had no build today.</p>
+
+  <!-- PET TRANSPORT GLOBAL -->
+  <section class="site-section">
+    <div class="site-header">
+      <h2>Pet Transport Global</h2>
+      <span class="badge badge-built">1 new page &nbsp;+&nbsp; 75 rewrites</span>
+    </div>
+    <div class="site-body">
+      <div class="site-meta">
+        domain: pettransportglobal.com &nbsp;|&nbsp; branch: main
+        <div class="commit-block">
+          <span class="commit-msg">07befd6 &nbsp;|&nbsp; 06:20 UTC &nbsp;|&nbsp; build: blog day 11 - exporting pets from Singapore (1 new page)</span>
+        </div>
+        <div class="commit-block">
+          <span class="commit-msg">bc9790f &nbsp;|&nbsp; 07:58 UTC &nbsp;|&nbsp; Chunks 39-41 (75 Tier B route rewrites, Template D/E/A)</span>
+        </div>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">New: Blog Day 11 (1 article)</p>
+        <ul class="page-list">
+          <li>
+            <span class="page-title">Exporting Pets from Singapore: The Complete AVS Guide</span>
+            <a href="https://www.pettransportglobal.com/blog/exporting-pets-from-singapore/">https://www.pettransportglobal.com/blog/exporting-pets-from-singapore/</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">Updated: Chunks 39-41 (75 Tier B route rewrites, sample of 29 confirmed from diff)</p>
+        <ul class="page-list">
+          <li><span class="page-title">Argentina to France</span><a href="https://www.pettransportglobal.com/pet-transport/argentina-to-france/">https://www.pettransportglobal.com/pet-transport/argentina-to-france/</a></li>
+          <li><span class="page-title">Argentina to Germany</span><a href="https://www.pettransportglobal.com/pet-transport/argentina-to-germany/">https://www.pettransportglobal.com/pet-transport/argentina-to-germany/</a></li>
+          <li><span class="page-title">Argentina to Italy</span><a href="https://www.pettransportglobal.com/pet-transport/argentina-to-italy/">https://www.pettransportglobal.com/pet-transport/argentina-to-italy/</a></li>
+          <li><span class="page-title">Argentina to Netherlands</span><a href="https://www.pettransportglobal.com/pet-transport/argentina-to-netherlands/">https://www.pettransportglobal.com/pet-transport/argentina-to-netherlands/</a></li>
+          <li><span class="page-title">Argentina to Portugal</span><a href="https://www.pettransportglobal.com/pet-transport/argentina-to-portugal/">https://www.pettransportglobal.com/pet-transport/argentina-to-portugal/</a></li>
+          <li><span class="page-title">Argentina to Spain</span><a href="https://www.pettransportglobal.com/pet-transport/argentina-to-spain/">https://www.pettransportglobal.com/pet-transport/argentina-to-spain/</a></li>
+          <li><span class="page-title">Australia to France</span><a href="https://www.pettransportglobal.com/pet-transport/australia-to-france/">https://www.pettransportglobal.com/pet-transport/australia-to-france/</a></li>
+          <li><span class="page-title">Australia to Germany</span><a href="https://www.pettransportglobal.com/pet-transport/australia-to-germany/">https://www.pettransportglobal.com/pet-transport/australia-to-germany/</a></li>
+          <li><span class="page-title">Australia to Italy</span><a href="https://www.pettransportglobal.com/pet-transport/australia-to-italy/">https://www.pettransportglobal.com/pet-transport/australia-to-italy/</a></li>
+          <li><span class="page-title">Australia to Netherlands</span><a href="https://www.pettransportglobal.com/pet-transport/australia-to-netherlands/">https://www.pettransportglobal.com/pet-transport/australia-to-netherlands/</a></li>
+          <li><span class="page-title">Australia to Spain</span><a href="https://www.pettransportglobal.com/pet-transport/australia-to-spain/">https://www.pettransportglobal.com/pet-transport/australia-to-spain/</a></li>
+          <li><span class="page-title">Brazil to France</span><a href="https://www.pettransportglobal.com/pet-transport/brazil-to-france/">https://www.pettransportglobal.com/pet-transport/brazil-to-france/</a></li>
+          <li><span class="page-title">Brazil to Germany</span><a href="https://www.pettransportglobal.com/pet-transport/brazil-to-germany/">https://www.pettransportglobal.com/pet-transport/brazil-to-germany/</a></li>
+          <li><span class="page-title">Brazil to Spain</span><a href="https://www.pettransportglobal.com/pet-transport/brazil-to-spain/">https://www.pettransportglobal.com/pet-transport/brazil-to-spain/</a></li>
+          <li><span class="page-title">Chile to France</span><a href="https://www.pettransportglobal.com/pet-transport/chile-to-france/">https://www.pettransportglobal.com/pet-transport/chile-to-france/</a></li>
+          <li><span class="page-title">Chile to Germany</span><a href="https://www.pettransportglobal.com/pet-transport/chile-to-germany/">https://www.pettransportglobal.com/pet-transport/chile-to-germany/</a></li>
+          <li><span class="page-title">Chile to Italy</span><a href="https://www.pettransportglobal.com/pet-transport/chile-to-italy/">https://www.pettransportglobal.com/pet-transport/chile-to-italy/</a></li>
+          <li><span class="page-title">Chile to Netherlands</span><a href="https://www.pettransportglobal.com/pet-transport/chile-to-netherlands/">https://www.pettransportglobal.com/pet-transport/chile-to-netherlands/</a></li>
+          <li><span class="page-title">Chile to Spain</span><a href="https://www.pettransportglobal.com/pet-transport/chile-to-spain/">https://www.pettransportglobal.com/pet-transport/chile-to-spain/</a></li>
+          <li><span class="page-title">Colombia to France</span><a href="https://www.pettransportglobal.com/pet-transport/colombia-to-france/">https://www.pettransportglobal.com/pet-transport/colombia-to-france/</a></li>
+          <li><span class="page-title">Colombia to Germany</span><a href="https://www.pettransportglobal.com/pet-transport/colombia-to-germany/">https://www.pettransportglobal.com/pet-transport/colombia-to-germany/</a></li>
+          <li><span class="page-title">Colombia to Italy</span><a href="https://www.pettransportglobal.com/pet-transport/colombia-to-italy/">https://www.pettransportglobal.com/pet-transport/colombia-to-italy/</a></li>
+          <li><span class="page-title">Colombia to Netherlands</span><a href="https://www.pettransportglobal.com/pet-transport/colombia-to-netherlands/">https://www.pettransportglobal.com/pet-transport/colombia-to-netherlands/</a></li>
+          <li><span class="page-title">Colombia to Spain</span><a href="https://www.pettransportglobal.com/pet-transport/colombia-to-spain/">https://www.pettransportglobal.com/pet-transport/colombia-to-spain/</a></li>
+          <li><span class="page-title">Hong Kong to France</span><a href="https://www.pettransportglobal.com/pet-transport/hong-kong-to-france/">https://www.pettransportglobal.com/pet-transport/hong-kong-to-france/</a></li>
+          <li><span class="page-title">Hong Kong to Germany</span><a href="https://www.pettransportglobal.com/pet-transport/hong-kong-to-germany/">https://www.pettransportglobal.com/pet-transport/hong-kong-to-germany/</a></li>
+          <li><span class="page-title">Hong Kong to Italy</span><a href="https://www.pettransportglobal.com/pet-transport/hong-kong-to-italy/">https://www.pettransportglobal.com/pet-transport/hong-kong-to-italy/</a></li>
+          <li><span class="page-title">Hong Kong to Netherlands</span><a href="https://www.pettransportglobal.com/pet-transport/hong-kong-to-netherlands/">https://www.pettransportglobal.com/pet-transport/hong-kong-to-netherlands/</a></li>
+          <li><span class="page-title">Hong Kong to Spain</span><a href="https://www.pettransportglobal.com/pet-transport/hong-kong-to-spain/">https://www.pettransportglobal.com/pet-transport/hong-kong-to-spain/</a></li>
+        </ul>
+        <p class="note-inline">46 further rewrites from Chunks 39-41 (NZ, Japan, Singapore, South Korea, Taiwan, Peru origins to EU5) not shown: GitHub diff truncated at 30 files. All are existing route pages updated with new templates, not new pages.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MORTGAGE COMPARE -->
+  <section class="site-section">
+    <div class="site-header">
+      <h2>Mortgage Compare AE</h2>
+      <span class="badge badge-built">4 new articles</span>
+    </div>
+    <div class="site-body">
+      <div class="site-meta">
+        domain: mortgagecompare.ae &nbsp;|&nbsp; branch: main
+        <div class="commit-block">
+          <span class="commit-msg">08abe8f &nbsp;|&nbsp; 05:22 UTC &nbsp;|&nbsp; Add 4 knowledge-hub articles (clusters: banks, rates-comparison, calculator, Q1 D26-D29)</span>
+        </div>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">New: Knowledge Hub articles (4 pages)</p>
+        <ul class="page-list">
+          <li>
+            <span class="page-title">ADIB Mortgage UAE 2026: Abu Dhabi Islamic Bank Home Finance Guide</span>
+            <a href="https://mortgagecompare.ae/knowledge-hub/adib-mortgage-uae.html">https://mortgagecompare.ae/knowledge-hub/adib-mortgage-uae.html</a>
+          </li>
+          <li>
+            <span class="page-title">1-Year Fixed Rate Mortgage UAE 2026: Roll Strategy and Lender Comparison</span>
+            <a href="https://mortgagecompare.ae/knowledge-hub/1-year-fixed-rate-mortgage-uae.html">https://mortgagecompare.ae/knowledge-hub/1-year-fixed-rate-mortgage-uae.html</a>
+          </li>
+          <li>
+            <span class="page-title">Sharjah Mortgage Calculator: Costs, Expat Ownership Rules, and Fee Breakdown</span>
+            <a href="https://mortgagecompare.ae/knowledge-hub/sharjah-mortgage-calculator.html">https://mortgagecompare.ae/knowledge-hub/sharjah-mortgage-calculator.html</a>
+          </li>
+          <li>
+            <span class="page-title">RAKBANK Mortgage UAE 2026: Home Loan Profile and Eligibility</span>
+            <a href="https://mortgagecompare.ae/knowledge-hub/rakbank-mortgage-uae.html">https://mortgagecompare.ae/knowledge-hub/rakbank-mortgage-uae.html</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUS RENTAL GLOBAL -->
+  <section class="site-section">
+    <div class="site-header">
+      <h2>Bus Rental Global</h2>
+      <span class="badge badge-none">no build today</span>
+    </div>
+    <div class="site-body">
+      <div class="site-meta">
+        domain: busrentalglobal.com &nbsp;|&nbsp; branch: main
+      </div>
+      <p class="no-build">No commits to main on 8 June 2026.</p>
+    </div>
+  </section>
+
+  <!-- FUNERAL REPATRIATION -->
+  <section class="site-section">
+    <div class="site-header">
+      <h2>Funeral Repatriation</h2>
+      <span class="badge badge-built">100 new route pages</span>
+    </div>
+    <div class="site-body">
+      <div class="site-meta">
+        domain: repatriationfuneral.com &nbsp;|&nbsp; branch: master
+        <div class="commit-block">
+          <span class="commit-msg">b8b0d62 &nbsp;|&nbsp; 08:19 UTC &nbsp;|&nbsp; build: funeral batches R18-R21 (4 blocks, 100 pages, variants D-C)</span>
+        </div>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">R18 (25 pages): Qatar x10, Kuwait x8, Singapore x7 (sample)</p>
+        <ul class="page-list">
+          <li><span class="page-title">Bangladesh to Qatar</span><a href="https://repatriationfuneral.com/routes/bangladesh-to-qatar/">https://repatriationfuneral.com/routes/bangladesh-to-qatar/</a></li>
+          <li><span class="page-title">Bangladesh to Kuwait</span><a href="https://repatriationfuneral.com/routes/bangladesh-to-kuwait/">https://repatriationfuneral.com/routes/bangladesh-to-kuwait/</a></li>
+          <li><span class="page-title">Bangladesh to Singapore</span><a href="https://repatriationfuneral.com/routes/bangladesh-to-singapore/">https://repatriationfuneral.com/routes/bangladesh-to-singapore/</a></li>
+          <li><span class="page-title">Egypt to Qatar</span><a href="https://repatriationfuneral.com/routes/egypt-to-qatar/">https://repatriationfuneral.com/routes/egypt-to-qatar/</a></li>
+          <li><span class="page-title">Egypt to Kuwait</span><a href="https://repatriationfuneral.com/routes/egypt-to-kuwait/">https://repatriationfuneral.com/routes/egypt-to-kuwait/</a></li>
+          <li><span class="page-title">Ethiopia to Qatar</span><a href="https://repatriationfuneral.com/routes/ethiopia-to-qatar/">https://repatriationfuneral.com/routes/ethiopia-to-qatar/</a></li>
+          <li><span class="page-title">Ethiopia to Kuwait</span><a href="https://repatriationfuneral.com/routes/ethiopia-to-kuwait/">https://repatriationfuneral.com/routes/ethiopia-to-kuwait/</a></li>
+        </ul>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">R19 (25 pages): South Africa x15, USA second wave x10 (sample)</p>
+        <ul class="page-list">
+          <li><span class="page-title">Angola to South Africa</span><a href="https://repatriationfuneral.com/routes/angola-to-south-africa/">https://repatriationfuneral.com/routes/angola-to-south-africa/</a></li>
+          <li><span class="page-title">Botswana to South Africa</span><a href="https://repatriationfuneral.com/routes/botswana-to-south-africa/">https://repatriationfuneral.com/routes/botswana-to-south-africa/</a></li>
+          <li><span class="page-title">Cameroon to South Africa</span><a href="https://repatriationfuneral.com/routes/cameroon-to-south-africa/">https://repatriationfuneral.com/routes/cameroon-to-south-africa/</a></li>
+          <li><span class="page-title">Democratic Republic of Congo to South Africa</span><a href="https://repatriationfuneral.com/routes/democratic-republic-of-the-congo-to-south-africa/">https://repatriationfuneral.com/routes/democratic-republic-of-the-congo-to-south-africa/</a></li>
+          <li><span class="page-title">Ethiopia to South Africa</span><a href="https://repatriationfuneral.com/routes/ethiopia-to-south-africa/">https://repatriationfuneral.com/routes/ethiopia-to-south-africa/</a></li>
+          <li><span class="page-title">Egypt to United States</span><a href="https://repatriationfuneral.com/routes/egypt-to-united-states/">https://repatriationfuneral.com/routes/egypt-to-united-states/</a></li>
+          <li><span class="page-title">Bangladesh to United States</span><a href="https://repatriationfuneral.com/routes/bangladesh-to-united-states/">https://repatriationfuneral.com/routes/bangladesh-to-united-states/</a></li>
+        </ul>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">R20 (25 pages): UAE second wave x8, Germany second wave x8, France second wave x9 (sample)</p>
+        <ul class="page-list">
+          <li><span class="page-title">Afghanistan to United Arab Emirates</span><a href="https://repatriationfuneral.com/routes/afghanistan-to-united-arab-emirates/">https://repatriationfuneral.com/routes/afghanistan-to-united-arab-emirates/</a></li>
+          <li><span class="page-title">China to United Arab Emirates</span><a href="https://repatriationfuneral.com/routes/china-to-united-arab-emirates/">https://repatriationfuneral.com/routes/china-to-united-arab-emirates/</a></li>
+          <li><span class="page-title">Algeria to Germany</span><a href="https://repatriationfuneral.com/routes/algeria-to-germany/">https://repatriationfuneral.com/routes/algeria-to-germany/</a></li>
+          <li><span class="page-title">China to Germany</span><a href="https://repatriationfuneral.com/routes/china-to-germany/">https://repatriationfuneral.com/routes/china-to-germany/</a></li>
+          <li><span class="page-title">Bangladesh to Germany</span><a href="https://repatriationfuneral.com/routes/bangladesh-to-germany/">https://repatriationfuneral.com/routes/bangladesh-to-germany/</a></li>
+          <li><span class="page-title">Benin to France</span><a href="https://repatriationfuneral.com/routes/benin-to-france/">https://repatriationfuneral.com/routes/benin-to-france/</a></li>
+          <li><span class="page-title">Burkina Faso to France</span><a href="https://repatriationfuneral.com/routes/burkina-faso-to-france/">https://repatriationfuneral.com/routes/burkina-faso-to-france/</a></li>
+          <li><span class="page-title">Chad to France</span><a href="https://repatriationfuneral.com/routes/chad-to-france/">https://repatriationfuneral.com/routes/chad-to-france/</a></li>
+        </ul>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">R21 (25 pages): Canada second wave x9, Australia second wave x8, India second wave x8 (sample)</p>
+        <ul class="page-list">
+          <li><span class="page-title">Bangladesh to Australia</span><a href="https://repatriationfuneral.com/routes/bangladesh-to-australia/">https://repatriationfuneral.com/routes/bangladesh-to-australia/</a></li>
+          <li><span class="page-title">Bangladesh to Canada</span><a href="https://repatriationfuneral.com/routes/bangladesh-to-canada/">https://repatriationfuneral.com/routes/bangladesh-to-canada/</a></li>
+          <li><span class="page-title">China to India</span><a href="https://repatriationfuneral.com/routes/china-to-india/">https://repatriationfuneral.com/routes/china-to-india/</a></li>
+          <li><span class="page-title">China to Singapore</span><a href="https://repatriationfuneral.com/routes/china-to-singapore/">https://repatriationfuneral.com/routes/china-to-singapore/</a></li>
+          <li><span class="page-title">Ethiopia to Canada</span><a href="https://repatriationfuneral.com/routes/ethiopia-to-canada/">https://repatriationfuneral.com/routes/ethiopia-to-canada/</a></li>
+        </ul>
+        <p class="note-inline">73 further new route pages from R18-R21 not shown: GitHub diff truncated at 30 files. All 100 new pages confirmed from commit message totals. Site now at 598 route pairs live.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSE PROTECTION HIRE -->
+  <section class="site-section">
+    <div class="site-header">
+      <h2>Close Protection Hire</h2>
+      <span class="badge badge-built">40 new pages</span>
+    </div>
+    <div class="site-body">
+      <div class="site-meta">
+        domain: closeprotectionhire.com &nbsp;|&nbsp; branch: master
+        <div class="commit-block">
+          <span class="commit-msg">ee7b9bb &nbsp;|&nbsp; 09:02 UTC &nbsp;|&nbsp; build: close-protection 3C matrix batch (40 pages, 4 blocks)</span>
+        </div>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">Block 1: Close Protection Officers, Batch 3 (10 cities)</p>
+        <ul class="page-list">
+          <li><span class="page-title">Close Protection Officers: Buenos Aires</span><a href="https://closeprotectionhire.com/close-protection-officers/buenos-aires/">https://closeprotectionhire.com/close-protection-officers/buenos-aires/</a></li>
+          <li><span class="page-title">Close Protection Officers: Cairo</span><a href="https://closeprotectionhire.com/close-protection-officers/cairo/">https://closeprotectionhire.com/close-protection-officers/cairo/</a></li>
+          <li><span class="page-title">Close Protection Officers: Miami</span><a href="https://closeprotectionhire.com/close-protection-officers/miami/">https://closeprotectionhire.com/close-protection-officers/miami/</a></li>
+          <li><span class="page-title">Close Protection Officers: Jakarta</span><a href="https://closeprotectionhire.com/close-protection-officers/jakarta/">https://closeprotectionhire.com/close-protection-officers/jakarta/</a></li>
+          <li><span class="page-title">Close Protection Officers: Auckland</span><a href="https://closeprotectionhire.com/close-protection-officers/auckland/">https://closeprotectionhire.com/close-protection-officers/auckland/</a></li>
+          <li><span class="page-title">Close Protection Officers: Tel Aviv</span><a href="https://closeprotectionhire.com/close-protection-officers/tel-aviv/">https://closeprotectionhire.com/close-protection-officers/tel-aviv/</a></li>
+          <li><span class="page-title">Close Protection Officers: Manila</span><a href="https://closeprotectionhire.com/close-protection-officers/manila/">https://closeprotectionhire.com/close-protection-officers/manila/</a></li>
+          <li><span class="page-title">Close Protection Officers: Washington DC</span><a href="https://closeprotectionhire.com/close-protection-officers/washington-dc/">https://closeprotectionhire.com/close-protection-officers/washington-dc/</a></li>
+          <li><span class="page-title">Close Protection Officers: Milan</span><a href="https://closeprotectionhire.com/close-protection-officers/milan/">https://closeprotectionhire.com/close-protection-officers/milan/</a></li>
+          <li><span class="page-title">Close Protection Officers: Melbourne</span><a href="https://closeprotectionhire.com/close-protection-officers/melbourne/">https://closeprotectionhire.com/close-protection-officers/melbourne/</a></li>
+        </ul>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">Block 2: Secure Airport Transfers, Batch 3 (10 cities)</p>
+        <ul class="page-list">
+          <li><span class="page-title">Secure Airport Transfers: Buenos Aires</span><a href="https://closeprotectionhire.com/secure-airport-transfers/buenos-aires/">https://closeprotectionhire.com/secure-airport-transfers/buenos-aires/</a></li>
+          <li><span class="page-title">Secure Airport Transfers: Cairo</span><a href="https://closeprotectionhire.com/secure-airport-transfers/cairo/">https://closeprotectionhire.com/secure-airport-transfers/cairo/</a></li>
+          <li><span class="page-title">Secure Airport Transfers: Miami</span><a href="https://closeprotectionhire.com/secure-airport-transfers/miami/">https://closeprotectionhire.com/secure-airport-transfers/miami/</a></li>
+          <li><span class="page-title">Secure Airport Transfers: Jakarta</span><a href="https://closeprotectionhire.com/secure-airport-transfers/jakarta/">https://closeprotectionhire.com/secure-airport-transfers/jakarta/</a></li>
+          <li><span class="page-title">Secure Airport Transfers: Auckland</span><a href="https://closeprotectionhire.com/secure-airport-transfers/auckland/">https://closeprotectionhire.com/secure-airport-transfers/auckland/</a></li>
+          <li><span class="page-title">Secure Airport Transfers: Tel Aviv</span><a href="https://closeprotectionhire.com/secure-airport-transfers/tel-aviv/">https://closeprotectionhire.com/secure-airport-transfers/tel-aviv/</a></li>
+          <li><span class="page-title">Secure Airport Transfers: Manila</span><a href="https://closeprotectionhire.com/secure-airport-transfers/manila/">https://closeprotectionhire.com/secure-airport-transfers/manila/</a></li>
+          <li><span class="page-title">Secure Airport Transfers: Washington DC</span><a href="https://closeprotectionhire.com/secure-airport-transfers/washington-dc/">https://closeprotectionhire.com/secure-airport-transfers/washington-dc/</a></li>
+          <li><span class="page-title">Secure Airport Transfers: Milan</span><a href="https://closeprotectionhire.com/secure-airport-transfers/milan/">https://closeprotectionhire.com/secure-airport-transfers/milan/</a></li>
+          <li><span class="page-title">Secure Airport Transfers: Melbourne</span><a href="https://closeprotectionhire.com/secure-airport-transfers/melbourne/">https://closeprotectionhire.com/secure-airport-transfers/melbourne/</a></li>
+        </ul>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">Block 3: Bodyguard Hire, Batch 4 (10 cities)</p>
+        <ul class="page-list">
+          <li><span class="page-title">Bodyguard Hire: Abidjan</span><a href="https://closeprotectionhire.com/bodyguard-hire/abidjan/">https://closeprotectionhire.com/bodyguard-hire/abidjan/</a></li>
+          <li><span class="page-title">Bodyguard Hire: Abuja</span><a href="https://closeprotectionhire.com/bodyguard-hire/abuja/">https://closeprotectionhire.com/bodyguard-hire/abuja/</a></li>
+          <li><span class="page-title">Bodyguard Hire: Accra</span><a href="https://closeprotectionhire.com/bodyguard-hire/accra/">https://closeprotectionhire.com/bodyguard-hire/accra/</a></li>
+          <li><span class="page-title">Bodyguard Hire: Addis Ababa</span><a href="https://closeprotectionhire.com/bodyguard-hire/addis-ababa/">https://closeprotectionhire.com/bodyguard-hire/addis-ababa/</a></li>
+          <li><span class="page-title">Bodyguard Hire: Algiers</span><a href="https://closeprotectionhire.com/bodyguard-hire/algiers/">https://closeprotectionhire.com/bodyguard-hire/algiers/</a></li>
+          <li><span class="page-title">Bodyguard Hire: Almaty</span><a href="https://closeprotectionhire.com/bodyguard-hire/almaty/">https://closeprotectionhire.com/bodyguard-hire/almaty/</a></li>
+          <li><span class="page-title">Bodyguard Hire: Amman</span><a href="https://closeprotectionhire.com/bodyguard-hire/amman/">https://closeprotectionhire.com/bodyguard-hire/amman/</a></li>
+          <li><span class="page-title">Bodyguard Hire: Ankara</span><a href="https://closeprotectionhire.com/bodyguard-hire/ankara/">https://closeprotectionhire.com/bodyguard-hire/ankara/</a></li>
+          <li><span class="page-title">Bodyguard Hire: Baghdad</span><a href="https://closeprotectionhire.com/bodyguard-hire/baghdad/">https://closeprotectionhire.com/bodyguard-hire/baghdad/</a></li>
+          <li><span class="page-title">Bodyguard Hire: Baku</span><a href="https://closeprotectionhire.com/bodyguard-hire/baku/">https://closeprotectionhire.com/bodyguard-hire/baku/</a></li>
+        </ul>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">Block 4: Security Drivers, Batch 4 (10 cities)</p>
+        <ul class="page-list">
+          <li><span class="page-title">Security Drivers: Abidjan</span><a href="https://closeprotectionhire.com/security-drivers/abidjan/">https://closeprotectionhire.com/security-drivers/abidjan/</a></li>
+          <li><span class="page-title">Security Drivers: Abuja</span><a href="https://closeprotectionhire.com/security-drivers/abuja/">https://closeprotectionhire.com/security-drivers/abuja/</a></li>
+          <li><span class="page-title">Security Drivers: Accra</span><a href="https://closeprotectionhire.com/security-drivers/accra/">https://closeprotectionhire.com/security-drivers/accra/</a></li>
+          <li><span class="page-title">Security Drivers: Addis Ababa</span><a href="https://closeprotectionhire.com/security-drivers/addis-ababa/">https://closeprotectionhire.com/security-drivers/addis-ababa/</a></li>
+          <li><span class="page-title">Security Drivers: Algiers</span><a href="https://closeprotectionhire.com/security-drivers/algiers/">https://closeprotectionhire.com/security-drivers/algiers/</a></li>
+          <li><span class="page-title">Security Drivers: Almaty</span><a href="https://closeprotectionhire.com/security-drivers/almaty/">https://closeprotectionhire.com/security-drivers/almaty/</a></li>
+          <li><span class="page-title">Security Drivers: Amman</span><a href="https://closeprotectionhire.com/security-drivers/amman/">https://closeprotectionhire.com/security-drivers/amman/</a></li>
+          <li><span class="page-title">Security Drivers: Ankara</span><a href="https://closeprotectionhire.com/security-drivers/ankara/">https://closeprotectionhire.com/security-drivers/ankara/</a></li>
+          <li><span class="page-title">Security Drivers: Baghdad</span><a href="https://closeprotectionhire.com/security-drivers/baghdad/">https://closeprotectionhire.com/security-drivers/baghdad/</a></li>
+          <li><span class="page-title">Security Drivers: Baku</span><a href="https://closeprotectionhire.com/security-drivers/baku/">https://closeprotectionhire.com/security-drivers/baku/</a></li>
+        </ul>
+        <p class="note-inline">Security-driver file paths inferred from commit message (batch 4, same 10 cities as bodyguard-hire batch 4). The 40-page total and all four service sections are confirmed in the commit. Site now at 597 pages total.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    generated: 2026-06-08T20:00:00Z &nbsp;/&nbsp; report covers commits between 2026-06-08T00:00:00Z and 2026-06-08T23:59:59Z &nbsp;/&nbsp; source: github.com/ngindubai/*
+  </footer>
+
+</div>
+</body>
+</html>
