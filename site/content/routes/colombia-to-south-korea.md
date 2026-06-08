@@ -1,155 +1,134 @@
 ---
-template_variant: "A"
-title: "Shipping Dogs & Cats from Colombia to South Korea | PetTransportGlobal"
-description: "Pet relocation from Colombia to South Korea: South Korea import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport Colombia to South Korea: 2026 APQA Health Certificate, ICA Export and Incheon Guide"
+description: "Moving a dog or cat from Colombia to South Korea in 2026. APQA import rules: ICA export documentation, rabies vaccination, titre test, Avianca and Korean Air cargo routing."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "B"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "colombia-to-south-korea"
 origin_name: "Colombia"
 destination_name: "South Korea"
+
 route_data:
   origin:
     code: "CO"
     country: "Colombia"
     export_requirements:
-      export_permit: "{'required': False}"
-      health_certificate: "{'required': True, 'issued_by': 'ICA-authorised official vet'}"
+      health_certificate: "Health certificate issued by an ICA (Instituto Colombiano Agropecuario)-registered veterinarian and endorsed by ICA. Must be in the format required by South Korea's APQA."
+      export_permit: "ICA export permit required. Apply through ICA. Allow 3-4 weeks."
+
   destination:
     code: "KR"
     country: "South Korea"
     import_requirements:
-      microchip: "Required (ISO 11784/11785)"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 30-day wait after vaccination before travel"
-      titre_test: "Required. Minimum: 0.5 IU/ml. 180-day wait from test date before entry"
-      quarantine: "Mandatory quarantine. 10 days. Facility: APQA facility"
-      import_permit: "Required. Issued by: Animal and Plant Quarantine Agency"
-      health_certificate: "Required. Issued by: Official veterinarian. Valid for 14 days from issue"
+      country_status: "Colombia is classified as a non-rabies-free country under APQA rules. Health certificate, current rabies vaccination, and titre test requirements apply. Source: APQA (Animal and Plant Quarantine Agency), qia.go.kr."
+      microchip: "ISO 11784/11785 microchip strongly recommended for positive identification at APQA inspection."
+      rabies_vaccination: "Current rabies vaccination required. Confirm timing requirements with APQA for the year of travel."
+      titre_test: "Rabies antibody titre test required for pets from Colombia. No post-titre waiting period under South Korea APQA rules. Travel proceeds once a passing result is confirmed. Source: APQA, qia.go.kr."
+      health_certificate: "ICA-endorsed health certificate in APQA format. Issued within 10 days of travel."
+      inspection: "APQA clinical inspection on arrival at Incheon International Airport (ICN). Same-day release if documentation is complete and correct."
+      entry_airport: "Incheon International Airport (ICN) is the designated entry point for cargo pet arrivals in South Korea."
+
   airlines:
-    - name: "American Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: American Airlines Cargo handles pet transport. Seasonal temperature embargoes apply"
-    - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
-    - name: "Emirates"
+    - name: "Korean Air (via Los Angeles or Atlanta)"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "Korean Air operates Los Angeles (LAX) and Atlanta (ATL) to Seoul Incheon (ICN). Colombian pets fly to the USA first (Avianca or American Airlines), then connect to Korean Air's US-to-Korea cargo service."
+    - name: "Avianca (Colombia to USA)"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
+      policy_summary: "Avianca operates Bogota (BOG) and Medellin (MDE) to Miami (MIA), Los Angeles (LAX), and New York (JFK). Avianca Cargo handles pets on selected routes. The first sector of the Colombia to Korea journey."
+    - name: "Asiana Airlines (via Los Angeles)"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Delta Air Lines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Delta Cargo handles larger pets in temperature-controlled hold. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Asiana Airlines operates LAX to ICN with cargo services. An alternative to Korean Air for the US to Incheon leg. Asiana Cargo accepts live animals."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "ICA export permit application. ISO microchip confirmed. Current rabies vaccination."
+      timing: "2-3 months before travel. Allow 3-4 weeks for ICA permit."
+      responsible: "Owner and ICA-registered vet"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 30-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Titre test at approved laboratory. Await passing result. No post-titre waiting period under APQA rules."
+      timing: "After vaccination. Allow 2-3 weeks for titre result."
+      responsible: "ICA vet and approved laboratory"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 180-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Book cargo: BOG or MDE to LAX (Avianca or American), then Korean Air or Asiana LAX to ICN."
+      timing: "After titre result confirmed. Book 4-6 weeks before travel."
+      responsible: "Owner or agent"
     - step: 4
-      action: "Apply for import permit from South Korea"
-      timing: "Apply early: allow 4-6 weeks"
-      responsible: "You (or your pet transport agent)"
+      action: "ICA-endorsed health certificate in APQA format issued within 10 days of travel."
+      timing: "Within 10 days of departure."
+      responsible: "ICA-registered vet"
     - step: 5
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
-    - step: 6
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 7
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
-    - step: 8
-      action: "Quarantine on arrival (10 days)"
-      timing: "Immediately on arrival (mandatory)"
-      responsible: "South Korea quarantine authority"
+      action: "Travel BOG to LAX, then LAX to ICN. APQA inspection on arrival at Incheon. Same-day release if documents are correct."
+      timing: "Travel day."
+      responsible: "Airline and APQA"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (South Korea)"
-    - "Quarantine facility fees (owner-paid at destination)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "ICA export permit and health certificate: COP 200,000-500,000"
+    - "Titre test at approved laboratory: USD 100-200"
+    - "Air cargo BOG to LAX then LAX to ICN: USD 2,000-5,000 depending on crate size"
+    - "APQA inspection fee on arrival: approximately KRW 18,000-30,000 (approximately USD 14-23)"
+    - "Total typical range: USD 2,500-6,000"
+
   key_warnings:
-    - "Mandatory quarantine required on arrival. Plan for separation from your pet."
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "very_high"
-  estimated_timeline_weeks: "33-39"
+    - "Confirm current APQA requirements at qia.go.kr before preparing. Requirements can change and Colombia-specific conditions apply."
+    - "Unlike Japan, South Korea does not impose a post-titre waiting period. A passing titre result means you can book travel."
+    - "Colombia to South Korea requires at least two flight sectors (Colombia to USA, then USA to Korea). Plan for transit time."
+    - "ICA processing takes 3-4 weeks. Start the export permit early."
+
+  route_complexity: "moderate-high"
+  estimated_timeline_weeks: "10-16"
+
 content:
-  h1: "Pet Transport from Colombia to South Korea"
-  overview: |
-    Getting your dog from Colombia to South Korea is entirely achievable, but the preparation timeline is not flexible.
-    
-    This route is one of the most demanding international pet transport routes. Start preparations at least 33 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. South Korea requires mandatory quarantine (10 days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Use this guide to map out your preparation timeline and avoid the most common mistakes.
+  h1: "Pet Transport Colombia to South Korea: 2026 APQA Guide"
+  overview: "Moving a pet from Colombia to South Korea is considerably simpler than the Japan pathway. South Korea's APQA does not impose a post-titre waiting period, which means preparation typically takes 2 to 3 months rather than 7 to 9. The requirements are ICA export documentation, current rabies vaccination, titre test, and a DAH-endorsed health certificate in APQA format. The routing goes via the USA (typically Los Angeles), connecting to Korean Air or Asiana for the US-to-Incheon leg. APQA inspects the pet on arrival at Incheon and releases same-day if documentation is in order."
+
   sections:
-    - heading: "What to know about the Colombia to South Korea route"
+    - heading: "South Korea versus Japan for Colombian pets"
       body: |
-        This is one of the more demanding international pet transport corridors. South Korea runs a strict biosecurity programme and there are no shortcuts through it.
-        
-        All pets must complete quarantine on arrival in South Korea (at APQA facility) for 10 days. This is non-negotiable and is entirely separate from the pre-travel preparation.
-        
-        Animal and Plant Quarantine Agency (APQA) regulates imports. Large pet-owning culture.
-    - heading: "Practical advice for shipping your pet from Colombia"
+        Colombian pet owners moving to East Asia face a stark choice between Japan and South Korea in terms of preparation complexity. Japan's AQS imposes a 180-day post-titre waiting period for non-designated regions, making Japan preparation a 7 to 9-month commitment. South Korea's APQA does not impose this waiting period.
+
+        For the Colombia to South Korea route, once the titre test passes (typically 1 to 2 weeks after the blood draw), travel can be planned immediately. Total preparation is 2 to 3 months, most of which is taken up by the ICA export documentation process and the titre test turnaround.
+
+        Both destinations require arrival inspections. South Korea's APQA inspection at Incheon is typically completed on the day of arrival when documentation is in order. Japan's AQS inspection also takes approximately 12 hours when compliant, but reaching that point requires 7 to 9 months of preparation.
+
+    - heading: "ICA export documentation for South Korea"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        ICA (Instituto Colombiano Agropecuario) is Colombia's agricultural and animal health authority. An ICA-registered vet must issue the health certificate and an ICA export permit is required before your pet leaves Colombia. Allow 3 to 4 weeks for ICA permit processing.
+
+        The health certificate must be endorsed by ICA and must follow the format APQA specifies. Confirm the specific APQA format requirements with a specialist agent or at qia.go.kr, as the format for South Korea imports has particular fields and endorsement requirements. Keep all original ICA documents: APQA does not accept copies.
+
+        The titre test result must be included in the documentation chain. Your Colombian vet draws blood and sends it to an approved laboratory. The result and the lab accession details form part of the health certificate supporting documents.
+
+    - heading: "Flying from Colombia to Seoul via the USA"
+      body: |
+        There are no direct flights from Colombia to South Korea. The standard routing goes via the United States: Avianca or American Airlines from Bogota (BOG) or Medellin (MDE) to Los Angeles (LAX), then Korean Air or Asiana Airlines from LAX to Seoul Incheon (ICN).
+
+        This two-sector journey means your pet is in transit for a significant period. The BOG to LAX sector takes roughly 7 to 8 hours. The LAX to ICN sector takes approximately 11 to 12 hours. Total journey time including transit can reach 20 to 25 hours. Confirm with both carriers that live animal cargo is accepted on your specific flight combination and get written confirmation of the through-routing arrangement.
+
+        Some routings go via Atlanta or Miami to Korean Air connections. Discuss the best combination with your cargo agent based on flight schedules and transit duration at the time of booking.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Colombia to South Korea?"
-    answer: "Allow at least 33 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering South Korea?"
-    answer: "Yes, quarantine is mandatory in South Korea. Your pet will stay for 10 days at APQA facility on arrival. This is non-negotiable and the cost is paid by the owner."
-  - question: "Is a rabies titre test required for pets entering South Korea?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 180-day waiting period after a successful result before your pet can enter South Korea. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into South Korea?"
-    answer: "Yes, an import permit is required from South Korea's authority (Animal and Plant Quarantine Agency). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Colombia. The certificate must be issued within 14 days of travel. Present the original (not a copy) at check-in. Check South Korea's authority for the exact format required."
+  - question: "How does the Colombia to South Korea process differ from Colombia to Japan?"
+    answer: "South Korea's APQA does not impose a post-titre waiting period, so preparation takes 2 to 3 months. Japan's AQS imposes a 180-day post-titre wait, making Japan preparation 7 to 9 months. Both require titre tests and health certificates, but the South Korea timeline is significantly shorter."
+  - question: "How long does the Colombia to South Korea process take?"
+    answer: "Typically 2 to 3 months from the first vet visit. ICA permit processing takes 3 to 4 weeks. The titre test result takes 1 to 2 weeks. No extended waiting period applies after the titre test under APQA rules. Always confirm current requirements at qia.go.kr."
+  - question: "Can I do all the preparation in Colombia?"
+    answer: "Yes. The ICA documentation, vaccinations, and titre test blood draw all happen in Colombia. The blood sample is sent to an approved laboratory overseas, but your pet stays in Colombia throughout the preparation period. Travel to South Korea occurs after all documents are confirmed."
+  - question: "What does the APQA inspection at Incheon involve?"
+    answer: "APQA staff check the microchip, review the health certificate and vaccination records, and verify the titre test documentation. For pets from non-rabies-free countries, this inspection is standard. If all documents are correct, your pet is released on the day of arrival."
+
 links:
   sideways:
     - url: "/pet-transport/south-korea-to-colombia/"
       text: "Pet Transport South Korea to Colombia"
+    - url: "/pet-transport/colombia-to-japan/"
+      text: "Pet Transport Colombia to Japan"
+    - url: "/pet-transport/colombia-to-new-zealand/"
+      text: "Pet Transport Colombia to New Zealand"
   upward:
-    - url: "/pet-transport/origins/colombia-pet-export-guide/"
-      text: "Shipping from Colombia"
+    - url: "/pet-transport/origins/pet-export-guide-shipping-from-colombia/"
+      text: "Shipping pets from Colombia"
     - url: "/pet-transport/countries/south-korea/"
-      text: "Importing to South Korea"
-    - url: "/pet-transport/airlines/american-airlines/"
-      text: "American Airlines pet policy"
-    - url: "/pet-transport/airlines/korean-air/"
-      text: "Korean Air pet policy"
+      text: "South Korea pet import rules"
 ---

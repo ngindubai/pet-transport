@@ -1,127 +1,141 @@
 ---
-template_variant: "B"
-title: "Shipping Dogs & Cats from Vietnam to Singapore | PetTransportGlobal"
-description: "How to ship your dog or cat from Vietnam to Singapore. Singapore import rules, vaccinations, permits, and airline options explained."
+title: "Pet Transport Vietnam to Singapore: 2026 AVS Schedule III, 30-Day AQC Quarantine and Titre Test"
+description: "Moving a dog or cat from Vietnam to Singapore in 2026. AVS Schedule III country rules: DAH health certificate, titre test, 30-day AQC quarantine, AVS-recognised agent required from April 2026. Vietnam Airlines and Singapore Airlines cargo."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "B"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "vietnam-to-singapore"
 origin_name: "Vietnam"
 destination_name: "Singapore"
+
 route_data:
   origin:
     code: "VN"
     country: "Vietnam"
     export_requirements:
-      export_permit: "No export permit for pet dogs and cats."
-      health_certificate: "{'required': True, 'issued_by': 'MARD-authorised official vet'}"
+      health_certificate: "Health certificate issued by a Vietnamese veterinarian and endorsed by the Department of Animal Health (DAH, under MARD). Must comply with AVS Singapore import format."
+      export_permit: "No formal export permit for personal pets. DAH-endorsed health certificate covers the export documentation."
+
   destination:
     code: "SG"
     country: "Singapore"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before rabies vaccination"
-      rabies_vaccination: "Required"
-      titre_test: "Required for: Category B and C countries. Not required for: Category A countries. Minimum: 0.5 IU/ml"
-      quarantine: "Check current requirements with destination authority"
-      import_permit: "Check with destination authority"
-      health_certificate: "Required. Veterinary health certificate. Issued by: Government veterinarian or government-endorsed veterinarian in country of export. Certificate must state: species, breed, age, sex, microchip number, vaccination records, health status"
+      country_status: "Vietnam is a Schedule III country under Singapore's AVS import classification. Pets from Schedule III countries must complete 30-day quarantine at an AVS-approved quarantine centre (AQC) on arrival. Source: Singapore AVS, nparks.gov.sg/avs."
+      microchip: "ISO 11784/11785 microchip required."
+      rabies_vaccination: "Current rabies vaccination required. Must be administered at the correct age and timing."
+      titre_test: "Rabies antibody titre test required. Must meet AVS minimum level. Performed at an AVS-approved laboratory before travel. Source: Singapore AVS, nparks.gov.sg/avs."
+      avs_import_licence: "AVS import licence required before the pet travels. Apply through the AVS online portal (nparks.gov.sg/avs)."
+      avs_agent: "From 1 April 2026, an AVS-recognised pet agent is required for CAPQ (Centre for Animal and Plant Quarantine) clearance. Pets from Schedule III countries must be handled by an AVS-recognised agent. Source: AVS, nparks.gov.sg/avs."
+      quarantine: "30-day mandatory quarantine at an AVS-approved quarantine centre (AQC) in Singapore. Owner-paid. AQC booking required before arrival."
+      health_certificate: "DAH-endorsed health certificate in AVS format, issued shortly before travel."
+
   airlines:
     - name: "Vietnam Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (under 5kg with carrier) allowed in cabin on some routes. Cargo: larger pets in hold. Advance booking required. Vietnam import/export documentation must be fully prepared before travel."
+      type: "cargo_only"
+      policy_summary: "Vietnam Airlines operates Ho Chi Minh City (SGN) and Hanoi (HAN) to Singapore Changi (SIN). Vietnam Airlines Cargo handles pets on selected routes. Confirm live animal acceptance for your specific flight."
     - name: "Singapore Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Emirates"
+      policy_summary: "Singapore Airlines operates SGN and HAN to SIN with regular cargo services. Singapore Airlines Cargo has strong live animal infrastructure at Changi. A reliable option for the Vietnam to Singapore sector."
+    - name: "Jetstar Asia"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Jetstar Asia operates cargo services on some Vietnam to Singapore routes. Confirm live animal acceptance and cargo policy before booking."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Appoint an AVS-recognised pet agent (mandatory from April 2026 for Schedule III CAPQ clearance)."
+      timing: "Before any other preparation. This is now the first step."
+      responsible: "Owner"
     - step: 2
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Apply for AVS import licence through nparks.gov.sg/avs. Pre-book an AQC quarantine place."
+      timing: "At least 4-6 weeks before travel."
+      responsible: "Owner or AVS-recognised agent"
     - step: 3
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "ISO microchip confirmed. Current rabies vaccination. Titre test at AVS-approved laboratory."
+      timing: "Allow 2-3 weeks for titre result."
+      responsible: "DAH-registered Vietnamese vet"
     - step: 4
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "AVS import licence confirmed. AQC booking confirmed. Book cargo: SGN or HAN to SIN."
+      timing: "4-6 weeks before travel."
+      responsible: "Owner or agent"
     - step: 5
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "DAH-endorsed health certificate in AVS format issued before travel."
+      timing: "Shortly before departure."
+      responsible: "DAH-endorsed Vietnamese vet"
+    - step: 6
+      action: "Travel SGN or HAN to SIN. AVS inspection at Changi. Transfer to AQC for 30-day quarantine."
+      timing: "Travel day."
+      responsible: "Airline, AVS agent, and AQC"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Vietnamese vet fees and DAH health certificate endorsement: USD 100-250"
+    - "Titre test at AVS-approved laboratory: USD 100-200"
+    - "AVS import licence fee: SGD 26-100 (approximately USD 20-75)"
+    - "30-day AQC quarantine: SGD 1,500-3,000 (approximately USD 1,100-2,200)"
+    - "Air cargo SGN or HAN to SIN: USD 400-1,200 depending on crate size"
+    - "AVS-recognised agent fee: SGD 500-1,500"
+    - "Total typical range: SGD 3,500-8,000 (approximately USD 2,600-5,900)"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "From 1 April 2026, an AVS-recognised pet agent is mandatory for Schedule III CAPQ clearance. Appoint one before starting preparation."
+    - "The 30-day AQC quarantine is mandatory for all Schedule III country pets. It cannot be shortened."
+    - "Book the AQC quarantine place before confirming your flight. Places are limited."
+    - "Apply for the AVS import licence before booking cargo flights. Travel without a confirmed licence is not possible."
+
+  route_complexity: "moderate-high"
+  estimated_timeline_weeks: "10-16"
+
 content:
-  h1: "Pet Transport from Vietnam to Singapore"
-  overview: |
-    Shipping your pet from Vietnam to Singapore is a process that rewards early planning.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    The paperwork is the hard part. Once everything is in order, the journey itself is well-managed.
+  h1: "Pet Transport Vietnam to Singapore: 2026 AVS Schedule III Guide"
+  overview: "Moving a pet from Vietnam to Singapore involves a 30-day quarantine at an AVS-approved centre (AQC). Vietnam is a Schedule III country under Singapore's AVS import classification, which means mandatory AQC quarantine applies. From 1 April 2026, an AVS-recognised pet agent is required for CAPQ clearance. The key steps are: appoint an AVS agent, apply for the AVS import licence, get the titre test and DAH health certificate, pre-book the AQC, and fly via Vietnam Airlines or Singapore Airlines. Preparation takes 2 to 3 months."
+
   sections:
-    - heading: "Key requirements for moving your pet to Singapore"
+    - heading: "Schedule III classification and the 30-day AQC quarantine"
       body: |
-        Compared to some international pet transport routes, Vietnam to Singapore is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        National Parks Board (NParks) Animal and Veterinary Service (AVS) regulates all animal imports. Singapore maintains rabies-free status through a rigorous 4-tier category system. AVS website blocked automated extraction; data compiled from AVS published guidelines and official category system documentation. Singapore has strict housing rules: HDB flats (public housing, ~80% of population) only allow approved small dog breeds and cats (since 2024).
-    - heading: "Practical advice for shipping your pet from Vietnam"
+        Singapore's AVS classifies countries into schedules based on disease risk. Vietnam is a Schedule III country, which carries the strictest import conditions. All cats and dogs arriving from Schedule III countries must complete a 30-day stay at an AVS-approved quarantine centre (AQC) on arrival. This is not optional and cannot be reduced.
+
+        The AQC quarantine serves as a disease control buffer. Your pet is monitored for signs of illness throughout the 30 days. Owners can visit during the quarantine period at the AQC's designated visiting times. Costs are owner-paid and must be settled in advance or upon commencement of quarantine.
+
+        AQC places are limited. Pre-booking is essential before confirming your flight. Do not book cargo space until the AQC booking is confirmed. A quarantine booking confirmation is also required as part of the CAPQ clearance process on arrival.
+
+    - heading: "The April 2026 change: AVS-recognised pet agent requirement"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        From 1 April 2026, Singapore AVS introduced a requirement that pets from Schedule III countries arriving through CAPQ (Centre for Animal and Plant Quarantine) must be handled by an AVS-recognised pet agent. Pet owners cannot complete CAPQ clearance independently for Schedule III imports.
+
+        This means appointing an AVS-recognised agent is now the first step in any Vietnam to Singapore pet move. The agent coordinates the CAPQ clearance, liaises with the AQC, and manages the documentation chain through the Singapore side of the process. AVS publishes the list of recognised agents on their website at nparks.gov.sg/avs.
+
+        Build the agent fee into your budget from the start. The agent's involvement is not optional for Schedule III arrivals.
+
+    - heading: "DAH documentation and the flight from Vietnam"
+      body: |
+        Vietnam Airlines, Singapore Airlines, and Jetstar Asia all operate cargo services between Ho Chi Minh City (SGN) or Hanoi (HAN) and Singapore Changi (SIN). The flight takes approximately 2 to 3 hours. Singapore Airlines Cargo has strong live animal infrastructure at Changi and handles a significant volume of incoming pets.
+
+        Your Vietnamese vet must complete the titre test (at an AVS-approved laboratory), confirm the rabies vaccination, and issue the DAH-endorsed health certificate in AVS format. The health certificate must be issued within the AVS-specified window before travel. All original documents must travel with the pet; your AVS agent will confirm which documents are required at CAPQ.
+
+        Apply for the AVS import licence through the AVS online portal before booking cargo. The licence number is required for the CAPQ declaration on arrival.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Vietnam to Singapore?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Singapore?"
-    answer: "No routine quarantine is required in Singapore for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Singapore?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Singapore. Start this process as early as possible."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Vietnam. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Singapore's authority for the exact format required."
+  - question: "Why does Vietnam to Singapore require 30 days quarantine?"
+    answer: "Vietnam is classified as a Schedule III country under AVS import rules because of disease risk profile. All cats and dogs from Schedule III countries must complete 30-day mandatory quarantine at an AQC. This is a blanket requirement for the classification, not specific to Vietnam alone."
+  - question: "Is the AVS-recognised pet agent mandatory or just recommended?"
+    answer: "Mandatory from 1 April 2026 for Schedule III CAPQ clearance. Pets from Schedule III countries cannot complete CAPQ clearance in Singapore without an AVS-recognised agent handling the process. Appoint an agent before starting any other preparation."
+  - question: "How long does the Vietnam to Singapore process take?"
+    answer: "Allow 2 to 3 months for preparation (AVS import licence, titre test, DAH health certificate) plus 30 days of AQC quarantine on arrival. Total from first vet visit to your pet leaving quarantine: approximately 3 to 4 months."
+  - question: "Can I visit my pet during the 30-day AQC quarantine?"
+    answer: "Yes. AQC facilities allow owner visits during designated visiting hours. Contact the AQC directly to confirm visiting arrangements after booking. The quarantine centre will provide guidance on visit scheduling when you pre-book."
+
 links:
   sideways:
     - url: "/pet-transport/singapore-to-vietnam/"
       text: "Pet Transport Singapore to Vietnam"
+    - url: "/pet-transport/vietnam-to-australia/"
+      text: "Pet Transport Vietnam to Australia"
+    - url: "/pet-transport/vietnam-to-japan/"
+      text: "Pet Transport Vietnam to Japan"
   upward:
-    - url: "/pet-transport/origins/vietnam-pet-export-guide/"
-      text: "Shipping from Vietnam"
+    - url: "/pet-transport/origins/pet-export-guide-shipping-from-vietnam/"
+      text: "Shipping pets from Vietnam"
     - url: "/pet-transport/countries/singapore/"
-      text: "Importing to Singapore"
-    - url: "/pet-transport/airlines/singapore-airlines/"
-      text: "Singapore Airlines pet policy"
+      text: "Singapore pet import rules"
 ---

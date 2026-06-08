@@ -1,155 +1,134 @@
 ---
-template_variant: "E"
-title: "Shipping Dogs & Cats from Canada to South Korea | PetTransportGlobal"
-description: "Complete guide to pet transport from Canada to South Korea. Import requirements, quarantine rules, airline options, and step-by-step timeline."
+title: "Pet Transport Canada to South Korea: 2026 APQA Health Certificate, Titre Test and Incheon Arrival Guide"
+description: "Moving a dog or cat from Canada to South Korea in 2026. APQA import rules: CFIA health certificate, rabies vaccination, titre test, Air Canada and Korean Air cargo options."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "B"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "canada-to-south-korea"
 origin_name: "Canada"
 destination_name: "South Korea"
+
 route_data:
   origin:
     code: "CA"
     country: "Canada"
     export_requirements:
-      export_permit: "No CFIA export permit required for personal pet exports. Some destination countries may require CFIA endorsement of health certificate."
-      health_certificate: "{'required': 'If required by destination country', 'issued_by': 'CFIA District Veterinarian or accredited veterinarian (endorsed by CFIA if needed)', 'process': 'Visit accredited vet for examination, vet prepares health certificate, submit to CFIA for endorsement if destination requires government endorsement', 'timing': 'Typically within 10 days of travel (or as specified by destination country)'}"
+      health_certificate: "Official veterinary health certificate issued by a CFIA-accredited veterinarian. Must be in the format required by South Korea's APQA (Animal and Plant Quarantine Agency)."
+      export_permit: "No formal export permit for personal pets leaving Canada. CFIA-accredited vet issues the health certificate."
+
   destination:
     code: "KR"
     country: "South Korea"
     import_requirements:
-      microchip: "Required (ISO 11784/11785)"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 30-day wait after vaccination before travel"
-      titre_test: "Required. Minimum: 0.5 IU/ml. 180-day wait from test date before entry"
-      quarantine: "Mandatory quarantine. 10 days. Facility: APQA facility"
-      import_permit: "Required. Issued by: Animal and Plant Quarantine Agency"
-      health_certificate: "Required. Issued by: Official veterinarian. Valid for 14 days from issue"
+      country_status: "Canada is classified as a non-rabies-free country under APQA rules. Health certificate, current rabies vaccination, and in some cases a titre test are required. Source: APQA (Animal and Plant Quarantine Agency), qia.go.kr."
+      microchip: "ISO 11784/11785 microchip strongly recommended. Provides positive identification at APQA inspection."
+      rabies_vaccination: "Current rabies vaccination required. Confirm timing requirements with APQA or your agent for the specific year of travel."
+      titre_test: "Rabies antibody titre test may be required for Canada. Confirm current APQA requirements at qia.go.kr. Unlike Japan, South Korea does not impose a post-titre waiting period before travel. Source: APQA, qia.go.kr."
+      health_certificate: "CFIA-endorsed health certificate in APQA-specified format. Issued within 10 days of travel."
+      inspection: "APQA clinical inspection on arrival at Incheon International Airport (ICN). Dogs and cats from non-rabies-free countries undergo an arrival inspection. If documentation is correct, the inspection is typically completed on the day of arrival."
+      entry_airport: "Incheon International Airport (ICN) is the designated entry point for cargo pets arriving in South Korea."
+
   airlines:
     - name: "Air Canada"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Air Canada Cargo handles pet transport in heated/pressurised hold. Brachycephalic breeds restricted from cargo year-round"
+      type: "cargo_only"
+      policy_summary: "Air Canada operates Toronto (YYZ) and Vancouver (YVR) to Seoul Incheon (ICN). Air Canada Cargo handles pets on selected routes. The YVR-ICN sector is a standard cargo routing for Canada to South Korea."
     - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
-    - name: "Emirates"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Singapore Airlines"
+      policy_summary: "Korean Air operates Vancouver, Toronto, and other Canadian cities to Seoul Incheon. Korean Air Cargo handles live animals. A reliable carrier for this routing with strong cargo handling at Incheon."
+    - name: "Asiana Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Delta Air Lines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Delta Cargo handles larger pets in temperature-controlled hold. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Asiana Airlines operates selected Canadian cities to Incheon with cargo services. Asiana Cargo handles live animals. Confirm availability for your specific route and crate size."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step: must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm microchip is ISO-compliant. Current rabies vaccination. Confirm current APQA titre test requirements."
+      timing: "At least 2-3 months before travel."
+      responsible: "CFIA-accredited vet"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 30-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Titre test at approved laboratory if required. Await result. No post-titre waiting period under South Korea APQA rules."
+      timing: "After vaccination. Allow 2-3 weeks for titre result."
+      responsible: "CFIA vet and approved laboratory"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 180-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Apply for APQA import approval if required. Book cargo: YYZ or YVR to ICN."
+      timing: "After titre result. Book 4-6 weeks before travel."
+      responsible: "Owner or agent"
     - step: 4
-      action: "Apply for import permit from South Korea"
-      timing: "Apply early: allow 4-6 weeks"
-      responsible: "You (or your pet transport agent)"
+      action: "CFIA-endorsed health certificate issued within 10 days of travel."
+      timing: "Within 10 days of departure."
+      responsible: "CFIA-accredited vet"
     - step: 5
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
-    - step: 6
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 7
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
-    - step: 8
-      action: "Quarantine on arrival (10 days)"
-      timing: "Immediately on arrival: mandatory"
-      responsible: "South Korea quarantine authority"
+      action: "Travel YYZ or YVR to ICN. APQA inspection on arrival at Incheon. Same-day release if documents are correct."
+      timing: "Travel day."
+      responsible: "Airline and APQA"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (South Korea)"
-    - "Quarantine facility fees (owner-paid at destination)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "CFIA veterinary health certificate: CAD 200-400"
+    - "Titre test if required: CAD 150-250"
+    - "Air cargo YYZ or YVR to ICN: CAD 1,200-3,500 depending on crate size"
+    - "APQA inspection fee on arrival: approximately KRW 18,000-30,000 (approximately CAD 20-30)"
+    - "Total typical range: CAD 2,000-5,000"
+
   key_warnings:
-    - "Mandatory quarantine required on arrival. Plan for separation from your pet."
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "very_high"
-  estimated_timeline_weeks: "33-39"
+    - "Confirm current APQA requirements at qia.go.kr before preparing. Rules are subject to change and Canada is subject to specific conditions."
+    - "Unlike Japan, South Korea does not impose a 180-day post-titre waiting period. If a titre test is required, travel can proceed after a normal wait for the result."
+    - "APQA inspection happens at Incheon on arrival. All original documents must travel with the pet."
+    - "Health certificate must be issued within 10 days of travel. Do not issue it too early."
+
+  route_complexity: "moderate"
+  estimated_timeline_weeks: "8-14"
+
 content:
-  h1: "Pet Transport from Canada to South Korea"
-  overview: |
-    If you're relocating from Canada to South Korea and taking your pet, the good news is thousands of families do this every year.
-    
-    This route is one of the most demanding international pet transport routes. Start preparations at least 33 weeks before your travel date: some steps have fixed waiting periods that cannot be shortened. South Korea requires mandatory quarantine (10 days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    We've laid out every step below so you know exactly what to prepare and when.
+  h1: "Pet Transport Canada to South Korea: 2026 APQA Guide"
+  overview: "Moving a pet from Canada to South Korea is significantly less complex than the Japan pathway. South Korea's APQA does not impose a post-titre waiting period, so if a titre test is required it does not add months to your timeline. The key requirements are a current rabies vaccination, a CFIA-endorsed health certificate in APQA format, and an APQA clinical inspection on arrival at Incheon. Air Canada and Korean Air both operate cargo services from Toronto and Vancouver to Incheon. Preparation typically takes 2 to 3 months."
+
   sections:
-    - heading: "Why this route needs early planning"
+    - heading: "South Korea versus Japan: why the APQA pathway is shorter"
       body: |
-        This is one of the more demanding international pet transport corridors. South Korea runs a strict biosecurity programme and there are no shortcuts through it.
-        
-        All pets must complete quarantine on arrival in South Korea (at APQA facility) for 10 days. This is non-negotiable and is entirely separate from the pre-travel preparation.
-        
-        Animal and Plant Quarantine Agency (APQA) regulates imports. Large pet-owning culture.
-    - heading: "Practical advice for shipping your pet from Canada"
+        Pet owners moving to East Asia sometimes compare the South Korea and Japan pathways. The difference is significant. Japan's AQS imposes a 180-day waiting period from the blood draw date for the FAVN titre test, turning Japan preparation into a 7 to 9-month process. South Korea's APQA does not impose a post-titre waiting period.
+
+        This means that if APQA requires a titre test for Canadian pets, you do the test, wait for the result (typically 1 to 2 weeks), and then you can book travel. There is no additional waiting period on top of the result. For most pet owners, South Korea can be prepared for in 2 to 3 months from the first vet visit, compared to Japan's 7 to 9 months.
+
+        Confirm the current requirements directly with APQA at qia.go.kr or with a South Korea pet import specialist before starting preparation. Regulations are updated periodically and the specific conditions for Canadian pets may change.
+
+    - heading: "CFIA health certificate and the Incheon arrival inspection"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        The health certificate for South Korea must be issued by a CFIA-accredited veterinarian and endorsed by CFIA in the format APQA specifies. The certificate must be issued within 10 days of travel. Issuing it too early (more than 10 days before departure) means you need a replacement.
+
+        On arrival at Incheon International Airport (ICN), APQA staff conduct a clinical inspection of your pet. They verify the microchip, check the health certificate, and confirm the vaccination and titre test records. If the documentation is complete and correct, the inspection is typically completed on the day of arrival. Your pet is then released into South Korea.
+
+        Incheon is South Korea's primary airport for all international cargo arrivals. There is no alternative entry port for cargo pets. Confirm that your cargo flight arrives at ICN and that the airline cargo desk has confirmed live animal acceptance for that specific route.
+
+    - heading: "Flying from Canada to Seoul"
+      body: |
+        Air Canada operates direct cargo services from Vancouver (YVR) and Toronto (YYZ) to Seoul Incheon (ICN). Korean Air and Asiana Airlines also fly from Canadian cities to Incheon. All three are established carriers for this routing.
+
+        The YVR to ICN flight takes approximately 10 to 11 hours. YYZ to ICN is slightly longer at around 13 to 14 hours, though routing can vary. Both routes are well-served with regular cargo services. Contact the cargo departments of your preferred carriers directly to confirm live animal acceptance for your specific flight date and crate dimensions.
+
+        Pets travel as air cargo (freight), not as accompanied baggage. The crate must meet IATA live animal container requirements. Your CFIA vet or a Canadian pet transport agent can advise on crate sizing and carrier-specific requirements.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Canada to South Korea?"
-    answer: "Allow at least 33 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering South Korea?"
-    answer: "Yes, quarantine is mandatory in South Korea. Your pet will stay for 10 days at APQA facility on arrival. This is non-negotiable and the cost is paid by the owner."
-  - question: "Is a rabies titre test required for pets entering South Korea?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 180-day waiting period after a successful result before your pet can enter South Korea. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into South Korea?"
-    answer: "Yes, an import permit is required from South Korea's authority (Animal and Plant Quarantine Agency). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Canada. The certificate must be issued within 14 days of travel. Present the original (not a copy) at check-in. Check South Korea's authority for the exact format required."
+  - question: "Does South Korea require a post-titre waiting period like Japan?"
+    answer: "No. South Korea's APQA does not impose a post-titre waiting period. If a titre test is required, travel can proceed after the result is confirmed as passing. This is a fundamental difference from Japan, where a 180-day wait from the blood draw date applies."
+  - question: "How long does the Canada to South Korea process take?"
+    answer: "Typically 2 to 3 months from the first vet appointment. If a titre test is required, add 2 to 3 weeks for results. No extended waiting period applies under APQA rules. Always confirm current requirements at qia.go.kr before preparing."
+  - question: "Can cats travel from Canada to South Korea on the same process?"
+    answer: "Yes. APQA requirements for cats arriving from Canada are broadly similar to those for dogs. Health certificate, current vaccination, and inspection on arrival at Incheon apply. Confirm specific cat requirements with APQA or a specialist agent, as conditions can differ slightly from dogs."
+  - question: "What does the Incheon APQA inspection involve?"
+    answer: "APQA staff read the microchip, check the health certificate, vaccination records, and titre test documentation (if applicable). The clinical inspection confirms the pet is healthy and meets import conditions. If all documents are correct, the pet is released on the same day. Pets from non-rabies-free countries are inspected as a standard procedure."
+
 links:
   sideways:
     - url: "/pet-transport/south-korea-to-canada/"
       text: "Pet Transport South Korea to Canada"
+    - url: "/pet-transport/canada-to-japan/"
+      text: "Pet Transport Canada to Japan"
+    - url: "/pet-transport/canada-to-new-zealand/"
+      text: "Pet Transport Canada to New Zealand"
   upward:
     - url: "/pet-transport/origins/pet-export-guide-shipping-from-canada/"
-      text: "Shipping from Canada"
+      text: "Shipping pets from Canada"
     - url: "/pet-transport/countries/south-korea/"
-      text: "Importing to South Korea"
-    - url: "/pet-transport/airlines/air-canada/"
-      text: "Air Canada pet policy"
-    - url: "/pet-transport/airlines/korean-air/"
-      text: "Korean Air pet policy"
+      text: "South Korea pet import rules"
 ---

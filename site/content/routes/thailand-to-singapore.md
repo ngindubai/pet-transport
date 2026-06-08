@@ -1,128 +1,141 @@
 ---
-template_variant: "C"
-title: "Shipping Dogs & Cats from Thailand to Singapore | PetTransportGlobal"
-description: "How to ship your dog or cat from Thailand to Singapore. Singapore import rules, vaccinations, permits, and airline options explained."
+title: "Pet Transport Thailand to Singapore: 2026 AVS Schedule III, 30-Day AQC Quarantine and DLD Export"
+description: "Moving a dog or cat from Thailand to Singapore in 2026. AVS Schedule III country rules: DLD export permit, titre test, 30-day AQC quarantine, AVS-recognised agent required from April 2026. Thai Airways and Singapore Airlines cargo."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "B"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "thailand-to-singapore"
 origin_name: "Thailand"
 destination_name: "Singapore"
+
 route_data:
   origin:
     code: "TH"
     country: "Thailand"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      health_certificate: "Health certificate from a Thai veterinarian endorsed by the Department of Livestock Development (DLD). Must comply with AVS Singapore import format."
+      export_permit: "DLD export permit required. Apply through the local DLD office. Allow 2-4 weeks."
+
   destination:
     code: "SG"
     country: "Singapore"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before rabies vaccination"
-      rabies_vaccination: "Required"
-      titre_test: "Required for: Category B and C countries. Not required for: Category A countries. Minimum: 0.5 IU/ml"
-      quarantine: "Check current requirements with destination authority"
-      import_permit: "Check with destination authority"
-      health_certificate: "Required. Veterinary health certificate. Issued by: Government veterinarian or government-endorsed veterinarian in country of export. Certificate must state: species, breed, age, sex, microchip number, vaccination records, health status"
+      country_status: "Thailand is a Schedule III country under Singapore's AVS import classification. Pets from Schedule III countries must complete 30-day quarantine at an AVS-approved quarantine centre (AQC) on arrival. Source: Singapore AVS, nparks.gov.sg/avs."
+      microchip: "ISO 11784/11785 microchip required."
+      rabies_vaccination: "Current rabies vaccination required."
+      titre_test: "Rabies antibody titre test required. Must meet AVS minimum level. Performed at an AVS-approved laboratory before travel. Source: Singapore AVS, nparks.gov.sg/avs."
+      avs_import_licence: "AVS import licence required before travel. Apply through the AVS portal at nparks.gov.sg/avs."
+      avs_agent: "From 1 April 2026, an AVS-recognised pet agent is required for CAPQ clearance. Mandatory for all Schedule III country arrivals. Source: AVS, nparks.gov.sg/avs."
+      quarantine: "30-day mandatory quarantine at an AVS-approved quarantine centre (AQC). Owner-paid. Pre-booking required."
+      health_certificate: "DLD-endorsed health certificate in AVS format, issued within the AVS-specified window before travel."
+
   airlines:
-    - name: "Thai Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets as checked baggage or Thai Cargo for larger animals. Brachycephalic breeds restricted during hot season (March-May). Some breed restrictions apply"
     - name: "Singapore Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Emirates"
+      policy_summary: "Singapore Airlines operates Bangkok Suvarnabhumi (BKK) to Singapore Changi (SIN) with regular cargo services. Singapore Airlines Cargo has strong live animal infrastructure at Changi. The primary option for Thailand to Singapore cargo pets."
+    - name: "Thai Airways"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "Thai Airways operates BKK to SIN with cargo services. Thai Airways Cargo accepts pets in the hold on this route. A direct option for the Thailand to Singapore sector."
+    - name: "Bangkok Airways"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Bangkok Airways operates some BKK to SIN services. Confirm live animal cargo acceptance for your specific flight date and crate size."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step: must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Appoint an AVS-recognised pet agent (mandatory from April 2026 for Schedule III CAPQ clearance)."
+      timing: "Before any other preparation."
+      responsible: "Owner"
     - step: 2
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "DLD export permit application. Apply for AVS import licence at nparks.gov.sg/avs. Pre-book AQC quarantine place."
+      timing: "4-6 weeks before travel. Allow 2-4 weeks for DLD permit."
+      responsible: "Owner or AVS-recognised agent"
     - step: 3
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "ISO microchip confirmed. Current rabies vaccination. Titre test at AVS-approved laboratory."
+      timing: "Allow 2-3 weeks for titre result."
+      responsible: "DLD vet"
     - step: 4
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "AVS import licence confirmed. AQC booking confirmed. Book cargo: BKK to SIN."
+      timing: "4-6 weeks before travel."
+      responsible: "Owner or agent"
     - step: 5
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "DLD-endorsed health certificate in AVS format issued before travel."
+      timing: "Within AVS-specified window before departure."
+      responsible: "DLD vet"
+    - step: 6
+      action: "Travel BKK to SIN. AVS inspection at Changi. Transfer to AQC for 30-day quarantine."
+      timing: "Travel day."
+      responsible: "Airline, AVS agent, and AQC"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "DLD export permit and health certificate: THB 2,000-5,000"
+    - "Titre test at AVS-approved laboratory: USD 100-200"
+    - "AVS import licence fee: SGD 26-100 (approximately THB 700-2,700)"
+    - "30-day AQC quarantine: SGD 1,500-3,000 (approximately THB 40,000-80,000)"
+    - "Air cargo BKK to SIN: SGD 400-1,200 (approximately THB 10,000-32,000)"
+    - "AVS-recognised agent fee: SGD 500-1,500"
+    - "Total typical range: SGD 3,500-8,000"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "From 1 April 2026, an AVS-recognised pet agent is mandatory for Schedule III CAPQ clearance. This is the first step."
+    - "The 30-day AQC quarantine is mandatory. It cannot be reduced."
+    - "Book the AQC place before confirming your cargo flight. AQC availability is limited."
+    - "DLD processing takes 2-4 weeks. Start the export permit early."
+
+  route_complexity: "moderate-high"
+  estimated_timeline_weeks: "10-16"
+
 content:
-  h1: "Pet Transport from Thailand to Singapore"
-  overview: |
-    The Thailand to Singapore route is one many expats and returning families complete each year with their pets.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date: some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    We've laid out every step below so you know exactly what to prepare and when.
+  h1: "Pet Transport Thailand to Singapore: 2026 AVS Schedule III Guide"
+  overview: "Moving a pet from Thailand to Singapore involves mandatory 30-day quarantine at an AVS-approved centre (AQC). Thailand is a Schedule III country under Singapore's AVS import rules. From 1 April 2026, an AVS-recognised pet agent is required for CAPQ clearance for all Schedule III arrivals. The steps are: appoint an AVS agent, apply for the AVS import licence, get DLD export documentation and titre test, pre-book the AQC, and fly direct on Singapore Airlines or Thai Airways from Bangkok. Preparation takes 2 to 3 months, quarantine adds 30 days."
+
   sections:
-    - heading: "Key requirements for moving your pet to Singapore"
+    - heading: "Thailand and Singapore AVS: Schedule III means 30 days quarantine"
       body: |
-        Compared to some international pet transport routes, Thailand to Singapore is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        National Parks Board (NParks) Animal and Veterinary Service (AVS) regulates all animal imports. Singapore maintains rabies-free status through a rigorous 4-tier category system. AVS website blocked automated extraction; data compiled from AVS published guidelines and official category system documentation. Singapore has strict housing rules: HDB flats (public housing, ~80% of population) only allow approved small dog breeds and cats (since 2024).
-    - heading: "Step-by-step: what to do first"
+        Singapore's AVS classifies Thailand as a Schedule III country. This classification applies to countries with a higher disease risk profile, particularly for rabies. All cats and dogs from Schedule III countries must complete 30 days at an AVS-approved quarantine centre (AQC) immediately on arrival in Singapore. There are no exceptions.
+
+        The 30-day AQC quarantine is the dominant factor in planning a Thailand to Singapore pet move. Every other part of the process fits around this requirement. Your pet arrives at Changi, passes through CAPQ inspection with your AVS-recognised agent, and then goes directly to the AQC for the full 30 days before release to your home in Singapore.
+
+        AQC places are limited. Book before confirming your flight date. If the AQC is full on your intended arrival date, you cannot bring your pet that day. Your AVS agent will handle the AQC booking as part of the CAPQ clearance process.
+
+    - heading: "The 2026 AVS agent requirement for Schedule III arrivals"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        From 1 April 2026, Singapore AVS introduced a requirement that all pets from Schedule III countries must be cleared through CAPQ by an AVS-recognised pet agent. Pet owners can no longer complete this process independently for Schedule III imports.
+
+        An AVS-recognised agent manages the CAPQ clearance documentation, liaises with the AQC, and ensures all arrival procedures are handled correctly. They are your representative at Changi when the pet arrives. Selecting an agent who handles Thailand to Singapore moves regularly is advisable; they will be familiar with the DLD documentation requirements and the specific CAPQ process for Thai imports.
+
+        AVS publishes the current list of recognised agents at nparks.gov.sg/avs. Appoint an agent before starting any other preparation step.
+
+    - heading: "DLD export and the BKK to SIN flight"
+      body: |
+        Thailand's DLD (Department of Livestock Development) issues the export permit and endorses the health certificate. Allow 2 to 4 weeks for DLD processing. The health certificate must be in the format AVS Singapore specifies. Keep originals: copies are not accepted at CAPQ.
+
+        Bangkok has several daily flights to Singapore Changi. Singapore Airlines is the primary cargo carrier on this route and has well-established live animal handling procedures at Changi. Thai Airways also operates cargo on BKK to SIN. The flight is approximately 2 hours, making it one of the shortest intercontinental cargo journeys in Southeast Asia.
+
+        The titre test blood draw happens with your DLD vet and the sample goes to an AVS-approved laboratory. Confirm your lab choice is on the current AVS-approved list before the draw.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Thailand to Singapore?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Singapore?"
-    answer: "No routine quarantine is required in Singapore for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Singapore?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Singapore. Start this process as early as possible."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Thailand. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Singapore's authority for the exact format required."
+  - question: "Is the 30-day AQC quarantine mandatory even for well-vaccinated Thai pets?"
+    answer: "Yes. The 30-day AQC quarantine is mandatory for all pets arriving from Schedule III countries, including Thailand. It applies regardless of the individual pet's vaccination status or health history. The classification is country-based, not pet-based."
+  - question: "What is the April 2026 AVS agent change?"
+    answer: "From 1 April 2026, pets from Schedule III countries must use an AVS-recognised pet agent for CAPQ clearance in Singapore. Pet owners cannot complete this process independently. The agent handles the CAPQ documentation and AQC transfer on arrival. AVS publishes the recognised agent list at nparks.gov.sg/avs."
+  - question: "How long does the Thailand to Singapore process take?"
+    answer: "Allow 2 to 3 months for preparation (DLD permit, AVS import licence, titre test, health certificate) plus 30 days of AQC quarantine on arrival. Total from first DLD vet visit to your pet leaving quarantine: approximately 3 to 4 months."
+  - question: "Can I use Changi airport for arrival or are there other options?"
+    answer: "Changi Airport (SIN) is the designated entry point for all pets arriving in Singapore. There is no alternative. Your cargo booking must route to SIN and your AVS agent will meet the shipment for CAPQ clearance at Changi."
+
 links:
   sideways:
     - url: "/pet-transport/singapore-to-thailand/"
       text: "Pet Transport Singapore to Thailand"
+    - url: "/pet-transport/thailand-to-australia/"
+      text: "Pet Transport Thailand to Australia"
+    - url: "/pet-transport/thailand-to-new-zealand/"
+      text: "Pet Transport Thailand to New Zealand"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-thailand-export-guide/"
-      text: "Shipping from Thailand"
+    - url: "/pet-transport/origins/pet-export-guide-shipping-from-thailand/"
+      text: "Shipping pets from Thailand"
     - url: "/pet-transport/countries/singapore/"
-      text: "Importing to Singapore"
-    - url: "/pet-transport/airlines/thai-airways/"
-      text: "Thai Airways pet policy"
-    - url: "/pet-transport/airlines/singapore-airlines/"
-      text: "Singapore Airlines pet policy"
+      text: "Singapore pet import rules"
 ---

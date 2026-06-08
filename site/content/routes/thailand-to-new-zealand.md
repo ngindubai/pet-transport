@@ -1,151 +1,135 @@
 ---
-template_variant: "C"
-title: "Pet Relocation Thailand to New Zealand | Requirements & Guide"
-description: "How to ship your dog or cat from Thailand to New Zealand. New Zealand import rules, vaccinations, permits, and airline options explained."
+title: "Pet Transport Thailand to New Zealand: 2026 MPI Titre Test, DLD Export and Levin Quarantine"
+description: "Moving a dog or cat from Thailand to New Zealand in 2026. DLD export permit, MPI import permit, RNATT titre test with 3-month wait, 10-day Levin quarantine. Thai Airways and Singapore Airlines cargo."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "B"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "thailand-to-new-zealand"
 origin_name: "Thailand"
 destination_name: "New Zealand"
+
 route_data:
   origin:
     code: "TH"
     country: "Thailand"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      health_certificate: "Health certificate from a Thai veterinarian endorsed by the Department of Livestock Development (DLD). Must comply with MPI New Zealand format."
+      export_permit: "DLD export permit required. Apply through the local DLD office. Allow 2-4 weeks."
+
   destination:
     code: "NZ"
     country: "New Zealand"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or on same day as first rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 28-day wait after vaccination before travel. Vaccination schedule must be complete before titre test blood draw."
-      titre_test: "Required for: All pets from all countries (no exemptions). Not required for: None. Minimum: 0.5 IU/ml. 180-day wait from test date before entry"
-      quarantine: "Mandatory quarantine. 10 (minimum) at MPI Levin facility days. Facility: MPI Levin Quarantine Facility, Levin, Manawatu (the only approved facility). Mandatory 10-day quarantine for all arriving cats and dogs. Pre-booking required well in advance as capacity is limited. Book before flights."
-      import_permit: "Required. Issued by: Ministry for Primary Industries (MPI), Biosecurity New Zealand. Apply for import permit before booking flights. Permit specifies all conditions. Non-compliance results in re-export or destruction."
-      health_certificate: "Required. Government veterinary health certificate. Issued by: Government (official) veterinarian in country of export. Valid for 14 days from issue. Must use MPI-specified format for the exact country of export. No standard format accepted. Download the correct template from the MPI website."
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Current rabies vaccination. Blood draw at least 28 days after vaccination."
+      titre_test: "RNATT titre test required. Minimum 0.5 IU/ml. MPI-approved laboratory. 3-month wait from blood draw before New Zealand entry. Result valid for up to 24 months. Source: MPI, mpi.govt.nz."
+      import_permit: "MPI import permit. Apply at least 30 working days before travel."
+      health_certificate: "MPI-format health certificate within 14 days of travel. DLD-endorsed."
+      quarantine: "10-day mandatory quarantine at MPI Levin Quarantine Facility."
+      entry_airport: "Auckland (AKL) or Christchurch (CHC)."
+
   airlines:
-    - name: "Thai Airways"
+    - name: "Thai Airways (via Sydney)"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets as checked baggage or Thai Cargo for larger animals. Brachycephalic breeds restricted during hot season (March-May). Some breed restrictions apply"
-    - name: "Qantas"
+      policy_summary: "Thai Airways operates Bangkok Suvarnabhumi (BKK) to Sydney (SYD). Thai Airways Cargo accepts pets. Connect from Sydney to Auckland on Air New Zealand SYD-AKL for the final sector."
+    - name: "Singapore Airlines (via Singapore)"
       type: "cargo_only"
-      policy_summary: "Cargo: QantasFreighter network for pet transport. Brachycephalic breeds restricted year-round. Temperature embargoes: seasonal restrictions during Australian summer (Dec-Feb)"
-    - name: "Emirates"
+      policy_summary: "Singapore Airlines operates BKK to Singapore (SIN) and SIN to Auckland (AKL). Singapore Airlines Cargo handles live animals at Changi. Two-sector routing with strong live animal infrastructure at the transit hub."
+    - name: "Air New Zealand (via Sydney)"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Air New Zealand operates SYD to AKL and CHC. Connects from the Sydney hub to complete the New Zealand leg. Air New Zealand Cargo handles pets on this sector."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Apply for MPI import permit at mpi.govt.nz (30 working days minimum)."
+      timing: "5-6 months before intended travel."
+      responsible: "Owner or agent"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 28-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "DLD export permit application. Microchip confirmed. Rabies vaccination."
+      timing: "3-4 months before travel. Allow 2-4 weeks for DLD permit."
+      responsible: "Owner and DLD vet"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Blood draw for RNATT titre test at MPI-approved laboratory. At least 28 days after vaccination."
+      timing: "28 days after vaccination. 3-month NZ wait starts from this date."
+      responsible: "DLD vet and approved laboratory"
     - step: 4
-      action: "Apply for import permit from New Zealand"
-      timing: "Apply early: allow 4-6 weeks"
-      responsible: "You (or your pet transport agent)"
+      action: "Receive titre result (pass/fail). Confirm MPI permit. Book cargo flights."
+      timing: "After blood draw. Book 4-6 weeks before travel."
+      responsible: "Owner"
     - step: 5
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "DLD health certificate in MPI format issued within 14 days of travel."
+      timing: "Within 14 days of departure."
+      responsible: "DLD vet"
     - step: 6
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 7
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
-    - step: 8
-      action: "Quarantine on arrival (10 (minimum) at MPI Levin facility days)"
-      timing: "Immediately on arrival (mandatory)"
-      responsible: "New Zealand quarantine authority"
+      action: "Travel BKK to SYD or SIN, then to AKL. MPI inspection and Levin quarantine."
+      timing: "After 3 months from blood draw."
+      responsible: "Airline and MPI"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (New Zealand)"
-    - "Quarantine facility fees (owner-paid at destination)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "DLD export permit and health certificate: THB 2,000-5,000"
+    - "RNATT titre test: USD 100-200"
+    - "MPI import permit: NZD 260 (approximately THB 5,200)"
+    - "Levin quarantine (10 days): NZD 1,500-3,000"
+    - "Air cargo BKK to AKL via SIN or SYD: USD 1,500-3,500"
+    - "Total typical range: NZD 6,500-13,000"
+
   key_warnings:
-    - "Mandatory quarantine required on arrival. Plan for separation from your pet."
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "very_high"
-  estimated_timeline_weeks: "26-32"
+    - "The 3-month wait from blood draw is fixed. Build this into your departure date calculation first, then work backwards."
+    - "DLD processing takes 2-4 weeks. Start the export permit application early."
+    - "No direct flights from Thailand to New Zealand. Via Singapore (SIN-AKL) or via Sydney (SYD-AKL) are the standard options."
+    - "Levin quarantine is weekday arrivals only. Avoid Friday or weekend arrival routing."
+
+  route_complexity: "moderate"
+  estimated_timeline_weeks: "16-22"
+
 content:
-  h1: "Pet Transport from Thailand to New Zealand"
-  overview: |
-    Pet transport from Thailand to New Zealand follows a clear process once you know what New Zealand requires.
-    
-    This route is one of the most demanding international pet transport routes. Start preparations at least 26 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. New Zealand requires mandatory quarantine (10 (minimum) at MPI Levin facility days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Use this guide to map out your preparation timeline and avoid the most common mistakes.
+  h1: "Pet Transport Thailand to New Zealand: 2026 Guide"
+  overview: "Moving a pet from Thailand to New Zealand takes 4 to 6 months from first vet visit to Levin release. The key steps are a DLD export permit from Thailand's Department of Livestock Development, a rabies titre test with a 3-month MPI wait, and 10 days at the Levin quarantine facility. There are no direct flights from Bangkok to Auckland, so the routing goes via Singapore or Sydney. Unlike the Australia pathway, no intermediate country staging is required for New Zealand."
+
   sections:
-    - heading: "Key requirements for moving your pet to New Zealand"
+    - heading: "DLD export and the Thai side of preparation"
       body: |
-        This is one of the more demanding international pet transport corridors. New Zealand runs a strict biosecurity programme and there are no shortcuts through it.
-        
-        All pets must complete quarantine on arrival in New Zealand (at MPI Levin Quarantine Facility, Levin, Manawatu (the only approved facility)) for 10 (minimum) at MPI Levin facility days. This is non-negotiable and is entirely separate from the pre-travel preparation.
-        
-        New Zealand is rabies-free with one of the world's strictest pet import systems. All dogs and cats must complete mandatory quarantine at the government-approved facility (Levin MAF Quarantine Station, now MPI). Import permit required in advance. Only cats and dogs permitted from most countries; birds require separate approval. Authority: Ministry for Primary Industries (MPI), Biosecurity New Zealand.
-    - heading: "Things to sort before you book"
+        Thailand's Department of Livestock Development (DLD) is the authority for issuing export permits and endorsing health certificates for pets leaving the country. The export permit must be obtained before departure, and the health certificate must follow MPI's specified format so it is accepted on arrival in New Zealand. Allow 2 to 4 weeks for DLD processing.
+
+        Your Thai vet handles the microchip check, vaccination, and health assessment. The blood draw for the titre test is done after confirming the vaccination is at least 28 days old. The sample goes to an MPI-approved laboratory for the RNATT result. Keep the DLD permit and health certificate originals: copies are not accepted by MPI at the New Zealand border.
+
+    - heading: "Bangkok to Auckland: routing options"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Two practical routings connect Bangkok to Auckland for cargo pets. The Singapore route: Thai Airways, Singapore Airlines, or Bangkok Airways from Bangkok to Singapore (SIN), then Singapore Airlines to Auckland or Christchurch. Singapore Airlines Cargo has temperature-controlled live animal handling at Changi and strong onward services to New Zealand.
+
+        The Sydney route: Thai Airways from Bangkok to Sydney (SYD) with cargo, then Air New Zealand SYD-AKL. This adds a shorter domestic-type sector but involves an Australia transit, where any overnight stay would trigger DAFF biosecurity requirements. For a transit through Sydney that is airside only (pet stays on the plane or in the international cargo zone), no Australian requirements apply.
+
+        Confirm live animal acceptance on your specific flight combination before booking. Get written confirmation from both airlines.
+
+    - heading: "Levin quarantine: the final 10 days"
+      body: |
+        MPI Levin Quarantine Facility in Levin, Manawatu, is New Zealand's primary quarantine centre for imported cats and dogs. Your pet spends 10 days there after arriving at Auckland or Christchurch. MPI inspects the health certificate, microchip, and titre test documentation on arrival.
+
+        The facility is about 90 minutes' drive from Wellington and 2 hours south of Auckland. Owners can arrange visits during the quarantine period. MPI charges owner-paid fees for the 10-day stay. Levin receives pets on weekdays only, so time your flight to arrive Monday to Thursday.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Thailand to New Zealand?"
-    answer: "Allow at least 26 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering New Zealand?"
-    answer: "Yes, quarantine is mandatory in New Zealand. Your pet will stay for 10 (minimum) at MPI Levin facility days at MPI Levin Quarantine Facility, Levin, Manawatu (the only approved facility) on arrival. This is non-negotiable and the cost is paid by the owner."
-  - question: "Is a rabies titre test required for pets entering New Zealand?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter New Zealand. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into New Zealand?"
-    answer: "Yes, an import permit is required from New Zealand's authority (Ministry for Primary Industries (MPI), Biosecurity New Zealand). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Thailand. The certificate must be issued within 14 days of travel. Present the original (not a copy) at check-in. Check New Zealand's authority for the exact format required."
+  - question: "Does my pet need to stop in Australia before going to New Zealand?"
+    answer: "No. Pets can travel directly from Thailand to New Zealand (via a connection hub such as Singapore or Sydney) without any intermediate country staging requirement. This is different from the Australia pathway, where Thailand-origin pets require the 180-day approved country residency."
+  - question: "How long is the minimum preparation time?"
+    answer: "The absolute minimum is approximately 4 months: 28 days post-vaccination to the blood draw, then 3 months from blood draw. In practice, allow 5 to 6 months to include DLD processing, MPI permit time (30 working days), and flight booking."
+  - question: "What DLD documentation does New Zealand MPI require?"
+    answer: "MPI requires a DLD-endorsed health certificate in MPI's specified format, confirming the pet's microchip, rabies vaccination history, titre test result, and fitness to travel. Your Thai vet or a specialist agent can prepare this in the correct MPI format. The certificate must be issued within 14 days of travel."
+  - question: "Can my cat travel on the same routing?"
+    answer: "Yes. MPI requirements apply equally to cats and dogs arriving from Thailand. The DLD export process, titre test, and Levin quarantine are all the same. Crate size (and therefore cargo cost) will be different for a cat versus a large dog."
+
 links:
   sideways:
     - url: "/pet-transport/new-zealand-to-thailand/"
       text: "Pet Transport New Zealand to Thailand"
+    - url: "/pet-transport/thailand-to-australia/"
+      text: "Pet Transport Thailand to Australia"
+    - url: "/pet-transport/thailand-to-singapore/"
+      text: "Pet Transport Thailand to Singapore"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-thailand-export-guide/"
-      text: "Shipping from Thailand"
+    - url: "/pet-transport/origins/pet-export-guide-shipping-from-thailand/"
+      text: "Shipping pets from Thailand"
     - url: "/pet-transport/countries/new-zealand/"
-      text: "Importing to New Zealand"
-    - url: "/pet-transport/airlines/thai-airways/"
-      text: "Thai Airways pet policy"
-    - url: "/pet-transport/airlines/qantas/"
-      text: "Qantas pet policy"
+      text: "New Zealand pet import rules"
 ---

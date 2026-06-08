@@ -1,146 +1,138 @@
 ---
-template_variant: "E"
-title: "Shipping Dogs & Cats from Vietnam to Australia | PetTransportGlobal"
-description: "Pet relocation from Vietnam to Australia: Australia import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport Vietnam to Australia: 2026 Non-Approved Country Staged Move Guide"
+description: "Moving a pet from Vietnam to Australia in 2026. Vietnam is non-approved for DAFF: your pet must reside in Singapore or another approved country for 180 days before Australia entry. Full staged pathway."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "B"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "vietnam-to-australia"
 origin_name: "Vietnam"
 destination_name: "Australia"
+
 route_data:
   origin:
     code: "VN"
     country: "Vietnam"
     export_requirements:
-      export_permit: "No export permit for pet dogs and cats."
-      health_certificate: "{'required': True, 'issued_by': 'MARD-authorised official vet'}"
+      health_certificate: "Health certificate from a Vietnamese veterinarian endorsed by the Department of Animal Health (DAH, under MARD). Required for the transit country leg."
+      export_permit: "No formal export permit for personal pets. DAH-endorsed health certificate covers the exit documentation."
+
   destination:
     code: "AU"
     country: "Australia"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or on same day as rabies vaccination"
-      rabies_vaccination: "Minimum age: 12 weeks. Vaccination schedule must be completed before titre test blood draw"
-      titre_test: "Required for: Groups 3, 4, 5, 6 (all except Groups 1 and 2). Minimum: 0.5 IU/ml"
-      quarantine: "Mandatory quarantine. Facility: Mickleham Post Entry Quarantine Facility. Location: Melbourne, Victoria"
-      import_permit: "Required. Must be obtained BEFORE travel. Permit specifies conditions for import."
-      health_certificate: "Required. Government-issued veterinary health certificate (country-specific format). Issued by: Government veterinarian in country of export. Certificate format is NON-NEGOTIABLE. Must use exact DAFF-approved format for the specific country of export."
+      country_status: "Vietnam is a non-approved country under DAFF biosecurity rules. Pets cannot be exported directly from Vietnam to Australia. The pet must reside continuously in a DAFF-approved country for at least 180 days immediately before export. Source: DAFF, agriculture.gov.au/biosecurity-trade/cats-dogs."
+      transit_recommended: "Singapore (DAFF Group 2, rabies-free) is the standard staging post for Vietnam-based expats. The SGN-SIN air link is frequent and Singapore Airlines operates strong SIN-SYD and SIN-MEL cargo services."
+      group_via_singapore: "DAFF Group 2 (Singapore origin). No RNATT titre test required for the Australia leg. 10-day mandatory quarantine at Mickleham Post Entry Quarantine Facility, Melbourne."
+      microchip: "ISO 11784/11785 microchip required. Must predate all vaccinations."
+      import_permit: "DAFF import permit via BICON (agriculture.gov.au). Approximately AUD 420. Apply during the Singapore residency period; allow 20-30 days."
+      health_certificate: "DAFF-format health certificate issued within 5 days of departure from Singapore."
+      quarantine: "Mandatory 10-day quarantine at Mickleham Post Entry Quarantine Facility, Melbourne. All imported cats and dogs quarantine at Mickleham regardless of origin or transit country. Pre-book in advance."
+
   airlines:
-    - name: "Vietnam Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (under 5kg with carrier) allowed in cabin on some routes. Cargo: larger pets in hold. Advance booking required. Vietnam import/export documentation must be fully prepared before travel."
-    - name: "Qantas"
+    - name: "Vietnam Airlines (Vietnam to Singapore)"
       type: "cargo_only"
-      policy_summary: "Cargo: QantasFreighter network for pet transport. Brachycephalic breeds restricted year-round. Temperature embargoes: seasonal restrictions during Australian summer (Dec-Feb)"
-    - name: "Emirates"
+      policy_summary: "Vietnam Airlines operates Ho Chi Minh City (SGN) and Hanoi (HAN) to Singapore Changi (SIN) daily. Vietnam Airlines Cargo accepts pets as manifest cargo. Reliable connection for the first leg of the staged move."
+    - name: "Singapore Airlines (Singapore to Australia)"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "Singapore Airlines operates multiple daily flights from SIN to Sydney (SYD) and Melbourne (MEL). Singapore Airlines Cargo handles live animals with temperature-controlled hold at Changi. Standard choice for the Singapore to Australia leg."
+    - name: "Qantas (Singapore to Australia)"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
+      policy_summary: "Qantas operates SIN to SYD and MEL. Qantas Freight handles pet cargo. Alternative to Singapore Airlines for the Australia leg."
+    - name: "Scoot (Vietnam to Singapore, alternative)"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Scoot operates SGN to SIN. Budget option; confirm current pet cargo policy directly with Scoot as availability is not guaranteed on all departures."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Start Singapore preparation: microchip, rabies vaccination, arrange titre test, appoint AVS-recognised pet agent, apply for Singapore import licence."
+      timing: "3-4 months before planned Singapore arrival."
+      responsible: "Owner and pet agent"
     - step: 2
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Pet arrives in Singapore. Transfers to Animal Quarantine Centre (AQC) Sembawang for 30-day quarantine."
+      timing: "Singapore arrival day."
+      responsible: "AVS-recognised pet agent"
     - step: 3
-      action: "Apply for import permit from Australia"
-      timing: "Apply early: allow 4-6 weeks"
-      responsible: "You (or your pet transport agent)"
+      action: "Pet released from AQC. Begins continuous Singapore residency. 180-day clock running."
+      timing: "Day 30 in Singapore."
+      responsible: "Owner"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Apply for DAFF Australia import permit via BICON. Pre-book Mickleham quarantine."
+      timing: "During Singapore residency, at least 30 days before intended Australia departure. Allow AUD 420 and 20-30 days processing."
+      responsible: "Owner or agent"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "DAFF-format health certificate issued in Singapore."
+      timing: "Within 5 days of departure from Singapore for Australia."
+      responsible: "Singapore government vet"
     - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
-    - step: 7
-      action: "Quarantine on arrival (varies days)"
-      timing: "Immediately on arrival (mandatory)"
-      responsible: "Australia quarantine authority"
+      action: "Travel to Australia. 10-day Mickleham quarantine."
+      timing: "After 180 continuous days in Singapore."
+      responsible: "Airline and DAFF"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (Australia)"
-    - "Quarantine facility fees (owner-paid at destination)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Singapore titre test and AVS documentation: approximately SGD 300-600"
+    - "Singapore AQC 30-day quarantine: SGD 1,500-3,000 (approximately AUD 1,700-3,400)"
+    - "DAFF Australia import permit: AUD 420"
+    - "Air cargo SIN to SYD or MEL: approximately AUD 1,200-2,800"
+    - "Mickleham 10-day quarantine: AUD 1,800-3,500"
+    - "Total direct animal costs (excluding Singapore living expenses): approximately AUD 5,500-10,500"
+
   key_warnings:
-    - "Mandatory quarantine required on arrival. Plan for separation from your pet."
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "very_high"
-  estimated_timeline_weeks: "26-32"
+    - "Vietnam is non-approved for DAFF. Direct export to Australia is not permitted under any circumstances. The 180-day residency requirement in an approved country is absolute."
+    - "The 180 days must be continuous. Any break (returning to Vietnam, visiting a non-approved country for more than a transit airside stop) resets the clock."
+    - "Mickleham does not operate on weekends or Australian public holidays. Time your arrival so quarantine can begin on a weekday."
+    - "From 1 April 2026, an AVS-recognised pet agent is required for CAPQ clearance in Singapore. Appoint one before the Singapore leg."
+
+  route_complexity: "very-high"
+  estimated_timeline_weeks: "36-52"
+
 content:
-  h1: "Pet Transport from Vietnam to Australia"
-  overview: |
-    Shipping your dog or cat from Vietnam to Australia is a process that rewards early planning.
-    
-    This route is one of the most demanding international pet transport routes. Start preparations at least 26 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. Australia requires mandatory quarantine for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    The paperwork is the hard part. Once everything is in order, the journey itself is well-managed.
+  h1: "Pet Transport Vietnam to Australia: The 2026 Staged Move Pathway"
+  overview: "Vietnam is classified as non-approved under DAFF biosecurity rules, so pets cannot fly directly from Vietnam to Australia. The only legal pathway is a staged move: first settling your pet in an approved country such as Singapore for at least 180 consecutive days, then travelling on to Australia. The whole process takes roughly 9 to 13 months. It is complex, but thousands of expat families successfully complete this move every year."
+
   sections:
-    - heading: "Key requirements for moving your pet to Australia"
+    - heading: "Non-approved status: what it means and why it applies"
       body: |
-        This is one of the more demanding international pet transport corridors. Australia runs a strict biosecurity programme and there are no shortcuts through it.
-        
-        All pets must complete quarantine on arrival in Australia (at the designated facility). This is non-negotiable and is entirely separate from the pre-travel preparation.
-        
-        Among the strictest pet import regimes globally. All imported cats and dogs undergo mandatory quarantine. Only pets from approved countries (Groups 1-6) can be imported. Allow minimum 6 months to complete all import steps. DAFF strongly recommends using an experienced pet transport agent.
-    - heading: "Step-by-step: what to do first"
+        Australia's DAFF maintains a tiered country classification for pet imports based on disease risk. Vietnam, along with most of Southeast Asia, is classified as non-approved because of the endemic presence of rabies. This is a country-level classification, not a reflection of your individual pet's vaccination history. Even a fully vaccinated, titre-tested dog cannot fly directly from Ho Chi Minh City to Sydney under current DAFF rules.
+
+        The approved pathway requires the pet to reside continuously in a DAFF Group 2 or Group 3 country for at least 180 days before export to Australia. Singapore is DAFF Group 2 (recognised as rabies-free), which makes it the most practical staging post for Vietnam-based expats because it avoids the RNATT titre test requirement for the Australia leg.
+
+    - heading: "What happens in Singapore: the 180-day residency"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Before Singapore will admit a pet from Vietnam, your pet must meet Singapore's Schedule III import conditions: a rabies vaccination, a FAVN titre test (0.5 IU/ml minimum), an AVS import licence, and a 30-day quarantine at the Animal Quarantine Centre in Sembawang. The process takes 3 to 4 months to prepare for. From 1 April 2026, you also need to appoint an AVS-recognised pet agent to handle clearance at Changi Airport.
+
+        Once your pet completes the 30-day Singapore quarantine, the 180-day DAFF residency clock starts running. Your pet needs to remain in Singapore continuously until 180 days from the original arrival date have passed. During this time, apply for the DAFF import permit via BICON and pre-book Mickleham quarantine, as both have lead times that need managing.
+
+    - heading: "The Australia leg: Group 2 rules from Singapore"
+      body: |
+        Departing from Singapore for Australia, your pet travels under DAFF Group 2 conditions, which is the easier path. No RNATT titre test is needed. What is required is a DAFF-format health certificate issued in Singapore within 5 days of departure, your valid DAFF import permit, and your confirmed Mickleham booking.
+
+        Singapore Airlines and Qantas both operate direct flights from Changi to Sydney and Melbourne. Singapore Airlines Cargo has well-established live animal handling infrastructure at Changi, and the SIN-SYD and SIN-MEL sectors operate multiple times daily. All imported pets in Australia must quarantine at Mickleham in Melbourne for at least 10 days, regardless of which city they fly into. The facility is professionally managed, with veterinary oversight throughout.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Vietnam to Australia?"
-    answer: "Allow at least 26 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Australia?"
-    answer: "Yes, quarantine is mandatory in Australia. Your pet will stay at the designated quarantine facility on arrival. This is non-negotiable and the cost is paid by the owner."
-  - question: "Is a rabies titre test required for pets entering Australia?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Australia. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into Australia?"
-    answer: "Yes, an import permit is required from Australia's authority (the relevant government body). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Vietnam. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Australia's authority for the exact format required."
+  - question: "Can I fly my dog directly from Ho Chi Minh City to Sydney?"
+    answer: "No. Vietnam is classified as a non-approved country by DAFF. Direct export from Vietnam to Australia is not permitted. Your pet must first reside in a DAFF-approved country (such as Singapore) for at least 180 consecutive days. Source: DAFF, agriculture.gov.au/biosecurity-trade/cats-dogs."
+  - question: "Why is Singapore the best staging country for this route?"
+    answer: "Singapore is DAFF Group 2 (rabies-free), which means pets departing from Singapore for Australia do not need an RNATT titre test. The Singapore to Australia leg is therefore simpler than going via the UK or USA (which are Group 3 and require an RNATT plus 180-day wait from blood draw). Singapore also has excellent air connections from Vietnam and to Australia."
+  - question: "How long does the whole process take?"
+    answer: "Budget 9 to 13 months from your first vet visit to your pet clearing Mickleham. This includes 3-4 months preparing for Singapore entry, 30 days in Singapore quarantine, at least 150 more days of Singapore residency, plus travel and 10-day Mickleham quarantine. Start well ahead of your own relocation."
+  - question: "Does my cat follow the same pathway as my dog?"
+    answer: "Yes. DAFF non-approved country rules apply to both cats and dogs. Cats from Vietnam also require the 180-day approved country residency. In Singapore, cats arriving from Vietnam (Schedule III) also need the 30-day AQC quarantine and titre test. The Australia leg is the same for both species."
+  - question: "What is the DAFF import permit and how do I apply?"
+    answer: "The DAFF import permit authorises the import of your specific pet to Australia. Apply online through the BICON (Biosecurity Import Conditions) system at agriculture.gov.au. The fee is approximately AUD 420 and processing takes 20-30 days. Apply during your pet's Singapore residency period, at least 30 days before your planned Australia departure."
+
 links:
   sideways:
     - url: "/pet-transport/australia-to-vietnam/"
       text: "Pet Transport Australia to Vietnam"
+    - url: "/pet-transport/vietnam-to-singapore/"
+      text: "Pet Transport Vietnam to Singapore"
+    - url: "/pet-transport/singapore-to-australia/"
+      text: "Pet Transport Singapore to Australia"
   upward:
-    - url: "/pet-transport/origins/vietnam-pet-export-guide/"
-      text: "Shipping from Vietnam"
+    - url: "/pet-transport/origins/pet-export-guide-shipping-from-vietnam/"
+      text: "Shipping pets from Vietnam"
     - url: "/pet-transport/countries/australia/"
-      text: "Importing to Australia"
-    - url: "/pet-transport/airlines/qantas/"
-      text: "Qantas pet policy"
+      text: "Australia pet import rules"
 ---

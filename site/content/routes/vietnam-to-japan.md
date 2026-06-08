@@ -1,153 +1,138 @@
 ---
-template_variant: "B"
-title: "Pet Transport from Vietnam to Japan | PetTransportGlobal"
-description: "Pet relocation from Vietnam to Japan: Japan import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport Vietnam to Japan: 2026 AQS 180-Day Protocol, FAVN Titre Test and Routing Guide"
+description: "Moving a dog or cat from Vietnam to Japan in 2026. Japan AQS non-designated country rules: two vaccinations, FAVN titre test, 180-day wait, 40-day advance notice. Vietnam Airlines and ANA cargo."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "B"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "vietnam-to-japan"
 origin_name: "Vietnam"
 destination_name: "Japan"
+
 route_data:
   origin:
     code: "VN"
     country: "Vietnam"
     export_requirements:
-      export_permit: "No export permit for pet dogs and cats."
-      health_certificate: "{'required': True, 'issued_by': 'MARD-authorised official vet'}"
+      health_certificate: "Health certificate issued by a Vietnamese veterinarian and endorsed by the Department of Animal Health (DAH, under MARD). Must comply with Japan AQS format requirements."
+      export_permit: "No formal export permit for personal pets. DAH-endorsed health certificate covers the export documentation."
+
   destination:
     code: "JP"
     country: "Japan"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or on the same day as rabies vaccination."
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 30-day wait after vaccination before travel. Must be vaccinated at least 30 days before import."
-      titre_test: "Required. Minimum: 0.5 IU/ml. 180-day wait from test date before entry"
-      quarantine: "Mandatory quarantine. 14 days. Facility: MAFF quarantine station. 14-day quarantine is mandatory at MAFF-designated facility."
-      import_permit: "Required. Issued by: MAFF (Animal Quarantine Service). Apply: Apply 2-4 weeks before travel. Formal import permit required from MAFF."
-      health_certificate: "Required. Health Certificate. Issued by: Official veterinarian in country of origin. Valid for 10 days from issue. Issued within 10 days of travel. Must list microchip number and vaccination details."
+      country_status: "Vietnam is a non-designated region under Japan's AQS rabies import rules. The full 180-day preparation protocol applies. Source: Japan Animal Quarantine Service, maff.go.jp/aqs."
+      microchip: "ISO 11784/11785 microchip required. Must be implanted before the first rabies vaccination."
+      rabies_vaccinations: "Two valid rabies vaccinations required. First vaccination: dog must be at least 91 days old. Minimum 30-day interval between the two vaccinations. Second vaccination must be within 12 months of Japan arrival."
+      titre_test: "FAVN titre test at a MAFF-approved laboratory. Minimum result 0.5 IU/ml. Blood drawn at least 30 days after the second vaccination. The 180-day AQS wait begins from this blood draw date. Source: Japan AQS, maff.go.jp/aqs."
+      advance_notice: "Advance import notification to AQS at least 40 days before arrival. Non-negotiable."
+      health_certificate: "Official health certificate in AQS-specified format, endorsed by DAH, presented on arrival."
+      inspection: "AQS inspection on arrival. If all documentation is correct, inspection is typically 12 hours. Inadequate documentation can result in a holding period of up to 180 days."
+
   airlines:
     - name: "Vietnam Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (under 5kg with carrier) allowed in cabin on some routes. Cargo: larger pets in hold. Advance booking required. Vietnam import/export documentation must be fully prepared before travel."
+      type: "cargo_only"
+      policy_summary: "Vietnam Airlines operates Ho Chi Minh City (SGN) and Hanoi (HAN) to Tokyo Narita (NRT) with cargo services. Vietnam Airlines Cargo handles live animals on selected routes. Confirm live animal acceptance on your specific flight."
+    - name: "ANA (All Nippon Airways)"
+      type: "cargo_only"
+      policy_summary: "ANA operates SGN and HAN to NRT. ANA Cargo handles live animals. A reliable option for the Vietnam to Japan sector with strong cargo infrastructure at Narita."
     - name: "Japan Airlines (JAL)"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported as checked baggage in temperature-controlled hold. Brachycephalic breeds: French Bulldogs BANNED from cargo (May-October). English Bulldogs banned year-round. Summer restrictions: May-October temperature embargoes on some routes"
-    - name: "Emirates"
-      type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
+      policy_summary: "JAL operates Ho Chi Minh City and Hanoi to Narita with regular cargo services. Japan Airlines Cargo accepts live animals. Confirm availability for your crate size and travel date."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Microchip confirmed (ISO). First rabies vaccination. Dog must be at least 91 days old."
+      timing: "At least 7 months before Japan travel."
+      responsible: "DAH-registered Vietnamese vet"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 30-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Second rabies vaccination. Minimum 30-day gap after first vaccination."
+      timing: "30+ days after first vaccination."
+      responsible: "DAH-registered Vietnamese vet"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 180-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Blood draw for FAVN titre test at MAFF-approved laboratory. At least 30 days after second vaccination. The 180-day AQS wait starts from this date."
+      timing: "30+ days after second vaccination."
+      responsible: "Vietnamese vet and MAFF-approved laboratory"
     - step: 4
-      action: "Apply for import permit from Japan"
-      timing: "Apply early: Apply 2-4 weeks before travel"
-      responsible: "You (or your pet transport agent)"
+      action: "Receive FAVN result (0.5 IU/ml or above). Book cargo: SGN or HAN to NRT. File AQS advance notification at least 40 days before arrival."
+      timing: "After titre result. AQS notification at least 40 days before travel."
+      responsible: "Owner"
     - step: 5
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "DAH-endorsed health certificate in AQS format issued before travel."
+      timing: "Shortly before departure (within AQS-specified window)."
+      responsible: "DAH-endorsed Vietnamese vet"
     - step: 6
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 7
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
-    - step: 8
-      action: "Quarantine on arrival (14 days)"
-      timing: "Immediately on arrival (mandatory)"
-      responsible: "Japan quarantine authority"
+      action: "Travel SGN or HAN to NRT. AQS inspection on arrival (approximately 12 hours if compliant)."
+      timing: "After 180 days from blood draw date."
+      responsible: "Airline and AQS"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (Japan)"
-    - "Quarantine facility fees (owner-paid at destination)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Vietnamese vet fees, DAH endorsement, and health certificate: USD 150-300"
+    - "FAVN titre test at MAFF-approved laboratory: USD 100-200"
+    - "Air cargo SGN or HAN to NRT: USD 800-2,500 depending on crate size"
+    - "AQS inspection fee on arrival: JPY 4,900 per animal (approximately USD 33)"
+    - "Total typical range: USD 1,500-4,000"
+
   key_warnings:
-    - "Mandatory quarantine required on arrival. Plan for separation from your pet."
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "very_high"
-  estimated_timeline_weeks: "33-39"
+    - "The 180-day wait from blood draw is fixed. Plan your Japan arrival date from that point, not from when you start."
+    - "File the AQS 40-day advance notification early. Missing this deadline means your pet cannot be cleared under the compliant pathway."
+    - "Vietnam is a non-designated region. The two-vaccination plus FAVN titre test sequence is required regardless of your pet's previous vaccination history."
+    - "If a vaccination record is missing, improperly dated, or the titre test result is below threshold, AQS will hold your pet on arrival."
+
+  route_complexity: "high"
+  estimated_timeline_weeks: "32-40"
+
 content:
-  h1: "Pet Transport from Vietnam to Japan"
-  overview: |
-    Pet transport from Vietnam to Japan follows a clear process once you know what Japan requires.
-    
-    This route is one of the most demanding international pet transport routes. Start preparations at least 33 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. Japan requires mandatory quarantine (14 days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    We've laid out every step below so you know exactly what to prepare and when.
+  h1: "Pet Transport Vietnam to Japan: 2026 AQS Guide"
+  overview: "Moving a pet from Vietnam to Japan takes 7 to 9 months of careful preparation. Japan's AQS classifies Vietnam as a non-designated region, which means the full compliance sequence applies: two correctly-timed rabies vaccinations, an FAVN titre test at a MAFF-approved laboratory, a 180-day wait from the blood draw date, and a 40-day advance notification to AQS. Vietnam Airlines, ANA, and JAL all operate direct cargo services between Ho Chi Minh City or Hanoi and Tokyo Narita. The arrival inspection is around 12 hours if every document is correct."
+
   sections:
-    - heading: "Key requirements for moving your pet to Japan"
+    - heading: "Non-designated region: what Japan AQS requires from Vietnam"
       body: |
-        This is one of the more demanding international pet transport corridors. Japan runs a strict biosecurity programme and there are no shortcuts through it.
-        
-        All pets must complete quarantine on arrival in Japan (at MAFF quarantine station) for 14 days. This is non-negotiable and is entirely separate from the pre-travel preparation.
-        
-        Japan is rabies-free. MAFF (Ministry of Agriculture, Forestry and Fisheries) is the regulatory authority.
-    - heading: "Step-by-step: what to do first"
+        Japan's Animal Quarantine Service divides origin countries into designated and non-designated regions based on rabies status. Vietnam is non-designated. This means the most rigorous preparation pathway applies, regardless of how well-vaccinated your pet already is.
+
+        For non-designated regions, the sequence is: ISO microchip implanted before the first rabies vaccination, first vaccination when the dog is at least 91 days old, minimum 30-day gap before the second vaccination, then at least 30 more days before the FAVN blood draw. From the blood draw date, the 180-day wait begins. There are no shortcuts and no partial credit for vaccinations completed before this sequence started.
+
+        The DAH (Department of Animal Health), operating under MARD, is the authority for endorsing the health certificate in Vietnam. Your Vietnamese vet handles the clinical work; the DAH endorsement confirms the documents meet Vietnam's export standards. Japan AQS requires this government endorsement on the health certificate.
+
+    - heading: "The FAVN test: labs, couriers, and the timing trap"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        The FAVN (fluorescent antibody virus neutralisation) test is the required method for Japan AQS. Results from ELISA or other titre tests are not accepted. Blood is drawn by your Vietnamese vet and shipped to a MAFF-approved laboratory by international courier. Two commonly used labs are KSVDL (Kansas State Veterinary Diagnostic Laboratory) in the USA and CSIRO AAHL in Australia.
+
+        The blood draw must happen at least 30 days after the second rabies vaccination. Drawing earlier invalidates the result for AQS purposes. Once the sample is at the lab, the result typically comes back within 1 to 2 weeks. A result of 0.5 IU/ml or above is passing; below that threshold requires a booster vaccination and repeat draw, resetting the 180-day clock.
+
+        One timing trap that catches people out: the 180-day wait starts from the blood draw date, not from when the result arrives. So even if you get the result in a week, you still wait the full 180 days from the draw date.
+
+    - heading: "Flights from Vietnam to Japan and the 40-day notification"
+      body: |
+        Vietnam Airlines operates regular services from Ho Chi Minh City (SGN) and Hanoi (HAN) to Tokyo Narita (NRT). ANA and Japan Airlines also run direct routes. All three carriers handle live animal cargo. The SGN or HAN to NRT sector is a well-used route for pet relocations.
+
+        Before booking, file the AQS advance notification. This must be submitted to the receiving AQS office at least 40 days before your pet's arrival. The notification includes your pet's details, documentation history, and the intended flight. AQS uses it to allocate inspection capacity and confirm your paperwork is on track. File it early: if you book a flight and then forget the notification, your pet cannot be admitted.
+
+        On arrival at Narita, the AQS inspection covers the health certificate, microchip reading, vaccination record review, and the FAVN titre test documentation. If all documents are correct and the timing chain can be verified, inspection typically completes within 12 hours.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Vietnam to Japan?"
-    answer: "Allow at least 33 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Japan?"
-    answer: "Yes, quarantine is mandatory in Japan. Your pet will stay for 14 days at MAFF quarantine station on arrival. This is non-negotiable and the cost is paid by the owner."
-  - question: "Is a rabies titre test required for pets entering Japan?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 180-day waiting period after a successful result before your pet can enter Japan. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into Japan?"
-    answer: "Yes, an import permit is required from Japan's authority (MAFF (Animal Quarantine Service)). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Vietnam. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Japan's authority for the exact format required."
+  - question: "How long does the Vietnam to Japan process take?"
+    answer: "Allow 7 to 9 months from the first vet appointment. The mandatory sequence (first vaccination, 30 days, second vaccination, 30 days, blood draw, 180 days) takes just over 7 months at minimum. Add time for titre test processing, AQS advance notification, and flight booking."
+  - question: "What laboratories in Vietnam handle the FAVN test?"
+    answer: "Blood is drawn in Vietnam by your vet and sent to a MAFF-approved laboratory outside Vietnam by international courier. KSVDL in the USA and CSIRO AAHL in Australia are commonly used. The full approved list is on the Japan AQS website (maff.go.jp/aqs). Confirm your chosen lab is current before booking the blood draw."
+  - question: "Does my pet need to quarantine on arrival in Japan?"
+    answer: "If all documentation is correct and the timing of each preparation step can be verified, the arrival inspection at Narita AQS is approximately 12 hours. It is not a traditional multi-day quarantine but rather a document and microchip inspection. If any document is inadequate or any timing is wrong, the holding period can extend to 180 days."
+  - question: "What is the advance notification to AQS?"
+    answer: "AQS requires written advance notice at least 40 days before your pet's flight arrives. The notification is submitted to the AQS office at the designated port of entry (Narita, Haneda, Kansai, etc.). It includes your pet's details, vaccination and titre test history, and flight information. Without it, AQS cannot process the import and the pet cannot be released."
+
 links:
   sideways:
     - url: "/pet-transport/japan-to-vietnam/"
       text: "Pet Transport Japan to Vietnam"
+    - url: "/pet-transport/vietnam-to-australia/"
+      text: "Pet Transport Vietnam to Australia"
+    - url: "/pet-transport/vietnam-to-new-zealand/"
+      text: "Pet Transport Vietnam to New Zealand"
   upward:
-    - url: "/pet-transport/origins/vietnam-pet-export-guide/"
-      text: "Shipping from Vietnam"
+    - url: "/pet-transport/origins/pet-export-guide-shipping-from-vietnam/"
+      text: "Shipping pets from Vietnam"
     - url: "/pet-transport/countries/japan/"
-      text: "Importing to Japan"
-    - url: "/pet-transport/airlines/japan-airlines-jal/"
-      text: "Japan Airlines (JAL) pet policy"
+      text: "Japan pet import rules"
 ---

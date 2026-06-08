@@ -1,155 +1,138 @@
 ---
-template_variant: "C"
-title: "Moving Your Pet from Colombia to Japan | Complete Guide"
-description: "How to ship your dog or cat from Colombia to Japan. Japan import rules, vaccinations, permits, and airline options explained."
+title: "Pet Transport Colombia to Japan: 2026 AQS 180-Day Protocol, ICA Export and FAVN Titre Test Guide"
+description: "Moving a dog or cat from Colombia to Japan in 2026. Japan AQS non-designated country rules: ICA export documentation, two vaccinations, FAVN titre test with 180-day wait, 40-day advance notice."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "B"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "colombia-to-japan"
 origin_name: "Colombia"
 destination_name: "Japan"
+
 route_data:
   origin:
     code: "CO"
     country: "Colombia"
     export_requirements:
-      export_permit: "{'required': False}"
-      health_certificate: "{'required': True, 'issued_by': 'ICA-authorised official vet'}"
+      health_certificate: "Health certificate issued by an ICA (Instituto Colombiano Agropecuario)-registered veterinarian and endorsed by ICA. Must comply with Japan AQS format."
+      export_permit: "ICA export permit required. Apply through ICA. Allow 3-4 weeks."
+
   destination:
     code: "JP"
     country: "Japan"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or on the same day as rabies vaccination."
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 30-day wait after vaccination before travel. Must be vaccinated at least 30 days before import."
-      titre_test: "Required. Minimum: 0.5 IU/ml. 180-day wait from test date before entry"
-      quarantine: "Mandatory quarantine. 14 days. Facility: MAFF quarantine station. 14-day quarantine is mandatory at MAFF-designated facility."
-      import_permit: "Required. Issued by: MAFF (Animal Quarantine Service). Apply: Apply 2-4 weeks before travel. Formal import permit required from MAFF."
-      health_certificate: "Required. Health Certificate. Issued by: Official veterinarian in country of origin. Valid for 10 days from issue. Issued within 10 days of travel. Must list microchip number and vaccination details."
+      country_status: "Colombia is a non-designated region under Japan's AQS rabies import rules. The full 180-day preparation protocol applies. Source: Japan Animal Quarantine Service, maff.go.jp/aqs."
+      microchip: "ISO 11784/11785 microchip required. Must be implanted before the first rabies vaccination."
+      rabies_vaccinations: "Two valid rabies vaccinations required. First vaccination: dog must be at least 91 days old. Minimum 30-day interval between vaccinations. Second vaccination must be within 12 months of Japan arrival."
+      titre_test: "FAVN titre test at a MAFF-approved laboratory. Minimum result 0.5 IU/ml. Blood drawn at least 30 days after second vaccination. The 180-day AQS wait begins from this blood draw date. Source: Japan AQS, maff.go.jp/aqs."
+      advance_notice: "Advance import notification to AQS at least 40 days before arrival."
+      health_certificate: "Official health certificate in AQS format, ICA-endorsed, presented on arrival."
+      inspection: "AQS inspection on arrival. If all documents are correct and timing chain verified: approximately 12 hours. Documentation failures: holding period up to 180 days."
+
   airlines:
-    - name: "American Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: American Airlines Cargo handles pet transport. Seasonal temperature embargoes apply"
-    - name: "Japan Airlines (JAL)"
+    - name: "Avianca (to USA connection)"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported as checked baggage in temperature-controlled hold. Brachycephalic breeds: French Bulldogs BANNED from cargo (May-October). English Bulldogs banned year-round. Summer restrictions: May-October temperature embargoes on some routes"
-    - name: "Emirates"
+      policy_summary: "Avianca operates Bogota (BOG) and Medellin (MDE) to Miami (MIA) and Los Angeles (LAX). Connecting to ANA or JAL from LAX to Narita (NRT) is the standard multi-sector routing from Colombia to Japan."
+    - name: "ANA (via Los Angeles)"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "ANA operates Los Angeles (LAX) to Tokyo Narita (NRT). After reaching the USA, the ANA LAX-NRT service is a reliable cargo option for the Japan leg. ANA Cargo accepts live animals."
+    - name: "Japan Airlines (via Los Angeles)"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Delta Air Lines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Delta Cargo handles larger pets in temperature-controlled hold. Brachycephalic breeds restricted from cargo"
+      policy_summary: "JAL also operates LAX to NRT. An alternative to ANA for the US to Japan sector. Both carriers have strong cargo handling at Narita."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "ICA export permit application. ISO microchip confirmed. First rabies vaccination (dog at least 91 days old)."
+      timing: "At least 7 months before Japan travel. Allow 3-4 weeks for ICA permit."
+      responsible: "Owner and ICA-registered vet"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 30-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Second rabies vaccination. Minimum 30-day gap after first vaccination."
+      timing: "30+ days after first vaccination."
+      responsible: "ICA-registered vet"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 180-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Blood draw for FAVN titre test. At least 30 days after second vaccination. Sample to MAFF-approved laboratory. 180-day AQS wait starts from this date."
+      timing: "30+ days after second vaccination."
+      responsible: "ICA vet and MAFF-approved laboratory"
     - step: 4
-      action: "Apply for import permit from Japan"
-      timing: "Apply early: Apply 2-4 weeks before travel"
-      responsible: "You (or your pet transport agent)"
+      action: "Receive FAVN result (0.5 IU/ml or above). Book cargo: BOG to LAX (Avianca or American), then ANA or JAL LAX to NRT. File AQS advance notification at least 40 days before Japan arrival."
+      timing: "After titre result. Notification 40+ days before travel."
+      responsible: "Owner"
     - step: 5
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "ICA-endorsed health certificate in AQS format issued before travel."
+      timing: "Shortly before departure (within AQS-specified window)."
+      responsible: "ICA-registered vet"
     - step: 6
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 7
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
-    - step: 8
-      action: "Quarantine on arrival (14 days)"
-      timing: "Immediately on arrival (mandatory)"
-      responsible: "Japan quarantine authority"
+      action: "Travel BOG to LAX, then LAX to NRT. AQS inspection on arrival (approximately 12 hours if compliant)."
+      timing: "After 180 days from blood draw date."
+      responsible: "Airline and AQS"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (Japan)"
-    - "Quarantine facility fees (owner-paid at destination)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "ICA export permit and health certificate: COP 200,000-500,000"
+    - "FAVN titre test at MAFF-approved laboratory: USD 100-200"
+    - "Air cargo BOG to LAX then LAX to NRT: USD 2,500-6,000 depending on crate size"
+    - "AQS inspection fee on arrival: JPY 4,900 per animal (approximately USD 33)"
+    - "Total typical range: USD 3,500-8,000"
+
   key_warnings:
-    - "Mandatory quarantine required on arrival. Plan for separation from your pet."
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "very_high"
-  estimated_timeline_weeks: "33-39"
+    - "The 180-day wait from blood draw is fixed. Plan your Japan arrival date from this point."
+    - "Colombia to Japan requires at least two flight sectors and significant travel time. Allow extra days around the journey."
+    - "File the 40-day AQS advance notification before confirming your flights. Missing it means clearance problems on arrival."
+    - "Colombia is non-designated. The full two-vaccination plus FAVN sequence is required from the beginning."
+
+  route_complexity: "very-high"
+  estimated_timeline_weeks: "34-44"
+
 content:
-  h1: "Pet Transport from Colombia to Japan"
-  overview: |
-    Moving a pet from Colombia to Japan involves more paperwork than most owners expect.
-    
-    This route is one of the most demanding international pet transport routes. Start preparations at least 33 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. Japan requires mandatory quarantine (14 days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Start early and follow the steps in sequence. Missing a deadline pushes the whole timeline back.
+  h1: "Pet Transport Colombia to Japan: 2026 AQS Protocol Guide"
+  overview: "Moving a pet from Colombia to Japan is a 7 to 9 month process. Japan's AQS classifies Colombia as a non-designated region, triggering the full compliance protocol: ICA export documentation, two correctly-timed rabies vaccinations, an FAVN titre test at a MAFF-approved laboratory, a 180-day wait from the blood draw date, and a 40-day advance notification to AQS. There are no direct flights from Colombia to Japan, so the routing typically goes via Los Angeles. On arrival at Narita, a correctly-documented pet clears AQS inspection in approximately 12 hours."
+
   sections:
-    - heading: "Why this route needs early planning"
+    - heading: "Why Japan's non-designated classification changes everything"
       body: |
-        This is one of the more demanding international pet transport corridors. Japan runs a strict biosecurity programme and there are no shortcuts through it.
-        
-        All pets must complete quarantine on arrival in Japan (at MAFF quarantine station) for 14 days. This is non-negotiable and is entirely separate from the pre-travel preparation.
-        
-        Japan is rabies-free. MAFF (Ministry of Agriculture, Forestry and Fisheries) is the regulatory authority.
-    - heading: "Step-by-step: what to do first"
+        Japan's AQS classifies each country of origin based on its rabies risk profile. Colombia, like other Latin American countries where rabies has historically been present in animal populations, is classified as non-designated. This means the most thorough preparation protocol applies.
+
+        For a non-designated country, the sequence must be completed in full: ISO microchip implanted before the first vaccination, first vaccination (dog at least 91 days old), minimum 30-day gap, second vaccination (within 12 months of Japan arrival), minimum 30-day wait, then the FAVN blood draw. From that blood draw date: 180 days before your pet can enter Japan.
+
+        There is no shortcut. Even if your Colombian dog has a full vaccination history, AQS requires the specific two-vaccination sequence to restart. The 180-day wait begins from the date of the FAVN blood draw that meets the post-vaccination timing requirements, not from any earlier point in the preparation.
+
+    - heading: "ICA documentation and the FAVN test"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        ICA (Instituto Colombiano Agropecuario) is Colombia's agricultural and animal health authority. All pets leaving Colombia for Japan need an ICA-registered vet, an ICA export permit, and a health certificate endorsed by ICA in the format Japan AQS specifies. Allow 3 to 4 weeks for ICA permit processing. Keep originals of all ICA documents: Japan AQS will not accept copies.
+
+        The FAVN (fluorescent antibody virus neutralisation) test is the specific titre test method required by Japan. Blood is drawn by your Colombian vet and shipped by international courier to a MAFF-approved laboratory. Commonly used options include KSVDL in Kansas, USA. The result must be 0.5 IU/ml or above. Below that, a booster and repeat draw reset the 180-day clock.
+
+        One practical step: find a vet in Bogota or Medellin who has handled AQS preparations before. The paperwork format, courier shipping requirements, and documentation chain are specific to AQS and differ from standard export health certificates.
+
+    - heading: "The Colombia to Japan routing via Los Angeles"
+      body: |
+        There are no direct flights from Colombia to Japan. The standard routing goes via the USA: Avianca or American Airlines connects Bogota (BOG) or Medellin (MDE) to Los Angeles (LAX), and from LAX both ANA and Japan Airlines operate cargo services to Tokyo Narita (NRT). The LAX-NRT sector is well-served for cargo live animals.
+
+        This means your pet makes at least two flights, and the total journey from BOG to NRT including layover time can run 20 to 30 hours. The ICA health certificate and all original AQS documentation must travel with the pet, clearly labelled. Discuss transit handling procedures with both carriers before booking.
+
+        File the 40-day advance notification with the AQS office at Narita separately from your cargo booking. It is an administrative submission that confirms the import details and allows AQS to allocate inspection resources. Submit it early and include the confirmed flight information once you have it.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Colombia to Japan?"
-    answer: "Allow at least 33 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Japan?"
-    answer: "Yes, quarantine is mandatory in Japan. Your pet will stay for 14 days at MAFF quarantine station on arrival. This is non-negotiable and the cost is paid by the owner."
-  - question: "Is a rabies titre test required for pets entering Japan?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 180-day waiting period after a successful result before your pet can enter Japan. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into Japan?"
-    answer: "Yes, an import permit is required from Japan's authority (MAFF (Animal Quarantine Service)). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Colombia. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Japan's authority for the exact format required."
+  - question: "Does Colombia to Japan take longer than Colombia to New Zealand?"
+    answer: "Yes. Japan's non-designated region protocol (two vaccinations plus 180-day FAVN wait) results in a minimum 7-month preparation time. New Zealand's RNATT pathway requires a 3-month wait, making the Colombia to New Zealand preparation significantly shorter at around 4 to 6 months total. The Japan process is one of the longest preparation timelines globally."
+  - question: "Can I start the AQS preparation while still in Colombia?"
+    answer: "Yes. The entire preparation sequence happens in Colombia before travel. The microchip, both vaccinations, and the FAVN blood draw all take place in Colombia at an ICA-registered vet. The blood sample is couriered to a MAFF-approved lab overseas, but your pet stays in Colombia throughout the preparation period."
+  - question: "How long does the Colombia to Japan process take?"
+    answer: "Allow 7 to 9 months from the first vet appointment. The fixed minimum is: first vaccination, 30 days, second vaccination, 30 days, blood draw, 180 days. ICA permit processing (3-4 weeks) and AQS notification add more time on top."
+  - question: "What does the AQS inspection on arrival involve?"
+    answer: "AQS staff at Narita check the microchip number, verify the health certificate, confirm the vaccination dates and batch numbers, and review the FAVN titre test result and blood draw date. They verify that every timing requirement in the sequence was met. If the full chain is correct, inspection takes approximately 12 hours. Your pet is held at the AQS facility during this time."
+
 links:
   sideways:
     - url: "/pet-transport/japan-to-colombia/"
       text: "Pet Transport Japan to Colombia"
+    - url: "/pet-transport/colombia-to-australia/"
+      text: "Pet Transport Colombia to Australia"
+    - url: "/pet-transport/colombia-to-new-zealand/"
+      text: "Pet Transport Colombia to New Zealand"
   upward:
-    - url: "/pet-transport/origins/colombia-pet-export-guide/"
-      text: "Shipping from Colombia"
+    - url: "/pet-transport/origins/pet-export-guide-shipping-from-colombia/"
+      text: "Shipping pets from Colombia"
     - url: "/pet-transport/countries/japan/"
-      text: "Importing to Japan"
-    - url: "/pet-transport/airlines/american-airlines/"
-      text: "American Airlines pet policy"
-    - url: "/pet-transport/airlines/japan-airlines-jal/"
-      text: "Japan Airlines (JAL) pet policy"
+      text: "Japan pet import rules"
 ---

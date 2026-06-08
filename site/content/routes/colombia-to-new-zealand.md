@@ -1,123 +1,139 @@
 ---
-template_variant: "A"
-title: "Pet Transport from Colombia to New Zealand | PetTransportGlobal"
-description: "Pet relocation from Colombia to New Zealand: New Zealand import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport Colombia to New Zealand: 2026 MPI Titre Test, 3-Month Wait and Levin Guide"
+description: "Moving a dog or cat from Colombia to New Zealand in 2026. ICA export documentation, MPI import permit, RNATT titre test with 3-month wait, 10-day Levin quarantine. Via Los Angeles or Miami routing."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "B"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "colombia-to-new-zealand"
 origin_name: "Colombia"
 destination_name: "New Zealand"
+
 route_data:
   origin:
     code: "CO"
     country: "Colombia"
     export_requirements:
-      export_permit: "{'required': False}"
-      health_certificate: "{'required': True, 'issued_by': 'ICA-authorised official vet'}"
+      health_certificate: "Health certificate issued by an ICA (Instituto Colombiano Agropecuario)-registered veterinarian and endorsed by ICA. Must be in MPI-approved format for New Zealand entry."
+      export_permit: "ICA export permit required. Apply through ICA. Allow 3-4 weeks."
+
   destination:
     code: "NZ"
     country: "New Zealand"
     import_requirements:
-      microchip: "Required (ISO 11784/11785)"
-      rabies_vaccination: "Required"
-      quarantine: "Check current requirements with destination authority"
-      import_permit: "Check with destination authority"
-      health_certificate: "Required"
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Current rabies vaccination required. Blood draw for titre test must be at least 28 days after the vaccination."
+      titre_test: "RNATT titre test required. Minimum 0.5 IU/ml. Blood drawn at an MPI-approved laboratory. Pet cannot enter New Zealand until at least 3 months from the blood draw date. Result valid for up to 24 months. Source: MPI, mpi.govt.nz."
+      import_permit: "MPI import permit required. Apply at least 30 working days before travel. Source: MPI, mpi.govt.nz."
+      health_certificate: "MPI-format health certificate issued within 14 days of travel. ICA-endorsed."
+      quarantine: "10-day mandatory quarantine at MPI Levin Quarantine Facility, Levin, Manawatu."
+      entry_airport: "Auckland (AKL) or Christchurch (CHC)."
+
   airlines:
-    - name: "American Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: American Airlines Cargo handles pet transport. Seasonal temperature embargoes apply"
-    - name: "Qantas"
+    - name: "Air New Zealand (via Los Angeles)"
       type: "cargo_only"
-      policy_summary: "Cargo: QantasFreighter network for pet transport. Brachycephalic breeds restricted year-round. Temperature embargoes: seasonal restrictions during Australian summer (Dec-Feb)"
-    - name: "Emirates"
+      policy_summary: "Air New Zealand operates Los Angeles (LAX) to Auckland (AKL) and Christchurch (CHC). Colombian pets fly Bogota (BOG) or Medellin (MDE) to Los Angeles via Avianca or American Airlines, then Air New Zealand LAX-AKL. Air New Zealand Cargo handles live animals on the LAX-AKL sector."
+    - name: "Avianca (Colombia to USA connection)"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "Avianca operates BOG and MDE to Miami (MIA), Los Angeles (LAX), and New York (JFK). Avianca Cargo handles pets on selected Colombia to USA routes. Confirm current live animal policy for your specific routing."
+    - name: "Singapore Airlines (via Singapore)"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Delta Air Lines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Delta Cargo handles larger pets in temperature-controlled hold. Brachycephalic breeds restricted from cargo"
+      policy_summary: "An alternative routing: Colombia to Singapore (via connections through Madrid or other hubs), then Singapore Airlines SIN to AKL. More complex from Colombia but viable for some itineraries."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Apply for MPI import permit at mpi.govt.nz. Allow at least 30 working days for processing."
+      timing: "As early as possible. 5-6 months before intended travel."
+      responsible: "Owner or agent"
     - step: 2
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "ICA export permit application. ISO microchip confirmed. Rabies vaccination from ICA-registered vet."
+      timing: "3-4 months before travel. Allow 3-4 weeks for ICA permit."
+      responsible: "Owner and ICA vet"
     - step: 3
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Blood draw for RNATT titre test at MPI-approved laboratory. At least 28 days after vaccination."
+      timing: "28 days after vaccination. The 3-month NZ entry wait starts from this date."
+      responsible: "ICA vet and approved laboratory"
     - step: 4
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Receive titre result. Confirm MPI permit. Book cargo: BOG to LAX (Avianca or American), then Air New Zealand LAX-AKL."
+      timing: "After blood draw. Book 4-6 weeks before travel."
+      responsible: "Owner"
+    - step: 5
+      action: "ICA-endorsed health certificate in MPI format issued within 14 days of travel."
+      timing: "Within 14 days of departure."
+      responsible: "ICA-registered vet"
+    - step: 6
+      action: "Travel BOG to LAX, then LAX to AKL. MPI inspection on arrival. Transfer to Levin for 10-day quarantine."
+      timing: "After 3 months from blood draw date."
+      responsible: "Airline and MPI"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "ICA export permit and health certificate: COP 200,000-500,000"
+    - "RNATT titre test (lab fee): USD 100-200"
+    - "MPI import permit: NZD 260 (approximately USD 160)"
+    - "Levin quarantine (10 days): NZD 1,500-3,000 (approximately USD 900-1,800)"
+    - "Air cargo BOG to LAX then LAX to AKL: USD 2,500-5,000 depending on crate size"
+    - "Total typical range: NZD 7,000-14,000 (approximately USD 4,300-8,600)"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "low"
-  estimated_timeline_weeks: "4-10"
+    - "The 3-month wait from blood draw is fixed. Work out your New Zealand arrival date first, then count backwards."
+    - "Colombia to New Zealand is a long-haul routing with at least two sectors. Allow extra time for transit arrangements."
+    - "Unlike Australia, New Zealand does not require Colombian pets to stage in a third country. The standard RNATT pathway applies directly."
+    - "Levin quarantine only accepts arrivals on weekdays. Plan your flight to arrive Monday to Thursday."
+
+  route_complexity: "high"
+  estimated_timeline_weeks: "18-26"
+
 content:
-  h1: "Pet Transport from Colombia to New Zealand"
-  overview: |
-    International pet transport from Colombia to New Zealand comes down to documentation timing more than anything else.
-    
-    This route is relatively straightforward compared to some international routes. Start preparations at least 4 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened.
-    
-    Getting the timing right is critical. Work backwards from your travel date and add a buffer.
+  h1: "Pet Transport Colombia to New Zealand: 2026 MPI Guide"
+  overview: "Moving a pet from Colombia to New Zealand takes 4 to 6 months. New Zealand's MPI requires a rabies antibody titre test with a 3-month wait, an import permit, and 10 days at the Levin quarantine facility. Unlike the Australia route (where Colombia's non-approved status requires a 180-day staging stop), New Zealand applies its standard RNATT pathway directly to Colombian pets. The flight routing goes via Los Angeles, with Air New Zealand operating the LAX to Auckland leg."
+
   sections:
-    - heading: "Understanding New Zealand's pet import rules"
+    - heading: "New Zealand versus Australia: why this route is simpler"
       body: |
-        Compared to some international pet transport routes, Colombia to New Zealand is manageable. That said, every country's rules are different and the timing requirements are strict.
-    - heading: "Step-by-step: what to do first"
+        Colombia is a non-approved country under Australia's DAFF biosecurity system, which means pets moving from Colombia to Australia need 180 days of continuous residency in a DAFF-approved country first. That pathway adds a significant staging step and typically extends the total process to 12 to 18 months.
+
+        New Zealand does not use the same non-approved classification. MPI applies its standard RNATT pathway to Colombia, which means your pet can travel directly from Colombia to New Zealand (via a connection hub) without any intermediate country staging requirement. The 3-month wait is still there, but there is no additional 180-day staging period on top.
+
+        This distinction matters if you are weighing a move to Australia versus New Zealand. Colombia to New Zealand is meaningfully shorter in total process time: 4 to 6 months versus 12 to 18 months for Australia.
+
+    - heading: "The titre test and ICA documentation"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        The RNATT process starts with your ICA-registered vet in Colombia. Your pet needs a confirmed ISO microchip, then a valid rabies vaccination, then a blood draw at least 28 days after the vaccination. The blood sample goes to an MPI-approved laboratory (KSVDL in the USA or APHA in the UK are the most commonly used) by international courier. The result must show 0.5 IU/ml or above.
+
+        From the day the blood is drawn, you must wait at least 3 months before your pet can enter New Zealand. That 3-month date is the fixed point around which everything else is scheduled.
+
+        On the Colombian side, ICA (Instituto Colombiano Agropecuario) is the authority for certifying pets for export. You need an ICA export permit and a health certificate endorsed by ICA, in MPI's specified format. Allow 3 to 4 weeks for ICA processing. Keep all original ICA documents: New Zealand MPI does not accept copies.
+
+    - heading: "Flying from Colombia to Auckland"
+      body: |
+        There are no direct flights from Colombia to New Zealand. The standard routing goes via Los Angeles: Avianca or American Airlines connects Bogota (BOG) or Medellin (MDE) to Los Angeles (LAX), and Air New Zealand operates cargo services from LAX to Auckland (AKL) and Christchurch (CHC). Air New Zealand Cargo handles live animals on this sector, and the LAX-AKL route has well-established cargo procedures.
+
+        Confirm live animal acceptance on your specific Avianca or American Airlines Colombia to LAX sector before booking. Some routes and aircraft types have restrictions on live animal cargo. Get written confirmation from both airlines.
+
+        An alternative is routing via Miami to connect with other carriers, though this adds complexity. A small number of itineraries go via Singapore, using connections through Madrid or other European hubs, but for most Colombian families the LAX-based routing is the most practical.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Colombia to New Zealand?"
-    answer: "Allow at least 4 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering New Zealand?"
-    answer: "No routine quarantine is required in New Zealand for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Can I take my cat to New Zealand from Colombia?"
-    answer: "Yes, cats can be transported from Colombia to New Zealand. The same microchip, vaccination, and health certificate requirements apply as for dogs, though some rules (such as tapeworm treatment) apply to dogs only. Check the full requirements for cats with the destination authority."
+  - question: "Does my Colombian pet need to spend time in a third country before going to New Zealand?"
+    answer: "No. New Zealand's MPI applies the standard RNATT pathway to Colombian pets. There is no staging country requirement. Pets travel directly from Colombia to New Zealand (via a connection hub such as Los Angeles) after completing the titre test, permit, and quarantine requirements. This is different from Australia's pathway."
+  - question: "How long does the Colombia to New Zealand process take?"
+    answer: "Allow 5 to 6 months from your first ICA vet visit to your pet clearing Levin quarantine. The fixed minimum is the 28-day post-vaccination wait plus 3 months from the blood draw date. ICA processing (3-4 weeks), MPI permit processing (30 working days), and Levin quarantine (10 days) add additional weeks."
+  - question: "Which laboratory handles the titre test from Colombia?"
+    answer: "Blood is drawn by your Colombian vet and sent to an MPI-approved laboratory by international courier. Commonly used labs include KSVDL (Kansas State Veterinary Diagnostic Laboratory) in the USA and APHA in the UK. MPI's full approved lab list is at mpi.govt.nz. The couriering process is standard; your vet or a pet agent can handle logistics."
+  - question: "Can I bring two pets on the same routing?"
+    answer: "Yes. Two pets can travel on the same routing, and cargo bookings are made per pet (each needs its own crate, its own documentation set, and its own Levin quarantine booking). Both the ICA documentation and the MPI import permits are issued per animal."
+
 links:
   sideways:
     - url: "/pet-transport/new-zealand-to-colombia/"
       text: "Pet Transport New Zealand to Colombia"
+    - url: "/pet-transport/colombia-to-australia/"
+      text: "Pet Transport Colombia to Australia"
+    - url: "/pet-transport/colombia-to-united-states/"
+      text: "Pet Transport Colombia to USA"
   upward:
-    - url: "/pet-transport/origins/colombia-pet-export-guide/"
-      text: "Shipping from Colombia"
+    - url: "/pet-transport/origins/pet-export-guide-shipping-from-colombia/"
+      text: "Shipping pets from Colombia"
     - url: "/pet-transport/countries/new-zealand/"
-      text: "Importing to New Zealand"
-    - url: "/pet-transport/airlines/american-airlines/"
-      text: "American Airlines pet policy"
-    - url: "/pet-transport/airlines/qantas/"
-      text: "Qantas pet policy"
+      text: "New Zealand pet import rules"
 ---

@@ -1,155 +1,138 @@
 ---
-template_variant: "B"
-title: "Pet Transport from Canada to Japan | PetTransportGlobal"
-description: "Pet relocation from Canada to Japan: Japan import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport Canada to Japan: 2026 AQS 180-Day Protocol, FAVN Titre Test and Airline Guide"
+description: "Moving a dog or cat from Canada to Japan in 2026. Japan AQS non-designated country rules: two vaccinations, FAVN titre test, 180-day wait, 40-day advance notice. Air Canada and ANA cargo options."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "B"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "canada-to-japan"
 origin_name: "Canada"
 destination_name: "Japan"
+
 route_data:
   origin:
     code: "CA"
     country: "Canada"
     export_requirements:
-      export_permit: "No CFIA export permit required for personal pet exports. Some destination countries may require CFIA endorsement of health certificate."
-      health_certificate: "{'required': 'If required by destination country', 'issued_by': 'CFIA District Veterinarian or accredited veterinarian (endorsed by CFIA if needed)', 'process': 'Visit accredited vet for examination, vet prepares health certificate, submit to CFIA for endorsement if destination requires government endorsement', 'timing': 'Typically within 10 days of travel (or as specified by destination country)'}"
+      health_certificate: "Official veterinary health certificate issued by a CFIA-accredited veterinarian in the format required by Japan's Animal Quarantine Service (AQS)."
+      export_permit: "No formal export permit for personal pets leaving Canada. CFIA-accredited vet issues the health certificate."
+
   destination:
     code: "JP"
     country: "Japan"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or on the same day as rabies vaccination."
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 30-day wait after vaccination before travel. Must be vaccinated at least 30 days before import."
-      titre_test: "Required. Minimum: 0.5 IU/ml. 180-day wait from test date before entry"
-      quarantine: "Mandatory quarantine. 14 days. Facility: MAFF quarantine station. 14-day quarantine is mandatory at MAFF-designated facility."
-      import_permit: "Required. Issued by: MAFF (Animal Quarantine Service). Apply: Apply 2-4 weeks before travel. Formal import permit required from MAFF."
-      health_certificate: "Required. Health Certificate. Issued by: Official veterinarian in country of origin. Valid for 10 days from issue. Issued within 10 days of travel. Must list microchip number and vaccination details."
+      country_status: "Canada is a non-designated region under Japan's AQS rabies import rules. The full 180-day preparation protocol applies. Source: Japan Animal Quarantine Service, maff.go.jp/aqs."
+      microchip: "ISO 11784/11785 microchip required. Must be implanted before the first rabies vaccination."
+      rabies_vaccinations: "Two valid rabies vaccinations required. First vaccination: dog must be at least 91 days old. Minimum 30-day interval between first and second vaccination. Second vaccination must be within 12 months of Japan arrival."
+      titre_test: "FAVN (fluorescent antibody virus neutralisation) titre test at a MAFF-approved laboratory. Minimum result 0.5 IU/ml. Blood drawn at least 30 days after the second vaccination. The 180-day wait before Japan entry begins from the blood draw date. Source: Japan AQS, maff.go.jp/aqs."
+      advance_notice: "Advance import notification to AQS at least 40 days before the flight. Required without exception."
+      health_certificate: "Official health certificate in AQS format, signed by a CFIA-accredited veterinarian, presented on arrival."
+      inspection: "AQS inspection on arrival at the designated port (Narita, Haneda, Kansai, etc.). If all documents are in order, inspection is typically 12 hours. Non-compliant pets may be held for up to 180 days at the owner's expense."
+
   airlines:
     - name: "Air Canada"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Air Canada Cargo handles pet transport in heated/pressurised hold. Brachycephalic breeds restricted from cargo year-round"
+      type: "cargo_only"
+      policy_summary: "Air Canada operates Toronto (YYZ) and Vancouver (YVR) to Tokyo Narita (NRT). Air Canada Cargo handles pets in the hold. The Vancouver-Narita and Toronto-Narita routes are the standard Canada to Japan cargo connections for live animals."
+    - name: "ANA (All Nippon Airways)"
+      type: "cargo_only"
+      policy_summary: "ANA operates YVR and YYZ to NRT with cargo services. ANA Cargo accepts live animals. A reliable option for the Canada to Japan sector, with strong cargo handling at Narita."
     - name: "Japan Airlines (JAL)"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported as checked baggage in temperature-controlled hold. Brachycephalic breeds: French Bulldogs BANNED from cargo (May-October). English Bulldogs banned year-round. Summer restrictions: May-October temperature embargoes on some routes"
-    - name: "Emirates"
-      type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Delta Air Lines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Delta Cargo handles larger pets in temperature-controlled hold. Brachycephalic breeds restricted from cargo"
+      policy_summary: "JAL operates Vancouver and Toronto to Narita. Japan Airlines Cargo handles live animals. Another solid direct option for the Canada to Japan routing."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step: must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Microchip confirmed (ISO). First rabies vaccination. Dog must be at least 91 days old."
+      timing: "At least 7 months before Japan travel."
+      responsible: "CFIA-accredited vet"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 30-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Second rabies vaccination. Must be at least 30 days after the first."
+      timing: "30+ days after first vaccination."
+      responsible: "CFIA-accredited vet"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 180-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Blood draw for FAVN titre test at MAFF-approved laboratory. At least 30 days after second vaccination. The 180-day AQS wait begins from this date."
+      timing: "30+ days after second vaccination."
+      responsible: "CFIA vet and MAFF-approved laboratory"
     - step: 4
-      action: "Apply for import permit from Japan"
-      timing: "Apply early: Apply 2-4 weeks before travel"
-      responsible: "You (or your pet transport agent)"
+      action: "Receive titre test result (0.5 IU/ml or above). Book cargo flight to Japan. File AQS advance notification at least 40 days before arrival."
+      timing: "After titre result. AQS notification at least 40 days before travel."
+      responsible: "Owner"
     - step: 5
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "CFIA vet issues AQS-format health certificate before travel."
+      timing: "Shortly before departure (within AQS-specified window)."
+      responsible: "CFIA-accredited vet"
     - step: 6
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 7
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
-    - step: 8
-      action: "Quarantine on arrival (14 days)"
-      timing: "Immediately on arrival: mandatory"
-      responsible: "Japan quarantine authority"
+      action: "Travel Canada to NRT. AQS inspection on arrival (12 hours if compliant)."
+      timing: "After 180 days from blood draw date."
+      responsible: "Airline and AQS"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (Japan)"
-    - "Quarantine facility fees (owner-paid at destination)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Two rabies vaccinations and CFIA veterinary health certificate: CAD 300-600"
+    - "FAVN titre test at MAFF-approved laboratory: CAD 150-250"
+    - "Air cargo YVR or YYZ to NRT: CAD 1,500-4,000 depending on crate size"
+    - "AQS inspection fee on arrival: JPY 4,900 per animal (approximately CAD 50)"
+    - "Total typical range: CAD 2,500-6,000"
+
   key_warnings:
-    - "Mandatory quarantine required on arrival. Plan for separation from your pet."
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "very_high"
-  estimated_timeline_weeks: "33-39"
+    - "The 180-day wait from the blood draw date is non-negotiable. AQS does not grant exceptions."
+    - "The 40-day advance notification to AQS must be filed before the flight or the pet will not be cleared."
+    - "If either vaccination is missing or improperly timed, the pet will be held on arrival for up to 180 days at the owner's expense."
+    - "Canada is a non-designated region for AQS. The full two-vaccination plus titre test protocol applies even for well-vaccinated pets."
+
+  route_complexity: "high"
+  estimated_timeline_weeks: "32-40"
+
 content:
-  h1: "Pet Transport from Canada to Japan"
-  overview: |
-    Pet transport from Canada to Japan follows a clear process once you know what Japan requires.
-    
-    This route is one of the most demanding international pet transport routes. Start preparations at least 33 weeks before your travel date: some steps have fixed waiting periods that cannot be shortened. Japan requires mandatory quarantine (14 days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Getting the timing right is critical. Work backwards from your travel date and add a buffer.
+  h1: "Pet Transport Canada to Japan: 2026 AQS Preparation Guide"
+  overview: "Moving a pet from Canada to Japan requires 7 to 9 months of preparation. Japan's Animal Quarantine Service (AQS) classifies Canada as a non-designated region, meaning the full compliance protocol applies: two rabies vaccinations with correct timing, an FAVN titre test at a MAFF-approved laboratory, a 180-day wait from the blood draw date, and advance notification to AQS at least 40 days before arrival. Get each step in the right sequence and your pet clears the arrival inspection in approximately 12 hours. Get any step wrong and the holding period can extend to 180 days."
+
   sections:
-    - heading: "Why this route needs early planning"
+    - heading: "The AQS sequence: why the order matters as much as the steps"
       body: |
-        This is one of the more demanding international pet transport corridors. Japan runs a strict biosecurity programme and there are no shortcuts through it.
-        
-        All pets must complete quarantine on arrival in Japan (at MAFF quarantine station) for 14 days. This is non-negotiable and is entirely separate from the pre-travel preparation.
-        
-        Japan is rabies-free. MAFF (Ministry of Agriculture, Forestry and Fisheries) is the regulatory authority.
-    - heading: "Step-by-step: what to do first"
+        Japan's AQS preparation is unforgiving about sequence. Each step has a dependency on the previous one, and any timing error can extend the process significantly. The 180-day wait begins from the date the blood is drawn for the FAVN titre test, not from the date you start preparing.
+
+        The correct order: microchip (before first vaccination), first rabies vaccination (dog at least 91 days old), wait a minimum of 30 days, second rabies vaccination (within 12 months of Japan arrival), wait a minimum of 30 days, blood draw for FAVN titre test. From that blood draw date: 180 days before your pet can enter Japan.
+
+        Working backwards from a Japan arrival date, the absolute minimum preparation time is just over 7 months: 30 days between vaccinations, 30 days before titre test, 180 days from blood draw. Most people allow 8 to 9 months to build in buffer for titre test turnaround time, AQS administrative steps, and flight booking.
+
+    - heading: "FAVN titre test: the 180-day clock starter"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        The FAVN (fluorescent antibody virus neutralisation) test is required by Japan AQS for pets from non-designated regions. It measures the level of rabies-neutralising antibodies in your pet's blood. The minimum required result is 0.5 IU/ml. Blood is drawn by your CFIA-accredited vet in Canada and sent to a MAFF-approved laboratory.
+
+        Approved laboratories for the FAVN test include the Kansas State Veterinary Diagnostic Laboratory (KSVDL) in the USA and CSIRO AAHL in Australia. Japan AQS publishes the full approved laboratory list; confirm your chosen lab is on the current list before booking the blood draw. The sample must arrive at the lab in good condition, so use the lab's recommended courier and packaging.
+
+        From the day the blood is drawn, the 180-day wait starts. You cannot reduce this by getting the result back sooner or re-testing. The date of the blood draw is what AQS uses.
+
+    - heading: "Flying from Canada to Japan and the 40-day notice rule"
+      body: |
+        Air Canada, ANA, and Japan Airlines all operate direct cargo services from Vancouver (YVR) and Toronto (YYZ) to Tokyo Narita (NRT). All three handle live animals in the hold. The Canada to Japan direct sector is straightforward from a routing perspective: no transit hub changes are needed.
+
+        The critical administrative step before booking is the AQS advance notification. You must notify the relevant AQS office at least 40 days before your pet's arrival in Japan. This notification allows AQS to allocate inspection resources and verify that your documentation is on track. Filing late or forgetting to file means your pet cannot be admitted under the compliant pathway.
+
+        On arrival at Narita, AQS inspects the health certificate, microchip, vaccination records, and titre test documentation. If everything is in order, the inspection takes approximately 12 hours. If any document is missing, incorrectly formatted, or if the timing of any step cannot be verified, the holding period extends.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Canada to Japan?"
-    answer: "Allow at least 33 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Japan?"
-    answer: "Yes, quarantine is mandatory in Japan. Your pet will stay for 14 days at MAFF quarantine station on arrival. This is non-negotiable and the cost is paid by the owner."
-  - question: "Is a rabies titre test required for pets entering Japan?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 180-day waiting period after a successful result before your pet can enter Japan. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into Japan?"
-    answer: "Yes, an import permit is required from Japan's authority (MAFF (Animal Quarantine Service)). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Canada. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Japan's authority for the exact format required."
+  - question: "How long does the Canada to Japan preparation process take?"
+    answer: "Allow 7 to 9 months from the first vet appointment. The fixed minimum is: first vaccination, 30 days, second vaccination, 30 days, blood draw, 180 days. That is just over 7 months from the start of the vaccination series to the earliest Japan entry date. Add time for titre test processing, AQS notification, and flight booking."
+  - question: "What happens if my pet's titre test result is below 0.5 IU/ml?"
+    answer: "A below-threshold result means the vaccinations did not produce sufficient antibody levels. Your vet administers a booster vaccination, waits an appropriate period, does a new blood draw, and the 180-day wait restarts from the new blood draw date. This adds approximately 6 to 7 months to the timeline."
+  - question: "Can I use any Canadian laboratory for the FAVN test?"
+    answer: "No. The laboratory must be on Japan AQS's MAFF-approved list. The test must be the FAVN method specifically (not ELISA or other formats). KSVDL in Kansas is widely used by Canadian vets. Japan AQS publishes the current approved list at maff.go.jp/aqs."
+  - question: "What is the AQS inspection like on arrival?"
+    answer: "If all documentation is correct and all timing requirements are met, AQS inspects the health certificate, microchip, vaccination records, and titre test at the designated port of entry (Narita, Haneda, Kansai, or Chubu). The inspection typically takes about 12 hours. Your pet is held in the AQS facility during this time. If any document is inadequate, the holding period can extend to a maximum of 180 days."
+
 links:
   sideways:
     - url: "/pet-transport/japan-to-canada/"
       text: "Pet Transport Japan to Canada"
+    - url: "/pet-transport/canada-to-australia/"
+      text: "Pet Transport Canada to Australia"
+    - url: "/pet-transport/canada-to-new-zealand/"
+      text: "Pet Transport Canada to New Zealand"
   upward:
     - url: "/pet-transport/origins/pet-export-guide-shipping-from-canada/"
-      text: "Shipping from Canada"
+      text: "Shipping pets from Canada"
     - url: "/pet-transport/countries/japan/"
-      text: "Importing to Japan"
-    - url: "/pet-transport/airlines/air-canada/"
-      text: "Air Canada pet policy"
-    - url: "/pet-transport/airlines/japan-airlines-jal/"
-      text: "Japan Airlines (JAL) pet policy"
+      text: "Japan pet import rules"
 ---

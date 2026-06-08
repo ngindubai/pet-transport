@@ -17,7 +17,7 @@
 - **Bulk-generation scripts are banned.** A batch is still N individually quality-gated blocks, never a mass-generation script.
 - **Skip rule:** skip only if the build pointer shows nothing left to build (no chunks remaining and no blog day due). Do NOT skip just because a build already happened earlier today; each site now runs twice a day on purpose.
 
-**Where we are (reconciled from disk 2026-06-08):** 5,506 quality routes complete. ~32,324 routes remaining. Blog: 418 articles. Total .md source files: 6,297. Content plan: Day 12 is next. Chunks 37+38 complete. Chunk 39 (Template D, Conversational Q&A, Tier B) is next. Counts come from `python verify_build_state.py`, never hand-edited.
+**Where we are (reconciled from disk 2026-06-08):** 5,506 quality routes complete. ~32,324 routes remaining. Blog: 419 articles. Total .md source files: 6,298. Content plan: Day 13 is next. Chunks 39-42 complete. Chunk 43 (Template C, Tier B) is next. Counts come from `python verify_build_state.py`, never hand-edited.
 
 ---
 
@@ -45,12 +45,14 @@
 - Chunk 39 template: D (Conversational Q&A) - DONE 2026-06-08 (completed remaining 11 Tier B routes; mixed non-listed/EU-listed batch)
 - Chunk 40 template: E (Data-Forward) - DONE 2026-06-08 (25 Template E Tier B routes: NZ/AU/Colombia to EU5, overwrote thin pages with correct regulatory data)
 - Chunk 41 template: A (Field Manual) - DONE 2026-06-08 (25 Template A Tier B routes: Peru/Chile/Japan/Singapore/Argentina/S.Korea/HK/Taiwan to EU5)
-- Chunk 42 template: B (Visual Journey) - NEXT
+- Chunk 42 template: B (Visual Journey) - DONE 2026-06-08 (25 Tier B routes: NZ destinations SA/CO; Japan routes CA/VN/TH/IN/ZA/CO; South Korea routes CA/VN/CO; Singapore Schedule III routes VN/TH/ID/PH)
+- Chunk 43 template: C - NEXT
 - Blog Day 10: pet-transport-uae-to-pakistan - DONE 2026-06-07 (Marcus Webb, AQD NOC, AED 3,000-6,000)
 - Blog Day 11: exporting-pets-from-singapore - DONE 2026-06-08 (Marcus Webb, AVS export licence, FAVN/RNATT for Australia, Changi cargo, UK/EU/US/AU destination matrix, cost table)
-- Blog Day 12: NEXT (check plan-rows-q1.js)
+- Blog Day 12: importing-pets-to-australia-2026 - DONE 2026-06-08 (Dr. Sarah Okafor, ~3000 words, Group 1/2/3 system, RNATT, Mickleham day-by-day, cost table by region, rejection reasons, FAQs)
+- Blog Day 13: NEXT (check plan-rows-q1.js)
 - Tier: B (1,094 pairs; Tier A now complete)
-- Template rotation: ...D(21), E(22), A(23), B(24), C(25-27), D(28), E(29), A(30), D(31a), B(31b), B(32), C(33), D(34), E(35), A(36), B(37), C(38), D(39), E(40), A(41), B(42)...
+- Template rotation: ...D(21), E(22), A(23), B(24), C(25-27), D(28), E(29), A(30), D(31a), B(31b), B(32), C(33), D(34), E(35), A(36), B(37), C(38), D(39), E(40), A(41), B(42), C(43)...
 
 **DEPLOY INCIDENT 2026-06-05 (fixed):** Three routine runs each committed a "chunk 25" to its own `claude/*` feature branch. `build-to-live.yml` only fires on push to `main`, so none deployed and Hostinger never updated. main never advanced, so each run rebuilt chunk 25 with overlapping routes. All three combined into main here. DURABLE FIX: the routine must push to `main` (STEP 3 already says `git push origin HEAD:main`; a conflicting feature-branch instruction was overriding it). See MEMORY.md.
 

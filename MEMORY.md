@@ -10,10 +10,10 @@
 ## Current State (2026-06-08, reconciled from disk by verify_build_state.py)
 
 - **Routes built:** 5,506 of ~37,830 country pairs (~14.5%). True on-disk count (5,496 in `routes/` + 10 in `pet-transport/`).
-- **Blog articles:** 418
-- **Total .md source files:** 6,297 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-38 complete. **Chunk 39 is next** (Template D, Conversational Q&A, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 37 = 25 Tier B routes Template B: South America/Africa/South Asia x UK+US, UK outbound Cyprus/Malta/Mexico/Bulgaria/Croatia. Chunk 38 = 25 Tier B routes Template C: UK/US outbound to Slovakia/Luxembourg/Ecuador/Costa Rica/Tanzania/Zimbabwe/Cambodia/Myanmar/Mauritius; Mauritius/Zimbabwe/Cambodia to UK.
-- **Content plan:** Days 1-6 + Days 8-11 complete (10 articles written). Day 7 skipped (pre-existing). **Day 12 is next:** check content-plan/plan-rows-q1.js for slug. Day 11 = exporting-pets-from-singapore (Marcus Webb, AVS export licence, FAVN titre, Changi cargo, UK/EU/US/AU destination matrix).
+- **Blog articles:** 419
+- **Total .md source files:** 6,298 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Phase 7 progress:** Chunks 1-42 complete. **Chunk 43 is next** (Template C, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 42 = 25 Tier B routes Template B: NZ destinations (south-africa, colombia), Japan routes (canada, vietnam, thailand, india, south-africa, colombia), South Korea routes (canada, vietnam, colombia), Singapore Schedule III routes (vietnam, thailand, indonesia, philippines).
+- **Content plan:** Days 1-6 + Days 8-12 complete (12 articles written). Day 7 skipped (pre-existing). **Day 13 is next:** check content-plan/plan-rows-q1.js for slug. Day 12 = importing-pets-to-australia-2026 (Dr. Sarah Okafor, ~3000 words, Group 1/2/3 system, RNATT timing, Mickleham day-by-day, cost table, rejection reasons).
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
 

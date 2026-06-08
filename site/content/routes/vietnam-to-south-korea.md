@@ -1,150 +1,134 @@
 ---
-template_variant: "E"
-title: "Moving Your Pet from Vietnam to South Korea | Complete Guide"
-description: "Complete guide to pet transport from Vietnam to South Korea. Import requirements, quarantine rules, airline options, and step-by-step timeline."
+title: "Pet Transport Vietnam to South Korea: 2026 APQA Health Certificate, Vaccination and Incheon Arrival"
+description: "Moving a dog or cat from Vietnam to South Korea in 2026. APQA import rules: DAH health certificate, rabies vaccination, titre test, Vietnam Airlines and Korean Air cargo options."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "B"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "vietnam-to-south-korea"
 origin_name: "Vietnam"
 destination_name: "South Korea"
+
 route_data:
   origin:
     code: "VN"
     country: "Vietnam"
     export_requirements:
-      export_permit: "No export permit for pet dogs and cats."
-      health_certificate: "{'required': True, 'issued_by': 'MARD-authorised official vet'}"
+      health_certificate: "Health certificate issued by a Vietnamese veterinarian and endorsed by the Department of Animal Health (DAH, under MARD). Must be in the format required by South Korea's APQA."
+      export_permit: "No formal export permit for personal pets. DAH-endorsed health certificate covers the export documentation."
+
   destination:
     code: "KR"
     country: "South Korea"
     import_requirements:
-      microchip: "Required (ISO 11784/11785)"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 30-day wait after vaccination before travel"
-      titre_test: "Required. Minimum: 0.5 IU/ml. 180-day wait from test date before entry"
-      quarantine: "Mandatory quarantine. 10 days. Facility: APQA facility"
-      import_permit: "Required. Issued by: Animal and Plant Quarantine Agency"
-      health_certificate: "Required. Issued by: Official veterinarian. Valid for 14 days from issue"
+      country_status: "Vietnam is classified as a non-rabies-free country under APQA rules. Health certificate, rabies vaccination, and titre test requirements apply. Source: APQA (Animal and Plant Quarantine Agency), qia.go.kr."
+      microchip: "ISO 11784/11785 microchip strongly recommended. Required for positive identification at APQA inspection."
+      rabies_vaccination: "Current rabies vaccination required. Confirm timing requirements with APQA for the specific year of travel."
+      titre_test: "Rabies antibody titre test required for pets from Vietnam. No post-titre waiting period under South Korea APQA rules. Travel can proceed once a passing result is confirmed. Source: APQA, qia.go.kr."
+      health_certificate: "DAH-endorsed health certificate in APQA format. Issued within 10 days of travel."
+      inspection: "APQA clinical inspection on arrival at Incheon International Airport (ICN). For pets from non-rabies-free countries, an inspection is conducted on arrival. Same-day release if documentation is complete and correct."
+      entry_airport: "Incheon International Airport (ICN) is the designated entry point for all cargo pet arrivals in South Korea."
+
   airlines:
     - name: "Vietnam Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (under 5kg with carrier) allowed in cabin on some routes. Cargo: larger pets in hold. Advance booking required. Vietnam import/export documentation must be fully prepared before travel."
+      type: "cargo_only"
+      policy_summary: "Vietnam Airlines operates Ho Chi Minh City (SGN) and Hanoi (HAN) to Seoul Incheon (ICN). Vietnam Airlines Cargo handles live animals on selected routes. Confirm live animal acceptance for your specific flight."
     - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
-    - name: "Emirates"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "Korean Air operates SGN and HAN to ICN with cargo services. Korean Air Cargo handles live animals. A reliable carrier for Vietnam to South Korea with strong infrastructure at both ends."
+    - name: "Asiana Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Asiana Airlines operates Ho Chi Minh City and Hanoi to Incheon. Asiana Cargo accepts live animals on this route. Confirm availability for your crate size and travel date."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "ISO microchip confirmed. Current rabies vaccination. Confirm APQA titre test requirements for Vietnam."
+      timing: "2-3 months before travel."
+      responsible: "DAH-registered Vietnamese vet"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 30-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Titre test at approved laboratory. Await passing result. No post-titre waiting period under APQA rules."
+      timing: "After vaccination. Allow 2-3 weeks for titre result."
+      responsible: "Vietnamese vet and approved laboratory"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 180-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Book cargo: SGN or HAN to ICN (Vietnam Airlines or Korean Air)."
+      timing: "After titre result confirmed. Book 4-6 weeks before travel."
+      responsible: "Owner or agent"
     - step: 4
-      action: "Apply for import permit from South Korea"
-      timing: "Apply early: allow 4-6 weeks"
-      responsible: "You (or your pet transport agent)"
+      action: "DAH-endorsed health certificate in APQA format issued within 10 days of travel."
+      timing: "Within 10 days of departure."
+      responsible: "DAH-endorsed Vietnamese vet"
     - step: 5
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
-    - step: 6
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 7
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
-    - step: 8
-      action: "Quarantine on arrival (10 days)"
-      timing: "Immediately on arrival (mandatory)"
-      responsible: "South Korea quarantine authority"
+      action: "Travel SGN or HAN to ICN. APQA inspection on arrival at Incheon. Same-day release if documents are correct."
+      timing: "Travel day."
+      responsible: "Airline and APQA"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (South Korea)"
-    - "Quarantine facility fees (owner-paid at destination)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Vietnamese vet fees and DAH health certificate endorsement: USD 100-250"
+    - "Titre test at approved laboratory: USD 100-200"
+    - "Air cargo SGN or HAN to ICN: USD 600-2,000 depending on crate size"
+    - "APQA inspection fee on arrival: approximately KRW 18,000-30,000 (approximately USD 14-23)"
+    - "Total typical range: USD 1,000-3,000"
+
   key_warnings:
-    - "Mandatory quarantine required on arrival. Plan for separation from your pet."
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "very_high"
-  estimated_timeline_weeks: "33-39"
+    - "Confirm current APQA requirements at qia.go.kr before preparing. Requirements can change and Vietnam-specific conditions apply."
+    - "Unlike Japan, South Korea does not impose a post-titre waiting period. A passing titre result means you can book travel immediately."
+    - "All original documents must travel with the pet. Copies are not accepted by APQA at Incheon."
+    - "Health certificate must be issued within 10 days of travel. Do not issue it earlier."
+
+  route_complexity: "moderate"
+  estimated_timeline_weeks: "8-14"
+
 content:
-  h1: "Pet Transport from Vietnam to South Korea"
-  overview: |
-    Pet transport from Vietnam to South Korea follows a clear process once you know what South Korea requires.
-    
-    This route is one of the most demanding international pet transport routes. Start preparations at least 33 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. South Korea requires mandatory quarantine (10 days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    The paperwork is the hard part. Once everything is in order, the journey itself is well-managed.
+  h1: "Pet Transport Vietnam to South Korea: 2026 APQA Guide"
+  overview: "Moving a pet from Vietnam to South Korea is a shorter process than the Japan pathway. South Korea's APQA requires a current rabies vaccination, a titre test, and a DAH-endorsed health certificate, but unlike Japan there is no post-titre waiting period. Once a passing titre result is confirmed, you can book travel. Vietnam Airlines, Korean Air, and Asiana all operate cargo services from Ho Chi Minh City and Hanoi to Incheon. Preparation typically takes 2 to 3 months."
+
   sections:
-    - heading: "Understanding South Korea's pet import rules"
+    - heading: "The APQA pathway from Vietnam: no post-titre wait"
       body: |
-        This is one of the more demanding international pet transport corridors. South Korea runs a strict biosecurity programme and there are no shortcuts through it.
-        
-        All pets must complete quarantine on arrival in South Korea (at APQA facility) for 10 days. This is non-negotiable and is entirely separate from the pre-travel preparation.
-        
-        Animal and Plant Quarantine Agency (APQA) regulates imports. Large pet-owning culture.
-    - heading: "Step-by-step: what to do first"
+        The most important thing to understand about the South Korea pathway from Vietnam is what it does not require. Japan's AQS imposes a 180-day waiting period from the FAVN titre test blood draw date for non-designated regions. South Korea's APQA does not. If APQA requires a titre test for Vietnamese pets (confirm at qia.go.kr), the test is done, the result comes back in 1 to 2 weeks, and if it passes, travel can be booked.
+
+        This distinction makes South Korea a significantly shorter process than Japan for Vietnamese pet owners. Where Japan preparation from Vietnam takes 7 to 9 months, South Korea typically takes 2 to 3 months.
+
+        Vietnam remains a non-rabies-free country in APQA's classification, so the arrival inspection at Incheon applies. But the preparation sequence is straightforward compared to Japan's strict timing requirements.
+
+    - heading: "DAH documentation for South Korea"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        The Department of Animal Health (DAH), operating under MARD, is the Vietnamese authority for endorsing export health certificates. Your Vietnamese vet issues the certificate; DAH endorses it. The certificate must be in the format APQA specifies and must be issued within 10 days of your travel date.
+
+        Gather all vaccination records and titre test results before the health certificate is issued. APQA inspection at Incheon checks these documents, and if anything is missing or unclear, the inspection process takes longer. Original documents must travel with the pet; certified copies are not accepted.
+
+        A specialist pet transport agent with experience of both Vietnamese export procedures and Korean import requirements is useful here, particularly for the first time. The DAH endorsement format and the APQA health certificate requirements have specific details that differ from standard international export certificates.
+
+    - heading: "Flights from Vietnam to Seoul Incheon"
+      body: |
+        Vietnam Airlines operates regular cargo services from Ho Chi Minh City (SGN) and Hanoi (HAN) to Seoul Incheon (ICN). Korean Air and Asiana Airlines both serve the same routes with live animal cargo. The SGN or HAN to ICN flight takes approximately 4 to 5 hours, making it a relatively short international journey for cargo pets.
+
+        Confirm live animal acceptance on your specific flight with the cargo desk before finalising the booking. Not all aircraft types or flight dates accept live animals, and confirmation in writing protects your booking.
+
+        Pets travel as air cargo, not in-cabin. The crate must comply with IATA live animal container specifications. Your vet or agent can advise on the correct crate sizing for your pet and the carrier's specific requirements.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Vietnam to South Korea?"
-    answer: "Allow at least 33 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering South Korea?"
-    answer: "Yes, quarantine is mandatory in South Korea. Your pet will stay for 10 days at APQA facility on arrival. This is non-negotiable and the cost is paid by the owner."
-  - question: "Is a rabies titre test required for pets entering South Korea?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 180-day waiting period after a successful result before your pet can enter South Korea. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into South Korea?"
-    answer: "Yes, an import permit is required from South Korea's authority (Animal and Plant Quarantine Agency). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Vietnam. The certificate must be issued within 14 days of travel. Present the original (not a copy) at check-in. Check South Korea's authority for the exact format required."
+  - question: "Does South Korea require a long wait after the titre test, like Japan?"
+    answer: "No. South Korea's APQA does not impose a post-titre waiting period. If a titre test is required for Vietnamese pets and the result passes, you can book travel immediately after receiving the result. This is a key difference from Japan's 180-day post-titre wait."
+  - question: "How long does the Vietnam to South Korea process take?"
+    answer: "Typically 2 to 3 months from the first vet visit. If a titre test is required, allow 2 to 3 weeks for the result. No extended waiting period applies. Always check current requirements at qia.go.kr before preparing."
+  - question: "Which airport does my pet enter South Korea through?"
+    answer: "Incheon International Airport (ICN) is the designated entry point for all cargo pets arriving in South Korea. There is no alternative entry port for live animal cargo."
+  - question: "What happens at the APQA inspection at Incheon?"
+    answer: "APQA staff conduct a clinical inspection of your pet on arrival. They verify the microchip, check the health certificate, vaccination records, and titre test documentation. For pets from non-rabies-free countries, this inspection is standard. If all documents are correct, your pet is released on the same day."
+
 links:
   sideways:
     - url: "/pet-transport/south-korea-to-vietnam/"
       text: "Pet Transport South Korea to Vietnam"
+    - url: "/pet-transport/vietnam-to-japan/"
+      text: "Pet Transport Vietnam to Japan"
+    - url: "/pet-transport/vietnam-to-new-zealand/"
+      text: "Pet Transport Vietnam to New Zealand"
   upward:
-    - url: "/pet-transport/origins/vietnam-pet-export-guide/"
-      text: "Shipping from Vietnam"
+    - url: "/pet-transport/origins/pet-export-guide-shipping-from-vietnam/"
+      text: "Shipping pets from Vietnam"
     - url: "/pet-transport/countries/south-korea/"
-      text: "Importing to South Korea"
-    - url: "/pet-transport/airlines/korean-air/"
-      text: "Korean Air pet policy"
+      text: "South Korea pet import rules"
 ---

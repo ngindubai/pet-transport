@@ -1,149 +1,139 @@
 ---
-template_variant: "D"
-title: "Pet Relocation South Africa to New Zealand | Requirements & Guide"
-description: "How to ship your dog or cat from South Africa to New Zealand. New Zealand import rules, vaccinations, permits, and airline options explained."
+title: "Pet Transport South Africa to New Zealand: 2026 MPI Titre Test, Levin Quarantine and Flight Guide"
+description: "Moving a dog or cat from South Africa to New Zealand in 2026. MPI import permit, RNATT titre test with 3-month wait, 10-day Levin quarantine. Singapore Airlines and Emirates routing options."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "B"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "south-africa-to-new-zealand"
 origin_name: "South Africa"
 destination_name: "New Zealand"
+
 route_data:
   origin:
     code: "ZA"
     country: "South Africa"
     export_requirements:
-      export_permit: "Required for all live animal exports. Apply through provincial State Veterinarian office."
-      health_certificate: "Must meet destination country requirements. Critical: many countries classify SA as high-risk due to rabies status."
+      health_certificate: "Health certificate issued by a private veterinarian and endorsed by the State Veterinarian (DAFF South Africa). Must comply with MPI New Zealand's specified format."
+      export_permit: "No formal export permit required for personal pets. State Veterinarian endorsement of the health certificate covers the export documentation."
+
   destination:
     code: "NZ"
     country: "New Zealand"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or on same day as first rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 28-day wait after vaccination before travel. Vaccination schedule must be complete before titre test blood draw."
-      titre_test: "Required for: All pets from all countries (no exemptions). Not required for: None. Minimum: 0.5 IU/ml. 180-day wait from test date before entry"
-      quarantine: "Mandatory quarantine. 10 (minimum) at MPI Levin facility days. Facility: MPI Levin Quarantine Facility, Levin, Manawatu (the only approved facility). Mandatory 10-day quarantine for all arriving cats and dogs. Pre-booking required well in advance as capacity is limited. Book before flights."
-      import_permit: "Required. Issued by: Ministry for Primary Industries (MPI), Biosecurity New Zealand. Apply for import permit before booking flights. Permit specifies all conditions. Non-compliance results in re-export or destruction."
-      health_certificate: "Required. Government veterinary health certificate. Issued by: Government (official) veterinarian in country of export. Valid for 14 days from issue. Must use MPI-specified format for the exact country of export. No standard format accepted. Download the correct template from the MPI website."
+      microchip: "ISO 11784/11785 microchip required. Must be implanted before the first rabies vaccination."
+      rabies_vaccination: "Current rabies vaccination required. Blood draw for titre test must be at least 28 days after the vaccination."
+      titre_test: "RNATT titre test required. Minimum 0.5 IU/ml. Blood drawn at an MPI-approved laboratory. Pet cannot enter New Zealand until at least 3 months have passed from the blood draw date. Result valid for up to 24 months. Source: MPI, mpi.govt.nz."
+      import_permit: "MPI import permit required. Apply at least 30 working days before travel. Source: MPI, mpi.govt.nz."
+      health_certificate: "MPI-format health certificate issued within 14 days of travel. Endorsed by South Africa State Veterinarian."
+      quarantine: "10-day mandatory quarantine at MPI Levin Quarantine Facility, Levin, Manawatu."
+      entry_airport: "Auckland (AKL) or Christchurch (CHC)."
+
   airlines:
-    - name: "British Airways"
+    - name: "Singapore Airlines (via Singapore)"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Qantas"
+      policy_summary: "Singapore Airlines operates Johannesburg (JNB) to Singapore (SIN) and Singapore to Auckland (AKL) and Christchurch (CHC). Singapore Airlines Cargo has temperature-controlled live animal handling at Changi. A reliable two-sector option covering the JNB-SIN-AKL routing."
+    - name: "Emirates (via Dubai)"
       type: "cargo_only"
-      policy_summary: "Cargo: QantasFreighter network for pet transport. Brachycephalic breeds restricted year-round. Temperature embargoes: seasonal restrictions during Australian summer (Dec-Feb)"
-    - name: "Emirates"
+      policy_summary: "Emirates operates JNB to Dubai (DXB) with cargo services. Dubai SkyCargo has live animal handling. An onward connection from DXB to AKL would typically involve a carrier change. Confirm live animal acceptance on the DXB-AKL sector before booking."
+    - name: "Qantas / Air New Zealand (via Sydney)"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "South Africa to Sydney connections (via Singapore or Dubai) can then connect to Air New Zealand SYD-AKL. This adds a third sector but is occasionally used when direct Changi-Auckland cargo space is limited."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Apply for MPI import permit at mpi.govt.nz. Allow at least 30 working days for processing."
+      timing: "As early as possible. 5-6 months before intended travel."
+      responsible: "Owner or agent"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 28-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "ISO microchip confirmed. Rabies vaccination from a private vet. Allow 28 days before blood draw."
+      timing: "After microchip. 28+ days before titre test."
+      responsible: "South African private vet"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Blood draw for RNATT titre test at MPI-approved laboratory. Result must be 0.5 IU/ml or above."
+      timing: "At least 28 days after vaccination. The 3-month NZ entry wait starts from this date."
+      responsible: "Private vet and MPI-approved laboratory"
     - step: 4
-      action: "Apply for import permit from New Zealand"
-      timing: "Apply early: allow 4-6 weeks"
-      responsible: "You (or your pet transport agent)"
+      action: "Receive titre result. Confirm MPI permit. Book cargo flights: JNB to SIN (Singapore Airlines), then SIN to AKL."
+      timing: "After blood draw. Book 4-6 weeks before travel."
+      responsible: "Owner"
     - step: 5
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "State Veterinarian-endorsed health certificate in MPI format issued within 14 days of travel."
+      timing: "Within 14 days of departure."
+      responsible: "Private vet plus State Veterinarian endorsement"
     - step: 6
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 7
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
-    - step: 8
-      action: "Quarantine on arrival (10 (minimum) at MPI Levin facility days)"
-      timing: "Immediately on arrival (mandatory)"
-      responsible: "New Zealand quarantine authority"
+      action: "Travel JNB to SIN, then SIN to AKL. MPI inspection on arrival. Transfer to Levin for 10-day quarantine."
+      timing: "After 3 months from blood draw date."
+      responsible: "Airline and MPI"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (New Zealand)"
-    - "Quarantine facility fees (owner-paid at destination)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "South African vet and State Veterinarian endorsement: ZAR 1,500-4,000"
+    - "RNATT titre test (lab fee): USD 100-200"
+    - "MPI import permit: NZD 260 (approximately ZAR 2,400)"
+    - "Levin quarantine (10 days): NZD 1,500-3,000 (approximately ZAR 14,000-28,000)"
+    - "Air cargo JNB to SIN then SIN to AKL: USD 2,000-4,500 depending on crate size"
+    - "Total typical range: NZD 7,000-14,000"
+
   key_warnings:
-    - "Mandatory quarantine required on arrival. Plan for separation from your pet."
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "very_high"
-  estimated_timeline_weeks: "26-32"
+    - "The 3-month wait from blood draw is fixed. Plan your departure date backwards from that point first."
+    - "South Africa to New Zealand requires at least two flight sectors. Singapore Airlines JNB-SIN-AKL is the most direct routing for cargo pets."
+    - "Levin quarantine accepts arrivals on weekdays only. Avoid flight routing that delivers your pet on a Friday or weekend."
+    - "If the titre test result is below 0.5 IU/ml, a booster and repeat draw are required, resetting the 3-month wait."
+
+  route_complexity: "high"
+  estimated_timeline_weeks: "16-24"
+
 content:
-  h1: "Pet Transport from South Africa to New Zealand"
-  overview: |
-    If you're relocating from South Africa to New Zealand and taking your pet, the good news is thousands of families do this every year.
-    
-    This route is one of the most demanding international pet transport routes. Start preparations at least 26 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. New Zealand requires mandatory quarantine (10 (minimum) at MPI Levin facility days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Getting the timing right is critical. Work backwards from your travel date and add a buffer.
+  h1: "Pet Transport South Africa to New Zealand: 2026 MPI Guide"
+  overview: "Moving a pet from South Africa to New Zealand takes 4 to 6 months from first vet visit to Levin release. New Zealand's MPI requires a rabies antibody titre test with a 3-month wait, an import permit, and 10 days of quarantine at the Levin facility. There are no direct flights from South Africa to New Zealand, so the journey goes via Singapore or Dubai. Unlike Australia, New Zealand does not require South African pets to complete a staging period in a third country first."
+
   sections:
-    - heading: "What to know about the South Africa to New Zealand route"
+    - heading: "The RNATT titre test: timing the South Africa to New Zealand journey"
       body: |
-        This is one of the more demanding international pet transport corridors. New Zealand runs a strict biosecurity programme and there are no shortcuts through it.
-        
-        All pets must complete quarantine on arrival in New Zealand (at MPI Levin Quarantine Facility, Levin, Manawatu (the only approved facility)) for 10 (minimum) at MPI Levin facility days. This is non-negotiable and is entirely separate from the pre-travel preparation.
-        
-        New Zealand is rabies-free with one of the world's strictest pet import systems. All dogs and cats must complete mandatory quarantine at the government-approved facility (Levin MAF Quarantine Station, now MPI). Import permit required in advance. Only cats and dogs permitted from most countries; birds require separate approval. Authority: Ministry for Primary Industries (MPI), Biosecurity New Zealand.
-    - heading: "Things to sort before you book"
+        New Zealand's MPI requires a rabies neutralising antibody titre test (RNATT) for all pets arriving from countries outside Australia. For South African pets, the blood draw happens in South Africa at an MPI-approved laboratory. The result must be 0.5 IU/ml or above. Critically, your pet cannot enter New Zealand until at least 3 months have passed from the blood draw date.
+
+        The blood draw must happen at least 28 days after a valid rabies vaccination. So the minimum preparation sequence runs: vaccination, 28 days, blood draw, 3 months. Total: at least 4 months from vaccination to earliest possible New Zealand arrival. Most people allow 5 to 6 months to include time for the State Veterinarian endorsement, MPI permit processing (30 working days), and flight booking.
+
+        MPI-approved laboratories that handle South African samples include KSVDL (Kansas State Veterinary Diagnostic Laboratory) in the USA and the APHA National Reference Laboratory in the UK. Blood samples are drawn in South Africa and shipped by international courier to the lab. Your South African vet will have handled this before, or a specialist pet transport agent can coordinate it.
+
+    - heading: "South Africa to New Zealand: the routing via Singapore"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        There are no direct flights from Johannesburg or Cape Town to Auckland or Christchurch. The standard routing for cargo pets goes via Singapore: Singapore Airlines operates JNB to SIN with regular cargo services, and from Changi there are frequent departures to Auckland and Christchurch. Singapore Airlines Cargo has good live animal handling infrastructure at Changi, and the JNB-SIN sector is a well-used route for South African pet owners heading to New Zealand.
+
+        An alternative is routing via Dubai on Emirates, with a cargo connection from DXB to Auckland. Emirates SkyCargo handles live animals, and Dubai is a transit hub with significant cargo capacity. However, the DXB to AKL connection typically requires a carrier change, adding complexity. Confirm live animal acceptance on each sector individually before committing to this routing.
+
+        A third option is via Sydney: South Africa to Sydney (via Singapore or Dubai), then Air New Zealand SYD-AKL. This adds a third sector but can be useful when direct Changi to Auckland cargo space is tight around peak travel periods. Discuss current availability with your cargo agent when booking.
+
+    - heading: "Levin quarantine and the MPI import permit"
+      body: |
+        The MPI import permit is your first action item, not your last. Apply through mpi.govt.nz at least 30 working days before your intended travel date. The permit specifies all the conditions your pet must meet and authorises the Levin quarantine booking. Do not finalise flights without the permit confirmed.
+
+        The Levin Quarantine Facility in Levin, Manawatu, is where all cats and dogs arriving in New Zealand (except those from Australia) spend their mandatory 10 days. The facility is professionally run with veterinary oversight, and owners can arrange visits during the quarantine period. Levin is roughly 90 minutes' drive from Wellington and 2 hours south of Auckland.
+
+        The facility receives pets on weekdays only. Time your flight so your pet arrives at Auckland or Christchurch on a Monday, Tuesday, Wednesday, or Thursday. A Friday arrival leaves your pet waiting over the weekend before transfer can be arranged.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from South Africa to New Zealand?"
-    answer: "Allow at least 26 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering New Zealand?"
-    answer: "Yes, quarantine is mandatory in New Zealand. Your pet will stay for 10 (minimum) at MPI Levin facility days at MPI Levin Quarantine Facility, Levin, Manawatu (the only approved facility) on arrival. This is non-negotiable and the cost is paid by the owner."
-  - question: "Is a rabies titre test required for pets entering New Zealand?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter New Zealand. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into New Zealand?"
-    answer: "Yes, an import permit is required from New Zealand's authority (Ministry for Primary Industries (MPI), Biosecurity New Zealand). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in South Africa. The certificate must be issued within 14 days of travel. Present the original (not a copy) at check-in. Check New Zealand's authority for the exact format required."
+  - question: "Does my South African pet need to spend time in a third country before going to New Zealand?"
+    answer: "No. New Zealand does not require South African pets to complete a staging period in a third country. This is different from Australia's pathway, where South Africa is a DAFF Group 3 country requiring its own specific conditions. For New Zealand, the standard RNATT pathway applies directly."
+  - question: "How long does the South Africa to New Zealand process take?"
+    answer: "Allow 5 to 6 months from your first vet visit to your pet clearing Levin quarantine. The fixed minimum is the 28-day post-vaccination wait plus 3 months from the blood draw date. MPI permit processing (30 working days) and Levin quarantine (10 days) add a few more weeks on top."
+  - question: "Which laboratory in South Africa does the RNATT blood draw?"
+    answer: "The blood draw is done by your South African vet. The sample is then sent by international courier to an MPI-approved laboratory overseas, typically KSVDL in the USA or APHA in the UK. MPI publishes the current approved laboratory list on mpi.govt.nz. Your vet draws the blood; the lab analyses it."
+  - question: "Can my cat travel the same route?"
+    answer: "Yes. MPI requirements for cats arriving from South Africa are the same as for dogs: microchip, rabies vaccination, RNATT titre test with 3-month wait, MPI import permit, and 10-day Levin quarantine. Crate size and therefore cargo cost will be different."
+
 links:
   sideways:
     - url: "/pet-transport/new-zealand-to-south-africa/"
       text: "Pet Transport New Zealand to South Africa"
+    - url: "/pet-transport/south-africa-to-australia/"
+      text: "Pet Transport South Africa to Australia"
+    - url: "/pet-transport/south-africa-to-singapore/"
+      text: "Pet Transport South Africa to Singapore"
   upward:
     - url: "/pet-transport/origins/pet-export-guide-shipping-from-south-africa/"
-      text: "Shipping from South Africa"
+      text: "Shipping pets from South Africa"
     - url: "/pet-transport/countries/new-zealand/"
-      text: "Importing to New Zealand"
-    - url: "/pet-transport/airlines/british-airways/"
-      text: "British Airways pet policy"
-    - url: "/pet-transport/airlines/qantas/"
-      text: "Qantas pet policy"
+      text: "New Zealand pet import rules"
 ---
