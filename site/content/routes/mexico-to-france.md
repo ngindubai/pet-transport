@@ -1,138 +1,141 @@
 ---
-template_variant: "A"
-title: "Shipping Dogs & Cats from Mexico to France | PetTransportGlobal"
-description: "How to ship your dog or cat from Mexico to France. France import rules, vaccinations, permits, and airline options explained."
+title: "Pet Transport Mexico to France: FAVN Titre Test, SENASICA Cert, Air France Direct"
+description: "Moving a pet from Mexico to France in 2026. Mexico is non-listed for EU: titre test and 3-month wait required. Air France MEX-CDG direct. SENASICA cert, costs explained."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "E"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "mexico-to-france"
 origin_name: "Mexico"
 destination_name: "France"
+
 route_data:
   origin:
     code: "MX"
     country: "Mexico"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      health_certificate: "Certificado Veterinario de Exportación issued by a SENASICA-registered official vet and endorsed by SENASICA. EU-format required for France entry. Issued within 10 days of travel."
+      export_permit: "No formal export permit for companion animals. SENASICA inspection at Mexico City (MEX)."
+
   destination:
     code: "FR"
     country: "France"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or at same time as rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Standard EU protocol. 21-day wait from first vaccination."
-      titre_test: "Required for: Pets from unlisted third countries. Not required for: Pets from EU and listed third countries (all P1 countries listed). Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No routine quarantine. Non-compliant animals may be quarantined or returned at owner's expense."
-      import_permit: "No formal import permit. EU pet passport or AHC serves as documentation."
-      health_certificate: "Required"
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Required. Mexico is not EU-listed. FAVN titre test required. Blood drawn after microchip and valid vaccination. 3-month wait from blood sampling date. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. French customs inspects at Paris CDG."
+      import_permit: "No import permit. SENASICA-endorsed EU certificate is the required document."
+      health_certificate: "EU-format certificate endorsed by SENASICA, within 10 days of travel."
+      breed_restrictions: "France Category 1: Pit Bull type without LOF or FCI pedigree banned from import. Category 2: Rottweiler and American Staffordshire Terrier with pedigree permitted with restrictions."
+
   airlines:
-    - name: "American Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: American Airlines Cargo handles pet transport. Seasonal temperature embargoes apply"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Emirates"
+    - name: "Air France Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Singapore Airlines"
+      policy_summary: "Air France operates direct from Mexico City (MEX) to Paris CDG. Air France Cargo accepts live animals in the temperature-controlled hold. CDG is the main French entry point for live animal cargo from Mexico."
+    - name: "Aeromexico Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "British Airways"
+      policy_summary: "Aeromexico operates from MEX to CDG. Aeromexico Cargo handles live animals on selected routes. The Mexico City to Paris corridor has strong flight frequency."
+    - name: "Iberia Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Delta Air Lines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Delta Cargo handles larger pets in temperature-controlled hold. Brachycephalic breeds restricted from cargo"
-    - name: "Air Canada"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Air Canada Cargo handles pet transport in heated/pressurised hold. Brachycephalic breeds restricted from cargo year-round"
+      policy_summary: "Iberia operates MEX to Madrid (MAD) direct, with cargo connections from MAD to Paris CDG. A practical two-leg routing."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step: must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates rabies vaccination."
+      timing: "5+ months before travel"
+      responsible: "Vet in Mexico"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify rabies vaccination and 21-day post-primary wait."
+      timing: "5+ months before travel"
+      responsible: "Vet in Mexico"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Blood drawn for FAVN titre test. 3-month wait starts from this date."
+      timing: "4-5 months before travel"
+      responsible: "Official vet and EU-approved laboratory"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Wait 3 months from blood sampling date."
+      timing: "3 months from blood draw"
+      responsible: "N/A - mandatory waiting period"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Book cargo MEX to CDG on Air France or Aeromexico."
+      timing: "4-6 weeks before travel"
+      responsible: "Owner or agent"
     - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Obtain SENASICA-endorsed EU certificate within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "SENASICA-registered vet plus SENASICA endorsement"
+    - step: 7
+      action: "Depart MEX. French customs inspects at Paris CDG."
+      timing: "Travel day"
+      responsible: "Airline cargo and French customs"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "SENASICA certificate and endorsement: MXN 2,000-5,000 (approximately EUR 100-250)"
+    - "FAVN titre test (EU-approved laboratory): EUR 85-170"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo MEX to CDG (Air France or Aeromexico direct): EUR 900-2,100 depending on crate size"
+    - "Pet transport agent (optional): EUR 200-500"
+    - "Total typical range: EUR 1,400-3,300"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "Mexico is non-listed for EU: titre test and 3-month wait from blood draw are mandatory. Start 5 months before travel."
+    - "3-month wait runs from blood draw date, not results date."
+    - "France Category 1 breed ban covers Pit Bull type dogs without LOF or FCI pedigree."
+    - "SENASICA certificate must be EU format and dated within 10 days of travel."
+
+  route_complexity: "medium"
+  estimated_timeline_weeks: "20-22"
+
 content:
-  h1: "Pet Transport from Mexico to France"
-  overview: |
-    Shipping your pet from Mexico to France is a process that rewards early planning.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date: some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    We've laid out every step below so you know exactly what to prepare and when.
+  h1: "Pet Transport Mexico to France: 2026 Guide"
+  overview: "Mexico City to Paris is one of the most direct intercontinental pet cargo routes from the Americas, with Air France and Aeromexico both operating the MEX to CDG corridor. Mexico is not EU-listed, so the FAVN titre test and 3-month wait from blood draw apply. Total preparation is approximately five months. France's Category 1 breed ban applies at the border for Pit Bull types without pedigree papers."
+
   sections:
-    - heading: "Key requirements for moving your pet to France"
+    - heading: "The titre test requirement from Mexico: numbers and timing"
       body: |
-        Compared to some international pet transport routes, Mexico to France is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        France follows EU harmonised pet movement rules. Direction Generale de l'Alimentation (DGAL) under the Ministry of Agriculture oversees implementation. France is one of the most pet-friendly countries in Europe with high pet ownership, though some rental properties restrict pets. France has its own breed-specific legislation (Categories 1 and 2) that is notably strict.
-    - heading: "Practical advice for shipping your pet from Mexico"
+        Mexico is not on the EU's listed country register, so the FAVN titre test is mandatory for all pets moving from Mexico to France.
+
+        The sequence: microchip implanted first, then rabies vaccination, then 21 days after vaccination blood can be drawn. The 3-month wait runs from the blood draw date. If blood is drawn on 1 February, travel to France is not possible before 1 May. Laboratory results take two to four weeks but do not affect the 3-month countdown. Start planning no later than five months before your intended travel date.
+
+        SENASICA endorses the export certificate in Mexico. The endorsed certificate must be in EU format and dated within 10 days of your travel date. Source: food.ec.europa.eu, 2026.
+
+    - heading: "Air France and Aeromexico: direct options from Mexico City to Paris"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Both Air France and Aeromexico operate direct flights between Mexico City (MEX) and Paris CDG, giving two cargo options on this corridor. This direct routing is a practical advantage: no hub connection required, which shortens the journey for your pet.
+
+        Air France Cargo accepts live animals on the MEX to CDG route. Aeromexico Cargo handles live animals on selected routes; confirm live animal acceptance on your specific flight number before booking. Iberia (via Madrid) is an alternative if direct capacity is limited.
+
+        Book cargo four to six weeks ahead. French customs at CDG carries out the inspection on arrival.
+
+    - heading: "France breed rules: what Mexican owners need to verify"
+      body: |
+        France's breed classification law divides dogs into Category 1 (attack dogs) and Category 2 (guard dogs). Category 1 includes Pit Bull type dogs without official LOF or FCI breed registration. Category 1 dogs cannot be imported into France. Category 2 includes Rottweiler and American Staffordshire Terrier with breed pedigree, which can enter France with ongoing restrictions (muzzle, leash, insurance).
+
+        For most breeds common in Mexico, no breed-specific restriction applies at the border. If your dog resembles a Pit Bull type, verify its breed classification against the French Category 1 definition before booking cargo.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Mexico to France?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering France?"
-    answer: "No routine quarantine is required in France for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering France?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter France. Start this process as early as possible."
-  - question: "Can I take my cat to France from Mexico?"
-    answer: "Yes, cats can be transported from Mexico to France. The same microchip, vaccination, and health certificate requirements apply as for dogs, though some rules (such as tapeworm treatment) apply to dogs only. Check the full requirements for cats with the destination authority."
+  - question: "Does my Mexican pet need a titre test for France?"
+    answer: "Yes. Mexico is not EU-listed, so the FAVN titre test and 3-month wait from blood sampling date are mandatory. Your pet needs a microchip (predating vaccination), current rabies vaccination, SENASICA-endorsed EU certificate within 10 days of travel, and the titre test result plus 3-month wait before travel. Source: food.ec.europa.eu, 2026."
+  - question: "Can Air France carry my pet directly from Mexico City to Paris?"
+    answer: "Yes. Air France Cargo operates direct from MEX to CDG and accepts live animals in the temperature-controlled hold. Aeromexico Cargo also operates this direct route. Both require booking four to six weeks ahead with live animal confirmation on your specific flight number."
+  - question: "When does the 3-month wait start for a Mexican pet?"
+    answer: "From the blood sampling date for the FAVN titre test. Not from the result date. If blood is drawn on 15 January, travel to France is not possible before 15 April, regardless of when laboratory results arrive."
+  - question: "What is the total cost from Mexico City to Paris?"
+    answer: "Direct cargo from MEX to CDG typically costs EUR 900 to EUR 2,100 depending on crate size. Add EUR 85-170 for the titre test, EUR 100-250 for the SENASICA certificate, and EUR 80-250 for a crate if needed. Total all-in is typically EUR 1,400 to EUR 3,300, with five months preparation needed."
+
 links:
   sideways:
     - url: "/pet-transport/france-to-mexico/"
       text: "Pet Transport France to Mexico"
+    - url: "/pet-transport/mexico-to-germany/"
+      text: "Pet Transport Mexico to Germany"
+    - url: "/pet-transport/mexico-to-spain/"
+      text: "Pet Transport Mexico to Spain"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-mexico-export-guide/"
-      text: "Shipping from Mexico"
+    - url: "/pet-transport/origins/mexico/"
+      text: "Shipping pets from Mexico"
     - url: "/pet-transport/countries/france/"
-      text: "Importing to France"
-    - url: "/pet-transport/airlines/american-airlines/"
-      text: "American Airlines pet policy"
-    - url: "/pet-transport/airlines/air-france/"
-      text: "Air France pet policy"
+      text: "France pet import guide"
 ---

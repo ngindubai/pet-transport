@@ -1,150 +1,131 @@
 ---
-title: "Pet Transport from South Korea to Germany | APQA Export, EU Titre Test & Data Guide"
-description: "Shipping your pet from South Korea to Germany: APQA health certificate, EU FAVN titre test and 3-month wait required, Korean Air and Lufthansa cargo, compliance data."
+title: "Pet Transport South Korea to Germany: APQA Certificate, FAVN Titre Test, 2026"
+description: "Moving a pet from South Korea to Germany in 2026. South Korea non-listed for EU: FAVN titre test and 3-month wait. APQA certificate. Korean Air or Lufthansa ICN direct to FRA. Germany Bundesland rules."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-template_variant: "E"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "A"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "south-korea-to-germany"
 origin_name: "South Korea"
 destination_name: "Germany"
+
 route_data:
   origin:
     code: "KR"
     country: "South Korea"
     export_requirements:
-      export_permit: "No formal export permit for personal pets. APQA issues the export health certificate."
-      health_certificate: "APQA-issued official health certificate in EU Annex IV format, within 10 days of travel. Must confirm microchip, vaccination history, titre test result, and health status."
+      health_certificate: "Official veterinary health certificate issued by an APQA-registered official vet and endorsed by APQA (Animal and Plant Quarantine Agency). EU-format required. Issued within 10 days of travel."
+      export_permit: "No formal export permit required for companion animals from South Korea. Primary departure airport: Seoul Incheon (ICN)."
+
   destination:
     code: "DE"
     country: "Germany"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Before first rabies vaccination."
-      rabies_vaccination: "Required. Minimum age 12 weeks. 21-day wait from first vaccination. Current within validity period."
-      titre_test: "Required. South Korea is a non-listed country under EU Regulation 576/2013. FAVN titre test at EU-approved laboratory. Minimum 0.5 IU/ml. Blood drawn 30+ days after last vaccination. 3-month mandatory wait from blood draw date."
-      quarantine: "No quarantine for fully compliant pets. Documentary check at Frankfurt Airport BCP on arrival."
-      import_permit: "Not required. EU Regulation 576/2013 governs."
-      health_certificate: "APQA-endorsed EU Annex IV health certificate, within 10 days of travel."
-      entry_point: "Frankfurt Airport (FRA), Germany's primary BCP."
-      authority: "BMEL Germany. EU Regulation 576/2013."
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Required. South Korea is not EU-listed. FAVN titre test at an EU-approved laboratory. Result must be 0.5 IU/ml or above. 3-month wait from blood sampling date. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. German customs (Zoll) inspects at Frankfurt (FRA)."
+      import_permit: "No import permit required. APQA-endorsed EU-format health certificate is the required document."
+      health_certificate: "EU-format certificate endorsed by APQA, issued within 10 days of travel."
+      breed_restrictions: "Federal bans: Pit Bull Terrier, Tosa Inu. Bundesland-level restrictions vary; Bavaria restricts Rottweiler, American Bulldog, and others. Check destination state before travel."
+
   airlines:
-    - name: "Korean Air"
+    - name: "Korean Air Cargo"
       type: "cargo_only"
-      policy_summary: "Direct ICN-FRA. Korean Air Cargo. Korean national carrier with APQA export familiarity at Incheon. Strong direct Frankfurt service."
-    - name: "Asiana Airlines"
+      policy_summary: "Korean Air operates direct from Seoul Incheon (ICN) to Frankfurt (FRA). Korean Air Cargo accepts live animals on long-haul routes."
+    - name: "Asiana Airlines Cargo"
       type: "cargo_only"
-      policy_summary: "Direct ICN-FRA. Asiana Airlines Cargo. Second Korean carrier option from Incheon."
-    - name: "Lufthansa"
+      policy_summary: "Asiana Airlines operates ICN to FRA direct. Asiana Cargo handles live animal shipments on transatlantic routes."
+    - name: "Lufthansa Cargo"
       type: "cargo_only"
-      policy_summary: "Direct ICN-FRA. Lufthansa Cargo. Strong Frankfurt BCP arrival experience. Brachycephalic breeds restricted year-round."
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Via Singapore SIN to FRA. Temperature-controlled cargo. Alternative routing."
-    - name: "Emirates"
-      type: "cargo_only"
-      policy_summary: "Via Dubai DXB to FRA. Summer heat restrictions may apply."
+      policy_summary: "Lufthansa operates ICN to Frankfurt (FRA) direct. Lufthansa Cargo has established live animal handling at Frankfurt."
+
   timeline_steps:
     - step: 1
-      action: "Microchip confirmed (before vaccination)"
-      timing: "Week 0"
-      responsible: "Korean vet"
+      action: "Confirm ISO microchip predates rabies vaccination."
+      timing: "5+ months before travel"
+      responsible: "Vet in South Korea"
     - step: 2
-      action: "Rabies vaccination current"
-      timing: "Week 0-2"
-      responsible: "Korean vet"
+      action: "Verify rabies vaccination and 21-day post-primary wait."
+      timing: "5+ months before travel"
+      responsible: "Vet in South Korea"
     - step: 3
-      action: "FAVN titre test at EU-approved laboratory"
-      timing: "Week 6+ (30+ days post-vaccination)"
-      responsible: "Korean vet + EU-approved lab"
+      action: "Blood draw for FAVN titre test. 3-month wait starts from sampling date."
+      timing: "4-5 months before travel"
+      responsible: "Official vet and EU-approved laboratory"
     - step: 4
-      action: "3-month wait from blood draw"
-      timing: "Weeks 6-19"
-      responsible: "N/A"
+      action: "Wait 3 months from blood sampling date."
+      timing: "3 months from blood draw"
+      responsible: "N/A - mandatory waiting period"
     - step: 5
-      action: "Book Korean Air or Lufthansa Cargo ICN-FRA"
-      timing: "Week 18+"
-      responsible: "You or agent"
+      action: "Book cargo from ICN to FRA on Korean Air, Asiana, or Lufthansa direct."
+      timing: "4-6 weeks before travel"
+      responsible: "Owner or agent"
     - step: 6
-      action: "APQA-endorsed EU Annex IV health certificate"
+      action: "Obtain APQA-endorsed EU-format health certificate within 10 days of travel."
       timing: "Within 10 days of travel"
-      responsible: "APQA Korea"
+      responsible: "APQA-registered vet plus APQA endorsement"
     - step: 7
-      action: "Cargo check-in Incheon. Frankfurt BCP inspection on arrival."
-      timing: "Cargo 3-4 hours before departure."
-      responsible: "You + cargo + German BCP vet"
+      action: "Depart ICN. German customs (Zoll) inspects at Frankfurt on arrival."
+      timing: "Travel day"
+      responsible: "Airline cargo and German customs"
+
   cost_factors:
-    - "Korean Air or Lufthansa Cargo fees ICN-FRA"
-    - "IATA-compliant crate"
-    - "FAVN titre test at EU-approved laboratory"
-    - "APQA health certificate fees"
-    - "Agent fee (recommended)"
+    - "APQA certificate and endorsement: KRW 50,000-150,000 (approximately EUR 35-110)"
+    - "FAVN titre test (EU-approved laboratory): EUR 85-170"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo ICN to FRA (Korean Air or Lufthansa direct): EUR 800-1,800 depending on crate size"
+    - "Pet transport agent (optional): EUR 150-400"
+    - "Total typical range: EUR 1,200-2,700"
+
   key_warnings:
-    - "South Korea is non-listed for EU entry. Titre test + 3-month wait are mandatory."
-    - "APQA health certificate must be in EU Annex IV format, within 10 days of travel."
-    - "3-month wait runs from blood draw date, not result date."
-  route_complexity: "high"
-  estimated_timeline_weeks: "22-26"
+    - "South Korea is not EU-listed: FAVN titre test and 3-month wait from blood sampling date are mandatory. Start 5+ months before travel."
+    - "3-month wait runs from blood draw date, not results date."
+    - "Germany Bundesland breed restrictions vary; check your destination state before starting the process."
+    - "Korean Air, Asiana, and Lufthansa all offer direct ICN-FRA service."
+
+  route_complexity: "medium"
+  estimated_timeline_weeks: "20-22"
+
 content:
-  h1: "Pet Transport from South Korea to Germany"
-  overview: |
-    South Korea to Germany triggers the EU non-listed country protocol. A FAVN titre test and 3-month wait are required before EU entry. No quarantine on arrival in Germany. Preparation: 22-26 weeks. Direct flights exist from Incheon to Frankfurt on Korean Air, Asiana, and Lufthansa.
+  h1: "Pet Transport South Korea to Germany: 2026 Guide"
+  overview: "South Korea is not on the EU's listed third countries schedule, which means the FAVN titre test and 3-month wait from blood sampling date are mandatory for Germany entry. The APQA certificate covers the export side. Korean Air, Asiana, and Lufthansa all operate direct cargo from Seoul Incheon to Frankfurt. Start the process five months before travel and check Germany's Bundesland breed rules for your destination state."
+
   sections:
-    - heading: "Compliance data: South Korea to Germany"
+    - heading: "FAVN titre test, 3-month wait, and the APQA certificate from South Korea"
       body: |
-        | Requirement | Detail |
-        |---|---|
-        | EU classification | Non-listed third country |
-        | Microchip | ISO 11784/11785, before first vaccination |
-        | Rabies vaccination | Required, current, 21-day wait from first |
-        | Titre test | FAVN, EU-approved lab, 0.5+ IU/ml, 30+ days post-vax |
-        | Post-titre mandatory wait | 3 months from blood draw date |
-        | Import permit (DE) | Not required |
-        | Quarantine (DE) | Not required |
-        | APQA export document | APQA health certificate in EU Annex IV format |
-        | Health cert window | Within 10 days of travel |
-        | Entry airport | Frankfurt FRA (primary German BCP) |
-        | Total preparation | 22-26 weeks |
-        | Complexity | High |
+        Under EU Regulation 576/2013, South Korea is a non-listed third country. Your pet must have a FAVN titre test result of at least 0.5 IU/ml from an EU-approved laboratory, followed by a 3-month waiting period from the blood sampling date. Source: food.ec.europa.eu, 2026.
 
-        Source: EU Regulation 576/2013; APQA Korea. Verify before starting process.
-    - heading: "Airline options ICN to FRA, data comparison"
+        The sequence is fixed: ISO microchip first, then rabies vaccination with a 21-day wait, then blood drawn at an EU-approved laboratory. The 3-month clock starts on the blood draw date, not when the results arrive. APQA (Animal and Plant Quarantine Agency) endorses the EU-format health certificate on the export side. An APQA-registered official vet issues it within 10 days of travel; APQA endorses it before departure. Allow five months from starting the process to departure.
+
+    - heading: "Direct flights from Seoul to Frankfurt and Germany's Bundesland breed rules"
       body: |
-        | Airline | Route | Notes |
-        |---|---|---|
-        | Korean Air Cargo | ICN-FRA direct | National carrier. Strong APQA Incheon export and Frankfurt cargo familiarity. |
-        | Asiana Airlines Cargo | ICN-FRA direct | Second Korean option. Direct service. |
-        | Lufthansa Cargo | ICN-FRA direct | Strong Frankfurt BCP experience. Brachycephalic breeds banned year-round. |
-        | Singapore Airlines Cargo | ICN via SIN to FRA | Longer routing. Reliable temperature-controlled hold. |
-        | Emirates SkyCargo | ICN via DXB to FRA | Summer heat restrictions at DXB. |
+        Korean Air Cargo, Asiana Airlines Cargo, and Lufthansa Cargo all operate direct from Seoul Incheon (ICN) to Frankfurt (FRA) and accept live animals. Three airlines offering direct ICN-FRA service gives good flexibility for scheduling. Frankfurt is Germany's main cargo entry point for pets from Asia.
 
-        Korean Air Cargo is the natural first choice: as South Korea's own airline, their Incheon cargo team handles APQA export documentation daily and know the paperwork in detail. Lufthansa brings strong Frankfurt BCP arrival expertise but restricts brachycephalic breeds year-round.
-    - heading: "APQA export health certificate: what Korea issues"
-      body: |
-        South Korea's APQA issues the official export health certificate required for international pet exports. For Germany, this must be in EU Annex IV format, the specific template for non-listed third countries entering the EU. APQA vets are familiar with this format.
+        Germany bans Pit Bull Terrier and Tosa Inu at federal level. Each Bundesland then adds its own restrictions; Bavaria is the most restrictive, covering Rottweiler, American Bulldog, and a range of other breeds. The rules vary significantly from state to state. If your dog falls into any potentially restricted category, check the specific Bundesland rules for your destination city before starting the five-month preparation process.
 
-        The certificate must be issued within 10 days of travel. It records microchip number, full vaccination history, FAVN titre test result (laboratory report number and date), and current health status. The titre test result must already be on record, the health certificate is the final step, not where you arrange the titre test.
 faqs:
-  - question: "Does my pet need a titre test to enter Germany from South Korea?"
-    answer: "Yes. South Korea is a non-listed country under EU Regulation 576/2013. A FAVN titre test at an EU-approved laboratory is mandatory, minimum 0.5 IU/ml, followed by a 3-month mandatory waiting period from the blood draw date."
-  - question: "Is there quarantine when moving a pet from South Korea to Germany?"
-    answer: "No quarantine for fully compliant pets. An official veterinarian conducts a documentary check at the Frankfurt Airport Border Control Post on arrival. With correct documentation, your pet is released the same day."
-  - question: "How long does preparation take?"
-    answer: "Allow 22-26 weeks. The FAVN titre test and the 3-month mandatory wait from blood draw date are the main timeline drivers."
-  - question: "Which airline is best from Seoul to Frankfurt?"
-    answer: "Korean Air Cargo and Asiana Airlines Cargo both offer direct ICN-FRA services with APQA export familiarity at Incheon. Lufthansa Cargo is equally capable on the same direct route. Brachycephalic breed owners should use Korean Air or Asiana, as Lufthansa restricts these breeds from cargo year-round."
-  - question: "What is the APQA health certificate?"
-    answer: "South Korea's Animal and Plant Quarantine Agency issues the export health certificate for pets leaving Korea. For EU destinations, this must be in EU Annex IV format. APQA issues it within 10 days of travel after confirming microchip, vaccination, and titre test records."
+  - question: "Does my South Korean pet need a titre test for Germany?"
+    answer: "Yes. South Korea is not on the EU's listed countries schedule. The FAVN titre test and 3-month wait from blood sampling date are mandatory. Source: food.ec.europa.eu, 2026."
+  - question: "What is the APQA certificate for pet export from South Korea?"
+    answer: "The APQA (Animal and Plant Quarantine Agency) health certificate is South Korea's official export document for pets. An APQA-registered official vet issues the EU-format certificate within 10 days of travel; APQA endorses it before departure."
+  - question: "Which airline is best for Seoul to Frankfurt pet cargo?"
+    answer: "Korean Air Cargo, Asiana Airlines Cargo, and Lufthansa Cargo all operate direct from ICN to FRA. Direct routing avoids a hub transfer. Book 4-6 weeks ahead and confirm live animal acceptance on your specific flights."
+  - question: "What are Germany's breed restrictions for South Korean pets?"
+    answer: "Germany bans Pit Bull Terrier and Tosa Inu federally. Each Bundesland adds its own list; Bavaria is the most restrictive. Check your specific destination state before starting the process."
+
 links:
   sideways:
     - url: "/pet-transport/germany-to-south-korea/"
       text: "Pet Transport Germany to South Korea"
+    - url: "/pet-transport/south-korea-to-france/"
+      text: "Pet Transport South Korea to France"
+    - url: "/pet-transport/south-korea-to-netherlands/"
+      text: "Pet Transport South Korea to Netherlands"
   upward:
-    - url: "/pet-transport/origins/south-korea-pet-export-guide/"
-      text: "Shipping from South Korea"
+    - url: "/pet-transport/origins/south-korea/"
+      text: "Shipping pets from South Korea"
     - url: "/pet-transport/countries/germany/"
-      text: "Importing to Germany"
-    - url: "/pet-transport/airlines/korean-air/"
-      text: "Korean Air pet policy"
-    - url: "/pet-transport/airlines/lufthansa/"
-      text: "Lufthansa pet policy"
+      text: "Germany pet import guide"
 ---

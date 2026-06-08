@@ -1,139 +1,138 @@
 ---
-template_variant: "D"
-title: "Moving Your Pet from Chile to Germany | Complete Guide"
-description: "How to ship your dog or cat from Chile to Germany. Germany import rules, vaccinations, permits, and airline options explained."
+title: "Pet Transport Chile to Germany: Listed Country Status Means No Titre Test"
+description: "Moving a dog or cat from Chile to Germany in 2026. Chile is an EU-listed country: no titre test, 6-8 week timeline. SAG export cert, Lufthansa/LATAM cargo, costs explained."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "D"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "chile-to-germany"
 origin_name: "Chile"
 destination_name: "Germany"
+
 route_data:
   origin:
     code: "CL"
     country: "Chile"
     export_requirements:
-      export_permit: "{'required': False}"
-      health_certificate: "{'required': True, 'issued_by': 'SAG-authorised official vet'}"
+      health_certificate: "EU-format Animal Health Certificate from a SAG-authorised official vet in Chile (Servicio Agricola y Ganadero). Endorsed by SAG. Issued within 10 days of travel."
+      export_permit: "No formal export permit for companion animals. SAG inspection at Santiago Arturo Merino Benitez Airport (SCL) before departure."
+
   destination:
     code: "DE"
     country: "Germany"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or at same time as rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Standard EU 21-day wait from date of first vaccination before travel. No additional Germany-specific requirements beyond EU framework."
-      titre_test: "Required for: Pets from unlisted third countries (countries not on EU Annex II list). Not required for: Pets from EU member states, listed third countries (all P1 countries are listed). Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No quarantine for pets entering with correct EU documentation. Non-compliant animals may be returned, quarantined at owner's expense, or in worst case euthanised."
-      import_permit: "No formal import permit. EU pet passport (intra-EU) or Animal Health Certificate (from third countries) serves as documentation."
-      health_certificate: "Required"
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination. Boosters with no lapse in cover require no additional wait."
+      titre_test: "Not required. Chile is a listed (Part 2) country under EU pet travel rules. The rabies titre test and 3-month wait are waived. Source: European Commission food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. German customs (Zoll) inspects at Frankfurt or other entry airport."
+      import_permit: "No import permit. SAG-endorsed EU AHC is the required document."
+      health_certificate: "EU Animal Health Certificate from SAG-authorised official vet in Chile, within 10 days of travel."
+      breed_restrictions: "Federal bans in Germany: Pit Bull Terrier, Tosa Inu. Bundesland-level restrictions vary; Bavaria restricts Dogo Argentino, Fila Brasileiro, American Bulldog, Rottweiler, and others. Check destination state rules."
+
   airlines:
-    - name: "American Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: American Airlines Cargo handles pet transport. Seasonal temperature embargoes apply"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Emirates"
+    - name: "Lufthansa Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "British Airways"
+      policy_summary: "Lufthansa operates from Santiago (SCL) via connections to Frankfurt (FRA). Lufthansa Cargo handles live animals in the temperature-controlled hold. Frankfurt is the main hub for Chile-Germany cargo."
+    - name: "LATAM Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
+      policy_summary: "LATAM operates SCL to Madrid (MAD) direct and to other European hubs. LATAM Cargo accepts pets on certain routes. Madrid connections to Frankfurt are available."
+    - name: "Iberia Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Delta Air Lines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Delta Cargo handles larger pets in temperature-controlled hold. Brachycephalic breeds restricted from cargo"
-    - name: "Air Canada"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Air Canada Cargo handles pet transport in heated/pressurised hold. Brachycephalic breeds restricted from cargo year-round"
+      policy_summary: "Iberia operates SCL to MAD direct with onward cargo connections to Frankfurt and German airports. A well-established South America to Europe pet cargo routing."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates the rabies vaccination."
+      timing: "6-8 weeks before travel"
+      responsible: "Vet in Chile"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify current rabies vaccination with 21-day post-primary wait complete."
+      timing: "Several weeks before travel"
+      responsible: "Vet in Chile"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Book cargo from Santiago to Frankfurt via LATAM/Iberia via MAD or Lufthansa connection."
+      timing: "4-6 weeks before travel"
+      responsible: "Owner or agent"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Obtain SAG-endorsed EU AHC from SAG-authorised official vet within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "SAG-authorised official vet"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Depart Santiago (SCL). German customs (Zoll) inspect at Frankfurt or destination airport."
+      timing: "Travel day"
+      responsible: "Airline cargo and German customs"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "SAG-authorised official vet health certificate and SAG endorsement: CLP 100,000-250,000 (EUR 90-220)"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo SCL to FRA (via MAD or Lufthansa connection): EUR 900-2,200 depending on crate size"
+    - "Pet transport agent (optional): EUR 200-500"
+    - "Total typical range: EUR 1,300-3,200"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "No titre test required from Chile to Germany: this is the key advantage of Chile's listed status. Start planning 6-8 weeks before travel instead of 5 months."
+    - "German Bundesland breed restrictions vary significantly. Check your destination state's rules before starting."
+    - "The SAG-endorsed AHC must be issued within 10 days of travel. Schedule the vet appointment close to departure."
+    - "No direct SCL-Germany cargo route exists; all routes connect via a European hub (usually MAD or CDG)."
+
+  route_complexity: "low-medium"
+  estimated_timeline_weeks: "4-6"
+
 content:
-  h1: "Pet Transport from Chile to Germany"
-  overview: |
-    International pet transport from Chile to Germany comes down to documentation timing more than anything else.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    We've laid out every step below so you know exactly what to prepare and when.
+  h1: "Pet Transport Chile to Germany: 2026 Guide"
+  overview: "Chile's inclusion on the EU's list of approved pet-travel countries changes the preparation window dramatically. No titre test, no 3-month wait. From Santiago to Frankfurt, the preparation runs to four to six weeks instead of the five months required for non-listed South American countries like Colombia or Peru. SAG (Servicio Agricola y Ganadero) handles the export health certificate, and most cargo routes connect through Madrid or another European hub before reaching Germany."
+
   sections:
-    - heading: "What to know about the Chile to Germany route"
+    - heading: "Why does Chile's listed status make such a difference for Germany?"
       body: |
-        Compared to some international pet transport routes, Chile to Germany is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        Germany follows EU harmonised pet movement rules (Regulation 576/2013, transitioning to new rules under Regulation 2026/131 from 22 April 2026). Federal Ministry of Food and Agriculture (BMEL) oversees. Individual Bundeslaender may have additional animal welfare rules. Germany is considered pet-friendly with high dog ownership rates.
-    - heading: "Step-by-step: what to do first"
+        The EU classifies third countries into two categories for pet travel: listed and non-listed. Listed countries are those whose animal health standards are formally recognised as equivalent to EU requirements. Chile is one of those listed countries.
+
+        For a Chilean pet entering Germany, the titre test and 3-month wait that apply to pets from Colombia or Peru are entirely waived. Your pet needs: an ISO microchip that predates the rabies vaccination, a current and valid rabies vaccination (with the 21-day post-primary wait satisfied), and an EU Animal Health Certificate from a SAG-authorised official vet issued within 10 days of travel.
+
+        That is a four to six week preparation window. Compare that to five months for non-listed country pets from the same continent, and you see why Chile's listed status is significant for families relocating to Germany.
+
+        The savings are also financial: no titre test laboratory fee of EUR 85-170, and no time penalty from the 3-month wait.
+
+    - heading: "Germany's breed restrictions: what Chilean owners need to check"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Germany has a layered breed restriction system that catches some owners by surprise. At the federal level, Pit Bull Terrier and Tosa Inu are banned from import and possession. But beyond federal law, each of Germany's 16 Bundeslaender (states) has its own rules, and these vary considerably.
+
+        Bavaria is the strictest. It restricts Dogo Argentino, Fila Brasileiro, American Bulldog, Rottweiler, Cane Corso, and several other breeds in addition to the federal bans. North Rhine-Westphalia, Hamburg, and Baden-Wurttemberg have their own lists that differ from Bavaria's. Some breeds that are unrestricted in one state are banned in another.
+
+        Before starting the Chile to Germany move, check the breed rules for your specific destination Bundesland. The relevant authority is the Veterinaramt (Veterinary Authority) of your destination district. If your dog is on a restricted list, entry to that Bundesland can be refused even if the animal cleared federal customs at Frankfurt. Verify before you book.
+
+    - heading: "Cargo routing from Santiago to Germany: what to expect"
+      body: |
+        There is no direct cargo flight from Santiago to Germany. All routes connect through a European hub. The most common connections are Madrid via Iberia or LATAM (then onward to Frankfurt or Munich), or via Paris CDG with Air France.
+
+        Iberia operates SCL to MAD direct, and Iberia Cargo or LATAM Cargo handle the live animal transport. From Madrid, a second cargo leg carries the pet to Frankfurt (FRA) or another German airport. The Madrid connection is generally manageable, with transit times that are appropriate for cargo welfare if you choose wisely.
+
+        Lufthansa Cargo is the preferred option for the final Germany delivery, with established live animal handling at Frankfurt. Your relocation agent or cargo coordinator will route based on availability and your specific German destination.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Chile to Germany?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Germany?"
-    answer: "No routine quarantine is required in Germany for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Germany?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Germany. Start this process as early as possible."
-  - question: "Can I take my cat to Germany from Chile?"
-    answer: "Yes, cats can be transported from Chile to Germany. The same microchip, vaccination, and health certificate requirements apply as for dogs, though some rules (such as tapeworm treatment) apply to dogs only. Check the full requirements for cats with the destination authority."
+  - question: "Does my Chilean dog or cat need a titre test for Germany?"
+    answer: "No. Chile is a listed (Part 2) country under EU pet travel rules, so the FAVN titre test and 3-month wait are waived. Your pet needs a microchip (predating the vaccination), a current rabies vaccination, and a SAG-endorsed EU Animal Health Certificate issued within 10 days of travel. Source: food.ec.europa.eu, 2026."
+  - question: "How long does the preparation take for a Chile to Germany pet move?"
+    answer: "Four to six weeks, assuming your pet's vaccination and microchip are already in order. No titre test wait applies from Chile. The main steps are booking cargo (4-6 weeks ahead) and arranging the SAG-endorsed AHC within 10 days of travel."
+  - question: "Who is the SAG-authorised official vet in Chile?"
+    answer: "SAG (Servicio Agricola y Ganadero) is the Chilean government agricultural and food safety authority. SAG-authorised official vets are registered with SAG to issue and endorse health certificates for animal export. Ask your vet whether they are SAG-authorised; if not, SAG can direct you to an authorised vet in your area."
+  - question: "Can I bring my dog to Bavaria from Chile?"
+    answer: "If your dog is not a restricted breed under Bavarian law, yes. Bavaria has one of Germany's strictest breed lists, including Rottweiler, Dogo Argentino, American Bulldog, and others beyond the federal Pit Bull and Tosa bans. Check the Bavarian breed restriction list against your dog's breed before booking. If restricted, the dog cannot legally be kept in Bavaria regardless of import documentation."
+  - question: "What is the typical cargo cost from Santiago to Frankfurt?"
+    answer: "EUR 900 to EUR 2,200 depending on crate size and routing via Madrid or other hub. Add EUR 90-220 for the SAG-authorised vet certificate and SAG endorsement, plus EUR 80-250 for a crate if needed. Total all-in is typically EUR 1,300 to EUR 3,200, significantly lower than the non-listed country routes that require a titre test."
+
 links:
   sideways:
     - url: "/pet-transport/germany-to-chile/"
       text: "Pet Transport Germany to Chile"
+    - url: "/pet-transport/chile-to-france/"
+      text: "Pet Transport Chile to France"
+    - url: "/pet-transport/chile-to-united-kingdom/"
+      text: "Pet Transport Chile to UK"
   upward:
-    - url: "/pet-transport/origins/chile-pet-export-guide/"
-      text: "Shipping from Chile"
+    - url: "/pet-transport/origins/chile/"
+      text: "Shipping pets from Chile"
     - url: "/pet-transport/countries/germany/"
-      text: "Importing to Germany"
-    - url: "/pet-transport/airlines/american-airlines/"
-      text: "American Airlines pet policy"
-    - url: "/pet-transport/airlines/lufthansa/"
-      text: "Lufthansa pet policy"
+      text: "Germany pet import guide"
 ---

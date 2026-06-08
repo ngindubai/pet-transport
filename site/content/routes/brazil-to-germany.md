@@ -1,138 +1,137 @@
 ---
-template_variant: "D"
-title: "Pet Transport from Brazil to Germany | PetTransportGlobal"
-description: "Pet relocation from Brazil to Germany: Germany import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport Brazil to Germany: Titre Test Required, MAPA Cert, Lufthansa Direct"
+description: "Moving a pet from Brazil to Germany in 2026. Brazil is non-listed for EU: FAVN titre test and 3-month wait. MAPA health cert. Lufthansa GRU-FRA direct. Germany breed rules."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "E"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "brazil-to-germany"
 origin_name: "Brazil"
 destination_name: "Germany"
+
 route_data:
   origin:
     code: "BR"
     country: "Brazil"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      health_certificate: "Official veterinary health certificate issued by a MAPA-registered official vet (Ministério da Agricultura, Pecuária e Abastecimento) and endorsed by MAPA. EU-format required for Germany entry. Issued within 10 days of travel."
+      export_permit: "No formal export permit for companion animals. MAPA inspection at departure; primary international departure is São Paulo Guarulhos (GRU) or Rio de Janeiro (GIG)."
+
   destination:
     code: "DE"
     country: "Germany"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or at same time as rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Standard EU 21-day wait from date of first vaccination before travel. No additional Germany-specific requirements beyond EU framework."
-      titre_test: "Required for: Pets from unlisted third countries (countries not on EU Annex II list). Not required for: Pets from EU member states, listed third countries (all P1 countries are listed). Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No quarantine for pets entering with correct EU documentation. Non-compliant animals may be returned, quarantined at owner's expense, or in worst case euthanised."
-      import_permit: "No formal import permit. EU pet passport (intra-EU) or Animal Health Certificate (from third countries) serves as documentation."
-      health_certificate: "Required"
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Required. Brazil is not EU-listed. FAVN titre test required. Blood drawn after microchip and valid vaccination. 3-month wait from blood sampling date. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. German customs (Zoll) inspects at Frankfurt (FRA) or destination airport."
+      import_permit: "No import permit. MAPA-endorsed EU certificate is the required document."
+      health_certificate: "EU-format certificate endorsed by MAPA, within 10 days of travel."
+      breed_restrictions: "Federal bans: Pit Bull Terrier, Tosa Inu. Bundesland-level restrictions vary; Bavaria restricts Rottweiler, American Bulldog, Cane Corso, and others. Check destination state."
+
   airlines:
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Emirates"
+    - name: "Lufthansa Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Singapore Airlines"
+      policy_summary: "Lufthansa operates direct from São Paulo Guarulhos (GRU) to Frankfurt (FRA). Lufthansa Cargo handles live animals in temperature-controlled holds. Frankfurt is Germany's main live animal cargo hub."
+    - name: "Air France Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "British Airways"
+      policy_summary: "Air France operates GRU to Paris CDG direct with cargo connections to Frankfurt. Live animal cargo accepted."
+    - name: "LATAM/Iberia Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Delta Air Lines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Delta Cargo handles larger pets in temperature-controlled hold. Brachycephalic breeds restricted from cargo"
-    - name: "American Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: American Airlines Cargo handles pet transport. Seasonal temperature embargoes apply"
-    - name: "Air Canada"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Air Canada Cargo handles pet transport in heated/pressurised hold. Brachycephalic breeds restricted from cargo year-round"
+      policy_summary: "LATAM and Iberia operate GRU to Madrid (MAD) direct, with cargo connections to Frankfurt and other German airports."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step: must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates rabies vaccination."
+      timing: "5+ months before travel"
+      responsible: "Vet in Brazil"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify rabies vaccination and 21-day post-primary wait."
+      timing: "5+ months before travel"
+      responsible: "Vet in Brazil"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Blood drawn for FAVN titre test. 3-month wait starts from this date."
+      timing: "4-5 months before travel"
+      responsible: "MAPA-registered vet and EU-approved laboratory"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Wait 3 months from blood sampling date."
+      timing: "3 months from blood draw"
+      responsible: "N/A - mandatory waiting period"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Book cargo from GRU to FRA on Lufthansa or Air France/LATAM via hub."
+      timing: "4-6 weeks before travel"
+      responsible: "Owner or agent"
     - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Obtain MAPA-endorsed EU certificate within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "MAPA-registered vet plus MAPA endorsement"
+    - step: 7
+      action: "Depart GRU. German customs (Zoll) inspects at Frankfurt on arrival."
+      timing: "Travel day"
+      responsible: "Airline cargo and German customs"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "MAPA vet certificate and endorsement: BRL 300-800 (approximately EUR 50-140)"
+    - "FAVN titre test (EU-approved laboratory): EUR 85-170"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo GRU to FRA (Lufthansa direct or via hub): EUR 900-2,100 depending on crate size"
+    - "Pet transport agent (optional): EUR 200-500"
+    - "Total typical range: EUR 1,300-3,200"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "Brazil is not EU-listed: FAVN titre test and 3-month wait from blood draw are mandatory. Start 5 months before travel."
+    - "3-month wait runs from blood draw date, not results date."
+    - "Germany Bundesland breed restrictions vary; check your destination state."
+    - "MAPA certificate must be EU format and dated within 10 days of travel."
+
+  route_complexity: "medium"
+  estimated_timeline_weeks: "20-22"
+
 content:
-  h1: "Pet Transport from Brazil to Germany"
-  overview: |
-    International pet transport from Brazil to Germany comes down to documentation timing more than anything else.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date: some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    We've laid out every step below so you know exactly what to prepare and when.
+  h1: "Pet Transport Brazil to Germany: 2026 Guide"
+  overview: "Brazil to Germany requires the FAVN titre test and a 3-month wait from the blood sampling date. Total preparation is approximately five months. Lufthansa operates direct cargo from São Paulo to Frankfurt. MAPA endorses the export certificate in Brazil. Germany's Bundesland breed rules are the state-specific check to complete before starting."
+
   sections:
-    - heading: "Understanding Germany's pet import rules"
+    - heading: "FAVN titre test and MAPA certificate from Brazil"
       body: |
-        Compared to some international pet transport routes, Brazil to Germany is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        Germany follows EU harmonised pet movement rules (Regulation 576/2013, transitioning to new rules under Regulation 2026/131 from 22 April 2026). Federal Ministry of Food and Agriculture (BMEL) oversees. Individual Bundeslaender may have additional animal welfare rules. Germany is considered pet-friendly with high dog ownership rates.
-    - heading: "Step-by-step: what to do first"
+        Brazil is not on the EU's listed country register. The FAVN titre test is mandatory for all pets moving from Brazil to Germany or any EU country.
+
+        Sequence: ISO microchip implanted first, then rabies vaccination with 21-day wait, then blood drawn at an EU-approved laboratory. The 3-month wait runs from the blood draw date, not the results date. MAPA (Ministério da Agricultura, Pecuária e Abastecimento) endorses the EU-format certificate, which must be dated within 10 days of travel. Total preparation: approximately five months. Source: food.ec.europa.eu, 2026.
+
+    - heading: "Lufthansa direct from São Paulo to Frankfurt"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Lufthansa Cargo operates direct from São Paulo Guarulhos (GRU) to Frankfurt (FRA), making it the most convenient cargo option for the Brazil to Germany corridor. Frankfurt is Germany's main live animal cargo hub with established Zoll handling on arrival.
+
+        Air France via CDG and LATAM/Iberia via Madrid are alternatives. Book four to six weeks ahead and confirm live animal cargo acceptance on your specific flight.
+
+    - heading: "Germany Bundesland breed rules"
+      body: |
+        Germany's breed restrictions work at two levels: federal bans (Pit Bull Terrier, Tosa Inu) that apply uniformly, and Bundesland-level lists that vary by state. Bavaria is the most restrictive, adding Rottweiler, American Bulldog, and others.
+
+        Check your destination Bundesland's breed rules before starting the titre test process. The Veterinaramt of your destination district can advise.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Brazil to Germany?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Germany?"
-    answer: "No routine quarantine is required in Germany for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Germany?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Germany. Start this process as early as possible."
-  - question: "Can I take my cat to Germany from Brazil?"
-    answer: "Yes, cats can be transported from Brazil to Germany. The same microchip, vaccination, and health certificate requirements apply as for dogs, though some rules (such as tapeworm treatment) apply to dogs only. Check the full requirements for cats with the destination authority."
+  - question: "Does my Brazilian pet need a titre test for Germany?"
+    answer: "Yes. Brazil is not EU-listed, so the FAVN titre test and 3-month wait from blood sampling date are mandatory. Source: food.ec.europa.eu, 2026."
+  - question: "Does Lufthansa fly direct from São Paulo to Frankfurt for pet cargo?"
+    answer: "Yes. Lufthansa Cargo operates direct from GRU to FRA with live animal cargo acceptance. Book four to six weeks ahead."
+  - question: "When does the 3-month wait start for a Brazilian pet?"
+    answer: "From the blood sampling date for the FAVN titre test, not from when results arrive. If blood is drawn on 1 May, travel to Germany is not possible before 1 August."
+  - question: "What is the total cost from São Paulo to Frankfurt?"
+    answer: "Cargo from GRU to FRA typically costs EUR 900 to EUR 2,100. Add EUR 85-170 for the titre test and EUR 50-140 for the MAPA certificate. Total all-in is typically EUR 1,300 to EUR 3,200."
+
 links:
   sideways:
     - url: "/pet-transport/germany-to-brazil/"
       text: "Pet Transport Germany to Brazil"
+    - url: "/pet-transport/brazil-to-france/"
+      text: "Pet Transport Brazil to France"
+    - url: "/pet-transport/brazil-to-spain/"
+      text: "Pet Transport Brazil to Spain"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-brazil-export-guide/"
-      text: "Shipping from Brazil"
+    - url: "/pet-transport/origins/brazil/"
+      text: "Shipping pets from Brazil"
     - url: "/pet-transport/countries/germany/"
-      text: "Importing to Germany"
-    - url: "/pet-transport/airlines/air-france/"
-      text: "Air France pet policy"
-    - url: "/pet-transport/airlines/lufthansa/"
-      text: "Lufthansa pet policy"
+      text: "Germany pet import guide"
 ---

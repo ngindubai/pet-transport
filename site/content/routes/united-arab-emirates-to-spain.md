@@ -1,129 +1,145 @@
 ---
-template_variant: "D"
-title: "Shipping Dogs & Cats from United Arab Emirates to Spain | PetTransportGlobal"
-description: "Complete guide to pet transport from United Arab Emirates to Spain. Import requirements, quarantine rules, airline options, and step-by-step timeline."
+title: "Pet Transport UAE to Spain: No Titre Test, Emirates DXB-MAD, Spain PPP Rules"
+description: "Moving a pet from the UAE to Spain in 2026. UAE is EU-listed: no titre test. Emirates flies DXB-MAD direct. MOCCAE cert, Spain PPP law for certain breeds, real costs."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "D"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "united-arab-emirates-to-spain"
 origin_name: "United Arab Emirates"
 destination_name: "Spain"
+
 route_data:
   origin:
     code: "AE"
     country: "United Arab Emirates"
     export_requirements:
-      export_permit: "Contact municipality for specific export clearance process"
+      health_certificate: "EU-format International Veterinary Certificate issued by a licensed vet in the UAE and endorsed by MOCCAE (Ministry of Climate Change and Environment). Mandatory for all pets leaving the UAE. Must be dated within 10 days of travel for EU entry."
+      export_permit: "MOCCAE export permit required for all companion animals leaving the UAE. Obtained through the MOCCAE online portal or a registered pet relocation agent."
+
   destination:
     code: "ES"
     country: "Spain"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or on same day as first rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. EU-harmonised rules. Vaccination must be recorded in EU pet passport or Animal Health Certificate."
-      titre_test: "Required for: Pets from non-EU countries not on the EU listed third countries. Not required for: Pets from EU member states and EU-listed countries. Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No routine quarantine for pets entering with correct EU-standard documentation."
-      import_permit: "EU pet passport or Animal Health Certificate serves as the travel document"
-      health_certificate: "Required. EU Pet Passport (for EU-resident pets) or Animal Health Certificate (AHC) for third-country pets. Issued by: Official veterinarian. Valid for 10 days from issue. AHC valid 10 days from issue for entry. Then valid 4 months for onward EU travel."
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Not required. UAE is listed under EU pet travel rules. Titre test and 3-month wait waived. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. Spanish customs inspects at Madrid Barajas (MAD)."
+      import_permit: "No import permit. MOCCAE-endorsed EU-format certificate is the required document."
+      health_certificate: "EU-format International Veterinary Certificate endorsed by MOCCAE, within 10 days of travel."
+      breed_restrictions: "Spain PPP law requires muzzle, leash (max 2m), and liability insurance in public for Pit Bull, American Staffordshire, Rottweiler, Dogo Argentino, Fila Brasileiro, Tosa Inu, Akita Inu, and visually similar breeds. PPP licence from municipality required. Import is permitted."
+
   airlines:
-    - name: "Emirates"
+    - name: "Emirates SkyCargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "Emirates operates direct from Dubai (DXB) to Madrid Barajas (MAD). Emirates SkyCargo handles live animals in temperature-controlled holds. Madrid is the main Spanish entry point for live animal cargo."
+    - name: "Iberia Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
+      policy_summary: "Iberia operates between DXB and MAD direct. Iberia Cargo accepts live animals and has strong live animal handling experience at Barajas where the customs inspection takes place."
+    - name: "Etihad Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Etihad operates from Abu Dhabi (AUH) to Madrid. Useful if you are based in Abu Dhabi. Confirm live animal cargo acceptance on the specific routing."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates the rabies vaccination."
+      timing: "6-8 weeks before travel"
+      responsible: "Vet in UAE"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify current rabies vaccination with 21-day post-primary wait complete."
+      timing: "Several weeks before travel"
+      responsible: "Vet in UAE"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Obtain MOCCAE export permit through the online portal or relocation agent."
+      timing: "4-6 weeks before travel"
+      responsible: "Owner or pet relocation agent"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Book Emirates SkyCargo or Iberia Cargo from DXB to MAD."
+      timing: "4-6 weeks before travel"
+      responsible: "Owner or agent"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Obtain MOCCAE-endorsed EU-format certificate within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "Licensed vet plus MOCCAE endorsement"
     - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Depart DXB. Spanish customs inspects at Madrid Barajas on arrival."
+      timing: "Travel day"
+      responsible: "Emirates SkyCargo and Spanish customs"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Licensed vet health certificate plus MOCCAE endorsement: AED 200-500 (approximately EUR 50-130)"
+    - "MOCCAE export permit: AED 100-300 (approximately EUR 25-80)"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo DXB to MAD (Emirates or Iberia direct): EUR 600-1,600 depending on crate size"
+    - "Pet transport agent (optional): EUR 200-500"
+    - "Total typical range: EUR 1,000-2,600"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "UAE is EU-listed: no titre test required. Four to six weeks preparation is enough."
+    - "Spain's PPP law is an ongoing obligation for certain breeds once in Spain, not a border ban. Research PPP licence requirements for your destination city."
+    - "MOCCAE export permit is mandatory and separate from the health certificate."
+    - "The MOCCAE-endorsed EU certificate must be dated within 10 days of travel."
+
+  route_complexity: "low-medium"
+  estimated_timeline_weeks: "4-6"
+
 content:
-  h1: "Pet Transport from United Arab Emirates to Spain"
-  overview: |
-    Shipping your dog or cat from United Arab Emirates to Spain is a process that rewards early planning.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    We've laid out every step below so you know exactly what to prepare and when.
+  h1: "Pet Transport UAE to Spain: 2026 Guide"
+  overview: "UAE to Spain is a well-established route with strong direct cargo options. The UAE's EU-listed status removes the titre test, and Emirates and Iberia both fly direct from Dubai to Madrid. Spain's PPP rules for certain dog breeds are the main planning consideration once in-country, but they do not restrict the import itself."
+
   sections:
-    - heading: "What to know about the United Arab Emirates to Spain route"
+    - heading: "UAE listed status and the Spain import process"
       body: |
-        Compared to some international pet transport routes, United Arab Emirates to Spain is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        EU member state. Follows EU Regulation 576/2013 (transitioning to Regulation 2026/131 from April 2026). Spain has one of Europe's highest pet ownership rates. Some additional national rules for 'potentially dangerous dogs' (PPP list). Authority: Ministerio de Agricultura, Pesca y Alimentacion (MAPA).
-    - heading: "Step-by-step: what to do first"
+        The EU grants listed status to countries with animal health systems equivalent to EU standards. The UAE holds this status, removing the FAVN titre test and the 3-month wait from the Spain import process. The preparation window for a Dubai family moving to Spain is four to six weeks, not five months.
+
+        The requirements are: an ISO microchip implanted before the rabies vaccination, a current and valid rabies vaccination with the 21-day post-primary wait satisfied, a MOCCAE export permit, and the MOCCAE-endorsed EU-format certificate dated within 10 days of travel. Spanish customs at Madrid Barajas checks these on arrival and releases compliant pets without quarantine.
+
+        Emirates and Iberia both operate direct from Dubai to Madrid, giving two strong cargo options on this route. Spain is one of the UAE's most popular destinations for pet moves, with significant traffic from the large expatriate community in Dubai relocating to Madrid and other Spanish cities.
+
+    - heading: "Spain's PPP regime: what Dubai owners moving to Spain need to plan for"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Spain classifies certain dog breeds as Perros Potencialmente Peligrosos (PPP). The classification does not prevent import; these dogs can cross the Spanish border through standard EU documentation. What PPP status creates is a set of ongoing obligations that shape daily life with the dog in Spain.
+
+        PPP breeds include Pit Bull Terrier, American Staffordshire Terrier, Rottweiler, Dogo Argentino, Fila Brasileiro, Tosa Inu, and Akita Inu. Dogs that visually resemble any of these breeds can also be assessed as PPP on inspection, even if of mixed heritage.
+
+        The PPP obligations in public spaces: the dog must be muzzled at all times, on a leash of no more than two metres, and the owner must hold a civil liability insurance policy specific to the dog. The owner must also apply for a PPP licence from the local municipality, which involves a criminal background check and a basic dog-handling competency assessment. Processing times vary by city.
+
+        Many Dubai expats moving to Spain with Rottweilers or similar breeds are surprised by these obligations. They do not stop the move, but they should be factored into the planning well before arrival. Check rental or housing agreements too, as some landlords in Spain exclude PPP breeds.
+
+    - heading: "Which airline to use for Dubai to Madrid pet cargo"
+      body: |
+        Emirates SkyCargo operates direct from Dubai International (DXB) to Madrid Barajas (MAD) with strong live animal cargo capacity. Emirates is the most common choice on this corridor for UAE pet moves, with experienced handling both at Dubai International and on arrival at Barajas.
+
+        Iberia Cargo is a strong alternative, with direct service between DXB and MAD and established live animal procedures at Barajas where the Spanish customs inspection takes place.
+
+        Etihad Cargo from Abu Dhabi is a practical option if you are based in the Abu Dhabi or Al Ain area and prefer not to travel to Dubai for the cargo departure.
+
+        Book four to six weeks ahead of your travel date and confirm live animal cargo acceptance on your specific flight number. For larger breeds in large crates, confirm cargo space availability earlier, as live animal capacity can fill quickly on popular dates.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from United Arab Emirates to Spain?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Spain?"
-    answer: "No routine quarantine is required in Spain for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Spain?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Spain. Start this process as early as possible."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in United Arab Emirates. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Spain's authority for the exact format required."
+  - question: "Does my UAE pet need a titre test to enter Spain?"
+    answer: "No. The UAE is listed under EU pet travel rules, so the FAVN titre test and 3-month waiting period are waived. Your pet needs a microchip (predating the vaccination), a current rabies vaccination, MOCCAE export permit, and a MOCCAE-endorsed EU certificate dated within 10 days of travel. Source: food.ec.europa.eu, 2026."
+  - question: "Is the Rottweiler allowed into Spain from the UAE?"
+    answer: "Yes, import is permitted. The Rottweiler is not banned at the Spanish border. However, once in Spain, Rottweilers are classified as PPP (Perro Potencialmente Peligroso). The owner must apply for a PPP licence, keep the dog muzzled in public, on a maximum 2m leash, and hold civil liability insurance. The import itself is straightforward; the ongoing obligations in Spain require planning."
+  - question: "What is the MOCCAE export permit and do I need it?"
+    answer: "Yes. MOCCAE (Ministry of Climate Change and Environment) export permits are mandatory for all companion animals leaving the UAE. The permit is separate from the health certificate. Obtain it through the MOCCAE online portal or via a registered pet relocation agent before your travel date. Without it, departure from Dubai or Abu Dhabi is not possible."
+  - question: "Which airport do UAE pets arrive at in Spain?"
+    answer: "Most cargo from Dubai to Spain arrives at Madrid Barajas (MAD), where Emirates and Iberia operate their direct routes. Spanish customs carries out the pet inspection at Barajas. If relocating to Barcelona or another Spanish city, your agent can arrange onward domestic transport after Madrid customs clearance."
+  - question: "How much does it cost to move a pet from Dubai to Madrid?"
+    answer: "Direct cargo from DXB to MAD (Emirates or Iberia) typically costs EUR 600 to EUR 1,600 depending on crate size. Add EUR 50-130 for the MOCCAE certificate, EUR 25-80 for the export permit, and EUR 80-250 for a crate if needed. Total all-in is typically EUR 1,000 to EUR 2,600."
+
 links:
   sideways:
     - url: "/pet-transport/spain-to-united-arab-emirates/"
-      text: "Pet Transport Spain to United Arab Emirates"
+      text: "Pet Transport Spain to UAE"
+    - url: "/pet-transport/united-arab-emirates-to-france/"
+      text: "Pet Transport UAE to France"
+    - url: "/pet-transport/united-arab-emirates-to-germany/"
+      text: "Pet Transport UAE to Germany"
   upward:
-    - url: "/pet-transport/origins/pet-export-guide-shipping-from-united-arab-emirates/"
-      text: "Shipping from United Arab Emirates"
+    - url: "/pet-transport/origins/united-arab-emirates/"
+      text: "Shipping pets from UAE"
     - url: "/pet-transport/countries/spain/"
-      text: "Importing to Spain"
-    - url: "/pet-transport/airlines/emirates/"
-      text: "Emirates pet policy"
-    - url: "/pet-transport/airlines/air-france/"
-      text: "Air France pet policy"
+      text: "Spain pet import guide"
 ---

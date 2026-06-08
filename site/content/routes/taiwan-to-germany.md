@@ -1,134 +1,122 @@
 ---
-template_variant: "E"
-title: "Pet Relocation Taiwan to Germany | Requirements & Guide"
-description: "Pet relocation from Taiwan to Germany: Germany import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport Taiwan to Germany: BAPHIQ Certificate, EU-Listed, No Titre Test, 2026"
+description: "Moving a pet from Taiwan to Germany in 2026. Taiwan is EU-listed: no titre test required. BAPHIQ health certificate. China Airlines or EVA Air TPE to FRA. Germany Bundesland breed rules vary."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "A"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "taiwan-to-germany"
 origin_name: "Taiwan"
 destination_name: "Germany"
+
 route_data:
   origin:
     code: "TW"
     country: "Taiwan"
     export_requirements:
-      export_permit: "No export permit for pets."
-      health_certificate: "{'required': True, 'issued_by': 'BAPHIQ-authorised official vet'}"
+      health_certificate: "Official veterinary health certificate issued by a BAPHIQ-registered official vet and endorsed by BAPHIQ (Bureau of Animal and Plant Health Inspection and Quarantine). EU-format required. Issued within 10 days of travel."
+      export_permit: "No formal export permit required for companion animals from Taiwan beyond the BAPHIQ health certificate. Primary departure airport: Taipei Taoyuan (TPE)."
+
   destination:
     code: "DE"
     country: "Germany"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or at same time as rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Standard EU 21-day wait from date of first vaccination before travel. No additional Germany-specific requirements beyond EU framework."
-      titre_test: "Required for: Pets from unlisted third countries (countries not on EU Annex II list). Not required for: Pets from EU member states, listed third countries (all P1 countries are listed). Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No quarantine for pets entering with correct EU documentation. Non-compliant animals may be returned, quarantined at owner's expense, or in worst case euthanised."
-      import_permit: "No formal import permit. EU pet passport (intra-EU) or Animal Health Certificate (from third countries) serves as documentation."
-      health_certificate: "Required"
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Not required. Taiwan is on the EU's listed third countries schedule under EU Regulation 576/2013. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. German customs (Zoll) inspects at Frankfurt (FRA)."
+      import_permit: "No import permit required. BAPHIQ-endorsed EU-format health certificate is the required document."
+      health_certificate: "EU-format certificate endorsed by BAPHIQ, issued within 10 days of travel."
+      breed_restrictions: "Federal bans: Pit Bull Terrier, Tosa Inu. Bundesland-level restrictions vary; Bavaria restricts Rottweiler, American Bulldog, and others. Check destination state before travel."
+
   airlines:
-    - name: "Air China"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin on domestic China routes. International: cargo only via Air China Cargo. Strict crate size and documentation requirements. China-specific import/export permits required. Advance booking of cargo space essential."
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Emirates"
+    - name: "China Airlines Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "British Airways"
+      policy_summary: "China Airlines operates from Taipei Taoyuan (TPE) to Frankfurt (FRA). China Airlines Cargo accepts live animals on long-haul routes."
+    - name: "EVA Air Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
+      policy_summary: "EVA Air connects TPE to European hubs including Amsterdam (AMS) with connections to Frankfurt. EVA Air Cargo handles live animal shipments."
+    - name: "Lufthansa Cargo via hub"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
+      policy_summary: "Lufthansa connects TPE to Frankfurt via European hub partners. Lufthansa Cargo accepts live animals at Frankfurt."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates rabies vaccination."
+      timing: "4-6 weeks before travel"
+      responsible: "Vet in Taiwan"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify rabies vaccination and 21-day post-primary wait."
+      timing: "4-6 weeks before travel"
+      responsible: "Vet in Taiwan"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Book cargo from TPE to FRA on China Airlines or via EVA Air hub."
+      timing: "3-5 weeks before travel"
+      responsible: "Owner or agent"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Obtain BAPHIQ-endorsed EU-format health certificate within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "BAPHIQ-registered vet plus BAPHIQ endorsement"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Depart TPE. German customs (Zoll) inspects at Frankfurt on arrival."
+      timing: "Travel day"
+      responsible: "Airline cargo and German customs"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "BAPHIQ health certificate and endorsement: TWD 2,000-5,000 (approximately EUR 60-155)"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo TPE to FRA (China Airlines direct or via hub): EUR 800-2,000 depending on crate size"
+    - "Pet transport agent (optional): EUR 150-400"
+    - "Total typical range: EUR 1,140-2,800"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "Taiwan is EU-listed: no FAVN titre test required. Allow 4-6 weeks, not 5 months."
+    - "Germany Bundesland breed restrictions vary; check your destination state before starting the process."
+    - "BAPHIQ endorsement takes a few working days; allow enough lead time within the 10-day certificate window."
+    - "China Airlines and EVA Air are the main carriers from TPE to European hubs."
+
+  route_complexity: "medium"
+  estimated_timeline_weeks: "4-6"
+
 content:
-  h1: "Pet Transport from Taiwan to Germany"
-  overview: |
-    Moving a pet from Taiwan to Germany involves more paperwork than most owners expect.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    The paperwork is the hard part. Once everything is in order, the journey itself is well-managed.
+  h1: "Pet Transport Taiwan to Germany: 2026 Guide"
+  overview: "Taiwan is on the EU's listed third countries schedule, so the FAVN titre test and 3-month wait do not apply for Germany entry. The BAPHIQ health certificate covers the export side. China Airlines and EVA Air connect Taipei Taoyuan to Frankfurt directly or via a European hub. Allow four to six weeks and check Germany's Bundesland breed rules for your destination state."
+
   sections:
-    - heading: "What to know about the Taiwan to Germany route"
+    - heading: "Taiwan EU-listed: no titre test and the BAPHIQ health certificate process"
       body: |
-        Compared to some international pet transport routes, Taiwan to Germany is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        Germany follows EU harmonised pet movement rules (Regulation 576/2013, transitioning to new rules under Regulation 2026/131 from 22 April 2026). Federal Ministry of Food and Agriculture (BMEL) oversees. Individual Bundeslaender may have additional animal welfare rules. Germany is considered pet-friendly with high dog ownership rates.
-    - heading: "Things to sort before you book"
+        EU Regulation 576/2013 lists Taiwan as a recognised territory for pet movement. Taiwanese pets entering Germany need only a valid ISO microchip, a current rabies vaccination (21-day wait after a primary course), and the BAPHIQ-endorsed EU-format health certificate. No titre test, no 3-month wait. Source: food.ec.europa.eu, 2026.
+
+        BAPHIQ (Bureau of Animal and Plant Health Inspection and Quarantine) operates under Taiwan's Council of Agriculture and is the official authority for animal export health certification. A BAPHIQ-registered official vet issues the EU-format certificate within 10 days of travel; BAPHIQ endorses it before departure. Allow a few working days for the endorsement step and plan accordingly within the 10-day certificate validity window.
+
+    - heading: "Flights from Taipei to Frankfurt and Germany's Bundesland breed rules"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        China Airlines Cargo operates from Taipei Taoyuan (TPE) to Frankfurt (FRA) and accepts live animals on this route. EVA Air connects TPE to Amsterdam Schiphol (AMS), from where connections to Frankfurt are available. Both carriers are experienced in live animal cargo transport from Taipei.
+
+        Germany bans Pit Bull Terrier and Tosa Inu at federal level. Each Bundesland then adds its own restrictions; Bavaria is the most restrictive, covering Rottweiler, American Bulldog, and a range of other breeds. The rules vary significantly from state to state. Check the specific Bundesland rules for your destination city if your breed falls into any potentially restricted category before committing to the move.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Taiwan to Germany?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Germany?"
-    answer: "No routine quarantine is required in Germany for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Germany?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Germany. Start this process as early as possible."
-  - question: "Can I take my cat to Germany from Taiwan?"
-    answer: "Yes, cats can be transported from Taiwan to Germany. The same microchip, vaccination, and health certificate requirements apply as for dogs, though some rules (such as tapeworm treatment) apply to dogs only. Check the full requirements for cats with the destination authority."
+  - question: "Does my Taiwanese pet need a titre test for Germany?"
+    answer: "No. Taiwan is on the EU's listed schedule under EU Regulation 576/2013. The FAVN titre test and 3-month wait are not required. Source: food.ec.europa.eu, 2026."
+  - question: "What is the BAPHIQ certificate for pet export from Taiwan?"
+    answer: "The BAPHIQ (Bureau of Animal and Plant Health Inspection and Quarantine) health certificate is Taiwan's official export document for pets. A BAPHIQ-registered vet issues the EU-format certificate within 10 days of travel; BAPHIQ endorses it before departure."
+  - question: "Which airline is best for Taipei to Frankfurt pet cargo?"
+    answer: "China Airlines Cargo operates from TPE to FRA. EVA Air connects TPE to AMS with onward connections to Frankfurt. Book 3-4 weeks ahead and confirm live animal acceptance on your specific flights."
+  - question: "What are Germany's breed restrictions for Taiwanese pets?"
+    answer: "Germany bans Pit Bull Terrier and Tosa Inu federally. Each Bundesland adds its own list; Bavaria is the most restrictive. Check your specific destination state before starting the process."
+
 links:
   sideways:
     - url: "/pet-transport/germany-to-taiwan/"
       text: "Pet Transport Germany to Taiwan"
+    - url: "/pet-transport/taiwan-to-france/"
+      text: "Pet Transport Taiwan to France"
+    - url: "/pet-transport/taiwan-to-netherlands/"
+      text: "Pet Transport Taiwan to Netherlands"
   upward:
-    - url: "/pet-transport/origins/taiwan-pet-export-guide/"
-      text: "Shipping from Taiwan"
+    - url: "/pet-transport/origins/taiwan/"
+      text: "Shipping pets from Taiwan"
     - url: "/pet-transport/countries/germany/"
-      text: "Importing to Germany"
-    - url: "/pet-transport/airlines/lufthansa/"
-      text: "Lufthansa pet policy"
+      text: "Germany pet import guide"
 ---

@@ -1,129 +1,122 @@
 ---
-template_variant: "E"
-title: "Moving Your Pet from Singapore to Spain | Complete Guide"
-description: "Pet relocation from Singapore to Spain: Spain import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport Singapore to Spain: SFA Certificate, EU-Listed, Hub Routing, 2026"
+description: "Moving a pet from Singapore to Spain in 2026. Singapore is EU-listed: no titre test required. SFA health certificate. No direct SIN to MAD; routing via AMS or FRA hub. Spain PPP breed law."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "A"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "singapore-to-spain"
 origin_name: "Singapore"
 destination_name: "Spain"
+
 route_data:
   origin:
     code: "SG"
     country: "Singapore"
     export_requirements:
-      health_certificate: "Must meet destination country requirements. Contact destination authority for specific format."
+      health_certificate: "Official veterinary health certificate issued by an SFA-accredited vet and endorsed by the Singapore Food Agency (SFA). EU-format required. Issued within 10 days of travel."
+      export_permit: "No formal export permit required for companion animals from Singapore beyond the SFA health certificate. Primary departure airport: Singapore Changi (SIN)."
+
   destination:
     code: "ES"
     country: "Spain"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or on same day as first rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. EU-harmonised rules. Vaccination must be recorded in EU pet passport or Animal Health Certificate."
-      titre_test: "Required for: Pets from non-EU countries not on the EU listed third countries. Not required for: Pets from EU member states and EU-listed countries. Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No routine quarantine for pets entering with correct EU-standard documentation."
-      import_permit: "EU pet passport or Animal Health Certificate serves as the travel document"
-      health_certificate: "Required. EU Pet Passport (for EU-resident pets) or Animal Health Certificate (AHC) for third-country pets. Issued by: Official veterinarian. Valid for 10 days from issue. AHC valid 10 days from issue for entry. Then valid 4 months for onward EU travel."
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Not required. Singapore is on the EU's listed third countries schedule under EU Regulation 576/2013. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. Spanish customs inspects at Madrid Barajas (MAD)."
+      import_permit: "No import permit required. SFA-endorsed EU-format health certificate is the required document."
+      health_certificate: "EU-format certificate endorsed by SFA, issued within 10 days of travel."
+      breed_restrictions: "Spain PPP law: muzzle, leash (max 2m), liability insurance, and PPP licence required for Pit Bull, American Staffordshire, Rottweiler, and similar breeds. Import is permitted; PPP creates ongoing obligations once in Spain."
+
   airlines:
-    - name: "Singapore Airlines"
+    - name: "KLM Cargo via AMS"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Emirates"
+      policy_summary: "KLM connects Singapore Changi (SIN) to Amsterdam Schiphol (AMS) with onward connections to Madrid Barajas (MAD)."
+    - name: "Lufthansa Cargo via FRA"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "Lufthansa connects SIN to Frankfurt (FRA) with onward connections to Madrid via Iberia."
+    - name: "Air France Cargo via CDG"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Air France connects SIN to Paris CDG with onward connections to Madrid Barajas."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates rabies vaccination."
+      timing: "4-6 weeks before travel"
+      responsible: "Vet in Singapore"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify rabies vaccination and 21-day post-primary wait."
+      timing: "4-6 weeks before travel"
+      responsible: "Vet in Singapore"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Book cargo from SIN via AMS, FRA, or CDG hub to MAD."
+      timing: "3-5 weeks before travel"
+      responsible: "Owner or agent"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Obtain SFA-endorsed EU-format health certificate within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "SFA-accredited vet plus SFA endorsement"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Depart SIN. Spanish customs inspects at Madrid Barajas on arrival."
+      timing: "Travel day"
+      responsible: "Airline cargo and Spanish customs"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "SFA health certificate and endorsement: SGD 200-400 (approximately EUR 140-275)"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo SIN to MAD via hub: EUR 800-2,200 depending on crate size and routing"
+    - "Pet transport agent (optional): EUR 150-400"
+    - "Total typical range: EUR 1,200-2,900"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "Singapore is EU-listed: no FAVN titre test required. Allow 4-6 weeks, not 5 months."
+    - "No direct cargo service from SIN to MAD; a European hub transfer via AMS, FRA, or CDG is required."
+    - "Spain PPP obligations apply once in Spain for certain breeds; import is not restricted at the border."
+    - "Confirm live animal acceptance on all flight segments including the hub connection."
+
+  route_complexity: "medium"
+  estimated_timeline_weeks: "4-6"
+
 content:
-  h1: "Pet Transport from Singapore to Spain"
-  overview: |
-    Getting your dog from Singapore to Spain is entirely achievable, but the preparation timeline is not flexible.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Getting the timing right is critical. Work backwards from your travel date and add a buffer.
+  h1: "Pet Transport Singapore to Spain: 2026 Guide"
+  overview: "Singapore is on the EU's listed third countries schedule, so the FAVN titre test and 3-month wait do not apply for Spain entry. There is no direct cargo service from Changi to Madrid; all routings connect via a European hub. The SFA health certificate covers the export side. Spain's PPP law creates ongoing obligations for certain breeds once in-country."
+
   sections:
-    - heading: "What to know about the Singapore to Spain route"
+    - heading: "Singapore EU-listed: no titre test and the SFA certificate for Spain"
       body: |
-        Compared to some international pet transport routes, Singapore to Spain is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        EU member state. Follows EU Regulation 576/2013 (transitioning to Regulation 2026/131 from April 2026). Spain has one of Europe's highest pet ownership rates. Some additional national rules for 'potentially dangerous dogs' (PPP list). Authority: Ministerio de Agricultura, Pesca y Alimentacion (MAPA).
-    - heading: "From experience: Singapore to Spain pet transport"
+        EU Regulation 576/2013 lists Singapore as a recognised third country for pet movement. Singapore pets entering Spain need only a valid ISO microchip, a current rabies vaccination (21-day wait after a primary course), and the SFA-endorsed EU-format health certificate. No titre test, no 3-month wait. Source: food.ec.europa.eu, 2026.
+
+        The SFA (Singapore Food Agency) manages animal export certification in Singapore. An SFA-accredited vet issues the EU-format certificate within 10 days of travel; SFA endorses it before departure. The documentation process is well-understood in Singapore, given the city's active international relocation community.
+
+    - heading: "Hub routing to Madrid and Spain's PPP obligations"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        There is no direct cargo service from Singapore Changi (SIN) to Madrid Barajas (MAD). All routings involve a transfer at a European hub: KLM via Amsterdam Schiphol (AMS), Lufthansa via Frankfurt (FRA), or Air France via Paris CDG. Each hub then connects onwards to Madrid. When booking, confirm live animal acceptance on every segment, including the hub connection.
+
+        Spain's PPP (Perro Potencialmente Peligroso) law covers Pit Bull Terrier, American Staffordshire Terrier, Rottweiler, Dogo Argentino, and similar breeds. Import is not refused at the border; Spanish customs does not apply the PPP classification at MAD. Once the dog is in Spain, however, the owner must register the dog as PPP, keep it muzzled in public, use a leash no longer than 2m, hold civil liability insurance, and obtain a PPP licence from the local municipality.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Singapore to Spain?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Spain?"
-    answer: "No routine quarantine is required in Spain for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Spain?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Spain. Start this process as early as possible."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Singapore. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Spain's authority for the exact format required."
+  - question: "Does my Singaporean pet need a titre test for Spain?"
+    answer: "No. Singapore is on the EU's listed countries schedule under EU Regulation 576/2013. The FAVN titre test and 3-month wait are not required. Source: food.ec.europa.eu, 2026."
+  - question: "Is there a direct flight from Singapore to Madrid for pet cargo?"
+    answer: "No. There is no direct cargo service from SIN to MAD. All routings connect via a European hub at Amsterdam, Frankfurt, or Paris CDG. Confirm live animal acceptance on all segments."
+  - question: "What is Spain's PPP law and does it block entry at the border?"
+    answer: "Spain's PPP law applies to Pit Bull, American Staffordshire, Rottweiler, and similar breeds. Import is not refused at MAD. PPP creates ongoing obligations once the dog is in Spain: muzzle in public, 2m leash, civil liability insurance, and a PPP licence from the local municipality."
+  - question: "What is the total cost from Singapore to Madrid?"
+    answer: "Cargo from SIN to MAD via a European hub typically costs EUR 800-2,200. Add EUR 140-275 for the SFA certificate. Total all-in is typically EUR 1,200-2,900."
+
 links:
   sideways:
     - url: "/pet-transport/spain-to-singapore/"
       text: "Pet Transport Spain to Singapore"
+    - url: "/pet-transport/singapore-to-germany/"
+      text: "Pet Transport Singapore to Germany"
+    - url: "/pet-transport/singapore-to-netherlands/"
+      text: "Pet Transport Singapore to Netherlands"
   upward:
-    - url: "/pet-transport/origins/pet-export-guide-shipping-from-singapore/"
-      text: "Shipping from Singapore"
+    - url: "/pet-transport/origins/singapore/"
+      text: "Shipping pets from Singapore"
     - url: "/pet-transport/countries/spain/"
-      text: "Importing to Spain"
-    - url: "/pet-transport/airlines/singapore-airlines/"
-      text: "Singapore Airlines pet policy"
-    - url: "/pet-transport/airlines/air-france/"
-      text: "Air France pet policy"
+      text: "Spain pet import guide"
 ---

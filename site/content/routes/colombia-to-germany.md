@@ -1,139 +1,131 @@
 ---
-template_variant: "C"
-title: "Pet Transport from Colombia to Germany | PetTransportGlobal"
-description: "Complete guide to pet transport from Colombia to Germany. Import requirements, quarantine rules, airline options, and step-by-step timeline."
+title: "Pet Transport Colombia to Germany: FAVN Titre Test, ICA Certificate, 2026"
+description: "Moving a pet from Colombia to Germany in 2026. Colombia is non-listed for EU: FAVN titre test and 3-month wait required. ICA certificate. Air France or KLM to FRA. Germany breed rules."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "A"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "colombia-to-germany"
 origin_name: "Colombia"
 destination_name: "Germany"
+
 route_data:
   origin:
     code: "CO"
     country: "Colombia"
     export_requirements:
-      export_permit: "{'required': False}"
-      health_certificate: "{'required': True, 'issued_by': 'ICA-authorised official vet'}"
+      health_certificate: "Official veterinary health certificate issued by an ICA-registered official vet and endorsed by ICA (Instituto Colombiano Agropecuario). EU-format required for Germany entry. Issued within 10 days of travel."
+      export_permit: "No formal export permit required for companion animals from Colombia. ICA endorsement of the health certificate is the key export step. Primary departure airport: Bogota El Dorado (BOG)."
+
   destination:
     code: "DE"
     country: "Germany"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or at same time as rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Standard EU 21-day wait from date of first vaccination before travel. No additional Germany-specific requirements beyond EU framework."
-      titre_test: "Required for: Pets from unlisted third countries (countries not on EU Annex II list). Not required for: Pets from EU member states, listed third countries (all P1 countries are listed). Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No quarantine for pets entering with correct EU documentation. Non-compliant animals may be returned, quarantined at owner's expense, or in worst case euthanised."
-      import_permit: "No formal import permit. EU pet passport (intra-EU) or Animal Health Certificate (from third countries) serves as documentation."
-      health_certificate: "Required"
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Required. Colombia is not EU-listed. FAVN titre test at an EU-approved laboratory. Result must be 0.5 IU/ml or above. 3-month wait from blood sampling date before EU entry. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. German customs (Zoll) inspects at Frankfurt (FRA)."
+      import_permit: "No import permit required. ICA-endorsed EU-format health certificate is the required document."
+      health_certificate: "EU-format certificate endorsed by ICA, issued within 10 days of travel."
+      breed_restrictions: "Federal bans: Pit Bull Terrier, Tosa Inu. Bundesland-level restrictions vary; Bavaria restricts Rottweiler, American Bulldog, and others. Check destination state before travel."
+
   airlines:
-    - name: "American Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: American Airlines Cargo handles pet transport. Seasonal temperature embargoes apply"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Emirates"
+    - name: "Air France Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "British Airways"
+      policy_summary: "Air France operates Bogota (BOG) to Paris CDG with connections to Frankfurt. Air France Cargo handles live animals on transatlantic routes."
+    - name: "KLM Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
+      policy_summary: "KLM operates BOG to Amsterdam Schiphol (AMS) with connections to Frankfurt. KLM Cargo accepts live animals on selected long-haul routes."
+    - name: "Avianca Cargo via MAD"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Delta Air Lines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Delta Cargo handles larger pets in temperature-controlled hold. Brachycephalic breeds restricted from cargo"
-    - name: "Air Canada"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Air Canada Cargo handles pet transport in heated/pressurised hold. Brachycephalic breeds restricted from cargo year-round"
+      policy_summary: "Avianca connects BOG to Madrid and European hubs with onward connections to Frankfurt. Colombia's flag carrier with established transatlantic cargo."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates rabies vaccination."
+      timing: "5+ months before travel"
+      responsible: "Vet in Colombia"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify rabies vaccination and 21-day post-primary wait."
+      timing: "5+ months before travel"
+      responsible: "Vet in Colombia"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Blood draw for FAVN titre test at EU-approved laboratory. 3-month wait starts from sampling date."
+      timing: "4-5 months before travel"
+      responsible: "Official vet and EU-approved laboratory"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Wait 3 months from blood sampling date."
+      timing: "3 months from blood draw"
+      responsible: "N/A - mandatory waiting period"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Book cargo from BOG to FRA via CDG or AMS."
+      timing: "4-6 weeks before travel"
+      responsible: "Owner or agent"
     - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Obtain ICA-endorsed EU-format health certificate within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "ICA-registered vet plus ICA endorsement"
+    - step: 7
+      action: "Depart BOG. German customs (Zoll) inspects at Frankfurt on arrival."
+      timing: "Travel day"
+      responsible: "Airline cargo and German customs"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "ICA certificate and endorsement: COP 100,000-300,000 (approximately EUR 20-65)"
+    - "FAVN titre test (EU-approved laboratory): EUR 85-170"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo BOG to FRA via hub: EUR 800-1,800 depending on crate size"
+    - "Pet transport agent (optional): EUR 150-400"
+    - "Total typical range: EUR 1,200-2,700"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "Colombia is not EU-listed: FAVN titre test and 3-month wait from blood sampling date are mandatory. Start 5+ months before travel."
+    - "3-month wait runs from blood draw date, not results date."
+    - "Germany Bundesland breed restrictions vary; check your destination state before starting the process."
+    - "ICA endorsement takes a few working days; allow enough lead time within the 10-day certificate window."
+
+  route_complexity: "medium"
+  estimated_timeline_weeks: "20-22"
+
 content:
-  h1: "Pet Transport from Colombia to Germany"
-  overview: |
-    Pet transport from Colombia to Germany follows a clear process once you know what Germany requires.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    We've laid out every step below so you know exactly what to prepare and when.
+  h1: "Pet Transport Colombia to Germany: 2026 Guide"
+  overview: "Colombia is not on the EU's listed third countries schedule, which means the FAVN titre test and 3-month wait from blood sampling date are mandatory for entry into Germany. Start the process five months before travel. The ICA certificate covers the export side. Air France via Paris CDG or KLM via Amsterdam Schiphol provide the main connections to Frankfurt."
+
   sections:
-    - heading: "Why this route needs early planning"
+    - heading: "The FAVN titre test and 3-month wait from Colombia"
       body: |
-        Compared to some international pet transport routes, Colombia to Germany is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        Germany follows EU harmonised pet movement rules (Regulation 576/2013, transitioning to new rules under Regulation 2026/131 from 22 April 2026). Federal Ministry of Food and Agriculture (BMEL) oversees. Individual Bundeslaender may have additional animal welfare rules. Germany is considered pet-friendly with high dog ownership rates.
-    - heading: "Things to sort before you book"
+        The EU distinguishes between listed third countries (low-risk, no titre test) and non-listed countries. Colombia is non-listed under EU Regulation 576/2013, which means your pet must have a FAVN titre test result of at least 0.5 IU/ml, and three calendar months must elapse from the blood sampling date before EU entry is permitted. Source: food.ec.europa.eu, 2026.
+
+        The sequence is fixed: ISO microchip first, then rabies vaccination with a 21-day wait, then blood drawn at an EU-approved laboratory. The 3-month clock starts on the blood draw date, not the results date. Allow five months from starting the process to your departure date.
+
+    - heading: "ICA certificate and Germany Bundesland breed rules"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        ICA (Instituto Colombiano Agropecuario) endorses the EU-format veterinary export health certificate. An ICA-registered official vet issues the certificate within 10 days of travel; ICA endorses it before departure. Book the vet appointment with enough lead time for both issuance and endorsement within the 10-day window.
+
+        Germany bans Pit Bull Terrier and Tosa Inu federally. Each Bundesland adds its own restrictions; Bavaria is the most restrictive. Check your destination state before starting the ICA and titre test process if you have a breed that may fall within any state list.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Colombia to Germany?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Germany?"
-    answer: "No routine quarantine is required in Germany for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Germany?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Germany. Start this process as early as possible."
-  - question: "Can I take my cat to Germany from Colombia?"
-    answer: "Yes, cats can be transported from Colombia to Germany. The same microchip, vaccination, and health certificate requirements apply as for dogs, though some rules (such as tapeworm treatment) apply to dogs only. Check the full requirements for cats with the destination authority."
+  - question: "Does my Colombian pet need a titre test for Germany?"
+    answer: "Yes. Colombia is not on the EU's listed countries schedule. The FAVN titre test and 3-month wait from blood sampling date are mandatory. Source: food.ec.europa.eu, 2026."
+  - question: "What is the ICA certificate for Colombia pet export?"
+    answer: "ICA (Instituto Colombiano Agropecuario) endorses the EU-format health certificate required for export from Colombia. An ICA-registered official vet issues it within 10 days of travel; ICA endorses it before departure."
+  - question: "Which airline is best for Bogota to Frankfurt pet cargo?"
+    answer: "Air France via Paris CDG and KLM via Amsterdam Schiphol are the main options for connecting to Frankfurt from Bogota. Confirm live animal acceptance on your specific flights when booking 4-6 weeks ahead."
+  - question: "How long does preparation take from Colombia to Germany?"
+    answer: "Allow 20-22 weeks. The 3-month wait from blood draw is the fixed constraint. Add microchip, vaccination wait, titre test result time, cargo booking, and ICA certificate time."
+
 links:
   sideways:
     - url: "/pet-transport/germany-to-colombia/"
       text: "Pet Transport Germany to Colombia"
+    - url: "/pet-transport/colombia-to-france/"
+      text: "Pet Transport Colombia to France"
+    - url: "/pet-transport/colombia-to-spain/"
+      text: "Pet Transport Colombia to Spain"
   upward:
-    - url: "/pet-transport/origins/colombia-pet-export-guide/"
-      text: "Shipping from Colombia"
+    - url: "/pet-transport/origins/colombia/"
+      text: "Shipping pets from Colombia"
     - url: "/pet-transport/countries/germany/"
-      text: "Importing to Germany"
-    - url: "/pet-transport/airlines/american-airlines/"
-      text: "American Airlines pet policy"
-    - url: "/pet-transport/airlines/lufthansa/"
-      text: "Lufthansa pet policy"
+      text: "Germany pet import guide"
 ---

@@ -42,12 +42,15 @@
 - Chunk 36 template: A (Field Manual) - DONE 2026-06-07 (Greece/Denmark inbound, EU-to-Brazil, EU-to-Indonesia, EU-to-Malaysia, EU-to-Mexico; 25 routes)
 - Chunk 37 template: B (Visual Journey) - DONE 2026-06-07 (South America x UK/US, Africa/South Asia x UK/US, UK outbound to Cyprus/Malta/Mexico/Bulgaria/Croatia; 25 routes)
 - Chunk 38 template: C (Comparison Brief) - DONE 2026-06-07 (UK/US outbound to Slovakia/Luxembourg/Ecuador/Costa Rica/Tanzania/Zimbabwe/Cambodia/Myanmar/Mauritius; Mauritius/Zimbabwe/Cambodia to UK; 25 routes)
-- Chunk 39 template: D (Conversational Q&A) - NEXT
+- Chunk 39 template: D (Conversational Q&A) - DONE 2026-06-08 (completed remaining 11 Tier B routes; mixed non-listed/EU-listed batch)
+- Chunk 40 template: E (Data-Forward) - DONE 2026-06-08 (25 Template E Tier B routes: NZ/AU/Colombia to EU5, overwrote thin pages with correct regulatory data)
+- Chunk 41 template: A (Field Manual) - DONE 2026-06-08 (25 Template A Tier B routes: Peru/Chile/Japan/Singapore/Argentina/S.Korea/HK/Taiwan to EU5)
+- Chunk 42 template: B (Visual Journey) - NEXT
 - Blog Day 10: pet-transport-uae-to-pakistan - DONE 2026-06-07 (Marcus Webb, AQD NOC, AED 3,000-6,000)
 - Blog Day 11: exporting-pets-from-singapore - DONE 2026-06-08 (Marcus Webb, AVS export licence, FAVN/RNATT for Australia, Changi cargo, UK/EU/US/AU destination matrix, cost table)
 - Blog Day 12: NEXT (check plan-rows-q1.js)
 - Tier: B (1,094 pairs; Tier A now complete)
-- Template rotation: ...D(21), E(22), A(23), B(24), C(25-27), D(28), E(29), A(30), D(31a), B(31b), B(32), C(33), D(34), E(35), A(36), B(37), C(38), D(39)...
+- Template rotation: ...D(21), E(22), A(23), B(24), C(25-27), D(28), E(29), A(30), D(31a), B(31b), B(32), C(33), D(34), E(35), A(36), B(37), C(38), D(39), E(40), A(41), B(42)...
 
 **DEPLOY INCIDENT 2026-06-05 (fixed):** Three routine runs each committed a "chunk 25" to its own `claude/*` feature branch. `build-to-live.yml` only fires on push to `main`, so none deployed and Hostinger never updated. main never advanced, so each run rebuilt chunk 25 with overlapping routes. All three combined into main here. DURABLE FIX: the routine must push to `main` (STEP 3 already says `git push origin HEAD:main`; a conflicting feature-branch instruction was overriding it). See MEMORY.md.
 

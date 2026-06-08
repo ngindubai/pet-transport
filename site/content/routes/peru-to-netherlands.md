@@ -1,123 +1,147 @@
 ---
-template_variant: "C"
-title: "Shipping Dogs & Cats from Peru to Netherlands | PetTransportGlobal"
-description: "Pet relocation from Peru to Netherlands: Netherlands import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport Peru to Netherlands: KLM Direct from Lima and No Breed Restrictions"
+description: "Moving a pet from Peru to the Netherlands in 2026. KLM flies LIM-AMS direct. Peru is EU non-listed: FAVN titre test and 3-month wait required. Netherlands has no breed ban."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "D"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "peru-to-netherlands"
 origin_name: "Peru"
 destination_name: "Netherlands"
+
 route_data:
   origin:
     code: "PE"
     country: "Peru"
     export_requirements:
-      export_permit: "{'required': True, 'issued_by': 'SENASA Peru'}"
-      health_certificate: "SENASA-endorsed health certificate required for export."
+      health_certificate: "EU-format Animal Health Certificate issued by SENASA-authorised vet and endorsed by SENASA (Servicio Nacional de Sanidad Agraria). Within 10 days of travel."
+      export_permit: "No export permit for companion animals. SENASA inspection at Lima Jorge Chavez Airport (LIM)."
+
   destination:
     code: "NL"
     country: "Netherlands"
     import_requirements:
-      microchip: "Required (ISO 11784/11785)"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel"
-      titre_test: "Not required for EU, UK, and certain third countries."
-      quarantine: "No routine quarantine for compliant pets"
-      import_permit: "EU pet passport or health certificate"
-      health_certificate: "Required. Issued by: Official veterinarian. Valid for 10 days from issue"
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Required. Peru is non-listed under EU rules. FAVN or ELISA test, minimum 0.5 IU/ml, at EU-approved lab. Blood 30+ days after vaccination. 3-month wait from blood sampling date before Netherlands entry. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. NVWA inspects at Amsterdam Schiphol (AMS)."
+      import_permit: "No import permit. SENASA-endorsed EU AHC is the required document."
+      health_certificate: "EU Animal Health Certificate from SENASA-authorised vet, within 10 days of travel."
+      breed_restrictions: "None at national level. Netherlands lifted its breed ban in 2008. Behaviour-based assessment applies. No federal breed-specific import restrictions."
+
   airlines:
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Emirates"
+    - name: "KLM Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "KLM operates Lima Jorge Chavez (LIM) to Amsterdam Schiphol (AMS) direct. KLM Cargo accepts live animals on this route. Schiphol has dedicated live animal facilities managed by NVWA on arrival. Book early; this direct route is popular."
+    - name: "Air France Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
+      policy_summary: "Air France flies LIM to Paris CDG with cargo connections to AMS. A reliable alternative when KLM direct cargo is unavailable."
+    - name: "Iberia Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
+      policy_summary: "Iberia routes via Madrid (MAD) with cargo connections from MAD to AMS. Adds a Madrid leg. Viable but less direct than KLM."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates the rabies vaccination."
+      timing: "5+ months before travel"
+      responsible: "Vet in Peru"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify current rabies vaccination with 21-day post-primary wait."
+      timing: "After microchipping"
+      responsible: "Vet in Peru"
     - step: 3
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Blood draw for FAVN/ELISA titre test at EU-approved lab. 30+ days after vaccination."
+      timing: "4+ months before travel"
+      responsible: "Vet and EU-approved lab"
     - step: 4
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "3-month wait from blood sampling date begins after passing result."
+      timing: "From sampling date"
+      responsible: "Owner records sampling date"
     - step: 5
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Book KLM Cargo from LIM to AMS."
+      timing: "During 3-month wait"
+      responsible: "Owner or agent"
+    - step: 6
+      action: "Obtain SENASA-endorsed EU AHC within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "SENASA-authorised vet in Peru"
+    - step: 7
+      action: "Depart Lima. NVWA inspects at Schiphol on arrival."
+      timing: "Travel day"
+      responsible: "KLM Cargo and NVWA"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "FAVN/ELISA titre test at EU-approved lab: PEN 350-700 (EUR 85-170)"
+    - "SENASA health certificate and endorsement: PEN 200-500 (EUR 50-120)"
+    - "KLM Cargo LIM to AMS: EUR 1,000-2,400 depending on crate size"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Pet transport agent (optional): EUR 200-500"
+    - "Total typical range: EUR 1,500-3,500"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "low"
-  estimated_timeline_weeks: "4-10"
+    - "Peru is EU non-listed. The titre test and 3-month wait from blood sampling date are mandatory."
+    - "The 3-month wait runs from blood sampling date, not result receipt date."
+    - "KLM Cargo live animal slots on LIM-AMS can fill; book four to six weeks ahead."
+    - "SENASA endorsement of the health certificate requires scheduling; do not leave to the day before travel."
+
+  route_complexity: "high"
+  estimated_timeline_weeks: "20-24"
+
 content:
-  h1: "Pet Transport from Peru to Netherlands"
-  overview: |
-    Moving a pet from Peru to Netherlands involves more paperwork than most owners expect.
-    
-    This route is relatively straightforward compared to some international routes. Start preparations at least 4 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened.
-    
-    The paperwork is the hard part. Once everything is in order, the journey itself is well-managed.
+  h1: "Pet Transport Peru to Netherlands: 2026 Guide"
+  overview: "KLM's direct Lima to Schiphol route makes the Netherlands one of the cleaner one-stop cargo options for Peruvian pets heading to Europe. There are no breed restrictions at the national level in the Netherlands, which removes one layer of complexity. The regulatory preparation is the same as for any EU destination from Peru: a FAVN titre test, 3-month wait from blood sampling, and SENASA-endorsed health certificate. Plan five months."
+
   sections:
-    - heading: "Key requirements for moving your pet to Netherlands"
+    - heading: "Does the Netherlands have any breed restrictions for dogs from Peru?"
       body: |
-        Compared to some international pet transport routes, Peru to Netherlands is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        EU member state. EU pet travel rules apply.
-    - heading: "Practical advice for shipping your pet from Peru"
+        No. The Netherlands lifted its national breed-specific legislation in 2008 and now uses a behaviour-based assessment instead of breed bans. This means that dogs of breeds restricted in Germany (Rottweiler, Pit Bull) or banned in the UK (XL Bully) can enter the Netherlands legally from Peru, provided they meet the standard EU import requirements.
+
+        There are no breed-specific import restrictions at the Dutch national level. Individual municipalities may have local leash rules that apply to all dogs in certain areas, but these are not breed bans and they do not affect the import process.
+
+        This makes the Netherlands a straightforward destination for owners with breeds that face restrictions elsewhere in Europe. The focus for the Netherlands move is on the EU titre test and 3-month wait, not on breed paperwork.
+
+    - heading: "KLM Cargo from Lima to Schiphol: the practical picture"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        KLM operates a direct service from Lima Jorge Chavez International Airport (LIM) to Amsterdam Schiphol (AMS). This is one of the few direct European cargo routes from South America, and it simplifies the logistics significantly compared to routes requiring a connection.
+
+        KLM Cargo accepts live animals on this route as manifested cargo in the temperature-controlled hold. Schiphol has dedicated live animal reception facilities, and NVWA (the Dutch Food and Consumer Product Safety Authority) carries out the import inspection there on arrival.
+
+        Book your cargo slot four to six weeks before travel. Provide the exact dimensions of the IATA-compliant crate and the total combined weight of pet plus crate. Not all aircraft on the LIM-AMS route have identical live animal cargo configurations, so confirm live animal acceptance for the specific flight number when booking.
+
+        Air France via CDG is the main alternative if KLM direct is unavailable on your preferred dates. Iberia via Madrid adds a second leg and is a longer routing.
+
+    - heading: "What does NVWA check at Schiphol when your pet arrives from Peru?"
+      body: |
+        NVWA (Nederlandse Voedsel- en Warenautoriteit) is the Dutch government body responsible for food and consumer product safety, including live animal import inspections. When your pet arrives at Schiphol from Lima, NVWA inspectors check:
+
+        First, the microchip: they scan the pet and confirm the number matches the certificate. Second, the EU Animal Health Certificate: they verify it is from a SENASA-authorised official vet in Peru, issued within 10 days of travel, and in the correct EU format. Third, the titre test: they check the result is at least 0.5 IU/ml and, critically, that the blood sampling date is at least 3 months before the arrival date. Fourth, the vaccination record: the rabies vaccination must be current and the microchip must predate it.
+
+        If all of this is in order, the inspection is routine and takes one to two hours from cargo arrival to pet release. The most common cause of delays is the titre test date calculation: inspectors work from the blood sampling date, not the result date. Make sure your certificate states both dates clearly.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Peru to Netherlands?"
-    answer: "Allow at least 4 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Netherlands?"
-    answer: "No routine quarantine is required in Netherlands for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Netherlands?"
-    answer: "No, Netherlands does not require a rabies titre test for most pets arriving from Peru. Your pet still needs a valid rabies vaccination and microchip. Check the current requirements with the destination authority before travel."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Peru. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Netherlands's authority for the exact format required."
+  - question: "My dog was vaccinated against rabies four years ago with a booster. Does it still need a titre test for the Netherlands?"
+    answer: "Yes, if it has never had a passing titre test on record from an EU-approved laboratory. The titre test is a one-time requirement as long as the vaccination has been continuously maintained since the passing test. If your pet's vaccination history shows an unbroken record and a prior passing titre test result of 0.5 IU/ml or above, check with a SENASA-authorised vet whether that earlier test still satisfies the requirement under current EU rules."
+  - question: "Can I send a cat from Lima to Amsterdam without a titre test?"
+    answer: "No. The EU titre test requirement for non-listed countries applies to cats as well as dogs. A cat from Peru entering the Netherlands needs the same FAVN or ELISA test, 3-month wait, and SENASA-endorsed AHC as a dog. Source: food.ec.europa.eu, 2026."
+  - question: "What is the total flight time from Lima to Amsterdam on KLM?"
+    answer: "The KLM direct LIM-AMS flight is approximately 12 to 13 hours. Pets travel in the temperature-controlled hold for the duration. KLM Cargo follows IATA Live Animals Regulations for animal welfare in transit, including temperature management and water availability."
+  - question: "How long does NVWA's inspection take at Schiphol for a pet from Peru?"
+    answer: "Typically one to two hours from cargo arrival to pet release for compliant pets. NVWA inspects microchip, AHC format, titre test dates, and vaccination record. If documentation is correct and dates check out, clearance is routine. Discrepancies in date calculations are the most common cause of extended inspections."
+  - question: "Is a pet transport agent necessary for the Peru to Netherlands move?"
+    answer: "Not strictly necessary, but the SENASA endorsement process, EU-approved lab coordination, and cargo booking all have timing dependencies that are easier to manage with a specialist. An IPATA-registered agent with South America experience handles these dependencies and can liaise with KLM Cargo and NVWA on your behalf. Agent fees are typically EUR 200-500."
+
 links:
   sideways:
     - url: "/pet-transport/netherlands-to-peru/"
       text: "Pet Transport Netherlands to Peru"
+    - url: "/pet-transport/peru-to-germany/"
+      text: "Pet Transport Peru to Germany"
+    - url: "/pet-transport/peru-to-spain/"
+      text: "Pet Transport Peru to Spain"
   upward:
     - url: "/pet-transport/origins/peru-pet-export-guide/"
-      text: "Shipping from Peru"
+      text: "Shipping pets from Peru"
     - url: "/pet-transport/countries/netherlands/"
-      text: "Importing to Netherlands"
-    - url: "/pet-transport/airlines/klm-royal-dutch-airlines/"
-      text: "KLM pet policy"
-    - url: "/pet-transport/airlines/emirates/"
-      text: "Emirates pet policy"
+      text: "Netherlands pet import guide"
 ---

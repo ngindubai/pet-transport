@@ -1,123 +1,137 @@
 ---
-template_variant: "E"
-title: "Shipping Dogs & Cats from South Africa to Italy | PetTransportGlobal"
-description: "Complete guide to pet transport from South Africa to Italy. Import requirements, quarantine rules, airline options, and step-by-step timeline."
+title: "Pet Transport South Africa to Italy: Titre Test, DALRRD Cert, No Italian Breed Ban"
+description: "Moving a pet from South Africa to Italy in 2026. SA non-listed for EU: FAVN titre test and 3-month wait. DALRRD cert. Emirates via DXB to FCO or MXP. No Italian breed ban."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "E"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "south-africa-to-italy"
 origin_name: "South Africa"
 destination_name: "Italy"
+
 route_data:
   origin:
     code: "ZA"
     country: "South Africa"
     export_requirements:
-      export_permit: "Required for all live animal exports. Apply through provincial State Veterinarian office."
-      health_certificate: "Must meet destination country requirements. Critical: many countries classify SA as high-risk due to rabies status."
+      health_certificate: "Official veterinary health certificate issued by a DALRRD-authorised state vet, endorsed by DALRRD. EU-format required. Issued within 10 days of travel."
+      export_permit: "DALRRD veterinary export permit required. Apply through the State Veterinarian's office in your province."
+
   destination:
     code: "IT"
     country: "Italy"
     import_requirements:
-      microchip: "Required (ISO 11784/11785)"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel"
-      titre_test: "Not required"
-      quarantine: "No routine quarantine for compliant pets"
-      import_permit: "EU pet passport or health certificate"
-      health_certificate: "Required. Issued by: Official veterinarian. Valid for 10 days from issue"
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Required. South Africa is not EU-listed. FAVN titre test required. Blood drawn after microchip and valid vaccination. 3-month wait from blood sampling date. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. Italian customs (Dogana) and Ministry of Health veterinary officers inspect at Rome Fiumicino (FCO) or Milan Malpensa (MXP)."
+      import_permit: "No import permit. DALRRD-endorsed EU certificate is the required document."
+      health_certificate: "EU-format certificate endorsed by DALRRD, within 10 days of travel."
+      breed_restrictions: "Italy removed its national breed ban in 2009. No federal breed-specific import restrictions."
+
   airlines:
-    - name: "British Airways"
+    - name: "Emirates SkyCargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Emirates"
+      policy_summary: "Emirates operates from Johannesburg (JNB) to Dubai (DXB) with connections to Rome Fiumicino (FCO) and Milan Malpensa (MXP). Emirates SkyCargo handles live animals at Dubai International."
+    - name: "Lufthansa Cargo via FRA"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Singapore Airlines"
+      policy_summary: "Lufthansa operates JNB to Frankfurt direct, with cargo connections to Italian airports. An alternative routing via Germany."
+    - name: "Ethiopian Airlines Cargo via ADD"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Ethiopian Airlines routes JNB via Addis Ababa to Rome FCO. A three-leg routing with competitive rates from Africa to Italy."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step: must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates rabies vaccination."
+      timing: "5+ months before travel"
+      responsible: "Vet in South Africa"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify rabies vaccination and 21-day post-primary wait."
+      timing: "5+ months before travel"
+      responsible: "Vet in South Africa"
     - step: 3
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Blood drawn for FAVN titre test. 3-month wait starts from this date."
+      timing: "4-5 months before travel"
+      responsible: "State vet and EU-approved laboratory"
     - step: 4
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Wait 3 months from blood sampling date."
+      timing: "3 months from blood draw"
+      responsible: "N/A - mandatory waiting period"
     - step: 5
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Book cargo JNB to FCO or MXP (via DXB on Emirates or European hub)."
+      timing: "4-6 weeks before travel"
+      responsible: "Owner or agent"
+    - step: 6
+      action: "Obtain DALRRD-endorsed EU certificate within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "State vet plus DALRRD endorsement"
+    - step: 7
+      action: "Depart JNB. Italian customs and Ministry of Health vet inspects at FCO or MXP."
+      timing: "Travel day"
+      responsible: "Airline cargo and Italian customs"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "DALRRD vet certificate and export permit: ZAR 1,000-2,500 (approximately EUR 50-130)"
+    - "FAVN titre test (EU-approved laboratory): EUR 85-170"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo JNB to FCO or MXP (via DXB or European hub): EUR 900-2,200 depending on crate size"
+    - "Pet transport agent (optional): EUR 200-500"
+    - "Total typical range: EUR 1,300-3,300"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "low"
-  estimated_timeline_weeks: "4-10"
+    - "South Africa is not EU-listed: titre test and 3-month wait from blood draw are mandatory. Start 5 months before travel."
+    - "No direct JNB to Italian airport cargo flight; all routings connect via a hub."
+    - "Italy has no national breed ban since 2009. Most breeds enter without breed-specific restrictions."
+    - "DALRRD certificate must be EU format and dated within 10 days of travel."
+
+  route_complexity: "medium"
+  estimated_timeline_weeks: "20-22"
+
 content:
-  h1: "Pet Transport from South Africa to Italy"
-  overview: |
-    Moving a pet from South Africa to Italy involves more paperwork than most owners expect.
-    
-    This route is relatively straightforward compared to some international routes. Start preparations at least 4 weeks before your travel date: some steps have fixed waiting periods that cannot be shortened.
-    
-    Start early and follow the steps in sequence. Missing a deadline pushes the whole timeline back.
+  h1: "Pet Transport South Africa to Italy: 2026 Guide"
+  overview: "South Africa to Italy requires the FAVN titre test and 3-month wait, with five months preparation total. All routes connect via a hub, most commonly Dubai via Emirates. Italy removed its national breed ban in 2009, so any breed from South Africa can enter through standard EU documentation."
+
   sections:
-    - heading: "Key requirements for moving your pet to Italy"
+    - heading: "Titre test and DALRRD documentation: what South African owners need"
       body: |
-        Compared to some international pet transport routes, South Africa to Italy is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        EU member state. EU rules apply.
-    - heading: "Practical advice for shipping your pet from South Africa"
+        South Africa is not EU-listed. The FAVN titre test is mandatory for all pets moving to Italy or any EU country, and the 3-month wait runs from the blood draw date. DALRRD endorses the export certificate, which must be in EU format and dated within 10 days of travel.
+
+        Start the process five months before travel. The blood draw date is the critical timing point. Source: food.ec.europa.eu, 2026.
+
+    - heading: "Italy: no breed ban, inspection at Rome or Milan"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Italy removed its national breed ban in 2009. Any breed from South Africa can enter Italy through standard EU documentation. Italian customs and Ministry of Health veterinary officers inspect at Rome Fiumicino (FCO) or Milan Malpensa (MXP) on arrival. The inspection covers microchip, EU certificate (with DALRRD endorsement), vaccination record, and titre test result.
+
+        For families relocating to cities other than Rome or Milan, onward domestic transport from the cargo airport can be arranged by your relocation agent after customs clearance.
+
+    - heading: "Cargo routing from Johannesburg to Italy"
+      body: |
+        No direct cargo flight connects Johannesburg to Italian airports. The main options are Emirates via Dubai to FCO or MXP, Lufthansa via Frankfurt with onward connections, or Ethiopian Airlines via Addis Ababa to Rome.
+
+        Emirates is generally the most practical choice, with strong live animal handling at Dubai International and direct service to both Rome and Milan from DXB. Book four to six weeks ahead.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from South Africa to Italy?"
-    answer: "Allow at least 4 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Italy?"
-    answer: "No routine quarantine is required in Italy for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Italy?"
-    answer: "No, Italy does not require a rabies titre test for most pets arriving from South Africa. Your pet still needs a valid rabies vaccination and microchip. Check the current requirements with the destination authority before travel."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in South Africa. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Italy's authority for the exact format required."
+  - question: "Does my South African pet need a titre test for Italy?"
+    answer: "Yes. South Africa is not EU-listed, so the FAVN titre test and 3-month wait from blood sampling date are mandatory. Source: food.ec.europa.eu, 2026."
+  - question: "Are any dog breeds banned in Italy for pets from South Africa?"
+    answer: "No. Italy removed its national breed ban in 2009. Any breed can enter Italy through standard EU documentation without breed-specific permits. The titre test requirement applies equally to all breeds."
+  - question: "How do pets from South Africa get to Italy by cargo?"
+    answer: "All routes connect via a hub. Emirates via Dubai to Rome FCO or Milan MXP is the most common. Lufthansa via Frankfurt or Ethiopian Airlines via Addis Ababa are alternatives. No direct JNB to Italian airport cargo service exists."
+  - question: "What is the total cost from Johannesburg to Rome or Milan?"
+    answer: "Cargo via hub typically costs EUR 900 to EUR 2,200 depending on routing and crate size. Add EUR 85-170 for the titre test and EUR 50-130 for the DALRRD certificate. Total all-in is typically EUR 1,300 to EUR 3,300."
+
 links:
   sideways:
     - url: "/pet-transport/italy-to-south-africa/"
       text: "Pet Transport Italy to South Africa"
+    - url: "/pet-transport/south-africa-to-germany/"
+      text: "Pet Transport South Africa to Germany"
+    - url: "/pet-transport/south-africa-to-france/"
+      text: "Pet Transport South Africa to France"
   upward:
-    - url: "/pet-transport/origins/pet-export-guide-shipping-from-south-africa/"
-      text: "Shipping from South Africa"
+    - url: "/pet-transport/origins/south-africa/"
+      text: "Shipping pets from South Africa"
     - url: "/pet-transport/countries/italy/"
-      text: "Importing to Italy"
-    - url: "/pet-transport/airlines/british-airways/"
-      text: "British Airways pet policy"
-    - url: "/pet-transport/airlines/air-france/"
-      text: "Air France pet policy"
+      text: "Italy pet import guide"
 ---

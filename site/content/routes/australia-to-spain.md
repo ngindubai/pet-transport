@@ -1,132 +1,128 @@
 ---
-template_variant: "D"
-title: "Pet Relocation Australia to Spain | Requirements & Guide"
-description: "Complete guide to pet transport from Australia to Spain. Import requirements, quarantine rules, airline options, and step-by-step timeline."
+title: "Pet Transport Australia to Spain: EU-Listed, No Titre Test, DAFF Certificate"
+description: "Moving a pet from Australia to Spain in 2026. Australia is EU-listed: no titre test required. DAFF certificate. Emirates via DXB or Singapore Airlines via hub to MAD. Spain PPP rules."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "E"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "australia-to-spain"
 origin_name: "Australia"
 destination_name: "Spain"
+
 route_data:
   origin:
     code: "AU"
     country: "Australia"
     export_requirements:
-      export_permit: "Required for live animal exports from Australia"
+      health_certificate: "Official export health certificate issued by an accredited veterinarian and endorsed by DAFF (Department of Agriculture, Fisheries and Forestry). EU-format required. Issued within 10 days of travel."
+      export_permit: "No formal export permit required for companion animals from Australia. Primary departure airports: Sydney (SYD) or Melbourne (MEL)."
+
   destination:
     code: "ES"
     country: "Spain"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or on same day as first rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. EU-harmonised rules. Vaccination must be recorded in EU pet passport or Animal Health Certificate."
-      titre_test: "Required for: Pets from non-EU countries not on the EU listed third countries. Not required for: Pets from EU member states and EU-listed countries. Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No routine quarantine for pets entering with correct EU-standard documentation."
-      import_permit: "EU pet passport or Animal Health Certificate serves as the travel document"
-      health_certificate: "Required. EU Pet Passport (for EU-resident pets) or Animal Health Certificate (AHC) for third-country pets. Issued by: Official veterinarian. Valid for 10 days from issue. AHC valid 10 days from issue for entry. Then valid 4 months for onward EU travel."
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Not required. Australia is an EU-listed country under EU Regulation 576/2013. The FAVN titre test and 3-month wait do not apply. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. Spanish customs inspects at Madrid Barajas (MAD)."
+      import_permit: "No import permit required. DAFF-endorsed EU-format health certificate is the required document."
+      health_certificate: "EU-format certificate endorsed by DAFF, issued within 10 days of travel."
+      breed_restrictions: "Spain PPP law: muzzle, leash (max 2m), liability insurance, and PPP licence required for Pit Bull, American Staffordshire, Rottweiler, Dogo Argentino, and similar breeds. Import is permitted; PPP creates ongoing obligations once in Spain."
+
   airlines:
-    - name: "Qantas"
+    - name: "Emirates SkyCargo via DXB"
       type: "cargo_only"
-      policy_summary: "Cargo: QantasFreighter network for pet transport. Brachycephalic breeds restricted year-round. Temperature embargoes: seasonal restrictions during Australian summer (Dec-Feb)"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Emirates"
+      policy_summary: "Emirates operates Sydney (SYD) and Melbourne (MEL) to Dubai (DXB) with connections to Madrid Barajas (MAD). Emirates SkyCargo handles live animals at Dubai International. Single transfer to MAD."
+    - name: "Singapore Airlines Cargo via SIN"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "Singapore Airlines operates SYD and MEL to Singapore (SIN) with connections via European hubs to Madrid. Established Australia to Europe cargo network."
+    - name: "Iberia Cargo via European hub"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Iberia Cargo connects to Madrid Barajas from European hub connections. Established live animal handling at Barajas where Spanish customs inspection takes place."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates rabies vaccination."
+      timing: "6+ weeks before travel"
+      responsible: "Vet in Australia"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify rabies vaccination is valid and 21-day post-primary wait is complete."
+      timing: "6+ weeks before travel"
+      responsible: "Vet in Australia"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Book cargo from SYD or MEL to MAD via DXB or via European hub."
+      timing: "4-6 weeks before travel"
+      responsible: "Owner or agent"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Obtain DAFF-endorsed EU-format health certificate within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "Accredited vet plus DAFF endorsement"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Depart SYD or MEL. Spanish customs inspects at Madrid Barajas on arrival."
+      timing: "Travel day"
+      responsible: "Airline cargo and Spanish customs"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "DAFF-endorsed health certificate: AUD 200-600 (approximately EUR 130-400)"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo SYD/MEL to MAD via hub: EUR 1,900-4,200 depending on crate size and routing"
+    - "Pet transport agent (recommended for long-haul): EUR 200-500"
+    - "Total typical range: EUR 2,300-5,400"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "Australia is EU-listed: no titre test or 3-month wait required. 4-6 weeks preparation is sufficient with a current vaccination."
+    - "No direct SYD or MEL to MAD cargo service; Emirates via Dubai (DXB) gives the most direct single-transfer routing to Madrid."
+    - "Spain PPP obligations apply once in Spain for certain breeds; import is not restricted at the border."
+    - "DAFF endorsement takes a few working days; allow enough lead time within the 10-day certificate window."
+
+  route_complexity: "medium"
+  estimated_timeline_weeks: "4-6"
+
 content:
-  h1: "Pet Transport from Australia to Spain"
-  overview: |
-    Getting your dog or cat from Australia to Spain is entirely achievable, but the preparation timeline is not flexible.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    We've laid out every step below so you know exactly what to prepare and when.
+  h1: "Pet Transport Australia to Spain: 2026 Guide"
+  overview: "Australia is EU-listed, so no titre test or 3-month wait applies. Preparation takes 4-6 weeks for a pet with a current vaccination. Emirates via Dubai provides the most direct single-transfer routing from Sydney or Melbourne to Madrid. Spain's PPP regime creates ongoing obligations for certain breeds once in-country."
+
   sections:
-    - heading: "Understanding Spain's pet import rules"
+    - heading: "EU-listed status: no titre test for Australian pets entering Spain"
       body: |
-        Compared to some international pet transport routes, Australia to Spain is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        EU member state. Follows EU Regulation 576/2013 (transitioning to Regulation 2026/131 from April 2026). Spain has one of Europe's highest pet ownership rates. Some additional national rules for 'potentially dangerous dogs' (PPP list). Authority: Ministerio de Agricultura, Pesca y Alimentacion (MAPA).
-    - heading: "Practical advice for shipping your pet from Australia"
+        Australia appears on the EU's listed third countries schedule (EU Regulation 576/2013, Annex II). Pets from listed countries enter Spain on the same documentation basis as EU member state pets. The FAVN titre test and 3-month wait from blood draw do not apply. Source: food.ec.europa.eu, 2026.
+
+        A valid ISO microchip, current rabies vaccination, and DAFF-endorsed EU-format health certificate issued within 10 days of travel are the requirements. With a vaccination already in place, 4-6 weeks is sufficient preparation time.
+
+    - heading: "Sydney or Melbourne to Madrid: Emirates via Dubai"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        There is no direct cargo service from Sydney or Melbourne to Madrid. Emirates via Dubai (DXB) offers the most direct single-transfer routing to MAD, with daily departures from both SYD and MEL and temperature-controlled live animal cargo at Dubai International.
+
+        Singapore Airlines via Singapore (SIN) can also connect to Madrid via a European hub, though this typically involves two transfers. Iberia Cargo handles connections at Barajas. Book 4-6 weeks ahead and confirm live animal acceptance on your specific flights.
+
+    - heading: "Spain PPP: ongoing obligations for certain breeds"
+      body: |
+        Spain's PPP (Perro Potencialmente Peligroso) law applies to Pit Bull Terrier, American Staffordshire Terrier, Rottweiler, Dogo Argentino, Fila Brasileiro, Tosa Inu, Akita Inu, and similar breeds. The import itself is not restricted at the border. PPP creates ongoing obligations once the dog is in Spain: muzzle in public, maximum 2m leash, civil liability insurance, and a PPP licence from the local municipality.
+
+        For most breeds common in Australia, including Labrador Retrievers, Golden Retrievers, Border Collies, and Australian Shepherds, no PPP obligation applies.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Australia to Spain?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Spain?"
-    answer: "No routine quarantine is required in Spain for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Spain?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Spain. Start this process as early as possible."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Australia. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Spain's authority for the exact format required."
+  - question: "Does my Australian pet need a titre test for Spain?"
+    answer: "No. Australia is EU-listed under EU Regulation 576/2013. The FAVN titre test and 3-month wait do not apply. A valid microchip, current rabies vaccination, and DAFF-endorsed EU health certificate are the requirements. Source: food.ec.europa.eu, 2026."
+  - question: "How long does preparation take for Australia to Spain?"
+    answer: "4-6 weeks if the rabies vaccination is current. If a primary vaccination is needed, allow 10-12 weeks for the 21-day post-vaccination wait. No titre test wait applies."
+  - question: "Which airline is best for Sydney or Melbourne to Madrid pet cargo?"
+    answer: "Emirates via Dubai (DXB) is the most direct single-transfer option for Australia to Madrid. Singapore Airlines via SIN can also connect to Madrid but typically involves a second transfer."
+  - question: "What is the PPP law in Spain and does it affect import?"
+    answer: "Spain's PPP law applies to Pit Bull, American Staffordshire, Rottweiler, and similar breeds. Import is permitted; PPP creates ongoing obligations once in Spain: muzzle, 2m leash, liability insurance, and a PPP licence from the local municipality. It is not a border restriction."
+
 links:
   sideways:
     - url: "/pet-transport/spain-to-australia/"
       text: "Pet Transport Spain to Australia"
+    - url: "/pet-transport/australia-to-germany/"
+      text: "Pet Transport Australia to Germany"
+    - url: "/pet-transport/australia-to-france/"
+      text: "Pet Transport Australia to France"
   upward:
-    - url: "/pet-transport/origins/pet-export-guide-shipping-from-australia/"
-      text: "Shipping from Australia"
+    - url: "/pet-transport/origins/australia/"
+      text: "Shipping pets from Australia"
     - url: "/pet-transport/countries/spain/"
-      text: "Importing to Spain"
-    - url: "/pet-transport/airlines/qantas/"
-      text: "Qantas pet policy"
-    - url: "/pet-transport/airlines/air-france/"
-      text: "Air France pet policy"
+      text: "Spain pet import guide"
 ---

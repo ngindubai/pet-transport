@@ -1,139 +1,131 @@
 ---
-template_variant: "B"
-title: "Shipping Dogs & Cats from Colombia to France | PetTransportGlobal"
-description: "Pet relocation from Colombia to France: France import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport Colombia to France: FAVN Titre Test, ICA Certificate, 2026"
+description: "Moving a pet from Colombia to France in 2026. Colombia is non-listed for EU: FAVN titre test and 3-month wait. ICA certificate. Air France direct BOG-CDG. France Category 1 breed rules."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "A"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "colombia-to-france"
 origin_name: "Colombia"
 destination_name: "France"
+
 route_data:
   origin:
     code: "CO"
     country: "Colombia"
     export_requirements:
-      export_permit: "{'required': False}"
-      health_certificate: "{'required': True, 'issued_by': 'ICA-authorised official vet'}"
+      health_certificate: "Official veterinary health certificate issued by an ICA-registered official vet and endorsed by ICA (Instituto Colombiano Agropecuario). EU-format required. Issued within 10 days of travel."
+      export_permit: "No formal export permit required for companion animals from Colombia. Primary departure airport: Bogota El Dorado (BOG)."
+
   destination:
     code: "FR"
     country: "France"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or at same time as rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Standard EU protocol. 21-day wait from first vaccination."
-      titre_test: "Required for: Pets from unlisted third countries. Not required for: Pets from EU and listed third countries (all P1 countries listed). Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No routine quarantine. Non-compliant animals may be quarantined or returned at owner's expense."
-      import_permit: "No formal import permit. EU pet passport or AHC serves as documentation."
-      health_certificate: "Required"
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Required. Colombia is not EU-listed. FAVN titre test at an EU-approved laboratory. Result must be 0.5 IU/ml or above. 3-month wait from blood sampling date. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. French customs inspects at Paris CDG."
+      import_permit: "No import permit required. ICA-endorsed EU-format health certificate is the required document."
+      health_certificate: "EU-format certificate endorsed by ICA, issued within 10 days of travel."
+      breed_restrictions: "France Category 1: Pit Bull type without LOF or FCI pedigree banned from import. Category 2: Rottweiler and American Staffordshire with pedigree permitted with restrictions."
+
   airlines:
-    - name: "American Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: American Airlines Cargo handles pet transport. Seasonal temperature embargoes apply"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Emirates"
+    - name: "Air France Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "Air France operates direct from Bogota (BOG) to Paris CDG. Air France Cargo accepts live animals. CDG is the main French entry hub for live animal cargo from Colombia."
+    - name: "Avianca Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
+      policy_summary: "Avianca operates BOG to Paris CDG via connections. Colombia's flag carrier on transatlantic routes."
+    - name: "KLM Cargo via AMS"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Delta Air Lines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Delta Cargo handles larger pets in temperature-controlled hold. Brachycephalic breeds restricted from cargo"
-    - name: "Air Canada"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Air Canada Cargo handles pet transport in heated/pressurised hold. Brachycephalic breeds restricted from cargo year-round"
+      policy_summary: "KLM operates BOG to Amsterdam Schiphol (AMS) with onward connections to Paris CDG."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates rabies vaccination."
+      timing: "5+ months before travel"
+      responsible: "Vet in Colombia"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify rabies vaccination and 21-day post-primary wait."
+      timing: "5+ months before travel"
+      responsible: "Vet in Colombia"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Blood draw for FAVN titre test. 3-month wait starts from sampling date."
+      timing: "4-5 months before travel"
+      responsible: "Official vet and EU-approved laboratory"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Wait 3 months from blood sampling date."
+      timing: "3 months from blood draw"
+      responsible: "N/A - mandatory waiting period"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Book cargo from BOG to CDG on Air France direct or KLM via AMS."
+      timing: "4-6 weeks before travel"
+      responsible: "Owner or agent"
     - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Obtain ICA-endorsed EU-format health certificate within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "ICA-registered vet plus ICA endorsement"
+    - step: 7
+      action: "Depart BOG. French customs inspects at Paris CDG on arrival."
+      timing: "Travel day"
+      responsible: "Airline cargo and French customs"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "ICA certificate and endorsement: COP 100,000-300,000 (approximately EUR 20-65)"
+    - "FAVN titre test (EU-approved laboratory): EUR 85-170"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo BOG to CDG (Air France direct or KLM via AMS): EUR 800-1,800 depending on crate size"
+    - "Pet transport agent (optional): EUR 150-400"
+    - "Total typical range: EUR 1,200-2,700"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "Colombia is not EU-listed: FAVN titre test and 3-month wait from blood sampling date are mandatory. Start 5+ months before travel."
+    - "3-month wait runs from blood draw date, not results date."
+    - "France Category 1 breed ban covers Pit Bull type dogs without LOF or FCI pedigree."
+    - "ICA endorsement takes a few working days; allow enough lead time within the 10-day certificate window."
+
+  route_complexity: "medium"
+  estimated_timeline_weeks: "20-22"
+
 content:
-  h1: "Pet Transport from Colombia to France"
-  overview: |
-    The Colombia to France route is one many expats and returning families use each year with their pets.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Getting the timing right is critical. Work backwards from your travel date and add a buffer.
+  h1: "Pet Transport Colombia to France: 2026 Guide"
+  overview: "Colombia is not EU-listed, so the FAVN titre test and 3-month wait from blood sampling date apply for France entry. Air France operates direct from Bogota to Paris CDG, which simplifies the routing. Preparation takes approximately five months. France's Category 1 breed restriction is the border check to confirm before starting."
+
   sections:
-    - heading: "Key requirements for moving your pet to France"
+    - heading: "FAVN titre test and 3-month wait: the Colombia-to-EU process"
       body: |
-        Compared to some international pet transport routes, Colombia to France is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        France follows EU harmonised pet movement rules. Direction Generale de l'Alimentation (DGAL) under the Ministry of Agriculture oversees implementation. France is one of the most pet-friendly countries in Europe with high pet ownership, though some rental properties restrict pets. France has its own breed-specific legislation (Categories 1 and 2) that is notably strict.
-    - heading: "From experience: Colombia to France pet transport"
+        Colombia is classified as a non-listed third country under EU Regulation 576/2013. Your pet must have a FAVN titre test result of at least 0.5 IU/ml from an EU-approved laboratory. A 3-month waiting period then runs from the blood sampling date. Source: food.ec.europa.eu, 2026.
+
+        ICA (Instituto Colombiano Agropecuario) endorses the EU-format health certificate. An ICA-registered official vet issues it within 10 days of travel; ICA endorses it before departure. Allow five months from starting the process to departure.
+
+    - heading: "Air France direct from Bogota and France breed check"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Air France Cargo operates direct from Bogota El Dorado (BOG) to Paris CDG and accepts live animals. The direct connection avoids a European hub transfer. CDG is where French customs carries out the arrival inspection.
+
+        France's Category 1 classification covers Pit Bull type dogs without official LOF or FCI breed registration. These cannot be imported. Category 2 (Rottweiler, American Staffordshire with pedigree) can enter with restrictions. For most breeds common in Colombia, no breed restriction applies.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Colombia to France?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering France?"
-    answer: "No routine quarantine is required in France for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering France?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter France. Start this process as early as possible."
-  - question: "Can I take my cat to France from Colombia?"
-    answer: "Yes, cats can be transported from Colombia to France. The same microchip, vaccination, and health certificate requirements apply as for dogs, though some rules (such as tapeworm treatment) apply to dogs only. Check the full requirements for cats with the destination authority."
+  - question: "Does my Colombian pet need a titre test for France?"
+    answer: "Yes. Colombia is not on the EU's listed countries schedule. The FAVN titre test and 3-month wait from blood sampling date are mandatory. Source: food.ec.europa.eu, 2026."
+  - question: "Can Air France fly my pet directly from Bogota to Paris?"
+    answer: "Yes. Air France Cargo operates direct from BOG to CDG and accepts live animals. Book 4-6 weeks ahead."
+  - question: "What is the ICA certificate for pet export from Colombia?"
+    answer: "ICA (Instituto Colombiano Agropecuario) endorses the EU-format health certificate. An ICA-registered official vet issues it within 10 days of travel; ICA endorses it before departure."
+  - question: "What is the total cost from Bogota to Paris?"
+    answer: "Air France direct cargo BOG to CDG typically costs EUR 800-1,800. Add EUR 85-170 for the titre test and EUR 20-65 for the ICA certificate. Total all-in is typically EUR 1,200-2,700."
+
 links:
   sideways:
     - url: "/pet-transport/france-to-colombia/"
       text: "Pet Transport France to Colombia"
+    - url: "/pet-transport/colombia-to-germany/"
+      text: "Pet Transport Colombia to Germany"
+    - url: "/pet-transport/colombia-to-spain/"
+      text: "Pet Transport Colombia to Spain"
   upward:
-    - url: "/pet-transport/origins/colombia-pet-export-guide/"
-      text: "Shipping from Colombia"
+    - url: "/pet-transport/origins/colombia/"
+      text: "Shipping pets from Colombia"
     - url: "/pet-transport/countries/france/"
-      text: "Importing to France"
-    - url: "/pet-transport/airlines/american-airlines/"
-      text: "American Airlines pet policy"
-    - url: "/pet-transport/airlines/air-france/"
-      text: "Air France pet policy"
+      text: "France pet import guide"
 ---

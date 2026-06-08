@@ -1,132 +1,142 @@
 ---
-template_variant: "A"
-title: "Pet Relocation Chile to Netherlands | Requirements & Guide"
-description: "How to ship your dog or cat from Chile to Netherlands. Netherlands import rules, vaccinations, permits, and airline options explained."
+title: "Pet Transport Chile to Netherlands: Listed Country, KLM Direct, No Breed Restrictions"
+description: "Shipping a dog or cat from Chile to the Netherlands in 2026. Chile is EU-listed: no titre test. KLM connects via Amsterdam. SAG cert, no breed ban in Netherlands. Full guide."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "D"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "chile-to-netherlands"
 origin_name: "Chile"
 destination_name: "Netherlands"
+
 route_data:
   origin:
     code: "CL"
     country: "Chile"
     export_requirements:
-      export_permit: "{'required': False}"
-      health_certificate: "{'required': True, 'issued_by': 'SAG-authorised official vet'}"
+      health_certificate: "EU-format Animal Health Certificate from SAG-authorised official vet in Chile (Servicio Agricola y Ganadero), endorsed by SAG. Within 10 days of travel."
+      export_permit: "No export permit for companion animals. SAG inspection at Santiago (SCL)."
+
   destination:
     code: "NL"
     country: "Netherlands"
     import_requirements:
-      microchip: "Required (ISO 11784/11785)"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel"
-      titre_test: "Not required for EU, UK, and certain third countries."
-      quarantine: "No routine quarantine for compliant pets"
-      import_permit: "EU pet passport or health certificate"
-      health_certificate: "Required. Issued by: Official veterinarian. Valid for 10 days from issue"
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Not required. Chile is listed under EU pet travel rules. Titre test and 3-month wait waived. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. NVWA inspects at Amsterdam Schiphol (AMS)."
+      import_permit: "No import permit. SAG-endorsed EU AHC is the required document."
+      health_certificate: "EU Animal Health Certificate from SAG-authorised vet, within 10 days of travel."
+      breed_restrictions: "None at national level. Netherlands lifted its breed ban in 2008. No federal breed-specific import restrictions."
+
   airlines:
-    - name: "American Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: American Airlines Cargo handles pet transport. Seasonal temperature embargoes apply"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Emirates"
+    - name: "KLM Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "KLM routes from Santiago (SCL) via hub connections to Amsterdam Schiphol (AMS). KLM Cargo accepts live animals. Schiphol has dedicated NVWA live animal facilities on arrival."
+    - name: "Iberia/LATAM Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
+      policy_summary: "Iberia and LATAM operate SCL to Madrid (MAD) direct. From MAD, cargo connections to Amsterdam are available via partner carriers."
+    - name: "Air France Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Delta Air Lines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Delta Cargo handles larger pets in temperature-controlled hold. Brachycephalic breeds restricted from cargo"
-    - name: "Air Canada"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Air Canada Cargo handles pet transport in heated/pressurised hold. Brachycephalic breeds restricted from cargo year-round"
+      policy_summary: "Air France routes from Santiago via CDG with connections to AMS. A reliable alternative routing."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates the rabies vaccination."
+      timing: "6-8 weeks before travel"
+      responsible: "Vet in Chile"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify current rabies vaccination with 21-day post-primary wait satisfied."
+      timing: "Several weeks before travel"
+      responsible: "Vet in Chile"
     - step: 3
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Book cargo from Santiago to Amsterdam (via MAD, CDG, or KLM hub)."
+      timing: "4-6 weeks before travel"
+      responsible: "Owner or agent"
     - step: 4
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Obtain SAG-endorsed EU AHC from SAG-authorised vet within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "SAG-authorised official vet"
     - step: 5
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Travel. NVWA inspects at Schiphol on arrival."
+      timing: "Travel day"
+      responsible: "Airline cargo and NVWA"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "SAG-authorised vet certificate and SAG endorsement: CLP 100,000-250,000 (EUR 90-220)"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo SCL to AMS (via hub connection): EUR 900-2,100 depending on crate size"
+    - "Pet transport agent (optional): EUR 200-500"
+    - "Total typical range: EUR 1,300-3,100"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "low"
-  estimated_timeline_weeks: "4-10"
+    - "Chile is EU-listed: no titre test required. Preparation window is 4-6 weeks."
+    - "The Netherlands has no breed ban: this is the most permissive major EU destination for breed-restricted dogs."
+    - "SAG-endorsed AHC must be issued within 10 days of travel."
+    - "No direct SCL-AMS cargo flight; all routes connect via a European hub."
+
+  route_complexity: "low-medium"
+  estimated_timeline_weeks: "4-6"
+
 content:
-  h1: "Pet Transport from Chile to Netherlands"
-  overview: |
-    Shipping your dog or cat from Chile to Netherlands is a process that rewards early planning.
-    
-    This route is relatively straightforward compared to some international routes. Start preparations at least 4 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened.
-    
-    Use this guide to map out your preparation timeline and avoid the most common mistakes.
+  h1: "Pet Transport Chile to Netherlands: 2026 Guide"
+  overview: "Chile to Netherlands combines two significant advantages for pet owners. Chile's EU-listed status removes the titre test and 3-month wait. The Netherlands has no national breed restrictions. For dogs of breeds restricted elsewhere in Europe, this makes the Netherlands among the most accessible EU destinations. The main cargo route connects through a European hub before Schiphol, and SAG handles the export certificate process in Chile."
+
   sections:
-    - heading: "Understanding Netherlands's pet import rules"
+    - heading: "Two advantages: listed status and no breed ban"
       body: |
-        Compared to some international pet transport routes, Chile to Netherlands is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        EU member state. EU pet travel rules apply.
-    - heading: "From experience: Chile to Netherlands pet transport"
+        The Chile-to-Netherlands route stands out from other South American to EU routes in two ways. First, Chile is listed under EU pet travel regulations, which means no titre test and no 3-month waiting period. The preparation window is four to six weeks. Second, the Netherlands lifted its national breed ban in 2008 and now uses a behaviour-based approach. There are no breed-specific import restrictions.
+
+        For a Chilean family with a Rottweiler, Dogo Argentino, or American Bulldog, the Netherlands avoids both the regulatory complexity of Germany's Bundesland restrictions and the PPP obligations of Spain. It is not that the Netherlands is permissive about dogs, but its regulation focuses on how a specific dog actually behaves rather than on its breed.
+
+        The practical implications: you can move almost any dog breed from Chile to the Netherlands with the standard EU import documentation and no additional breed paperwork. The route is the same for all breeds.
+
+    - heading: "What the NVWA inspection at Schiphol covers"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        NVWA (Nederlandse Voedsel- en Warenautoriteit) is the Dutch authority responsible for live animal import inspections at Schiphol. When your pet arrives from Chile, NVWA inspectors check four things: the microchip number against the certificate; the EU Animal Health Certificate format and issuing authority (must be SAG-authorised and endorsed); the vaccination record (current, with the 21-day post-primary wait satisfied); and the certificate issuance date (must be within 10 days of travel).
+
+        No titre test check is needed from Chile, which is one of the documents NVWA would scrutinise for non-listed country pets. The inspection for a Chilean pet is therefore relatively straightforward if the SAG-endorsed AHC is complete and current.
+
+        Typical inspection time at Schiphol for compliant pets from listed countries is one to two hours from cargo arrival to release. Your cargo agent or relocation service can track the inspection status and notify you when your pet is ready for collection or onward transport.
+
+    - heading: "Cargo routing from Santiago to Amsterdam: the options"
+      body: |
+        There is no direct cargo flight between Santiago and Amsterdam Schiphol. All routes involve a European hub connection. The main options are:
+
+        Madrid via LATAM or Iberia direct (SCL-MAD), then onward cargo connection from MAD to AMS. This is often the most convenient first leg, as multiple carriers operate SCL-MAD daily.
+
+        Paris CDG via Air France connections, then AMS. Air France Cargo has live animal handling at CDG and good connections to Schiphol.
+
+        Frankfurt via Lufthansa or connections, then AMS. Less direct for a Netherlands destination.
+
+        KLM connections also route via Amsterdam but may require a hub connection in Latin America. Confirm the specific routing with your cargo agent.
+
+        Choose your routing based on transit times. For welfare, a hub transit of two to four hours is generally acceptable. Avoid very short connections that risk missing the second cargo leg, or very long waits that leave the pet in a transit facility.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Chile to Netherlands?"
-    answer: "Allow at least 4 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Netherlands?"
-    answer: "No routine quarantine is required in Netherlands for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Netherlands?"
-    answer: "No, Netherlands does not require a rabies titre test for most pets arriving from Chile. Your pet still needs a valid rabies vaccination and microchip. Check the current requirements with the destination authority before travel."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Chile. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Netherlands's authority for the exact format required."
+  - question: "Does my Chilean cat need a titre test to enter the Netherlands?"
+    answer: "No. Chile is EU-listed, so the titre test and 3-month wait are waived for both dogs and cats. Your cat needs a microchip (predating vaccination), current rabies vaccination, and SAG-endorsed EU AHC within 10 days of travel. Source: food.ec.europa.eu, 2026."
+  - question: "Can I bring an XL Bully or Pit Bull type dog from Chile to the Netherlands?"
+    answer: "The Netherlands has no national breed ban. There is no federal restriction on XL Bully, Pit Bull, or similar types from a border entry perspective. Individual municipalities may have local rules, and housing and rental rules vary, but the import itself is not restricted for these breeds. This is different from the UK, France, or some German states."
+  - question: "What is the SAG endorsement and how long does it take?"
+    answer: "SAG (Servicio Agricola y Ganadero) is Chile's official agricultural health authority. SAG endorsement is the government stamp that validates your vet's health certificate for international use. It is not always same-day. Allow one to two days for SAG to process the endorsement after your vet issues the certificate. Schedule the vet appointment with enough time for the endorsement before the 10-day certificate validity window closes."
+  - question: "Is there any cost difference between the Netherlands and other EU destinations from Chile?"
+    answer: "The main cost variable is the cargo fee, which depends on routing and crate size rather than destination country. Netherlands (AMS) via Madrid or Paris hub is comparable in cost to Germany (FRA) or Spain (MAD) from Santiago. All EU destinations from Chile have the same documentation costs (SAG certificate + endorsement). Total range is typically EUR 1,300 to EUR 3,100."
+  - question: "How does NVWA notify me that my pet has cleared customs at Schiphol?"
+    answer: "Your cargo agent or relocation service tracks the NVWA inspection status and notifies you when the pet is cleared for collection. If you are using a door-to-door service, the agent will transport your pet from the cargo terminal after clearance. If collecting yourself, the cargo agent will advise which cargo terminal at Schiphol handles live animal release."
+
 links:
   sideways:
     - url: "/pet-transport/netherlands-to-chile/"
       text: "Pet Transport Netherlands to Chile"
+    - url: "/pet-transport/chile-to-germany/"
+      text: "Pet Transport Chile to Germany"
+    - url: "/pet-transport/chile-to-spain/"
+      text: "Pet Transport Chile to Spain"
   upward:
-    - url: "/pet-transport/origins/chile-pet-export-guide/"
-      text: "Shipping from Chile"
+    - url: "/pet-transport/origins/chile/"
+      text: "Shipping pets from Chile"
     - url: "/pet-transport/countries/netherlands/"
-      text: "Importing to Netherlands"
-    - url: "/pet-transport/airlines/american-airlines/"
-      text: "American Airlines pet policy"
-    - url: "/pet-transport/airlines/klm-royal-dutch-airlines/"
-      text: "KLM pet policy"
+      text: "Netherlands pet import guide"
 ---

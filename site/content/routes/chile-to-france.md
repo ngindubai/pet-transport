@@ -1,139 +1,138 @@
 ---
-template_variant: "C"
-title: "Pet Transport from Chile to France | PetTransportGlobal"
-description: "How to ship your dog or cat from Chile to France. France import rules, vaccinations, permits, and airline options explained."
+title: "Pet Transport Chile to France: Six Weeks, No Titre Test, SAG Certificate"
+description: "Moving a pet from Chile to France in 2026. Chile is EU-listed: no titre test and 6-week timeline. SAG export cert, Air France cargo from Santiago, real costs."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "D"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "chile-to-france"
 origin_name: "Chile"
 destination_name: "France"
+
 route_data:
   origin:
     code: "CL"
     country: "Chile"
     export_requirements:
-      export_permit: "{'required': False}"
-      health_certificate: "{'required': True, 'issued_by': 'SAG-authorised official vet'}"
+      health_certificate: "EU-format Animal Health Certificate from SAG-authorised official vet in Chile (Servicio Agricola y Ganadero), endorsed by SAG. Within 10 days of travel."
+      export_permit: "No export permit for companion animals. SAG inspection at Santiago (SCL) before departure."
+
   destination:
     code: "FR"
     country: "France"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or at same time as rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Standard EU protocol. 21-day wait from first vaccination."
-      titre_test: "Required for: Pets from unlisted third countries. Not required for: Pets from EU and listed third countries (all P1 countries listed). Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No routine quarantine. Non-compliant animals may be quarantined or returned at owner's expense."
-      import_permit: "No formal import permit. EU pet passport or AHC serves as documentation."
-      health_certificate: "Required"
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Not required. Chile is listed under EU pet travel rules. Titre test and 3-month wait are waived. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. French customs inspect at Paris CDG or other approved entry point."
+      import_permit: "No import permit. SAG-endorsed EU AHC is the required document."
+      health_certificate: "EU Animal Health Certificate from SAG-authorised vet, within 10 days of travel."
+      breed_restrictions: "France bans Category 1 fighting dogs (Pit Bull type without LOF/FCI pedigree). Category 2 (Rottweiler, American Staffordshire with pedigree) permitted with restrictions."
+
   airlines:
-    - name: "American Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: American Airlines Cargo handles pet transport. Seasonal temperature embargoes apply"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Emirates"
+    - name: "Air France Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "Air France operates from Santiago (SCL) to Paris CDG via connections. Air France Cargo accepts live animals in the temperature-controlled hold. Paris CDG is the main entry hub for France."
+    - name: "LATAM Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
+      policy_summary: "LATAM operates SCL to Madrid (MAD) direct; onward cargo connections to Paris CDG available from MAD. LATAM Cargo handles live animals on South America to Europe routes."
+    - name: "Iberia Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Delta Air Lines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Delta Cargo handles larger pets in temperature-controlled hold. Brachycephalic breeds restricted from cargo"
-    - name: "Air Canada"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Air Canada Cargo handles pet transport in heated/pressurised hold. Brachycephalic breeds restricted from cargo year-round"
+      policy_summary: "Iberia operates SCL to MAD direct with connections to Paris CDG. A practical alternative routing via Spain."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates the rabies vaccination."
+      timing: "6-8 weeks before travel"
+      responsible: "Vet in Chile"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify current rabies vaccination with 21-day post-primary wait satisfied."
+      timing: "Several weeks before travel"
+      responsible: "Vet in Chile"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Book cargo from Santiago to Paris CDG (direct Air France connection or via MAD)."
+      timing: "4-6 weeks before travel"
+      responsible: "Owner or agent"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Obtain SAG-endorsed EU AHC from SAG-authorised vet within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "SAG-authorised official vet"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Depart Santiago. French customs inspect at CDG on arrival."
+      timing: "Travel day"
+      responsible: "Airline cargo and French customs"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "SAG-authorised vet health certificate and SAG endorsement: CLP 100,000-250,000 (EUR 90-220)"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo SCL to CDG (via connection): EUR 800-2,000 depending on crate size"
+    - "Pet transport agent (optional): EUR 200-500"
+    - "Total typical range: EUR 1,200-3,000"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "No titre test required from Chile: Chile's EU-listed status removes the 3-month wait entirely."
+    - "The SAG-endorsed AHC must be issued within 10 days of travel. Schedule the final vet appointment accordingly."
+    - "France's Category 1 breed ban applies at the border. Verify your breed's status under French law."
+    - "No direct SCL-CDG cargo flight; all routes connect via a hub (usually MAD)."
+
+  route_complexity: "low-medium"
+  estimated_timeline_weeks: "4-6"
+
 content:
-  h1: "Pet Transport from Chile to France"
-  overview: |
-    Moving a pet from Chile to France involves more paperwork than most owners expect.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    The paperwork is the hard part. Once everything is in order, the journey itself is well-managed.
+  h1: "Pet Transport Chile to France: 2026 Guide"
+  overview: "Chile's EU-listed status makes a Santiago to Paris move significantly simpler than other South American routes. No titre test, no 3-month wait. The preparation window is four to six weeks. SAG (Servicio Agricola y Ganadero) handles the export certificate process, and most cargo routes connect through Madrid or Amsterdam before reaching Paris CDG."
+
   sections:
-    - heading: "Key requirements for moving your pet to France"
+    - heading: "How does Chile's listed status simplify the France move?"
       body: |
-        Compared to some international pet transport routes, Chile to France is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        France follows EU harmonised pet movement rules. Direction Generale de l'Alimentation (DGAL) under the Ministry of Agriculture oversees implementation. France is one of the most pet-friendly countries in Europe with high pet ownership, though some rental properties restrict pets. France has its own breed-specific legislation (Categories 1 and 2) that is notably strict.
-    - heading: "From experience: Chile to France pet transport"
+        The EU grants certain third countries listed status when their animal health surveillance and regulatory systems are judged equivalent to EU standards. Chile is one of these listed countries. Argentina and Mexico also have listed status in South America; Colombia and Peru do not.
+
+        For a Chilean pet travelling to France, the practical difference is substantial. The FAVN titre test requirement is waived entirely, as is the 3-month wait from blood sampling. Instead of a five-month preparation window, you have a four to six week window from start to flight day.
+
+        The requirements that remain are: ISO microchip implanted before the rabies vaccination, current rabies vaccination with the 21-day post-primary wait completed, and an EU-format Animal Health Certificate issued by a SAG-authorised official vet in Chile within 10 days of travel. French customs at CDG verify all of these on arrival.
+
+        There is no cost for a titre test lab fee, no waiting around for results, and no counting months on a calendar. This is the straightforward version of the South America to France route.
+
+    - heading: "The SAG health certificate process for France: how it works"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        SAG, the Servicio Agricola y Ganadero, is Chile's official agricultural and food safety authority. For pet exports to EU countries including France, a SAG-authorised official vet issues the health certificate and SAG endorses it.
+
+        Not all vets in Chile are SAG-authorised official vets. Your regular clinic may be able to refer you to one, or you can find the list through SAG directly. The certificate examination involves a clinical assessment of your pet's health status and a review of the vaccination and microchip records.
+
+        The certificate must be issued within 10 days of travel. This means your vet appointment and SAG endorsement need to fit within the 10-day window before your Santiago departure. Allow a couple of days for the SAG endorsement processing, especially if the vet and the SAG office are not the same location.
+
+    - heading: "Getting your pet from Santiago to Paris by cargo"
+      body: |
+        There is no direct cargo flight from Santiago to Paris. All routes to France involve a European hub connection. The two main options are Madrid via Iberia or LATAM (then onward to CDG), or Amsterdam via KLM with a CDG connection.
+
+        Air France operates passenger services between Santiago and Paris via connecting hubs, and Air France Cargo accepts live animals. Check with Air France Cargo or an approved live animal cargo agent for the specific routing, as Air France does not always operate SCL as a direct spoke.
+
+        Madrid via Iberia or LATAM is often the most practical routing, with Iberia operating SCL-MAD direct. Iberia Cargo handles the live animal on the first leg; Air France Cargo or another carrier handles the Madrid-to-CDG portion. Confirm both legs accept live animals when booking.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Chile to France?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering France?"
-    answer: "No routine quarantine is required in France for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering France?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter France. Start this process as early as possible."
-  - question: "Can I take my cat to France from Chile?"
-    answer: "Yes, cats can be transported from Chile to France. The same microchip, vaccination, and health certificate requirements apply as for dogs, though some rules (such as tapeworm treatment) apply to dogs only. Check the full requirements for cats with the destination authority."
+  - question: "Does my Chilean pet need a titre test for France?"
+    answer: "No. Chile is an EU-listed country, so the FAVN titre test and 3-month waiting period are waived for pets from Chile entering France or any other EU member state. Your pet needs a microchip (predating the vaccination), a current rabies vaccination, and a SAG-endorsed EU Animal Health Certificate issued within 10 days of travel. Source: food.ec.europa.eu, 2026."
+  - question: "How much cheaper is the Chile to France move compared to Colombia or Peru?"
+    answer: "The titre test lab fee (EUR 85-170) is saved, and more importantly, the 3-month wait is removed from the process. Total costs are typically EUR 1,200 to EUR 3,000, compared to EUR 1,400 to EUR 3,600 for non-listed countries, with a timeline of 4-6 weeks rather than 5 months."
+  - question: "What does France's Category 1 breed ban mean for Chilean dog owners?"
+    answer: "Category 1 dogs in France (Pit Bull type without LOF or FCI pedigree) are banned from import. If your dog looks like a Pit Bull type but has FCI pedigree papers as an American Staffordshire Terrier (Category 2), it can enter France with restrictions (muzzle, leash, liability insurance). Without pedigree papers, a Pit Bull type dog cannot legally enter France. Verify before booking."
+  - question: "What if my pet's rabies vaccination expires before I travel from Chile to France?"
+    answer: "If the vaccination expires and you revaccinate, the 21-day wait applies again if there was any lapse in cover. If you revaccinate before expiry with no lapse, no additional wait is needed. Keep vaccination records current and check the expiry date well ahead of your travel date. The SAG-authorised vet will review vaccination history during the health certificate examination."
+  - question: "Can LATAM fly my pet as cargo from Santiago to Paris?"
+    answer: "LATAM Cargo handles live animals on certain South America to Europe routes. LATAM operates SCL to Madrid direct, and cargo connections from Madrid to Paris CDG are available. Confirm current live animal acceptance on your specific routing with LATAM Cargo before booking, as policies can change by route and season."
+
 links:
   sideways:
     - url: "/pet-transport/france-to-chile/"
       text: "Pet Transport France to Chile"
+    - url: "/pet-transport/chile-to-germany/"
+      text: "Pet Transport Chile to Germany"
+    - url: "/pet-transport/chile-to-united-kingdom/"
+      text: "Pet Transport Chile to UK"
   upward:
-    - url: "/pet-transport/origins/chile-pet-export-guide/"
-      text: "Shipping from Chile"
+    - url: "/pet-transport/origins/chile/"
+      text: "Shipping pets from Chile"
     - url: "/pet-transport/countries/france/"
-      text: "Importing to France"
-    - url: "/pet-transport/airlines/american-airlines/"
-      text: "American Airlines pet policy"
-    - url: "/pet-transport/airlines/air-france/"
-      text: "Air France pet policy"
+      text: "France pet import guide"
 ---

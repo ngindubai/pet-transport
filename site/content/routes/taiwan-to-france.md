@@ -1,134 +1,122 @@
 ---
-template_variant: "D"
-title: "Shipping Dogs & Cats from Taiwan to France | PetTransportGlobal"
-description: "How to ship your dog or cat from Taiwan to France. France import rules, vaccinations, permits, and airline options explained."
+title: "Pet Transport Taiwan to France: BAPHIQ Certificate, EU-Listed, No Titre Test, 2026"
+description: "Moving a pet from Taiwan to France in 2026. Taiwan is EU-listed: no titre test required. BAPHIQ health certificate. EVA Air or Air France TPE to CDG connections. France Category 1 breed rules."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "A"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "taiwan-to-france"
 origin_name: "Taiwan"
 destination_name: "France"
+
 route_data:
   origin:
     code: "TW"
     country: "Taiwan"
     export_requirements:
-      export_permit: "No export permit for pets."
-      health_certificate: "{'required': True, 'issued_by': 'BAPHIQ-authorised official vet'}"
+      health_certificate: "Official veterinary health certificate issued by a BAPHIQ-registered official vet and endorsed by BAPHIQ (Bureau of Animal and Plant Health Inspection and Quarantine). EU-format required. Issued within 10 days of travel."
+      export_permit: "No formal export permit required for companion animals from Taiwan beyond the BAPHIQ health certificate. Primary departure airport: Taipei Taoyuan (TPE)."
+
   destination:
     code: "FR"
     country: "France"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or at same time as rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Standard EU protocol. 21-day wait from first vaccination."
-      titre_test: "Required for: Pets from unlisted third countries. Not required for: Pets from EU and listed third countries (all P1 countries listed). Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No routine quarantine. Non-compliant animals may be quarantined or returned at owner's expense."
-      import_permit: "No formal import permit. EU pet passport or AHC serves as documentation."
-      health_certificate: "Required"
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Not required. Taiwan is on the EU's listed third countries schedule under EU Regulation 576/2013. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. French customs inspects at Paris CDG."
+      import_permit: "No import permit required. BAPHIQ-endorsed EU-format health certificate is the required document."
+      health_certificate: "EU-format certificate endorsed by BAPHIQ, issued within 10 days of travel."
+      breed_restrictions: "France Category 1: Pit Bull type without LOF or FCI pedigree banned from import. Category 2: Rottweiler and American Staffordshire with pedigree permitted with restrictions."
+
   airlines:
-    - name: "Air China"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin on domestic China routes. International: cargo only via Air China Cargo. Strict crate size and documentation requirements. China-specific import/export permits required. Advance booking of cargo space essential."
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Emirates"
+    - name: "EVA Air Cargo via AMS"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "EVA Air connects Taipei Taoyuan (TPE) to Amsterdam Schiphol (AMS) with onward connections to Paris CDG. EVA Air Cargo accepts live animals on transatlantic routes."
+    - name: "Air France Cargo via hub"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
+      policy_summary: "Air France connects TPE to Paris CDG via European hub partners. Air France Cargo has established live animal handling at CDG."
+    - name: "China Airlines Cargo via FRA"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
+      policy_summary: "China Airlines connects TPE to Frankfurt (FRA) with onward connections to Paris CDG."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates rabies vaccination."
+      timing: "4-6 weeks before travel"
+      responsible: "Vet in Taiwan"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify rabies vaccination and 21-day post-primary wait."
+      timing: "4-6 weeks before travel"
+      responsible: "Vet in Taiwan"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Book cargo from TPE via AMS or FRA hub to CDG."
+      timing: "3-5 weeks before travel"
+      responsible: "Owner or agent"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Obtain BAPHIQ-endorsed EU-format health certificate within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "BAPHIQ-registered vet plus BAPHIQ endorsement"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Depart TPE. French customs inspects at Paris CDG on arrival."
+      timing: "Travel day"
+      responsible: "Airline cargo and French customs"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "BAPHIQ health certificate and endorsement: TWD 2,000-5,000 (approximately EUR 60-155)"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo TPE to CDG via hub: EUR 800-2,000 depending on crate size and routing"
+    - "Pet transport agent (optional): EUR 150-400"
+    - "Total typical range: EUR 1,140-2,800"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "Taiwan is EU-listed: no FAVN titre test required. Allow 4-6 weeks, not 5 months."
+    - "France Category 1 breed ban covers Pit Bull type dogs without LOF or FCI pedigree. Confirm breed status before starting."
+    - "All TPE to CDG routings connect via a European hub at AMS or FRA."
+    - "BAPHIQ endorsement takes a few working days; allow enough lead time within the 10-day certificate window."
+
+  route_complexity: "medium"
+  estimated_timeline_weeks: "4-6"
+
 content:
-  h1: "Pet Transport from Taiwan to France"
-  overview: |
-    International pet transport from Taiwan to France comes down to documentation timing more than anything else.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Getting the timing right is critical. Work backwards from your travel date and add a buffer.
+  h1: "Pet Transport Taiwan to France: 2026 Guide"
+  overview: "Taiwan is on the EU's listed third countries schedule, so the FAVN titre test and 3-month wait do not apply for France entry. The BAPHIQ health certificate covers the export side. All routings from Taipei Taoyuan to Paris CDG connect via a European hub. France's Category 1 breed restriction is the check to confirm before starting."
+
   sections:
-    - heading: "Why this route needs early planning"
+    - heading: "Taiwan EU-listed: no titre test and the BAPHIQ certificate for France"
       body: |
-        Compared to some international pet transport routes, Taiwan to France is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        France follows EU harmonised pet movement rules. Direction Generale de l'Alimentation (DGAL) under the Ministry of Agriculture oversees implementation. France is one of the most pet-friendly countries in Europe with high pet ownership, though some rental properties restrict pets. France has its own breed-specific legislation (Categories 1 and 2) that is notably strict.
-    - heading: "Things to sort before you book"
+        EU Regulation 576/2013 lists Taiwan as a recognised territory for pet movement. Taiwanese pets entering France need only a valid ISO microchip, a current rabies vaccination (21-day wait after a primary course), and the BAPHIQ-endorsed EU-format health certificate. No titre test, no 3-month wait. Source: food.ec.europa.eu, 2026.
+
+        BAPHIQ (Bureau of Animal and Plant Health Inspection and Quarantine) operates under Taiwan's Council of Agriculture. A BAPHIQ-registered official vet issues the EU-format health certificate within 10 days of travel; BAPHIQ endorses it before departure. The documentation process is well-established in Taiwan for owners moving internationally.
+
+    - heading: "Hub routing from Taipei to Paris CDG and France's Category 1 breed check"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        There is no direct cargo service from Taipei Taoyuan (TPE) to Paris CDG. EVA Air connects TPE to Amsterdam Schiphol (AMS) with onward connections to CDG. China Airlines connects TPE to Frankfurt (FRA) with onward connections to CDG. Air France provides cargo connections via European hub partners. Confirm live animal acceptance on every segment when booking.
+
+        France's breed legislation divides restricted breeds into two categories. Category 1 covers Pit Bull type dogs without official LOF or FCI breed registration; these cannot be imported. Category 2 covers Rottweiler and American Staffordshire Terrier with recognised pedigree; these can enter with ongoing restrictions. Most breeds common in Taiwan are unaffected, but confirm breed status before starting the process if there is any uncertainty.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Taiwan to France?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering France?"
-    answer: "No routine quarantine is required in France for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering France?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter France. Start this process as early as possible."
-  - question: "Can I take my cat to France from Taiwan?"
-    answer: "Yes, cats can be transported from Taiwan to France. The same microchip, vaccination, and health certificate requirements apply as for dogs, though some rules (such as tapeworm treatment) apply to dogs only. Check the full requirements for cats with the destination authority."
+  - question: "Does my Taiwanese pet need a titre test for France?"
+    answer: "No. Taiwan is on the EU's listed schedule under EU Regulation 576/2013. The FAVN titre test and 3-month wait are not required. Source: food.ec.europa.eu, 2026."
+  - question: "Is there a direct flight from Taipei to Paris for pet cargo?"
+    answer: "No direct TPE-CDG cargo service exists. EVA Air via Amsterdam (AMS) and China Airlines via Frankfurt (FRA) both have onward connections to CDG. Confirm live animal acceptance on all segments."
+  - question: "What is France's Category 1 breed rule?"
+    answer: "France's Category 1 covers Pit Bull type dogs without official LOF or FCI breed registration. These cannot be imported. Category 2 (Rottweiler, American Staffordshire with pedigree) can enter with restrictions."
+  - question: "What is the total cost from Taipei to Paris?"
+    answer: "Cargo from TPE to CDG via a European hub typically costs EUR 800-2,000. Add EUR 60-155 for the BAPHIQ certificate. Total all-in is typically EUR 1,140-2,800."
+
 links:
   sideways:
     - url: "/pet-transport/france-to-taiwan/"
       text: "Pet Transport France to Taiwan"
+    - url: "/pet-transport/taiwan-to-germany/"
+      text: "Pet Transport Taiwan to Germany"
+    - url: "/pet-transport/taiwan-to-netherlands/"
+      text: "Pet Transport Taiwan to Netherlands"
   upward:
-    - url: "/pet-transport/origins/taiwan-pet-export-guide/"
-      text: "Shipping from Taiwan"
+    - url: "/pet-transport/origins/taiwan/"
+      text: "Shipping pets from Taiwan"
     - url: "/pet-transport/countries/france/"
-      text: "Importing to France"
-    - url: "/pet-transport/airlines/air-france/"
-      text: "Air France pet policy"
+      text: "France pet import guide"
 ---

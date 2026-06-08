@@ -1,138 +1,143 @@
 ---
-template_variant: "E"
-title: "Moving Your Pet from Mexico to Spain | Complete Guide"
-description: "Complete guide to pet transport from Mexico to Spain. Import requirements, quarantine rules, airline options, and step-by-step timeline."
+title: "Pet Transport Mexico to Spain: Titre Test Required, Iberia Direct MEX-MAD, PPP Rules"
+description: "Moving a pet from Mexico to Spain in 2026. Mexico is non-listed for EU: titre test and 3-month wait. Iberia and Aeromexico fly MEX-MAD direct. SENASICA cert, Spain PPP rules."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "E"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "mexico-to-spain"
 origin_name: "Mexico"
 destination_name: "Spain"
+
 route_data:
   origin:
     code: "MX"
     country: "Mexico"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      health_certificate: "Certificado Veterinario de Exportación issued by a SENASICA-registered official vet and endorsed by SENASICA. EU-format required for Spain entry. Issued within 10 days of travel."
+      export_permit: "No formal export permit for companion animals. SENASICA inspection at Mexico City (MEX)."
+
   destination:
     code: "ES"
     country: "Spain"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or on same day as first rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. EU-harmonised rules. Vaccination must be recorded in EU pet passport or Animal Health Certificate."
-      titre_test: "Required for: Pets from non-EU countries not on the EU listed third countries. Not required for: Pets from EU member states and EU-listed countries. Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No routine quarantine for pets entering with correct EU-standard documentation."
-      import_permit: "EU pet passport or Animal Health Certificate serves as the travel document"
-      health_certificate: "Required. EU Pet Passport (for EU-resident pets) or Animal Health Certificate (AHC) for third-country pets. Issued by: Official veterinarian. Valid for 10 days from issue. AHC valid 10 days from issue for entry. Then valid 4 months for onward EU travel."
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Required. Mexico is not EU-listed. FAVN titre test required. Blood drawn after microchip and valid vaccination. 3-month wait from blood sampling date. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. Spanish customs inspects at Madrid Barajas (MAD)."
+      import_permit: "No import permit. SENASICA-endorsed EU certificate is the required document."
+      health_certificate: "EU-format certificate endorsed by SENASICA, within 10 days of travel."
+      breed_restrictions: "Spain PPP law: muzzle, leash (max 2m), and liability insurance required in public for Pit Bull, American Staffordshire, Rottweiler, Dogo Argentino, Fila Brasileiro, Tosa Inu, Akita Inu, and similar breeds. PPP licence required from municipality. Import is permitted."
+
   airlines:
-    - name: "American Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: American Airlines Cargo handles pet transport. Seasonal temperature embargoes apply"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Emirates"
+    - name: "Iberia Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "Iberia operates direct from Mexico City (MEX) to Madrid Barajas (MAD). Iberia Cargo accepts live animals in the temperature-controlled hold. The most direct option for Mexico to Spain."
+    - name: "Aeromexico Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
+      policy_summary: "Aeromexico operates MEX to MAD direct. Aeromexico Cargo handles live animals on selected routes. Competitive capacity on the Mexico City to Madrid corridor."
+    - name: "Air Europa"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Delta Air Lines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Delta Cargo handles larger pets in temperature-controlled hold. Brachycephalic breeds restricted from cargo"
-    - name: "Air Canada"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Air Canada Cargo handles pet transport in heated/pressurised hold. Brachycephalic breeds restricted from cargo year-round"
+      policy_summary: "Air Europa operates MEX to MAD. Check live animal cargo acceptance with Air Europa Cargo before booking."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates rabies vaccination."
+      timing: "5+ months before travel"
+      responsible: "Vet in Mexico"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify rabies vaccination and 21-day post-primary wait."
+      timing: "5+ months before travel"
+      responsible: "Vet in Mexico"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Blood drawn for FAVN titre test. 3-month wait starts from this date."
+      timing: "4-5 months before travel"
+      responsible: "Official vet and EU-approved laboratory"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Wait 3 months from blood sampling date."
+      timing: "3 months from blood draw"
+      responsible: "N/A - mandatory waiting period"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Book cargo MEX to MAD on Iberia or Aeromexico Cargo."
+      timing: "4-6 weeks before travel"
+      responsible: "Owner or agent"
     - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Obtain SENASICA-endorsed EU certificate within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "SENASICA-registered vet plus SENASICA endorsement"
+    - step: 7
+      action: "Depart MEX. Spanish customs inspects at Madrid Barajas on arrival."
+      timing: "Travel day"
+      responsible: "Airline cargo and Spanish customs"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "SENASICA certificate and endorsement: MXN 2,000-5,000 (approximately EUR 100-250)"
+    - "FAVN titre test (EU-approved laboratory): EUR 85-170"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo MEX to MAD (Iberia or Aeromexico direct): EUR 800-2,000 depending on crate size"
+    - "Pet transport agent (optional): EUR 200-500"
+    - "Total typical range: EUR 1,300-3,200"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "Mexico is non-listed for EU: titre test and 3-month wait from blood draw are mandatory. Start 5 months before travel."
+    - "3-month wait runs from blood draw date, not results date."
+    - "Spain's PPP regime applies once in Spain: not a border ban but ongoing obligations for certain breeds."
+    - "SENASICA certificate must be EU format and dated within 10 days of travel."
+
+  route_complexity: "medium"
+  estimated_timeline_weeks: "20-22"
+
 content:
-  h1: "Pet Transport from Mexico to Spain"
-  overview: |
-    Moving a pet from Mexico to Spain involves more paperwork than most owners expect.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Start early and follow the steps in sequence. Missing a deadline pushes the whole timeline back.
+  h1: "Pet Transport Mexico to Spain: 2026 Guide"
+  overview: "Mexico to Spain has direct flight options via Iberia and Aeromexico to Madrid, which simplifies the cargo routing. Mexico is not EU-listed, so the FAVN titre test and 3-month wait from blood draw are mandatory, adding approximately five months to preparation. Spain's PPP regime for certain dog breeds is the main ongoing obligation once in-country."
+
   sections:
-    - heading: "Key requirements for moving your pet to Spain"
+    - heading: "Titre test and SENASICA: the Mexico to Spain documentation stack"
       body: |
-        Compared to some international pet transport routes, Mexico to Spain is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        EU member state. Follows EU Regulation 576/2013 (transitioning to Regulation 2026/131 from April 2026). Spain has one of Europe's highest pet ownership rates. Some additional national rules for 'potentially dangerous dogs' (PPP list). Authority: Ministerio de Agricultura, Pesca y Alimentacion (MAPA).
-    - heading: "From experience: Mexico to Spain pet transport"
+        Mexico is not on the EU's listed country register, so the FAVN titre test applies. The sequence: microchip first, then rabies vaccination, then after the 21-day validity wait blood is drawn for the titre test at an EU-approved laboratory. The 3-month wait begins from the blood draw date, not the results date.
+
+        SENASICA (Servicio Nacional de Sanidad e Inocuidad Agroalimentaria) is Mexico's food and agriculture safety authority. A SENASICA-registered official vet issues the EU-format certificate, and SENASICA endorses it for international use. The endorsed certificate must be dated within 10 days of your travel date.
+
+        Total timeline from titre test blood draw to travel day: minimum 3 months (plus the pre-blood-draw preparation). Plan five months in total.
+
+    - heading: "Direct cargo to Madrid: Iberia and Aeromexico options"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Iberia and Aeromexico both operate direct flights from Mexico City (MEX) to Madrid Barajas (MAD), giving reliable cargo capacity on this corridor. The Mexico to Spain route carries significant passenger and cargo traffic due to the large Mexican community in Spain.
+
+        Iberia Cargo has strong live animal handling at Barajas, where Spanish customs carries out the arrival inspection. Aeromexico Cargo operates the same MEX to MAD route and accepts live animals on selected flights. Air Europa is a third option on the route.
+
+        Book four to six weeks ahead and confirm live animal cargo acceptance on your specific flight number. For larger crates, confirm hold capacity early as live animal space can fill quickly on popular dates.
+
+    - heading: "Spain's PPP obligations: planning before arrival"
+      body: |
+        Spain's PPP (Perro Potencialmente Peligroso) law classifies certain breeds and requires specific handling in public: muzzle at all times, leash of maximum 2 metres, civil liability insurance, and a PPP licence from the local municipality.
+
+        PPP breeds include Pit Bull Terrier, American Staffordshire Terrier, Rottweiler, and similar types. These are not restricted at the border; the import process is the same for all breeds. The PPP obligations are ongoing once the dog is in Spain.
+
+        Factor the PPP licence application (criminal background check, competency assessment) into your timeline for settling in. Processing times vary by city but are established in Madrid, Barcelona, and other major Spanish cities.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Mexico to Spain?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Spain?"
-    answer: "No routine quarantine is required in Spain for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Spain?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Spain. Start this process as early as possible."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Mexico. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Spain's authority for the exact format required."
+  - question: "Does my Mexican pet need a titre test for Spain?"
+    answer: "Yes. Mexico is not EU-listed, so the FAVN titre test and 3-month wait from blood sampling date apply for Spain, as for any EU member state. Your pet needs a microchip, current rabies vaccination, SENASICA-endorsed EU certificate within 10 days of travel, and the titre test plus 3-month wait before travel. Source: food.ec.europa.eu, 2026."
+  - question: "Can Iberia carry my pet as cargo from Mexico City to Madrid?"
+    answer: "Yes. Iberia Cargo operates direct from MEX to MAD and accepts live animals in the temperature-controlled hold. Aeromexico Cargo operates the same direct route. Book four to six weeks ahead and confirm live animal cargo acceptance on your specific flight number."
+  - question: "When does the 3-month wait start for Mexico to Spain?"
+    answer: "From the blood sampling date for the FAVN titre test, not from when results arrive. If blood is drawn on 1 April, travel to Spain is not possible before 1 July, regardless of when laboratory results are received."
+  - question: "What is the total cost from Mexico City to Madrid?"
+    answer: "Direct cargo from MEX to MAD (Iberia or Aeromexico) typically costs EUR 800 to EUR 2,000 depending on crate size. Add EUR 85-170 for the titre test, EUR 100-250 for the SENASICA certificate, and EUR 80-250 for a crate if needed. Total all-in is typically EUR 1,300 to EUR 3,200, with five months preparation required."
+
 links:
   sideways:
     - url: "/pet-transport/spain-to-mexico/"
       text: "Pet Transport Spain to Mexico"
+    - url: "/pet-transport/mexico-to-germany/"
+      text: "Pet Transport Mexico to Germany"
+    - url: "/pet-transport/mexico-to-france/"
+      text: "Pet Transport Mexico to France"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-mexico-export-guide/"
-      text: "Shipping from Mexico"
+    - url: "/pet-transport/origins/mexico/"
+      text: "Shipping pets from Mexico"
     - url: "/pet-transport/countries/spain/"
-      text: "Importing to Spain"
-    - url: "/pet-transport/airlines/american-airlines/"
-      text: "American Airlines pet policy"
-    - url: "/pet-transport/airlines/air-france/"
-      text: "Air France pet policy"
+      text: "Spain pet import guide"
 ---

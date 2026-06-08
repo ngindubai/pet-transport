@@ -1,132 +1,122 @@
 ---
-template_variant: "C"
-title: "Pet Relocation Chile to Italy | Requirements & Guide"
-description: "Pet relocation from Chile to Italy: Italy import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport Chile to Italy: SAG Certificate, No Titre Test Required, 2026"
+description: "Moving a pet from Chile to Italy in 2026. Chile is EU-listed: no titre test required. SAG certificate. LATAM or Iberia SCL via MAD to FCO or MXP. Italy no breed ban since 2009."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "A"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "chile-to-italy"
 origin_name: "Chile"
 destination_name: "Italy"
+
 route_data:
   origin:
     code: "CL"
     country: "Chile"
     export_requirements:
-      export_permit: "{'required': False}"
-      health_certificate: "{'required': True, 'issued_by': 'SAG-authorised official vet'}"
+      health_certificate: "Official veterinary health certificate issued by a SAG-registered official vet and endorsed by SAG (Servicio Agricola y Ganadero). EU-format required. Issued within 10 days of travel."
+      export_permit: "No formal export permit required for companion animals from Chile. Primary departure airport: Santiago Arturo Merino Benitez (SCL)."
+
   destination:
     code: "IT"
     country: "Italy"
     import_requirements:
-      microchip: "Required (ISO 11784/11785)"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel"
-      titre_test: "Not required"
-      quarantine: "No routine quarantine for compliant pets"
-      import_permit: "EU pet passport or health certificate"
-      health_certificate: "Required. Issued by: Official veterinarian. Valid for 10 days from issue"
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Not required. Chile is on the EU's listed third countries schedule under EU Regulation 576/2013. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. Italian Ministry of Health vets inspect at Rome Fiumicino (FCO) or Milan Malpensa (MXP)."
+      import_permit: "No import permit required. SAG-endorsed EU-format health certificate is the required document."
+      health_certificate: "EU-format certificate endorsed by SAG, issued within 10 days of travel."
+      breed_restrictions: "No national breed ban. Italy removed its national breed-specific legislation in 2009. Ministry of Health vets carry out a documentary inspection at arrival."
+
   airlines:
-    - name: "American Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: American Airlines Cargo handles pet transport. Seasonal temperature embargoes apply"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Emirates"
+    - name: "LATAM Cargo via MAD"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "LATAM connects Santiago (SCL) to Madrid (MAD) with onward connections to Rome Fiumicino (FCO) or Milan Malpensa (MXP)."
+    - name: "Iberia Cargo via MAD"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
+      policy_summary: "Iberia connects SCL to Madrid Barajas (MAD) with onward connections to Italian airports."
+    - name: "Air France Cargo via CDG"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Delta Air Lines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Delta Cargo handles larger pets in temperature-controlled hold. Brachycephalic breeds restricted from cargo"
-    - name: "Air Canada"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Air Canada Cargo handles pet transport in heated/pressurised hold. Brachycephalic breeds restricted from cargo year-round"
+      policy_summary: "Air France connects SCL to Paris CDG with onward connections to FCO or MXP."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates rabies vaccination."
+      timing: "4-6 weeks before travel"
+      responsible: "Vet in Chile"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify rabies vaccination and 21-day post-primary wait."
+      timing: "4-6 weeks before travel"
+      responsible: "Vet in Chile"
     - step: 3
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Book cargo from SCL to FCO or MXP via MAD or CDG."
+      timing: "4-6 weeks before travel"
+      responsible: "Owner or agent"
     - step: 4
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Obtain SAG-endorsed EU-format health certificate within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "SAG-registered vet plus SAG endorsement"
     - step: 5
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Depart SCL. Italian Ministry of Health vets inspect at FCO or MXP on arrival."
+      timing: "Travel day"
+      responsible: "Airline cargo and Italian customs"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "SAG certificate and endorsement: CLP 30,000-80,000 (approximately EUR 30-85)"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo SCL to FCO/MXP via hub: EUR 1,000-2,200 depending on crate size and routing"
+    - "Pet transport agent (optional): EUR 150-400"
+    - "Total typical range: EUR 1,300-2,900"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "low"
-  estimated_timeline_weeks: "4-10"
+    - "Chile is EU-listed: no FAVN titre test required. Process is significantly shorter than for non-listed South American countries."
+    - "No direct SCL to FCO or MXP cargo service; all routings connect via a European hub."
+    - "Italy has no national breed ban since 2009."
+    - "SAG endorsement takes a few working days; allow enough lead time within the 10-day certificate window."
+
+  route_complexity: "medium"
+  estimated_timeline_weeks: "4-6"
+
 content:
-  h1: "Pet Transport from Chile to Italy"
-  overview: |
-    Getting your pet from Chile to Italy is entirely achievable, but the preparation timeline is not flexible.
-    
-    This route is relatively straightforward compared to some international routes. Start preparations at least 4 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened.
-    
-    Getting the timing right is critical. Work backwards from your travel date and add a buffer.
+  h1: "Pet Transport Chile to Italy: 2026 Guide"
+  overview: "Chile is on the EU's listed third countries schedule, which means the FAVN titre test and 3-month wait do not apply for Italy entry. The SAG health certificate covers the export side. All routings from Santiago connect via Madrid or Paris. Italy has had no national breed ban since 2009. Allow four to six weeks for the full process."
+
   sections:
-    - heading: "What to know about the Chile to Italy route"
+    - heading: "Chile is EU-listed: what this means for the documentation process"
       body: |
-        Compared to some international pet transport routes, Chile to Italy is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        EU member state. EU rules apply.
-    - heading: "Practical advice for shipping your pet from Chile"
+        EU Regulation 576/2013 divides third countries into two categories: listed countries, whose rabies controls the EU recognises as equivalent, and non-listed countries, which require a FAVN titre test and a 3-month wait. Chile is listed. Source: food.ec.europa.eu, 2026.
+
+        That means Chilean pets entering Italy need only a valid ISO microchip, a current rabies vaccination (21-day wait after a primary course), and the SAG-endorsed EU-format health certificate. SAG (Servicio Agricola y Ganadero) is Chile's official agricultural and veterinary authority. A SAG-registered vet issues the certificate within 10 days of travel; SAG endorses it before departure. The whole documentation process takes four to six weeks rather than the five months required from non-listed countries.
+
+    - heading: "Hub routing from Santiago to Rome or Milan and Italy's breed law"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        There is no direct cargo service from Santiago (SCL) to Rome Fiumicino (FCO) or Milan Malpensa (MXP). LATAM and Iberia both connect SCL to Madrid (MAD), which has onward connections to Italian airports. Air France via Paris CDG is an alternative. Book cargo four to six weeks ahead, as space for live animals on transatlantic routes fills quickly.
+
+        Italy removed its national breed-specific legislation in 2009. Italian Ministry of Health vets carry out a documentary inspection at FCO or MXP on arrival, but no breed classification is applied. For Chilean families whose breed faces restrictions in Germany or France, Italy is a straightforward EU destination.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Chile to Italy?"
-    answer: "Allow at least 4 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Italy?"
-    answer: "No routine quarantine is required in Italy for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Italy?"
-    answer: "No, Italy does not require a rabies titre test for most pets arriving from Chile. Your pet still needs a valid rabies vaccination and microchip. Check the current requirements with the destination authority before travel."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Chile. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Italy's authority for the exact format required."
+  - question: "Does my Chilean pet need a titre test for Italy?"
+    answer: "No. Chile is on the EU's listed countries schedule under EU Regulation 576/2013. The FAVN titre test and 3-month wait are not required. Source: food.ec.europa.eu, 2026."
+  - question: "Is there a breed ban in Italy?"
+    answer: "No. Italy removed its national breed-specific legislation in 2009. Italian Ministry of Health vets carry out a documentary inspection at FCO or MXP on arrival, but no breed classification is applied."
+  - question: "How do I route from Santiago to Rome or Milan for pet cargo?"
+    answer: "All routings from SCL to Italian airports connect via a European hub. LATAM and Iberia via Madrid (MAD) and Air France via Paris CDG are the main options with connections to FCO or MXP."
+  - question: "What is the total cost from Santiago to Rome or Milan?"
+    answer: "Cargo via hub to FCO or MXP typically costs EUR 1,000-2,200. Add EUR 30-85 for the SAG certificate. Total all-in is typically EUR 1,300-2,900."
+
 links:
   sideways:
     - url: "/pet-transport/italy-to-chile/"
       text: "Pet Transport Italy to Chile"
+    - url: "/pet-transport/chile-to-spain/"
+      text: "Pet Transport Chile to Spain"
+    - url: "/pet-transport/chile-to-france/"
+      text: "Pet Transport Chile to France"
   upward:
-    - url: "/pet-transport/origins/chile-pet-export-guide/"
-      text: "Shipping from Chile"
+    - url: "/pet-transport/origins/chile/"
+      text: "Shipping pets from Chile"
     - url: "/pet-transport/countries/italy/"
-      text: "Importing to Italy"
-    - url: "/pet-transport/airlines/american-airlines/"
-      text: "American Airlines pet policy"
-    - url: "/pet-transport/airlines/air-france/"
-      text: "Air France pet policy"
+      text: "Italy pet import guide"
 ---

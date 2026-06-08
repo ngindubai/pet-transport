@@ -1,133 +1,141 @@
 ---
-title: "Pet Transport from South Africa to France | DALRRD Export, EU Titre Test & Guide"
-description: "Shipping your pet from South Africa to France: DALRRD veterinary export permit, EU FAVN titre test and 3-month wait, Air France and Lufthansa cargo from Johannesburg."
+title: "Pet Transport South Africa to France: Titre Test, DALRRD Cert, Air France to CDG"
+description: "Moving a pet from South Africa to France in 2026. SA is non-listed for EU: FAVN titre test and 3-month wait. DALRRD cert. Air France and Ethiopian Airlines from JNB to CDG."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-template_variant: "D"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "E"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "south-africa-to-france"
 origin_name: "South Africa"
 destination_name: "France"
+
 route_data:
   origin:
     code: "ZA"
     country: "South Africa"
     export_requirements:
-      export_permit: "Veterinary Export Permit from DALRRD required. Apply through provincial State Veterinarian. Allow 4-8 weeks."
-      health_certificate: "State Vet or DALRRD-authorised vet health certificate in EU Annex IV format. DALRRD endorsement required. Within 10 days of travel."
+      health_certificate: "Official veterinary health certificate issued by a DALRRD-authorised state vet, endorsed by DALRRD (Department of Agriculture, Land Reform and Rural Development). EU-format required. Issued within 10 days of travel."
+      export_permit: "DALRRD veterinary export permit required. Apply through the State Veterinarian's office in your province."
+
   destination:
     code: "FR"
     country: "France"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Before first vaccination."
-      rabies_vaccination: "Required. 21-day wait from first vaccination. Current within validity."
-      titre_test: "Required. South Africa is non-listed under EU Regulation 576/2013. FAVN at EU-approved lab. Minimum 0.5 IU/ml. Blood drawn 30+ days post-vaccination. 3-month mandatory wait from blood draw."
-      quarantine: "No quarantine for compliant pets. DGAL documentary check at CDG BCP on arrival."
-      import_permit: "Not required."
-      health_certificate: "DALRRD-endorsed EU Annex IV certificate. Within 10 days of travel."
-      entry_point: "Paris Charles de Gaulle (CDG)."
-      authority: "DGAL France. EU Regulation 576/2013."
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Required. South Africa is not EU-listed. FAVN titre test required. Blood drawn after microchip and valid vaccination. 3-month wait from blood sampling date. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. French customs inspects at Paris CDG."
+      import_permit: "No import permit. DALRRD-endorsed EU certificate is the required document."
+      health_certificate: "EU-format certificate endorsed by DALRRD, within 10 days of travel."
+      breed_restrictions: "France Category 1: Pit Bull type without LOF or FCI pedigree banned from import. Category 2: Rottweiler and American Staffordshire Terrier with pedigree permitted with restrictions."
+
   airlines:
-    - name: "Air France"
+    - name: "Air France Cargo"
       type: "cargo_only"
-      policy_summary: "Direct CDG-JNB reverse, Air France Cargo operates JNB-CDG. National carrier of destination with CDG BCP familiarity on arrival."
-    - name: "Lufthansa"
+      policy_summary: "Air France operates from Johannesburg OR Tambo (JNB) to Paris CDG. Air France Cargo accepts live animals in the temperature-controlled hold. CDG is the main French entry hub for live animal cargo from South Africa."
+    - name: "Ethiopian Airlines Cargo"
       type: "cargo_only"
-      policy_summary: "Via Frankfurt FRA to CDG. Strong cargo infrastructure. Brachycephalic breeds restricted."
-    - name: "Emirates"
+      policy_summary: "Ethiopian Airlines routes from JNB to Addis Ababa (ADD), with connections to Paris CDG. A well-established African carrier with live animal cargo experience."
+    - name: "Lufthansa Cargo via FRA"
       type: "cargo_only"
-      policy_summary: "Via Dubai DXB to CDG. Summer heat embargoes may restrict."
-    - name: "Qatar Airways"
-      type: "cargo_only"
-      policy_summary: "Via Doha DOH to CDG. Good animal handling."
-    - name: "South African Airways"
-      type: "cargo_only"
-      policy_summary: "SAA Cargo JNB-CDG where available. DALRRD export familiarity."
+      policy_summary: "Lufthansa operates JNB to Frankfurt direct with connections to CDG. Useful if direct JNB-CDG cargo capacity is limited."
+
   timeline_steps:
     - step: 1
-      action: "Is microchip ISO-compliant and pre-vaccination?"
-      timing: "Verify."
-      responsible: "SA vet"
+      action: "Confirm ISO microchip predates rabies vaccination."
+      timing: "5+ months before travel"
+      responsible: "Vet in South Africa"
     - step: 2
-      action: "Is rabies vaccination current?"
-      timing: "If lapsed, vaccinate and wait 30 days before titre test."
-      responsible: "SA vet"
+      action: "Verify rabies vaccination and 21-day post-primary wait."
+      timing: "5+ months before travel"
+      responsible: "Vet in South Africa"
     - step: 3
-      action: "FAVN titre test at EU-approved lab"
-      timing: "Blood drawn 30+ days post-vaccination."
-      responsible: "SA vet + EU-approved lab"
+      action: "Blood drawn for FAVN titre test. 3-month wait starts from this date."
+      timing: "4-5 months before travel"
+      responsible: "State vet and EU-approved laboratory"
     - step: 4
-      action: "3-month wait from blood draw date"
-      timing: "Cannot be shortened."
-      responsible: "N/A"
+      action: "Wait 3 months from blood sampling date."
+      timing: "3 months from blood draw"
+      responsible: "N/A - mandatory waiting period"
     - step: 5
-      action: "Apply for DALRRD Veterinary Export Permit (in parallel with titre test)"
-      timing: "4-8 weeks. Start immediately."
-      responsible: "You or agent via State Vet"
+      action: "Book cargo from JNB to CDG on Air France or Ethiopian Airlines."
+      timing: "4-6 weeks before travel"
+      responsible: "Owner or agent"
     - step: 6
-      action: "Book Air France or Lufthansa Cargo JNB-CDG"
-      timing: "Once wait complete."
-      responsible: "You or agent"
+      action: "Obtain DALRRD-endorsed EU certificate within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "State vet plus DALRRD endorsement"
     - step: 7
-      action: "DALRRD-endorsed EU Annex IV health certificate"
-      timing: "Within 10 days of travel."
-      responsible: "State Vet + DALRRD"
-    - step: 8
-      action: "Cargo check-in JNB. CDG BCP inspection on arrival."
-      timing: "3-4 hours before departure."
-      responsible: "You + cargo + DGAL"
+      action: "Depart JNB. French customs inspects at Paris CDG on arrival."
+      timing: "Travel day"
+      responsible: "Airline cargo and French customs"
+
   cost_factors:
-    - "Air France or Lufthansa Cargo fees JNB-CDG"
-    - "IATA-compliant crate"
-    - "FAVN titre test"
-    - "DALRRD export permit"
-    - "State Vet health certificate fees"
-    - "Agent fee"
+    - "DALRRD vet certificate and export permit: ZAR 1,000-2,500 (approximately EUR 50-130)"
+    - "FAVN titre test (EU-approved laboratory): EUR 85-170"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo JNB to CDG (Air France or Ethiopian): EUR 900-2,100 depending on crate size"
+    - "Pet transport agent (optional): EUR 200-500"
+    - "Total typical range: EUR 1,300-3,200"
+
   key_warnings:
-    - "Non-listed country: titre test + 3-month wait mandatory."
-    - "DALRRD export permit takes 4-8 weeks. Start in parallel with titre test."
-    - "3-month wait from blood draw, not result date."
-  route_complexity: "high"
-  estimated_timeline_weeks: "22-26"
+    - "South Africa is not EU-listed: titre test and 3-month wait from blood draw are mandatory. Start 5 months before travel."
+    - "3-month wait runs from blood draw date, not results date."
+    - "France Category 1 breed ban covers Pit Bull type dogs without LOF or FCI pedigree."
+    - "DALRRD certificate must be EU format and dated within 10 days of travel."
+
+  route_complexity: "medium"
+  estimated_timeline_weeks: "20-22"
+
 content:
-  h1: "Pet Transport from South Africa to France"
-  overview: |
-    South Africa to France is a demanding but navigable route. The EU non-listed country protocol applies, FAVN titre test, 3-month wait, and the DALRRD export permit adds its own lead time on the South African departure side. Running both processes in parallel keeps the timeline at 22-26 weeks rather than longer.
+  h1: "Pet Transport South Africa to France: 2026 Guide"
+  overview: "South Africa to France requires the FAVN titre test and 3-month wait from blood draw. Preparation takes approximately five months. Air France operates from Johannesburg to Paris CDG, with Ethiopian Airlines as an alternative via Addis Ababa. DALRRD handles the export documentation. France's Category 1 breed ban applies at the border."
+
   sections:
-    - heading: "Running DALRRD and titre test in parallel"
+    - heading: "Titre test and 3-month wait: the South Africa to EU process"
       body: |
-        Two processes dominate preparation. The FAVN titre test on the EU entry side (blood drawn 30+ days post-vaccination, 3-month wait from draw date). The DALRRD Veterinary Export Permit on the South African departure side (4-8 weeks from State Veterinarian office).
+        South Africa is not on the EU's listed country register. The FAVN titre test is mandatory for all pets moving from South Africa to France or any EU member state.
 
-        Start both at the same time. Get the titre test blood drawn at an EU-approved laboratory as soon as your pet's vaccination record qualifies (current vaccination, 30 days elapsed). Simultaneously, contact the State Veterinarian in your province and begin the export permit application. Both processes have variable timelines; running them in parallel prevents either from becoming a bottleneck.
+        Sequence: ISO microchip implanted first, then rabies vaccination with 21-day wait, then blood drawn at an EU-approved laboratory. The 3-month wait runs from the blood draw date. DALRRD endorses the EU-format certificate, which must be dated within 10 days of travel.
 
-        The health certificate, issued within 10 days of travel by a State Vet or DALRRD-authorised vet, with DALRRD endorsement, is the last document prepared. It can only be issued once the export permit is in hand and the 3-month titre test wait is over.
-    - heading: "Which airline from Johannesburg to Paris?"
+        Total preparation: approximately five months from the blood draw to travel day, plus any pre-blood-draw preparation. Source: food.ec.europa.eu, 2026.
+
+    - heading: "Air France and Ethiopian Airlines: cargo from Johannesburg to Paris"
       body: |
-        Air France operates the JNB-CDG route and is a natural choice, as the French national carrier, their CDG cargo team handles BCP arrivals and DGAL inspections regularly. Lufthansa via Frankfurt is the main European alternative, with strong Frankfurt cargo infrastructure, though it adds a transit.
+        Air France Cargo operates from Johannesburg OR Tambo (JNB) to Paris CDG with live animal cargo facilities. CDG is where French customs carries out the arrival inspection.
 
-        For brachycephalic breeds (Bulldogs, Pugs, French Bulldogs), Lufthansa restricts these breeds from cargo year-round. Air France or Emirates via Dubai are better options, though DXB summer heat embargoes introduce seasonal complications for Emirates.
+        Ethiopian Airlines offers an alternative routing via Addis Ababa (ADD) to CDG. Ethiopian Airlines Cargo has live animal experience on Africa to Europe routes. The transit via ADD adds time; ensure the transit is not excessively long when booking this option.
+
+        Lufthansa via Frankfurt is a third option if direct JNB-CDG capacity is unavailable. Book four to six weeks ahead.
+
+    - heading: "France breed rules: Category 1 check from South Africa"
+      body: |
+        France's Category 1 classification covers Pit Bull type dogs without official LOF or FCI breed registration. These dogs cannot be imported into France under any circumstances. Category 2 covers Rottweiler and American Staffordshire Terrier with pedigree, which can enter with restrictions.
+
+        For most breeds commonly kept in South Africa, no border breed restriction applies. If your dog resembles a Pit Bull type, verify breed classification before booking.
+
 faqs:
-  - question: "Does my pet need a titre test to enter France from South Africa?"
-    answer: "Yes. South Africa is non-listed under EU Regulation 576/2013. A FAVN titre test at an EU-approved laboratory is mandatory (minimum 0.5 IU/ml), followed by a 3-month mandatory wait from the blood draw date."
-  - question: "What is the DALRRD export permit?"
-    answer: "South Africa requires a Veterinary Export Permit from DALRRD for all live animal exports. Apply through your provincial State Veterinarian office. Allow 4-8 weeks. Your pet cannot leave South Africa without this permit."
-  - question: "Is there quarantine on arrival in France from South Africa?"
-    answer: "No quarantine for fully compliant pets. An official vet checks documentation at the CDG Border Control Post on arrival. With correct paperwork, your pet is released the same day."
-  - question: "How long does preparation take?"
-    answer: "22-26 weeks. Start the DALRRD export permit and the titre test process simultaneously to avoid delays. The 3-month wait after the titre test blood draw is the main timeline constraint."
-  - question: "Which airline is best from Johannesburg to Paris?"
-    answer: "Air France Cargo operating JNB-CDG is the primary choice with strong CDG BCP arrival familiarity. Lufthansa via Frankfurt is a solid alternative with strong cargo infrastructure, subject to brachycephalic breed restrictions."
+  - question: "Does my South African pet need a titre test for France?"
+    answer: "Yes. South Africa is not EU-listed, so the FAVN titre test and 3-month wait from blood sampling date are mandatory. Source: food.ec.europa.eu, 2026."
+  - question: "Which airlines carry pet cargo from Johannesburg to Paris?"
+    answer: "Air France Cargo and Ethiopian Airlines Cargo both operate JNB to CDG routes with live animal cargo acceptance. Lufthansa via Frankfurt is an alternative. Book four to six weeks ahead."
+  - question: "When does the 3-month wait start for a South African pet going to France?"
+    answer: "From the blood sampling date for the FAVN titre test. Not from the date results arrive. If blood is drawn on 1 June, travel to France is not possible before 1 September."
+  - question: "What is the total cost from Johannesburg to Paris?"
+    answer: "Cargo from JNB to CDG typically costs EUR 900 to EUR 2,100 depending on crate size. Add EUR 85-170 for the titre test, EUR 50-130 for the DALRRD certificate, and EUR 80-250 for a crate if needed. Total all-in is typically EUR 1,300 to EUR 3,200."
+
 links:
   sideways:
     - url: "/pet-transport/france-to-south-africa/"
       text: "Pet Transport France to South Africa"
+    - url: "/pet-transport/south-africa-to-germany/"
+      text: "Pet Transport South Africa to Germany"
+    - url: "/pet-transport/south-africa-to-united-kingdom/"
+      text: "Pet Transport South Africa to UK"
   upward:
-    - url: "/pet-transport/origins/south-africa-pet-export-guide/"
-      text: "Shipping from South Africa"
+    - url: "/pet-transport/origins/south-africa/"
+      text: "Shipping pets from South Africa"
     - url: "/pet-transport/countries/france/"
-      text: "Importing to France"
-    - url: "/pet-transport/airlines/air-france/"
-      text: "Air France pet policy"
-    - url: "/pet-transport/airlines/lufthansa/"
-      text: "Lufthansa pet policy"
+      text: "France pet import guide"
 ---

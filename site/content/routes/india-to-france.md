@@ -1,130 +1,142 @@
 ---
-template_variant: "E"
-title: "Moving Your Pet from India to France | Complete Guide"
-description: "Pet relocation from India to France: France import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport India to France: Titre Test, AQCS NOC, Air France DEL-CDG Direct"
+description: "Moving a pet from India to France in 2026. India non-listed for EU: FAVN titre test and 3-month wait. AQCS NOC required. Air France flies DEL-CDG direct. France breed rules."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "E"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "india-to-france"
 origin_name: "India"
 destination_name: "France"
+
 route_data:
   origin:
     code: "IN"
     country: "India"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      health_certificate: "NOC from AQCS plus health certificate endorsed by DAHD (Department of Animal Husbandry and Dairying). EU-format required. Apply to AQCS at least 30 days before travel."
+      export_permit: "AQCS NOC required for all pet exports from India. Primary departure airports for Europe: Delhi (DEL) or Mumbai (BOM)."
+
   destination:
     code: "FR"
     country: "France"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or at same time as rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Standard EU protocol. 21-day wait from first vaccination."
-      titre_test: "Required for: Pets from unlisted third countries. Not required for: Pets from EU and listed third countries (all P1 countries listed). Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No routine quarantine. Non-compliant animals may be quarantined or returned at owner's expense."
-      import_permit: "No formal import permit. EU pet passport or AHC serves as documentation."
-      health_certificate: "Required"
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Required. India is not EU-listed. FAVN titre test required. Blood drawn after microchip and valid vaccination. 3-month wait from blood sampling date. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. French customs inspects at Paris CDG."
+      import_permit: "No import permit. DAHD-endorsed EU certificate with AQCS NOC are the required documents."
+      health_certificate: "EU-format certificate endorsed by DAHD, within 10 days of travel."
+      breed_restrictions: "France Category 1: Pit Bull type without LOF or FCI pedigree banned from import. Category 2: Rottweiler and American Staffordshire with pedigree permitted with restrictions."
+
   airlines:
-    - name: "Air India"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 5kg with carrier). Cargo: Larger pets via Air India Cargo. Breed restrictions apply. Temperature embargoes during extreme heat on Indian domestic sectors"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Emirates"
+    - name: "Air France Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Singapore Airlines"
+      policy_summary: "Air France operates direct from Delhi (DEL) to Paris CDG. Air France Cargo accepts live animals. CDG is the main French entry hub for live animal cargo from India."
+    - name: "Air India Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "British Airways"
+      policy_summary: "Air India operates between DEL and CDG direct. Air India Cargo accepts live animals on selected European routes."
+    - name: "Emirates SkyCargo via DXB"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Emirates connects from Delhi or Mumbai via Dubai to Paris CDG. Useful if direct DEL-CDG capacity is limited."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step: must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates rabies vaccination."
+      timing: "5+ months before travel"
+      responsible: "Vet in India"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify rabies vaccination and 21-day post-primary wait."
+      timing: "5+ months before travel"
+      responsible: "Vet in India"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Apply to AQCS for NOC (allow at least 30 days for processing)."
+      timing: "4-5 months before travel"
+      responsible: "Owner or agent, AQCS"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Blood drawn for FAVN titre test. 3-month wait starts from this date."
+      timing: "4-5 months before travel"
+      responsible: "Official vet and EU-approved laboratory"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Wait 3 months from blood sampling date."
+      timing: "3 months from blood draw"
+      responsible: "N/A - mandatory waiting period"
     - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Book cargo from DEL to CDG on Air France or Air India."
+      timing: "4-6 weeks before travel"
+      responsible: "Owner or agent"
+    - step: 7
+      action: "Obtain DAHD-endorsed EU certificate within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "DAHD-authorised vet plus DAHD endorsement"
+    - step: 8
+      action: "Depart DEL. French customs inspects at Paris CDG on arrival."
+      timing: "Travel day"
+      responsible: "Airline cargo and French customs"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "AQCS NOC fee: INR 2,000-5,000 (approximately EUR 20-55)"
+    - "DAHD-endorsed health certificate: INR 1,000-3,000 (approximately EUR 10-35)"
+    - "FAVN titre test (EU-approved laboratory): EUR 85-170"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo DEL to CDG (Air France or Air India direct): EUR 900-2,100 depending on crate size"
+    - "Pet transport agent (optional): EUR 200-500"
+    - "Total typical range: EUR 1,300-3,200"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "India is not EU-listed: FAVN titre test and 3-month wait from blood draw are mandatory. Start 5+ months before travel."
+    - "AQCS NOC takes up to 30 days to obtain; apply well ahead."
+    - "3-month wait runs from blood draw date, not results date."
+    - "France Category 1 breed ban covers Pit Bull type dogs without LOF or FCI pedigree."
+
+  route_complexity: "medium-high"
+  estimated_timeline_weeks: "22-24"
+
 content:
-  h1: "Pet Transport from India to France"
-  overview: |
-    Pet transport from India to France follows a clear process once you know what France requires.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date: some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    The paperwork is the hard part. Once everything is in order, the journey itself is well-managed.
+  h1: "Pet Transport India to France: 2026 Guide"
+  overview: "India to France has direct cargo options via Air France and Air India from Delhi to Paris CDG. India is not EU-listed, so the FAVN titre test, 3-month wait from blood draw, and the AQCS NOC all apply. Total preparation is approximately five to six months. France's Category 1 breed ban applies at the border."
+
   sections:
-    - heading: "Why this route needs early planning"
+    - heading: "AQCS NOC, titre test, and 3-month wait from India"
       body: |
-        Compared to some international pet transport routes, India to France is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        France follows EU harmonised pet movement rules. Direction Generale de l'Alimentation (DGAL) under the Ministry of Agriculture oversees implementation. France is one of the most pet-friendly countries in Europe with high pet ownership, though some rental properties restrict pets. France has its own breed-specific legislation (Categories 1 and 2) that is notably strict.
-    - heading: "Practical advice for shipping your pet from India"
+        India requires an AQCS (Animal Quarantine and Certification Service) NOC for all pet exports. Apply at least 30 days before travel. India is also not EU-listed, so the FAVN titre test is mandatory with a 3-month wait from the blood draw date.
+
+        The DAHD endorses the EU-format health certificate, which must be dated within 10 days of travel. Start the process at least five to six months before your travel date. Source: food.ec.europa.eu, 2026.
+
+    - heading: "Air France direct from Delhi to Paris"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Air France Cargo operates direct from Delhi (DEL) to Paris CDG and accepts live animals in the temperature-controlled hold. Air India Cargo is a direct alternative on the same route. CDG is where French customs carries out the arrival inspection.
+
+        Emirates via Dubai is an alternative if direct capacity is limited. Book four to six weeks ahead.
+
+    - heading: "France Category 1 breed restriction from India"
+      body: |
+        France's Category 1 classification covers Pit Bull type dogs without official LOF or FCI breed registration. These cannot be imported. Category 2 (Rottweiler, American Staffordshire with pedigree) can enter with restrictions.
+
+        For most breeds kept in India, including Labradors, Golden Retrievers, German Shepherds, and similar, no border breed restriction applies.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from India to France?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering France?"
-    answer: "No routine quarantine is required in France for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering France?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter France. Start this process as early as possible."
-  - question: "Can I take my cat to France from India?"
-    answer: "Yes, cats can be transported from India to France. The same microchip, vaccination, and health certificate requirements apply as for dogs, though some rules (such as tapeworm treatment) apply to dogs only. Check the full requirements for cats with the destination authority."
+  - question: "Does my Indian pet need a titre test for France?"
+    answer: "Yes. India is not EU-listed, so the FAVN titre test and 3-month wait from blood sampling date are mandatory. Source: food.ec.europa.eu, 2026."
+  - question: "What is the AQCS NOC and how long does it take?"
+    answer: "The AQCS (Animal Quarantine and Certification Service) NOC is a No Objection Certificate required for all pet exports from India. Apply to AQCS at least 30 days before travel; processing can take up to 30 days after inspection."
+  - question: "Can Air France fly my pet directly from Delhi to Paris?"
+    answer: "Yes. Air France Cargo operates direct from DEL to CDG and accepts live animals. Air India Cargo is another direct option on this route."
+  - question: "What is the total cost from Delhi to Paris?"
+    answer: "Cargo from DEL to CDG typically costs EUR 900 to EUR 2,100. Add EUR 85-170 for the titre test, EUR 20-55 for the AQCS NOC, and EUR 10-35 for the DAHD certificate. Total all-in is typically EUR 1,300 to EUR 3,200."
+
 links:
   sideways:
     - url: "/pet-transport/france-to-india/"
       text: "Pet Transport France to India"
+    - url: "/pet-transport/india-to-germany/"
+      text: "Pet Transport India to Germany"
+    - url: "/pet-transport/india-to-spain/"
+      text: "Pet Transport India to Spain"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-india-export-guide/"
-      text: "Shipping from India"
+    - url: "/pet-transport/origins/india/"
+      text: "Shipping pets from India"
     - url: "/pet-transport/countries/france/"
-      text: "Importing to France"
-    - url: "/pet-transport/airlines/air-france/"
-      text: "Air France pet policy"
+      text: "France pet import guide"
 ---

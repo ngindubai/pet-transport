@@ -1,141 +1,122 @@
 ---
-title: "Pet Transport from Japan to Germany | AQS Export, EU Titre Test & Full Guide"
-description: "Shipping your pet from Japan to Germany: AQS export health certificate, EU FAVN titre test and 3-month wait required, airline options from Tokyo and Osaka to Frankfurt."
+title: "Pet Transport Japan to Germany: AQS Certificate, EU-Listed, No Titre Test, 2026"
+description: "Moving a pet from Japan to Germany in 2026. Japan is EU-listed: no titre test required. AQS health certificate. Lufthansa direct NRT to FRA. Germany Bundesland breed restrictions vary."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-template_variant: "C"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "A"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "japan-to-germany"
 origin_name: "Japan"
 destination_name: "Germany"
+
 route_data:
   origin:
     code: "JP"
     country: "Japan"
     export_requirements:
-      export_permit: "No formal export permit for personal pets from Japan. AQS issues the health certificate on departure."
-      health_certificate: "Official export health certificate issued by Japan Animal Quarantine Service (AQS), in the format required by the destination country (EU Annex IV for Germany). Issued within 10 days of travel."
+      health_certificate: "Official veterinary health certificate issued by an AQS-registered vet and endorsed by Japan's Animal Quarantine Service (AQS). EU-format required. Pet must be examined at an Animal Quarantine Station before export. Issued within 10 days of travel."
+      export_permit: "No formal export permit required for companion animals from Japan. Primary departure airports: Tokyo Narita (NRT) and Tokyo Haneda (HND)."
+
   destination:
     code: "DE"
     country: "Germany"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before the first rabies vaccination."
-      rabies_vaccination: "Required. Minimum age 12 weeks. 21-day wait from first vaccination. Current within validity period."
-      titre_test: "Required. Japan is a non-listed country under EU Regulation 576/2013. FAVN titre test at an EU-approved laboratory. Minimum 0.5 IU/ml. Blood drawn at least 30 days after last vaccination. 3-month mandatory wait from blood draw date."
-      quarantine: "No quarantine for fully compliant pets. Official vet check at Frankfurt Airport Border Control Post on arrival."
-      import_permit: "Not required. EU Regulation 576/2013 applies."
-      health_certificate: "AQS-endorsed EU Annex IV health certificate, issued within 10 days of travel."
-      entry_point: "Frankfurt Airport (FRA), Germany's primary Border Control Post."
-      authority: "BMEL Germany. EU Regulation 576/2013."
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Not required. Japan is on the EU's listed third countries schedule under EU Regulation 576/2013. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. German customs (Zoll) inspects at Frankfurt (FRA)."
+      import_permit: "No import permit required. AQS-endorsed EU-format health certificate is the required document."
+      health_certificate: "EU-format certificate endorsed by AQS, issued within 10 days of travel."
+      breed_restrictions: "Federal bans: Pit Bull Terrier, Tosa Inu. Bundesland-level restrictions vary; Bavaria restricts Rottweiler, American Bulldog, and others. Check destination state before travel."
+
   airlines:
-    - name: "Lufthansa"
+    - name: "Lufthansa Cargo"
       type: "cargo_only"
-      policy_summary: "Direct NRT/HND-FRA. Lufthansa Cargo is the primary option for Japan-Germany. Strong Frankfurt arrival handling. Brachycephalic breeds restricted year-round."
-    - name: "ANA (All Nippon Airways)"
+      policy_summary: "Lufthansa operates direct from Tokyo Narita (NRT) and Haneda (HND) to Frankfurt (FRA). Lufthansa Cargo accepts live animals on this route."
+    - name: "ANA Cargo"
       type: "cargo_only"
-      policy_summary: "ANA Cargo from NRT/HND to FRA. Japanese national carrier with strong AQS export familiarity at Tokyo airports. Direct service."
-    - name: "Japan Airlines (JAL)"
+      policy_summary: "ANA (All Nippon Airways) operates NRT to FRA direct. ANA Cargo handles live animal shipments on long-haul routes."
+    - name: "JAL Cargo via hub"
       type: "cargo_only"
-      policy_summary: "JAL Cargo NRT/HND to FRA via connections. Experienced with AQS export documentation."
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Via Singapore SIN to FRA. Singapore Airlines Cargo. Temperature-controlled hold. Longer routing."
-    - name: "Emirates"
-      type: "cargo_only"
-      policy_summary: "Via Dubai DXB to FRA. Emirates SkyCargo. Summer heat embargoes may apply."
+      policy_summary: "JAL (Japan Airlines) connects NRT and HND to European hubs with onward connections to Frankfurt."
+
   timeline_steps:
     - step: 1
-      action: "Microchip confirmed ISO-compliant and pre-vaccination"
-      timing: "Standard in Japan, verify at vet visit."
-      responsible: "Your Japanese vet"
+      action: "Confirm ISO microchip predates rabies vaccination."
+      timing: "4-6 weeks before travel"
+      responsible: "Vet in Japan"
     - step: 2
-      action: "Rabies vaccination current"
-      timing: "Must be within validity. If lapsed, vaccinate and wait 30 days."
-      responsible: "Your Japanese vet"
+      action: "Verify rabies vaccination and 21-day post-primary wait."
+      timing: "4-6 weeks before travel"
+      responsible: "Vet in Japan"
     - step: 3
-      action: "FAVN titre test at EU-approved laboratory"
-      timing: "Blood drawn 30+ days after last vaccination. 2-4 weeks for results."
-      responsible: "Your vet + EU-approved lab"
+      action: "Book AQS examination appointment at Animal Quarantine Station and cargo from NRT or HND to FRA."
+      timing: "3-5 weeks before travel"
+      responsible: "Owner or agent"
     - step: 4
-      action: "3-month mandatory wait from blood draw date"
-      timing: "Cannot be shortened."
-      responsible: "N/A"
+      action: "Attend AQS examination. Obtain AQS-endorsed EU-format health certificate within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "AQS-registered vet plus AQS endorsement"
     - step: 5
-      action: "Book Lufthansa or ANA Cargo NRT-FRA"
-      timing: "Once waiting period complete."
-      responsible: "You or agent"
-    - step: 6
-      action: "AQS-endorsed EU Annex IV health certificate"
-      timing: "Within 10 days of travel. AQS appointment in advance."
-      responsible: "AQS Japan"
-    - step: 7
-      action: "Cargo check-in Tokyo. Frankfurt BCP inspection on arrival."
-      timing: "Cargo desk 3-4 hours before departure."
-      responsible: "You + cargo airline + German BCP vet"
+      action: "Depart NRT or HND. German customs (Zoll) inspects at Frankfurt on arrival."
+      timing: "Travel day"
+      responsible: "Airline cargo and German customs"
+
   cost_factors:
-    - "Lufthansa or ANA Cargo fees NRT-FRA"
-    - "IATA-compliant crate"
-    - "FAVN titre test at EU-approved lab"
-    - "AQS export health certificate fee"
-    - "Agent fee (recommended)"
+    - "AQS health certificate and endorsement: JPY 10,000-30,000 (approximately EUR 60-185)"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo NRT/HND to FRA (Lufthansa or ANA direct): EUR 1,200-2,800 depending on crate size"
+    - "Pet transport agent (optional): EUR 150-400"
+    - "Total typical range: EUR 1,550-3,600"
+
   key_warnings:
-    - "Japan is non-listed for EU entry despite its advanced veterinary system. Titre test and 3-month wait are mandatory."
-    - "AQS health certificate must be issued within 10 days of travel. Book the AQS appointment well in advance."
-    - "The 3-month wait runs from blood draw date, not results date."
-  route_complexity: "high"
-  estimated_timeline_weeks: "22-26"
+    - "Japan is EU-listed: no FAVN titre test required. Allow 4-6 weeks, not 5 months."
+    - "AQS examination at an Animal Quarantine Station is required by Japanese law before export. Book this appointment 2-3 weeks ahead."
+    - "Germany Bundesland breed restrictions vary; check your destination state before starting the process."
+    - "AQS endorsement must fall within the 10-day health certificate window; coordinate AQS appointment accordingly."
+
+  route_complexity: "medium"
+  estimated_timeline_weeks: "4-6"
+
 content:
-  h1: "Pet Transport from Japan to Germany"
-  overview: |
-    Japan has one of the world's most rigorous pet import systems, but the export side is straightforward. AQS issues the health certificate on departure. The complication sits at the German end: Japan is non-listed under EU Regulation 576/2013, triggering a FAVN titre test and a 3-month wait before EU entry.
+  h1: "Pet Transport Japan to Germany: 2026 Guide"
+  overview: "Japan is on the EU's listed third countries schedule, so the FAVN titre test and 3-month wait do not apply for Germany entry. The AQS health certificate covers the export side; Japanese law requires an examination at an Animal Quarantine Station before any pet leaves the country. Lufthansa and ANA both operate direct cargo from Tokyo to Frankfurt. Allow four to six weeks and check Germany's Bundesland breed rules for your destination state."
 
-    Direct flights from Tokyo Narita or Haneda to Frankfurt exist on both Lufthansa and ANA, making the logistics manageable. Preparation runs 22-26 weeks.
   sections:
-    - heading: "Comparing airline options: Tokyo to Frankfurt"
+    - heading: "Japan's EU-listed status and the AQS health certificate process"
       body: |
-        | Airline | Route | Type | Notes |
-        |---|---|---|
-        | Lufthansa Cargo | NRT/HND-FRA direct | Cargo | Primary option. Strong FRA arrival BCP experience. Brachy breeds banned year-round. |
-        | ANA Cargo | NRT/HND-FRA direct | Cargo | Japanese carrier with deep AQS export familiarity at Tokyo. Direct service. |
-        | JAL Cargo | NRT/HND-FRA via connections | Cargo | Experienced with AQS documentation. Good alternative. |
-        | Singapore Airlines Cargo | NRT via SIN to FRA | Cargo | Longer routing via Singapore. Reliable temperature-controlled hold. |
-        | Emirates SkyCargo | NRT via DXB to FRA | Cargo | Summer heat restrictions at Dubai may apply. |
+        The EU distinguishes between listed and non-listed third countries under Regulation 576/2013. Listed countries have rabies controls that the EU considers equivalent to its own. Japan is listed, which means Japanese pets entering Germany need only an ISO microchip, a valid rabies vaccination, and the AQS-endorsed EU-format health certificate. No titre test. No 3-month wait. Source: food.ec.europa.eu, 2026.
 
-        ANA is particularly worth considering for Japan departures, as Japan's own airline, their cargo teams at Narita and Haneda handle AQS export documentation regularly and know the paperwork inside out. Lufthansa's Frankfurt operation brings strong EU BCP experience on the receiving end.
-    - heading: "Why Japan is non-listed for the EU, and what it costs you"
+        The AQS (Animal Quarantine Service) is Japan's official authority for animal export health certification. Japanese law requires pets being exported to be examined at an Animal Quarantine Station before departure. This examination confirms the pet's identity, vaccination status, and health condition. Book the AQS appointment two to three weeks before travel to ensure it falls within the 10-day health certificate validity window. The certificate costs approximately JPY 10,000-30,000 (EUR 60-185).
+
+    - heading: "Lufthansa direct to Frankfurt and Germany's Bundesland breed rules"
       body: |
-        It surprises many people that Japan, a country with meticulous veterinary records, near-universal pet registration, and one of the strictest pet import systems in the world, is classed as non-listed by the EU. The EU listed country register is based on regulatory equivalence assessments that Japan hasn't gone through for this purpose, not on the quality of Japan's veterinary system.
+        Lufthansa Cargo operates direct from Tokyo Narita (NRT) and Haneda (HND) to Frankfurt (FRA) and accepts live animal cargo on this route. ANA Cargo also offers a direct NRT-FRA service. Both airlines have established live animal handling at Frankfurt, which is Germany's main cargo entry point.
 
-        The practical result: your Japanese-resident pet needs a FAVN titre test (blood drawn at an EU-approved laboratory at least 30 days post-vaccination, minimum result 0.5 IU/ml), then a mandatory 3-month wait from the blood draw date before entering Germany.
+        Germany bans Pit Bull Terrier and Tosa Inu at federal level. Each Bundesland then adds its own restrictions; Bavaria is the most restrictive, covering Rottweiler, American Bulldog, and a range of other breeds. The rules vary significantly from state to state. If your dog falls into any potentially restricted category, check the specific Bundesland rules for your destination city before committing to the move.
 
-        EU-approved labs that accept samples from Japan include several in Europe and some in Japan itself. Your vet or agent can advise on which labs are currently on the EU approved list.
-    - heading: "AQS export certificate: the Japanese departure document"
-      body: |
-        Japan's Animal Quarantine Service issues the export health certificate on departure. For Germany, this must be in EU Annex IV format, the specific certificate format required for non-listed third countries entering the EU. AQS staff are familiar with this format.
-
-        The certificate must be issued within 10 days of travel. Book the AQS appointment in advance, AQS offices at Narita and Haneda handle these regularly, but appointments fill during peak relocation periods. The certificate must show microchip number, full vaccination history, titre test result, and health status.
 faqs:
-  - question: "Does my pet need a titre test to enter Germany from Japan?"
-    answer: "Yes. Japan is a non-listed third country under EU Regulation 576/2013. A FAVN titre test at an EU-approved laboratory is mandatory, minimum 0.5 IU/ml, followed by a 3-month mandatory waiting period from the blood draw date."
-  - question: "Is there quarantine when moving a pet from Japan to Germany?"
-    answer: "No quarantine for fully compliant pets. An official veterinarian conducts a documentary check at the Frankfurt Airport Border Control Post on arrival. With correct documentation, your pet is released the same day."
-  - question: "How long does preparation take for Japan to Germany?"
-    answer: "Allow 22-26 weeks. The titre test (blood drawn 30+ days post-vaccination) and the 3-month mandatory wait are the main steps. The AQS health certificate and cargo booking add 2-4 weeks on top."
-  - question: "Which airline is best for pet cargo from Tokyo to Frankfurt?"
-    answer: "Lufthansa Cargo and ANA Cargo both operate direct NRT/HND-FRA services. ANA has strong AQS export familiarity at Tokyo airports; Lufthansa has strong Frankfurt BCP experience on arrival. Both are solid choices."
-  - question: "What is the AQS export health certificate?"
-    answer: "Japan's Animal Quarantine Service issues the official export health certificate required for all live animal exports from Japan. For Germany, it must be in EU Annex IV format. The certificate is issued within 10 days of travel at an AQS office at Narita, Haneda, or other AQS-designated airports."
+  - question: "Does my Japanese pet need a titre test for Germany?"
+    answer: "No. Japan is on the EU's listed countries schedule under EU Regulation 576/2013. The FAVN titre test and 3-month wait are not required. Source: food.ec.europa.eu, 2026."
+  - question: "What is the AQS certificate for pet export from Japan?"
+    answer: "The AQS (Animal Quarantine Service) health certificate is Japan's official export document for pets. Japanese law requires an examination at an Animal Quarantine Station before export. The AQS-registered vet issues the certificate; AQS endorses it. Book the appointment 2-3 weeks ahead."
+  - question: "Which airline is best for Tokyo to Frankfurt pet cargo?"
+    answer: "Lufthansa Cargo and ANA Cargo both operate direct from NRT/HND to FRA and accept live animals. Direct routing avoids a hub transfer. Book 3-4 weeks ahead and confirm live animal acceptance on your specific flights."
+  - question: "What are Germany's breed restrictions for Japanese pets?"
+    answer: "Germany bans Pit Bull Terrier and Tosa Inu federally. Each Bundesland adds its own list; Bavaria is the most restrictive, covering Rottweiler and American Bulldog among others. Check your specific destination state before starting the process."
+
 links:
   sideways:
     - url: "/pet-transport/germany-to-japan/"
       text: "Pet Transport Germany to Japan"
+    - url: "/pet-transport/japan-to-france/"
+      text: "Pet Transport Japan to France"
+    - url: "/pet-transport/japan-to-spain/"
+      text: "Pet Transport Japan to Spain"
   upward:
-    - url: "/pet-transport/origins/japan-pet-export-guide/"
-      text: "Shipping from Japan"
+    - url: "/pet-transport/origins/japan/"
+      text: "Shipping pets from Japan"
     - url: "/pet-transport/countries/germany/"
-      text: "Importing to Germany"
-    - url: "/pet-transport/airlines/ana/"
-      text: "ANA pet policy"
-    - url: "/pet-transport/airlines/lufthansa/"
-      text: "Lufthansa pet policy"
+      text: "Germany pet import guide"
 ---

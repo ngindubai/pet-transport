@@ -1,127 +1,122 @@
 ---
-template_variant: "B"
-title: "Shipping Dogs & Cats from Taiwan to Netherlands | PetTransportGlobal"
-description: "How to ship your dog or cat from Taiwan to Netherlands. Netherlands import rules, vaccinations, permits, and airline options explained."
+title: "Pet Transport Taiwan to Netherlands: BAPHIQ Certificate, EVA Air Direct, EU-Listed, 2026"
+description: "Moving a pet from Taiwan to Netherlands in 2026. Taiwan is EU-listed: no titre test required. BAPHIQ health certificate. EVA Air direct TPE to AMS. No Dutch breed ban since 2008."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "A"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "taiwan-to-netherlands"
 origin_name: "Taiwan"
 destination_name: "Netherlands"
+
 route_data:
   origin:
     code: "TW"
     country: "Taiwan"
     export_requirements:
-      export_permit: "No export permit for pets."
-      health_certificate: "{'required': True, 'issued_by': 'BAPHIQ-authorised official vet'}"
+      health_certificate: "Official veterinary health certificate issued by a BAPHIQ-registered official vet and endorsed by BAPHIQ (Bureau of Animal and Plant Health Inspection and Quarantine). EU-format required. Issued within 10 days of travel."
+      export_permit: "No formal export permit required for companion animals from Taiwan beyond the BAPHIQ health certificate. Primary departure airport: Taipei Taoyuan (TPE)."
+
   destination:
     code: "NL"
     country: "Netherlands"
     import_requirements:
-      microchip: "Required (ISO 11784/11785)"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel"
-      titre_test: "Not required for EU, UK, and certain third countries."
-      quarantine: "No routine quarantine for compliant pets"
-      import_permit: "EU pet passport or health certificate"
-      health_certificate: "Required. Issued by: Official veterinarian. Valid for 10 days from issue"
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Not required. Taiwan is on the EU's listed third countries schedule under EU Regulation 576/2013. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. NVWA inspects at Amsterdam Schiphol (AMS)."
+      import_permit: "No import permit required. BAPHIQ-endorsed EU-format health certificate is the required document."
+      health_certificate: "EU-format certificate endorsed by BAPHIQ, issued within 10 days of travel."
+      breed_restrictions: "No national breed ban. The Netherlands removed its breed-specific legislation in 2008. NVWA carries out a documentary inspection at arrival."
+
   airlines:
-    - name: "Air China"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin on domestic China routes. International: cargo only via Air China Cargo. Strict crate size and documentation requirements. China-specific import/export permits required. Advance booking of cargo space essential."
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Emirates"
+    - name: "EVA Air Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "EVA Air operates direct from Taipei Taoyuan (TPE) to Amsterdam Schiphol (AMS). EVA Air Cargo accepts live animals on this transatlantic route. The direct TPE-AMS service avoids any hub transfer."
+    - name: "KLM Cargo via connections"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
+      policy_summary: "KLM connects TPE to Amsterdam Schiphol via European hub partners. KLM Cargo has established live animal handling at Schiphol."
+    - name: "China Airlines Cargo via FRA"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
+      policy_summary: "China Airlines connects TPE to Frankfurt (FRA) with onward connections to Amsterdam."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates rabies vaccination."
+      timing: "4-6 weeks before travel"
+      responsible: "Vet in Taiwan"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify rabies vaccination and 21-day post-primary wait."
+      timing: "4-6 weeks before travel"
+      responsible: "Vet in Taiwan"
     - step: 3
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Book cargo from TPE to AMS on EVA Air direct."
+      timing: "3-5 weeks before travel"
+      responsible: "Owner or agent"
     - step: 4
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Obtain BAPHIQ-endorsed EU-format health certificate within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "BAPHIQ-registered vet plus BAPHIQ endorsement"
     - step: 5
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Depart TPE. NVWA inspects at Amsterdam Schiphol on arrival."
+      timing: "Travel day"
+      responsible: "Airline cargo and NVWA"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "BAPHIQ health certificate and endorsement: TWD 2,000-5,000 (approximately EUR 60-155)"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo TPE to AMS (EVA Air direct): EUR 800-2,000 depending on crate size"
+    - "Pet transport agent (optional): EUR 150-400"
+    - "Total typical range: EUR 1,140-2,800"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "low"
-  estimated_timeline_weeks: "4-10"
+    - "Taiwan is EU-listed: no FAVN titre test required. Allow 4-6 weeks, not 5 months."
+    - "EVA Air operates direct TPE-AMS, avoiding a hub transfer. Confirm live animal acceptance when booking."
+    - "Netherlands has no breed ban: all breeds enter on documentation compliance alone."
+    - "BAPHIQ endorsement takes a few working days; allow enough lead time within the 10-day certificate window."
+
+  route_complexity: "medium"
+  estimated_timeline_weeks: "4-6"
+
 content:
-  h1: "Pet Transport from Taiwan to Netherlands"
-  overview: |
-    International pet transport from Taiwan to Netherlands comes down to documentation timing more than anything else.
-    
-    This route is relatively straightforward compared to some international routes. Start preparations at least 4 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened.
-    
-    Getting the timing right is critical. Work backwards from your travel date and add a buffer.
+  h1: "Pet Transport Taiwan to Netherlands: 2026 Guide"
+  overview: "Taiwan is on the EU's listed third countries schedule, so the FAVN titre test and 3-month wait do not apply for Netherlands entry. EVA Air operates direct from Taipei Taoyuan to Amsterdam Schiphol, avoiding a hub transfer. The BAPHIQ health certificate covers the export side. The Netherlands removed its national breed ban in 2008, making it a permissive EU entry point for all breeds."
+
   sections:
-    - heading: "Key requirements for moving your pet to Netherlands"
+    - heading: "Taiwan EU-listed: no titre test and the BAPHIQ health certificate"
       body: |
-        Compared to some international pet transport routes, Taiwan to Netherlands is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        EU member state. EU pet travel rules apply.
-    - heading: "Step-by-step: what to do first"
+        EU Regulation 576/2013 lists Taiwan as a recognised territory for pet movement. Taiwanese pets entering the Netherlands need only a valid ISO microchip, a current rabies vaccination (21-day wait after a primary course), and the BAPHIQ-endorsed EU-format health certificate. No titre test, no extended waiting period. Source: food.ec.europa.eu, 2026.
+
+        BAPHIQ (Bureau of Animal and Plant Health Inspection and Quarantine) operates under Taiwan's Council of Agriculture. A BAPHIQ-registered official vet issues the EU-format certificate within 10 days of travel; BAPHIQ endorses it before departure. The four-to-six-week process is well-supported by vets and international relocation agents in Taiwan.
+
+    - heading: "EVA Air direct to Amsterdam Schiphol and the Netherlands no breed ban"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        EVA Air operates direct from Taipei Taoyuan (TPE) to Amsterdam Schiphol (AMS) and accepts live animal cargo on this route. The direct service is the standout practical advantage of the Taiwan-to-Netherlands corridor: it removes any hub transfer and the associated additional animal handling step. Schiphol is a well-equipped hub for live animal arrivals. The NVWA (Netherlands Food and Consumer Product Safety Authority) carries out the arrival inspection.
+
+        The Netherlands removed its breed-specific legislation in 2008. All breeds may enter on documentation compliance alone; no breed classification is applied at the border. For Taiwanese families with breeds that face restrictions in Germany or France, the combination of EVA Air's direct TPE-AMS service and the Netherlands' no breed ban makes this a particularly practical EU destination.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Taiwan to Netherlands?"
-    answer: "Allow at least 4 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Netherlands?"
-    answer: "No routine quarantine is required in Netherlands for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Netherlands?"
-    answer: "No, Netherlands does not require a rabies titre test for most pets arriving from Taiwan. Your pet still needs a valid rabies vaccination and microchip. Check the current requirements with the destination authority before travel."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Taiwan. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Netherlands's authority for the exact format required."
+  - question: "Does my Taiwanese pet need a titre test for the Netherlands?"
+    answer: "No. Taiwan is on the EU's listed schedule under EU Regulation 576/2013. The FAVN titre test and 3-month wait are not required. Source: food.ec.europa.eu, 2026."
+  - question: "Is there a breed ban in the Netherlands?"
+    answer: "No. The Netherlands removed its breed-specific legislation in 2008. The NVWA carries out a documentary inspection at Schiphol on arrival, but no breed classification is applied."
+  - question: "Does EVA Air fly direct from Taipei to Amsterdam?"
+    answer: "Yes. EVA Air Cargo operates direct from TPE to AMS and accepts live animals. The direct service avoids a hub transfer, which is a practical advantage for pet owners."
+  - question: "What is the total cost from Taipei to Amsterdam?"
+    answer: "EVA Air direct cargo TPE to AMS typically costs EUR 800-2,000. Add EUR 60-155 for the BAPHIQ certificate. Total all-in is typically EUR 1,140-2,800."
+
 links:
   sideways:
     - url: "/pet-transport/netherlands-to-taiwan/"
       text: "Pet Transport Netherlands to Taiwan"
+    - url: "/pet-transport/taiwan-to-germany/"
+      text: "Pet Transport Taiwan to Germany"
+    - url: "/pet-transport/taiwan-to-france/"
+      text: "Pet Transport Taiwan to France"
   upward:
-    - url: "/pet-transport/origins/taiwan-pet-export-guide/"
-      text: "Shipping from Taiwan"
+    - url: "/pet-transport/origins/taiwan/"
+      text: "Shipping pets from Taiwan"
     - url: "/pet-transport/countries/netherlands/"
-      text: "Importing to Netherlands"
-    - url: "/pet-transport/airlines/klm-royal-dutch-airlines/"
-      text: "KLM pet policy"
+      text: "Netherlands pet import guide"
 ---

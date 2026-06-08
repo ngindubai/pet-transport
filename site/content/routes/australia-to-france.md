@@ -1,120 +1,128 @@
 ---
-template_variant: "D"
-title: "Pet Transport from Australia to France | Complete Guide"
-description: "How to transport your dog or cat from Australia to France. Import requirements, airline options, costs, and step-by-step process Complete guide: France import r"
+title: "Pet Transport Australia to France: EU-Listed, No Titre Test, DAFF Certificate"
+description: "Moving a pet from Australia to France in 2026. Australia is EU-listed: no titre test required. DAFF certificate. Singapore Airlines or Emirates via hub to CDG. France breed rules."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "E"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "australia-to-france"
 origin_name: "Australia"
 destination_name: "France"
+
 route_data:
   origin:
     code: "AU"
     country: "Australia"
     export_requirements:
-      export_permit: "Required for live animal exports from Australia"
+      health_certificate: "Official export health certificate issued by an accredited veterinarian and endorsed by DAFF (Department of Agriculture, Fisheries and Forestry). EU-format required. Issued within 10 days of travel."
+      export_permit: "No formal export permit required for companion animals from Australia. DAFF endorsement is the key export step. Primary departure airports: Sydney (SYD) or Melbourne (MEL)."
+
   destination:
     code: "FR"
     country: "France"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or at same time as rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Standard EU protocol. 21-day wait from first vaccination."
-      titre_test: "Required for: Pets from unlisted third countries. Not required for: Pets from EU and listed third countries (all P1 countries listed). Minimum: 0.5 IU/ml. 90-day wait after blood draw"
-      quarantine: "No routine quarantine. Penalty quarantine up to varies days if non-compliant"
-      import_permit: "No formal import permit. EU pet passport or AHC serves as documentation."
-      health_certificate: "Required"
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Not required. Australia is an EU-listed country under EU Regulation 576/2013. The FAVN titre test and 3-month wait do not apply. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. French customs inspects at Paris CDG."
+      import_permit: "No import permit required. DAFF-endorsed EU-format health certificate is the required document."
+      health_certificate: "EU-format certificate endorsed by DAFF, issued within 10 days of travel."
+      breed_restrictions: "France Category 1: Pit Bull type without LOF or FCI pedigree banned from import. Category 2: Rottweiler and American Staffordshire with pedigree permitted with restrictions."
+
   airlines:
-    - name: "Singapore Airlines"
+    - name: "Singapore Airlines Cargo via SIN"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as cargo in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo transport available. Brachycephalic breeds subject to restrictions/seasonal embargoes. French regulations on dangerous dog breeds apply"
-    - name: "United Airlines"
-      type: "cabin_only"
-      policy_summary: "Small pets allowed in cabin"
-    - name: "American Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: American Airlines Cargo handles pet transport"
-    - name: "Cathay Pacific"
+      policy_summary: "Singapore Airlines operates Sydney (SYD) and Melbourne (MEL) to Singapore (SIN) with connections to Paris CDG. Single transfer at Changi. Air France Cargo also uses SIN as a connecting hub from Australia."
+    - name: "Emirates SkyCargo via DXB"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Etihad Airways"
+      policy_summary: "Emirates operates SYD and MEL to Dubai (DXB) with connections to Paris CDG. Temperature-controlled live animal cargo throughout."
+    - name: "Air France Cargo via SIN or DXB"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as cargo through Etihad Cargo. Brachycephalic breeds subject to seasonal restrictions. Temperature embargoes during Abu Dhabi summer months"
-    - name: "Air Canada"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Air Canada Cargo handles pet transport in heated/pressurized hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Thai Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets as checked baggage or Thai Cargo for larger animals. Brachycephalic breeds restricted during hot season (March-May). Some breed restrictions apply"
+      policy_summary: "Air France Cargo connects from Australia to Paris CDG via Singapore or Dubai hub partners. CDG is the main French arrival point for live animal cargo from the Southern Hemisphere."
+
   timeline_steps:
     - step: 1
-      action: "Get your pet microchipped (ISO 11784/11785)"
-      timing: "Before any vaccinations. Must be done first."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates rabies vaccination."
+      timing: "6+ weeks before travel"
+      responsible: "Vet in Australia"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "At least 21 days before travel (after microchip)"
-      responsible: "Your veterinarian"
+      action: "Verify rabies vaccination is valid and 21-day post-primary wait is complete."
+      timing: "6+ weeks before travel"
+      responsible: "Vet in Australia"
     - step: 3
-      action: "Rabies titre test (RNATT blood test)"
-      timing: "Blood drawn 30+ days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Book cargo from SYD or MEL to CDG via SIN or DXB."
+      timing: "4-6 weeks before travel"
+      responsible: "Owner or agent"
     - step: 4
-      action: "Obtain health certificate / veterinary clearance"
-      timing: "Within 10 days of travel (check destination-specific requirements)"
-      responsible: "Official veterinarian"
+      action: "Obtain DAFF-endorsed EU-format health certificate within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "Accredited vet plus DAFF endorsement"
     - step: 5
-      action: "Book IATA-compliant flight and arrange pet cargo/cabin booking"
-      timing: "2-4 weeks before travel. Confirm pet space availability."
-      responsible: "You (or your pet transport agent)"
-    - step: 6
-      action: "Travel day: arrive early, present all documentation"
-      timing: "3-4 hours before departure for cargo pets"
-      responsible: "You + airline cargo desk"
+      action: "Depart SYD or MEL. French customs inspects at Paris CDG on arrival."
+      timing: "Travel day"
+      responsible: "Airline cargo and French customs"
+
   cost_factors:
-    - "Airline cargo/cabin fees (varies by carrier, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees (vaccinations, health certificate, microchip)"
-    - "Government endorsement/USDA endorsement fee (if applicable)"
-    - "Pet transport agent fee (if using a relocation service)"
+    - "DAFF-endorsed health certificate: AUD 200-600 (approximately EUR 130-400)"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo SYD/MEL to CDG via hub: EUR 1,800-4,000 depending on crate size and routing"
+    - "Pet transport agent (recommended for long-haul): EUR 200-500"
+    - "Total typical range: EUR 2,200-5,200"
+
   key_warnings:
-    - "Brachycephalic (flat-faced) breeds face cargo restrictions on most airlines. Check breed-specific policies before booking."
-    - "Microchip MUST be implanted before rabies vaccination. Vaccination given before microchip is invalid and the clock restarts."
-    - "Australian airlines may restrict pet cargo during peak summer (December to February) when temperatures exceed safe thresholds."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "6-10"
-faqs:
-  - question: "How long does it take to prepare a pet for transport from Australia to France?"
-    answer: "The process takes 6-10 weeks from start to finish. The rabies titre test requires a 3-6 month waiting period after the blood draw before your pet can travel, so start early."
-  - question: "Is there quarantine when my pet enters France?"
-    answer: "No routine quarantine for pets entering France with the correct documentation. No routine quarantine. Penalty quarantine up to varies days if non-compliant"
-  - question: "Do I need an import permit to bring my pet into France?"
-    answer: "No formal import permit. EU pet passport or AHC serves as documentation."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Required Your Australia vet must be approved to issue official veterinary certificates. The certificate must be issued within the timeframe required by France: usually 10 days before travel. Present the original at check-in."
-  - question: "Is a rabies titre test required for pets entering France?"
-    answer: "Yes. Required for: Pets from unlisted third countries. Not required for: Pets from EU and listed third countries (all P1 countries listed). Minimum: 0.5 IU/ml. 90-day wait after blood draw The microchip must be implanted before the first rabies vaccination for the vaccination to be valid. Start this process as early as possible."
+    - "Australia is EU-listed: no titre test or 3-month wait required. Preparation takes 4-6 weeks with a current vaccination."
+    - "No direct SYD or MEL to CDG cargo service; all routings connect via Singapore or Dubai."
+    - "France Category 1 breed ban covers Pit Bull type dogs without LOF or FCI breed registration."
+    - "DAFF endorsement takes a few working days; allow enough lead time within the 10-day certificate window."
+
+  route_complexity: "medium"
+  estimated_timeline_weeks: "4-6"
+
 content:
-  h1: "Pet Transport from Australia to France"
-  overview: |
-    Pet transport from Australia to France is a moderately complex route. The documentation is specific and there are a few stages to work through, but families who plan ahead get their pets there without major issues.
+  h1: "Pet Transport Australia to France: 2026 Guide"
+  overview: "Australia is EU-listed, so the FAVN titre test and 3-month wait do not apply. Preparation takes 4-6 weeks for a pet with a current vaccination. The DAFF certificate, hub routing via Singapore or Dubai to Paris CDG, and France's Category 1 breed restriction are the main considerations."
 
-    At minimum, your pet needs a microchip (ISO 11784/11785 standard), a current rabies vaccination, a rabies titre test with a waiting period after the result, and a government-endorsed health certificate issued close to your travel date. Allow 6-10 weeks from starting preparation to travel day.
+  sections:
+    - heading: "No titre test for Australian pets entering France"
+      body: |
+        Australia appears on the EU's listed third countries schedule (EU Regulation 576/2013, Annex II). Pets from Australia can enter France without the FAVN titre test or the 3-month wait from blood draw that applies to non-listed countries. Source: food.ec.europa.eu, 2026.
 
-    Use the step-by-step timeline below to plan your preparation, and get in touch if you want us to coordinate the process for you.
+        The documentation required is: ISO microchip, valid rabies vaccination (21-day post-primary wait), and a DAFF-endorsed EU-format health certificate issued within 10 days of travel. 4-6 weeks preparation is sufficient for a pet whose vaccination is current.
+
+    - heading: "Sydney or Melbourne to Paris CDG: hub routing"
+      body: |
+        There is no direct cargo service from Sydney or Melbourne to Paris CDG. All routings connect via a hub. Singapore Airlines via Changi (SIN) and Emirates via Dubai (DXB) are the two established options. Air France Cargo connects to CDG from both hub points via partner services.
+
+        Singapore Airlines via SIN offers a well-established Australia to Europe corridor with strong live animal handling at Changi. Emirates via DXB is a good alternative. Book 4-6 weeks ahead and confirm live animal acceptance on specific flights.
+
+    - heading: "France Category 1 breed check from Australia"
+      body: |
+        France's Category 1 classification covers Pit Bull type dogs without official LOF or FCI breed registration. These cannot be imported into France. Category 2 (Rottweiler, American Staffordshire with pedigree) can enter with restrictions.
+
+        For most breeds common in Australia, including Labrador Retrievers, Golden Retrievers, Border Collies, and Australian Shepherds, no breed restriction applies. If your dog resembles a Pit Bull type without breed papers, verify classification before booking.
+
+faqs:
+  - question: "Does my Australian pet need a titre test for France?"
+    answer: "No. Australia is an EU-listed country under EU Regulation 576/2013. The FAVN titre test and 3-month waiting period do not apply. A valid microchip, current rabies vaccination, and DAFF-endorsed EU health certificate are required. Source: food.ec.europa.eu, 2026."
+  - question: "How long does it take to move a pet from Australia to France?"
+    answer: "4-6 weeks if the rabies vaccination is current. If a primary vaccination is needed, allow 10-12 weeks to include the 21-day post-vaccination wait. No titre test wait applies."
+  - question: "Which airline handles Sydney or Melbourne to Paris cargo for pets?"
+    answer: "Singapore Airlines via Singapore (SIN) and Emirates via Dubai (DXB) are the main options, both with connections to Paris CDG. Air France Cargo also connects to CDG via hub partners."
+  - question: "What is the total cost from Sydney or Melbourne to Paris?"
+    answer: "Cargo from SYD or MEL to CDG via hub typically costs EUR 1,800-4,000. Add EUR 130-400 for the DAFF certificate. Total all-in is typically EUR 2,200-5,200."
 
 links:
   sideways:
     - url: "/pet-transport/france-to-australia/"
       text: "Pet Transport France to Australia"
+    - url: "/pet-transport/australia-to-germany/"
+      text: "Pet Transport Australia to Germany"
+    - url: "/pet-transport/australia-to-netherlands/"
+      text: "Pet Transport Australia to Netherlands"
   upward:
-    - url: "/pet-transport/origins/pet-export-guide-shipping-from-australia/"
-      text: "Shipping from Australia"
+    - url: "/pet-transport/origins/australia/"
+      text: "Shipping pets from Australia"
     - url: "/pet-transport/countries/france/"
-      text: "Importing to France"
-
-
+      text: "France pet import guide"
 ---

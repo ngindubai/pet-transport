@@ -1,132 +1,131 @@
 ---
-template_variant: "B"
-title: "Pet Transport from Colombia to Italy | PetTransportGlobal"
-description: "Pet relocation from Colombia to Italy: Italy import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport Colombia to Italy: FAVN Titre Test, ICA Certificate, 2026"
+description: "Moving a pet from Colombia to Italy in 2026. Colombia non-listed for EU: FAVN titre test and 3-month wait. ICA certificate. Via Madrid or Paris to Rome FCO or Milan MXP. Italy no breed ban."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "A"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "colombia-to-italy"
 origin_name: "Colombia"
 destination_name: "Italy"
+
 route_data:
   origin:
     code: "CO"
     country: "Colombia"
     export_requirements:
-      export_permit: "{'required': False}"
-      health_certificate: "{'required': True, 'issued_by': 'ICA-authorised official vet'}"
+      health_certificate: "Official veterinary health certificate issued by an ICA-registered official vet and endorsed by ICA (Instituto Colombiano Agropecuario). EU-format required. Issued within 10 days of travel."
+      export_permit: "No formal export permit required for companion animals from Colombia. Primary departure airport: Bogota El Dorado (BOG)."
+
   destination:
     code: "IT"
     country: "Italy"
     import_requirements:
-      microchip: "Required (ISO 11784/11785)"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel"
-      titre_test: "Not required"
-      quarantine: "No routine quarantine for compliant pets"
-      import_permit: "EU pet passport or health certificate"
-      health_certificate: "Required. Issued by: Official veterinarian. Valid for 10 days from issue"
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Required. Colombia is not EU-listed. FAVN titre test at an EU-approved laboratory. Result must be 0.5 IU/ml or above. 3-month wait from blood sampling date. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. Italian Ministry of Health vets inspect at Rome Fiumicino (FCO) or Milan Malpensa (MXP)."
+      import_permit: "No import permit required. ICA-endorsed EU-format health certificate is the required document."
+      health_certificate: "EU-format certificate endorsed by ICA, issued within 10 days of travel."
+      breed_restrictions: "No national breed ban. Italy removed its national breed-specific legislation in 2009. Ministry of Health vets carry out a documentary inspection at arrival."
+
   airlines:
-    - name: "American Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: American Airlines Cargo handles pet transport. Seasonal temperature embargoes apply"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Emirates"
+    - name: "Iberia Cargo via MAD"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "Iberia connects Bogota (BOG) to Madrid (MAD) direct with onward connections to Rome Fiumicino (FCO) or Milan Malpensa (MXP)."
+    - name: "Air France Cargo via CDG"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
+      policy_summary: "Air France connects BOG to Paris CDG with cargo connections to Italian airports."
+    - name: "ITA Airways Cargo via European hub"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Delta Air Lines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Delta Cargo handles larger pets in temperature-controlled hold. Brachycephalic breeds restricted from cargo"
-    - name: "Air Canada"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Air Canada Cargo handles pet transport in heated/pressurised hold. Brachycephalic breeds restricted from cargo year-round"
+      policy_summary: "ITA Airways connects to Rome Fiumicino from European hub partners. Italian Ministry of Health inspection at FCO or MXP on arrival."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates rabies vaccination."
+      timing: "5+ months before travel"
+      responsible: "Vet in Colombia"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify rabies vaccination and 21-day post-primary wait."
+      timing: "5+ months before travel"
+      responsible: "Vet in Colombia"
     - step: 3
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Blood draw for FAVN titre test. 3-month wait starts from sampling date."
+      timing: "4-5 months before travel"
+      responsible: "Official vet and EU-approved laboratory"
     - step: 4
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Wait 3 months from blood sampling date."
+      timing: "3 months from blood draw"
+      responsible: "N/A - mandatory waiting period"
     - step: 5
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Book cargo from BOG to FCO or MXP via MAD or CDG."
+      timing: "4-6 weeks before travel"
+      responsible: "Owner or agent"
+    - step: 6
+      action: "Obtain ICA-endorsed EU-format health certificate within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "ICA-registered vet plus ICA endorsement"
+    - step: 7
+      action: "Depart BOG. Italian Ministry of Health vets inspect at FCO or MXP on arrival."
+      timing: "Travel day"
+      responsible: "Airline cargo and Italian customs"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "ICA certificate and endorsement: COP 100,000-300,000 (approximately EUR 20-65)"
+    - "FAVN titre test (EU-approved laboratory): EUR 85-170"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo BOG to FCO/MXP via hub: EUR 900-1,900 depending on crate size and routing"
+    - "Pet transport agent (optional): EUR 150-400"
+    - "Total typical range: EUR 1,300-2,800"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "low"
-  estimated_timeline_weeks: "4-10"
+    - "Colombia is not EU-listed: FAVN titre test and 3-month wait from blood sampling date are mandatory. Start 5+ months before travel."
+    - "No direct BOG to FCO or MXP cargo service; all routings connect via a European hub."
+    - "Italy has no national breed ban since 2009."
+    - "ICA endorsement takes a few working days; allow enough lead time within the 10-day certificate window."
+
+  route_complexity: "medium"
+  estimated_timeline_weeks: "20-22"
+
 content:
-  h1: "Pet Transport from Colombia to Italy"
-  overview: |
-    International pet transport from Colombia to Italy comes down to documentation timing more than anything else.
-    
-    This route is relatively straightforward compared to some international routes. Start preparations at least 4 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened.
-    
-    Start early and follow the steps in sequence. Missing a deadline pushes the whole timeline back.
+  h1: "Pet Transport Colombia to Italy: 2026 Guide"
+  overview: "Colombia is not EU-listed, so the FAVN titre test and 3-month wait from blood sampling date apply for Italy entry. There is no direct cargo flight from Bogota to Italian airports; all routings connect via Madrid or Paris. Italy has had no national breed ban since 2009. Preparation takes approximately five months."
+
   sections:
-    - heading: "What to know about the Colombia to Italy route"
+    - heading: "FAVN titre test and 5-month preparation from Colombia"
       body: |
-        Compared to some international pet transport routes, Colombia to Italy is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        EU member state. EU rules apply.
-    - heading: "Things to sort before you book"
+        Under EU Regulation 576/2013, Colombia is a non-listed third country. Your pet must have a FAVN titre test result of at least 0.5 IU/ml from an EU-approved laboratory. A 3-month waiting period then runs from the blood sampling date. Source: food.ec.europa.eu, 2026.
+
+        ICA (Instituto Colombiano Agropecuario) endorses the EU-format health certificate on the export side. Issued by an ICA-registered official vet within 10 days of travel, endorsed by ICA before departure. Total preparation from starting to departure is approximately five months.
+
+    - heading: "Routing via hub and Italy no breed ban"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        There is no direct cargo service from Bogota El Dorado (BOG) to Rome Fiumicino (FCO) or Milan Malpensa (MXP). All routings connect via a European hub. Iberia via Madrid (MAD) and Air France via Paris CDG are the two main options.
+
+        Italy removed its national breed-specific legislation in 2009. Italian Ministry of Health vets carry out a documentary inspection at FCO or MXP on arrival, but no breed classification is applied. For Colombian families with breeds restricted in Germany or France, Italy is the more permissive destination.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Colombia to Italy?"
-    answer: "Allow at least 4 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Italy?"
-    answer: "No routine quarantine is required in Italy for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Italy?"
-    answer: "No, Italy does not require a rabies titre test for most pets arriving from Colombia. Your pet still needs a valid rabies vaccination and microchip. Check the current requirements with the destination authority before travel."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Colombia. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Italy's authority for the exact format required."
+  - question: "Does my Colombian pet need a titre test for Italy?"
+    answer: "Yes. Colombia is not on the EU's listed countries schedule. The FAVN titre test and 3-month wait from blood sampling date are mandatory. Source: food.ec.europa.eu, 2026."
+  - question: "Is there a breed ban in Italy?"
+    answer: "No. Italy removed its national breed-specific legislation in 2009. Italian Ministry of Health vets carry out a documentary inspection at FCO or MXP on arrival, but no breed classification is applied."
+  - question: "How do I route from Bogota to Rome or Milan for pet cargo?"
+    answer: "All routings from BOG to Italian airports connect via a European hub. Iberia via Madrid (MAD) and Air France via Paris CDG are the main options with connections to FCO or MXP."
+  - question: "What is the total cost from Bogota to Rome or Milan?"
+    answer: "Cargo via hub to FCO or MXP typically costs EUR 900-1,900. Add EUR 85-170 for the titre test and EUR 20-65 for the ICA certificate. Total all-in is typically EUR 1,300-2,800."
+
 links:
   sideways:
     - url: "/pet-transport/italy-to-colombia/"
       text: "Pet Transport Italy to Colombia"
+    - url: "/pet-transport/colombia-to-spain/"
+      text: "Pet Transport Colombia to Spain"
+    - url: "/pet-transport/colombia-to-france/"
+      text: "Pet Transport Colombia to France"
   upward:
-    - url: "/pet-transport/origins/colombia-pet-export-guide/"
-      text: "Shipping from Colombia"
+    - url: "/pet-transport/origins/colombia/"
+      text: "Shipping pets from Colombia"
     - url: "/pet-transport/countries/italy/"
-      text: "Importing to Italy"
-    - url: "/pet-transport/airlines/american-airlines/"
-      text: "American Airlines pet policy"
-    - url: "/pet-transport/airlines/air-france/"
-      text: "Air France pet policy"
+      text: "Italy pet import guide"
 ---

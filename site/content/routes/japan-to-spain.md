@@ -1,135 +1,122 @@
 ---
-template_variant: "B"
-title: "Pet Relocation Japan to Spain | Requirements & Guide"
-description: "How to ship your dog or cat from Japan to Spain. Spain import rules, vaccinations, permits, and airline options explained."
+title: "Pet Transport Japan to Spain: AQS Certificate, EU-Listed, Hub Routing, 2026"
+description: "Moving a pet from Japan to Spain in 2026. Japan is EU-listed: no titre test required. AQS health certificate. No direct NRT to MAD; routing via FRA or CDG hub. Spain PPP breed obligations."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "A"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "japan-to-spain"
 origin_name: "Japan"
 destination_name: "Spain"
+
 route_data:
   origin:
     code: "JP"
     country: "Japan"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      health_certificate: "Official veterinary health certificate issued by an AQS-registered vet and endorsed by Japan's Animal Quarantine Service (AQS). EU-format required. Pet must be examined at an Animal Quarantine Station before export. Issued within 10 days of travel."
+      export_permit: "No formal export permit required for companion animals from Japan. Primary departure airports: Tokyo Narita (NRT) and Tokyo Haneda (HND)."
+
   destination:
     code: "ES"
     country: "Spain"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or on same day as first rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. EU-harmonised rules. Vaccination must be recorded in EU pet passport or Animal Health Certificate."
-      titre_test: "Required for: Pets from non-EU countries not on the EU listed third countries. Not required for: Pets from EU member states and EU-listed countries. Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No routine quarantine for pets entering with correct EU-standard documentation."
-      import_permit: "EU pet passport or Animal Health Certificate serves as the travel document"
-      health_certificate: "Required. EU Pet Passport (for EU-resident pets) or Animal Health Certificate (AHC) for third-country pets. Issued by: Official veterinarian. Valid for 10 days from issue. AHC valid 10 days from issue for entry. Then valid 4 months for onward EU travel."
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Not required. Japan is on the EU's listed third countries schedule under EU Regulation 576/2013. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. Spanish customs inspects at Madrid Barajas (MAD)."
+      import_permit: "No import permit required. AQS-endorsed EU-format health certificate is the required document."
+      health_certificate: "EU-format certificate endorsed by AQS, issued within 10 days of travel."
+      breed_restrictions: "Spain PPP law: muzzle, leash (max 2m), liability insurance, and PPP licence required for Pit Bull, American Staffordshire, Rottweiler, and similar breeds. Import is permitted; PPP creates ongoing obligations once in Spain."
+
   airlines:
-    - name: "Japan Airlines (JAL)"
+    - name: "Air France Cargo via CDG"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported as checked baggage in temperature-controlled hold. Brachycephalic breeds: French Bulldogs BANNED from cargo (May-October). English Bulldogs banned year-round. Summer restrictions: May-October temperature embargoes on some routes"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Emirates"
+      policy_summary: "Air France connects NRT/HND to Paris CDG with onward connections to Madrid Barajas (MAD)."
+    - name: "Lufthansa Cargo via FRA"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "Lufthansa connects NRT/HND to Frankfurt (FRA) with onward connections to Madrid via Iberia or other carriers."
+    - name: "Iberia Cargo via MAD"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
+      policy_summary: "Iberia's connections from European hubs provide the final leg into Madrid Barajas. No direct NRT-MAD service exists; a European hub transfer is required."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates rabies vaccination."
+      timing: "4-6 weeks before travel"
+      responsible: "Vet in Japan"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify rabies vaccination and 21-day post-primary wait."
+      timing: "4-6 weeks before travel"
+      responsible: "Vet in Japan"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Book AQS examination appointment at Animal Quarantine Station and cargo from NRT or HND via CDG or FRA to MAD."
+      timing: "3-5 weeks before travel"
+      responsible: "Owner or agent"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Attend AQS examination. Obtain AQS-endorsed EU-format health certificate within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "AQS-registered vet plus AQS endorsement"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Depart NRT or HND. Spanish customs inspects at Madrid Barajas on arrival."
+      timing: "Travel day"
+      responsible: "Airline cargo and Spanish customs"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "AQS health certificate and endorsement: JPY 10,000-30,000 (approximately EUR 60-185)"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo NRT/HND to MAD via European hub: EUR 1,300-3,000 depending on crate size and routing"
+    - "Pet transport agent (optional): EUR 150-400"
+    - "Total typical range: EUR 1,650-3,800"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "Japan is EU-listed: no FAVN titre test required. Allow 4-6 weeks, not 5 months."
+    - "No direct cargo service from NRT or HND to MAD; a European hub transfer via CDG or FRA is required."
+    - "AQS examination at an Animal Quarantine Station is required by Japanese law before export. Book 2-3 weeks ahead."
+    - "Spain PPP obligations apply once in Spain for certain breeds; import is not restricted at the border."
+
+  route_complexity: "medium"
+  estimated_timeline_weeks: "4-6"
+
 content:
-  h1: "Pet Transport from Japan to Spain"
-  overview: |
-    Getting your dog or cat from Japan to Spain is entirely achievable, but the preparation timeline is not flexible.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Getting the timing right is critical. Work backwards from your travel date and add a buffer.
+  h1: "Pet Transport Japan to Spain: 2026 Guide"
+  overview: "Japan is on the EU's listed third countries schedule, so the FAVN titre test and 3-month wait do not apply for Spain entry. There is no direct cargo service from Tokyo to Madrid; all routings connect via a European hub at Paris CDG or Frankfurt. The AQS health certificate covers the export side, and Japanese law requires an Animal Quarantine Station examination before departure. Spain's PPP law creates ongoing obligations for certain breeds once in-country."
+
   sections:
-    - heading: "Key requirements for moving your pet to Spain"
+    - heading: "Japan EU-listed: no titre test, but hub routing required for Spain"
       body: |
-        Compared to some international pet transport routes, Japan to Spain is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        EU member state. Follows EU Regulation 576/2013 (transitioning to Regulation 2026/131 from April 2026). Spain has one of Europe's highest pet ownership rates. Some additional national rules for 'potentially dangerous dogs' (PPP list). Authority: Ministerio de Agricultura, Pesca y Alimentacion (MAPA).
-    - heading: "From experience: Japan to Spain pet transport"
+        EU Regulation 576/2013 lists Japan as a recognised third country for pet movement, which means no FAVN titre test is required for entry into Spain. The process is straightforward on the regulatory side: valid ISO microchip, current rabies vaccination, and the AQS-endorsed EU-format health certificate. Source: food.ec.europa.eu, 2026.
+
+        The AQS (Animal Quarantine Service) handles Japan's export certification. Japanese law requires pets being exported to be examined at an Animal Quarantine Station before they leave the country. This step cannot be skipped; it is a domestic Japanese legal requirement, not a Spanish import rule. The examination confirms the pet's identity, vaccination records, and health. Book the appointment two to three weeks before travel so the certificate falls within its 10-day validity window.
+
+    - heading: "Routing from Tokyo to Madrid via hub and Spain's PPP law"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        There is no direct cargo service from Tokyo Narita (NRT) or Haneda (HND) to Madrid Barajas (MAD). All routings involve a transfer at a European hub, either Paris CDG (Air France then Iberia) or Frankfurt (Lufthansa then Iberia). Both options add travel time and an intermediate handling step for the animal. Confirm live animal acceptance on all flight segments when booking, and plan the hub transfer carefully.
+
+        Spain's PPP (Perro Potencialmente Peligroso) law covers Pit Bull Terrier, American Staffordshire Terrier, Rottweiler, Dogo Argentino, and similar breeds. The import itself is not restricted; customs does not refuse entry at MAD for PPP breeds. However, once the dog is in Spain, the owner must register the dog as PPP, keep it muzzled in public, use a leash no longer than 2m, hold civil liability insurance, and obtain a PPP licence from the local municipality.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Japan to Spain?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Spain?"
-    answer: "No routine quarantine is required in Spain for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Spain?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Spain. Start this process as early as possible."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Japan. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Spain's authority for the exact format required."
+  - question: "Does my Japanese pet need a titre test for Spain?"
+    answer: "No. Japan is on the EU's listed countries schedule under EU Regulation 576/2013. The FAVN titre test and 3-month wait are not required. Source: food.ec.europa.eu, 2026."
+  - question: "Is there a direct flight from Tokyo to Madrid for pet cargo?"
+    answer: "No. There is no direct cargo service from NRT or HND to MAD. All routings connect via a European hub at Paris CDG or Frankfurt. Confirm live animal acceptance on all segments when booking."
+  - question: "What is Spain's PPP law and does it block entry at the border?"
+    answer: "Spain's PPP law applies to Pit Bull, American Staffordshire, Rottweiler, and similar breeds. Import is not refused at MAD. PPP creates ongoing obligations once the dog is in Spain: muzzle in public, 2m leash, civil liability insurance, and a PPP licence from the local municipality."
+  - question: "What is the total cost from Tokyo to Madrid?"
+    answer: "Cargo from NRT/HND to MAD via a European hub typically costs EUR 1,300-3,000. Add EUR 60-185 for the AQS certificate. Total all-in is typically EUR 1,650-3,800."
+
 links:
   sideways:
     - url: "/pet-transport/spain-to-japan/"
       text: "Pet Transport Spain to Japan"
+    - url: "/pet-transport/japan-to-germany/"
+      text: "Pet Transport Japan to Germany"
+    - url: "/pet-transport/japan-to-france/"
+      text: "Pet Transport Japan to France"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-japan-export-guide/"
-      text: "Shipping from Japan"
+    - url: "/pet-transport/origins/japan/"
+      text: "Shipping pets from Japan"
     - url: "/pet-transport/countries/spain/"
-      text: "Importing to Spain"
-    - url: "/pet-transport/airlines/japan-airlines-jal/"
-      text: "Japan Airlines (JAL) pet policy"
-    - url: "/pet-transport/airlines/air-france/"
-      text: "Air France pet policy"
+      text: "Spain pet import guide"
 ---

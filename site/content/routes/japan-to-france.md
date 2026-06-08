@@ -1,139 +1,122 @@
 ---
-title: "Pet Transport from Japan to France | AQS Export, EU Titre Test & Full Guide"
-description: "Shipping your pet from Japan to France: AQS export health certificate, EU FAVN titre test and 3-month wait required, Air France and Lufthansa cargo from Tokyo to Paris."
+title: "Pet Transport Japan to France: AQS Certificate, EU-Listed, No Titre Test, 2026"
+description: "Moving a pet from Japan to France in 2026. Japan is EU-listed: no titre test required. AQS health certificate. ANA or Air France direct NRT to CDG. France Category 1 and 2 breed rules."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
 template_variant: "A"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "japan-to-france"
 origin_name: "Japan"
 destination_name: "France"
+
 route_data:
   origin:
     code: "JP"
     country: "Japan"
     export_requirements:
-      export_permit: "No formal export permit for personal pets. AQS issues the export health certificate."
-      health_certificate: "AQS-issued export health certificate in EU Annex IV format. Issued within 10 days of travel."
+      health_certificate: "Official veterinary health certificate issued by an AQS-registered vet and endorsed by Japan's Animal Quarantine Service (AQS). EU-format required. Pet must be examined at an Animal Quarantine Station before export. Issued within 10 days of travel."
+      export_permit: "No formal export permit required for companion animals from Japan. Primary departure airports: Tokyo Narita (NRT) and Tokyo Haneda (HND)."
+
   destination:
     code: "FR"
     country: "France"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Before first rabies vaccination."
-      rabies_vaccination: "Required. 21-day wait from first vaccination. Current and within validity."
-      titre_test: "Required. Japan is a non-listed third country under EU Regulation 576/2013. FAVN at EU-approved lab. Minimum 0.5 IU/ml. Blood drawn 30+ days post-vaccination. 3-month mandatory wait."
-      quarantine: "No quarantine for compliant pets. DGAL documentary check at CDG BCP on arrival."
-      import_permit: "Not required."
-      health_certificate: "AQS-endorsed EU Annex IV certificate. Within 10 days of travel."
-      entry_point: "Paris Charles de Gaulle (CDG)."
-      authority: "DGAL France. EU Regulation 576/2013."
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Not required. Japan is on the EU's listed third countries schedule under EU Regulation 576/2013. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. French customs inspects at Paris CDG."
+      import_permit: "No import permit required. AQS-endorsed EU-format health certificate is the required document."
+      health_certificate: "EU-format certificate endorsed by AQS, issued within 10 days of travel."
+      breed_restrictions: "France Category 1: Pit Bull type without LOF or FCI pedigree banned from import. Category 2: Rottweiler and American Staffordshire with pedigree permitted with restrictions."
+
   airlines:
-    - name: "Air France"
+    - name: "ANA Cargo"
       type: "cargo_only"
-      policy_summary: "Direct NRT/HND-CDG. Air France Cargo. National carrier of destination. Strong CDG BCP arrival familiarity."
-    - name: "ANA"
+      policy_summary: "ANA (All Nippon Airways) operates direct from Tokyo Narita (NRT) to Paris CDG. ANA Cargo accepts live animals on this long-haul route."
+    - name: "Air France Cargo"
       type: "cargo_only"
-      policy_summary: "ANA Cargo NRT/HND to CDG. Japanese carrier with AQS export familiarity at Tokyo. Direct service."
-    - name: "JAL"
+      policy_summary: "Air France operates direct from NRT and HND to Paris CDG. Air France Cargo has established live animal handling at CDG."
+    - name: "JAL Cargo via hub"
       type: "cargo_only"
-      policy_summary: "JAL Cargo NRT to CDG. AQS-experienced at Tokyo departure."
-    - name: "Lufthansa"
-      type: "cargo_only"
-      policy_summary: "Via Frankfurt FRA to CDG. Brachycephalic breeds restricted."
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Via Singapore SIN to CDG. Longer routing."
+      policy_summary: "JAL (Japan Airlines) connects NRT and HND to Paris CDG via European hub connections."
+
   timeline_steps:
     - step: 1
-      action: "STEP 1: Microchip confirmed before vaccination"
-      timing: "Standard in Japan."
-      responsible: "Japanese vet"
+      action: "Confirm ISO microchip predates rabies vaccination."
+      timing: "4-6 weeks before travel"
+      responsible: "Vet in Japan"
     - step: 2
-      action: "STEP 2: Rabies vaccination current"
-      timing: "If lapsed, vaccinate and wait 30 days."
-      responsible: "Japanese vet"
+      action: "Verify rabies vaccination and 21-day post-primary wait."
+      timing: "4-6 weeks before travel"
+      responsible: "Vet in Japan"
     - step: 3
-      action: "STEP 3: FAVN titre test at EU-approved laboratory"
-      timing: "Blood drawn 30+ days post-vaccination. 2-4 weeks results."
-      responsible: "Japanese vet + EU-approved lab"
+      action: "Book AQS examination appointment at Animal Quarantine Station and cargo from NRT or HND to CDG."
+      timing: "3-5 weeks before travel"
+      responsible: "Owner or agent"
     - step: 4
-      action: "STEP 4: 3-month mandatory wait from blood draw date"
-      timing: "Non-negotiable."
-      responsible: "N/A"
+      action: "Attend AQS examination. Obtain AQS-endorsed EU-format health certificate within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "AQS-registered vet plus AQS endorsement"
     - step: 5
-      action: "STEP 5: Book Air France or ANA Cargo NRT-CDG"
-      timing: "Once wait complete."
-      responsible: "You or agent"
-    - step: 6
-      action: "STEP 6: AQS-endorsed EU Annex IV health certificate"
-      timing: "Within 10 days of travel. AQS appointment in advance."
-      responsible: "AQS Japan"
-    - step: 7
-      action: "STEP 7: Cargo check-in Tokyo. CDG BCP inspection on arrival."
-      timing: "3-4 hours before departure."
-      responsible: "You + cargo + DGAL"
+      action: "Depart NRT or HND. French customs inspects at Paris CDG on arrival."
+      timing: "Travel day"
+      responsible: "Airline cargo and French customs"
+
   cost_factors:
-    - "Air France or ANA Cargo fees NRT-CDG"
-    - "IATA-compliant crate"
-    - "FAVN titre test at EU-approved lab"
-    - "AQS health certificate fees"
-    - "Agent fee (recommended)"
+    - "AQS health certificate and endorsement: JPY 10,000-30,000 (approximately EUR 60-185)"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo NRT/HND to CDG (ANA or Air France direct): EUR 1,200-2,800 depending on crate size"
+    - "Pet transport agent (optional): EUR 150-400"
+    - "Total typical range: EUR 1,550-3,600"
+
   key_warnings:
-    - "Japan is non-listed for EU entry. Titre test + 3-month wait mandatory despite Japan's rigorous veterinary system."
-    - "AQS health certificate must be issued within 10 days of travel. Book AQS appointment well in advance."
-    - "3-month wait from blood draw date, not results date."
-  route_complexity: "high"
-  estimated_timeline_weeks: "22-26"
+    - "Japan is EU-listed: no FAVN titre test required. Allow 4-6 weeks, not 5 months."
+    - "AQS examination at an Animal Quarantine Station is required by Japanese law before export. Book 2-3 weeks ahead."
+    - "France Category 1 breed ban covers Pit Bull type dogs without LOF or FCI pedigree. Confirm breed status before starting."
+    - "AQS endorsement must fall within the 10-day health certificate window; coordinate AQS appointment accordingly."
+
+  route_complexity: "medium"
+  estimated_timeline_weeks: "4-6"
+
 content:
-  h1: "Pet Transport from Japan to France"
-  overview: |
-    Japan's AQS issues a thorough export health certificate, but the EU still classifies Japan as non-listed under Regulation 576/2013, which means your pet needs a FAVN titre test and a 3-month wait before entering France. No quarantine on arrival, and direct Air France cargo from Tokyo makes the logistics manageable. Preparation runs 22-26 weeks.
+  h1: "Pet Transport Japan to France: 2026 Guide"
+  overview: "Japan is on the EU's listed third countries schedule, so the FAVN titre test and 3-month wait do not apply for France entry. The AQS health certificate covers the export side, and Japanese law requires an examination at an Animal Quarantine Station before departure. ANA and Air France both operate direct cargo from Tokyo to Paris CDG. France's Category 1 breed restriction is the border check to confirm before starting."
+
   sections:
-    - heading: "Regulatory compliance steps"
+    - heading: "Japan EU-listed: no titre test and the AQS certificate process"
       body: |
-        | Step | Requirement | Timing | Key rule |
-        |---|---|---|---|
-        | 1 | ISO microchip before vaccination | Week 0 | Standard in Japan |
-        | 2 | Rabies vaccination current | Week 0-2 | 21-day wait from first vax |
-        | 3 | FAVN titre test EU-approved lab | Week 6+ | Blood drawn 30+ days post-vax |
-        | 4 | 3-month wait from blood draw | Weeks 6-19 | Non-negotiable |
-        | 5 | Book Air France/ANA Cargo NRT-CDG | Week 18+ | N/A |
-        | 6 | AQS EU Annex IV health certificate | Within 10 days travel | AQS appointment |
-        | 7 | CDG BCP inspection on arrival | Travel day | N/A |
+        Under EU Regulation 576/2013, Japan is a listed third country. The EU recognises Japan's rabies-control standards as equivalent to its own, so Japanese pets do not need a FAVN titre test to enter France. The requirements are: valid ISO microchip, current rabies vaccination (21-day post-primary wait), and the AQS-endorsed EU-format health certificate. Source: food.ec.europa.eu, 2026.
 
-        Source: EU Regulation 576/2013; Japan AQS aqs.maff.go.jp.
-    - heading: "Air France vs ANA from Tokyo"
+        The AQS (Animal Quarantine Service) is Japan's official authority for animal export certification. Before any pet leaves Japan, it must be examined at an Animal Quarantine Station. This is a legal requirement in Japan, separate from anything France demands. The AQS-registered vet carries out the examination and issues the certificate; AQS then endorses it. Book the appointment two to three weeks before travel to keep the certificate within the 10-day validity window.
+
+    - heading: "ANA and Air France direct to CDG and France's breed check"
       body: |
-        Two direct carrier options from Tokyo Narita to Paris CDG. Air France Cargo, as the French national carrier, has established CDG BCP arrival processes and regular DGAL inspection relationships. ANA Cargo brings deep AQS export documentation familiarity from the Tokyo end, as Japan's own carrier, their Narita cargo team processes AQS health certificates daily.
+        ANA Cargo operates direct from Tokyo Narita (NRT) to Paris CDG and accepts live animal cargo on this route. Air France Cargo also operates NRT and HND to CDG direct. Both airlines have live animal handling facilities at CDG, where French customs carries out the arrival inspection for pets from third countries.
 
-        Both are direct NRT-CDG services. The choice comes down to schedule availability on your travel date. Book 4-6 weeks ahead for cargo space on this busy long-haul route.
-    - heading: "AQS export certificate: Japan's departure document"
-      body: |
-        AQS issues the export health certificate from Japan for all live animal exports. For France, it must be in EU Annex IV format, the template required for non-listed third countries entering the EU. The certificate must be issued within 10 days of travel.
+        France's breed legislation divides restricted breeds into two categories. Category 1 covers Pit Bull type dogs without official LOF or FCI breed registration; these cannot be imported. Category 2 covers Rottweiler and American Staffordshire Terrier with recognised pedigree; these can enter with ongoing restrictions. Most breeds common in Japan are unaffected, but confirm your dog's breed status before starting the process if there is any doubt.
 
-        AQS offices at Narita and Haneda handle these exports regularly. Book your AQS appointment at least 2 weeks before your planned travel date to ensure availability. The certificate lists microchip number, full vaccination history, FAVN titre test result (laboratory report and date), and current health status.
 faqs:
-  - question: "Does my pet need a titre test to enter France from Japan?"
-    answer: "Yes. Japan is non-listed under EU Regulation 576/2013. A FAVN titre test at an EU-approved laboratory is mandatory, minimum 0.5 IU/ml, followed by a 3-month mandatory waiting period from the blood draw date."
-  - question: "Is there quarantine when moving a pet from Japan to France?"
-    answer: "No quarantine for fully compliant pets. An official vet conducts a documentary check at the CDG Border Control Post on arrival. With correct documentation, your pet is released the same day."
-  - question: "How long does preparation take?"
-    answer: "Allow 22-26 weeks. The FAVN titre test and the 3-month mandatory wait are the main steps."
-  - question: "Which airline is best from Tokyo to Paris?"
-    answer: "Air France Cargo and ANA Cargo both operate direct NRT-CDG. Air France has CDG BCP arrival experience; ANA has AQS export familiarity at Narita. Both are solid choices."
-  - question: "What is the AQS export health certificate?"
-    answer: "Japan's Animal Quarantine Service issues this certificate for all live animal exports. For France, it must be in EU Annex IV format for non-listed third countries. Issued within 10 days of travel at AQS offices at Narita or Haneda."
+  - question: "Does my Japanese pet need a titre test for France?"
+    answer: "No. Japan is on the EU's listed countries schedule under EU Regulation 576/2013. The FAVN titre test and 3-month wait are not required. Source: food.ec.europa.eu, 2026."
+  - question: "Can ANA fly my pet directly from Tokyo to Paris?"
+    answer: "Yes. ANA Cargo operates direct from NRT to CDG and accepts live animals. Air France Cargo also flies this route direct. Book 3-4 weeks ahead and confirm live animal acceptance on your specific flights."
+  - question: "What is France's Category 1 breed ban?"
+    answer: "France's Category 1 covers Pit Bull type dogs without official LOF or FCI breed registration. These cannot be imported. Category 2 (Rottweiler, American Staffordshire with pedigree) can enter with restrictions. Import is refused at CDG for Category 1 dogs without pedigree."
+  - question: "What is the total cost from Tokyo to Paris?"
+    answer: "ANA or Air France direct cargo NRT to CDG typically costs EUR 1,200-2,800. Add EUR 60-185 for the AQS certificate. Total all-in is typically EUR 1,550-3,600."
+
 links:
   sideways:
     - url: "/pet-transport/france-to-japan/"
       text: "Pet Transport France to Japan"
+    - url: "/pet-transport/japan-to-germany/"
+      text: "Pet Transport Japan to Germany"
+    - url: "/pet-transport/japan-to-spain/"
+      text: "Pet Transport Japan to Spain"
   upward:
-    - url: "/pet-transport/origins/japan-pet-export-guide/"
-      text: "Shipping from Japan"
+    - url: "/pet-transport/origins/japan/"
+      text: "Shipping pets from Japan"
     - url: "/pet-transport/countries/france/"
-      text: "Importing to France"
-    - url: "/pet-transport/airlines/air-france/"
-      text: "Air France pet policy"
-    - url: "/pet-transport/airlines/ana/"
-      text: "ANA pet policy"
+      text: "France pet import guide"
 ---

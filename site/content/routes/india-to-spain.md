@@ -1,130 +1,142 @@
 ---
-template_variant: "D"
-title: "Shipping Dogs & Cats from India to Spain | PetTransportGlobal"
-description: "How to ship your dog or cat from India to Spain. Spain import rules, vaccinations, permits, and airline options explained."
+title: "Pet Transport India to Spain: Titre Test Required, AQCS NOC, Connections via MAD"
+description: "Moving a pet from India to Spain in 2026. India non-listed for EU: FAVN titre test and 3-month wait. AQCS NOC required. Emirates or Air India via European hub to MAD. Spain PPP rules."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "E"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "india-to-spain"
 origin_name: "India"
 destination_name: "Spain"
+
 route_data:
   origin:
     code: "IN"
     country: "India"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      health_certificate: "NOC from AQCS plus health certificate endorsed by DAHD (Department of Animal Husbandry and Dairying). EU-format required for Spain entry. Apply to AQCS at least 30 days before travel."
+      export_permit: "AQCS NOC required for all pet exports from India. Primary departure airports: Delhi (DEL) or Mumbai (BOM)."
+
   destination:
     code: "ES"
     country: "Spain"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or on same day as first rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. EU-harmonised rules. Vaccination must be recorded in EU pet passport or Animal Health Certificate."
-      titre_test: "Required for: Pets from non-EU countries not on the EU listed third countries. Not required for: Pets from EU member states and EU-listed countries. Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No routine quarantine for pets entering with correct EU-standard documentation."
-      import_permit: "EU pet passport or Animal Health Certificate serves as the travel document"
-      health_certificate: "Required. EU Pet Passport (for EU-resident pets) or Animal Health Certificate (AHC) for third-country pets. Issued by: Official veterinarian. Valid for 10 days from issue. AHC valid 10 days from issue for entry. Then valid 4 months for onward EU travel."
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Required. India is not EU-listed. FAVN titre test required. Blood drawn after microchip and valid vaccination. 3-month wait from blood sampling date. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. Spanish customs inspects at Madrid Barajas (MAD)."
+      import_permit: "No import permit. DAHD-endorsed EU certificate with AQCS NOC are the required documents."
+      health_certificate: "EU-format certificate endorsed by DAHD, within 10 days of travel."
+      breed_restrictions: "Spain PPP law: muzzle, leash (max 2m), liability insurance, and PPP licence required for Pit Bull, American Staffordshire, Rottweiler, and similar breeds. Import is permitted."
+
   airlines:
-    - name: "Air India"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 5kg with carrier). Cargo: Larger pets via Air India Cargo. Breed restrictions apply. Temperature embargoes during extreme heat on Indian domestic sectors"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Emirates"
+    - name: "Emirates SkyCargo via DXB"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "Emirates connects from Delhi (DEL) or Mumbai (BOM) via Dubai to Madrid Barajas (MAD). Emirates SkyCargo handles live animals at Dubai International."
+    - name: "Air India Cargo via FRA or CDG"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
+      policy_summary: "Air India operates DEL to European hubs including Frankfurt (FRA) and Paris (CDG), with onward connections to Madrid Barajas."
+    - name: "Lufthansa Cargo via FRA"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Lufthansa operates DEL to Frankfurt direct with cargo connections to Madrid. An alternative via Germany."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates rabies vaccination."
+      timing: "5+ months before travel"
+      responsible: "Vet in India"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify rabies vaccination and 21-day post-primary wait."
+      timing: "5+ months before travel"
+      responsible: "Vet in India"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Apply to AQCS for NOC (allow at least 30 days for processing)."
+      timing: "4-5 months before travel"
+      responsible: "Owner or agent, AQCS"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Blood drawn for FAVN titre test. 3-month wait starts from this date."
+      timing: "4-5 months before travel"
+      responsible: "Official vet and EU-approved laboratory"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Wait 3 months from blood sampling date."
+      timing: "3 months from blood draw"
+      responsible: "N/A - mandatory waiting period"
     - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Book cargo from DEL/BOM to MAD via European hub."
+      timing: "4-6 weeks before travel"
+      responsible: "Owner or agent"
+    - step: 7
+      action: "Obtain DAHD-endorsed EU certificate within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "DAHD-authorised vet plus DAHD endorsement"
+    - step: 8
+      action: "Depart DEL or BOM. Spanish customs inspects at Madrid Barajas."
+      timing: "Travel day"
+      responsible: "Airline cargo and Spanish customs"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "AQCS NOC fee: INR 2,000-5,000 (approximately EUR 20-55)"
+    - "DAHD-endorsed health certificate: INR 1,000-3,000 (approximately EUR 10-35)"
+    - "FAVN titre test (EU-approved laboratory): EUR 85-170"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo DEL/BOM to MAD (via hub): EUR 900-2,100 depending on crate size"
+    - "Pet transport agent (optional): EUR 200-500"
+    - "Total typical range: EUR 1,300-3,200"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "India is not EU-listed: FAVN titre test and 3-month wait from blood draw are mandatory. Start 5+ months before travel."
+    - "AQCS NOC takes up to 30 days; apply well ahead."
+    - "No direct India to Spain cargo flight; all routings connect via a hub."
+    - "Spain PPP obligations apply once in Spain; import is not restricted at the border."
+
+  route_complexity: "medium-high"
+  estimated_timeline_weeks: "22-24"
+
 content:
-  h1: "Pet Transport from India to Spain"
-  overview: |
-    Moving a pet from India to Spain involves more paperwork than most owners expect.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Use this guide to map out your preparation timeline and avoid the most common mistakes.
+  h1: "Pet Transport India to Spain: 2026 Guide"
+  overview: "India to Spain involves two India-side documentation steps: the AQCS NOC and the FAVN titre test with 3-month wait. No direct cargo flight connects India to Spain; all routes go via a European or Middle Eastern hub. Total preparation is approximately five to six months. Spain's PPP obligations for certain breeds are the ongoing consideration once in-country."
+
   sections:
-    - heading: "What to know about the India to Spain route"
+    - heading: "AQCS NOC and titre test: what Indian owners need to start"
       body: |
-        Compared to some international pet transport routes, India to Spain is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        EU member state. Follows EU Regulation 576/2013 (transitioning to Regulation 2026/131 from April 2026). Spain has one of Europe's highest pet ownership rates. Some additional national rules for 'potentially dangerous dogs' (PPP list). Authority: Ministerio de Agricultura, Pesca y Alimentacion (MAPA).
-    - heading: "From experience: India to Spain pet transport"
+        India requires an AQCS (Animal Quarantine and Certification Service) NOC for all pet exports. Apply at least 30 days before travel. India is also not EU-listed, so the FAVN titre test is mandatory with a 3-month wait from the blood draw date.
+
+        The DAHD endorses the EU-format certificate, which must be dated within 10 days of travel. Start the process five to six months before your travel date. Source: food.ec.europa.eu, 2026.
+
+    - heading: "Cargo options from India to Madrid"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        No direct cargo flight connects Indian airports to Madrid. The main routing options are Emirates via Dubai to MAD (two legs, well-established), or via European hubs Frankfurt (Lufthansa) or Paris CDG (Air India/Air France) with onward connections to Barajas.
+
+        Emirates via Dubai is often the most practical option due to Emirates' strong cargo network and live animal handling. The Dubai transit adds time; ensure the transit is not excessively long when booking.
+
+    - heading: "Spain PPP: planning for certain breeds from India"
+      body: |
+        Spain's PPP law covers Pit Bull Terrier, American Staffordshire Terrier, Rottweiler, and similar breeds. Import is permitted; PPP creates ongoing obligations once in Spain: muzzle, maximum 2m leash, civil liability insurance, and a PPP licence from the local municipality.
+
+        For Indian families moving to Spain with breeds commonly kept in India, including German Shepherds, Labradors, and similar, no PPP obligation applies.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from India to Spain?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Spain?"
-    answer: "No routine quarantine is required in Spain for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Spain?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Spain. Start this process as early as possible."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in India. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Spain's authority for the exact format required."
+  - question: "Does my Indian pet need a titre test for Spain?"
+    answer: "Yes. India is not EU-listed, so the FAVN titre test and 3-month wait from blood sampling date are mandatory. Source: food.ec.europa.eu, 2026."
+  - question: "What is the AQCS NOC?"
+    answer: "The AQCS (Animal Quarantine and Certification Service) No Objection Certificate is a mandatory document for all pet exports from India. Apply to AQCS at least 30 days before travel. Processing involves an inspection of your pet at the designated AQCS quarantine station."
+  - question: "Is there a direct cargo flight from India to Spain?"
+    answer: "No. All routings connect via a hub. Emirates via Dubai to Madrid is the most common. Air India via Frankfurt or Paris CDG with onward connections to Madrid are alternatives."
+  - question: "What is the total cost from Delhi or Mumbai to Madrid?"
+    answer: "Cargo via hub to MAD typically costs EUR 900 to EUR 2,100. Add EUR 85-170 for the titre test and EUR 20-90 for the AQCS and DAHD documentation. Total all-in is typically EUR 1,300 to EUR 3,200."
+
 links:
   sideways:
     - url: "/pet-transport/spain-to-india/"
       text: "Pet Transport Spain to India"
+    - url: "/pet-transport/india-to-germany/"
+      text: "Pet Transport India to Germany"
+    - url: "/pet-transport/india-to-france/"
+      text: "Pet Transport India to France"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-india-export-guide/"
-      text: "Shipping from India"
+    - url: "/pet-transport/origins/india/"
+      text: "Shipping pets from India"
     - url: "/pet-transport/countries/spain/"
-      text: "Importing to Spain"
-    - url: "/pet-transport/airlines/air-france/"
-      text: "Air France pet policy"
+      text: "Spain pet import guide"
 ---

@@ -1,117 +1,136 @@
 ---
-template_variant: "B"
-title: "Pet Transport from Turkey to Spain | PetTransportGlobal"
-description: "How to ship your dog or cat from Turkey to Spain. Spain import rules, vaccinations, permits, and airline options explained."
+title: "Pet Transport Turkey to Spain: Titre Test Required, Turkish Airlines IST-MAD, PPP Rules"
+description: "Moving a pet from Turkey to Spain in 2026. Turkey is non-listed for EU: FAVN titre test and 3-month wait. Turkish Airlines flies IST-MAD direct. Spain PPP law explained."
+date: "2026-06-08"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "E"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "turkey-to-spain"
 origin_name: "Turkey"
 destination_name: "Spain"
+
 route_data:
   origin:
     code: "TR"
     country: "Turkey"
     export_requirements:
-      export_permit: "No export permit for pet dogs and cats."
-      health_certificate: "Health certificate must match destination country requirements. Issued by TRGM-authorised official vet."
+      health_certificate: "International Veterinary Certificate issued by a Turkish official vet and endorsed by the Turkish Ministry of Agriculture and Forestry (Tarım ve Orman Bakanlığı). EU-format required for Spain entry. Issued within 10 days of travel."
+      export_permit: "No formal export permit for companion animals. Ministry endorsement of the health certificate is the authorising document. Departure from Istanbul Airport (IST)."
+
   destination:
     code: "ES"
     country: "Spain"
     import_requirements:
-      microchip: "Required (ISO 11784/11785)"
-      rabies_vaccination: "Required"
-      quarantine: "Check current requirements with destination authority"
-      import_permit: "Check with destination authority"
-      health_certificate: "Required"
+      microchip: "ISO 11784/11785 microchip required. Must predate the rabies vaccination."
+      rabies_vaccination: "Valid rabies vaccination required. 21-day wait after primary vaccination."
+      titre_test: "Required. Turkey is not EU-listed. FAVN titre test required. Blood must be drawn after microchip and valid vaccination. 3-month wait from blood sampling date. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. Spanish customs inspects at Madrid Barajas (MAD)."
+      import_permit: "No import permit. Ministry-endorsed EU certificate is the required document."
+      health_certificate: "EU-format International Veterinary Certificate endorsed by Turkish Ministry of Agriculture and Forestry, within 10 days of travel."
+      breed_restrictions: "Spain PPP law: muzzle, leash (max 2m), liability insurance, and PPP licence required for Pit Bull, American Staffordshire, Rottweiler, and similar breeds in public. Import is permitted."
+
   airlines:
-    - name: "Turkish Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg with carrier on European/short-haul routes). Cargo: larger pets via Turkish Cargo. Brachycephalic breeds subject to restrictions. Connects Istanbul hub to over 120 destinations - useful for Middle East and African routes."
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Emirates"
+    - name: "Turkish Airlines Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "Turkish Airlines operates direct from Istanbul (IST) to Madrid Barajas (MAD). Turkish Airlines Cargo accepts live animals in the temperature-controlled hold. Madrid is the main Spanish entry point for pets from Turkey."
+    - name: "Iberia Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Iberia operates between IST and MAD direct. Iberia Cargo accepts live animals and has established live animal handling at Barajas."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates rabies vaccination."
+      timing: "5+ months before travel"
+      responsible: "Vet in Turkey"
     - step: 2
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Verify rabies vaccination and 21-day post-primary wait."
+      timing: "5+ months before travel"
+      responsible: "Vet in Turkey"
     - step: 3
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Blood drawn for FAVN titre test. 3-month wait starts from this date."
+      timing: "4-5 months before travel"
+      responsible: "Official vet and EU-approved laboratory"
     - step: 4
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Wait 3 months from blood sampling date."
+      timing: "3 months from blood draw"
+      responsible: "N/A - mandatory waiting period"
+    - step: 5
+      action: "Book cargo IST to MAD on Turkish Airlines or Iberia Cargo."
+      timing: "4-6 weeks before travel"
+      responsible: "Owner or agent"
+    - step: 6
+      action: "Obtain Ministry-endorsed EU certificate within 10 days of travel."
+      timing: "Within 10 days of travel"
+      responsible: "Official vet plus Ministry endorsement"
+    - step: 7
+      action: "Depart IST. Spanish customs inspects at Madrid Barajas on arrival."
+      timing: "Travel day"
+      responsible: "Turkish Airlines Cargo and Spanish customs"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Official vet health certificate plus Ministry endorsement: EUR 100-250"
+    - "FAVN titre test (EU-approved laboratory): EUR 85-170"
+    - "IATA-compliant crate: EUR 80-250 if needed"
+    - "Cargo IST to MAD (Turkish Airlines or Iberia direct): EUR 500-1,300 depending on crate size"
+    - "Pet transport agent (optional): EUR 200-500"
+    - "Total typical range: EUR 1,000-2,500"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "low"
-  estimated_timeline_weeks: "4-10"
+    - "Turkey is not EU-listed: FAVN titre test and 3-month wait from blood sampling date are mandatory. Start 5 months before travel."
+    - "3-month wait runs from blood draw date, not results date."
+    - "Spain PPP obligations apply once in Spain; import itself is not restricted."
+    - "Ministry-endorsed certificate must be EU format and dated within 10 days of travel."
+
+  route_complexity: "medium"
+  estimated_timeline_weeks: "20-22"
+
 content:
-  h1: "Pet Transport from Turkey to Spain"
-  overview: |
-    Moving a pet from Turkey to Spain involves more paperwork than most owners expect.
-    
-    This route is relatively straightforward compared to some international routes. Start preparations at least 4 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened.
-    
-    The paperwork is the hard part. Once everything is in order, the journey itself is well-managed.
+  h1: "Pet Transport Turkey to Spain: 2026 Guide"
+  overview: "Turkey to Spain has a direct cargo route via Turkish Airlines and Iberia from Istanbul to Madrid, with a relatively short flight time of approximately four hours. Turkey is not EU-listed, so the FAVN titre test and 3-month wait from blood sampling date are required. Total preparation is five months. Spain's PPP system for certain dog breeds is the main ongoing consideration once in-country."
+
   sections:
-    - heading: "Understanding Spain's pet import rules"
+    - heading: "Titre test requirement and 3-month wait from Istanbul"
       body: |
-        Compared to some international pet transport routes, Turkey to Spain is manageable. That said, every country's rules are different and the timing requirements are strict.
-    - heading: "From experience: Turkey to Spain pet transport"
+        Turkey is not on the EU's listed country register. The FAVN titre test is mandatory for all pets moving from Turkey to Spain or any EU member state.
+
+        The fixed sequence: microchip first, then rabies vaccination, then after 21 days blood is drawn for the titre test at an EU-approved laboratory. The 3-month wait begins from the blood draw date, not the results date. Results typically take two to four weeks; the wait runs independently.
+
+        The Turkish Ministry of Agriculture and Forestry endorses the export certificate. The endorsed certificate must be in EU format and dated within 10 days of travel. Five months total preparation from start to travel day. Source: food.ec.europa.eu, 2026.
+
+    - heading: "Turkish Airlines direct to Madrid: the practical cargo choice"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Turkish Airlines operates multiple daily flights from Istanbul Airport (IST) to Madrid Barajas (MAD). Turkish Airlines Cargo accepts live animals on this route. The flight time from Istanbul to Madrid is approximately four hours, making it among the shorter European cargo journeys.
+
+        Iberia Cargo is a direct alternative on the IST to MAD route, with established live animal handling at Barajas on arrival. Spanish customs inspects at Barajas. Book four to six weeks ahead and confirm live animal cargo acceptance on your specific flight.
+
+    - heading: "Spain PPP: what to plan before arriving from Turkey"
+      body: |
+        Spain's PPP (Perro Potencialmente Peligroso) law classifies certain breeds as requiring muzzle, leash (maximum 2m), liability insurance, and a PPP licence in public spaces. The breeds include Pit Bull Terrier, American Staffordshire Terrier, Rottweiler, and visually similar dogs. The classification does not block import; it creates ongoing obligations once in Spain.
+
+        Apply for the PPP licence from your local municipality after arrival. The process involves a criminal background check and basic competency assessment. Plan this into your timeline for settling in, particularly if you are renting property (some rental agreements exclude PPP breeds).
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Turkey to Spain?"
-    answer: "Allow at least 4 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Spain?"
-    answer: "No routine quarantine is required in Spain for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Can I take my cat to Spain from Turkey?"
-    answer: "Yes, cats can be transported from Turkey to Spain. The same microchip, vaccination, and health certificate requirements apply as for dogs, though some rules (such as tapeworm treatment) apply to dogs only. Check the full requirements for cats with the destination authority."
+  - question: "Does my Turkish pet need a titre test for Spain?"
+    answer: "Yes. Turkey is not EU-listed, so the FAVN titre test and 3-month wait from blood sampling date apply for Spain as for any EU country. Source: food.ec.europa.eu, 2026."
+  - question: "Can Turkish Airlines carry my pet from Istanbul to Madrid?"
+    answer: "Yes. Turkish Airlines Cargo operates direct from IST to MAD and accepts live animals. Iberia Cargo is a direct alternative on the same route. Book four to six weeks ahead and confirm live animal space on your specific flight number."
+  - question: "When does the 3-month wait start for a Turkish pet going to Spain?"
+    answer: "From the blood sampling date for the FAVN titre test. Not from when results arrive. If blood is drawn on 1 May, travel to Spain is not possible before 1 August."
+  - question: "What is the total cost from Istanbul to Madrid?"
+    answer: "Direct cargo from IST to MAD typically costs EUR 500 to EUR 1,300 depending on crate size. Add EUR 85-170 for the titre test, EUR 100-250 for the Ministry-endorsed certificate, and EUR 80-250 for a crate if needed. Total all-in is typically EUR 1,000 to EUR 2,500."
+
 links:
   sideways:
     - url: "/pet-transport/spain-to-turkey/"
       text: "Pet Transport Spain to Turkey"
+    - url: "/pet-transport/turkey-to-germany/"
+      text: "Pet Transport Turkey to Germany"
+    - url: "/pet-transport/turkey-to-france/"
+      text: "Pet Transport Turkey to France"
   upward:
-    - url: "/pet-transport/origins/turkey-pet-export-guide/"
-      text: "Shipping from Turkey"
+    - url: "/pet-transport/origins/turkey/"
+      text: "Shipping pets from Turkey"
     - url: "/pet-transport/countries/spain/"
-      text: "Importing to Spain"
-    - url: "/pet-transport/airlines/turkish-airlines/"
-      text: "Turkish Airlines pet policy"
-    - url: "/pet-transport/airlines/air-france/"
-      text: "Air France pet policy"
+      text: "Spain pet import guide"
 ---
