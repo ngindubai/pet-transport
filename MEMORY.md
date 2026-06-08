@@ -7,13 +7,13 @@
 - **Repository:** https://github.com/ngindubai/pet-transport (private)
 - **Deploy:** Push to `main` triggers GitHub Actions automatically. Hugo build + incremental FTP to Hostinger. Live within ~80 seconds for a single article. After every build batch, the live URLs of new/changed pages are posted in chat for review (LIVE LINK REVIEW GATE in CLAUDE.md).
 
-## Current State (2026-06-07, reconciled from disk by verify_build_state.py)
+## Current State (2026-06-08, reconciled from disk by verify_build_state.py)
 
 - **Routes built:** 5,506 of ~37,830 country pairs (~14.5%). True on-disk count (5,496 in `routes/` + 10 in `pet-transport/`).
-- **Blog articles:** 417
-- **Total .md source files:** 6,296 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Blog articles:** 418
+- **Total .md source files:** 6,297 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
 - **Phase 7 progress:** Chunks 1-38 complete. **Chunk 39 is next** (Template D, Conversational Q&A, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 37 = 25 Tier B routes Template B: South America/Africa/South Asia x UK+US, UK outbound Cyprus/Malta/Mexico/Bulgaria/Croatia. Chunk 38 = 25 Tier B routes Template C: UK/US outbound to Slovakia/Luxembourg/Ecuador/Costa Rica/Tanzania/Zimbabwe/Cambodia/Myanmar/Mauritius; Mauritius/Zimbabwe/Cambodia to UK.
-- **Content plan:** Days 1-6 + Days 8-10 complete (9 articles written). Day 7 skipped (pre-existing). **Day 11 is next:** check content-plan/plan-rows-q1.js for slug.
+- **Content plan:** Days 1-6 + Days 8-11 complete (10 articles written). Day 7 skipped (pre-existing). **Day 12 is next:** check content-plan/plan-rows-q1.js for slug. Day 11 = exporting-pets-from-singapore (Marcus Webb, AVS export licence, FAVN titre, Changi cargo, UK/EU/US/AU destination matrix).
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
 
@@ -100,7 +100,10 @@ Every build batch does three things together, every time: (1) bundle BUILD-PLAN.
 - Day 6: `pet-transport-europe-to-uk` published 2026-06-05 (new article, 2400 words, Marcus Webb)
 - Day 7: `how-to-choose-a-pet-transport-company` - SKIPPED (pre-existing article)
 - Day 8: `cheap-pet-transport-honest-look` published 2026-06-06 (new article, 1800 words, Marcus Webb, cost transparency angle)
-- **Next: Day 9** - check content-plan/plan-rows-q1.js for slug
+- Day 9: `pet-transport-uk-to-jersey` published 2026-06-06 (1600 words, Marcus Webb, Condor ferry, Channel Islands rules)
+- Day 10: `pet-transport-uae-to-pakistan` published 2026-06-07 (2000 words, Marcus Webb, AQD NOC, AED 3,000-6,000)
+- Day 11: `exporting-pets-from-singapore` published 2026-06-08 (2400 words, Marcus Webb, AVS export licence, FAVN titre for AU, Changi cargo, UK/EU/US/AU matrix)
+- **Next: Day 12** - check content-plan/plan-rows-q1.js for slug (importing-pets-to-australia-2026)
 - Blog layout: `site/layouts/blog/single.html`. col-lg-8 content + col-lg-4 sidebar. Applies to all blog posts.
 
 ## Key Decisions Log
