@@ -1,0 +1,203 @@
+{{/*
+  NEW Template A — v2 "Tabbed / tabular" design ported to live data.
+  Design: namespaced under .tpl-na (scoped CSS at /css/route-new-na.css).
+  Content: ALL real route data preserved (design-only change).
+*/}}
+{{ $rd := .Params.route_data }}
+<link rel="stylesheet" href="/css/route-new-na.css">
+
+<div class="tpl-na">
+
+  {{/* ── HERO ─────────────────────────────────────────── */}}
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true">{{ with $rd.destination.code }}{{ . }}{{ end }}</div>
+    <div class="hero-inner">
+      <div class="breadcrumb"><a href="/">Home</a><span class="bc-sep">/</span><a href="/pet-transport/routes/">Routes</a><span class="bc-sep">/</span><span>{{ .Params.origin_name }} to {{ .Params.destination_name }}</span></div>
+      <div class="hero-route">
+        <div><div class="hero-flag">{{ $rd.origin.code }}</div><div class="hero-country">{{ .Params.origin_name }}</div></div>
+        <div class="route-path-wrap">
+          <div class="route-plane">&#9992;&#65039;</div>
+          <svg class="route-svg" viewBox="0 0 180 28"><path class="rp-base" d="M 8 20 Q 90 2 172 20"/><path class="rp-anim" d="M 8 20 Q 90 2 172 20" stroke-dashoffset="300"/></svg>
+        </div>
+        <div><div class="hero-flag">{{ $rd.destination.code }}</div><div class="hero-country">{{ .Params.destination_name }}</div></div>
+      </div>
+      <h1 class="hero-h1">{{ .Params.content.h1 | default (printf "Pet Transport: %s to %s" .Params.origin_name .Params.destination_name) }}</h1>
+      <div class="hero-stats">
+        {{ with $rd.estimated_timeline_weeks }}<div class="hstat"><div class="hstat-n">{{ . }} weeks</div><div class="hstat-l">Typical preparation</div></div>{{ end }}
+        {{ if .Params.quarantine_required }}<div class="hstat"><div class="hstat-n">{{ with .Params.quarantine_days }}{{ . }} days{{ else }}Required{{ end }}</div><div class="hstat-l">Quarantine on arrival</div></div>{{ else }}<div class="hstat"><div class="hstat-n">None</div><div class="hstat-l">No quarantine required</div></div>{{ end }}
+        {{ with $rd.route_complexity }}<div class="hstat"><div class="hstat-n"><span class="hstat-badge badge-warn">{{ . | title }}</span></div><div class="hstat-l">Route complexity</div></div>{{ end }}
+        <div class="hstat"><div class="hstat-n"><span class="hstat-badge badge-ok">&#10003; Managed</span></div><div class="hstat-l">Full door-to-door service</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="content">
+    {{/* ── SIDEBAR ─────────────────────────────────────── */}}
+    <aside class="sidebar">
+      <div class="sc">
+        <div class="sc-title">Route at a glance</div>
+        <div class="sc-stats">
+          <div class="sc-stat"><span class="sc-stat-l">From</span><span class="sc-stat-v">{{ .Params.origin_name }}</span></div>
+          <div class="sc-stat"><span class="sc-stat-l">To</span><span class="sc-stat-v">{{ .Params.destination_name }}</span></div>
+          {{ with $rd.estimated_timeline_weeks }}<div class="sc-stat"><span class="sc-stat-l">Prep time</span><span class="sc-stat-v">{{ . }} weeks</span></div>{{ end }}
+          {{ with $rd.route_complexity }}<div class="sc-stat"><span class="sc-stat-l">Complexity</span><span class="sc-stat-v">{{ . | title }}</span></div>{{ end }}
+          <div class="sc-stat"><span class="sc-stat-l">Quarantine</span><span class="sc-stat-v">{{ if .Params.quarantine_required }}{{ with .Params.quarantine_days }}{{ . }} days{{ else }}Yes{{ end }}{{ else }}No{{ end }}</span></div>
+        </div>
+      </div>
+      {{ with .Params.links }}{{ with .sideways }}
+      <div class="sc">
+        <div class="sc-title">Related routes</div>
+        <div class="rel-list">
+          {{ range . }}<a href="{{ .url }}" class="rel-item"><span class="rel-name">{{ .text }}</span><span class="rel-arr">&rarr;</span></a>{{ end }}
+        </div>
+      </div>
+      {{ end }}{{ end }}
+      {{ with .Params.links }}{{ with .upward }}
+      <div class="sc">
+        <div class="sc-title">Country guides</div>
+        <div class="rel-list">
+          {{ range . }}<a href="{{ .url }}" class="rel-item"><span class="rel-name">{{ .text }}</span><span class="rel-arr">&rarr;</span></a>{{ end }}
+        </div>
+      </div>
+      {{ end }}{{ end }}
+    </aside>
+
+    {{/* ── MAIN COLUMN ─────────────────────────────────── */}}
+    <div class="main-col">
+
+      {{ partial "verified-date.html" . }}
+      {{ partial "data-source-link.html" . }}
+
+      {{ with .Params.content.overview }}
+      <section class="page-sec"><div class="sec-tag">Overview</div><div class="sec-p">{{ . | markdownify }}</div></section>
+      {{ end }}
+
+      {{/* Process timeline */}}
+      {{ with $rd.timeline_steps }}
+      <section class="page-sec" id="process">
+        <div class="sec-tag">Step by step</div>
+        <h2 class="sec-h">The {{ $.Params.origin_name }} to {{ $.Params.destination_name }} <em>process</em></h2>
+        <div class="timeline">
+          {{ range . }}
+          <div class="tl-item"><div class="tl-dot tl-g">{{ .step }}</div><div class="tl-body">
+            {{ with .timing }}<div class="tl-chips"><span class="tl-chip chip-time">{{ . }}</span></div>{{ end }}
+            <div class="tl-title">{{ .action }}</div>
+            {{ with .responsible }}<p class="tl-desc">Responsible: {{ . }}</p>{{ end }}
+          </div></div>
+          {{ end }}
+        </div>
+      </section>
+      {{ end }}
+
+      {{/* Requirements — import + export tables */}}
+      {{ with $rd.destination.import_requirements }}
+      <section class="page-sec" id="requirements">
+        <div class="sec-tag">Checklist</div>
+        <h2 class="sec-h">{{ $rd.destination.country }}: <em>entry requirements</em></h2>
+        <table class="req-table">
+          <thead><tr><th>Requirement</th><th>Detail</th></tr></thead>
+          <tbody>
+            {{ with .microchip }}<tr><td><span class="req-name">Microchip</span></td><td><span class="req-detail">{{ . }}</span></td></tr>{{ end }}
+            {{ with .rabies_vaccination }}<tr><td><span class="req-name">Rabies vaccination</span></td><td><span class="req-detail">{{ . }}</span></td></tr>{{ end }}
+            {{ with .titre_test }}<tr><td><span class="req-name">Rabies titre test</span></td><td><span class="req-detail">{{ . }}</span></td></tr>{{ end }}
+            {{ with .quarantine }}<tr><td><span class="req-name">Quarantine</span></td><td><span class="req-detail">{{ . }}</span></td></tr>{{ end }}
+            {{ with .import_permit }}<tr><td><span class="req-name">Import permit</span></td><td><span class="req-detail">{{ . }}</span></td></tr>{{ end }}
+            {{ with .health_certificate }}<tr><td><span class="req-name">Health certificate</span></td><td><span class="req-detail">{{ . }}</span></td></tr>{{ end }}
+          </tbody>
+        </table>
+      </section>
+      {{ end }}
+      {{ with $rd.origin.export_requirements }}
+      <section class="page-sec">
+        <div class="sec-tag">Leaving {{ $rd.origin.country }}</div>
+        <h2 class="sec-h">Export <em>requirements</em></h2>
+        <table class="req-table">
+          <thead><tr><th>Requirement</th><th>Detail</th></tr></thead>
+          <tbody>
+            {{ with .export_permit }}<tr><td><span class="req-name">Export permit</span></td><td><span class="req-detail">{{ . }}</span></td></tr>{{ end }}
+            {{ with .vet_inspection }}<tr><td><span class="req-name">Veterinary inspection</span></td><td><span class="req-detail">{{ . }}</span></td></tr>{{ end }}
+            {{ with .endorsement }}<tr><td><span class="req-name">Government endorsement</span></td><td><span class="req-detail">{{ . }}</span></td></tr>{{ end }}
+            {{ with .health_certificate }}<tr><td><span class="req-name">Health certificate</span></td><td><span class="req-detail">{{ . }}</span></td></tr>{{ end }}
+          </tbody>
+        </table>
+      </section>
+      {{ end }}
+
+      {{/* Costs */}}
+      {{ with $rd.cost_factors }}
+      <section class="page-sec">
+        <div class="sec-tag">Costs</div>
+        <h2 class="sec-h">What this route <em>typically costs</em></h2>
+        <table class="req-table">
+          <tbody>{{ range $i, $c := . }}<tr><td><span class="req-name">{{ add $i 1 }}</span></td><td><span class="req-detail">{{ $c }}</span></td></tr>{{ end }}</tbody>
+        </table>
+      </section>
+      {{ end }}
+
+      {{/* Key warnings */}}
+      {{ with $rd.key_warnings }}
+      <section class="page-sec">
+        <div class="sec-tag">Critical points</div>
+        <h2 class="sec-h">Read before you <em>book</em></h2>
+        {{ range . }}<div class="tl-chip chip-warn" style="display:block;margin-bottom:8px;padding:10px 14px">&#9888; {{ . }}</div>{{ end }}
+      </section>
+      {{ end }}
+
+      {{/* Breed restrictions */}}
+      {{ with $rd.destination.breed_restrictions }}
+      <section class="page-sec">
+        <div class="sec-tag">Restricted breeds</div>
+        <h2 class="sec-h">{{ $rd.destination.country }} <em>breed rules</em></h2>
+        <ul>{{ range . }}{{ $slug := . | lower | replaceRE "[^a-z0-9]+" "-" | strings.TrimRight "-" }}<li><a href="/pet-transport/breeds/{{ $slug }}/" style="color:var(--green)">{{ . }}</a></li>{{ end }}</ul>
+      </section>
+      {{ end }}
+
+      {{/* Airlines */}}
+      {{ with $rd.airlines }}
+      <section class="page-sec" id="airlines">
+        <div class="sec-tag">Carriers</div>
+        <h2 class="sec-h">Airlines on <em>this route</em></h2>
+        <div class="airline-strip">
+          {{ range . }}
+          <div class="ac"><div class="ac-name">{{ .name }}</div><div class="ac-detail">{{ .policy_summary }}</div>{{ with .type }}<div class="ac-tags"><span class="ac-tag at-g">{{ . | replaceRE "_" " " | title }}</span></div>{{ end }}</div>
+          {{ end }}
+        </div>
+      </section>
+      {{ end }}
+
+      {{/* Long-form content sections */}}
+      {{ with .Params.content.sections }}
+      {{ range . }}
+      <section class="page-sec">{{ with .heading }}<h2 class="sec-h">{{ . }}</h2>{{ end }}<div class="sec-p">{{ .body | markdownify }}</div></section>
+      {{ end }}
+      {{ end }}
+
+      {{/* FAQ */}}
+      {{ with .Params.faqs }}
+      <section class="page-sec" id="faq">
+        <div class="sec-tag">FAQ</div>
+        <h2 class="sec-h">Common <em>questions</em></h2>
+        <div class="faq-grid">
+          {{ range . }}
+          <div class="faq-item"><button class="faq-q">{{ .question }}<span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="2" x2="6" y2="10"/><line x1="2" y1="6" x2="10" y2="6"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">{{ .answer | markdownify }}</div></div></div>
+          {{ end }}
+        </div>
+      </section>
+      {{ end }}
+
+      {{ partial "airline-breed-sidebar.html" . }}
+
+      {{/* Quote form (shared, functional) */}}
+      {{ partial "quote-form.html" . }}
+
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.08,rootMargin:'0px 0px -20px 0px'});
+  document.querySelectorAll('.tpl-na .r,.tpl-na .page-sec').forEach(function(el){io.observe(el)});
+  document.querySelectorAll('.tpl-na .faq-q').forEach(function(btn){btn.addEventListener('click',function(){var item=btn.closest('.faq-item'),was=item.classList.contains('open');item.parentNode.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open')});if(!was)item.classList.add('open')})});
+})();
+</script>

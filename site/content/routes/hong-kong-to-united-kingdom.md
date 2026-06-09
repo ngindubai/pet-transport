@@ -4,7 +4,7 @@ description: "Moving a dog or cat from Hong Kong to the UK in 2026. Hong Kong is
 date: "2026-06-09"
 type: "routes"
 layout: "single"
-template_variant: "C"
+template_variant: "ND"
 author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "hong-kong-to-united-kingdom"
 origin_name: "Hong Kong"

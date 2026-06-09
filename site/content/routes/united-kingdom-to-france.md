@@ -4,7 +4,7 @@ description: "Moving a dog or cat from the UK to France in 2026. GB pet passport
 date: "2026-06-04"
 type: "routes"
 layout: "single"
-template_variant: "D"
+template_variant: "NE"
 author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "united-kingdom-to-france"
 origin_name: "United Kingdom"

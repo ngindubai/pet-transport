@@ -4,7 +4,7 @@ description: "Moving a dog or cat from the USA to the UK in 2026. No titre test 
 date: "2026-06-04"
 type: "routes"
 layout: "single"
-template_variant: "D"
+template_variant: "NC"
 author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "united-states-to-united-kingdom"
 origin_name: "United States"

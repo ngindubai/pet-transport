@@ -1,5 +1,5 @@
 ---
-template_variant: "C"
+template_variant: "NL"
 title: "Pet Transport UAE to Australia | Quarantine, DAFF Rules & Timeline"
 description: "Moving a dog or cat from the UAE to Australia? DAFF classification, Mickleham quarantine, titre test, and the UK stepping-stone option. Full guide by PetTransportGlobal."
 date: "2026-06-05"

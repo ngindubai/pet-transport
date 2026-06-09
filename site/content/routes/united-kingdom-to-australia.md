@@ -4,7 +4,7 @@ description: "Moving a dog or cat from the UK to Australia in 2026. Titre test r
 date: "2026-06-04"
 type: "routes"
 layout: "single"
-template_variant: "D"
+template_variant: "NA"
 author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "united-kingdom-to-australia"
 origin_name: "United Kingdom"
