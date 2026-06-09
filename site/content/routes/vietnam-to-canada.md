@@ -1,126 +1,133 @@
 ---
-template_variant: "C"
-title: "Shipping Dogs & Cats from Vietnam to Canada | PetTransportGlobal"
-description: "Pet relocation from Vietnam to Canada: Canada import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport Vietnam to Canada: CFIA Import, No Titre Test Required 2026"
+description: "Moving a dog or cat from Vietnam to Canada in 2026. CFIA does not require a titre test for Vietnam. MARD health certificate and current rabies vaccination are the key requirements."
+date: "2026-06-09"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "C"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "vietnam-to-canada"
 origin_name: "Vietnam"
 destination_name: "Canada"
+
 route_data:
   origin:
     code: "VN"
     country: "Vietnam"
     export_requirements:
-      export_permit: "No export permit for pet dogs and cats."
-      health_certificate: "{'required': True, 'issued_by': 'MARD-authorised official vet'}"
+      health_certificate: "Official health certificate from a MARD-authorised official vet, countersigned by the Department of Animal Health (DAH). Issued within 10 days of departure. Source: Ministry of Agriculture and Rural Development, cucthuy.gov.vn."
+      export_permit: "No separate export permit required for pet dogs and cats. MARD-endorsed health certificate is the export document. Departure from major international airports including Ho Chi Minh City (SGN) and Hanoi (HAN)."
+
   destination:
     code: "CA"
     country: "Canada"
     import_requirements:
-      microchip: "Required (ISO 11784/11785 recommended)"
-      rabies_vaccination: "Required"
-      titre_test: "Not required for standard pet imports from most countries"
-      quarantine: "No routine quarantine for pet dogs or cats. Animals must appear healthy upon arrival."
-      import_permit: "Personal pet imports (1-2 animals) do not require an import permit. Commercial imports (for sale, breeding, adoption, fostering, or more than 2 dogs) require CFIA import permit."
-      health_certificate: "Required"
+      microchip: "Microchip strongly recommended. Canada does not mandate microchipping for import, but it is required by most airlines and is standard practice."
+      rabies_vaccination: "Current rabies vaccination required for dogs aged 3 months or older. Vaccination must have been given in Vietnam or another country recognised by the CFIA. Source: CFIA, inspection.gc.ca."
+      titre_test: "Not required. Canada does not require a titre test or quarantine period for personal pet imports from Vietnam. Source: CFIA, inspection.gc.ca."
+      quarantine: "No quarantine on arrival for compliant pets."
+      import_permit: "No import permit required for personal pet dogs and cats. The health certificate serves as the entry document."
+      health_certificate: "Official health certificate in Canadian government-approved format, issued by a MARD-authorised official vet and countersigned by DAH. Presented to CBSA (Canada Border Services Agency) on arrival."
+
   airlines:
     - name: "Vietnam Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (under 5kg with carrier) allowed in cabin on some routes. Cargo: larger pets in hold. Advance booking required. Vietnam import/export documentation must be fully prepared before travel."
-    - name: "Air Canada"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Air Canada Cargo handles pet transport in heated/pressurised hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Emirates"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "Vietnam Airlines connects HAN and SGN to Canadian cities via hub connections (typically Seoul ICN or other Asian hubs). No direct Vietnam-Canada cargo service. Advance booking and full documentation required."
+    - name: "Korean Air Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
+      policy_summary: "Via Seoul Incheon (ICN) to Vancouver (YVR) or Toronto (YYZ). A common connecting option from Vietnam. Korean Air Cargo handles live animals. Documentation must be valid for both legs."
+    - name: "Air Canada Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
+      policy_summary: "Air Canada Cargo accepts live animals into Canada. Does not operate its own direct services from Vietnam but can be part of a connecting arrangement with partner carriers."
+    - name: "EVA Air Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Delta Air Lines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Delta Cargo handles larger pets in temperature-controlled hold. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Via Taipei Taoyuan (TPE) to Vancouver or Toronto. An option for owners departing from Ho Chi Minh City (SGN)."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Implant microchip and administer rabies vaccination in Vietnam."
+      timing: "At least 30 days before travel to ensure vaccination is current and valid."
+      responsible: "Vet in Vietnam"
     - step: 2
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Obtain official health certificate from MARD-authorised vet, countersigned by DAH."
+      timing: "Within 10 days of departure from Vietnam."
+      responsible: "MARD-authorised official vet"
     - step: 3
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Book cargo space on connecting flight to Canada (e.g. via Seoul, Taipei)."
+      timing: "6-8 weeks before departure to secure space."
+      responsible: "Owner or pet transport agent"
     - step: 4
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Fly to Canada via hub. CBSA inspection on arrival."
+      timing: "After health certificate is issued."
+      responsible: "Airline, CBSA"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Rabies vaccination and microchip in Vietnam: approximately VND 500,000-2,000,000"
+    - "MARD health certificate and DAH endorsement: approximately VND 500,000-1,500,000"
+    - "Cargo fees Vietnam to Canada via hub: approximately CAD 800-2,500 depending on pet size and routing"
+    - "Pet transport agent fee: CAD 300-800 if used"
+    - "Realistic total: CAD 1,500-4,000"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "low"
-  estimated_timeline_weeks: "4-10"
+    - "No direct cargo flights operate between Vietnam and Canada. All routings involve at least one hub connection. Each leg must accept live animals: confirm with both carriers before booking."
+    - "CFIA does not require a titre test from Vietnam. This makes Vietnam-Canada considerably simpler than Vietnam-to-EU routes, which do require a titre test and 90-day wait."
+    - "The health certificate must be issued within 10 days of the Canadian arrival date and must be in a format accepted by the CFIA. A generic Vietnamese veterinary certificate is not sufficient."
+    - "Dogs aged 3 months or older must have a current rabies vaccination. Dogs under 3 months are subject to additional restrictions at Canadian entry."
+
+  route_complexity: "medium"
+  estimated_timeline_weeks: "8-14"
+
 content:
-  h1: "Pet Transport from Vietnam to Canada"
+  h1: "Pet Transport from Vietnam to Canada: No Titre Test, MARD Certificate"
   overview: |
-    Moving to Canada from Vietnam with a dog or cat means starting the paperwork months before your flight.
-    
-    This route is relatively straightforward compared to some international routes. Start preparations at least 4 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened.
-    
-    Getting the timing right is critical. Work backwards from your travel date and add a buffer.
+    Canada is one of the more accessible destinations for pet owners relocating from Vietnam. The CFIA (Canadian Food Inspection Agency) does not require a titre test or quarantine for personal pet imports from Vietnam. The core requirements are a current rabies vaccination and an official health certificate in Canadian-approved format, issued by a MARD-authorised vet in Vietnam and endorsed by the Department of Animal Health. Total preparation: 8-14 weeks, driven largely by the certificate window and securing cargo connections. Source: CFIA, inspection.gc.ca.
+
+    The practical challenge for this route is not the documentation but the routing. There are no direct cargo flights from Vietnam to Canada. All pets travel via a hub connection, typically Seoul Incheon (ICN) via Korean Air or Vietnam Airlines, or Taipei (TPE) via EVA Air. Each carrier on the connecting route must be confirmed to accept live animals, and documentation must be valid for both legs.
+
+    Comparing Vietnam-to-Canada with Vietnam-to-Germany or Vietnam-to-France: Canada does not require a titre test, while EU destinations require an FAVN or ELISA titre test at an EU-approved laboratory and a mandatory 90-day wait from the blood draw date. For owners choosing between Canada and EU destinations, the documentation process for Canada is significantly shorter.
+
   sections:
-    - heading: "What to know about the Vietnam to Canada route"
+    - heading: "CFIA requirements: what Canada needs from Vietnam"
       body: |
-        Compared to some international pet transport routes, Vietnam to Canada is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        Canadian Food Inspection Agency (CFIA) manages pet imports. Requirements are relatively straightforward compared to USA, Australia, or Singapore. Government portal blocked automated extraction; data compiled from published CFIA guidelines and cross-referenced with CBSA (Canada Border Services Agency) documentation. Important: Canada suspended import of commercial dogs from high-risk rabies countries in September 2022; personal pet imports may still be affected.
-    - heading: "Practical advice for shipping your pet from Vietnam"
+        Canada's import requirements for personal pet dogs and cats from Vietnam are managed by the CFIA. The key requirements are: a current rabies vaccination (for dogs aged 3 months or older), and an official health certificate in the format required by Canada, issued by a MARD-authorised official vet in Vietnam and endorsed by the Department of Animal Health (DAH). The health certificate must be issued within 10 days of the Canadian arrival date. No titre test, no quarantine, no import permit for personal pets. Source: CFIA, inspection.gc.ca.
+
+        Dogs under 3 months old are subject to separate CFIA rules and may face additional restrictions. If you are travelling with a puppy, confirm the current CFIA rules for young dogs from Vietnam before making travel plans. Cats from Vietnam face no specific CFIA vaccination requirements, though a health certificate from the MARD-authorised vet is still required for airline acceptance and for CBSA at the border.
+
+    - heading: "Routing from Vietnam to Canada: hub connections"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        No direct cargo services operate between Vietnam and Canada. The most common routing for live animals is via Seoul Incheon (ICN) using Korean Air Cargo or Vietnam Airlines connections, or via Taipei Taoyuan (TPE) with EVA Air. Both routes connect to Vancouver (YVR) or Toronto Pearson (YYZ), the two main entry points for live animal imports into Canada.
+
+        When booking a connecting route, confirm with each carrier individually that live animals are accepted on both legs of the journey. Transit documentation requirements vary at hub airports. A specialist pet transport agent with experience on this corridor can manage the carrier coordination and confirm that the documentation is valid for each leg. Allow 6-8 weeks lead time before departure to confirm cargo space and coordinate documentation.
+
+    - heading: "Vietnam-Canada versus Vietnam-EU: a requirements comparison"
+      body: |
+        For owners with flexibility over their destination, the difference between Canada and EU countries is worth understanding. Canada: no titre test required, no quarantine, current rabies vaccination and MARD health certificate are sufficient. Total preparation: 8-14 weeks. EU countries (Germany, France, Netherlands, Italy, Spain): Vietnam is not on the EU Annex II approved third-country list. FAVN or ELISA titre test at an EU-approved laboratory is required, blood draw at least 30 days after final vaccination, mandatory 90-day wait from the blood draw date. Total preparation: 20-28 weeks. Source: EU pet travel regulations, ec.europa.eu.
+
+        The titre test and 90-day wait add approximately 4-5 months to the EU process compared with Canada. For owners whose relocation to Europe is fixed, this is simply a planning requirement. For owners choosing between destinations, Canada's shorter process is a practical advantage.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Vietnam to Canada?"
-    answer: "Allow at least 4 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Canada?"
-    answer: "No routine quarantine is required in Canada for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Canada?"
-    answer: "No, Canada does not require a rabies titre test for most pets arriving from Vietnam. Your pet still needs a valid rabies vaccination and microchip. Check the current requirements with the destination authority before travel."
-  - question: "Can I take my cat to Canada from Vietnam?"
-    answer: "Yes, cats can be transported from Vietnam to Canada. The same microchip, vaccination, and health certificate requirements apply as for dogs, though some rules (such as tapeworm treatment) apply to dogs only. Check the full requirements for cats with the destination authority."
+  - question: "Does Canada require a titre test for pets from Vietnam?"
+    answer: "No. Canada (CFIA) does not require a titre test for personal pet imports from Vietnam. A current rabies vaccination and an official health certificate are the key requirements. Source: CFIA, inspection.gc.ca."
+  - question: "Is there a quarantine on arrival in Canada from Vietnam?"
+    answer: "No. There is no quarantine for compliant pets arriving in Canada from Vietnam. CBSA will inspect the documentation on arrival, but compliant pets are released without a holding period."
+  - question: "How long does Vietnam-to-Canada pet transport take?"
+    answer: "Allow 8-14 weeks total. Most of this time is for booking cargo space, completing vaccinations, and obtaining the MARD health certificate within the required 10-day window before Canadian arrival."
+  - question: "Are there direct flights from Vietnam to Canada for pet cargo?"
+    answer: "No. There are no direct cargo services from Vietnam to Canada. All routings require a hub connection, typically Seoul ICN via Korean Air or Taipei TPE via EVA Air. Confirm live animal acceptance on both legs before booking."
+  - question: "How does Vietnam-to-Canada compare to Vietnam-to-Germany for pet transport?"
+    answer: "Canada: no titre test, no quarantine, total preparation 8-14 weeks. Germany (EU): titre test required, 90-day wait from blood draw, total preparation 20-28 weeks. Canada is considerably simpler in terms of documentation and timeline."
+
 links:
   sideways:
     - url: "/pet-transport/canada-to-vietnam/"
       text: "Pet Transport Canada to Vietnam"
+    - url: "/pet-transport/vietnam-to-germany/"
+      text: "Pet Transport Vietnam to Germany"
+    - url: "/pet-transport/vietnam-to-france/"
+      text: "Pet Transport Vietnam to France"
   upward:
-    - url: "/pet-transport/origins/vietnam-pet-export-guide/"
-      text: "Shipping from Vietnam"
     - url: "/pet-transport/countries/canada/"
-      text: "Importing to Canada"
-    - url: "/pet-transport/airlines/air-canada/"
-      text: "Air Canada pet policy"
+      text: "Canada pet import rules"
+    - url: "/pet-transport/airlines/korean-air/"
+      text: "Korean Air pet cargo policy"
 ---

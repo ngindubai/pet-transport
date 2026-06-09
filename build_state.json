@@ -15,7 +15,7 @@
   "blog_articles": 420,
   "content_plan_start": "2026-06-01",
   "content_plan_articles_written": 13,
-  "notes": "Chunk 43 (Template C, Tier B, 25 routes) + Blog Day 13 complete 2026-06-09. Routes: 7 EU-to-UK (Romania/Malta/Cyprus/Finland/Hungary/Bulgaria/Croatia), 6 Mexico outbound (Thailand/Philippines/Malaysia/India/Indonesia/Brazil), 6 Brazil outbound (Thailand/Philippines/Malaysia/India/Indonesia/Mexico), 6 Indonesia outbound (Thailand/Philippines/Malaysia/India/Mexico/Brazil). Blog: pet-transport-tenerife-to-uk.md (Marcus Webb, ~1700 words, AHC for UK entry post-Brexit, tapeworm 24-120h window, charter airline problem, routing via Madrid, rescue dog section). Routes 5506->5531, blog 419->420, pages 6298->6324. Next: Chunk 44 (Template D, Tier B). Blog Day 14 next.",
+  "notes": "Chunk 43 (Template C, Tier B) complete 2026-06-09. Two batches: (1) 25 new routes: 7 EU-to-UK (Romania/Malta/Cyprus/Finland/Hungary/Bulgaria/Croatia), 6 Mexico outbound, 6 Brazil outbound, 6 Indonesia outbound. (2) 25 existing thin routes overwritten with quality: China outbound (australia, new-zealand, germany, france, singapore, japan, south-korea, spain, italy), Vietnam outbound (canada, germany, france, netherlands, italy, spain), Thailand outbound (canada, germany, france, netherlands), UAE outbound (japan, south-korea, new-zealand), HK outbound (united-states, new-zealand, united-kingdom). Blog Day 13: pet-transport-tenerife-to-uk.md (Marcus Webb). Routes 5506->5531, blog 419->420, pages 6298->6324. Next: Chunk 44 (Template D, Tier B). Blog Day 14 next.",
   "counts": {
     "route_pairs": 5531,
     "blog": 420,

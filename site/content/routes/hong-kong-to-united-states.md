@@ -1,117 +1,142 @@
 ---
-template_variant: "B"
-title: "Pet Transport from Hong Kong to the USA | AFCD Export & CDC Import Rules"
-description: "Moving your pet from Hong Kong to the USA: AFCD export permit, CDC Dog Import Form, USDA health certificate, Cathay Pacific cargo options."
+title: "Pet Transport Hong Kong to USA: AFCD Export Licence and CDC Dog Import Rules 2026"
+description: "Moving a dog or cat from Hong Kong to the USA in 2026. AFCD live animal export licence required. CDC Dog Import Form for all dogs. Cathay Pacific cargo to LAX, SFO, and JFK explained."
+date: "2026-06-09"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "C"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "hong-kong-to-united-states"
 origin_name: "Hong Kong"
 destination_name: "United States"
+
 route_data:
   origin:
     code: "HK"
     country: "Hong Kong"
     export_requirements:
-      export_permit: "Required. AFCD live animal export licence. Allow 2-3 weeks for processing."
-      health_certificate: "USDA-format health certificate signed by an AFCD-authorised veterinarian, endorsed by AFCD. Issued within 10 days of US arrival."
+      health_certificate: "Official health certificate endorsed by AFCD (Agriculture, Fisheries and Conservation Department), Hong Kong. Issued within 10 days of departure. Source: AFCD, afcd.gov.hk."
+      export_permit: "AFCD live animal export licence required. Apply online via the AFCD licensing portal. Allow 2-3 weeks for processing. Departure from Hong Kong International Airport (HKG) only."
+
   destination:
     code: "US"
     country: "United States"
     import_requirements:
-      microchip: "Strongly recommended. Required for CDC Dog Import Form completion."
-      rabies_vaccination: "Required for dogs. Current valid vaccination required."
-      titre_test: "Not required from Hong Kong."
-      quarantine: "No routine quarantine for compliant dogs."
-      import_permit: "Not required for personal pet imports."
-      health_certificate: "USDA-format, issued within 10 days of US arrival, endorsed by AFCD (acting as USDA equivalent authority in HK)."
-      cdc_rules: "CDC Dog Import Form required for all dogs since August 2024. Complete via CDC portal before travel. Hong Kong is not a high-risk country."
-      authority: "USDA APHIS and CDC govern US imports. AFCD governs HK exports."
+      microchip: "Microchip required for all dogs entering the USA from any country. ISO 15 digit microchip (ISO 11784/11785 compatible) required. Source: CDC, cdc.gov/importation."
+      rabies_vaccination: "Current valid rabies vaccination required for dogs. Must have been administered by a licensed veterinarian. Certificate required at entry. Cats: no CDC rabies vaccination requirement for entry into the USA."
+      titre_test: "Not required. The USA (CDC) does not require a titre test for personal pet dogs or cats from Hong Kong."
+      quarantine: "No quarantine for compliant pets. Dogs with valid rabies vaccination, microchip, and CDC Dog Import Form may enter without quarantine. Source: CDC, cdc.gov/importation."
+      import_permit: "No formal import permit required for personal pet dogs and cats. CDC Dog Import Form required for all dogs."
+      health_certificate: "Health certificate issued by USDA-accredited veterinarian (or equivalent endorsed by AFCD). The AFCD endorsement replaces the USDA accreditation requirement for the foreign certificate. Presented to US Customs and Border Protection (CBP) on arrival."
+
   airlines:
-    - name: "Cathay Pacific"
+    - name: "Cathay Pacific Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Cathay Pacific Cargo from HKG to major US cities (JFK, LAX, SFO, ORD, IAD). Direct and one-stop services. Live animal facility at HKG. No cabin pets on transpacific routes."
-    - name: "United Airlines"
+      policy_summary: "Direct cargo services from Hong Kong (HKG) to Los Angeles (LAX), San Francisco (SFO), and New York (JFK). Cathay Pacific Cargo handles live animals. The most direct carrier option for HK-to-USA."
+    - name: "United Airlines Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: United PetSafe via HKG-SFO, HKG-LAX connections. Seasonal temperature embargoes. Brachycephalic breeds restricted."
-    - name: "American Airlines"
+      policy_summary: "United Cargo operates services from HKG to US gateway cities. Live animal service available on selected routes. Confirm current live animal acceptance before booking."
+    - name: "American Airlines Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: American Airlines Cargo on transpacific routes. Seasonal restrictions apply."
-    - name: "Delta Air Lines"
+      policy_summary: "American Airlines Cargo accepts live animals on international routes. Services from HKG to DFW and other US cities. Advance documentation review required."
+    - name: "Korean Air Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Delta Cargo via HKG-SEA, HKG-LAX. Seasonal embargoes."
+      policy_summary: "Via Seoul Incheon (ICN) to US cities. An alternative connecting option if direct Cathay services are unavailable."
+
   timeline_steps:
     - step: 1
-      action: "Register with CDC and complete Dog Import Form (dogs only)"
-      timing: "Before booking flights."
-      responsible: "You"
+      action: "Implant ISO microchip in Hong Kong."
+      timing: "Before rabies vaccination."
+      responsible: "Vet in Hong Kong"
     - step: 2
-      action: "Apply for AFCD export permit"
-      timing: "3+ weeks before travel."
-      responsible: "You or your agent"
+      action: "Administer current rabies vaccination."
+      timing: "At least 30 days before travel to ensure vaccination is fully valid."
+      responsible: "Vet in Hong Kong"
     - step: 3
-      action: "Book Cathay Pacific cargo space HKG to US destination"
-      timing: "4-8 weeks before travel."
-      responsible: "You or your cargo agent"
+      action: "Apply for AFCD live animal export licence."
+      timing: "2-3 weeks before departure."
+      responsible: "Owner or pet transport agent"
     - step: 4
-      action: "Obtain USDA-format health certificate from AFCD-authorised vet, endorsed by AFCD"
-      timing: "Within 10 days of US arrival."
-      responsible: "Authorised vet + AFCD"
+      action: "Complete CDC Dog Import Form (for dogs only)."
+      timing: "Before arrival in the USA. Available at cdc.gov/importation."
+      responsible: "Owner"
     - step: 5
-      action: "Travel day: cargo desk at HKG 4 hours before departure"
-      timing: "USDA/APHIS inspection at US port of entry on arrival."
-      responsible: "You + cargo agent"
+      action: "Obtain health certificate from vet, endorsed by AFCD."
+      timing: "Within 10 days of US arrival."
+      responsible: "Vet and AFCD"
+    - step: 6
+      action: "Fly to US gateway city (LAX, SFO, JFK, or other approved port). CBP and USDA inspection on arrival."
+      timing: "After AFCD export licence and health certificate are issued."
+      responsible: "Airline, CBP, USDA"
+
   cost_factors:
-    - "Cathay Pacific cargo fee (HKG to US, varies by pet size and destination)"
-    - "IATA-compliant crate"
-    - "AFCD export permit fee"
-    - "Authorised vet fee for health certificate"
-    - "AFCD endorsement fee"
-    - "Pet transport agent fee (recommended)"
+    - "Microchip and rabies vaccination in Hong Kong: approximately HKD 500-2,000"
+    - "AFCD export licence fee: approximately HKD 200-500"
+    - "Health certificate and AFCD endorsement: approximately HKD 500-2,000"
+    - "Cargo fees HKG to US gateway: approximately HKD 6,000-20,000 depending on pet size and airline"
+    - "Pet transport agent fee: HKD 2,000-6,000 if used"
+    - "Realistic total: HKD 10,000-30,000"
+
   key_warnings:
-    - "The CDC Dog Import Form is required for all dogs entering the USA since August 2024. Complete this via the CDC portal before travel."
-    - "No cabin pets on transpacific flights. All pets travel as cargo."
-    - "AFCD export permit must be in place before departure. Do not leave this to the last week."
-  route_complexity: "moderate"
+    - "A CDC Dog Import Form is required for ALL dogs entering the USA, regardless of origin. This is a US federal requirement from the CDC. Cats are not subject to this requirement."
+    - "The AFCD export licence takes 2-3 weeks to process. Apply well in advance of travel, not in the week before departure."
+    - "Dogs must have a valid rabies vaccination and an ISO microchip. The CDC Dog Import Form must be completed and ready for inspection by CBP on arrival."
+    - "Comparing HK-to-USA with HK-to-UK: the UK requires a tapeworm treatment for dogs (1-5 days before UK arrival) and APHA endorsement of the health certificate. The USA requires the CDC Dog Import Form and does not require a titre test. Both routes are medium complexity."
+
+  route_complexity: "medium"
   estimated_timeline_weeks: "6-10"
+
 content:
-  h1: "Pet Transport from Hong Kong to the United States"
+  h1: "Pet Transport from Hong Kong to the USA: AFCD Export and CDC Dog Import Form"
   overview: |
-    Hong Kong to the USA is a busy expat relocation corridor. Cathay Pacific operates direct HKG-USA services to several US cities, and both jurisdictions have clear documented processes. The main coordination points are the AFCD export permit in Hong Kong, the CDC Dog Import Form for dogs, and the USDA-format health certificate timed to the 10-day window.
+    Moving a dog or cat from Hong Kong to the USA is a manageable process, though it requires attention to the specific US requirements. For dogs, a CDC Dog Import Form is required for all dogs entering the USA from any country. The AFCD (Agriculture, Fisheries and Conservation Department) in Hong Kong requires a live animal export licence (2-3 weeks to process) and endorses the health certificate for export. Total preparation: 6-10 weeks. Source: CDC, cdc.gov/importation; AFCD, afcd.gov.hk.
+
+    Cathay Pacific Cargo operates direct services from Hong Kong (HKG) to Los Angeles (LAX), San Francisco (SFO), and New York (JFK), making this a well-served route with direct connections to major US gateway cities. United Airlines and American Airlines also offer cargo services on this corridor.
+
+    Comparing HK-to-USA with HK-to-UK: the USA requires the CDC Dog Import Form for dogs but no titre test. The UK (listed country) requires a tapeworm treatment (1-5 days before UK arrival for dogs) and an APHA-endorsed health certificate, but no titre test. Both are medium complexity. The USA's CDC Dog Import Form requirement is the distinguishing factor for this route.
+
   sections:
-    - heading: "The two-sided documentation process"
+    - heading: "CDC and USDA import requirements for dogs and cats from Hong Kong"
       body: |
-        Every HK-to-USA pet move involves paperwork on both ends simultaneously. On the Hong Kong side: the AFCD export permit and the AFCD-endorsed health certificate. On the US side: the CDC Dog Import Form (for dogs) and USDA-format health certificate endorsement.
+        The CDC manages dog import requirements for the USA. From 2024, a CDC Dog Import Form is required for all dogs entering the USA regardless of origin country. Dogs must have a valid rabies vaccination (administered by a licensed vet) and an ISO 15-digit microchip. The CDC Dog Import Form collects information about the dog's vaccination status, microchip, and the owner's travel details. It must be completed and ready for inspection by US Customs and Border Protection (CBP) on arrival.
 
-        The AFCD acts as the competent authority in Hong Kong and endorses health certificates in a way that US authorities recognise. Your vet in Hong Kong must be authorised by AFCD to sign export documentation. Most specialist pet transport vets in HK hold this status. A pet transport agent based in Hong Kong can coordinate both the AFCD and the health certificate in one process.
-    - heading: "Choosing your route and cargo carrier"
+        Cats entering the USA from Hong Kong face no CDC vaccination requirements, though a health certificate from an AFCD-endorsed vet is required for airline acceptance. USDA APHIS may inspect animals on arrival at US ports. Ensure the health certificate is in a format acceptable to both the airline and USDA. The AFCD endorsement of the health certificate in Hong Kong carries equivalent authority to a USDA-accredited veterinarian's certification for the foreign certificate.
+
+    - heading: "AFCD export licence: the Hong Kong side of the process"
       body: |
-        Cathay Pacific is the best starting point for HKG-USA cargo. Their direct services to JFK, LAX, SFO, and ORD avoid intermediate handling. For the West Coast, the flight is around 11-13 hours; to the East Coast, 15-16 hours. United and American also serve the corridor via their Pacific hubs.
+        AFCD (Agriculture, Fisheries and Conservation Department) is the authority in Hong Kong for live animal exports. An AFCD live animal export licence is required before any pet can leave Hong Kong. Apply online via the AFCD licensing portal. Allow 2-3 weeks for processing. The licence authorises the specific animal for export and is tied to the specific travel date and airline.
 
-        The time of year matters. Summer departures from Hong Kong in July and August are affected by temperature embargoes for brachycephalic breeds. Book early and confirm current restrictions with the cargo agent before committing to a carrier.
-    - heading: "After arrival: what happens at the US port of entry"
+        Once the AFCD export licence is in place, the health certificate is issued by a vet and endorsed by AFCD, within 10 days of the US arrival date. The AFCD endorsement is the Hong Kong equivalent of the official government veterinary endorsement required by US authorities. Cathay Pacific Cargo from HKG is the most common carrier for live animal exports from Hong Kong to the USA, with direct services to LAX, SFO, and JFK.
+
+    - heading: "HK-to-USA versus HK-to-UK: a route requirements comparison"
       body: |
-        When your pet lands at a US airport, USDA APHIS or CBP officers inspect the documentation. For dogs, they check the CDC Dog Import Form confirmation, the health certificate, and the rabies vaccination record. For cats, they check the health certificate.
+        Both the USA and the UK accept pets from Hong Kong without requiring a titre test (Hong Kong is a listed country for UK entry). The differences lie in specific entry requirements. USA (CDC): CDC Dog Import Form required for all dogs; current rabies vaccination; ISO microchip; AFCD-endorsed health certificate; no titre test; no quarantine; total preparation 6-10 weeks. UK (APHA): Health certificate (AHC format); APHA endorsement; tapeworm treatment for dogs 1-5 days before UK arrival; no titre test for HK pets (listed country); no quarantine; total preparation 4-8 weeks.
 
-        If everything is in order, the process is quick. If documentation is incomplete or the health certificate is out of date, the pet may be held or turned around. This is why getting the timing right on the health certificate matters so much: it must be issued within 10 days of arrival.
+        The UK process is slightly faster than the USA process because the AFCD export licence processing time is the main constraint for USA-bound moves, while UK-bound moves primarily require the tapeworm treatment timing and the APHA-endorsed health certificate. Both are well-established routes from Hong Kong with Cathay Pacific Cargo as the primary carrier.
+
 faqs:
   - question: "Do I need a CDC Dog Import Form to bring my dog from Hong Kong to the USA?"
-    answer: "Yes. Since August 2024, all dogs entering the USA require a completed CDC Dog Import Form. Complete it through the CDC portal before travel. Hong Kong is not a high-risk country, so the process is administrative. Print the confirmation and present it at the US port of entry."
-  - question: "Which airline should I use to fly my pet from Hong Kong to the USA?"
-    answer: "Cathay Pacific is the most established option, with a direct HKG-USA service and a dedicated live animal facility at Hong Kong airport. United, American, and Delta also offer cargo services on the transpacific route. No airline accepts cabin pets on transpacific flights."
-  - question: "How long does the AFCD export permit take?"
-    answer: "Allow 2-3 weeks for AFCD export permit processing. Start the application as soon as you have a confirmed travel date. Without the permit, your pet cannot leave Hong Kong."
-  - question: "Does my cat need a CDC Dog Import Form for entry into the USA?"
-    answer: "No. Cats are not covered by the CDC dog import rules. Your cat needs a health certificate issued within 10 days of US arrival. No CDC registration is required for cats."
+    answer: "Yes. A CDC Dog Import Form is required for all dogs entering the USA from any country, including Hong Kong. Complete this before travel. Available at cdc.gov/importation. Cats are not subject to this requirement."
+  - question: "Is a quarantine required on arrival in the USA for pets from Hong Kong?"
+    answer: "No. There is no quarantine for compliant pets. Dogs with a valid rabies vaccination, ISO microchip, and completed CDC Dog Import Form, plus an AFCD-endorsed health certificate, may enter without a quarantine period."
+  - question: "How long does the AFCD export licence take?"
+    answer: "Allow 2-3 weeks for AFCD to process the live animal export licence. Do not book flights until the AFCD licence application is underway."
+  - question: "Are there direct flights from Hong Kong to the USA for pet cargo?"
+    answer: "Yes. Cathay Pacific Cargo operates direct services from HKG to Los Angeles (LAX), San Francisco (SFO), and New York (JFK). United Airlines and American Airlines also serve this corridor."
+  - question: "How does HK-to-USA compare to HK-to-UK for pet transport?"
+    answer: "USA: CDC Dog Import Form required for dogs; current rabies vaccination; no titre test; no quarantine; total preparation 6-10 weeks. UK: APHA-endorsed health certificate; tapeworm treatment for dogs; no titre test (HK is a listed country); no quarantine; total preparation 4-8 weeks. Both are medium complexity. The UK process is slightly faster."
+
 links:
   sideways:
     - url: "/pet-transport/united-states-to-hong-kong/"
       text: "Pet Transport USA to Hong Kong"
+    - url: "/pet-transport/hong-kong-to-united-kingdom/"
+      text: "Pet Transport Hong Kong to UK"
+    - url: "/pet-transport/hong-kong-to-new-zealand/"
+      text: "Pet Transport Hong Kong to New Zealand"
   upward:
-    - url: "/pet-transport/origins/pet-export-guide-shipping-from-hong-kong/"
-      text: "Shipping from Hong Kong"
     - url: "/pet-transport/countries/united-states/"
-      text: "Importing to the USA"
+      text: "USA pet import rules"
     - url: "/pet-transport/airlines/cathay-pacific/"
-      text: "Cathay Pacific pet policy"
+      text: "Cathay Pacific pet cargo policy"
 ---

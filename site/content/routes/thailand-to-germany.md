@@ -1,132 +1,145 @@
 ---
-template_variant: "B"
-title: "Moving Your Pet from Thailand to Germany | Complete Guide"
-description: "Pet relocation from Thailand to Germany: Germany import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport Thailand to Germany: EU Titre Test, DLD Export and 90-Day Wait 2026"
+description: "Moving a dog or cat from Thailand to Germany in 2026. Thailand is EU-unlisted: FAVN titre test and 90-day wait required. DLD export permit and Lufthansa cargo options explained."
+date: "2026-06-09"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "C"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "thailand-to-germany"
 origin_name: "Thailand"
 destination_name: "Germany"
+
 route_data:
   origin:
     code: "TH"
     country: "Thailand"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      health_certificate: "Official health certificate in EU AHC format, issued by a DLD-authorised official vet, endorsed by DLD. Issued within 10 days of German entry. Source: DLD, dld.go.th."
+      export_permit: "DLD export permit required. Apply to DLD office at approved international airport or DLD provincial office. Allow 2-3 weeks. Approved departure airports: Bangkok Suvarnabhumi (BKK) and Bangkok Don Mueang (DMK)."
+
   destination:
     code: "DE"
     country: "Germany"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or at same time as rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Standard EU 21-day wait from date of first vaccination before travel. No additional Germany-specific requirements beyond EU framework."
-      titre_test: "Required for: Pets from unlisted third countries (countries not on EU Annex II list). Not required for: Pets from EU member states, listed third countries (all P1 countries are listed). Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No quarantine for pets entering with correct EU documentation. Non-compliant animals may be returned, quarantined at owner's expense, or in worst case euthanised."
-      import_permit: "No formal import permit. EU pet passport (intra-EU) or Animal Health Certificate (from third countries) serves as documentation."
-      health_certificate: "Required"
+      microchip: "ISO 11784/11785 microchip required. Must be implanted before or on the same day as the first rabies vaccination."
+      rabies_vaccination: "Current rabies vaccination required. Primary course complete. 21-day wait from initial vaccination."
+      titre_test: "Required. Thailand is not on the EU Annex II approved third-country list. FAVN or ELISA titre test at an EU-approved laboratory. Minimum 0.5 IU/ml. Blood draw at least 30 days after final vaccination. Mandatory 90-day wait from blood draw date before EU entry. Source: EU pet travel regulations, ec.europa.eu."
+      quarantine: "No quarantine on arrival for compliant pets."
+      import_permit: "No formal import permit required. AHC serves as the entry document."
+      health_certificate: "EU-format Animal Health Certificate (AHC) from DLD-authorised official vet in Thailand, endorsed by DLD. Valid 10 days from examination to German entry."
+
   airlines:
+    - name: "Lufthansa Cargo"
+      type: "cargo_only"
+      policy_summary: "Direct cargo from Bangkok Suvarnabhumi (BKK) to Frankfurt (FRA). Lufthansa Cargo is the most direct option for Thailand-to-Germany. Frankfurt is the main German entry airport for live animal cargo."
     - name: "Thai Airways"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets as checked baggage or Thai Cargo for larger animals. Brachycephalic breeds restricted during hot season (March-May). Some breed restrictions apply"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Emirates"
+      policy_summary: "Thai Airways connects BKK to European cities. Cargo to Frankfurt may involve a connection. Confirm live animal acceptance and documentation with Thai Airways Cargo."
+    - name: "Austrian Airlines / Lufthansa Group"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Singapore Airlines"
+      policy_summary: "Via Vienna (VIE) to Frankfurt or other German cities. A Lufthansa Group option that may be available when direct FRA services are full."
+    - name: "Emirates SkyCargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Via Dubai DXB to Frankfurt FRA or other German airports. A longer routing but available when European carrier capacity is limited."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step: must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Implant ISO microchip in Thailand."
+      timing: "Before first rabies vaccination."
+      responsible: "Vet in Thailand"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Rabies vaccination primary course."
+      timing: "After microchip. At least 30 days before titre test blood draw."
+      responsible: "Vet in Thailand"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "FAVN titre test blood draw at an EU-approved laboratory."
+      timing: "At least 30 days after final vaccination. 90-day wait starts from this date."
+      responsible: "Vet and EU-approved laboratory"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "90-day wait from the blood draw date."
+      timing: "Cannot be shortened."
+      responsible: "Owner to track"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Apply for DLD export permit."
+      timing: "2-3 weeks before departure."
+      responsible: "Owner or pet transport agent"
     - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Obtain EU-format AHC from DLD-authorised vet, endorsed by DLD."
+      timing: "Within 10 days of German entry."
+      responsible: "DLD-authorised official vet"
+    - step: 7
+      action: "Fly to Frankfurt (FRA). German customs inspection on arrival."
+      timing: "After 90-day wait has elapsed."
+      responsible: "Airline, German customs"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "DLD export permit and health certificate endorsement: approximately THB 2,000-6,000"
+    - "Titre test at EU-approved laboratory: approximately EUR 250-500 or THB 9,000-18,000"
+    - "Cargo fees Thailand to Germany: approximately EUR 900-2,500 depending on pet size"
+    - "Pet transport agent fee: EUR 400-1,000 if used"
+    - "Realistic total: EUR 2,000-5,500"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "The 90-day wait from titre test blood draw date is mandatory. Plan at least 5 months before your intended German arrival date."
+    - "Thailand is EU-unlisted: titre test required regardless of vaccination history or how long the pet has been vaccinated."
+    - "Germany bans import of four breeds at federal level: American Pit Bull Terrier, American Staffordshire Terrier, Staffordshire Bull Terrier, and Bull Terrier. Check breed regulations before travel."
+    - "The DLD export permit adds 2-3 weeks to the preparation timeline on top of the titre test waiting period. Start the DLD process early."
+
+  route_complexity: "high"
+  estimated_timeline_weeks: "20-28"
+
 content:
-  h1: "Pet Transport from Thailand to Germany"
+  h1: "Pet Transport from Thailand to Germany: EU Titre Test and DLD Export"
   overview: |
-    Pet transport from Thailand to Germany follows a clear process once you know what Germany requires.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date: some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Use this guide to map out your preparation timeline and avoid the most common mistakes.
+    Germany applies EU-wide pet travel rules for third-country imports. Thailand is not on the EU Annex II approved third-country list, so pets from Thailand require an FAVN or ELISA titre test at an EU-approved laboratory and a mandatory 90-day wait from the blood draw date before EU entry. The Thailand export process involves a DLD (Department of Livestock Development) export permit and a health certificate in EU AHC format from a DLD-authorised vet, endorsed by DLD. Total preparation: 20-28 weeks. Source: EU pet travel regulations, ec.europa.eu.
+
+    Lufthansa Cargo operates direct services from Bangkok Suvarnabhumi (BKK) to Frankfurt (FRA), making Germany one of the more directly accessible EU destinations from Thailand. This contrasts with routes like Thailand-to-Spain (no direct Vietnam/Thailand-to-Spain cargo) where a hub connection is unavoidable.
+
+    Comparing Thailand-to-Germany with Thailand-to-Canada: Canada does not require a titre test or quarantine, and preparation takes 8-14 weeks. Germany requires the EU unlisted country titre test process and takes 20-28 weeks. For owners specifically relocating to Germany, this planning lead time is simply a requirement of the process.
+
   sections:
-    - heading: "Understanding Germany's pet import rules"
+    - heading: "EU import requirements for Germany: Thailand is EU-unlisted"
       body: |
-        Compared to some international pet transport routes, Thailand to Germany is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        Germany follows EU harmonised pet movement rules (Regulation 576/2013, transitioning to new rules under Regulation 2026/131 from 22 April 2026). Federal Ministry of Food and Agriculture (BMEL) oversees. Individual Bundeslaender may have additional animal welfare rules. Germany is considered pet-friendly with high dog ownership rates.
-    - heading: "From experience: Thailand to Germany pet transport"
+        The EU framework for unlisted third countries applies to Thailand exactly as it applies to China and Vietnam. The full sequence: ISO microchip (implanted before or same day as first vaccination); rabies vaccination primary course (21-day wait from initial vaccination); FAVN or ELISA titre test at an EU-approved laboratory (result 0.5 IU/ml or above, blood draw at least 30 days after final vaccination); mandatory 90-day wait from blood draw date; EU-format AHC from DLD-authorised official vet in Thailand, endorsed by DLD, issued within 10 days of EU entry. No quarantine on arrival for compliant pets. Source: EU pet travel regulations, ec.europa.eu.
+
+        Germany's federal breed restrictions apply at import from Thailand as they do from any country. American Pit Bull Terrier, American Staffordshire Terrier, Staffordshire Bull Terrier, and Bull Terrier are banned from import into Germany at federal level. Individual German states may add further breed-specific rules. Confirm the regulations for your specific destination state if there is any uncertainty about your dog's breed classification.
+
+    - heading: "DLD export from Thailand: the permit and certificate process"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Thailand's DLD (Department of Livestock Development) manages live animal exports. The DLD export permit must be obtained before departure. Apply to the DLD office at your departure airport (Bangkok Suvarnabhumi or Don Mueang) or a DLD provincial office. Allow 2-3 weeks for processing. The health certificate is issued by a DLD-authorised official vet in EU AHC format, countersigned by DLD, within 10 days of the German entry date.
+
+        The DLD process in Thailand is more involved than Vietnam's MARD process (which does not require a separate export permit) but less complex than China's GACC process. Budget adequate time for the DLD permit, and coordinate the health certificate appointment to fall within the 10-day window before your German arrival date. Bangkok Suvarnabhumi (BKK) is the main approved departure airport, with Lufthansa Cargo providing direct connections to Frankfurt (FRA).
+
+    - heading: "Thailand-Germany versus Thailand-Canada: a timeline comparison"
+      body: |
+        The practical difference for Thailand-based owners choosing between Germany and Canada as a destination comes down to the titre test. Canada (CFIA) does not require a titre test from Thailand. A DLD health certificate and current rabies vaccination are sufficient. Preparation: 8-14 weeks. Germany (EU): titre test required, 90-day wait from blood draw date, preparation: 20-28 weeks.
+
+        For owners who are specifically relocating to Germany, the 20-28 week timeline is simply the planning requirement. Start the microchip and vaccination process as early as possible, as the 90-day wait from blood draw cannot be shortened. The DLD export permit process runs in parallel during the 90-day wait rather than adding to it, so it does not extend the overall timeline if started 4-6 weeks before departure.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Thailand to Germany?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Germany?"
-    answer: "No routine quarantine is required in Germany for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Germany?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Germany. Start this process as early as possible."
-  - question: "Can I take my cat to Germany from Thailand?"
-    answer: "Yes, cats can be transported from Thailand to Germany. The same microchip, vaccination, and health certificate requirements apply as for dogs, though some rules (such as tapeworm treatment) apply to dogs only. Check the full requirements for cats with the destination authority."
+  - question: "Does Germany require a titre test for pets from Thailand?"
+    answer: "Yes. Thailand is not on the EU Annex II approved list. FAVN or ELISA titre test at an EU-approved laboratory is required, with a mandatory 90-day wait from the blood draw date. Source: EU pet travel regulations, ec.europa.eu."
+  - question: "Is there a quarantine in Germany for pets from Thailand?"
+    answer: "No. There is no quarantine for compliant pets on arrival in Germany. All requirements (microchip, vaccination, titre test, 90-day wait, EU-format AHC) must be met, but no mandatory holding period applies."
+  - question: "How long does Thailand-to-Germany pet transport take?"
+    answer: "Allow 20-28 weeks total. The titre test process drives the timeline: at least 30 days post-vaccination before blood draw, plus the 90-day wait. The DLD export permit (2-3 weeks) runs concurrently during the wait."
+  - question: "Does Germany have breed bans for dogs imported from Thailand?"
+    answer: "Yes. Germany bans import of four breeds at federal level: American Pit Bull Terrier, American Staffordshire Terrier, Staffordshire Bull Terrier, and Bull Terrier. Individual German states may impose additional breed restrictions."
+  - question: "How does Thailand-Germany compare to Thailand-Canada for pet transport?"
+    answer: "Canada: no titre test, no quarantine, preparation 8-14 weeks. Germany: titre test required, 90-day wait, preparation 20-28 weeks. Canada is considerably simpler in terms of documentation. For Germany-specific relocations, the EU unlisted process is unavoidable."
+
 links:
   sideways:
     - url: "/pet-transport/germany-to-thailand/"
       text: "Pet Transport Germany to Thailand"
+    - url: "/pet-transport/thailand-to-france/"
+      text: "Pet Transport Thailand to France"
+    - url: "/pet-transport/thailand-to-canada/"
+      text: "Pet Transport Thailand to Canada"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-thailand-export-guide/"
-      text: "Shipping from Thailand"
     - url: "/pet-transport/countries/germany/"
-      text: "Importing to Germany"
-    - url: "/pet-transport/airlines/thai-airways/"
-      text: "Thai Airways pet policy"
+      text: "Germany pet import rules"
     - url: "/pet-transport/airlines/lufthansa/"
-      text: "Lufthansa pet policy"
+      text: "Lufthansa pet cargo policy"
 ---
