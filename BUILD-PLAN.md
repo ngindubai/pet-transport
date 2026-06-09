@@ -17,7 +17,7 @@
 - **Bulk-generation scripts are banned.** A batch is still N individually quality-gated blocks, never a mass-generation script.
 - **Skip rule:** skip only if the build pointer shows nothing left to build (no chunks remaining and no blog day due). Do NOT skip just because a build already happened earlier today; each site now runs twice a day on purpose.
 
-**Where we are (reconciled from disk 2026-06-08):** 5,506 quality routes complete. ~32,324 routes remaining. Blog: 419 articles. Total .md source files: 6,298. Content plan: Day 13 is next. Chunks 39-42 complete. Chunk 43 (Template C, Tier B) is next. Counts come from `python verify_build_state.py`, never hand-edited.
+**Where we are (reconciled from disk 2026-06-09):** 5,531 quality routes complete. ~32,299 routes remaining. Blog: 420 articles. Total .md source files: 6,324. Content plan: Day 14 is next. Chunks 39-43 complete. Chunk 44 (Template D, Tier B) is next. Counts come from `python verify_build_state.py`, never hand-edited.
 
 ---
 
@@ -46,11 +46,13 @@
 - Chunk 40 template: E (Data-Forward) - DONE 2026-06-08 (25 Template E Tier B routes: NZ/AU/Colombia to EU5, overwrote thin pages with correct regulatory data)
 - Chunk 41 template: A (Field Manual) - DONE 2026-06-08 (25 Template A Tier B routes: Peru/Chile/Japan/Singapore/Argentina/S.Korea/HK/Taiwan to EU5)
 - Chunk 42 template: B (Visual Journey) - DONE 2026-06-08 (25 Tier B routes: NZ destinations SA/CO; Japan routes CA/VN/TH/IN/ZA/CO; South Korea routes CA/VN/CO; Singapore Schedule III routes VN/TH/ID/PH)
-- Chunk 43 template: C - NEXT
+- Chunk 43 template: C - DONE 2026-06-09 (EU-to-UK: Romania/Malta/Cyprus/Finland/Hungary/Bulgaria/Croatia; Mexico outbound x6: Thailand/Philippines/Malaysia/India/Indonesia/Brazil; Brazil outbound x6: Thailand/Philippines/Malaysia/India/Indonesia/Mexico; Indonesia outbound x6: Thailand/Philippines/Malaysia/India/Mexico/Brazil; 25 routes)
+- Chunk 44 template: D - NEXT
 - Blog Day 10: pet-transport-uae-to-pakistan - DONE 2026-06-07 (Marcus Webb, AQD NOC, AED 3,000-6,000)
 - Blog Day 11: exporting-pets-from-singapore - DONE 2026-06-08 (Marcus Webb, AVS export licence, FAVN/RNATT for Australia, Changi cargo, UK/EU/US/AU destination matrix, cost table)
 - Blog Day 12: importing-pets-to-australia-2026 - DONE 2026-06-08 (Dr. Sarah Okafor, ~3000 words, Group 1/2/3 system, RNATT, Mickleham day-by-day, cost table by region, rejection reasons, FAQs)
-- Blog Day 13: NEXT (check plan-rows-q1.js)
+- Blog Day 13: pet-transport-tenerife-to-uk - DONE 2026-06-09 (Marcus Webb, 1700 words, AHC replaces EU pet passport for UK entry, tapeworm 24-120h window, charter airline problem, rescue dog section, GBP 800-1,400)
+- Blog Day 14: NEXT (check plan-rows-q1.js)
 - Tier: B (1,094 pairs; Tier A now complete)
 - Template rotation: ...D(21), E(22), A(23), B(24), C(25-27), D(28), E(29), A(30), D(31a), B(31b), B(32), C(33), D(34), E(35), A(36), B(37), C(38), D(39), E(40), A(41), B(42), C(43)...
 
@@ -73,7 +75,9 @@
 
 **Day 8 - DONE** - `cheap-pet-transport-honest-look` - Cheap Pet Transport: What's Realistic and What's a Red Flag (2026-06-06, 1800 words, Marcus Webb)
 
-**Next: Day 9** - check content plan for next slug
+**Days 9-13 - DONE** - see Phase 7 section and session log for details.
+
+**Day 14 - NEXT** - check content-plan/plan-rows-q1.js for slug.
 
 ## Session Log
 
@@ -103,3 +107,5 @@
 | 2026-06-07 | Chunk 37 + Blog Day 10 | Chunk 37 (Template B, Visual Journey, Tier B, 25 routes): Chile/Colombia/Peru/Ecuador/Costa Rica x UK+US (South America corridors); Ghana/Tanzania/Sri Lanka/Pakistan/Nepal x UK+US (Africa/South Asia); UK-to-Cyprus/Malta/Mexico/Bulgaria/Croatia. Blog Day 10: pet-transport-uae-to-pakistan (Marcus Webb, 2000 words, AQD NOC process, Emirates/Etihad/PIA cargo, AED 3,000-6,000). Routes 5,456 -> 5,481, blog 416 -> 417. | 6,270 | Live links below. Chunk 38 next. |
 | 2026-06-07 | Chunk 38 | Chunk 38 (Template C, Comparison Brief, Tier B, 25 routes): UK-to-Slovakia/Luxembourg/Ecuador/Costa Rica/Tanzania/Zimbabwe/Cambodia/Myanmar/Mauritius; US-to-Malta/Cyprus/Bulgaria/Croatia/Slovakia/Luxembourg/Ecuador/Costa Rica/Tanzania/Zimbabwe/Cambodia/Myanmar/Mauritius; Mauritius/Zimbabwe/Cambodia to UK. Key regulatory: Mauritius mandatory quarantine (1 month minimum, all pets); Myanmar process changed post-2021 (use local agent); USA listed by EU (no titre test). Routes 5,481 -> 5,506, pages 6,245 -> 6,296. | 6,296 | Live links below. Chunk 39 (Template D, Tier B) is next. Blog Day 11 next. |
 | 2026-06-08 | Blog Day 11 | exporting-pets-from-singapore.md, 2,400 words, Marcus Webb. Full AVS export process: export licence (S$50-S$100 via GoBusiness), health certificate Option A/B, FAVN/RNATT titre test for Australia DAFF Group 3 (90-day wait post blood draw), Changi cargo via SATS/DNATA handlers, destination matrix for UK/EU/US/AU with per-destination steps, cost table S$3,000-S$7,000. Sources: NParks AVS 2026, DAFF 2026, UK APHA 2026, CDC 2026. Blog 417->418, pages 6,296->6,297. | 6,297 | Live link below. Chunk 39 (Template D, Tier B) is next. Blog Day 12 next. |
+| 2026-06-08 | Chunks 39-42 + Blog Day 12 | Chunk 39 (Template D, Tier B): 25 routes. Chunk 40 (Template E, Tier B): 25 routes NZ/AU/Colombia to EU5. Chunk 41 (Template A, Tier B): 25 routes Peru/Chile/Japan/Singapore/Argentina/S.Korea/HK/Taiwan to EU5. Chunk 42 (Template B, Tier B): 25 routes NZ destinations SA/CO; Japan routes CA/VN/TH/IN/ZA/CO; South Korea routes CA/VN/CO; Singapore Schedule III routes VN/TH/ID/PH. Blog Day 12: importing-pets-to-australia-2026.md (Dr. Sarah Okafor, ~3000 words, Group 1/2/3 system, RNATT, Mickleham day-by-day, cost table by region). Routes 5,506, blog 419, pages 6,298. | 6,298 | Chunk 43 + Blog Day 13 next. |
+| 2026-06-09 | Chunk 43 + Blog Day 13 | Chunk 43 (Template C, Comparison Brief, Tier B, 25 routes): 7 EU-to-UK (Romania/Malta/Cyprus/Finland/Hungary/Bulgaria/Croatia; AHC+tapeworm, breed checks, airline options); 6 Mexico outbound (Mexico to Thailand/Philippines/Malaysia/India/Indonesia/Brazil; regulatory accuracy verified via web search: Thailand no titre test, Philippines SPSIC not titre test, Malaysia RNATT 3-month + 7-day quarantine, India no titre test AQCS 15-day, Indonesia FAVN+30-day BARANTAN, Brazil MAPA permit+30-day quarantine); 6 Brazil outbound (Brazil to Thailand/Philippines/Malaysia/India/Indonesia/Mexico; same destination rules applied from origin); 6 Indonesia outbound (Indonesia to Thailand/Philippines/Malaysia/India/Mexico/Brazil; BARANTAN export health cert and permit on all). Blog Day 13: pet-transport-tenerife-to-uk.md (Marcus Webb, ~1700 words, AHC replaces EU pet passport for UK entry post-Brexit, tapeworm 24-120h window for dogs, charter airline problem on Tenerife routes, routing via Madrid, rescue dog adoption section, GBP 800-1,400 cost). Routes 5,506 -> 5,531, blog 419 -> 420, pages 6,298 -> 6,324. | 6,324 | Chunk 44 (Template D, Tier B) is next. Blog Day 14 next. |

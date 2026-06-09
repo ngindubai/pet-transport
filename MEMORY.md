@@ -7,13 +7,13 @@
 - **Repository:** https://github.com/ngindubai/pet-transport (private)
 - **Deploy:** Push to `main` triggers GitHub Actions automatically. Hugo build + incremental FTP to Hostinger. Live within ~80 seconds for a single article. After every build batch, the live URLs of new/changed pages are posted in chat for review (LIVE LINK REVIEW GATE in CLAUDE.md).
 
-## Current State (2026-06-08, reconciled from disk by verify_build_state.py)
+## Current State (2026-06-09, reconciled from disk by verify_build_state.py)
 
-- **Routes built:** 5,506 of ~37,830 country pairs (~14.5%). True on-disk count (5,496 in `routes/` + 10 in `pet-transport/`).
-- **Blog articles:** 419
-- **Total .md source files:** 6,298 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-42 complete. **Chunk 43 is next** (Template C, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 42 = 25 Tier B routes Template B: NZ destinations (south-africa, colombia), Japan routes (canada, vietnam, thailand, india, south-africa, colombia), South Korea routes (canada, vietnam, colombia), Singapore Schedule III routes (vietnam, thailand, indonesia, philippines).
-- **Content plan:** Days 1-6 + Days 8-12 complete (12 articles written). Day 7 skipped (pre-existing). **Day 13 is next:** check content-plan/plan-rows-q1.js for slug. Day 12 = importing-pets-to-australia-2026 (Dr. Sarah Okafor, ~3000 words, Group 1/2/3 system, RNATT timing, Mickleham day-by-day, cost table, rejection reasons).
+- **Routes built:** 5,531 of ~37,830 country pairs (~14.6%). True on-disk count (5,521 in `routes/` + 10 in `pet-transport/`).
+- **Blog articles:** 420
+- **Total .md source files:** 6,324 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Phase 7 progress:** Chunks 1-43 complete. **Chunk 44 is next** (Template D, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 43 = 25 Tier B routes Template C: 7 EU-to-UK (Romania/Malta/Cyprus/Finland/Hungary/Bulgaria/Croatia), 6 Mexico outbound, 6 Brazil outbound, 6 Indonesia outbound.
+- **Content plan:** Days 1-6 + Days 8-13 complete (13 articles written). Day 7 skipped (pre-existing). **Day 14 is next:** check content-plan/plan-rows-q1.js for slug. Day 13 = pet-transport-tenerife-to-uk (Marcus Webb, ~1700 words, AHC for UK entry, tapeworm timing, charter airline problem, rescue dog section).
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
 
