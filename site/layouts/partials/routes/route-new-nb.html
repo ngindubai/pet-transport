@@ -1,36 +1,64 @@
-{{/* NEW Template B: v5 centred minimal, alternating dark/cream sections. Faithful port, real data. */}}
+{{/* Template B: v5 centred minimal, dark hero, alternating dark/cream sections. Faithful to mockup, real data. */}}
 {{ $rd := .Params.route_data }}
+{{ $o := .Params.origin_name }}{{ $d := .Params.destination_name }}
 <link rel="stylesheet" href="/css/route-new-nb.css">
 <div class="tpl-nb">
 
-  {{/* HERO: centred, dark */}}
+  {{/* HERO: dark, centred */}}
   <section class="hero">
     <div class="hero-bg" aria-hidden="true">{{ $rd.destination.code }}</div>
     <div class="hero-inner">
-      <div class="breadcrumb"><a href="/">Home</a><span class="bc-sep">/</span><a href="/pet-transport/routes/">Routes</a><span class="bc-sep">/</span><span>{{ .Params.origin_name }} to {{ .Params.destination_name }}</span></div>
-      <div class="hero-route"><div class="hero-flag">{{ $rd.origin.code }}</div><div class="rpath"></div><div class="hero-flag">{{ $rd.destination.code }}</div></div>
-      <h1 class="hero-h1">{{ .Params.content.h1 | default (printf "Pet Transport: %s to %s" .Params.origin_name .Params.destination_name) }}</h1>
-      {{ with .Params.content.overview }}<p class="hero-sub">{{ . | plainify | truncate 200 }}</p>{{ end }}
-      <div class="hero-stats">
+      <div class="breadcrumb r"><a href="/">Home</a><span class="bc-sep">/</span><a href="/pet-transport/routes/">Routes</a><span class="bc-sep">/</span><span>{{ $o }} to {{ $d }}</span></div>
+      <div class="hero-route r d1">
+        <div class="hero-flag">{{ $rd.origin.code }}</div>
+        <div class="rpath"><svg class="rpath-svg" viewBox="0 0 120 22"><path class="rp-b" d="M 6 16 Q 60 2 114 16"/><path class="rp-a" d="M 6 16 Q 60 2 114 16" stroke-dashoffset="300"/></svg></div>
+        <div class="hero-flag">{{ $rd.destination.code }}</div>
+      </div>
+      <h1 class="hero-h1 r d2">{{ .Params.content.h1 | default (printf "Pet Transport %s to %s" $o $d) }}</h1>
+      {{ with .Params.content.overview }}<p class="hero-sub r d3">{{ . | plainify | truncate 180 }}</p>{{ end }}
+      <div class="hero-stats r d3">
         {{ with $rd.estimated_timeline_weeks }}<div class="hst"><div class="hst-n">{{ . }} wks</div><div class="hst-l">Preparation needed</div></div>{{ end }}
         <div class="hst"><div class="hst-n">{{ if .Params.quarantine_required }}{{ with .Params.quarantine_days }}{{ . }} days{{ else }}Required{{ end }}{{ else }}None{{ end }}</div><div class="hst-l">Quarantine on arrival</div></div>
         {{ with $rd.route_complexity }}<div class="hst"><div class="hst-n"><span class="hst-badge b-warn">{{ . | title }}</span></div><div class="hst-l">Route complexity</div></div>{{ end }}
-        <div class="hst"><div class="hst-n"><span class="hst-badge b-ok">&#10003; Managed</span></div><div class="hst-l">Full door to door</div></div>
+        <div class="hst"><div class="hst-n"><span class="hst-badge b-ok">Managed</span></div><div class="hst-l">Full door to door</div></div>
       </div>
-      <a href="#quote-form" class="hero-cta">Get my free quote &rarr;</a>
+      <a href="#quote-form" class="hero-cta r">Get my free quote</a>
     </div>
   </section>
 
   <div class="v5-body">
+    {{/* SIDEBAR: quote form + checklist + related */}}
     <div class="v5-sidebar">
+      <div class="sc" id="quote-form">
+        <div class="sc-title">Get a free quote</div>
+        <form class="quote-form" action="{{ .Site.Params.quoteFormEndpoint }}" method="POST">
+          <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="origin_country" value="{{ $o }}">
+          <input type="hidden" name="destination_country" value="{{ $d }}">
+          <label class="sf-label">Pet type</label>
+          <select class="sf-select" name="pet_type"><option>Dog</option><option>Cat</option><option>Other</option></select>
+          <label class="sf-label">Breed</label>
+          <input class="sf-input" type="text" name="breed" placeholder="e.g. Labrador">
+          <label class="sf-label">Your name</label>
+          <input class="sf-input" type="text" name="name" required>
+          <label class="sf-label">Email</label>
+          <input class="sf-input" type="email" name="email" required placeholder="you@example.com">
+          <label class="sf-label">Phone</label>
+          <input class="sf-input" type="tel" name="phone" required placeholder="+44 ...">
+          <button class="sf-btn" type="submit">Get free quote <span>&rarr;</span></button>
+        </form>
+      </div>
       <div class="sc">
-        <div class="sc-title">Route at a glance</div>
-        <div class="sc-stats">
-          <div class="sc-stat"><span class="sc-stat-l">From</span><span class="sc-stat-v">{{ .Params.origin_name }}</span></div>
-          <div class="sc-stat"><span class="sc-stat-l">To</span><span class="sc-stat-v">{{ .Params.destination_name }}</span></div>
-          {{ with $rd.estimated_timeline_weeks }}<div class="sc-stat"><span class="sc-stat-l">Prep time</span><span class="sc-stat-v">{{ . }} weeks</span></div>{{ end }}
-          {{ with $rd.route_complexity }}<div class="sc-stat"><span class="sc-stat-l">Complexity</span><span class="sc-stat-v">{{ . | title }}</span></div>{{ end }}
-          <div class="sc-stat"><span class="sc-stat-l">Quarantine</span><span class="sc-stat-v">{{ if .Params.quarantine_required }}{{ with .Params.quarantine_days }}{{ . }} days{{ else }}Yes{{ end }}{{ else }}No{{ end }}</span></div>
+        <div class="sc-title">What's required</div>
+        <div class="checklist">
+          {{ with $rd.destination.import_requirements }}
+          {{ with .microchip }}<div class="cl-item"><div class="cl-dot cl-g"></div><div class="cl-text">Microchip<span class="cl-sub">{{ . | truncate 40 }}</span></div></div>{{ end }}
+          {{ with .rabies_vaccination }}<div class="cl-item"><div class="cl-dot cl-g"></div><div class="cl-text">Rabies vaccination<span class="cl-sub">{{ . | truncate 40 }}</span></div></div>{{ end }}
+          {{ with .titre_test }}<div class="cl-item"><div class="cl-dot cl-a"></div><div class="cl-text">Rabies titre test<span class="cl-sub">{{ . | truncate 40 }}</span></div></div>{{ end }}
+          {{ with .quarantine }}<div class="cl-item"><div class="cl-dot cl-a"></div><div class="cl-text">Quarantine<span class="cl-sub">{{ . | truncate 40 }}</span></div></div>{{ end }}
+          {{ with .import_permit }}<div class="cl-item"><div class="cl-dot cl-g"></div><div class="cl-text">Import permit<span class="cl-sub">{{ . | truncate 40 }}</span></div></div>{{ end }}
+          {{ with .health_certificate }}<div class="cl-item"><div class="cl-dot cl-g"></div><div class="cl-text">Health certificate<span class="cl-sub">{{ . | truncate 40 }}</span></div></div>{{ end }}
+          {{ end }}
         </div>
       </div>
       {{ with .Params.links }}{{ with .sideways }}
@@ -43,65 +71,64 @@
 
     <div class="v5-content">
 
-      {{/* PROCESS: dark section */}}
+      {{/* PROCESS: DARK */}}
       {{ with $rd.timeline_steps }}
       <div class="sec-wrap sec-dark"><div class="sec-inner">
-        <div class="sec-tag">Step by step</div>
-        <h2 class="sec-h">The import process, <em>in full</em></h2>
+        <div class="sec-tag r">Step by step</div>
+        <h2 class="sec-h r d1">The import process, <em>in full</em></h2>
         <div class="proc-list">
-          {{ range . }}
-          <div class="pi"><div class="pi-left"><div class="pi-dot pd-g">{{ .step }}</div></div><div class="pi-body">{{ with .timing }}<div class="pi-chips"><span class="chip ct">{{ . }}</span></div>{{ end }}<div class="pi-title">{{ .action }}</div>{{ with .responsible }}<p class="pi-desc">Responsible: {{ . }}</p>{{ end }}</div></div>
+          {{ range $i, $s := . }}
+          <div class="pi r"><div class="pi-left"><div class="pi-dot {{ if eq (mod $i 3) 1 }}pd-a{{ else if eq (mod $i 3) 2 }}pd-n{{ else }}pd-g{{ end }}">{{ $s.step }}</div></div><div class="pi-body">{{ with $s.timing }}<div class="pi-chips"><span class="chip ct">{{ . }}</span></div>{{ end }}<div class="pi-title">{{ $s.action }}</div>{{ with $s.responsible }}<p class="pi-desc">Responsible: {{ . }}</p>{{ end }}</div></div>
           {{ end }}
         </div>
       </div></div>
       {{ end }}
 
-      {{/* REQUIREMENTS: cream section */}}
-      {{ with $rd.destination.import_requirements }}
+      {{/* REQUIREMENTS: CREAM, category accordion */}}
+      {{ if or $rd.destination.import_requirements $rd.origin.export_requirements }}
       <div class="sec-wrap sec-cream"><div class="sec-inner">
-        <div class="sec-tag">Checklist</div>
-        <h2 class="sec-h">{{ $rd.destination.country }}: <em>entry requirements</em></h2>
-        <table class="req-table"><tbody>
-          {{ with .microchip }}<tr><td><strong>Microchip</strong></td><td>{{ . }}</td></tr>{{ end }}
-          {{ with .rabies_vaccination }}<tr><td><strong>Rabies vaccination</strong></td><td>{{ . }}</td></tr>{{ end }}
-          {{ with .titre_test }}<tr><td><strong>Rabies titre test</strong></td><td>{{ . }}</td></tr>{{ end }}
-          {{ with .quarantine }}<tr><td><strong>Quarantine</strong></td><td>{{ . }}</td></tr>{{ end }}
-          {{ with .import_permit }}<tr><td><strong>Import permit</strong></td><td>{{ . }}</td></tr>{{ end }}
-          {{ with .health_certificate }}<tr><td><strong>Health certificate</strong></td><td>{{ . }}</td></tr>{{ end }}
-        </tbody></table>
-        {{ with $rd.origin.export_requirements }}
-        <h2 class="sec-h" style="margin-top:48px">Leaving {{ $rd.origin.country }}: <em>export</em></h2>
-        <table class="req-table"><tbody>
-          {{ with .export_permit }}<tr><td><strong>Export permit</strong></td><td>{{ . }}</td></tr>{{ end }}
-          {{ with .vet_inspection }}<tr><td><strong>Vet inspection</strong></td><td>{{ . }}</td></tr>{{ end }}
-          {{ with .endorsement }}<tr><td><strong>Endorsement</strong></td><td>{{ . }}</td></tr>{{ end }}
-          {{ with .health_certificate }}<tr><td><strong>Health certificate</strong></td><td>{{ . }}</td></tr>{{ end }}
-        </tbody></table>
-        {{ end }}
+        <div class="sec-tag r">Checklist</div>
+        <h2 class="sec-h r d1">What your pet <em>needs</em></h2>
+        <p class="sec-p r d2">Every item below must be completed and verified before your pet can travel. Expand each category for the detail.</p>
+        <div class="req-cats r d2">
+          {{ with $rd.destination.import_requirements }}
+          <div class="rc-item open"><button class="rc-q">Entry into {{ $d }}<div class="rc-q-right"><div class="rc-icon"></div></div></button><div class="rc-body"><div class="rc-items">
+            {{ with .microchip }}<div class="ri"><div class="ri-dot rd-g"></div><div><div class="ri-title">Microchip</div><div class="ri-desc">{{ . }}</div></div></div>{{ end }}
+            {{ with .rabies_vaccination }}<div class="ri"><div class="ri-dot rd-g"></div><div><div class="ri-title">Rabies vaccination</div><div class="ri-desc">{{ . }}</div></div></div>{{ end }}
+            {{ with .titre_test }}<div class="ri"><div class="ri-dot rd-a"></div><div><div class="ri-title">Rabies titre test</div><div class="ri-desc">{{ . }}</div></div></div>{{ end }}
+            {{ with .quarantine }}<div class="ri"><div class="ri-dot rd-a"></div><div><div class="ri-title">Quarantine</div><div class="ri-desc">{{ . }}</div></div></div>{{ end }}
+            {{ with .import_permit }}<div class="ri"><div class="ri-dot rd-g"></div><div><div class="ri-title">Import permit</div><div class="ri-desc">{{ . }}</div></div></div>{{ end }}
+            {{ with .health_certificate }}<div class="ri"><div class="ri-dot rd-g"></div><div><div class="ri-title">Health certificate</div><div class="ri-desc">{{ . }}</div></div></div>{{ end }}
+          </div></div></div>
+          {{ end }}
+          {{ with $rd.origin.export_requirements }}
+          <div class="rc-item"><button class="rc-q">Leaving {{ $rd.origin.country }}<div class="rc-q-right"><div class="rc-icon"></div></div></button><div class="rc-body"><div class="rc-items">
+            {{ with .export_permit }}<div class="ri"><div class="ri-dot rd-g"></div><div><div class="ri-title">Export permit</div><div class="ri-desc">{{ . }}</div></div></div>{{ end }}
+            {{ with .vet_inspection }}<div class="ri"><div class="ri-dot rd-g"></div><div><div class="ri-title">Veterinary inspection</div><div class="ri-desc">{{ . }}</div></div></div>{{ end }}
+            {{ with .endorsement }}<div class="ri"><div class="ri-dot rd-g"></div><div><div class="ri-title">Government endorsement</div><div class="ri-desc">{{ . }}</div></div></div>{{ end }}
+            {{ with .health_certificate }}<div class="ri"><div class="ri-dot rd-g"></div><div><div class="ri-title">Health certificate</div><div class="ri-desc">{{ . }}</div></div></div>{{ end }}
+          </div></div></div>
+          {{ end }}
+        </div>
       </div></div>
       {{ end }}
 
-      {{/* COSTS and WARNINGS: cream */}}
-      {{ if or $rd.cost_factors $rd.key_warnings }}
-      <div class="sec-wrap sec-cream"><div class="sec-inner">
-        {{ with $rd.cost_factors }}
-        <div class="sec-tag">Costs</div>
-        <h2 class="sec-h">What this route <em>typically costs</em></h2>
-        <table class="req-table"><tbody>{{ range $i,$c := . }}<tr><td><strong>{{ add $i 1 }}</strong></td><td>{{ $c }}</td></tr>{{ end }}</tbody></table>
-        {{ end }}
-        {{ with $rd.key_warnings }}
-        <h2 class="sec-h" style="margin-top:48px">Critical <em>points</em></h2>
-        {{ range . }}<p style="border-left:3px solid var(--amber);padding:10px 16px;margin-bottom:10px;color:var(--ink)">{{ . }}</p>{{ end }}
-        {{ end }}
-      </div></div>
-      {{ end }}
+      {{/* PULL QUOTE: green brand statement */}}
+      <div class="pull-quote r">
+        <div class="pq-inner">
+          <span class="pq-mark">"</span>
+          <p class="pq-text">We handle the regulations for every animal, every country, every airline, so nothing on your {{ $o }} to {{ $d }} move gets missed.</p>
+          <div class="pq-auth"><strong>Pet Transport Global</strong></div>
+        </div>
+      </div>
 
-      {{/* AIRLINES: dark */}}
+      {{/* AIRLINES: DARK */}}
       {{ with $rd.airlines }}
       <div class="sec-wrap sec-dark"><div class="sec-inner">
-        <div class="sec-tag">Carriers</div>
-        <h2 class="sec-h">Airlines on <em>this route</em></h2>
-        <div class="airline-list">
+        <div class="sec-tag r">Airlines</div>
+        <h2 class="sec-h r d1">Carriers on <em>this route</em></h2>
+        <p class="sec-p r d2">Not all airlines accept live animals on this route. We know every carrier policy for this corridor.</p>
+        <div class="airline-list r d2">
           {{ range . }}
           <div class="al"><div class="al-body"><div class="al-name">{{ .name }}</div><div class="al-detail">{{ .policy_summary }}</div>{{ with .type }}<div class="al-tags"><span class="at at-g">{{ . | replaceRE "_" " " | title }}</span></div>{{ end }}</div></div>
           {{ end }}
@@ -109,34 +136,64 @@
       </div></div>
       {{ end }}
 
-      {{/* LONG-FORM: cream */}}
-      {{ with .Params.content.sections }}
+      {{/* COSTS + WARNINGS: CREAM */}}
+      {{ if or $rd.cost_factors $rd.key_warnings }}
       <div class="sec-wrap sec-cream"><div class="sec-inner">
-        {{ range . }}{{ with .heading }}<h2 class="sec-h">{{ . }}</h2>{{ end }}<div class="sec-p">{{ .body | markdownify }}</div>{{ end }}
+        {{ with $rd.cost_factors }}
+        <div class="sec-tag r">Costs</div>
+        <h2 class="sec-h r d1">What this route <em>typically costs</em></h2>
+        <div class="req-cats"><div class="rc-item open"><div class="rc-body" style="max-height:none"><div class="rc-items">
+          {{ range . }}<div class="ri"><div class="ri-dot rd-g"></div><div><div class="ri-title">{{ . }}</div></div></div>{{ end }}
+        </div></div></div></div>
+        {{ end }}
+        {{ with $rd.key_warnings }}
+        <h2 class="sec-h r" style="margin-top:48px">Critical <em>points</em></h2>
+        {{ range . }}<p class="sec-p" style="border-left:3px solid var(--amber);padding-left:16px;margin-bottom:14px">{{ . }}</p>{{ end }}
+        {{ end }}
       </div></div>
       {{ end }}
 
-      {{/* FAQ: cream */}}
+      {{/* LONG-FORM CONTENT: CREAM */}}
+      {{ with .Params.content.sections }}
+      <div class="sec-wrap sec-cream"><div class="sec-inner">
+        {{ range . }}{{ with .heading }}<h2 class="sec-h r">{{ . }}</h2>{{ end }}<div class="sec-p r">{{ .body | markdownify }}</div>{{ end }}
+      </div></div>
+      {{ end }}
+
+      {{/* FAQ: CREAM */}}
       {{ with .Params.faqs }}
       <div class="sec-wrap sec-cream"><div class="sec-inner">
-        <div class="sec-tag">FAQ</div>
-        <h2 class="sec-h">Common <em>questions</em></h2>
-        <div class="faq-list">
-          {{ range . }}<div class="fi"><button class="fq">{{ .question }}<span class="fq-icon">+</span></button><div class="fa"><div class="fa-inner">{{ .answer | markdownify }}</div></div></div>{{ end }}
+        <div class="sec-tag r">FAQ</div>
+        <h2 class="sec-h r d1">Common questions</h2>
+        <div class="faq-list r d2">
+          {{ range . }}<div class="fi"><button class="fq">{{ .question }}<span class="fq-icon"></span></button><div class="fa"><div class="fa-inner">{{ .answer | markdownify }}</div></div></div>{{ end }}
         </div>
       </div></div>
       {{ end }}
 
-      <div id="quote-form" class="sec-wrap sec-cream"><div class="sec-inner">
-        {{ partial "quote-form.html" . }}
-        {{ partial "airline-breed-sidebar.html" . }}
-      </div></div>
+      {{/* CTA: stark centred */}}
+      <div class="cta">
+        <div class="cta-inner">
+          <div class="cta-kicker r">Ready when you are</div>
+          <h2 class="cta-h r d1">Move your pet</h2>
+          <div class="cta-h2 r d2">to {{ $d }}.</div>
+          <p class="cta-sub r d3">Get a free, fully itemised quote for this route. Preparation timeline, full cost breakdown, and breed specific advice. No commitment.</p>
+          <a href="#quote-form" class="cta-btn r">Get my free quote</a>
+        </div>
+      </div>
+
+      {{ partial "airline-breed-sidebar.html" . }}
 
     </div>
   </div>
 </div>
 <script>(function(){
-  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.05});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.06});
   document.querySelectorAll('.tpl-nb .r').forEach(function(el){io.observe(el)});
-  document.querySelectorAll('.tpl-nb .fq').forEach(function(b){b.addEventListener('click',function(){var i=b.parentNode,w=i.classList.contains('open');i.parentNode.querySelectorAll('.fi').forEach(function(x){x.classList.remove('open')});if(!w)i.classList.add('open')})});
+  document.querySelectorAll('.tpl-nb .rc-q,.tpl-nb .fq').forEach(function(btn){btn.addEventListener('click',function(){
+    var item=btn.closest('.rc-item,.fi'),was=item.classList.contains('open');
+    var sel=item.classList.contains('rc-item')?'.rc-item':'.fi';
+    item.parentNode.querySelectorAll(sel).forEach(function(i){i.classList.remove('open')});
+    if(!was)item.classList.add('open');
+  })});
 })();</script>
