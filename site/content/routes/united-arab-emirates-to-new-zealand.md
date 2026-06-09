@@ -1,148 +1,147 @@
 ---
-template_variant: "C"
-title: "Pet Transport from United Arab Emirates to New Zealand | PetTransportGlobal"
-description: "How to ship your dog or cat from United Arab Emirates to New Zealand. New Zealand import rules, vaccinations, permits, and airline options explained."
+title: "Pet Transport UAE to New Zealand: MPI Titre Test, 180-Day Wait and Levin Quarantine 2026"
+description: "Moving a dog or cat from the UAE to New Zealand in 2026. MPI requires titre test, 180-day post-titre wait, and 10-day quarantine at Levin. MOCCAE export and airline options explained."
+date: "2026-06-09"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "C"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "united-arab-emirates-to-new-zealand"
 origin_name: "United Arab Emirates"
 destination_name: "New Zealand"
+
 route_data:
   origin:
     code: "AE"
     country: "United Arab Emirates"
     export_requirements:
-      export_permit: "Contact municipality for specific export clearance process"
+      health_certificate: "Official health certificate issued by an accredited veterinarian, endorsed by the relevant municipal authority (ADAFSA, Dubai Municipality, or Sharjah Municipality), then endorsed by MOCCAE. Must be in MPI NZ-specified format. Source: MOCCAE."
+      export_permit: "MOCCAE endorsement is the formal export authorisation. Allow 48 hours for MOCCAE endorsement. Health certificate issued within 14 days of departure from UAE."
+
   destination:
     code: "NZ"
     country: "New Zealand"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or on same day as first rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 28-day wait after vaccination before travel. Vaccination schedule must be complete before titre test blood draw."
-      titre_test: "Required for: All pets from all countries (no exemptions). Not required for: None. Minimum: 0.5 IU/ml. 180-day wait from test date before entry"
-      quarantine: "Mandatory quarantine. 10 (minimum) at MPI Levin facility days. Facility: MPI Levin Quarantine Facility, Levin, Manawatu (the only approved facility). Mandatory 10-day quarantine for all arriving cats and dogs. Pre-booking required well in advance as capacity is limited. Book before flights."
-      import_permit: "Required. Issued by: Ministry for Primary Industries (MPI), Biosecurity New Zealand. Apply for import permit before booking flights. Permit specifies all conditions. Non-compliance results in re-export or destruction."
-      health_certificate: "Required. Government veterinary health certificate. Issued by: Government (official) veterinarian in country of export. Valid for 14 days from issue. Must use MPI-specified format for the exact country of export. No standard format accepted. Download the correct template from the MPI website."
+      microchip: "ISO 11784/11785 microchip required. Must be implanted before rabies vaccination."
+      rabies_vaccination: "Current rabies vaccination required. Must be administered and recorded before the titre test blood draw."
+      titre_test: "FAVN titre test required. Minimum 0.5 IU/ml at a WOAH-approved reference laboratory. Blood draw at least 30 days after final rabies vaccination. Mandatory 180-day wait from the blood draw date before New Zealand entry. Source: MPI (Ministry for Primary Industries), mpi.govt.nz."
+      quarantine: "Mandatory 10-day quarantine at the MPI Quarantine Facility in Levin on arrival. Cost paid by owner. Source: MPI, mpi.govt.nz."
+      import_permit: "MPI import permit required. Must be obtained before travel. Source: MPI, mpi.govt.nz."
+      health_certificate: "MPI NZ-format health certificate, endorsed by municipal authority and MOCCAE. Presented on arrival at Auckland (AKL) or Christchurch (CHC)."
+
   airlines:
-    - name: "Emirates"
+    - name: "Emirates SkyCargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Qantas"
+      policy_summary: "Emirates operates connections from Dubai (DXB) to Auckland (AKL) or Christchurch (CHC) via Australian gateways (Sydney, Melbourne). DXB does not operate direct to NZ; connections through Australia are standard."
+    - name: "Air New Zealand Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: QantasFreighter network for pet transport. Brachycephalic breeds restricted year-round. Temperature embargoes: seasonal restrictions during Australian summer (Dec-Feb)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "Air New Zealand Cargo handles live animal imports at Auckland and Christchurch. Connects from Dubai via partner carrier or via Australian gateways. Advance MPI permit required before Air NZ can accept the shipment."
+    - name: "Qantas Freight"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
+      policy_summary: "Via Sydney (SYD) or Melbourne (MEL) to Auckland AKL or Christchurch CHC. A practical connecting routing from Dubai for UAE-to-NZ cargo."
+    - name: "Etihad Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "From Abu Dhabi (AUH) to New Zealand via Australian connections. An option for Abu Dhabi-based owners."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Apply for MPI import permit."
+      timing: "Before any other steps. The MPI permit is required before travel can be planned."
+      responsible: "Owner or specialist agent"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 28-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Implant ISO microchip in UAE."
+      timing: "Before first rabies vaccination."
+      responsible: "Vet in UAE"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Rabies vaccination."
+      timing: "After microchip. At least 30 days before titre test blood draw."
+      responsible: "Vet in UAE"
     - step: 4
-      action: "Apply for import permit from New Zealand"
-      timing: "Apply early: allow 4-6 weeks"
-      responsible: "You (or your pet transport agent)"
+      action: "FAVN titre test blood draw at a WOAH-approved laboratory."
+      timing: "At least 30 days after final vaccination. The 180-day wait starts from this date."
+      responsible: "Vet and WOAH-approved laboratory"
     - step: 5
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "180-day wait from the blood draw date."
+      timing: "Approximately 6 calendar months. Cannot be shortened."
+      responsible: "Owner to track"
     - step: 6
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Obtain MPI-format health certificate, endorsed by municipal authority and MOCCAE."
+      timing: "Within 14 days of departure from UAE."
+      responsible: "Accredited vet, municipal authority, MOCCAE"
     - step: 7
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
-    - step: 8
-      action: "Quarantine on arrival (10 (minimum) at MPI Levin facility days)"
-      timing: "Immediately on arrival (mandatory)"
-      responsible: "New Zealand quarantine authority"
+      action: "Fly to Auckland AKL or Christchurch CHC via Australian hub. MPI inspection and 10-day Levin quarantine on arrival."
+      timing: "After 180-day wait has elapsed."
+      responsible: "Airline, MPI"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (New Zealand)"
-    - "Quarantine facility fees (owner-paid at destination)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "Microchip, vaccination, and titre test in UAE: approximately AED 800-2,500"
+    - "MOCCAE health certificate endorsement: approximately AED 200-500"
+    - "MPI import permit fee"
+    - "Cargo fees UAE to New Zealand via hub: approximately AED 3,000-9,000 depending on pet size and routing"
+    - "Levin quarantine facility fee: approximately NZD 1,200-2,500 for 10 days, paid by owner"
+    - "Pet transport agent fee: AED 1,500-4,000 if used"
+    - "Realistic total: AED 8,000-20,000 or more"
+
   key_warnings:
-    - "Mandatory quarantine required on arrival. Plan for separation from your pet."
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
+    - "The 180-day wait from titre test blood draw date is mandatory and cannot be shortened. Plan at least 8 months before your intended New Zealand arrival date."
+    - "The 10-day Levin quarantine on arrival is mandatory for all pets from the UAE. This is not waivable for compliant documentation."
+    - "The MPI import permit must be obtained before any other step. Apply for it as early as possible."
+    - "No direct flights operate from the UAE to New Zealand. All routings require an Australian gateway connection (Sydney, Melbourne, or Brisbane). Allow extra time for cargo coordination across multiple legs."
+
   route_complexity: "very_high"
-  estimated_timeline_weeks: "26-32"
+  estimated_timeline_weeks: "32-44"
+
 content:
-  h1: "Pet Transport from United Arab Emirates to New Zealand"
+  h1: "Pet Transport from UAE to New Zealand: MPI 180-Day Wait and Levin Quarantine"
   overview: |
-    Shipping your dog from United Arab Emirates to New Zealand is a process that rewards early planning.
-    
-    This route is one of the most demanding international pet transport routes. Start preparations at least 26 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. New Zealand requires mandatory quarantine (10 (minimum) at MPI Levin facility days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Getting the timing right is critical. Work backwards from your travel date and add a buffer.
+    New Zealand maintains strict biosecurity controls for all pet imports. MPI (Ministry for Primary Industries) requires an FAVN titre test at a WOAH-approved laboratory, a mandatory 180-day wait from the titre test blood draw date, and a 10-day quarantine at the MPI Quarantine Facility in Levin on arrival. An MPI import permit is required before travel. Total preparation: 32-44 weeks. Source: MPI, mpi.govt.nz.
+
+    There are no direct flights from the UAE to New Zealand. All routings require an Australian gateway connection, typically via Sydney (SYD) or Melbourne (MEL), before connecting to Auckland (AKL) or Christchurch (CHC). Emirates, Qantas, and Air New Zealand all provide cargo connections on this corridor. The UAE export process requires health certificate endorsement by the relevant municipal authority and MOCCAE (Ministry of Climate Change and Environment).
+
+    Comparing UAE-to-New Zealand with UAE-to-South Korea: New Zealand requires 32-44 weeks of preparation, driven by the 180-day wait and the mandatory Levin quarantine. South Korea (QIAS) requires approximately 12-20 weeks, with a 5-10 day arrival quarantine at Incheon and no pre-travel 180-day wait. New Zealand is one of the most demanding destinations globally, regardless of the country of origin.
+
   sections:
-    - heading: "Why this route needs early planning"
+    - heading: "MPI import requirements: the 180-day wait and Levin quarantine"
       body: |
-        This is one of the more demanding international pet transport corridors. New Zealand runs a strict biosecurity programme and there are no shortcuts through it.
-        
-        All pets must complete quarantine on arrival in New Zealand (at MPI Levin Quarantine Facility, Levin, Manawatu (the only approved facility)) for 10 (minimum) at MPI Levin facility days. This is non-negotiable and is entirely separate from the pre-travel preparation.
-        
-        New Zealand is rabies-free with one of the world's strictest pet import systems. All dogs and cats must complete mandatory quarantine at the government-approved facility (Levin MAF Quarantine Station, now MPI). Import permit required in advance. Only cats and dogs permitted from most countries; birds require separate approval. Authority: Ministry for Primary Industries (MPI), Biosecurity New Zealand.
-    - heading: "Practical advice for shipping your pet from United Arab Emirates"
+        MPI's biosecurity requirements apply to all countries, including the UAE. The full process: MPI import permit obtained before travel; ISO microchip implanted before vaccination; current rabies vaccination; FAVN titre test at a WOAH-approved laboratory (minimum 0.5 IU/ml); blood draw at least 30 days after final vaccination; 180-day wait from the blood draw date; MPI-format health certificate endorsed by municipal authority and MOCCAE, issued within 14 days of departure from the UAE; 10-day quarantine at the Levin MPI Quarantine Facility on arrival. Source: MPI, mpi.govt.nz.
+
+        The MPI import permit is the first step. It must be in place before any other preparation begins, and it takes time to process. Apply as early as possible. The 180-day wait from blood draw cannot be shortened under any circumstances. If your pet arrives before 180 days have elapsed from the blood draw date, MPI will handle the situation on arrival, which will involve additional costs and delays.
+
+    - heading: "UAE export: municipal endorsement, MOCCAE, and the MPI format requirement"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        The UAE export process for New Zealand requires a health certificate in MPI-specified format. The certificate is issued by an accredited vet, endorsed by the relevant municipal authority (ADAFSA, Dubai Municipality, or Sharjah Municipality), and then endorsed by MOCCAE. Allow 48 hours for the MOCCAE endorsement step. The health certificate must be issued within 14 days of departure from the UAE.
+
+        The MPI format requirement is specific. A general MOCCAE export certificate for other destinations is not sufficient. Use a specialist pet transport agent familiar with NZ MPI documentation for UAE-origin animals. No direct UAE-to-New Zealand cargo services exist; all routing goes via Australia. Emirates Cargo to Sydney or Melbourne, followed by Air New Zealand or Qantas Freight to Auckland or Christchurch, is the standard approach.
+
+    - heading: "UAE-to-New Zealand versus UAE-to-South Korea or UAE-to-Japan"
+      body: |
+        For UAE-based owners comparing Asian-Pacific destinations, the timeline differences are significant. UAE-to-Japan: two vaccinations, titre test, 180-day pre-travel wait, 40-day AQS notification, no quarantine if wait complete on arrival. Total: 32-40 weeks. UAE-to-South Korea: one vaccination, titre test, 5-10 day quarantine at Incheon on arrival, no pre-travel 180-day wait. Total: 12-20 weeks. UAE-to-New Zealand: one vaccination, titre test, 180-day pre-travel wait, 10-day Levin quarantine on arrival. Total: 32-44 weeks.
+
+        Japan and New Zealand share the 180-day pre-travel wait as the dominant planning constraint. South Korea is the most accessible of the three in terms of total preparation time. New Zealand adds a mandatory arrival quarantine on top of the pre-travel wait, making it the most restrictive destination in terms of combined requirements. For owners whose relocation to New Zealand is fixed, plan a minimum of 8 months ahead.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from United Arab Emirates to New Zealand?"
-    answer: "Allow at least 26 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering New Zealand?"
-    answer: "Yes, quarantine is mandatory in New Zealand. Your pet will stay for 10 (minimum) at MPI Levin facility days at MPI Levin Quarantine Facility, Levin, Manawatu (the only approved facility) on arrival. This is non-negotiable and the cost is paid by the owner."
-  - question: "Is a rabies titre test required for pets entering New Zealand?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter New Zealand. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into New Zealand?"
-    answer: "Yes, an import permit is required from New Zealand's authority (Ministry for Primary Industries (MPI), Biosecurity New Zealand). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in United Arab Emirates. The certificate must be issued within 14 days of travel. Present the original (not a copy) at check-in. Check New Zealand's authority for the exact format required."
+  - question: "Does New Zealand require a titre test for pets from the UAE?"
+    answer: "Yes. MPI requires an FAVN titre test at a WOAH-approved laboratory, with a mandatory 180-day wait from the blood draw date. Source: MPI, mpi.govt.nz."
+  - question: "How long is the Levin quarantine for pets arriving from the UAE?"
+    answer: "10 days. All pets arriving from the UAE serve a mandatory 10-day quarantine at the MPI Quarantine Facility in Levin on arrival in New Zealand. Cost is paid by the owner."
+  - question: "Are there direct flights from the UAE to New Zealand for pet cargo?"
+    answer: "No. All routings require an Australian gateway connection (Sydney, Melbourne, or Brisbane) before connecting to Auckland or Christchurch. Emirates, Qantas, and Air New Zealand provide the standard cargo connections."
+  - question: "How long does UAE-to-New Zealand pet transport take?"
+    answer: "Allow 32-44 weeks total. The 180-day wait from the titre test blood draw is the main constraint. Add time for the MPI import permit, UAE export endorsements, and cargo coordination."
+  - question: "How does UAE-to-New Zealand compare to UAE-to-South Korea?"
+    answer: "UAE-to-New Zealand: titre test, 180-day pre-travel wait, 10-day Levin quarantine on arrival, total 32-44 weeks. UAE-to-South Korea: titre test, 5-10 day quarantine at Incheon on arrival, no pre-travel 180-day wait, total 12-20 weeks. South Korea is substantially faster."
+
 links:
   sideways:
     - url: "/pet-transport/new-zealand-to-united-arab-emirates/"
-      text: "Pet Transport New Zealand to United Arab Emirates"
+      text: "Pet Transport New Zealand to UAE"
+    - url: "/pet-transport/united-arab-emirates-to-japan/"
+      text: "Pet Transport UAE to Japan"
+    - url: "/pet-transport/united-arab-emirates-to-south-korea/"
+      text: "Pet Transport UAE to South Korea"
   upward:
-    - url: "/pet-transport/origins/pet-export-guide-shipping-from-united-arab-emirates/"
-      text: "Shipping from United Arab Emirates"
     - url: "/pet-transport/countries/new-zealand/"
-      text: "Importing to New Zealand"
+      text: "New Zealand pet import rules"
     - url: "/pet-transport/airlines/emirates/"
-      text: "Emirates pet policy"
-    - url: "/pet-transport/airlines/qantas/"
-      text: "Qantas pet policy"
+      text: "Emirates pet cargo policy"
 ---

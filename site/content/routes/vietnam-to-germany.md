@@ -1,131 +1,141 @@
 ---
-template_variant: "B"
-title: "Pet Transport from Vietnam to Germany | PetTransportGlobal"
-description: "Pet relocation from Vietnam to Germany: Germany import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport Vietnam to Germany: EU Titre Test, MARD Export and 90-Day Wait 2026"
+description: "Moving a dog or cat from Vietnam to Germany in 2026. Vietnam is EU-unlisted: FAVN titre test and 90-day wait required. MARD health certificate and Lufthansa cargo options explained."
+date: "2026-06-09"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "C"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "vietnam-to-germany"
 origin_name: "Vietnam"
 destination_name: "Germany"
+
 route_data:
   origin:
     code: "VN"
     country: "Vietnam"
     export_requirements:
-      export_permit: "No export permit for pet dogs and cats."
-      health_certificate: "{'required': True, 'issued_by': 'MARD-authorised official vet'}"
+      health_certificate: "Official health certificate in EU AHC format, issued by a MARD-authorised official vet, countersigned by the Department of Animal Health (DAH). Issued within 10 days of German entry. Source: Ministry of Agriculture and Rural Development, cucthuy.gov.vn."
+      export_permit: "No separate export permit required for personal pet export. MARD-endorsed health certificate is the export document. Departure from Ho Chi Minh City (SGN) or Hanoi (HAN)."
+
   destination:
     code: "DE"
     country: "Germany"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or at same time as rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Standard EU 21-day wait from date of first vaccination before travel. No additional Germany-specific requirements beyond EU framework."
-      titre_test: "Required for: Pets from unlisted third countries (countries not on EU Annex II list). Not required for: Pets from EU member states, listed third countries (all P1 countries are listed). Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No quarantine for pets entering with correct EU documentation. Non-compliant animals may be returned, quarantined at owner's expense, or in worst case euthanised."
-      import_permit: "No formal import permit. EU pet passport (intra-EU) or Animal Health Certificate (from third countries) serves as documentation."
-      health_certificate: "Required"
+      microchip: "ISO 11784/11785 microchip required. Must be implanted before or on the same day as the first rabies vaccination."
+      rabies_vaccination: "Current rabies vaccination required. Primary course complete. 21-day wait from initial vaccination."
+      titre_test: "Required. Vietnam is not on the EU Annex II approved third-country list. FAVN or ELISA titre test at an EU-approved laboratory. Minimum 0.5 IU/ml. Blood draw at least 30 days after final vaccination. Mandatory 90-day wait from blood draw date before EU entry. Source: EU pet travel regulations, ec.europa.eu."
+      quarantine: "No quarantine on arrival for compliant pets."
+      import_permit: "No formal import permit required. AHC serves as the entry document."
+      health_certificate: "EU-format Animal Health Certificate (AHC) from MARD-authorised official vet in Vietnam, countersigned by DAH. Valid 10 days from examination to German entry."
+
   airlines:
+    - name: "Lufthansa Cargo"
+      type: "cargo_only"
+      policy_summary: "Via Frankfurt (FRA) hub. Lufthansa Cargo connects Ho Chi Minh City (SGN) and Hanoi (HAN) to Frankfurt via partner carrier connections. Frankfurt is the main German entry airport for live animal cargo from Vietnam."
     - name: "Vietnam Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (under 5kg with carrier) allowed in cabin on some routes. Cargo: larger pets in hold. Advance booking required. Vietnam import/export documentation must be fully prepared before travel."
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Emirates"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "British Airways"
+      policy_summary: "Vietnam Airlines connects HAN and SGN to European destinations. Cargo arrangements to Germany typically involve a European hub connection. Confirm live animal acceptance on each leg before booking."
+    - name: "Air France / KLM Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
+      policy_summary: "Via Paris CDG or Amsterdam AMS to Frankfurt or other German airports. Connecting cargo from SGN or HAN. If connecting via France or Netherlands, the EU entry point shifts to those airports."
+    - name: "Emirates SkyCargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Via Dubai (DXB) to Frankfurt or other German cities. An alternative routing for Vietnam-origin pets. Worth comparing if direct European carrier connections are full."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Implant ISO microchip in Vietnam."
+      timing: "Before first rabies vaccination."
+      responsible: "Vet in Vietnam"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Rabies vaccination primary course."
+      timing: "After microchip. At least 30 days before titre test blood draw."
+      responsible: "Vet in Vietnam"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "FAVN titre test blood draw at an EU-approved laboratory."
+      timing: "At least 30 days after final vaccination. 90-day wait starts from this date."
+      responsible: "Vet and EU-approved laboratory"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "90-day wait from the blood draw date."
+      timing: "Cannot be shortened."
+      responsible: "Owner to track"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Obtain EU-format AHC from MARD-authorised vet, countersigned by DAH."
+      timing: "Within 10 days of German entry."
+      responsible: "MARD-authorised official vet"
     - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Fly to Frankfurt (FRA) or other German airport. German customs inspection on arrival."
+      timing: "After 90-day wait has elapsed."
+      responsible: "Airline, German customs"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "MARD health certificate and DAH endorsement: approximately VND 500,000-2,000,000"
+    - "Titre test at EU-approved laboratory: approximately EUR 250-500 or VND 6,000,000-14,000,000"
+    - "Cargo fees Vietnam to Germany via hub: approximately EUR 900-2,500 depending on pet size and routing"
+    - "Pet transport agent fee: EUR 400-1,000 if used"
+    - "Realistic total: EUR 2,000-5,500"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "The 90-day wait from titre test blood draw date is mandatory. Plan at least 5 months before your intended German arrival date."
+    - "Vietnam is EU-unlisted: titre test required regardless of vaccination history or how long the pet has been vaccinated."
+    - "Germany bans import of four breeds at federal level: American Pit Bull Terrier, American Staffordshire Terrier, Staffordshire Bull Terrier, and Bull Terrier. Check breed regulations before travel."
+    - "The AHC must be in EU-specified format. A general Vietnamese veterinary certificate is not sufficient for EU entry."
+
+  route_complexity: "high"
+  estimated_timeline_weeks: "20-28"
+
 content:
-  h1: "Pet Transport from Vietnam to Germany"
+  h1: "Pet Transport from Vietnam to Germany: EU Titre Test and MARD Certificate"
   overview: |
-    Moving to Germany from Vietnam with a dog or cat means starting the paperwork months before your flight.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    We've laid out every step below so you know exactly what to prepare and when.
+    Germany applies EU-wide pet travel rules for third-country imports. Vietnam is not on the EU Annex II approved third-country list, which means pets from Vietnam require an FAVN or ELISA titre test at an EU-approved laboratory and a mandatory 90-day wait from the blood draw date before EU entry. The export process from Vietnam is relatively straightforward: a MARD-authorised vet issues the health certificate in EU AHC format, endorsed by the Department of Animal Health (DAH). No separate export permit is required. Total preparation: 20-28 weeks. Source: EU pet travel regulations, ec.europa.eu.
+
+    Comparing Vietnam-to-Germany with Vietnam-to-Canada: Canada does not require a titre test or quarantine, and the total preparation is 8-14 weeks. The EU process adds approximately 4-5 months for the titre test and 90-day wait. For owners relocating specifically to Germany (or anywhere in the EU), this is simply the required process.
+
+    Frankfurt (FRA) is the main entry airport for live animal cargo from Vietnam to Germany. Lufthansa Cargo, Air France/KLM, and Vietnam Airlines all provide connections from Ho Chi Minh City (SGN) or Hanoi (HAN) to Frankfurt, typically via a European hub.
+
   sections:
-    - heading: "Key requirements for moving your pet to Germany"
+    - heading: "EU import requirements for pets from Vietnam"
       body: |
-        Compared to some international pet transport routes, Vietnam to Germany is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        Germany follows EU harmonised pet movement rules (Regulation 576/2013, transitioning to new rules under Regulation 2026/131 from 22 April 2026). Federal Ministry of Food and Agriculture (BMEL) oversees. Individual Bundeslaender may have additional animal welfare rules. Germany is considered pet-friendly with high dog ownership rates.
-    - heading: "Practical advice for shipping your pet from Vietnam"
+        The EU import process for pets from unlisted third countries like Vietnam is consistent across all EU member states. The full sequence: ISO microchip (implanted before or on the same day as first vaccination); rabies vaccination primary course (21-day wait from initial vaccination); FAVN or ELISA titre test at an EU-approved laboratory with a result of 0.5 IU/ml or above; blood draw at least 30 days after the final vaccination; mandatory 90-day wait from the blood draw date; EU-format AHC from a MARD-authorised official vet in Vietnam, endorsed by DAH, issued within 10 days of EU entry. No quarantine on arrival for compliant pets. Source: EU pet travel regulations, ec.europa.eu.
+
+        Germany adds federal-level breed restrictions that apply at import. Four breeds are banned from import into Germany: American Pit Bull Terrier, American Staffordshire Terrier, Staffordshire Bull Terrier, and Bull Terrier. If you own one of these breeds, import is not permitted regardless of documentation. Some German states (Bundeslaender) impose additional breed-specific rules; check with the relevant state authority for your destination in Germany.
+
+    - heading: "MARD export from Vietnam: a simpler process than GACC"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Vietnam's export process for personal pets is less bureaucratic than China's GACC process. No separate export permit is required. The MARD-authorised official vet in Vietnam issues the health certificate in the format required by the destination country (EU AHC format for Germany), which is then countersigned by the Department of Animal Health (DAH). Allow 1-2 weeks for the health certificate process. The certificate is issued within 10 days of your German entry date.
+
+        Approved international departure airports for live animal exports from Vietnam include Ho Chi Minh City Tan Son Nhat (SGN) and Hanoi Noi Bai (HAN). Frankfurt (FRA) is the main German entry airport for this route. Lufthansa Cargo offers connecting services from SGN and HAN via European hubs to FRA. Air France/KLM via Paris CDG or Amsterdam AMS are also practical options, though these would make France or the Netherlands the EU entry point for documentation purposes.
+
+    - heading: "Vietnam-Germany versus Vietnam-France and Vietnam-Netherlands"
+      body: |
+        All EU member states apply identical requirements for pets from Vietnam: the EU-unlisted country titre test process, 90-day wait, and EU-format AHC. The differences are purely in routing and specific breed restrictions. Germany has the most comprehensive federal breed restrictions (four breeds banned at import). France and the Netherlands do not have the same federal-level ban, though local restrictions may apply.
+
+        For routing, Germany (Frankfurt) is directly served by Lufthansa Cargo connections from Vietnam. France (Paris CDG) benefits from Air France direct services from SGN. The Netherlands (Amsterdam AMS) benefits from KLM direct services from SGN and HAN. For owners who have already chosen Germany as their destination, Frankfurt is well-served. For owners with flexibility, the entry airport matters for documentation purposes: the first EU entry point is where the AHC is presented.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Vietnam to Germany?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Germany?"
-    answer: "No routine quarantine is required in Germany for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Germany?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Germany. Start this process as early as possible."
-  - question: "Can I take my cat to Germany from Vietnam?"
-    answer: "Yes, cats can be transported from Vietnam to Germany. The same microchip, vaccination, and health certificate requirements apply as for dogs, though some rules (such as tapeworm treatment) apply to dogs only. Check the full requirements for cats with the destination authority."
+  - question: "Does Germany require a titre test for pets from Vietnam?"
+    answer: "Yes. Vietnam is not on the EU Annex II approved list. FAVN or ELISA titre test at an EU-approved laboratory is required, with a mandatory 90-day wait from the blood draw date. Source: EU pet travel regulations, ec.europa.eu."
+  - question: "Is there a quarantine in Germany for pets from Vietnam?"
+    answer: "No. There is no quarantine for compliant pets on arrival in Germany. All requirements (microchip, vaccination, titre test, 90-day wait, EU-format AHC) must be met, but no mandatory holding period applies."
+  - question: "How long does Vietnam-to-Germany pet transport take?"
+    answer: "Allow 20-28 weeks total. The timeline is driven by the titre test process: at least 30 days post-vaccination before blood draw, plus the 90-day wait from blood draw. Add time for documentation and cargo booking."
+  - question: "What breed restrictions apply in Germany for pets from Vietnam?"
+    answer: "Germany bans import of four breeds at federal level: American Pit Bull Terrier, American Staffordshire Terrier, Staffordshire Bull Terrier, and Bull Terrier. Individual German states may impose additional breed-specific rules. Check with German authorities before travel."
+  - question: "How does Vietnam-Germany compare to Vietnam-Canada for pet transport?"
+    answer: "Canada: no titre test, no quarantine, total preparation 8-14 weeks. Germany (EU unlisted): titre test required, 90-day wait from blood draw, total preparation 20-28 weeks. Germany requires considerably more documentation and planning time."
+
 links:
   sideways:
     - url: "/pet-transport/germany-to-vietnam/"
       text: "Pet Transport Germany to Vietnam"
+    - url: "/pet-transport/vietnam-to-france/"
+      text: "Pet Transport Vietnam to France"
+    - url: "/pet-transport/vietnam-to-canada/"
+      text: "Pet Transport Vietnam to Canada"
   upward:
-    - url: "/pet-transport/origins/vietnam-pet-export-guide/"
-      text: "Shipping from Vietnam"
     - url: "/pet-transport/countries/germany/"
-      text: "Importing to Germany"
+      text: "Germany pet import rules"
     - url: "/pet-transport/airlines/lufthansa/"
-      text: "Lufthansa pet policy"
+      text: "Lufthansa pet cargo policy"
 ---

@@ -1,153 +1,156 @@
 ---
-template_variant: "A"
-title: "Pet Transport from China to Japan | PetTransportGlobal"
-description: "Complete guide to pet transport from China to Japan. Import requirements, quarantine rules, airline options, and step-by-step timeline."
+title: "Pet Transport China to Japan: AQS 180-Day Wait and Two-Vaccination Process 2026"
+description: "Shipping a dog or cat from China to Japan in 2026. Japan AQS requires two vaccinations, FAVN titre test, 180-day wait, and 40-day advance notice. Full GACC export guide."
+date: "2026-06-09"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "C"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "china-to-japan"
 origin_name: "China"
 destination_name: "Japan"
+
 route_data:
   origin:
     code: "CN"
     country: "China"
     export_requirements:
-      export_permit: "Export permit from GACC. Required particularly for purebred/registered breeds."
-      health_certificate: "Export health certificate in destination-country required format."
+      health_certificate: "Official health certificate in Japan AQS-required format, issued by a GACC-authorised vet, countersigned by a GACC official. Issued within 14 days of departure. Source: GACC, english.customs.gov.cn."
+      export_permit: "GACC export permit required. Apply to local GACC office. Allow 3-4 weeks. Approved departure airports: Beijing Capital (PEK), Shanghai Pudong (PVG), Guangzhou Baiyun (CAN)."
+
   destination:
     code: "JP"
     country: "Japan"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or on the same day as rabies vaccination."
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 30-day wait after vaccination before travel. Must be vaccinated at least 30 days before import."
-      titre_test: "Required. Minimum: 0.5 IU/ml. 180-day wait from test date before entry"
-      quarantine: "Mandatory quarantine. 14 days. Facility: MAFF quarantine station. 14-day quarantine is mandatory at MAFF-designated facility."
-      import_permit: "Required. Issued by: MAFF (Animal Quarantine Service). Apply: Apply 2-4 weeks before travel. Formal import permit required from MAFF."
-      health_certificate: "Required. Health Certificate. Issued by: Official veterinarian in country of origin. Valid for 10 days from issue. Issued within 10 days of travel. Must list microchip number and vaccination details."
+      microchip: "ISO 11784/11785 microchip required. Must be implanted before the first rabies vaccination. Japan requires microchipping to be confirmed before vaccination for the vaccination to be valid."
+      rabies_vaccination: "Two rabies vaccinations required after microchip implantation. First vaccination must be given when the pet is at least 91 days old. Both vaccinations must be given after microchipping. Source: Japan AQS (Animal Quarantine Service), maff.go.jp/aqs."
+      titre_test: "FAVN titre test required. Minimum 0.5 IU/ml. Blood draw at least 30 days after the second (final) rabies vaccination. Mandatory 180-day wait from the blood draw date before Japan entry. If the pet arrives before 180 days have elapsed, it will serve the remaining days in an AQS quarantine facility in Japan. Source: Japan AQS, maff.go.jp/aqs."
+      quarantine: "No mandatory quarantine if the 180-day wait has been completed before arrival. If the pet arrives before 180 days, AQS quarantine facility is used to make up the remaining days. Standard AQS inspection on arrival at approved airports."
+      import_permit: "Advance notification to AQS required at least 40 days before intended arrival. Submit notification by fax or mail to the AQS office at the intended arrival airport. Source: Japan AQS, maff.go.jp/aqs."
+      health_certificate: "AQS-format health certificate issued by GACC-authorised official vet in China, countersigned by GACC. Must meet Japan AQS exact format requirements."
+
   airlines:
-    - name: "Air China"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin on domestic China routes. International: cargo only via Air China Cargo. Strict crate size and documentation requirements. China-specific import/export permits required. Advance booking of cargo space essential."
+    - name: "All Nippon Airways (ANA)"
+      type: "cargo_only"
+      policy_summary: "Direct cargo from Beijing (PEK) and Shanghai (PVG) to Tokyo Narita (NRT) and other Japanese airports. ANA Cargo handles live animals. Advance booking and full documentation required."
     - name: "Japan Airlines (JAL)"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported as checked baggage in temperature-controlled hold. Brachycephalic breeds: French Bulldogs BANNED from cargo (May-October). English Bulldogs banned year-round. Summer restrictions: May-October temperature embargoes on some routes"
-    - name: "Emirates"
+      policy_summary: "Direct cargo from PEK and PVG to NRT, Kansai (KIX), and other Japanese airports. JAL Cargo live animal transport. Brachycephalic breed restrictions apply."
+    - name: "Air China"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
+      policy_summary: "Direct cargo services from PEK and PVG to NRT. Air China Cargo. Confirm live animal documentation requirements before booking."
     - name: "Cathay Pacific"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
+      policy_summary: "Via Hong Kong (HKG) to Japanese airports. AFCD transit rules apply at HKG. Option if departing from southern Chinese cities."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Submit AQS advance notification to the AQS office at your intended arrival airport in Japan."
+      timing: "At least 40 days before intended arrival in Japan."
+      responsible: "Owner or pet transport agent"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 30-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Implant ISO microchip in China."
+      timing: "Before any rabies vaccination. Must be confirmed before vaccination is administered."
+      responsible: "Vet in China"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 180-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "First rabies vaccination (after microchip confirmed; pet must be at least 91 days old)."
+      timing: "After microchip implanted."
+      responsible: "Vet in China"
     - step: 4
-      action: "Apply for import permit from Japan"
-      timing: "Apply early: Apply 2-4 weeks before travel"
-      responsible: "You (or your pet transport agent)"
+      action: "Second rabies vaccination."
+      timing: "As directed by your vet, in accordance with the vaccine manufacturer's schedule and Japan AQS requirements."
+      responsible: "Vet in China"
     - step: 5
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "FAVN titre test blood draw at an AQS-approved laboratory."
+      timing: "At least 30 days after the second (final) rabies vaccination. The 180-day wait starts from this blood draw date."
+      responsible: "Vet and AQS-approved laboratory"
     - step: 6
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "180-day wait from the blood draw date."
+      timing: "Approximately 6 calendar months. Cannot be shortened."
+      responsible: "Owner to track"
     - step: 7
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Apply for GACC export permit."
+      timing: "4-6 weeks before departure."
+      responsible: "Owner or agent"
     - step: 8
-      action: "Quarantine on arrival (14 days)"
-      timing: "Immediately on arrival (mandatory)"
-      responsible: "Japan quarantine authority"
+      action: "Obtain AQS-format health certificate from GACC-authorised vet, countersigned by GACC."
+      timing: "Within 14 days of Japan arrival."
+      responsible: "GACC-authorised official vet"
+    - step: 9
+      action: "Fly to Japan via approved airport. AQS inspection on arrival."
+      timing: "After 180-day wait has elapsed."
+      responsible: "Airline, Japan AQS"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (Japan)"
-    - "Quarantine facility fees (owner-paid at destination)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "GACC export permit and health certificate endorsement: approximately CNY 800-2,000"
+    - "Two rabies vaccinations and microchip in China: approximately CNY 800-2,000"
+    - "FAVN titre test at AQS-approved laboratory: approximately JPY 30,000-60,000 or CNY 5,000-12,000"
+    - "Cargo fees China to Japan: approximately JPY 80,000-250,000 depending on pet size"
+    - "AQS inspection fee on arrival in Japan"
+    - "Pet transport agent fee: approximately JPY 50,000-150,000 if used"
+    - "Realistic total: JPY 200,000-600,000 or more"
+
   key_warnings:
-    - "Mandatory quarantine required on arrival. Plan for separation from your pet."
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
+    - "The 180-day wait from the titre test blood draw date is absolute. If your pet arrives before 180 days have elapsed, it will be quarantined in an AQS facility in Japan for the remaining days. Source: Japan AQS, maff.go.jp/aqs."
+    - "Japan requires TWO rabies vaccinations after microchipping. A single vaccination is not sufficient. Both vaccinations must be given after the microchip is confirmed implanted."
+    - "The AQS advance notification must be submitted at least 40 days before arrival at the intended airport. This is a strict requirement. Late submission can result in refusal of entry."
+    - "Japan AQS has a specific health certificate format. The GACC-authorised vet in China must be familiar with this format. Using a generic export certificate will cause problems at AQS."
+    - "Approved Japanese arrival airports for live animal imports include Tokyo Narita (NRT), Kansai (KIX), and others. Confirm the approved airports for your route when submitting the AQS notification."
+
   route_complexity: "very_high"
-  estimated_timeline_weeks: "33-39"
+  estimated_timeline_weeks: "32-40"
+
 content:
-  h1: "Pet Transport from China to Japan"
+  h1: "Pet Transport from China to Japan: AQS Two-Vaccination and 180-Day Wait Process"
   overview: |
-    Getting your pet from China to Japan is entirely achievable, but the preparation timeline is not flexible.
-    
-    This route is one of the most demanding international pet transport routes. Start preparations at least 33 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. Japan requires mandatory quarantine (14 days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    The paperwork is the hard part. Once everything is in order, the journey itself is well-managed.
+    Japan operates one of the most precise pet import systems in the world. Pets from China face a process that requires two rabies vaccinations (not one), an FAVN titre test, a mandatory 180-day wait from the titre test blood draw date, and a 40-day advance notification to Japan AQS. If any step is missed or out of sequence, the process must restart from the beginning. The total preparation timeline from starting vaccinations to arriving in Japan runs 32-40 weeks under normal conditions. Source: Japan Animal Quarantine Service (AQS), maff.go.jp/aqs.
+
+    The 180-day wait is the dominant time constraint. It starts from the date the blood is drawn for the titre test, not from the date the result is received. If your pet arrives in Japan before 180 days have elapsed, AQS will quarantine it in an AQS facility to make up the remaining days. The quarantine cost is paid by the owner. Most owners prefer to ensure the 180 days have elapsed before travel to avoid this additional cost and disruption.
+
+    Comparing China-to-Japan with China-to-South Korea: Japan's process is considerably more demanding. South Korea (QIAS process) requires a titre test and a 5-10 day quarantine at Incheon, without a pre-arrival 180-day wait. For families choosing between Japan and South Korea as a destination, the Japan process takes 8-10 months longer in total preparation time.
+
   sections:
-    - heading: "Understanding Japan's pet import rules"
+    - heading: "Japan AQS: the two-vaccination requirement and sequence"
       body: |
-        This is one of the more demanding international pet transport corridors. Japan runs a strict biosecurity programme and there are no shortcuts through it.
-        
-        All pets must complete quarantine on arrival in Japan (at MAFF quarantine station) for 14 days. This is non-negotiable and is entirely separate from the pre-travel preparation.
-        
-        Japan is rabies-free. MAFF (Ministry of Agriculture, Forestry and Fisheries) is the regulatory authority.
-    - heading: "Practical advice for shipping your pet from China"
+        Japan AQS requires two separate rabies vaccinations after microchip implantation for pets from non-designated countries including China. The first vaccination must be administered when the pet is at least 91 days old (approximately 3 months). Both vaccinations must be administered after the microchip has been implanted and confirmed. If the microchip was implanted after the first vaccination, that vaccination does not count and the process must restart from microchipping.
+
+        The sequence is: microchip implanted, confirmed working; first rabies vaccination (pet at least 91 days old); second rabies vaccination (as directed by vet and AQS requirements); blood draw for titre test at least 30 days after the second vaccination; 180-day wait from blood draw date. This sequence must be followed exactly. Any deviation, including giving the first vaccination before confirming the microchip reads correctly, invalidates that vaccination for AQS purposes. Source: Japan AQS, maff.go.jp/aqs.
+
+    - heading: "The GACC export process for Japan"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        The GACC (General Administration of Customs of China) export process for Japan-bound pets follows the same general steps as for all international exports from China. The distinguishing feature for Japan is the health certificate format: Japan AQS has its own specific format requirements that differ from EU or UK AHC formats. The GACC-authorised vet in China must issue the health certificate in Japan AQS format, countersigned by GACC, within 14 days of the Japan arrival date.
+
+        Apply for the GACC export permit 4-6 weeks before departure. Approved international departure airports for China are PEK (Beijing Capital), PVG (Shanghai Pudong), and CAN (Guangzhou Baiyun). Direct ANA and JAL services from PEK and PVG to Tokyo Narita are the most straightforward routing. Air China also operates direct services to NRT. Routing via Hong Kong (Cathay Pacific) introduces AFCD transit requirements and adds complexity.
+
+    - heading: "The 40-day AQS advance notification: how it works"
+      body: |
+        Japan AQS requires advance notification at least 40 days before the pet's intended arrival at the destination airport. This notification is submitted by fax or mail to the AQS office at the arrival airport. The notification must include the pet's details, the intended arrival date and flight, the health certificate, vaccination records, and titre test results. AQS reviews the submission and confirms whether all requirements are met before travel.
+
+        Late notification (fewer than 40 days before arrival) is one of the most common causes of refused entry or delays for pets travelling to Japan. Submit the notification as soon as your travel plans are confirmed, even if the 180-day wait has not yet elapsed. If your plans change, you must notify AQS of the new arrival date. Source: Japan AQS, maff.go.jp/aqs. This process is most smoothly managed by a specialist pet transport agent who handles Japan-bound shipments regularly.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from China to Japan?"
-    answer: "Allow at least 33 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Japan?"
-    answer: "Yes, quarantine is mandatory in Japan. Your pet will stay for 14 days at MAFF quarantine station on arrival. This is non-negotiable and the cost is paid by the owner."
-  - question: "Is a rabies titre test required for pets entering Japan?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 180-day waiting period after a successful result before your pet can enter Japan. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into Japan?"
-    answer: "Yes, an import permit is required from Japan's authority (MAFF (Animal Quarantine Service)). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in China. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Japan's authority for the exact format required."
+  - question: "Why does Japan require two rabies vaccinations?"
+    answer: "Japan AQS requires two rabies vaccinations after microchip implantation for pets from non-designated countries (countries not on Japan's approved list). A single vaccination is not sufficient. Both must be given after the microchip is confirmed working. This is a Japan-specific requirement that differs from most other countries. Source: Japan AQS, maff.go.jp/aqs."
+  - question: "How long does the China-to-Japan pet move take in total?"
+    answer: "Allow 32-40 weeks from the start of preparations. The main time-driver is the 180-day wait from the titre test blood draw date, which itself requires at least 30 days post-vaccination before blood can be drawn. Two vaccinations are needed first. The total minimum is approximately 8-9 months."
+  - question: "What happens if my pet arrives in Japan before 180 days have elapsed?"
+    answer: "Japan AQS will quarantine your pet at an AQS quarantine facility in Japan for the remaining days until the 180-day period is complete. The owner pays all quarantine costs. To avoid this, confirm the exact elapsed time since the blood draw before booking flights, using the specific blood draw date on the laboratory report."
+  - question: "Does the AQS advance notification count as booking quarantine?"
+    answer: "No. The 40-day advance notification is a regulatory notification requirement, not a quarantine booking. It allows AQS to review the documentation before arrival. If all requirements are met and the 180 days have elapsed, there is no mandatory quarantine on arrival; just an AQS inspection. If days are remaining, quarantine at an AQS facility follows."
+  - question: "How does Japan compare to South Korea for a China-based pet owner?"
+    answer: "Japan requires two vaccinations, FAVN titre test, 180-day wait, and 40-day advance notification: total 32-40 weeks of preparation. South Korea (QIAS process) requires a titre test and 5-10 day quarantine at Incheon but no pre-arrival 180-day wait: total approximately 16-24 weeks. Japan's process is substantially more demanding."
+
 links:
   sideways:
     - url: "/pet-transport/japan-to-china/"
       text: "Pet Transport Japan to China"
+    - url: "/pet-transport/china-to-south-korea/"
+      text: "Pet Transport China to South Korea"
   upward:
-    - url: "/pet-transport/origins/china-pet-export-guide/"
-      text: "Shipping from China"
     - url: "/pet-transport/countries/japan/"
-      text: "Importing to Japan"
-    - url: "/pet-transport/airlines/japan-airlines-jal/"
-      text: "Japan Airlines (JAL) pet policy"
+      text: "Japan pet import rules"
+    - url: "/pet-transport/airlines/ana/"
+      text: "ANA pet cargo policy"
+    - url: "/pet-transport/airlines/japan-airlines/"
+      text: "Japan Airlines pet cargo policy"
 ---

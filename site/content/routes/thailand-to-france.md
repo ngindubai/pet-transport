@@ -1,132 +1,145 @@
 ---
-template_variant: "A"
-title: "Pet Transport from Thailand to France | PetTransportGlobal"
-description: "Pet relocation from Thailand to France: France import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport Thailand to France: EU Titre Test, DLD Export and Air France Cargo 2026"
+description: "Moving a dog or cat from Thailand to France in 2026. Thailand is EU-unlisted: FAVN titre test and 90-day wait required. DLD export permit and Air France direct cargo to Paris explained."
+date: "2026-06-09"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "C"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "thailand-to-france"
 origin_name: "Thailand"
 destination_name: "France"
+
 route_data:
   origin:
     code: "TH"
     country: "Thailand"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      health_certificate: "Official health certificate in EU AHC format, issued by a DLD-authorised official vet, endorsed by DLD. Issued within 10 days of French entry. Source: DLD, dld.go.th."
+      export_permit: "DLD export permit required. Apply to DLD office. Allow 2-3 weeks. Approved departure airports: Bangkok Suvarnabhumi (BKK) and Bangkok Don Mueang (DMK)."
+
   destination:
     code: "FR"
     country: "France"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or at same time as rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Standard EU protocol. 21-day wait from first vaccination."
-      titre_test: "Required for: Pets from unlisted third countries. Not required for: Pets from EU and listed third countries (all P1 countries listed). Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No routine quarantine. Non-compliant animals may be quarantined or returned at owner's expense."
-      import_permit: "No formal import permit. EU pet passport or AHC serves as documentation."
-      health_certificate: "Required"
+      microchip: "ISO 11784/11785 microchip required. Must be implanted before or on the same day as the first rabies vaccination."
+      rabies_vaccination: "Current rabies vaccination required. Primary course complete. 21-day wait from initial vaccination."
+      titre_test: "Required. Thailand is not on the EU Annex II approved third-country list. FAVN or ELISA titre test at an EU-approved laboratory. Minimum 0.5 IU/ml. Blood draw at least 30 days after final vaccination. Mandatory 90-day wait from blood draw date before EU entry. Source: EU pet travel regulations, ec.europa.eu."
+      quarantine: "No quarantine on arrival for compliant pets."
+      import_permit: "No formal import permit required. AHC serves as the entry document."
+      health_certificate: "EU-format Animal Health Certificate (AHC) from DLD-authorised official vet in Thailand, endorsed by DLD. Valid 10 days from examination to French entry."
+
   airlines:
+    - name: "Air France Cargo"
+      type: "cargo_only"
+      policy_summary: "Air France operates direct cargo services from Bangkok Suvarnabhumi (BKK) to Paris Charles de Gaulle (CDG). This is the most direct routing for Thailand-to-France live animal cargo."
     - name: "Thai Airways"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets as checked baggage or Thai Cargo for larger animals. Brachycephalic breeds restricted during hot season (March-May). Some breed restrictions apply"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Emirates"
+      policy_summary: "Thai Airways connects BKK to Paris CDG. Cargo services to CDG. Confirm live animal acceptance and documentation requirements directly with Thai Airways Cargo."
+    - name: "Lufthansa Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Singapore Airlines"
+      policy_summary: "Via Frankfurt FRA to Paris or direct to France. If routing via FRA, Frankfurt is the EU entry point for documentation purposes."
+    - name: "Emirates SkyCargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Via Dubai DXB to Paris CDG. A longer routing available when direct European carrier connections are full."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step: must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Implant ISO microchip in Thailand."
+      timing: "Before first rabies vaccination."
+      responsible: "Vet in Thailand"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Rabies vaccination primary course."
+      timing: "After microchip. At least 30 days before titre test blood draw."
+      responsible: "Vet in Thailand"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "FAVN titre test blood draw at an EU-approved laboratory."
+      timing: "At least 30 days after final vaccination. 90-day wait starts from this date."
+      responsible: "Vet and EU-approved laboratory"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "90-day wait from the blood draw date."
+      timing: "Cannot be shortened."
+      responsible: "Owner to track"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Apply for DLD export permit."
+      timing: "2-3 weeks before departure."
+      responsible: "Owner or pet transport agent"
     - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Obtain EU-format AHC from DLD-authorised vet, endorsed by DLD."
+      timing: "Within 10 days of French entry."
+      responsible: "DLD-authorised official vet"
+    - step: 7
+      action: "Fly to Paris CDG. French customs inspection on arrival."
+      timing: "After 90-day wait has elapsed."
+      responsible: "Airline, French customs"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "DLD export permit and health certificate endorsement: approximately THB 2,000-6,000"
+    - "Titre test at EU-approved laboratory: approximately EUR 250-500 or THB 9,000-18,000"
+    - "Cargo fees Thailand to France (direct Air France or via hub): approximately EUR 800-2,300 depending on pet size"
+    - "Pet transport agent fee: EUR 400-1,000 if used"
+    - "Realistic total: EUR 2,000-5,000"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "The 90-day wait from titre test blood draw date is mandatory. Plan at least 5 months before your intended French arrival date."
+    - "Thailand is EU-unlisted: titre test required regardless of vaccination history."
+    - "Air France operates direct cargo from Bangkok (BKK) to Paris CDG, making France one of the most directly accessible EU destinations from Thailand."
+    - "The DLD export permit adds 2-3 weeks to preparation and should be started concurrently with the titre test wait, not after it."
+
+  route_complexity: "high"
+  estimated_timeline_weeks: "20-28"
+
 content:
-  h1: "Pet Transport from Thailand to France"
+  h1: "Pet Transport from Thailand to France: EU Titre Test and DLD Export"
   overview: |
-    Moving to France from Thailand with a dog or cat means starting the paperwork months before your flight.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date: some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    The paperwork is the hard part. Once everything is in order, the journey itself is well-managed.
+    France applies EU-wide pet travel rules for third-country imports. Thailand is not on the EU Annex II approved third-country list, requiring an FAVN or ELISA titre test at an EU-approved laboratory and a mandatory 90-day wait from the blood draw date. Thailand's DLD (Department of Livestock Development) manages the export process: a DLD export permit and a health certificate in EU AHC format from a DLD-authorised vet, endorsed by DLD. Total preparation: 20-28 weeks. Source: EU pet travel regulations, ec.europa.eu.
+
+    Air France operates direct cargo services from Bangkok Suvarnabhumi (BKK) to Paris Charles de Gaulle (CDG), making France a straightforwardly routed EU destination from Thailand. Thai Airways also connects Bangkok to CDG. This direct routing avoids the hub transit complications that affect Spain and Italy routes from Thailand.
+
+    For owners comparing France and Germany as EU destinations from Thailand: the requirements are identical. France benefits from direct Air France cargo from Bangkok to CDG. Germany is served by Lufthansa connections. Both are well-established routes; the choice comes down to final destination city rather than any difference in documentation requirements.
+
   sections:
-    - heading: "Key requirements for moving your pet to France"
+    - heading: "EU import requirements for France: Thailand applies the same as Germany and Netherlands"
       body: |
-        Compared to some international pet transport routes, Thailand to France is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        France follows EU harmonised pet movement rules. Direction Generale de l'Alimentation (DGAL) under the Ministry of Agriculture oversees implementation. France is one of the most pet-friendly countries in Europe with high pet ownership, though some rental properties restrict pets. France has its own breed-specific legislation (Categories 1 and 2) that is notably strict.
-    - heading: "Things to sort before you book"
+        All EU member states apply identical requirements for pets from Thailand. The full sequence: ISO microchip (implanted before or same day as first vaccination); rabies vaccination primary course (21-day wait); FAVN or ELISA titre test at an EU-approved laboratory (result 0.5 IU/ml or above, blood draw at least 30 days after final vaccination); mandatory 90-day wait from blood draw date; EU-format AHC from DLD-authorised official vet in Thailand, endorsed by DLD, issued within 10 days of EU entry. No quarantine on arrival for compliant pets.
+
+        France does not impose additional requirements beyond the EU standard for pets from Thailand. There is no French federal breed ban comparable to Germany's four-breed restriction. French municipalities may have their own classifications for "chiens dangereux" (dangerous dogs), but there is no national breed-specific import ban. Check locally for your specific destination in France if your dog is a breed that might be subject to local regulations.
+
+    - heading: "Air France direct cargo and the DLD export process"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Air France operates direct cargo services from Bangkok Suvarnabhumi (BKK) to Paris Charles de Gaulle (CDG). This is the most practical routing for Thailand-to-France live animal cargo and avoids the hub connection complexity of routes that transit via Dubai, Hong Kong, or other intermediate points. Thai Airways also provides Bangkok-to-CDG services. CDG is the principal French entry airport and has established procedures for live animal imports.
+
+        The DLD export process in Thailand requires an export permit applied for 2-3 weeks before departure, plus a health certificate in EU AHC format from a DLD-authorised official vet, endorsed by DLD, issued within 10 days of the French entry date. The DLD process adds preparation time compared to Vietnam's MARD process (which does not require a separate export permit). Start the DLD permit application concurrently with the 90-day titre test wait, not after it. This way the permit is ready when the wait period ends.
+
+    - heading: "France versus Germany and Netherlands from Thailand: a routing and requirements comparison"
+      body: |
+        The requirements for France, Germany, and the Netherlands are identical from Thailand: same titre test, same 90-day wait, same EU AHC format, same DLD export process. The differences are in routing. France (Paris CDG): Air France direct from BKK, and Thai Airways direct to CDG. Germany (Frankfurt FRA): Lufthansa connections from Bangkok. Netherlands (Amsterdam AMS): KLM direct from Bangkok.
+
+        All three are well-served routes. For families moving to Paris and northern France, the Air France direct BKK-CDG connection is the most convenient. For families moving to southern France, Air France to CDG with domestic connection is still the standard approach. For families who have not yet decided between France, Germany, and the Netherlands as their EU destination, routing is not a significant differentiator; all three are straightforward from Bangkok.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Thailand to France?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering France?"
-    answer: "No routine quarantine is required in France for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering France?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter France. Start this process as early as possible."
-  - question: "Can I take my cat to France from Thailand?"
-    answer: "Yes, cats can be transported from Thailand to France. The same microchip, vaccination, and health certificate requirements apply as for dogs, though some rules (such as tapeworm treatment) apply to dogs only. Check the full requirements for cats with the destination authority."
+  - question: "Does France require a titre test for pets from Thailand?"
+    answer: "Yes. Thailand is not on the EU Annex II approved list. FAVN or ELISA titre test at an EU-approved laboratory is required, with a mandatory 90-day wait from the blood draw date. Source: EU pet travel regulations, ec.europa.eu."
+  - question: "Is there a quarantine in France for pets from Thailand?"
+    answer: "No. There is no quarantine for compliant pets on arrival in France. All requirements (microchip, vaccination, titre test, 90-day wait, EU-format AHC) must be met, but no mandatory holding period applies."
+  - question: "Are there direct flights from Thailand to France for pet cargo?"
+    answer: "Yes. Air France and Thai Airways both operate services from Bangkok Suvarnabhumi (BKK) to Paris Charles de Gaulle (CDG). This is the most direct routing and avoids hub transit complications."
+  - question: "How long does Thailand-to-France pet transport take?"
+    answer: "Allow 20-28 weeks total. The titre test drives the timeline: at least 30 days post-vaccination before blood draw, then the 90-day wait. Start the DLD export permit concurrently during the wait to avoid extending the overall timeline."
+  - question: "How does Thailand-to-France compare to Thailand-to-Germany?"
+    answer: "Both routes have identical EU requirements: titre test, 90-day wait, DLD health certificate in EU AHC format. The difference is routing. France benefits from Air France direct BKK-CDG cargo. Germany is reached via Lufthansa connections. No difference in documentation requirements or preparation timeline."
+
 links:
   sideways:
     - url: "/pet-transport/france-to-thailand/"
       text: "Pet Transport France to Thailand"
+    - url: "/pet-transport/thailand-to-germany/"
+      text: "Pet Transport Thailand to Germany"
+    - url: "/pet-transport/thailand-to-netherlands/"
+      text: "Pet Transport Thailand to Netherlands"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-thailand-export-guide/"
-      text: "Shipping from Thailand"
     - url: "/pet-transport/countries/france/"
-      text: "Importing to France"
-    - url: "/pet-transport/airlines/thai-airways/"
-      text: "Thai Airways pet policy"
+      text: "France pet import rules"
     - url: "/pet-transport/airlines/air-france/"
-      text: "Air France pet policy"
+      text: "Air France pet cargo policy"
 ---

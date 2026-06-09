@@ -12,7 +12,7 @@
 - **Routes built:** 5,531 of ~37,830 country pairs (~14.6%). True on-disk count (5,521 in `routes/` + 10 in `pet-transport/`).
 - **Blog articles:** 420
 - **Total .md source files:** 6,324 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-43 complete. **Chunk 44 is next** (Template D, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 43 = 25 Tier B routes Template C: 7 EU-to-UK (Romania/Malta/Cyprus/Finland/Hungary/Bulgaria/Croatia), 6 Mexico outbound, 6 Brazil outbound, 6 Indonesia outbound.
+- **Phase 7 progress:** Chunks 1-43 complete. **Chunk 44 is next** (Template D, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 43 (two batches): (a) 25 new routes Template C: EU-to-UK x7, Mexico/Brazil/Indonesia outbound x18; (b) 25 thin routes overwritten: China/Vietnam/Thailand/UAE/HK outbound to AU/NZ/EU5/JP/KR/CA/US/UK.
 - **Content plan:** Days 1-6 + Days 8-13 complete (13 articles written). Day 7 skipped (pre-existing). **Day 14 is next:** check content-plan/plan-rows-q1.js for slug. Day 13 = pet-transport-tenerife-to-uk (Marcus Webb, ~1700 words, AHC for UK entry, tapeworm timing, charter airline problem, rescue dog section).
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.

@@ -1,125 +1,145 @@
 ---
-template_variant: "B"
-title: "Moving Your Pet from Thailand to Netherlands | Complete Guide"
-description: "Pet relocation from Thailand to Netherlands: Netherlands import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport Thailand to Netherlands: EU Titre Test, DLD Export and KLM Cargo 2026"
+description: "Moving a dog or cat from Thailand to the Netherlands in 2026. Thailand is EU-unlisted: FAVN titre test and 90-day wait required. DLD export permit and KLM direct cargo to Amsterdam explained."
+date: "2026-06-09"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "C"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "thailand-to-netherlands"
 origin_name: "Thailand"
 destination_name: "Netherlands"
+
 route_data:
   origin:
     code: "TH"
     country: "Thailand"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      health_certificate: "Official health certificate in EU AHC format, issued by a DLD-authorised official vet, endorsed by DLD. Issued within 10 days of Netherlands entry. Source: DLD, dld.go.th."
+      export_permit: "DLD export permit required. Apply to DLD office. Allow 2-3 weeks. Approved departure airports: Bangkok Suvarnabhumi (BKK) and Bangkok Don Mueang (DMK)."
+
   destination:
     code: "NL"
     country: "Netherlands"
     import_requirements:
-      microchip: "Required (ISO 11784/11785)"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel"
-      titre_test: "Not required for EU, UK, and certain third countries."
-      quarantine: "No routine quarantine for compliant pets"
-      import_permit: "EU pet passport or health certificate"
-      health_certificate: "Required. Issued by: Official veterinarian. Valid for 10 days from issue"
+      microchip: "ISO 11784/11785 microchip required. Must be implanted before or on the same day as the first rabies vaccination."
+      rabies_vaccination: "Current rabies vaccination required. Primary course complete. 21-day wait from initial vaccination."
+      titre_test: "Required. Thailand is not on the EU Annex II approved third-country list. FAVN or ELISA titre test at an EU-approved laboratory. Minimum 0.5 IU/ml. Blood draw at least 30 days after final vaccination. Mandatory 90-day wait from blood draw date before EU entry. Source: EU pet travel regulations, ec.europa.eu."
+      quarantine: "No quarantine on arrival for compliant pets."
+      import_permit: "No formal import permit required. AHC serves as the entry document."
+      health_certificate: "EU-format Animal Health Certificate (AHC) from DLD-authorised official vet in Thailand, endorsed by DLD. Valid 10 days from examination to Netherlands entry."
+
   airlines:
+    - name: "KLM Cargo"
+      type: "cargo_only"
+      policy_summary: "KLM operates direct cargo services from Bangkok Suvarnabhumi (BKK) to Amsterdam Schiphol (AMS). This is the most direct routing for Thailand-to-Netherlands live animal cargo."
     - name: "Thai Airways"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets as checked baggage or Thai Cargo for larger animals. Brachycephalic breeds restricted during hot season (March-May). Some breed restrictions apply"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Emirates"
+      policy_summary: "Thai Airways connects BKK to Amsterdam. Cargo services to AMS. Confirm live animal acceptance and documentation requirements with Thai Airways Cargo."
+    - name: "Air France Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "Via Paris CDG to Amsterdam AMS. If routing via France, CDG becomes the EU entry airport for documentation purposes."
+    - name: "Lufthansa Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
+      policy_summary: "Via Frankfurt FRA to Amsterdam AMS or other Dutch delivery points. Frankfurt would be the EU entry point if this routing is used."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Implant ISO microchip in Thailand."
+      timing: "Before first rabies vaccination."
+      responsible: "Vet in Thailand"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Rabies vaccination primary course."
+      timing: "After microchip. At least 30 days before titre test blood draw."
+      responsible: "Vet in Thailand"
     - step: 3
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "FAVN titre test blood draw at an EU-approved laboratory."
+      timing: "At least 30 days after final vaccination. 90-day wait starts from this date."
+      responsible: "Vet and EU-approved laboratory"
     - step: 4
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "90-day wait from the blood draw date."
+      timing: "Cannot be shortened."
+      responsible: "Owner to track"
     - step: 5
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Apply for DLD export permit."
+      timing: "2-3 weeks before departure."
+      responsible: "Owner or pet transport agent"
+    - step: 6
+      action: "Obtain EU-format AHC from DLD-authorised vet, endorsed by DLD."
+      timing: "Within 10 days of Netherlands entry."
+      responsible: "DLD-authorised official vet"
+    - step: 7
+      action: "Fly to Amsterdam Schiphol (AMS). Dutch customs inspection on arrival."
+      timing: "After 90-day wait has elapsed."
+      responsible: "Airline, Dutch customs"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "DLD export permit and health certificate endorsement: approximately THB 2,000-6,000"
+    - "Titre test at EU-approved laboratory: approximately EUR 250-500 or THB 9,000-18,000"
+    - "Cargo fees Thailand to Netherlands (direct KLM or via hub): approximately EUR 800-2,300 depending on pet size"
+    - "Pet transport agent fee: EUR 400-1,000 if used"
+    - "Realistic total: EUR 2,000-5,000"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "low"
-  estimated_timeline_weeks: "4-10"
+    - "The 90-day wait from titre test blood draw date is mandatory. Plan at least 5 months before your intended Netherlands arrival date."
+    - "Thailand is EU-unlisted: titre test required regardless of vaccination history."
+    - "KLM operates direct cargo from Bangkok (BKK) to Amsterdam Schiphol (AMS), making the Netherlands one of the most directly accessible EU destinations from Thailand."
+    - "Start the DLD export permit application during the 90-day titre test wait, not after. This avoids extending the overall preparation timeline."
+
+  route_complexity: "high"
+  estimated_timeline_weeks: "20-28"
+
 content:
-  h1: "Pet Transport from Thailand to Netherlands"
+  h1: "Pet Transport from Thailand to Netherlands: EU Titre Test and KLM Cargo"
   overview: |
-    If you're relocating from Thailand to Netherlands and taking your pet, the good news is thousands of families do this every year.
-    
-    This route is relatively straightforward compared to some international routes. Start preparations at least 4 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened.
-    
-    We've laid out every step below so you know exactly what to prepare and when.
+    The Netherlands applies EU-wide pet travel rules for third-country imports. Thailand is not on the EU Annex II approved third-country list, requiring an FAVN or ELISA titre test at an EU-approved laboratory and a mandatory 90-day wait from the blood draw date. Thailand's DLD export process requires an export permit and an EU AHC format health certificate from a DLD-authorised vet, endorsed by DLD. Total preparation: 20-28 weeks. Source: EU pet travel regulations, ec.europa.eu.
+
+    KLM operates direct cargo services from Bangkok Suvarnabhumi (BKK) to Amsterdam Schiphol (AMS), making the Netherlands one of the most conveniently served EU destinations from Thailand. Thai Airways also connects Bangkok to Amsterdam. This direct BKK-AMS routing avoids the hub transit complications of Spain and Italy routes from Thailand.
+
+    The requirements for the Netherlands are identical to those for France and Germany from Thailand. The only practical difference is the routing and the first EU entry airport.
+
   sections:
-    - heading: "Understanding Netherlands's pet import rules"
+    - heading: "EU import requirements for the Netherlands: identical to France and Germany"
       body: |
-        Compared to some international pet transport routes, Thailand to Netherlands is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        EU member state. EU pet travel rules apply.
-    - heading: "Practical advice for shipping your pet from Thailand"
+        The EU framework applies uniformly across all member states for pets from Thailand. The full sequence: ISO microchip (implanted before or same day as first vaccination); rabies vaccination primary course (21-day wait); FAVN or ELISA titre test at an EU-approved laboratory (result 0.5 IU/ml or above, blood draw at least 30 days after final vaccination); mandatory 90-day wait from blood draw date; EU-format AHC from DLD-authorised official vet in Thailand, endorsed by DLD, issued within 10 days of EU entry. No quarantine on arrival for compliant pets. Source: EU pet travel regulations, ec.europa.eu.
+
+        The Netherlands does not have the same federal import breed ban as Germany (which bans four breeds at federal level). Dutch municipalities may have local regulations for certain breeds, but there is no national breed-specific import restriction comparable to Germany's. If your dog is a breed that might be subject to local rules in your destination area of the Netherlands, check with Dutch authorities before travel.
+
+    - heading: "KLM cargo from Bangkok to Amsterdam and the DLD process"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        KLM operates direct cargo services from Bangkok Suvarnabhumi (BKK) to Amsterdam Schiphol (AMS). This direct connection makes the Netherlands straightforward to reach from Thailand without a transit complication. Thai Airways also provides Bangkok-to-Amsterdam cargo services. AMS is the main Dutch entry airport and a major European hub with established live animal handling procedures.
+
+        The DLD export process requires a permit applied for 2-3 weeks before departure, plus a health certificate in EU AHC format from a DLD-authorised official vet, endorsed by DLD, issued within 10 days of the Netherlands entry date. Start the DLD permit application during the 90-day titre test wait so the permit is ready when the wait period ends. Attempting to apply for the DLD permit after the 90-day wait has elapsed will extend your overall timeline unnecessarily.
+
+    - heading: "Netherlands versus France and Germany from Thailand"
+      body: |
+        All three destinations have identical EU requirements from Thailand: same titre test, same 90-day wait, same DLD health certificate in EU AHC format. The routing differences are: Netherlands (Amsterdam AMS) via KLM direct from BKK; France (Paris CDG) via Air France direct from BKK; Germany (Frankfurt FRA) via Lufthansa connections from BKK. All three are well-served from Bangkok.
+
+        For families moving to Amsterdam or other Dutch cities, the KLM direct BKK-AMS connection is practical and avoids transit. For families moving to Rotterdam or The Hague, AMS is still the standard entry point with onward domestic connection. The Netherlands has no significant routing disadvantage compared to France or Germany from Thailand.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Thailand to Netherlands?"
-    answer: "Allow at least 4 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Netherlands?"
-    answer: "No routine quarantine is required in Netherlands for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Netherlands?"
-    answer: "No, Netherlands does not require a rabies titre test for most pets arriving from Thailand. Your pet still needs a valid rabies vaccination and microchip. Check the current requirements with the destination authority before travel."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Thailand. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Netherlands's authority for the exact format required."
+  - question: "Does the Netherlands require a titre test for pets from Thailand?"
+    answer: "Yes. Thailand is not on the EU Annex II approved list. FAVN or ELISA titre test at an EU-approved laboratory is required, with a mandatory 90-day wait from the blood draw date. Source: EU pet travel regulations, ec.europa.eu."
+  - question: "Is there a quarantine in the Netherlands for pets from Thailand?"
+    answer: "No. There is no quarantine for compliant pets on arrival in the Netherlands. All requirements (microchip, vaccination, titre test, 90-day wait, EU-format AHC) must be met, but no mandatory holding period applies."
+  - question: "Are there direct flights from Thailand to the Netherlands for pet cargo?"
+    answer: "Yes. KLM and Thai Airways both operate services from Bangkok Suvarnabhumi (BKK) to Amsterdam Schiphol (AMS). This is the most direct routing for Thailand-to-Netherlands."
+  - question: "How long does Thailand-to-Netherlands pet transport take?"
+    answer: "Allow 20-28 weeks total. The titre test drives the timeline: at least 30 days post-vaccination before blood draw, then the 90-day wait. Start the DLD export permit concurrently during the wait."
+  - question: "How does Thailand-to-Netherlands compare to Thailand-to-Germany?"
+    answer: "Both routes have identical EU requirements: titre test, 90-day wait, DLD health certificate in EU AHC format. Routing differences: Netherlands via KLM direct BKK-AMS; Germany via Lufthansa connections. No difference in documentation requirements or preparation time."
+
 links:
   sideways:
     - url: "/pet-transport/netherlands-to-thailand/"
       text: "Pet Transport Netherlands to Thailand"
+    - url: "/pet-transport/thailand-to-france/"
+      text: "Pet Transport Thailand to France"
+    - url: "/pet-transport/thailand-to-germany/"
+      text: "Pet Transport Thailand to Germany"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-thailand-export-guide/"
-      text: "Shipping from Thailand"
     - url: "/pet-transport/countries/netherlands/"
-      text: "Importing to Netherlands"
-    - url: "/pet-transport/airlines/thai-airways/"
-      text: "Thai Airways pet policy"
-    - url: "/pet-transport/airlines/klm-royal-dutch-airlines/"
-      text: "KLM pet policy"
+      text: "Netherlands pet import rules"
+    - url: "/pet-transport/airlines/klm/"
+      text: "KLM pet cargo policy"
 ---

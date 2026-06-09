@@ -1,124 +1,141 @@
 ---
-template_variant: "A"
-title: "Shipping Dogs & Cats from Vietnam to Italy | PetTransportGlobal"
-description: "Pet relocation from Vietnam to Italy: Italy import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport Vietnam to Italy: EU Titre Test, MARD Export and Hub Routing 2026"
+description: "Moving a dog or cat from Vietnam to Italy in 2026. Vietnam is EU-unlisted: FAVN titre test and 90-day wait required. MARD health certificate and cargo routing via European hubs explained."
+date: "2026-06-09"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "C"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "vietnam-to-italy"
 origin_name: "Vietnam"
 destination_name: "Italy"
+
 route_data:
   origin:
     code: "VN"
     country: "Vietnam"
     export_requirements:
-      export_permit: "No export permit for pet dogs and cats."
-      health_certificate: "{'required': True, 'issued_by': 'MARD-authorised official vet'}"
+      health_certificate: "Official health certificate in EU AHC format, issued by a MARD-authorised official vet, countersigned by the Department of Animal Health (DAH). Issued within 10 days of Italian entry. Source: Ministry of Agriculture and Rural Development, cucthuy.gov.vn."
+      export_permit: "No separate export permit required for personal pet export. MARD-endorsed health certificate is the export document. Departure from Ho Chi Minh City (SGN) or Hanoi (HAN)."
+
   destination:
     code: "IT"
     country: "Italy"
     import_requirements:
-      microchip: "Required (ISO 11784/11785)"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel"
-      titre_test: "Not required"
-      quarantine: "No routine quarantine for compliant pets"
-      import_permit: "EU pet passport or health certificate"
-      health_certificate: "Required. Issued by: Official veterinarian. Valid for 10 days from issue"
+      microchip: "ISO 11784/11785 microchip required. Must be implanted before or on the same day as the first rabies vaccination."
+      rabies_vaccination: "Current rabies vaccination required. Primary course complete. 21-day wait from initial vaccination."
+      titre_test: "Required. Vietnam is not on the EU Annex II approved third-country list. FAVN or ELISA titre test at an EU-approved laboratory. Minimum 0.5 IU/ml. Blood draw at least 30 days after final vaccination. Mandatory 90-day wait from blood draw date before EU entry. Source: EU pet travel regulations, ec.europa.eu."
+      quarantine: "No quarantine on arrival for compliant pets."
+      import_permit: "No formal import permit required. AHC serves as the entry document."
+      health_certificate: "EU-format Animal Health Certificate (AHC) from MARD-authorised official vet in Vietnam, countersigned by DAH. Valid 10 days from examination to Italian entry."
+
   airlines:
-    - name: "Vietnam Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (under 5kg with carrier) allowed in cabin on some routes. Cargo: larger pets in hold. Advance booking required. Vietnam import/export documentation must be fully prepared before travel."
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Emirates"
+    - name: "Air France Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
+      policy_summary: "Via Paris CDG to Rome Fiumicino (FCO) or Milan Malpensa (MXP). Air France direct from SGN/HAN to CDG is the most common first leg. CDG would be the EU entry point."
+    - name: "Lufthansa Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
+      policy_summary: "Via Frankfurt FRA to Rome FCO or Milan MXP. Lufthansa connections from Vietnam via FRA. FRA would be the EU entry point."
+    - name: "KLM Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
+      policy_summary: "Via Amsterdam AMS to Rome FCO or Milan MXP. KLM direct from SGN/HAN to AMS, then connecting cargo to Italy. AMS would be the EU entry point."
+    - name: "Emirates SkyCargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Via Dubai DXB to Rome FCO. A longer routing but available when European carrier connections are full. DXB is outside the EU so FCO would be the EU entry point."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Implant ISO microchip in Vietnam."
+      timing: "Before first rabies vaccination."
+      responsible: "Vet in Vietnam"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Rabies vaccination primary course."
+      timing: "After microchip. At least 30 days before titre test blood draw."
+      responsible: "Vet in Vietnam"
     - step: 3
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "FAVN titre test blood draw at an EU-approved laboratory."
+      timing: "At least 30 days after final vaccination. 90-day wait starts from this date."
+      responsible: "Vet and EU-approved laboratory"
     - step: 4
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "90-day wait from the blood draw date."
+      timing: "Cannot be shortened."
+      responsible: "Owner to track"
     - step: 5
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Obtain EU-format AHC from MARD-authorised vet, countersigned by DAH."
+      timing: "Within 10 days of Italian entry."
+      responsible: "MARD-authorised official vet"
+    - step: 6
+      action: "Fly to Rome FCO or Milan MXP via European hub. Italian customs inspection on arrival."
+      timing: "After 90-day wait has elapsed."
+      responsible: "Airline, Italian customs"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "MARD health certificate and DAH endorsement: approximately VND 500,000-2,000,000"
+    - "Titre test at EU-approved laboratory: approximately EUR 250-500 or VND 6,000,000-14,000,000"
+    - "Cargo fees Vietnam to Italy via hub: approximately EUR 900-2,500 depending on pet size and routing"
+    - "Pet transport agent fee: EUR 400-1,000 if used"
+    - "Realistic total: EUR 2,000-5,500"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "low"
-  estimated_timeline_weeks: "4-10"
+    - "There are no direct cargo flights from Vietnam to Italy. All routings involve a European hub (Paris CDG, Frankfurt FRA, or Amsterdam AMS). The hub is the EU entry point for documentation purposes."
+    - "The 90-day wait from titre test blood draw date is mandatory. Plan at least 5 months before your intended Italian arrival date."
+    - "Italy bans import of certain breeds including American Pit Bull Terriers. Check Italian breed regulations before travel."
+    - "The AHC must reference the correct EU entry airport. If routing via CDG, the AHC documentation should be prepared for French entry."
+
+  route_complexity: "high"
+  estimated_timeline_weeks: "20-28"
+
 content:
-  h1: "Pet Transport from Vietnam to Italy"
+  h1: "Pet Transport from Vietnam to Italy: EU Titre Test and Hub Connections"
   overview: |
-    Pet transport from Vietnam to Italy follows a clear process once you know what Italy requires.
-    
-    This route is relatively straightforward compared to some international routes. Start preparations at least 4 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened.
-    
-    Getting the timing right is critical. Work backwards from your travel date and add a buffer.
+    Italy applies EU-wide pet travel rules for third-country imports. Vietnam is not on the EU Annex II approved third-country list, meaning pets from Vietnam require an FAVN or ELISA titre test at an EU-approved laboratory and a mandatory 90-day wait from the blood draw date. The Vietnam export process is straightforward: a MARD-authorised vet issues the health certificate in EU AHC format, endorsed by the Department of Animal Health (DAH), with no separate export permit required. Total preparation: 20-28 weeks. Source: EU pet travel regulations, ec.europa.eu.
+
+    Unlike France (Air France direct from SGN/HAN to CDG) or the Netherlands (KLM direct from SGN/HAN to AMS), Italy has no direct cargo services from Vietnam. All routings to Italy from Vietnam require a European hub connection, typically Paris CDG via Air France, Frankfurt FRA via Lufthansa, or Amsterdam AMS via KLM. The hub airport is the first EU entry point for documentation purposes.
+
+    For owners moving to northern Italy (Milan, Turin), a Lufthansa connection via Frankfurt to Milan Malpensa (MXP) or a KLM connection via Amsterdam AMS may be convenient. For Rome and central/southern Italy, Air France via CDG to Rome Fiumicino (FCO) is the most common routing.
+
   sections:
-    - heading: "Why this route needs early planning"
+    - heading: "EU import requirements for Italy: no additions beyond the EU standard"
       body: |
-        Compared to some international pet transport routes, Vietnam to Italy is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        EU member state. EU rules apply.
-    - heading: "Things to sort before you book"
+        Italy does not add requirements beyond the EU standard for pets from Vietnam. The full process: ISO microchip (implanted before or same day as first vaccination); rabies vaccination primary course (21-day wait from initial vaccination); FAVN or ELISA titre test at an EU-approved laboratory (result 0.5 IU/ml or above, blood draw at least 30 days after final vaccination); mandatory 90-day wait from blood draw date; EU-format AHC from MARD-authorised official vet in Vietnam, endorsed by DAH, issued within 10 days of EU entry. No quarantine on arrival for compliant pets. Source: EU pet travel regulations, ec.europa.eu.
+
+        Italy does restrict certain dog breeds from import. American Pit Bull Terriers are banned. Some other breeds classified as potentially dangerous may require additional documentation or face restrictions in certain Italian regions. If your dog is a breed that might fall under Italian breed restrictions, check with the Italian Ministry of Health (salute.gov.it) before making travel arrangements.
+
+    - heading: "Hub connections to Italy from Vietnam: EU entry point implications"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Because no direct cargo flights operate between Vietnam and Italy, all routings involve a European hub. The most practical options are: Air France from SGN/HAN to Paris CDG, with connecting cargo to Rome FCO or Milan MXP (CDG is the EU entry point); Lufthansa from Vietnam via FRA to Rome FCO or Milan MXP (FRA is the EU entry point); KLM from SGN/HAN via Amsterdam AMS to Rome FCO or Milan MXP (AMS is the EU entry point).
+
+        The EU entry point matters for your AHC documentation. For EU pet travel purposes, the first EU entry point is where the AHC is presented to border authorities. If your pet enters the EU at Paris CDG before connecting to Rome, the AHC should be prepared for French entry. In practice, a specialist pet transport agent will know which entry point the AHC should reference for your specific routing. Confirm this before the documentation is issued by the MARD-authorised vet.
+
+    - heading: "Vietnam-to-Italy versus Vietnam-to-France: routing comparison"
+      body: |
+        Vietnam-to-France benefits from Air France direct cargo from SGN/HAN to CDG. If your final EU destination is France, this is the simpler option: one carrier, one entry point. Vietnam-to-Italy requires a connection, as no direct Vietnam-Italy cargo services exist. If your destination is Rome, the Air France SGN/HAN to CDG routing with connecting cargo to FCO is the most common, meaning CDG (France) is the EU entry point.
+
+        The requirements are identical. The practical difference is an extra cargo leg for Italy and the need to manage the EU entry point documentation carefully. For owners specifically relocating to Italy, this is manageable with a specialist agent. For owners with flexibility between France and Italy, France has a simpler routing from Vietnam.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Vietnam to Italy?"
-    answer: "Allow at least 4 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Italy?"
-    answer: "No routine quarantine is required in Italy for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Italy?"
-    answer: "No, Italy does not require a rabies titre test for most pets arriving from Vietnam. Your pet still needs a valid rabies vaccination and microchip. Check the current requirements with the destination authority before travel."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Vietnam. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Italy's authority for the exact format required."
+  - question: "Does Italy require a titre test for pets from Vietnam?"
+    answer: "Yes. Vietnam is not on the EU Annex II approved list. FAVN or ELISA titre test at an EU-approved laboratory is required, with a mandatory 90-day wait from the blood draw date. Source: EU pet travel regulations, ec.europa.eu."
+  - question: "Are there direct flights from Vietnam to Italy for pet cargo?"
+    answer: "No. There are no direct cargo services from Vietnam to Italy. All routings require a European hub connection (typically Paris CDG, Frankfurt FRA, or Amsterdam AMS). The hub country is the EU entry point for documentation purposes."
+  - question: "How long does Vietnam-to-Italy pet transport take?"
+    answer: "Allow 20-28 weeks total. The timeline is driven by the titre test process: at least 30 days post-vaccination before blood draw, plus the 90-day wait from blood draw. Add time for MARD health certificate and hub connection coordination."
+  - question: "What breed restrictions apply in Italy for pets from Vietnam?"
+    answer: "Italy bans import of American Pit Bull Terriers. Some regions impose additional rules on breeds classified as potentially dangerous. Check with the Italian Ministry of Health (salute.gov.it) before travel if your dog is in a restricted category."
+  - question: "Which hub airport is best for Vietnam-to-Italy routing?"
+    answer: "For Rome (FCO), Air France via Paris CDG is the most common option. For Milan (MXP), Lufthansa via Frankfurt FRA or KLM via Amsterdam AMS are practical alternatives. Each hub becomes the EU entry point for your AHC documentation."
+
 links:
   sideways:
     - url: "/pet-transport/italy-to-vietnam/"
       text: "Pet Transport Italy to Vietnam"
+    - url: "/pet-transport/vietnam-to-france/"
+      text: "Pet Transport Vietnam to France"
+    - url: "/pet-transport/vietnam-to-spain/"
+      text: "Pet Transport Vietnam to Spain"
   upward:
-    - url: "/pet-transport/origins/vietnam-pet-export-guide/"
-      text: "Shipping from Vietnam"
     - url: "/pet-transport/countries/italy/"
-      text: "Importing to Italy"
+      text: "Italy pet import rules"
     - url: "/pet-transport/airlines/air-france/"
-      text: "Air France pet policy"
+      text: "Air France pet cargo policy"
 ---

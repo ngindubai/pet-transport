@@ -1,130 +1,150 @@
 ---
-template_variant: "A"
-title: "Pet Relocation China to Singapore | Requirements & Guide"
-description: "Pet relocation from China to Singapore: Singapore import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport China to Singapore: Schedule III Quarantine and 2026 AVS Rules"
+description: "Moving a dog or cat from China to Singapore in 2026. China is Schedule III: mandatory 30-day quarantine at AQC and titre test with 90-day pre-export window apply. Full AVS guide."
+date: "2026-06-09"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "C"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "china-to-singapore"
 origin_name: "China"
 destination_name: "Singapore"
+
 route_data:
   origin:
     code: "CN"
     country: "China"
     export_requirements:
-      export_permit: "Export permit from GACC. Required particularly for purebred/registered breeds."
-      health_certificate: "Export health certificate in destination-country required format."
+      health_certificate: "Official health certificate in AVS Singapore-required format, issued by a GACC-authorised vet, countersigned by a GACC official. Issued within 14 days of departure from China. Source: GACC, english.customs.gov.cn."
+      export_permit: "GACC export permit required. Apply to local GACC office. Allow 3-4 weeks. Approved departure airports: Beijing Capital (PEK), Shanghai Pudong (PVG), Guangzhou Baiyun (CAN)."
+
   destination:
     code: "SG"
     country: "Singapore"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before rabies vaccination"
-      rabies_vaccination: "Required"
-      titre_test: "Required for: Category B and C countries. Not required for: Category A countries. Minimum: 0.5 IU/ml"
-      quarantine: "Check current requirements with destination authority"
-      import_permit: "Check with destination authority"
-      health_certificate: "Required. Veterinary health certificate. Issued by: Government veterinarian or government-endorsed veterinarian in country of export. Certificate must state: species, breed, age, sex, microchip number, vaccination records, health status"
+      microchip: "ISO 11784/11785 microchip required. Must be implanted before rabies vaccination."
+      rabies_vaccination: "Current rabies vaccination required before titre test blood draw."
+      titre_test: "Required. Rabies serology test at a WOAH reference laboratory or an AVS-approved laboratory in a Schedule I or II country. Blood draw at least 28 days after a valid rabies vaccination. Blood draw must occur at least 90 days before the export date (i.e., at least 90 days before departure from China to Singapore). Blood drawn within the last 12 months of export. Result must meet WOAH minimum standards. Source: AVS, avs.nparks.gov.sg."
+      quarantine: "Mandatory 30-day quarantine at the Animal Quarantine Centre (AQC), Changi, Singapore. China is Schedule III under AVS classification. Pets are vaccinated against rabies on arrival at AQC. Approximately SGD 1,500-3,000 for 30 days, paid by owner. Source: AVS, avs.nparks.gov.sg."
+      import_permit: "Singapore Licence to Import required from AVS. Must be obtained through an AVS-recognised pet agent. From 1 April 2026, only AVS-recognised pet agents may handle import clearance at CAPQ. Source: AVS, avs.nparks.gov.sg."
+      health_certificate: "Official health certificate in AVS-specified format, endorsed by GACC. Must arrive with the pet at Changi."
+
   airlines:
     - name: "Air China"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin on domestic China routes. International: cargo only via Air China Cargo. Strict crate size and documentation requirements. China-specific import/export permits required. Advance booking of cargo space essential."
+      type: "cargo_only"
+      policy_summary: "Direct cargo services Beijing (PEK) and Shanghai (PVG) to Singapore Changi (SIN). Cargo only on international routes. Full documentation review before acceptance at cargo desk."
     - name: "Singapore Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Emirates"
+      policy_summary: "Operates cargo services from PEK and PVG to SIN via SQ Cargo. Well-established process for live animal imports into Singapore. Advance booking required."
+    - name: "China Southern Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
+      policy_summary: "Direct services from Guangzhou (CAN) and other Chinese cities to Singapore. Cargo division handles live animals. Confirm documentation requirements with CZ Cargo before booking."
     - name: "Cathay Pacific"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
+      policy_summary: "Via Hong Kong (HKG) hub to Singapore. AFCD transit rules apply during HKG connection. An option for southern China departures."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Implant ISO microchip and administer rabies vaccination in China."
+      timing: "First medical steps. Titre test blood draw cannot happen until at least 28 days after vaccination."
+      responsible: "Vet in China"
     - step: 2
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Rabies serology (titre test) blood draw at a WOAH-approved or AVS-accepted laboratory."
+      timing: "At least 28 days after vaccination and at least 90 days before intended departure from China to Singapore."
+      responsible: "Vet and approved laboratory"
     - step: 3
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "90-day pre-export waiting period runs from the blood draw date."
+      timing: "Cannot be shortened. This is the main planning constraint for this route."
+      responsible: "Owner to track"
     - step: 4
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Engage an AVS-recognised pet agent to apply for Singapore import licence."
+      timing: "At least 6-8 weeks before intended arrival in Singapore."
+      responsible: "AVS-recognised pet agent"
     - step: 5
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Apply for GACC export permit."
+      timing: "4-6 weeks before departure from China."
+      responsible: "Owner or agent"
+    - step: 6
+      action: "Obtain AVS-format health certificate from GACC-authorised official vet, countersigned by GACC."
+      timing: "Within 14 days of departure from China."
+      responsible: "GACC-authorised official vet"
+    - step: 7
+      action: "Fly to Singapore Changi (SIN). Mandatory 30-day quarantine at AQC on arrival."
+      timing: "After 90-day pre-export wait has elapsed. AVS-recognised agent handles CAPQ clearance."
+      responsible: "Airline, AVS, AVS-recognised pet agent"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "GACC export permit and health certificate endorsement: approximately CNY 800-2,000"
+    - "Rabies vaccination and microchip in China: approximately CNY 500-1,500"
+    - "Titre test at WOAH-approved laboratory: approximately CNY 4,000-10,000"
+    - "Singapore import licence application fee"
+    - "Cargo fees China to Singapore Changi: approximately SGD 600-1,500 depending on pet size"
+    - "30-day AQC quarantine: approximately SGD 1,500-3,000 paid by owner"
+    - "AVS-recognised pet agent fee: approximately SGD 500-1,500"
+    - "Realistic total: SGD 4,000-10,000 or more"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "China is Schedule III for Singapore. Mandatory 30-day quarantine at AQC applies to all pets from China regardless of vaccination status. This is non-negotiable."
+    - "The titre test blood draw must occur at least 90 days before the departure date from China. This means you need to draw blood and wait 3 months before flying. Source: AVS, avs.nparks.gov.sg."
+    - "From 1 April 2026, only AVS-recognised pet agents may handle import clearance procedures at CAPQ (Changi Animal and Plant Quarantine Station). Pet owners cannot manage this step themselves. Source: AVS, avs.nparks.gov.sg."
+    - "If you are using Singapore as a stepping-stone to Australia: the 30-day quarantine counts toward Singapore residency, and you should time the DAFF titre test blood draw (which is a separate requirement from the Singapore titre test) to start as early as possible."
+
+  route_complexity: "high"
+  estimated_timeline_weeks: "16-24"
+
 content:
-  h1: "Pet Transport from China to Singapore"
+  h1: "Pet Transport from China to Singapore: Schedule III Requirements and AQC Quarantine"
   overview: |
-    Getting your dog or cat from China to Singapore is entirely achievable, but the preparation timeline is not flexible.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Start early and follow the steps in sequence. Missing a deadline pushes the whole timeline back.
+    Moving a pet from China to Singapore is a manageable but carefully timed process. Singapore's AVS (Animal and Veterinary Service) classifies China as a Schedule III country for pet imports, which triggers mandatory 30-day quarantine at the Animal Quarantine Centre (AQC) on arrival in Singapore, and a required rabies titre test with the blood draw occurring at least 90 days before departure from China. Understanding these two requirements and timing them correctly is the main challenge of this route. Source: AVS NParks, avs.nparks.gov.sg.
+
+    The 90-day pre-export window for the titre test means the minimum preparation time from first blood draw to arrival in Singapore is approximately 16-18 weeks. Add time for the GACC export process and Singapore import licence application, and a 20-24 week total preparation period is realistic for most owners. The 30-day quarantine on arrival means your pet will spend the first month in Singapore at AQC, with your visits managed by facility booking rules.
+
+    One important context for some owners: Singapore is also the most common stepping-stone country for pets moving from China to Australia. For those families, the Singapore leg is not the final destination. In this case, the DAFF titre test for Australian entry (a separate blood test from the AVS titre test) should be timed to start as early as possible, so the 180-day post-titre wait for Australia runs concurrently with Singapore residency.
+
   sections:
-    - heading: "Key requirements for moving your pet to Singapore"
+    - heading: "Singapore's Schedule III classification: what it means for China pets"
       body: |
-        Compared to some international pet transport routes, China to Singapore is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        National Parks Board (NParks) Animal and Veterinary Service (AVS) regulates all animal imports. Singapore maintains rabies-free status through a rigorous 4-tier category system. AVS website blocked automated extraction; data compiled from AVS published guidelines and official category system documentation. Singapore has strict housing rules: HDB flats (public housing, ~80% of population) only allow approved small dog breeds and cats (since 2024).
-    - heading: "Practical advice for shipping your pet from China"
+        Singapore's AVS divides countries of origin into three schedules based on rabies risk. Schedule I (four countries including Australia, New Zealand, UK, and Ireland) allows entry with minimal additional requirements. Schedule II (around 30 countries including Hong Kong, Japan, Canada, USA, and most of Europe) has requirements but no mandatory quarantine. Schedule III covers all other countries including China, Vietnam, Thailand, India, and most of Asia and Africa. China is Schedule III.
+
+        For Schedule III arrivals, two specific requirements apply beyond the standard documentation: mandatory 30-day quarantine at AQC on arrival in Singapore (where pets are also vaccinated against rabies on arrival), and a rabies titre test where the blood draw occurred at least 90 days before the export date. The titre test must be done at a WOAH reference laboratory or an AVS-approved laboratory in a Schedule I or II country. Source: AVS, avs.nparks.gov.sg.
+
+        The practical implication of the 90-day pre-export window is that you must draw blood in China at least 90 days before you intend to fly. This is different from the EU process (which requires a 90-day post-titre wait before entry) but has a similar practical effect: you need to plan at least 3 months ahead of the departure date.
+
+    - heading: "From 1 April 2026: AVS-recognised pet agents only at CAPQ"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        A significant procedural change took effect on 1 April 2026. From this date, only AVS-recognised pet agents are permitted to handle import clearance procedures at CAPQ (Changi Animal and Plant Quarantine Station). Pet owners can no longer enter the Changi Airfreight Centre where CAPQ is located. This means you must engage an AVS-recognised agent to manage the Singapore arrival process. The agent will represent your pet through CAPQ clearance and arrange transfer to the AQC facility for the 30-day quarantine.
+
+        Choosing an AVS-recognised agent with experience on the China-to-Singapore route is worthwhile. The GACC documentation format must match Singapore's requirements, and any discrepancy can cause delays at CAPQ. An agent who handles this route regularly will know the correct format and will have direct contact with AVS if issues arise. Source: AVS, avs.nparks.gov.sg.
+
+    - heading: "China-to-Singapore versus China-to-Hong Kong: a route comparison"
+      body: |
+        For owners moving from mainland China, Singapore and Hong Kong are the two most practical regional destinations. The requirements differ significantly. Hong Kong (AFCD administration): Mainland China pets entering Hong Kong are subject to AFCD's own rules, which include a mandatory 120-day AFCD quarantine for pets from high-risk rabies countries, including mainland China. Singapore (AVS administration): 30-day quarantine at AQC. On quarantine duration alone, Singapore is considerably shorter.
+
+        The Singapore titre test requirement (blood draw 90 days before export) does add pre-departure preparation time that the Hong Kong AFCD process may not require in the same way. However, the 30-day Singapore quarantine versus the 120-day Hong Kong AFCD quarantine is a significant difference in terms of disruption and cost. For most owners, Singapore is the more practical choice for regional relocation from mainland China.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from China to Singapore?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Singapore?"
-    answer: "No routine quarantine is required in Singapore for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Singapore?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Singapore. Start this process as early as possible."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in China. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Singapore's authority for the exact format required."
+  - question: "Does my pet have to quarantine when arriving in Singapore from China?"
+    answer: "Yes. China is Schedule III for Singapore. All pets from China must complete a mandatory 30-day quarantine at the Animal Quarantine Centre (AQC) in Changi on arrival. This is non-negotiable and is not affected by the pet's individual vaccination history."
+  - question: "What is the pre-export titre test timing requirement for Singapore?"
+    answer: "The titre test blood draw must occur at least 90 days before the departure date from China to Singapore, and within 12 months of that departure date. Blood must be drawn at least 28 days after a valid rabies vaccination. Source: AVS, avs.nparks.gov.sg."
+  - question: "Can I handle my pet's Singapore import clearance myself?"
+    answer: "No, not since 1 April 2026. From that date, only AVS-recognised pet agents can handle import clearance at CAPQ. Pet owners cannot enter the Changi Airfreight Centre. You must engage an AVS-recognised agent for this step. Source: AVS, avs.nparks.gov.sg."
+  - question: "How does China-to-Singapore compare to China-to-Hong Kong for quarantine?"
+    answer: "Singapore imposes a 30-day quarantine at AQC for pets from mainland China (Schedule III). Hong Kong's AFCD imposes a mandatory 120-day quarantine for pets from high-risk rabies countries including mainland China. Singapore is considerably shorter, making it a more practical destination for most families."
+  - question: "If I am using Singapore as a stepping-stone to Australia, when should I do the DAFF titre test?"
+    answer: "As early as possible. The DAFF titre test for Australian entry (from Singapore as a Group 2 country) requires a separate blood draw from the AVS Singapore titre test. The 180-day post-titre wait for Australia starts from the DAFF blood draw date. Drawing blood before leaving China or as soon as possible after completing AQC quarantine in Singapore will minimise the total timeline."
+
 links:
   sideways:
     - url: "/pet-transport/singapore-to-china/"
       text: "Pet Transport Singapore to China"
+    - url: "/pet-transport/china-to-australia/"
+      text: "Pet Transport China to Australia (via Singapore)"
   upward:
-    - url: "/pet-transport/origins/china-pet-export-guide/"
-      text: "Shipping from China"
     - url: "/pet-transport/countries/singapore/"
-      text: "Importing to Singapore"
+      text: "Singapore pet import rules"
     - url: "/pet-transport/airlines/singapore-airlines/"
-      text: "Singapore Airlines pet policy"
+      text: "Singapore Airlines pet cargo policy"
+    - url: "/pet-transport/airlines/air-china/"
+      text: "Air China pet cargo policy"
 ---
