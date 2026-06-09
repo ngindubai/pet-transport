@@ -2,8 +2,7 @@
 .nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:18px 32px;transition:background var(--t),padding var(--t),box-shadow var(--t)}.tpl-ne /* ── ROUTE HERO ───────────────────────────────────────── */
 .hero{position:relative;min-height:88vh;display:flex;align-items:center;overflow:hidden;
   background:
-    linear-gradient(105deg, rgba(8,24,18,0.86) 0%, rgba(8,22,17,0.52) 55%, rgba(8,20,15,0.30) 100%),
-    url('images/routesbg.jpg') center/cover no-repeat;}.tpl-ne .hero-mesh{position:absolute;inset:0;pointer-events:none;
+    linear-gradient(105deg, rgba(8,24,18,0.86) 0%, rgba(8,22,17,0.52) 55%, rgba(8,20,15,0.30) 100%);}.tpl-ne .hero-mesh{position:absolute;inset:0;pointer-events:none;
   background:radial-gradient(ellipse at 20% 60%,rgba(26,107,74,.35) 0%,transparent 55%),
              radial-gradient(ellipse at 80% 25%,rgba(30,58,95,.5) 0%,transparent 50%)}.tpl-ne .hero-grid{position:absolute;inset:0;pointer-events:none;
   background-image:linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),
@@ -93,7 +92,7 @@ footer{background:var(--navy-dark);color:rgba(255,255,255,.55);padding:48px 32px
 .checklist{display:flex;flex-direction:column;gap:0}.tpl-ne .cl-item{display:flex;align-items:flex-start;gap:9px;padding:9px 0;border-bottom:1px solid var(--border);font-size:.8rem;animation:fadeUp .4s ease both}.tpl-ne .cl-item:last-child{border-bottom:none}.tpl-ne .cl-dot{width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}.tpl-ne .cl-g{background:rgba(26,107,74,.1);color:var(--green)}.tpl-ne .cl-a{background:rgba(232,145,58,.1);color:var(--amber)}.tpl-ne .cl-dot svg{width:9px;height:9px}.tpl-ne .cl-text{flex:1;color:var(--ink);font-family:var(--fh);font-weight:600;line-height:1.35}.tpl-ne .cl-sub{font-size:.7rem;color:var(--muted);font-weight:400;display:block}.tpl-ne /* Enhanced scroll-reveal + micro-interactions */
 .r{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}.tpl-ne .r.in{opacity:1;transform:none}.tpl-ne .d1{transition-delay:.1s}.tpl-ne .d2{transition-delay:.2s}.tpl-ne .d3{transition-delay:.3s}.tpl-ne .d4{transition-delay:.4s}.tpl-ne .tl-item,.tpl-ne .ps,.tpl-ne .pi,.tpl-ne .pr,.tpl-ne .al,.tpl-ne .al-item,.tpl-ne .faq-item,.tpl-ne .fi,.tpl-ne .rc-item{transition:transform .2s ease}.tpl-ne .tl-item:hover,.tpl-ne .ps:hover,.tpl-ne .pi:hover,.tpl-ne .pr:hover,.tpl-ne .al:hover,.tpl-ne .al-item:hover{transform:translateX(3px)}.tpl-ne .faq-item:hover,.tpl-ne .fi:hover,.tpl-ne .rc-item:hover{background:rgba(26,107,74,.02)}.tpl-ne .sf-btn,.tpl-ne .wa-btn,.tpl-ne .bcta-btn,.tpl-ne .cta-btn,.tpl-ne .hero-cta{cursor:pointer}@media(prefers-reduced-motion:reduce){}.tpl-ne /* ════════════════════════════════════════════════════════════════════
    PREMIUM BUTTON + FROSTED GLASS HERO STATS
-   Injected as override — takes precedence via cascade position
+   Injected as override, takes precedence via cascade position
    ════════════════════════════════════════════════════════════════════ */
 
 /* ── QUOTE / SUBMIT BUTTON ──────────────────────────────────────── */
@@ -146,7 +145,7 @@ footer{background:var(--navy-dark);color:rgba(255,255,255,.55);padding:48px 32px
     0 1px 0 rgba(255,255,255,.28) inset,
     0 -1px 0 rgba(0,0,0,.14) inset !important;
   transform:translateY(-2px) !important;
-}.tpl-ne .sf-btn:active,.tpl-ne .rf-btn:active{transform:translateY(0) !important}.tpl-ne /* Arrow circle — sits inside button's <span>→</span> */
+}.tpl-ne .sf-btn:active,.tpl-ne .rf-btn:active{transform:translateY(0) !important}.tpl-ne /* Arrow circle, sits inside button's <span>→</span> */
 .sf-btn > span,.tpl-ne .rf-btn > span{
   width:28px !important;
   height:28px !important;
@@ -176,7 +175,7 @@ footer{background:var(--navy-dark);color:rgba(255,255,255,.55);padding:48px 32px
   color:white !important;
   text-decoration:none !important;
   border-radius:4px !important;
-  /* Distinctive left accent — clearly NOT the same as quote btn */
+  /* Distinctive left accent, clearly NOT the same as quote btn */
   border:none !important;
   border-left:4px solid rgba(255,255,255,.35) !important;
   box-shadow:
