@@ -2,7 +2,7 @@
 .nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:18px 32px;transition:background var(--t),padding var(--t),box-shadow var(--t)}.tpl-ne /* ── ROUTE HERO ───────────────────────────────────────── */
 .hero{position:relative;min-height:88vh;display:flex;align-items:center;overflow:hidden;
   background:
-    linear-gradient(105deg, rgba(8,24,18,0.86) 0%, rgba(8,22,17,0.52) 55%, rgba(8,20,15,0.30) 100%);}.tpl-ne .hero-mesh{position:absolute;inset:0;pointer-events:none;
+    linear-gradient(105deg, rgba(8,24,18,0.86) 0%, rgba(8,22,17,0.52) 55%, rgba(8,20,15,0.30) 100%),url('/img/routesbg.jpg') center/cover no-repeat;}.tpl-ne .hero-mesh{position:absolute;inset:0;pointer-events:none;
   background:radial-gradient(ellipse at 20% 60%,rgba(26,107,74,.35) 0%,transparent 55%),
              radial-gradient(ellipse at 80% 25%,rgba(30,58,95,.5) 0%,transparent 50%)}.tpl-ne .hero-grid{position:absolute;inset:0;pointer-events:none;
   background-image:linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),
@@ -263,3 +263,14 @@ footer{background:var(--navy-dark);color:rgba(255,255,255,.55);padding:48px 32px
 .hero-stats:has(.hs-item){
   border-radius:0 !important;
 }.tpl-ne .hs-item{border-bottom:1px solid rgba(255,255,255,.1) !important}.tpl-ne .hs-label{color:rgba(255,255,255,.48) !important}.tpl-ne .hs-value{color:white !important;font-weight:700 !important}.tpl-ne .hs-badge{font-family:var(--fh) !important}.tpl-ne .hb-warn{color:#fcd34d !important;background:rgba(252,211,77,.18) !important}.tpl-ne .hb-ok{color:#6ee7b7 !important;background:rgba(110,231,183,.15) !important}
+/* FIX: faq cards + icon + font */
+.tpl-ne .faq-list .faq-item{border:1px solid var(--border);border-radius:12px;background:var(--white);margin-bottom:10px;transition:box-shadow .2s,border-color .2s}
+.tpl-ne .faq-list .faq-q{padding:18px 22px}
+.tpl-ne .faq-item.open{border-color:var(--green-light,#2a9d6e);box-shadow:0 6px 22px rgba(26,107,74,.10)}
+.tpl-ne .faq-icon{width:26px;height:26px;border-radius:7px;border:1.5px solid var(--border);position:relative;flex-shrink:0}
+.tpl-ne .faq-icon::before{content:'+';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:var(--fb,inherit);font-weight:800;font-size:1rem;color:var(--muted);transition:color .2s}
+.tpl-ne .faq-item.open .faq-icon{background:var(--green);border-color:var(--green);transform:rotate(45deg)}
+.tpl-ne .faq-item.open .faq-icon::before{color:#fff}
+.tpl-ne .faq-a-inner{padding:0 22px 20px}
+.tpl-ne .faq-a-inner,.tpl-ne .faq-a-inner p,.tpl-ne .faq-a-inner li,.tpl-ne .faq-a-inner span{font-family:var(--fb,inherit) !important}
+.tpl-ne .ob-cta,.tpl-ne .bcta-btn,.tpl-ne .sf-btn{border-radius:6px}
