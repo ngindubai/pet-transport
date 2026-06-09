@@ -40,9 +40,10 @@ Use commas, full stops, colons, brackets, or restructure the sentence instead. T
 After every job that changes or adds pages (a content block, a blog article, route pages, a template change, a fix), once the push is made Claude must:
 
 1. Post, in the chat, the **full live URL of every new or changed page** so Gareth can click and review each one. Example: `https://www.pettransportglobal.com/pet-transport/denmark-to-switzerland/`.
-2. Group the links clearly (new pages vs changed pages) and give the expected deploy time so Gareth knows when they will be live (see Deploy speed table below).
-3. State plainly that these are now live and need a review, since there is no pre-publish hold.
-4. If a template or sitewide change went out, name a representative sample of affected URLs (you cannot list thousands) plus the home page, so Gareth can spot-check.
+2. **EACH PAGE MUST BE ON ITS OWN SEPARATE LINE.** Never group multiple URLs on one line, never use comma-separated links, never use a single hyperlink that covers multiple routes. One page = one line = one clickable link. This is non-negotiable. When Gareth clicks a link he must land on exactly that one page.
+3. Group the links clearly (new pages vs changed pages) and give the expected deploy time so Gareth knows when they will be live (see Deploy speed table below).
+4. State plainly that these are now live and need a review, since there is no pre-publish hold.
+5. If a template or sitewide change went out, name a representative sample of affected URLs (you cannot list thousands) plus the home page, so Gareth can spot-check.
 
 **Why:** Deploy is automatic, so nothing stops thin or broken content reaching the live site except this review. Posting the live links every time is the control that catches problems fast. Skipping the link post is treated as a failed job.
 
@@ -392,7 +393,7 @@ Full specification in **[quotedesign.md](quotedesign.md)** - read it before prod
 Only modify files directly related to the current task. Mention improvements elsewhere as a note. Do not touch them.
 
 ### The cascading build plan is law
-Never bulk-generate content. One run builds a batch of up to 4 blocks (a block = 25 routes or one equivalent non-route unit). Floor is 1 block. Each block in the batch runs the FULL quality gate independently; quality comes first, so if a run cannot finish 4 blocks cleanly it builds as many as it can do well (minimum 1), commits those, and reports the shortfall. The whole batch is committed ONCE per run (one commit, one push, one deploy). Bulk-generation scripts remain banned: a batch is still N individually quality-gated blocks, never a mass-generation script.
+Never bulk-generate content. One run builds a batch of 2 blocks (a block = 25 routes or one equivalent non-route unit). Floor is 1 block. Target: 50 routes per run, 100 routes per day across 2 daily runs. Each block in the batch runs the FULL quality gate independently; quality comes first, so if a run cannot finish 2 blocks cleanly it builds as many as it can do well (minimum 1), commits those, and reports the shortfall. The whole batch is committed ONCE per run (one commit, one push, one deploy). Bulk-generation scripts remain banned: a batch is still N individually quality-gated blocks, never a mass-generation script.
 
 ### Quality gate
 1. Research - real regulations from data files and named sources
@@ -402,10 +403,10 @@ Never bulk-generate content. One run builds a batch of up to 4 blocks (a block =
 5. QA scan - the-auditor.md checks
 6. Commit to main (bundled with docs update). Deploy is automatic
 7. **Update BUILD-PLAN.md, build_state.json, MEMORY.md in the same commit** (see MANDATORY DOCS UPDATE)
-8. **Post every new/changed live URL in chat for review** (see LIVE LINK REVIEW GATE)
+8. **Post every new/changed live URL in chat for review, ONE LINE PER PAGE** (see LIVE LINK REVIEW GATE)
 9. Stop and wait for next "go"
 
-When a run builds a batch of up to 4 blocks, run the quality gate on each block, advancing the build pointer after each, then run steps 6 to 8 ONCE for the whole batch.
+When a run builds a batch of 2 blocks, run the quality gate on each block, advancing the build pointer after each, then run steps 6 to 8 ONCE for the whole batch.
 
 ---
 
@@ -469,7 +470,7 @@ pet-transport/
 
 ### "go" or "next block"
 1. Read BUILD-PLAN.md and build_state.json
-2. Write content through full quality gate, building a batch of up to 4 blocks (minimum 1), advancing the build pointer after each block
+2. Write content through full quality gate, building a batch of 2 blocks (minimum 1), advancing the build pointer after each block
 3. Commit the whole batch to main once with docs update bundled in. Deploy is automatic
 4. **Post every new/changed live URL in chat for review** (LIVE LINK REVIEW GATE)
 5. Stop and wait
@@ -501,7 +502,7 @@ pet-transport/
 - No em dashes anywhere, ever. See EM DASH BAN at the top of this file.
 - Never send WhatsApp messages or emails without explicit instruction. Never delete anything. Read only. See WHATSAPP AND EMAIL ACCESS RULES.
 - **Every commit must include a BUILD-PLAN.md + build_state.json + MEMORY.md update. See MANDATORY DOCS UPDATE.**
-- **A scheduled run builds a batch of up to 4 blocks (minimum 1), committed once. Bulk-generation scripts remain banned. See BEHAVIOR RULES.**
+- **A scheduled run builds a batch of 2 blocks (minimum 1, target 50 routes = 100 per day across 2 daily runs), committed once. Bulk-generation scripts remain banned. See BEHAVIOR RULES.**
 
 ---
 
@@ -514,4 +515,4 @@ pet-transport/
 
 ---
 
-*Last updated: 2026-06-05*
+*Last updated: 2026-06-09*
