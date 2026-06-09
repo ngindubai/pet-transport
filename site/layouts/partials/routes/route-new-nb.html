@@ -1,7 +1,7 @@
 {{/* Template B: v5 centred minimal, dark hero, alternating dark/cream sections. Faithful to mockup, real data. */}}
 {{ $rd := .Params.route_data }}
 {{ $o := .Params.origin_name }}{{ $d := .Params.destination_name }}
-<link rel="stylesheet" href="/css/route-new-nb.css">
+<link rel="stylesheet" href="/css/route-new-nb.css?v={{ now.Unix }}">
 <div class="tpl-nb">
 
   {{/* HERO: dark, centred */}}
