@@ -205,3 +205,16 @@
 .tpl-nc .fa-inner,.tpl-nc .fa-inner p,.tpl-nc .fa-inner li,.tpl-nc .fa-inner span{font-family:var(--fh) !important}
 .tpl-nc .hero-copy-cta{cursor:pointer}
 .tpl-nc .bcta-btn{border-radius:6px}
+
+/* ===== MOBILE HARDENING (<=600px) ===== */
+@media(max-width:600px){
+  .tpl-nc .hero-h1,.tpl-nc .intro-h1{font-size:2rem;line-height:1.08;letter-spacing:-.02em}
+  .tpl-nc .sec-h,.tpl-nc .lsec-h,.tpl-nc .bcta-h,.tpl-nc .cs-h,.tpl-nc .cta-h,.tpl-nc .cta-h2{font-size:1.55rem;line-height:1.1}
+  .tpl-nc .hero-bg,.tpl-nc .hero-bg-num{display:none}
+  .tpl-nc .hero{min-height:auto}
+  .tpl-nc .hero-sub,.tpl-nc .intro-sub{font-size:.92rem}
+  .tpl-nc .req-table,.tpl-nc .airline-table{font-size:.82rem}
+  .tpl-nc .req-table td,.tpl-nc .req-table th,.tpl-nc .airline-table td,.tpl-nc .airline-table th{padding-left:8px;padding-right:8px}
+  .tpl-nc section,.tpl-nc .page-sec,.tpl-nc .lsec,.tpl-nc .inner{padding-top:42px;padding-bottom:42px}
+}
+@media(max-width:900px){.tpl-nc .page{grid-template-columns:1fr;gap:32px}}@media(max-width:600px){.tpl-nc .hero-stats{grid-template-columns:1fr 1fr}.tpl-nc .proc-grid{grid-template-columns:1fr}.tpl-nc .hero-top{flex-direction:column;gap:20px}.tpl-nc .metric-grid{grid-template-columns:1fr 1fr}}

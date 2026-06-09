@@ -203,3 +203,16 @@
 .tpl-na .faq-item.open .faq-icon::before{color:#fff}
 .tpl-na .faq-a-inner{padding:0 22px 22px}
 .tpl-na .faq-a-inner,.tpl-na .faq-a-inner p,.tpl-na .faq-a-inner li,.tpl-na .faq-a-inner span{font-family:var(--fh) !important}
+
+/* ===== MOBILE HARDENING (<=600px) ===== */
+@media(max-width:600px){
+  .tpl-na .hero-h1,.tpl-na .intro-h1{font-size:2rem;line-height:1.08;letter-spacing:-.02em}
+  .tpl-na .sec-h,.tpl-na .lsec-h,.tpl-na .bcta-h,.tpl-na .cs-h,.tpl-na .cta-h,.tpl-na .cta-h2{font-size:1.55rem;line-height:1.1}
+  .tpl-na .hero-bg,.tpl-na .hero-bg-num{display:none}
+  .tpl-na .hero{min-height:auto}
+  .tpl-na .hero-sub,.tpl-na .intro-sub{font-size:.92rem}
+  .tpl-na .req-table,.tpl-na .airline-table{font-size:.82rem}
+  .tpl-na .req-table td,.tpl-na .req-table th,.tpl-na .airline-table td,.tpl-na .airline-table th{padding-left:8px;padding-right:8px}
+  .tpl-na section,.tpl-na .page-sec,.tpl-na .lsec,.tpl-na .inner{padding-top:42px;padding-bottom:42px}
+}
+@media(max-width:900px){.tpl-na .content{grid-template-columns:1fr;gap:32px}}@media(max-width:600px){.tpl-na .hero-stats{grid-template-columns:1fr 1fr}.tpl-na .tab-btn{padding:0 16px;font-size:.72rem}}

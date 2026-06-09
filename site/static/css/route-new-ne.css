@@ -274,3 +274,16 @@ footer{background:var(--navy-dark);color:rgba(255,255,255,.55);padding:48px 32px
 .tpl-ne .faq-a-inner{padding:0 22px 20px}
 .tpl-ne .faq-a-inner,.tpl-ne .faq-a-inner p,.tpl-ne .faq-a-inner li,.tpl-ne .faq-a-inner span{font-family:var(--fb,inherit) !important}
 .tpl-ne .ob-cta,.tpl-ne .bcta-btn,.tpl-ne .sf-btn{border-radius:6px}
+
+/* ===== MOBILE HARDENING (<=600px) ===== */
+@media(max-width:600px){
+  .tpl-ne .hero-h1,.tpl-ne .intro-h1{font-size:2rem;line-height:1.08;letter-spacing:-.02em}
+  .tpl-ne .sec-h,.tpl-ne .lsec-h,.tpl-ne .bcta-h,.tpl-ne .cs-h,.tpl-ne .cta-h,.tpl-ne .cta-h2{font-size:1.55rem;line-height:1.1}
+  .tpl-ne .hero-bg,.tpl-ne .hero-bg-num{display:none}
+  .tpl-ne .hero{min-height:auto}
+  .tpl-ne .hero-sub,.tpl-ne .intro-sub{font-size:.92rem}
+  .tpl-ne .req-table,.tpl-ne .airline-table{font-size:.82rem}
+  .tpl-ne .req-table td,.tpl-ne .req-table th,.tpl-ne .airline-table td,.tpl-ne .airline-table th{padding-left:8px;padding-right:8px}
+  .tpl-ne section,.tpl-ne .page-sec,.tpl-ne .lsec,.tpl-ne .inner{padding-top:42px;padding-bottom:42px}
+}
+@media(max-width:900px){.tpl-ne .page-body{grid-template-columns:1fr;gap:32px}.tpl-ne .side-col{position:static}}@media(max-width:600px){.tpl-ne .ob-items{grid-template-columns:1fr 1fr;gap:16px}.tpl-ne .overview-inner{flex-direction:column;gap:18px;align-items:flex-start}.tpl-ne .req-grid{grid-template-columns:1fr}.tpl-ne .route-visual{gap:10px}.tpl-ne .route-flag{font-size:1.6rem}}
