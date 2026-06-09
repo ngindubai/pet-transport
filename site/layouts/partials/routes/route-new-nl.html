@@ -1,53 +1,176 @@
+{{/* Template legacy: v3 dark hero, left sidebar. Faithful to mockup, real data. */}}
 {{ $rd := .Params.route_data }}
-<link rel="stylesheet" href="/css/route-new-nl.css">
+{{ $o := .Params.origin_name }}{{ $d := .Params.destination_name }}
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,700;0,800;0,900;1,800&family=Noto+Serif:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/route-new-nl.css?v={{ now.Unix }}">
 <div class="tpl-nl">
-<section class="hero"><div class="hero-bg-num" aria-hidden="true">{{ $rd.destination.code }}</div><div class="hero-inner"><div class="breadcrumb"><a href="/">Home</a> / <a href="/pet-transport/routes/">Routes</a> / <span>{{ .Params.origin_name }} to {{ .Params.destination_name }}</span></div><div class="hero-grid"><div class="hero-left"><div class="hero-tag">International pet relocation</div><div class="hero-route"><div class="hero-flag">{{ $rd.origin.code }}</div><div class="r-path"></div><div class="hero-flag">{{ $rd.destination.code }}</div></div><h1 class="hero-h1">{{ .Params.content.h1 | default (printf "Pet Transport: %s to %s" .Params.origin_name .Params.destination_name) }}</h1></div><div class="hero-right"><div class="hero-stats">{{ with $rd.estimated_timeline_weeks }}<div class="hs-item"><span class="hs-label">Prep time</span><span class="hs-value">{{ . }} weeks</span></div>{{ end }}<div class="hs-item"><span class="hs-label">Quarantine</span><span class="hs-value">{{ if .Params.quarantine_required }}{{ with .Params.quarantine_days }}{{ . }} days{{ else }}Yes{{ end }}{{ else }}No{{ end }}</span></div>{{ with $rd.route_complexity }}<div class="hs-item"><span class="hs-label">Complexity</span><span class="hs-value">{{ . | title }}</span></div>{{ end }}<div class="hs-item"><span class="hs-label">Service</span><span class="hs-value">Door to door</span></div></div></div></div></div></section>
-<div class="page-body"><aside class="sidebar"><div class="sc"><div class="sc-title">Route at a glance</div><div class="sc-stats"><div class="sc-stat"><span class="sc-stat-l">From</span><span class="sc-stat-v">{{ .Params.origin_name }}</span></div><div class="sc-stat"><span class="sc-stat-l">To</span><span class="sc-stat-v">{{ .Params.destination_name }}</span></div>{{ with $rd.estimated_timeline_weeks }}<div class="sc-stat"><span class="sc-stat-l">Prep time</span><span class="sc-stat-v">{{ . }} weeks</span></div>{{ end }}{{ with $rd.route_complexity }}<div class="sc-stat"><span class="sc-stat-l">Complexity</span><span class="sc-stat-v">{{ . | title }}</span></div>{{ end }}<div class="sc-stat"><span class="sc-stat-l">Quarantine</span><span class="sc-stat-v">{{ if .Params.quarantine_required }}{{ with .Params.quarantine_days }}{{ . }} days{{ else }}Yes{{ end }}{{ else }}No{{ end }}</span></div></div></div></aside><div class="main-col">{{ with .Params.content.overview }}
-<section class="page-sec"><div class="sec-tag">Overview</div><div class="sec-p">{{ . | markdownify }}</div></section>
-{{ end }}
-{{ partial "verified-date.html" . }}
-{{ partial "data-source-link.html" . }}
-{{ with $rd.timeline_steps }}
-<section class="page-sec" id="process"><div class="sec-tag">Step by step</div><h2 class="sec-h">How the process works</h2>
-<div class="proc-steps">
-{{ range . }}
-<div class="ps"><div class="ps-left"><div class="ps-n psn-g">{{ .step }}</div><div class="ps-line"></div></div><div class="ps-body">{{ with .timing }}<div class="ps-chips"><span class="chip c-time">{{ . }}</span></div>{{ end }}<div class="ps-title">{{ .action }}</div>{{ with .responsible }}<p class="ps-desc">Responsible: {{ . }}</p>{{ end }}</div></div>
-{{ end }}
-</div>
-</section>
-{{ end }}
-{{ with $rd.destination.import_requirements }}
-<section class="page-sec" id="requirements"><div class="sec-tag">Checklist</div><h2 class="sec-h">{{ $rd.destination.country }}: entry requirements</h2><table class="req-table"><thead><tr><th>Requirement</th><th>Detail</th></tr></thead><tbody>{{ with .microchip }}<tr><td>Microchip</td><td>{{ . }}</td></tr>{{ end }}{{ with .rabies_vaccination }}<tr><td>Rabies vaccination</td><td>{{ . }}</td></tr>{{ end }}{{ with .titre_test }}<tr><td>Rabies titre test</td><td>{{ . }}</td></tr>{{ end }}{{ with .quarantine }}<tr><td>Quarantine</td><td>{{ . }}</td></tr>{{ end }}{{ with .import_permit }}<tr><td>Import permit</td><td>{{ . }}</td></tr>{{ end }}{{ with .health_certificate }}<tr><td>Health certificate</td><td>{{ . }}</td></tr>{{ end }}</tbody></table></section>
-{{ end }}
-{{ with $rd.origin.export_requirements }}
-<section class="page-sec"><div class="sec-tag">Leaving {{ $rd.origin.country }}</div><h2 class="sec-h">Export requirements</h2><table class="req-table"><thead><tr><th>Requirement</th><th>Detail</th></tr></thead><tbody>{{ with .export_permit }}<tr><td>Export permit</td><td>{{ . }}</td></tr>{{ end }}{{ with .vet_inspection }}<tr><td>Veterinary inspection</td><td>{{ . }}</td></tr>{{ end }}{{ with .endorsement }}<tr><td>Government endorsement</td><td>{{ . }}</td></tr>{{ end }}{{ with .health_certificate }}<tr><td>Health certificate</td><td>{{ . }}</td></tr>{{ end }}</tbody></table></section>
-{{ end }}
-{{ with $rd.cost_factors }}
-<section class="page-sec"><div class="sec-tag">Costs</div><h2 class="sec-h">What this route typically costs</h2><table class="req-table"><tbody>{{ range $i,$c := . }}<tr><td>{{ add $i 1 }}</td><td>{{ $c }}</td></tr>{{ end }}</tbody></table></section>
-{{ end }}
-{{ with $rd.key_warnings }}
-<section class="page-sec"><div class="sec-tag">Critical points</div><h2 class="sec-h">Read before you book</h2>{{ range . }}<p style="border-left:3px solid var(--amber);padding:8px 14px;margin-bottom:8px">&#9888; {{ . }}</p>{{ end }}</section>
-{{ end }}
-{{ with $rd.destination.breed_restrictions }}
-<section class="page-sec"><div class="sec-tag">Restricted breeds</div><h2 class="sec-h">{{ $rd.destination.country }} breed rules</h2><ul>{{ range . }}{{ $s := . | lower | replaceRE "[^a-z0-9]+" "-" | strings.TrimRight "-" }}<li><a href="/pet-transport/breeds/{{ $s }}/" style="color:var(--green)">{{ . }}</a></li>{{ end }}</ul></section>
-{{ end }}
-{{ with $rd.airlines }}
-<section class="page-sec" id="airlines"><div class="sec-tag">Carriers</div><h2 class="sec-h">Airlines on this route</h2>
-<div class="airline-strip">
-{{ range . }}<div class="ac"><div class="ac-name">{{ .name }}</div><div class="ac-detail">{{ .policy_summary }}</div>{{ with .type }}<div class="ac-tags"><span class="ac-tag at-g">{{ . | replaceRE "_" " " | title }}</span></div>{{ end }}</div>{{ end }}
-</div>
-</section>
-{{ end }}
-{{ with .Params.content.sections }}{{ range . }}
-<section class="page-sec">{{ with .heading }}<h2 class="sec-h">{{ . }}</h2>{{ end }}<div class="sec-p">{{ .body | markdownify }}</div></section>{{ end }}{{ end }}
-{{ with .Params.faqs }}
-<section class="page-sec" id="faq"><div class="sec-tag">FAQ</div><h2 class="sec-h">Common questions</h2><div class="faq-wrap">{{ range . }}<div class="fi"><button class="fq">{{ .question }}<span class="faq-ic">+</span></button><div class="fa"><div class="fa-inner">{{ .answer | markdownify }}</div></div></div>{{ end }}</div></section>
-{{ end }}
-{{ with .Params.links }}{{ with .sideways }}
-<section class="page-sec"><div class="sec-tag">More routes</div><h2 class="sec-h">Other routes to consider</h2><div class="rel-list">{{ range . }}<a href="{{ .url }}" class="rel-item"><span class="rel-name">{{ .text }}</span> &rarr;</a>{{ end }}</div></section>{{ end }}{{ end }}
-{{ partial "airline-breed-sidebar.html" . }}
-{{ partial "quote-form.html" . }}
-</div></div>
-</div>
 
-<script>(function(){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.06});document.querySelectorAll('.tpl-nl .r,.tpl-nl section').forEach(function(el){io.observe(el)});document.querySelectorAll('.tpl-nl .fq').forEach(function(b){b.addEventListener('click',function(){var i=b.parentNode,w=i.classList.contains('open');i.parentNode.querySelectorAll('.fi').forEach(function(x){x.classList.remove('open')});if(!w)i.classList.add('open')})});})();</script>
+  {{/* HERO: dark, split */}}
+  <section class="hero">
+    <div class="hero-bg-num" aria-hidden="true">{{ $rd.destination.code }}</div>
+    <div class="hero-inner">
+      <div class="breadcrumb r"><a href="/">Home</a><span class="bc-sep">/</span><a href="/pet-transport/routes/">Routes</a><span class="bc-sep">/</span><span>{{ $o }} to {{ $d }}</span></div>
+      <div class="hero-grid">
+        <div class="hero-left">
+          <div class="hero-tag r">International pet relocation</div>
+          <div class="hero-route r d1"><div><div class="hero-flag">{{ $rd.origin.code }}</div></div><div class="r-path"></div><div><div class="hero-flag">{{ $rd.destination.code }}</div></div></div>
+          <h1 class="hero-h1 r d2">{{ .Params.content.h1 | default (printf "Pet Transport %s to %s" $o $d) }}</h1>
+          {{ with .Params.content.overview }}<p class="hero-sub r d3">{{ . | plainify | truncate 220 }}</p>{{ end }}
+        </div>
+        <div class="hero-right r d2">
+          <div class="hero-stats">
+            {{ with $rd.estimated_timeline_weeks }}<div class="hs-item"><span class="hs-label">Lead time needed</span><span class="hs-value">{{ . }} weeks</span></div>{{ end }}
+            <div class="hs-item"><span class="hs-label">Quarantine stay</span><span class="hs-value">{{ if .Params.quarantine_required }}{{ with .Params.quarantine_days }}{{ . }} days{{ else }}Required{{ end }}{{ else }}Not required{{ end }}</span></div>
+            {{ with $rd.route_complexity }}<div class="hs-item"><span class="hs-label">Route complexity</span><span class="hs-value"><span class="hs-badge hb-warn">{{ . | title }}</span></span></div>{{ end }}
+            {{ with $rd.airlines }}<div class="hs-item"><span class="hs-label">Airlines</span><span class="hs-value">{{ len . }} on this route</span></div>{{ end }}
+            <div class="hs-item"><span class="hs-label">Service level</span><span class="hs-value"><span class="hs-badge hb-ok">Fully managed</span></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-body">
+    {{/* LEFT SIDEBAR */}}
+    <div class="sidebar">
+      <div class="sc" id="quote-form">
+        <div class="sc-title">Get a quote for this route</div>
+        <form class="quote-form" action="{{ .Site.Params.quoteFormEndpoint }}" method="POST">
+          <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="origin_country" value="{{ $o }}"><input type="hidden" name="destination_country" value="{{ $d }}">
+          <label class="sf-label">Pet type</label>
+          <select class="sf-select" name="pet_type"><option>Dog</option><option>Cat</option><option>Other</option></select>
+          <label class="sf-label">Breed</label><input class="sf-input" type="text" name="breed" placeholder="e.g. Labrador">
+          <label class="sf-label">Your name</label><input class="sf-input" type="text" name="name" required>
+          <label class="sf-label">Email</label><input class="sf-input" type="email" name="email" required placeholder="you@example.com">
+          <label class="sf-label">Phone</label><input class="sf-input" type="tel" name="phone" required placeholder="+44 (0)...">
+          <button class="sf-btn" type="submit">Get free quote <span>&rarr;</span></button>
+        </form>
+      </div>
+      <div class="sc">
+        <div class="sc-title">Route at a glance</div>
+        <div class="sc-stats">
+          <div class="sc-stat"><span class="sc-stat-l">From</span><span class="sc-stat-v">{{ $o }}</span></div>
+          <div class="sc-stat"><span class="sc-stat-l">To</span><span class="sc-stat-v">{{ $d }}</span></div>
+          {{ with $rd.estimated_timeline_weeks }}<div class="sc-stat"><span class="sc-stat-l">Preparation</span><span class="sc-stat-v">{{ . }} weeks</span></div>{{ end }}
+          {{ with $rd.route_complexity }}<div class="sc-stat"><span class="sc-stat-l">Complexity</span><span class="sc-stat-v">{{ . | title }}</span></div>{{ end }}
+          <div class="sc-stat"><span class="sc-stat-l">Quarantine</span><span class="sc-stat-v">{{ if .Params.quarantine_required }}{{ with .Params.quarantine_days }}{{ . }} days{{ else }}Yes{{ end }}{{ else }}No{{ end }}</span></div>
+        </div>
+      </div>
+      {{ with .Params.links }}{{ with .sideways }}
+      <div class="sc">
+        <div class="sc-title">Related routes</div>
+        <div class="rel-list">{{ range . }}<a href="{{ .url }}" class="rel-item"><span class="rel-name">{{ .text }}</span><span class="rel-arr">&rarr;</span></a>{{ end }}</div>
+      </div>
+      {{ end }}{{ end }}
+    </div>
+
+    {{/* MAIN */}}
+    <div class="main-col">
+
+      {{/* PROCESS */}}
+      {{ with $rd.timeline_steps }}
+      <div class="page-sec r">
+        <div class="sec-tag">Step by step</div>
+        <h2 class="sec-h">The import process, <em>step by step</em></h2>
+        <p class="sec-p">Every step must be completed in sequence. Starting early is critical: a missed deadline can add months.</p>
+        <div class="proc-steps">
+          {{ $n := len . }}
+          {{ range $i, $s := . }}
+          <div class="ps"><div class="ps-left"><div class="ps-n {{ if eq (mod $i 3) 1 }}psn-a{{ else if eq (mod $i 3) 2 }}psn-n{{ else }}psn-g{{ end }}">{{ $s.step }}</div>{{ if lt (add $i 1) $n }}<div class="ps-line"></div>{{ end }}</div><div class="ps-body">{{ with $s.timing }}<div class="ps-chips"><span class="chip c-time">{{ . }}</span></div>{{ end }}<div class="ps-title">{{ $s.action }}</div>{{ with $s.responsible }}<p class="ps-desc">Responsible: {{ . }}</p>{{ end }}</div></div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+
+      {{/* REQUIREMENTS: categorised */}}
+      {{ if or $rd.destination.import_requirements $rd.origin.export_requirements }}
+      <div class="page-sec r">
+        <div class="sec-tag">Requirements</div>
+        <h2 class="sec-h">What your pet <em>needs to enter {{ $rd.destination.country }}</em></h2>
+        <p class="sec-p">Every item below must be completed and verified. We manage and cross-check each one.</p>
+        <div class="req-cats">
+          {{ with $rd.destination.import_requirements }}
+          <div><div class="req-cat-head">Entry into {{ $rd.destination.country }}</div><div class="req-items">
+            {{ with .microchip }}<div class="ri"><div class="ri-icon ri-g"></div><div class="ri-body"><div class="ri-name">Microchip</div><div class="ri-desc">{{ . }}</div></div><span class="ri-badge rb-req">Required</span></div>{{ end }}
+            {{ with .rabies_vaccination }}<div class="ri"><div class="ri-icon ri-g"></div><div class="ri-body"><div class="ri-name">Rabies vaccination</div><div class="ri-desc">{{ . }}</div></div><span class="ri-badge rb-req">Required</span></div>{{ end }}
+            {{ with .titre_test }}<div class="ri"><div class="ri-icon ri-a"></div><div class="ri-body"><div class="ri-name">Rabies titre test</div><div class="ri-desc">{{ . }}</div></div><span class="ri-badge rb-crit">Critical</span></div>{{ end }}
+            {{ with .quarantine }}<div class="ri"><div class="ri-icon ri-a"></div><div class="ri-body"><div class="ri-name">Quarantine</div><div class="ri-desc">{{ . }}</div></div><span class="ri-badge rb-crit">Critical</span></div>{{ end }}
+            {{ with .import_permit }}<div class="ri"><div class="ri-icon ri-g"></div><div class="ri-body"><div class="ri-name">Import permit</div><div class="ri-desc">{{ . }}</div></div><span class="ri-badge rb-req">Required</span></div>{{ end }}
+            {{ with .health_certificate }}<div class="ri"><div class="ri-icon ri-g"></div><div class="ri-body"><div class="ri-name">Health certificate</div><div class="ri-desc">{{ . }}</div></div><span class="ri-badge rb-req">Required</span></div>{{ end }}
+          </div></div>
+          {{ end }}
+          {{ with $rd.origin.export_requirements }}
+          <div><div class="req-cat-head">Leaving {{ $rd.origin.country }}</div><div class="req-items">
+            {{ with .export_permit }}<div class="ri"><div class="ri-icon ri-g"></div><div class="ri-body"><div class="ri-name">Export permit</div><div class="ri-desc">{{ . }}</div></div><span class="ri-badge rb-req">Required</span></div>{{ end }}
+            {{ with .vet_inspection }}<div class="ri"><div class="ri-icon ri-g"></div><div class="ri-body"><div class="ri-name">Veterinary inspection</div><div class="ri-desc">{{ . }}</div></div><span class="ri-badge rb-req">Required</span></div>{{ end }}
+            {{ with .endorsement }}<div class="ri"><div class="ri-icon ri-g"></div><div class="ri-body"><div class="ri-name">Government endorsement</div><div class="ri-desc">{{ . }}</div></div><span class="ri-badge rb-req">Required</span></div>{{ end }}
+            {{ with .health_certificate }}<div class="ri"><div class="ri-icon ri-g"></div><div class="ri-body"><div class="ri-name">Health certificate</div><div class="ri-desc">{{ . }}</div></div><span class="ri-badge rb-req">Required</span></div>{{ end }}
+          </div></div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+
+      {{/* COSTS + WARNINGS */}}
+      {{ if or $rd.cost_factors $rd.key_warnings }}
+      <div class="page-sec r">
+        {{ with $rd.cost_factors }}
+        <div class="sec-tag">Costs</div>
+        <h2 class="sec-h">What this route <em>typically costs</em></h2>
+        <div class="req-cats"><div><div class="req-items">{{ range . }}<div class="ri"><div class="ri-icon ri-g"></div><div class="ri-body"><div class="ri-name">{{ . }}</div></div></div>{{ end }}</div></div></div>
+        {{ end }}
+        {{ with $rd.key_warnings }}
+        <h2 class="sec-h" style="margin-top:36px">Critical <em>points</em></h2>
+        {{ range . }}<p class="sec-p" style="border-left:3px solid var(--amber);padding-left:16px;margin-bottom:12px">{{ . }}</p>{{ end }}
+        {{ end }}
+      </div>
+      {{ end }}
+
+      {{/* AIRLINES */}}
+      {{ with $rd.airlines }}
+      <div class="page-sec r">
+        <div class="sec-tag">Airlines</div>
+        <h2 class="sec-h">Carriers approved <em>for this route</em></h2>
+        <p class="sec-p">Not all airlines accept live animals on this route. We know which carriers to use and how to book live animal cargo correctly.</p>
+        <div class="airline-list">
+          {{ range . }}
+          <div class="al-item"><div class="al-code">{{ substr .name 0 2 | upper }}</div><div class="al-body"><div class="al-name">{{ .name }}</div><div class="al-detail">{{ .policy_summary }}</div>{{ with .type }}<div class="al-tags"><span class="at at-g">{{ . | replaceRE "_" " " | title }}</span></div>{{ end }}</div></div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+
+      {{/* LONG-FORM */}}
+      {{ with .Params.content.sections }}
+      <div class="page-sec r">{{ range . }}{{ with .heading }}<h2 class="sec-h">{{ . }}</h2>{{ end }}<div class="sec-p">{{ .body | markdownify }}</div>{{ end }}</div>
+      {{ end }}
+
+      {{/* FAQ */}}
+      {{ with .Params.faqs }}
+      <div class="page-sec r">
+        <div class="sec-tag">FAQ</div>
+        <h2 class="sec-h">Common questions</h2>
+        <div class="faq-list">
+          {{ range . }}<div class="fi"><button class="fq">{{ .question }}<span class="fq-icon"></span></button><div class="fa"><div class="fa-inner">{{ .answer | markdownify }}</div></div></div>{{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+
+  {{/* CTA */}}
+  <div class="bcta r">
+    <h2 class="bcta-h">Move your pet<br>to <em>{{ $d }}.</em></h2>
+    <div class="bcta-right">
+      <p class="bcta-sub">Get a free, fully itemised quote. We map your pet's complete preparation timeline and costs. No commitment required.</p>
+      <a href="#quote-form" class="bcta-btn">Get my free quote</a>
+    </div>
+  </div>
+</div>
+<script>(function(){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.06});
+  document.querySelectorAll('.tpl-nl .r').forEach(function(el){io.observe(el)});
+  document.querySelectorAll('.tpl-nl .fq').forEach(function(b){b.addEventListener('click',function(){var i=b.closest('.fi'),w=i.classList.contains('open');i.parentNode.querySelectorAll('.fi').forEach(function(x){x.classList.remove('open')});if(!w)i.classList.add('open')})});
+})();</script>
