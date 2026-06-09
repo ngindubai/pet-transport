@@ -23,7 +23,7 @@
       <div class="hero-stats r d2">
         {{ with $rd.estimated_timeline_weeks }}<div class="hstat"><div class="hstat-n amber">{{ . }}</div><div class="hstat-l">Weeks lead time needed</div><div class="hstat-note">Start this early minimum</div></div>{{ end }}
         <div class="hstat"><div class="hstat-n">{{ if .Params.quarantine_required }}{{ with .Params.quarantine_days }}{{ . }}{{ else }}Yes{{ end }}{{ else }}0{{ end }}</div><div class="hstat-l">Days quarantine on arrival</div></div>
-        {{ with $rd.route_complexity }}<div class="hstat"><div class="hstat-n green">{{ . | title }}</div><div class="hstat-l">Route complexity</div></div>{{ end }}
+        {{ with $rd.route_complexity }}<div class="hstat"><div class="hstat-n green">{{ . | replaceRE "_" " " | title }}</div><div class="hstat-l">Route complexity</div></div>{{ end }}
         {{ with $rd.airlines }}<div class="hstat"><div class="hstat-n">{{ len . }}</div><div class="hstat-l">Airlines on this route</div></div>{{ end }}
       </div>
     </div>
@@ -51,7 +51,7 @@
         <div class="metric-grid">
           {{ with $rd.estimated_timeline_weeks }}<div class="metric-card"><div class="metric-n amber">{{ . }}</div><div class="metric-l">Weeks prep needed</div></div>{{ end }}
           <div class="metric-card"><div class="metric-n">{{ if .Params.quarantine_required }}{{ with .Params.quarantine_days }}{{ . }}{{ else }}Yes{{ end }}{{ else }}0{{ end }}</div><div class="metric-l">Days quarantine</div></div>
-          {{ with $rd.route_complexity }}<div class="metric-card"><div class="metric-n green" style="font-size:1rem">{{ . | title }}</div><div class="metric-l">Complexity</div></div>{{ end }}
+          {{ with $rd.route_complexity }}<div class="metric-card"><div class="metric-n green" style="font-size:1rem">{{ . | replaceRE "_" " " | title }}</div><div class="metric-l">Complexity</div></div>{{ end }}
           {{ with $rd.airlines }}<div class="metric-card"><div class="metric-n">{{ len . }}</div><div class="metric-l">Airlines</div></div>{{ end }}
         </div>
         <div class="sc-stats" style="margin-top:12px">

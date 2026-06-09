@@ -287,3 +287,16 @@ footer{background:var(--navy-dark);color:rgba(255,255,255,.55);padding:48px 32px
   .tpl-ne section,.tpl-ne .page-sec,.tpl-ne .lsec,.tpl-ne .inner{padding-top:42px;padding-bottom:42px}
 }
 @media(max-width:900px){.tpl-ne .page-body{grid-template-columns:1fr;gap:32px}.tpl-ne .side-col{position:static}}@media(max-width:600px){.tpl-ne .ob-items{grid-template-columns:1fr 1fr;gap:16px}.tpl-ne .overview-inner{flex-direction:column;gap:18px;align-items:flex-start}.tpl-ne .req-grid{grid-template-columns:1fr}.tpl-ne .route-visual{gap:10px}.tpl-ne .route-flag{font-size:1.6rem}}
+
+/* RELIABLE REVEAL v2: opacity ALWAYS 1 (content can never be hidden); entrance animates transform only */
+@keyframes tplReveal{0%{transform:translateY(14px)}100%{transform:none}}
+.tpl-ne .r{opacity:1 !important;animation:tplReveal .55s ease both}
+.tpl-ne .r.d1{animation-delay:.06s}.tpl-ne .r.d2{animation-delay:.12s}.tpl-ne .r.d3{animation-delay:.18s}
+@media(prefers-reduced-motion:reduce){.tpl-ne .r{animation:none;transform:none}}
+
+/* SAFE REVEAL OVERRIDES: redefine content-reveal keyframes so they NEVER zero opacity (transform only). Last definition wins. */
+@keyframes fadeUp{from{transform:translateY(16px)}to{transform:none}}
+@keyframes slideInLeft{from{transform:translateX(-18px)}to{transform:none}}
+@keyframes fadeIn{0%{opacity:1}100%{opacity:1}}
+@keyframes counterUp{from{transform:translateY(10px)}to{transform:none}}
+@keyframes checkPop{0%{transform:scale(.6)}70%{transform:scale(1.15)}100%{transform:scale(1)}}

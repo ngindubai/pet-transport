@@ -16,6 +16,9 @@
 - **Content plan:** Days 1-6 + Days 8-13 complete (13 articles written). Day 7 skipped (pre-existing). **Day 14 is next:** check content-plan/plan-rows-q1.js for slug. Day 13 = pet-transport-tenerife-to-uk (Marcus Webb, ~1700 words, AHC for UK entry, tapeworm timing, charter airline problem, rescue dog section).
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
+- **Route template redesign (live on all ~5,531 route pages):** Six new premium templates render via `site/layouts/routes/single.html` -> partials `route-new-{na,nb,nc,nd,ne,nl}.html` with scoped CSS `static/css/route-new-{na..nl}.css`. Variant routing: front-matter `template_variant` A->na, B->nb, C->nc, D->nd, E->ne, legacy->nl.
+  - **2026-06-10 reveal-bug fix (CRITICAL, resolved):** Content was invisible on live (`.r` reveal elements stuck at opacity:0; the IntersectionObserver adding `.in` did not fire on deployed pages). Permanent fix: opacity is now ALWAYS 1 on content; all content-reveal keyframes (tplReveal, fadeUp, slideInLeft, fadeIn, counterUp, checkPop) animate transform only, never opacity. RULE GOING FORWARD: never let opacity:0 be the resting state of content, and never make content visibility depend on JS firing or an animation completing. Also fixed route_complexity underscore ("Very_high" -> "Very High") via replaceRE.
+  - Local-only test artifact: `.claude/launch.json` (preview server config) is NOT committed.
 
 ### DEPLOY INCIDENT 2026-06-05: routine committed to feature branches, never to main (ROOT CAUSE + FIX)
 

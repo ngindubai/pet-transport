@@ -244,3 +244,16 @@
   .tpl-nb section,.tpl-nb .page-sec,.tpl-nb .lsec,.tpl-nb .inner{padding-top:42px;padding-bottom:42px}
 }
 @media(max-width:600px){.tpl-nb .hero-stats{display:grid;grid-template-columns:1fr 1fr}.tpl-nb .sec-wrap{padding-top:48px;padding-bottom:48px}.tpl-nb .pi{grid-template-columns:1fr}.tpl-nb .pi-left{flex-direction:row;margin-left:0}}
+
+/* RELIABLE REVEAL v2: opacity ALWAYS 1 (content can never be hidden); entrance animates transform only */
+@keyframes tplReveal{0%{transform:translateY(14px)}100%{transform:none}}
+.tpl-nb .r{opacity:1 !important;animation:tplReveal .55s ease both}
+.tpl-nb .r.d1{animation-delay:.06s}.tpl-nb .r.d2{animation-delay:.12s}.tpl-nb .r.d3{animation-delay:.18s}
+@media(prefers-reduced-motion:reduce){.tpl-nb .r{animation:none;transform:none}}
+
+/* SAFE REVEAL OVERRIDES: redefine content-reveal keyframes so they NEVER zero opacity (transform only). Last definition wins. */
+@keyframes fadeUp{from{transform:translateY(16px)}to{transform:none}}
+@keyframes slideInLeft{from{transform:translateX(-18px)}to{transform:none}}
+@keyframes fadeIn{0%{opacity:1}100%{opacity:1}}
+@keyframes counterUp{from{transform:translateY(10px)}to{transform:none}}
+@keyframes checkPop{0%{transform:scale(.6)}70%{transform:scale(1.15)}100%{transform:scale(1)}}
