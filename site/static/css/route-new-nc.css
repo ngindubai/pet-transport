@@ -231,3 +231,12 @@
 @keyframes fadeIn{0%{opacity:1}100%{opacity:1}}
 @keyframes counterUp{from{transform:translateY(10px)}to{transform:none}}
 @keyframes checkPop{0%{transform:scale(.6)}70%{transform:scale(1.15)}100%{transform:scale(1)}}
+
+/* MOBILE: move the sidebar (quote form + Route at a glance + related) to the END of the page, below content. Appended last so it beats the earlier position:sticky rule. */
+@media(max-width:900px){
+  .tpl-nc .page{display:flex;flex-direction:column;gap:36px;align-items:stretch}
+  .tpl-nc .main-col{order:1;min-width:0;width:100%;max-width:100%}
+  .tpl-nc .sidebar{order:2;position:static;display:flex;flex-direction:column;gap:18px;width:100%;max-width:100%}
+  .tpl-nc .sidebar .sc{position:static}
+  .tpl-nc .airline-table,.tpl-nc .req-table{display:block;width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+}
