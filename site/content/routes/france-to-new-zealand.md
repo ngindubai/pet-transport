@@ -1,164 +1,168 @@
 ---
-title: "Pet Transport from France to New Zealand | MPI NZSTAP Protocol, Titre Test & Guide"
-description: "Moving your pet from France to New Zealand: mandatory FAVN titre test and 180-day wait from all countries, NZSTAP permit, 10-day quarantine, Air France cargo from Paris."
+title: "Pet Transport France to New Zealand | FAVN Titre Test, 180-Day Wait, MPI Guide 2026"
+description: "Moving your dog or cat from France to New Zealand in 2026. FAVN titre test mandatory, 180-day wait from blood draw, 10-day quarantine on arrival. Full MPI and DGAL health certificate process."
+date: "2026-06-10"
 type: "routes"
 layout: "single"
-template_variant: "E"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "D"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "france-to-new-zealand"
 origin_name: "France"
 destination_name: "New Zealand"
+
 route_data:
   origin:
     code: "FR"
     country: "France"
     export_requirements:
-      export_permit: "No formal export permit for personal pets from France."
-      health_certificate: "Official health certificate endorsed by DDPP in MPI format. Within 10 days of travel."
+      health_certificate: "Official export health certificate issued by a vétérinaire officiel in France, endorsed by the DDPP (Direction départementale de la protection des populations) in the MPI-approved format for French-origin pets. Certificate issued within 10 days of travel. Confirm the current MPI-required French template with your official vet before booking. Source: DGAL, agriculture.gouv.fr; MPI, mpi.govt.nz."
+      export_permit: "No export permit required for personal pet exports from France."
+
   destination:
     code: "NZ"
     country: "New Zealand"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Before or same day as first vaccination."
-      rabies_vaccination: "Two inactivated-virus vaccinations required. Both after microchip. At least 28 days apart."
-      titre_test: "Mandatory from ALL countries. FAVN at MPI-approved lab. Minimum 0.5 IU/ml. Blood drawn 30+ days after second vaccination. 180-day wait from blood draw. No exceptions."
-      quarantine: "Mandatory 10 days at MPI-approved quarantine facility. Pre-book. Owner pays."
-      import_permit: "NZSTAP import approval from MPI required before travel."
-      health_certificate: "DDPP-endorsed health certificate in MPI format. Within 10 days of travel."
-      entry_point: "Auckland International Airport (AKL)."
-      authority: "Ministry for Primary Industries (MPI), Biosecurity New Zealand. nzstap.mpi.govt.nz"
+      microchip: "ISO 11784/11785 microchip mandatory. Must be implanted on or before the date of the first rabies vaccination."
+      rabies_vaccination: "Two inactivated-virus rabies vaccinations required. Both must be given after microchipping. At least 28 days must separate the first and second vaccinations. Both vaccinations must be complete before the titre test blood draw."
+      titre_test: "Mandatory from all countries, including France. FAVN (Fluorescent Antibody Virus Neutralisation) test at an MPI-approved laboratory. Minimum result 0.5 IU/ml. Blood drawn at least 30 days after the second rabies vaccination. 180-day wait from the blood draw date before travel. No exemptions. SCELAB in Nancy, France, is on the MPI approved laboratory list. Source: MPI, mpi.govt.nz."
+      quarantine: "Mandatory 10 days at an MPI-approved quarantine facility. Pets must arrive at Auckland International Airport (AKL) or Christchurch Airport (CHC). Owner pre-books and pays quarantine fees."
+      import_permit: "NZSTAP (New Zealand Standard Terms and Procedures) import approval required from MPI before travel. Apply via nzstap.mpi.govt.nz. Allow at least 6 weeks for processing."
+      health_certificate: "Official health certificate from French competent authority in MPI-approved format. Issued within 10 days of travel. New IHS requirements apply from 1 July 2026 (transition period until 1 April 2027). Confirm the current template with your official vet."
+
   airlines:
     - name: "Air France"
       type: "cargo_only"
-      policy_summary: "Air France Cargo CDG-AKL via connections. National carrier of origin. Good cargo operation at CDG."
-    - name: "Air New Zealand"
-      type: "cargo_only"
-      policy_summary: "Air New Zealand Cargo AKL-CDG reverse, connects to Paris. National carrier of destination with MPI quarantine familiarity."
+      policy_summary: "Paris CDG to Auckland (AKL) via connections (Singapore or Los Angeles). Pets travel as manifest cargo. Air France Cargo is the natural carrier for French-origin pets on this route."
     - name: "Singapore Airlines"
       type: "cargo_only"
-      policy_summary: "Via Singapore SIN to AKL. Most commonly used Europe-NZ routing. Reliable temperature-controlled hold."
+      policy_summary: "Via Singapore Changi to Auckland. Most commonly used Europe-to-New Zealand routing. Connect from Paris CDG. Reliable temperature-controlled facilities at Changi."
+    - name: "Air New Zealand"
+      type: "cargo_only"
+      policy_summary: "Air New Zealand Cargo from CDG to Auckland via connections. Strong MPI quarantine familiarity at Auckland. Book well in advance."
     - name: "Emirates"
       type: "cargo_only"
-      policy_summary: "Via Dubai DXB to AKL. Summer heat embargoes at DXB may apply."
-    - name: "Qantas"
+      policy_summary: "Via Dubai to Auckland from Paris CDG. Summer Gulf heat embargoes apply."
+    - name: "Qatar Airways Cargo"
       type: "cargo_only"
-      policy_summary: "Via Sydney SYD or Melbourne MEL to AKL. Qantas Freight. Connection to NZ."
+      policy_summary: "Via Doha to Auckland. Confirm temperature restrictions and breed policies before booking."
+
   timeline_steps:
     - step: 1
-      action: "Microchip (before or same day as first vaccination)"
-      timing: "Week 0"
-      responsible: "French vet"
+      action: "Implant ISO 11784/11785 microchip"
+      timing: "First step. On or before the same day as the first vaccination."
+      responsible: "Veterinarian"
     - step: 2
-      action: "First rabies vaccination (inactivated virus)"
-      timing: "Week 0-2"
-      responsible: "French vet"
+      action: "First inactivated-virus rabies vaccination"
+      timing: "Same day as or after microchip."
+      responsible: "Veterinarian"
     - step: 3
-      action: "Second rabies vaccination (28+ days after first)"
-      timing: "Week 4+"
-      responsible: "French vet"
+      action: "Second inactivated-virus rabies vaccination"
+      timing: "At least 28 days after the first vaccination."
+      responsible: "Veterinarian"
     - step: 4
-      action: "Apply for NZSTAP approval from MPI"
-      timing: "Start early. Apply before or during vaccination sequence."
-      responsible: "You or agent via nzstap.mpi.govt.nz"
+      action: "Apply for NZSTAP import approval from MPI"
+      timing: "Apply early. Allow at least 6 weeks for processing. Can run in parallel with vaccination steps."
+      responsible: "Owner or agent via nzstap.mpi.govt.nz"
     - step: 5
-      action: "FAVN titre test at MPI-approved laboratory"
-      timing: "Week 8+ (30+ days after second vaccination). 180-day clock starts."
-      responsible: "French vet + MPI-approved lab"
+      action: "FAVN titre test blood draw at MPI-approved laboratory"
+      timing: "At least 30 days after the second rabies vaccination. SCELAB in Nancy is on the MPI approved list."
+      responsible: "Veterinarian + MPI-approved laboratory"
     - step: 6
-      action: "180-day wait from blood draw"
-      timing: "Weeks 8-34"
-      responsible: "N/A"
+      action: "180-day wait from blood draw date"
+      timing: "6 calendar months from the date of the titre test blood draw. Cannot be shortened. Travel cannot happen before this date."
+      responsible: "Owner to track"
     - step: 7
-      action: "Pre-book MPI quarantine facility (10 days)"
-      timing: "As early as possible."
-      responsible: "You or agent"
+      action: "Pre-book MPI-approved quarantine facility (10 days)"
+      timing: "Book as early as possible. Spaces are limited."
+      responsible: "Owner or agent"
     - step: 8
-      action: "Book Air France or Singapore Airlines Cargo CDG-AKL"
-      timing: "Week 32+"
-      responsible: "You or agent"
+      action: "Book cargo space with airline to Auckland (AKL) or Christchurch (CHC)"
+      timing: "8-12 weeks before travel."
+      responsible: "Owner or agent"
     - step: 9
-      action: "DDPP-endorsed MPI health certificate"
+      action: "Obtain official health certificate from French competent authority vet"
       timing: "Within 10 days of travel."
-      responsible: "DDPP-authorised vet + DDPP"
+      responsible: "Vétérinaire officiel endorsed by DDPP"
     - step: 10
-      action: "Arrive Auckland. 10-day MPI quarantine."
-      timing: "Pre-paid."
-      responsible: "MPI-approved facility"
+      action: "Depart to New Zealand as cargo"
+      timing: "Arrive at cargo check-in 3-4 hours before departure."
+      responsible: "Airline cargo"
+    - step: 11
+      action: "10-day quarantine at MPI-approved facility"
+      timing: "Mandatory on arrival at Auckland or Christchurch."
+      responsible: "MPI quarantine facility"
+
   cost_factors:
-    - "Cargo fees CDG-AKL"
-    - "IATA-compliant crate"
-    - "FAVN titre test at MPI-approved lab (SCELAB France is MPI-approved)"
-    - "NZSTAP application fee"
-    - "10-day MPI quarantine fees (owner pays)"
-    - "DDPP health certificate endorsement"
-    - "Agent fee"
+    - "MPI import permit (NZSTAP) fee: NZD 300+ (verify at mpi.govt.nz)"
+    - "Quarantine fees (10 days): NZD 1,500-2,500+ per pet. Verify at mpi.govt.nz."
+    - "FAVN titre test at SCELAB Nancy or other MPI-approved lab: EUR 100-250"
+    - "Airline cargo from Paris to Auckland: approximately EUR 1,000-2,500 depending on crate size and routing"
+    - "IATA-compliant crate: EUR 80-400"
+    - "Official vet health certificate and vet fees: EUR 100-300"
+    - "Two rabies vaccinations: EUR 60-150"
+    - "Pet transport agent: EUR 700-1,800 (strongly recommended for this complex route)"
+
   key_warnings:
-    - "New Zealand requires titre test + 180-day wait from ALL countries. No exemptions for EU/France."
-    - "10-day quarantine on arrival is mandatory in addition to the pre-travel 180-day wait."
-    - "SCELAB in France is MPI-approved, a practical advantage for French pet owners."
-    - "Apply for NZSTAP approval early."
+    - "The 180-day wait after the titre test blood draw is non-negotiable. There is no way to shorten this period. Starting preparations early is the only option."
+    - "Two separate inactivated-virus rabies vaccinations are required, at least 28 days apart. A single vaccination is not sufficient for New Zealand entry from France."
+    - "Pets must arrive at Auckland (AKL) or Christchurch (CHC) airports only. No other New Zealand airports accept international pet imports."
+    - "New IHS requirements apply from 1 July 2026 (transition period until 1 April 2027). Confirm the current MPI-required health certificate template with your official vet."
+    - "The following breeds are banned from import to New Zealand: Brazilian Fila, Dogo Argentino, Japanese Tosa, Perro de Presa Canario, American Pit Bull Terrier."
+
   route_complexity: "very_high"
-  estimated_timeline_weeks: "38-44"
+  estimated_timeline_weeks: "36-44"
+
 content:
   h1: "Pet Transport from France to New Zealand"
   overview: |
-    New Zealand applies its NZSTAP protocol universally, no country gets an exemption. From France, this means two vaccinations, a titre test at an MPI-approved laboratory, 180-day wait, NZSTAP approval, and 10-day quarantine on arrival. Allow 38-44 weeks.
+    Moving a dog or cat from France to New Zealand requires around nine to ten months of preparation at a minimum. New Zealand applies the FAVN titre test requirement to pets arriving from all countries without exception, including France. Two separate inactivated-virus rabies vaccinations are required before the titre test, at least 28 days apart, and a 180-day wait then follows from the date the blood was drawn. That 180-day period cannot be shortened.
 
-    One advantage for French pet owners: SCELAB in Nancy is on New Zealand's MPI approved laboratory list, meaning the titre test can be done domestically.
+    New Zealand's Ministry for Primary Industries (MPI) runs the NZSTAP import system. You need an approved permit before travel. Ten days of mandatory quarantine at an MPI-approved facility follows on arrival in Auckland or Christchurch. The entire sequence is strictly ordered and has no shortcuts.
+
+    France has one practical advantage on this route: SCELAB in Nancy is on the MPI approved laboratory list for the FAVN titre test. French pet owners can have the blood draw and testing handled domestically rather than shipping samples abroad.
+
   sections:
-    - heading: "Compliance data: France to New Zealand"
+    - heading: "Why does New Zealand require the 180-day wait, and does it apply to France?"
       body: |
-        | Requirement | Detail |
-        |---|---|
-        | Microchip | ISO 11784/11785, before or same day as first vaccination |
-        | Vaccination | Two inactivated-virus rabies, 28+ days apart |
-        | Titre test | FAVN, MPI-approved lab, 0.5+ IU/ml, 30+ days after second vax |
-        | Post-titre wait | 180 days from blood draw. No exceptions. |
-        | NZSTAP permit | Required from MPI before travel |
-        | Quarantine on arrival | 10 days mandatory, MPI facility, owner pays |
-        | Health certificate | DDPP-endorsed MPI format, within 10 days |
-        | Total preparation | 38-44 weeks |
-        | Complexity | Very high |
+        New Zealand applies biosecurity rules uniformly. The FAVN test confirms your pet has adequate rabies antibody protection at 0.5 IU/ml or above. The 180-day wait after the blood draw is the period MPI requires before it accepts that any latent infection risk from a non-rabies-free origin has passed.
 
-        Source: MPI nzstap.mpi.govt.nz. Verify before starting.
-    - heading: "SCELAB: the French advantage on this route too"
+        France is not exempt. EU membership and France's established veterinary standards make no difference to this rule. The 180-day wait applies to all origins other than a very small Category 1 group. The clock starts on the date the blood was drawn, not when results arrived. This is the single biggest time driver on the France-to-New Zealand route. Source: MPI, mpi.govt.nz (2026).
+
+    - heading: "Does France require two rabies vaccinations for New Zealand, and does the vaccine type matter?"
       body: |
-        SCELAB in Nancy, France, is on New Zealand's MPI approved laboratory list, the same AQS-approved lab that benefits French pet owners heading to Japan. For New Zealand, this means the FAVN titre test can be processed domestically. Your French vet draws the blood; SCELAB runs the test; the result counts for MPI purposes.
+        Yes. MPI requires two inactivated-virus rabies vaccinations for New Zealand entry, given after microchipping, with at least 28 days between them. Both must be completed before the FAVN blood draw. The inactivated-virus specification is important: modified live or recombinant products may not be accepted by MPI. Confirm the specific vaccine product with your French official vet before administering.
 
-        Verify SCELAB remains on the current MPI approved list at nzstap.mpi.govt.nz before booking the test. Approved laboratory lists are updated periodically.
-    - heading: "Routing CDG to AKL"
+        If either vaccination is recorded incorrectly, or the interval between them is less than 28 days, MPI will not accept the titre test result. The entire vaccination sequence must then restart. This is a hard rule with no exceptions.
+
+    - heading: "Can the FAVN test be done in France, and is there a local laboratory?"
       body: |
-        | Airline | Route | Notes |
-        |---|---|---|
-        | Singapore Airlines Cargo | CDG via SIN to AKL | Most used Europe-NZ routing. Reliable hold. |
-        | Air France Cargo | CDG via connections to AKL | National carrier. CDG cargo familiarity. |
-        | Air New Zealand Cargo | CDG via Pacific hub to AKL | MPI quarantine familiarity at Auckland. |
-        | Emirates SkyCargo | CDG via DXB to AKL | Summer heat restrictions at DXB. |
-        | Qantas Freight | CDG via SYD/MEL to AKL | Australian hub connection to NZ. |
+        Yes. SCELAB in Nancy holds MPI approval for the FAVN titre test, which is a genuine advantage for French pet owners. Your French vet draws the blood, the sample goes to SCELAB, and the result is accepted by MPI for import purposes. This removes the need to ship samples to a laboratory in another country and reduces processing time.
 
-        No direct Paris-Auckland cargo service. Singapore Airlines via Changi is the most commonly used routing for European pets heading to New Zealand.
+        Verify that SCELAB remains on the current MPI approved laboratory list at mpi.govt.nz before booking the test. MPI updates the list periodically and approval status should always be confirmed directly. Source: MPI, mpi.govt.nz.
+
 faqs:
-  - question: "Does France get any exemption from the New Zealand titre test?"
-    answer: "No. New Zealand requires the NZSTAP protocol from all countries without exception. EU membership and French veterinary standards make no difference: two vaccinations, FAVN titre test, 180-day wait, NZSTAP approval, and 10-day quarantine all apply."
-  - question: "Can I do the titre test in France?"
-    answer: "Yes. SCELAB in Nancy is on New Zealand's MPI approved laboratory list. The blood draw happens at your French vet; the sample goes to SCELAB for testing. Verify SCELAB remains MPI-approved at nzstap.mpi.govt.nz before booking."
-  - question: "Is the 10-day quarantine mandatory even after the 180-day wait?"
-    answer: "Yes. The 10-day quarantine at an MPI-approved facility is mandatory on arrival in New Zealand, separate from and in addition to the 180-day pre-travel wait. It must be pre-booked."
-  - question: "What is NZSTAP?"
-    answer: "New Zealand's Standard Treatment and Approval Process, the government approval required before your pet can travel to New Zealand. Apply via MPI at nzstap.mpi.govt.nz as early as possible. The approval conditions must match the health certificate issued in France exactly."
-  - question: "Which airline is best from Paris to Auckland?"
-    answer: "Singapore Airlines via Changi is the most commonly used option. Air France and Air New Zealand also connect CDG to AKL via transit hubs. No direct Paris-Auckland service exists."
+  - question: "How long does the France-to-New Zealand pet transport process take in total?"
+    answer: "Allow 36 to 44 weeks from starting preparations to travel day. The 180-day wait after the titre test blood draw is the main time driver and cannot be shortened. Start the process 10 to 12 months before your intended departure."
+  - question: "Does my pet need one or two rabies vaccinations for New Zealand from France?"
+    answer: "Two. MPI requires two separate inactivated-virus rabies vaccinations, given at least 28 days apart, both after microchipping. A single vaccination is not sufficient. Source: MPI, mpi.govt.nz."
+  - question: "Can I do the FAVN titre test in France?"
+    answer: "Yes. SCELAB in Nancy is on the MPI approved laboratory list. Your French vet draws the blood and sends the sample to SCELAB. Verify SCELAB's current approval status at mpi.govt.nz before booking the test."
+  - question: "How long is quarantine for pets from France?"
+    answer: "10 days at an MPI-approved quarantine facility in Auckland or Christchurch. Mandatory and cannot be reduced. Pets must arrive at Auckland International Airport or Christchurch Airport."
+  - question: "What does it cost to move a pet from France to New Zealand?"
+    answer: "Costs vary but expect EUR 3,000-6,000+ for the full process: airline cargo from Paris CDG (EUR 1,000-2,500), MPI quarantine fees (NZD 1,500-2,500+), FAVN titre test (EUR 100-250), official vet and health certificate fees, IATA crate, and pet transport agent."
+
 links:
   sideways:
     - url: "/pet-transport/new-zealand-to-france/"
       text: "Pet Transport New Zealand to France"
   upward:
     - url: "/pet-transport/origins/france-pet-export-guide/"
-      text: "Shipping from France"
+      text: "Shipping Pets from France"
     - url: "/pet-transport/countries/new-zealand/"
-      text: "Importing to New Zealand"
-    - url: "/pet-transport/airlines/singapore-airlines/"
-      text: "Singapore Airlines pet policy"
+      text: "New Zealand pet import rules"
     - url: "/pet-transport/airlines/air-france/"
-      text: "Air France pet policy"
+      text: "Air France pet cargo policy"
+    - url: "/pet-transport/airlines/singapore-airlines/"
+      text: "Singapore Airlines pet cargo policy"
 ---

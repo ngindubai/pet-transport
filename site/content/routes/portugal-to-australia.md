@@ -1,144 +1,153 @@
 ---
-template_variant: "A"
-title: "Pet Relocation Portugal to Australia | Requirements & Guide"
-description: "Complete guide to pet transport from Portugal to Australia. Import requirements, quarantine rules, airline options, and step-by-step timeline."
+title: "Pet Transport Portugal to Australia | DAFF Group 2, No Titre Test, Mickleham 2026"
+description: "Moving your dog or cat from Portugal to Australia in 2026. Portugal is DAFF Group 2 (no titre test). 10-day quarantine at Mickleham, Melbourne. DGAV health certificate and Lisbon cargo guide."
+date: "2026-06-10"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "D"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "portugal-to-australia"
 origin_name: "Portugal"
 destination_name: "Australia"
+
 route_data:
   origin:
     code: "PT"
     country: "Portugal"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      health_certificate: "Official export health certificate issued by an official veterinarian authorised by the DGAV (Direcao-Geral de Alimentacao e Veterinaria / Directorate-General for Food and Veterinary). Certificate must follow the DAFF-approved format for Group 2 countries. EU non-commercial format accepted until 30 September 2026; new format under EU Regulation 2026/131 applies from 1 October 2026. Source: DGAV, dgav.pt."
+      export_permit: "No export permit required for personal pet exports from Portugal. Portugal is an EU member state."
+
   destination:
     code: "AU"
     country: "Australia"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or on same day as rabies vaccination"
-      rabies_vaccination: "Minimum age: 12 weeks. Vaccination schedule must be completed before titre test blood draw"
-      titre_test: "Required for: Groups 3, 4, 5, 6 (all except Groups 1 and 2). Minimum: 0.5 IU/ml"
-      quarantine: "Mandatory quarantine. Facility: Mickleham Post Entry Quarantine Facility. Location: Melbourne, Victoria"
-      import_permit: "Required. Must be obtained BEFORE travel. Permit specifies conditions for import."
-      health_certificate: "Required. Government-issued veterinary health certificate (country-specific format). Issued by: Government veterinarian in country of export. Certificate format is NON-NEGOTIABLE. Must use exact DAFF-approved format for the specific country of export."
+      microchip: "ISO 11784/11785 microchip mandatory. Must be implanted before any rabies vaccination."
+      rabies_vaccination: "Current and valid rabies vaccination required. Within manufacturer-stated validity on arrival."
+      titre_test: "Not required. Portugal is DAFF Group 2 (rabies-controlled). Group 2 countries are exempt from the RNATT. Source: DAFF, agriculture.gov.au/biosecurity-trade/cats-dogs."
+      quarantine: "Mandatory. Minimum 10 days at the MARS facility, Mickleham, Victoria. All pets must arrive at Melbourne International Airport."
+      import_permit: "Required. Apply through the DAFF BICON system before booking flights or quarantine."
+      health_certificate: "Required. Official DGAV health certificate in DAFF-approved format for Group 2 countries. Issued within 10 days of travel."
+
   airlines:
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Qantas"
-      type: "cargo_only"
-      policy_summary: "Cargo: QantasFreighter network for pet transport. Brachycephalic breeds restricted year-round. Temperature embargoes: seasonal restrictions during Australian summer (Dec-Feb)"
     - name: "Emirates"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
+      policy_summary: "Lisbon (LIS) to Melbourne via Dubai. Pets travel as manifest cargo via Emirates SkyCargo. Gulf summer heat embargoes apply. Brachycephalic breed restrictions year-round."
+    - name: "Qatar Airways Cargo"
+      type: "cargo_only"
+      policy_summary: "Lisbon to Melbourne via Doha. Direct Doha-Melbourne service. Confirm temperature restrictions with cargo agent."
+    - name: "TAP Air Portugal"
+      type: "cargo_only"
+      policy_summary: "TAP operates from Lisbon with connections to other European hubs. No direct Lisbon-Melbourne service; onward cargo arrangements via connecting carriers. Confirm pet cargo acceptance and routing with your agent."
     - name: "Singapore Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Via Singapore Changi to Melbourne. Pets as manifest cargo. Check AVS airside transit requirements."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step: must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Implant ISO microchip"
+      timing: "First step, before vaccinations."
+      responsible: "Veterinarian"
     - step: 2
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Rabies vaccination"
+      timing: "After microchip is confirmed."
+      responsible: "Veterinarian"
     - step: 3
-      action: "Apply for import permit from Australia"
-      timing: "Apply early: allow 4-6 weeks"
-      responsible: "You (or your pet transport agent)"
+      action: "Apply for DAFF import permit via BICON"
+      timing: "As early as possible, ideally 4-6 months before travel."
+      responsible: "Owner or agent"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Book quarantine space at Mickleham MARS"
+      timing: "Immediately after permit is granted."
+      responsible: "Owner or agent"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Book cargo space to Melbourne (MEL)"
+      timing: "8-12 weeks before travel."
+      responsible: "Owner or agent"
     - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Acclimatise pet to IATA-compliant crate"
+      timing: "At least 4 weeks before travel."
+      responsible: "Owner"
     - step: 7
-      action: "Quarantine on arrival (varies days)"
-      timing: "Immediately on arrival: mandatory"
-      responsible: "Australia quarantine authority"
+      action: "Obtain official health certificate from DGAV-authorised official vet"
+      timing: "Within 10 days of travel."
+      responsible: "DGAV-authorised official veterinarian"
+    - step: 8
+      action: "Depart to Melbourne as cargo"
+      timing: "Arrive at cargo check-in 3-4 hours before departure."
+      responsible: "Airline cargo"
+    - step: 9
+      action: "10-day quarantine at Mickleham"
+      timing: "Mandatory on arrival."
+      responsible: "DAFF / MARS"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (Australia)"
-    - "Quarantine facility fees (owner-paid at destination)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "DAFF import permit: approximately AUD 60-120"
+    - "Quarantine at Mickleham (10 days): approximately AUD 1,877 per pet. Verify at agriculture.gov.au."
+    - "Airline cargo from Portugal to Melbourne: approximately EUR 900-2,200 depending on crate size and routing"
+    - "IATA-compliant crate: EUR 80-400"
+    - "DGAV official vet health certificate: EUR 80-180"
+    - "Vaccinations and microchip: EUR 80-200"
+    - "Pet transport agent: EUR 600-1,600 (recommended)"
+
   key_warnings:
-    - "Mandatory quarantine required on arrival. Plan for separation from your pet."
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "very_high"
-  estimated_timeline_weeks: "26-32"
+    - "All pets must arrive at Melbourne International Airport (MEL). No other Australian airport accepts international pet imports."
+    - "Portugal is DAFF Group 2 (no titre test). Confirm this classification is current at agriculture.gov.au before booking."
+    - "Quarantine fee must be paid before release. Budget AUD 1,877+ per pet."
+    - "Health certificate valid for 10 days from issue. A rebooked flight requires a new certificate."
+
+  route_complexity: "high"
+  estimated_timeline_weeks: "16-24"
+
 content:
   h1: "Pet Transport from Portugal to Australia"
   overview: |
-    If you're relocating from Portugal to Australia and taking your pet, the good news is thousands of families do this every year.
-    
-    This route is one of the most demanding international pet transport routes. Start preparations at least 26 weeks before your travel date: some steps have fixed waiting periods that cannot be shortened. Australia requires mandatory quarantine for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Start early and follow the steps in sequence. Missing a deadline pushes the whole timeline back.
+    Moving a dog or cat from Portugal to Australia is a significant process, but Portugal's DAFF Group 2 status (rabies-controlled) means Portuguese pets are exempt from the RNATT titre test, saving months compared with pets from higher-risk countries.
+
+    You still need a DAFF import permit via the BICON system, a quarantine space at Mickleham in Melbourne, a cargo booking to Melbourne International Airport, and a DGAV-certified official health certificate within ten days of departure. Begin preparations at least four to six months before your intended travel date. Portugal has a large community in Australia, making this a well-trodden route for experienced pet transport agents. All pets arriving from Portugal complete a mandatory ten-day quarantine at Mickleham.
+
   sections:
-    - heading: "Why this route needs early planning"
+    - heading: "Does my pet from Portugal need a titre test for Australia?"
       body: |
-        This is one of the more demanding international pet transport corridors. Australia runs a strict biosecurity programme and there are no shortcuts through it.
-        
-        All pets must complete quarantine on arrival in Australia (at the designated facility). This is non-negotiable and is entirely separate from the pre-travel preparation.
-        
-        Among the strictest pet import regimes globally. All imported cats and dogs undergo mandatory quarantine. Only pets from approved countries (Groups 1-6) can be imported. Allow minimum 6 months to complete all import steps. DAFF strongly recommends using an experienced pet transport agent.
-    - heading: "From experience: Portugal to Australia pet transport"
+        No. Portugal is DAFF Group 2 (rabies-controlled), and Group 2 countries are exempt from the RNATT. The titre test, which requires a blood draw at least 28 days after vaccination plus a mandatory waiting period, is not needed for Portuguese-origin pets.
+
+        What is still required: ISO microchip before any vaccination, current rabies vaccination within its validity period, DAFF import permit via BICON, quarantine booking at Mickleham, cargo to Melbourne, and the official DGAV health certificate in DAFF's required format. Source: DAFF, agriculture.gov.au/biosecurity-trade/cats-dogs (2026).
+
+    - heading: "How do I ship my pet from Portugal to Melbourne?"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        There is no direct Portugal-to-Melbourne passenger flight. Emirates via Dubai (from Lisbon) is the most commonly used routing for Portuguese pets heading to Australia. Qatar Airways via Doha and Singapore Airlines via Changi are viable alternatives. TAP Air Portugal connects from Lisbon to European hubs for onward cargo arrangements.
+
+        All airlines carry pets as manifest cargo only. Book eight to twelve weeks ahead. Routes via the Gulf are subject to summer heat embargoes. All pets must arrive at Melbourne International Airport (MEL). No other Australian airport accepts international pet imports.
+
+    - heading: "What is the DGAV's role in the export process from Portugal?"
+      body: |
+        The DGAV (Direcao-Geral de Alimentacao e Veterinaria) is Portugal's Directorate-General for Food and Veterinary, responsible for animal health certification for exports. The official export health certificate must be issued by a DGAV-authorised official vet in the format DAFF requires for Portuguese-origin Group 2 animals.
+
+        The certificate is valid for ten days from the date of issue. From 1 October 2026, the new EU export format under EU Regulation 2026/131 applies. Confirm the current required template with your official vet and DAFF before booking. Source: DGAV, dgav.pt (2026).
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Portugal to Australia?"
-    answer: "Allow at least 26 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Australia?"
-    answer: "Yes, quarantine is mandatory in Australia. Your pet will stay at the designated quarantine facility on arrival. This is non-negotiable and the cost is paid by the owner."
-  - question: "Is a rabies titre test required for pets entering Australia?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Australia. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into Australia?"
-    answer: "Yes, an import permit is required from Australia's authority (the relevant government body). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Portugal. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Australia's authority for the exact format required."
+  - question: "Is a titre test required for pets from Portugal entering Australia?"
+    answer: "No. Portugal is DAFF Group 2 and exempt from the RNATT titre test. A current rabies vaccination is still required. Source: DAFF, agriculture.gov.au/biosecurity-trade/cats-dogs (2026)."
+  - question: "How long is quarantine for pets from Portugal?"
+    answer: "Minimum 10 days at Mickleham MARS in Victoria. Mandatory and cannot be reduced. All pets must arrive at Melbourne International Airport."
+  - question: "What does quarantine cost for a pet from Portugal?"
+    answer: "Approximately AUD 1,877 per pet at current DAFF rates. Must be paid before release. Verify at agriculture.gov.au."
+  - question: "Who issues the export health certificate in Portugal?"
+    answer: "A DGAV-authorised official veterinarian. The certificate must follow DAFF's approved Group 2 format and be issued within 10 days of travel. Source: DGAV, dgav.pt."
+  - question: "How long does the Portugal-to-Australia process take?"
+    answer: "Allow 16 to 24 weeks. No titre test required for Portugal. Key time drivers: DAFF import permit and quarantine booking."
+
 links:
   sideways:
     - url: "/pet-transport/australia-to-portugal/"
       text: "Pet Transport Australia to Portugal"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-portugal-export-guide/"
-      text: "Shipping from Portugal"
+    - url: "/pet-transport/origins/portugal/"
+      text: "Shipping Pets from Portugal"
     - url: "/pet-transport/countries/australia/"
-      text: "Importing to Australia"
-    - url: "/pet-transport/airlines/air-france/"
-      text: "Air France pet policy"
-    - url: "/pet-transport/airlines/qantas/"
-      text: "Qantas pet policy"
+      text: "Australia pet import rules"
+    - url: "/pet-transport/airlines/emirates/"
+      text: "Emirates pet cargo policy"
+    - url: "/pet-transport/airlines/qatar-airways/"
+      text: "Qatar Airways pet cargo policy"
 ---

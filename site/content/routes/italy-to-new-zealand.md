@@ -1,148 +1,168 @@
 ---
-template_variant: "A"
-title: "Shipping Dogs & Cats from Italy to New Zealand | PetTransportGlobal"
-description: "Pet relocation from Italy to New Zealand: New Zealand import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport Italy to New Zealand | FAVN Titre Test, 180-Day Wait, MPI Guide 2026"
+description: "Moving your dog or cat from Italy to New Zealand in 2026. FAVN titre test mandatory, 180-day wait from blood draw, 10-day quarantine on arrival. Full MPI and Ministero della Salute health certificate process."
+date: "2026-06-10"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "D"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "italy-to-new-zealand"
 origin_name: "Italy"
 destination_name: "New Zealand"
+
 route_data:
   origin:
     code: "IT"
     country: "Italy"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      health_certificate: "Official export health certificate issued by a veterinario ufficiale through the ASL (Azienda Sanitaria Locale) in Italy, in the MPI-approved format for Italian-origin pets, endorsed by the Ministero della Salute (Ministry of Health). Certificate issued within 10 days of travel. Confirm the current MPI-required Italian template with your ASL official vet before booking. Source: Ministero della Salute, salute.gov.it; MPI, mpi.govt.nz."
+      export_permit: "No export permit required for personal pet exports from Italy."
+
   destination:
     code: "NZ"
     country: "New Zealand"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Must be implanted before or on same day as first rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 28-day wait after vaccination before travel. Vaccination schedule must be complete before titre test blood draw."
-      titre_test: "Required for: All pets from all countries (no exemptions). Not required for: None. Minimum: 0.5 IU/ml. 180-day wait from test date before entry"
-      quarantine: "Mandatory quarantine. 10 (minimum) at MPI Levin facility days. Facility: MPI Levin Quarantine Facility, Levin, Manawatu (the only approved facility). Mandatory 10-day quarantine for all arriving cats and dogs. Pre-booking required well in advance as capacity is limited. Book before flights."
-      import_permit: "Required. Issued by: Ministry for Primary Industries (MPI), Biosecurity New Zealand. Apply for import permit before booking flights. Permit specifies all conditions. Non-compliance results in re-export or destruction."
-      health_certificate: "Required. Government veterinary health certificate. Issued by: Government (official) veterinarian in country of export. Valid for 14 days from issue. Must use MPI-specified format for the exact country of export. No standard format accepted. Download the correct template from the MPI website."
+      microchip: "ISO 11784/11785 microchip mandatory. Must be implanted on or before the date of the first rabies vaccination."
+      rabies_vaccination: "Two inactivated-virus rabies vaccinations required. Both must be given after microchipping. At least 28 days must separate the first and second vaccinations. Both vaccinations must be complete before the titre test blood draw."
+      titre_test: "Mandatory from all countries, including Italy. FAVN (Fluorescent Antibody Virus Neutralisation) test at an MPI-approved laboratory. Minimum result 0.5 IU/ml. Blood drawn at least 30 days after the second rabies vaccination. 180-day wait from the blood draw date before travel. No exemptions. Source: MPI, mpi.govt.nz."
+      quarantine: "Mandatory 10 days at an MPI-approved quarantine facility. Pets must arrive at Auckland International Airport (AKL) or Christchurch Airport (CHC). Owner pre-books and pays quarantine fees."
+      import_permit: "NZSTAP (New Zealand Standard Terms and Procedures) import approval required from MPI before travel. Apply via nzstap.mpi.govt.nz. Allow at least 6 weeks for processing."
+      health_certificate: "Official health certificate from Italian competent authority in MPI-approved format. Issued within 10 days of travel. New IHS requirements apply from 1 July 2026 (transition period until 1 April 2027). Confirm the current template with your ASL official vet."
+
   airlines:
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "Qantas"
+    - name: "ITA Airways"
       type: "cargo_only"
-      policy_summary: "Cargo: QantasFreighter network for pet transport. Brachycephalic breeds restricted year-round. Temperature embargoes: seasonal restrictions during Australian summer (Dec-Feb)"
-    - name: "Emirates"
-      type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "British Airways"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
+      policy_summary: "Rome Fiumicino (FCO) to Auckland (AKL) via connections, typically Singapore or other Asia-Pacific hubs. Pets travel as manifest cargo. ITA Airways is Italy's national carrier."
     - name: "Singapore Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
+      policy_summary: "Via Singapore Changi to Auckland. Most commonly used Europe-to-New Zealand routing. Connect from Rome FCO or Milan Malpensa (MXP)."
+    - name: "Lufthansa"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "Via Frankfurt to Auckland. Connections from Italian airports. Brachycephalic breeds restricted year-round from cargo."
+    - name: "Air New Zealand"
+      type: "cargo_only"
+      policy_summary: "Air New Zealand Cargo from Italy to Auckland via connections. Strong MPI quarantine familiarity at Auckland. Book well in advance."
+    - name: "Emirates"
+      type: "cargo_only"
+      policy_summary: "Via Dubai to Auckland from Rome or Milan. Summer Gulf heat embargoes apply."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Implant ISO 11784/11785 microchip"
+      timing: "First step. On or before the same day as the first vaccination."
+      responsible: "Veterinarian"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 28-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "First inactivated-virus rabies vaccination"
+      timing: "Same day as or after microchip."
+      responsible: "Veterinarian"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Second inactivated-virus rabies vaccination"
+      timing: "At least 28 days after the first vaccination."
+      responsible: "Veterinarian"
     - step: 4
-      action: "Apply for import permit from New Zealand"
-      timing: "Apply early: allow 4-6 weeks"
-      responsible: "You (or your pet transport agent)"
+      action: "Apply for NZSTAP import approval from MPI"
+      timing: "Apply early. Allow at least 6 weeks for processing. Can run in parallel with vaccination steps."
+      responsible: "Owner or agent via nzstap.mpi.govt.nz"
     - step: 5
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "FAVN titre test blood draw at MPI-approved laboratory"
+      timing: "At least 30 days after the second rabies vaccination."
+      responsible: "Veterinarian + MPI-approved laboratory"
     - step: 6
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "180-day wait from blood draw date"
+      timing: "6 calendar months from the date of the titre test blood draw. Cannot be shortened. Travel cannot happen before this date."
+      responsible: "Owner to track"
     - step: 7
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Pre-book MPI-approved quarantine facility (10 days)"
+      timing: "Book as early as possible. Spaces are limited."
+      responsible: "Owner or agent"
     - step: 8
-      action: "Quarantine on arrival (10 (minimum) at MPI Levin facility days)"
-      timing: "Immediately on arrival (mandatory)"
-      responsible: "New Zealand quarantine authority"
+      action: "Book cargo space with airline to Auckland (AKL) or Christchurch (CHC)"
+      timing: "8-12 weeks before travel."
+      responsible: "Owner or agent"
+    - step: 9
+      action: "Obtain official health certificate from Italian competent authority vet"
+      timing: "Within 10 days of travel."
+      responsible: "Veterinario ufficiale via ASL, endorsed by Ministero della Salute"
+    - step: 10
+      action: "Depart to New Zealand as cargo"
+      timing: "Arrive at cargo check-in 3-4 hours before departure."
+      responsible: "Airline cargo"
+    - step: 11
+      action: "10-day quarantine at MPI-approved facility"
+      timing: "Mandatory on arrival at Auckland or Christchurch."
+      responsible: "MPI quarantine facility"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Import permit application fee (New Zealand)"
-    - "Quarantine facility fees (owner-paid at destination)"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "MPI import permit (NZSTAP) fee: NZD 300+ (verify at mpi.govt.nz)"
+    - "Quarantine fees (10 days): NZD 1,500-2,500+ per pet. Verify at mpi.govt.nz."
+    - "FAVN titre test (MPI-approved laboratory fee): EUR 100-250"
+    - "Airline cargo from Italy to Auckland: approximately EUR 1,000-2,500 depending on crate size and routing"
+    - "IATA-compliant crate: EUR 80-400"
+    - "Official vet health certificate and ASL administrative fees: EUR 100-300"
+    - "Two rabies vaccinations: EUR 60-150"
+    - "Pet transport agent: EUR 700-1,800 (strongly recommended for this complex route)"
+
   key_warnings:
-    - "Mandatory quarantine required on arrival. Plan for separation from your pet."
-    - "Import permit must be obtained before travel. Apply well in advance."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
+    - "The 180-day wait after the titre test blood draw is non-negotiable. There is no way to shorten this period. Starting preparations early is the only option."
+    - "Two separate inactivated-virus rabies vaccinations are required, at least 28 days apart. A single vaccination is not sufficient for New Zealand entry from Italy."
+    - "Pets must arrive at Auckland (AKL) or Christchurch (CHC) airports only. No other New Zealand airports accept international pet imports."
+    - "The health certificate must go through the ASL and be endorsed by the Ministero della Salute in the MPI-required format. Allow enough time for this administrative process."
+    - "The following breeds are banned from import to New Zealand: Brazilian Fila, Dogo Argentino, Japanese Tosa, Perro de Presa Canario, American Pit Bull Terrier."
+
   route_complexity: "very_high"
-  estimated_timeline_weeks: "26-32"
+  estimated_timeline_weeks: "36-44"
+
 content:
   h1: "Pet Transport from Italy to New Zealand"
   overview: |
-    International pet transport from Italy to New Zealand comes down to documentation timing more than anything else.
-    
-    This route is one of the most demanding international pet transport routes. Start preparations at least 26 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. New Zealand requires mandatory quarantine (10 (minimum) at MPI Levin facility days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    We've laid out every step below so you know exactly what to prepare and when.
+    Moving a dog or cat from Italy to New Zealand is one of the most preparation-intensive international pet moves. New Zealand requires a mandatory FAVN titre test from pets arriving from all countries, including Italy, with a 180-day wait from the blood draw before travel is permitted. Two separate inactivated-virus rabies vaccinations are required before the titre test, at least 28 days apart. The minimum preparation time is around nine to ten months.
+
+    New Zealand's Ministry for Primary Industries (MPI) runs the NZSTAP import permit system. You need approval before travel. Ten days of mandatory quarantine follows on arrival. In Italy, the official health certificate goes through the ASL (Azienda Sanitaria Locale) and requires endorsement from the Ministero della Salute: allow time for this step in your planning.
+
+    Most Italian pet owners moving to New Zealand begin the process at least ten to twelve months before their intended departure.
+
   sections:
-    - heading: "Understanding New Zealand's pet import rules"
+    - heading: "Why does the 180-day wait apply to pets from Italy, and is there any exemption?"
       body: |
-        This is one of the more demanding international pet transport corridors. New Zealand runs a strict biosecurity programme and there are no shortcuts through it.
-        
-        All pets must complete quarantine on arrival in New Zealand (at MPI Levin Quarantine Facility, Levin, Manawatu (the only approved facility)) for 10 (minimum) at MPI Levin facility days. This is non-negotiable and is entirely separate from the pre-travel preparation.
-        
-        New Zealand is rabies-free with one of the world's strictest pet import systems. All dogs and cats must complete mandatory quarantine at the government-approved facility (Levin MAF Quarantine Station, now MPI). Import permit required in advance. Only cats and dogs permitted from most countries; birds require separate approval. Authority: Ministry for Primary Industries (MPI), Biosecurity New Zealand.
-    - heading: "Step-by-step: what to do first"
+        New Zealand biosecurity does not distinguish between EU and non-EU origins for the 180-day wait requirement. The FAVN test confirms adequate rabies antibody protection at 0.5 IU/ml or above. The 180-day wait from the blood draw date is the period MPI requires before it accepts that any latent infection risk has been eliminated.
+
+        Italy is not in MPI's Category 1 group, so the full titre test and 180-day wait apply without exception. The timer starts from the date the blood was drawn, not from when the result was received. This is the single biggest time driver on the Italy-to-New Zealand route. Source: MPI, mpi.govt.nz (2026).
+
+    - heading: "Why are two vaccinations required, and which type does Italy need to use?"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        MPI requires two inactivated-virus rabies vaccinations for New Zealand entry, given after microchipping, at least 28 days apart. Both must be completed before the FAVN blood draw. The inactivated-virus specification matters: modified live or recombinant products may not be accepted by MPI. Confirm the vaccine product with your Italian official vet at the ASL before the first injection.
+
+        If either vaccination record is incomplete, or the interval is less than 28 days, the titre test result will not count and the entire vaccination sequence must restart. This is one of the most common and most costly errors on this route, particularly when using a vet who is unfamiliar with MPI's specific requirements.
+
+    - heading: "How does the Italian health certificate process work for New Zealand?"
+      body: |
+        Italy's official health certificate for New Zealand must be issued by a veterinario ufficiale through the ASL (Azienda Sanitaria Locale), in the MPI-approved format for Italian-origin pets, and endorsed by the Ministero della Salute. This is a multi-step government process that takes time to coordinate.
+
+        Allow more time than you might expect for the certificate step. The ASL appointment, certificate preparation, and Ministero endorsement all need to happen within the 10-day window before travel. If you are based in a region where ASL scheduling runs slowly, or if it is your first time requesting this type of export certificate, working with an experienced Italian pet transport agent is strongly recommended.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Italy to New Zealand?"
-    answer: "Allow at least 26 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering New Zealand?"
-    answer: "Yes, quarantine is mandatory in New Zealand. Your pet will stay for 10 (minimum) at MPI Levin facility days at MPI Levin Quarantine Facility, Levin, Manawatu (the only approved facility) on arrival. This is non-negotiable and the cost is paid by the owner."
-  - question: "Is a rabies titre test required for pets entering New Zealand?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter New Zealand. Start this process as early as possible."
-  - question: "Do I need an import permit to bring my pet into New Zealand?"
-    answer: "Yes, an import permit is required from New Zealand's authority (Ministry for Primary Industries (MPI), Biosecurity New Zealand). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Italy. The certificate must be issued within 14 days of travel. Present the original (not a copy) at check-in. Check New Zealand's authority for the exact format required."
+  - question: "How long does the Italy-to-New Zealand pet transport process take in total?"
+    answer: "Allow 36 to 44 weeks from starting preparations to travel day. The 180-day wait after the titre test blood draw is the main time driver and cannot be shortened. Start the process 10 to 12 months before your intended departure."
+  - question: "Does my pet need one or two rabies vaccinations for New Zealand from Italy?"
+    answer: "Two. MPI requires two separate inactivated-virus rabies vaccinations, given at least 28 days apart, both after microchipping. A single vaccination is not sufficient. Source: MPI, mpi.govt.nz."
+  - question: "What is the FAVN titre test and why does New Zealand require it?"
+    answer: "The FAVN (Fluorescent Antibody Virus Neutralisation) test measures rabies antibody levels in your pet's blood. MPI requires a minimum result of 0.5 IU/ml. The blood must be drawn at least 30 days after the second vaccination. A 180-day wait from the blood draw date then applies before travel."
+  - question: "How long is quarantine for pets from Italy?"
+    answer: "10 days at an MPI-approved quarantine facility in Auckland or Christchurch. Mandatory and cannot be reduced. Pets must arrive at Auckland International Airport or Christchurch Airport."
+  - question: "What does it cost to move a pet from Italy to New Zealand?"
+    answer: "Costs vary but expect EUR 3,000-6,000+ for the full process: airline cargo from Rome or Milan (EUR 1,000-2,500), MPI quarantine fees (NZD 1,500-2,500+), FAVN titre test (EUR 100-250), ASL and official vet fees, IATA crate, and pet transport agent."
+
 links:
   sideways:
     - url: "/pet-transport/new-zealand-to-italy/"
       text: "Pet Transport New Zealand to Italy"
   upward:
     - url: "/pet-transport/origins/shipping-your-pet-from-italy-export-guide/"
-      text: "Shipping from Italy"
+      text: "Shipping Pets from Italy"
     - url: "/pet-transport/countries/new-zealand/"
-      text: "Importing to New Zealand"
-    - url: "/pet-transport/airlines/air-france/"
-      text: "Air France pet policy"
-    - url: "/pet-transport/airlines/qantas/"
-      text: "Qantas pet policy"
+      text: "New Zealand pet import rules"
+    - url: "/pet-transport/airlines/ita-airways/"
+      text: "ITA Airways pet cargo policy"
+    - url: "/pet-transport/airlines/singapore-airlines/"
+      text: "Singapore Airlines pet cargo policy"
 ---

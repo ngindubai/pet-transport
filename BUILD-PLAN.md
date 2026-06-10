@@ -47,7 +47,7 @@
 - Chunk 41 template: A (Field Manual) - DONE 2026-06-08 (25 Template A Tier B routes: Peru/Chile/Japan/Singapore/Argentina/S.Korea/HK/Taiwan to EU5)
 - Chunk 42 template: B (Visual Journey) - DONE 2026-06-08 (25 Tier B routes: NZ destinations SA/CO; Japan routes CA/VN/TH/IN/ZA/CO; South Korea routes CA/VN/CO; Singapore Schedule III routes VN/TH/ID/PH)
 - Chunk 43 template: C - DONE 2026-06-09 (batch A: EU-to-UK x7, Mexico/Brazil/Indonesia outbound x18; batch B: China/Vietnam/Thailand/UAE/HK outbound overwrites x25)
-- Chunk 44 template: D - DONE 2026-06-10 (EU-to-USA x10: Greece/Austria/Belgium/Finland/Malta/Romania/Cyprus/Hungary/Bulgaria/Croatia; to-UK unlisted x4: Morocco/Bangladesh/Myanmar/Ethiopia; EU-to-UK listed x2: Slovakia/Luxembourg; SE Asia outbound x9: Japan-to-Mexico/Brazil/Indonesia, Thailand-to-Malaysia/Mexico/Brazil/Indonesia, South Korea-to-Mexico/Brazil; 25 routes)
+- Chunk 44 template: D - DONE 2026-06-10 (two parallel runs: (a) 25 new routes: EU-to-USA x10, to-UK unlisted x4, EU-to-UK listed x2, SE Asia outbound x9; (b) 25 stub upgrades: AU x10 [ES/IT/NL/SE/NO/BE/CH/PT/PL/AT], CA x9 [ES/IT/NL/SE/NO/PT/BE/CH/AT], NZ x5 [DE/FR/ES/NL/IT], DE-to-US x1)
 - Chunk 45 template: E - NEXT
 - Blog Day 10: pet-transport-uae-to-pakistan - DONE 2026-06-07 (Marcus Webb, AQD NOC, AED 3,000-6,000)
 - Blog Day 11: exporting-pets-from-singapore - DONE 2026-06-08 (Marcus Webb, AVS export licence, FAVN/RNATT for Australia, Changi cargo, UK/EU/US/AU destination matrix, cost table)

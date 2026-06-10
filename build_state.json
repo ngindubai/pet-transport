@@ -15,7 +15,7 @@
   "blog_articles": 421,
   "content_plan_start": "2026-06-01",
   "content_plan_articles_written": 14,
-  "notes": "Chunk 44 (Template D, Tier B) complete 2026-06-10. 25 new routes: EU-to-USA (Greece/Austria/Belgium/Finland/Malta/Romania/Cyprus/Hungary/Bulgaria/Croatia all x united-states); to-UK unlisted (Morocco/Bangladesh/Myanmar/Ethiopia x united-kingdom); EU-to-UK listed (Slovakia/Luxembourg x united-kingdom); SE Asia outbound (Japan x Mexico/Brazil/Indonesia; Thailand x Malaysia/Mexico/Brazil/Indonesia; South Korea x Mexico/Brazil). Blog Day 14: pet-transport-within-uk.md (Marcus Webb, 2200 words, DEFRA Type 1 ATA, domestic couriers). Routes 5531->5556, blog 420->421, pages 6324->6350. Next: Chunk 45 (Template E, Tier B). Blog Day 15 next.",
+  "notes": "Chunk 44 (Template D, Tier B) complete 2026-06-10. Two parallel runs: (1) 25 new routes: EU-to-USA x10 (Greece/Austria/Belgium/Finland/Malta/Romania/Cyprus/Hungary/Bulgaria/Croatia), to-UK unlisted x4 (Morocco/Bangladesh/Myanmar/Ethiopia), EU-to-UK listed x2 (Slovakia/Luxembourg), SE Asia outbound x9 (Japan/Thailand/S.Korea to Mexico/Brazil/Indonesia/Malaysia). Routes 5531->5556, pages 6324->6350. (2) 25 existing stub upgrades: EU-to-AU x10 (Spain/Italy/Netherlands/Sweden/Norway/Belgium/Switzerland/Portugal/Poland/Austria), EU-to-CA x9 (Spain/Italy/Netherlands/Sweden/Norway/Portugal/Belgium/Switzerland/Austria), EU-to-NZ x5 (Germany/France/Spain/Netherlands/Italy), DE-to-US x1. Blog Day 14: pet-transport-within-uk.md (Marcus Webb, 2200 words). Next: Chunk 45 (Template E, Tier B). Blog Day 15 next.",
   "counts": {
     "route_pairs": 5556,
     "blog": 421,
