@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Build Report &ndash; 10 June 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter+Tight:ital,wght@0,300..700;1,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:       #1a1a1a;
+      --paper:     #f9f7f4;
+      --rule:      #e0dcd6;
+      --muted:     #888;
+      --accent:    #2a4e8f;
+      --green:     #1a6b3a;
+      --green-bg:  #f0faf5;
+      --green-bdr: #2e7d52;
+      --mono:      'JetBrains Mono', 'Fira Mono', monospace;
+    }
+
+    body {
+      font-family: 'Inter Tight', system-ui, -apple-system, sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      font-size: 15px;
+      line-height: 1.65;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    /* ---- HEADER ---- */
+    .report-header {
+      border-bottom: 2.5px solid var(--ink);
+      padding-bottom: 1.25rem;
+      margin-bottom: 1.75rem;
+    }
+    .report-header h1 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 2.6rem;
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -0.025em;
+    }
+    .report-meta {
+      font-family: var(--mono);
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 0.45rem;
+      letter-spacing: 0.02em;
+    }
+
+    /* ---- FLAG BOX ---- */
+    .flag-box {
+      border: 2px solid;
+      border-radius: 4px;
+      padding: 0.9rem 1.25rem;
+      margin-bottom: 1.75rem;
+      font-size: 0.875rem;
+    }
+    .flag-box.clear {
+      border-color: var(--green-bdr);
+      background: var(--green-bg);
+      color: var(--green);
+    }
+    .flag-box strong {
+      display: block;
+      font-family: var(--mono);
+      font-size: 0.725rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.3rem;
+      opacity: 0.75;
+    }
+
+    /* ---- LEAD / DROP CAP ---- */
+    .lead {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.1rem;
+      line-height: 1.75;
+      margin-bottom: 2rem;
+      max-width: 720px;
+    }
+    .lead::first-letter {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 4.2rem;
+      font-weight: 700;
+      float: left;
+      line-height: 0.78;
+      margin-right: 0.08em;
+      margin-top: 0.12em;
+      color: var(--accent);
+    }
+
+    /* ---- SUMMARY TABLE ---- */
+    .summary-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2.75rem;
+      font-size: 0.875rem;
+    }
+    .summary-table th {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      text-align: left;
+      padding: 0.45rem 0.75rem;
+      border-bottom: 2px solid var(--ink);
+    }
+    .summary-table td {
+      padding: 0.5rem 0.75rem;
+      border-bottom: 1px solid var(--rule);
+      vertical-align: top;
+    }
+    .summary-table tr.total td {
+      border-bottom: 2px solid var(--ink);
+      font-weight: 600;
+    }
+    .summary-table .num {
+      font-family: var(--mono);
+      font-size: 0.85rem;
+    }
+    .summary-table .dim {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    /* ---- SITE SECTIONS ---- */
+    .site-section {
+      margin-bottom: 3rem;
+      padding-top: 0.25rem;
+    }
+    .site-section h2 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 0.2rem;
+    }
+    .site-meta {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    .section-h3 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #555;
+      margin: 1.4rem 0 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .section-note {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-style: italic;
+      margin-bottom: 0.6rem;
+    }
+
+    /* ---- PAGE LISTS ---- */
+    .page-list,
+    .changed-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 0.2rem 1rem;
+      margin-bottom: 0.75rem;
+    }
+    .page-list li,
+    .changed-list li {
+      font-size: 0.82rem;
+      overflow: hidden;
+    }
+    .page-list a {
+      font-family: var(--mono);
+      color: var(--accent);
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .page-list a:hover {
+      text-decoration: underline;
+    }
+    .changed-list a {
+      font-family: var(--mono);
+      color: #7a8aa0;
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .changed-list a:hover {
+      text-decoration: underline;
+    }
+
+    /* ---- FOOTER ---- */
+    .report-footer {
+      margin-top: 3.5rem;
+      padding-top: 1rem;
+      border-top: 2px solid var(--ink);
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header class="report-header">
+    <h1>Daily Build Report</h1>
+    <div class="report-meta">10 June 2026 &nbsp;|&nbsp; 5 sites &nbsp;|&nbsp; 198 new pages &nbsp;|&nbsp; 33 changed pages &nbsp;|&nbsp; 19 commits</div>
+  </header>
+
+  <div class="flag-box clear">
+    <strong>Red Flags</strong>
+    No flags today. All five sites built cleanly. No HALTED, FAILED, PAUSED, RED, DEPLOY RISK, DEPLOY RETRY NEEDED or SKIPPED keywords found in any commit message across all repositories.
+  </div>
+
+  <p class="lead">Five sites built across four build sessions on 10 June 2026. All 198 new pages passed QA at point of commit. Funeral Repatriation leads the day at 100 new diaspora corridor routes (R29-R32, Tier B, template rotation D through C). Close Protection Hire adds 50 city pages across five service types, taking the site to 777 pages total. Pet Transport completes Chunk 44 with 25 new routes, 25 stub-to-full upgrades, and the Day 14 blog article on domestic UK pet transport. Bus Hire finishes Phase 3 Track C batch 4 with 16 festival and sports coach pages for eight Tier 2 cities. MortgageCompare AE ships six new knowledge-hub articles and refreshes five high-traffic pages to June 2026 data.</p>
+
+  <table class="summary-table">
+    <thead>
+      <tr>
+        <th>Site</th>
+        <th>New Pages</th>
+        <th>Changed</th>
+        <th>Activity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Pet Transport Global</td>
+        <td class="num">26</td>
+        <td class="num">25</td>
+        <td class="dim">2 commits &middot; 06:45 UTC</td>
+      </tr>
+      <tr>
+        <td>MortgageCompare AE</td>
+        <td class="num">6</td>
+        <td class="num">8</td>
+        <td class="dim">14 commits &middot; 05:24&ndash;11:46 UTC</td>
+      </tr>
+      <tr>
+        <td>Bus Hire Global</td>
+        <td class="num">16</td>
+        <td class="num">0</td>
+        <td class="dim">1 commit &middot; 07:35 UTC</td>
+      </tr>
+      <tr>
+        <td>Funeral Repatriation</td>
+        <td class="num">100</td>
+        <td class="num">0</td>
+        <td class="dim">1 commit &middot; 08:28 UTC</td>
+      </tr>
+      <tr>
+        <td>Close Protection Hire</td>
+        <td class="num">50</td>
+        <td class="num">0</td>
+        <td class="dim">1 commit &middot; 09:16 UTC</td>
+      </tr>
+      <tr class="total">
+        <td>Total</td>
+        <td class="num">198</td>
+        <td class="num">33</td>
+        <td class="dim">19 commits across 5 repos</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ========== PET TRANSPORT ========== -->
+  <section class="site-section">
+    <h2>Pet Transport Global</h2>
+    <div class="site-meta">pettransportglobal.com &nbsp;&bull;&nbsp; branch: main &nbsp;&bull;&nbsp; Chunk 44 (Template D, Tier B) + Blog Day 14 &nbsp;&bull;&nbsp; 5,556 route pairs total</div>
+
+    <p class="section-h3">New Route Pages &mdash; 25</p>
+    <ul class="page-list">
+      <li><a href="https://www.pettransportglobal.com/routes/austria-to-united-states/">Austria to United States</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/bangladesh-to-united-kingdom/">Bangladesh to United Kingdom</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/belgium-to-united-states/">Belgium to United States</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/bulgaria-to-united-states/">Bulgaria to United States</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/croatia-to-united-states/">Croatia to United States</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/cyprus-to-united-states/">Cyprus to United States</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/ethiopia-to-united-kingdom/">Ethiopia to United Kingdom</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/finland-to-united-states/">Finland to United States</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/greece-to-united-states/">Greece to United States</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/hungary-to-united-states/">Hungary to United States</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/japan-to-brazil/">Japan to Brazil</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/japan-to-indonesia/">Japan to Indonesia</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/japan-to-mexico/">Japan to Mexico</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/luxembourg-to-united-kingdom/">Luxembourg to United Kingdom</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/malta-to-united-states/">Malta to United States</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/morocco-to-united-kingdom/">Morocco to United Kingdom</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/myanmar-to-united-kingdom/">Myanmar to United Kingdom</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/romania-to-united-states/">Romania to United States</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/slovakia-to-united-kingdom/">Slovakia to United Kingdom</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/south-korea-to-brazil/">South Korea to Brazil</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/south-korea-to-mexico/">South Korea to Mexico</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/thailand-to-brazil/">Thailand to Brazil</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/thailand-to-indonesia/">Thailand to Indonesia</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/thailand-to-malaysia/">Thailand to Malaysia</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/thailand-to-mexico/">Thailand to Mexico</a></li>
+    </ul>
+
+    <p class="section-h3">New Blog Article &mdash; 1</p>
+    <ul class="page-list">
+      <li><a href="https://www.pettransportglobal.com/blog/pet-transport-within-uk/">Pet Transport Within the UK</a></li>
+    </ul>
+
+    <p class="section-h3">Changed Pages &mdash; 25 stub upgrades to full quality</p>
+    <p class="section-note">Template D rewrites. Australia x10, Canada x9, New Zealand x5, United States x1. DAFF Group 2, Canadian rabies cert, FAVN titre test, CDC Dog Import Form frameworks.</p>
+    <ul class="changed-list">
+      <li><a href="https://www.pettransportglobal.com/routes/australia-to-austria/">Australia to Austria</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/australia-to-belgium/">Australia to Belgium</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/australia-to-italy/">Australia to Italy</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/australia-to-netherlands/">Australia to Netherlands</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/australia-to-norway/">Australia to Norway</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/australia-to-poland/">Australia to Poland</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/australia-to-portugal/">Australia to Portugal</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/australia-to-spain/">Australia to Spain</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/australia-to-sweden/">Australia to Sweden</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/australia-to-switzerland/">Australia to Switzerland</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/canada-to-austria/">Canada to Austria</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/canada-to-belgium/">Canada to Belgium</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/canada-to-italy/">Canada to Italy</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/canada-to-netherlands/">Canada to Netherlands</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/canada-to-norway/">Canada to Norway</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/canada-to-portugal/">Canada to Portugal</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/canada-to-spain/">Canada to Spain</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/canada-to-sweden/">Canada to Sweden</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/canada-to-switzerland/">Canada to Switzerland</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/new-zealand-to-france/">New Zealand to France</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/new-zealand-to-germany/">New Zealand to Germany</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/new-zealand-to-italy/">New Zealand to Italy</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/new-zealand-to-netherlands/">New Zealand to Netherlands</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/new-zealand-to-spain/">New Zealand to Spain</a></li>
+      <li><a href="https://www.pettransportglobal.com/routes/united-states-to-germany/">United States to Germany</a></li>
+    </ul>
+  </section>
+
+  <!-- ========== MORTGAGECOMPARE AE ========== -->
+  <section class="site-section">
+    <h2>MortgageCompare AE</h2>
+    <div class="site-meta">mortgagecompare.ae &nbsp;&bull;&nbsp; branch: main &nbsp;&bull;&nbsp; Knowledge-hub D30-D33, EIBOR cluster (rec 8), June 2026 refreshes, GA4 conversion events</div>
+
+    <p class="section-h3">New Knowledge-Hub Articles &mdash; 6</p>
+    <ul class="page-list">
+      <li><a href="https://mortgagecompare.ae/knowledge-hub/5-year-fixed-rate-mortgage-uae.html">5-Year Fixed Rate Mortgage UAE</a></li>
+      <li><a href="https://mortgagecompare.ae/knowledge-hub/indian-expat-mortgage-uae.html">Indian Expat Mortgage UAE</a></li>
+      <li><a href="https://mortgagecompare.ae/knowledge-hub/cbd-mortgage-uae.html">CBD Mortgage UAE</a></li>
+      <li><a href="https://mortgagecompare.ae/knowledge-hub/first-time-buyer-mortgage-uae.html">First-Time Buyer Mortgage UAE</a></li>
+      <li><a href="https://mortgagecompare.ae/knowledge-hub/3-month-eibor-rate-uae.html">3-Month EIBOR Rate UAE</a></li>
+      <li><a href="https://mortgagecompare.ae/knowledge-hub/1-month-eibor-rate-uae.html">1-Month EIBOR Rate UAE</a></li>
+    </ul>
+
+    <p class="section-h3">Changed Pages &mdash; 8</p>
+    <p class="section-note">June 2026 data refreshes, internal linking wiring, CTA additions, GA4 conversion events, Arabic label fix.</p>
+    <ul class="changed-list">
+      <li><a href="https://mortgagecompare.ae/">Homepage (title + meta rewrite)</a></li>
+      <li><a href="https://mortgagecompare.ae/rates.html">Live Rates (advisor CTA + sticky mobile bar)</a></li>
+      <li><a href="https://mortgagecompare.ae/eibor.html">EIBOR (3-month + 1-month links added)</a></li>
+      <li><a href="https://mortgagecompare.ae/knowledge-hub/eibor-explained.html">EIBOR Explained (links, footer fix)</a></li>
+      <li><a href="https://mortgagecompare.ae/knowledge-hub/best-mortgage-rates-uae.html">Best Mortgage Rates UAE (June 2026 refresh)</a></li>
+      <li><a href="https://mortgagecompare.ae/knowledge-hub/uae-mortgage-rates-today.html">UAE Mortgage Rates Today (June 2026 refresh)</a></li>
+      <li><a href="https://mortgagecompare.ae/knowledge-hub/uae-mortgage-calculator.html">UAE Mortgage Calculator (June 2026 refresh)</a></li>
+      <li><a href="https://mortgagecompare.ae/knowledge-hub.html">Knowledge Hub index (D30-D33 wired)</a></li>
+    </ul>
+  </section>
+
+  <!-- ========== BUS HIRE ========== -->
+  <section class="site-section">
+    <h2>Bus Hire Global</h2>
+    <div class="site-meta">busrentalglobal.com &nbsp;&bull;&nbsp; branch: main &nbsp;&bull;&nbsp; Phase 3 Track C batch 4 &middot; Track C total now 112 pages</div>
+
+    <p class="section-h3">Festival and Concert Coach Hire &mdash; 8</p>
+    <ul class="page-list">
+      <li><a href="https://busrentalglobal.com/festival-and-concert-coach/austria/salzburg.html">Festival Coach, Salzburg</a></li>
+      <li><a href="https://busrentalglobal.com/festival-and-concert-coach/france/lyon.html">Festival Coach, Lyon</a></li>
+      <li><a href="https://busrentalglobal.com/festival-and-concert-coach/germany/hamburg.html">Festival Coach, Hamburg</a></li>
+      <li><a href="https://busrentalglobal.com/festival-and-concert-coach/italy/florence.html">Festival Coach, Florence</a></li>
+      <li><a href="https://busrentalglobal.com/festival-and-concert-coach/netherlands/rotterdam.html">Festival Coach, Rotterdam</a></li>
+      <li><a href="https://busrentalglobal.com/festival-and-concert-coach/spain/madrid.html">Festival Coach, Madrid</a></li>
+      <li><a href="https://busrentalglobal.com/festival-and-concert-coach/switzerland/geneva.html">Festival Coach, Geneva</a></li>
+      <li><a href="https://busrentalglobal.com/festival-and-concert-coach/united-kingdom/edinburgh.html">Festival Coach, Edinburgh</a></li>
+    </ul>
+
+    <p class="section-h3">Sports Team Coach Hire &mdash; 8</p>
+    <ul class="page-list">
+      <li><a href="https://busrentalglobal.com/sports-team-coach-hire/austria/salzburg.html">Sports Coach, Salzburg</a></li>
+      <li><a href="https://busrentalglobal.com/sports-team-coach-hire/france/lyon.html">Sports Coach, Lyon</a></li>
+      <li><a href="https://busrentalglobal.com/sports-team-coach-hire/germany/hamburg.html">Sports Coach, Hamburg</a></li>
+      <li><a href="https://busrentalglobal.com/sports-team-coach-hire/italy/florence.html">Sports Coach, Florence</a></li>
+      <li><a href="https://busrentalglobal.com/sports-team-coach-hire/netherlands/rotterdam.html">Sports Coach, Rotterdam</a></li>
+      <li><a href="https://busrentalglobal.com/sports-team-coach-hire/spain/madrid.html">Sports Coach, Madrid</a></li>
+      <li><a href="https://busrentalglobal.com/sports-team-coach-hire/switzerland/geneva.html">Sports Coach, Geneva</a></li>
+      <li><a href="https://busrentalglobal.com/sports-team-coach-hire/united-kingdom/edinburgh.html">Sports Coach, Edinburgh</a></li>
+    </ul>
+  </section>
+
+  <!-- ========== FUNERAL REPATRIATION ========== -->
+  <section class="site-section">
+    <h2>Funeral Repatriation</h2>
+    <div class="site-meta">repatriationfuneral.com &nbsp;&bull;&nbsp; branch: master &nbsp;&bull;&nbsp; R29-R32 Tier B diaspora corridors &middot; 873 quality pages total (up from 773)</div>
+
+    <p class="section-h3">New Route Pages &mdash; 100</p>
+    <p class="section-note">Template rotation D-E-A-B-C. R29: Germany w4, France w4, UAE w4, Canada w4, Australia w5. R30: Qatar w3, Kuwait w3, Singapore w3, South Africa w3, USA w4. R31: Switzerland w3, Sweden w3, Norway w3, Portugal w3, Saudi Arabia w3. R32: Japan hub x8, New Zealand hub x7, Belgium w4, Germany w5.</p>
+    <ul class="page-list">
+      <li><a href="https://www.repatriationfuneral.com/routes/bangladesh-to-france/">Bangladesh to France</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/brazil-to-canada/">Brazil to Canada</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/brazil-to-japan/">Brazil to Japan</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/brazil-to-switzerland/">Brazil to Switzerland</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/burkina-faso-to-belgium/">Burkina Faso to Belgium</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/burundi-to-south-africa/">Burundi to South Africa</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/cambodia-to-singapore/">Cambodia to Singapore</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/chile-to-switzerland/">Chile to Switzerland</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/china-to-japan/">China to Japan</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/china-to-kuwait/">China to Kuwait</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/china-to-new-zealand/">China to New Zealand</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/china-to-norway/">China to Norway</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/china-to-qatar/">China to Qatar</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/china-to-saudi-arabia/">China to Saudi Arabia</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/china-to-sweden/">China to Sweden</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/china-to-switzerland/">China to Switzerland</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/colombia-to-canada/">Colombia to Canada</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/colombia-to-switzerland/">Colombia to Switzerland</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/ecuador-to-canada/">Ecuador to Canada</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/egypt-to-switzerland/">Egypt to Switzerland</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/eritrea-to-belgium/">Eritrea to Belgium</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/eritrea-to-saudi-arabia/">Eritrea to Saudi Arabia</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/eritrea-to-south-africa/">Eritrea to South Africa</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/eritrea-to-united-arab-emirates/">Eritrea to United Arab Emirates</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/eritrea-to-united-states/">Eritrea to United States</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/fiji-to-new-zealand/">Fiji to New Zealand</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/france-to-belgium/">France to Belgium</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/ghana-to-france/">Ghana to France</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/guinea-to-germany/">Guinea to Germany</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/guinea-to-portugal/">Guinea to Portugal</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/haiti-to-canada/">Haiti to Canada</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/hong-kong-to-singapore/">Hong Kong to Singapore</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/india-to-france/">India to France</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/india-to-japan/">India to Japan</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/india-to-new-zealand/">India to New Zealand</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/indonesia-to-germany/">Indonesia to Germany</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/indonesia-to-japan/">Indonesia to Japan</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/iran-to-kuwait/">Iran to Kuwait</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/iran-to-qatar/">Iran to Qatar</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/iran-to-saudi-arabia/">Iran to Saudi Arabia</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/iran-to-united-arab-emirates/">Iran to United Arab Emirates</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/iraq-to-united-states/">Iraq to United States</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/ivory-coast-to-germany/">Ivory Coast to Germany</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/ivory-coast-to-south-africa/">Ivory Coast to South Africa</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/japan-to-australia/">Japan to Australia</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/japan-to-singapore/">Japan to Singapore</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/jordan-to-germany/">Jordan to Germany</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/jordan-to-kuwait/">Jordan to Kuwait</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/kenya-to-belgium/">Kenya to Belgium</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/kenya-to-norway/">Kenya to Norway</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/kenya-to-sweden/">Kenya to Sweden</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/laos-to-singapore/">Laos to Singapore</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/lebanon-to-belgium/">Lebanon to Belgium</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/lebanon-to-france/">Lebanon to France</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/lebanon-to-germany/">Lebanon to Germany</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/lebanon-to-united-arab-emirates/">Lebanon to United Arab Emirates</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/lebanon-to-united-states/">Lebanon to United States</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/malaysia-to-kuwait/">Malaysia to Kuwait</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/malaysia-to-saudi-arabia/">Malaysia to Saudi Arabia</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/mali-to-germany/">Mali to Germany</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/morocco-to-norway/">Morocco to Norway</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/morocco-to-portugal/">Morocco to Portugal</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/morocco-to-qatar/">Morocco to Qatar</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/morocco-to-sweden/">Morocco to Sweden</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/myanmar-to-japan/">Myanmar to Japan</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/nepal-to-singapore/">Nepal to Singapore</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/nigeria-to-norway/">Nigeria to Norway</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/nigeria-to-portugal/">Nigeria to Portugal</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/nigeria-to-sweden/">Nigeria to Sweden</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/oman-to-united-arab-emirates/">Oman to United Arab Emirates</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/pakistan-to-france/">Pakistan to France</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/papua-new-guinea-to-australia/">Papua New Guinea to Australia</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/peru-to-canada/">Peru to Canada</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/philippines-to-germany/">Philippines to Germany</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/philippines-to-japan/">Philippines to Japan</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/philippines-to-new-zealand/">Philippines to New Zealand</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/russia-to-united-states/">Russia to United States</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/rwanda-to-south-africa/">Rwanda to South Africa</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/samoa-to-new-zealand/">Samoa to New Zealand</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/senegal-to-portugal/">Senegal to Portugal</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/somalia-to-germany/">Somalia to Germany</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/somalia-to-qatar/">Somalia to Qatar</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/somalia-to-south-africa/">Somalia to South Africa</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/south-africa-to-australia/">South Africa to Australia</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/south-korea-to-japan/">South Korea to Japan</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/south-korea-to-new-zealand/">South Korea to New Zealand</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/sudan-to-united-arab-emirates/">Sudan to United Arab Emirates</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/syria-to-germany/">Syria to Germany</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/syria-to-united-states/">Syria to United States</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/togo-to-germany/">Togo to Germany</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/tonga-to-australia/">Tonga to Australia</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/tonga-to-new-zealand/">Tonga to New Zealand</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/tunisia-to-sweden/">Tunisia to Sweden</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/turkey-to-kuwait/">Turkey to Kuwait</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/turkey-to-norway/">Turkey to Norway</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/turkey-to-portugal/">Turkey to Portugal</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/ukraine-to-australia/">Ukraine to Australia</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/vietnam-to-japan/">Vietnam to Japan</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/vietnam-to-qatar/">Vietnam to Qatar</a></li>
+      <li><a href="https://www.repatriationfuneral.com/routes/vietnam-to-saudi-arabia/">Vietnam to Saudi Arabia</a></li>
+    </ul>
+  </section>
+
+  <!-- ========== CLOSE PROTECTION ========== -->
+  <section class="site-section">
+    <h2>Close Protection Hire</h2>
+    <div class="site-meta">closeprotectionhire.com &nbsp;&bull;&nbsp; branch: master &nbsp;&bull;&nbsp; Matrix batch 6+7 &middot; 777 pages total &middot; 5 service types x 10 cities each</div>
+
+    <p class="section-h3">Bodyguard Hire &mdash; 10 cities</p>
+    <ul class="page-list">
+      <li><a href="https://closeprotectionhire.com/bodyguard-hire/beirut/">Bodyguard Hire, Beirut</a></li>
+      <li><a href="https://closeprotectionhire.com/bodyguard-hire/colombo/">Bodyguard Hire, Colombo</a></li>
+      <li><a href="https://closeprotectionhire.com/bodyguard-hire/dar-es-salaam/">Bodyguard Hire, Dar es Salaam</a></li>
+      <li><a href="https://closeprotectionhire.com/bodyguard-hire/dhaka/">Bodyguard Hire, Dhaka</a></li>
+      <li><a href="https://closeprotectionhire.com/bodyguard-hire/ho-chi-minh-city/">Bodyguard Hire, Ho Chi Minh City</a></li>
+      <li><a href="https://closeprotectionhire.com/bodyguard-hire/kampala/">Bodyguard Hire, Kampala</a></li>
+      <li><a href="https://closeprotectionhire.com/bodyguard-hire/mombasa/">Bodyguard Hire, Mombasa</a></li>
+      <li><a href="https://closeprotectionhire.com/bodyguard-hire/muscat/">Bodyguard Hire, Muscat</a></li>
+      <li><a href="https://closeprotectionhire.com/bodyguard-hire/tashkent/">Bodyguard Hire, Tashkent</a></li>
+      <li><a href="https://closeprotectionhire.com/bodyguard-hire/tbilisi/">Bodyguard Hire, Tbilisi</a></li>
+    </ul>
+
+    <p class="section-h3">Security Drivers &mdash; 10 cities</p>
+    <ul class="page-list">
+      <li><a href="https://closeprotectionhire.com/security-drivers/beirut/">Security Drivers, Beirut</a></li>
+      <li><a href="https://closeprotectionhire.com/security-drivers/colombo/">Security Drivers, Colombo</a></li>
+      <li><a href="https://closeprotectionhire.com/security-drivers/dar-es-salaam/">Security Drivers, Dar es Salaam</a></li>
+      <li><a href="https://closeprotectionhire.com/security-drivers/dhaka/">Security Drivers, Dhaka</a></li>
+      <li><a href="https://closeprotectionhire.com/security-drivers/ho-chi-minh-city/">Security Drivers, Ho Chi Minh City</a></li>
+      <li><a href="https://closeprotectionhire.com/security-drivers/kampala/">Security Drivers, Kampala</a></li>
+      <li><a href="https://closeprotectionhire.com/security-drivers/mombasa/">Security Drivers, Mombasa</a></li>
+      <li><a href="https://closeprotectionhire.com/security-drivers/muscat/">Security Drivers, Muscat</a></li>
+      <li><a href="https://closeprotectionhire.com/security-drivers/tashkent/">Security Drivers, Tashkent</a></li>
+      <li><a href="https://closeprotectionhire.com/security-drivers/tbilisi/">Security Drivers, Tbilisi</a></li>
+    </ul>
+
+    <p class="section-h3">Executive Protection &mdash; 10 cities</p>
+    <ul class="page-list">
+      <li><a href="https://closeprotectionhire.com/executive-protection/beirut/">Executive Protection, Beirut</a></li>
+      <li><a href="https://closeprotectionhire.com/executive-protection/colombo/">Executive Protection, Colombo</a></li>
+      <li><a href="https://closeprotectionhire.com/executive-protection/dar-es-salaam/">Executive Protection, Dar es Salaam</a></li>
+      <li><a href="https://closeprotectionhire.com/executive-protection/dhaka/">Executive Protection, Dhaka</a></li>
+      <li><a href="https://closeprotectionhire.com/executive-protection/ho-chi-minh-city/">Executive Protection, Ho Chi Minh City</a></li>
+      <li><a href="https://closeprotectionhire.com/executive-protection/kampala/">Executive Protection, Kampala</a></li>
+      <li><a href="https://closeprotectionhire.com/executive-protection/mombasa/">Executive Protection, Mombasa</a></li>
+      <li><a href="https://closeprotectionhire.com/executive-protection/muscat/">Executive Protection, Muscat</a></li>
+      <li><a href="https://closeprotectionhire.com/executive-protection/tashkent/">Executive Protection, Tashkent</a></li>
+      <li><a href="https://closeprotectionhire.com/executive-protection/tbilisi/">Executive Protection, Tbilisi</a></li>
+    </ul>
+
+    <p class="section-h3">Residential Security &mdash; 10 cities</p>
+    <ul class="page-list">
+      <li><a href="https://closeprotectionhire.com/residential-security/beirut/">Residential Security, Beirut</a></li>
+      <li><a href="https://closeprotectionhire.com/residential-security/colombo/">Residential Security, Colombo</a></li>
+      <li><a href="https://closeprotectionhire.com/residential-security/dar-es-salaam/">Residential Security, Dar es Salaam</a></li>
+      <li><a href="https://closeprotectionhire.com/residential-security/dhaka/">Residential Security, Dhaka</a></li>
+      <li><a href="https://closeprotectionhire.com/residential-security/ho-chi-minh-city/">Residential Security, Ho Chi Minh City</a></li>
+      <li><a href="https://closeprotectionhire.com/residential-security/kampala/">Residential Security, Kampala</a></li>
+      <li><a href="https://closeprotectionhire.com/residential-security/mombasa/">Residential Security, Mombasa</a></li>
+      <li><a href="https://closeprotectionhire.com/residential-security/muscat/">Residential Security, Muscat</a></li>
+      <li><a href="https://closeprotectionhire.com/residential-security/tashkent/">Residential Security, Tashkent</a></li>
+      <li><a href="https://closeprotectionhire.com/residential-security/tbilisi/">Residential Security, Tbilisi</a></li>
+    </ul>
+
+    <p class="section-h3">Event Security &mdash; 10 cities</p>
+    <ul class="page-list">
+      <li><a href="https://closeprotectionhire.com/event-security/beirut/">Event Security, Beirut</a></li>
+      <li><a href="https://closeprotectionhire.com/event-security/dakar/">Event Security, Dakar</a></li>
+      <li><a href="https://closeprotectionhire.com/event-security/dar-es-salaam/">Event Security, Dar es Salaam</a></li>
+      <li><a href="https://closeprotectionhire.com/event-security/guadalajara/">Event Security, Guadalajara</a></li>
+      <li><a href="https://closeprotectionhire.com/event-security/harare/">Event Security, Harare</a></li>
+      <li><a href="https://closeprotectionhire.com/event-security/kigali/">Event Security, Kigali</a></li>
+      <li><a href="https://closeprotectionhire.com/event-security/lima/">Event Security, Lima</a></li>
+      <li><a href="https://closeprotectionhire.com/event-security/luanda/">Event Security, Luanda</a></li>
+      <li><a href="https://closeprotectionhire.com/event-security/lusaka/">Event Security, Lusaka</a></li>
+      <li><a href="https://closeprotectionhire.com/event-security/maputo/">Event Security, Maputo</a></li>
+    </ul>
+  </section>
+
+  <footer class="report-footer">
+    Generated 10 June 2026 20:00 UTC. Counts sourced from GitHub commit data across 5 repositories (ngindubai/pet-transport, ngindubai/mortgagecompare-ae, ngindubai/global-bus-hire, ngindubai/funeral-repatriation, ngindubai/closeprotectionhure-com). New pages = files with status &quot;added&quot; in build commits. Changed pages listed separately. Red-flag scan covers HALTED, FAILED, PAUSED, RED, DEPLOY RISK, DEPLOY RETRY NEEDED, SKIPPED in all commit messages from 2026-06-10T00:00:00Z to 2026-06-10T23:59:59Z.
+  </footer>
+
+</div>
+</body>
+</html>
