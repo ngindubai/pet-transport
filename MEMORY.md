@@ -7,13 +7,13 @@
 - **Repository:** https://github.com/ngindubai/pet-transport (private)
 - **Deploy:** Push to `main` triggers GitHub Actions automatically. Hugo build + incremental FTP to Hostinger. Live within ~80 seconds for a single article. After every build batch, the live URLs of new/changed pages are posted in chat for review (LIVE LINK REVIEW GATE in CLAUDE.md).
 
-## Current State (2026-06-09, reconciled from disk by verify_build_state.py)
+## Current State (2026-06-10, reconciled from disk by verify_build_state.py)
 
-- **Routes built:** 5,531 of ~37,830 country pairs (~14.6%). True on-disk count (5,521 in `routes/` + 10 in `pet-transport/`).
-- **Blog articles:** 420
-- **Total .md source files:** 6,324 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-43 complete. **Chunk 44 is next** (Template D, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 43 (two batches): (a) 25 new routes Template C: EU-to-UK x7, Mexico/Brazil/Indonesia outbound x18; (b) 25 thin routes overwritten: China/Vietnam/Thailand/UAE/HK outbound to AU/NZ/EU5/JP/KR/CA/US/UK.
-- **Content plan:** Days 1-6 + Days 8-13 complete (13 articles written). Day 7 skipped (pre-existing). **Day 14 is next:** check content-plan/plan-rows-q1.js for slug. Day 13 = pet-transport-tenerife-to-uk (Marcus Webb, ~1700 words, AHC for UK entry, tapeworm timing, charter airline problem, rescue dog section).
+- **Routes built:** 5,556 of ~37,830 country pairs (~14.7%). True on-disk count (5,546 in `routes/` + 10 in `pet-transport/`).
+- **Blog articles:** 421
+- **Total .md source files:** 6,350 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Phase 7 progress:** Chunks 1-44 complete. **Chunk 45 is next** (Template E, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 44 (Template D, Tier B): 25 new routes: EU-to-USA x10 (Greece/Austria/Belgium/Finland/Malta/Romania/Cyprus/Hungary/Bulgaria/Croatia), unlisted-to-UK x4 (Morocco/Bangladesh/Myanmar/Ethiopia), EU-listed-to-UK x2 (Slovakia/Luxembourg), SE Asia outbound x9 (Japan-Mexico/Brazil/Indonesia, Thailand-Malaysia/Mexico/Brazil/Indonesia, South Korea-Mexico/Brazil).
+- **Content plan:** Days 1-6 + Days 8-14 complete (14 articles written). Day 7 skipped (pre-existing). **Day 15 is next:** check content-plan/plan-rows-q1.js for slug. Day 14 = pet-transport-within-uk (Marcus Webb, ~2200 words, DEFRA Type 1/2 ATA, domestic couriers, Loganair, rescue dog transport).
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
 - **Route template redesign (live on all ~5,531 route pages):** Six new premium templates render via `site/layouts/routes/single.html` -> partials `route-new-{na,nb,nc,nd,ne,nl}.html` with scoped CSS `static/css/route-new-{na..nl}.css`. Variant routing: front-matter `template_variant` A->na, B->nb, C->nc, D->nd, E->ne, legacy->nl.

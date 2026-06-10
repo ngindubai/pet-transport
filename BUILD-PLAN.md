@@ -17,7 +17,7 @@
 - **Bulk-generation scripts are banned.** A batch is still N individually quality-gated blocks, never a mass-generation script.
 - **Skip rule:** skip only if the build pointer shows nothing left to build (no chunks remaining and no blog day due). Do NOT skip just because a build already happened earlier today; each site now runs twice a day on purpose.
 
-**Where we are (reconciled from disk 2026-06-09):** 5,531 quality routes complete. ~32,299 routes remaining. Blog: 420 articles. Total .md source files: 6,324. Content plan: Day 14 is next. Chunks 39-43 complete. Chunk 44 (Template D, Tier B) is next. Counts come from `python verify_build_state.py`, never hand-edited.
+**Where we are (reconciled from disk 2026-06-10):** 5,556 quality routes complete. ~32,274 routes remaining. Blog: 421 articles. Total .md source files: 6,350. Content plan: Day 15 is next. Chunks 39-44 complete. Chunk 45 (Template E, Tier B) is next. Counts come from `python verify_build_state.py`, never hand-edited.
 
 ---
 
@@ -47,14 +47,16 @@
 - Chunk 41 template: A (Field Manual) - DONE 2026-06-08 (25 Template A Tier B routes: Peru/Chile/Japan/Singapore/Argentina/S.Korea/HK/Taiwan to EU5)
 - Chunk 42 template: B (Visual Journey) - DONE 2026-06-08 (25 Tier B routes: NZ destinations SA/CO; Japan routes CA/VN/TH/IN/ZA/CO; South Korea routes CA/VN/CO; Singapore Schedule III routes VN/TH/ID/PH)
 - Chunk 43 template: C - DONE 2026-06-09 (batch A: EU-to-UK x7, Mexico/Brazil/Indonesia outbound x18; batch B: China/Vietnam/Thailand/UAE/HK outbound overwrites x25)
-- Chunk 44 template: D - NEXT
+- Chunk 44 template: D - DONE 2026-06-10 (EU-to-USA x10: Greece/Austria/Belgium/Finland/Malta/Romania/Cyprus/Hungary/Bulgaria/Croatia; to-UK unlisted x4: Morocco/Bangladesh/Myanmar/Ethiopia; EU-to-UK listed x2: Slovakia/Luxembourg; SE Asia outbound x9: Japan-to-Mexico/Brazil/Indonesia, Thailand-to-Malaysia/Mexico/Brazil/Indonesia, South Korea-to-Mexico/Brazil; 25 routes)
+- Chunk 45 template: E - NEXT
 - Blog Day 10: pet-transport-uae-to-pakistan - DONE 2026-06-07 (Marcus Webb, AQD NOC, AED 3,000-6,000)
 - Blog Day 11: exporting-pets-from-singapore - DONE 2026-06-08 (Marcus Webb, AVS export licence, FAVN/RNATT for Australia, Changi cargo, UK/EU/US/AU destination matrix, cost table)
 - Blog Day 12: importing-pets-to-australia-2026 - DONE 2026-06-08 (Dr. Sarah Okafor, ~3000 words, Group 1/2/3 system, RNATT, Mickleham day-by-day, cost table by region, rejection reasons, FAQs)
 - Blog Day 13: pet-transport-tenerife-to-uk - DONE 2026-06-09 (Marcus Webb, 1700 words, AHC replaces EU pet passport for UK entry, tapeworm 24-120h window, charter airline problem, rescue dog section, GBP 800-1,400)
-- Blog Day 14: NEXT (check plan-rows-q1.js)
+- Blog Day 14: pet-transport-within-uk - DONE 2026-06-10 (Marcus Webb, ~2200 words, DEFRA Type 1/2 ATA, domestic couriers, Loganair air cargo, rescue dog transport, costs)
+- Blog Day 15: NEXT (check plan-rows-q1.js)
 - Tier: B (1,094 pairs; Tier A now complete)
-- Template rotation: ...D(21), E(22), A(23), B(24), C(25-27), D(28), E(29), A(30), D(31a), B(31b), B(32), C(33), D(34), E(35), A(36), B(37), C(38), D(39), E(40), A(41), B(42), C(43)...
+- Template rotation: ...D(21), E(22), A(23), B(24), C(25-27), D(28), E(29), A(30), D(31a), B(31b), B(32), C(33), D(34), E(35), A(36), B(37), C(38), D(39), E(40), A(41), B(42), C(43), D(44)...
 
 **DEPLOY INCIDENT 2026-06-05 (fixed):** Three routine runs each committed a "chunk 25" to its own `claude/*` feature branch. `build-to-live.yml` only fires on push to `main`, so none deployed and Hostinger never updated. main never advanced, so each run rebuilt chunk 25 with overlapping routes. All three combined into main here. DURABLE FIX: the routine must push to `main` (STEP 3 already says `git push origin HEAD:main`; a conflicting feature-branch instruction was overriding it). See MEMORY.md.
 
