@@ -9,11 +9,11 @@
 
 ## Current State (2026-06-10, reconciled from disk by verify_build_state.py)
 
-- **Routes built:** 5,556 of ~37,830 country pairs (~14.7%). True on-disk count (5,546 in `routes/` + 10 in `pet-transport/`).
-- **Blog articles:** 421
-- **Total .md source files:** 6,350 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-44 complete. **Chunk 45 is next** (Template E, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 44 (Template D, Tier B): two parallel runs. (a) 25 new routes: EU-to-USA x10, unlisted-to-UK x4, EU-listed-to-UK x2, SE Asia outbound x9. (b) 25 stub upgrades to full quality: EU-to-AU x10, EU-to-CA x9, EU-to-NZ x5, DE-to-US x1.
-- **Content plan:** Days 1-6 + Days 8-14 complete (14 articles written). Day 7 skipped (pre-existing). **Day 15 is next:** check content-plan/plan-rows-q1.js for slug. Day 14 = pet-transport-within-uk (Marcus Webb, ~2200 words, DEFRA Type 1/2 ATA, domestic couriers, Loganair, rescue dog transport).
+- **Routes built:** 5,581 of ~37,830 country pairs (~14.8%). True on-disk count (5,571 in `routes/` + 10 in `pet-transport/`).
+- **Blog articles:** 422
+- **Total .md source files:** 6,376 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Phase 7 progress:** Chunks 1-45 complete. **Chunk 46 is next** (Template A, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 45 (Template E, Tier B): 25 new routes: Baltic states (EE/LV/LT/SI) to AU/CA/US, Caucasus/Central Asia (AM/GE/AZ/KZ) to DE/FR, Caribbean/LatAm (DO/JM/PA/UY) to DE/FR, East Africa (RW/UG) to DE, Lebanon to DE.
+- **Content plan:** Days 1-6 + Days 8-15 complete (15 articles written). Day 7 skipped (pre-existing). **Day 16 is next:** check content-plan/plan-rows-q1.js for slug. Day 15 = uk-pet-transport-cost-calculator (Marcus Webb, ~1800 words, UK cost calculator by route, GBP breakdown tables, three worked examples).
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
 - **Route template redesign (live on all ~5,531 route pages):** Six new premium templates render via `site/layouts/routes/single.html` -> partials `route-new-{na,nb,nc,nd,ne,nl}.html` with scoped CSS `static/css/route-new-{na..nl}.css`. Variant routing: front-matter `template_variant` A->na, B->nb, C->nc, D->nd, E->ne, legacy->nl.
