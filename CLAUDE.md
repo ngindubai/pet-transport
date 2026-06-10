@@ -39,11 +39,12 @@ Use commas, full stops, colons, brackets, or restructure the sentence instead. T
 
 After every job that changes or adds pages (a content block, a blog article, route pages, a template change, a fix), once the push is made Claude must:
 
-1. Post, in the chat, the **full live URL of every new or changed page** so Gareth can click and review each one. Example: `https://www.pettransportglobal.com/pet-transport/denmark-to-switzerland/`.
-2. **EACH PAGE MUST BE ON ITS OWN SEPARATE LINE.** Never group multiple URLs on one line, never use comma-separated links, never use a single hyperlink that covers multiple routes. One page = one line = one clickable link. This is non-negotiable. When Gareth clicks a link he must land on exactly that one page.
-3. Group the links clearly (new pages vs changed pages) and give the expected deploy time so Gareth knows when they will be live (see Deploy speed table below).
-4. State plainly that these are now live and need a review, since there is no pre-publish hold.
-5. If a template or sitewide change went out, name a representative sample of affected URLs (you cannot list thousands) plus the home page, so Gareth can spot-check.
+1. Post, in the chat AND in Slack (#build-pet-transport), the **full live URL of every new or changed page** so Gareth can click and review each one.
+2. **EACH PAGE MUST BE ON ITS OWN SEPARATE LINE WITH A BLANK LINE BETWEEN EACH URL.** Never group multiple URLs on one line, never use comma-separated links. One page = one line = one clickable link. In Slack, consecutive bare URLs without blank lines between them bunch together into an unclickable block. Every URL must be preceded and followed by a blank line (or use `- ` bullet prefix). This is non-negotiable.
+3. **URL FORMAT IS FIXED — NEVER GUESS:** Route pages are always `https://www.pettransportglobal.com/pet-transport/[slug]/` (e.g. `https://www.pettransportglobal.com/pet-transport/denmark-to-switzerland/`). Blog articles are always `https://www.pettransportglobal.com/blog/[slug]/`. Country guides: `/pet-transport/countries/[slug]/`. Airlines: `/pet-transport/airlines/[slug]/`. Do NOT use `/routes/[slug]/` — that path does not exist and will 404. Confirmed against live site 2026-06-10.
+4. Group the links clearly (new pages vs changed pages) and give the expected deploy time so Gareth knows when they will be live (see Deploy speed table below).
+5. State plainly that these are now live and need a review, since there is no pre-publish hold.
+6. If a template or sitewide change went out, name a representative sample of affected URLs (you cannot list thousands) plus the home page, so Gareth can spot-check.
 
 **Why:** Deploy is automatic, so nothing stops thin or broken content reaching the live site except this review. Posting the live links every time is the control that catches problems fast. Skipping the link post is treated as a failed job.
 
