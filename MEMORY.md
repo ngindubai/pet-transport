@@ -7,12 +7,12 @@
 - **Repository:** https://github.com/ngindubai/pet-transport (private)
 - **Deploy:** Push to `main` triggers GitHub Actions automatically. Hugo build + incremental FTP to Hostinger. Live within ~80 seconds for a single article. After every build batch, the live URLs of new/changed pages are posted in chat for review (LIVE LINK REVIEW GATE in CLAUDE.md).
 
-## Current State (2026-06-10, reconciled from disk by verify_build_state.py)
+## Current State (2026-06-11, reconciled from disk by verify_build_state.py)
 
-- **Routes built:** 5,581 of ~37,830 country pairs (~14.8%). True on-disk count (5,571 in `routes/` + 10 in `pet-transport/`).
+- **Routes built:** 5,606 of ~37,830 country pairs (~14.8%). True on-disk count (5,596 in `routes/` + 10 in `pet-transport/`).
 - **Blog articles:** 422
-- **Total .md source files:** 6,376 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-45 complete. **Chunk 46 is next** (Template A, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 45 (Template E, Tier B): 25 new routes: Baltic states (EE/LV/LT/SI) to AU/CA/US, Caucasus/Central Asia (AM/GE/AZ/KZ) to DE/FR, Caribbean/LatAm (DO/JM/PA/UY) to DE/FR, East Africa (RW/UG) to DE, Lebanon to DE.
+- **Total .md source files:** 6,401 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Phase 7 progress:** Chunks 1-46 complete. **Chunk 47 is next** (Template B, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 46 (Template A, Tier B): 25 new routes: AM/GE/AZ/KZ to US/CA; JM to AU/US/CA/FR/NL; UY to US/FR/NL/CA; PA to US/CA/FR; DO to US.
 - **Content plan:** Days 1-6 + Days 8-15 complete (15 articles written). Day 7 skipped (pre-existing). **Day 16 is next:** check content-plan/plan-rows-q1.js for slug. Day 15 = uk-pet-transport-cost-calculator (Marcus Webb, ~1800 words, UK cost calculator by route, GBP breakdown tables, three worked examples).
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
