@@ -11,6 +11,24 @@ Format for each entry:
 
 ---
 
+## 2026-06-11 — Template C routes failed Hugo build: list vs map in requirements blocks
+
+**Task:** Deploy chunk 47-48 (50 Template C Tier B routes)
+
+**What didn't work:** Hugo build errored immediately:
+`route-new-nc.html:90: can't evaluate field microchip in type []interface{}`
+The entire build failed, so none of the 50 pages published (all 404).
+
+**Root cause:** The `nc` template (Template C) reads named fields from `import_requirements` and `export_requirements` (`.microchip`, `.rabies_vaccination`, `.titre_test`, etc.). Ten of the 50 files had those blocks written as YAML lists (`- "text"` items) instead of keyed maps. Hugo cannot call `.microchip` on a list.
+
+**What worked:** Converted all 10 list-style blocks to proper map keys matching exactly what `route-new-nc.html` reads: `microchip`, `rabies_vaccination`, `titre_test`, `quarantine`, `import_permit`, `health_certificate` (import); `export_permit`, `vet_inspection`, `endorsement`, `health_certificate` (export).
+
+**Files fixed:** `azerbaijan-to-canada`, `azerbaijan-to-italy`, `dominican-republic-to-australia/canada/italy/netherlands`, `rwanda-to-canada/france/netherlands/united-states`.
+
+**Note for next time:** Every Template C (variant C / `nc`) file MUST have `import_requirements` and `export_requirements` as keyed maps, not lists. Before committing any Template C file, verify the structure is `key: "value"` pairs under the requirements block, never `- "item"` lists. The Hugo error will always say `can't evaluate field X in type []interface{}`.
+
+---
+
 ## 2026-05-22 — GitHub Actions deploy failing on every push
 
 **Task:** Deploy site to Hostinger via FTP on push to main
