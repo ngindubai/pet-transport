@@ -229,3 +229,6 @@
 @keyframes fadeIn{0%{opacity:1}100%{opacity:1}}
 @keyframes counterUp{from{transform:translateY(10px)}to{transform:none}}
 @keyframes checkPop{0%{transform:scale(.6)}70%{transform:scale(1.15)}100%{transform:scale(1)}}
+
+/* MOBILE SIDEBAR FIX: the shared sidebar block earlier in this file sets .sidebar{position:sticky} with no media query, which (being later in source order) overrode the responsive position:static and left the sidebar floating over the scrolling content on tablets and phones. This block is appended last so it wins the cascade. Static whenever .content collapses to a single column (<=1100px), so the sidebar stays in normal flow above the page content. */
+@media(max-width:1100px){.tpl-na .sidebar{position:static;top:auto}.tpl-na .sidebar .sc{position:static}}

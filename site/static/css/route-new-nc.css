@@ -240,3 +240,6 @@
   .tpl-nc .sidebar .sc{position:static}
   .tpl-nc .airline-table,.tpl-nc .req-table{display:block;width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
 }
+
+/* MOBILE SIDEBAR FIX (extend to collapse breakpoint): .page becomes a single column at <=1100px, but the shared sidebar block keeps .sidebar sticky between 901px and 1100px, so it floats over the content on iPad Pro portrait widths. Force it static across the whole single-column range. Appended last so it wins the cascade. */
+@media(max-width:1100px){.tpl-nc .sidebar{position:static;top:auto}.tpl-nc .sidebar .sc{position:static}}
