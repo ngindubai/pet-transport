@@ -9,10 +9,10 @@
 
 ## Current State (2026-06-11, reconciled from disk by verify_build_state.py)
 
-- **Routes built:** 5,606 of ~37,830 country pairs (~14.8%). True on-disk count (5,596 in `routes/` + 10 in `pet-transport/`).
+- **Routes built:** 5,656 of ~37,830 country pairs (~14.9%). True on-disk count (5,646 in `routes/` + 10 in `pet-transport/`).
 - **Blog articles:** 422
-- **Total .md source files:** 6,401 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-46 complete. **Chunk 47 is next** (Template B, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 46 (Template A, Tier B): 25 new routes: AM/GE/AZ/KZ to US/CA; JM to AU/US/CA/FR/NL; UY to US/FR/NL/CA; PA to US/CA/FR; DO to US.
+- **Total .md source files:** 6,451 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Phase 7 progress:** Chunks 1-48 complete. **Chunk 49 is next** (Template D, Tier B). Tier A is fully complete (0 pairs remaining). Chunks 47-48 (Template B + C, Tier B): 50 new routes: US/DE/FR/CA/AU to AM/GE/AZ/KZ/LB/RW/UG; LB/RW/UG to US/CA/FR/NL; AZ/KZ to CA/IT; PA/DO to NL/IT/AU.
 - **Content plan:** Days 1-6 + Days 8-15 complete (15 articles written). Day 7 skipped (pre-existing). **Day 16 is next:** check content-plan/plan-rows-q1.js for slug. Day 15 = uk-pet-transport-cost-calculator (Marcus Webb, ~1800 words, UK cost calculator by route, GBP breakdown tables, three worked examples).
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
