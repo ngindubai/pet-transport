@@ -17,21 +17,19 @@ route_data:
     authority: "Rwanda Agriculture and Animal Resources Development Board (RAB)"
     authority_url: "https://rab.gov.rw"
     export_requirements:
-      - "Official export health certificate issued by an RAB-authorised veterinarian and endorsed by RAB"
-      - "No formal export permit required for personal companion pets"
-      - "Rabies vaccination on record (required to satisfy US import conditions)"
-      - "ISO 11784/11785 microchip for identification"
+    export_permit: "No formal export permit required for personal companion pets."
+    health_certificate: "Official export health certificate from an RAB-authorised veterinarian, endorsed by Rwanda Agriculture Board (RAB) before departure."
 
   destination:
     country: "United States"
     classification: "CDC high-risk country source (Rwanda)"
     import_requirements:
-      - "CDC Dog Import Form (Form CDC 6-527) submitted online before travel"
-      - "Rabies antibody titre test: blood drawn at least 30 days after valid rabies vaccination; result must be at least 0.5 IU/ml at a CDC-recognised laboratory"
-      - "USDA APHIS health certificate endorsed by RAB"
-      - "Reservation at a CDC-registered facility required before the dog arrives"
-      - "Must land at a CDC-registered US airport"
-      - "Cats: no federal CDC requirements apply"
+    microchip: "ISO 11784/11785. Required for all dog imports."
+    rabies_vaccination: "Required. 28-day post-vaccination wait before US entry."
+    titre_test: "Serology titre test at CDC-approved laboratory. Blood drawn at least 30 days after vaccination. Minimum 0.5 IU/mL. Rwanda is on the CDC high-risk countries list. Source: CDC cdc.gov/importation/dogs, April 15, 2026."
+    quarantine: "28-day quarantine at CDC facility if no valid titre. No quarantine with passing titre after examination."
+    import_permit: "Not required for personal companion animals."
+    health_certificate: "CDC Dog Import Form completed online before travel. USDA APHIS health certificate endorsed by RAB. Reservation at CDC-registered facility required. Must arrive at CDC-registered US airport."
     source: "CDC cdc.gov/importation/dogs.html"
 
   airlines:

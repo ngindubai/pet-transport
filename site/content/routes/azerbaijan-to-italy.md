@@ -17,24 +17,20 @@ route_data:
     airport: "Heydar Aliyev International Airport (GYD), Baku"
     authority: "State Veterinary Service, Ministry of Agriculture of Azerbaijan"
     export_requirements:
-      - "Official export health certificate issued by a State Veterinary Service-authorised veterinarian"
-      - "Certificate endorsed by the State Veterinary Service before departure"
-      - "No formal export permit required for personal companion pets"
-      - "ISO 11784/11785 microchip must be implanted before rabies vaccination"
-      - "FAVN titre test at EU-approved laboratory required, result minimum 0.5 IU/ml"
+    export_permit: "No formal export permit required for personal companion pets."
+    health_certificate: "EU-format health certificate from a State Veterinary Service-authorised veterinarian, endorsed by the State Veterinary Service before departure."
   destination:
     code: "IT"
     country: "Italy"
     authority: "Italian Ministry of Health; EU Regulation 576/2013 and Commission Delegated Regulation 2020/692"
     source: "EU Regulation 576/2013; Commission Delegated Regulation 2020/692"
     import_requirements:
-      - "Microchip: ISO 11784/11785 standard, implanted before rabies vaccination"
-      - "Rabies vaccination: administered after microchip is confirmed in place"
-      - "FAVN titre test: blood drawn at EU-approved laboratory, minimum 0.5 IU/ml"
-      - "Blood draw at least 30 days after the rabies vaccination"
-      - "90-day wait from the date of the successful blood draw before entering Italy"
-      - "EU-format non-commercial movement health certificate, endorsed by State Veterinary Service"
-      - "No import permit required; no quarantine for fully compliant arrivals"
+    microchip: "ISO 11784/11785. Implanted before rabies vaccination."
+    rabies_vaccination: "Required. Administered after microchip is confirmed in place."
+    titre_test: "FAVN titre test at EU-approved laboratory. Minimum 0.5 IU/mL. Blood drawn at least 30 days after vaccination. 90-day wait from blood draw date before entering Italy."
+    quarantine: "No quarantine for fully compliant arrivals."
+    import_permit: "Not required."
+    health_certificate: "EU-format non-commercial movement health certificate, endorsed by State Veterinary Service."
 
   airlines:
     - name: "Turkish Airlines Cargo"

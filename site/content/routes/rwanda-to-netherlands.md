@@ -17,21 +17,19 @@ route_data:
     authority: "Rwanda Agriculture and Animal Resources Development Board (RAB)"
     authority_url: "https://rab.gov.rw"
     export_requirements:
-      - "Official export health certificate issued by an RAB-authorised veterinarian and endorsed by RAB"
-      - "No formal export permit required for personal companion pets"
-      - "ISO 11784/11785 microchip implanted before rabies vaccination"
-      - "Rabies vaccination on record"
-      - "FAVN titre test result from an EU-approved laboratory"
+    export_permit: "No formal export permit required for personal companion pets."
+    health_certificate: "EU-format health certificate from an RAB-authorised veterinarian, endorsed by Rwanda Agriculture Board (RAB) before departure."
 
   destination:
     country: "Netherlands"
     eu_status: "EU unlisted third country (Rwanda)"
     import_requirements:
-      - "ISO 11784/11785 microchip implanted before or at the same time as rabies vaccination"
-      - "Rabies vaccination administered after microchipping"
-      - "FAVN titre test at an EU-approved laboratory: minimum 0.5 IU/ml; blood drawn at least 30 days after vaccination"
-      - "90-day wait from the date of blood draw before the animal may enter the Netherlands"
-      - "EU-format health certificate endorsed by RAB"
+    microchip: "ISO 11784/11785. Implanted before rabies vaccination."
+    rabies_vaccination: "Administered after microchipping."
+    titre_test: "FAVN titre test at EU-approved laboratory. Minimum 0.5 IU/mL. Blood drawn at least 30 days after vaccination. 90-day wait from blood draw date before entering the Netherlands."
+    quarantine: "None for compliant arrivals."
+    import_permit: "Not required."
+    health_certificate: "EU-format health certificate endorsed by RAB."
     source: "EU Regulation 576/2013 and Commission Delegated Regulation 2020/692"
 
   airlines:

@@ -20,27 +20,20 @@ route_data:
         name: "Punta Cana International Airport"
     authority: "Departamento de Sanidad Animal (DSA), Ministry of Agriculture"
     export_requirements:
-      - "Export health certificate in DAFF-approved format from a DSA-authorised veterinarian"
-      - "Certificate endorsed by DSA before departure"
-      - "Prior notification or permit from DSA required"
-      - "Microchip (ISO 11784/11785) required"
-      - "Rabies vaccination: current, required"
-      - "RNATT titre test at DAFF-recognised laboratory (minimum 0.5 IU/ml)"
-      - "Blood drawn for titre test with 180-day wait from blood draw date before Australian entry"
+    export_permit: "Prior notification and permit from DSA (Departamento de Sanidad Animal) required before travel."
+    health_certificate: "DAFF-approved format export health certificate from a DSA-authorised veterinarian, endorsed by DSA before departure."
 
   destination:
     country: "Australia"
     authority: "Department of Agriculture, Fisheries and Forestry (DAFF)"
     source_url: "https://agriculture.gov.au/biosecurity-trade/cats-dogs"
     import_requirements:
-      - "Microchip (ISO 11784/11785) required"
-      - "Rabies vaccination: current and required"
-      - "RNATT titre test at DAFF-recognised laboratory: minimum 0.5 IU/ml"
-      - "Blood drawn minimum 180 days before Australian entry date"
-      - "180-day wait from blood draw date after achieving passing titre result"
-      - "Import permit required from DAFF before travel"
-      - "DAFF-approved health certificate prepared and endorsed by DSA"
-      - "10 days quarantine at ACDP Mickleham, Victoria on arrival"
+    microchip: "ISO 11784/11785 required."
+    rabies_vaccination: "Current rabies vaccination required."
+    titre_test: "RNATT titre test at DAFF-recognised laboratory. Minimum 0.5 IU/mL. Blood drawn minimum 180 days before Australian entry date."
+    quarantine: "10 days at ACDP Mickleham, Victoria on arrival."
+    import_permit: "Required from DAFF before travel. Apply via DAFF online import permit system."
+    health_certificate: "DAFF-approved health certificate prepared by DSA-authorised vet, endorsed by DSA before departure."
     country_group: "Group 3"
 
   airlines:

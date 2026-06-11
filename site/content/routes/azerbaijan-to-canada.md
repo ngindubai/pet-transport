@@ -17,22 +17,20 @@ route_data:
     airport: "Heydar Aliyev International Airport (GYD), Baku"
     authority: "State Veterinary Service, Ministry of Agriculture of Azerbaijan"
     export_requirements:
-      - "Official export health certificate issued by a State Veterinary Service-authorised veterinarian"
-      - "Certificate endorsed by the State Veterinary Service before departure"
-      - "No formal export permit required for personal companion pets"
-      - "Current rabies vaccination record required"
-      - "ISO 11784/11785 microchip strongly recommended"
+    export_permit: "No formal export permit required for personal companion pets."
+    health_certificate: "Official export health certificate issued by a State Veterinary Service-authorised veterinarian, endorsed by the State Veterinary Service before departure."
   destination:
     code: "CA"
     country: "Canada"
     authority: "Canadian Food Inspection Agency (CFIA)"
     source: "inspection.canada.ca"
     import_requirements:
-      - "Dogs over 3 months: current rabies vaccination certificate in English or French"
-      - "No titre test required for personal companion dogs"
-      - "No quarantine for compliant arrivals"
-      - "Microchip not legally required by CFIA but strongly recommended"
-      - "Certificate must accompany the animal at the port of entry"
+    microchip: "ISO 11784/11785 strongly recommended. Not legally required by CFIA."
+    rabies_vaccination: "Required for dogs over 3 months. Certificate in English or French. Must confirm current vaccination."
+    titre_test: "Not required for personal companion dogs from Azerbaijan entering Canada."
+    quarantine: "No quarantine for compliant arrivals."
+    import_permit: "Not required for personal companion animals."
+    health_certificate: "State Veterinary Service-endorsed health certificate must accompany the animal at the Canadian port of entry."
 
   airlines:
     - name: "Turkish Airlines Cargo"

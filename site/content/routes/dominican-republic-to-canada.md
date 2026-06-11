@@ -20,22 +20,20 @@ route_data:
         name: "Punta Cana International Airport"
     authority: "Departamento de Sanidad Animal (DSA), Ministry of Agriculture"
     export_requirements:
-      - "Export health certificate from a DSA-authorised veterinarian"
-      - "Certificate endorsed by the DSA before departure"
-      - "Prior notification or permit from DSA required"
-      - "Current rabies vaccination record"
-      - "Microchip (ISO 11784/11785) strongly recommended"
+    export_permit: "No formal export permit required for personal companion pets. DSA health certificate required."
+    health_certificate: "Export health certificate from a DSA-authorised veterinarian, endorsed by DSA before departure."
 
   destination:
     country: "Canada"
     authority: "Canadian Food Inspection Agency (CFIA)"
     source_url: "https://inspection.canada.ca"
     import_requirements:
-      - "Dogs over 3 months: current rabies vaccination certificate in English or French"
-      - "No titre test required for personal companion dogs"
-      - "No quarantine on arrival"
-      - "Cats: no vaccination requirement for most, but confirm with CFIA for current rules"
-      - "CFIA declaration form completed on arrival"
+    microchip: "ISO 11784/11785 strongly recommended. Not legally required by CFIA."
+    rabies_vaccination: "Required for dogs over 3 months. Certificate in English or French."
+    titre_test: "Not required for personal companion dogs from the Dominican Republic entering Canada."
+    quarantine: "No quarantine on arrival for compliant pets."
+    import_permit: "Not required for personal companion animals."
+    health_certificate: "DSA-endorsed health certificate and CFIA declaration form completed on arrival."
 
   airlines:
     - name: "American Airlines / American Airlines Cargo"

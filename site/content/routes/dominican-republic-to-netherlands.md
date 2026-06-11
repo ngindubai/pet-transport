@@ -20,26 +20,19 @@ route_data:
         name: "Punta Cana International Airport"
     authority: "Departamento de Sanidad Animal (DSA), Ministry of Agriculture"
     export_requirements:
-      - "Export health certificate in EU-approved format from a DSA-authorised veterinarian"
-      - "Certificate endorsed by DSA before departure"
-      - "Prior notification or permit from DSA required"
-      - "Microchip (ISO 11784/11785) implanted before rabies vaccination"
-      - "Rabies vaccination administered after microchip implantation"
-      - "FAVN titre test at an EU-approved laboratory (minimum 0.5 IU/ml)"
-      - "Blood drawn for titre test at least 30 days after rabies vaccination"
+    export_permit: "Prior notification or permit from DSA required."
+    health_certificate: "EU-approved format health certificate from a DSA-authorised veterinarian, endorsed by DSA before departure."
 
   destination:
     country: "Netherlands"
     authority: "Netherlands Food and Consumer Product Safety Authority (NVWA)"
     import_requirements:
-      - "Microchip (ISO 11784/11785) implanted before rabies vaccination"
-      - "Rabies vaccination current and administered after microchip"
-      - "FAVN titre test at EU-approved laboratory: minimum 0.5 IU/ml"
-      - "Blood drawn at least 30 days after rabies vaccination"
-      - "90-day wait from blood draw date before entering the Netherlands"
-      - "EU-format non-commercial movement health certificate from official vet, endorsed by DSA"
-      - "No import permit required for compliant arrivals"
-      - "No quarantine for compliant arrivals"
+    microchip: "ISO 11784/11785. Implanted before rabies vaccination."
+    rabies_vaccination: "Current. Administered after microchip implantation."
+    titre_test: "FAVN titre test at EU-approved laboratory. Minimum 0.5 IU/mL. Blood drawn at least 30 days after vaccination. 90-day wait from blood draw date before entering the Netherlands."
+    quarantine: "No quarantine for compliant arrivals."
+    import_permit: "Not required for compliant arrivals."
+    health_certificate: "EU-format non-commercial movement health certificate from official vet, endorsed by DSA."
     regulation: "EU Regulation 576/2013 and Commission Delegated Regulation 2020/692"
 
   airlines:

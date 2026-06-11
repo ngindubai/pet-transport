@@ -17,18 +17,18 @@ route_data:
     authority: "Rwanda Agriculture and Animal Resources Development Board (RAB)"
     authority_url: "https://rab.gov.rw"
     export_requirements:
-      - "Official export health certificate issued by an RAB-authorised veterinarian and endorsed by RAB"
-      - "No formal export permit required for personal companion pets"
-      - "Rabies vaccination certificate required"
-      - "ISO 11784/11785 microchip"
+    export_permit: "No formal export permit required for personal companion pets."
+    health_certificate: "Official export health certificate from an RAB-authorised veterinarian, endorsed by Rwanda Agriculture Board (RAB) before departure."
 
   destination:
     country: "Canada"
     import_requirements:
-      - "Dogs over 3 months: current rabies vaccination certificate in English or French"
-      - "No titre test required for personal companion dogs"
-      - "No quarantine on arrival"
-      - "Health certificate from RAB-authorised vet"
+    microchip: "ISO 11784/11785 required."
+    rabies_vaccination: "Required for dogs over 3 months. Certificate in English or French."
+    titre_test: "Not required for personal companion dogs from Rwanda entering Canada."
+    quarantine: "No quarantine on arrival for compliant pets."
+    import_permit: "Not required for personal companion animals."
+    health_certificate: "RAB-endorsed health certificate from authorised vet must accompany the animal."
     source: "CFIA inspection.canada.ca"
 
   airlines:
