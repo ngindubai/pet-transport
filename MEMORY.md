@@ -9,11 +9,11 @@
 
 ## Current State (2026-06-12, reconciled from disk by verify_build_state.py)
 
-- **Routes built:** 5,656 of ~37,830 country pairs (~14.9%). True on-disk count (5,646 in `routes/` + 10 in `pet-transport/`).
+- **Routes built:** 5,681 of ~37,830 country pairs (~15.0%). True on-disk count (5,671 in `routes/` + 10 in `pet-transport/`).
 - **Blog articles:** 423
-- **Total .md source files:** 6,452 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-48 complete. **Chunk 49 is next** (Template D, Tier B). Tier A is fully complete (0 pairs remaining). Chunks 47-48 (Template B + C, Tier B): 50 new routes: US/DE/FR/CA/AU to AM/GE/AZ/KZ/LB/RW/UG; LB/RW/UG to US/CA/FR/NL; AZ/KZ to CA/IT; PA/DO to NL/IT/AU.
-- **Content plan:** Days 1-6 + Days 8-16 complete (16 articles written). Day 7 skipped (pre-existing). **Day 17 is next:** check content-plan/plan-rows-q1.js for slug. Day 16 = brachycephalic-dog-uk-to-australia (Emma Hartley, ~2200 words, BOAS welfare evidence, airline embargo table for UK-to-AU corridor, vet fitness-to-fly assessment, charter vs commercial analysis, summer embargo mechanics, DAFF Group 3 context).
+- **Total .md source files:** 6,477 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Phase 7 progress:** Chunks 1-49 complete. **Chunk 50 is next** (Template E, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 49 (Template D, Tier B): 25 routes: GE/AM/AZ/KZ/UY/RW/UG/LB to AU; PA/DO/JM/RW/UG/UY/GE/AM/AZ/KZ/LB to ES; ES to AM/GE/AZ/KZ/LB; AU to KZ.
+- **Content plan:** Days 1-6 + Days 8-16 complete (16 articles written). Day 7 skipped (pre-existing). **Day 17 is next:** check content-plan/plan-rows-q1.js for slug. Day 16 = brachycephalic-dog-uk-to-australia (Emma Hartley, ~2200 words, airline embargoes, vet fitness assessment, summer Mickleham heat risk).
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
 - **Route template redesign (live on all ~5,531 route pages):** Six new premium templates render via `site/layouts/routes/single.html` -> partials `route-new-{na,nb,nc,nd,ne,nl}.html` with scoped CSS `static/css/route-new-{na..nl}.css`. Variant routing: front-matter `template_variant` A->na, B->nb, C->nc, D->nd, E->ne, legacy->nl.
@@ -106,10 +106,7 @@ Every build batch does three things together, every time: (1) bundle BUILD-PLAN.
 - Day 9: `pet-transport-uk-to-jersey` published 2026-06-06 (1600 words, Marcus Webb, Condor ferry, Channel Islands rules)
 - Day 10: `pet-transport-uae-to-pakistan` published 2026-06-07 (2000 words, Marcus Webb, AQD NOC, AED 3,000-6,000)
 - Day 11: `exporting-pets-from-singapore` published 2026-06-08 (2400 words, Marcus Webb, AVS export licence, FAVN titre for AU, Changi cargo, UK/EU/US/AU matrix)
-- Day 12: `importing-pets-to-australia-2026` published 2026-06-08 (Dr. Sarah Okafor, ~3000 words, Group 1/2/3 system, RNATT, Mickleham day-by-day, cost table by region)
-- Days 13-15: see BUILD-PLAN.md session log
-- Day 16: `brachycephalic-dog-uk-to-australia` published 2026-06-12 (Emma Hartley, ~2200 words, BOAS welfare evidence, airline embargo table, vet fitness assessment, charter analysis, summer embargo mechanics, DAFF context)
-- **Next: Day 17** - check content-plan/plan-rows-q1.js for slug (pet-transport-usa-to-uk)
+- **Next: Day 12** - check content-plan/plan-rows-q1.js for slug (importing-pets-to-australia-2026)
 - Blog layout: `site/layouts/blog/single.html`. col-lg-8 content + col-lg-4 sidebar. Applies to all blog posts.
 
 ## Key Decisions Log

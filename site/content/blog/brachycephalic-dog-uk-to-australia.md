@@ -1,117 +1,148 @@
 ---
 title: "Flying a Brachycephalic Dog UK to Australia: What's Allowed in 2026"
-description: "Bulldogs, pugs and other flat-faced breeds flying UK to Australia in 2026. Airline embargoes, summer heat rules, vet fitness checks, and real options when most carriers say no."
 date: "2026-06-12"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
+description: "Bulldogs, pugs and other flat-faced breeds flying UK to Australia in 2026. Airline embargoes, summer heat rules, vet fitness checks, real options."
+slug: "brachycephalic-dog-uk-to-australia"
 type: "blog"
 layout: "single"
-author: "Emma Hartley, Certified Animal Behaviourist & Pet Travel Adviser, PetTransportGlobal"
-slug: "brachycephalic-dog-uk-to-australia"
+faqs:
+  - question: "Can a French Bulldog fly from the UK to Australia?"
+    answer: "It is possible but genuinely difficult. Most major airlines ban brachycephalic breeds in cargo year-round. In 2026, KLM Cargo and Qatar Airways are among the few carriers that may accept flat-faced breeds on a UK to Australia routing, subject to vet fitness clearance and seasonal restrictions. A specialist pet relocation company is usually the most reliable route. The dog must also pass an independent vet fitness-to-fly assessment, and not all French Bulldogs will pass."
+  - question: "Which airlines accept brachycephalic dogs on UK to Australia routes in 2026?"
+    answer: "Qantas, Singapore Airlines, and Cathay Pacific all have broad brachycephalic bans in cargo. KLM Cargo has accepted flat-faced breeds with vet fitness clearance but applies seasonal restrictions. Qatar Airways has accepted brachy dogs on UK to Australia routings via Doha, though a summer embargo at Doha may apply. Policies change regularly. Always confirm directly with the carrier and your pet relocation company before booking."
+  - question: "What is a vet fitness-to-fly assessment for a flat-faced dog?"
+    answer: "A specialist vet examines the dog's airway anatomy, including nostril width (stenotic nares), palate length, and any existing signs of BOAS (brachycephalic obstructive airway syndrome). They assess exercise tolerance, body condition score, and heart and respiratory function. The vet then issues a written opinion on whether the dog is fit to fly. Some dogs will not be considered fit regardless of airline rules, particularly those with severe airway compromise."
+  - question: "How long is quarantine in Australia for a UK dog in 2026?"
+    answer: "Dogs from the UK (Group 2 country) spend 10 days at the Mickleham quarantine facility near Melbourne. Melbourne (MEL) is the only port in Australia approved to receive pet imports. You cannot fly your dog directly to Sydney, Brisbane, or Perth. The 10-day stay must be factored into your planning and costs."
+  - question: "When is the safest time of year to fly a brachy dog to Australia?"
+    answer: "April to September (Australian autumn and winter) is the safest window. Melbourne summer (December to February) brings high temperatures that put brachycephalic dogs at serious risk of heat stress, both during the flight and on arrival at Mickleham. DAFF issues heat-related warnings during those months. If you can choose your travel window, avoid the Australian summer."
+  - question: "How much does it cost to fly a brachycephalic dog from the UK to Australia?"
+    answer: "A standard dog move from the UK to Australia typically costs between GBP 4,000 and GBP 7,000. For a brachycephalic dog, expect to add 20 to 40 percent on top of that for specialist handling, a larger crate, vet fitness assessments, and potentially a charter flight premium. A realistic budget for a flat-faced breed is GBP 5,000 to GBP 10,000 depending on the dog's size, the time of year, and the routing."
 ---
 
-The short answer is yes, you can fly a brachycephalic dog from the UK to Australia, but the airline options are narrow and the planning window is long. Most people researching this discover within a few minutes that their dog's breed is on an embargo list for almost every carrier that flies the route. That is not the end of the story, but it does change the approach considerably.
+Moving a flat-faced dog from the UK to Australia is one of the more complex pet relocations we handle. The distance is long, the airline options are limited, and for brachycephalic breeds, the welfare stakes are higher than for most dogs. This article sets out what is actually possible in 2026, what the risks look like, and how to make the safest decision for your dog.
 
-This guide covers why airlines impose these restrictions, which 2026 carriers still accept flat-faced breeds on UK-to-Australia routes, what a fitness-to-fly assessment involves, and the welfare protocols that good transporters apply to reduce risk.
+I want to be direct about one thing before we go further: some brachycephalic dogs genuinely should not fly to Australia. Not because the paperwork is too difficult, but because the journey would put them at serious risk. If that applies to your dog, the right answer is to know that early. We will get to how you find out.
 
 ## Why do airlines refuse brachycephalic dogs as cargo?
 
-The restrictions exist because of a condition called brachycephalic obstructive airway syndrome, or BOAS. Flat-faced breeds, including English Bulldogs, French Bulldogs, Pugs, Boxers, Boston Terriers, and Shih Tzus, have compressed skulls that narrow the nasal passages, elongate the soft palate, and reduce the diameter of the trachea. Many affected dogs breathe adequately at rest but struggle under physical or emotional stress.
+The flat-faced anatomy that makes pugs, bulldogs, and French Bulldogs look the way they do also compromises how they breathe. Narrowed nostrils, an elongated soft palate, and a narrowed trachea are all associated with brachycephalic obstructive airway syndrome (BOAS). At rest, many affected dogs manage well. Under the stress of travel, the picture changes.
 
-A cargo hold combines exactly the conditions that trigger that struggle: reduced oxygen pressure at cruising altitude, variable temperature, vibration, unfamiliar smells, and separation anxiety. The dog's respiratory demand increases precisely when its airways are least equipped to meet it. The American Veterinary Medical Association (AVMA) notes that brachycephalic breeds have a higher rate of in-flight and post-flight complications than other breeds, including a documented higher mortality rate in cargo transport. Source: AVMA, Air Travel and Short-Nosed Dogs FAQ, 2025.
+Cargo holds are pressurised but not climate-controlled to the same standard as the cabin. Temperatures fluctuate. Dogs cannot self-regulate as effectively as longer-faced breeds. Add the stress of confinement, vibration, engine noise, and unfamiliar smells, and a dog with an already-compromised airway is working significantly harder than normal.
 
-Airlines also carry liability exposure on these deaths. A cargo hold fatality involving a Pug is a brand problem as well as a welfare problem, which is why the restrictions have tightened progressively over the past decade. The welfare evidence has driven the policy change, but the commercial risk has accelerated it.
+IATA's Live Animals Regulations (LARC) include specific guidance on brachycephalic breeds. Container Requirement 3 (CR3) requires extra ventilation for these breeds, and a crate one size larger than the standard calculation would produce. Even with compliant crating, many airlines have decided the risk is too high and have banned the breeds outright.
+
+The British Veterinary Association (BVA) and the Royal Veterinary College (RVC) have both published guidance noting that air travel poses genuine welfare risks for brachycephalic dogs, particularly those with clinical signs of BOAS. Their position is not that travel is impossible for every brachy dog, but that it requires specialist assessment and that owners should not assume their dog is fine to fly.
 
 ## Which 2026 airlines still accept flat-faced breeds for UK to Australia?
 
-This is where the picture gets specific and, for most brachy breeds, fairly restrictive. Every airline that flies UK-to-Australia routes either has an outright embargo on one or more brachycephalic breeds or applies seasonal temperature restrictions that eliminate the option for several months of the year.
+The short answer is: not many, and the list changes.
 
-**British Airways / IAG Cargo.** British Airways maintains a hard ban on English Bulldogs, Pugs, and Pekingese year-round. Other brachycephalic breeds, including French Bulldogs, Boxers, and Shih Tzus, can travel as cargo but require a crate 10 percent larger than the IATA minimum, temperature clearance at all transit points, and a signed liability waiver. Source: British Airways pet travel policy, 2026.
+Qantas does not accept brachycephalic breeds in cargo. Singapore Airlines and Cathay Pacific, both popular on UK to Australia routings, have broad brachycephalic restrictions in their cargo programmes.
 
-**Singapore Airlines via Singapore (SIN).** Singapore Airlines operates a complete cargo ban on all brachycephalic breeds year-round. The Singapore hub is one of the most common routing points for UK-to-Australia cargo and is effectively closed to flat-faced breeds.
+In 2026, the realistic carrier options are:
 
-**Qantas.** English Bulldogs are refused year-round. Other brachycephalic breeds face seasonal restrictions aligned with the Northern Hemisphere summer (May to October). Qantas does not accept pets in the cabin on international flights. Source: Qantas pet travel, 2026.
+**KLM Cargo** has a documented history of accepting brachycephalic breeds when accompanied by a vet fitness-to-fly certificate. The routing from London via Amsterdam to Melbourne is operationally viable. KLM applies seasonal restrictions when temperatures at any transit point exceed set thresholds, so the time of year matters. Policies are reviewed regularly. Confirm directly with KLM Cargo or through a specialist pet relocation company before planning around this option.
 
-**Emirates via Dubai (DXB).** Emirates applies a seasonal cargo ban on brachycephalic breeds during hot months. Dubai's ambient temperature regularly exceeds the 29°C threshold that triggers embargoes from May through September. Source: Emirates cargo policy, 2026.
+**Qatar Airways** has accepted brachycephalic dogs on UK to Australia routings via Doha. The Doha transit is the variable: Qatar's summer months (roughly June to September) bring extreme heat that can trigger embargoes on flat-faced breeds, even when other conditions would permit travel. A winter or shoulder-season booking via Doha is more likely to be accepted.
 
-**KLM via Amsterdam (AMS).** KLM applies a seasonal restriction during European summer (typically May to October) but accepts brachycephalic breeds with a vet fitness clearance outside that window. KLM Cargo runs an Animal Hotel at Amsterdam Schiphol, which provides temperature-controlled holding during layovers. Routing via Amsterdam is the most reliable commercial cargo option for flat-faced breeds during UK winter months (November to April). Source: KLM pet policy, 2026.
+**Charter and specialist relocation flights** are the most reliable option for any brachy dog. Some specialist pet relocation companies operate charter flights or charter segments specifically for animals, where conditions are controlled, staff are trained, and the entire environment is built around animal welfare rather than freight logistics. These cost significantly more. They are also the option most likely to actually get your dog there safely.
 
-**Qatar Airways via Doha (DOH).** Qatar bans a specific list of brachycephalic breeds from cargo entirely: French Bulldogs, English Bulldogs, Pugs, Boston Terriers, Boxers, Pekingese, Shih Tzus, Japanese Chins, Cavalier King Charles Spaniels, Neapolitan Mastiffs, Brussels Griffons, and Affenpinschers. This list covers most of the commonly transported flat-faced breeds. Source: Qatar Airways pet policy, 2026.
+Do not assume any of the above policies will be the same when you book. Airlines adjust their livestock policies seasonally and sometimes without public announcement. The only safe approach is to get written confirmation from the carrier at the time of booking, and to work with a specialist company that has current, operational relationships with these carriers.
 
-**Cathay Pacific via Hong Kong (HKG).** Cathay operates a Live Animal solution through Cathay Cargo. Brachycephalic breeds face additional scrutiny and restrictions on specific routes. Confirm current breed acceptance with Cathay Cargo directly before booking, as policies are updated seasonally.
-
-**One critical point for Australia:** Australia only permits pets to enter as manifest cargo. There is no cabin option regardless of the dog's size or the airline. The small-breed workaround of flying a tiny French Bulldog in cabin, which works for some European destinations, does not apply on Australian-bound services. Cargo is the only legal entry route.
+For more detail on the full UK to Australia pet transport process, see our [UK to Australia pet transport guide](/pet-transport/united-kingdom-to-australia/).
 
 ## What's a vet fitness-to-fly assessment, and what does it look at?
 
-A fitness-to-fly assessment for a brachycephalic dog is a clinical evaluation that establishes whether an individual animal's airway function is adequate for the stress of air travel. It is not a standard health certificate. The International Pet and Animal Transportation Association (IPATA) has developed a Brachycephalic Fit-To-Fly Assessment sheet, completed by a vet, to determine which dogs are safe to transport. Source: IPATA Brachycephalic Certification Programme, 2025.
+A fitness-to-fly assessment is an examination by a vet with specific knowledge of brachycephalic airway disease. It goes beyond the standard health certificate that all dogs need for export.
 
-What the vet looks at:
+The vet will look at:
 
-- **Nostril width.** Stenotic nares, meaning pinched or narrowed nostrils, are a primary BOAS indicator. Severely stenotic nares make nasal breathing difficult even at rest.
-- **Soft palate.** An elongated soft palate partially blocks the back of the throat. The vet assesses whether it contacts the epiglottis under stress.
-- **Exercise tolerance.** A short, controlled exercise test shows how quickly the dog recovers normal breathing after mild exertion. Slow recovery is a red flag.
-- **Resting breathing sounds.** Audible stertor (snoring) or stridor (high-pitched wheeze) at rest indicates compromised airway function.
-- **Gum and tongue colour.** Any bluish tint suggests oxygen deficit and is a serious contraindication.
+**Nostril width.** Stenotic nares (narrowed nostrils) restrict airflow before air even reaches the airway. A dog with severely stenotic nares may struggle to breathe effectively under the added demands of travel.
 
-The Royal Veterinary College (RVC) BOAS functional grading scale runs from Grade 0 (normal function) to Grade III (severe). Grade III dogs should not fly in cargo. Grades I and II require individual assessment with careful routing. Fewer than 5 percent of brachycephalic dogs are severely affected by BOAS, but you cannot know where your dog sits without a clinical evaluation. Most pet transport specialists require this assessment for flat-faced breeds regardless of whether the airline mandates it. Source: RVC BOAS grading scale; BVA Brachycephalic Working Group position statement, 2025.
+**Palate length.** An elongated soft palate is one of the most common findings in brachycephalic breeds. If the palate extends too far back into the throat, it obstructs the airway particularly during stress or excitement.
+
+**Tracheal diameter.** Some breeds, including bulldogs, have a narrowed trachea. This cannot be corrected and is a permanent risk factor.
+
+**Exercise tolerance.** A dog that becomes distressed or has laboured breathing after mild exertion is at higher risk during a long journey.
+
+**Body condition score.** Overweight brachycephalic dogs have additional pressure on their respiratory systems. An obese brachy dog may not receive clearance to fly regardless of their airway anatomy.
+
+**Clinical signs of BOAS.** Snoring, snorting, gagging, regurgitation, and exercise intolerance are all signs of existing BOAS. Significant clinical signs will typically result in the vet advising against travel.
+
+The outcome of the assessment is a written statement from the vet on whether the dog is fit to fly. Some airlines require this to come from an RCVS-accredited specialist. If your dog has previously had corrective surgery (soft palate resection, nares widening), that is relevant context but does not automatically result in clearance.
+
+The BVA recommends that owners of brachycephalic dogs speak honestly with their vet about travel before making any bookings. That advice is worth taking seriously.
 
 ## Are charter flights worth the extra cost for a brachy dog?
 
-For some breeds, particularly English Bulldogs, charter is not an optional upgrade. It is the practical only option. A dedicated charter or relocation flight removes the airline embargo problem entirely, because the charter operator controls the cargo conditions and is not bound by scheduled carrier breed policies.
+For most brachycephalic dogs, yes, if the alternative is a commercial cargo hold.
 
-A pet relocation charter typically involves a temperature-controlled aircraft or cargo section, specialist animal handlers, reduced layover time, and routing chosen for the animals on board rather than passenger connections. Some UK-based pet transport specialists operate or book chartered services for the Australian corridor specifically.
+The advantages of a charter or specialist flight are practical:
 
-Cost: charter for a UK-to-Australia move runs substantially higher than commercial cargo. Expect to pay 30 to 60 percent more than a standard commercial cargo booking for the same weight class. For a single medium-to-large dog, this pushes the total move cost to between £10,000 and £15,000 once DAFF quarantine fees, the RNATT titre test, and all UK-side vet preparation are included. Source: UK-to-Australia specialist pet relocation cost data, 2026.
+The environment is purpose-built for animal welfare, not freight optimisation. Temperature control is consistent. Staff on board are trained specifically in animal behaviour and emergency response. Crate sizes are not constrained by standard hold dimensions. The dog is not sharing space with general cargo or other animals that might cause stress.
 
-The question is not whether charter is expensive. The question is whether commercial cargo is available at all for your specific breed, size, and travel window. For English Bulldogs and other severely restricted breeds, the comparison is charter versus not moving the dog at all.
+For a dog with a compromised airway, those factors make a genuine difference. The reduced stress of a calmer, more controlled environment means the dog is less likely to enter the kind of respiratory distress that can become dangerous mid-flight.
+
+The cost is real. A charter premium for a UK to Australia move can push the total cost above GBP 8,000 to GBP 10,000 for a larger brachy dog. That is a significant amount of money. The question is not whether it is expensive, but whether commercial cargo is a genuinely safe alternative for your specific dog. For some dogs, it is. For others, the charter option is the only responsible choice.
+
+Discuss the specific options with a qualified pet relocation company that knows your dog's breed and has current relationships with carriers. A reputable company will be honest with you about which route is appropriate.
 
 ## Summer embargoes: how do they work in practice?
 
-"Summer" in airline policy means the Northern Hemisphere summer: broadly May to October. Most UK-to-Australia routes pass through the Middle East or Asia. Dubai, Doha, and Singapore all reach and exceed 35°C during these months, well above the 29°C ground temperature threshold that triggers cargo embargoes for brachycephalic breeds.
+Airline summer embargoes exist because heat kills brachycephalic dogs. That is the plain reality.
 
-In practice this means:
+When ambient temperatures at an origin, transit, or destination airport exceed a set threshold (typically around 24 to 27 degrees Celsius, depending on the airline and the breed), carriers will refuse to accept brachycephalic dogs. The embargo is not a formality; it reflects genuine physiological risk.
 
-- **Emirates via Dubai:** effectively no brachycephalic cargo from May to September on this routing.
-- **Qatar via Doha:** most flat-faced breeds are refused year-round regardless of temperature, so the season is secondary.
-- **Singapore Airlines via Singapore:** breed-banned year-round.
-- **KLM via Amsterdam:** the embargo window covers May to October; outside those months, the Amsterdam hub is cool enough for brachycephalic cargo with vet clearance.
+For UK to Australia, there are two heat windows to plan around:
 
-The viable commercial window for brachy breeds on UK-to-Australia routes is therefore roughly November to April. Even within that window, confirm each connecting hub's forecast temperature at the time of booking. A single unseasonably warm day at a layover airport can ground a brachy cargo shipment.
+**UK summer (June to August).** Heathrow temperatures occasionally reach embargo thresholds during hot spells. The UK summer also coincides with the Doha summer embargo window if you are routing via Qatar Airways.
 
-The Australian arrival end is less of an issue than people expect. DAFF quarantine at Mickleham is a climate-controlled facility. Australian summer (November to March) overlaps with the UK winter months when KLM-via-Amsterdam is available, so the northern and southern hemisphere temperatures do not necessarily compound each other. The airline restriction is the binding constraint at the UK departure end, not the Australian summer.
+**Australian summer at Mickleham (December to February).** Melbourne's Mickleham quarantine facility operates in a purpose-built environment, but a brachycephalic dog arriving during peak summer is entering a period of elevated heat stress risk. DAFF issues advisory guidance during these months. Even if the flight itself goes well, arrival into a hot Melbourne summer adds risk during the quarantine period.
+
+The safest travel window for a brachycephalic dog on a UK to Australia route is April to September. This avoids both the UK summer heat and the Australian summer at Mickleham. Autumn and spring shoulder seasons can also work, but require more careful monitoring of temperature forecasts.
+
+If you have any flexibility on timing, use it. A brachy dog moved in May is in a meaningfully different risk category from the same dog moved in January.
 
 ## Welfare protocols a good transporter applies for brachy breeds
 
-A specialist pet transport company that handles flat-faced breeds regularly will apply a welfare protocol that goes beyond the IATA Live Animals Regulations minimum. These are the things worth asking about when vetting a provider.
+When you are assessing pet relocation companies, the questions you ask about their brachy-specific protocols will tell you a great deal about their standards.
 
-**No sedation.** Sedation relaxes the muscles that hold the upper airway open. In a brachycephalic dog, where those muscles are already working harder than in a non-brachy breed, sedation increases the risk of airway obstruction. The AVMA and IATA both advise against sedating brachycephalic breeds for cargo travel. Some airlines specifically refuse to board brachycephalic dogs that have been sedated within 24 hours of departure. Source: AVMA pet travel guidance, 2025; IATA Live Animals Regulations Edition 53.
+A responsible transporter working with a brachycephalic dog should:
 
-**Crate sizing.** The crate should be at least 10 percent larger than the IATA minimum for the dog's body measurements. Additional ventilation panels on all four sides are preferable to the three-side minimum. Some specialist transporters use top-opening crates as well as front-opening, making it easier for handlers to check on the dog without full extraction.
+**Require an independent vet fitness-to-fly assessment** before accepting the booking. This protects the dog and sets expectations honestly.
 
-**Routing.** The fewest connections possible. Morning or late-evening departures when ground temperatures at hub airports are lower. Middle East hubs avoided from May to September.
+**Use a crate at least one IATA size above the standard calculation.** IATA CR3 guidelines specify this for brachycephalic breeds. More space means better airflow and less stress-induced heat generation.
 
-**Frozen water.** Ice or frozen water blocks in the crate rather than liquid water. Liquid sloshes, wets the animal, and can cause chilling on a long flight. Frozen water provides hydration gradually as it melts.
+**Fit the crate with additional ventilation panels.** Standard wire doors are not sufficient. Additional mesh panels on the sides increase airflow. Some transporters also use gel cooling pads for the base of the crate.
 
-**Handler briefing at every transfer point.** Written documentation flagging the brachycephalic breed to cargo handlers at each stop. Many welfare incidents happen during ground transfers, not in the air, because handlers unfamiliar with the breed do not recognise early signs of respiratory distress.
+**Limit layovers.** Every hour a dog spends in a transit cargo hold is additional stress. A routing with a short, controlled connection is preferable to a cheaper option with a long layover.
 
-**Mickleham quarantine.** Flag the brachycephalic breed to DAFF's import permit team when submitting the permit application. Mickleham's veterinary staff are experienced with all breeds and are equipped to monitor respiratory status. During the standard 10-day quarantine, owners concerned about welfare can arrange a supervised visit or private vet access through DAFF's established visiting process. Source: DAFF, Import Permits for Cats and Dogs, agriculture.gov.au, 2026.
+**Have emergency protocols.** Ask whether the company has a plan if a dog shows signs of respiratory distress during transit. A reputable company will be able to answer this question clearly.
 
-## FAQs: flying a flat-faced dog UK to Australia
+**Not sedate the dog.** Sedation is not recommended by the BVA for brachycephalic dogs during air travel. Sedated animals cannot regulate their own body temperature effectively, and sedation can depress respiratory function further. Any transporter suggesting sedation for a brachy dog should be questioned on this.
 
-**Can English Bulldogs fly to Australia at all in 2026?**
-Yes, but not on most commercial airline cargo services. British Airways, Singapore Airlines, and Qantas all refuse English Bulldogs. Emirates and Qatar also embargo or restrict them for much or all of the year on UK-to-Australia routings. In practice, charter relocation is the realistic path for English Bulldogs. Budget 10 to 12 months of planning time and substantially higher costs than a standard cargo move.
+Our [French Bulldog breed guide](/breeds/french-bulldog/) and [Pug breed guide](/breeds/pug/) cover breed-specific welfare considerations in more detail, including BOAS and what to discuss with your vet before any travel.
 
-**What is the full DAFF timeline for a brachycephalic dog from the UK?**
-The same as for any Group 3 dog: microchip, current rabies vaccination, RNATT blood titre drawn at an approved laboratory after vaccination, a 180-day qualifying wait before Australian arrival, a DAFF import permit, and 10 days at Mickleham Post-Entry Quarantine. DAFF does not apply additional restrictions based on brachycephaly. The breed restriction is an airline problem, not a DAFF problem. Allow 9 to 12 months to align the DAFF process with a viable commercial or charter window. Source: DAFF, Bringing Cats and Dogs to Australia, agriculture.gov.au, 2026.
+## The honest conversation you need to have
 
-**Can I sedate my dog for the flight?**
-No. Sedation relaxes the muscles that hold the upper airway open, which is dangerous in a brachycephalic dog whose airway is already reduced. Both the AVMA and IATA advise against sedating flat-faced breeds for cargo travel. Some airlines specifically prohibit boarding brachycephalic dogs that have been sedated within 24 hours of departure. Ask your vet about non-sedating anxiety support instead, such as a ThunderShirt or a pheromone spray applied to the crate bedding before loading.
+Before you book anything, have a direct conversation with your vet and, ideally, with a veterinary specialist in brachycephalic conditions.
 
-**Do French Bulldogs face the same restrictions as English Bulldogs?**
-Similar, but not always identical. Qatar Airways bans both. British Airways allows French Bulldogs with restrictions but refuses English Bulldogs outright. French Bulldogs are generally smaller and some individuals have milder BOAS. The relevant factors are the individual dog's BOAS grading, its body weight (which determines the crate category), and the specific carrier's breed list. A BOAS fitness assessment for the individual dog, rather than a breed generalisation, is the most useful document when approaching airlines.
+The questions to answer are:
 
-**Will Australian summer affect my move timing?**
-Mickleham quarantine is climate-controlled, so the destination temperature matters less than people expect. The more important factor is the temperature at your transit hub during your departure window from the UK. For KLM via Amsterdam, November to April keeps the layover in manageable conditions. If you are departing during the UK summer (June to August), commercial cargo options for brachy breeds are genuinely limited on this corridor and charter is the likely route.
+Does your dog show clinical signs of BOAS? If so, how severe?
 
----
+Has your dog had corrective surgery? When, and did it resolve the symptoms?
 
-*Emma Hartley is a Certified Animal Behaviourist and Pet Travel Adviser at PetTransportGlobal, specialising in welfare assessment for brachycephalic and anxious breeds in international transport. Always confirm current airline breed policies directly with the carrier before booking, as seasonal embargoes can change between years.*
+Is your dog at a healthy weight? If not, could weight loss before travel change the risk assessment?
+
+What does a specialist vet think about this specific dog, not brachycephalic dogs in general?
+
+Some dogs will come through that conversation with a clear fitness-to-fly certificate and complete the journey safely with the right transporter and the right routing. Others will not be candidates for this journey. The RVC is clear that breeding for extreme features has consequences that owners and vets have to manage honestly, and air travel is one of the places where those consequences become acute.
+
+If your dog is not fit to fly, the right answer is to know that before you have spent money on bookings and logistics. It is not the answer anyone wants, but it is the one that protects your dog.
+
+If your dog does receive fitness-to-fly clearance, work with a specialist pet relocation company, book into the April to September window if you can, and budget realistically for the full cost of doing this safely.
+
+The [UK to Australia pet transport guide](/pet-transport/united-kingdom-to-australia/) covers the full documentation and quarantine process for all dogs, including the DAFF requirements, Mickleham booking process, and what to expect on arrival. That is the foundation. For a brachycephalic dog, everything in this article sits on top of that base.
