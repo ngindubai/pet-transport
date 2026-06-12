@@ -151,4 +151,54 @@
         vid.load();
     }());
 
+    // ===== CRM INTAKE — native-POST quote forms =====
+    // Quote forms without a .quote-success sibling submit natively to PHP.
+    // Fire-and-forget to CRM with keepalive so the request survives page navigation.
+    (function () {
+        var CRM_URL = 'https://logistics-crm.onrender.com/api/public/leads';
+        var CRM_KEY = 'uRc1IHymlMUnYfAB9i79iA3NUARQKFJdRCdo+4VDY/A=';
+        var qs = new URLSearchParams(window.location.search);
+
+        document.querySelectorAll('.quote-form').forEach(function (form) {
+            // Skip forms handled by the AJAX block (those have a .quote-success sibling)
+            if (form.parentElement && form.parentElement.querySelector('.quote-success')) return;
+
+            form.addEventListener('submit', function () {
+                var fd = new FormData(form);
+                var name = (fd.get('name') || '').toString().trim() ||
+                           (fd.get('email') || '').toString().split('@')[0] ||
+                           'Website enquiry';
+                try {
+                    fetch(CRM_URL, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json', 'x-api-key': CRM_KEY },
+                        keepalive: true,
+                        body: JSON.stringify({
+                            company: 'pet-transport',
+                            name: name,
+                            email: fd.get('email') || undefined,
+                            phone: fd.get('phone') || undefined,
+                            source: 'PetTransport website',
+                            landing_page: window.location.href,
+                            utm_source: qs.get('utm_source') || undefined,
+                            utm_medium: qs.get('utm_medium') || undefined,
+                            utm_campaign: qs.get('utm_campaign') || undefined,
+                            utm_keyword: qs.get('utm_keyword') || undefined,
+                            message: fd.get('message') || undefined,
+                            fields: {
+                                originCountry: fd.get('origin_country') || undefined,
+                                destCountry: fd.get('destination_country') || undefined,
+                                petType: fd.get('pet_type') || undefined,
+                                breed: fd.get('breed') || undefined,
+                                weight: fd.get('pet_weight_kg') || undefined,
+                                travelDate: fd.get('travel_date') || undefined
+                            }
+                        })
+                    });
+                } catch (e) { /* swallow — never block native submit */ }
+            });
+        });
+    }());
+
+
 })();
