@@ -9,11 +9,11 @@
 
 ## Current State (2026-06-12, reconciled from disk by verify_build_state.py)
 
-- **Routes built:** 5,681 of ~37,830 country pairs (~15.0%). True on-disk count (5,671 in `routes/` + 10 in `pet-transport/`).
-- **Blog articles:** 423
-- **Total .md source files:** 6,477 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-49 complete. **Chunk 50 is next** (Template E, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 49 (Template D, Tier B): 25 routes: GE/AM/AZ/KZ/UY/RW/UG/LB to AU; PA/DO/JM/RW/UG/UY/GE/AM/AZ/KZ/LB to ES; ES to AM/GE/AZ/KZ/LB; AU to KZ.
-- **Content plan:** Days 1-6 + Days 8-16 complete (16 articles written). Day 7 skipped (pre-existing). **Day 17 is next:** check content-plan/plan-rows-q1.js for slug. Day 16 = brachycephalic-dog-uk-to-australia (Emma Hartley, ~2200 words, airline embargoes, vet fitness assessment, summer Mickleham heat risk).
+- **Routes built:** 5,706 of ~37,830 country pairs (~15.1%). True on-disk count (5,696 in `routes/` + 10 in `pet-transport/`).
+- **Blog articles:** 424
+- **Total .md source files:** 6,503 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Phase 7 progress:** Chunks 1-50 complete. **Chunk 51 is next** (Template A, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 50 (Template E, Tier B): 25 routes: AU/CA/US to LB/RW/UG; IT to AM/AZ/GE/KZ/LB/RW/UG; NL to AM/AZ/GE/KZ/LB/RW/UG; ES to RW/UG.
+- **Content plan:** Days 1-6 + Days 8-17 complete (17 articles written). Day 7 skipped (pre-existing). **Day 18 is next:** check content-plan/plan-rows-q1.js for slug. Day 17 = pet-transport-usa-to-uk (Marcus Webb, ~2000 words, GB Health Certificate, tapeworm window, HARC, JFK/LAX/ORD to LHR cargo costs).
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
 - **Route template redesign (live on all ~5,531 route pages):** Six new premium templates render via `site/layouts/routes/single.html` -> partials `route-new-{na,nb,nc,nd,ne,nl}.html` with scoped CSS `static/css/route-new-{na..nl}.css`. Variant routing: front-matter `template_variant` A->na, B->nb, C->nc, D->nd, E->ne, legacy->nl.
