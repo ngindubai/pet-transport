@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Build Report: 12 June 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:     #1a1a1a;
+      --muted:   #5a5a5a;
+      --rule:    #e0dcd8;
+      --bg:      #faf8f5;
+      --card:    #ffffff;
+      --green:   #1a6640;
+      --green-bg:#edf7f1;
+      --amber:   #7a4800;
+      --amber-bg:#fff4e0;
+      --red:     #8b1a1a;
+      --red-bg:  #fdf0f0;
+      --blue:    #1a3a6a;
+      --blue-bg: #eef2fb;
+    }
+
+    body {
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--ink);
+      background: var(--bg);
+      padding: 2rem 1rem 4rem;
+    }
+
+    .container { max-width: 860px; margin: 0 auto; }
+
+    .report-header {
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .report-header .eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+
+    h1 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--ink);
+    }
+
+    .summary-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 1rem;
+      padding: 0.85rem 1rem;
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+    }
+
+    .summary-bar .stat { display: flex; flex-direction: column; }
+
+    .summary-bar .stat-value {
+      font-family: 'Fraunces', serif;
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1;
+    }
+
+    .summary-bar .stat-label {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 0.2rem;
+    }
+
+    .clear-box {
+      border-left: 4px solid var(--green);
+      background: var(--green-bg);
+      padding: 1rem 1.25rem;
+      border-radius: 0 4px 4px 0;
+      margin-bottom: 2rem;
+    }
+
+    .clear-box .clear-heading {
+      font-family: 'Fraunces', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 0.3rem;
+      letter-spacing: 0.04em;
+    }
+
+    .clear-box p {
+      font-size: 0.9rem;
+      color: var(--green);
+      line-height: 1.55;
+    }
+
+    .flags-box {
+      border-left: 4px solid var(--red);
+      background: var(--red-bg);
+      padding: 1rem 1.25rem;
+      border-radius: 0 4px 4px 0;
+      margin-bottom: 2rem;
+    }
+
+    .flags-box .flags-heading {
+      font-family: 'Fraunces', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--red);
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.04em;
+    }
+
+    .flags-box ul { margin: 0; padding-left: 1.1rem; }
+
+    .flags-box li {
+      font-size: 0.9rem;
+      color: var(--red);
+      margin-bottom: 0.35rem;
+      line-height: 1.55;
+    }
+
+    .flags-box li strong { font-weight: 600; }
+
+    .lead {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: var(--ink);
+      margin-bottom: 2.5rem;
+      max-width: 680px;
+    }
+
+    .lead::first-letter {
+      font-size: 4rem;
+      font-weight: 700;
+      float: left;
+      line-height: 0.82;
+      margin-right: 0.08em;
+      margin-top: 0.1em;
+      color: var(--ink);
+      font-family: 'Fraunces', serif;
+    }
+
+    .site-section {
+      margin-bottom: 2.5rem;
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.9rem 1.25rem;
+      border-bottom: 1px solid var(--rule);
+      gap: 0.75rem;
+    }
+
+    .site-header h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 500;
+      padding: 0.2rem 0.55rem;
+      border-radius: 20px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .badge-built  { background: var(--green-bg); color: var(--green); border: 1px solid #a8d8bc; }
+    .badge-update { background: var(--blue-bg);  color: var(--blue);  border: 1px solid #a8c0e8; }
+    .badge-flag   { background: var(--red-bg);   color: var(--red);   border: 1px solid #e8a8a8; }
+    .badge-none   { background: #f0f0f0; color: #888; border: 1px solid #d8d8d8; }
+
+    .site-body { padding: 1rem 1.25rem; }
+
+    .site-meta {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px dashed var(--rule);
+      line-height: 1.6;
+    }
+
+    .commit-block { margin-top: 0.35rem; }
+
+    .commit-msg {
+      font-style: italic;
+      color: var(--muted);
+      font-family: 'Inter Tight', sans-serif;
+      font-size: 0.85rem;
+    }
+
+    .pages-group { margin-bottom: 1.25rem; }
+
+    .pages-group-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .note-inline {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-style: italic;
+      margin-top: 0.4rem;
+    }
+
+    .page-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 0.3rem;
+    }
+
+    .page-list li { font-size: 0.88rem; }
+
+    .page-list a {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      color: var(--blue);
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .page-list a:hover { text-decoration: underline; }
+
+    .page-title {
+      display: block;
+      font-family: 'Inter Tight', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--ink);
+    }
+
+    .no-build {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-style: italic;
+      padding: 0.5rem 0;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--rule);
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-family: 'JetBrains Mono', monospace;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header class="report-header">
+    <p class="eyebrow">PetTransportGlobal Group &nbsp;/&nbsp; Daily Build Report</p>
+    <h1>12 June 2026</h1>
+    <div class="summary-bar">
+      <div class="stat"><span class="stat-value">1</span><span class="stat-label">site built</span></div>
+      <div class="stat"><span class="stat-value">26</span><span class="stat-label">new pages today</span></div>
+      <div class="stat"><span class="stat-value">25</span><span class="stat-label">route pages (Pet Transport)</span></div>
+      <div class="stat"><span class="stat-value">1</span><span class="stat-label">blog article (Pet Transport)</span></div>
+      <div class="stat"><span class="stat-value">0</span><span class="stat-label">flags requiring attention</span></div>
+    </div>
+  </header>
+
+  <!-- FLAGS BOX: all clear -->
+  <div class="clear-box">
+    <p class="clear-heading">NO FLAGS TODAY</p>
+    <p>No HALTED, FAILED, PAUSED, RED, DEPLOY RISK, DEPLOY RETRY NEEDED, or SKIPPED events in any commit message. Pet Transport Global built clean.</p>
+  </div>
+
+  <p class="lead">One site built today, shipping 26 new pages. Pet Transport Global completed chunk 49 (Template D, Tier B), adding 25 route pages across Caucasus, Central Asia, Caribbean, Africa, and Latin America origins to Australia and Spain, plus outbound Spain routes to Armenia, Azerbaijan, Georgia, Kazakhstan, and Lebanon, and Australia to Kazakhstan. A new blog article on flying brachycephalic dogs from the UK to Australia, by Emma Hartley, was also published. The other four sites are outside this session's repository scope and cannot be verified; they show no confirmed build activity.</p>
+
+  <!-- PET TRANSPORT GLOBAL -->
+  <section class="site-section">
+    <div class="site-header">
+      <h2>Pet Transport Global</h2>
+      <span class="badge badge-built">25 new routes + 1 blog article</span>
+    </div>
+    <div class="site-body">
+      <div class="site-meta">
+        domain: pettransportglobal.com &nbsp;|&nbsp; branch: main
+        <div class="commit-block">
+          <span class="commit-msg">9482953 &nbsp;|&nbsp; 06:13 UTC &nbsp;|&nbsp; build: blog day 16 brachycephalic-dog-uk-to-australia (1 new article, Emma Hartley)</span>
+        </div>
+        <div class="commit-block">
+          <span class="commit-msg">672ee9a &nbsp;|&nbsp; 06:40 UTC &nbsp;|&nbsp; build: chunk 49 (Template D, Tier B) + blog day 16 revision -- 25 routes + 1 blog, routes 5656 to 5681, pages 6451 to 6477</span>
+        </div>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">New: Blog Day 16 (1 article)</p>
+        <ul class="page-list">
+          <li>
+            <span class="page-title">Flying Brachycephalic Dogs from the UK to Australia (Emma Hartley)</span>
+            <a href="https://www.pettransportglobal.com/blog/brachycephalic-dog-uk-to-australia/">https://www.pettransportglobal.com/blog/brachycephalic-dog-uk-to-australia/</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">New: Chunk 49 Routes (25 pages, Template D, Tier B)</p>
+        <ul class="page-list">
+          <li><span class="page-title">Armenia to Australia</span><a href="https://www.pettransportglobal.com/pet-transport/armenia-to-australia/">https://www.pettransportglobal.com/pet-transport/armenia-to-australia/</a></li>
+          <li><span class="page-title">Armenia to Spain</span><a href="https://www.pettransportglobal.com/pet-transport/armenia-to-spain/">https://www.pettransportglobal.com/pet-transport/armenia-to-spain/</a></li>
+          <li><span class="page-title">Australia to Kazakhstan</span><a href="https://www.pettransportglobal.com/pet-transport/australia-to-kazakhstan/">https://www.pettransportglobal.com/pet-transport/australia-to-kazakhstan/</a></li>
+          <li><span class="page-title">Azerbaijan to Australia</span><a href="https://www.pettransportglobal.com/pet-transport/azerbaijan-to-australia/">https://www.pettransportglobal.com/pet-transport/azerbaijan-to-australia/</a></li>
+          <li><span class="page-title">Azerbaijan to Spain</span><a href="https://www.pettransportglobal.com/pet-transport/azerbaijan-to-spain/">https://www.pettransportglobal.com/pet-transport/azerbaijan-to-spain/</a></li>
+          <li><span class="page-title">Dominican Republic to Spain</span><a href="https://www.pettransportglobal.com/pet-transport/dominican-republic-to-spain/">https://www.pettransportglobal.com/pet-transport/dominican-republic-to-spain/</a></li>
+          <li><span class="page-title">Georgia to Australia</span><a href="https://www.pettransportglobal.com/pet-transport/georgia-to-australia/">https://www.pettransportglobal.com/pet-transport/georgia-to-australia/</a></li>
+          <li><span class="page-title">Georgia to Spain</span><a href="https://www.pettransportglobal.com/pet-transport/georgia-to-spain/">https://www.pettransportglobal.com/pet-transport/georgia-to-spain/</a></li>
+          <li><span class="page-title">Jamaica to Spain</span><a href="https://www.pettransportglobal.com/pet-transport/jamaica-to-spain/">https://www.pettransportglobal.com/pet-transport/jamaica-to-spain/</a></li>
+          <li><span class="page-title">Kazakhstan to Australia</span><a href="https://www.pettransportglobal.com/pet-transport/kazakhstan-to-australia/">https://www.pettransportglobal.com/pet-transport/kazakhstan-to-australia/</a></li>
+          <li><span class="page-title">Kazakhstan to Spain</span><a href="https://www.pettransportglobal.com/pet-transport/kazakhstan-to-spain/">https://www.pettransportglobal.com/pet-transport/kazakhstan-to-spain/</a></li>
+          <li><span class="page-title">Lebanon to Australia</span><a href="https://www.pettransportglobal.com/pet-transport/lebanon-to-australia/">https://www.pettransportglobal.com/pet-transport/lebanon-to-australia/</a></li>
+          <li><span class="page-title">Lebanon to Spain</span><a href="https://www.pettransportglobal.com/pet-transport/lebanon-to-spain/">https://www.pettransportglobal.com/pet-transport/lebanon-to-spain/</a></li>
+          <li><span class="page-title">Panama to Spain</span><a href="https://www.pettransportglobal.com/pet-transport/panama-to-spain/">https://www.pettransportglobal.com/pet-transport/panama-to-spain/</a></li>
+          <li><span class="page-title">Rwanda to Australia</span><a href="https://www.pettransportglobal.com/pet-transport/rwanda-to-australia/">https://www.pettransportglobal.com/pet-transport/rwanda-to-australia/</a></li>
+          <li><span class="page-title">Rwanda to Spain</span><a href="https://www.pettransportglobal.com/pet-transport/rwanda-to-spain/">https://www.pettransportglobal.com/pet-transport/rwanda-to-spain/</a></li>
+          <li><span class="page-title">Spain to Armenia</span><a href="https://www.pettransportglobal.com/pet-transport/spain-to-armenia/">https://www.pettransportglobal.com/pet-transport/spain-to-armenia/</a></li>
+          <li><span class="page-title">Spain to Azerbaijan</span><a href="https://www.pettransportglobal.com/pet-transport/spain-to-azerbaijan/">https://www.pettransportglobal.com/pet-transport/spain-to-azerbaijan/</a></li>
+          <li><span class="page-title">Spain to Georgia</span><a href="https://www.pettransportglobal.com/pet-transport/spain-to-georgia/">https://www.pettransportglobal.com/pet-transport/spain-to-georgia/</a></li>
+          <li><span class="page-title">Spain to Kazakhstan</span><a href="https://www.pettransportglobal.com/pet-transport/spain-to-kazakhstan/">https://www.pettransportglobal.com/pet-transport/spain-to-kazakhstan/</a></li>
+          <li><span class="page-title">Spain to Lebanon</span><a href="https://www.pettransportglobal.com/pet-transport/spain-to-lebanon/">https://www.pettransportglobal.com/pet-transport/spain-to-lebanon/</a></li>
+          <li><span class="page-title">Uganda to Australia</span><a href="https://www.pettransportglobal.com/pet-transport/uganda-to-australia/">https://www.pettransportglobal.com/pet-transport/uganda-to-australia/</a></li>
+          <li><span class="page-title">Uganda to Spain</span><a href="https://www.pettransportglobal.com/pet-transport/uganda-to-spain/">https://www.pettransportglobal.com/pet-transport/uganda-to-spain/</a></li>
+          <li><span class="page-title">Uruguay to Australia</span><a href="https://www.pettransportglobal.com/pet-transport/uruguay-to-australia/">https://www.pettransportglobal.com/pet-transport/uruguay-to-australia/</a></li>
+          <li><span class="page-title">Uruguay to Spain</span><a href="https://www.pettransportglobal.com/pet-transport/uruguay-to-spain/">https://www.pettransportglobal.com/pet-transport/uruguay-to-spain/</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- MORTGAGE COMPARE -->
+  <section class="site-section">
+    <div class="site-header">
+      <h2>Mortgage Compare AE</h2>
+      <span class="badge badge-none">not verified</span>
+    </div>
+    <div class="site-body">
+      <div class="site-meta">
+        domain: mortgagecompare.ae &nbsp;|&nbsp; branch: main
+      </div>
+      <p class="no-build">Repository outside this session's GitHub access scope. Build data unavailable. No confirmed commits.</p>
+    </div>
+  </section>
+
+  <!-- BUS RENTAL GLOBAL -->
+  <section class="site-section">
+    <div class="site-header">
+      <h2>Bus Rental Global</h2>
+      <span class="badge badge-none">not verified</span>
+    </div>
+    <div class="site-body">
+      <div class="site-meta">
+        domain: busrentalglobal.com &nbsp;|&nbsp; branch: main
+      </div>
+      <p class="no-build">Repository outside this session's GitHub access scope. Build data unavailable. No confirmed commits.</p>
+    </div>
+  </section>
+
+  <!-- FUNERAL REPATRIATION -->
+  <section class="site-section">
+    <div class="site-header">
+      <h2>Funeral Repatriation</h2>
+      <span class="badge badge-none">not verified</span>
+    </div>
+    <div class="site-body">
+      <div class="site-meta">
+        domain: repatriationfuneral.com &nbsp;|&nbsp; branch: master
+      </div>
+      <p class="no-build">Repository outside this session's GitHub access scope. Build data unavailable. No confirmed commits.</p>
+    </div>
+  </section>
+
+  <!-- CLOSE PROTECTION HIRE -->
+  <section class="site-section">
+    <div class="site-header">
+      <h2>Close Protection Hire</h2>
+      <span class="badge badge-none">not verified</span>
+    </div>
+    <div class="site-body">
+      <div class="site-meta">
+        domain: closeprotectionhire.com &nbsp;|&nbsp; branch: master
+      </div>
+      <p class="no-build">Repository outside this session's GitHub access scope. Build data unavailable. No confirmed commits.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Generated: 2026-06-12 at 20:00 UTC &nbsp;/&nbsp; pet-transport: ngindubai/pet-transport (main) &nbsp;/&nbsp; other repos: not in session scope</p>
+    <p style="margin-top:0.4rem;">Report URL: <a href="https://www.pettransportglobal.com/reports/report-2026-06-12.html" style="color:var(--blue);">https://www.pettransportglobal.com/reports/report-2026-06-12.html</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
