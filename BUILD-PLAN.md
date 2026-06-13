@@ -17,7 +17,7 @@
 - **Bulk-generation scripts are banned.** A batch is still N individually quality-gated blocks, never a mass-generation script.
 - **Skip rule:** skip only if the build pointer shows nothing left to build (no chunks remaining and no blog day due). Do NOT skip just because a build already happened earlier today; each site now runs twice a day on purpose.
 
-**Where we are (reconciled from disk 2026-06-13):** 5,706 quality routes complete. ~32,124 routes remaining. Blog: 425 articles. Total .md source files: 6,504. Content plan: Day 19 is next. Chunks 1-50 complete. Chunk 51 (Template A, Tier B) is next. Counts come from `python verify_build_state.py`, never hand-edited.
+**Where we are (reconciled from disk 2026-06-13):** 5,756 quality routes complete. ~32,074 routes remaining. Blog: 426 articles. Total .md source files: 6,555. Content plan: Day 20 is next. Chunks 1-52 complete. Chunk 53 (Template C, Tier B) is next. Counts come from `python verify_build_state.py`, never hand-edited.
 
 ---
 
@@ -56,7 +56,8 @@
 - Chunk 50 template: E - DONE 2026-06-12 (25 Tier B routes: AU/CA/US to LB/RW/UG [9]; IT to AM/AZ/GE/KZ/LB/RW/UG [7]; NL to AM/AZ/GE/KZ/LB/RW/UG [7]; ES to RW/UG [2])
 - Chunk 50 template: E - DONE 2026-06-12 (25 Tier B routes: AU/CA/US to LB/RW/UG; IT to AM/AZ/GE/KZ/LB/RW/UG; NL to AM/AZ/GE/KZ/LB/RW/UG; ES to RW/UG)
 - Chunk 51 template: A - DONE 2026-06-13 (Baltic/Slovenia outbound to DE/FR/NL/US; US/AU/CA inbound to EE/LV/LT/SI; 25 routes)
-- Chunk 52 template: B - NEXT
+- Chunk 52 template: B - DONE 2026-06-13 (EU countries to Baltic/Slovenia: DE/FR/IT/NL/ES/BE/PT to EE/LV/LT/SI; 25 routes)
+- Chunk 53 template: C - NEXT
 - Blog Day 10: pet-transport-uae-to-pakistan - DONE 2026-06-07 (Marcus Webb, AQD NOC, AED 3,000-6,000)
 - Blog Day 11: exporting-pets-from-singapore - DONE 2026-06-08 (Marcus Webb, AVS export licence, FAVN/RNATT for Australia, Changi cargo, UK/EU/US/AU destination matrix, cost table)
 - Blog Day 12: importing-pets-to-australia-2026 - DONE 2026-06-08 (Dr. Sarah Okafor, ~3000 words, Group 1/2/3 system, RNATT, Mickleham day-by-day, cost table by region, rejection reasons, FAQs)
@@ -66,7 +67,8 @@
 - Blog Day 16: brachycephalic-dog-uk-to-australia - DONE 2026-06-12 (Emma Hartley, ~2200 words, airline embargoes, KLM/Qatar options, charter flights, vet fitness assessment, summer Mickleham heat risk, IATA CR3)
 - Blog Day 17: pet-transport-usa-to-uk - DONE 2026-06-12 (Marcus Webb, ~2000 words, GB Health Certificate endorsement, APHIS process, tapeworm 24-120h window, JFK/LAX/ORD/IAD/SFO to LHR, HARC at Heathrow, $2,800-5,200 direct cargo costs)
 - Blog Day 18: importing-pets-to-indonesia-2026 - DONE 2026-06-13 (Dr. Sarah Okafor, ~2200 words, rekomendasi permit process, Bali dog ban via mainland entry, Jakarta vs Surabaya comparison, FAVN titre 0.5 IU/ml, quarantine 7-14 days, cost ranges UK/USA to Jakarta. Sources: Barantin 2026, Ministry of Agriculture Indonesia 2026)
-- Blog Day 19: NEXT (check plan-rows-q1.js for slug)
+- Blog Day 19: belgium-pet-export-guide - DONE 2026-06-13 (Marcus Webb, FAVV/AFSCA process, Brussels Airport dnata ACIC IATA CEIV certified, UK/USA/UAE/Singapore destination matrix, cost table)
+- Blog Day 20: NEXT (check plan-rows-q1.js for slug)
 - Tier: B (1,094 pairs; Tier A now complete)
 - Template rotation: ...D(21), E(22), A(23), B(24), C(25-27), D(28), E(29), A(30), D(31a), B(31b), B(32), C(33), D(34), E(35), A(36), B(37), C(38), D(39), E(40), A(41), B(42), C(43), D(44)...
 

@@ -9,11 +9,11 @@
 
 ## Current State (2026-06-13, reconciled from disk by verify_build_state.py)
 
-- **Routes built:** 5,731 of ~37,830 country pairs (~15.1%). True on-disk count (5,721 in `routes/` + 10 in `pet-transport/`).
-- **Blog articles:** 425
-- **Total .md source files:** 6,529 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-51 complete. **Chunk 52 is next** (Template B, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 51 (Template A, Tier B): 25 routes: Baltic/Slovenia outbound to DE/FR/NL/US; US/AU/CA inbound to EE/LV/LT/SI.
-- **Content plan:** Days 1-6 + Days 8-18 complete (18 articles written). Day 7 skipped (pre-existing). **Day 19 is next:** check content-plan/plan-rows-q1.js for slug. Day 18 = importing-pets-to-indonesia-2026 (Dr. Sarah Okafor, ~2200 words, BARANTAN rekomendasi, Bali dog ban, FAVN titre + 90-day wait, Jakarta vs Surabaya, 7-14 day quarantine).
+- **Routes built:** 5,756 of ~37,830 country pairs (~15.2%). True on-disk count (5,746 in `routes/` + 10 in `pet-transport/`).
+- **Blog articles:** 426
+- **Total .md source files:** 6,555 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Phase 7 progress:** Chunks 1-52 complete. **Chunk 53 is next** (Template C, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 52 (Template B, Tier B): 25 routes: EU countries (DE/FR/IT/NL/ES/BE/PT) to Baltic states and Slovenia (EE/LV/LT/SI).
+- **Content plan:** Days 1-6 + Days 8-19 complete (19 articles written). Day 7 skipped (pre-existing). **Day 20 is next.** Day 19 = belgium-pet-export-guide (Marcus Webb, FAVV/AFSCA process, Brussels Airport dnata ACIC IATA CEIV certified, UK/USA/UAE/Singapore destination matrix, cost table).
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
 - **Route template redesign (live on all ~5,531 route pages):** Six new premium templates render via `site/layouts/routes/single.html` -> partials `route-new-{na,nb,nc,nd,ne,nl}.html` with scoped CSS `static/css/route-new-{na..nl}.css`. Variant routing: front-matter `template_variant` A->na, B->nb, C->nc, D->nd, E->ne, legacy->nl.
