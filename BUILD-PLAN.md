@@ -17,7 +17,7 @@
 - **Bulk-generation scripts are banned.** A batch is still N individually quality-gated blocks, never a mass-generation script.
 - **Skip rule:** skip only if the build pointer shows nothing left to build (no chunks remaining and no blog day due). Do NOT skip just because a build already happened earlier today; each site now runs twice a day on purpose.
 
-**Where we are (reconciled from disk 2026-06-13):** 5,756 quality routes complete. ~32,074 routes remaining. Blog: 426 articles. Total .md source files: 6,555. Content plan: Day 20 is next. Chunks 1-52 complete. Chunk 53 (Template C, Tier B) is next. Counts come from `python verify_build_state.py`, never hand-edited.
+**Where we are (reconciled from disk 2026-06-14):** 5,756 quality routes complete. ~32,074 routes remaining. Blog: 427 articles. Total .md source files: 6,556. Content plan: Day 20 complete, Day 21 is next. Chunks 1-52 complete. Chunk 53 (Template C, Tier B) is next. Counts come from `python verify_build_state.py`, never hand-edited.
 
 ---
 
@@ -68,7 +68,8 @@
 - Blog Day 17: pet-transport-usa-to-uk - DONE 2026-06-12 (Marcus Webb, ~2000 words, GB Health Certificate endorsement, APHIS process, tapeworm 24-120h window, JFK/LAX/ORD/IAD/SFO to LHR, HARC at Heathrow, $2,800-5,200 direct cargo costs)
 - Blog Day 18: importing-pets-to-indonesia-2026 - DONE 2026-06-13 (Dr. Sarah Okafor, ~2200 words, rekomendasi permit process, Bali dog ban via mainland entry, Jakarta vs Surabaya comparison, FAVN titre 0.5 IU/ml, quarantine 7-14 days, cost ranges UK/USA to Jakarta. Sources: Barantin 2026, Ministry of Agriculture Indonesia 2026)
 - Blog Day 19: belgium-pet-export-guide - DONE 2026-06-13 (Marcus Webb, FAVV/AFSCA process, Brussels Airport dnata ACIC IATA CEIV certified, UK/USA/UAE/Singapore destination matrix, cost table)
-- Blog Day 20: NEXT (check plan-rows-q1.js for slug)
+- Blog Day 20: pet-transport-service-explained - DONE 2026-06-14 (Marcus Webb, 2400 words, core head term 390 vol. Covers what's included vs excluded, airport-to-airport vs door-to-door, pass-through costs, Montreal Convention liability, DEFRA Type 1/2, IPATA/IATA credentials, how to read a quote.)
+- Blog Day 21: NEXT (pet-transport-uk-to-new-zealand)
 - Tier: B (1,094 pairs; Tier A now complete)
 - Template rotation: ...D(21), E(22), A(23), B(24), C(25-27), D(28), E(29), A(30), D(31a), B(31b), B(32), C(33), D(34), E(35), A(36), B(37), C(38), D(39), E(40), A(41), B(42), C(43), D(44)...
 
@@ -99,6 +100,7 @@
 
 | Date | Stage | Work Done | Pages | Notes |
 |------|-------|-----------|-------| ------|
+| 2026-06-14 | Blog Day 20 | pet-transport-service-explained.md (Marcus Webb, ~2400 words). Core head term 390 vol. Covers: what a pet transport service includes vs excludes, airport-to-airport vs door-to-door price gap, pass-through costs vs agent fees, Montreal Convention airline liability cap (~£20-22/kg), DEFRA Type 1/2 authorisation, IPATA/IATA credentials, how to read a quote line by line. Named sources: APHA Welfare in Transport 2024, IATA LAR53 2026, IPATA 2026, Montreal Convention 1999, HARC fee schedule 2026. Blog 426->427, pages 6,555->6,556. | 6,556 | Day 21 (pet-transport-uk-to-new-zealand) next. Chunk 53 (Template C, Tier B) also queued. |
 | 2026-06-05 | Routine config | Switched to batch builds of up to 4 blocks per run, 2 runs/day, to fit the 15-run routine cap. Docs only (CLAUDE.md BEHAVIOR RULES + this BLOCK RHYTHM). No pages added/removed, no deploy expected beyond the docs commit. | 6,065 | Instruction change only. |
 | 2026-06-02 | Chunk 19 | 12 Tier A routes, Template B (Visual Journey). Germany-UK/US, HK corridors, NZ corridors. YAML fix pushed separately (stray top-level key in germany-to-uk). | 6,332 | Live links posted. |
 | 2026-06-02 | Chunk 20 | 11 Tier A routes, Template C (Comparison Brief). NZ-Canada/SG/UAE, Singapore corridors (AU/CA/DE/NZ/UK/US/HK/FR). All with comparison tables and airline comparison tables. | 6,342 | Live links to be posted. |
