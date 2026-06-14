@@ -9,11 +9,11 @@
 
 ## Current State (2026-06-14, reconciled from disk by verify_build_state.py)
 
-- **Routes built:** 5,756 of ~37,830 country pairs (~15.2%). True on-disk count (5,746 in `routes/` + 10 in `pet-transport/`).
+- **Routes built:** 5,781 of ~37,830 country pairs (~15.3%). True on-disk count (5,771 in `routes/` + 10 in `pet-transport/`).
 - **Blog articles:** 427
-- **Total .md source files:** 6,556 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-52 complete. **Chunk 53 is next** (Template C, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 52 (Template B, Tier B): 25 routes: EU countries (DE/FR/IT/NL/ES/BE/PT) to Baltic states and Slovenia (EE/LV/LT/SI).
-- **Content plan:** Days 1-6 + Days 8-20 complete (20 articles written). Day 7 skipped (pre-existing). **Day 21 is next.** Day 20 = pet-transport-service-explained (Marcus Webb, 2400 words, core head term 390 vol, what's included vs excluded, airport-to-airport vs door-to-door, Montreal Convention liability, DEFRA Type 1/2, IPATA/IATA credentials).
+- **Total .md source files:** 6,581 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Phase 7 progress:** Chunks 1-53 complete. **Chunk 54 is next** (Template D, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 53 (Template C, Tier B): 25 routes: EU/EEA to Caucasus/Central Asia (BE/PT/SE/NO to AM/GE/AZ/KZ) and Caucasus/Central Asia to EU (AM/GE/AZ/KZ to BE/PT/SE).
+- **Content plan:** Days 1-6 + Days 8-20 complete (20 articles written). Day 7 skipped (pre-existing). **Day 21 is next.** Day 20 = pet-transport-service-explained (Marcus Webb, 2400 words, what a pet transport service includes, airport-to-airport vs door-to-door, pass-through costs, accountability, reading a quote line by line).
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
 - **Route template redesign (live on all ~5,531 route pages):** Six new premium templates render via `site/layouts/routes/single.html` -> partials `route-new-{na,nb,nc,nd,ne,nl}.html` with scoped CSS `static/css/route-new-{na..nl}.css`. Variant routing: front-matter `template_variant` A->na, B->nb, C->nc, D->nd, E->ne, legacy->nl.
@@ -106,8 +106,7 @@ Every build batch does three things together, every time: (1) bundle BUILD-PLAN.
 - Day 9: `pet-transport-uk-to-jersey` published 2026-06-06 (1600 words, Marcus Webb, Condor ferry, Channel Islands rules)
 - Day 10: `pet-transport-uae-to-pakistan` published 2026-06-07 (2000 words, Marcus Webb, AQD NOC, AED 3,000-6,000)
 - Day 11: `exporting-pets-from-singapore` published 2026-06-08 (2400 words, Marcus Webb, AVS export licence, FAVN titre for AU, Changi cargo, UK/EU/US/AU matrix)
-- Day 20: `pet-transport-service-explained` published 2026-06-14 (2400 words, Marcus Webb, core head term 390 vol, what a pet transport service includes vs excludes, DEFRA Type 1/2, IPATA/IATA, Montreal Convention liability)
-- **Next: Day 21** - pet-transport-uk-to-new-zealand
+- **Next: Day 12** - check content-plan/plan-rows-q1.js for slug (importing-pets-to-australia-2026)
 - Blog layout: `site/layouts/blog/single.html`. col-lg-8 content + col-lg-4 sidebar. Applies to all blog posts.
 
 ## Key Decisions Log
