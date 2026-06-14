@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Build Report: 14 June 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --ink:#1a1a1a; --muted:#5a5a5a; --rule:#e0dcd8; --bg:#faf8f5; --card:#ffffff; --green:#1a6640; --green-bg:#edf7f1; --red:#8b1a1a; --red-bg:#fdf0f0; --blue:#1a3a6a; --blue-bg:#eef2fb; }
+    body { font-family:'Inter Tight',system-ui,sans-serif; font-size:16px; line-height:1.65; color:var(--ink); background:var(--bg); padding:2rem 1rem 4rem; }
+    .container { max-width:860px; margin:0 auto; }
+    .report-header { border-bottom:2px solid var(--ink); padding-bottom:1.25rem; margin-bottom:2rem; }
+    .report-header .eyebrow { font-family:'JetBrains Mono',monospace; font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); margin-bottom:0.4rem; }
+    h1 { font-family:'Fraunces',Georgia,serif; font-size:2.4rem; font-weight:700; line-height:1.15; color:var(--ink); }
+    .summary-bar { display:flex; flex-wrap:wrap; gap:1.5rem; margin-top:1rem; padding:0.85rem 1rem; background:var(--card); border:1px solid var(--rule); border-radius:4px; }
+    .summary-bar .stat { display:flex; flex-direction:column; }
+    .summary-bar .stat-value { font-family:'Fraunces',serif; font-size:1.75rem; font-weight:600; color:var(--ink); line-height:1; }
+    .summary-bar .stat-label { font-size:0.78rem; color:var(--muted); margin-top:0.2rem; }
+    .clear-box { border-left:4px solid var(--green); background:var(--green-bg); padding:1rem 1.25rem; border-radius:0 4px 4px 0; margin-bottom:2rem; }
+    .clear-box .clear-heading { font-family:'Fraunces',serif; font-size:1rem; font-weight:700; color:var(--green); margin-bottom:0.3rem; letter-spacing:0.04em; }
+    .clear-box p { font-size:0.9rem; color:var(--green); line-height:1.55; }
+    .lead { font-family:'Fraunces',Georgia,serif; font-size:1.15rem; line-height:1.7; color:var(--ink); margin-bottom:2.5rem; max-width:680px; }
+    .lead::first-letter { font-size:4rem; font-weight:700; float:left; line-height:0.82; margin-right:0.08em; margin-top:0.1em; color:var(--ink); font-family:'Fraunces',serif; }
+    .site-section { margin-bottom:2.5rem; background:var(--card); border:1px solid var(--rule); border-radius:6px; overflow:hidden; }
+    .site-header { display:flex; align-items:center; justify-content:space-between; padding:0.9rem 1.25rem; border-bottom:1px solid var(--rule); gap:0.75rem; }
+    .site-header h2 { font-family:'Fraunces',serif; font-size:1.2rem; font-weight:600; }
+    .badge { font-family:'JetBrains Mono',monospace; font-size:0.72rem; font-weight:500; padding:0.2rem 0.55rem; border-radius:20px; white-space:nowrap; flex-shrink:0; }
+    .badge-built { background:var(--green-bg); color:var(--green); border:1px solid #a8d8bc; }
+    .badge-none { background:#f0f0f0; color:#888; border:1px solid #d8d8d8; }
+    .site-body { padding:1rem 1.25rem; }
+    .site-meta { font-family:'JetBrains Mono',monospace; font-size:0.72rem; color:var(--muted); margin-bottom:1rem; padding-bottom:0.75rem; border-bottom:1px dashed var(--rule); line-height:1.6; }
+    .commit-block { margin-top:0.35rem; }
+    .commit-msg { font-style:italic; color:var(--muted); font-family:'Inter Tight',sans-serif; font-size:0.85rem; }
+    .pages-group { margin-bottom:1.25rem; }
+    .pages-group-label { font-size:0.75rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:var(--muted); margin-bottom:0.5rem; }
+    .note-inline { font-size:0.8rem; color:var(--muted); font-style:italic; margin-top:0.4rem; }
+    .page-list { list-style:none; display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:0.3rem; }
+    .page-list.compact { grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); }
+    .page-list li { font-size:0.88rem; }
+    .page-list a { font-family:'JetBrains Mono',monospace; font-size:0.78rem; color:var(--blue); text-decoration:none; word-break:break-all; }
+    .page-list a:hover { text-decoration:underline; }
+    .page-title { display:block; font-family:'Inter Tight',sans-serif; font-size:0.88rem; font-weight:500; color:var(--ink); }
+    .no-build { color:var(--muted); font-size:0.9rem; font-style:italic; padding:0.5rem 0; }
+    footer { margin-top:3rem; padding-top:1rem; border-top:1px solid var(--rule); font-size:0.78rem; color:var(--muted); font-family:'JetBrains Mono',monospace; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <p class="eyebrow">PetTransportGlobal Group &nbsp;/&nbsp; Daily Build Report</p>
+    <h1>14 June 2026</h1>
+    <div class="summary-bar">
+      <div class="stat"><span class="stat-value">4</span><span class="stat-label">sites built</span></div>
+      <div class="stat"><span class="stat-value">156</span><span class="stat-label">new pages today (all sites)</span></div>
+      <div class="stat"><span class="stat-value">26</span><span class="stat-label">Pet Transport (25 routes + 1 blog)</span></div>
+      <div class="stat"><span class="stat-value">0</span><span class="stat-label">Mortgage Compare (no build)</span></div>
+      <div class="stat"><span class="stat-value">30</span><span class="stat-label">Bus Hire (BE complete + Brussels Track C + PL + CZ)</span></div>
+      <div class="stat"><span class="stat-value">50</span><span class="stat-label">Funeral Repatriation (R49-R50)</span></div>
+      <div class="stat"><span class="stat-value">50</span><span class="stat-label">Close Protection (batch 12, 5 services x 10 cities)</span></div>
+      <div class="stat"><span class="stat-value">0</span><span class="stat-label">flags requiring attention</span></div>
+    </div>
+  </header>
+  <div class="clear-box">
+    <p class="clear-heading">NO FLAGS TODAY</p>
+    <p>No HALTED, FAILED, PAUSED, RED, DEPLOY RISK, DEPLOY RETRY NEEDED, or SKIPPED events in any commit message across all five sites. All four active builds completed cleanly. QA gates passed on all repos.</p>
+  </div>
+  <p class="lead">Four sites built today, shipping 156 new pages across the group. Pet Transport Global completed Chunk 53 with 25 Caucasus and Central Asia routes (Belgium, Portugal, Sweden, Norway paired with Armenia, Georgia, Azerbaijan and Kazakhstan in both directions) plus Blog Day 20 on what a pet transport service actually includes. Bus Rental Global closed out Belgium city pages entirely and opened both Poland and Czech Republic, adding 30 pages across four blocks. Funeral Repatriation shipped 50 route pages in the R49 to R50 batch, bringing the live total to 1,323 routes. Close Protection Hire extended five services across ten new P4 cities in batch 12, reaching 118 cities per service. Mortgage Compare had no build today.</p>
+  <section class="site-section">
+    <div class="site-header"><h2>Pet Transport Global</h2><span class="badge badge-built">25 new routes + 1 blog article</span></div>
+    <div class="site-body">
+      <div class="site-meta">domain: pettransportglobal.com &nbsp;|&nbsp; branch: main
+        <div class="commit-block"><span class="commit-msg">7aa752a &nbsp;|&nbsp; 06:13 UTC &nbsp;|&nbsp; build: blog day 20 pet-transport-service-explained</span></div>
+        <div class="commit-block"><span class="commit-msg">1915f77 &nbsp;|&nbsp; 06:36 UTC &nbsp;|&nbsp; build: chunk 53 (Template C, Tier B) + blog day 20 -- 25 routes + 1 blog. Routes 5,756 to 5,781. Blog 426 to 427.</span></div>
+      </div>
+      <div class="pages-group">
+        <p class="pages-group-label">New: Blog Day 20 (1 article)</p>
+        <ul class="page-list"><li><span class="page-title">What a Pet Transport Service Actually Includes (Marcus Webb)</span><a href="https://www.pettransportglobal.com/blog/pet-transport-service-explained/">https://www.pettransportglobal.com/blog/pet-transport-service-explained/</a></li></ul>
+      </div>
+      <div class="pages-group">
+        <p class="pages-group-label">New: Chunk 53 Routes (25 pages, Template C, Tier B)</p>
+        <p class="note-inline">EU/EEA to Caucasus and Central Asia (no titre test) + return legs (FAVN titre + 90-day wait)</p>
+        <ul class="page-list compact">
+          <li><span class="page-title">Armenia to Belgium</span><a href="https://www.pettransportglobal.com/pet-transport/armenia-to-belgium/">https://www.pettransportglobal.com/pet-transport/armenia-to-belgium/</a></li>
+          <li><span class="page-title">Armenia to Portugal</span><a href="https://www.pettransportglobal.com/pet-transport/armenia-to-portugal/">https://www.pettransportglobal.com/pet-transport/armenia-to-portugal/</a></li>
+          <li><span class="page-title">Armenia to Sweden</span><a href="https://www.pettransportglobal.com/pet-transport/armenia-to-sweden/">https://www.pettransportglobal.com/pet-transport/armenia-to-sweden/</a></li>
+          <li><span class="page-title">Azerbaijan to Belgium</span><a href="https://www.pettransportglobal.com/pet-transport/azerbaijan-to-belgium/">https://www.pettransportglobal.com/pet-transport/azerbaijan-to-belgium/</a></li>
+          <li><span class="page-title">Azerbaijan to Portugal</span><a href="https://www.pettransportglobal.com/pet-transport/azerbaijan-to-portugal/">https://www.pettransportglobal.com/pet-transport/azerbaijan-to-portugal/</a></li>
+          <li><span class="page-title">Azerbaijan to Sweden</span><a href="https://www.pettransportglobal.com/pet-transport/azerbaijan-to-sweden/">https://www.pettransportglobal.com/pet-transport/azerbaijan-to-sweden/</a></li>
+          <li><span class="page-title">Belgium to Armenia</span><a href="https://www.pettransportglobal.com/pet-transport/belgium-to-armenia/">https://www.pettransportglobal.com/pet-transport/belgium-to-armenia/</a></li>
+          <li><span class="page-title">Belgium to Azerbaijan</span><a href="https://www.pettransportglobal.com/pet-transport/belgium-to-azerbaijan/">https://www.pettransportglobal.com/pet-transport/belgium-to-azerbaijan/</a></li>
+          <li><span class="page-title">Belgium to Georgia</span><a href="https://www.pettransportglobal.com/pet-transport/belgium-to-georgia/">https://www.pettransportglobal.com/pet-transport/belgium-to-georgia/</a></li>
+          <li><span class="page-title">Belgium to Kazakhstan</span><a href="https://www.pettransportglobal.com/pet-transport/belgium-to-kazakhstan/">https://www.pettransportglobal.com/pet-transport/belgium-to-kazakhstan/</a></li>
+          <li><span class="page-title">Georgia to Belgium</span><a href="https://www.pettransportglobal.com/pet-transport/georgia-to-belgium/">https://www.pettransportglobal.com/pet-transport/georgia-to-belgium/</a></li>
+          <li><span class="page-title">Georgia to Portugal</span><a href="https://www.pettransportglobal.com/pet-transport/georgia-to-portugal/">https://www.pettransportglobal.com/pet-transport/georgia-to-portugal/</a></li>
+          <li><span class="page-title">Georgia to Sweden</span><a href="https://www.pettransportglobal.com/pet-transport/georgia-to-sweden/">https://www.pettransportglobal.com/pet-transport/georgia-to-sweden/</a></li>
+          <li><span class="page-title">Kazakhstan to Belgium</span><a href="https://www.pettransportglobal.com/pet-transport/kazakhstan-to-belgium/">https://www.pettransportglobal.com/pet-transport/kazakhstan-to-belgium/</a></li>
+          <li><span class="page-title">Kazakhstan to Portugal</span><a href="https://www.pettransportglobal.com/pet-transport/kazakhstan-to-portugal/">https://www.pettransportglobal.com/pet-transport/kazakhstan-to-portugal/</a></li>
+          <li><span class="page-title">Kazakhstan to Sweden</span><a href="https://www.pettransportglobal.com/pet-transport/kazakhstan-to-sweden/">https://www.pettransportglobal.com/pet-transport/kazakhstan-to-sweden/</a></li>
+          <li><span class="page-title">Norway to Armenia</span><a href="https://www.pettransportglobal.com/pet-transport/norway-to-armenia/">https://www.pettransportglobal.com/pet-transport/norway-to-armenia/</a></li>
+          <li><span class="page-title">Portugal to Armenia</span><a href="https://www.pettransportglobal.com/pet-transport/portugal-to-armenia/">https://www.pettransportglobal.com/pet-transport/portugal-to-armenia/</a></li>
+          <li><span class="page-title">Portugal to Azerbaijan</span><a href="https://www.pettransportglobal.com/pet-transport/portugal-to-azerbaijan/">https://www.pettransportglobal.com/pet-transport/portugal-to-azerbaijan/</a></li>
+          <li><span class="page-title">Portugal to Georgia</span><a href="https://www.pettransportglobal.com/pet-transport/portugal-to-georgia/">https://www.pettransportglobal.com/pet-transport/portugal-to-georgia/</a></li>
+          <li><span class="page-title">Portugal to Kazakhstan</span><a href="https://www.pettransportglobal.com/pet-transport/portugal-to-kazakhstan/">https://www.pettransportglobal.com/pet-transport/portugal-to-kazakhstan/</a></li>
+          <li><span class="page-title">Sweden to Armenia</span><a href="https://www.pettransportglobal.com/pet-transport/sweden-to-armenia/">https://www.pettransportglobal.com/pet-transport/sweden-to-armenia/</a></li>
+          <li><span class="page-title">Sweden to Azerbaijan</span><a href="https://www.pettransportglobal.com/pet-transport/sweden-to-azerbaijan/">https://www.pettransportglobal.com/pet-transport/sweden-to-azerbaijan/</a></li>
+          <li><span class="page-title">Sweden to Georgia</span><a href="https://www.pettransportglobal.com/pet-transport/sweden-to-georgia/">https://www.pettransportglobal.com/pet-transport/sweden-to-georgia/</a></li>
+          <li><span class="page-title">Sweden to Kazakhstan</span><a href="https://www.pettransportglobal.com/pet-transport/sweden-to-kazakhstan/">https://www.pettransportglobal.com/pet-transport/sweden-to-kazakhstan/</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="site-section">
+    <div class="site-header"><h2>Mortgage Compare AE</h2><span class="badge badge-none">No build today</span></div>
+    <div class="site-body">
+      <div class="site-meta">domain: mortgagecompare.ae &nbsp;|&nbsp; branch: main</div>
+      <p class="no-build">No commits to main on 14 June 2026. No new pages.</p>
+    </div>
+  </section>
+  <section class="site-section">
+    <div class="site-header"><h2>Bus Rental Global</h2><span class="badge badge-built">30 new pages (BE complete, Brussels Track C, PL + CZ batch 1)</span></div>
+    <div class="site-body">
+      <div class="site-meta">domain: busrentalglobal.com &nbsp;|&nbsp; branch: main
+        <div class="commit-block"><span class="commit-msg">f7e20ca &nbsp;|&nbsp; 07:52 UTC &nbsp;|&nbsp; Phase 3: 4-block batch -- Belgium complete (31), Brussels Track C x7, Poland batch 1 (8), Czech batch 1 (8). Site total: ~788 pages.</span></div>
+      </div>
+      <div class="pages-group">
+        <p class="pages-group-label">Block 1: Belgium Batch 4 (7 pages) -- Belgium now 31/31 complete</p>
+        <ul class="page-list compact">
+          <li><span class="page-title">Bus Hire Mouscron</span><a href="https://busrentalglobal.com/countries/belgium/mouscron.html">https://busrentalglobal.com/countries/belgium/mouscron.html</a></li>
+          <li><span class="page-title">Bus Hire Turnhout</span><a href="https://busrentalglobal.com/countries/belgium/turnhout.html">https://busrentalglobal.com/countries/belgium/turnhout.html</a></li>
+          <li><span class="page-title">Bus Hire Geel</span><a href="https://busrentalglobal.com/countries/belgium/geel.html">https://busrentalglobal.com/countries/belgium/geel.html</a></li>
+          <li><span class="page-title">Bus Hire Lokeren</span><a href="https://busrentalglobal.com/countries/belgium/lokeren.html">https://busrentalglobal.com/countries/belgium/lokeren.html</a></li>
+          <li><span class="page-title">Bus Hire Beveren</span><a href="https://busrentalglobal.com/countries/belgium/beveren.html">https://busrentalglobal.com/countries/belgium/beveren.html</a></li>
+          <li><span class="page-title">Bus Hire Waregem</span><a href="https://busrentalglobal.com/countries/belgium/waregem.html">https://busrentalglobal.com/countries/belgium/waregem.html</a></li>
+          <li><span class="page-title">Bus Hire Soignies</span><a href="https://busrentalglobal.com/countries/belgium/soignies.html">https://busrentalglobal.com/countries/belgium/soignies.html</a></li>
+        </ul>
+      </div>
+      <div class="pages-group">
+        <p class="pages-group-label">Block 2: Brussels Track C use-case pages (7 pages)</p>
+        <ul class="page-list compact">
+          <li><span class="page-title">Wedding Bus Hire Brussels</span><a href="https://busrentalglobal.com/wedding-bus-hire/belgium/brussels.html">https://busrentalglobal.com/wedding-bus-hire/belgium/brussels.html</a></li>
+          <li><span class="page-title">Airport Transfer Coach Brussels</span><a href="https://busrentalglobal.com/airport-transfer-coach/belgium/brussels.html">https://busrentalglobal.com/airport-transfer-coach/belgium/brussels.html</a></li>
+          <li><span class="page-title">Corporate Event Transport Brussels</span><a href="https://busrentalglobal.com/corporate-event-transport/belgium/brussels.html">https://busrentalglobal.com/corporate-event-transport/belgium/brussels.html</a></li>
+          <li><span class="page-title">School Trip Coach Hire Brussels</span><a href="https://busrentalglobal.com/school-trip-coach-hire/belgium/brussels.html">https://busrentalglobal.com/school-trip-coach-hire/belgium/brussels.html</a></li>
+          <li><span class="page-title">Stag and Hen Transport Brussels</span><a href="https://busrentalglobal.com/stag-and-hen-transport/belgium/brussels.html">https://busrentalglobal.com/stag-and-hen-transport/belgium/brussels.html</a></li>
+          <li><span class="page-title">Festival and Concert Coach Brussels</span><a href="https://busrentalglobal.com/festival-and-concert-coach/belgium/brussels.html">https://busrentalglobal.com/festival-and-concert-coach/belgium/brussels.html</a></li>
+          <li><span class="page-title">Sports Team Coach Hire Brussels</span><a href="https://busrentalglobal.com/sports-team-coach-hire/belgium/brussels.html">https://busrentalglobal.com/sports-team-coach-hire/belgium/brussels.html</a></li>
+        </ul>
+      </div>
+      <div class="pages-group">
+        <p class="pages-group-label">Block 3: Poland Batch 1 (8 pages)</p>
+        <ul class="page-list compact">
+          <li><span class="page-title">Bus Hire Warsaw</span><a href="https://busrentalglobal.com/countries/poland/warsaw.html">https://busrentalglobal.com/countries/poland/warsaw.html</a></li>
+          <li><span class="page-title">Bus Hire Krakow</span><a href="https://busrentalglobal.com/countries/poland/krakow.html">https://busrentalglobal.com/countries/poland/krakow.html</a></li>
+          <li><span class="page-title">Bus Hire Gdansk</span><a href="https://busrentalglobal.com/countries/poland/gdansk.html">https://busrentalglobal.com/countries/poland/gdansk.html</a></li>
+          <li><span class="page-title">Bus Hire Wroclaw</span><a href="https://busrentalglobal.com/countries/poland/wroclaw.html">https://busrentalglobal.com/countries/poland/wroclaw.html</a></li>
+          <li><span class="page-title">Bus Hire Poznan</span><a href="https://busrentalglobal.com/countries/poland/poznan.html">https://busrentalglobal.com/countries/poland/poznan.html</a></li>
+          <li><span class="page-title">Bus Hire Lodz</span><a href="https://busrentalglobal.com/countries/poland/lodz.html">https://busrentalglobal.com/countries/poland/lodz.html</a></li>
+          <li><span class="page-title">Bus Hire Zakopane</span><a href="https://busrentalglobal.com/countries/poland/zakopane.html">https://busrentalglobal.com/countries/poland/zakopane.html</a></li>
+          <li><span class="page-title">Bus Hire Torun</span><a href="https://busrentalglobal.com/countries/poland/torun.html">https://busrentalglobal.com/countries/poland/torun.html</a></li>
+        </ul>
+      </div>
+      <div class="pages-group">
+        <p class="pages-group-label">Block 4: Czech Republic Batch 1 (8 pages)</p>
+        <ul class="page-list compact">
+          <li><span class="page-title">Bus Hire Prague</span><a href="https://busrentalglobal.com/countries/czech-republic/prague.html">https://busrentalglobal.com/countries/czech-republic/prague.html</a></li>
+          <li><span class="page-title">Bus Hire Brno</span><a href="https://busrentalglobal.com/countries/czech-republic/brno.html">https://busrentalglobal.com/countries/czech-republic/brno.html</a></li>
+          <li><span class="page-title">Bus Hire Cesky Krumlov</span><a href="https://busrentalglobal.com/countries/czech-republic/cesky-krumlov.html">https://busrentalglobal.com/countries/czech-republic/cesky-krumlov.html</a></li>
+          <li><span class="page-title">Bus Hire Karlovy Vary</span><a href="https://busrentalglobal.com/countries/czech-republic/karlovy-vary.html">https://busrentalglobal.com/countries/czech-republic/karlovy-vary.html</a></li>
+          <li><span class="page-title">Bus Hire Olomouc</span><a href="https://busrentalglobal.com/countries/czech-republic/olomouc.html">https://busrentalglobal.com/countries/czech-republic/olomouc.html</a></li>
+          <li><span class="page-title">Bus Hire Kutna Hora</span><a href="https://busrentalglobal.com/countries/czech-republic/kutna-hora.html">https://busrentalglobal.com/countries/czech-republic/kutna-hora.html</a></li>
+          <li><span class="page-title">Bus Hire Ostrava</span><a href="https://busrentalglobal.com/countries/czech-republic/ostrava.html">https://busrentalglobal.com/countries/czech-republic/ostrava.html</a></li>
+          <li><span class="page-title">Bus Hire Plzen</span><a href="https://busrentalglobal.com/countries/czech-republic/plzen.html">https://busrentalglobal.com/countries/czech-republic/plzen.html</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="site-section">
+    <div class="site-header"><h2>Funeral Repatriation</h2><span class="badge badge-built">50 new route pages (R49-R50, Tier B waves)</span></div>
+    <div class="site-body">
+      <div class="site-meta">domain: repatriationfuneral.com &nbsp;|&nbsp; branch: master
+        <div class="commit-block"><span class="commit-msg">17477b6 &nbsp;|&nbsp; 08:29 UTC &nbsp;|&nbsp; build: R49-R50 batch (50 pages, Tier B waves, variants D-C). Routes live: 1,323 of 38,612. Next: R51.</span></div>
+      </div>
+      <div class="pages-group">
+        <p class="pages-group-label">New: R49-R50 Batch (50 route pages, Tier B)</p>
+        <p class="note-inline">10 origin waves: Turkey, Malaysia, Oman, Greece, Austria, Denmark, Finland, Italy, Spain, Netherlands</p>
+        <ul class="page-list compact">
+          <li><span class="page-title">Uzbekistan to Turkey</span><a href="https://www.repatriationfuneral.com/routes/uzbekistan-to-turkey/">https://www.repatriationfuneral.com/routes/uzbekistan-to-turkey/</a></li>
+          <li><span class="page-title">India to Turkey</span><a href="https://www.repatriationfuneral.com/routes/india-to-turkey/">https://www.repatriationfuneral.com/routes/india-to-turkey/</a></li>
+          <li><span class="page-title">Indonesia to Turkey</span><a href="https://www.repatriationfuneral.com/routes/indonesia-to-turkey/">https://www.repatriationfuneral.com/routes/indonesia-to-turkey/</a></li>
+          <li><span class="page-title">Vietnam to Turkey</span><a href="https://www.repatriationfuneral.com/routes/vietnam-to-turkey/">https://www.repatriationfuneral.com/routes/vietnam-to-turkey/</a></li>
+          <li><span class="page-title">Philippines to Turkey</span><a href="https://www.repatriationfuneral.com/routes/philippines-to-turkey/">https://www.repatriationfuneral.com/routes/philippines-to-turkey/</a></li>
+          <li><span class="page-title">Australia to Malaysia</span><a href="https://www.repatriationfuneral.com/routes/australia-to-malaysia/">https://www.repatriationfuneral.com/routes/australia-to-malaysia/</a></li>
+          <li><span class="page-title">New Zealand to Malaysia</span><a href="https://www.repatriationfuneral.com/routes/new-zealand-to-malaysia/">https://www.repatriationfuneral.com/routes/new-zealand-to-malaysia/</a></li>
+          <li><span class="page-title">United States to Malaysia</span><a href="https://www.repatriationfuneral.com/routes/united-states-to-malaysia/">https://www.repatriationfuneral.com/routes/united-states-to-malaysia/</a></li>
+          <li><span class="page-title">Singapore to Malaysia</span><a href="https://www.repatriationfuneral.com/routes/singapore-to-malaysia/">https://www.repatriationfuneral.com/routes/singapore-to-malaysia/</a></li>
+          <li><span class="page-title">Japan to Malaysia</span><a href="https://www.repatriationfuneral.com/routes/japan-to-malaysia/">https://www.repatriationfuneral.com/routes/japan-to-malaysia/</a></li>
+          <li><span class="page-title">United Arab Emirates to Oman</span><a href="https://www.repatriationfuneral.com/routes/united-arab-emirates-to-oman/">https://www.repatriationfuneral.com/routes/united-arab-emirates-to-oman/</a></li>
+          <li><span class="page-title">China to Oman</span><a href="https://www.repatriationfuneral.com/routes/china-to-oman/">https://www.repatriationfuneral.com/routes/china-to-oman/</a></li>
+          <li><span class="page-title">Nigeria to Oman</span><a href="https://www.repatriationfuneral.com/routes/nigeria-to-oman/">https://www.repatriationfuneral.com/routes/nigeria-to-oman/</a></li>
+          <li><span class="page-title">Vietnam to Oman</span><a href="https://www.repatriationfuneral.com/routes/vietnam-to-oman/">https://www.repatriationfuneral.com/routes/vietnam-to-oman/</a></li>
+          <li><span class="page-title">Malaysia to Oman</span><a href="https://www.repatriationfuneral.com/routes/malaysia-to-oman/">https://www.repatriationfuneral.com/routes/malaysia-to-oman/</a></li>
+          <li><span class="page-title">Iraq to Greece</span><a href="https://www.repatriationfuneral.com/routes/iraq-to-greece/">https://www.repatriationfuneral.com/routes/iraq-to-greece/</a></li>
+          <li><span class="page-title">Jordan to Greece</span><a href="https://www.repatriationfuneral.com/routes/jordan-to-greece/">https://www.repatriationfuneral.com/routes/jordan-to-greece/</a></li>
+          <li><span class="page-title">Armenia to Greece</span><a href="https://www.repatriationfuneral.com/routes/armenia-to-greece/">https://www.repatriationfuneral.com/routes/armenia-to-greece/</a></li>
+          <li><span class="page-title">Azerbaijan to Greece</span><a href="https://www.repatriationfuneral.com/routes/azerbaijan-to-greece/">https://www.repatriationfuneral.com/routes/azerbaijan-to-greece/</a></li>
+          <li><span class="page-title">Cyprus to Greece</span><a href="https://www.repatriationfuneral.com/routes/cyprus-to-greece/">https://www.repatriationfuneral.com/routes/cyprus-to-greece/</a></li>
+          <li><span class="page-title">Iraq to Austria</span><a href="https://www.repatriationfuneral.com/routes/iraq-to-austria/">https://www.repatriationfuneral.com/routes/iraq-to-austria/</a></li>
+          <li><span class="page-title">Lebanon to Austria</span><a href="https://www.repatriationfuneral.com/routes/lebanon-to-austria/">https://www.repatriationfuneral.com/routes/lebanon-to-austria/</a></li>
+          <li><span class="page-title">Bangladesh to Austria</span><a href="https://www.repatriationfuneral.com/routes/bangladesh-to-austria/">https://www.repatriationfuneral.com/routes/bangladesh-to-austria/</a></li>
+          <li><span class="page-title">Georgia to Austria</span><a href="https://www.repatriationfuneral.com/routes/georgia-to-austria/">https://www.repatriationfuneral.com/routes/georgia-to-austria/</a></li>
+          <li><span class="page-title">Vietnam to Austria</span><a href="https://www.repatriationfuneral.com/routes/vietnam-to-austria/">https://www.repatriationfuneral.com/routes/vietnam-to-austria/</a></li>
+          <li><span class="page-title">Ukraine to Denmark</span><a href="https://www.repatriationfuneral.com/routes/ukraine-to-denmark/">https://www.repatriationfuneral.com/routes/ukraine-to-denmark/</a></li>
+          <li><span class="page-title">Egypt to Denmark</span><a href="https://www.repatriationfuneral.com/routes/egypt-to-denmark/">https://www.repatriationfuneral.com/routes/egypt-to-denmark/</a></li>
+          <li><span class="page-title">Philippines to Denmark</span><a href="https://www.repatriationfuneral.com/routes/philippines-to-denmark/">https://www.repatriationfuneral.com/routes/philippines-to-denmark/</a></li>
+          <li><span class="page-title">Georgia to Denmark</span><a href="https://www.repatriationfuneral.com/routes/georgia-to-denmark/">https://www.repatriationfuneral.com/routes/georgia-to-denmark/</a></li>
+          <li><span class="page-title">Indonesia to Denmark</span><a href="https://www.repatriationfuneral.com/routes/indonesia-to-denmark/">https://www.repatriationfuneral.com/routes/indonesia-to-denmark/</a></li>
+          <li><span class="page-title">Egypt to Finland</span><a href="https://www.repatriationfuneral.com/routes/egypt-to-finland/">https://www.repatriationfuneral.com/routes/egypt-to-finland/</a></li>
+          <li><span class="page-title">Philippines to Finland</span><a href="https://www.repatriationfuneral.com/routes/philippines-to-finland/">https://www.repatriationfuneral.com/routes/philippines-to-finland/</a></li>
+          <li><span class="page-title">Armenia to Finland</span><a href="https://www.repatriationfuneral.com/routes/armenia-to-finland/">https://www.repatriationfuneral.com/routes/armenia-to-finland/</a></li>
+          <li><span class="page-title">Georgia to Finland</span><a href="https://www.repatriationfuneral.com/routes/georgia-to-finland/">https://www.repatriationfuneral.com/routes/georgia-to-finland/</a></li>
+          <li><span class="page-title">Azerbaijan to Finland</span><a href="https://www.repatriationfuneral.com/routes/azerbaijan-to-finland/">https://www.repatriationfuneral.com/routes/azerbaijan-to-finland/</a></li>
+          <li><span class="page-title">Argentina to Italy</span><a href="https://www.repatriationfuneral.com/routes/argentina-to-italy/">https://www.repatriationfuneral.com/routes/argentina-to-italy/</a></li>
+          <li><span class="page-title">Brazil to Italy</span><a href="https://www.repatriationfuneral.com/routes/brazil-to-italy/">https://www.repatriationfuneral.com/routes/brazil-to-italy/</a></li>
+          <li><span class="page-title">Indonesia to Italy</span><a href="https://www.repatriationfuneral.com/routes/indonesia-to-italy/">https://www.repatriationfuneral.com/routes/indonesia-to-italy/</a></li>
+          <li><span class="page-title">Colombia to Italy</span><a href="https://www.repatriationfuneral.com/routes/colombia-to-italy/">https://www.repatriationfuneral.com/routes/colombia-to-italy/</a></li>
+          <li><span class="page-title">Sri Lanka to Italy</span><a href="https://www.repatriationfuneral.com/routes/sri-lanka-to-italy/">https://www.repatriationfuneral.com/routes/sri-lanka-to-italy/</a></li>
+          <li><span class="page-title">Indonesia to Spain</span><a href="https://www.repatriationfuneral.com/routes/indonesia-to-spain/">https://www.repatriationfuneral.com/routes/indonesia-to-spain/</a></li>
+          <li><span class="page-title">Vietnam to Spain</span><a href="https://www.repatriationfuneral.com/routes/vietnam-to-spain/">https://www.repatriationfuneral.com/routes/vietnam-to-spain/</a></li>
+          <li><span class="page-title">France to Spain</span><a href="https://www.repatriationfuneral.com/routes/france-to-spain/">https://www.repatriationfuneral.com/routes/france-to-spain/</a></li>
+          <li><span class="page-title">Portugal to Spain</span><a href="https://www.repatriationfuneral.com/routes/portugal-to-spain/">https://www.repatriationfuneral.com/routes/portugal-to-spain/</a></li>
+          <li><span class="page-title">Italy to Spain</span><a href="https://www.repatriationfuneral.com/routes/italy-to-spain/">https://www.repatriationfuneral.com/routes/italy-to-spain/</a></li>
+          <li><span class="page-title">France to Netherlands</span><a href="https://www.repatriationfuneral.com/routes/france-to-netherlands/">https://www.repatriationfuneral.com/routes/france-to-netherlands/</a></li>
+          <li><span class="page-title">Germany to Netherlands</span><a href="https://www.repatriationfuneral.com/routes/germany-to-netherlands/">https://www.repatriationfuneral.com/routes/germany-to-netherlands/</a></li>
+          <li><span class="page-title">Spain to Netherlands</span><a href="https://www.repatriationfuneral.com/routes/spain-to-netherlands/">https://www.repatriationfuneral.com/routes/spain-to-netherlands/</a></li>
+          <li><span class="page-title">Portugal to Netherlands</span><a href="https://www.repatriationfuneral.com/routes/portugal-to-netherlands/">https://www.repatriationfuneral.com/routes/portugal-to-netherlands/</a></li>
+          <li><span class="page-title">Ethiopia to Netherlands</span><a href="https://www.repatriationfuneral.com/routes/ethiopia-to-netherlands/">https://www.repatriationfuneral.com/routes/ethiopia-to-netherlands/</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="site-section">
+    <div class="site-header"><h2>Close Protection Hire</h2><span class="badge badge-built">50 new pages (batch 12: 5 services x 10 P4 cities)</span></div>
+    <div class="site-body">
+      <div class="site-meta">domain: closeprotectionhire.com &nbsp;|&nbsp; branch: master
+        <div class="commit-block"><span class="commit-msg">64de72c &nbsp;|&nbsp; 08:47 UTC &nbsp;|&nbsp; build: close-protection batch12 - SD/EP/RS/ES/CPO x 10 P4 cities (50 pages). All services now at 118 cities. Total pages: 1,135.</span></div>
+      </div>
+      <div class="pages-group">
+        <p class="pages-group-label">Security Drivers (10 new city pages)</p>
+        <ul class="page-list compact">
+          <li><span class="page-title">Security Drivers Chittagong</span><a href="https://closeprotectionhire.com/security-drivers/chittagong/">https://closeprotectionhire.com/security-drivers/chittagong/</a></li>
+          <li><span class="page-title">Security Drivers Vientiane</span><a href="https://closeprotectionhire.com/security-drivers/vientiane/">https://closeprotectionhire.com/security-drivers/vientiane/</a></li>
+          <li><span class="page-title">Security Drivers Ulaanbaatar</span><a href="https://closeprotectionhire.com/security-drivers/ulaanbaatar/">https://closeprotectionhire.com/security-drivers/ulaanbaatar/</a></li>
+          <li><span class="page-title">Security Drivers Bishkek</span><a href="https://closeprotectionhire.com/security-drivers/bishkek/">https://closeprotectionhire.com/security-drivers/bishkek/</a></li>
+          <li><span class="page-title">Security Drivers Dushanbe</span><a href="https://closeprotectionhire.com/security-drivers/dushanbe/">https://closeprotectionhire.com/security-drivers/dushanbe/</a></li>
+          <li><span class="page-title">Security Drivers Ashgabat</span><a href="https://closeprotectionhire.com/security-drivers/ashgabat/">https://closeprotectionhire.com/security-drivers/ashgabat/</a></li>
+          <li><span class="page-title">Security Drivers La Paz</span><a href="https://closeprotectionhire.com/security-drivers/la-paz/">https://closeprotectionhire.com/security-drivers/la-paz/</a></li>
+          <li><span class="page-title">Security Drivers Asuncion</span><a href="https://closeprotectionhire.com/security-drivers/asuncion/">https://closeprotectionhire.com/security-drivers/asuncion/</a></li>
+          <li><span class="page-title">Security Drivers Montevideo</span><a href="https://closeprotectionhire.com/security-drivers/montevideo/">https://closeprotectionhire.com/security-drivers/montevideo/</a></li>
+          <li><span class="page-title">Security Drivers Guayaquil</span><a href="https://closeprotectionhire.com/security-drivers/guayaquil/">https://closeprotectionhire.com/security-drivers/guayaquil/</a></li>
+        </ul>
+      </div>
+      <div class="pages-group">
+        <p class="pages-group-label">Executive Protection (10 new city pages)</p>
+        <ul class="page-list compact">
+          <li><span class="page-title">Executive Protection Chittagong</span><a href="https://closeprotectionhire.com/executive-protection/chittagong/">https://closeprotectionhire.com/executive-protection/chittagong/</a></li>
+          <li><span class="page-title">Executive Protection Vientiane</span><a href="https://closeprotectionhire.com/executive-protection/vientiane/">https://closeprotectionhire.com/executive-protection/vientiane/</a></li>
+          <li><span class="page-title">Executive Protection Ulaanbaatar</span><a href="https://closeprotectionhire.com/executive-protection/ulaanbaatar/">https://closeprotectionhire.com/executive-protection/ulaanbaatar/</a></li>
+          <li><span class="page-title">Executive Protection Bishkek</span><a href="https://closeprotectionhire.com/executive-protection/bishkek/">https://closeprotectionhire.com/executive-protection/bishkek/</a></li>
+          <li><span class="page-title">Executive Protection Dushanbe</span><a href="https://closeprotectionhire.com/executive-protection/dushanbe/">https://closeprotectionhire.com/executive-protection/dushanbe/</a></li>
+          <li><span class="page-title">Executive Protection Ashgabat</span><a href="https://closeprotectionhire.com/executive-protection/ashgabat/">https://closeprotectionhire.com/executive-protection/ashgabat/</a></li>
+          <li><span class="page-title">Executive Protection La Paz</span><a href="https://closeprotectionhire.com/executive-protection/la-paz/">https://closeprotectionhire.com/executive-protection/la-paz/</a></li>
+          <li><span class="page-title">Executive Protection Asuncion</span><a href="https://closeprotectionhire.com/executive-protection/asuncion/">https://closeprotectionhire.com/executive-protection/asuncion/</a></li>
+          <li><span class="page-title">Executive Protection Montevideo</span><a href="https://closeprotectionhire.com/executive-protection/montevideo/">https://closeprotectionhire.com/executive-protection/montevideo/</a></li>
+          <li><span class="page-title">Executive Protection Guayaquil</span><a href="https://closeprotectionhire.com/executive-protection/guayaquil/">https://closeprotectionhire.com/executive-protection/guayaquil/</a></li>
+        </ul>
+      </div>
+      <div class="pages-group">
+        <p class="pages-group-label">Residential Security (10 new city pages)</p>
+        <ul class="page-list compact">
+          <li><span class="page-title">Residential Security Chittagong</span><a href="https://closeprotectionhire.com/residential-security/chittagong/">https://closeprotectionhire.com/residential-security/chittagong/</a></li>
+          <li><span class="page-title">Residential Security Vientiane</span><a href="https://closeprotectionhire.com/residential-security/vientiane/">https://closeprotectionhire.com/residential-security/vientiane/</a></li>
+          <li><span class="page-title">Residential Security Ulaanbaatar</span><a href="https://closeprotectionhire.com/residential-security/ulaanbaatar/">https://closeprotectionhire.com/residential-security/ulaanbaatar/</a></li>
+          <li><span class="page-title">Residential Security Bishkek</span><a href="https://closeprotectionhire.com/residential-security/bishkek/">https://closeprotectionhire.com/residential-security/bishkek/</a></li>
+          <li><span class="page-title">Residential Security Dushanbe</span><a href="https://closeprotectionhire.com/residential-security/dushanbe/">https://closeprotectionhire.com/residential-security/dushanbe/</a></li>
+          <li><span class="page-title">Residential Security Ashgabat</span><a href="https://closeprotectionhire.com/residential-security/ashgabat/">https://closeprotectionhire.com/residential-security/ashgabat/</a></li>
+          <li><span class="page-title">Residential Security La Paz</span><a href="https://closeprotectionhire.com/residential-security/la-paz/">https://closeprotectionhire.com/residential-security/la-paz/</a></li>
+          <li><span class="page-title">Residential Security Asuncion</span><a href="https://closeprotectionhire.com/residential-security/asuncion/">https://closeprotectionhire.com/residential-security/asuncion/</a></li>
+          <li><span class="page-title">Residential Security Montevideo</span><a href="https://closeprotectionhire.com/residential-security/montevideo/">https://closeprotectionhire.com/residential-security/montevideo/</a></li>
+          <li><span class="page-title">Residential Security Guayaquil</span><a href="https://closeprotectionhire.com/residential-security/guayaquil/">https://closeprotectionhire.com/residential-security/guayaquil/</a></li>
+        </ul>
+      </div>
+      <div class="pages-group">
+        <p class="pages-group-label">Event Security (10 new city pages)</p>
+        <ul class="page-list compact">
+          <li><span class="page-title">Event Security Chittagong</span><a href="https://closeprotectionhire.com/event-security/chittagong/">https://closeprotectionhire.com/event-security/chittagong/</a></li>
+          <li><span class="page-title">Event Security Vientiane</span><a href="https://closeprotectionhire.com/event-security/vientiane/">https://closeprotectionhire.com/event-security/vientiane/</a></li>
+          <li><span class="page-title">Event Security Ulaanbaatar</span><a href="https://closeprotectionhire.com/event-security/ulaanbaatar/">https://closeprotectionhire.com/event-security/ulaanbaatar/</a></li>
+          <li><span class="page-title">Event Security Bishkek</span><a href="https://closeprotectionhire.com/event-security/bishkek/">https://closeprotectionhire.com/event-security/bishkek/</a></li>
+          <li><span class="page-title">Event Security Dushanbe</span><a href="https://closeprotectionhire.com/event-security/dushanbe/">https://closeprotectionhire.com/event-security/dushanbe/</a></li>
+          <li><span class="page-title">Event Security Ashgabat</span><a href="https://closeprotectionhire.com/event-security/ashgabat/">https://closeprotectionhire.com/event-security/ashgabat/</a></li>
+          <li><span class="page-title">Event Security La Paz</span><a href="https://closeprotectionhire.com/event-security/la-paz/">https://closeprotectionhire.com/event-security/la-paz/</a></li>
+          <li><span class="page-title">Event Security Asuncion</span><a href="https://closeprotectionhire.com/event-security/asuncion/">https://closeprotectionhire.com/event-security/asuncion/</a></li>
+          <li><span class="page-title">Event Security Montevideo</span><a href="https://closeprotectionhire.com/event-security/montevideo/">https://closeprotectionhire.com/event-security/montevideo/</a></li>
+          <li><span class="page-title">Event Security Guayaquil</span><a href="https://closeprotectionhire.com/event-security/guayaquil/">https://closeprotectionhire.com/event-security/guayaquil/</a></li>
+        </ul>
+      </div>
+      <div class="pages-group">
+        <p class="pages-group-label">Close Protection Officers (10 new city pages)</p>
+        <ul class="page-list compact">
+          <li><span class="page-title">Close Protection Officers Chittagong</span><a href="https://closeprotectionhire.com/close-protection-officers/chittagong/">https://closeprotectionhire.com/close-protection-officers/chittagong/</a></li>
+          <li><span class="page-title">Close Protection Officers Vientiane</span><a href="https://closeprotectionhire.com/close-protection-officers/vientiane/">https://closeprotectionhire.com/close-protection-officers/vientiane/</a></li>
+          <li><span class="page-title">Close Protection Officers Ulaanbaatar</span><a href="https://closeprotectionhire.com/close-protection-officers/ulaanbaatar/">https://closeprotectionhire.com/close-protection-officers/ulaanbaatar/</a></li>
+          <li><span class="page-title">Close Protection Officers Bishkek</span><a href="https://closeprotectionhire.com/close-protection-officers/bishkek/">https://closeprotectionhire.com/close-protection-officers/bishkek/</a></li>
+          <li><span class="page-title">Close Protection Officers Dushanbe</span><a href="https://closeprotectionhire.com/close-protection-officers/dushanbe/">https://closeprotectionhire.com/close-protection-officers/dushanbe/</a></li>
+          <li><span class="page-title">Close Protection Officers Ashgabat</span><a href="https://closeprotectionhire.com/close-protection-officers/ashgabat/">https://closeprotectionhire.com/close-protection-officers/ashgabat/</a></li>
+          <li><span class="page-title">Close Protection Officers La Paz</span><a href="https://closeprotectionhire.com/close-protection-officers/la-paz/">https://closeprotectionhire.com/close-protection-officers/la-paz/</a></li>
+          <li><span class="page-title">Close Protection Officers Asuncion</span><a href="https://closeprotectionhire.com/close-protection-officers/asuncion/">https://closeprotectionhire.com/close-protection-officers/asuncion/</a></li>
+          <li><span class="page-title">Close Protection Officers Montevideo</span><a href="https://closeprotectionhire.com/close-protection-officers/montevideo/">https://closeprotectionhire.com/close-protection-officers/montevideo/</a></li>
+          <li><span class="page-title">Close Protection Officers Guayaquil</span><a href="https://closeprotectionhire.com/close-protection-officers/guayaquil/">https://closeprotectionhire.com/close-protection-officers/guayaquil/</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>Generated: 2026-06-14 20:00 UTC &nbsp;|&nbsp; reporter v1 &nbsp;|&nbsp; ngindubai group</footer>
+</div>
+</body>
+</html>
