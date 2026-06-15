@@ -1,140 +1,137 @@
 ---
-template_variant: "A"
-title: "Shipping Dogs & Cats from Japan to Norway | PetTransportGlobal"
-description: "Complete guide to pet transport from Japan to Norway. Import requirements, quarantine rules, airline options, and step-by-step timeline."
+title: "Pet Transport Japan to Norway: AQS Certificate, Tapeworm Rule, Mattilsynet 2026"
+description: "Moving a pet from Japan to Norway in 2026. Japan is EU-listed: no titre test needed. Dogs must receive tapeworm treatment before arrival. AQS process, Oslo cargo options."
+date: "2026-06-15"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "D"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "japan-to-norway"
 origin_name: "Japan"
 destination_name: "Norway"
+
 route_data:
   origin:
     code: "JP"
     country: "Japan"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      health_certificate: "EU-format health certificate issued by an AQS-registered vet and endorsed by Japan's Animal Quarantine Service (AQS) at a designated Animal Quarantine Station. Valid for 10 days from endorsement date."
+      export_permit: "No formal export permit required for companion animals. AQS-endorsed certificate is the departure document."
+
   destination:
     code: "NO"
     country: "Norway"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Before or on same day as first rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Same rules as EU. 21-day wait after first primary vaccination."
-      titre_test: "Required for: Pets from non-listed countries. Not required for: Pets from EU member states and listed countries (UK, etc.). Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No routine quarantine for pets arriving with correct documents."
-      import_permit: "No import permit needed for compliant pets from listed countries."
-      health_certificate: "Required. EU Pet Passport or AHC. Issued by: Official veterinarian. Valid for 10 days from issue. EU pet passport or AHC accepted."
-    breed_restrictions:
-      - "Pit Bull Terrier"
+      microchip: "ISO 11784/11785 microchip required. Must be implanted before or on the same day as the first rabies vaccination."
+      rabies_vaccination: "Current rabies vaccination required. 21-day wait after a first-time vaccination."
+      titre_test: "Not required. Japan is on the EU approved third-country list under EU Implementing Regulation 2026/636, which Norway applies as an EEA member. Source: mattilsynet.no, 2026."
+      tapeworm_treatment: "Required for dogs (not cats). All dogs entering Norway must receive an Echinococcus treatment administered by a vet 24 to 120 hours before arrival in Norway. Active substance must be praziquantel or equivalent. Treatment must be recorded with date and time in the health certificate. Source: Norwegian Food Safety Authority (Mattilsynet), mattilsynet.no."
+      quarantine: "No quarantine for compliant pets. Mattilsynet inspectors check at the border."
+      import_permit: "No import permit required."
+      health_certificate: "EU-format AHC (Annex I for listed third countries), AQS-endorsed. Valid 10 days. Tapeworm treatment record must appear in the certificate."
+      breed_restrictions: "Norway bans Pit Bull Terrier, American Staffordshire Terrier, Fila Brasileiro, Tosa Inu, Dogo Argentino, and crosses. Confirm your breed is permitted."
+      authority: "Norwegian Food Safety Authority (Mattilsynet), mattilsynet.no"
+
   airlines:
-    - name: "Japan Airlines (JAL)"
+    - name: "Lufthansa Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported as checked baggage in temperature-controlled hold. Brachycephalic breeds: French Bulldogs BANNED from cargo (May-October). English Bulldogs banned year-round. Summer restrictions: May-October temperature embargoes on some routes"
-    - name: "British Airways"
+      policy_summary: "NRT to Frankfurt (FRA) direct, onward FRA to Oslo Gardermoen (OSL) via SAS or Lufthansa partner. Live animals accepted on NRT-FRA. Confirm FRA-OSL separately."
+    - name: "KLM Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Emirates"
+      policy_summary: "NRT to Amsterdam (AMS) direct, then AMS to OSL via SAS or KLM. Confirm each segment for live animal acceptance."
+    - name: "SAS Scandinavian Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
+      policy_summary: "SAS serves Oslo Gardermoen (OSL) from FRA and AMS. SAS Cargo accepts live animals. Long-haul Japan segment must be via a partner carrier."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates rabies vaccination"
+      timing: "Early preparation"
+      responsible: "Vet in Japan"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify current rabies vaccination and 21-day wait if recently vaccinated"
+      timing: "Early preparation"
+      responsible: "Vet in Japan"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Book cargo from NRT or HND to OSL via hub"
+      timing: "4-6 weeks before travel"
+      responsible: "Owner or agent"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Administer vet-administered praziquantel tapeworm treatment (dogs only) 24-120 hours before Norway arrival"
+      timing: "1-5 days before Norway arrival, accounting for total travel time"
+      responsible: "Vet in Japan"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "AQS examination and EU-format health certificate with tapeworm record endorsed"
+      timing: "Within 10 days of departure"
+      responsible: "AQS-registered vet and AQS"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "AQS examination and endorsement: JPY 30,000-80,000 (approx EUR 200-530)"
+    - "Tapeworm vet treatment and record (dogs only): EUR 40-100"
+    - "Airline cargo NRT or HND to OSL via hub: EUR 850-2,600"
+    - "IATA-compliant travel crate: EUR 70-280"
+    - "Norwegian border inspection: EUR 100-250"
+    - "IPATA agent fee (optional): EUR 300-700"
+
   key_warnings:
-    - "Breed restrictions apply at destination. Check if your dog is affected before booking."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
+    - "The tapeworm treatment window is 24 to 120 hours before arrival in Norway, not before departure from Japan. Account for the full transit time when calculating the treatment date."
+    - "The tapeworm treatment must appear in the health certificate. Arrange the AQS examination after the treatment has been given so it can be recorded in the certificate."
+    - "Norway bans several pit bull-type breeds. Confirm your dog breed is permitted before booking."
+
   route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+  estimated_timeline_weeks: "4-8"
+
 content:
   h1: "Pet Transport from Japan to Norway"
   overview: |
-    Getting your pet from Japan to Norway is entirely achievable, but the preparation timeline is not flexible.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up. Norway restricts certain breeds. Check the breed restriction section below before making any travel arrangements.
-    
-    Start early and follow the steps in sequence. Missing a deadline pushes the whole timeline back.
+    Japan is on the EU approved third-country list under EU Implementing Regulation 2026/636, which Norway applies as an EEA member. Pets from Japan do not need a FAVN titre test or a fixed 90-day waiting period to enter Norway. The preparation timeline is four to eight weeks. There is one additional step compared to Japan routes to Denmark or Germany: dogs must receive an Echinococcus (fox tapeworm) treatment from a vet between 24 and 120 hours before arriving in Norway. This rule applies regardless of origin country, including Japan.
+
   sections:
-    - heading: "Key requirements for moving your pet to Norway"
+    - heading: "What does a dog or cat from Japan need to enter Norway?"
       body: |
-        Compared to some international pet transport routes, Japan to Norway is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        EEA/Schengen member but not EU. Norway follows EU pet travel rules for dogs, cats, and ferrets. Part 1 listed country for UK entry.
-    - heading: "Things to sort before you book"
+        Norway follows EU Implementing Regulation 2026/636 as an EEA member. Japan's approved status means no titre test and no titre-related waiting period for pets travelling from Japan.
+
+        Core requirements: an ISO 11784/11785 microchip implanted before the first rabies vaccination, a current rabies vaccination (21-day post-primary wait), and an EU-format Animal Health Certificate endorsed by Japan's AQS at a designated Animal Quarantine Station. The health certificate is valid for 10 days from the date of AQS endorsement.
+
+        For dogs specifically: Norway requires all dogs to receive an Echinococcus (tapeworm) treatment administered by a vet between 24 and 120 hours before the dog arrives in Norway. The active substance must be praziquantel or pharmacologically equivalent. The date and time of treatment must be recorded by the vet and appear in the health certificate. Norway will not admit dogs whose tapeworm record is missing or outside the 24-120 hour window. Cats do not require this treatment. Source: Mattilsynet (Norwegian Food Safety Authority), mattilsynet.no.
+
+    - heading: "How does the flight from Japan to Norway work?"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        There are no direct flights from Japan to Oslo. All cargo routes require a European hub connection, typically Frankfurt (FRA) or Amsterdam (AMS).
+
+        Lufthansa Cargo accepts live animals on the NRT to FRA route, with onward connections to Oslo Gardermoen (OSL) via SAS or Lufthansa partners. KLM Cargo covers NRT to Amsterdam, with AMS to OSL connections via SAS or KLM. Both Frankfurt and Amsterdam are good hubs for Norwegian connections.
+
+        The tapeworm treatment timing requires planning around the total journey time, not just the departure from Japan. A Japan-to-Oslo journey via Frankfurt or Amsterdam typically takes 14 to 20 hours. If the treatment is given on the morning of the Japan departure day, this usually keeps the treatment within the 24-120 hour window for Norwegian arrival. Confirm the timing calculation with your vet based on your exact travel schedule.
+
+    - heading: "What does it cost to move a pet from Japan to Norway?"
+      body: |
+        A Japan to Norway move typically costs EUR 1,250 to EUR 3,600. The main variable is pet size, which drives airline cargo costs. AQS examination and endorsement costs JPY 30,000 to JPY 80,000 (roughly EUR 200 to EUR 530). Cargo from NRT or HND to OSL via a European hub runs EUR 850 to EUR 2,600. Tapeworm vet treatment and record adds EUR 40 to EUR 100. Norwegian border inspection fees run EUR 100 to EUR 250. An IATA-compliant crate costs EUR 70 to EUR 280.
+
+        An IPATA-registered agent managing the AQS appointment, tapeworm timing, and cargo coordination typically charges EUR 300 to EUR 700.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Japan to Norway?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Norway?"
-    answer: "No routine quarantine is required in Norway for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Norway?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Norway. Start this process as early as possible."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Japan. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Norway's authority for the exact format required."
-  - question: "Are there breed restrictions for entering Norway?"
-    answer: "Yes, Norway bans or restricts certain breeds including Pit Bull Terrier. If your dog is one of these types or a mix, contact the destination authority before making any travel arrangements."
+  - question: "Does a pet from Japan need a titre test to enter Norway?"
+    answer: "No. Japan is on the EU approved third-country list under EU Implementing Regulation 2026/636, which Norway follows as an EEA member. The FAVN titre test and 90-day waiting period do not apply. Required documents are an ISO microchip, current rabies vaccination, and AQS-endorsed EU AHC."
+  - question: "Do dogs from Japan need tapeworm treatment before entering Norway?"
+    answer: "Yes. Norway requires all dogs entering the country to receive an Echinococcus treatment administered by a vet between 24 and 120 hours before Norway arrival. This applies to dogs from Japan. The treatment must use praziquantel or a pharmacological equivalent, and the date and time of treatment must be recorded in the health certificate. Cats are exempt. Source: Mattilsynet, mattilsynet.no."
+  - question: "How is the 24-120 hour tapeworm window calculated for a Japan to Norway journey?"
+    answer: "Count forward from the time the vet administers the treatment to the time your dog arrives in Norway (not departure from Japan). A typical Japan to Oslo journey via Frankfurt or Amsterdam takes 14 to 20 hours. Giving the treatment on the morning of departure day in Japan usually keeps the dog within the valid window. Confirm the timing with your vet based on your specific flight schedule."
+  - question: "Are there breed bans in Norway that affect dogs from Japan?"
+    answer: "Yes. Norway bans Pit Bull Terrier, American Staffordshire Terrier, Staffordshire Bull Terrier, Fila Brasileiro, Tosa Inu, Dogo Argentino, and crosses. These bans apply regardless of origin country. Confirm your dog's breed is permitted under Norwegian law before booking cargo space."
+  - question: "What airport handles pets arriving from Japan into Norway?"
+    answer: "Oslo Gardermoen (OSL) is the main international airport and the standard entry point for pets arriving via European hub connections. Mattilsynet border inspection posts are located at OSL. Confirm the live animal arrival terminal with your cargo agent."
+
 links:
   sideways:
     - url: "/pet-transport/norway-to-japan/"
       text: "Pet Transport Norway to Japan"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-japan-export-guide/"
-      text: "Shipping from Japan"
+    - url: "/pet-transport/origins/japan/"
+      text: "Japan pet export guide"
     - url: "/pet-transport/countries/norway/"
-      text: "Importing to Norway"
-    - url: "/pet-transport/airlines/japan-airlines-jal/"
-      text: "Japan Airlines (JAL) pet policy"
-    - url: "/pet-transport/airlines/british-airways/"
-      text: "British Airways pet policy"
+      text: "Importing a pet to Norway"
+    - url: "/pet-transport/airlines/lufthansa/"
+      text: "Lufthansa pet cargo policy"
+    - url: "/pet-transport/airlines/sas-scandinavian-airlines/"
+      text: "SAS pet cargo policy"
 ---

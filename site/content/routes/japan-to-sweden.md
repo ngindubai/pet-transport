@@ -1,135 +1,139 @@
 ---
-template_variant: "D"
-title: "Pet Relocation Japan to Sweden | Requirements & Guide"
-description: "Pet relocation from Japan to Sweden: Sweden import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport Japan to Sweden: AQS Certificate, EU-Listed, Jordbruksverket 2026"
+description: "Moving a pet from Japan to Sweden in 2026. Japan EU-listed: no titre test. AQS-endorsed health certificate, no tapeworm required, cargo routes from Tokyo to Stockholm Arlanda."
+date: "2026-06-15"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "D"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "japan-to-sweden"
 origin_name: "Japan"
 destination_name: "Sweden"
+
 route_data:
   origin:
     code: "JP"
     country: "Japan"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      health_certificate: "EU-format health certificate issued by an AQS-registered vet and endorsed by Japan's Animal Quarantine Service (AQS) at a designated Animal Quarantine Station (NRT, HND, or KIX). Valid for 10 days."
+      export_permit: "No formal export permit required. AQS endorsement of the health certificate serves as the official departure document."
+
   destination:
     code: "SE"
     country: "Sweden"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Before or on same day as first rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. 21-day wait from primary vaccination."
-      titre_test: "Required for: Pets from non-listed countries. Not required for: EU/listed countries. Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No routine quarantine. Penalty quarantine for non-compliance."
-      import_permit: "Not required"
-      health_certificate: "Required. EU Pet Passport or AHC. Issued by: Official vet. Valid for 10 days from issue"
+      microchip: "ISO 11784/11785 microchip required. Must be implanted before or on the same day as the first rabies vaccination."
+      rabies_vaccination: "Current rabies vaccination required. 21-day wait after a first-time vaccination."
+      titre_test: "Not required. Japan is on the EU approved third-country list under EU Implementing Regulation 2026/636. Source: food.ec.europa.eu, 2026."
+      tapeworm_treatment: "Not required. Sweden does not mandate Echinococcus tapeworm treatment for dogs entering from any country, as the fox tapeworm is already present in Sweden. Source: Jordbruksverket, jordbruksverket.se."
+      quarantine: "No quarantine for compliant pets. Jordbruksverket (Swedish Board of Agriculture) carries out border inspection."
+      import_permit: "No import permit required."
+      health_certificate: "EU Animal Health Certificate (AHC), Annex I for listed third countries, AQS-endorsed. Valid 10 days."
+      breed_restrictions: "No national breed ban in Sweden. Individual municipalities may have local restrictions on certain breeds."
+      authority: "Swedish Board of Agriculture (Jordbruksverket), jordbruksverket.se"
+
   airlines:
-    - name: "Japan Airlines (JAL)"
+    - name: "Lufthansa Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported as checked baggage in temperature-controlled hold. Brachycephalic breeds: French Bulldogs BANNED from cargo (May-October). English Bulldogs banned year-round. Summer restrictions: May-October temperature embargoes on some routes"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Emirates"
+      policy_summary: "NRT to Frankfurt (FRA) direct, then FRA to Stockholm Arlanda (ARN) via Lufthansa or SAS partner. Live animals accepted on NRT-FRA. Confirm FRA-ARN leg separately."
+    - name: "KLM Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "British Airways"
+      policy_summary: "NRT to Amsterdam (AMS) direct, then AMS to ARN via KLM or SAS. Confirm cargo acceptance on each leg."
+    - name: "Finnair Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
+      policy_summary: "NRT to Helsinki (HEL) direct. Finnair Cargo accepts live animals on direct routes. Short HEL-ARN connection via Finnair or partner."
+    - name: "SAS Scandinavian Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
+      policy_summary: "SAS serves Stockholm Arlanda (ARN) from European hubs including FRA and AMS. SAS Cargo accepts live animals. Long-haul segment from Japan must be via a partner carrier."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates rabies vaccination"
+      timing: "Early preparation"
+      responsible: "Vet in Japan"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify rabies vaccination currency and 21-day wait if primary vaccination is recent"
+      timing: "Early preparation"
+      responsible: "Vet in Japan"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Book AQS examination at designated Animal Quarantine Station"
+      timing: "3-5 weeks before travel"
+      responsible: "Owner or agent"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "AQS examination and EU-format health certificate endorsement"
+      timing: "Within 10 days of Sweden arrival"
+      responsible: "AQS-registered vet and AQS"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Book cargo from NRT or HND to ARN via hub"
+      timing: "4-6 weeks before travel"
+      responsible: "Owner or freight forwarder"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "AQS examination and endorsement: JPY 30,000-80,000 (approx EUR 200-530)"
+    - "Airline cargo NRT or HND to ARN via hub: EUR 800-2,500"
+    - "IATA-compliant travel crate: EUR 70-280"
+    - "Swedish border inspection on arrival: EUR 100-250"
+    - "IPATA agent fee (optional): EUR 300-700"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
+    - "The AQS examination must occur at a designated Animal Quarantine Station, not a standard vet clinic. Book slots at least three to four weeks in advance."
+    - "Confirm live animal cargo acceptance on both the long-haul leg (Japan to hub) and the onward leg to Stockholm separately."
+    - "The health certificate is valid for 10 days. Plan the AQS appointment date relative to your Sweden arrival, not your Japan departure."
+
   route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+  estimated_timeline_weeks: "4-8"
+
 content:
   h1: "Pet Transport from Japan to Sweden"
   overview: |
-    Moving a pet from Japan to Sweden involves more paperwork than most owners expect.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    The paperwork is the hard part. Once everything is in order, the journey itself is well-managed.
+    Japan is on the EU approved third-country list under EU Implementing Regulation 2026/636, which Sweden follows as an EU member. Pets moving from Japan to Sweden do not need a titre test or a fixed waiting period, and Sweden adds no tapeworm treatment requirement. The process centres on the AQS examination and health certificate endorsement in Japan, followed by cargo to Stockholm Arlanda via a European hub. Preparation typically takes four to eight weeks.
+
   sections:
-    - heading: "Key requirements for moving your pet to Sweden"
+    - heading: "What paperwork does a pet from Japan need to enter Sweden?"
       body: |
-        Compared to some international pet transport routes, Japan to Sweden is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        EU member. Sweden follows standard EU pet travel rules. No routine quarantine for compliant pets.
-    - heading: "Step-by-step: what to do first"
+        Sweden follows EU Implementing Regulation 2026/636. Japan is on the EU approved third-country list, so the titre test and 90-day wait that apply to unlisted countries are waived. Your pet needs a valid ISO 11784/11785 microchip (implanted before the first rabies vaccination), a current rabies vaccination with a 21-day post-primary wait, and an EU-format Animal Health Certificate (AHC) endorsed by Japan's Animal Quarantine Service (AQS).
+
+        The AQS examination must take place at a designated Animal Quarantine Station at a major Japanese airport. NRT (Tokyo Narita), HND (Haneda), and KIX (Osaka Kansai) all have AQS stations. Your vet must be AQS-registered. The certificate is valid for 10 days from the endorsement date.
+
+        Unlike Norway and Finland, Sweden does not require Echinococcus tapeworm treatment for dogs entering from any country, including Japan. The Swedish Board of Agriculture (Jordbruksverket) enforces arrival requirements at Stockholm Arlanda. For compliant pets from Japan, there is no quarantine.
+
+    - heading: "Which airlines carry pets from Japan to Sweden?"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        No direct services operate Japan to Stockholm. All cargo routes require a hub connection. Lufthansa Cargo covers the NRT to Frankfurt (FRA) leg, with onward SAS or Lufthansa connections to Stockholm Arlanda (ARN). KLM Cargo handles the NRT to Amsterdam (AMS) leg, with AMS to ARN connections. Finnair provides the NRT to Helsinki (HEL) direct service via Finnair Cargo, with a short HEL to ARN hop.
+
+        SAS Scandinavian Airlines serves ARN from multiple European hubs and accepts cargo pets, but SAS does not operate long-haul routes from Japan. The long-haul leg must be booked with one of the above carriers.
+
+        Confirm live animal cargo acceptance on each segment independently. Long-haul and short-haul legs often carry separate live animal policies.
+
+    - heading: "What does the Japan to Sweden move cost?"
+      body: |
+        The typical total cost falls between EUR 1,200 and EUR 3,500. AQS examination and endorsement runs JPY 30,000 to JPY 80,000 (roughly EUR 200 to EUR 530). Cargo from NRT or HND to Stockholm Arlanda via hub costs EUR 800 to EUR 2,500 depending on crate size. Swedish border inspection adds EUR 100 to EUR 250. A new IATA-compliant crate costs EUR 70 to EUR 280.
+
+        An IPATA-registered agent handling the AQS appointment and cargo coordination typically charges EUR 300 to EUR 700 and is worth considering for first-time international moves.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Japan to Sweden?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Sweden?"
-    answer: "No routine quarantine is required in Sweden for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Sweden?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Sweden. Start this process as early as possible."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Japan. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Sweden's authority for the exact format required."
+  - question: "Does a pet from Japan need a titre test to enter Sweden?"
+    answer: "No. Japan is on the EU approved third-country list under EU Implementing Regulation 2026/636. The FAVN titre test and 90-day waiting period do not apply. Your pet needs an ISO microchip, valid rabies vaccination, and an AQS-endorsed EU-format health certificate."
+  - question: "Does Sweden require tapeworm treatment for dogs from Japan?"
+    answer: "No. Unlike Finland and Norway, Sweden does not require mandatory Echinococcus tapeworm treatment for dogs entering from any third country including Japan. The fox tapeworm is already present in Sweden, so there is no tapeworm-free status to protect. Source: Jordbruksverket, jordbruksverket.se."
+  - question: "What is the AQS examination and where does it happen?"
+    answer: "The AQS (Animal Quarantine Service) is the Japanese authority under MAFF that endorses export health certificates for pets. The examination must take place at a designated AQS Animal Quarantine Station at NRT, HND, or KIX. The certificate produced must be in EU format and is valid for 10 days."
+  - question: "Is there quarantine on arrival in Sweden from Japan?"
+    answer: "No quarantine for compliant pets. Jordbruksverket inspects microchip, vaccination records, and the AQS-endorsed health certificate at the entry point. Pets with complete documentation are cleared without a quarantine period."
+  - question: "How long before travel should I start preparing for the Japan to Sweden move?"
+    answer: "Four to eight weeks is typically sufficient for a pet with a current microchip and up-to-date vaccinations. The AQS appointment needs to fall within 10 days of your Sweden arrival date. Book the AQS slot three to four weeks before departure."
+
 links:
   sideways:
     - url: "/pet-transport/sweden-to-japan/"
       text: "Pet Transport Sweden to Japan"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-japan-export-guide/"
-      text: "Shipping from Japan"
+    - url: "/pet-transport/origins/japan/"
+      text: "Japan pet export guide"
     - url: "/pet-transport/countries/sweden/"
-      text: "Importing to Sweden"
-    - url: "/pet-transport/airlines/japan-airlines-jal/"
-      text: "Japan Airlines (JAL) pet policy"
+      text: "Importing a pet to Sweden"
     - url: "/pet-transport/airlines/lufthansa/"
-      text: "Lufthansa pet policy"
+      text: "Lufthansa pet cargo policy"
+    - url: "/pet-transport/airlines/finnair/"
+      text: "Finnair pet cargo policy"
 ---

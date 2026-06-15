@@ -1,135 +1,127 @@
 ---
-template_variant: "C"
-title: "Moving Your Pet from Japan to Czech Republic | Complete Guide"
-description: "Pet relocation from Japan to Czech Republic: Czech Republic import requirements, timeline, airlines, costs, and documentation checklist."
+title: "Pet Transport Japan to Czech Republic: AQS Certificate, EU-Listed, Prague 2026"
+description: "Moving a pet from Japan to Czech Republic in 2026. Japan EU-listed: no titre test. AQS health certificate, SVA rules, Lufthansa cargo from Tokyo to Prague via Frankfurt."
+date: "2026-06-15"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "D"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "japan-to-czech-republic"
 origin_name: "Japan"
 destination_name: "Czech Republic"
+
 route_data:
   origin:
     code: "JP"
     country: "Japan"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      health_certificate: "EU-format health certificate issued by an AQS-registered vet and endorsed by Japan's Animal Quarantine Service (AQS) at a designated Animal Quarantine Station. Valid for 10 days."
+      export_permit: "No formal export permit required. AQS endorsement of the health certificate is the departure document."
+
   destination:
     code: "CZ"
     country: "Czech Republic"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Before or on same day as first rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel"
-      titre_test: "Required for: Pets from non-listed countries. Not required for: EU/listed countries. Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No routine quarantine for compliant pets. Penalty quarantine applies if documentation is non-compliant"
-      import_permit: "Not required"
-      health_certificate: "Required. EU Pet Passport or AHC. Issued by: Official vet. Valid for 10 days from issue"
+      microchip: "ISO 11784/11785 microchip required. Must be implanted before or on the same day as the first rabies vaccination."
+      rabies_vaccination: "Current rabies vaccination required. 21-day wait after a first-time vaccination."
+      titre_test: "Not required. Japan is on the EU approved third-country list under EU Implementing Regulation 2026/636. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. Czech State Veterinary Administration (SVA) inspects at Prague Vaclav Havel Airport (PRG)."
+      import_permit: "No import permit required."
+      health_certificate: "EU AHC Annex I format for listed third countries, AQS-endorsed. Valid 10 days."
+      breed_restrictions: "No national breed ban in the Czech Republic. Some municipalities may have local restrictions."
+      authority: "State Veterinary Administration (SVA), svscr.cz"
+
   airlines:
-    - name: "Japan Airlines (JAL)"
+    - name: "Lufthansa Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported as checked baggage in temperature-controlled hold. Brachycephalic breeds: French Bulldogs BANNED from cargo (May-October). English Bulldogs banned year-round. Summer restrictions: May-October temperature embargoes on some routes"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Emirates"
+      policy_summary: "NRT to Frankfurt (FRA) direct. Lufthansa Cargo accepts live animals on this route. Onward to Prague (PRG) via Lufthansa or Czech Airlines. FRA-PRG is a short hop with connections throughout the day."
+    - name: "ANA Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "British Airways"
+      policy_summary: "ANA operates NRT to FRA direct. ANA Cargo handles live animals on long-haul routes. Connect to PRG from FRA via Lufthansa."
+    - name: "KLM Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
+      policy_summary: "NRT to Amsterdam (AMS) direct, then AMS to PRG. Confirm live animal acceptance on each segment."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates rabies vaccination"
+      timing: "Early preparation"
+      responsible: "Vet in Japan"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify current rabies vaccination and 21-day wait"
+      timing: "Early preparation"
+      responsible: "Vet in Japan"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Book AQS examination at designated Animal Quarantine Station"
+      timing: "3-5 weeks before travel"
+      responsible: "Owner or agent"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "AQS examination and EU-format health certificate endorsement"
+      timing: "Within 10 days of Prague arrival"
+      responsible: "AQS-registered vet and AQS"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Book cargo NRT or HND to PRG via FRA or AMS hub"
+      timing: "4-6 weeks before travel"
+      responsible: "Owner or freight forwarder"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "AQS examination and endorsement: JPY 30,000-80,000 (approx EUR 200-530)"
+    - "Airline cargo NRT or HND to PRG via hub: EUR 800-2,300"
+    - "IATA-compliant travel crate: EUR 70-280"
+    - "Czech border inspection at PRG: EUR 100-250"
+    - "IPATA agent fee (optional): EUR 300-700"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
+    - "The AQS examination must occur at a designated Animal Quarantine Station. Standard vet clinics cannot issue the AQS-endorsed EU certificate."
+    - "The health certificate is valid for 10 days from the AQS endorsement date. Plan the appointment relative to Prague arrival, not Japan departure."
+    - "All cargo to Prague requires a European hub connection. Confirm live animal acceptance on both the long-haul and onward legs."
+
   route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+  estimated_timeline_weeks: "4-8"
+
 content:
   h1: "Pet Transport from Japan to Czech Republic"
   overview: |
-    Pet transport from Japan to Czech Republic follows a clear process once you know what Czech Republic requires.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    We've laid out every step below so you know exactly what to prepare and when.
+    Japan is on the EU approved third-country list under EU Implementing Regulation 2026/636. Pets moving from Japan to the Czech Republic do not require a FAVN titre test or a titre-related waiting period. The process involves the AQS examination in Japan, cargo via Frankfurt to Prague Vaclav Havel Airport, and a border inspection by the Czech State Veterinary Administration (SVA) on arrival. No quarantine and no tapeworm requirement apply. Preparation takes four to eight weeks.
+
   sections:
-    - heading: "Key requirements for moving your pet to Czech Republic"
+    - heading: "What does a pet from Japan need to enter the Czech Republic?"
       body: |
-        Compared to some international pet transport routes, Japan to Czech Republic is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        EU member. Czech Republic follows standard EU pet travel rules. Growing expat community in Prague. No routine quarantine.
-    - heading: "Things to sort before you book"
+        The Czech Republic follows EU Implementing Regulation 2026/636 as an EU member. Japan's listed status removes the titre test requirement and any titre-related waiting period.
+
+        Your pet needs an ISO 11784/11785 microchip implanted before the first rabies vaccination, a current rabies vaccination (21-day post-primary wait), and an EU-format Animal Health Certificate (AHC, Annex I) endorsed by Japan's Animal Quarantine Service (AQS) at a designated Animal Quarantine Station. The certificate is valid for 10 days. No import permit is required, and there is no quarantine on arrival. The Czech SVA carries out the arrival inspection at Prague's Vaclav Havel Airport (PRG). There is no national breed ban in the Czech Republic.
+
+    - heading: "Which airlines carry pets from Japan to the Czech Republic?"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        No direct flights operate from Japan to Prague. The main routing is via Frankfurt (FRA) using Lufthansa Cargo on the NRT-FRA long-haul leg, then onward to PRG via Lufthansa connections. ANA Cargo is an alternative for the NRT-FRA segment. KLM Cargo via Amsterdam (AMS) also connects to Prague. Frankfurt is the most efficient hub for Prague connections, given multiple daily flights.
+
+    - heading: "What does moving a pet from Japan to the Czech Republic cost?"
+      body: |
+        Total costs typically fall between EUR 1,100 and EUR 3,200. AQS examination and endorsement runs JPY 30,000 to JPY 80,000 (roughly EUR 200 to EUR 530). Cargo from NRT or HND to PRG via FRA costs EUR 800 to EUR 2,300. Czech border inspection adds EUR 100 to EUR 250. An IATA-compliant crate costs EUR 70 to EUR 280. An IPATA agent adds EUR 300 to EUR 700 if used.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Japan to Czech Republic?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Czech Republic?"
-    answer: "No routine quarantine is required in Czech Republic for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Czech Republic?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Czech Republic. Start this process as early as possible."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Japan. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Czech Republic's authority for the exact format required."
+  - question: "Does a pet from Japan need a titre test to enter the Czech Republic?"
+    answer: "No. Japan is on the EU approved third-country list under EU Implementing Regulation 2026/636. The FAVN titre test and 90-day wait are not required. Requirements are ISO microchip, current rabies vaccination, and AQS-endorsed EU AHC."
+  - question: "Is there quarantine for pets arriving in the Czech Republic from Japan?"
+    answer: "No quarantine for compliant pets. The Czech State Veterinary Administration (SVA) inspects at Prague Airport. Pets with correct microchip, vaccination records, and AQS-endorsed certificate are cleared without quarantine."
+  - question: "Does the Czech Republic require tapeworm treatment for dogs from Japan?"
+    answer: "No. The Czech Republic does not impose an Echinococcus tapeworm treatment requirement. This is different from Norway and Finland. No additional parasite treatment steps are needed."
+  - question: "How does the cargo route from Japan to Prague work?"
+    answer: "All cargo from Japan to Prague requires a European hub connection, typically Frankfurt (FRA). Lufthansa Cargo and ANA Cargo both cover the NRT-FRA long-haul leg, with onward Lufthansa connections to PRG. The FRA-PRG segment is a short flight with multiple daily departures."
+  - question: "What is the Czech authority for pet imports?"
+    answer: "The State Veterinary Administration (SVA), svscr.cz, is the competent authority for pet imports into the Czech Republic. SVA inspectors at Prague Vaclav Havel Airport carry out the border check on arriving pets."
+
 links:
   sideways:
     - url: "/pet-transport/czech-republic-to-japan/"
       text: "Pet Transport Czech Republic to Japan"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-japan-export-guide/"
-      text: "Shipping from Japan"
+    - url: "/pet-transport/origins/japan/"
+      text: "Japan pet export guide"
     - url: "/pet-transport/countries/czech-republic/"
-      text: "Importing to Czech Republic"
-    - url: "/pet-transport/airlines/japan-airlines-jal/"
-      text: "Japan Airlines (JAL) pet policy"
+      text: "Importing a pet to Czech Republic"
     - url: "/pet-transport/airlines/lufthansa/"
-      text: "Lufthansa pet policy"
+      text: "Lufthansa pet cargo policy"
+    - url: "/pet-transport/airlines/klm-royal-dutch-airlines/"
+      text: "KLM pet cargo policy"
 ---

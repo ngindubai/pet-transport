@@ -1,130 +1,142 @@
 ---
-template_variant: "B"
-title: "Shipping Dogs & Cats from India to Austria | PetTransportGlobal"
-description: "How to ship your dog or cat from India to Austria. Austria import rules, vaccinations, permits, and airline options explained."
+title: "Pet Transport India to Austria: AQCS Certificate, Titre Test, Austrian Airlines Direct, Vienna 2026"
+description: "Moving a pet from India to Austria in 2026. FAVN titre test, 90-day wait, AQCS export certificate. BMSGPK rules, Austrian Airlines direct DEL to VIE, no tapeworm requirement."
+date: "2026-06-15"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "D"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "india-to-austria"
 origin_name: "India"
 destination_name: "Austria"
+
 route_data:
   origin:
     code: "IN"
     country: "India"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      health_certificate: "EU Animal Health Certificate (AHC) in Annex IV format (for unlisted third countries), issued by an authorised vet and endorsed by India's Animal Quarantine and Certification Services (AQCS). Documentation submitted to AQCS at least 7 days before embarkation. Certificate valid 10 days from endorsement."
+      export_permit: "No formal export permit required for companion animals. AQCS endorsement of the health certificate serves as the export document."
+
   destination:
     code: "AT"
     country: "Austria"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Before or on same day as first rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel"
-      titre_test: "Required for: Pets from non-listed countries. Not required for: EU/listed countries. Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No routine quarantine for compliant pets. Penalty quarantine applies if documentation is non-compliant"
-      import_permit: "Not required"
-      health_certificate: "Required. EU Pet Passport or AHC. Issued by: Official vet. Valid for 10 days from issue"
+      microchip: "ISO 11784/11785 microchip required. Must be implanted before or on the same day as the first rabies vaccination."
+      rabies_vaccination: "Current rabies vaccination required. 21-day wait after a first-time vaccination before titre test blood draw."
+      titre_test: "Required. India is not on the EU approved third-country list. FAVN or RNATT titre test at an EU-approved laboratory. Minimum 0.5 IU/ml. Blood drawn at least 21 days after vaccination. 90-day waiting period from blood draw date before Austria entry. Source: EU Implementing Regulation 2026/636; Federal Ministry of Social Affairs, Health, Care and Consumer Protection (BMSGPK), sozialministerium.at."
+      tapeworm_treatment: "Not required. Austria does not mandate Echinococcus tapeworm treatment for dogs. Source: BMSGPK, sozialministerium.at."
+      quarantine: "No quarantine for compliant pets. Austrian customs inspect at Vienna Schwechat (VIE)."
+      import_permit: "No import permit required."
+      health_certificate: "EU AHC (Annex IV for unlisted third countries), AQCS-endorsed. Valid 10 days. Must include titre test result and blood draw date."
+      breed_restrictions: "No federal breed ban in Austria. Individual Bundeslaender (states) impose their own restrictions on certain breeds. Research the rules for the specific Austrian state you are relocating to."
+      authority: "Federal Ministry of Social Affairs, Health, Care and Consumer Protection (BMSGPK), sozialministerium.at"
+
   airlines:
-    - name: "Air India"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 5kg with carrier). Cargo: Larger pets via Air India Cargo. Breed restrictions apply. Temperature embargoes during extreme heat on Indian domestic sectors"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Emirates"
+    - name: "Austrian Airlines"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "British Airways"
+      policy_summary: "Austrian Airlines operates direct flights from Delhi (DEL) to Vienna Schwechat (VIE). Austrian Cargo handles live animals. As part of the Lufthansa Group, Austrian Airlines is the most direct carrier from India to Vienna."
+    - name: "Lufthansa Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
+      policy_summary: "DEL to Frankfurt (FRA) direct, then FRA to Vienna (VIE) via Lufthansa or Austrian Airlines. Both are within the Lufthansa Group. Live animals accepted on DEL-FRA."
+    - name: "Air India Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
+      policy_summary: "Air India operates from Delhi (DEL) and other Indian airports to European hubs. Air India Cargo handles live animals. Connect onward to Vienna (VIE) via the hub."
+    - name: "KLM Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "DEL to Amsterdam (AMS) direct, then AMS to VIE via KLM or Austrian Airlines. Confirm live animal acceptance on each segment."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Implant ISO 11784/11785 microchip"
+      timing: "First step, before rabies vaccination"
+      responsible: "Vet in India"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Rabies vaccination (pet at least 12 weeks old)"
+      timing: "After microchip. Allow 21 days before titre test blood draw."
+      responsible: "Vet in India"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "FAVN titre test at EU-approved laboratory"
+      timing: "Blood drawn at least 21 days after vaccination. 90-day wait into Austria starts from blood draw date."
+      responsible: "EU-approved laboratory"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "90-day waiting period from blood draw date"
+      timing: "Counted from blood draw, not result date. Cannot be shortened."
+      responsible: "Owner"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Submit documentation to AQCS and obtain EU AHC endorsement"
+      timing: "Documents submitted to AQCS at least 7 days before embarkation. Certificate endorsed within 10 days of Austria arrival."
+      responsible: "Authorised vet and AQCS"
     - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Book cargo from DEL to VIE (Austrian direct or via Frankfurt hub)"
+      timing: "Book early; confirm after titre test blood draw date is known"
+      responsible: "Owner or freight agent"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "FAVN titre test at EU-approved laboratory: EUR 200-400"
+    - "AQCS documentation and health certificate endorsement: INR 5,000-15,000 (approx EUR 55-165)"
+    - "Airline cargo DEL to VIE (Austrian direct or via hub): EUR 900-2,500"
+    - "IATA-compliant travel crate: EUR 70-280"
+    - "Austrian border inspection on arrival: EUR 100-250"
+    - "IPATA agent fee (optional): EUR 350-750"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "The 90-day waiting period runs from the titre test blood draw date, not the date the result arrives. Calculate the earliest permitted entry date from the blood draw date before booking flights."
+    - "Austrian Airlines operates the most direct DEL-VIE cargo service. Confirm Austrian Cargo live animal acceptance at the time of booking, as cargo acceptance depends on aircraft configuration and season."
+    - "Austria has no federal breed ban but each of the nine Bundeslaender has its own restricted breed list. Research the specific state you are relocating to before booking."
+
+  route_complexity: "high"
+  estimated_timeline_weeks: "22-28"
+
 content:
   h1: "Pet Transport from India to Austria"
   overview: |
-    Pet transport from India to Austria follows a clear process once you know what Austria requires.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    Start early and follow the steps in sequence. Missing a deadline pushes the whole timeline back.
+    India is not on the EU approved third-country list under EU Implementing Regulation 2026/636. Moving a pet from India to Austria therefore requires a FAVN rabies antibody titre test and a 90-day waiting period from the blood draw date before entry is permitted. The process takes five to six months from start to travel day. Austria does not require Echinococcus tapeworm treatment, which simplifies the final steps compared to Norway and Finland. A practical advantage on this route is Austrian Airlines' direct service from Delhi (DEL) to Vienna Schwechat (VIE), which removes the need for a hub connection. India's AQCS endorses the export health certificate, and documentation must be submitted at least seven days before embarkation.
+
   sections:
-    - heading: "Key requirements for moving your pet to Austria"
+    - heading: "What paperwork does a pet from India need to enter Austria?"
       body: |
-        Compared to some international pet transport routes, India to Austria is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        EU member. Austria follows standard EU pet travel rules. No routine quarantine.
-    - heading: "Practical advice for shipping your pet from India"
+        Austria follows EU Implementing Regulation 2026/636 as an EU member. India is not on the EU approved list, so the full unlisted-country process applies.
+
+        The sequence is: ISO 11784/11785 microchip first (before any rabies vaccination), then rabies vaccination (minimum 21 days before blood draw), then FAVN titre test at an EU-approved laboratory (blood drawn at least 21 days after vaccination, minimum result 0.5 IU/ml), then the 90-day waiting period counted from the blood draw date. After the wait, AQCS endorses an EU Animal Health Certificate (AHC, Annex IV for unlisted countries). Documentation must be submitted to AQCS at least seven days before embarkation, and the certificate is valid for 10 days. No import permit is required, and there is no quarantine on arrival.
+
+        Austria does not require Echinococcus tapeworm treatment for dogs from any third country. There is no federal breed ban in Austria, though individual Bundeslaender impose their own restrictions on certain breeds. Check the rules for the specific Austrian state you are moving to before booking.
+
+    - heading: "Which airlines carry pets from India to Austria?"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        Austrian Airlines operates a direct service from Delhi (DEL) to Vienna Schwechat (VIE). Austrian Cargo, part of the Lufthansa Group, handles live animals on these flights. This direct routing is the most efficient option from India to Austria, avoiding a hub connection. Confirm live animal cargo acceptance with Austrian Cargo at the time of booking.
+
+        If Austrian Cargo space is unavailable, Lufthansa Cargo flies DEL to Frankfurt (FRA) with Lufthansa or Austrian Airlines connections to VIE. KLM Cargo covers DEL to Amsterdam (AMS) with onward AMS-VIE connections. Air India Cargo connects from Indian airports via European hubs.
+
+    - heading: "How long does the India to Austria process take, and what does it cost?"
+      body: |
+        Allow five to six months from start to travel day. The 90-day wait from the titre test blood draw is the fixed constraint. Add the 21-day gap between vaccination and blood draw, and the seven-day AQCS lead time. Book flights only after you have a confirmed blood draw date and can calculate the exact earliest permitted entry date.
+
+        Costs typically run from EUR 1,400 to EUR 3,500. The FAVN titre test costs EUR 200 to EUR 400. AQCS documentation adds INR 5,000 to INR 15,000 (roughly EUR 55 to EUR 165). Cargo from DEL to VIE costs EUR 900 to EUR 2,500, with the Austrian Airlines direct option potentially reducing transit costs. Austrian border inspection runs EUR 100 to EUR 250. An IPATA agent adds EUR 350 to EUR 750.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from India to Austria?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Austria?"
-    answer: "No routine quarantine is required in Austria for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Austria?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Austria. Start this process as early as possible."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in India. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Austria's authority for the exact format required."
+  - question: "Does a pet from India need a titre test to enter Austria?"
+    answer: "Yes. India is not on the EU approved third-country list under EU Implementing Regulation 2026/636. A FAVN or RNATT titre test at an EU-approved laboratory is required. The minimum result is 0.5 IU/ml, and a 90-day waiting period from the blood draw date must pass before the pet can enter Austria."
+  - question: "Does Austria require tapeworm treatment for dogs from India?"
+    answer: "No. Austria does not require Echinococcus tapeworm treatment for dogs entering from India or any other third country. This is one fewer step compared to Norway and Finland, both of which do require tapeworm treatment."
+  - question: "Does Austrian Airlines fly pets direct from India to Austria?"
+    answer: "Austrian Airlines operates direct flights from Delhi (DEL) to Vienna Schwechat (VIE). Austrian Cargo handles live animals on selected flights. This is the most direct routing from India to Austria, avoiding a hub connection. Confirm live animal cargo acceptance with Austrian Cargo at the time of booking."
+  - question: "Does Austria have breed restrictions for dogs from India?"
+    answer: "Austria has no federal breed ban, but each of the nine Austrian Bundeslaender has its own restricted breed list. Some states restrict Pit Bull Terrier, Rottweiler, and American Staffordshire Terrier. Check the specific state rules for your destination in Austria before booking."
+  - question: "Is there quarantine for pets arriving in Austria from India?"
+    answer: "No quarantine for fully compliant pets. Austrian customs at Vienna Schwechat check the microchip, vaccination records, titre test result, and AQCS-endorsed certificate. If documentation is in order, the pet is cleared without quarantine."
+
 links:
   sideways:
     - url: "/pet-transport/austria-to-india/"
       text: "Pet Transport Austria to India"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-india-export-guide/"
-      text: "Shipping from India"
+    - url: "/pet-transport/origins/india/"
+      text: "India pet export guide"
     - url: "/pet-transport/countries/austria/"
-      text: "Importing to Austria"
+      text: "Importing a pet to Austria"
+    - url: "/pet-transport/airlines/austrian-airlines/"
+      text: "Austrian Airlines pet policy"
     - url: "/pet-transport/airlines/lufthansa/"
-      text: "Lufthansa pet policy"
+      text: "Lufthansa pet cargo policy"
 ---

@@ -1,122 +1,138 @@
 ---
-template_variant: "A"
-title: "Pet Transport from Singapore to Denmark | PetTransportGlobal"
-description: "Complete guide to pet transport from Singapore to Denmark. Import requirements, quarantine rules, airline options, and step-by-step timeline."
+title: "Pet Transport Singapore to Denmark: AVS Export Licence, No Titre Test, Copenhagen 2026"
+description: "Moving a pet from Singapore to Denmark in 2026. Singapore EU-listed: no titre test required. AVS export licence, FVST rules, no tapeworm, Singapore Airlines cargo from SIN to CPH."
+date: "2026-06-15"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "D"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "singapore-to-denmark"
 origin_name: "Singapore"
 destination_name: "Denmark"
+
 route_data:
   origin:
     code: "SG"
     country: "Singapore"
     export_requirements:
-      health_certificate: "Must meet destination country requirements. Contact destination authority for specific format."
+      health_certificate: "EU-format Animal Health Certificate (AHC, Annex I for listed third countries) issued by an AVS-accredited vet and endorsed by Singapore's Animal & Veterinary Service (AVS). An AVS export licence is required for dogs and cats leaving Singapore. Certificate valid 10 days from endorsement."
+      export_permit: "AVS export licence required. Apply to Animal & Veterinary Service (AVS), National Parks Board (NParks), nparks.gov.sg/avs. Processing time: allow 2-4 weeks."
+
   destination:
     code: "DK"
     country: "Denmark"
     import_requirements:
-      microchip: "Required (ISO 11784/11785)"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel"
-      titre_test: "Not required"
-      quarantine: "No routine quarantine for compliant pets"
-      import_permit: "EU pet passport or health certificate"
-      health_certificate: "Required. Issued by: Official veterinarian. Valid for 10 days from issue"
+      microchip: "ISO 11784/11785 microchip required. Must be implanted before or on the same day as the first rabies vaccination."
+      rabies_vaccination: "Current rabies vaccination required. 21-day wait after a first-time vaccination before travel."
+      titre_test: "Not required. Singapore is on the EU approved third-country list under EU Implementing Regulation 2026/636. Source: food.ec.europa.eu, 2026; Danish Veterinary and Food Administration (FVST), fvst.dk."
+      tapeworm_treatment: "Not required. Denmark does not mandate Echinococcus tapeworm treatment for dogs. Source: FVST, fvst.dk."
+      quarantine: "No quarantine for compliant pets. FVST inspects at Copenhagen Airport (CPH)."
+      import_permit: "No import permit required."
+      health_certificate: "EU AHC (Annex I for listed third countries), AVS-endorsed. Valid 10 days."
+      breed_restrictions: "Denmark bans 13 breeds: Pit Bull Terrier, Tosa Inu, American Staffordshire Terrier, Fila Brasileiro, Dogo Argentino, American Bulldog, Boerboel, Kangal, Central Asian Shepherd, Caucasian Shepherd, South Russian Ovcharka, Tornjak, and Sarplaninac. Mixed breeds showing characteristics of these types may also be refused. Source: Danish Dog Act."
+      authority: "Danish Veterinary and Food Administration (FVST), fvst.dk"
+
   airlines:
-    - name: "Singapore Airlines"
+    - name: "Singapore Airlines Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "British Airways"
+      policy_summary: "Singapore Airlines (SIA Cargo) operates from Singapore Changi (SIN) to several European hubs including Frankfurt (FRA) and Amsterdam (AMS). SIA Cargo handles live animals on selected routes. Connect onward to Copenhagen Kastrup (CPH) via SAS or partner carrier."
+    - name: "Lufthansa Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Emirates"
+      policy_summary: "SIN to Frankfurt (FRA) direct, then FRA to Copenhagen (CPH) via Lufthansa or SAS. Live animals accepted on SIN-FRA. Frankfurt is a reliable hub for Scandinavian connections."
+    - name: "KLM Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Cathay Pacific"
+      policy_summary: "SIN to Amsterdam (AMS) direct, then AMS to CPH via KLM or SAS. Confirm live animal acceptance on each segment separately."
+    - name: "Finnair Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "SIN to Helsinki (HEL) via Finnair. Finnair Cargo accepts live animals on direct Finnair routes. Short HEL-CPH connection onward via SAS or Finnair."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step: must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO 11784/11785 microchip predates rabies vaccination"
+      timing: "Early preparation"
+      responsible: "Vet in Singapore"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify current rabies vaccination and 21-day post-primary wait"
+      timing: "Early preparation"
+      responsible: "Vet in Singapore"
     - step: 3
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "Apply for AVS export licence"
+      timing: "At least 4 weeks before travel. Allow 2-4 weeks processing time."
+      responsible: "Owner, via AVS / NParks"
     - step: 4
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "AVS-accredited vet examination and EU AHC (Annex I) endorsement"
+      timing: "Within 10 days of Copenhagen arrival date"
+      responsible: "AVS-accredited vet and AVS"
     - step: 5
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Book cargo from SIN to CPH via European hub"
+      timing: "4-6 weeks before travel; confirm live animal acceptance on all segments"
+      responsible: "Owner or freight agent"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "AVS export licence: SGD 50-100 (approx EUR 35-70)"
+    - "AVS-accredited vet examination and EU AHC endorsement: SGD 100-300 (approx EUR 70-210)"
+    - "Airline cargo SIN to CPH via hub: EUR 800-2,200"
+    - "IATA-compliant travel crate: EUR 70-280"
+    - "Danish border inspection at CPH: EUR 100-250"
+    - "IPATA agent fee (optional): EUR 300-700"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "low"
-  estimated_timeline_weeks: "4-10"
+    - "Singapore's listed status under EU Implementing Regulation 2026/636 removes the titre test and 90-day waiting period. The process is significantly shorter than for non-listed countries."
+    - "Denmark bans 13 specific breeds. Check the full list against your dog's breed before booking. Mixed breeds with characteristics of banned types may also be refused at the border."
+    - "The AVS export licence must be applied for before travel. Allow at least 4 weeks lead time as processing can take 2-4 weeks."
+
+  route_complexity: "moderate"
+  estimated_timeline_weeks: "4-8"
+
 content:
   h1: "Pet Transport from Singapore to Denmark"
   overview: |
-    If you're relocating from Singapore to Denmark and taking your pet, the good news is thousands of families do this every year.
-    
-    This route is relatively straightforward compared to some international routes. Start preparations at least 4 weeks before your travel date: some steps have fixed waiting periods that cannot be shortened.
-    
-    Getting the timing right is critical. Work backwards from your travel date and add a buffer.
+    Singapore is on the EU approved third-country list under EU Implementing Regulation 2026/636. This approved status removes the FAVN titre test and the 90-day waiting period that pets from non-listed countries must complete before entering Denmark. The process centres on the AVS export licence, an AVS-accredited vet examination, and cargo from Singapore Changi (SIN) to Copenhagen Kastrup (CPH) via a European hub. Denmark has a 13-breed ban, so breed status should be confirmed before booking. The Danish Veterinary and Food Administration (FVST) handles the arrival inspection at Copenhagen. Allow four to eight weeks preparation.
+
   sections:
-    - heading: "Understanding Denmark's pet import rules"
+    - heading: "What does a pet from Singapore need to enter Denmark?"
       body: |
-        Compared to some international pet transport routes, Singapore to Denmark is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        EU member state. EU rules apply. Very pet-friendly culture.
-    - heading: "Practical advice for shipping your pet from Singapore"
+        Denmark follows EU Implementing Regulation 2026/636 as an EU member. Singapore is on the EU approved list, which means the FAVN titre test and any titre-related waiting period are not required.
+
+        The requirements are: an ISO 11784/11785 microchip implanted before the first rabies vaccination, a current rabies vaccination (21-day post-primary wait), an AVS export licence from Singapore's Animal & Veterinary Service (AVS, under NParks), and an EU-format Animal Health Certificate (AHC, Annex I for listed countries) issued by an AVS-accredited vet and endorsed by AVS. The certificate is valid for 10 days from endorsement. No import permit is required, and there is no quarantine for compliant pets on arrival.
+
+        Denmark bans 13 breeds under the Danish Dog Act: Pit Bull Terrier, Tosa Inu, American Staffordshire Terrier, Fila Brasileiro, Dogo Argentino, American Bulldog, Boerboel, Kangal, Central Asian Shepherd, Caucasian Shepherd, South Russian Ovcharka, Tornjak, and Sarplaninac. Mixed breeds showing characteristics of these types may also be refused entry. Check breed status with FVST (fvst.dk) before booking. Denmark does not require tapeworm treatment.
+
+    - heading: "Which airlines carry pets from Singapore to Denmark?"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        No direct cargo service operates from Singapore Changi (SIN) to Copenhagen Kastrup (CPH). All routings involve a European hub. Singapore Airlines Cargo (SIA Cargo) operates from SIN to Frankfurt (FRA) and Amsterdam (AMS), with SAS or partner connections to CPH. Lufthansa Cargo covers SIN to FRA with FRA-CPH connections. KLM Cargo handles SIN to AMS with AMS-CPH connections. Finnair via Helsinki (HEL) is an alternative with a HEL-CPH hop.
+
+        Confirm live animal cargo acceptance independently on both the long-haul and short-haul legs. Policies can vary by aircraft type and season.
+
+    - heading: "How long does the Singapore to Denmark process take, and what does it cost?"
+      body: |
+        Allow four to eight weeks from start to travel day. Singapore's listed status means there is no titre test or 90-day waiting period, which makes this route significantly shorter than equivalent moves from non-listed countries. The main constraint is the AVS export licence, which can take two to four weeks to process. Apply early.
+
+        Costs typically run from EUR 1,100 to EUR 2,900. The AVS export licence adds SGD 50 to SGD 100 (roughly EUR 35 to EUR 70). AVS vet examination and EU AHC endorsement adds SGD 100 to SGD 300 (roughly EUR 70 to EUR 210). Cargo from SIN to CPH via a European hub costs EUR 800 to EUR 2,200. Danish border inspection runs EUR 100 to EUR 250. An IPATA agent adds EUR 300 to EUR 700.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Singapore to Denmark?"
-    answer: "Allow at least 4 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Denmark?"
-    answer: "No routine quarantine is required in Denmark for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Denmark?"
-    answer: "No, Denmark does not require a rabies titre test for most pets arriving from Singapore. Your pet still needs a valid rabies vaccination and microchip. Check the current requirements with the destination authority before travel."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Singapore. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Denmark's authority for the exact format required."
+  - question: "Does a pet from Singapore need a titre test to enter Denmark?"
+    answer: "No. Singapore is on the EU approved third-country list under EU Implementing Regulation 2026/636. The FAVN titre test and 90-day waiting period are not required. Requirements are ISO microchip, current rabies vaccination, AVS export licence, and AVS-endorsed EU AHC (Annex I)."
+  - question: "What is the AVS and what role does it play?"
+    answer: "AVS is Singapore's Animal & Veterinary Service, operating under the National Parks Board (NParks). Pets leaving Singapore must have an AVS export licence and an EU-format health certificate endorsed by an AVS-accredited vet. Apply for the export licence at least 4 weeks before travel to allow for processing time. Visit nparks.gov.sg/avs for current requirements."
+  - question: "Does Denmark have breed restrictions for dogs from Singapore?"
+    answer: "Yes. Denmark bans 13 breeds under the Danish Dog Act: Pit Bull Terrier, Tosa Inu, American Staffordshire Terrier, Fila Brasileiro, Dogo Argentino, American Bulldog, Boerboel, Kangal, Central Asian Shepherd, Caucasian Shepherd, South Russian Ovcharka, Tornjak, and Sarplaninac. Mixed breeds with characteristics of these types may also be refused. Confirm breed status with FVST (fvst.dk) before booking."
+  - question: "Does Denmark require tapeworm treatment for dogs from Singapore?"
+    answer: "No. Denmark does not require Echinococcus tapeworm treatment for dogs entering from Singapore or any other third country. This is different from Norway and Finland, which do require tapeworm treatment."
+  - question: "Is there quarantine for pets arriving in Denmark from Singapore?"
+    answer: "No quarantine for fully compliant pets. The Danish Veterinary and Food Administration (FVST) inspects at Copenhagen Airport. If the microchip, vaccination records, AVS export licence, and AVS-endorsed certificate are all in order, the pet is cleared without quarantine."
+
 links:
   sideways:
     - url: "/pet-transport/denmark-to-singapore/"
       text: "Pet Transport Denmark to Singapore"
   upward:
-    - url: "/pet-transport/origins/pet-export-guide-shipping-from-singapore/"
-      text: "Shipping from Singapore"
+    - url: "/pet-transport/origins/singapore/"
+      text: "Singapore pet export guide"
     - url: "/pet-transport/countries/denmark/"
-      text: "Importing to Denmark"
+      text: "Importing a pet to Denmark"
     - url: "/pet-transport/airlines/singapore-airlines/"
-      text: "Singapore Airlines pet policy"
-    - url: "/pet-transport/airlines/british-airways/"
-      text: "British Airways pet policy"
+      text: "Singapore Airlines pet cargo policy"
+    - url: "/pet-transport/airlines/lufthansa/"
+      text: "Lufthansa pet cargo policy"
 ---

@@ -1,135 +1,133 @@
 ---
-template_variant: "E"
-title: "Moving Your Pet from Japan to Austria | Complete Guide"
-description: "Complete guide to pet transport from Japan to Austria. Import requirements, quarantine rules, airline options, and step-by-step timeline."
+title: "Pet Transport Japan to Austria: AQS Certificate, EU-Listed, Vienna Entry 2026"
+description: "Moving a pet from Japan to Austria in 2026. Japan EU-listed: no titre test, no quarantine. AQS health certificate, BMSGPK rules, Austrian Airlines and Lufthansa from Tokyo to Vienna."
+date: "2026-06-15"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "D"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "japan-to-austria"
 origin_name: "Japan"
 destination_name: "Austria"
+
 route_data:
   origin:
     code: "JP"
     country: "Japan"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      health_certificate: "EU-format health certificate issued by an AQS-registered vet and endorsed by Japan's Animal Quarantine Service (AQS) at a designated Animal Quarantine Station (NRT, HND, or KIX). Valid for 10 days."
+      export_permit: "No formal export permit required for companion animals. AQS endorsement is the departure document."
+
   destination:
     code: "AT"
     country: "Austria"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Before or on same day as first rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel"
-      titre_test: "Required for: Pets from non-listed countries. Not required for: EU/listed countries. Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No routine quarantine for compliant pets. Penalty quarantine applies if documentation is non-compliant"
-      import_permit: "Not required"
-      health_certificate: "Required. EU Pet Passport or AHC. Issued by: Official vet. Valid for 10 days from issue"
+      microchip: "ISO 11784/11785 microchip required. Must be implanted before or on the same day as the first rabies vaccination."
+      rabies_vaccination: "Current rabies vaccination required. 21-day wait after a first-time vaccination."
+      titre_test: "Not required. Japan is on the EU approved third-country list under EU Implementing Regulation 2026/636. Source: food.ec.europa.eu, 2026."
+      quarantine: "No quarantine for compliant pets. Austrian customs inspect at Vienna Schwechat (VIE)."
+      import_permit: "No import permit required."
+      health_certificate: "EU AHC Annex I format for listed third countries, AQS-endorsed. Valid 10 days."
+      breed_restrictions: "Austria has no federal breed ban, but individual Bundeslaender (states) impose their own restrictions. Some restrict Pit Bull Terrier, Rottweiler, American Staffordshire Terrier, and others. Check the rules for the specific state you are moving to."
+      authority: "Federal Ministry of Social Affairs, Health, Care and Consumer Protection (BMSGPK), sozialministerium.at"
+
   airlines:
-    - name: "Japan Airlines (JAL)"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets transported as checked baggage in temperature-controlled hold. Brachycephalic breeds: French Bulldogs BANNED from cargo (May-October). English Bulldogs banned year-round. Summer restrictions: May-October temperature embargoes on some routes"
-    - name: "Lufthansa"
+    - name: "Austrian Airlines"
       type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Emirates"
+      policy_summary: "Austrian Airlines operates from Tokyo via Frankfurt or other European hubs to Vienna Schwechat (VIE). Austrian Cargo handles live animals. As part of the Lufthansa Group, connections via Frankfurt (FRA) are straightforward."
+    - name: "Lufthansa Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "British Airways"
+      policy_summary: "NRT to Frankfurt (FRA) direct, then FRA to VIE via Lufthansa or Austrian Airlines. Live animals accepted on NRT-FRA. Confirm FRA-VIE segment separately."
+    - name: "ANA Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Singapore Airlines"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
-      type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
-    - name: "Korean Air"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin. Cargo: Larger pets in hold as checked baggage or Korean Air Cargo. Seasonal temperature restrictions apply"
+      policy_summary: "ANA (All Nippon Airways) operates from NRT to FRA direct. ANA Cargo accepts live animals on long-haul routes. Connection to VIE via Lufthansa or Austrian from FRA."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Confirm ISO microchip predates rabies vaccination"
+      timing: "Early preparation"
+      responsible: "Vet in Japan"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Verify current rabies vaccination and 21-day wait if recently vaccinated"
+      timing: "Early preparation"
+      responsible: "Vet in Japan"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "Book AQS examination at designated Animal Quarantine Station"
+      timing: "3-5 weeks before travel"
+      responsible: "Owner or agent"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "AQS examination and EU-format health certificate endorsement"
+      timing: "Within 10 days of Austria arrival"
+      responsible: "AQS-registered vet and AQS"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
-    - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Book cargo from NRT or HND to VIE via FRA hub"
+      timing: "4-6 weeks before travel"
+      responsible: "Owner or freight forwarder"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "AQS examination and endorsement: JPY 30,000-80,000 (approx EUR 200-530)"
+    - "Airline cargo NRT or HND to VIE via FRA: EUR 800-2,400"
+    - "IATA-compliant travel crate: EUR 70-280"
+    - "Austrian border inspection at VIE: EUR 100-250"
+    - "IPATA agent fee (optional): EUR 300-700"
+
   key_warnings:
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
+    - "The AQS examination must occur at a designated Animal Quarantine Station. Book the slot at least three to four weeks before departure."
+    - "Austria has no federal breed ban but Bundesland-level restrictions vary significantly. Research the rules for your destination state before travelling."
+    - "The health certificate is valid for 10 days from AQS endorsement. Plan the appointment date relative to your Vienna arrival, not Japan departure."
+
   route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+  estimated_timeline_weeks: "4-8"
+
 content:
   h1: "Pet Transport from Japan to Austria"
   overview: |
-    If you're relocating from Japan to Austria and taking your pet, the good news is thousands of families do this every year.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
-    
-    We've laid out every step below so you know exactly what to prepare and when.
+    Japan is on the EU approved third-country list under EU Implementing Regulation 2026/636. Pets moving from Japan to Austria do not require a titre test or a titre-related waiting period. The process centres on the AQS examination in Japan and cargo to Vienna Schwechat (VIE) via Frankfurt, typically via Lufthansa or Austrian Airlines. There is no quarantine on arrival in Austria and no tapeworm treatment requirement. Preparation takes four to eight weeks.
+
   sections:
-    - heading: "What to know about the Japan to Austria route"
+    - heading: "What does a pet from Japan need to enter Austria?"
       body: |
-        Compared to some international pet transport routes, Japan to Austria is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        EU member. Austria follows standard EU pet travel rules. No routine quarantine.
-    - heading: "Things to sort before you book"
+        Austria follows EU Implementing Regulation 2026/636 as an EU member. Japan's approved status on the EU listed-country schedule means no titre test and no titre-linked waiting period for pets departing Japan.
+
+        The requirements are an ISO 11784/11785 microchip implanted before the first rabies vaccination, a current rabies vaccination with a 21-day post-primary wait, and an EU-format Animal Health Certificate (AHC, Annex I format for listed countries) endorsed by Japan's AQS at a designated Animal Quarantine Station. The certificate is valid for 10 days from the endorsement date.
+
+        Austria has no federal breed ban, but the nine Bundeslaender each impose their own breed restrictions. Bavaria borders Austria, and Vienna, Salzburg, and other Austrian cities have their own state rules for restricted breeds. Check the specific state regulations for your destination before booking.
+
+    - heading: "Which airlines carry pets from Japan to Austria?"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        The main routing is via Frankfurt (FRA) as the hub. Vienna Schwechat (VIE) is a major airport and part of the Lufthansa Group network, making connections from Frankfurt straightforward. Lufthansa Cargo operates NRT to FRA with live animal acceptance; Austrian Airlines (also Lufthansa Group) then handles the FRA to VIE leg. ANA Cargo is another option for the NRT-FRA long-haul segment, connecting to VIE via Lufthansa or Austrian.
+
+        Direct flights from Japan to Vienna do not currently operate. The Frankfurt hub is the most reliable connection point.
+
+    - heading: "What does moving a pet from Japan to Austria cost?"
+      body: |
+        The total cost typically falls between EUR 1,200 and EUR 3,400. AQS examination and endorsement costs JPY 30,000 to JPY 80,000 (roughly EUR 200 to EUR 530). Cargo from NRT or HND to VIE via Frankfurt runs EUR 800 to EUR 2,400. Austrian border inspection at VIE costs EUR 100 to EUR 250. An IATA-compliant crate adds EUR 70 to EUR 280.
+
+        An IPATA-registered agent managing the AQS appointment, cargo, and documentation typically charges EUR 300 to EUR 700.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from Japan to Austria?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Austria?"
-    answer: "No routine quarantine is required in Austria for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Austria?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Austria. Start this process as early as possible."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Japan. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Austria's authority for the exact format required."
+  - question: "Does a pet from Japan need a titre test to enter Austria?"
+    answer: "No. Japan is on the EU approved third-country list under EU Implementing Regulation 2026/636. The FAVN titre test and 90-day waiting period do not apply from Japan. Required documents are an ISO microchip, current rabies vaccination, and AQS-endorsed EU AHC."
+  - question: "Is there quarantine when a pet arrives in Austria from Japan?"
+    answer: "No quarantine for compliant pets. Austrian customs at Vienna Schwechat check the microchip, vaccination records, and AQS-endorsed certificate. If documentation is in order, the pet is cleared without quarantine."
+  - question: "Does Austria have breed restrictions for dogs from Japan?"
+    answer: "Austria has no federal breed ban, but each of the nine Austrian Bundeslaender has its own restricted breed list. Some states restrict Pit Bull Terrier, Rottweiler, and American Staffordshire Terrier. Check the specific state rules for wherever you are relocating to within Austria."
+  - question: "What is the best airline for moving a pet from Japan to Austria?"
+    answer: "Lufthansa Cargo on the NRT-FRA segment combined with Austrian Airlines or Lufthansa on FRA-VIE is the most common combination. Both are within the Lufthansa Group, which can simplify coordination. ANA Cargo is an alternative for the Japan long-haul leg."
+  - question: "Does Austria require tapeworm treatment for dogs from Japan?"
+    answer: "No. Austria does not impose an Echinococcus tapeworm treatment requirement for dogs entering from Japan or any third country. This is different from Norway and Finland, which do require tapeworm treatment. The Austria process is simpler on this point."
+
 links:
   sideways:
     - url: "/pet-transport/austria-to-japan/"
       text: "Pet Transport Austria to Japan"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-japan-export-guide/"
-      text: "Shipping from Japan"
+    - url: "/pet-transport/origins/japan/"
+      text: "Japan pet export guide"
     - url: "/pet-transport/countries/austria/"
-      text: "Importing to Austria"
-    - url: "/pet-transport/airlines/japan-airlines-jal/"
-      text: "Japan Airlines (JAL) pet policy"
+      text: "Importing a pet to Austria"
     - url: "/pet-transport/airlines/lufthansa/"
-      text: "Lufthansa pet policy"
+      text: "Lufthansa pet cargo policy"
+    - url: "/pet-transport/airlines/austrian-airlines/"
+      text: "Austrian Airlines pet policy"
 ---

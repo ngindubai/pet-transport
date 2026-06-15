@@ -17,7 +17,7 @@
 - **Bulk-generation scripts are banned.** A batch is still N individually quality-gated blocks, never a mass-generation script.
 - **Skip rule:** skip only if the build pointer shows nothing left to build (no chunks remaining and no blog day due). Do NOT skip just because a build already happened earlier today; each site now runs twice a day on purpose.
 
-**Where we are (reconciled from disk 2026-06-14):** 5,781 quality routes complete. ~32,049 routes remaining. Blog: 427 articles. Total .md source files: 6,581. Content plan: Day 21 is next. Chunks 1-53 complete. Chunk 54 (Template D, Tier B) is next. Counts come from `python verify_build_state.py`, never hand-edited.
+**Where we are (reconciled from disk 2026-06-15):** 5,781 quality routes complete. ~32,049 routes remaining. Blog: 427 articles. Total .md source files: 6,581. Content plan: Day 21 is next. Chunks 1-54 complete. Chunk 55 (Template E, Tier B) is next. Counts come from `python verify_build_state.py`, never hand-edited.
 
 ---
 
@@ -58,7 +58,8 @@
 - Chunk 51 template: A - DONE 2026-06-13 (Baltic/Slovenia outbound to DE/FR/NL/US; US/AU/CA inbound to EE/LV/LT/SI; 25 routes)
 - Chunk 52 template: B - DONE 2026-06-13 (EU countries to Baltic/Slovenia: DE/FR/IT/NL/ES/BE/PT to EE/LV/LT/SI; 25 routes)
 - Chunk 53 template: C - DONE 2026-06-14 (EU/EEA to Caucasus/Central Asia + Caucasus/Central Asia to EU: BE/PT/SE/NO to AM/GE/AZ/KZ; AM/GE/AZ/KZ to BE/PT/SE; 25 routes)
-- Chunk 54 template: D - NEXT
+- Chunk 54 template: D - DONE 2026-06-15 (25 Tier B routes upgraded from thin placeholders: Japan x8 [austria/czech-republic/denmark/finland/hungary/norway/poland/sweden], South Korea x8 [austria/czech-republic/finland/hungary/norway/poland/sweden/switzerland], India x8 [austria/belgium/czech-republic/finland/hungary/norway/poland/sweden], Singapore x1 [denmark])
+- Chunk 55 template: E - NEXT
 - Blog Day 10: pet-transport-uae-to-pakistan - DONE 2026-06-07 (Marcus Webb, AQD NOC, AED 3,000-6,000)
 - Blog Day 11: exporting-pets-from-singapore - DONE 2026-06-08 (Marcus Webb, AVS export licence, FAVN/RNATT for Australia, Changi cargo, UK/EU/US/AU destination matrix, cost table)
 - Blog Day 12: importing-pets-to-australia-2026 - DONE 2026-06-08 (Dr. Sarah Okafor, ~3000 words, Group 1/2/3 system, RNATT, Mickleham day-by-day, cost table by region, rejection reasons, FAQs)

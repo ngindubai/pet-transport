@@ -7,12 +7,12 @@
 - **Repository:** https://github.com/ngindubai/pet-transport (private)
 - **Deploy:** Push to `main` triggers GitHub Actions automatically. Hugo build + incremental FTP to Hostinger. Live within ~80 seconds for a single article. After every build batch, the live URLs of new/changed pages are posted in chat for review (LIVE LINK REVIEW GATE in CLAUDE.md).
 
-## Current State (2026-06-14, reconciled from disk by verify_build_state.py)
+## Current State (2026-06-15, reconciled from disk by verify_build_state.py)
 
 - **Routes built:** 5,781 of ~37,830 country pairs (~15.3%). True on-disk count (5,771 in `routes/` + 10 in `pet-transport/`).
 - **Blog articles:** 427
 - **Total .md source files:** 6,581 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-53 complete. **Chunk 54 is next** (Template D, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 53 (Template C, Tier B): 25 routes: EU/EEA to Caucasus/Central Asia (BE/PT/SE/NO to AM/GE/AZ/KZ) and Caucasus/Central Asia to EU (AM/GE/AZ/KZ to BE/PT/SE).
+- **Phase 7 progress:** Chunks 1-54 complete. **Chunk 55 is next** (Template E, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 54 (Template D, Tier B): 25 routes upgraded from thin placeholders: Japan x8 (austria/czech-republic/denmark/finland/hungary/norway/poland/sweden), South Korea x8 (austria/czech-republic/finland/hungary/norway/poland/sweden/switzerland), India x8 (austria/belgium/czech-republic/finland/hungary/norway/poland/sweden), Singapore x1 (denmark).
 - **Content plan:** Days 1-6 + Days 8-20 complete (20 articles written). Day 7 skipped (pre-existing). **Day 21 is next.** Day 20 = pet-transport-service-explained (Marcus Webb, 2400 words, what a pet transport service includes, airport-to-airport vs door-to-door, pass-through costs, accountability, reading a quote line by line).
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.

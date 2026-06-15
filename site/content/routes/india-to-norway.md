@@ -1,135 +1,146 @@
 ---
-template_variant: "C"
-title: "Moving Your Pet from India to Norway | Complete Guide"
-description: "Complete guide to pet transport from India to Norway. Import requirements, quarantine rules, airline options, and step-by-step timeline."
+title: "Pet Transport India to Norway: AQCS Certificate, Titre Test, Tapeworm, Oslo 2026"
+description: "Moving a pet from India to Norway in 2026. FAVN titre test, 90-day wait, tapeworm treatment required, AQCS export certificate. Mattilsynet rules, cargo from DEL to Oslo."
+date: "2026-06-15"
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+template_variant: "D"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "india-to-norway"
 origin_name: "India"
 destination_name: "Norway"
+
 route_data:
   origin:
     code: "IN"
     country: "India"
     export_requirements:
-      export_permit: "No formal export permit required. Destination import documentation serves as travel authority."
+      health_certificate: "EU Animal Health Certificate (AHC) in Annex IV format (for unlisted third countries), issued by an authorised vet and endorsed by India's Animal Quarantine and Certification Services (AQCS). Documentation submitted to AQCS at least 7 days before embarkation. Certificate valid 10 days from endorsement."
+      export_permit: "No formal export permit required for companion animals. AQCS endorsement of the health certificate serves as the export document."
+
   destination:
     code: "NO"
     country: "Norway"
     import_requirements:
-      microchip: "Required (ISO 11784/11785). Before or on same day as first rabies vaccination"
-      rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel. Same rules as EU. 21-day wait after first primary vaccination."
-      titre_test: "Required for: Pets from non-listed countries. Not required for: Pets from EU member states and listed countries (UK, etc.). Minimum: 0.5 IU/ml. 90-day wait from test date before entry"
-      quarantine: "No routine quarantine for pets arriving with correct documents."
-      import_permit: "No import permit needed for compliant pets from listed countries."
-      health_certificate: "Required. EU Pet Passport or AHC. Issued by: Official veterinarian. Valid for 10 days from issue. EU pet passport or AHC accepted."
-    breed_restrictions:
-      - "Pit Bull Terrier"
+      microchip: "ISO 11784/11785 microchip required. Must be implanted before or on the same day as the first rabies vaccination."
+      rabies_vaccination: "Current rabies vaccination required. 21-day wait after a first-time vaccination before titre test blood draw."
+      titre_test: "Required. India is not on the EU approved third-country list. FAVN or RNATT titre test at an EU-approved laboratory. Minimum 0.5 IU/ml. Blood drawn at least 21 days after vaccination. 90-day waiting period from blood draw date before Norway entry. Source: EU Implementing Regulation 2026/636; Mattilsynet, mattilsynet.no."
+      tapeworm_treatment: "Required for dogs. Echinococcus multilocularis treatment with a praziquantel-based product administered by a vet. Treatment must be given no earlier than 120 hours and no later than 24 hours before arrival in Norway. Treatment date, time, product name, and dose must appear on the health certificate. Source: Mattilsynet, mattilsynet.no."
+      quarantine: "No quarantine for compliant pets. Mattilsynet inspects at the point of entry."
+      import_permit: "No import permit required."
+      health_certificate: "EU AHC (Annex IV for unlisted third countries), AQCS-endorsed. Valid 10 days. Must include titre test result, blood draw date, and tapeworm treatment record."
+      breed_restrictions: "Pit bull type dogs are banned in Norway under the Norwegian Dog Act. Confirm your dog's breed status with Mattilsynet before booking."
+      authority: "Norwegian Food Safety Authority (Mattilsynet), mattilsynet.no"
+
   airlines:
-    - name: "Air India"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 5kg with carrier). Cargo: Larger pets via Air India Cargo. Breed restrictions apply. Temperature embargoes during extreme heat on Indian domestic sectors"
-    - name: "British Airways"
+    - name: "Lufthansa Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets transported via British Airways World Cargo in temperature-controlled hold. Book through approved cargo agent. No cabin pets on any route."
-    - name: "Emirates"
+      policy_summary: "DEL to Frankfurt (FRA) direct, then FRA to Oslo Gardermoen (OSL) via Lufthansa or SAS. Live animals accepted on DEL-FRA. Frankfurt is a reliable hub for onward Scandinavian connections."
+    - name: "Air India Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Emirates SkyCargo handles all pet transport as manifested cargo. Brachycephalic breeds accepted with additional requirements and seasonal restrictions. Temperature embargoes during extreme heat (summer months in Gulf region)"
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets (up to 8kg with carrier) allowed in cabin. Cargo: larger pets via Lufthansa Cargo in pressurised, temperature-controlled hold. Brachycephalic breeds restricted from cargo year-round"
-    - name: "Singapore Airlines"
+      policy_summary: "Air India operates from Delhi (DEL) and other Indian airports to European hubs. Air India Cargo handles live animals. Connect onward to Oslo (OSL) via SAS or Lufthansa from the hub."
+    - name: "KLM Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel in temperature-controlled hold. Brachycephalic breeds subject to restrictions. Temperature embargoes apply on certain routes/seasons"
-    - name: "Cathay Pacific"
+      policy_summary: "DEL to Amsterdam (AMS) direct, then AMS to Oslo (OSL) via SAS or KLM. Confirm live animal acceptance on each segment separately."
+    - name: "Finnair Cargo"
       type: "cargo_only"
-      policy_summary: "Cargo: Pets travel as manifested cargo in temperature-controlled hold. Brachycephalic breeds restricted during summer months. Hong Kong AFCD import regulations must be met"
-    - name: "Air France"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo transport available for larger pets. Brachycephalic breeds subject to restrictions/seasonal embargoes"
-    - name: "KLM"
-      type: "cabin_and_cargo"
-      policy_summary: "Small pets allowed in cabin (up to 8kg including carrier). Cargo: pets transported via KLM Cargo. Temperature restrictions apply. Brachycephalic breeds restricted from cargo"
+      policy_summary: "DEL to Helsinki (HEL) direct via Finnair. Finnair Cargo accepts live animals on direct Finnair routes. Short HEL-OSL connection onward."
+
   timeline_steps:
     - step: 1
-      action: "Microchip your pet (ISO 11784/11785 standard)"
-      timing: "First step - must be done before any vaccinations."
-      responsible: "Your veterinarian"
+      action: "Implant ISO 11784/11785 microchip"
+      timing: "First step, before rabies vaccination"
+      responsible: "Vet in India"
     - step: 2
-      action: "Rabies vaccination"
-      timing: "After microchip. 21-day wait before next steps."
-      responsible: "Your veterinarian"
+      action: "Rabies vaccination (pet at least 12 weeks old)"
+      timing: "After microchip. Allow 21 days before titre test blood draw."
+      responsible: "Vet in India"
     - step: 3
-      action: "Rabies titre test (blood test at accredited laboratory)"
-      timing: "Blood drawn at least 30 days after vaccination. 90-day wait after successful result."
-      responsible: "Your veterinarian + approved laboratory"
+      action: "FAVN titre test at EU-approved laboratory"
+      timing: "Blood drawn at least 21 days after vaccination. 90-day wait into Norway starts from blood draw date."
+      responsible: "EU-approved laboratory"
     - step: 4
-      action: "Book IATA-compliant flight and cargo/cabin space"
-      timing: "2-4 weeks before travel. Confirm pet space with airline directly."
-      responsible: "You (or your pet transport agent)"
+      action: "90-day waiting period from blood draw date"
+      timing: "Counted from blood draw, not result date. Cannot be shortened."
+      responsible: "Owner"
     - step: 5
-      action: "Obtain official veterinary health certificate"
-      timing: "Within 10 days of travel (check destination-specific requirement)"
-      responsible: "Official veterinarian"
+      action: "Tapeworm treatment (dogs only)"
+      timing: "Praziquantel product administered by a vet 24-120 hours before ARRIVAL in Norway. Account for total travel time from India when scheduling."
+      responsible: "Vet in India"
     - step: 6
-      action: "Travel day: arrive early, present all documentation at cargo desk"
-      timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
-      responsible: "You + airline check-in/cargo desk"
+      action: "Submit documentation to AQCS and obtain EU AHC endorsement"
+      timing: "Documents submitted to AQCS at least 7 days before embarkation. Certificate endorsed within 10 days of Norway arrival. Must include titre result, blood draw date, and tapeworm record."
+      responsible: "Authorised vet and AQCS"
+    - step: 7
+      action: "Book cargo from DEL to OSL via European hub"
+      timing: "Book early; confirm after titre test blood draw date is known"
+      responsible: "Owner or freight agent"
+
   cost_factors:
-    - "Airline cargo or cabin fees (varies by carrier, route, pet weight, and crate size)"
-    - "IATA-compliant travel crate (purchase or hire)"
-    - "Veterinary fees: vaccinations, microchipping, health certificate"
-    - "Rabies titre test laboratory fee"
-    - "Pet transport agent fee (recommended for complex routes)"
+    - "FAVN titre test at EU-approved laboratory: EUR 200-400"
+    - "AQCS documentation and health certificate endorsement: INR 5,000-15,000 (approx EUR 55-165)"
+    - "Airline cargo DEL to OSL via hub: EUR 950-2,600"
+    - "IATA-compliant travel crate: EUR 70-280"
+    - "Norwegian border inspection on arrival: EUR 100-250"
+    - "IPATA agent fee (optional): EUR 350-750"
+
   key_warnings:
-    - "Breed restrictions apply at destination. Check if your dog is affected before booking."
-    - "Always verify current regulations with the destination country's official veterinary authority before travel."
-  route_complexity: "moderate"
-  estimated_timeline_weeks: "20-26"
+    - "The 90-day waiting period runs from the titre test blood draw date, not the date the result arrives. This is the most common cause of pets being refused at the Norwegian border."
+    - "The tapeworm treatment window is 24-120 hours before ARRIVAL in Norway, not before departure. A flight from Delhi to Oslo involves at least one hub connection and takes 12 hours or more; account for total transit time when scheduling the vet appointment."
+    - "Pit bull type dogs are banned in Norway regardless of documentation. Check breed status before booking. AQCS documentation must be submitted at least 7 days before embarkation."
+
+  route_complexity: "high"
+  estimated_timeline_weeks: "22-28"
+
 content:
   h1: "Pet Transport from India to Norway"
   overview: |
-    Moving a pet from India to Norway involves more paperwork than most owners expect.
-    
-    This route is moderately involved, with a clear checklist to follow. Start preparations at least 20 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up. Norway restricts certain breeds. Check the breed restriction section below before making any travel arrangements.
-    
-    Use this guide to map out your preparation timeline and avoid the most common mistakes.
+    India to Norway is one of the more demanding pet transport routes in terms of preparation time and the number of steps involved. India is not on the EU approved third-country list under EU Implementing Regulation 2026/636, which Norway applies as an EEA member. This means a FAVN titre test and a 90-day waiting period from the blood draw date are both compulsory. Norway also requires Echinococcus tapeworm treatment for all dogs, given by a vet within 24 to 120 hours before arrival. India's Animal Quarantine and Certification Services (AQCS) endorses the export health certificate, and documentation must be submitted to AQCS at least seven days before embarkation. Allow five to six months from start to travel day.
+
   sections:
-    - heading: "Understanding Norway's pet import rules"
+    - heading: "What does a pet from India need to enter Norway?"
       body: |
-        Compared to some international pet transport routes, India to Norway is manageable. That said, every country's rules are different and the timing requirements are strict.
-        
-        EEA/Schengen member but not EU. Norway follows EU pet travel rules for dogs, cats, and ferrets. Part 1 listed country for UK entry.
-    - heading: "Step-by-step: what to do first"
+        Norway is an EEA member and applies EU pet import rules under EU Implementing Regulation 2026/636. India is not on the EU approved list, so the full unlisted-country process applies.
+
+        The sequence is: ISO 11784/11785 microchip first (before any rabies vaccination), then rabies vaccination (minimum 21 days before blood draw), then FAVN titre test at an EU-approved laboratory (blood drawn at least 21 days after vaccination, minimum result 0.5 IU/ml), then the 90-day waiting period counted from the blood draw date. After the wait, AQCS endorses an EU Animal Health Certificate (AHC, Annex IV for unlisted countries). AQCS documentation must be submitted at least seven days before embarkation, and the certificate must be endorsed within 10 days of arrival in Norway.
+
+        Norway also requires Echinococcus multilocularis tapeworm treatment for all dogs. A vet must administer a praziquantel-based product between 24 and 120 hours before the dog arrives in Norway. The treatment time, product, and dose must appear on the AQCS-endorsed health certificate. Cats do not require tapeworm treatment. Pit bull type dogs are banned in Norway under the Norwegian Dog Act; confirm breed status before booking.
+
+    - heading: "Which airlines carry pets from India to Norway?"
       body: |
-        Microchip first, then vaccinate. The microchip must be implanted before any rabies vaccination for the vaccination to count. It's the most common and costly mistake people make.
-        
-        Book the titre test laboratory well in advance. Approved labs have limited appointment slots and the blood sample processing takes time. Don't leave this to the last few weeks.
-        
-        Get the health certificate from an official (government-approved) veterinarian, not just your regular vet. Some countries have strict requirements about who can sign the certificate. Check the destination authority's approved list.
-        
-        If this is your first international pet move, consider using a registered pet transport agent. They handle the documentation, airline booking, crate sizing, and can troubleshoot issues. IPATA-registered agents are the recognised standard.
+        No direct cargo service operates from India to Oslo Gardermoen (OSL). All routings involve a European hub. Lufthansa Cargo flies from Delhi (DEL) to Frankfurt (FRA), with SAS or Lufthansa connections to Oslo. KLM Cargo covers DEL to Amsterdam (AMS) with AMS-OSL connections. Air India Cargo connects from Delhi and other Indian airports to European hubs. Finnair flies DEL to Helsinki (HEL) direct, with a short HEL-OSL hop onward.
+
+        Confirm live animal cargo acceptance on both the long-haul and short-haul legs at the time of booking.
+
+    - heading: "How long does the India to Norway process take, and what does it cost?"
+      body: |
+        Allow five to six months from start to travel day. The 90-day wait from the titre test blood draw is the fixed constraint. Add the 21-day gap between vaccination and blood draw, and the seven-day AQCS lead time. Do not book flights until you have a confirmed blood draw date and can calculate the exact earliest permitted entry date.
+
+        Costs typically run from EUR 1,450 to EUR 3,600. The FAVN titre test costs EUR 200 to EUR 400. AQCS documentation adds INR 5,000 to INR 15,000 (roughly EUR 55 to EUR 165). Cargo from DEL to OSL via a European hub costs EUR 950 to EUR 2,600. Norwegian border inspection runs EUR 100 to EUR 250. An IPATA agent adds EUR 350 to EUR 750.
+
 faqs:
-  - question: "How long does it take to prepare a pet for transport from India to Norway?"
-    answer: "Allow at least 20 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
-  - question: "Does my pet need to quarantine when entering Norway?"
-    answer: "No routine quarantine is required in Norway for pets arriving with correct documentation. However, if your pet arrives without the right paperwork, penalty quarantine can apply. Get everything right before you travel."
-  - question: "Is a rabies titre test required for pets entering Norway?"
-    answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Norway. Start this process as early as possible."
-  - question: "What health certificate does my pet need for this route?"
-    answer: "Your pet needs a government-issued veterinary health certificate from an official vet in India. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check Norway's authority for the exact format required."
-  - question: "Are there breed restrictions for entering Norway?"
-    answer: "Yes, Norway bans or restricts certain breeds including Pit Bull Terrier. If your dog is one of these types or a mix, contact the destination authority before making any travel arrangements."
+  - question: "Does a pet from India need a titre test to enter Norway?"
+    answer: "Yes. India is not on the EU approved third-country list under EU Implementing Regulation 2026/636. Norway applies this regulation as an EEA member. A FAVN or RNATT titre test at an EU-approved laboratory is required. The minimum result is 0.5 IU/ml, and a 90-day waiting period from the blood draw date must pass before the pet can enter Norway."
+  - question: "Is tapeworm treatment required for dogs from India entering Norway?"
+    answer: "Yes. Norway requires Echinococcus multilocularis treatment for all dogs. A vet must administer a praziquantel-based product between 24 and 120 hours before the dog arrives in Norway. The treatment time, product name, and dose must be recorded on the health certificate. Source: Mattilsynet, mattilsynet.no."
+  - question: "What is the AQCS and what role does it play?"
+    answer: "AQCS is India's Animal Quarantine and Certification Services, under the Department of Animal Husbandry and Dairying. Pets leaving India must have their health certificate endorsed by AQCS. Documentation must be submitted at least 7 days before embarkation. AQCS operates at major Indian airports including Delhi, Mumbai, Bengaluru, Chennai, and Hyderabad."
+  - question: "Are pit bull type dogs allowed into Norway?"
+    answer: "No. Norway bans pit bull type dogs under the Norwegian Dog Act. If your dog is classified as a pit bull type or a mixed breed with those characteristics, it cannot enter Norway. Contact Mattilsynet (mattilsynet.no) to confirm your dog's classification before making any bookings."
+  - question: "Is there quarantine for pets arriving in Norway from India?"
+    answer: "No quarantine for fully compliant pets. Mattilsynet (Norwegian Food Safety Authority) inspects at the point of entry. If the microchip, vaccination, titre test result, 90-day wait, tapeworm treatment, and AQCS-endorsed certificate are all in order, the pet is cleared without quarantine."
+
 links:
   sideways:
     - url: "/pet-transport/norway-to-india/"
       text: "Pet Transport Norway to India"
   upward:
-    - url: "/pet-transport/origins/shipping-your-pet-from-india-export-guide/"
-      text: "Shipping from India"
+    - url: "/pet-transport/origins/india/"
+      text: "India pet export guide"
     - url: "/pet-transport/countries/norway/"
-      text: "Importing to Norway"
-    - url: "/pet-transport/airlines/british-airways/"
-      text: "British Airways pet policy"
+      text: "Importing a pet to Norway"
+    - url: "/pet-transport/airlines/lufthansa/"
+      text: "Lufthansa pet cargo policy"
+    - url: "/pet-transport/airlines/klm-royal-dutch-airlines/"
+      text: "KLM pet cargo policy"
 ---
