@@ -9,11 +9,11 @@
 
 ## Current State (2026-06-15, reconciled from disk by verify_build_state.py)
 
-- **Routes built:** 5,781 of ~37,830 country pairs (~15.3%). True on-disk count (5,771 in `routes/` + 10 in `pet-transport/`).
-- **Blog articles:** 427
-- **Total .md source files:** 6,581 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-54 complete. **Chunk 55 is next** (Template E, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 54 (Template D, Tier B): 25 routes upgraded from thin placeholders: Japan x8 (austria/czech-republic/denmark/finland/hungary/norway/poland/sweden), South Korea x8 (austria/czech-republic/finland/hungary/norway/poland/sweden/switzerland), India x8 (austria/belgium/czech-republic/finland/hungary/norway/poland/sweden), Singapore x1 (denmark).
-- **Content plan:** Days 1-6 + Days 8-20 complete (20 articles written). Day 7 skipped (pre-existing). **Day 21 is next.** Day 20 = pet-transport-service-explained (Marcus Webb, 2400 words, what a pet transport service includes, airport-to-airport vs door-to-door, pass-through costs, accountability, reading a quote line by line).
+- **Routes built:** 5,806 of ~37,830 country pairs (~15.3%). True on-disk count (5,796 in `routes/` + 10 in `pet-transport/`).
+- **Blog articles:** 428
+- **Total .md source files:** 6,607 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Phase 7 progress:** Chunks 1-55 complete. **Chunk 56 is next** (Template A, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 55 (Template E, Tier B): 25 new routes. Caucasus/Central Asia to EEA/Nordic/Ireland (AM/GE/AZ/KZ to NO/DK/FI/IE x4 each = 16 routes) + Baltic/Slovenia to EU (EE/LV/LT to BE/IT/ES, LT to BE/IT, SI to BE = 9 routes).
+- **Content plan:** Days 1-6 + Days 8-21 complete (21 articles written). Day 7 skipped (pre-existing). **Day 22 is next.** Day 21 = pet-transport-uk-to-new-zealand (Marcus Webb, ~2200 words, MPI import permit, RNATT titre 90-day minimum, 10-day Auckland/Christchurch quarantine, Emirates/Singapore Airlines cargo, July 2026 IHS transition, GBP 4,800-7,200).
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
 - **Route template redesign (live on all ~5,531 route pages):** Six new premium templates render via `site/layouts/routes/single.html` -> partials `route-new-{na,nb,nc,nd,ne,nl}.html` with scoped CSS `static/css/route-new-{na..nl}.css`. Variant routing: front-matter `template_variant` A->na, B->nb, C->nc, D->nd, E->ne, legacy->nl.
