@@ -1,6 +1,6 @@
 ---
-title: "Pet Transport Lithuania to Spain: EU Pet Passport and Vilnius to Madrid or Barcelona 2026"
-description: "Moving a dog or cat from Lithuania to Spain in 2026. Both EU member states. EU pet passport, ISO microchip, current rabies vaccination. No titre test, no tapeworm treatment, no quarantine. Flight options from Vilnius and Kaunas to Spain."
+title: "Pet Transport Lithuania to Spain: Vilnius to Madrid or Barcelona 2026"
+description: "Moving a dog or cat from Lithuania to Spain in 2026. EU-to-EU: EU pet passport or AHC, microchip, current rabies vaccination. No quarantine, no titre test. Ryanair and direct carriers from Vilnius."
 date: "2026-06-16"
 type: "routes"
 layout: "single"
@@ -15,119 +15,121 @@ route_data:
     code: "LT"
     country: "Lithuania"
     export_requirements:
-      export_permit: "No export permit required for intra-EU movement."
-      health_certificate: "EU pet passport. Lithuanian vets issue EU pet passports. Current microchip and valid rabies vaccination required."
-      authority: "State Food and Veterinary Service of Lithuania: vmvt.lt"
+      export_permit: "No export permit required for companion pets moving between EU member states."
+      health_certificate: "EU pet passport issued or updated by an officially authorised Lithuanian vet. If no passport exists, a single-use Animal Health Certificate (AHC) from a Lithuanian State Food and Veterinary Service (VMVT)-authorised vet, issued within 10 days of entry into Spain."
+      authority: "State Food and Veterinary Service of Lithuania (VMVT): vmvt.lt"
 
   destination:
     code: "ES"
     country: "Spain"
     import_requirements:
-      microchip: "Required. ISO 11784/11785. Implanted before the rabies vaccination."
-      rabies_vaccination: "Required. At least 21 days since primary vaccination. Current. Source: EU Regulation 576/2013."
-      titre_test: "Not required."
-      tapeworm_treatment: "Not required. Spain is not on the list of countries requiring tapeworm treatment (unlike Ireland, Finland, Malta, and Norway)."
-      quarantine: "No quarantine."
-      import_permit: "Not required."
-      health_certificate: "EU pet passport."
-      authority: "Ministry of Agriculture, Fisheries and Food (MAPA): mapa.gob.es"
+      microchip: "Required. ISO 11784/11785 (15-digit). Implanted before or on the same day as the first rabies vaccination."
+      rabies_vaccination: "Required. Current vaccination. First vaccination requires 21 days to become valid. Booster within the valid period of the previous vaccine is immediately effective."
+      titre_test: "Not required. Spain is EU. No titre test for EU-to-EU pet movements."
+      quarantine: "Not required."
+      import_permit: "Not required for companion pets moving between EU member states."
+      health_certificate: "EU pet passport or AHC issued within 10 days of entry into Spain."
+      authority: "Spain Ministry of Agriculture, Fisheries and Food (MAPA): mapa.gob.es"
 
   airlines:
-    - name: "Vueling"
-      type: "cargo_and_cabin"
-      policy_summary: "Connections from Vilnius (VNO) or Kaunas (KUN) to Barcelona (BCN) and Madrid (MAD) via European hubs. Vueling accepts small pets in cabin and has cargo options."
     - name: "Ryanair"
-      type: "cabin_only"
-      policy_summary: "Budget flights from Vilnius and Kaunas to various Spanish airports. Cabin only for small pets. No cargo."
+      type: "cargo_only"
+      policy_summary: "Ryanair operates direct routes from Vilnius (VNO) to Madrid Barajas (MAD), Barcelona El Prat (BCN), and other Spanish airports. Ryanair does not accept pets in the passenger cabin or as checked baggage on any route. Ryanair is not suitable for pet transport. Listed here because owners frequently assume cabin pet travel is available on Ryanair."
+    - name: "Vueling"
+      type: "cabin_and_cargo"
+      policy_summary: "Vueling (IAG group) flies between Lithuania and Spain via connections. Small pets up to 10kg (pet plus carrier) may travel in cabin on Vueling. Larger pets travel as cargo via Vueling Cargo or IAG Cargo. Brachycephalic breed restrictions apply in cabin and cargo."
+    - name: "airBaltic"
+      type: "cabin_and_cargo"
+      policy_summary: "airBaltic connects Vilnius to Riga (RIX) and provides onward connections to Spain via partner carriers. Small pets allowed in cabin on airBaltic (up to 8kg with carrier). Larger pets travel as cargo. A practical routing option for owners in Vilnius connecting through Riga."
+    - name: "Lufthansa"
+      type: "cabin_and_cargo"
+      policy_summary: "Via Frankfurt (FRA) to Madrid or Barcelona. Small pets allowed in cabin on Lufthansa (up to 8kg with carrier). Larger pets via Lufthansa Cargo. Brachycephalic breeds have cargo restrictions. A reliable option for larger dogs or owners preferring a major carrier with strong cargo infrastructure."
     - name: "Iberia"
-      type: "cargo_and_cabin"
-      policy_summary: "Madrid (MAD) hub. Connections from Lithuanian airports via European hubs. Cabin and cargo options via Iberia."
-    - name: "Wizz Air"
-      type: "cabin_only"
-      policy_summary: "Vilnius and Kaunas to Spanish destinations. Cabin only for small pets."
-    - name: "LOT Polish Airlines"
-      type: "cargo_and_cabin"
-      policy_summary: "Vilnius to Warsaw (WAW) then to Spain. Live animal cargo available via Warsaw hub."
+      type: "cabin_and_cargo"
+      policy_summary: "Iberia (IAG group) serves Madrid Barajas (MAD) as its main hub. For cabin pets, small animals up to 10kg with carrier. Larger pets via Iberia Cargo. Available via connecting routing from Vilnius through a European hub. Iberia Cargo at MAD is well-equipped for live animal arrivals."
 
   timeline_steps:
     - step: 1
-      action: "Confirm microchip pre-dates rabies vaccination in EU pet passport"
-      timing: "Check passport."
-      responsible: "Your Lithuanian vet"
+      action: "Confirm microchip (ISO 11784/11785) is in place"
+      timing: "Before any other documentation. Check the chip number is recorded in the pet passport."
+      responsible: "Lithuanian vet"
     - step: 2
-      action: "Confirm rabies vaccination is current and at least 21 days old"
-      timing: "Review vaccination dates."
+      action: "Confirm rabies vaccination is current"
+      timing: "If primary vaccination: 21-day wait before travel to Spain. If booster within valid period: immediately effective."
       responsible: "Lithuanian vet"
     - step: 3
-      action: "Update EU pet passport if vaccination is due"
-      timing: "Any time. Allow 21 days from vaccination before travel."
-      responsible: "Lithuanian vet"
+      action: "Obtain or update EU pet passport"
+      timing: "One appointment with an authorised Lithuanian vet. Both vaccination and passport can be done in the same session if the chip is already in place."
+      responsible: "VMVT-authorised Lithuanian vet"
     - step: 4
-      action: "Book Vilnius or Kaunas to Spain. Confirm pet policy with carrier."
-      timing: "Standard lead time."
+      action: "Book airline and confirm pet policy for your chosen carrier"
+      timing: "3-4 weeks before travel. For cabin pets, reserve the cabin spot at booking. For cargo pets, contact the cargo agent. Ryanair does not accept pets."
       responsible: "Owner"
     - step: 5
-      action: "Travel to Spain with EU pet passport."
-      timing: "Travel day."
-      responsible: "Owner, airline"
+      action: "Travel from Vilnius to Spain"
+      timing: "Travel day. VNO to MAD or BCN direct is approximately 4-5 hours. Carry EU passport and crate if travelling in hold."
+      responsible: "Owner and airline"
 
   cost_factors:
-    - "EU pet passport: approximately EUR 40-100"
-    - "Vaccination update if needed: EUR 30-80"
-    - "Cabin pet fee: EUR 30-80"
-    - "Cargo (if applicable): EUR 200-600"
-    - "Total typical range: EUR 80-750"
+    - "EU pet passport issuance or update: EUR 30-80 at Lithuanian vet"
+    - "Rabies booster (if due): EUR 20-60"
+    - "IATA-approved travel crate (if cargo): EUR 50-200 depending on size"
+    - "Cabin pet fee (small pets, approximately EUR 30-70 per leg)"
+    - "Cargo fee (larger pets, EUR 150-500 depending on weight and carrier)"
+    - "Pre-travel health check: EUR 30-70"
+    - "Total typical range: EUR 150-700 for small pets in cabin; EUR 300-800 for larger pets in cargo"
 
   key_warnings:
-    - "Spain does not require tapeworm treatment for dogs from Lithuania. This is a common concern for owners who have researched Ireland; Spain's rules differ."
-    - "Ryanair and Wizz Air are popular options on this route but carry cabin pets only. For larger dogs, Vueling, Iberia, or LOT via Warsaw are needed for cargo."
-    - "Spain's Canary Islands are an EU autonomous region. Pets travelling to Gran Canaria, Tenerife, or other Canary Islands from mainland EU use the same EU pet passport rules. Some carriers may have additional cargo restrictions for island destinations."
+    - "Ryanair serves Vilnius-Spain routes but does not accept pets in any capacity on any route. Check the specific airline policy before purchasing any ticket."
+    - "Spain has stricter rules on certain potentially dangerous dog breeds (perros potencialmente peligrosos, PPP) than most EU countries. Breeds including Rottweiler, American Pit Bull Terrier, and similar types require registration, muzzle, and lead in public spaces. Confirm your breed's status under Spanish regional law before travel."
+    - "Cabin pets must remain in the carrier under the seat throughout the flight. If the carrier does not fit under the seat in front, the pet must travel as cargo."
+    - "Spanish municipalities sometimes require local pet registration (registro municipal) after arrival. Check with your local ayuntamiento (council) about registration requirements in your destination city."
 
   route_complexity: "low"
-  estimated_timeline_weeks: "1-3"
+  estimated_timeline_weeks: "2-5"
 
 content:
   h1: "Pet Transport Lithuania to Spain: 2026 Guide"
-  overview: "Lithuania to Spain is one of the simpler EU pet moves. Both countries use the EU pet passport, there is no tapeworm treatment (Spain is not on that list), no titre test, and no quarantine for compliant arrivals. Your Lithuanian vet issues the passport with a current microchip and rabies vaccination. Ryanair and Wizz Air both fly to Spanish airports from Vilnius and Kaunas, and for larger dogs, cargo options via Warsaw or hub connections work well. Preparation time is days rather than weeks for most owners."
+  overview: "Lithuania-to-Spain is one of the simpler EU pet moves. Both countries are EU member states, so there is no quarantine, no titre test, and no import permit. An EU pet passport (or a single-use AHC if the pet does not have a passport) is all the documentation you need, alongside a current rabies vaccination and an ISO microchip. The main practical consideration is airline choice: Ryanair is the dominant carrier between Vilnius and Spain but does not accept pets at all."
 
   sections:
-    - heading: "A clean and simple EU process"
+    - heading: "Airline options when Ryanair won't take your pet"
       body: |
-        When two EU member states are involved, the EU pet passport is the travel document. Lithuania and Spain both use it. Your Lithuanian vet issues or updates the passport with your pet's microchip number and current rabies vaccination. As long as the microchip was implanted before the vaccination, and the vaccination is current and at least 21 days old, you are ready to travel.
+        Ryanair offers some of the cheapest fares on Vilnius-to-Spain routes, and many owners assume that cheap fares means easy pet travel. The reality is the opposite: Ryanair accepts no live animals on any route, in any capacity. This applies to cabin pets, checked baggage pets, and cargo. If your planned route uses Ryanair, you need a different airline for your pet.
 
-        Spain does not require tapeworm treatment for dogs from other EU countries. It does not require a titre test. Entry from another EU country is as simple as arriving with a valid EU passport.
+        For small pets (under 8-10kg combined weight with carrier), carriers that allow cabin travel from Vilnius to Spain include Vueling (via connections), Iberia (via connections), and Lufthansa (via Frankfurt). The cabin option is cheaper and less stressful for your pet.
 
-    - heading: "Which airports and carriers to consider"
+        For larger dogs, cargo is the route. Lufthansa via Frankfurt provides one of the better cargo connections, with FRA's Animal Lounge available for any transit. The cargo fee for a large dog on this route typically runs EUR 200-500 each way depending on weight and crate dimensions.
+
+    - heading: "EU passport or AHC: which one do you need?"
       body: |
-        Lithuania's main departure airports for Spain are Vilnius International (VNO) and Kaunas International (KUN). Ryanair operates from both to various Spanish cities including Madrid, Barcelona, Valencia, Malaga, and Alicante. These are cabin-only carriers for pets, so they suit small dogs and cats.
+        If your pet already has an EU pet passport issued in Lithuania, that is all you need for the documentation side of the Spain move. Bring it with you. Spanish border checks for EU pets arriving from another EU country are typically spot checks rather than routine inspections of every pet.
 
-        Vueling, the Spanish carrier within the IAG group, connects from European hubs to a wide range of Spanish airports and accepts both cabin pets and cargo. For larger dogs, LOT Polish Airlines via Warsaw has live animal cargo facilities and onward services to Spain.
-
-        Spain's main cargo-capable pet arrival airports are Madrid Barajas (MAD) and Barcelona El Prat (BCN). Most cargo services route through one of these two cities.
-
-    - heading: "Spain's Canary Islands: same rules, different geography"
-      body: |
-        The Canary Islands (Gran Canaria, Tenerife, Lanzarote, and others) are part of Spain and the EU. Pet travel from Lithuania to the Canary Islands uses the same EU pet passport rules as mainland Spain. However, not all carriers that serve mainland Spain also carry live animal cargo to the islands. If your destination is the Canary Islands, confirm cargo availability specifically for that route.
+        If your pet does not have an EU passport (for example, if the pet came from outside the EU or was never issued one), your Lithuanian VMVT-authorised vet can issue a single-use AHC for the Spain trip. The AHC is valid for 10 days from issue and covers the Spain entry. For permanent relocation to Spain, getting an EU passport on arrival from a Spanish vet is practical, though technically not required for EU pets.
 
 faqs:
-  - question: "Does Spain require tapeworm treatment for dogs from Lithuania?"
-    answer: "No. Tapeworm treatment before entry is a requirement specific to Ireland, Finland, Malta, and Norway. Spain does not require it for dogs from other EU member states including Lithuania. Your dog needs only a valid EU pet passport with a current rabies vaccination and a microchip."
-  - question: "Are there any breed restrictions in Spain I should know about before I arrive?"
-    answer: "Spain has breed-specific legislation. The national list includes Staffordshire Bull Terriers, American Staffordshire Terriers, Rottweilers, Dogo Argentinos, Fila Brasileiros, Tosa Inus, Akitas, Alaskan Malamutes, and several others. Regional rules may vary. These do not prevent entry into Spain but require registration as a potentially dangerous dog (perro potencialmente peligroso) and a liability insurance policy once you are resident. Check the MAPA (mapa.gob.es) for the current national list."
-  - question: "Can I fly directly from Vilnius to Madrid or Barcelona?"
-    answer: "Direct flights from Vilnius to Madrid or Barcelona operate seasonally. Ryanair and Wizz Air sometimes run these routes in summer. Outside of direct service, connecting flights via Warsaw, Riga, Frankfurt, or Amsterdam are standard. Check current schedules when planning."
+  - question: "Do I need a titre test to take my dog from Lithuania to Spain?"
+    answer: "No. Lithuania is an EU member state, and Spain is an EU member state. EU-to-EU pet movements do not require a rabies titre test. A current rabies vaccination, microchip, and EU pet passport or AHC are all that is needed."
+  - question: "Can I fly Ryanair from Vilnius to Spain with my dog or cat?"
+    answer: "No. Ryanair does not accept any live animals on any of its routes, including cabin pets, checked baggage pets, and cargo. If you fly Ryanair yourself, your pet will need to travel on a different airline. Vueling, airBaltic, and Lufthansa are alternatives that accept pets on Vilnius-Spain connections."
+  - question: "Does Spain have breed-specific legislation that could affect my pet?"
+    answer: "Yes. Spain has national breed-specific legislation covering perros potencialmente peligrosos (PPP, potentially dangerous dogs). Breeds on the PPP list (including Rottweiler, American Pit Bull Terrier, Dobermann, and others) require registration with the local ayuntamiento, third-party liability insurance, and must be muzzled and on a short lead in public. Regional laws vary. Confirm your breed's status before travel."
+  - question: "How long does it take to arrange this move?"
+    answer: "For pets with a current EU passport and up-to-date vaccination, 2-4 weeks is sufficient to arrange flights and any travel admin. If a rabies booster or first vaccination is needed, allow 21 additional days before travel (for the primary vaccination to become valid). If an EU passport needs to be issued for the first time, add one vet appointment."
 
 links:
   sideways:
-    - url: "/pet-transport/slovenia-to-spain/"
-      text: "Pet Transport Slovenia to Spain"
+    - url: "/pet-transport/spain-to-lithuania/"
+      text: "Pet Transport Spain to Lithuania"
+    - url: "/pet-transport/lithuania-to-france/"
+      text: "Pet Transport Lithuania to France"
     - url: "/pet-transport/lithuania-to-germany/"
       text: "Pet Transport Lithuania to Germany"
   upward:
     - url: "/pet-transport/countries/spain/"
-      text: "Spain pet import guide"
-    - url: "/pet-transport/airlines/iberia/"
-      text: "Iberia pet cargo"
+      text: "Spain pet import rules"
     - url: "/pet-transport/airlines/vueling/"
       text: "Vueling pet policy"
+    - url: "/pet-transport/airlines/lufthansa/"
+      text: "Lufthansa pet cargo"
 ---

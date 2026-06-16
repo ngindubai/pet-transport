@@ -10,10 +10,10 @@
 ## Current State (2026-06-16, reconciled from disk by verify_build_state.py)
 
 - **Routes built:** 5,831 of ~37,830 country pairs (~15.4%). True on-disk count (5,821 in `routes/` + 10 in `pet-transport/`).
-- **Blog articles:** 428
-- **Total .md source files:** 6,632 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-56 complete. **Chunk 57 is next** (Template B, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 56 (Template A, Tier B): 25 new routes. AT/CH to Caucasus (AM/GE/AZ/KZ x 2 origins = 8), AT/CH to Baltic/Slovenia (EE/LV/LT/SI x 2 origins = 8), Baltic/Slovenia to IE/PT/ES (EE/LV/LT to IE, LV/LT/EE to PT, LT/SI to ES, SI to IE = 9). Sources: SSFS Armenia, USDA APHIS Georgia (Feb 2026), Azerbaijan State Vet Service, KKVS Kazakhstan, BLV blv.admin.ch 2026, SI 112/2014 Ireland.
-- **Content plan:** Days 1-6 + Days 8-21 complete (21 articles written). Day 7 skipped (pre-existing). **Day 22 is next.** Day 21 = pet-transport-uk-to-new-zealand (Marcus Webb, ~2200 words, MPI import permit, RNATT titre 90-day minimum, 10-day Auckland/Christchurch quarantine, Emirates/Singapore Airlines cargo, July 2026 IHS transition, GBP 4,800-7,200).
+- **Blog articles:** 429
+- **Total .md source files:** 6,633 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Phase 7 progress:** Chunks 1-56 complete. **Chunk 57 is next** (Template B, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 56 (two parallel runs, Template A, Tier B): 50 new routes total. Run 1: AT/CH to Caucasus/Baltic/Slovenia (25 routes). Run 2: Caucasus/Central Asia to AT/CH/CZ/PL/HU + Baltic/Slovenia gap fills (25 routes).
+- **Content plan:** Days 1-6 + Days 8-22 complete (22 articles written). Day 7 skipped (pre-existing). **Day 23 is next.** Day 22 = pet-transportation-services-uk (Marcus Webb, ~2000 words, four types of UK pet transport service, IPATA agencies, BA World Cargo, APHA Type 1 authorisation, credentials).
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
 - **Route template redesign (live on all ~5,531 route pages):** Six new premium templates render via `site/layouts/routes/single.html` -> partials `route-new-{na,nb,nc,nd,ne,nl}.html` with scoped CSS `static/css/route-new-{na..nl}.css`. Variant routing: front-matter `template_variant` A->na, B->nb, C->nc, D->nd, E->ne, legacy->nl.

@@ -1,6 +1,6 @@
 ---
-title: "Pet Transport Slovenia to Spain: EU Pet Passport, Ljubljana to Madrid or Barcelona 2026"
-description: "Moving a dog or cat from Slovenia to Spain in 2026. Both EU member states. EU pet passport, current rabies vaccination, ISO microchip. No tapeworm treatment, titre test, or quarantine required. Flight options from Ljubljana to Spain."
+title: "Pet Transport Slovenia to Spain: Ljubljana to Barcelona or Madrid 2026"
+description: "Moving a dog or cat from Slovenia to Spain in 2026. EU-to-EU: EU pet passport, microchip, current rabies vaccination. No quarantine. Ryanair from Ljubljana does not take pets. Guide from Ljubljana to Spain."
 date: "2026-06-16"
 type: "routes"
 layout: "single"
@@ -15,116 +15,114 @@ route_data:
     code: "SI"
     country: "Slovenia"
     export_requirements:
-      export_permit: "No export permit required for intra-EU movement."
-      health_certificate: "EU pet passport. Slovenia is an EU member state. Slovenian vets issue EU pet passports."
+      export_permit: "No export permit required for companion pets moving between EU member states."
+      health_certificate: "EU pet passport issued by an UVHVVR-authorised Slovenian vet, or a single-use AHC issued within 10 days of entry into Spain if no passport exists."
       authority: "Administration of the Republic of Slovenia for Food Safety, Veterinary Sector and Plant Protection (UVHVVR): uvhvvr.gov.si"
 
   destination:
     code: "ES"
     country: "Spain"
     import_requirements:
-      microchip: "Required. ISO 11784/11785. Implanted before the rabies vaccination."
-      rabies_vaccination: "Required. At least 21 days since primary vaccination. Current. Source: EU Regulation 576/2013."
-      titre_test: "Not required."
-      tapeworm_treatment: "Not required. Spain does not require tapeworm treatment for dogs from EU member states."
-      quarantine: "No quarantine."
-      import_permit: "Not required."
-      health_certificate: "EU pet passport."
-      authority: "Ministry of Agriculture, Fisheries and Food (MAPA): mapa.gob.es"
+      microchip: "Required. ISO 11784/11785 (15-digit). Must be in place before vaccination."
+      rabies_vaccination: "Required. Current vaccination. First vaccination: 21-day wait before travel. Booster within valid period: immediately effective."
+      titre_test: "Not required. Spain is EU. No titre test for EU-to-EU movements."
+      quarantine: "Not required."
+      import_permit: "Not required for companion pets moving between EU member states."
+      health_certificate: "EU pet passport or AHC issued within 10 days of entry into Spain."
+      authority: "Spain Ministry of Agriculture, Fisheries and Food (MAPA): mapa.gob.es"
 
   airlines:
     - name: "Ryanair"
-      type: "cabin_only"
-      policy_summary: "Ljubljana (LJU) connections to Spain. Budget airline with cabin pet acceptance. No cargo. Connects via European hubs to Spanish airports."
-    - name: "Austrian Airlines / Lufthansa Group"
-      type: "cargo_and_cabin"
-      policy_summary: "Ljubljana to Vienna (VIE) then to Madrid or Barcelona. Cargo and cabin options. Vienna is a practical hub for Slovenia-to-Spain cargo."
+      type: "cargo_only"
+      policy_summary: "Ryanair operates from Ljubljana (LJU) to Barcelona (BCN), Madrid (MAD), and other Spanish airports. Ryanair does not accept live animals on any route. Not suitable for pet transport. The most common carrier from Ljubljana to Spain, so owners frequently ask about it."
     - name: "Vueling"
-      type: "cargo_and_cabin"
-      policy_summary: "Barcelona (BCN) hub. Connections from Central European cities. Cabin and cargo options for Slovenia-Spain routes."
+      type: "cabin_and_cargo"
+      policy_summary: "Vueling (IAG group) serves Barcelona El Prat (BCN) with connections from Central European hubs. For the Ljubljana leg, routing via Vienna or Frankfurt connects to Vueling or Iberia services. Small pets up to 10kg (pet plus carrier) in cabin on Vueling. Cargo for larger pets."
+    - name: "Austrian Airlines"
+      type: "cabin_and_cargo"
+      policy_summary: "Austrian Airlines connects Ljubljana (LJU) to Vienna (VIE), with onward connections to Madrid (MAD), Barcelona (BCN), and other Spanish cities via partner carriers or Iberia. Small pets in cabin. Larger pets as cargo. A practical hub for Ljubljana-to-Spain connections."
     - name: "Iberia"
-      type: "cargo_and_cabin"
-      policy_summary: "Madrid (MAD) hub. Connections via European hubs from Ljubljana. Cargo available."
+      type: "cabin_and_cargo"
+      policy_summary: "Iberia serves Madrid Barajas (MAD) as its main hub. For routes from Ljubljana, connections via Vienna (Austrian Airlines) or Frankfurt (Lufthansa) feed into Iberia services. Small pets up to 10kg (plus carrier) in cabin. Cargo for larger pets. Iberia Cargo at MAD handles live animal imports from EU origins routinely."
+    - name: "Lufthansa"
+      type: "cabin_and_cargo"
+      policy_summary: "Via Frankfurt (FRA) to Madrid or Barcelona. Small pets in cabin (up to 8kg with carrier). Larger pets via Lufthansa Cargo. FRA's Animal Lounge provides live animal holding for connecting cargo. Good option for larger dogs needing cargo on the Spain leg."
 
   timeline_steps:
     - step: 1
-      action: "Confirm microchip pre-dates rabies vaccination in EU pet passport"
-      timing: "Check passport."
-      responsible: "Your Slovenian vet"
+      action: "Confirm microchip, rabies vaccination, and EU pet passport are current"
+      timing: "At least 2-3 weeks before travel. If vaccination needed: 21-day wait. If passport needed: one vet appointment."
+      responsible: "Slovenian vet"
     - step: 2
-      action: "Confirm rabies vaccination is current and at least 21 days old"
-      timing: "Review vaccination dates."
-      responsible: "Slovenian vet"
-    - step: 3
-      action: "EU pet passport updated if needed"
-      timing: "Any time before travel."
-      responsible: "Slovenian vet"
-    - step: 4
-      action: "Book Ljubljana to Spain with connection. Confirm pet policy."
-      timing: "Standard lead time."
+      action: "Book connecting flight from Ljubljana via Vienna or Frankfurt to Spain"
+      timing: "3-4 weeks before travel. Reserve the cabin pet space at the time of ticket purchase if taking a small pet in cabin."
       responsible: "Owner"
-    - step: 5
-      action: "Travel to Spain with EU pet passport."
-      timing: "Travel day. Ljubljana to Spain is 2-5 hours depending on routing."
-      responsible: "Owner, airline"
+    - step: 3
+      action: "Travel Ljubljana to Spain"
+      timing: "Travel day. LJU to MAD or BCN via VIE or FRA is approximately 5-7 hours total including connection."
+      responsible: "Owner and airline"
 
   cost_factors:
-    - "EU pet passport: approximately EUR 40-100"
-    - "Vaccination update if needed: EUR 30-80"
-    - "Cabin pet fee: EUR 30-80"
-    - "Cargo if needed: EUR 200-600"
-    - "Total typical range: EUR 80-750"
+    - "EU pet passport update (if needed): EUR 30-80 at Slovenian vet"
+    - "Rabies booster (if due): EUR 20-60"
+    - "IATA-approved travel crate (if cargo): EUR 50-200"
+    - "Cabin pet fee: EUR 30-70 per leg (varies by carrier)"
+    - "Cargo fee (larger pets): EUR 200-500 depending on weight and carrier"
+    - "Total typical range: EUR 150-700 for small cabin pets; EUR 300-900 for larger cargo pets"
 
   key_warnings:
-    - "Spain has a national breed-specific list covering several types of dogs, requiring registration and insurance once resident. These do not affect entry but will affect daily life."
-    - "Ljubljana (LJU) is a small airport with limited direct connections to Spain. Most routes involve a connection at Vienna, Frankfurt, or a budget hub."
-    - "No tapeworm treatment is required for Spain. This is different from Ireland. If you are moving to Spain, this step is not needed."
+    - "Ryanair flies Ljubljana to Spain but takes no pets. This is the most common source of confusion on this route. If Ryanair is your chosen flight, you need a different arrangement for your pet."
+    - "Spain's perros potencialmente peligrosos (PPP) legislation applies to certain breeds including Rottweiler, American Pit Bull Terrier, and others. These dogs need PPP registration, insurance, and muzzle and lead in public. Confirm your breed under Spanish law before travel."
+    - "No direct Ljubljana-to-Spain route operates a pet-carrying service without at least one connection. Plan for a layover at Vienna or Frankfurt and factor this into your pet's travel day welfare planning."
+    - "Spanish regions have their own additional rules on top of the national framework. Catalonia (Barcelona area), Madrid, and other regions may have local breed restrictions or registration requirements. Check with the relevant ajuntament or ayuntamiento after arrival."
 
   route_complexity: "low"
-  estimated_timeline_weeks: "1-3"
+  estimated_timeline_weeks: "2-4"
 
 content:
   h1: "Pet Transport Slovenia to Spain: 2026 Guide"
-  overview: "Slovenia to Spain is a clean EU-to-EU move. Both countries operate under the same EU pet passport system, and Spain has no additional requirements for dogs beyond the passport (no tapeworm treatment, no titre test). Your Slovenian vet issues or updates the EU pet passport with the required microchip and vaccination details. The main practical consideration is the routing, since Ljubljana has limited direct connections to Spain and most journeys involve a connection."
+  overview: "Slovenia-to-Spain is a simple EU-to-EU pet move in terms of documentation: EU pet passport, current rabies vaccination, ISO microchip. The complication on this route is almost always the airline, because Ryanair is the most direct and cheapest carrier from Ljubljana to Spain but does not accept pets. Owners need to plan around this and book via Austrian Airlines through Vienna or Lufthansa through Frankfurt instead. Budget 5-7 hours of total travel time including connection."
 
   sections:
-    - heading: "EU pet travel at its most straightforward"
+    - heading: "Why Ryanair from Ljubljana won't work for your pet"
       body: |
-        When two EU countries share the same pet travel framework, the process is as simple as international pet moves get. Slovenia and Spain both use EU Regulation 576/2013. Your EU pet passport from a Slovenian vet, with a valid microchip (implanted before vaccination) and a current rabies vaccination (at least 21 days old), covers everything needed for entry into Spain.
+        Ryanair dominates Ljubljana Airport's route map to Spain. Barcelona, Madrid, and other Spanish airports are all served by Ryanair from LJU at competitive prices. But Ryanair's blanket policy is that no live animals are accepted on any route, in any capacity. This applies to the Ljubljana-to-Spain routes as much as anywhere.
 
-        Spain does not require tapeworm treatment for dogs from EU countries. There is no rabies titre test requirement. No quarantine, no permits. The passport and vaccination are all that stand between your pet and Spain.
+        If you buy a Ryanair ticket for yourself, you still need to arrange your pet's travel on a separate airline. The most practical alternative from Ljubljana is Austrian Airlines (LJU-VIE), which connects at Vienna to Iberia, Vueling, or other Spain-bound carriers. Lufthansa is another option, routing LJU-FRA then connecting to Spain.
 
-    - heading: "Getting from Ljubljana to Spain"
+        For a small dog or cat travelling in cabin, Austrian Airlines accepts pets in cabin from Ljubljana to Vienna, and Vueling or Iberia can carry them on the Vienna-to-Spain segment. For a large dog in cargo, Lufthansa via Frankfurt gives access to FRA's Animal Lounge for any transit time.
+
+    - heading: "What to bring for Spanish customs on arrival"
       body: |
-        Ljubljana Joze Pucnik Airport (LJU) is a well-connected small airport but does not have direct services to most Spanish cities. The most practical routings go via Vienna with Austrian Airlines (then Iberia or Vueling connections to Spain), or via Frankfurt (Lufthansa Group to Madrid or Barcelona).
+        Spain does not carry out routine EU pet passport checks for all arriving EU pets, but occasional spot checks happen at border crossings, ports, and airports. If your pet is checked, the Spanish border vet or customs officer will look at the EU passport for: the 15-digit microchip number, confirmation that the chip was implanted before or on the same day as the first rabies vaccination, and a current valid rabies vaccination.
 
-        Budget carriers including Ryanair sometimes run seasonal connections from Ljubljana to Spanish airports. These are cabin-only for pets, so they suit small animals. For cargo transport of larger dogs, the Vienna or Frankfurt routing via cargo-capable carriers is necessary.
+        Bring the original EU passport, not a copy or photo. Some Slovenian pets may have older EU passport formats: these remain valid under transitional arrangements but check with your vet if the passport is more than 10 years old.
 
-    - heading: "Spain's breed-specific legislation"
-      body: |
-        Spain operates a national list of breeds classified as potentially dangerous dogs (perros potencialmente peligrosos). This includes Staffordshire Bull Terriers, American Staffordshire Terriers, Rottweilers, Dogo Argentinos, Fila Brasileiros, and others. The classification does not prevent you bringing these breeds into Spain, but once resident you will need to register the dog with local authorities, pass a psychological suitability test, and hold a civil liability insurance policy.
-
-        Some Spanish autonomous communities have their own additional rules beyond the national list. If you are relocating to Spain with a breed that may be affected, research the rules specific to your destination region before you move.
+        After arrival in Spain and once you establish residency, Spanish law requires dog registration with the local ayuntamiento (council) or the regional Registro de Animales de Compania. The registration links to the microchip number.
 
 faqs:
-  - question: "Is there a quarantine period for pets from Slovenia arriving in Spain?"
-    answer: "No. Spain does not quarantine personal companion animals arriving from other EU member states with a valid EU pet passport. The documentary check at the airport is brief. Healthy pets with complete documentation clear entry quickly."
-  - question: "My dog is a Rottweiler. Can I bring it to Spain from Slovenia?"
-    answer: "Yes, you can bring it in. The Rottweiler appears on Spain's potentially dangerous dog list, which means once you are resident you need to register the dog, undergo a suitability test, and hold liability insurance. Entry into the country is not blocked. Contact the local authority (ayuntamiento) in your Spanish destination for registration requirements."
-  - question: "Which Spanish airport is best for arriving with a large dog as cargo?"
-    answer: "Madrid Barajas (MAD) and Barcelona El Prat (BCN) are the main cargo-capable airports in Spain for live animal arrivals. Both have established cargo handling facilities. Iberia and Vueling handle most cargo pet movements into Spain. If your destination is in southern Spain, Malaga (AGP) may also be an option but cargo facilities are more limited."
+  - question: "Do I need a titre test to take my dog from Slovenia to Spain?"
+    answer: "No. Slovenia and Spain are both EU member states. The titre test (FAVN or ELISA) is only required for pets moving from non-EU countries into the EU. EU-to-EU movements require only a current rabies vaccination, microchip, and EU pet passport or AHC."
+  - question: "Is there a direct flight from Ljubljana to Barcelona or Madrid that accepts pets?"
+    answer: "No direct pet-carrying service operates between Ljubljana and Spain. Ryanair offers direct routes but takes no pets. The practical routing involves a connection via Vienna (Austrian Airlines) or Frankfurt (Lufthansa) to reach Madrid or Barcelona. Total travel time is approximately 5-7 hours."
+  - question: "Can I drive from Slovenia to Spain with my pet?"
+    answer: "You can drive through Austria, Switzerland, and France into Spain. The driving distance from Ljubljana to Barcelona is approximately 1,700km and takes around 15-17 hours without stops. For a long drive, bring water, food, and plan regular breaks for your pet. All countries en route are Schengen so there are no routine passport checks, but carry your EU pet passport in case of spot checks. Switzerland requires a vignette (motorway toll sticker)."
+  - question: "Does Spain require any vaccinations beyond rabies for dogs entering from Slovenia?"
+    answer: "Spain does not require titre tests, additional vaccinations, or health certificates beyond the EU standard for EU-origin pets. A current rabies vaccination, microchip, and EU passport are sufficient. Spain does recommend regular internal and external parasite treatments, but these are not mandated for EU pet arrivals."
 
 links:
   sideways:
-    - url: "/pet-transport/lithuania-to-spain/"
-      text: "Pet Transport Lithuania to Spain"
+    - url: "/pet-transport/spain-to-slovenia/"
+      text: "Pet Transport Spain to Slovenia"
     - url: "/pet-transport/slovenia-to-germany/"
       text: "Pet Transport Slovenia to Germany"
+    - url: "/pet-transport/slovenia-to-italy/"
+      text: "Pet Transport Slovenia to Italy"
   upward:
     - url: "/pet-transport/countries/spain/"
-      text: "Spain pet import guide"
-    - url: "/pet-transport/airlines/iberia/"
-      text: "Iberia pet cargo"
+      text: "Spain pet import rules"
+    - url: "/pet-transport/airlines/austrian-airlines/"
+      text: "Austrian Airlines pet policy"
     - url: "/pet-transport/airlines/vueling/"
       text: "Vueling pet policy"
 ---
