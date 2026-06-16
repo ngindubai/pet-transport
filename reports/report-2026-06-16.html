@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Build Report: 16 June 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --ink:#1a1a1a; --muted:#5a5a5a; --rule:#e0dcd8; --bg:#faf8f5; --card:#ffffff; --green:#1a6640; --green-bg:#edf7f1; --red:#8b1a1a; --red-bg:#fdf0f0; --blue:#1a3a6a; --blue-bg:#eef2fb; --amber:#7a5200; --amber-bg:#fff8e1; }
+    body { font-family:'Inter Tight',system-ui,sans-serif; font-size:16px; line-height:1.65; color:var(--ink); background:var(--bg); padding:2rem 1rem 4rem; }
+    .container { max-width:860px; margin:0 auto; }
+    .report-header { border-bottom:2px solid var(--ink); padding-bottom:1.25rem; margin-bottom:2rem; }
+    .report-header .eyebrow { font-family:'JetBrains Mono',monospace; font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); margin-bottom:0.4rem; }
+    h1 { font-family:'Fraunces',Georgia,serif; font-size:2.4rem; font-weight:700; line-height:1.15; color:var(--ink); }
+    .summary-bar { display:flex; flex-wrap:wrap; gap:1.5rem; margin-top:1rem; padding:0.85rem 1rem; background:var(--card); border:1px solid var(--rule); border-radius:4px; }
+    .summary-bar .stat { display:flex; flex-direction:column; }
+    .summary-bar .stat-value { font-family:'Fraunces',serif; font-size:1.75rem; font-weight:600; color:var(--ink); line-height:1; }
+    .summary-bar .stat-label { font-size:0.78rem; color:var(--muted); margin-top:0.2rem; }
+    .clear-box { border-left:4px solid var(--green); background:var(--green-bg); padding:1rem 1.25rem; border-radius:0 4px 4px 0; margin-bottom:2rem; }
+    .clear-box .clear-heading { font-family:'Fraunces',serif; font-size:1rem; font-weight:700; color:var(--green); margin-bottom:0.3rem; letter-spacing:0.04em; }
+    .clear-box p { font-size:0.9rem; color:var(--green); line-height:1.55; }
+    .amber-box { border-left:4px solid var(--amber); background:var(--amber-bg); padding:1rem 1.25rem; border-radius:0 4px 4px 0; margin-bottom:1rem; }
+    .amber-box .amber-heading { font-family:'Fraunces',serif; font-size:1rem; font-weight:700; color:var(--amber); margin-bottom:0.3rem; letter-spacing:0.04em; }
+    .amber-box p { font-size:0.9rem; color:var(--amber); line-height:1.55; }
+    .amber-box code { font-family:'JetBrains Mono',monospace; font-size:0.82rem; background:rgba(0,0,0,0.06); padding:0.1em 0.3em; border-radius:3px; }
+    .lead { font-family:'Fraunces',Georgia,serif; font-size:1.15rem; line-height:1.7; color:var(--ink); margin-bottom:2.5rem; max-width:680px; }
+    .lead::first-letter { font-size:4rem; font-weight:700; float:left; line-height:0.82; margin-right:0.08em; margin-top:0.1em; color:var(--ink); font-family:'Fraunces',serif; }
+    .site-section { margin-bottom:2.5rem; background:var(--card); border:1px solid var(--rule); border-radius:6px; overflow:hidden; }
+    .site-header { display:flex; align-items:center; justify-content:space-between; padding:0.9rem 1.25rem; border-bottom:1px solid var(--rule); gap:0.75rem; }
+    .site-header h2 { font-family:'Fraunces',serif; font-size:1.2rem; font-weight:600; }
+    .badge { font-family:'JetBrains Mono',monospace; font-size:0.72rem; font-weight:500; padding:0.2rem 0.55rem; border-radius:20px; white-space:nowrap; flex-shrink:0; }
+    .badge-built { background:var(--green-bg); color:var(--green); border:1px solid #a8d8bc; }
+    .badge-none { background:#f0f0f0; color:#888; border:1px solid #d8d8d8; }
+    .badge-unknown { background:var(--amber-bg); color:var(--amber); border:1px solid #e8c94a; }
+    .site-body { padding:1rem 1.25rem; }
+    .site-meta { font-family:'JetBrains Mono',monospace; font-size:0.72rem; color:var(--muted); margin-bottom:1rem; padding-bottom:0.75rem; border-bottom:1px dashed var(--rule); line-height:1.6; }
+    .commit-block { margin-top:0.35rem; }
+    .commit-msg { font-style:italic; color:var(--muted); font-family:'Inter Tight',sans-serif; font-size:0.85rem; }
+    .pages-group { margin-bottom:1.25rem; }
+    .pages-group-label { font-size:0.75rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:var(--muted); margin-bottom:0.5rem; }
+    .note-inline { font-size:0.8rem; color:var(--muted); font-style:italic; margin-top:0.4rem; margin-bottom:0.5rem; }
+    .page-list { list-style:none; display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:0.3rem; }
+    .page-list.compact { grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); }
+    .page-list li { font-size:0.88rem; }
+    .page-list a { font-family:'JetBrains Mono',monospace; font-size:0.78rem; color:var(--blue); text-decoration:none; word-break:break-all; }
+    .page-list a:hover { text-decoration:underline; }
+    .page-title { display:block; font-family:'Inter Tight',sans-serif; font-size:0.88rem; font-weight:500; color:var(--ink); }
+    .no-build { color:var(--muted); font-size:0.9rem; font-style:italic; padding:0.5rem 0; }
+    footer { margin-top:3rem; padding-top:1rem; border-top:1px solid var(--rule); font-size:0.78rem; color:var(--muted); font-family:'JetBrains Mono',monospace; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <p class="eyebrow">PetTransportGlobal Group &nbsp;/&nbsp; Daily Build Report</p>
+    <h1>16 June 2026</h1>
+    <div class="summary-bar">
+      <div class="stat"><span class="stat-value">1</span><span class="stat-label">sites confirmed built</span></div>
+      <div class="stat"><span class="stat-value">49</span><span class="stat-label">new pages today (Pet Transport)</span></div>
+      <div class="stat"><span class="stat-value">48</span><span class="stat-label">new route pages (chunk 56, Template A, Tier B)</span></div>
+      <div class="stat"><span class="stat-value">1</span><span class="stat-label">new blog article (Day 22)</span></div>
+      <div class="stat"><span class="stat-value">2</span><span class="stat-label">existing routes refined today</span></div>
+      <div class="stat"><span class="stat-value">?</span><span class="stat-label">Mortgage Compare (repo not accessible)</span></div>
+      <div class="stat"><span class="stat-value">?</span><span class="stat-label">Bus Hire (repo not accessible)</span></div>
+      <div class="stat"><span class="stat-value">?</span><span class="stat-label">Funeral Repatriation (repo not accessible)</span></div>
+      <div class="stat"><span class="stat-value">?</span><span class="stat-label">Close Protection (repo not accessible)</span></div>
+      <div class="stat"><span class="stat-value">1</span><span class="stat-label">flag requiring attention (build_state drift)</span></div>
+    </div>
+  </header>
+
+  <div class="amber-box">
+    <p class="amber-heading">FLAG: BUILD STATE DRIFT DETECTED</p>
+    <p>The session startup hook detected a mismatch between <code>build_state.json</code> and disk. The JSON reports <strong>5,831 routes</strong> but disk holds <strong>5,854</strong> (23 routes uncounted). Total page count is similarly off: JSON says 6,633, disk has 6,656. The 23 missing routes correspond exactly to the new files added in commit b7df96d, which updated the docs using the pre-second-block baseline. Fix: run <code>python verify_build_state.py --write</code> and commit the result. This reporter is read-only and cannot make the fix itself.</p>
+  </div>
+
+  <div class="amber-box">
+    <p class="amber-heading">NOTE: PARTIAL REPORT</p>
+    <p>This scheduled session has GitHub access scoped to ngindubai/pet-transport only. The four other repos could not be queried for today's commits. Contact Gareth or widen the session scope to include all five repos for a complete cross-site report.</p>
+  </div>
+
+  <p class="lead">Chunk 56 landed today in two commits, adding 48 new Tier B route pages across two template blocks. Block B covers Austria and Switzerland sending pets to the Caucasus, Central Asia, and the Baltics, plus the reverse: Baltic states dispatching to Ireland, Portugal, and Spain. Block A adds the four Caucasus and Central Asian countries (Armenia, Georgia, Azerbaijan, Kazakhstan) as origins, each pairing with five Central European destinations under the EU Regulation 2020/692 unlisted country process. Regulation-specific detail is dense throughout: the FSVO advance permission requirement for Switzerland, the Echinococcus tapeworm 24-to-120-hour treatment window for Lithuania-to-Norway dogs, Denmark's 13-breed ban, and AZAL and Air Astana highlighted as national carrier options on Caucasus sectors. Blog Day 22 delivers a UK pet transport market guide under Marcus Webb's byline. Chunk 57 (Template B, Tier B) is next.</p>
+
+  <section class="site-section">
+    <div class="site-header"><h2>Pet Transport Global</h2><span class="badge badge-built">49 new pages (chunk 56, Template A, Tier B + Blog Day 22)</span></div>
+    <div class="site-body">
+      <div class="site-meta">domain: pettransportglobal.com &nbsp;|&nbsp; branch: main
+        <div class="commit-block"><span class="commit-msg">f14490f &nbsp;|&nbsp; 06:40 UTC &nbsp;|&nbsp; build: pet-transport chunk 56 (B/A) &mdash; Block B: 25 routes (Austria and Switzerland outbound + Baltic to West Europe)</span></div>
+        <div class="commit-block"><span class="commit-msg">b7df96d &nbsp;|&nbsp; 06:44 UTC &nbsp;|&nbsp; Chunk 56 (25 Template A Tier B routes) + Blog Day 22 &mdash; Block A: 23 new routes + 2 refined + 1 blog</span></div>
+      </div>
+
+      <!-- BLOCK B: Austria outbound -->
+      <div class="pages-group">
+        <p class="pages-group-label">Block B &mdash; Austria to Caucasus, Central Asia and Baltics (8 new routes)</p>
+        <p class="note-inline">Armenia, Azerbaijan, Georgia, Kazakhstan: EU-unlisted, FAVN titre + 90-day wait + SSFS health certificate. Estonia, Latvia, Lithuania, Slovenia: EU-listed, standard pet passport applies. Sources: BMF/AGES; FSVO; EU Reg 2020/692.</p>
+        <ul class="page-list compact">
+          <li><span class="page-title">Austria to Armenia</span><a href="https://www.pettransportglobal.com/pet-transport/austria-to-armenia/">https://www.pettransportglobal.com/pet-transport/austria-to-armenia/</a></li>
+          <li><span class="page-title">Austria to Azerbaijan</span><a href="https://www.pettransportglobal.com/pet-transport/austria-to-azerbaijan/">https://www.pettransportglobal.com/pet-transport/austria-to-azerbaijan/</a></li>
+          <li><span class="page-title">Austria to Estonia</span><a href="https://www.pettransportglobal.com/pet-transport/austria-to-estonia/">https://www.pettransportglobal.com/pet-transport/austria-to-estonia/</a></li>
+          <li><span class="page-title">Austria to Georgia</span><a href="https://www.pettransportglobal.com/pet-transport/austria-to-georgia/">https://www.pettransportglobal.com/pet-transport/austria-to-georgia/</a></li>
+          <li><span class="page-title">Austria to Kazakhstan</span><a href="https://www.pettransportglobal.com/pet-transport/austria-to-kazakhstan/">https://www.pettransportglobal.com/pet-transport/austria-to-kazakhstan/</a></li>
+          <li><span class="page-title">Austria to Latvia</span><a href="https://www.pettransportglobal.com/pet-transport/austria-to-latvia/">https://www.pettransportglobal.com/pet-transport/austria-to-latvia/</a></li>
+          <li><span class="page-title">Austria to Lithuania</span><a href="https://www.pettransportglobal.com/pet-transport/austria-to-lithuania/">https://www.pettransportglobal.com/pet-transport/austria-to-lithuania/</a></li>
+          <li><span class="page-title">Austria to Slovenia</span><a href="https://www.pettransportglobal.com/pet-transport/austria-to-slovenia/">https://www.pettransportglobal.com/pet-transport/austria-to-slovenia/</a></li>
+        </ul>
+      </div>
+
+      <!-- BLOCK B: Switzerland outbound -->
+      <div class="pages-group">
+        <p class="pages-group-label">Block B &mdash; Switzerland to Caucasus, Central Asia and Baltics (8 new routes)</p>
+        <p class="note-inline">Switzerland requires FSVO advance permission for unlisted-country imports. Echinococcus tapeworm treatment applies on routes transiting or entering CH. Sources: FSVO/BLV; EU Reg 2020/692; AGES Austria.</p>
+        <ul class="page-list compact">
+          <li><span class="page-title">Switzerland to Armenia</span><a href="https://www.pettransportglobal.com/pet-transport/switzerland-to-armenia/">https://www.pettransportglobal.com/pet-transport/switzerland-to-armenia/</a></li>
+          <li><span class="page-title">Switzerland to Azerbaijan</span><a href="https://www.pettransportglobal.com/pet-transport/switzerland-to-azerbaijan/">https://www.pettransportglobal.com/pet-transport/switzerland-to-azerbaijan/</a></li>
+          <li><span class="page-title">Switzerland to Estonia</span><a href="https://www.pettransportglobal.com/pet-transport/switzerland-to-estonia/">https://www.pettransportglobal.com/pet-transport/switzerland-to-estonia/</a></li>
+          <li><span class="page-title">Switzerland to Georgia</span><a href="https://www.pettransportglobal.com/pet-transport/switzerland-to-georgia/">https://www.pettransportglobal.com/pet-transport/switzerland-to-georgia/</a></li>
+          <li><span class="page-title">Switzerland to Kazakhstan</span><a href="https://www.pettransportglobal.com/pet-transport/switzerland-to-kazakhstan/">https://www.pettransportglobal.com/pet-transport/switzerland-to-kazakhstan/</a></li>
+          <li><span class="page-title">Switzerland to Latvia</span><a href="https://www.pettransportglobal.com/pet-transport/switzerland-to-latvia/">https://www.pettransportglobal.com/pet-transport/switzerland-to-latvia/</a></li>
+          <li><span class="page-title">Switzerland to Lithuania</span><a href="https://www.pettransportglobal.com/pet-transport/switzerland-to-lithuania/">https://www.pettransportglobal.com/pet-transport/switzerland-to-lithuania/</a></li>
+          <li><span class="page-title">Switzerland to Slovenia</span><a href="https://www.pettransportglobal.com/pet-transport/switzerland-to-slovenia/">https://www.pettransportglobal.com/pet-transport/switzerland-to-slovenia/</a></li>
+        </ul>
+      </div>
+
+      <!-- BLOCK B: Baltic to West Europe -->
+      <div class="pages-group">
+        <p class="pages-group-label">Block B &mdash; Baltic states and Slovenia to West Europe (9 new routes)</p>
+        <p class="note-inline">All EU-listed origins. Pet passport sufficient. Echinococcus treatment required for dogs entering Norway (24-120h window; source: Mattilsynet). Denmark 13-breed ban applies (source: Danish Ministry of Food). Ryanair and Wizz Air cabin restrictions flagged throughout.</p>
+        <ul class="page-list compact">
+          <li><span class="page-title">Estonia to Ireland</span><a href="https://www.pettransportglobal.com/pet-transport/estonia-to-ireland/">https://www.pettransportglobal.com/pet-transport/estonia-to-ireland/</a></li>
+          <li><span class="page-title">Estonia to Portugal</span><a href="https://www.pettransportglobal.com/pet-transport/estonia-to-portugal/">https://www.pettransportglobal.com/pet-transport/estonia-to-portugal/</a></li>
+          <li><span class="page-title">Latvia to Ireland</span><a href="https://www.pettransportglobal.com/pet-transport/latvia-to-ireland/">https://www.pettransportglobal.com/pet-transport/latvia-to-ireland/</a></li>
+          <li><span class="page-title">Latvia to Portugal</span><a href="https://www.pettransportglobal.com/pet-transport/latvia-to-portugal/">https://www.pettransportglobal.com/pet-transport/latvia-to-portugal/</a></li>
+          <li><span class="page-title">Lithuania to Ireland</span><a href="https://www.pettransportglobal.com/pet-transport/lithuania-to-ireland/">https://www.pettransportglobal.com/pet-transport/lithuania-to-ireland/</a></li>
+          <li><span class="page-title">Lithuania to Portugal</span><a href="https://www.pettransportglobal.com/pet-transport/lithuania-to-portugal/">https://www.pettransportglobal.com/pet-transport/lithuania-to-portugal/</a></li>
+          <li><span class="page-title">Lithuania to Spain</span><a href="https://www.pettransportglobal.com/pet-transport/lithuania-to-spain/">https://www.pettransportglobal.com/pet-transport/lithuania-to-spain/</a></li>
+          <li><span class="page-title">Slovenia to Ireland</span><a href="https://www.pettransportglobal.com/pet-transport/slovenia-to-ireland/">https://www.pettransportglobal.com/pet-transport/slovenia-to-ireland/</a></li>
+          <li><span class="page-title">Slovenia to Spain</span><a href="https://www.pettransportglobal.com/pet-transport/slovenia-to-spain/">https://www.pettransportglobal.com/pet-transport/slovenia-to-spain/</a></li>
+        </ul>
+      </div>
+
+      <!-- BLOCK A: Caucasus/Central Asia to Central Europe -->
+      <div class="pages-group">
+        <p class="pages-group-label">Block A &mdash; Armenia to Central Europe (5 new routes)</p>
+        <p class="note-inline">Armenia is EU-unlisted: FAVN titre test, 90-day wait from blood draw, SSFS health certificate. Sources: EU Reg 2020/692; FSVO; BMF/AGES; GIW.</p>
+        <ul class="page-list compact">
+          <li><span class="page-title">Armenia to Austria</span><a href="https://www.pettransportglobal.com/pet-transport/armenia-to-austria/">https://www.pettransportglobal.com/pet-transport/armenia-to-austria/</a></li>
+          <li><span class="page-title">Armenia to Czech Republic</span><a href="https://www.pettransportglobal.com/pet-transport/armenia-to-czech-republic/">https://www.pettransportglobal.com/pet-transport/armenia-to-czech-republic/</a></li>
+          <li><span class="page-title">Armenia to Hungary</span><a href="https://www.pettransportglobal.com/pet-transport/armenia-to-hungary/">https://www.pettransportglobal.com/pet-transport/armenia-to-hungary/</a></li>
+          <li><span class="page-title">Armenia to Poland</span><a href="https://www.pettransportglobal.com/pet-transport/armenia-to-poland/">https://www.pettransportglobal.com/pet-transport/armenia-to-poland/</a></li>
+          <li><span class="page-title">Armenia to Switzerland</span><a href="https://www.pettransportglobal.com/pet-transport/armenia-to-switzerland/">https://www.pettransportglobal.com/pet-transport/armenia-to-switzerland/</a></li>
+        </ul>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">Block A &mdash; Azerbaijan to Central Europe (5 new routes)</p>
+        <p class="note-inline">Azerbaijan is EU-unlisted: same 90-day titre process. AZAL (Azerbaijani Airlines) highlighted as national carrier option. Sources: EU Reg 2020/692; FSVO; NEBIH; GIW.</p>
+        <ul class="page-list compact">
+          <li><span class="page-title">Azerbaijan to Austria</span><a href="https://www.pettransportglobal.com/pet-transport/azerbaijan-to-austria/">https://www.pettransportglobal.com/pet-transport/azerbaijan-to-austria/</a></li>
+          <li><span class="page-title">Azerbaijan to Czech Republic</span><a href="https://www.pettransportglobal.com/pet-transport/azerbaijan-to-czech-republic/">https://www.pettransportglobal.com/pet-transport/azerbaijan-to-czech-republic/</a></li>
+          <li><span class="page-title">Azerbaijan to Hungary</span><a href="https://www.pettransportglobal.com/pet-transport/azerbaijan-to-hungary/">https://www.pettransportglobal.com/pet-transport/azerbaijan-to-hungary/</a></li>
+          <li><span class="page-title">Azerbaijan to Poland</span><a href="https://www.pettransportglobal.com/pet-transport/azerbaijan-to-poland/">https://www.pettransportglobal.com/pet-transport/azerbaijan-to-poland/</a></li>
+          <li><span class="page-title">Azerbaijan to Switzerland</span><a href="https://www.pettransportglobal.com/pet-transport/azerbaijan-to-switzerland/">https://www.pettransportglobal.com/pet-transport/azerbaijan-to-switzerland/</a></li>
+        </ul>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">Block A &mdash; Georgia to Central Europe (5 new routes)</p>
+        <p class="note-inline">Georgia is EU-unlisted: 90-day titre process applies. Overland route via Trieste noted where relevant (90km from Slovenia). Sources: EU Reg 2020/692; FSVO; BMF/AGES; NEBIH.</p>
+        <ul class="page-list compact">
+          <li><span class="page-title">Georgia to Austria</span><a href="https://www.pettransportglobal.com/pet-transport/georgia-to-austria/">https://www.pettransportglobal.com/pet-transport/georgia-to-austria/</a></li>
+          <li><span class="page-title">Georgia to Czech Republic</span><a href="https://www.pettransportglobal.com/pet-transport/georgia-to-czech-republic/">https://www.pettransportglobal.com/pet-transport/georgia-to-czech-republic/</a></li>
+          <li><span class="page-title">Georgia to Hungary</span><a href="https://www.pettransportglobal.com/pet-transport/georgia-to-hungary/">https://www.pettransportglobal.com/pet-transport/georgia-to-hungary/</a></li>
+          <li><span class="page-title">Georgia to Poland</span><a href="https://www.pettransportglobal.com/pet-transport/georgia-to-poland/">https://www.pettransportglobal.com/pet-transport/georgia-to-poland/</a></li>
+          <li><span class="page-title">Georgia to Switzerland</span><a href="https://www.pettransportglobal.com/pet-transport/georgia-to-switzerland/">https://www.pettransportglobal.com/pet-transport/georgia-to-switzerland/</a></li>
+        </ul>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">Block A &mdash; Kazakhstan to Central Europe (5 new routes)</p>
+        <p class="note-inline">Kazakhstan is EU-unlisted: 90-day titre process applies. Air Astana highlighted as national carrier option. Sources: EU Reg 2020/692; FSVO; BMF/AGES; NEBIH; GIW.</p>
+        <ul class="page-list compact">
+          <li><span class="page-title">Kazakhstan to Austria</span><a href="https://www.pettransportglobal.com/pet-transport/kazakhstan-to-austria/">https://www.pettransportglobal.com/pet-transport/kazakhstan-to-austria/</a></li>
+          <li><span class="page-title">Kazakhstan to Czech Republic</span><a href="https://www.pettransportglobal.com/pet-transport/kazakhstan-to-czech-republic/">https://www.pettransportglobal.com/pet-transport/kazakhstan-to-czech-republic/</a></li>
+          <li><span class="page-title">Kazakhstan to Hungary</span><a href="https://www.pettransportglobal.com/pet-transport/kazakhstan-to-hungary/">https://www.pettransportglobal.com/pet-transport/kazakhstan-to-hungary/</a></li>
+          <li><span class="page-title">Kazakhstan to Poland</span><a href="https://www.pettransportglobal.com/pet-transport/kazakhstan-to-poland/">https://www.pettransportglobal.com/pet-transport/kazakhstan-to-poland/</a></li>
+          <li><span class="page-title">Kazakhstan to Switzerland</span><a href="https://www.pettransportglobal.com/pet-transport/kazakhstan-to-switzerland/">https://www.pettransportglobal.com/pet-transport/kazakhstan-to-switzerland/</a></li>
+        </ul>
+      </div>
+
+      <div class="pages-group">
+        <p class="pages-group-label">Block A &mdash; Baltic and Balkans gap fills (3 new routes)</p>
+        <p class="note-inline">Lithuania to Denmark: 13-breed ban applies (source: Danish Ministry of Food). Lithuania to Norway: Echinococcus tapeworm 24-120h treatment window (source: Mattilsynet). Slovenia to Italy: overland option noted (90km to Trieste; source: Italian Ministry of Health).</p>
+        <ul class="page-list compact">
+          <li><span class="page-title">Lithuania to Denmark</span><a href="https://www.pettransportglobal.com/pet-transport/lithuania-to-denmark/">https://www.pettransportglobal.com/pet-transport/lithuania-to-denmark/</a></li>
+          <li><span class="page-title">Lithuania to Norway</span><a href="https://www.pettransportglobal.com/pet-transport/lithuania-to-norway/">https://www.pettransportglobal.com/pet-transport/lithuania-to-norway/</a></li>
+          <li><span class="page-title">Slovenia to Italy</span><a href="https://www.pettransportglobal.com/pet-transport/slovenia-to-italy/">https://www.pettransportglobal.com/pet-transport/slovenia-to-italy/</a></li>
+        </ul>
+      </div>
+
+      <!-- Refined routes -->
+      <div class="pages-group">
+        <p class="pages-group-label">Existing routes refined in Block A (2 pages updated, not new)</p>
+        <p class="note-inline">Both pages were created in Block B (commit f14490f) and revised in Block A (commit b7df96d). Counted as updated, not new.</p>
+        <ul class="page-list compact">
+          <li><span class="page-title">Lithuania to Spain (updated)</span><a href="https://www.pettransportglobal.com/pet-transport/lithuania-to-spain/">https://www.pettransportglobal.com/pet-transport/lithuania-to-spain/</a></li>
+          <li><span class="page-title">Slovenia to Spain (updated)</span><a href="https://www.pettransportglobal.com/pet-transport/slovenia-to-spain/">https://www.pettransportglobal.com/pet-transport/slovenia-to-spain/</a></li>
+        </ul>
+      </div>
+
+      <!-- Blog -->
+      <div class="pages-group">
+        <p class="pages-group-label">Blog Day 22 &mdash; 1 new article</p>
+        <p class="note-inline">Author: Marcus Webb, Senior Pet Relocation Consultant. ~2,000 words. Covers domestic APHA Type 1 couriers, IPATA agencies, BA World Cargo and Virgin Atlantic cargo from LHR, and full-service relocation. Includes pricing context, credentials checklist, and red flags.</p>
+        <ul class="page-list">
+          <li>
+            <span class="page-title">Pet Transportation Services UK: A Reality Check on What's Actually Available</span>
+            <a href="https://www.pettransportglobal.com/blog/pet-transportation-services-uk/">https://www.pettransportglobal.com/blog/pet-transportation-services-uk/</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="site-section">
+    <div class="site-header"><h2>Mortgage Compare AE</h2><span class="badge badge-unknown">Repo not accessible this session</span></div>
+    <div class="site-body">
+      <div class="site-meta">domain: mortgagecompare.ae &nbsp;|&nbsp; branch: main</div>
+      <p class="no-build">Repo ngindubai/mortgagecompare-ae is outside this session's GitHub scope. Build status for 16 June 2026 could not be verified.</p>
+    </div>
+  </section>
+
+  <section class="site-section">
+    <div class="site-header"><h2>Bus Rental Global</h2><span class="badge badge-unknown">Repo not accessible this session</span></div>
+    <div class="site-body">
+      <div class="site-meta">domain: busrentalglobal.com &nbsp;|&nbsp; branch: main</div>
+      <p class="no-build">Repo ngindubai/global-bus-hire is outside this session's GitHub scope. Build status for 16 June 2026 could not be verified.</p>
+    </div>
+  </section>
+
+  <section class="site-section">
+    <div class="site-header"><h2>Funeral Repatriation</h2><span class="badge badge-unknown">Repo not accessible this session</span></div>
+    <div class="site-body">
+      <div class="site-meta">domain: repatriationfuneral.com &nbsp;|&nbsp; branch: master</div>
+      <p class="no-build">Repo ngindubai/funeral-repatriation is outside this session's GitHub scope. Build status for 16 June 2026 could not be verified.</p>
+    </div>
+  </section>
+
+  <section class="site-section">
+    <div class="site-header"><h2>Close Protection Hire</h2><span class="badge badge-unknown">Repo not accessible this session</span></div>
+    <div class="site-body">
+      <div class="site-meta">domain: closeprotectionhire.com &nbsp;|&nbsp; branch: master</div>
+      <p class="no-build">Repo ngindubai/closeprotectionhure-com is outside this session's GitHub scope. Build status for 16 June 2026 could not be verified.</p>
+    </div>
+  </section>
+
+  <footer>Generated: 2026-06-16 20:00 UTC &nbsp;|&nbsp; reporter v1 &nbsp;|&nbsp; ngindubai group &nbsp;|&nbsp; NOTE: partial report, 4 of 5 repos inaccessible this session &nbsp;|&nbsp; ACTION NEEDED: run python verify_build_state.py --write to reconcile build_state.json</footer>
+</div>
+</body>
+</html>
