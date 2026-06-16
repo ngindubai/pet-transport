@@ -17,7 +17,7 @@
 - **Bulk-generation scripts are banned.** A batch is still N individually quality-gated blocks, never a mass-generation script.
 - **Skip rule:** skip only if the build pointer shows nothing left to build (no chunks remaining and no blog day due). Do NOT skip just because a build already happened earlier today; each site now runs twice a day on purpose.
 
-**Where we are (reconciled from disk 2026-06-15):** 5,806 quality routes complete. ~32,024 routes remaining. Blog: 428 articles. Total .md source files: 6,607. Content plan: Day 22 is next. Chunks 1-55 complete. Chunk 56 (Template A, Tier B) is next. Counts come from `python verify_build_state.py`, never hand-edited.
+**Where we are (reconciled from disk 2026-06-16):** 5,831 quality routes complete. ~31,999 routes remaining. Blog: 428 articles. Total .md source files: 6,632. Content plan: Day 22 is next. Chunks 1-56 complete. Chunk 57 (Template B, Tier B) is next. Counts come from `python verify_build_state.py`, never hand-edited.
 
 ---
 
@@ -60,7 +60,8 @@
 - Chunk 53 template: C - DONE 2026-06-14 (EU/EEA to Caucasus/Central Asia + Caucasus/Central Asia to EU: BE/PT/SE/NO to AM/GE/AZ/KZ; AM/GE/AZ/KZ to BE/PT/SE; 25 routes)
 - Chunk 54 template: D - DONE 2026-06-15 (25 Tier B routes upgraded from thin placeholders: Japan x8 [austria/czech-republic/denmark/finland/hungary/norway/poland/sweden], South Korea x8 [austria/czech-republic/finland/hungary/norway/poland/sweden/switzerland], India x8 [austria/belgium/czech-republic/finland/hungary/norway/poland/sweden], Singapore x1 [denmark])
 - Chunk 55 template: E - DONE 2026-06-15 (25 new Tier B routes: Caucasus/Central Asia to EEA/Nordic/Ireland [AM/GE/AZ/KZ to NO/DK/FI/IE x4 each = 16 routes] + Baltic/Slovenia to EU [EE to BE/IT/ES, LV to BE/IT/ES, LT to BE/IT, SI to BE = 9 routes])
-- Chunk 56 template: A - NEXT
+- Chunk 56 template: A - DONE 2026-06-16 (AT/CH to Caucasus AM/GE/AZ/KZ x2=8; AT/CH to Baltic/Slovenia EE/LV/LT/SI x2=8; Baltic/Slovenia to IE/PT/ES x9 = 25 total)
+- Chunk 57 template: B - NEXT
 - Blog Day 10: pet-transport-uae-to-pakistan - DONE 2026-06-07 (Marcus Webb, AQD NOC, AED 3,000-6,000)
 - Blog Day 11: exporting-pets-from-singapore - DONE 2026-06-08 (Marcus Webb, AVS export licence, FAVN/RNATT for Australia, Changi cargo, UK/EU/US/AU destination matrix, cost table)
 - Blog Day 12: importing-pets-to-australia-2026 - DONE 2026-06-08 (Dr. Sarah Okafor, ~3000 words, Group 1/2/3 system, RNATT, Mickleham day-by-day, cost table by region, rejection reasons, FAQs)
