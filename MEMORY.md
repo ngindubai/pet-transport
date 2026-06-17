@@ -7,13 +7,13 @@
 - **Repository:** https://github.com/ngindubai/pet-transport (private)
 - **Deploy:** Push to `main` triggers GitHub Actions automatically. Hugo build + incremental FTP to Hostinger. Live within ~80 seconds for a single article. After every build batch, the live URLs of new/changed pages are posted in chat for review (LIVE LINK REVIEW GATE in CLAUDE.md).
 
-## Current State (2026-06-16, reconciled from disk by verify_build_state.py)
+## Current State (2026-06-17, reconciled from disk by verify_build_state.py)
 
-- **Routes built:** 5,831 of ~37,830 country pairs (~15.4%). True on-disk count (5,821 in `routes/` + 10 in `pet-transport/`).
+- **Routes built:** 5,854 of ~37,830 country pairs (~15.5%). True on-disk count (5,844 in `routes/` + 10 in `pet-transport/`).
 - **Blog articles:** 429
-- **Total .md source files:** 6,633 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Total .md source files:** 6,656 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
 - **Phase 7 progress:** Chunks 1-56 complete. **Chunk 57 is next** (Template B, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 56 (two parallel runs, Template A, Tier B): 50 new routes total. Run 1: AT/CH to Caucasus/Baltic/Slovenia (25 routes). Run 2: Caucasus/Central Asia to AT/CH/CZ/PL/HU + Baltic/Slovenia gap fills (25 routes).
-- **Content plan:** Days 1-6 + Days 8-22 complete (22 articles written). Day 7 skipped (pre-existing). **Day 23 is next.** Day 22 = pet-transportation-services-uk (Marcus Webb, ~2000 words, four types of UK pet transport service, IPATA agencies, BA World Cargo, APHA Type 1 authorisation, credentials).
+- **Content plan:** Days 1-6 + Days 8-23 complete (23 articles written). Day 7 skipped (pre-existing). **Day 24 is next.** Day 23 = uk-to-dubai-uae-pet-transport-guide (Marcus Webb, ~2800 words, replaced thin Gareth-authored stub; MOCCAE permit, heat embargoes June-Sept, Emirates/Etihad/BA/Qatar cargo, costs GBP 2200-3800, no titre test for UK pets).
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
 - **Route template redesign (live on all ~5,531 route pages):** Six new premium templates render via `site/layouts/routes/single.html` -> partials `route-new-{na,nb,nc,nd,ne,nl}.html` with scoped CSS `static/css/route-new-{na..nl}.css`. Variant routing: front-matter `template_variant` A->na, B->nb, C->nc, D->nd, E->ne, legacy->nl.
