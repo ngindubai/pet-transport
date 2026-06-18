@@ -7,13 +7,13 @@
 - **Repository:** https://github.com/ngindubai/pet-transport (private)
 - **Deploy:** Push to `main` triggers GitHub Actions automatically. Hugo build + incremental FTP to Hostinger. Live within ~80 seconds for a single article. After every build batch, the live URLs of new/changed pages are posted in chat for review (LIVE LINK REVIEW GATE in CLAUDE.md).
 
-## Current State (2026-06-17, reconciled from disk by verify_build_state.py)
+## Current State (2026-06-18, reconciled from disk by verify_build_state.py)
 
-- **Routes built:** 5,879 of ~37,830 country pairs (~15.5%). True on-disk count (5,869 in `routes/` + 10 in `pet-transport/`).
+- **Routes built:** 5,904 of ~37,830 country pairs (~15.6%). True on-disk count (5,894 in `routes/` + 10 in `pet-transport/`).
 - **Blog articles:** 429
-- **Total .md source files:** 6,681 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-57 complete. **Chunk 58 is next** (Template C, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 57 (Template B, Tier B): 25 new routes. Nordic (SE/DK/FI) and Norway to Baltic (EE/LV/LT) and Slovenia; Czech Republic/Poland/Hungary to Baltic states.
-- **Content plan:** Days 1-6 + Days 8-23 complete (23 articles written). Day 7 skipped (pre-existing). **Day 24 is next.** Day 23 = uk-to-dubai-uae-pet-transport-guide (Marcus Webb, ~2800 words, replaced thin Gareth-authored stub; MOCCAE permit, heat embargoes June-Sept, Emirates/Etihad/BA/Qatar cargo, costs GBP 2200-3800, no titre test for UK pets).
+- **Total .md source files:** 6,706 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Phase 7 progress:** Chunks 1-58 complete. **Chunk 59 is next** (Template D, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 58 (Template C, Tier B): 25 new routes. DK/FI/HU/CZ/PL to Caucasus (AM/GE/AZ/KZ) x20 + DK/FI/HU/CZ/PL to Lebanon x5.
+- **Content plan:** Days 1-6 + Days 8-23 complete (23 articles written). Day 7 skipped (pre-existing). **Day 24 is next** (uk-to-canada, Marcus Webb, CFIA rules, cargo costs, GBP 1,800-3,200). Day 23 = uk-to-dubai-uae-pet-transport-guide (Marcus Webb, ~2800 words, replaced thin Gareth-authored stub; MOCCAE permit, heat embargoes June-Sept, Emirates/Etihad/BA/Qatar cargo, costs GBP 2200-3800, no titre test for UK pets).
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
 - **Route template redesign (live on all ~5,531 route pages):** Six new premium templates render via `site/layouts/routes/single.html` -> partials `route-new-{na,nb,nc,nd,ne,nl}.html` with scoped CSS `static/css/route-new-{na..nl}.css`. Variant routing: front-matter `template_variant` A->na, B->nb, C->nc, D->nd, E->ne, legacy->nl.
