@@ -9,10 +9,10 @@
 
 ## Current State (2026-06-18, reconciled from disk by verify_build_state.py)
 
-- **Routes built:** 5,929 of ~37,830 country pairs (~15.7%). True on-disk count (5,919 in `routes/` + 10 in `pet-transport/`).
+- **Routes built:** 5,954 of ~37,830 country pairs (~15.7%). True on-disk count (5,944 in `routes/` + 10 in `pet-transport/`).
 - **Blog articles:** 429
-- **Total .md source files:** 6,731 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-59 complete. **Chunk 60 is next** (Template E, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 59 (Template D, Tier B): 25 new routes. NO to AZ/GE/KZ/LB/RW/UG x6; BE/AT/CH/PT/SE to LB x5; IE to AM/AZ/GE/KZ/LB/RW/UG x7; SI to AM/AZ/GE/KZ/LB/RW/UG x7.
+- **Total .md source files:** 6,756 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
+- **Phase 7 progress:** Chunks 1-60 complete. **Chunk 61 is next** (Template A, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 60 (Template E, Tier B): 25 new routes. BE/AT/CH/PT/SE/DK/FI/CZ/PL/HU to RW+UG x20; EE/LV to RW+UG x4; LT to RW x1.
 - **Content plan:** Days 1-6 + Days 8-23 complete (23 articles written). Day 7 skipped (pre-existing). **Day 24 is next** (uk-to-canada, Marcus Webb, CFIA rules, cargo costs, GBP 1,800-3,200). Day 23 = uk-to-dubai-uae-pet-transport-guide (Marcus Webb, ~2800 words, replaced thin Gareth-authored stub; MOCCAE permit, heat embargoes June-Sept, Emirates/Etihad/BA/Qatar cargo, costs GBP 2200-3800, no titre test for UK pets).
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
