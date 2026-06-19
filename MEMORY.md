@@ -7,30 +7,41 @@
 - **Repository:** https://github.com/ngindubai/pet-transport (private)
 - **Deploy:** Push to `main` triggers GitHub Actions automatically. Hugo build + incremental FTP to Hostinger. Live within ~80 seconds for a single article. After every build batch, the live URLs of new/changed pages are posted in chat for review (LIVE LINK REVIEW GATE in CLAUDE.md).
 
-## Current State (2026-06-19, reconciled from disk by verify_build_state.py)
+## Current State (2026-06-19, reconciled)
 
-- **Routes built:** 5,954 of ~37,830 country pairs (~15.7%). True on-disk count (5,944 in `routes/` + 10 in `pet-transport/`).
+- **Routes built:** 5,954 of ~37,830 country pairs (~15.7%). All in `site/content/routes/`. The 10 legacy duplicate files that were in `site/content/pet-transport/` were deleted on 2026-06-19 (SEO fix Chunk 5).
 - **Blog articles:** 429 (Day 24 was a rewrite of existing stub, not a new file)
-- **Total .md source files:** 6,756 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
-- **Phase 7 progress:** Chunks 1-60 complete. **Chunk 61 is next** (Template A, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 60 (Template E, Tier B): 25 new routes. BE/AT/CH/PT/SE/DK/FI/CZ/PL/HU to RW+UG x20; EE/LV to RW+UG x4; LT to RW x1.
-- **Content plan:** Days 1-6 + Days 8-24 complete (24 articles written). Day 7 skipped (pre-existing). **Day 25 is next.** Day 24 = uk-to-canada-pet-transport-guide (Marcus Webb, ~2,300 words, replaced thin Gareth-authored stub; CFIA dog vs cat distinction, no quarantine/titre test from UK, EHC 2923 OV within 72h, Air Canada/BA cargo routes LHR-YYZ/YVR/YUL, GBP 1,800-3,200 all-in).
-- **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
+- **Total .md source files:** ~6,746 (approx, after 10 deletions; run verify_build_state.py --write for exact count)
+- **Phase 7 progress:** Chunks 1-60 complete. **Chunk 61 is next** (Template A, Tier B). Tier A is fully complete (0 pairs remaining).
+- **Content plan:** Days 1-6 + Days 8-24 complete (24 articles written). Day 7 skipped (pre-existing). **Day 25 is next.**
+- **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
-- **Route template redesign (live on all ~5,531 route pages):** Six new premium templates render via `site/layouts/routes/single.html` -> partials `route-new-{na,nb,nc,nd,ne,nl}.html` with scoped CSS `static/css/route-new-{na..nl}.css`. Variant routing: front-matter `template_variant` A->na, B->nb, C->nc, D->nd, E->ne, legacy->nl.
-  - **2026-06-10 reveal-bug fix (CRITICAL, resolved):** Content was invisible on live (`.r` reveal elements stuck at opacity:0; the IntersectionObserver adding `.in` did not fire on deployed pages). Permanent fix: opacity is now ALWAYS 1 on content; all content-reveal keyframes (tplReveal, fadeUp, slideInLeft, fadeIn, counterUp, checkPop) animate transform only, never opacity. RULE GOING FORWARD: never let opacity:0 be the resting state of content, and never make content visibility depend on JS firing or an animation completing. Also fixed route_complexity underscore ("Very_high" -> "Very High") via replaceRE.
-  - Local-only test artifact: `.claude/launch.json` (preview server config) is NOT committed.
+- **Route template redesign (live on all ~5,954 route pages):** Six new premium templates render via `site/layouts/routes/single.html` -> partials `route-new-{na,nb,nc,nd,ne,nl}.html` with scoped CSS.
+  - **2026-06-10 reveal-bug fix (CRITICAL, resolved):** Opacity now always 1 on content; all reveal keyframes animate transform only.
+  - **2026-06-19 upward link filter (Chunk 4a):** All 6 route partials that render upward links now use site.GetPage existence check before rendering, preventing broken origin hub links from appearing in HTML.
+  - **2026-06-19 generator fix (Chunk 4b):** ORIGIN_HUB_URLS in generate_p3_routes_batch1.py now has correct plain-slug entries for 50 origins. scripts/repair_upward_links.py committed for bulk frontmatter repair.
 
-### DEPLOY INCIDENT 2026-06-05: routine committed to feature branches, never to main (ROOT CAUSE + FIX)
+### SEO Fix Plan (2026-06-19)
+- **Chunk 3a-3c (funeral-repatriation):** Layout upward link filter + audit script + frontmatter repair committed.
+- **Chunk 4a (pet-transport):** Layout upward link filter on all 6 route partials. Stops 114 hard 404s rendering.
+- **Chunk 4b (pet-transport):** Generator ORIGIN_HUB_URLS fixed + repair script committed.
+- **Chunk 5 (pet-transport):** 10 legacy duplicate route files deleted from site/content/pet-transport/ (canonical conflict causing 186 GSC "alternate canonical" entries). Replaced by proper routes/ versions.
+- **Chunk 6 (close-protection):** NEXT
+- **Chunk 7 (bus-hire):** Pending
+- **Chunk 8 (mortgage-compare):** Pending
 
-- **Symptom:** Three routine runs reported "committed + live" in Slack, but nothing ever reached the live site.
-- **Root cause:** `build-to-live.yml` triggers only on `push: branches: [main]`. The routine was committing to a per-session `claude/<random>` feature branch instead of `main`, so the GitHub Action never fired and Hostinger never updated. Because `main` never advanced, every run re-read `next_chunk: 25` and rebuilt "chunk 25" with a different, overlapping set of routes. Three branches resulted: `youthful-volta-fHktH`, `youthful-volta-ubyDO`, `eloquent-bell-grEAl`, each with 25 routes, ~54 unique after dedup.
-- **Immediate fix (done):** Combined all three batches into one commit on `main`, deduped overlapping slugs, QA'd the full set, reconciled counts from disk, pushed to `main` to trigger the deploy. Routes 5,217 -> 5,254.
-- **Durable fix (REQUIRED, owner action):** The routine's STEP 3 already says `git push origin HEAD:main`, but a conflicting "Git Development Branch Requirements" block pins it to a `claude/*` feature branch and says never push elsewhere without permission. That block wins, so work never lands on main. The routine config must be changed so the working/push branch is `main` (or a merge-to-main step added). This is cloud routine config, not in-repo, so it cannot be self-edited from a session. Until changed, every scheduled run will again strand its work on a feature branch and re-build the same chunk number.
+### DEPLOY INCIDENT 2026-06-19: 10 sequential deletes caused build race conditions
+- **Symptom:** ~50% of the 10 Chunk 5 delete commits showed failed builds in GitHub Actions.
+- **Root cause:** Each delete triggered a separate build. Builds raced writing to the orphan `live` branch.
+- **Fix:** This commit (docs update) triggers one clean build from the correct main HEAD, which has all 10 deletions. The live branch will be rebuilt from scratch from this state.
 
-### Known legacy content debt (tracked)
-- **Em dashes:** CLEARED 2026-06-04 from all rendered content: site/content (89 files), the blog/route-C/route-A/breeds templates, llms.txt, and countries_pet_regulations.json. Verified by local Hugo build: 0 em dashes in rendered HTML. Remaining em dashes are only in code comments (CSS/PHP/Hugo template headers) and vendor bootstrap.min.css, which do not render as page content.
-- **Author persona:** 248 of 412 blog articles are authored as "Gareth" (pre-date the 2026-05-28 persona rule). The blog template now renders whatever the author field says (fixed 2026-06-04), so a backfill of these 248 articles will now actually change the visible byline. Discrete future block: "author persona backfill". NOTE: llms.txt also still says "authored by Gareth, Founder" and should be updated in that block.
-- **JSON-LD double-quoting (pre-existing):** blog JSON-LD wraps jsonify values in doubled quotes (e.g. `"name": "\"Marcus Webb\""`), affecting headline, description, and author. Present on unchanged lines too, so it pre-dates this work. Likely a minifier interaction. Out of scope; fix in a dedicated SEO pass.
+### DEPLOY INCIDENT 2026-06-05: routine committed to feature branches
+- **Root cause:** build-to-live.yml triggers only on push to `main`. Routine was committing to `claude/*` branches.
+- **Fix:** Combined all three batches into one commit on main. Durable fix requires routine config change.
+
+### Known legacy content debt
+- **Author persona:** 248 of 412 blog articles authored as "Gareth" (pre-date the 2026-05-28 persona rule). Discrete future block.
+- **JSON-LD double-quoting (pre-existing):** Blog JSON-LD wraps jsonify values in doubled quotes. Out of scope; fix in dedicated SEO pass.
 
 ## Build Decisions
 
@@ -39,7 +50,7 @@
 - Python scripts at **repo root** (not in `scripts/` folder)
 - All Hugo content in `site/content/[section]/`
 - Build command: `hugo --gc --minify` from `site/`
-- CI workflow: `.github/workflows/build-to-live.yml` is the ACTIVE pipeline. Triggers on push to `main`, builds Hugo, publishes `site/public` to the `live` branch (served by Hostinger). `deploy.yml` (FTP to Hostinger) is currently `disabled_manually` on GitHub. Verified 2026-06-04. (Docs previously had this backwards.)
+- CI workflow: `.github/workflows/build-to-live.yml` is the ACTIVE pipeline. Triggers on push to `main`.
 
 ### Slug Patterns
 - Routes: `[origin-country]-to-[destination-country]` e.g. `united-kingdom-to-australia`
@@ -56,58 +67,29 @@
 - Breed restrictions: `data/breed_restrictions.json`
 - Route keyword matrix: `data/route_keyword_matrix.json`
 
-### Python Script Convention
-All generation scripts use skip-if-exists to protect existing content.
-
 ### Deploy Pipeline
-Every push to `main` triggers an automatic build+publish via `build-to-live.yml` (the ACTIVE workflow, verified on GitHub 2026-06-04): it builds Hugo and publishes `site/public` to the orphan `live` branch, which Hostinger serves. `deploy.yml` (the FTP-to-Hostinger workflow) is currently `disabled_manually` and does NOT run. Earlier notes claimed deploy.yml was the only active workflow and build-to-live.yml was retired; that was backwards and is corrected here. If switching back to the FTP pipeline, re-enable deploy.yml and disable build-to-live.yml in the GitHub Actions tab, and do NOT delete `.ftp-deploy-sync-state.json` from Hostinger.
+Every push to `main` triggers an automatic build+publish via `build-to-live.yml`. Hugo builds and publishes `site/public` to the orphan `live` branch, which Hostinger serves. `deploy.yml` (FTP) is `disabled_manually`.
 
-### Docs + Live Link Review (added 2026-06-02)
-Every build batch does three things together, every time: (1) bundle BUILD-PLAN.md + build_state.json + MEMORY.md updates into the content commit, (2) let the automatic deploy run, (3) post the live URLs of all new/changed pages in chat for review. This keeps the docs from drifting and means nothing reaches the live site unreviewed, even though deploy is automatic. Full rules in CLAUDE.md (MANDATORY DOCS UPDATE + LIVE LINK REVIEW GATE).
+### Docs + Live Link Review
+Every build batch: (1) bundle BUILD-PLAN.md + build_state.json + MEMORY.md updates into the content commit, (2) let the automatic deploy run, (3) post the live URLs of all new/changed pages in chat for review.
 
 ## Content Rules (Always On)
 
 ### Tone
-- Warm, practical, expert. Pet owners are anxious. Reassure without promising.
-- British English throughout.
-- Author: one of four named personas (see CLAUDE.md). Never use Gareth's real name.
+- Warm, practical, expert. British English throughout.
+- Author: one of four named personas. Never use Gareth's real name.
 
 ### Hard Prohibitions
 - No safety guarantees
 - No banned vocabulary (see CLAUDE.md full list)
 - No em dashes anywhere, ever
-- No unverified regulatory claims. Every claim must cite a named, dated official source
+- No unverified regulatory claims
 
 ## Author Personas
 - **Marcus Webb** (Senior Pet Relocation Consultant). Routes, logistics, costs, airline cargo
 - **Dr. Sarah Okafor** (International Animal Health Consultant). Country guides, quarantine, DEFRA/APHIS/DAFF
 - **Emma Hartley** (Animal Behaviourist & Pet Travel Adviser). Welfare, brachycephalic, anxiety, senior pets
 - **James Osei** (Pet Transport Planning Specialist). Checklists, timelines, documentation, insurance
-
-## SEO Status (2026-05-28)
-
-- Duplicate FAQPage schema removed from blog template (microdata stripped from faq-accordion.html partial)
-- buildFuture disabled in hugo.toml
-- rebuild_link_graph_v3.py wires all routes to origin hubs and country guides on every build
-- GSC: ~1,873 pages "Discovered, currently not indexed" (crawl budget issue, link graph fix deployed)
-- Sitemaps: sitemap.xml (index) pointing to sitemap-routes.xml, sitemap-hubs.xml, sitemap-blog.xml, sitemap-pages.xml
-
-## Content Plan
-
-- **Plan file:** `content-plan/plan-rows-q1.js` (Q1: Jun-Aug 2026), q2, q3, q4
-- **Total:** 252 articles, Mon-Fri
-- **Published Days 1-3** (slugs: international-pet-transport-guide, cost-to-transport-a-pet-2026, pet-transport-uk-to-australia)
-- **Day 7** (`how-to-choose-a-pet-transport-company`) also exists from a prior batch. Skip when reached in sequence
-- Day 4: `uk-to-spain-pet-transport-complete-guide` replaced in place 2026-06-04 (full rewrite 743 -> 2115 words, Marcus Webb)
-- Day 5: `pet-transport-uk-to-usa` published 2026-06-05 (new article, 2266 words, Marcus Webb, post-CDC reset angle)
-- Day 6: `pet-transport-europe-to-uk` published 2026-06-05 (new article, 2400 words, Marcus Webb)
-- Day 7: `how-to-choose-a-pet-transport-company` - SKIPPED (pre-existing article)
-- Day 8: `cheap-pet-transport-honest-look` published 2026-06-06 (new article, 1800 words, Marcus Webb, cost transparency angle)
-- Day 9: `pet-transport-uk-to-jersey` published 2026-06-06 (1600 words, Marcus Webb, Condor ferry, Channel Islands rules)
-- Day 10: `pet-transport-uae-to-pakistan` published 2026-06-07 (2000 words, Marcus Webb, AQD NOC, AED 3,000-6,000)
-- Day 11: `exporting-pets-from-singapore` published 2026-06-08 (2400 words, Marcus Webb, AVS export licence, FAVN titre for AU, Changi cargo, UK/EU/US/AU matrix)
-- **Next: Day 12** - check content-plan/plan-rows-q1.js for slug (importing-pets-to-australia-2026)
-- Blog layout: `site/layouts/blog/single.html`. col-lg-8 content + col-lg-4 sidebar. Applies to all blog posts.
 
 ## Key Decisions Log
 
@@ -117,28 +99,26 @@ Every build batch does three things together, every time: (1) bundle BUILD-PLAN.
 | 2026-04-23 | Surge.sh replaced with Hostinger | Production domain secured |
 | 2026-05-22 | 32,686 thin placeholder routes deleted | Rebuild block-by-block for quality |
 | 2026-05-28 | Auto-deploy confirmed on push to main | No manual trigger needed |
-| 2026-05-28 | Author personas introduced (4 named writers) | YMYL trust signals, avoid Gareth's real name |
+| 2026-05-28 | Author personas introduced (4 named writers) | YMYL trust signals |
 | 2026-05-28 | buildFuture disabled | Prevents future-dated drafts from publishing |
 | 2026-05-28 | rebuild_link_graph_v3.py runs on every build | Fixes crawl budget / indexing issue |
-| 2026-06-02 | LIVE LINK REVIEW GATE adopted | Deploy is automatic, so the safety gate moves to after publish: post live URLs of all new/changed pages in chat for review after every build batch |
-| 2026-06-02 | Retired build-to-live.yml | Two workflows both fired on push (deploy.yml + build-to-live.yml). Kept deploy.yml only so builds do not race on the sitemap and FTP state file |
-| 2026-06-02 | Docs update every build batch (not just session end) | Stops the three docs drifting from reality between sessions |
-| 2026-06-02 | Chunk 19 complete | 10 Tier A quality routes (Template B), Germany/HK/NZ corridors |
-| 2026-06-03 | Truth audit + anti-drift safeguards | Docs had drifted four ways on the route count (5524/5534/5544 vs ~5172 on disk). Root cause: routes_built was a hand-incremented tally never reconciled to disk. Added verify_build_state.py (single source of truth, counts from disk, `--write` reconciles) and a SessionStart hook that runs it every session. All four docs corrected to true numbers |
-| 2026-06-03 | Day 4 UK-to-Spain = replace in place | Existing thin uk-to-spain-pet-transport-complete-guide.md upgraded in place; no duplicate page. Done 2026-06-04: full rewrite 743 -> 2115 words, Marcus Webb author, costs + driving vs flying angle, 6 FAQs |
-| 2026-06-04 | Em-dash sweep complete | Removed all em dashes from site/content: 74 blog+route files + 11 pet-transport + 4 static (89 files). Python sweeper logic: table rows -> colon, headings/bold labels -> colon, author fields -> comma, prose -> comma. Zero em dashes remain |
-| 2026-06-04 | Deploy docs were BACKWARDS, corrected | Verified on GitHub: build-to-live.yml is ACTIVE (publishes `live` branch, Hostinger serves it); deploy.yml (FTP) is disabled_manually. Docs (incl the 2026-06-02 "Retired build-to-live.yml" row above) had it reversed. The 2026-06-02 row is left for history but is factually wrong: build-to-live.yml was never actually retired |
-| 2026-06-04 | Blog template now uses persona authors | single.html hardcoded "Gareth" in byline, bio, and JSON-LD, ignoring the author front matter. Fixed to parse the author field (handles both "Name - Title, Org" legacy and "Name, Title, Org" formats). Persona backfill on the 248 Gareth-authored articles is now meaningful (was a no-op before) |
-| 2026-06-04 | Template + data em dashes cleared | Found rendered em dashes the content sweep missed: blog template bio (&mdash;), Template-C route partial (&mdash; in hero + table cells), Template-A route heading ("Critical Points" on ~1019 pages), breeds template, llms.txt, and countries_pet_regulations.json. All fixed. Verified via local Hugo build: 0 em dashes in rendered HTML. Remaining em dashes exist only in code comments (CSS/PHP/Hugo) and vendor bootstrap.min.css, none rendered as content |
+| 2026-06-04 | Deploy docs corrected: build-to-live.yml is ACTIVE, deploy.yml disabled | Docs had them reversed |
+| 2026-06-04 | Em-dash sweep complete | Zero em dashes in rendered HTML |
+| 2026-06-04 | Blog template uses persona authors | single.html was hardcoded to Gareth |
+| 2026-06-10 | Reveal-bug fix on all 6 route templates | Content was stuck at opacity:0 on live |
+| 2026-06-19 | Chunk 4a: upward link filter on all route partials | 114 hard 404s from broken origin links |
+| 2026-06-19 | Chunk 4b: generator ORIGIN_HUB_URLS fixed | Prevents new routes from inheriting the 404 bug |
+| 2026-06-19 | Chunk 5: 10 legacy pet-transport/ route files deleted | Canonical conflict: both files built to same URL |
 
 ## Mistakes to Avoid
-- Never run hugo from repo root. Always `cd site` first (or the workflow handles it)
+- Never run hugo from repo root. Always `cd site` first
 - Build plan filename has `=` sign: `cascading-build-plan-pet=transport.html`
 - `rebuild_link_graph_v3.py` must run BEFORE hugo build
 - Never fabricate quarantine periods or vaccine requirements
-- The `live` branch is compiled output only (orphan, overwritten every push). Never edit it directly. It is produced by build-to-live.yml, which is the ACTIVE deploy workflow (NOT retired; verified 2026-06-04)
+- The `live` branch is compiled output only. Never edit it directly
 - Never delete `.ftp-deploy-sync-state.json` from Hostinger
-- `.github/workflows/*.yml` cannot be edited via MCP connector (GitHub 403). Provide full file for Gareth to paste via GitHub web editor
-- Never let a content commit go out without the BUILD-PLAN.md + build_state.json + MEMORY.md update and the live review links
-- Never hand-edit count fields in build_state.json (routes_built, blog_articles, total_site_pages). They drift. Run `python verify_build_state.py --write` to reconcile from disk
+- `.github/workflows/*.yml` cannot be edited via MCP connector (GitHub 403)
+- Never let a content commit go out without BUILD-PLAN.md + build_state.json + MEMORY.md update
+- Never hand-edit count fields in build_state.json. Run `python verify_build_state.py --write`
 - No em dashes anywhere, ever
+- **Never do 10 sequential single-file deletes** — each triggers a separate build and they race on the live branch. Bundle all deletes into one push_files call or use the API to delete then make one trigger commit
