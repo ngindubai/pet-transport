@@ -5,12 +5,28 @@
 */}}
 {{ $rd := .Params.route_data }}
 
+{{/* ================================================================
+     UPWARD LINK FILTER
+     Filters out upward links whose target page does not exist in
+     the Hugo build. Prevents hard 404s from being served and crawled.
+     ================================================================ */}}
+{{ $validUpward := slice }}
+{{ if .Params.links }}
+  {{ if .Params.links.upward }}
+    {{ range .Params.links.upward }}
+      {{ if site.GetPage .url }}
+        {{ $validUpward = $validUpward | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
 {{ $specificPath := printf "static/images/routes/route-%s.jpg" .File.ContentBaseName }}
 {{ $heroImgUrl := cond (os.FileExists $specificPath) (printf "/images/routes/route-%s.jpg" .File.ContentBaseName) "/img/jumbotron.jpg" }}
 
 <article class="tpl-route-b">
 
-{{/* ── FULL-BLEED IMAGE HERO ───────────────────────────────────────────── */}}
+{{/* ── FULL-BLEED IMAGE HERO ───────────────────────────────────────── */}}
 <div class="tpl-b-hero" style="background-image:url('{{ $heroImgUrl }}');">
     <div class="tpl-b-hero-overlay"></div>
     <div class="container tpl-b-hero-content">
@@ -212,14 +228,14 @@
                         </ul>
                     </div>
                     {{ end }}
-                    {{ with .upward }}
+                    {{ end }}
+                    {{ if $validUpward }}
                     <div class="tpl-b-sidebar-card mb-4">
                         <h5>Country guides</h5>
                         <ul class="list-unstyled">
-                            {{ range . }}<li class="mb-2"><a href="{{ .url }}">{{ .text }}</a></li>{{ end }}
+                            {{ range $validUpward }}<li class="mb-2"><a href="{{ .url }}">{{ .text }}</a></li>{{ end }}
                         </ul>
                     </div>
-                    {{ end }}
                     {{ end }}
 
                 </div>

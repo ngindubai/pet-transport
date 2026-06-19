@@ -5,6 +5,24 @@
 */}}
 {{ $rd := .Params.route_data }}
 
+{{/* ================================================================
+     UPWARD LINK FILTER
+     Filters out upward links whose target page does not exist in
+     the Hugo build. Prevents hard 404s from being served and crawled.
+     ================================================================ */}}
+{{ $validUpward := slice }}
+{{ if .Params.links }}
+  {{ if reflect.IsMap .Params.links }}
+    {{ if .Params.links.upward }}
+      {{ range .Params.links.upward }}
+        {{ if site.GetPage .url }}
+          {{ $validUpward = $validUpward | append . }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
 {{ $specificPath := printf "static/images/routes/route-%s.jpg" .File.ContentBaseName }}
 {{ $heroImgUrl := cond (os.FileExists $specificPath) (printf "/images/routes/route-%s.jpg" .File.ContentBaseName) "/img/jumbotron.jpg" }}
 
@@ -301,15 +319,15 @@
                         </ul>
                     </div>
                     {{ end }}
-                    {{ with .upward }}
+                    {{ end }}
+                    {{ end }}
+                    {{ if $validUpward }}
                     <div class="widget1 bg-light p-3 rounded mb-3">
                         <h5 style="font-family:'Montserrat',sans-serif;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:#1a6b4a;">Country Guides</h5>
                         <ul class="list-unstyled mb-0" style="font-size:.82rem;">
-                            {{ range . }}<li class="mb-1"><a href="{{ .url }}">{{ .text }}</a></li>{{ end }}
+                            {{ range $validUpward }}<li class="mb-1"><a href="{{ .url }}">{{ .text }}</a></li>{{ end }}
                         </ul>
                     </div>
-                    {{ end }}
-                    {{ end }}
                     {{ end }}
 
                 </div>

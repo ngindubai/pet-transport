@@ -4,6 +4,22 @@
 */}}
 {{ $rd := .Params.route_data }}
 
+{{/* ================================================================
+     UPWARD LINK FILTER
+     Filters out upward links whose target page does not exist in
+     the Hugo build. Prevents hard 404s from being served and crawled.
+     ================================================================ */}}
+{{ $validUpward := slice }}
+{{ if .Params.links }}
+  {{ if .Params.links.upward }}
+    {{ range .Params.links.upward }}
+      {{ if site.GetPage .url }}
+        {{ $validUpward = $validUpward | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
 <article class="tpl-route-e">
 
 {{/* ── HERO ──────────────────────────────────────────────────────────── */}}
@@ -192,9 +208,9 @@
                         {{ range . }}<a href="{{ .url }}" class="tpl-e-route-link">{{ .text }}</a>{{ end }}
                     </div>
                     {{ end }}
-                    {{ with .upward }}
+                    {{ if $validUpward }}
                     <div class="mt-3">
-                        {{ range . }}<a href="{{ .url }}" class="tpl-e-route-link">{{ .text }}</a>{{ end }}
+                        {{ range $validUpward }}<a href="{{ .url }}" class="tpl-e-route-link">{{ .text }}</a>{{ end }}
                     </div>
                     {{ end }}
                 </div>
@@ -231,14 +247,14 @@
                         </ul>
                     </div>
                     {{ end }}
-                    {{ with .upward }}
+                    {{ end }}
+                    {{ if $validUpward }}
                     <div class="tpl-e-sidebar-card mb-4">
                         <h5>Country guides</h5>
                         <ul class="list-unstyled">
-                            {{ range . }}<li class="mb-2"><a href="{{ .url }}">{{ .text }}</a></li>{{ end }}
+                            {{ range $validUpward }}<li class="mb-2"><a href="{{ .url }}">{{ .text }}</a></li>{{ end }}
                         </ul>
                     </div>
-                    {{ end }}
                     {{ end }}
                 </div>
             </div>

@@ -8,6 +8,24 @@
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,700;0,800;0,900;1,800&family=Noto+Serif:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/route-new-na.css?v={{ now.Unix }}">
 
+{{/* ================================================================
+     UPWARD LINK FILTER
+     Filters out upward links whose target page does not exist in
+     the Hugo build. Prevents hard 404s from being served and crawled.
+     Root cause: generator appends -pet-export-guide to origin slugs
+     but some origins only have a plain .md file (Chunk 4a fix).
+     ================================================================ */}}
+{{ $validUpward := slice }}
+{{ if .Params.links }}
+  {{ if .Params.links.upward }}
+    {{ range .Params.links.upward }}
+      {{ if site.GetPage .url }}
+        {{ $validUpward = $validUpward | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
 <div class="tpl-na">
 
   {{/* ── HERO ─────────────────────────────────────────── */}}
@@ -54,14 +72,14 @@
         </div>
       </div>
       {{ end }}{{ end }}
-      {{ with .Params.links }}{{ with .upward }}
+      {{ if $validUpward }}
       <div class="sc">
         <div class="sc-title">Country guides</div>
         <div class="rel-list">
-          {{ range . }}<a href="{{ .url }}" class="rel-item"><span class="rel-name">{{ .text }}</span><span class="rel-arr">&rarr;</span></a>{{ end }}
+          {{ range $validUpward }}<a href="{{ .url }}" class="rel-item"><span class="rel-name">{{ .text }}</span><span class="rel-arr">&rarr;</span></a>{{ end }}
         </div>
       </div>
-      {{ end }}{{ end }}
+      {{ end }}
     </aside>
 
     {{/* ── MAIN COLUMN ─────────────────────────────────── */}}
