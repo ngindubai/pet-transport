@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-18",
+  "last_updated": "2026-06-19",
   "routes_built": 5954,
   "routes_remaining": 31876,
   "total_site_pages": 6756,
@@ -14,8 +14,8 @@
   "sitemap_last_split": "2026-05-09",
   "blog_articles": 429,
   "content_plan_start": "2026-06-01",
-  "content_plan_articles_written": 23,
-  "notes": "Chunk 60 (Template E, Tier B): 25 new routes. BE/AT/CH/PT/SE/DK/FI/CZ/PL/HU to RW+UG x20; EE/LV to RW+UG x4; LT to RW x1. Reconciled from disk: 5954 routes. Next: Chunk 61 (Template A, Tier B). Blog Day 24 (uk-to-canada) next.",
+  "content_plan_articles_written": 24,
+  "notes": "Blog Day 24 DONE: uk-to-canada-pet-transport-guide rewritten (~2,300 words, Marcus Webb, CFIA rules dogs vs cats, EHC 2923, Air Canada/BA cargo, GBP 1800-3200). Existing stub replaced. blog_articles count unchanged at 429 (rewrite not new file). Next: Chunk 61 (Template A, Tier B). Blog Day 25 after.",
   "counts": {
     "route_pairs": 5954,
     "blog": 429,

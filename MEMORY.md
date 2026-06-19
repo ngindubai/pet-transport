@@ -7,13 +7,13 @@
 - **Repository:** https://github.com/ngindubai/pet-transport (private)
 - **Deploy:** Push to `main` triggers GitHub Actions automatically. Hugo build + incremental FTP to Hostinger. Live within ~80 seconds for a single article. After every build batch, the live URLs of new/changed pages are posted in chat for review (LIVE LINK REVIEW GATE in CLAUDE.md).
 
-## Current State (2026-06-18, reconciled from disk by verify_build_state.py)
+## Current State (2026-06-19, reconciled from disk by verify_build_state.py)
 
 - **Routes built:** 5,954 of ~37,830 country pairs (~15.7%). True on-disk count (5,944 in `routes/` + 10 in `pet-transport/`).
-- **Blog articles:** 429
+- **Blog articles:** 429 (Day 24 was a rewrite of existing stub, not a new file)
 - **Total .md source files:** 6,756 (build_state.json `total_site_pages`). Full deployed page total, including Hugo taxonomy, verified from live sitemap.xml after a build.
 - **Phase 7 progress:** Chunks 1-60 complete. **Chunk 61 is next** (Template A, Tier B). Tier A is fully complete (0 pairs remaining). Chunk 60 (Template E, Tier B): 25 new routes. BE/AT/CH/PT/SE/DK/FI/CZ/PL/HU to RW+UG x20; EE/LV to RW+UG x4; LT to RW x1.
-- **Content plan:** Days 1-6 + Days 8-23 complete (23 articles written). Day 7 skipped (pre-existing). **Day 24 is next** (uk-to-canada, Marcus Webb, CFIA rules, cargo costs, GBP 1,800-3,200). Day 23 = uk-to-dubai-uae-pet-transport-guide (Marcus Webb, ~2800 words, replaced thin Gareth-authored stub; MOCCAE permit, heat embargoes June-Sept, Emirates/Etihad/BA/Qatar cargo, costs GBP 2200-3800, no titre test for UK pets).
+- **Content plan:** Days 1-6 + Days 8-24 complete (24 articles written). Day 7 skipped (pre-existing). **Day 25 is next.** Day 24 = uk-to-canada-pet-transport-guide (Marcus Webb, ~2,300 words, replaced thin Gareth-authored stub; CFIA dog vs cat distinction, no quarantine/titre test from UK, EHC 2923 OV within 72h, Air Canada/BA cargo routes LHR-YYZ/YVR/YUL, GBP 1,800-3,200 all-in).
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile. A SessionStart hook runs the check automatically at the start of every web session.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
 - **Route template redesign (live on all ~5,531 route pages):** Six new premium templates render via `site/layouts/routes/single.html` -> partials `route-new-{na,nb,nc,nd,ne,nl}.html` with scoped CSS `static/css/route-new-{na..nl}.css`. Variant routing: front-matter `template_variant` A->na, B->nb, C->nc, D->nd, E->ne, legacy->nl.
