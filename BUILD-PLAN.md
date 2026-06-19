@@ -17,7 +17,7 @@
 - **Bulk-generation scripts are banned.** A batch is still N individually quality-gated blocks, never a mass-generation script.
 - **Skip rule:** skip only if the build pointer shows nothing left to build (no chunks remaining and no blog day due). Do NOT skip just because a build already happened earlier today; each site now runs twice a day on purpose.
 
-**Where we are (reconciled from disk 2026-06-18):** 5,954 quality routes complete. ~31,876 routes remaining. Blog: 429 articles. Total .md source files: 6,756. Content plan: Day 24 is next. Chunks 1-60 complete. Chunk 61 (Template A, Tier B) is next. Counts come from `python verify_build_state.py`, never hand-edited.
+**Where we are (reconciled from disk 2026-06-19):** 5,954 quality routes complete. ~31,876 routes remaining. Blog: 429 articles. Total .md source files: 6,756. Content plan: Day 24 DONE (uk-to-canada rewritten). Day 25 is next. Chunks 1-60 complete. Chunk 61 (Template A, Tier B) is next. Counts come from `python verify_build_state.py`, never hand-edited.
 
 ---
 
@@ -81,7 +81,7 @@
 - Blog Day 21: pet-transport-uk-to-new-zealand - DONE 2026-06-15 (Marcus Webb, ~2200 words, MPI import permit, RNATT titre 90-day minimum, 10-day Auckland/Christchurch quarantine, Emirates/Singapore Airlines cargo, July 2026 IHS transition, GBP 4,800-7,200)
 - Blog Day 22: pet-transportation-services-uk - DONE 2026-06-16 (Marcus Webb, ~2000 words, four types of UK pet transport service, IPATA agencies, BA World Cargo, APHA Type 1 authorisation, credentials and red flags)
 - Blog Day 23: uk-to-dubai-uae-pet-transport-guide - DONE 2026-06-17 (Marcus Webb, ~2800 words, replaced thin Gareth-authored stub; MOCCAE permit process at emirate level, summer heat embargoes June-September, Emirates/Etihad/BA/Qatar cargo options, costs GBP 2200-3800, no titre test for UK pets)
-- Blog Day 24: NEXT (check plan-rows-q1.js for slug)
+- Blog Day 24: uk-to-canada-pet-transport-guide - DONE 2026-06-19 (Marcus Webb, ~2300 words, CFIA dog vs cat distinction, EHC 2923 OV requirement, Air Canada/BA cargo routes, GBP 1,800-3,200 all-in, no quarantine/titre test from UK)
 - Tier: B (1,094 pairs; Tier A now complete)
 - Template rotation: ...D(21), E(22), A(23), B(24), C(25-27), D(28), E(29), A(30), D(31a), B(31b), B(32), C(33), D(34), E(35), A(36), B(37), C(38), D(39), E(40), A(41), B(42), C(43), D(44)...
 
