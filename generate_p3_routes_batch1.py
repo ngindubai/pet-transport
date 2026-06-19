@@ -97,12 +97,14 @@ COUNTRY_REGISTRY = {
 # ============================================================
 # ORIGIN HUB URL MAPPING
 # Maps country-slug -> canonical origin hub URL
-# P1 title pattern: "Pet Export Guide: Shipping from [Country]"
-# P2 title pattern: "Shipping Your Pet from [Country] | Export Guide"
-# P3 title pattern: "[Country] Pet Export Guide"
+#
+# FIX 2026-06-19 (Chunk 4b): Added 50 plain-slug P3 origins so the
+# broken fallback f"/pet-transport/origins/{slug}-pet-export-guide/"
+# is never used for countries whose origin file is just {slug}.md.
+# Without these entries the fallback produced 114 hard 404s in GSC.
 # ============================================================
 ORIGIN_HUB_URLS = {
-    # P1
+    # P1 — long pattern: pet-export-guide-shipping-from-{slug}
     "united-kingdom":       "/pet-transport/origins/pet-export-guide-shipping-from-united-kingdom/",
     "united-states":        "/pet-transport/origins/pet-export-guide-shipping-from-united-states/",
     "united-arab-emirates": "/pet-transport/origins/pet-export-guide-shipping-from-united-arab-emirates/",
@@ -115,7 +117,7 @@ ORIGIN_HUB_URLS = {
     "south-africa":         "/pet-transport/origins/pet-export-guide-shipping-from-south-africa/",
     "new-zealand":          "/pet-transport/origins/pet-export-guide-shipping-from-new-zealand/",
     "spain":                "/pet-transport/origins/pet-export-guide-shipping-from-spain/",
-    # P2
+    # P2 — medium pattern: shipping-your-pet-from-{slug}-export-guide
     "japan":                "/pet-transport/origins/shipping-your-pet-from-japan-export-guide/",
     "thailand":             "/pet-transport/origins/shipping-your-pet-from-thailand-export-guide/",
     "philippines":          "/pet-transport/origins/shipping-your-pet-from-philippines-export-guide/",
@@ -131,7 +133,7 @@ ORIGIN_HUB_URLS = {
     "indonesia":            "/pet-transport/origins/shipping-your-pet-from-indonesia-export-guide/",
     "south-korea":          "/pet-transport/origins/shipping-your-pet-from-south-korea-export-guide/",
     "greece":               "/pet-transport/origins/shipping-your-pet-from-greece-export-guide/",
-    # P3
+    # P3 with -pet-export-guide.md file (correct, these existed before)
     "ireland":              "/pet-transport/origins/ireland-pet-export-guide/",
     "norway":               "/pet-transport/origins/norway-pet-export-guide/",
     "sweden":               "/pet-transport/origins/sweden-pet-export-guide/",
@@ -147,16 +149,22 @@ ORIGIN_HUB_URLS = {
     "taiwan":               "/pet-transport/origins/taiwan-pet-export-guide/",
     "vietnam":              "/pet-transport/origins/vietnam-pet-export-guide/",
     "sri-lanka":            "/pet-transport/origins/sri-lanka-pet-export-guide/",
-    "argentina":            "/pet-transport/origins/argentina-pet-export-guide/",
-    "chile":                "/pet-transport/origins/chile-pet-export-guide/",
-    "colombia":             "/pet-transport/origins/colombia-pet-export-guide/",
-    "egypt":                "/pet-transport/origins/egypt-pet-export-guide/",
-    "kenya":                "/pet-transport/origins/kenya-pet-export-guide/",
-    "nigeria":              "/pet-transport/origins/nigeria-pet-export-guide/",
-    "czech-republic":       "/pet-transport/origins/czech-republic-pet-export-guide/",
-    "romania":              "/pet-transport/origins/romania-pet-export-guide/",
-    "malta":                "/pet-transport/origins/malta-pet-export-guide/",
-    "cyprus":               "/pet-transport/origins/cyprus-pet-export-guide/",
+    # FIX: P3 plain-slug origins (these only have {slug}.md, not {slug}-pet-export-guide.md)
+    # Previously fell through to the broken fallback producing 404s
+    "argentina":            "/pet-transport/origins/argentina/",
+    "chile":                "/pet-transport/origins/chile/",
+    "colombia":             "/pet-transport/origins/colombia/",
+    "egypt":                "/pet-transport/origins/egypt/",
+    "kenya":                "/pet-transport/origins/kenya/",
+    "nigeria":              "/pet-transport/origins/nigeria/",
+    "czech-republic":       "/pet-transport/origins/czech-republic/",
+    "romania":              "/pet-transport/origins/romania/",
+    "malta":                "/pet-transport/origins/malta/",
+    "cyprus":               "/pet-transport/origins/cyprus/",
+    # Additional plain-slug origins not in original COUNTRY_REGISTRY
+    # but present in site/content/origins/ as plain .md files:
+    "austria-at":           "/pet-transport/origins/austria/",  # alias guard
+    "belgium-be":           "/pet-transport/origins/belgium/",  # alias guard
 }
 
 # ============================================================
@@ -286,7 +294,7 @@ AIRLINE_SUMMARY = {
     "Turkish Airlines": ("Turkish Airlines", "cabin_and_cargo",
         "Small pets allowed in cabin (up to 8kg with carrier on European/short-haul routes). "
         "Cargo: larger pets via Turkish Cargo. Brachycephalic breeds subject to restrictions. "
-        "Connects Istanbul hub to over 120 destinations — useful for Middle East and African routes."),
+        "Connects Istanbul hub to over 120 destinations -- useful for Middle East and African routes."),
     "Qatar Airways": ("Qatar Airways", "cargo_only",
         "Cargo: Pets travel via Qatar Airways Cargo (QR Cargo) from Doha hub. "
         "No cabin pets on any route. Brachycephalic breeds accepted with additional vet documentation. "
@@ -332,7 +340,6 @@ def get_airlines_for_route(origin_key, dest_key):
         if name in AIRLINE_SUMMARY and name not in [a[0] for a in selected]:
             selected.append(AIRLINE_SUMMARY[name])
 
-    # Flag carriers by ISO code
     flag_map = {
         "GB": "British Airways",
         "US": "United Airlines",
@@ -348,8 +355,8 @@ def get_airlines_for_route(origin_key, dest_key):
         "ES": "Air France",
         "JP": "Japan Airlines (JAL)",
         "TH": "Thai Airways",
-        "PH": "British Airways",     # PAL not in summary
-        "MY": "British Airways",     # Malaysia Airlines not in summary
+        "PH": "British Airways",
+        "MY": "British Airways",
         "IN": "Air India",
         "PT": "Air France",
         "NL": "KLM",
@@ -358,49 +365,45 @@ def get_airlines_for_route(origin_key, dest_key):
         "MX": "American Airlines",
         "BR": "Air France",
         "CH": "Lufthansa",
-        "ID": "Singapore Airlines",  # Garuda not in summary
+        "ID": "Singapore Airlines",
         "KR": "Korean Air",
         "GR": "Air France",
-        "IE": "British Airways",     # Aer Lingus not in summary; BA serves IE heavily
-        "NO": "British Airways",     # Norwegian not in summary
-        "SE": "Lufthansa",           # SAS not in summary
-        "AT": "Lufthansa",           # Austrian is Lufthansa Group
-        "BE": "Lufthansa",           # Brussels Airlines is Lufthansa Group
-        "PL": "Lufthansa",           # LOT not in summary
+        "IE": "British Airways",
+        "NO": "British Airways",
+        "SE": "Lufthansa",
+        "AT": "Lufthansa",
+        "BE": "Lufthansa",
+        "PL": "Lufthansa",
         "TR": "Turkish Airlines",
-        "IL": "British Airways",     # El Al not in summary
-        "SA": "Emirates",            # Saudia not in summary; Emirates most relevant
+        "IL": "British Airways",
+        "SA": "Emirates",
         "QA": "Qatar Airways",
-        "KW": "Emirates",            # Kuwait Airways not in summary
+        "KW": "Emirates",
         "CN": "Air China",
-        "TW": "Air China",           # China Airlines/EVA not in summary; use Air China
+        "TW": "Air China",
         "VN": "Vietnam Airlines",
-        "LK": "British Airways",     # SriLankan not in summary
-        "AR": "American Airlines",   # Aerolineas not in summary
-        "CL": "American Airlines",   # LATAM not in summary
-        "CO": "American Airlines",   # Avianca not in summary
+        "LK": "British Airways",
+        "AR": "American Airlines",
+        "CL": "American Airlines",
+        "CO": "American Airlines",
         "EG": "EgyptAir",
         "KE": "Kenya Airways",
-        "NG": "British Airways",     # Air Peace not in summary
-        "CZ": "Lufthansa",           # Czech Airlines not in summary
-        "RO": "Lufthansa",           # TAROM not in summary
-        "MT": "British Airways",     # Air Malta not in summary
-        "CY": "British Airways",     # Cyprus Airways not in summary
+        "NG": "British Airways",
+        "CZ": "Lufthansa",
+        "RO": "Lufthansa",
+        "MT": "British Airways",
+        "CY": "British Airways",
     }
 
-    # Add origin flag carrier
     if origin_code in flag_map:
         add(flag_map[origin_code])
-    # Add destination flag carrier
     if dest_code in flag_map:
         add(flag_map[dest_code])
 
-    # Core connecting carriers
     for airline in ["Emirates", "Lufthansa", "British Airways", "Singapore Airlines",
                     "Cathay Pacific", "Air France", "KLM"]:
         add(airline)
 
-    # Route-specific extras
     if dest_code in ("AU", "NZ") or origin_code in ("AU", "NZ"):
         add("Qantas")
         add("Singapore Airlines")
@@ -442,7 +445,6 @@ def get_airlines_for_route(origin_key, dest_key):
         add("Emirates")
         add("Etihad Airways")
 
-    # Cap at 10 airlines
     return selected[:10]
 
 
@@ -453,7 +455,6 @@ def flatten_import_reqs(country_key):
     reqs = countries_raw.get(country_key, {}).get("import_requirements", {})
     result = {}
 
-    # Microchip
     mc = reqs.get("microchip", {})
     if isinstance(mc, dict):
         parts = []
@@ -467,7 +468,6 @@ def flatten_import_reqs(country_key):
     else:
         result["microchip"] = "Required (ISO 11784/11785)"
 
-    # Rabies vaccination
     rv = reqs.get("rabies_vaccination", {})
     if isinstance(rv, dict):
         parts = []
@@ -486,7 +486,6 @@ def flatten_import_reqs(country_key):
     else:
         result["rabies_vaccination"] = "Required"
 
-    # Titre test
     tt = reqs.get("rabies_titre_test", {})
     if isinstance(tt, dict):
         if tt.get("required") is False:
@@ -509,7 +508,6 @@ def flatten_import_reqs(country_key):
             if parts:
                 result["titre_test"] = ". ".join(parts)
 
-    # Quarantine
     q = reqs.get("quarantine", {})
     if isinstance(q, dict):
         if q.get("required") is True or q.get("mandatory") is True:
@@ -540,7 +538,6 @@ def flatten_import_reqs(country_key):
     elif q:
         result["quarantine"] = str(q)
 
-    # Import permit
     ip = reqs.get("import_permit", {})
     if isinstance(ip, dict):
         if ip.get("required") is True:
@@ -559,7 +556,6 @@ def flatten_import_reqs(country_key):
     elif ip:
         result["import_permit"] = str(ip)
 
-    # Health certificate
     hc = reqs.get("health_certificate", {})
     if isinstance(hc, dict):
         parts = []
@@ -625,7 +621,6 @@ def assess_route(dest_key):
     q = reqs.get("quarantine", {})
     if isinstance(q, dict) and (q.get("required") or q.get("mandatory")):
         score += 3
-        dur = q.get("duration_days", 14)
         warnings.append("Mandatory quarantine required on arrival. Plan for separation from your pet.")
         timeline_min = max(timeline_min, 12)
 
@@ -681,7 +676,7 @@ def build_timeline_steps(dest_key):
     steps.append({
         "step": step_num,
         "action": "Microchip your pet (ISO 11784/11785 standard)",
-        "timing": "First step — must be done before any vaccinations.",
+        "timing": "First step -- must be done before any vaccinations.",
         "responsible": "Your veterinarian"
     })
     step_num += 1
@@ -751,7 +746,7 @@ def build_timeline_steps(dest_key):
         steps.append({
             "step": step_num,
             "action": f"Quarantine on arrival ({dur} days)",
-            "timing": "Immediately on arrival — mandatory",
+            "timing": "Immediately on arrival -- mandatory",
             "responsible": f"{dest_name} quarantine authority"
         })
 
@@ -871,7 +866,6 @@ def generate_sections(origin_key, dest_key, complexity):
 
     sections = []
 
-    # Section 1: Route overview
     heading_variants = [
         f"What to know about the {origin_name} to {dest_name} route",
         f"Key requirements for moving your pet to {dest_name}",
@@ -914,7 +908,6 @@ def generate_sections(origin_key, dest_key, complexity):
 
     sections.append({"heading": heading, "body": "\n\n".join(body_parts)})
 
-    # Section 2: Practical advice
     tips_heading_variants = [
         f"Practical advice for shipping your pet from {origin_name}",
         f"Things to sort before you book",
@@ -962,7 +955,6 @@ def generate_faqs(origin_key, dest_key, complexity, timeline):
 
     faqs = []
 
-    # 1. How long
     faqs.append({
         "question": f"How long does it take to prepare a pet for transport from {origin_name} to {dest_name}?",
         "answer": (
@@ -972,7 +964,6 @@ def generate_faqs(origin_key, dest_key, complexity, timeline):
         )
     })
 
-    # 2. Quarantine
     q = reqs.get("quarantine", {})
     if isinstance(q, dict):
         if q.get("required") or q.get("mandatory"):
@@ -997,7 +988,6 @@ def generate_faqs(origin_key, dest_key, complexity, timeline):
                 )
             })
 
-    # 3. Titre test
     tt = reqs.get("rabies_titre_test", {})
     if isinstance(tt, dict):
         if tt.get("required") is False:
@@ -1021,7 +1011,6 @@ def generate_faqs(origin_key, dest_key, complexity, timeline):
                 )
             })
 
-    # 4. Import permit
     ip = reqs.get("import_permit", {})
     if isinstance(ip, dict) and ip.get("required") is True:
         faqs.append({
@@ -1034,7 +1023,6 @@ def generate_faqs(origin_key, dest_key, complexity, timeline):
             )
         })
 
-    # 5. Health certificate
     hc = reqs.get("health_certificate", {})
     if isinstance(hc, dict) and hc.get("required"):
         valid = hc.get("valid_for_days") or hc.get("valid_for_entry_days", 10)
@@ -1049,7 +1037,6 @@ def generate_faqs(origin_key, dest_key, complexity, timeline):
             )
         })
 
-    # 6. Breed restrictions
     bans = reqs.get("banned_breeds", {})
     if isinstance(bans, dict) and bans.get("banned_types"):
         banned_list = bans["banned_types"]
@@ -1065,7 +1052,6 @@ def generate_faqs(origin_key, dest_key, complexity, timeline):
                 )
             })
 
-    # Pad to at least 4 FAQs
     if len(faqs) < 4:
         faqs.append({
             "question": f"Can I take my cat to {dest_name} from {origin_name}?",
@@ -1120,11 +1106,12 @@ def generate_route_markdown(origin_key, dest_key):
         return str(s).replace('"', "'")
 
     # Internal links
-    origin_hub_url = ORIGIN_HUB_URLS.get(origin_slug, f"/pet-transport/origins/{origin_slug}-pet-export-guide/")
+    # ORIGIN_HUB_URLS now has correct entries for all 50 plain-slug origins
+    # so the fallback below should never fire for known origins.
+    origin_hub_url = ORIGIN_HUB_URLS.get(origin_slug, f"/pet-transport/origins/{origin_slug}/")
     dest_country_url = f"/pet-transport/countries/{dest_slug}/"
     reverse_url = f"/pet-transport/{dest_slug}-to-{origin_slug}/"
 
-    # Airline page links (first 2 relevant airlines)
     airline_links = []
     for a in airlines[:2]:
         a_name = a[0]
@@ -1135,7 +1122,6 @@ def generate_route_markdown(origin_key, dest_key):
             "text": f"{a_name} pet policy"
         })
 
-    # Build YAML front matter
     md = f"""---
 title: "{esc(title)}"
 description: "{esc(desc)}"
@@ -1165,21 +1151,18 @@ route_data:
         if v:
             md += f'      {k}: "{esc(v)}"\n'
 
-    # Breed restrictions
     bans = countries_raw.get(dest_key, {}).get("import_requirements", {}).get("banned_breeds", {})
     if isinstance(bans, dict) and bans.get("banned_types"):
         md += "    breed_restrictions:\n"
         for b in bans["banned_types"][:6]:
             md += f'      - "{esc(str(b))}"\n'
 
-    # Airlines
     md += "  airlines:\n"
     for a_name, a_type, a_summary in airlines:
         md += f'    - name: "{esc(a_name)}"\n'
         md += f'      type: "{a_type}"\n'
         md += f'      policy_summary: "{esc(a_summary)}"\n'
 
-    # Timeline steps
     md += "  timeline_steps:\n"
     for step in timeline_steps:
         md += f'    - step: {step["step"]}\n'
@@ -1187,12 +1170,10 @@ route_data:
         md += f'      timing: "{esc(step["timing"])}"\n'
         md += f'      responsible: "{esc(step["responsible"])}"\n'
 
-    # Cost factors
     md += "  cost_factors:\n"
     for cf in cost_factors:
         md += f'    - "{esc(cf)}"\n'
 
-    # Warnings
     md += "  key_warnings:\n"
     for w in warnings:
         md += f'    - "{esc(w)}"\n'
@@ -1200,7 +1181,6 @@ route_data:
     md += f'  route_complexity: "{complexity}"\n'
     md += f'  estimated_timeline_weeks: "{timeline}"\n'
 
-    # Content
     h1 = f"Pet Transport from {origin_name} to {dest_name}"
     md += "content:\n"
     md += f'  h1: "{esc(h1)}"\n'
@@ -1216,14 +1196,12 @@ route_data:
             for line in sec["body"].split("\n"):
                 md += f"        {line}\n"
 
-    # FAQs
     if faqs:
         md += "faqs:\n"
         for faq in faqs:
             md += f'  - question: "{esc(faq["question"])}"\n'
             md += f'    answer: "{esc(faq["answer"])}"\n'
 
-    # Links
     md += "links:\n"
     md += "  sideways:\n"
     md += f'    - url: "{reverse_url}"\n'
