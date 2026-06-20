@@ -1,6 +1,6 @@
 ---
-title: "Pet Transport Lithuania to Sweden: EU Pet Passport, Tapeworm Check 2026"
-description: "Moving a dog or cat from Lithuania to Sweden in 2026. Both EU member states: microchip, rabies vaccination, EU passport or AHC. Dogs may need Echinococcus treatment before Swedish entry. Covers VMVT export process, Jordbruksverket rules and Vilnius routing."
+title: "Pet Transport Lithuania to Sweden: Tapeworm Treatment for Dogs, EU Rules 2026"
+description: "Moving a dog or cat from Lithuania to Sweden in 2026. Both EU member states, but dogs from Lithuania require tapeworm treatment 1-5 days before Swedish entry. Routes via Riga (airBaltic) or Warsaw (LOT). Microchip, rabies vaccination, EU passport required. No quarantine."
 date: "2026-06-20"
 type: "routes"
 layout: "single"
@@ -15,114 +15,160 @@ route_data:
     code: "LT"
     country: "Lithuania"
     export_requirements:
-      export_permit: "No export permit is required for companion dogs or cats leaving Lithuania for another EU member state."
-      health_certificate: "An EU pet passport issued by an authorised Lithuanian vet. If not held, a single-use AHC endorsed by the VMVT within 10 days of Swedish entry."
-      authority: "State Food and Veterinary Service (Valstybine maisto ir veterinarijos tarnyba, VMVT): vmvt.lt"
+      export_permit: "Not required"
+      health_certificate: "EU pet passport or AHC endorsed by a Lithuanian official vet within 10 days of Swedish entry"
+      authority: "State Food and Veterinary Service (VMVT): vmvt.lt"
 
   destination:
     code: "SE"
     country: "Sweden"
     import_requirements:
-      microchip: "Required. ISO 11784/11785 standard."
-      rabies_vaccination: "Required. Current. 21-day wait for first vaccination; boosters within valid period are immediately valid."
-      titre_test: "Not required. EU-to-EU movement."
-      quarantine: "Not required for compliant pets."
-      import_permit: "Not required between EU member states."
-      health_certificate: "EU pet passport or AHC issued within 10 days of entry."
-      tapeworm_treatment: "Dogs from certain countries must receive Echinococcus praziquantel treatment 1-5 days before arrival in Sweden. Check the Jordbruksverket list for Lithuania's current status. Cats are exempt."
+      microchip: "Required. ISO 11784/11785 standard"
+      rabies_vaccination: "Required. 21-day wait after first vaccination"
+      titre_test: "Not required for EU-to-EU travel"
+      quarantine: "None"
+      import_permit: "Not required"
+      health_certificate: "EU pet passport or AHC"
       authority: "Swedish Board of Agriculture (Jordbruksverket): jordbruksverket.se"
 
   airlines:
     - name: "airBaltic"
       type: "cabin_and_cargo"
-      policy_summary: "airBaltic connects Vilnius (VNO) via Riga (RIX) to Stockholm Arlanda (ARN) and Gothenburg (GOT). Small pets in cabin; cargo via Riga for larger dogs."
-    - name: "SAS Scandinavian Airlines"
-      type: "cabin_and_cargo"
-      policy_summary: "SAS serves Stockholm and has Baltic-region connections. Small pets in cabin on European routes. Check current schedules from Vilnius."
+      policy_summary: "Via Riga (RIX) hub to Stockholm Arlanda (ARN). Small pets in cabin on most routes. Cargo also available via Riga."
     - name: "LOT Polish Airlines"
       type: "cabin_and_cargo"
-      policy_summary: "LOT connects Vilnius via Warsaw (WAW) with onward connections to Stockholm. Small pets in cabin. Practical if airBaltic schedules do not suit."
-    - name: "Finnair"
+      policy_summary: "Vilnius to Warsaw (WAW) direct (under 1 hour), connecting to Stockholm via SAS or other partners. Small pets in cabin throughout."
+    - name: "SAS"
       type: "cabin_and_cargo"
-      policy_summary: "Finnair connects via Helsinki (HEL) to Stockholm and Gothenburg. Small pets in cabin. A good Baltic-Nordic option."
+      policy_summary: "SAS operates Stockholm (ARN) hub and connects to Vilnius via partner services. Small pets in cabin (up to 8kg including carrier)."
 
   timeline_steps:
     - step: 1
-      action: "Check microchip and vaccination"
-      timing: "Before documentation. Vaccination must be current on arrival."
-      responsible: "Lithuanian vet"
+      action: "Microchip implanted (ISO 11784/11785) if not already done"
+      timing: "Before or on the same date as the first rabies vaccination"
+      responsible: "Your vet"
     - step: 2
-      action: "Obtain or update EU pet passport"
-      timing: "One appointment with a VMVT-authorised Lithuanian vet."
+      action: "Rabies vaccination"
+      timing: "At least 21 days before departure (first vaccination)"
       responsible: "Authorised Lithuanian vet"
     - step: 3
-      action: "Check and arrange tapeworm treatment for dogs"
-      timing: "Check jordbruksverket.se for Lithuania's status. If required: praziquantel 1-5 days before Swedish entry."
-      responsible: "Lithuanian vet and owner"
+      action: "EU pet passport issued or AHC arranged"
+      timing: "EU passport: once vaccinations recorded. AHC: within 10 days of Swedish entry"
+      responsible: "Authorised Lithuanian vet (passport); official vet (AHC)"
     - step: 4
-      action: "Book flights to Stockholm or Gothenburg"
-      timing: "3-4 weeks before travel. Confirm cabin pet reservation."
-      responsible: "Owner"
+      action: "Tapeworm treatment for dogs (praziquantel, by a vet, recorded in passport or AHC)"
+      timing: "Between 1 and 5 days (24-120 hours) before arrival in Sweden"
+      responsible: "Vet in Lithuania"
     - step: 5
-      action: "Travel to Sweden"
-      timing: "Travel day. Carry EU passport and tapeworm treatment record if applicable."
-      responsible: "Owner and airline"
+      action: "Book flights with pet reservation confirmed on all legs"
+      timing: "4-8 weeks before travel"
+      responsible: "Owner / agent"
 
   cost_factors:
-    - "EU pet passport update: EUR 30-80"
-    - "Rabies booster (if due): EUR 20-60"
-    - "Tapeworm treatment (dogs, if required): EUR 20-50"
-    - "IATA crate (if needed): EUR 50-200"
-    - "Airline cabin pet fee: EUR 30-100 per leg"
-    - "Cargo fee for larger dogs: EUR 150-600"
-    - "Total typical range: EUR 150-850"
+    - "Microchipping (if not done): 30-60 EUR"
+    - "Rabies vaccination: 30-80 EUR"
+    - "EU pet passport: 20-50 EUR"
+    - "AHC (if used): 50-150 EUR"
+    - "Tapeworm treatment (praziquantel): 20-60 EUR"
+    - "Airline cabin pet fee: 50-200 EUR"
+    - "Cargo for larger dogs: 300-800 EUR"
 
   key_warnings:
-    - "Sweden may require Echinococcus tapeworm treatment for dogs from Lithuania. Verify at jordbruksverket.se before travel. The treatment must be given 1-5 days before arrival in Sweden."
-    - "Ryanair and Wizz Air operate from Vilnius and Kaunas but do not accept pets. Use airBaltic, SAS, LOT, or Finnair."
-    - "Cats do not require tapeworm treatment for Swedish entry."
+    - "Dogs from Lithuania require tapeworm (Echinococcus) treatment within 1-5 days before entering Sweden. This must be recorded in the EU pet passport or AHC. Cats are exempt."
+    - "Ryanair and Wizz Air fly from Lithuania but do NOT accept pets. Use airBaltic, LOT, or SAS."
+    - "For connecting routes, confirm the tapeworm treatment timing against your arrival time in Sweden, not your departure time from Lithuania."
 
   route_complexity: "low"
-  estimated_timeline_weeks: "2-6"
+  estimated_timeline_weeks: "3-6"
 
 content:
-  h1: "Pet Transport Lithuania to Sweden: 2026 Guide"
-  overview: "Lithuania and Sweden are both EU member states. The core requirements are microchip, valid rabies vaccination, and an EU pet passport or AHC. One extra step for dogs: Sweden applies an Echinococcus tapeworm treatment requirement for dogs from certain countries. Check the Jordbruksverket website to confirm Lithuania's current status before travel. The most convenient routing from Vilnius is via Riga on airBaltic."
+  h1: "Pet Transport Lithuania to Sweden: Do Not Miss the Tapeworm Step for Dogs"
+  overview: "Lithuania and Sweden are both EU member states, so the standard documentation applies: microchip, valid rabies vaccination, and EU pet passport or AHC. For dogs (not cats), there is one additional requirement: a tapeworm treatment with praziquantel, administered by a vet and recorded in the pet passport, within 1-5 days of arriving in Sweden. This is the requirement most owners overlook."
 
   sections:
-    - heading: "The tapeworm treatment requirement for dogs"
+    - heading: "Tapeworm treatment: who needs it and what to do"
       body: |
-        Sweden requires dogs from countries where Echinococcus multilocularis (fox tapeworm) is present to receive a praziquantel treatment before entry. A vet administers the treatment and records it in the EU pet passport or on a separate certificate. The treatment window is strict: between 1 and 5 days before the dog arrives in Sweden.
+        Sweden requires tapeworm treatment for dogs arriving from countries where Echinococcus multilocularis is endemic in wildlife. Lithuania is on the Swedish Board of Agriculture's list of affected countries. The treatment must be:
+        - Praziquantel (specific product, not a general wormer)
+        - Administered by a vet
+        - Recorded in the dog's EU pet passport or AHC
+        - Given between 24 and 120 hours (1 to 5 days) before the dog arrives in Sweden
 
-        Lithuania's status on the Jordbruksverket list can change, so check the current requirements at jordbruksverket.se before booking your trip. If Lithuania is on the treatment list, factor a vet appointment into your timeline close to your departure date.
+        Cats are completely exempt from this requirement. For cat owners, the standard EU set (microchip, vaccination, passport or AHC) is all that is needed.
 
-        Cats are not affected by this requirement. For cats, the standard EU pet passport with a valid microchip and rabies vaccination is all that is needed.
+        Missing this treatment, or failing to have it recorded, can result in the dog being held at the border or refused entry. Book the vet appointment in advance, not on the day of travel.
 
-    - heading: "Getting from Vilnius to Stockholm or Gothenburg"
+    - heading: "Routing options from Vilnius to Stockholm"
       body: |
-        airBaltic is the most frequent option, connecting Vilnius via its Riga hub to Stockholm Arlanda (ARN) and Gothenburg (GOT). SAS Scandinavian Airlines serves Stockholm from the Baltics on some schedules. Finnair via Helsinki is an alternative for passengers who prefer that routing.
+        There is no direct Vilnius to Stockholm service. The most common routings are via Riga (airBaltic) or via Warsaw (LOT, with an onward connection to Stockholm via SAS or similar). Total journey times are typically 4-6 hours including connections.
 
-        For small pets in the cabin, book the pet space at the time of the flight purchase. Cabin pet availability is limited per flight. For larger dogs travelling cargo, Stockholm Arlanda's cargo terminal handles live animals; book through the airline's cargo department with IATA crate dimensions and documentation.
+        Small pets travel in the cabin on airBaltic and LOT (up to 8kg including carrier). SAS also accepts small pets in cabin on its Stockholm routes. Larger dogs travel in the pressurised hold or via cargo.
+
+        Ryanair and Wizz Air both operate from Lithuanian airports but do not accept pets under any circumstances. Do not book them for this journey.
+
+    - heading: "Confirming the tapeworm timing for connecting flights"
+      body: |
+        The tapeworm treatment window is measured from the time your dog arrives in Sweden, not the time you leave Lithuania. On a connecting route via Riga or Warsaw, the total journey time may be 5-8 hours. Ensure your vet appointment falls within 1-5 days before your arrival at Stockholm Arlanda (ARN), accounting for the full journey time.
+
+        If your travel plans change after the appointment is booked, check whether the new arrival date still falls within the treatment window. If not, arrange a new appointment.
+
+        The vet recording must include the date and time of treatment, the product name (praziquantel), and the dose. Swedish border officers look for all of these details in the passport.
 
 faqs:
-  - question: "Does my dog need tapeworm treatment before entering Sweden from Lithuania?"
-    answer: "Possibly. Check jordbruksverket.se for Lithuania's current status on Sweden's treatment list. If listed, your Lithuanian vet must give a praziquantel treatment 1-5 days before your dog arrives in Sweden and record it in the EU passport or on a certificate."
-  - question: "Does my cat need tapeworm treatment to enter Sweden from Lithuania?"
-    answer: "No. The Echinococcus treatment requirement applies to dogs only. Cats entering Sweden from Lithuania need a microchip, current rabies vaccination, and a valid EU pet passport or AHC."
-  - question: "Which airline is best for a cabin pet from Vilnius to Stockholm?"
-    answer: "airBaltic via Riga is the most frequent option and offers direct connections from VNO to ARN. SAS is an alternative via Copenhagen. Ryanair and Wizz Air operate from Lithuania but do not accept pets."
-  - question: "Is there any quarantine for a pet travelling from Lithuania to Sweden?"
-    answer: "No. Sweden and Lithuania are both EU member states. There is no quarantine for compliant pets travelling under the EU pet travel framework."
+  - question: "Does my cat from Lithuania need tapeworm treatment to enter Sweden?"
+    answer: "No. The tapeworm (Echinococcus) treatment requirement applies only to dogs. Cats from Lithuania entering Sweden need a microchip, valid rabies vaccination, and EU pet passport or AHC."
+  - question: "Can I get the tapeworm treatment done in Lithuania before flying?"
+    answer: "Yes. Any authorised vet in Lithuania can administer praziquantel and record it in your dog's EU pet passport. Make sure the vet records the date, time, product name, and dose. Time the appointment so it falls within 1-5 days before your arrival in Sweden."
+  - question: "Are there direct flights from Vilnius to Stockholm?"
+    answer: "Not typically. The most common routes connect via Riga (airBaltic) or via Warsaw (LOT). Total journey time including the connection is usually 4-6 hours."
+  - question: "What is the Swedish Board of Agriculture's tapeworm country list?"
+    answer: "The Jordbruksverket (Swedish Board of Agriculture) publishes a list of countries from which dogs require tapeworm treatment before entering Sweden. Lithuania is on this list. The current list is at jordbruksverket.se. Check the official source before travel as the list may be updated."
 
 links:
   sideways:
     - url: "/pet-transport/sweden-to-lithuania/"
       text: "Pet Transport Sweden to Lithuania"
-    - url: "/pet-transport/lithuania-to-germany/"
-      text: "Pet Transport Lithuania to Germany"
+    - url: "/pet-transport/lithuania-to-denmark/"
+      text: "Pet Transport Lithuania to Denmark"
   upward:
     - url: "/pet-transport/countries/sweden/"
       text: "Sweden pet import rules"
     - url: "/pet-transport/airlines/airbaltic/"
       text: "airBaltic pet policy"
 ---
+
+Lithuania to Sweden involves standard EU pet travel documentation, plus one extra step for dogs that owners regularly miss. Both countries are EU member states, so no quarantine, no titre test, and no import permit. The complication is the tapeworm treatment, and the airlines: Ryanair and Wizz Air are the biggest carriers from Lithuania, and neither accepts pets.
+
+## Do Not Miss the Tapeworm Step for Dogs
+
+Sweden requires dogs arriving from Lithuania to be treated for Echinococcus (fox tapeworm) before entry. Lithuania is on the Swedish Board of Agriculture's (Jordbruksverket) list of countries subject to this requirement. The treatment must use praziquantel, must be administered by a vet, and must be recorded in the dog's EU pet passport or AHC. The window is 24-120 hours (1 to 5 days) before the dog arrives in Sweden.
+
+This is not a discretionary step. Arriving without the treatment recorded means the dog may be held at the border or refused entry.
+
+Cats are completely exempt. For cat owners, the standard EU documentation is all that is needed.
+
+## Core Requirements
+
+**Microchip:** ISO 11784/11785 standard. In place before or on the same date as the first rabies vaccination.
+
+**Rabies vaccination:** Required. 21-day wait for first vaccinations. Boosters within the valid period carry no wait.
+
+**EU pet passport or AHC:** An EU pet passport issued by an authorised Lithuanian vet (VMVT: vmvt.lt) is the simplest document. An AHC is the alternative, endorsed within 10 days of your arrival in Sweden.
+
+## Airlines: Avoid Ryanair and Wizz Air
+
+Both carriers operate from Vilnius and Kaunas airports but do not accept pets under any circumstances. For this route you need airBaltic, LOT Polish Airlines, or SAS.
+
+airBaltic connects Vilnius via its Riga hub to Stockholm Arlanda (ARN). LOT flies Vilnius to Warsaw (WAW) in under an hour, with onward connections to Stockholm. SAS serves Stockholm and connects to Vilnius through partner services.
+
+Small pets (up to 8kg including carrier) travel in the cabin on all three carriers. Larger dogs go in the pressurised hold. Book pet reservations at the time of the ticket purchase; cabin spaces are limited per flight.
+
+## Timing the Tapeworm Treatment
+
+The treatment window is 24-120 hours before arrival in Sweden. On a connecting route via Riga or Warsaw, the total journey time is typically 5-8 hours. Calculate your treatment window from your expected landing time at Stockholm Arlanda (ARN), not your departure time from Vilnius.
+
+A vet appointment 1-4 days before arrival in Sweden usually works well. Confirm that the vet records the treatment date, time, product name (praziquantel), and dose in the pet passport. Swedish border officers check all of these details.
+
+If your travel plans change after booking the appointment, check whether the new arrival date falls within the 120-hour window from the treatment time. If not, you need a new appointment.
+
+For Lithuanian export documentation queries, contact the State Food and Veterinary Service (Valstybine maisto ir veterinarijos tarnyba, VMVT) at vmvt.lt. For Swedish import rules, see jordbruksverket.se.

@@ -1,6 +1,6 @@
 ---
-title: "Pet Transport Estonia to Sweden: EU Pet Passport, Tapeworm Check and Airlines 2026"
-description: "Moving a dog or cat from Estonia to Sweden in 2026. Both EU member states: microchip, current rabies vaccination, EU pet passport or AHC. Dogs may need tapeworm treatment before entry. Covers VTA process, Jordbruksverket rules and Tallinn airline routing."
+title: "Pet Transport Estonia to Sweden: Tapeworm Treatment for Dogs, EU Passport 2026"
+description: "Moving a dog or cat from Estonia to Sweden in 2026. Both EU member states, but dogs from Estonia require tapeworm (Echinococcus) treatment 1-5 days before entry. Microchip, rabies vaccination, and EU pet passport required. No quarantine. Full guide."
 date: "2026-06-20"
 type: "routes"
 layout: "single"
@@ -15,117 +15,166 @@ route_data:
     code: "EE"
     country: "Estonia"
     export_requirements:
-      export_permit: "No export permit is required for companion dogs or cats leaving Estonia for another EU member state."
-      health_certificate: "An EU pet passport issued by an officially authorised Estonian vet covers EU-to-EU travel. A single-use Animal Health Certificate (AHC) endorsed by the Estonian Veterinary and Food Board (VTA) is the alternative, issued within 10 days of entry into Sweden."
-      authority: "Estonian Veterinary and Food Board (Veterinaar- ja Toiduamet, VTA): vet.agri.ee"
+      export_permit: "Not required"
+      health_certificate: "EU pet passport or AHC endorsed by an authorised Estonian vet within 10 days of entry into Sweden"
+      authority: "Estonian Veterinary and Food Board (VTA): vet.agri.ee"
 
   destination:
     code: "SE"
     country: "Sweden"
     import_requirements:
-      microchip: "Required. ISO 11784/11785 standard transponder, implanted before or at the time of first rabies vaccination."
-      rabies_vaccination: "Required. Current vaccination. 21-day wait for first vaccination. Boosters within the valid period are immediately valid."
-      titre_test: "Not required. Sweden is an EU member state and Estonia is also EU. No rabies antibody titre test needed for EU-to-EU movements."
-      quarantine: "Not required for compliant EU pets."
-      import_permit: "Not required for companion animals between EU member states."
-      health_certificate: "EU pet passport or AHC issued within 10 days of entry. The AHC must be endorsed by an official vet."
-      tapeworm_treatment: "Dogs arriving from certain listed countries must be treated against Echinococcus multilocularis (tapeworm) with praziquantel by a vet between 1 and 5 days before arrival in Sweden. Check the Swedish Board of Agriculture (Jordbruksverket) list to confirm whether Estonia is on the exemption list or the treatment list."
-      authority: "Swedish Board of Agriculture (Jordbruksverket): jordbruksverket.se. Entry via Stockholm Arlanda (ARN) or Gothenburg (GOT)."
+      microchip: "Required. ISO 11784/11785 standard"
+      rabies_vaccination: "Required. 21-day wait after first vaccination"
+      titre_test: "Not required for EU-to-EU travel"
+      quarantine: "None"
+      import_permit: "Not required"
+      health_certificate: "EU pet passport or AHC"
+      authority: "Swedish Board of Agriculture (Jordbruksverket): jordbruksverket.se"
 
   airlines:
     - name: "airBaltic"
       type: "cabin_and_cargo"
-      policy_summary: "airBaltic connects Tallinn (TLL) to Stockholm Arlanda (ARN) and Gothenburg (GOT) via its Riga (RIX) hub and in some seasons directly. Small pets (pet plus carrier up to 8 kg) travel in the cabin on most airBaltic routes. Larger dogs travel as cargo via Riga."
-    - name: "SAS Scandinavian Airlines"
+      policy_summary: "Tallinn to Riga hub, connecting to Stockholm Arlanda (ARN). Small pets in cabin on most routes. Cargo via Riga."
+    - name: "SAS"
       type: "cabin_and_cargo"
-      policy_summary: "SAS serves Stockholm Arlanda (ARN) with connections from Tallinn via Copenhagen (CPH) or other hubs. Small pets permitted in the cabin on SAS European routes. SAS Cargo handles live animals at ARN. Check current booking procedures directly with SAS."
-    - name: "Lufthansa"
-      type: "cabin_and_cargo"
-      policy_summary: "Lufthansa connects Tallinn via Frankfurt (FRA) to Stockholm and Gothenburg. Small pets in cabin. Frankfurt cargo connects to Swedish airports for larger dogs."
+      policy_summary: "SAS operates from Stockholm (ARN) and connects to Tallinn. Small pets in cabin (up to 8kg including carrier). Larger dogs as checked baggage in pressurised hold."
     - name: "Finnair"
       type: "cabin_and_cargo"
-      policy_summary: "Finnair operates Tallinn to Helsinki (HEL), with onward connections to Swedish airports. Small pets in cabin. A practical option given Finnair's frequent Baltic-Nordic services."
+      policy_summary: "Tallinn to Helsinki (HEL), then connecting to Stockholm (ARN). Small pets in cabin. Finnair has a clear pet policy for cabin and hold travel."
 
   timeline_steps:
     - step: 1
-      action: "Confirm microchip and vaccination status"
-      timing: "Before booking. Chip must be ISO 11784/11785. Vaccination must be within valid period on arrival in Sweden."
-      responsible: "Estonian vet"
+      action: "Microchip implanted (ISO 11784/11785) if not already done"
+      timing: "Before or on the same date as the first rabies vaccination"
+      responsible: "Your vet"
     - step: 2
-      action: "Update or obtain EU pet passport"
-      timing: "One appointment with an authorised Estonian vet. If using AHC, schedule within 10 days of Swedish arrival."
+      action: "Rabies vaccination"
+      timing: "At least 21 days before departure (first vaccination)"
       responsible: "Authorised Estonian vet"
     - step: 3
-      action: "Check tapeworm treatment requirement for dogs"
-      timing: "Visit jordbruksverket.se and confirm whether Estonia requires treatment before entry. If required, arrange treatment 1-5 days before travel."
-      responsible: "Estonian vet and owner"
+      action: "EU pet passport issued or AHC arranged"
+      timing: "EU passport: once vaccinations recorded. AHC: within 10 days of Swedish entry"
+      responsible: "Authorised Estonian vet (passport); official vet (AHC)"
     - step: 4
-      action: "Book flight from Tallinn to Stockholm or Gothenburg"
-      timing: "3-4 weeks before travel. Confirm cabin pet booking at the same time."
-      responsible: "Owner"
+      action: "Tapeworm treatment for dogs (praziquantel, administered by a vet)"
+      timing: "Between 1 and 5 days (24-120 hours) before arrival in Sweden. Recorded in EU pet passport or AHC"
+      responsible: "Vet in Estonia or transit country"
     - step: 5
-      action: "Travel to Sweden"
-      timing: "Travel day. Have EU pet passport and (if applicable) tapeworm treatment record accessible."
-      responsible: "Owner and airline"
+      action: "Book flights with pet reservation confirmed"
+      timing: "4-8 weeks before travel"
+      responsible: "Owner / agent"
 
   cost_factors:
-    - "EU pet passport update: EUR 30-80"
-    - "Rabies booster (if due): EUR 20-60"
-    - "Tapeworm treatment (if required): EUR 20-50"
-    - "IATA travel crate (if needed): EUR 50-200"
-    - "Airline cabin pet fee: EUR 30-100 per leg"
-    - "Cargo fee for larger pets: EUR 150-600"
-    - "Total typical range: EUR 150-850"
+    - "Microchipping (if not done): 30-60 EUR"
+    - "Rabies vaccination: 30-80 EUR"
+    - "EU pet passport: 20-50 EUR"
+    - "AHC (if used): 50-150 EUR"
+    - "Tapeworm treatment (praziquantel): 20-60 EUR"
+    - "Airline cabin pet fee: 50-200 EUR"
+    - "Cargo for larger dogs: 300-800 EUR"
 
   key_warnings:
-    - "Sweden applies a tapeworm (Echinococcus) treatment requirement for dogs from certain origin countries. Check whether Estonia is on the treatment-required list at jordbruksverket.se before travel. If required, the treatment must be given 1-5 days before arrival. Missing this step can delay or prevent entry."
-    - "Cats do not need tapeworm treatment. The Echinococcus requirement applies only to dogs."
-    - "Budget carriers including Ryanair and Wizz Air operate from Tallinn but do not accept pets. Verify the pet policy of any airline before booking."
-    - "Sweden's rabies status as a country listed under EU pet travel rules means no titre test is needed from Estonia. The standard EU passport system applies."
+    - "Dogs from Estonia MUST have a tapeworm (Echinococcus) treatment within 1-5 days before entering Sweden. This is a hard rule. Cats do not need it."
+    - "The treatment must be praziquantel, administered by a vet, and recorded in the EU pet passport or AHC before travel. Do not arrive without this recorded."
+    - "Time your vet appointment for the tapeworm treatment carefully: not earlier than 5 days before arrival in Sweden, and not later than 24 hours before."
 
   route_complexity: "low"
-  estimated_timeline_weeks: "2-6"
+  estimated_timeline_weeks: "3-6"
 
 content:
-  h1: "Pet Transport Estonia to Sweden: 2026 Guide"
-  overview: "Both Estonia and Sweden are EU member states operating under the same pet travel framework. Microchip, valid rabies vaccination, and an EU pet passport or AHC cover the core requirements. One additional step applies to dogs: Sweden requires an Echinococcus tapeworm treatment for dogs from certain countries, administered 1-5 days before arrival. Check the Jordbruksverket list to confirm whether Estonia is on the treatment list."
+  h1: "Pet Transport Estonia to Sweden: The Tapeworm Rule That Most Owners Miss"
+  overview: "Estonia and Sweden are both EU member states, so the core requirements are familiar: microchip, valid rabies vaccination, and EU pet passport or AHC. However, Sweden adds one specific requirement for dogs arriving from Estonia: a tapeworm treatment with praziquantel, administered by a vet, between 1 and 5 days before crossing into Sweden. Cats are exempt from this requirement."
 
   sections:
-    - heading: "The tapeworm treatment step for dogs"
+    - heading: "The tapeworm treatment: what it is and why it matters"
       body: |
-        Sweden applies an Echinococcus multilocularis (fox tapeworm) treatment requirement for dogs arriving from countries where the parasite is present. The treatment is a single dose of praziquantel administered by a vet, and it must be given between 1 and 5 days before the dog arrives in Sweden. The vet records the treatment in the EU pet passport or on a separate certificate.
+        Sweden requires dogs arriving from certain countries to be treated for Echinococcus (tapeworm) before entry. Estonia is on the Swedish Board of Agriculture's list of countries from which this treatment is required. The treatment must use praziquantel, must be given by a vet, and must take place between 24 and 120 hours (1 to 5 days) before the dog enters Sweden.
 
-        Estonia's status on Sweden's list is worth verifying directly at the Jordbruksverket website (jordbruksverket.se) before your trip, as the list is updated periodically. If Estonia is currently exempt, no tapeworm treatment is needed. If it is on the treatment list, factor the appointment into your travel timeline.
+        The treatment must be recorded in the dog's EU pet passport or AHC. Without this entry, Swedish border officers can refuse entry or require the dog to be treated and held before release. This is one of those requirements that is easy to overlook and expensive to deal with at the border.
 
-        Cats do not require tapeworm treatment for Swedish entry. This requirement applies only to dogs.
+        Cats are not subject to the tapeworm requirement. For cat owners, the standard EU requirements (microchip, vaccination, passport or AHC) are sufficient.
 
-    - heading: "Getting from Tallinn to Sweden"
+    - heading: "Timing the treatment around your travel"
       body: |
-        airBaltic is the most frequent carrier for Tallinn-to-Stockholm travel, routing through its Riga (RIX) hub or, on certain schedules, with more direct services to Stockholm Arlanda (ARN). For small pets travelling in the cabin, the RIX connection is straightforward and the total journey time is manageable.
+        The treatment window is 24-120 hours before arrival in Sweden, not before departure from Estonia. If you are flying Tallinn to Stockholm with a connection in Riga, the clock runs until you land at Stockholm Arlanda (ARN).
 
-        SAS Scandinavian Airlines serves Stockholm from Tallinn via Copenhagen on some schedules, and is another cabin-pet-friendly option. Finnair connects via Helsinki. Whichever carrier you choose, confirm the cabin pet reservation at booking rather than on the day; in-cabin pet spaces are limited per flight.
+        If your journey is on a single day, the treatment given the day before travel (within 24-120 hours of arrival) typically works well. If you are driving and the journey spans more than one day, factor that into the timing.
 
-        For larger dogs travelling cargo, Stockholm Arlanda's cargo terminal handles live animals. Book directly with the airline's cargo department and provide IATA crate dimensions, total weight, and pet documentation when making the reservation.
+        Book the vet appointment for the treatment in advance. Do not leave it to the last minute; vets need to be available and the recording in the passport needs to be done properly.
+
+    - heading: "Flying from Tallinn to Stockholm"
+      body: |
+        airBaltic connects Tallinn to Stockholm Arlanda (ARN) via its Riga hub. SAS operates direct services between Stockholm and Tallinn. Finnair via Helsinki is another option. Total journey times range from 2 to 4 hours depending on the routing.
+
+        Small pets (up to 8kg including carrier) travel in the cabin on airBaltic, SAS, and Finnair. Larger dogs go in the pressurised hold. Book the pet space at the same time as your ticket; cabin spots are limited.
+
+        Stockholm Arlanda (ARN) is the main entry point by air. Gothenburg (GOT) and other Swedish airports can also be reached via connecting flights.
 
 faqs:
-  - question: "Does Sweden require a rabies titre test for pets from Estonia?"
-    answer: "No. Sweden is an EU member state and Estonia is also EU. Intra-EU pet movements do not require a rabies antibody titre test. A current vaccination and an EU pet passport or AHC are sufficient."
-  - question: "My dog is travelling from Estonia to Sweden. Does she need a tapeworm treatment?"
-    answer: "Possibly. Sweden requires Echinococcus tapeworm treatment for dogs from certain countries. Check jordbruksverket.se for the current list of countries requiring treatment. If Estonia is listed, the treatment (praziquantel) must be given 1-5 days before your dog arrives in Sweden."
-  - question: "Can I take my cat from Estonia to Sweden without a titre test or tapeworm treatment?"
-    answer: "Yes. Cats do not need a tapeworm treatment and do not need a titre test for EU-to-EU travel. A microchip, current rabies vaccination, and EU pet passport or AHC are the only requirements."
-  - question: "Which airline is best for a small dog cabin from Tallinn to Stockholm?"
-    answer: "airBaltic is the most frequent option from Tallinn, routing via Riga. SAS is an alternative via Copenhagen. Both allow small pets in the cabin. Book the cabin pet space at the time of the flight purchase, as spaces are limited per aircraft."
+  - question: "Do cats need tapeworm treatment when travelling from Estonia to Sweden?"
+    answer: "No. The tapeworm (Echinococcus) treatment requirement applies only to dogs. Cats travelling from Estonia to Sweden need a microchip, valid rabies vaccination, and EU pet passport or AHC, but no tapeworm treatment."
+  - question: "What happens if I arrive in Sweden with my dog but without the tapeworm treatment recorded?"
+    answer: "Swedish border authorities may refuse entry or require the dog to be treated and held before entering the country. Having the treatment recorded correctly in your pet's EU passport before you travel is the only reliable approach."
+  - question: "Where can I get the tapeworm treatment done for my dog in Estonia?"
+    answer: "Any authorised vet in Estonia can administer praziquantel and record it in your dog's EU pet passport or AHC. Make sure the vet records the date and product name clearly. Time the appointment so it falls within 1-5 days before your arrival in Sweden."
+  - question: "Is there quarantine when bringing a dog from Estonia to Sweden?"
+    answer: "No. There is no quarantine for compliant dogs. The tapeworm treatment, combined with the standard EU requirements (microchip, rabies vaccination, EU passport or AHC), is all that is needed for a smooth entry."
 
 links:
   sideways:
     - url: "/pet-transport/sweden-to-estonia/"
       text: "Pet Transport Sweden to Estonia"
-    - url: "/pet-transport/estonia-to-germany/"
-      text: "Pet Transport Estonia to Germany"
+    - url: "/pet-transport/estonia-to-denmark/"
+      text: "Pet Transport Estonia to Denmark"
   upward:
     - url: "/pet-transport/countries/sweden/"
       text: "Sweden pet import rules"
     - url: "/pet-transport/airlines/airbaltic/"
       text: "airBaltic pet policy"
 ---
+
+Moving a dog or cat from Estonia to Sweden sits at the easier end of international pet transport. Both countries are EU members, which removes a lot of paperwork. The journey by air is short, the airlines serving the route are experienced with pets, and there is no quarantine. There is, however, one requirement that catches owners out more than any other: dogs from Estonia must be treated for tapeworm before entering Sweden.
+
+## The Tapeworm Rule That Most Owners Miss
+
+Sweden requires dogs arriving from certain countries to be treated for Echinococcus (fox tapeworm) before entry. Estonia is on the Swedish Board of Agriculture's (Jordbruksverket) list of affected countries. The treatment must use praziquantel, must be administered by a vet, and must take place between 24 and 120 hours (1 to 5 days) before the dog arrives in Sweden.
+
+The treatment must be recorded in the dog's EU pet passport or AHC. The vet needs to enter the date, time, product name, and dose. Without this record, Swedish border officers can refuse entry or hold the dog for treatment on arrival.
+
+Cats are entirely exempt from this requirement. For cat owners, the standard EU documentation (microchip, vaccination, passport or AHC) is all that is needed.
+
+## Core Requirements for Both Dogs and Cats
+
+Before the tapeworm treatment becomes relevant, these three requirements must be in place:
+
+**Microchip:** ISO 11784/11785 standard. Must be implanted before or on the same day as the first rabies vaccination. If your pet was microchipped before the vaccination, that order is correct. If the vaccination came first, the microchip date needs to be on or before the vaccination date, or the vaccination may need to be repeated.
+
+**Rabies vaccination:** Required. A first vaccination carries a 21-day wait before travel is permitted. Boosters (given on time) do not carry this wait. Check your pet's passport to confirm whether the current vaccination is a first or booster.
+
+**EU pet passport or AHC:** An EU pet passport works throughout the EU and is the most convenient document for travel between member states. An Animal Health Certificate (AHC) is an alternative; it must be endorsed by an authorised Estonian vet (VTA: vet.agri.ee) within 10 days of your arrival in Sweden.
+
+## Timing the Tapeworm Treatment
+
+The treatment window is 24-120 hours before arrival in Sweden, not before departure from Estonia. If you fly Tallinn (TLL) to Stockholm Arlanda (ARN) via Riga, the clock runs to your landing time in Stockholm.
+
+A vet appointment the day before travel usually falls comfortably within the 1-5 day window for same-day or next-day flights. If your journey takes two days (for example, driving via ferry), calculate from your expected arrival time in Sweden.
+
+Book the appointment in advance. Do not try to fit it in on the morning of travel. The vet needs time to record the treatment properly, and rushed appointments lead to incomplete records.
+
+## Flying Tallinn to Stockholm
+
+airBaltic operates from Tallinn (TLL) via its Riga hub, with connections to Stockholm Arlanda (ARN). SAS connects Stockholm and Tallinn directly. Finnair via Helsinki (HEL) is a third option.
+
+Small pets (up to 8kg including carrier) travel in the cabin on all three carriers. Larger dogs go in the pressurised hold as checked baggage, or via cargo for very large breeds. Cabin pet spaces are limited to a small number per flight; book the pet reservation when you purchase your ticket.
+
+Stockholm Arlanda (ARN) is the main international entry point. Gothenburg Landvetter (GOT) and Malmoe Sturup (MMX) can also be reached via connections.
+
+## What to Prepare Before Booking
+
+1. Confirm microchip is in place and dated correctly relative to the rabies vaccination.
+2. Check the rabies vaccination is current and will remain valid through your travel date.
+3. Decide: EU pet passport (issued by any authorised vet in Estonia) or AHC (endorsed within 10 days of Swedish entry).
+4. Book flights with pet reservation on all legs.
+5. Schedule the tapeworm treatment appointment for 1-5 days before arrival in Sweden.
+
+For questions about export documentation in Estonia, contact the Estonian Veterinary and Food Board (Veterinaar- ja Toiduamet, VTA) at vet.agri.ee. For Swedish import rules, the Swedish Board of Agriculture (Jordbruksverket) publishes its requirements at jordbruksverket.se.
