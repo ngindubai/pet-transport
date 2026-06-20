@@ -17,7 +17,7 @@
 - **Bulk-generation scripts are banned.** A batch is still N individually quality-gated blocks, never a mass-generation script.
 - **Skip rule:** skip only if the build pointer shows nothing left to build (no chunks remaining and no blog day due). Do NOT skip just because a build already happened earlier today; each site now runs twice a day on purpose.
 
-**Where we are (reconciled from disk 2026-06-19):** 5,954 quality routes complete. ~31,876 routes remaining. Blog: 429 articles. Total .md source files: 6,756. Content plan: Day 24 DONE (uk-to-canada rewritten). Day 25 is next. Chunks 1-60 complete. Chunk 61 (Template A, Tier B) is next. Counts come from `python verify_build_state.py`, never hand-edited.
+**Where we are (reconciled from disk 2026-06-20):** 5,969 quality routes complete. ~31,861 routes remaining. Blog: 429 articles. Total .md source files: 6,771. Content plan: Day 24 DONE (uk-to-canada rewritten). Day 25 is next. Chunks 1-61 complete. Chunk 62 (Template B, Tier B) is next. Counts come from `python verify_build_state.py`, never hand-edited.
 
 ---
 
@@ -66,7 +66,8 @@
 - Chunk 58 template: C - DONE 2026-06-18 (25 Tier B routes: DK/FI/HU/CZ/PL to Caucasus AM/GE/AZ/KZ x20 + DK/FI/HU/CZ/PL to Lebanon x5)
 - Chunk 59 template: D - DONE 2026-06-18 (25 Tier B routes: NO to AZ/GE/KZ/LB/RW/UG x6; BE/AT/CH/PT/SE to LB x5; IE to AM/AZ/GE/KZ/LB/RW/UG x7; SI to AM/AZ/GE/KZ/LB/RW/UG x7)
 - Chunk 60 template: E - DONE 2026-06-18 (25 Tier B routes: BE/AT/CH/PT/SE/DK/FI/CZ/PL/HU to RW+UG x20; EE/LV to RW+UG x4; LT to RW x1)
-- Chunk 61 template: A - NEXT
+- Chunk 61 template: A - DONE 2026-06-20 (25 Template A Tier B routes: EE to AT/CH/CZ/HU/PL/SE/DK; LV to AT/CH/CZ/HU/PL/SE; LT to AT/CH/CZ/HU/PL/SE; SI to AT/CH/CZ/HU/PL/SE)
+- Chunk 62 template: B - NEXT
 - Blog Day 10: pet-transport-uae-to-pakistan - DONE 2026-06-07 (Marcus Webb, AQD NOC, AED 3,000-6,000)
 - Blog Day 11: exporting-pets-from-singapore - DONE 2026-06-08 (Marcus Webb, AVS export licence, FAVN/RNATT for Australia, Changi cargo, UK/EU/US/AU destination matrix, cost table)
 - Blog Day 12: importing-pets-to-australia-2026 - DONE 2026-06-08 (Dr. Sarah Okafor, ~3000 words, Group 1/2/3 system, RNATT, Mickleham day-by-day, cost table by region, rejection reasons, FAQs)
