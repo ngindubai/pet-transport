@@ -1,6 +1,6 @@
 ---
-title: "Pet Transport Slovenia to Sweden: EU Passport, Tapeworm Check 2026"
-description: "Moving a dog or cat from Slovenia to Sweden in 2026. Both EU member states: microchip, rabies vaccination, EU passport or AHC. Dogs may need Echinococcus treatment before Swedish entry. Covers UVHVVR export process, Jordbruksverket rules, and Ljubljana routing via Vienna or Zurich."
+title: "Pet Transport Slovenia to Sweden: EU Pet Passport, No Tapeworm Requirement 2026"
+description: "Moving a dog or cat from Slovenia to Sweden in 2026. Both EU member states. Unlike Baltic states, dogs from Slovenia do NOT need tapeworm treatment for Sweden. Routes via Vienna or Frankfurt to Stockholm. Microchip, rabies vaccination, EU passport required. No quarantine."
 date: "2026-06-20"
 type: "routes"
 layout: "single"
@@ -15,105 +15,109 @@ route_data:
     code: "SI"
     country: "Slovenia"
     export_requirements:
-      export_permit: "Not required for companion animals leaving Slovenia for another EU member state."
-      health_certificate: "EU pet passport issued by an authorised Slovenian vet, or a single-use AHC endorsed by an official vet within 10 days of Swedish entry."
-      authority: "Administration of the Republic of Slovenia for Food Safety, Veterinary Sector and Plant Protection (UVHVVR): uvhvvr.si"
+      export_permit: "Not required"
+      health_certificate: "EU pet passport or AHC endorsed by a Slovenian official vet within 10 days of Swedish entry"
+      authority: "Administration for Food Safety, Veterinary Sector and Plant Protection (UVHVVR): uvhvvr.si"
 
   destination:
     code: "SE"
     country: "Sweden"
     import_requirements:
-      microchip: "Required. ISO 11784/11785 standard."
-      rabies_vaccination: "Required. Current. 21-day wait for first vaccination; boosters within the valid period are immediately valid."
-      titre_test: "Not required. EU-to-EU movement."
-      quarantine: "Not required for compliant pets."
-      import_permit: "Not required between EU member states."
-      health_certificate: "EU pet passport or AHC issued within 10 days of entry."
-      tapeworm_treatment: "Dogs from certain countries must receive Echinococcus praziquantel treatment 1-5 days before arrival in Sweden. Check the Jordbruksverket list for Slovenia's current status. Cats are exempt."
+      microchip: "Required. ISO 11784/11785 standard"
+      rabies_vaccination: "Required. 21-day wait after first vaccination"
+      titre_test: "Not required for EU-to-EU travel"
+      quarantine: "None"
+      import_permit: "Not required"
+      health_certificate: "EU pet passport or AHC"
       authority: "Swedish Board of Agriculture (Jordbruksverket): jordbruksverket.se"
 
   airlines:
     - name: "Austrian Airlines"
       type: "cabin_and_cargo"
-      policy_summary: "Austrian Airlines connects Ljubljana (LJU) to Vienna (VIE) in around 1 hour, with onward connections to Stockholm Arlanda (ARN). Small pets in cabin throughout. The most convenient two-leg option from Ljubljana."
-    - name: "SWISS"
-      type: "cabin_and_cargo"
-      policy_summary: "SWISS flies Ljubljana (LJU) to Zurich (ZRH), with connections to Stockholm and Gothenburg. Small pets in cabin; larger dogs via SWISS cargo. Good alternative to the Vienna routing."
+      policy_summary: "Ljubljana (LJU) to Vienna (VIE) direct (under 1 hour), then connecting to Stockholm Arlanda (ARN) via Austrian or SAS services. Small pets in cabin throughout."
     - name: "Lufthansa"
       type: "cabin_and_cargo"
-      policy_summary: "Lufthansa connects through Frankfurt (FRA) to Stockholm Arlanda (ARN). Small pets in cabin; larger dogs via Lufthansa Cargo. Practical for pets that exceed cabin weight limits."
+      policy_summary: "Via Frankfurt (FRA) to Stockholm (ARN). Small pets in cabin; larger dogs via Lufthansa Cargo in temperature-controlled hold."
+    - name: "SAS"
+      type: "cabin_and_cargo"
+      policy_summary: "SAS operates Stockholm Arlanda hub. Connects via partner hubs. Small pets in cabin (up to 8kg including carrier). Larger dogs in pressurised hold."
 
   timeline_steps:
     - step: 1
-      action: "Check microchip and vaccination records"
-      timing: "Before documentation. Vaccination must be current on the day of Swedish arrival."
-      responsible: "Slovenian vet"
+      action: "Microchip implanted (ISO 11784/11785) if not already done"
+      timing: "Before or on the same date as the first rabies vaccination"
+      responsible: "Your vet"
     - step: 2
-      action: "Obtain or update EU pet passport"
-      timing: "One appointment with a UVHVVR-authorised Slovenian vet."
+      action: "Rabies vaccination"
+      timing: "At least 21 days before departure (first vaccination)"
       responsible: "Authorised Slovenian vet"
     - step: 3
-      action: "Check and arrange tapeworm treatment for dogs"
-      timing: "Check jordbruksverket.se for Slovenia's current status. If required: praziquantel 1-5 days before Swedish entry."
-      responsible: "Slovenian vet and owner"
+      action: "EU pet passport issued or AHC arranged"
+      timing: "EU passport: once vaccinations recorded. AHC: within 10 days of Swedish entry"
+      responsible: "Authorised Slovenian vet (passport); official vet (AHC)"
     - step: 4
-      action: "Book flights to Stockholm or Gothenburg"
-      timing: "4-6 weeks before travel. Confirm cabin pet reservation on all legs."
-      responsible: "Owner"
+      action: "Book flights with pet reservation confirmed on all legs"
+      timing: "4-8 weeks before travel"
+      responsible: "Owner / agent"
     - step: 5
-      action: "Travel to Sweden"
-      timing: "Travel day. Carry EU passport and tapeworm treatment record if applicable."
-      responsible: "Owner and airline"
+      action: "Travel to Stockholm via Vienna or Frankfurt. Documents checked on arrival"
+      timing: "Day of travel"
+      responsible: "Owner"
 
   cost_factors:
-    - "EU pet passport update: EUR 30-80"
-    - "Rabies booster (if due): EUR 20-60"
-    - "Tapeworm treatment (dogs, if required): EUR 20-50"
-    - "IATA crate (if needed): EUR 50-200"
-    - "Airline cabin pet fee: EUR 30-120 per leg"
-    - "Cargo fee for larger dogs: EUR 200-700"
-    - "Total typical range: EUR 150-900"
+    - "Microchipping (if not done): 30-60 EUR"
+    - "Rabies vaccination: 30-80 EUR"
+    - "EU pet passport: 20-50 EUR"
+    - "AHC (if used): 50-150 EUR"
+    - "Airline cabin pet fee: 50-200 EUR"
+    - "Cargo for larger dogs via Vienna or Frankfurt: 350-950 EUR"
 
   key_warnings:
-    - "Sweden may require Echinococcus tapeworm treatment for dogs from Slovenia. Verify the current status at jordbruksverket.se before travel. The treatment must be given 1-5 days before arrival, not earlier."
-    - "Cats do not require tapeworm treatment for Swedish entry."
-    - "Confirm your pet reservation covers all legs of the journey. A cabin booking from Ljubljana to Vienna does not automatically extend to the Vienna to Stockholm leg."
+    - "Slovenia is NOT on Sweden's tapeworm treatment country list. Dogs from Slovenia do not need tapeworm treatment to enter Sweden. This is a significant difference from dogs travelling from the Baltic states."
+    - "Ljubljana Airport has limited cargo facilities. For large dogs by cargo to Sweden, routing via Vienna (VIE) or Frankfurt (FRA) is more practical."
+    - "Confirm pet reservations cover all legs of the itinerary, particularly when connecting via Vienna."
 
   route_complexity: "low"
-  estimated_timeline_weeks: "2-6"
+  estimated_timeline_weeks: "3-6"
 
 content:
-  h1: "Pet Transport Slovenia to Sweden: 2026 Guide"
-  overview: "Slovenia and Sweden are both EU member states. The core requirements are straightforward: microchip, valid rabies vaccination, and an EU pet passport or AHC. The one extra step to check for dogs is Sweden's Echinococcus tapeworm treatment requirement, which applies to dogs from certain countries. Austrian Airlines via Vienna is the most direct routing from Ljubljana."
+  h1: "Pet Transport Slovenia to Sweden: Cleaner Than the Baltic Routes in 2026"
+  overview: "Slovenia to Sweden is one of the more straightforward routes in this guide. Both are EU member states. Slovenia is not on Sweden's tapeworm treatment country list, which means dogs from Slovenia can enter Sweden without the praziquantel treatment required for dogs from Estonia, Latvia, and Lithuania. The requirements are the standard EU set: microchip, valid rabies vaccination, and EU pet passport or AHC."
 
   sections:
-    - heading: "The tapeworm treatment requirement for dogs"
+    - heading: "No tapeworm treatment needed: why this route is simpler"
       body: |
-        Sweden requires dogs from countries where Echinococcus multilocularis (fox tapeworm) is present to receive a praziquantel treatment before entry. A vet administers the treatment and records it in the EU pet passport or on a separate certificate. The treatment window is strict: it must be given between 1 and 5 days before the dog arrives in Sweden.
+        Sweden requires tapeworm treatment for dogs from countries where Echinococcus multilocularis is endemic in wildlife. This list includes Estonia, Latvia, Lithuania, and several other countries, but it does not include Slovenia. Dogs from Slovenia can enter Sweden without praziquantel treatment.
 
-        Slovenia's status on the Jordbruksverket list can change, so check the current requirements at jordbruksverket.se before booking your trip. If Slovenia is listed, factor a vet appointment into your departure week. A treatment given six days before arrival is outside the valid window and will not be accepted.
+        This makes the Slovenia-to-Sweden route considerably simpler than the Baltic-origin equivalents. There is no additional vet appointment to schedule, no treatment window to manage, and no risk of failing the border check on this point.
 
-        Cats are not subject to this requirement. For cats, the standard EU pet passport with a valid microchip and rabies vaccination is all that is needed.
+        Cats are not subject to tapeworm treatment requirements regardless of origin. For cat owners from any of the origin countries in this batch, the standard EU requirements are always sufficient.
 
     - heading: "Getting from Ljubljana to Stockholm"
       body: |
-        There are no direct flights from Ljubljana to Stockholm. Austrian Airlines via Vienna Schwechat (VIE) is the most frequent and convenient option. The Ljubljana to Vienna leg takes around 1 hour, and Austrian Airlines then connects onward to Stockholm Arlanda (ARN) and other Swedish destinations. Small pets (up to 8kg including carrier) travel in the cabin on both legs.
+        There are no direct Ljubljana to Stockholm flights. The two most practical connections are via Vienna (Austrian Airlines, LJU to VIE in under 1 hour, then onward to ARN) or via Frankfurt (Lufthansa, with a single connection to Stockholm). Total journey times including connections are typically 5-7 hours.
 
-        SWISS via Zurich is a good alternative, particularly if Zurich connections suit your schedule better. Lufthansa via Frankfurt is a third option with a larger cargo network for bigger dogs.
+        Small pets (up to 8kg including carrier) travel in the cabin on Austrian Airlines, Lufthansa, and SAS. Larger dogs go in the pressurised hold. Ljubljana Airport (LJU) is a smaller facility, so for large dogs needing cargo transport, it is often more practical to route through Vienna or Frankfurt.
 
-        For all multi-leg itineraries, confirm that your pet reservation is recorded on every segment. Pet bookings can sometimes be made per-leg rather than per-itinerary, and a cabin space confirmed from Ljubljana to Vienna does not automatically carry through to the next flight.
+        SAS operates Stockholm Arlanda as its main hub and is a reliable carrier for pets travelling to Sweden. Cabin and hold pet bookings can be made through SAS directly.
 
-        For larger dogs travelling in the cargo hold, Stockholm Arlanda's cargo terminal handles live animals regularly. Book through the airline's cargo department well in advance, as live animal cargo slots fill quickly in summer.
+    - heading: "Swedish entry requirements on arrival"
+      body: |
+        The Swedish Board of Agriculture (Jordbruksverket) oversees pet imports. Border officers at Stockholm Arlanda and other Swedish entry points check documentation. For a dog or cat from Slovenia with a valid microchip, current rabies vaccination, and EU pet passport or AHC, the inspection is routine.
+
+        Make sure your pet's rabies vaccination is within its valid period at the time of arrival. Sweden checks this directly. If a booster is due, schedule it before travel.
+
+        The AHC, if used instead of an EU pet passport, must be endorsed within 10 days of your arrival in Sweden. Co-ordinate the endorsement appointment accordingly.
 
 faqs:
-  - question: "Does my dog need tapeworm treatment before entering Sweden from Slovenia?"
-    answer: "Possibly. Check jordbruksverket.se for Slovenia's current status on Sweden's treatment list. If listed, a Slovenian vet must administer a praziquantel treatment 1-5 days before your dog arrives in Sweden and record it in the EU passport or on a certificate."
-  - question: "Does my cat need tapeworm treatment to enter Sweden from Slovenia?"
-    answer: "No. The Echinococcus treatment requirement applies to dogs only. Cats entering Sweden from Slovenia need a microchip, current rabies vaccination, and a valid EU pet passport or AHC."
-  - question: "Which airline is best for a cabin pet from Ljubljana to Stockholm?"
-    answer: "Austrian Airlines via Vienna is the most direct option. SWISS via Zurich is a good alternative. Both allow small pets in the cabin on European routes."
-  - question: "Is there quarantine for a pet travelling from Slovenia to Sweden?"
-    answer: "No. Sweden and Slovenia are both EU member states. There is no quarantine for compliant pets travelling under the EU pet travel framework."
+  - question: "Do dogs from Slovenia need tapeworm treatment before entering Sweden?"
+    answer: "No. Slovenia is not on Sweden's tapeworm treatment country list. Dogs from Slovenia do not need praziquantel treatment to enter Sweden. This is different from dogs from Estonia, Latvia, and Lithuania, which do require the treatment."
+  - question: "Is there quarantine when taking a dog from Slovenia to Sweden?"
+    answer: "No. There is no quarantine for compliant pets from EU member states. Microchip, valid rabies vaccination, and EU pet passport or AHC are all that is required for dogs and cats from Slovenia."
+  - question: "Which is the best airline for Slovenia to Sweden with a small pet?"
+    answer: "Austrian Airlines via Vienna is often the most convenient from Ljubljana, given the direct LJU-VIE service. Lufthansa via Frankfurt is an alternative. SAS is a strong option if its schedule connects well with your departure."
+  - question: "Can I drive from Slovenia to Sweden?"
+    answer: "Technically yes, but the drive is approximately 2,000km and takes around 18-20 hours (via Austria, Germany, Denmark, and the Oresund Bridge into Sweden). This is a long journey for most pets and would typically require an overnight stop. Documentation requirements are the same as for air travel."
 
 links:
   sideways:
@@ -127,3 +131,41 @@ links:
     - url: "/pet-transport/airlines/austrian-airlines/"
       text: "Austrian Airlines pet policy"
 ---
+
+Slovenia to Sweden is one of the cleaner routes when it comes to pet documentation. Both are EU member states, there is no quarantine, and, crucially, dogs from Slovenia are not subject to the tapeworm treatment requirement that applies to dogs from Estonia, Latvia, and Lithuania. The standard EU requirements cover everything.
+
+## No Tapeworm Treatment Needed
+
+Sweden requires tapeworm (Echinococcus) treatment for dogs from countries where the fox tapeworm is endemic in wildlife. Estonia, Latvia, and Lithuania are all on that list. Slovenia is not. Dogs from Slovenia can enter Sweden with just the standard EU documentation, with no praziquantel appointment to schedule or treatment window to calculate.
+
+This distinction matters if you are comparing routes or planning logistics: the Slovenia-to-Sweden move is genuinely simpler for dog owners than any of the three Baltic routes covered in this series.
+
+Cats are exempt from tapeworm requirements regardless of where they come from.
+
+## Core Requirements
+
+**Microchip:** ISO 11784/11785 standard. In place before or on the same date as the first rabies vaccination.
+
+**Rabies vaccination:** Required. A first vaccination carries a 21-day wait before travel. Boosters given within the valid period are immediately valid.
+
+**EU pet passport or AHC:** An EU pet passport issued by an authorised Slovenian vet (UVHVVR: uvhvvr.si) is the most convenient document. An AHC is the alternative; it must be endorsed within 10 days of your arrival in Sweden.
+
+No titre test, no quarantine, no import permit.
+
+## Getting from Ljubljana to Stockholm
+
+There are no direct flights from Ljubljana (LJU) to Stockholm. Austrian Airlines via Vienna Schwechat (VIE) is the most practical routing. The Ljubljana to Vienna leg takes under 1 hour, and Austrian Airlines connects onward to Stockholm Arlanda (ARN). Small pets (up to 8kg including carrier) travel in the cabin on both legs.
+
+Lufthansa via Frankfurt (FRA) is a solid alternative, particularly for larger dogs where the Frankfurt cargo network is useful. SAS connects to Stockholm from partner hubs and is worth checking if the schedule works.
+
+For multi-leg itineraries, confirm that your pet reservation is booked on every segment. A cabin booking for the Ljubljana-Vienna leg does not automatically extend to the Vienna-Stockholm leg. Check with the airline when purchasing.
+
+Ljubljana Airport handles mostly short-haul European routes and has limited cargo facilities. For large dogs needing dedicated cargo transport, routing through Vienna or Frankfurt is more practical.
+
+## Swedish Entry Documentation Check
+
+Swedish border officers check documentation at Stockholm Arlanda and other entry points. For a dog or cat from Slovenia with a current microchip, valid rabies vaccination, and EU pet passport or AHC, the process is straightforward.
+
+Check that the rabies vaccination is within its valid period on your actual arrival date in Sweden, not just your departure date from Ljubljana. If a booster is coming up in the next few weeks, schedule it before you travel.
+
+For Swedish import requirements, see jordbruksverket.se. For Slovenian export documentation queries, contact the Administration for Food Safety, Veterinary Sector and Plant Protection (UVHVVR) at uvhvvr.si.
