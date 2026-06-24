@@ -7,12 +7,12 @@
 - **Repository:** https://github.com/ngindubai/pet-transport (private)
 - **Deploy:** Push to `main` triggers GitHub Actions automatically. Hugo build + incremental FTP to Hostinger. Live within ~80 seconds for a single article. After every build batch, the live URLs of new/changed pages are posted in chat for review (LIVE LINK REVIEW GATE in CLAUDE.md).
 
-## Current State (2026-06-23, reconciled)
+## Current State (2026-06-24, reconciled)
 
-- **Routes built:** 6,019 of ~37,830 country pairs (~15.9%). All in `site/content/routes/`.
+- **Routes built:** 6,044 of ~37,830 country pairs (~15.97%). All in `site/content/routes/`.
 - **Blog articles:** 429 (Day 24 was a rewrite of existing stub, not a new file)
-- **Total .md source files:** 6,821 (reconciled by verify_build_state.py, 2026-06-23)
-- **Phase 7 progress:** Chunks 1-63 complete. **Chunk 64 is next** (Template D, Tier B). Tier A is fully complete (0 pairs remaining).
+- **Total .md source files:** 6,846 (reconciled by verify_build_state.py, 2026-06-24)
+- **Phase 7 progress:** Chunks 1-64 complete. **Chunk 65 is next** (Template E, Tier B). Tier A is fully complete (0 pairs remaining).
 - **Content plan:** Days 1-6 + Days 8-24 complete (24 articles written). Day 7 skipped (pre-existing). **Day 25 is next.**
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile.
 - **Enquiry tracker:** Live. PTG-001 to PTG-007 in sheet. Webhook v4 confirmed working.
