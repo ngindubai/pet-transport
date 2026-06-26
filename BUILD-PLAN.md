@@ -17,7 +17,7 @@
 - **Bulk-generation scripts are banned.** A batch is still N individually quality-gated blocks, never a mass-generation script.
 - **Skip rule:** skip only if the build pointer shows nothing left to build (no chunks remaining and no blog day due). Do NOT skip just because a build already happened earlier today; each site now runs twice a day on purpose.
 
-**Where we are (reconciled from disk 2026-06-24):** 6,044 quality routes complete. ~31,786 routes remaining. Blog: 429 articles. Total .md source files: 6,846. Content plan: Day 24 DONE (uk-to-canada rewritten). Day 25 is next. Chunks 1-64 complete. Chunk 65 (Template E, Tier B) is next. Counts come from `python verify_build_state.py`, never hand-edited.
+**Where we are (reconciled from disk 2026-06-26):** 6,069 quality routes complete. ~31,761 routes remaining. Blog: 429 articles. Total .md source files: 6,871. Content plan: Day 24 DONE (uk-to-canada rewritten). Day 25 is next. Chunks 1-65 complete. Chunk 66 (Template A, Tier B) is next. Counts come from `python verify_build_state.py`, never hand-edited.
 
 ---
 
@@ -70,7 +70,8 @@
 - Chunk 62 template: B - DONE 2026-06-22 (Baltic EE/LV/LT and Slovenia SI outbound to Nordic SE/NO/DK/FI x14 + Baltic/SI to Central Europe AT/CH/CZ x11; 25 routes total; EU pet passport for all; Norway tapeworm rule flagged for dogs)
 - Chunk 63 template: C - DONE 2026-06-23 (Template C, Tier B, 25 routes: Nordic NO/SE/FI/DK to Caribbean/LatAm DO/JM/PA/UY x16; Baltic EE/LV/LT to Lebanon x3; Caribbean/LatAm outbound to EU BE/PT x6)
 - Chunk 64 template: D - DONE 2026-06-24 (Template D, Tier B, 25 routes: Central Europe AT/CH/CZ/PL/HU to Caribbean DO/JM/PA/UY x20; Dominican Republic to Central Europe AT/CH/CZ/PL/HU x5)
-- Chunk 65 template: E - NEXT
+- Chunk 65 template: E - DONE 2026-06-26 (Jamaica to AT/CZ/HU/PL/IT/CH/SE/NO/DK/FI x10 [EU Group 2, no titre test]; Panama to AT/CZ/HU/PL/CH/SE/NO/DK/FI x9 [unlisted, FAVN+90-day]; Uruguay to AT/CZ/HU/PL/IT/CH x6 [unlisted, FAVN+90-day]; Norway/Finland echinococcus treatment for dogs noted)
+- Chunk 66 template: A - NEXT
 - Blog Day 10: pet-transport-uae-to-pakistan - DONE 2026-06-07 (Marcus Webb, AQD NOC, AED 3,000-6,000)
 - Blog Day 11: exporting-pets-from-singapore - DONE 2026-06-08 (Marcus Webb, AVS export licence, FAVN/RNATT for Australia, Changi cargo, UK/EU/US/AU destination matrix, cost table)
 - Blog Day 12: importing-pets-to-australia-2026 - DONE 2026-06-08 (Dr. Sarah Okafor, ~3000 words, Group 1/2/3 system, RNATT, Mickleham day-by-day, cost table by region, rejection reasons, FAQs)
