@@ -7,12 +7,12 @@
 - **Repository:** https://github.com/ngindubai/pet-transport (private)
 - **Deploy:** Push to `main` triggers GitHub Actions automatically. Hugo build + incremental FTP to Hostinger. Live within ~80 seconds for a single article. After every build batch, the live URLs of new/changed pages are posted in chat for review (LIVE LINK REVIEW GATE in CLAUDE.md).
 
-## Current State (2026-06-26, reconciled)
+## Current State (2026-06-28, reconciled)
 
-- **Routes built:** 6,069 of ~37,830 country pairs (~16.04%). All in `site/content/routes/`.
+- **Routes built:** 6,094 of ~37,830 country pairs (~16.1%). All in `site/content/routes/`.
 - **Blog articles:** 429 (Day 24 was a rewrite of existing stub, not a new file)
-- **Total .md source files:** 6,871 (reconciled by verify_build_state.py, 2026-06-26)
-- **Phase 7 progress:** Chunks 1-65 complete. **Chunk 66 is next** (Template A, Tier B). Tier A is fully complete (0 pairs remaining).
+- **Total .md source files:** 6,896 (reconciled by verify_build_state.py, 2026-06-28)
+- **Phase 7 progress:** Chunks 1-66 complete. **Chunk 67 is next** (Template B, Tier B). Tier A is fully complete (0 pairs remaining). Tier B: 794 remaining.
 - **Content plan:** Days 1-6 + Days 8-24 complete (24 articles written). Day 7 skipped (pre-existing). **Day 25 is next.**
 - **Jamaica regulatory correction flagged:** Existing routes (jamaica-to-germany, jamaica-to-france, etc.) incorrectly state Jamaica is EU unlisted and requires FAVN titre test. Jamaica IS EU Group 2 listed (Implementing Regulation (EU) 2024/1130) - no titre test required. New Chunk 65 Jamaica routes use correct information. A future correction pass on the ~10 existing Jamaica routes is needed.
 - **Counts are never hand-edited.** Run `python verify_build_state.py` to check for drift and `--write` to reconcile.
