@@ -1,6 +1,6 @@
 ---
 template_variant: "C"
-title: "Pet Relocation Australia to China | Requirements & Guide"
+title: "Pet Transport Australia to China: 30-Day Quarantine, Rules and Timeline"
 description: "Pet relocation from Australia to China: China import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"

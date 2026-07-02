@@ -1,6 +1,6 @@
 ---
-title: "Importing a Pet to India: Requirements & Full Process"
-description: "Everything you need to bring your pet to India: import regulations, vaccinations, permits, and what to expect on arrival."
+title: "Pet Transport to India: Import Permit and 30-Day Quarantine"
+description: "Bringing a dog or cat to India? 30 days quarantine on arrival. Titre test from some origins. Rules, costs and timeline explained."
 type: "countries"
 layout: "single"
 author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
@@ -10,7 +10,7 @@ country_name: "India"
 country_code: "IN"
 pet_friendliness: "moderate"
 seo:
-  title: "Importing a Pet to India | Pet Transport Global"
+  title: "Pet Transport to India: Import Permit and 30-Day Quarantine"
   description: "Everything you need to bring your pet to India: import regulations, vaccinations, permits, and what to expect on arrival."
 import_requirements:
   microchip: "Required (ISO 11784/11785)"

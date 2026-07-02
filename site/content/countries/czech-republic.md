@@ -1,6 +1,6 @@
 ---
-title: "Czech Republic Pet Import: Regulations, Permits and Timeline"
-description: "Everything you need to bring your pet to Czech Republic: import regulations, vaccinations, permits, and what to expect on arrival."
+title: "Pet Transport to the Czech Republic: EU Rules and No Quarantine"
+description: "Bringing a dog or cat to the Czech Republic? No routine quarantine. EU passport or AHC accepted. Titre test from some origins. Rules, costs and timeline explained."
 type: "countries"
 layout: "single"
 author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
@@ -10,7 +10,7 @@ country_name: "Czech Republic"
 country_code: "CZ"
 pet_friendliness: "moderate"
 seo:
-  title: "Czech Republic Pet Import: Regulations | Pet Transport Global"
+  title: "Pet Transport to the Czech Republic: EU Rules and No Quarantine"
   description: "Everything you need to bring your pet to Czech Republic: import regulations, vaccinations, permits, and what to expect on arrival."
 import_requirements:
   microchip: "Required (ISO 11784/11785). Before or on same day as first rabies vaccination"

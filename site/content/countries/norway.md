@@ -1,6 +1,6 @@
 ---
-title: "Norway Pet Import: Regulations, Permits and Timeline"
-description: "Complete guide to importing your dog or cat into Norway. Import requirements, quarantine, permits, and preparation timeline."
+title: "Pet Transport to Norway: Rules, Costs and No Quarantine"
+description: "Bringing a dog or cat to Norway? No routine quarantine. Titre test from some origins. Rules, costs and timeline explained."
 type: "countries"
 layout: "single"
 author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
@@ -10,7 +10,7 @@ country_name: "Norway"
 country_code: "NO"
 pet_friendliness: "moderate"
 seo:
-  title: "Norway Pet Import: Regulations, Permits and Timeline | Pet Transport Global"
+  title: "Pet Transport to Norway: Rules, Costs and No Quarantine"
   description: "Complete guide to importing your dog or cat into Norway. Import requirements, quarantine, permits, and preparation timeline."
 import_requirements:
   microchip: "Required (ISO 11784/11785). Before or on same day as first rabies vaccination"

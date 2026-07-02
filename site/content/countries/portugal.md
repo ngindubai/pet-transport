@@ -1,6 +1,6 @@
 ---
-title: "Portugal Pet Import: Regulations, Permits & Timeline"
-description: "Complete guide to importing your dog or cat into Portugal. Import requirements, quarantine, permits, and preparation timeline."
+title: "Pet Transport to Portugal: EU Rules and No Quarantine"
+description: "Bringing a dog or cat to Portugal? No routine quarantine. EU passport or AHC accepted. Rules, costs and timeline explained."
 type: "countries"
 layout: "single"
 author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
@@ -10,7 +10,7 @@ country_name: "Portugal"
 country_code: "PT"
 pet_friendliness: "relaxed"
 seo:
-  title: "Portugal Pet Import: Regulations, Permits & Timeline | Pet Transport Global"
+  title: "Pet Transport to Portugal: EU Rules and No Quarantine"
   description: "Complete guide to importing your dog or cat into Portugal. Import requirements, quarantine, permits, and preparation timeline."
 import_requirements:
   microchip: "Required (ISO 11784/11785). Before rabies vaccination"

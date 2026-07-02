@@ -1,6 +1,6 @@
 ---
-title: "Netherlands Pet Import: Regulations, Permits & Timeline"
-description: "Netherlands pet import rules explained. Microchip, rabies vaccination, quarantine status, and health certificate requirements."
+title: "Pet Transport to Netherlands: EU Rules and No Quarantine"
+description: "Bringing a dog or cat to Netherlands? No routine quarantine. EU passport or AHC accepted. Rules, costs and timeline explained."
 type: "countries"
 layout: "single"
 author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
@@ -10,7 +10,7 @@ country_name: "Netherlands"
 country_code: "NL"
 pet_friendliness: "relaxed"
 seo:
-  title: "Netherlands Pet Import: Regulations | Pet Transport Global"
+  title: "Pet Transport to Netherlands: EU Rules and No Quarantine"
   description: "Netherlands pet import rules explained. Microchip, rabies vaccination, quarantine status, and health certificate requirements."
 import_requirements:
   microchip: "Required (ISO 11784/11785)"

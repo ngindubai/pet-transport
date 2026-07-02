@@ -1,6 +1,6 @@
 ---
-title: "Importing a Pet to South Korea: Requirements & Full Process"
-description: "Complete guide to importing your dog or cat into South Korea. Import requirements, quarantine, permits, and preparation timeline."
+title: "Pet Transport to South Korea: Import Permit and 10-Day Quarantine"
+description: "Bringing a dog or cat to South Korea? 10 days quarantine on arrival. Titre test from some origins. Rules, costs and timeline explained."
 type: "countries"
 layout: "single"
 author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
@@ -10,7 +10,7 @@ country_name: "South Korea"
 country_code: "KR"
 pet_friendliness: "moderate"
 seo:
-  title: "Importing a Pet to South Korea | Pet Transport Global"
+  title: "Pet Transport to South Korea: Import Permit and 10-Day Quarantine"
   description: "Complete guide to importing your dog or cat into South Korea. Import requirements, quarantine, permits, and preparation timeline."
 import_requirements:
   microchip: "Required (ISO 11784/11785)"

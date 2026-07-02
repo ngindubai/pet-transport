@@ -1,6 +1,6 @@
 ---
-title: "Egypt Pet Import: Regulations, Permits and Timeline"
-description: "Egypt pet import rules explained. Microchip, rabies vaccination, quarantine status, and health certificate requirements."
+title: "Pet Transport to Egypt: Import Permit and No Quarantine"
+description: "Bringing a dog or cat to Egypt? No routine quarantine. Titre test from some origins. Rules, costs and timeline explained."
 type: "countries"
 layout: "single"
 author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
@@ -10,7 +10,7 @@ country_name: "Egypt"
 country_code: "EG"
 pet_friendliness: "moderate"
 seo:
-  title: "Egypt Pet Import: Regulations, Permits and Timeline | Pet Transport Global"
+  title: "Pet Transport to Egypt: Import Permit and No Quarantine"
   description: "Egypt pet import rules explained. Microchip, rabies vaccination, quarantine status, and health certificate requirements."
 import_requirements:
   microchip: "Required (ISO 11784/11785)"

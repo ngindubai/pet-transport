@@ -1,6 +1,6 @@
 ---
-title: "Pet Transport to China | Requirements and Guide"
-description: "Everything you need to bring your pet to China: import regulations, vaccinations, permits, and what to expect on arrival."
+title: "Pet Transport to China: Import Permit and 30-Day Quarantine"
+description: "Bringing a dog or cat to China? 30 days quarantine on arrival. Titre test from some origins. Rules, costs and timeline explained."
 type: "countries"
 layout: "single"
 author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
@@ -10,7 +10,7 @@ country_name: "China"
 country_code: "CN"
 pet_friendliness: "strict"
 seo:
-  title: "Pet Transport to China | Requirements and Guide | Pet Transport Global"
+  title: "Pet Transport to China: Import Permit and 30-Day Quarantine"
   description: "Everything you need to bring your pet to China: import regulations, vaccinations, permits, and what to expect on arrival."
 import_requirements:
   microchip: "Required (ISO 15 digit). Must be implanted before vaccinations"

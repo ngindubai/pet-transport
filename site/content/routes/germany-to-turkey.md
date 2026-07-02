@@ -1,6 +1,6 @@
 ---
 template_variant: "B"
-title: "Pet Relocation Germany to Turkey | Requirements & Guide"
+title: "Pet Transport Germany to Turkey: Rules, Timeline and No Quarantine"
 description: "Complete guide to pet transport from Germany to Turkey. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"

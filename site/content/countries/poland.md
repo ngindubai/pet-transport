@@ -1,6 +1,6 @@
 ---
-title: "How to Bring Your Pet to Poland | Import Rules Explained"
-description: "Everything you need to bring your pet to Poland: import regulations, vaccinations, permits, and what to expect on arrival."
+title: "Pet Transport to Poland: EU Rules and No Quarantine"
+description: "Bringing a dog or cat to Poland? No routine quarantine. EU passport or AHC accepted. Titre test from some origins. Rules, costs and timeline explained."
 type: "countries"
 layout: "single"
 author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
@@ -10,7 +10,7 @@ country_name: "Poland"
 country_code: "PL"
 pet_friendliness: "moderate"
 seo:
-  title: "How to Bring Your Pet to Poland | Pet Transport Global"
+  title: "Pet Transport to Poland: EU Rules and No Quarantine"
   description: "Everything you need to bring your pet to Poland: import regulations, vaccinations, permits, and what to expect on arrival."
 import_requirements:
   microchip: "Required (ISO 11784/11785). Before or on same day as first rabies vaccination"

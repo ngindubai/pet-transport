@@ -1,6 +1,6 @@
 ---
 template_variant: "B"
-title: "Pet Transport from Canada to India | PetTransportGlobal"
+title: "Pet Transport Canada to India: Titre Test and 30-Day Quarantine"
 description: "How to ship your dog or cat from Canada to India. India import rules, vaccinations, permits, and airline options explained."
 type: "routes"
 layout: "single"
