@@ -1,0 +1,19 @@
+{{- /*
+  Partial: quarantine-short.html
+  Returns a short, reliable quarantine label for hero stats and mini-stats:
+  "None", "10 days", "Required", or "Check guide".
+  Reads the per-route quarantine string (present on ~6,000 routes) rather than
+  the sparse quarantine_required bool. Checks a clear No/Not/None before pulling
+  any day count, so penalty-day mentions are not misread as routine quarantine.
+*/ -}}
+{{- $q := "" -}}{{- with .Params.route_data.destination.import_requirements.quarantine -}}{{- $q = . -}}{{- end -}}
+{{- if $q -}}
+{{- if or (hasPrefix $q "No") (hasPrefix $q "Not") (hasPrefix $q "None") -}}None
+{{- else -}}{{- $days := findRE "[0-9]+[ -]day" $q 1 -}}
+{{- if $days -}}{{ index $days 0 | replaceRE "[ -]day" "" }} days
+{{- else if or (hasPrefix $q "Mandatory") (hasPrefix $q "Required") -}}Required
+{{- else -}}Check guide
+{{- end -}}{{- end -}}
+{{- else if .Params.quarantine_required -}}{{- with .Params.quarantine_days -}}{{ . }} days{{- else -}}Required{{- end -}}
+{{- else -}}None
+{{- end -}}

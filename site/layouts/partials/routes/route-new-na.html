@@ -44,7 +44,7 @@
       <h1 class="hero-h1">{{ .Params.content.h1 | default (printf "Pet Transport: %s to %s" .Params.origin_name .Params.destination_name) }}</h1>
       <div class="hero-stats">
         {{ with $rd.estimated_timeline_weeks }}<div class="hstat"><div class="hstat-n">{{ . }} weeks</div><div class="hstat-l">Typical preparation</div></div>{{ end }}
-        {{ if .Params.quarantine_required }}<div class="hstat"><div class="hstat-n">{{ with .Params.quarantine_days }}{{ . }} days{{ else }}Required{{ end }}</div><div class="hstat-l">Quarantine on arrival</div></div>{{ else }}<div class="hstat"><div class="hstat-n">None</div><div class="hstat-l">No quarantine required</div></div>{{ end }}
+        <div class="hstat"><div class="hstat-n">{{ partial "routes/quarantine-short.html" . }}</div><div class="hstat-l">Quarantine on arrival</div></div>
         {{ with $rd.route_complexity }}<div class="hstat"><div class="hstat-n"><span class="hstat-badge badge-warn">{{ . | replaceRE "_" " " | title }}</span></div><div class="hstat-l">Route complexity</div></div>{{ end }}
         <div class="hstat"><div class="hstat-n"><span class="hstat-badge badge-ok">&#10003; Managed</span></div><div class="hstat-l">Full door-to-door service</div></div>
       </div>
@@ -61,7 +61,7 @@
           <div class="sc-stat"><span class="sc-stat-l">To</span><span class="sc-stat-v">{{ .Params.destination_name }}</span></div>
           {{ with $rd.estimated_timeline_weeks }}<div class="sc-stat"><span class="sc-stat-l">Prep time</span><span class="sc-stat-v">{{ . }} weeks</span></div>{{ end }}
           {{ with $rd.route_complexity }}<div class="sc-stat"><span class="sc-stat-l">Complexity</span><span class="sc-stat-v">{{ . | replaceRE "_" " " | title }}</span></div>{{ end }}
-          <div class="sc-stat"><span class="sc-stat-l">Quarantine</span><span class="sc-stat-v">{{ if .Params.quarantine_required }}{{ with .Params.quarantine_days }}{{ . }} days{{ else }}Yes{{ end }}{{ else }}No{{ end }}</span></div>
+          <div class="sc-stat"><span class="sc-stat-l">Quarantine</span><span class="sc-stat-v">{{ partial "routes/quarantine-short.html" . }}</span></div>
         </div>
       </div>
       {{ with .Params.links }}{{ with .sideways }}

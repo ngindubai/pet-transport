@@ -20,7 +20,7 @@
       {{ with .Params.content.overview }}<p class="hero-sub r d3">{{ . | plainify | truncate 180 }}</p>{{ end }}
       <div class="hero-stats r d3">
         {{ with $rd.estimated_timeline_weeks }}<div class="hst"><div class="hst-n">{{ . }} wks</div><div class="hst-l">Preparation needed</div></div>{{ end }}
-        <div class="hst"><div class="hst-n">{{ if .Params.quarantine_required }}{{ with .Params.quarantine_days }}{{ . }} days{{ else }}Required{{ end }}{{ else }}None{{ end }}</div><div class="hst-l">Quarantine on arrival</div></div>
+        <div class="hst"><div class="hst-n">{{ partial "routes/quarantine-short.html" . }}</div><div class="hst-l">Quarantine on arrival</div></div>
         {{ with $rd.route_complexity }}<div class="hst"><div class="hst-n"><span class="hst-badge b-warn">{{ . | replaceRE "_" " " | title }}</span></div><div class="hst-l">Route complexity</div></div>{{ end }}
         <div class="hst"><div class="hst-n"><span class="hst-badge b-ok">Managed</span></div><div class="hst-l">Full door to door</div></div>
       </div>

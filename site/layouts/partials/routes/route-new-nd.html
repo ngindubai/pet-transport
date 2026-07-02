@@ -114,7 +114,7 @@
       <div class="rp-facts">
         <div class="rp-facts-inner">
           {{ with $rd.estimated_timeline_weeks }}<div class="rpf"><span class="rpf-l">Lead time</span><span class="rpf-v">{{ . }} weeks</span></div>{{ end }}
-          <div class="rpf"><span class="rpf-l">Quarantine</span><span class="rpf-v">{{ if .Params.quarantine_required }}{{ with .Params.quarantine_days }}{{ . }} days{{ else }}Yes{{ end }}{{ else }}No{{ end }}</span></div>
+          <div class="rpf"><span class="rpf-l">Quarantine</span><span class="rpf-v">{{ partial "routes/quarantine-short.html" . }}</span></div>
           {{ with $rd.route_complexity }}<div class="rpf"><span class="rpf-l">Complexity</span><span class="rpf-v"><span class="rpf-badge rpfb-w">{{ . | replaceRE "_" " " | title }}</span></span></div>{{ end }}
           {{ with $rd.airlines }}<div class="rpf"><span class="rpf-l">Airlines</span><span class="rpf-v">{{ len . }}</span></div>{{ end }}
           <div class="rpf"><span class="rpf-l">Service</span><span class="rpf-v"><span class="rpf-badge rpfb-ok">Door to door</span></span></div>
