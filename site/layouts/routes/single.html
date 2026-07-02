@@ -31,8 +31,8 @@
   "url": "{{ $.Permalink }}",
   "author": {
     "@type": "{{ $atype }}",
-    "name": {{ $name | jsonify }}{{ if and (eq $atype "Person") $jobTitle }},
-    "jobTitle": {{ $jobTitle | jsonify }},
+    "name": {{ $name | jsonify | safeJS }}{{ if and (eq $atype "Person") $jobTitle }},
+    "jobTitle": {{ $jobTitle | jsonify | safeJS }},
     "worksFor": { "@type": "Organization", "name": "Pet Transport Global" }{{ end }}
   }
 }
@@ -52,8 +52,8 @@
         {
             "@type": "HowToStep",
             "position": {{ add $i 1 }},
-            "name": {{ $step.action | jsonify }},
-            "text": {{ printf "%s. Timing: %s." $step.action $step.timing | jsonify }}
+            "name": {{ $step.action | jsonify | safeJS }},
+            "text": {{ printf "%s. Timing: %s." $step.action $step.timing | jsonify | safeJS }}
         }
         {{ end }}
     ]
@@ -71,8 +71,8 @@
         {{ range $i, $faq := . }}{{ if $i }},{{ end }}
         {
             "@type": "Question",
-            "name": {{ $faq.question | jsonify }},
-            "acceptedAnswer": { "@type": "Answer", "text": {{ $faq.answer | jsonify }} }
+            "name": {{ $faq.question | jsonify | safeJS }},
+            "acceptedAnswer": { "@type": "Answer", "text": {{ $faq.answer | jsonify | safeJS }} }
         }
         {{ end }}
     ]
