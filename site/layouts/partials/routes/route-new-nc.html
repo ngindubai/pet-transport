@@ -16,7 +16,7 @@
           <h1 class="hero-h1 r d1">{{ .Params.content.h1 | default (printf "Pet Transport %s to %s" $o $d) }}</h1>
         </div>
         <div class="hero-copy r d2">
-          {{ with .Params.content.overview }}<p>{{ . | plainify | truncate 200 }}</p>{{ end }}
+          <p>{{ (partial "routes/route-overview.html" .) | plainify | truncate 200 }}</p>
           <a href="#quote-form" class="hero-copy-cta">Get your free quote</a>
         </div>
       </div>
@@ -140,7 +140,7 @@
       {{ end }}
 
       {{/* LONG-FORM */}}
-      {{ with .Params.content.sections }}
+      {{ with (partial "routes/route-sections.html" .) }}
       <div class="page-sec r">{{ range . }}{{ with .heading }}<h2 class="sec-h">{{ . }}</h2>{{ end }}<div class="sec-p">{{ .body | markdownify }}</div>{{ end }}</div>
       {{ end }}
 

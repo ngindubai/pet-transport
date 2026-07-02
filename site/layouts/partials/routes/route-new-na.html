@@ -89,9 +89,7 @@
       {{ partial "verified-date.html" . }}
       {{ partial "data-source-link.html" . }}
 
-      {{ with .Params.content.overview }}
-      <section class="page-sec"><div class="sec-tag">Overview</div><div class="sec-p">{{ . | markdownify }}</div></section>
-      {{ end }}
+      <section class="page-sec"><div class="sec-tag">Overview</div><div class="sec-p">{{ partial "routes/route-overview.html" . }}</div></section>
 
       {{/* Process timeline */}}
       {{ with $rd.timeline_steps }}
@@ -187,7 +185,7 @@
       {{ end }}
 
       {{/* Long-form content sections */}}
-      {{ with .Params.content.sections }}
+      {{ with (partial "routes/route-sections.html" .) }}
       {{ range . }}
       <section class="page-sec">{{ with .heading }}<h2 class="sec-h">{{ . }}</h2>{{ end }}<div class="sec-p">{{ .body | markdownify }}</div></section>
       {{ end }}

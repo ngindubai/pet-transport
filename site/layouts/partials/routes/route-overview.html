@@ -1,0 +1,161 @@
+{{- /*
+  Partial: route-overview.html  (A1 - de-duplicated route overview)
+  Composes a route's overview from data-keyed sentence pools, selected by a
+  deterministic per-route seed (hash of the slug). Two routes only read alike if
+  their data AND seed coincide, which is rare, so the near-identical middle
+  paragraph that used to cover 91% of routes is gone.
+
+  Every factual clause is keyed to real per-route data (complexity band,
+  timeline weeks, quarantine string, titre status). Openers and closers make no
+  factual claims. British English, no em dashes, no banned vocabulary.
+
+  Returns two <p> paragraphs. Falls back to the stored overview if the core data
+  (complexity or timeline) is missing.
+*/ -}}
+{{- $rd := .Params.route_data -}}
+{{- $o := .Params.origin_name -}}
+{{- $dest := .Params.destination_name -}}
+{{- $weeks := $rd.estimated_timeline_weeks -}}
+{{- $cxRaw := lower ($rd.route_complexity | default "moderate") -}}
+
+{{- /* Normalise the messy complexity values into four bands (very_high first). */ -}}
+{{- $band := "moderate" -}}
+{{- if or (in $cxRaw "very_high") (in $cxRaw "very high") (in $cxRaw "very-high") -}}{{- $band = "demanding" -}}
+{{- else if in $cxRaw "high" -}}{{- $band = "involved" -}}
+{{- else if or (in $cxRaw "low") (in $cxRaw "very_low") -}}{{- $band = "straightforward" -}}
+{{- else -}}{{- $band = "moderate" -}}{{- end -}}
+
+{{- /* Quarantine: reliable string, No/Not/None before any day count. */ -}}
+{{- $q := "" -}}{{- with $rd.destination.import_requirements.quarantine -}}{{- $q = . -}}{{- end -}}
+{{- $qtype := "" -}}{{- $qdays := "" -}}
+{{- if $q -}}
+{{- if or (hasPrefix $q "No") (hasPrefix $q "Not") (hasPrefix $q "None") -}}{{- $qtype = "none" -}}
+{{- else -}}{{- $dm := findRE "[0-9]+[ -]day" $q 1 -}}
+{{- if $dm -}}{{- $qtype = "days" -}}{{- $qdays = replaceRE "[ -]day" "" (index $dm 0) -}}
+{{- else if or (hasPrefix $q "Mandatory") (hasPrefix $q "Required") -}}{{- $qtype = "required" -}}{{- end -}}{{- end -}}
+{{- end -}}
+
+{{- /* Titre status. */ -}}
+{{- $tt := "" -}}{{- with $rd.destination.import_requirements.titre_test -}}{{- $tt = . -}}{{- end -}}
+{{- $ttype := "" -}}
+{{- if $tt -}}
+{{- if hasPrefix $tt "Not required" -}}{{- $ttype = "no" -}}
+{{- else if or (hasPrefix $tt "Required for") (hasPrefix $tt "Required if") -}}{{- $ttype = "cond" -}}
+{{- else if hasPrefix $tt "Required" -}}{{- $ttype = "yes" -}}{{- end -}}
+{{- end -}}
+
+{{- if and $weeks $rd.route_complexity -}}
+{{- $seed := hash.FNV32a (.Params.slug | default $.File.ContentBaseName) -}}
+
+{{- $openers := slice
+  (printf "Moving a dog or cat from %s to %s is very doable with the right preparation." $o $dest)
+  (printf "If you are relocating a pet from %s to %s, the process is manageable once you know the sequence." $o $dest)
+  (printf "Taking your dog or cat from %s to %s comes down to good timing and the right paperwork." $o $dest)
+  (printf "Relocating a pet from %s to %s follows a clear path once you understand what %s asks for." $o $dest $dest)
+  (printf "Shipping a dog or cat from %s to %s rewards owners who start planning early." $o $dest)
+  (printf "Getting a pet from %s to %s is a step by step process, and each stage has its own timing." $o $dest)
+  (printf "A move from %s to %s with a dog or cat is mostly about preparing the documents in the right order." $o $dest)
+  (printf "Planning a pet relocation from %s to %s is easier when you work backwards from your travel date." $o $dest)
+  (printf "Bringing your dog or cat from %s to %s takes some coordination, but the requirements are well defined." $o $dest)
+  (printf "The journey from %s to %s for a pet is straightforward to plan once the key dates are mapped out." $o $dest)
+-}}
+
+{{- $cxDemanding := slice
+  (printf "This is one of the more demanding routes, so allow around %s weeks and treat the timeline as fixed." $weeks)
+  (printf "Expect a long lead time of roughly %s weeks; the waiting periods here cannot be rushed." $weeks)
+  (printf "This route sits at the strict end, and about %s weeks of preparation is realistic." $weeks)
+  (printf "Give yourself close to %s weeks, as several stages run on fixed clocks that no agent can shorten." $weeks)
+  (printf "Plan for approximately %s weeks. This is a rigorous route with little room to compress the schedule." $weeks)
+  (printf "Budget around %s weeks and start early, because the mandatory waits on this route stack up quickly." $weeks)
+-}}
+{{- $cxInvolved := slice
+  (printf "This route takes some organising, and roughly %s weeks of preparation is about right." $weeks)
+  (printf "There is a fair amount of paperwork here, so plan on around %s weeks." $weeks)
+  (printf "Allow about %s weeks; the requirements are detailed but predictable once mapped out." $weeks)
+  (printf "Expect around %s weeks of lead time to line up the documents and the fixed waiting periods." $weeks)
+  (printf "Set aside roughly %s weeks for this route and keep a close eye on the sequencing." $weeks)
+  (printf "Around %s weeks is sensible here, with a few steps that must happen in a strict order." $weeks)
+-}}
+{{- $cxModerate := slice
+  (printf "This is a middle of the road route, and about %s weeks of preparation usually covers it." $weeks)
+  (printf "Plan on roughly %s weeks; the checklist is clear and the timing is manageable." $weeks)
+  (printf "Allow around %s weeks and follow the steps in order to stay on track." $weeks)
+  (printf "Expect about %s weeks. Nothing here is unusually complex, but the deadlines matter." $weeks)
+  (printf "Give yourself close to %s weeks so none of the fixed waiting periods catch you out." $weeks)
+  (printf "Around %s weeks is typical, with a straightforward sequence to work through." $weeks)
+-}}
+{{- $cxStraightforward := slice
+  (printf "This is one of the more straightforward routes, and roughly %s weeks is usually enough." $weeks)
+  (printf "Preparation is relatively light here, so plan on about %s weeks to be comfortable." $weeks)
+  (printf "Allow around %s weeks. The requirements are modest compared with stricter destinations." $weeks)
+  (printf "Expect about %s weeks, with a short and predictable checklist." $weeks)
+  (printf "Give yourself roughly %s weeks, though this route carries fewer hurdles than most." $weeks)
+  (printf "Around %s weeks should do it, as this is an easier route to plan." $weeks)
+-}}
+{{- $cxPool := $cxModerate -}}
+{{- if eq $band "demanding" -}}{{- $cxPool = $cxDemanding -}}
+{{- else if eq $band "involved" -}}{{- $cxPool = $cxInvolved -}}
+{{- else if eq $band "straightforward" -}}{{- $cxPool = $cxStraightforward -}}{{- end -}}
+
+{{- $qNone := slice
+  "Compliant pets are not held in quarantine on arrival."
+  "There is no routine quarantine, provided the paperwork is in order."
+  "Pets with correct documentation skip quarantine entirely."
+  "No routine quarantine applies as long as every requirement is met." -}}
+{{- $qDays := slice
+  (printf "Plan for %s days of quarantine on arrival." $qdays)
+  (printf "Your pet will spend %s days in quarantine after landing." $qdays)
+  (printf "A %s day quarantine stay applies once your pet arrives." $qdays)
+  (printf "Factor in %s days of quarantine at the destination." $qdays) -}}
+{{- $qReq := slice
+  "Quarantine is required on arrival, so check the exact terms in the table below."
+  "This destination applies quarantine on arrival; the details are set out below."
+  "Expect a quarantine stay on arrival, and read the arrival rules for the specifics."
+  "Quarantine applies here, so go through the arrival requirements carefully." -}}
+
+{{- $tNo := slice
+  "A rabies titre test is not needed for this route."
+  "You will not need a rabies titre test here."
+  "No rabies titre test is required."
+  "This route does not call for a rabies titre test." -}}
+{{- $tCond := slice
+  "A rabies titre test may apply depending on where your pet is coming from, so check the requirements below."
+  "Whether a rabies titre test is needed depends on your pet's origin, so confirm against the rules below."
+  "A titre test could be required in some cases, so review the destination's conditions."
+  "Depending on origin, a rabies titre test may be part of the process here." -}}
+{{- $tYes := slice
+  "A rabies titre test is required, and it carries a fixed waiting period, so start it early."
+  "You will need a rabies titre test, which adds a mandatory wait, so begin it as soon as possible."
+  "This route requires a rabies titre test with a set waiting period, so do not leave it late."
+  "A rabies titre test is part of the process, and its waiting period drives the whole timeline." -}}
+
+{{- $closers := slice
+  "Work through the steps below in order and you will arrive in good shape."
+  "The full checklist, requirements and airline options are set out below."
+  "Use the timeline below to plan backwards from your travel date."
+  "Everything you need, from documents to carriers, is broken down below."
+  "Follow the sequence below and keep a buffer for anything that slips."
+  "The sections below cover each requirement in detail."
+  "Start with the step by step process below and build your plan from there."
+  "Read on for the requirements, timing and carrier options for this route."
+  "The guide below walks through each stage so nothing gets missed."
+  "Map your dates against the steps below and you will stay on track." -}}
+
+{{- $opener := index $openers (mod $seed (len $openers)) -}}
+{{- $cx := index $cxPool (mod (add $seed 3) (len $cxPool)) -}}
+{{- $quar := "" -}}
+{{- if eq $qtype "none" -}}{{- $quar = index $qNone (mod (add $seed 5) (len $qNone)) -}}
+{{- else if eq $qtype "days" -}}{{- $quar = index $qDays (mod (add $seed 5) (len $qDays)) -}}
+{{- else if eq $qtype "required" -}}{{- $quar = index $qReq (mod (add $seed 5) (len $qReq)) -}}{{- end -}}
+{{- $titre := "" -}}
+{{- if eq $ttype "no" -}}{{- $titre = index $tNo (mod (add $seed 7) (len $tNo)) -}}
+{{- else if eq $ttype "cond" -}}{{- $titre = index $tCond (mod (add $seed 7) (len $tCond)) -}}
+{{- else if eq $ttype "yes" -}}{{- $titre = index $tYes (mod (add $seed 7) (len $tYes)) -}}{{- end -}}
+{{- $closer := index $closers (mod (add $seed 11) (len $closers)) -}}
+
+<p>{{ $opener }} {{ $cx }}{{ with $quar }} {{ . }}{{ end }}</p>
+<p>{{ with $titre }}{{ . }} {{ end }}{{ $closer }}</p>
+{{- else -}}
+{{- /* Fallback: core data missing, keep the stored overview. */ -}}
+{{- with .Params.content.overview }}{{ . | markdownify }}{{ end -}}
+{{- end -}}

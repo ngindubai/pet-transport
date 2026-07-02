@@ -17,7 +17,7 @@
         <div class="hero-flag">{{ $rd.destination.code }}</div>
       </div>
       <h1 class="hero-h1 r d2">{{ .Params.content.h1 | default (printf "Pet Transport %s to %s" $o $d) }}</h1>
-      {{ with .Params.content.overview }}<p class="hero-sub r d3">{{ . | plainify | truncate 180 }}</p>{{ end }}
+      <p class="hero-sub r d3">{{ (partial "routes/route-overview.html" .) | plainify | truncate 180 }}</p>
       <div class="hero-stats r d3">
         {{ with $rd.estimated_timeline_weeks }}<div class="hst"><div class="hst-n">{{ . }} wks</div><div class="hst-l">Preparation needed</div></div>{{ end }}
         <div class="hst"><div class="hst-n">{{ partial "routes/quarantine-short.html" . }}</div><div class="hst-l">Quarantine on arrival</div></div>
@@ -157,7 +157,7 @@
       {{ end }}
 
       {{/* LONG-FORM CONTENT: CREAM */}}
-      {{ with .Params.content.sections }}
+      {{ with (partial "routes/route-sections.html" .) }}
       <div class="sec-wrap sec-cream"><div class="sec-inner">
         {{ range . }}{{ with .heading }}<h2 class="sec-h r">{{ . }}</h2>{{ end }}<div class="sec-p r">{{ .body | markdownify }}</div>{{ end }}
       </div></div>
