@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Cambodia to United Arab Emirates | PetTranspor
 description: "Pet relocation from Cambodia to United Arab Emirates: United Arab Emirates import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "cambodia-to-united-arab-emirates"
 origin_name: "Cambodia"
 destination_name: "United Arab Emirates"

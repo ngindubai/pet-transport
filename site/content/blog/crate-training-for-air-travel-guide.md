@@ -3,7 +3,7 @@ title: "Crate Training for Air Travel: A Step-by-Step Guide for Dogs and Cats"
 description: "Crate training is the single most important preparation for international pet travel. Here is a step-by-step process for dogs and cats, from first introduction to extended confident confinement."
 date: 2026-05-09
 type: blog
-author: "The PetTransportGlobal Team"
+author: "PetTransportGlobal Editorial Team"
 slug: "crate-training-for-air-travel-guide"
 url: "/blog/crate-training-for-air-travel-guide/"
 seo:

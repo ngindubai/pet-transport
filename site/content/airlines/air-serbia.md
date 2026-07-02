@@ -3,7 +3,7 @@ title: "Air Serbia Pet Transport Guide"
 description: "Air Serbia pet policy: cabin pets accepted on European routes, hold cargo for larger animals. Belgrade hub, Star Alliance member. Pet travel rules and booking process."
 date: "2026-05-06"
 type: "airlines"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "air-serbia"
 url: "/pet-transport/airlines/air-serbia/"
 airline:

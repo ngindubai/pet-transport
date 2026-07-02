@@ -5,7 +5,6 @@ type: "page"
 layout: "single"
 slug: "about"
 url: "/about/"
-author: "Gareth, Founder, PetTransportGlobal"
 ---
 
 # About PetTransportGlobal

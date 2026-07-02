@@ -4,7 +4,7 @@ title: "Moving Your Pet from United Arab Emirates to Bangladesh | Complete Guide
 description: "Pet relocation from United Arab Emirates to Bangladesh: Bangladesh import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "united-arab-emirates-to-bangladesh"
 origin_name: "United Arab Emirates"
 destination_name: "Bangladesh"

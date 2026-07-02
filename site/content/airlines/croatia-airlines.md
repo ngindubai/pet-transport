@@ -3,7 +3,7 @@ title: "Croatia Airlines Pet Transport Guide"
 description: "Croatia Airlines pet policy: cabin pets on European routes, hold cargo for larger animals. Zagreb hub, Star Alliance member. EU pet travel rules and booking process explained."
 date: "2026-05-06"
 type: "airlines"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "croatia-airlines"
 url: "/pet-transport/airlines/croatia-airlines/"
 airline:

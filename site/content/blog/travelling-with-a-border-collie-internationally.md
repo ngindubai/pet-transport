@@ -3,7 +3,7 @@ title: "Travelling Internationally with a Border Collie: Cargo Travel and What t
 description: "A guide to international pet transport with a Border Collie: crate sizing, the intelligent breed's travel temperament, breed-specific considerations, and health preparation."
 date: "2026-05-09"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "travelling-with-a-border-collie-internationally"
 url: "/blog/travelling-with-a-border-collie-internationally/"
 seo:

@@ -3,7 +3,7 @@ title: "How to Track Your Pet While They Are in Air Cargo"
 description: "A practical guide to tracking your pet's journey in air cargo: what airlines offer, how ground handling works, what you can and cannot know during the flight, and how to stay calm."
 date: "2026-05-11"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "how-to-track-your-pet-in-cargo"
 url: "/blog/how-to-track-your-pet-in-cargo/"
 seo:

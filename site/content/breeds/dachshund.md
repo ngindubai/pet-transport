@@ -3,7 +3,7 @@ title: "Flying with a Dachshund | Travel Rules & Spinal Health Considerations"
 description: "International travel guide for Dachshunds. Cabin eligibility, cargo crate sizing, vet clearance for spinal conditions, and destination paperwork."
 type: "breeds"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "dachshund"
 breed_name: "Dachshund"
 brachycephalic: false

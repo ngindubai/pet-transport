@@ -3,7 +3,7 @@ title: "The EU Pet Passport Explained: What It Is, Who Needs It, and What Change
 description: "The EU pet passport is a standardised travel document for pets moving between EU member states. Who it applies to, what it replaced, and why UK pet owners can no longer use one."
 date: "2026-06-11"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "eu-pet-passport-guide"
 url: "/blog/eu-pet-passport-guide/"
 seo:

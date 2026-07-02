@@ -2,7 +2,7 @@
 title: "International Travel with a Pomeranian"
 description: "Planning to travel internationally with a Pomeranian? This guide covers in-cabin airline options, crate requirements, health certificates and country import rules for small dogs."
 date: "2025-07-12"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/travelling-with-a-pomeranian-internationally/"
 tags: ["pomeranian", "breed guide", "small dogs", "cabin travel", "international pet travel"]

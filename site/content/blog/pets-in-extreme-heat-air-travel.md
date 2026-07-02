@@ -3,7 +3,7 @@ title: "Flying Pets in Extreme Heat: How Airlines Manage Summer Cargo Embargoes"
 description: "Why airlines suspend live animal cargo in summer, which breeds are most affected, and how to plan pet travel around heat embargoes to keep your animal safe."
 date: "2026-05-30"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "pets-in-extreme-heat-air-travel"
 url: "/blog/pets-in-extreme-heat-air-travel/"
 seo:

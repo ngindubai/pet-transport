@@ -2,7 +2,7 @@
 title: "Icelandair Pet Transport: Policies for Cats and Dogs on Iceland Flights"
 description: "Icelandair pet transport guide. Learn how to fly your cat or dog to or from Iceland. Covers cabin pets, cargo hold rules, seasonal restrictions and documentation for Iceland's strict biosecurity."
 date: "2025-07-21"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "airlines"
 airline_name: "Icelandair"
 url: "/pet-transport/airlines/icelandair/"

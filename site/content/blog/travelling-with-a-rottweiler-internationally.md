@@ -3,7 +3,7 @@ title: "Moving Internationally with a Rottweiler: Breed Bans and What to Check"
 description: "Rottweilers face breed bans in several countries and airline restrictions on certain routes. Here is a practical guide for Rottweiler owners planning international relocation."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "travelling-with-a-rottweiler-internationally"
 url: "/blog/travelling-with-a-rottweiler-internationally/"
 seo:

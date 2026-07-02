@@ -3,7 +3,7 @@ title: "Importing Pets to Slovakia | Requirements & Regulations | PetTransportGl
 description: "Complete guide to importing dogs and cats into Slovakia. SVFA import requirements, quarantine rules, and banned breeds explained."
 type: "countries"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "slovakia"
 destination_country: "Slovakia"
 destination_iso: "SK"

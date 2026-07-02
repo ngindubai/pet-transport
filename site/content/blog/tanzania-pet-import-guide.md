@@ -3,7 +3,7 @@ title: "Moving to Tanzania with Pets: Import Permits and Vet Requirements"
 description: "Tanzania requires an import permit, health certificate, and current vaccinations for pet imports. Here is what dog and cat owners need to know before moving to Dar es Salaam or Arusha."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "tanzania-pet-import-guide"
 url: "/blog/tanzania-pet-import-guide/"
 seo:

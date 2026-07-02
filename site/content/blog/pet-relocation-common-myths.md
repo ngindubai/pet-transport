@@ -3,7 +3,7 @@ title: "10 Common Pet Relocation Myths (And What Is Actually True)"
 description: "From sedation myths to paperwork confusion, here are 10 misconceptions about international pet travel -- and the facts every pet owner should know before booking."
 date: 2026-05-09
 type: blog
-author: "The PetTransportGlobal Team"
+author: "PetTransportGlobal Editorial Team"
 slug: "pet-relocation-common-myths"
 url: "/blog/pet-relocation-common-myths/"
 seo:

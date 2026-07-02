@@ -3,7 +3,7 @@ title: "Denmark Pet Export Guide"
 description: "Complete guide to exporting your pet from Denmark. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 country_name: "Denmark"
 country_code: "DK"
 overview: |

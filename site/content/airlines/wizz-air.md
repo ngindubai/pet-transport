@@ -3,7 +3,7 @@ title: "Wizz Air Pet Transport Guide"
 description: "Wizz Air does not accept pets on its flights, except for certified assistance dogs. This guide explains the policy, what it means for pet owners, and what alternatives exist."
 date: "2026-05-06"
 type: "airlines"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "wizz-air"
 url: "/pet-transport/airlines/wizz-air/"
 airline:

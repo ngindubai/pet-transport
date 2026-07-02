@@ -3,7 +3,7 @@ title: "Bringing a Pet to Scandinavia: Sweden, Norway, and Denmark Compared"
 description: "Guide to pet import rules for Sweden, Norway, and Denmark in 2026: EU membership status, titre test requirements, tapeworm treatment, and what UK arrivals need."
 date: "2026-05-01"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "nordic-countries-pet-import-guide"
 url: "/blog/nordic-countries-pet-import-guide/"
 seo:

@@ -3,7 +3,7 @@ title: "Pet Transport from Spain to the UK: What Changed After Brexit"
 description: "Bringing your dog or cat from Spain to the UK after Brexit requires a health certificate, microchip, and tapeworm treatment. Here is a clear guide to the process."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "spain-to-uk-pet-transport-guide"
 url: "/blog/spain-to-uk-pet-transport-guide/"
 seo:

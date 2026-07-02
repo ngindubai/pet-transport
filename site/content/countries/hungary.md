@@ -3,7 +3,7 @@ title: "Pet Import Rules for Hungary | Microchip, Vaccines, Quarantine Explained
 description: "Complete guide to importing dogs and cats into Hungary. NEBIH import requirements, quarantine rules, and banned breeds explained."
 type: "countries"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "hungary"
 destination_country: "Hungary"
 destination_iso: "HU"

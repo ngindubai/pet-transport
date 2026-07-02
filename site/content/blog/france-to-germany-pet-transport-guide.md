@@ -2,7 +2,7 @@
 title: "Pet Transport from France to Germany"
 description: "Moving a cat or dog from France to Germany within the EU. Covers the EU pet passport, microchip requirements, documentation, driving and flying options for this common expat route."
 date: "2025-07-29"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/france-to-germany-pet-transport-guide/"
 tags: ["france", "germany", "europe", "route guide", "eu pet travel", "pet transport"]

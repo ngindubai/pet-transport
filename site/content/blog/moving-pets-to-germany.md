@@ -3,7 +3,7 @@ title: "Moving Pets to Germany: EU Rules, Breed Restrictions, and What to Do at 
 description: "Germany pet import guide for dogs and cats from the UK and USA. EU pet travel rules, Animal Health Certificate process, and Germany's specific breed restrictions by state."
 date: "2026-05-26"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "moving-pets-to-germany"
 url: "/blog/moving-pets-to-germany/"
 seo:

@@ -4,7 +4,7 @@ description: "Moving your pet from Spain to France: EU Pet Passport accepted, no
 type: "routes"
 layout: "single"
 template_variant: "A"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "spain-to-france"
 origin_name: "Spain"
 destination_name: "France"

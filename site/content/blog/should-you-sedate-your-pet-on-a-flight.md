@@ -3,7 +3,7 @@ title: "Should You Sedate Your Pet for a Flight? What Vets Actually Say"
 description: "A clear guide to the veterinary consensus on sedating pets for air travel: why it is generally not recommended, what the risks are, and what alternatives exist."
 date: "2026-05-10"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "should-you-sedate-your-pet-on-a-flight"
 url: "/blog/should-you-sedate-your-pet-on-a-flight/"
 seo:

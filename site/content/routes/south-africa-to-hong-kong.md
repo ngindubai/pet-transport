@@ -4,7 +4,7 @@ description: "Moving your pet from South Africa to Hong Kong: DALRRD veterinary 
 type: "routes"
 layout: "single"
 template_variant: "D"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "south-africa-to-hong-kong"
 origin_name: "South Africa"
 destination_name: "Hong Kong"

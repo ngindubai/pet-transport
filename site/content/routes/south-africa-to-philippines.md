@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from South Africa to Philippines | PetTransportGlob
 description: "Pet relocation from South Africa to Philippines: Philippines import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "south-africa-to-philippines"
 origin_name: "South Africa"
 destination_name: "Philippines"

@@ -16,12 +16,12 @@
           <div class="hero-tag r">International pet relocation</div>
           <div class="hero-route r d1"><div><div class="hero-flag">{{ $rd.origin.code }}</div></div><div class="r-path"></div><div><div class="hero-flag">{{ $rd.destination.code }}</div></div></div>
           <h1 class="hero-h1 r d2">{{ .Params.content.h1 | default (printf "Pet Transport %s to %s" $o $d) }}</h1>
-          {{ with .Params.content.overview }}<p class="hero-sub r d3">{{ . | plainify | truncate 220 }}</p>{{ end }}
+          <p class="hero-sub r d3">{{ (partial "routes/route-overview.html" .) | plainify | truncate 220 }}</p>
         </div>
         <div class="hero-right r d2">
           <div class="hero-stats">
             {{ with $rd.estimated_timeline_weeks }}<div class="hs-item"><span class="hs-label">Lead time needed</span><span class="hs-value">{{ . }} weeks</span></div>{{ end }}
-            <div class="hs-item"><span class="hs-label">Quarantine stay</span><span class="hs-value">{{ if .Params.quarantine_required }}{{ with .Params.quarantine_days }}{{ . }} days{{ else }}Required{{ end }}{{ else }}Not required{{ end }}</span></div>
+            <div class="hs-item"><span class="hs-label">Quarantine stay</span><span class="hs-value">{{ partial "routes/quarantine-short.html" . }}</span></div>
             {{ with $rd.route_complexity }}<div class="hs-item"><span class="hs-label">Route complexity</span><span class="hs-value"><span class="hs-badge hb-warn">{{ . | replaceRE "_" " " | title }}</span></span></div>{{ end }}
             {{ with $rd.airlines }}<div class="hs-item"><span class="hs-label">Airlines</span><span class="hs-value">{{ len . }} on this route</span></div>{{ end }}
             <div class="hs-item"><span class="hs-label">Service level</span><span class="hs-value"><span class="hs-badge hb-ok">Fully managed</span></span></div>
@@ -55,7 +55,7 @@
           <div class="sc-stat"><span class="sc-stat-l">To</span><span class="sc-stat-v">{{ $d }}</span></div>
           {{ with $rd.estimated_timeline_weeks }}<div class="sc-stat"><span class="sc-stat-l">Preparation</span><span class="sc-stat-v">{{ . }} weeks</span></div>{{ end }}
           {{ with $rd.route_complexity }}<div class="sc-stat"><span class="sc-stat-l">Complexity</span><span class="sc-stat-v">{{ . | replaceRE "_" " " | title }}</span></div>{{ end }}
-          <div class="sc-stat"><span class="sc-stat-l">Quarantine</span><span class="sc-stat-v">{{ if .Params.quarantine_required }}{{ with .Params.quarantine_days }}{{ . }} days{{ else }}Yes{{ end }}{{ else }}No{{ end }}</span></div>
+          <div class="sc-stat"><span class="sc-stat-l">Quarantine</span><span class="sc-stat-v">{{ partial "routes/quarantine-short.html" . }}</span></div>
         </div>
       </div>
       {{ with .Params.links }}{{ with .sideways }}
@@ -68,6 +68,7 @@
 
     {{/* MAIN */}}
     <div class="main-col">
+      {{ partial "routes/route-quick-answer.html" . }}
 
       {{/* PROCESS */}}
       {{ with $rd.timeline_steps }}
@@ -143,7 +144,7 @@
       {{ end }}
 
       {{/* LONG-FORM */}}
-      {{ with .Params.content.sections }}
+      {{ with (partial "routes/route-sections.html" .) }}
       <div class="page-sec r">{{ range . }}{{ with .heading }}<h2 class="sec-h">{{ . }}</h2>{{ end }}<div class="sec-p">{{ .body | markdownify }}</div>{{ end }}</div>
       {{ end }}
 

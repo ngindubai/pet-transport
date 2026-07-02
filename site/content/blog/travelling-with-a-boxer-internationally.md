@@ -3,7 +3,7 @@ title: "Moving Internationally with a Boxer: Breed Restrictions and Travel Tips"
 description: "Boxers are brachycephalic and restricted by most US airlines for cargo travel. Here is a practical guide for Boxer owners planning international pet relocation."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "travelling-with-a-boxer-internationally"
 url: "/blog/travelling-with-a-boxer-internationally/"
 seo:

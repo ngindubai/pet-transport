@@ -4,7 +4,7 @@ title: "Pet Transport from New Zealand to the UK | MPI Export & APHA Import Guid
 description: "Moving your pet from New Zealand to the UK: no titre test, no quarantine, AHC health certificate, tapeworm treatment for dogs, and Air NZ cargo options."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "new-zealand-to-united-kingdom"
 origin_name: "New Zealand"
 destination_name: "United Kingdom"

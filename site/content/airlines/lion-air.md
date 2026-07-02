@@ -3,7 +3,7 @@ title: "Lion Air Pet Policy: What Pet Owners Need to Know"
 description: "Lion Air is Indonesia's largest low-cost carrier. Here is Lion Air's pet transport policy, including what animals are accepted, how to book, and Batik Air comparison for regional routes."
 date: 2026-05-09
 type: airlines
-author: "The PetTransportGlobal Team"
+author: "PetTransportGlobal Editorial Team"
 slug: "lion-air"
 url: "/pet-transport/airlines/lion-air/"
 seo:

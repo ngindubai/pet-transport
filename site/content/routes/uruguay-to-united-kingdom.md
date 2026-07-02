@@ -4,7 +4,7 @@ title: "Pet Transport Uruguay to United Kingdom | UK APHA Protocol & Airline Com
 description: "Moving your pet from Uruguay to the UK? Titre test, MGAP certificate, Iberia and Air France routing options, APHA documentation, timeline, and costs."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "uruguay-to-united-kingdom"
 origin_name: "Uruguay"
 destination_name: "United Kingdom"

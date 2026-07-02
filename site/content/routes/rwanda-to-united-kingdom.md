@@ -4,7 +4,7 @@ title: "Pet Transport Rwanda to United Kingdom | APHA Rules & Airline Comparison
 description: "Moving your pet from Rwanda to the UK? Titre test requirements, RwandAir and Qatar cargo options, UK APHA documentation, timeline, and costs."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "rwanda-to-united-kingdom"
 origin_name: "Rwanda"
 destination_name: "United Kingdom"

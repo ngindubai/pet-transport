@@ -2,7 +2,7 @@
 title: "Aerolineas Argentinas Pet Transport: Policies for Cats and Dogs"
 description: "Aerolineas Argentinas pet transport guide. How to fly your dog or cat within South America or internationally with Argentina's national carrier. Covers cabin pets, cargo hold, breed restrictions and documentation."
 date: "2025-07-23"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "airlines"
 airline_name: "Aerolineas Argentinas"
 url: "/pet-transport/airlines/aerolineas-argentinas/"

@@ -3,7 +3,7 @@ title: "Pet Transport from UK to India: DADF NOC, Health Certificate and What to
 description: "Complete guide to moving your dog or cat from the UK to India in 2026: DADF import NOC, APHA health certificate, arrival cities, and practical tips for the UK-India route."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "uk-to-india-pet-transport-guide"
 url: "/blog/uk-to-india-pet-transport-guide/"
 seo:

@@ -4,7 +4,7 @@ description: "Moving your pet from Japan to Hong Kong: AQS export health certifi
 type: "routes"
 layout: "single"
 template_variant: "A"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "japan-to-hong-kong"
 origin_name: "Japan"
 destination_name: "Hong Kong"

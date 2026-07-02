@@ -3,7 +3,7 @@ title: "Bringing a Pet to Malta: EU Rules and What International Arrivals Need"
 description: "Guide to bringing your dog or cat to Malta in 2026: EU pet passport rules, UK AHC requirements, approved entry at Malta International Airport, and island biosecurity rules."
 date: "2026-05-07"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "malta-pet-import-guide"
 url: "/blog/malta-pet-import-guide/"
 seo:

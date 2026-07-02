@@ -4,7 +4,7 @@ title: "Pet Transport from Indonesia to Denmark | BARANTAN Export & EU Entry Rul
 description: "Moving your pet from Indonesia to Denmark: BARANTAN export health cert, EU titre test, 3-month wait, no quarantine. Full documentation checklist and airline options."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "indonesia-to-denmark"
 origin_name: "Indonesia"
 destination_name: "Denmark"

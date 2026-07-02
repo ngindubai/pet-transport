@@ -3,7 +3,7 @@ title: "Moving Internationally with a Scottish Fold: Health Concerns and Travel 
 description: "Scottish Folds are increasingly restricted by breeding regulations in some countries. Here is what Scottish Fold owners need to know for international moves, including country attitudes and health certificate considerations."
 date: 2026-05-09
 type: blog
-author: "The PetTransportGlobal Team"
+author: "PetTransportGlobal Editorial Team"
 slug: "travelling-with-a-scottish-fold-cat-internationally"
 url: "/blog/travelling-with-a-scottish-fold-cat-internationally/"
 seo:

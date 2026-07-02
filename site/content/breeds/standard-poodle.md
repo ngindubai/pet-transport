@@ -3,7 +3,7 @@ title: "Flying with a Standard Poodle | Large Breed Cargo Guide"
 description: "Cargo logistics, crate sizing, and import requirements for Standard Poodles. No breed bans, but large-dog cargo rules apply."
 type: "breeds"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "standard-poodle"
 breed_name: "Standard Poodle"
 brachycephalic: false

@@ -3,7 +3,7 @@ title: "How to Prepare Your Pet for a Long-Haul Flight: A Practical Pre-Travel G
 description: "Long-haul flights are stressful for pets. Here is how to prepare your dog or cat for a 10-20 hour journey, from crate training to pre-travel vet checks."
 date: "2026-05-05"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "how-to-prepare-your-pet-for-a-long-haul-flight"
 url: "/blog/how-to-prepare-your-pet-for-a-long-haul-flight/"
 seo:

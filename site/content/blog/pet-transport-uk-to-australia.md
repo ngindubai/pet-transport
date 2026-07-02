@@ -3,7 +3,7 @@ title: "Pet Transport UK to Australia: The 2026 Move, Properly Planned"
 description: "UK to Australia pet relocation in 2026: rabies titre timing, DAFF import permit, Mickleham quarantine, cargo routes, real cost. Plan 7 months ahead."
 date: "2026-06-03"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "pet-transport-uk-to-australia"
 url: "/blog/pet-transport-uk-to-australia/"
 tags:

@@ -3,7 +3,7 @@ title: "Moving Internationally with an Older Pet: Special Considerations for Sen
 description: "Senior pets face additional risks during international travel. Here is how to assess fitness, manage the journey, and ensure your older dog or cat arrives in good health."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "travelling-with-senior-pets-internationally"
 url: "/blog/travelling-with-senior-pets-internationally/"
 seo:

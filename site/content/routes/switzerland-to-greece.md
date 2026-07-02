@@ -4,7 +4,7 @@ title: "Pet Transport Switzerland to Greece | Swiss Pet Passport & EU Entry Rule
 description: "Moving your pet from Switzerland to Greece? Switzerland's EU bilateral agreement means no titre test, no quarantine. Compare SWISS, Aegean, and other airlines."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "switzerland-to-greece"
 origin_name: "Switzerland"
 destination_name: "Greece"

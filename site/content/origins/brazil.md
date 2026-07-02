@@ -3,7 +3,7 @@ title: "Shipping Your Pet from Brazil | Export Guide"
 description: "Complete guide to exporting your pet from Brazil. Export requirements, airlines, and route guides for international destinations."
 type: "origins"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 country_name: "Brazil"
 country_code: "BR"
 content:

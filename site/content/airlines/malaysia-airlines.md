@@ -3,7 +3,7 @@ title: "Malaysia Airlines Pet Transport Guide"
 description: "Malaysia Airlines pet transport policy 2026: cabin and cargo requirements, breed restrictions, crate sizing, and what to prepare when flying with pets on Malaysia Airlines."
 date: "2026-05-06"
 type: "airlines"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "malaysia-airlines"
 url: "/pet-transport/airlines/malaysia-airlines/"
 airline:

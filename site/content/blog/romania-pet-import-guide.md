@@ -3,7 +3,7 @@ title: "Bringing a Pet to Romania: EU Rules, ANSVSA and What to Prepare"
 description: "Guide to bringing your dog or cat to Romania in 2026: EU pet passport, titre test from outside EU, and ANSVSA border inspection requirements."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "romania-pet-import-guide"
 url: "/blog/romania-pet-import-guide/"
 seo:

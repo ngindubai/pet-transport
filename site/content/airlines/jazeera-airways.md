@@ -3,7 +3,7 @@ title: "Jazeera Airways Pet Policy: Flying Pets from Kuwait"
 description: "Jazeera Airways is Kuwait's leading low-cost carrier. Here is what you need to know about their pet transport policy and Kuwait's pet import and export requirements."
 date: "2026-05-06"
 type: "airlines"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "jazeera-airways"
 url: "/pet-transport/airlines/jazeera-airways/"
 seo:

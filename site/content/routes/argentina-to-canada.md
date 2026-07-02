@@ -5,7 +5,7 @@ type: "routes"
 layout: "single"
 template_variant: "C"
 content_soul: 3
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "argentina-to-canada"
 origin_name: "Argentina"
 destination_name: "Canada"

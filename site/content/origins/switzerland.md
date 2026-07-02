@@ -3,7 +3,7 @@ title: "Switzerland Pet Export Guide"
 description: "Complete guide to exporting your pet from Switzerland."
 type: "origins"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 country_name: "Switzerland"
 country_code: "CH"
 overview: |

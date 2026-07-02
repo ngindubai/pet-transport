@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO Audit and Action Review - Pet Transport Global - 2 July 2026</title>
+<style>
+  :root{
+    --ink:#1c2430; --muted:#5a6677; --line:#e2e7ee; --bg:#f6f8fb; --card:#ffffff;
+    --green:#1a7f5a; --amber:#b7791f; --red:#c0392b; --blue:#2563a8;
+    --hi:#eef5f1; --lo:#fbeeee; --mid:#fdf6e9;
+  }
+  *{box-sizing:border-box}
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);
+    background:var(--bg);margin:0;line-height:1.6;font-size:16px}
+  .wrap{max-width:960px;margin:0 auto;padding:40px 24px 80px}
+  header.top{border-bottom:3px solid var(--ink);padding-bottom:18px;margin-bottom:8px}
+  h1{font-size:30px;margin:0 0 6px}
+  .sub{color:var(--muted);font-size:15px}
+  h2{font-size:23px;margin:44px 0 12px;padding-top:18px;border-top:1px solid var(--line)}
+  h3{font-size:18px;margin:26px 0 6px}
+  p{margin:10px 0}
+  .lead{font-size:17px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--blue);
+    padding:16px 20px;border-radius:6px;margin:18px 0}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;background:var(--card)}
+  th,td{text-align:left;padding:9px 11px;border:1px solid var(--line);vertical-align:top}
+  th{background:#f0f3f7;font-weight:600}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:20px 22px;margin:18px 0}
+  .card.p1{border-left:5px solid var(--red)}
+  .card.p2{border-left:5px solid var(--amber)}
+  .card.p3{border-left:5px solid var(--blue)}
+  .card.stop{border-left:5px solid var(--muted);background:#fafbfc}
+  .tagrow{margin:2px 0 14px;display:flex;flex-wrap:wrap;gap:8px}
+  .tag{font-size:12px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:.02em}
+  .t-p1{background:var(--lo);color:var(--red)}
+  .t-p2{background:var(--mid);color:var(--amber)}
+  .t-p3{background:#eaf1f9;color:var(--blue)}
+  .t-opus{background:#efe7fb;color:#6b3fb5}
+  .t-sonnet{background:var(--hi);color:var(--green)}
+  .t-eff{background:#eef0f3;color:var(--muted)}
+  .label{font-weight:600;color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:.04em;margin-top:14px}
+  code{background:#eef0f3;padding:1px 6px;border-radius:4px;font-size:13.5px;font-family:SFMono-Regular,Consolas,monospace}
+  pre{background:#1c2430;color:#e6edf3;padding:14px 16px;border-radius:6px;overflow:auto;font-size:13px}
+  .trade{background:var(--mid);border-radius:6px;padding:10px 14px;margin:12px 0;font-size:14.5px}
+  .trade b{color:var(--amber)}
+  ul{margin:8px 0 8px 4px;padding-left:22px}
+  li{margin:5px 0}
+  .pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;color:#fff}
+  .pill.h{background:var(--red)} .pill.m{background:var(--amber)} .pill.l{background:var(--green)}
+  footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:13.5px}
+  .note{font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <h1>SEO Audit and Action Review</h1>
+  <div class="sub">Pet Transport Global &nbsp;&middot;&nbsp; 2 July 2026 &nbsp;&middot;&nbsp; Prepared from the SEO and Search Brief dated 29 June 2026, checked against the live repository</div>
+</header>
+
+<p class="lead">
+This document explains what to change on the site, why, and what each change costs you. Every recommendation is
+tied to a specific finding in the 29 June brief and checked against the actual repository, not general advice.
+A separate file, <code>seo-build-plan-2026-07-02.md</code>, is the step by step version for execution. Where a
+step needs Opus rather than Sonnet, it is marked clearly in both files.
+</p>
+
+<h2>1. The short version</h2>
+<p>
+The brief flags two things that matter for this site: a Google spam update that hunts thin, mass produced pages
+(the near term risk), and Google formally treating AI Overview optimisation as normal SEO (the twelve month
+opportunity). When I checked the repo against both, three problems stand out and one belief needs correcting.
+</p>
+<ul>
+  <li><b>The route pages repeat themselves.</b> Across 6,094 routes the written paragraphs are near identical, with only country names and one or two rotating sentences swapped in. This is precisely the pattern the June spam update targets. It is the single biggest risk and the top priority.</li>
+  <li><b>The author is wrong on nearly every page.</b> 4,963 route pages and 245 blog posts are signed "Gareth", which breaks your own persona rule and weakens the author authority signal that now feeds AI Overview citations.</li>
+  <li><b>Every page ships broken structured data.</b> The site wide Organization schema still contains literal <code>TODO: Facebook URL</code> placeholders, so every page publishes invalid social links to Google.</li>
+  <li><b>Stop expecting <code>llms.txt</code> to help with Google.</b> Google has now said in writing that it does not read <code>llms.txt</code> for AI ranking. Keep the file for other engines, but do not invest more in it.</li>
+</ul>
+
+<h2>2. Priority matrix</h2>
+<table>
+  <thead><tr><th>#</th><th>Improvement</th><th>Brief link</th><th>Impact</th><th>Effort</th><th>Model</th></tr></thead>
+  <tbody>
+    <tr><td>A1</td><td>De-duplicate route prose (vary the templated paragraphs)</td><td>Story 1 spam update</td><td><span class="pill h">High</span></td><td>Large</td><td>Opus for strategy, Sonnet for rollout</td></tr>
+    <tr><td>A2</td><td>Fix author attribution to the correct personas</td><td>Story 2 E-E-A-T / GEO</td><td><span class="pill m">Med</span></td><td>Small</td><td>Sonnet</td></tr>
+    <tr><td>A3</td><td>Remove <code>TODO</code> placeholders from Organization schema</td><td>Story 2 structured data</td><td><span class="pill m">Med</span></td><td>Tiny</td><td>Sonnet</td></tr>
+    <tr><td>A4</td><td>Add a direct answer capsule to route pages (AI Overview capture)</td><td>Story 2 AI Overviews</td><td><span class="pill m">Med</span></td><td>Small</td><td>Sonnet</td></tr>
+    <tr><td>A5</td><td>Add author Person schema and a visible byline</td><td>Story 2 entity authority</td><td><span class="pill m">Med</span></td><td>Small</td><td>Sonnet</td></tr>
+    <tr><td>A6</td><td>Confirm and fix the www versus non-www canonical</td><td>General SEO hygiene</td><td><span class="pill m">Med</span></td><td>Tiny</td><td>Sonnet (needs your input first)</td></tr>
+    <tr><td>A7</td><td>Fix the site search schema target and breadcrumb path</td><td>General SEO hygiene</td><td><span class="pill l">Low</span></td><td>Tiny</td><td>Sonnet</td></tr>
+    <tr><td>A8</td><td>Correct <code>llms.txt</code> author and domain, then leave it</td><td>Story 2 GEO reality</td><td><span class="pill l">Low</span></td><td>Tiny</td><td>Sonnet</td></tr>
+    <tr><td>A9</td><td>Build a quarterly data freshness refresh routine</td><td>Story 4 agent refresh</td><td><span class="pill m">Med</span></td><td>Medium</td><td>Sonnet</td></tr>
+    <tr><td>A10</td><td>Differentiate titles and meta on high value routes</td><td>Story 4 CTR benchmarks</td><td><span class="pill l">Low</span></td><td>Medium</td><td>Sonnet</td></tr>
+  </tbody>
+</table>
+<p class="note">Effort is relative build time, not difficulty. "Tiny" is a one file edit. "Large" is a multi session job because of the no bulk generation rule (see the trade-off under A1).</p>
+
+<h2>3. The improvements in detail</h2>
+
+<!-- A1 -->
+<div class="card p1">
+  <h3>A1. De-duplicate the route prose</h3>
+  <div class="tagrow">
+    <span class="tag t-p1">Priority 1</span>
+    <span class="tag t-eff">Effort: Large</span>
+    <span class="tag t-opus">Opus: strategy and exemplars</span>
+    <span class="tag t-sonnet">Sonnet: rollout</span>
+  </div>
+
+  <div class="label">What I found</div>
+  <p>
+  The 6,094 route markdown files carry no body text. All the visible writing lives in three front matter
+  fields: <code>content.overview</code>, <code>content.sections</code> and <code>faqs</code>, which the templates
+  render. When I compared three different origin pages that all go to Austria, the middle of the overview was
+  word for word identical:
+  </p>
+  <pre>Argentina to Austria:  "This route is moderately involved, with a clear checklist to follow.
+                        Start preparations at least 20 weeks before your travel date ..."
+Brazil to Austria:     "This route is moderately involved, with a clear checklist to follow.
+                        Start preparations at least 20 weeks before your travel date ..."
+Peru to Austria:       "This route is moderately involved, with a clear checklist to follow.
+                        Start preparations at least 20 weeks before your travel date ..."</pre>
+  <p>
+  Only the first sentence and the last sentence rotate, and they rotate from a very small pool. The genuinely
+  unique material on each page is the data tables (import rules, airlines, timeline), which are shared by every
+  page going to the same destination. So a large share of the written content is duplicated many thousands of
+  times over.
+  </p>
+
+  <div class="label">Why it matters</div>
+  <p>
+  Story 1 of the brief: the June 2026 spam update was a short, targeted rollout, and the stated risk for this
+  repo is "if any auto-generated pages lack sufficient original information, a recurring vulnerability in
+  programmatic builds". Near duplicate prose at this scale is the textbook trigger. It also caps how many of
+  these pages can rank at once, because Google will pick one and treat the rest as redundant.
+  </p>
+
+  <div class="label">The change</div>
+  <ul>
+    <li>Expand the sentence pools so the overview and practical advice sections are assembled from many more variants, keyed off real per route data (complexity band, quarantine yes or no, titre test yes or no, timeline weeks, listed or non listed country). The goal is that two pages only read alike if their actual regulations are alike, and even then the phrasing differs.</li>
+    <li>Add one or two genuinely route specific sentences per page drawn from data that already varies: the specific airlines on that lane, the specific waiting periods, the specific export authority (for example SENASA for Argentina).</li>
+    <li>Prioritise by traffic. Fix the highest value routes first (the ones already in <code>llms.txt</code> as high volume, plus anything with Search Console impressions) rather than sweeping alphabetically.</li>
+  </ul>
+
+  <div class="trade">
+    <b>Trade-off 1 (the important one):</b> your own rules in <code>CLAUDE.md</code> ban bulk generation scripts
+    and cap each run at two blocks through the full quality gate. That is the right rule, and it means this fix
+    cannot be a one shot mass rewrite. It is a multi session programme, prioritised by traffic. Trying to do it
+    faster would violate the build plan and risk swapping one thin pattern for another. Be realistic that this
+    runs over many sessions.
+  </div>
+  <div class="trade">
+    <b>Trade-off 2:</b> more sentence variants means more surface to keep on brand and free of banned vocabulary
+    and em dashes. The quality gate must run on the variant pools, not just the finished pages.
+  </div>
+
+  <div class="label">Model</div>
+  <p>
+  <b>Opus</b> should design the variation strategy and hand write the exemplar variant pools for one template
+  (start with Template C, your largest at 1,251 pages), because getting genuinely varied, non repetitive,
+  on brand writing is a judgement task that Sonnet tends to re-templatise. Once the pools and the selection
+  logic exist and read well, <b>Sonnet</b> can apply and quality gate them route by route within the normal
+  build batches.
+  </p>
+</div>
+
+<!-- A2 -->
+<div class="card p2">
+  <h3>A2. Fix the author attribution</h3>
+  <div class="tagrow">
+    <span class="tag t-p2">Priority 2</span>
+    <span class="tag t-eff">Effort: Small</span>
+    <span class="tag t-sonnet">Sonnet</span>
+  </div>
+  <div class="label">What I found</div>
+  <p>
+  Author strings in the route and blog front matter:
+  </p>
+  <table>
+    <thead><tr><th>Author string</th><th>Route pages</th><th>Blog posts</th></tr></thead>
+    <tbody>
+      <tr><td>"Gareth - Founder, PetTransportGlobal"</td><td>4,963</td><td>245</td></tr>
+      <tr><td>Marcus Webb (two spelling variants)</td><td>1,123</td><td>19</td></tr>
+      <tr><td>Dr. Sarah Okafor</td><td>8</td><td>2</td></tr>
+      <tr><td>Editorial Team (three spelling variants)</td><td>0</td><td>162</td></tr>
+    </tbody>
+  </table>
+  <div class="label">Why it matters</div>
+  <p>
+  Two reasons. First, it breaks your own hard rule in <code>CLAUDE.md</code>: never use Gareth's name as an
+  author, use one of the four personas. Second, Story 2: Google now treats entity and author authority as part
+  of the ranking that feeds AI Overview citations. A consistent, credentialed author per topic is a real signal.
+  A founder's first name with no credentials is a weak one, and the three spelling variants of the same names
+  fragment whatever authority does exist.
+  </p>
+  <div class="label">The change</div>
+  <ul>
+    <li>Map every page to the correct persona by page type using the table in <code>CLAUDE.md</code>: route and logistics content to Marcus Webb, country and health rules to Dr. Sarah Okafor, welfare to Emma Hartley, planning to James Osei.</li>
+    <li>Normalise to one exact spelling per persona (pick the comma form, drop the hyphen variant).</li>
+    <li>Fix the same "authored by Gareth" line in <code>llms.txt</code> (see A8).</li>
+  </ul>
+  <div class="trade"><b>Trade-off:</b> reassigning authors at scale is a front matter change on thousands of files, which under your rules still flows through commits rather than one script. It is mechanical but not instant. It can piggyback on the A1 sessions since both edit the same files.</div>
+  <div class="label">Model</div>
+  <p><b>Sonnet.</b> The persona mapping is a fixed rule, so this is deterministic once the mapping is written down.</p>
+</div>
+
+<!-- A3 -->
+<div class="card p2">
+  <h3>A3. Remove the TODO placeholders from the Organization schema</h3>
+  <div class="tagrow">
+    <span class="tag t-p2">Priority 2</span>
+    <span class="tag t-eff">Effort: Tiny</span>
+    <span class="tag t-sonnet">Sonnet</span>
+  </div>
+  <div class="label">What I found</div>
+  <p>In <code>site/layouts/_default/baseof.html</code>, the site wide Organization schema that renders on every single page contains:</p>
+  <pre>"sameAs": [
+  "TODO: Facebook URL",
+  "TODO: Instagram URL",
+  "TODO: LinkedIn URL"
+]</pre>
+  <div class="label">Why it matters</div>
+  <p>
+  Every page on the site is publishing three invalid URLs to Google as the brand's official social profiles.
+  It is not a ranking penalty on its own, but it is malformed structured data on 6,000 plus pages, it undercuts
+  the entity authority work in Story 2, and it looks unfinished to anything that parses it.
+  </p>
+  <div class="label">The change</div>
+  <p>Replace with the real profile URLs, or if there are none yet, remove the <code>sameAs</code> array entirely. An absent field is valid. Placeholder strings are not.</p>
+  <div class="trade"><b>Trade-off:</b> none. This is a strict improvement. The only input needed is the real social URLs from you, if they exist.</div>
+  <div class="label">Model</div>
+  <p><b>Sonnet.</b> One file, one edit.</p>
+</div>
+
+<!-- A4 -->
+<div class="card p2">
+  <h3>A4. Add a direct answer capsule to route pages</h3>
+  <div class="tagrow">
+    <span class="tag t-p2">Priority 2</span>
+    <span class="tag t-eff">Effort: Small</span>
+    <span class="tag t-sonnet">Sonnet</span>
+  </div>
+  <div class="label">What I found</div>
+  <p>
+  Route pages open with a hero, then a "Route at a glance" box, then an overview paragraph. The facts an AI
+  Overview wants (how long, does it need quarantine, is a titre test needed, roughly how much) are present but
+  scattered across the hero stats, the tables and the FAQ. There is no single, plain, first screen answer block.
+  </p>
+  <div class="label">Why it matters</div>
+  <p>
+  Story 2: AI Overviews appear in 5 to 15 percent of searches and cite pages that "directly and completely
+  answer the query in the first 200 words". The data to do this already exists per route
+  (<code>estimated_timeline_weeks</code> on 6,082 routes, <code>cost_factors</code> on all 6,094,
+  <code>quarantine_required</code>, titre test flags). It just needs to be assembled into one short answer near
+  the top.
+  </p>
+  <div class="label">The change</div>
+  <ul>
+    <li>Add a short "quick answer" block in the route partials, directly under the H1, that states in two or three sentences: typical preparation time, whether quarantine applies, whether a titre test is needed, and a cost range. Built from existing data fields, so no new content to write per page.</li>
+    <li>Keep it to standard HTML. Do not add AI specific schema or content chunking (see the "What not to do" section, this is what Google says not to do).</li>
+  </ul>
+  <div class="trade"><b>Trade-off:</b> a fixed template capsule is itself repetitive across pages, so it must pull from the varying data fields, not fixed wording, or it works against A1. Feed it the per route numbers, not a boilerplate sentence.</div>
+  <div class="label">Model</div>
+  <p><b>Sonnet.</b> It is a template change over data that already exists. One partial edit, applied across the variant partials.</p>
+</div>
+
+<!-- A5 -->
+<div class="card p2">
+  <h3>A5. Add author Person schema and a visible byline</h3>
+  <div class="tagrow">
+    <span class="tag t-p2">Priority 2</span>
+    <span class="tag t-eff">Effort: Small</span>
+    <span class="tag t-sonnet">Sonnet</span>
+  </div>
+  <div class="label">What I found</div>
+  <p>
+  The author is in front matter but is never shown on the page and never appears in structured data. There is
+  no <code>Person</code> or <code>author</code> node in any schema, and no byline in the templates.
+  </p>
+  <div class="label">Why it matters</div>
+  <p>
+  Story 2 again: the credentialed author is only a signal if Google and users can see it. A named specialist
+  with a title, shown on the page and marked up as an <code>author</code> in the article or web page schema,
+  is a standard, sanctioned E-E-A-T improvement. It pairs directly with A2, which is why A2 must come first.
+  </p>
+  <div class="label">The change</div>
+  <ul>
+    <li>Render a small byline ("Reviewed by Marcus Webb, Senior Pet Relocation Consultant") near the verified date stamp that already exists.</li>
+    <li>Add an <code>author</code> Person node to the page schema, using the persona name and title. Standard structured data only.</li>
+  </ul>
+  <div class="trade"><b>Trade-off:</b> a visible byline invites scrutiny of the persona, so the persona pages should be real, consistent, and match across the site. Do A2 first so the names are correct and consistent before you surface them.</div>
+  <div class="label">Model</div>
+  <p><b>Sonnet.</b> Template and schema work with a fixed persona mapping.</p>
+</div>
+
+<!-- A6 -->
+<div class="card p2">
+  <h3>A6. Confirm and fix the www versus non-www canonical</h3>
+  <div class="tagrow">
+    <span class="tag t-p2">Priority 2</span>
+    <span class="tag t-eff">Effort: Tiny</span>
+    <span class="tag t-sonnet">Sonnet, after your input</span>
+  </div>
+  <div class="label">What I found</div>
+  <p>
+  Hugo's <code>baseURL</code> is <code>https://pettransportglobal.com/</code> with no <code>www</code>. Your own
+  documented URL format uses <code>https://www.pettransportglobal.com/</code>. So canonical tags, Open Graph
+  URLs, the schema and the sitemap all point at the non www host, while the live convention appears to be www.
+  </p>
+  <div class="label">Why it matters and where I am uncertain</div>
+  <p>
+  If the live site serves on <code>www</code> and canonicals point at non <code>www</code>, Google sees a
+  canonical that redirects, which is a weak, self undermining signal and can split ranking between the two
+  hosts. <b>I am not certain which host is canonical on Hostinger</b>, and I am flagging that rather than
+  guessing. This needs a two minute check before any edit.
+  </p>
+  <div class="label">The change</div>
+  <ul>
+    <li>Decide the canonical host (whichever one currently serves without a redirect and matches Search Console).</li>
+    <li>Set <code>baseURL</code> to match it exactly, and make sure the other host 301 redirects to it at Hostinger.</li>
+  </ul>
+  <div class="trade"><b>Trade-off:</b> changing <code>baseURL</code> rewrites canonicals across the whole site in one deploy, so it must be pointed at the correct host. Getting it wrong is worse than leaving it. Hence the confirm step first.</div>
+  <div class="label">Model</div>
+  <p><b>Sonnet</b> can make the one line change, but only after you confirm which host is live and canonical.</p>
+</div>
+
+<!-- A7 -->
+<div class="card p3">
+  <h3>A7. Fix the site search schema target and breadcrumb path</h3>
+  <div class="tagrow">
+    <span class="tag t-p3">Priority 3</span>
+    <span class="tag t-eff">Effort: Tiny</span>
+    <span class="tag t-sonnet">Sonnet</span>
+  </div>
+  <div class="label">What I found</div>
+  <p>
+  The WebSite schema declares a <code>SearchAction</code> pointing at
+  <code>/pet-transport/routes/{search_term_string}/</code>. Unless there is a live search endpoint at that path
+  that resolves a query, this advertises a search feature that does not exist. Breadcrumbs on route pages point
+  "Routes" at <code>/pet-transport/routes/</code>, which does resolve as the section index, so that part is fine.
+  </p>
+  <div class="label">Why it matters</div>
+  <p>Declaring a non functional <code>SearchAction</code> is a small structured data correctness issue. It will not help and could be flagged as misleading markup.</p>
+  <div class="label">The change</div>
+  <p>Either wire a real search results page at that path, or remove the <code>potentialAction</code> / <code>SearchAction</code> block from the WebSite schema. Removal is the simplest correct option if there is no search feature.</p>
+  <div class="trade"><b>Trade-off:</b> removing it loses the (currently non functional) sitelinks search box eligibility. Since it is not backed by a real search page, there is nothing to lose in practice.</div>
+  <div class="label">Model</div>
+  <p><b>Sonnet.</b> One block in one file.</p>
+</div>
+
+<!-- A8 -->
+<div class="card p3">
+  <h3>A8. Correct llms.txt, then stop investing in it</h3>
+  <div class="tagrow">
+    <span class="tag t-p3">Priority 3</span>
+    <span class="tag t-eff">Effort: Tiny</span>
+    <span class="tag t-sonnet">Sonnet</span>
+  </div>
+  <div class="label">What I found</div>
+  <p>
+  <code>site/static/llms.txt</code> exists and is well built, but it says content is "authored by Gareth,
+  Founder" (same persona problem as A2) and uses the non www domain throughout.
+  </p>
+  <div class="label">Why it matters</div>
+  <p>
+  Story 2 is blunt about this: Google has now stated in its own documentation that its systems do not read
+  <code>llms.txt</code> for generative AI ranking. So this file does nothing for Google. It may still help
+  ChatGPT, Perplexity and Claude style engines that do fetch it, which is why it is worth keeping and correcting,
+  but it is not worth expanding. The correction is small: fix the author line to match your personas, and align
+  the domain with whatever A6 settles on.
+  </p>
+  <div class="label">The change</div>
+  <ul>
+    <li>Replace "authored by Gareth, Founder" with the persona framing ("authored by our team of pet relocation and animal health specialists").</li>
+    <li>Align the domain (www or not) with the A6 decision.</li>
+    <li>Do not add more to it beyond keeping the page list current.</li>
+  </ul>
+  <div class="trade"><b>Trade-off:</b> none, other than resisting the temptation to keep growing a file Google ignores.</div>
+  <div class="label">Model</div>
+  <p><b>Sonnet.</b> One file.</p>
+</div>
+
+<!-- A9 -->
+<div class="card p3">
+  <h3>A9. Build a quarterly data freshness refresh</h3>
+  <div class="tagrow">
+    <span class="tag t-p3">Priority 3</span>
+    <span class="tag t-eff">Effort: Medium</span>
+    <span class="tag t-sonnet">Sonnet</span>
+  </div>
+  <div class="label">What I found</div>
+  <p>
+  The "Regulations verified" stamp falls back to the page's <code>.Date</code> or the build date. There is no
+  routine that actually rechecks the underlying regulations, so the stamp can drift from reality: it shows a
+  date without a process behind it.
+  </p>
+  <div class="label">Why it matters</div>
+  <p>
+  Story 4: Ahrefs described an agent workflow that finds pages with stale data, pulls fresh figures and updates
+  them. For a site whose whole value is current import rules, titre timelines and airline policies, a genuine
+  refresh cadence protects both accuracy (this is a YMYL topic, wrong info hurts pets) and freshness signals.
+  It also makes the verified date honest.
+  </p>
+  <div class="label">The change</div>
+  <ul>
+    <li>Define a quarterly routine that rechecks the source data files against the named authorities (DEFRA, USDA APHIS, DAFF, EU TRACES), flags any changed rules, and updates the affected route data plus the verified date, all through the normal quality gate and commit flow.</li>
+    <li>Keep it inside the existing no bulk generation rule: it reviews and updates, it does not regenerate en masse.</li>
+  </ul>
+  <div class="trade"><b>Trade-off:</b> a refresh routine is ongoing work, not a one off. And any automated data pull must be checked by a human before publish, because a bad regulatory update is worse than a stale one on a YMYL site. Build it as assisted review, not unattended automation.</div>
+  <div class="label">Model</div>
+  <p><b>Sonnet</b> can build and run the routine. Keep a human sign off on regulatory changes.</p>
+</div>
+
+<!-- A10 -->
+<div class="card p3">
+  <h3>A10. Differentiate titles and meta on high value routes</h3>
+  <div class="tagrow">
+    <span class="tag t-p3">Priority 3</span>
+    <span class="tag t-eff">Effort: Medium</span>
+    <span class="tag t-sonnet">Sonnet</span>
+  </div>
+  <div class="label">What I found</div>
+  <p>
+  Titles follow a fixed template ("Shipping Dogs &amp; Cats from X to Y") and descriptions are similarly
+  patterned. That is fine at scale, but it leaves click through on the table.
+  </p>
+  <div class="label">Why it matters</div>
+  <p>
+  Story 4: Ahrefs benchmarks put typical organic click through at 1 to 2 percent sitewide, with big variation.
+  For the routes that already rank and get impressions, a more compelling, differentiated title and description
+  is the cheapest way to lift traffic without touching rankings.
+  </p>
+  <div class="label">The change</div>
+  <ul>
+    <li>Pull the top routes by Search Console impressions and hand tune their titles and descriptions (include the standout fact: quarantine days, cost range, or "no quarantine").</li>
+    <li>Leave the long tail on the template. This is a targeted job on maybe the top fifty to one hundred routes, not all 6,094.</li>
+  </ul>
+  <div class="trade"><b>Trade-off:</b> hand tuned titles do not scale, so scope it to routes with real impressions. Also, the Search Console indexing report is lagging (see monitoring note), so use the performance report, not the indexing report, to pick targets.</div>
+  <div class="label">Model</div>
+  <p><b>Sonnet.</b> Data pull plus targeted edits.</p>
+</div>
+
+<h2>4. What not to do (equally important)</h2>
+<div class="card stop">
+  <ul>
+    <li><b>Do not build AI specific schema or content chunking.</b> Google's own June documentation (Story 2) lists these as things it does not use. Your existing HowTo, FAQPage and BreadcrumbList markup is standard and correct. Keep it, do not add an "AI" layer on top.</li>
+    <li><b>Do not chase paid brand mentions or placements.</b> Story 3: Google has flagged paid GEO mentions on low quality sites as a black hat tactic that does not work on its AI Overviews anyway. The defence is simply to hold organic rank and answer queries directly, which A1 and A4 do.</li>
+    <li><b>Do not turn A1 into a mass regeneration script.</b> Your own build rules ban it, and it would just replace one repetitive pattern with another. Vary genuinely, batch by batch.</li>
+    <li><b>Do not rely on the Search Console indexing report right now.</b> Story 6: it has been stuck since 11 June. Use the URL Inspection tool for individual pages and the performance report for traffic, until Google fixes the bulk report.</li>
+  </ul>
+</div>
+
+<h2>5. Monitoring notes from the brief</h2>
+<ul>
+  <li><b>Spam update watch:</b> the brief recommends checking position tracking on Monday mornings for pet transport. Watch for ranking drops on your niche route queries, which the mainstream volatility trackers will not show because they sample US head terms only.</li>
+  <li><b>Search Console indexing report:</b> stale since 11 June, roughly a three week lag. Do not use it to validate new page launches yet.</li>
+  <li><b>Search fragmentation:</b> Story 4 notes traffic spreading to YouTube, Reddit and AI chatbots. That is an off site distribution question, not a repo change, so it is out of scope for this build plan but worth a separate conversation.</li>
+</ul>
+
+<h2>6. Suggested order of execution</h2>
+<ol>
+  <li><b>Same day quick wins (Sonnet, one session):</b> A3 schema TODO fix, A7 search action fix, A8 llms.txt author fix. Small, safe, strict improvements.</li>
+  <li><b>Confirm and fix (needs your input):</b> A6 canonical host. Answer the one question, then Sonnet applies it.</li>
+  <li><b>Author programme (Sonnet):</b> A2 persona reassignment, then A5 byline and Person schema once names are correct.</li>
+  <li><b>AI Overview capture (Sonnet):</b> A4 answer capsule.</li>
+  <li><b>The big one (Opus then Sonnet, many sessions):</b> A1 prose de-duplication, prioritised by traffic. Opus designs the variant pools and selection logic for Template C first, Sonnet rolls it out through the normal build batches.</li>
+  <li><b>Ongoing (Sonnet):</b> A9 quarterly refresh routine, A10 targeted title tuning.</li>
+</ol>
+
+<footer>
+  Prepared 2 July 2026. Findings verified against the repository on the same date: 6,094 route pages,
+  4,963 route pages authored "Gareth", near duplicate overview prose across same destination routes,
+  <code>TODO</code> placeholders live in the Organization schema. Companion execution file:
+  <code>seo-build-plan-2026-07-02.md</code>. No em dashes were used in this document.
+</footer>
+
+</div>
+</body>
+</html>

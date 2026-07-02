@@ -3,7 +3,7 @@ title: "How to Move a Dog Internationally: The Complete Step-by-Step Guide"
 description: "Everything dog owners need to know about international relocation. From microchipping to health certificates, airline booking to destination arrival - the complete process in order."
 date: "2026-05-20"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "how-to-move-a-dog-internationally"
 url: "/blog/how-to-move-a-dog-internationally/"
 seo:

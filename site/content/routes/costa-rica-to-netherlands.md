@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Costa Rica to Netherlands | PetTransportGlobal
 description: "Pet relocation from Costa Rica to Netherlands: Netherlands import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "costa-rica-to-netherlands"
 origin_name: "Costa Rica"
 destination_name: "Netherlands"

@@ -4,7 +4,7 @@ title: "Pet Transport Switzerland to Portugal | Swiss Pet Passport & TAP Airline
 description: "Moving your pet from Switzerland to Portugal? Switzerland and Portugal align on EU pet travel rules. No titre test, no quarantine. Compare SWISS, TAP, and other airline options."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "switzerland-to-portugal"
 origin_name: "Switzerland"
 destination_name: "Portugal"

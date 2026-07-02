@@ -3,7 +3,7 @@ title: "Importing Pets to Ecuador | Requirements & Regulations | PetTransportGlo
 description: "Complete guide to importing dogs and cats into Ecuador. AGROCALIDAD import requirements, quarantine rules, and banned breeds explained."
 type: "countries"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "ecuador"
 destination_country: "Ecuador"
 destination_iso: "EC"

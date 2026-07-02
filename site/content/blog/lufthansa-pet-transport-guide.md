@@ -3,7 +3,7 @@ title: "Lufthansa Pet Transport: Cabin Rules, Cargo Fees, and Breed Restrictions
 description: "Lufthansa is one of Europe's most popular airlines for pet transport. Here's what cabin and cargo travel cost, which breeds are banned, and how to book."
 date: "2026-04-07"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "lufthansa-pet-transport-guide"
 url: "/blog/lufthansa-pet-transport-guide/"
 seo:

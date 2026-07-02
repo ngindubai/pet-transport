@@ -3,7 +3,7 @@ title: "What Actually Happens When Your Pet Arrives at the Destination Airport"
 description: "A step-by-step guide to what happens when your pet arrives internationally: government inspection, documentation checks, cargo collection, and what to do if there's a problem."
 date: "2026-05-04"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "James Osei, Pet Transport Planning Specialist, PetTransportGlobal"
 slug: "what-happens-at-destination-airport-with-pet"
 url: "/blog/what-happens-at-destination-airport-with-pet/"
 seo:

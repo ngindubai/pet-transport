@@ -5,7 +5,7 @@ description: "Moving pets from Kenya to the US in 2026. CDC classifies Kenya as 
 date: "2026-06-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb - Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "kenya-to-united-states"
 origin_name: "Kenya"
 destination_name: "United States"

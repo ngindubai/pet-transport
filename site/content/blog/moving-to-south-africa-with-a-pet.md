@@ -2,7 +2,7 @@
 title: "Moving to South Africa with a Pet"
 description: "A practical guide to relocating to South Africa with a cat or dog. Covers DAFF import permits, endorsed health certificates, approved entry airports and what to expect on arrival."
 date: "2025-08-09"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/moving-to-south-africa-with-a-pet/"
 tags: ["south africa", "expat guide", "pet relocation", "africa"]

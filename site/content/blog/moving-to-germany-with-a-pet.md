@@ -2,7 +2,7 @@
 title: "Moving to Germany with a Pet: EU Passport"
 description: "A complete guide to relocating to Germany with a cat or dog. Covers EU pet passport rules, post-Brexit requirements for UK pets, USA third-country rules, Hundesteuer, breed restrictions by state."
 date: "2025-08-22"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/moving-to-germany-with-a-pet/"
 tags: ["germany", "expat guide", "pet relocation", "europe", "eu pet travel"]

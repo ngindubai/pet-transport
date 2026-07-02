@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Kuwait to United Arab Emirates | PetTransportG
 description: "Pet relocation from Kuwait to United Arab Emirates: United Arab Emirates import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "kuwait-to-united-arab-emirates"
 origin_name: "Kuwait"
 destination_name: "United Arab Emirates"

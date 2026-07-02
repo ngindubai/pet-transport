@@ -2,7 +2,7 @@
 title: "Nok Air Pet Transport: Policies for Pets on Thailand Domestic Flights"
 description: "Nok Air pet transport guide. How to fly your cat or dog within Thailand on Nok Air. Covers cabin pet acceptance, carrier requirements, route availability and documentation."
 date: "2025-07-26"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "airlines"
 airline_name: "Nok Air"
 url: "/pet-transport/airlines/nok-air/"

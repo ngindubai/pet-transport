@@ -4,7 +4,7 @@ title: "Pet Transport United Kingdom to Uganda | AHC, MAAIF Import Rules & Airli
 description: "Relocating your pet from the UK to Uganda? Uganda import permit, AHC from a UK vet, British Airways direct Entebbe cargo, timeline, and documentation guide."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "united-kingdom-to-uganda"
 origin_name: "United Kingdom"
 destination_name: "Uganda"

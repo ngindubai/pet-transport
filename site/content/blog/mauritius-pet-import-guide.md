@@ -3,7 +3,7 @@ title: "Moving Pets to Mauritius: 30-Day Quarantine and the 6-Month Residency Ru
 description: "Mauritius has some of the strictest pet import rules in the Indian Ocean. 30-day quarantine, a 6-month wait period post-vaccination, and limited arrival routes - what you need to know."
 date: "2026-05-18"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "mauritius-pet-import-guide"
 url: "/blog/mauritius-pet-import-guide/"
 seo:

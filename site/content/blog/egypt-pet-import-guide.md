@@ -3,7 +3,7 @@ title: "Bringing a Pet to Egypt: GOVS Health Certificate and Cairo Airport Proce
 description: "Guide to bringing your dog or cat to Egypt in 2026: GOVS health certificate, microchip, rabies vaccination, advance notification, and arrival process at Cairo Airport."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "egypt-pet-import-guide"
 url: "/blog/egypt-pet-import-guide/"
 seo:

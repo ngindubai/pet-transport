@@ -2,7 +2,7 @@
 title: "Pet Transport from USA to China"
 description: "How to move your cat or dog from the USA to China. Full breakdown of GACC requirements, the 180-day post-titre wait, mandatory quarantine and airline cargo options for this route."
 date: "2025-07-27"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/usa-to-china-pet-transport-guide/"
 tags: ["usa", "china", "route guide", "quarantine", "pet transport"]

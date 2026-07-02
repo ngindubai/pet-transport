@@ -3,7 +3,7 @@ title: "How to Check if Your Vet Is Accredited for International Pet Travel"
 description: "Not every vet can sign an international health certificate. How to find an Official Veterinarian, what APHA accreditation means, and why using the wrong vet can invalidate your documents."
 date: "2026-06-01"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "checking-vet-credentials-international-pet-travel"
 url: "/blog/checking-vet-credentials-international-pet-travel/"
 seo:

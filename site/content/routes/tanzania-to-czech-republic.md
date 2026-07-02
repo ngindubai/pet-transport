@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Tanzania to Czech Republic | PetTransportGloba
 description: "Pet relocation from Tanzania to Czech Republic: Czech Republic import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "tanzania-to-czech-republic"
 origin_name: "Tanzania"
 destination_name: "Czech Republic"

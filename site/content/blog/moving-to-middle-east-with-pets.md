@@ -3,7 +3,7 @@ title: "Moving to the Middle East with Pets: UAE, Qatar, and Saudi Arabia Pet Im
 description: "Moving to the UAE, Qatar, or Saudi Arabia with a dog or cat? This guide covers microchip requirements, vaccination rules, breed restrictions, and what to expect at each border."
 date: "2026-06-12"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "moving-to-middle-east-with-pets"
 url: "/blog/moving-to-middle-east-with-pets/"
 seo:

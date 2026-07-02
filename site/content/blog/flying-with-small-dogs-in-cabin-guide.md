@@ -3,7 +3,7 @@ title: "Flying with Small Dogs in the Cabin: Which Airlines Allow It and the Rul
 description: "Which international airlines allow small dogs in the cabin, what the weight and carrier rules are, and how to book in-cabin pet travel without surprises."
 date: "2026-05-24"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "flying-with-small-dogs-in-cabin-guide"
 url: "/blog/flying-with-small-dogs-in-cabin-guide/"
 seo:

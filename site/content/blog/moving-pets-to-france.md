@@ -3,7 +3,7 @@ title: "Moving Pets to France: Animal Health Certificates, Breed Restrictions, a
 description: "France pet import guide for dogs and cats from the UK. Animal Health Certificate requirements post-Brexit, France's breed restrictions by category, and what to expect at CDG."
 date: "2026-05-30"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "moving-pets-to-france"
 url: "/blog/moving-pets-to-france/"
 seo:

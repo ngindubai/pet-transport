@@ -3,7 +3,7 @@ title: "Pet Transport from UK to France: AHC, Tapeworm Treatment and the 2026 Ru
 description: "Step-by-step guide to moving your dog or cat from the UK to France in 2026: AHC documentation, tapeworm timing, approved entry points, and the Channel Tunnel option."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "uk-to-france-pet-transport-guide"
 url: "/blog/uk-to-france-pet-transport-guide/"
 seo:

@@ -1,0 +1,93 @@
+{{- /*
+  Partial: route-sections.html  (A1 - de-duplicated route sections)
+  RETURNS a slice of {heading, body} dicts so each route variant can keep its own
+  markup while the content is composed per-route. Replaces the stored
+  content.sections, whose "Microchip first, then vaccinate..." body was identical
+  on ~4,790 routes and whose requirements body was shared by thousands more.
+
+  Two sections: (1) destination requirements, keyed to complexity band; (2)
+  practical tips, four selected from a pool by a per-route seed so the set and
+  order vary. Facts are generic-but-accurate; the titre-lab tip only appears when
+  a titre test is actually relevant. Falls back to stored sections if data is thin.
+*/ -}}
+{{- $rd := .Params.route_data -}}
+{{- $dest := .Params.destination_name -}}
+{{- $cxRaw := lower ($rd.route_complexity | default "moderate") -}}
+{{- $band := "moderate" -}}
+{{- if or (in $cxRaw "very_high") (in $cxRaw "very high") (in $cxRaw "very-high") -}}{{- $band = "demanding" -}}
+{{- else if in $cxRaw "high" -}}{{- $band = "involved" -}}
+{{- else if or (in $cxRaw "low") (in $cxRaw "very_low") -}}{{- $band = "straightforward" -}}
+{{- else -}}{{- $band = "moderate" -}}{{- end -}}
+
+{{- $tt := "" -}}{{- with $rd.destination.import_requirements.titre_test -}}{{- $tt = . -}}{{- end -}}
+{{- $titreRelevant := and $tt (not (hasPrefix $tt "Not required")) -}}
+
+{{- $out := (.Params.content.sections | default slice) -}}
+{{- if $rd.route_complexity -}}
+{{- $seed := hash.FNV32a (.Params.slug | default $.File.ContentBaseName) -}}
+
+{{- $h1pool := slice
+  (printf "What %s requires" $dest)
+  (printf "%s import rules, explained" $dest)
+  (printf "Meeting %s's entry requirements" $dest)
+  (printf "The rules for bringing a pet into %s" $dest)
+  (printf "%s entry requirements at a glance" $dest)
+  (printf "How %s handles incoming pets" $dest) -}}
+
+{{- $b1demanding := slice
+  (printf "%s runs a strict import regime, so every document is checked closely on arrival. Build your plan around the fixed waiting periods, because they set the pace for everything else." $dest)
+  (printf "Getting a pet into %s means meeting a demanding set of rules with no shortcuts. Start from the earliest deadline and work forward from there." $dest)
+  (printf "%s takes biosecurity seriously, and the requirements reflect that. The paperwork is exacting, so accuracy matters as much as timing." $dest)
+  (printf "Entry to %s is tightly controlled, and officials verify each requirement in turn. Treat it as a sequence where every step gates the next." $dest) -}}
+{{- $b1involved := slice
+  (printf "%s has a detailed set of import rules, and each one needs to be satisfied before travel. None of it is unusual, but the order and timing are what catch people out." $dest)
+  (printf "Bringing a pet into %s involves a fair amount of documentation. Keep everything organised and check each item against the current requirements before you book." $dest)
+  (printf "%s asks for several pieces of paperwork, and they all need to line up. A checklist and a clear timeline are your best tools here." $dest)
+  (printf "The requirements for %s are thorough rather than difficult. Work through them methodically and confirm anything you are unsure about with the official source." $dest) -}}
+{{- $b1moderate := slice
+  (printf "%s has a clear set of import requirements that are manageable with some planning. Follow them in order and keep an eye on the dates that cannot move." $dest)
+  (printf "Getting a pet into %s is a middle of the road process. The rules are well defined, so most of the work is simply staying on schedule." $dest)
+  (printf "%s keeps its requirements reasonable, though a few steps have fixed timing. Map those out first and the rest falls into place." $dest)
+  (printf "The path into %s is straightforward to follow once you know the steps. Give the time-sensitive items priority and check the details below." $dest) -}}
+{{- $b1straightforward := slice
+  (printf "%s keeps its import requirements relatively light, which makes preparing easier. Even so, the basics still need to be right and in the correct order." $dest)
+  (printf "Bringing a pet into %s is one of the simpler processes. Cover the core requirements and you should have few surprises." $dest)
+  (printf "%s has a modest set of rules compared with stricter destinations. Get the essentials in place and confirm the finer points below." $dest)
+  (printf "The requirements for %s are light, but not zero. A little planning goes a long way on a route like this." $dest) -}}
+{{- $b1pool := $b1moderate -}}
+{{- if eq $band "demanding" -}}{{- $b1pool = $b1demanding -}}
+{{- else if eq $band "involved" -}}{{- $b1pool = $b1involved -}}
+{{- else if eq $band "straightforward" -}}{{- $b1pool = $b1straightforward -}}{{- end -}}
+
+{{- $h2pool := slice
+  "Practical tips for this move"
+  "Advice worth following"
+  "How to keep this move on track"
+  "Getting the details right"
+  "What experienced owners do"
+  "Avoiding the common mistakes" -}}
+
+{{- $tips := slice
+  "Microchip before you vaccinate. The microchip must be in place before the rabies shot for the vaccination to count, and getting this order wrong is the most common and costly mistake."
+  "Use an official, government-authorised vet for the health certificate, not just your usual clinic. Many destinations only accept certificates signed by an approved vet."
+  "If this is your first international move, consider an IPATA-registered pet transport agent. They handle the documents, airline booking and crate sizing, and can troubleshoot problems."
+  "Get your pet used to the travel crate weeks in advance. A calm, crate-familiar animal travels far better than one meeting the crate for the first time at the airport."
+  "Confirm live animal acceptance on every flight segment before booking. Not all aircraft or connections take pets, and cargo terms can differ leg to leg."
+  "Keep every original document together and take copies. Border officials want originals, and a missing signature or date can hold up clearance."
+  "Work backwards from your travel date and add a buffer. Fixed waiting periods mean a single slipped appointment can push the whole move back by weeks."
+  "Check the airline's crate size and labelling rules early. An undersized or wrongly labelled crate is a frequent reason pets are refused at check-in."
+  "Ask about temperature embargoes for your travel window. Summer and winter cargo restrictions can rule out certain routes and dates entirely." -}}
+{{- if $titreRelevant -}}{{- $tips = $tips | append "Book the titre test laboratory well ahead. Approved labs have limited slots and the sample takes time to process, so this is not something to leave to the final weeks." -}}{{- end -}}
+
+{{- $h1 := index $h1pool (mod $seed (len $h1pool)) -}}
+{{- $b1 := index $b1pool (mod (add $seed 3) (len $b1pool)) -}}
+{{- $h2 := index $h2pool (mod (add $seed 5) (len $h2pool)) -}}
+{{- $start := mod (add $seed 2) (len $tips) -}}
+{{- $t0 := index $tips (mod $start (len $tips)) -}}
+{{- $t1 := index $tips (mod (add $start 1) (len $tips)) -}}
+{{- $t2 := index $tips (mod (add $start 2) (len $tips)) -}}
+{{- $t3 := index $tips (mod (add $start 3) (len $tips)) -}}
+{{- $b2 := delimit (slice $t0 $t1 $t2 $t3) "\n\n" -}}
+{{- $out = slice (dict "heading" $h1 "body" $b1) (dict "heading" $h2 "body" $b2) -}}
+{{- end -}}
+{{- return $out -}}

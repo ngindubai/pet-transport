@@ -3,7 +3,7 @@ title: "Bringing a Pet to Switzerland: What Non-EU Arrivals Need to Know"
 description: "Guide to bringing your dog or cat to Switzerland in 2026: EU passport rules, UK arrivals, microchip requirements, and Switzerland's non-EU status explained."
 date: "2026-04-30"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "switzerland-pet-import-guide"
 url: "/blog/switzerland-pet-import-guide/"
 seo:

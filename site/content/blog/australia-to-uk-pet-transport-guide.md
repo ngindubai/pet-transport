@@ -3,7 +3,7 @@ title: "Australia to UK Pet Transport: What Your Dog or Cat Needs to Enter Brita
 description: "Moving from Australia to the UK with pets? Here is exactly what microchip, vaccination, titre test, and AHC rules apply when bringing dogs or cats from Australia to Great Britain."
 date: "2026-05-05"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "australia-to-uk-pet-transport-guide"
 url: "/blog/australia-to-uk-pet-transport-guide/"
 seo:

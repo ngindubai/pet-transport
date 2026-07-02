@@ -4,7 +4,7 @@ description: "Shipping your pet from Hong Kong to Japan: AFCD export permit, ful
 type: "routes"
 layout: "single"
 template_variant: "C"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "hong-kong-to-japan"
 origin_name: "Hong Kong"
 destination_name: "Japan"

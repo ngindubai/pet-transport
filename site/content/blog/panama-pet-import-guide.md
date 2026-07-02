@@ -3,7 +3,7 @@ title: "Moving to Panama with Pets: AUPSA Requirements and What to Expect at Toc
 description: "Panama is a popular expat destination. Here is what dogs and cats need to enter Panama legally: AUPSA health certificate requirements, vaccinations, and entry at Tocumen Airport."
 date: 2026-05-09
 type: blog
-author: "The PetTransportGlobal Team"
+author: "PetTransportGlobal Editorial Team"
 slug: "panama-pet-import-guide"
 url: "/blog/panama-pet-import-guide/"
 seo:

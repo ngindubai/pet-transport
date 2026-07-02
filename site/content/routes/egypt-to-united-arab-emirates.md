@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Egypt to United Arab Emirates | PetTransportGl
 description: "Complete guide to pet transport from Egypt to United Arab Emirates. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "egypt-to-united-arab-emirates"
 origin_name: "Egypt"
 destination_name: "United Arab Emirates"

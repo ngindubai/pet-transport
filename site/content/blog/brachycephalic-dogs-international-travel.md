@@ -3,7 +3,7 @@ title: "Brachycephalic Dogs and International Travel: Which Airlines Still Accep
 description: "Airlines have been tightening brachycephalic breed policies for a decade. Here's which airlines still accept French Bulldogs and Pugs in cargo, and which have banned them entirely."
 date: "2026-04-25"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "brachycephalic-dogs-international-travel"
 url: "/blog/brachycephalic-dogs-international-travel/"
 seo:

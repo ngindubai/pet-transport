@@ -3,7 +3,7 @@ title: "Kuwait Pet Export Guide"
 description: "Complete guide to exporting your pet from Kuwait."
 type: "origins"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 country_name: "Kuwait"
 country_code: "KW"
 overview: |

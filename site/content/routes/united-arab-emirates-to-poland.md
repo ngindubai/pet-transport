@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from United Arab Emirates to Poland | PetTransportG
 description: "Complete guide to pet transport from United Arab Emirates to Poland. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "united-arab-emirates-to-poland"
 origin_name: "United Arab Emirates"
 destination_name: "Poland"

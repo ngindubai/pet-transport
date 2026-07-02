@@ -3,7 +3,7 @@ title: "Sweden Pet Export Guide"
 description: "Complete guide to exporting your pet from Sweden."
 type: "origins"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 country_name: "Sweden"
 country_code: "SE"
 overview: |

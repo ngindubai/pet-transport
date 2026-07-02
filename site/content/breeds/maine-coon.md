@@ -3,7 +3,7 @@ title: "Flying with a Maine Coon | Large Cat Cargo & Import Guide"
 description: "Maine Coon international travel: why this large cat usually travels as cargo, crate sizing, airline rules, and destination paperwork."
 type: "breeds"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "maine-coon"
 breed_name: "Maine Coon"
 brachycephalic: false

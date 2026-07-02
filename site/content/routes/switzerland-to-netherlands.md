@@ -4,7 +4,7 @@ title: "Pet Transport Switzerland to Netherlands | Swiss Pet Passport & KLM Opti
 description: "Moving your pet from Switzerland to the Netherlands? No titre test, no quarantine. Switzerland aligns with EU pet travel rules. Compare SWISS, KLM, and other airlines."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "switzerland-to-netherlands"
 origin_name: "Switzerland"
 destination_name: "Netherlands"

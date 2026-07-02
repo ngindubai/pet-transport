@@ -3,7 +3,7 @@ title: "Pet Transport from Germany to UK: AHC, Tapeworm and the Post-Brexit Proc
 description: "Complete guide to moving your dog or cat from Germany to the UK in 2026: AHC requirements, tapeworm treatment for UK entry, and what APHA endorsement means for Germany-origin pets."
 date: "2026-05-09"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "germany-to-uk-pet-transport-guide"
 url: "/blog/germany-to-uk-pet-transport-guide/"
 seo:

@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from New Zealand to Bangladesh | PetTransportGlobal
 description: "Complete guide to pet transport from New Zealand to Bangladesh. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "new-zealand-to-bangladesh"
 origin_name: "New Zealand"
 destination_name: "Bangladesh"

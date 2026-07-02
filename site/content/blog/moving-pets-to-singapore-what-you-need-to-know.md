@@ -3,7 +3,7 @@ title: "Moving Pets to Singapore: AVS Categories, Approved Countries, and What t
 description: "Singapore uses a strict category system for pet imports. Here's which category your pet falls into, what documents you need, and how to book the required stay at an AVS facility."
 date: "2026-03-14"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "moving-pets-to-singapore-what-you-need-to-know"
 url: "/blog/moving-pets-to-singapore-what-you-need-to-know/"
 seo:

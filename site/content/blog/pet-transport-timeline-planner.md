@@ -3,7 +3,7 @@ title: "Pet Transport Timeline Planner: Month-by-Month Countdown to Travel Day"
 description: "A practical month-by-month checklist for planning international pet transport. From booking the vet to collecting your pet at the other end, here is what needs to happen and when."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "James Osei, Pet Transport Planning Specialist, PetTransportGlobal"
 slug: "pet-transport-timeline-planner"
 url: "/blog/pet-transport-timeline-planner/"
 seo:

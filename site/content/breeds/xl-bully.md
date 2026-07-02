@@ -3,7 +3,7 @@ title: "Flying with an XL Bully | UK Ban & International Travel Rules"
 description: "The 2024 UK XL Bully ban explained for pet owners. What it means for import, export, and international relocation. Which other countries restrict XL Bullies."
 type: "breeds"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "xl-bully"
 breed_name: "XL Bully"
 brachycephalic: false

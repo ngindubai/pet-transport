@@ -3,7 +3,7 @@ title: "Your First 30 Days Abroad with a Pet: A Practical Checklist"
 description: "The first month after an international move with a pet has a lot to sort out. Here is a practical checklist covering registration, vet registration, insurance, and settling-in tasks."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "James Osei, Pet Transport Planning Specialist, PetTransportGlobal"
 slug: "moving-abroad-with-pets-first-30-days"
 url: "/blog/moving-abroad-with-pets-first-30-days/"
 seo:

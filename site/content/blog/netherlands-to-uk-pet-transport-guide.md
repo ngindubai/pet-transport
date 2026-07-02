@@ -3,7 +3,7 @@ title: "Pet Transport from Netherlands to UK: AHC, Tapeworm and What to Prepare"
 description: "Guide to moving your dog or cat from the Netherlands to the UK in 2026: AHC requirements, tapeworm treatment timing, NVWA endorsement, and route options including ferry."
 date: "2026-05-09"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "netherlands-to-uk-pet-transport-guide"
 url: "/blog/netherlands-to-uk-pet-transport-guide/"
 seo:

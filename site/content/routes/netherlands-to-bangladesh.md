@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Netherlands to Bangladesh | PetTransportGlobal
 description: "How to ship your dog or cat from Netherlands to Bangladesh. Bangladesh import rules, vaccinations, permits, and airline options explained."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "netherlands-to-bangladesh"
 origin_name: "Netherlands"
 destination_name: "Bangladesh"

@@ -3,7 +3,7 @@ title: "Pet Transport from UK to Germany: The Complete 2026 Guide"
 description: "Everything you need to know about moving your dog or cat from the UK to Germany in 2026: AHC requirements, tapeworm treatment, approved entry points, and what the process looks like."
 date: "2026-05-04"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "uk-to-germany-pet-transport-guide"
 url: "/blog/uk-to-germany-pet-transport-guide/"
 seo:

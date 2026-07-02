@@ -3,7 +3,7 @@ title: "Moving Multiple Pets Internationally: How to Manage the Paperwork When Y
 description: "Each pet needs its own documentation chain. Here's how to track timelines, share vet appointments, and avoid letting one pet's issue delay the whole move."
 date: "2026-04-28"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "James Osei, Pet Transport Planning Specialist, PetTransportGlobal"
 slug: "moving-multiple-pets-internationally"
 url: "/blog/moving-multiple-pets-internationally/"
 seo:

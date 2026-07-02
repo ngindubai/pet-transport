@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from South Africa to Saudi Arabia | PetTransportGlo
 description: "Pet relocation from South Africa to Saudi Arabia: Saudi Arabia import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "south-africa-to-saudi-arabia"
 origin_name: "South Africa"
 destination_name: "Saudi Arabia"

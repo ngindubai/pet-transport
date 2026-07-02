@@ -3,7 +3,7 @@ title: "Aeroflot Pet Policy: Current Status for International Pet Transport"
 description: "Aeroflot historically accepted pets in cabin and as cargo. Since 2022 sanctions, Aeroflot's international network is severely restricted. Here is the current situation for pet owners."
 date: 2026-05-09
 type: airlines
-author: "The PetTransportGlobal Team"
+author: "PetTransportGlobal Editorial Team"
 slug: "aeroflot"
 url: "/pet-transport/airlines/aeroflot/"
 seo:

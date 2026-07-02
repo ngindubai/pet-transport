@@ -3,7 +3,7 @@ title: "Travelling Internationally with a Golden Retriever: What You Need to Kno
 description: "A practical guide to flying with a Golden Retriever on international routes: cargo requirements, crate sizing, health prep, and which destinations have breed-specific considerations."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "travelling-with-a-golden-retriever-internationally"
 url: "/blog/travelling-with-a-golden-retriever-internationally/"
 seo:

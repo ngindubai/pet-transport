@@ -3,7 +3,7 @@ title: "Settling Your Pet After an International Move: The First Two Weeks"
 description: "Pets need time to adjust after an international relocation. Here is how to help your dog or cat settle in, what normal post-move behaviour looks like, and when to call a vet."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "settling-your-pet-after-international-move"
 url: "/blog/settling-your-pet-after-international-move/"
 seo:

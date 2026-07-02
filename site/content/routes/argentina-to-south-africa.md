@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Argentina to South Africa | PetTransportGlobal
 description: "Pet relocation from Argentina to South Africa: South Africa import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "argentina-to-south-africa"
 origin_name: "Argentina"
 destination_name: "South Africa"

@@ -2,7 +2,7 @@
 title: "Pet Transport from USA to India"
 description: "How to relocate a cat or dog from the USA to India. Covers the DAHD import permit, USDA-endorsed health certificate, vaccination requirements and airline cargo options."
 date: "2025-07-07"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/usa-to-india-pet-transport-guide/"
 tags: ["usa", "india", "route guide", "pet transport", "pet relocation"]

@@ -2,7 +2,7 @@
 title: "Air Madagascar Pet Transport: Cargo Policies and Pet Travel Guide"
 description: "Air Madagascar's pet transport policies explained. Covers hold pet acceptance, crate requirements, Madagascar quarantine rules and health certificate requirements for this Indian Ocean route."
 date: "2025-08-12"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "airlines"
 url: "/pet-transport/airlines/air-madagascar/"
 airline_name: "Air Madagascar"

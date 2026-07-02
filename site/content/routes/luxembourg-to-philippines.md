@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Luxembourg to Philippines | PetTransportGlobal
 description: "How to ship your dog or cat from Luxembourg to Philippines. Philippines import rules, vaccinations, permits, and airline options explained."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "luxembourg-to-philippines"
 origin_name: "Luxembourg"
 destination_name: "Philippines"

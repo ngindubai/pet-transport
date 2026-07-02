@@ -17,9 +17,9 @@
         <div class="route-flag-wrap"><div class="route-flag">{{ $rd.destination.code }}</div><div class="route-country">{{ $d }}</div></div>
       </div>
       <h1 class="hero-h1">{{ .Params.content.h1 | default (printf "Pet Transport %s to %s" $o $d) }}</h1>
-      {{ with .Params.content.overview }}<p class="hero-sub">{{ . | plainify | truncate 240 }}</p>{{ end }}
+      <p class="hero-sub">{{ (partial "routes/route-overview.html" .) | plainify | truncate 240 }}</p>
       <div class="hero-stats">
-        <div class="hs-item"><span class="hs-n">{{ if .Params.quarantine_required }}{{ with .Params.quarantine_days }}{{ . }} days{{ else }}Required{{ end }}{{ else }}None{{ end }}</span><span class="hs-l">Quarantine on arrival</span></div>
+        <div class="hs-item"><span class="hs-n">{{ partial "routes/quarantine-short.html" . }}</span><span class="hs-l">Quarantine on arrival</span></div>
         {{ with $rd.route_complexity }}<div class="hs-item"><span class="hs-n"><span class="hs-badge badge-warn">{{ . | replaceRE "_" " " | title }} route</span></span><span class="hs-l">Expert coordination essential</span></div>{{ end }}
         {{ with $rd.estimated_timeline_weeks }}<div class="hs-item"><span class="hs-n">{{ . }} weeks</span><span class="hs-l">Preparation lead time</span></div>{{ end }}
         <div class="hs-item"><span class="hs-n"><span class="hs-badge badge-ok">Fully managed</span></span><span class="hs-l">Door to door service available</span></div>
@@ -32,7 +32,7 @@
     <div class="overview-inner">
       <div class="ob-items">
         {{ with $rd.estimated_timeline_weeks }}<div class="ob-item"><div class="ob-icon"></div><div><div class="ob-label">Lead time needed</div><div class="ob-value">{{ . }} weeks</div></div></div>{{ end }}
-        <div class="ob-item"><div class="ob-icon"></div><div><div class="ob-label">Quarantine</div><div class="ob-value">{{ if .Params.quarantine_required }}{{ with .Params.quarantine_days }}{{ . }} days{{ else }}Required{{ end }}{{ else }}Not required{{ end }}</div></div></div>
+        <div class="ob-item"><div class="ob-icon"></div><div><div class="ob-label">Quarantine</div><div class="ob-value">{{ partial "routes/quarantine-short.html" . }}</div></div></div>
         {{ with $rd.route_complexity }}<div class="ob-item"><div class="ob-icon"></div><div><div class="ob-label">Route complexity</div><div class="ob-value">{{ . | replaceRE "_" " " | title }}</div></div></div>{{ end }}
         {{ with $rd.airlines }}<div class="ob-item"><div class="ob-icon"></div><div><div class="ob-label">Airlines</div><div class="ob-value">{{ len . }} carriers on this route</div></div></div>{{ end }}
       </div>
@@ -43,6 +43,7 @@
   {{/* BODY */}}
   <div class="page-body">
     <div class="main-col">
+      {{ partial "routes/route-quick-answer.html" . }}
 
       {{/* PROCESS timeline */}}
       {{ with $rd.timeline_steps }}
@@ -109,7 +110,7 @@
       {{ end }}
 
       {{/* LONG-FORM CONTENT */}}
-      {{ with .Params.content.sections }}
+      {{ with (partial "routes/route-sections.html" .) }}
       <section class="inner r">{{ range . }}{{ with .heading }}<h2 class="sec-h">{{ . }}</h2>{{ end }}<div class="sec-p">{{ .body | markdownify }}</div>{{ end }}</section>
       {{ end }}
 

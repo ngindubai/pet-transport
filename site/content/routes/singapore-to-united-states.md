@@ -4,7 +4,7 @@ title: "Pet Transport from Singapore to the USA | Requirements & Airline Compari
 description: "Moving your pet from Singapore to the USA: CDC Dog Import Form, no titre test, AVS export endorsement, Singapore Airlines vs United Airlines cargo compared."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "singapore-to-united-states"
 origin_name: "Singapore"
 destination_name: "United States"

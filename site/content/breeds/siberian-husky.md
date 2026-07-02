@@ -3,7 +3,7 @@ title: "Flying with a Siberian Husky | Air Cargo & Import Guide"
 description: "Airline cargo rules, import requirements, and seasonal heat restrictions for Siberian Huskies. What changes in summer and which routes need the most planning."
 type: "breeds"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "siberian-husky"
 breed_name: "Siberian Husky"
 brachycephalic: false

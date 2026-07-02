@@ -4,7 +4,7 @@ title: "Pet Transport from Spain to the United Kingdom | 2026 AHC & Tapeworm Gui
 description: "Moving your dog or cat from Spain to the UK in 2026: AHC or EU pet passport, tapeworm treatment timing for dogs, ferry options, and what to expect at the UK border."
 type: "routes"
 layout: "single"
-author: "Marcus Webb - Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "spain-to-united-kingdom"
 origin_name: "Spain"
 destination_name: "United Kingdom"

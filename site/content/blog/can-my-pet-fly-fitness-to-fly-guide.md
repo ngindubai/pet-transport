@@ -2,7 +2,7 @@
 title: "Can My Pet Fly? A Veterinary Fitness to"
 description: "Not every pet is fit for air travel. This guide explains the health conditions that may prevent your dog or cat from flying, what a fitness assessment involves and what alternatives exist."
 date: "2025-07-17"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/can-my-pet-fly-fitness-to-fly-guide/"
 tags: ["fitness to fly", "pet health", "airline restrictions", "cargo travel", "veterinary guide"]

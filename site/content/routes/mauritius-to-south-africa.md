@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Mauritius to South Africa | PetTransportGlobal
 description: "How to ship your dog or cat from Mauritius to South Africa. South Africa import rules, vaccinations, permits, and airline options explained."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "mauritius-to-south-africa"
 origin_name: "Mauritius"
 destination_name: "South Africa"

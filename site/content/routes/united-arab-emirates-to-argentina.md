@@ -4,7 +4,7 @@ title: "Pet Transport from United Arab Emirates to Argentina | PetTransportGloba
 description: "Pet relocation from United Arab Emirates to Argentina: Argentina import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "united-arab-emirates-to-argentina"
 origin_name: "United Arab Emirates"
 destination_name: "Argentina"

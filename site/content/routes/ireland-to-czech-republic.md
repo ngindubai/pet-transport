@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Ireland to Czech Republic | PetTransportGlobal
 description: "Complete guide to pet transport from Ireland to Czech Republic. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "ireland-to-czech-republic"
 origin_name: "Ireland"
 destination_name: "Czech Republic"

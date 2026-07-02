@@ -2,7 +2,7 @@
 title: "International Travel with a Portuguese"
 description: "Planning international travel with a Portuguese Water Dog? This guide covers airline cargo and cabin policies, breed restrictions, crate sizing and documentation for this popular breed."
 date: "2025-08-03"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/travelling-with-a-portuguese-water-dog-internationally/"
 tags: ["portuguese water dog", "breed guide", "dog travel", "international pet travel"]

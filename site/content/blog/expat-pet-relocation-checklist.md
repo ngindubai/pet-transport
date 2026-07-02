@@ -3,7 +3,7 @@ title: "The Complete Expat Pet Relocation Checklist: Everything in the Right Ord
 description: "A month-by-month, step-by-step checklist for expats moving internationally with pets. From 9 months before departure to arrival day, nothing gets missed."
 date: "2026-06-15"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "James Osei, Pet Transport Planning Specialist, PetTransportGlobal"
 slug: "expat-pet-relocation-checklist"
 url: "/blog/expat-pet-relocation-checklist/"
 seo:

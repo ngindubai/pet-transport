@@ -3,7 +3,7 @@ title: "Italy Pet Import Guide: EU Pet Passport, Microchip, and Entry Requiremen
 description: "Bringing a pet to Italy from inside or outside the EU. Here is what the EU pet passport covers, what non-EU pets need, and the rules for dogs, cats, and ferrets."
 date: "2026-05-05"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "italy-pet-import-guide"
 url: "/blog/italy-pet-import-guide/"
 seo:

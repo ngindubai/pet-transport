@@ -3,7 +3,7 @@ title: "Flying with a Pekingese | Airline Restrictions & Advice"
 description: "Which airlines accept Pekingese as cargo or cabin? Seasonal embargoes, breed bans, and what you need before booking your flat-faced dog."
 type: "breeds"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "pekingese"
 breed_name: "Pekingese"
 brachycephalic: true

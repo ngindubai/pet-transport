@@ -3,7 +3,7 @@ title: "Flying with an Abyssinian Cat | International Transport Guide"
 description: "Airline cabin rules, import paperwork, and travel tips for Abyssinians. An active, curious breed - what to expect in transit."
 type: "breeds"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "abyssinian"
 breed_name: "Abyssinian"
 brachycephalic: false

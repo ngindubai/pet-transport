@@ -3,7 +3,7 @@ title: "Portugal Pet Import Guide: EU Entry Rules, Non-EU Requirements, and What
 description: "Portugal is an EU member state. Here is what pets from inside and outside the EU need to enter Portugal, including post-Brexit UK requirements."
 date: "2026-05-05"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "portugal-pet-import-guide"
 url: "/blog/portugal-pet-import-guide/"
 seo:

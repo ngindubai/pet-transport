@@ -4,7 +4,7 @@ title: "Pet Transport from the Philippines to Switzerland | BAI Export & Swiss E
 description: "Moving your pet from the Philippines to Switzerland: BAI health certificate, EU titre test, 3-month wait, FSVO entry rules, and airline options from Manila."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "philippines-to-switzerland"
 origin_name: "Philippines"
 destination_name: "Switzerland"

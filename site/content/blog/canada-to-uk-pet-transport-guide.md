@@ -3,7 +3,7 @@ title: "Canada to UK Pet Transport: Bringing Your Dog or Cat from Canada to Grea
 description: "Moving from Canada to the UK with pets? Here is what APHA requires for dogs and cats arriving from Canada, including the titre test timeline and health certificate."
 date: "2026-05-05"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "canada-to-uk-pet-transport-guide"
 url: "/blog/canada-to-uk-pet-transport-guide/"
 seo:

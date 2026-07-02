@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from United Arab Emirates to Ghana | PetTransportGl
 description: "Complete guide to pet transport from United Arab Emirates to Ghana. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "united-arab-emirates-to-ghana"
 origin_name: "United Arab Emirates"
 destination_name: "Ghana"

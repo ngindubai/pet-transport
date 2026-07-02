@@ -3,7 +3,7 @@ title: "Pet Quarantine: How to Prepare Your Animal, Survive the Separation, and 
 description: "Quarantine is hard - on your pet and on you. Here's how to prepare your animal, what to pack, whether and how to visit, and what to expect on release day."
 date: "2026-05-16"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "pet-quarantine-survival-guide"
 url: "/blog/pet-quarantine-survival-guide/"
 seo:

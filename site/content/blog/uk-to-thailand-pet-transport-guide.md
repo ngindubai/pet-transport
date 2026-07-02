@@ -3,7 +3,7 @@ title: "Pet Transport from UK to Thailand: DLD Import Rules and Bangkok Arrival"
 description: "Complete guide to moving your dog or cat from the UK to Thailand in 2026: Department of Livestock Development import permit, APHA health certificate, and Suvarnabhumi Airport process."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "uk-to-thailand-pet-transport-guide"
 url: "/blog/uk-to-thailand-pet-transport-guide/"
 seo:

@@ -3,7 +3,7 @@ title: "Bringing a Pet to Czech Republic: EU Rules and What International Arriva
 description: "Guide to bringing your dog or cat to Czech Republic (Czechia) in 2026: EU pet passport rules, UK AHC requirements, and SVS inspection at Prague."
 date: "2026-05-07"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "czech-republic-pet-import-guide"
 url: "/blog/czech-republic-pet-import-guide/"
 seo:

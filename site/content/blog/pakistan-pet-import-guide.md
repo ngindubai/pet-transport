@@ -3,7 +3,7 @@ title: "Moving to Pakistan with Pets: Import Rules and Health Certificates"
 description: "Pakistan has specific veterinary requirements for imported pets including import permits, health certificates, and rabies vaccination. Here is what pet owners need to know."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "pakistan-pet-import-guide"
 url: "/blog/pakistan-pet-import-guide/"
 seo:

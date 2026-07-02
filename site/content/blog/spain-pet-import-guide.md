@@ -3,7 +3,7 @@ title: "Moving Pets to Spain: EU Rules, Health Certificates, and What Brexit Cha
 description: "How to move a dog or cat to Spain from the UK or USA. EU pet passport rules, Animal Health Certificates, microchip requirements, and rabies vaccination timelines explained."
 date: "2026-05-10"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "spain-pet-import-guide"
 url: "/blog/spain-pet-import-guide/"
 seo:

@@ -2,7 +2,7 @@
 title: "Relocating to Spain with a Pet"
 description: "A practical guide to moving to Spain with a cat or dog. Covers post-Brexit paperwork for UK pets, third-country rules for US pets, EU pet passport rules and life with a dog in Spain."
 date: "2025-08-05"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/relocating-to-spain-with-a-pet/"
 tags: ["spain", "expat guide", "pet relocation", "europe"]

@@ -3,7 +3,7 @@ title: "Moving Internationally with a Siamese Cat: Vocal Breed, Smart Packing Ad
 description: "Siamese cats are vocal, sensitive, and form strong bonds. Here is what Siamese owners need for international moves, including cabin travel tips and how to manage their temperament during travel."
 date: 2026-05-09
 type: blog
-author: "The PetTransportGlobal Team"
+author: "PetTransportGlobal Editorial Team"
 slug: "travelling-with-a-siamese-cat-internationally"
 url: "/blog/travelling-with-a-siamese-cat-internationally/"
 seo:

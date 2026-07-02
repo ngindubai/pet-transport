@@ -3,7 +3,7 @@ title: "Philippines Pet Import Guide: BAI Requirements, Accreditation, and Manil
 description: "The Philippines Bureau of Animal Industry (BAI) controls pet imports. Here's what you need, how long quarantine lasts, and how to collect your pet from NAIA."
 date: "2026-05-21"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "philippines-pet-import-guide"
 url: "/blog/philippines-pet-import-guide/"
 seo:

@@ -3,7 +3,7 @@ title: "Sri Lanka Pet Export Guide"
 description: "Complete guide to exporting your pet from Sri Lanka."
 type: "origins"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 country_name: "Sri Lanka"
 country_code: "LK"
 overview: |

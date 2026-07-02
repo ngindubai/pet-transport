@@ -2,7 +2,7 @@
 title: "Importing a Pet to Iceland: MAST Rules"
 description: "How to import a cat or dog to Iceland. Covers MAST permit requirements, Iceland's EEA status for pet travel, whether a titre test is needed, approved entry points and health certificate format."
 date: "2025-08-21"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/iceland-pet-import-guide/"
 tags: ["iceland", "reykjavik", "EEA", "country guide", "pet import", "scandinavia"]

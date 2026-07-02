@@ -2,7 +2,7 @@
 title: "Importing a Pet to Jamaica: Permits"
 description: "How to import a cat or dog to Jamaica. JACVET import permits, endorsed health certificates, approved countries, breed restrictions and arrival procedures explained."
 date: "2025-07-03"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/jamaica-pet-import-guide/"
 tags: ["jamaica", "caribbean", "country guide", "pet import"]

@@ -4,7 +4,7 @@ title: "Pet Transport from Philippines to United Arab Emirates | PetTransportGlo
 description: "Complete guide to pet transport from Philippines to United Arab Emirates. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "philippines-to-united-arab-emirates"
 origin_name: "Philippines"
 destination_name: "United Arab Emirates"

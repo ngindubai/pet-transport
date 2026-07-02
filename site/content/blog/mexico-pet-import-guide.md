@@ -3,7 +3,7 @@ title: "Mexico Pet Import Guide: SENASICA Requirements, Health Certificates, and
 description: "Bringing a dog or cat to Mexico is relatively simple. Here is what SENASICA requires, including the health certificate format, vaccination rules, and what to expect at the border."
 date: "2026-05-05"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "mexico-pet-import-guide"
 url: "/blog/mexico-pet-import-guide/"
 seo:

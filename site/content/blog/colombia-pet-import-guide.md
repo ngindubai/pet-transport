@@ -3,7 +3,7 @@ title: "Bringing a Pet to Colombia: ICA Requirements and What Expats Need to Kno
 description: "Guide to bringing your dog or cat to Colombia in 2026: ICA health certificate requirements, microchip rules, rabies vaccination, and arriving at Bogota El Dorado."
 date: "2026-05-07"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "colombia-pet-import-guide"
 url: "/blog/colombia-pet-import-guide/"
 seo:

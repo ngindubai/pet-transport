@@ -4,7 +4,7 @@ title: "Pet Relocation Costa Rica to United Arab Emirates | Requirements & Guide
 description: "Pet relocation from Costa Rica to United Arab Emirates: United Arab Emirates import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "costa-rica-to-united-arab-emirates"
 origin_name: "Costa Rica"
 destination_name: "United Arab Emirates"

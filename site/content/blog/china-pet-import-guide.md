@@ -3,7 +3,7 @@ title: "Bringing a Pet to China: Import Permits, Quarantine and 2026 Rules"
 description: "Guide to bringing your dog or cat to China in 2026: GACC import permits, quarantine requirements, approved airports, and the advance documentation process."
 date: "2026-05-02"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "china-pet-import-guide"
 url: "/blog/china-pet-import-guide/"
 seo:

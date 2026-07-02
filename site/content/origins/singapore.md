@@ -3,7 +3,7 @@ title: "Singapore Pet Export Guide"
 description: "Complete guide to exporting your pet from Singapore."
 type: "origins"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 country_name: "Singapore"
 country_code: "SG"
 overview: |

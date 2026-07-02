@@ -7,6 +7,7 @@
 
     {{/* SEO meta */}}
     {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
+    {{ if .Params.noindex }}<meta name="robots" content="noindex,follow">{{ end }}
     <link rel="canonical" href="{{ .Permalink }}">
 
     {{/* Open Graph */}}
@@ -30,14 +31,9 @@
           "contactPoint": {
             "@type": "ContactPoint",
             "contactType": "customer service",
-            "telephone": "+447703577246",
+            "url": "https://wa.me/447703577246",
             "availableLanguage": "English"
-          },
-          "sameAs": [
-            "TODO: Facebook URL",
-            "TODO: Instagram URL",
-            "TODO: LinkedIn URL"
-          ]
+          }
         },
         {
           "@type": "WebSite",
@@ -47,7 +43,7 @@
             "@type": "SearchAction",
             "target": {
               "@type": "EntryPoint",
-              "urlTemplate": "https://pettransportglobal.com/pet-transport/routes/{search_term_string}/"
+              "urlTemplate": "https://pettransportglobal.com/search/?q={search_term_string}"
             },
             "query-input": "required name=search_term_string"
           }

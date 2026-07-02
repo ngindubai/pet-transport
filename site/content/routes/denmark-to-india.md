@@ -5,7 +5,7 @@ type: "routes"
 layout: "single"
 template_variant: "A"
 content_soul: 1
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "denmark-to-india"
 origin_name: "Denmark"
 destination_name: "India"

@@ -2,7 +2,7 @@
 title: "Relocating to Portugal with a Pet"
 description: "A practical guide to moving to Portugal with a cat or dog. Covers EU pet passport rules, post-Brexit requirements for UK residents, microchip registration, vet access and life with a pet in Portugal."
 date: "2025-08-04"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/relocating-to-portugal-with-a-pet/"
 tags: ["portugal", "expat guide", "pet relocation", "europe"]

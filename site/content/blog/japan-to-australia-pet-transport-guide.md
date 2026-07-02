@@ -3,7 +3,7 @@ title: "Japan to Australia Pet Transport: DAFF Requirements and the Longest Prep
 description: "Moving from Japan to Australia with a pet? Australia's biosecurity rules are among the world's strictest. Here is the full Japan-to-Australia process, including quarantine."
 date: "2026-05-05"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "japan-to-australia-pet-transport-guide"
 url: "/blog/japan-to-australia-pet-transport-guide/"
 seo:

@@ -2,7 +2,7 @@
 title: "Loganair Pet Transport: Cabin and Cargo Policies for UK Regional Routes"
 description: "Loganair pet transport policies explained. Scotland's regional airline covers UK domestic routes. Covers cabin pet acceptance, hold policies and what UK island pet owners need to know."
 date: "2025-08-15"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "airlines"
 url: "/pet-transport/airlines/loganair/"
 airline_name: "Loganair"

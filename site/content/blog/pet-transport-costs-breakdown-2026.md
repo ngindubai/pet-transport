@@ -3,7 +3,7 @@ title: "What Does International Pet Transport Actually Cost in 2026?"
 description: "A full cost breakdown for 8 common international pet routes. Airline fees, vet costs, quarantine, agents - no vague 'it depends' answers."
 date: "2026-03-20"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "pet-transport-costs-breakdown-2026"
 url: "/blog/pet-transport-costs-breakdown-2026/"
 seo:

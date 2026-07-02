@@ -3,7 +3,7 @@ title: "Saudi Arabia Pet Export Guide"
 description: "Complete guide to exporting your pet from Saudi Arabia."
 type: "origins"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 country_name: "Saudi Arabia"
 country_code: "SA"
 overview: |

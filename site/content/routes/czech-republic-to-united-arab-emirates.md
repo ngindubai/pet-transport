@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Czech Republic to United Arab Emirates | PetTr
 description: "How to ship your dog or cat from Czech Republic to United Arab Emirates. United Arab Emirates import rules, vaccinations, permits, and airline options explai..."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "czech-republic-to-united-arab-emirates"
 origin_name: "Czech Republic"
 destination_name: "United Arab Emirates"

@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Myanmar to Czech Republic | PetTransportGlobal
 description: "Complete guide to pet transport from Myanmar to Czech Republic. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "myanmar-to-czech-republic"
 origin_name: "Myanmar"
 destination_name: "Czech Republic"

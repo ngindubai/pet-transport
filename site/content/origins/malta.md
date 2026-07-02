@@ -3,7 +3,7 @@ title: "Malta Pet Export Guide"
 description: "Complete guide to exporting your pet from Malta."
 type: "origins"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 country_name: "Malta"
 country_code: "MT"
 overview: |

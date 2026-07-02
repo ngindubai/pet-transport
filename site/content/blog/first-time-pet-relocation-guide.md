@@ -3,7 +3,7 @@ title: "First Time Moving Your Pet Internationally? A Step-by-Step Guide"
 description: "A practical first-timer's guide to international pet relocation in 2026: where to start, what to research, how documentation works, and what to expect on travel day."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "first-time-pet-relocation-guide"
 url: "/blog/first-time-pet-relocation-guide/"
 seo:

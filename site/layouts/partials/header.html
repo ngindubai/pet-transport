@@ -1,4 +1,16 @@
 {{/* ===== MAIN NAV ===== */}}
+<style>
+  .ptg-nav-search-form{display:flex;align-items:center;position:relative}
+  .ptg-nav-search-icon{position:absolute;left:12px;font-size:0.85rem;color:#5a6677;pointer-events:none}
+  .ptg-nav-search-form input[type=search]{width:150px;padding:8px 12px 8px 32px;font-size:0.9rem;
+    border:1px solid #dde2e8;border-radius:20px;outline:none;background:#f8f9fa;transition:width .2s,border-color .2s}
+  .ptg-nav-search-form input[type=search]:focus{width:200px;border-color:#2a9d6e;background:#fff}
+  @media (max-width:1199px){
+    .ptg-nav-search{margin:10px 0 0}
+    .ptg-nav-search-form input[type=search]{width:100%}
+    .ptg-nav-search-form input[type=search]:focus{width:100%}
+  }
+</style>
 <nav id="main-nav" class="navbar-expand-xl fixed-top">
     <div class="navbar container-fluid">
         <div class="container">
@@ -271,6 +283,14 @@
                                 </div>
                             </div>
                         </div>
+                    </li>
+
+                    {{/* Site search */}}
+                    <li class="nav-item ms-xl-3 ptg-nav-search">
+                        <form class="ptg-nav-search-form" role="search" action="/search/" method="get">
+                            <i class="fas fa-search ptg-nav-search-icon" aria-hidden="true"></i>
+                            <input type="search" name="q" aria-label="Search the site" placeholder="Search" autocomplete="off">
+                        </form>
                     </li>
 
                     {{/* CTA */}}

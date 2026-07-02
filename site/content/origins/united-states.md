@@ -3,7 +3,7 @@ title: "Pet Export Guide: Shipping from United States"
 description: "Exporting your pet from the United States: USDA APHIS health certificate requirements, airline options, and routes from the USA to destinations worldwide."
 type: "origins"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 country_name: "United States"
 country_code: "US"
 overview: |

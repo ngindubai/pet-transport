@@ -3,7 +3,7 @@ title: "Vietnam Pet Export Guide"
 description: "Complete guide to exporting your pet from Vietnam."
 type: "origins"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 country_name: "Vietnam"
 country_code: "VN"
 overview: |

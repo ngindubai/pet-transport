@@ -2,7 +2,7 @@
 title: "Travelling Internationally with a"
 description: "Planning international travel with a Dalmatian? This guide covers airline policies, breed restrictions, health checks and crate sizing for this large, energetic breed."
 date: "2025-07-09"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/travelling-with-a-dalmatian-internationally/"
 tags: ["dalmatian", "breed guide", "dog travel", "international pet travel"]

@@ -3,7 +3,7 @@ title: "What to Do If Your Pet Is Refused Entry at the Border"
 description: "If your pet is refused entry at the destination country, quick action matters. Here is what typically happens and what you should do to minimise the impact."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "what-to-do-if-your-pet-is-refused-entry"
 url: "/blog/what-to-do-if-your-pet-is-refused-entry/"
 seo:

@@ -4,7 +4,7 @@ title: "Pet Transport from New Zealand to Australia | Trans-Tasman Pet Move Guid
 description: "Moving your pet from New Zealand to Australia: the simplest international corridor. No titre test, no quarantine, DAFF import permit, and Air New Zealand options."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "new-zealand-to-australia"
 origin_name: "New Zealand"
 destination_name: "Australia"

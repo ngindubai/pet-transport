@@ -1,0 +1,46 @@
+{{/*
+  Partial: route-quick-answer.html
+  A short, answer-first summary for the top of a route page (A4).
+  Built only from existing route data: preparation time, quarantine, titre test.
+  No invented figures, no prices. Aimed at featured snippets and AI Overviews.
+
+  YMYL safety: the quarantine and titre fields are free-text and inconsistent,
+  so the logic below only makes a definite statement when the wording is
+  unambiguous (a day count, a clear "No", a clear "Not required"). For anything
+  conditional or ambiguous it stays silent and lets the detailed tables answer.
+*/}}
+{{ $rd := .Params.route_data }}
+{{ $weeks := "" }}{{ with $rd.estimated_timeline_weeks }}{{ $weeks = . }}{{ end }}
+{{ $titreRaw := "" }}{{ with $rd.destination.import_requirements.titre_test }}{{ $titreRaw = . }}{{ end }}
+{{ $q := "" }}{{ with $rd.destination.import_requirements.quarantine }}{{ $q = . }}{{ end }}
+
+{{/* Quarantine sentence: day count wins; then clear No; then clear Mandatory/Required; else silent. */}}
+{{ $quar := "" }}
+{{ if $q }}
+  {{/* Check a clear "No/Not/None" first: many such strings mention a penalty day
+       count for non-compliant arrivals, which must not be read as routine quarantine. */}}
+  {{ if or (hasPrefix $q "No") (hasPrefix $q "Not") (hasPrefix $q "None") }}{{ $quar = "There is no routine quarantine on arrival for compliant pets." }}
+  {{ else }}
+    {{ $days := findRE "[0-9]+[ -]day" $q 1 }}
+    {{ if $days }}{{ $quar = printf "Expect %s days of quarantine on arrival." (index $days 0 | replaceRE "[ -]day" "") }}
+    {{ else if or (hasPrefix $q "Mandatory") (hasPrefix $q "Required") }}{{ $quar = "Quarantine is required on arrival, so check the requirements below." }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* Titre sentence: "Not required" -> no; "Required for/if" -> conditional; plain "Required" -> yes; else silent. */}}
+{{ $titre := "" }}
+{{ if $titreRaw }}
+  {{ if hasPrefix $titreRaw "Not required" }}{{ $titre = "A rabies titre test is not required." }}
+  {{ else if or (hasPrefix $titreRaw "Required for") (hasPrefix $titreRaw "Required if") }}{{ $titre = "A rabies titre test may be required depending on your pet's origin, so check the requirements below." }}
+  {{ else if hasPrefix $titreRaw "Required" }}{{ $titre = "A rabies titre test is required, which adds a fixed waiting period, so start early." }}
+  {{ end }}
+{{ end }}
+
+<div class="ptg-quick-answer" style="background:#f0f4f8;border:1px solid #dde2e8;border-left:4px solid #1a6b4a;border-radius:8px;padding:14px 18px;margin:0 0 1.4rem;font-size:0.95rem;line-height:1.55;">
+  <strong>In short:</strong>
+  Preparing to move a pet from {{ .Params.origin_name }} to {{ .Params.destination_name }}
+  {{ with $weeks }}typically takes around {{ . }} weeks{{ else }}usually takes several months{{ end }}.
+  {{ with $quar }} {{ . }}{{ end }}
+  {{ with $titre }} {{ . }}{{ end }}
+</div>

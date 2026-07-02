@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Malta to United Arab Emirates | PetTransportGl
 description: "Pet relocation from Malta to United Arab Emirates: United Arab Emirates import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "malta-to-united-arab-emirates"
 origin_name: "Malta"
 destination_name: "United Arab Emirates"

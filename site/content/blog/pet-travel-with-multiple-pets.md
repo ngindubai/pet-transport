@@ -3,7 +3,7 @@ title: "Moving Internationally with Multiple Pets: Practical Guide for 2026"
 description: "A guide to moving more than one pet internationally in 2026: documentation for each animal, airline limits, quarantine for multiple pets, and how to manage the logistics."
 date: "2026-05-04"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "pet-travel-with-multiple-pets"
 url: "/blog/pet-travel-with-multiple-pets/"
 seo:

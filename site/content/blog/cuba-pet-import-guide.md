@@ -2,7 +2,7 @@
 title: "Importing a Pet to Cuba: Rules"
 description: "A practical guide to importing a cat or dog to Cuba. Covers the health certificate and government endorsement process, vaccination requirements, Havana airport procedures and what to expect."
 date: "2025-08-20"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/cuba-pet-import-guide/"
 tags: ["cuba", "caribbean", "country guide", "pet import"]

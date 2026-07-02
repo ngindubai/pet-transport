@@ -3,7 +3,7 @@ title: "Emirates Pet Transport: No Cabin Pets, Cargo Options, and Dubai Connecti
 description: "Emirates does not allow pets in the cabin. All pets travel as cargo via Emirates SkyCargo. Here's how it works, what it costs, and the Dubai transit consideration."
 date: "2026-04-10"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "emirates-pet-transport-guide"
 url: "/blog/emirates-pet-transport-guide/"
 seo:

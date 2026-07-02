@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Australia to Czech Republic | PetTransportGlob
 description: "Pet relocation from Australia to Czech Republic: Czech Republic import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "australia-to-czech-republic"
 origin_name: "Australia"
 destination_name: "Czech Republic"

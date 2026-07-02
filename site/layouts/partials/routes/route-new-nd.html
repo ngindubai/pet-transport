@@ -13,9 +13,10 @@
         <div class="breadcrumb r"><a href="/">Home</a><span class="bc-sep">/</span><a href="/pet-transport/routes/">Routes</a><span class="bc-sep">/</span><span>{{ $o }} to {{ $d }}</span></div>
         <div class="intro-route r d1"><div class="intro-flag">{{ $rd.origin.code }}</div><div class="rpath"></div><div class="intro-flag">{{ $rd.destination.code }}</div></div>
         <h1 class="intro-h1 r d2">{{ .Params.content.h1 | default (printf "Pet Transport %s to %s" $o $d) }}</h1>
-        {{ with .Params.content.overview }}<p class="intro-sub r d3">{{ . | plainify | truncate 260 }}</p>{{ end }}
+        <p class="intro-sub r d3">{{ (partial "routes/route-overview.html" .) | plainify | truncate 260 }}</p>
       </div>
 
+      {{ partial "routes/route-quick-answer.html" . }}
       {{/* PROCESS */}}
       {{ with $rd.timeline_steps }}
       <div class="lsec r">
@@ -81,7 +82,7 @@
       {{ end }}
 
       {{/* LONG-FORM CONTENT */}}
-      {{ with .Params.content.sections }}
+      {{ with (partial "routes/route-sections.html" .) }}
       <div class="lsec r">{{ range . }}{{ with .heading }}<h2 class="lsec-h">{{ . }}</h2>{{ end }}<div class="lsec-p">{{ .body | markdownify }}</div>{{ end }}</div>
       {{ end }}
 
@@ -113,7 +114,7 @@
       <div class="rp-facts">
         <div class="rp-facts-inner">
           {{ with $rd.estimated_timeline_weeks }}<div class="rpf"><span class="rpf-l">Lead time</span><span class="rpf-v">{{ . }} weeks</span></div>{{ end }}
-          <div class="rpf"><span class="rpf-l">Quarantine</span><span class="rpf-v">{{ if .Params.quarantine_required }}{{ with .Params.quarantine_days }}{{ . }} days{{ else }}Yes{{ end }}{{ else }}No{{ end }}</span></div>
+          <div class="rpf"><span class="rpf-l">Quarantine</span><span class="rpf-v">{{ partial "routes/quarantine-short.html" . }}</span></div>
           {{ with $rd.route_complexity }}<div class="rpf"><span class="rpf-l">Complexity</span><span class="rpf-v"><span class="rpf-badge rpfb-w">{{ . | replaceRE "_" " " | title }}</span></span></div>{{ end }}
           {{ with $rd.airlines }}<div class="rpf"><span class="rpf-l">Airlines</span><span class="rpf-v">{{ len . }}</span></div>{{ end }}
           <div class="rpf"><span class="rpf-l">Service</span><span class="rpf-v"><span class="rpf-badge rpfb-ok">Door to door</span></span></div>

@@ -3,7 +3,7 @@ title: "The 10 Most Common Pet Import Mistakes (and How to Avoid Them)"
 description: "From wrong microchip timing to expired health certificates, these are the mistakes that ground pets at airports. Here's what to watch for on every international route."
 date: "2026-04-21"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "James Osei, Pet Transport Planning Specialist, PetTransportGlobal"
 slug: "top-10-pet-import-mistakes"
 url: "/blog/top-10-pet-import-mistakes/"
 seo:

@@ -4,7 +4,7 @@ description: "Moving your pet from Portugal to France: EU pet passport accepted,
 type: "routes"
 layout: "single"
 template_variant: "D"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "portugal-to-france"
 origin_name: "Portugal"
 destination_name: "France"

@@ -21,7 +21,7 @@ buildFuture = false
 
 # Outputs
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "JSON"]  # JSON = client-side search index at /index.json
   section = ["HTML", "RSS"]
   page = ["HTML"]
 

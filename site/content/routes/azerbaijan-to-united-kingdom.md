@@ -4,7 +4,7 @@ title: "Pet Transport Azerbaijan to United Kingdom | UK Entry Requirements & Air
 description: "Moving your pet from Azerbaijan to the UK? Titre test protocol, SSNAS health cert, Emirates and Azerbaijan Airlines cargo options, and UK APHA requirements."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "azerbaijan-to-united-kingdom"
 origin_name: "Azerbaijan"
 destination_name: "United Kingdom"

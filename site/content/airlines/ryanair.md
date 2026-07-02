@@ -3,7 +3,7 @@ title: "Ryanair Pet Policy: Does Ryanair Accept Pets?"
 description: "Ryanair does not accept pets on its flights, except registered assistance animals. Here is the full policy, why Ryanair does not carry animals, and which carriers to use for the same routes."
 date: 2026-05-09
 type: airlines
-author: "The PetTransportGlobal Team"
+author: "PetTransportGlobal Editorial Team"
 slug: "ryanair"
 url: "/pet-transport/airlines/ryanair/"
 seo:

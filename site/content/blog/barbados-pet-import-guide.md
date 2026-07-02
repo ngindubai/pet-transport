@@ -2,7 +2,7 @@
 title: "Importing a Pet to Barbados"
 description: "Everything you need to bring your cat or dog to Barbados. Import permits, USDA or CFIA endorsed health certificates, approved breeds and quarantine rules explained."
 date: "2025-07-02"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/barbados-pet-import-guide/"
 tags: ["barbados", "caribbean", "country guide", "pet import"]

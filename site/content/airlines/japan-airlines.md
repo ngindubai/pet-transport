@@ -2,7 +2,7 @@
 title: "Japan Airlines Pet Policy: Cargo, Cabin Rules and Japan Import Requirements"
 description: "Japan Airlines pet transport policy for cats and dogs. Covers cargo hold acceptance, cabin pet rules on domestic routes, breed restrictions, crate requirements and key Japan AQS quarantine rules."
 date: "2025-09-10"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "airlines"
 url: "/pet-transport/airlines/japan-airlines/"
 airline_name: "Japan Airlines"

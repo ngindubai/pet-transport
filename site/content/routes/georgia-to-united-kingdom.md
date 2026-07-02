@@ -4,7 +4,7 @@ title: "Pet Transport Georgia to United Kingdom | UK APHA Requirements & Airline
 description: "Relocating your pet from Georgia to the UK? Titre test, Georgian Airways and Turkish Airlines cargo options, UK APHA documentation, and full timeline guide."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "georgia-to-united-kingdom"
 origin_name: "Georgia"
 destination_name: "United Kingdom"

@@ -3,7 +3,7 @@ title: "Flying Internationally with a Husky: Cold-Weather Breed Challenges and W
 description: "A guide to international pet transport with a Siberian Husky or Alaskan Malamute: size considerations, summer heat risks, crate sizing, and airline acceptance."
 date: "2026-05-10"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "travelling-with-a-husky-by-air"
 url: "/blog/travelling-with-a-husky-by-air/"
 seo:

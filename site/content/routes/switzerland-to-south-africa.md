@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Switzerland to South Africa | PetTransportGlob
 description: "Pet relocation from Switzerland to South Africa: South Africa import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "switzerland-to-south-africa"
 origin_name: "Switzerland"
 destination_name: "South Africa"

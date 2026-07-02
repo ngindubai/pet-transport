@@ -5,7 +5,7 @@ description: "Pets from India to Portugal require FAVN titre test, 90-day wait, 
 date: "2026-06-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb - Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "india-to-portugal"
 origin_name: "India"
 destination_name: "Portugal"

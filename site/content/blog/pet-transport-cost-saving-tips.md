@@ -2,7 +2,7 @@
 title: "10 Ways to Reduce the Cost of"
 description: "International pet transport is expensive -- but there are real ways to cut the bill without cutting corners on welfare or compliance. This guide shares practical cost-saving strategies."
 date: "2025-08-06"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/pet-transport-cost-saving-tips/"
 tags: ["cost saving", "pet transport costs", "budget", "practical guide"]

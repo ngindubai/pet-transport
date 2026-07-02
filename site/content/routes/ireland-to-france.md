@@ -4,7 +4,7 @@ description: "Shipping your pet from Ireland to France: EU pet passport, dog tap
 type: "routes"
 layout: "single"
 template_variant: "E"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "ireland-to-france"
 origin_name: "Ireland"
 destination_name: "France"

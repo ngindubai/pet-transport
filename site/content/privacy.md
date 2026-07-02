@@ -5,7 +5,6 @@ type: "page"
 layout: "single"
 slug: "privacy"
 url: "/privacy/"
-author: "Gareth, Founder, PetTransportGlobal"
 ---
 
 # Privacy Policy

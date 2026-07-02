@@ -11,6 +11,15 @@
   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
   <span>Regulations verified <time datetime="{{ $isoDate }}">{{ $displayDate }}</time></span>
 </div>
+{{/* Visible author byline. Person schema for routes is emitted centrally in routes/single.html. */}}
+{{ with .Params.author }}
+  {{ $parts := split (replace . " - " ", ") ", " }}
+  {{ $name := index $parts 0 }}
+  {{ $jobTitle := "" }}{{ if gt (len $parts) 1 }}{{ $jobTitle = index $parts 1 }}{{ end }}
+  <div class="ptg-author-byline" style="font-size:0.82em;color:#5a6677;margin:-0.6rem 0 1.2rem;">
+    Written and reviewed by <strong>{{ $name }}</strong>{{ with $jobTitle }}, {{ . }}{{ end }}
+  </div>
+{{ end }}
 <script type="application/ld+json">
 { "@context": "https://schema.org", "@type": "WebPage", "dateModified": "{{ $isoDate }}" }
 </script>

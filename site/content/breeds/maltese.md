@@ -3,7 +3,7 @@ title: "Flying with a Maltese | Cabin Pet Rules & International Guides"
 description: "Maltese owners' guide to international air travel. Which airlines allow Maltese in the cabin, weight limits, and the paperwork required for each region."
 type: "breeds"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "maltese"
 breed_name: "Maltese"
 brachycephalic: false

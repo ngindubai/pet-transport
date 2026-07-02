@@ -3,7 +3,7 @@ title: "Flying with a Cane Corso | Airline Restrictions & Advice"
 description: "Which airlines accept Cane Corso as cargo or cabin? Seasonal embargoes, breed bans, and what you need before booking your flat-faced dog."
 type: "breeds"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "cane-corso"
 breed_name: "Cane Corso"
 brachycephalic: true

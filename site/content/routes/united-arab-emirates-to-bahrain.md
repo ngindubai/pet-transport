@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from United Arab Emirates to Bahrain | PetTransport
 description: "How to ship your dog or cat from United Arab Emirates to Bahrain. Bahrain import rules, vaccinations, permits, and airline options explained."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "united-arab-emirates-to-bahrain"
 origin_name: "United Arab Emirates"
 destination_name: "Bahrain"

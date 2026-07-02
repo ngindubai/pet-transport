@@ -3,7 +3,7 @@ title: "Bringing a Pet to Norway: EEA Rules, Tapeworm Treatment and What to Expe
 description: "Full guide to bringing your dog or cat to Norway in 2026: EEA pet passport, titre test, tapeworm treatment for dogs, and Norwegian Food Safety Authority requirements."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "norway-pet-import-guide"
 url: "/blog/norway-pet-import-guide/"
 seo:
