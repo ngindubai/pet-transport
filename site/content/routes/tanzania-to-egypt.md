@@ -13,8 +13,8 @@ route_data:
     code: "TZ"
     country: "Tanzania"
     export_requirements:
-      export_permit: "{'required': True, 'issued_by': 'TVLA'}"
-      health_certificate: "{'required': True}"
+      export_permit: "Required. Issued by TVLA."
+      health_certificate: "Required"
   destination:
     code: "EG"
     country: "Egypt"

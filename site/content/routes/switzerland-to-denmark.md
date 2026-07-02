@@ -13,7 +13,7 @@ route_data:
     code: "CH"
     country: "Switzerland"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "Swiss pet passport or FSVO-format certificate accepted by Denmark under bilateral agreement. EU-aligned process."
   destination:
     code: "DK"

@@ -13,7 +13,7 @@ route_data:
     code: "GR"
     country: "Greece"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "Official veterinary health certificate required. Issued by an authorised official veterinarian under the Greek Ministry of Rural Development and Food. Must be endorsed or accepted by the Thai embassy or consulate in Greece before travel."
   destination:
     code: "TH"

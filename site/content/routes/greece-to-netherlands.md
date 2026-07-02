@@ -13,7 +13,7 @@ route_data:
     code: "GR"
     country: "Greece"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "EU Pet Passport serves as the travel document for intra-EU movement. Issued by an authorised vet under the Greek Ministry of Rural Development and Food."
   destination:
     code: "NL"

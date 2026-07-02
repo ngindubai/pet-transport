@@ -13,7 +13,7 @@ route_data:
     code: "NL"
     country: "Netherlands"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "EU pet passport accepted for travel to Switzerland. No separate endorsement required."
   destination:
     code: "CH"

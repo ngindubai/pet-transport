@@ -14,7 +14,7 @@ route_data:
     country: "Sri Lanka"
     export_requirements:
       export_permit: "Export permit from DAPH."
-      health_certificate: "{'required': True, 'issued_by': 'DAPH-authorised official vet'}"
+      health_certificate: "Required. Issued by DAPH-authorised official vet."
   destination:
     code: "BH"
     country: "Bahrain"

@@ -13,7 +13,7 @@ route_data:
     code: "DO"
     country: "Dominican Republic"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "Official veterinary health certificate issued by an official veterinarian in the Dominican Republic. Must meet APHA requirements for UK import."
   destination:
     code: "GB"

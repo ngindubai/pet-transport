@@ -13,7 +13,7 @@ route_data:
     code: "NL"
     country: "Netherlands"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "Official health certificate issued by an NVWA-authorised official veterinarian. Must be endorsed by the Royal Thai Embassy in The Hague before departure."
   destination:
     code: "TH"

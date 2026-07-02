@@ -13,8 +13,8 @@ route_data:
     code: "CR"
     country: "Costa Rica"
     export_requirements:
-      export_permit: "{'required': True, 'issued_by': 'SENASA Costa Rica'}"
-      health_certificate: "{'required': True}"
+      export_permit: "Required. Issued by SENASA Costa Rica."
+      health_certificate: "Required"
   destination:
     code: "BG"
     country: "Bulgaria"

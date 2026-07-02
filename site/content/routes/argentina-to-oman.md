@@ -13,7 +13,7 @@ route_data:
     code: "AR"
     country: "Argentina"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "SENASA issues export health certificates. Allow 1-2 weeks."
   destination:
     code: "OM"

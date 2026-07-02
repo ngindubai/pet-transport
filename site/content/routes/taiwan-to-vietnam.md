@@ -14,7 +14,7 @@ route_data:
     country: "Taiwan"
     export_requirements:
       export_permit: "No export permit for pets."
-      health_certificate: "{'required': True, 'issued_by': 'BAPHIQ-authorised official vet'}"
+      health_certificate: "Required. Issued by BAPHIQ-authorised official vet."
   destination:
     code: "VN"
     country: "Vietnam"

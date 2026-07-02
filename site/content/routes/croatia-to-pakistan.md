@@ -13,8 +13,8 @@ route_data:
     code: "HR"
     country: "Croatia"
     export_requirements:
-      export_permit: "{'required': False}"
-      health_certificate: "{'required': True}"
+      export_permit: "Not required"
+      health_certificate: "Required"
   destination:
     code: "PK"
     country: "Pakistan"

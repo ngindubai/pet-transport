@@ -13,7 +13,7 @@ route_data:
     code: "JP"
     country: "Japan"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "MAFF-format veterinary health certificate issued by an official veterinarian in Japan and endorsed by the Ministry of Agriculture, Forestry and Fisheries (MAFF) or the relevant prefectural AQS station."
   destination:
     code: "PH"

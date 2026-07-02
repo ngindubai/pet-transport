@@ -13,8 +13,8 @@ route_data:
     code: "RO"
     country: "Romania"
     export_requirements:
-      export_permit: "{'required': False}"
-      health_certificate: "{'required': True, 'name': 'EU Pet Passport or AHC', 'issued_by': 'ANSVSA-authorised official vet'}"
+      export_permit: "Not required"
+      health_certificate: "EU Pet Passport or AHC. Issued by ANSVSA-authorised official vet."
   destination:
     code: "AU"
     country: "Australia"

@@ -13,7 +13,7 @@ route_data:
     code: "DK"
     country: "Denmark"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "Official EU-format veterinary health certificate issued by a DVFA-authorised veterinarian and endorsed by the Danish Veterinary and Food Administration (DVFA). Allow 1-2 weeks."
   destination:
     code: "KR"

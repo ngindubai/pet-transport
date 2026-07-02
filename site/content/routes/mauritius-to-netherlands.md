@@ -13,7 +13,7 @@ route_data:
     code: "MU"
     country: "Mauritius"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "Veterinary Services Division health certificate."
   destination:
     code: "NL"

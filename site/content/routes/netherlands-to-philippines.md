@@ -13,7 +13,7 @@ route_data:
     code: "NL"
     country: "Netherlands"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "Official veterinary health certificate required. Issued by an NVWA (Netherlands Food and Consumer Product Safety Authority) authorised veterinarian and endorsed by NVWA."
   destination:
     code: "PH"

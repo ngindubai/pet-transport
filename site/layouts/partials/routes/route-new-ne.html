@@ -44,6 +44,7 @@
   <div class="page-body">
     <div class="main-col">
       {{ partial "routes/route-quick-answer.html" . }}
+      {{ partial "verified-date.html" . }}
 
       {{/* PROCESS timeline */}}
       {{ with $rd.timeline_steps }}

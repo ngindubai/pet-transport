@@ -13,8 +13,8 @@ route_data:
     code: "GH"
     country: "Ghana"
     export_requirements:
-      export_permit: "{'required': True, 'issued_by': 'Veterinary Services Directorate'}"
-      health_certificate: "{'required': True}"
+      export_permit: "Required. Issued by Veterinary Services Directorate."
+      health_certificate: "Required"
   destination:
     code: "PL"
     country: "Poland"

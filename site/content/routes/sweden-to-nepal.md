@@ -13,8 +13,8 @@ route_data:
     code: "SE"
     country: "Sweden"
     export_requirements:
-      export_permit: "{'required': False}"
-      health_certificate: "{'required': True, 'name': 'EU Pet Passport or AHC', 'issued_by': 'Official veterinarian'}"
+      export_permit: "Not required"
+      health_certificate: "EU Pet Passport or AHC. Issued by Official veterinarian."
   destination:
     code: "NP"
     country: "Nepal"

@@ -13,7 +13,7 @@ route_data:
     code: "PH"
     country: "Philippines"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "Official veterinary health certificate issued by a BAI-accredited veterinarian and endorsed by the Bureau of Animal Industry (BAI). Must be in EU-compatible format for entry into Denmark."
   destination:
     code: "DK"

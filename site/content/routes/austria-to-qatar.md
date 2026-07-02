@@ -13,8 +13,8 @@ route_data:
     code: "AT"
     country: "Austria"
     export_requirements:
-      export_permit: "{'required': False}"
-      health_certificate: "{'required': True, 'name': 'EU Pet Passport or AHC', 'issued_by': 'Official veterinarian'}"
+      export_permit: "Not required"
+      health_certificate: "EU Pet Passport or AHC. Issued by Official veterinarian."
   destination:
     code: "QA"
     country: "Qatar"

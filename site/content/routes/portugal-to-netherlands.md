@@ -13,7 +13,7 @@ route_data:
     code: "PT"
     country: "Portugal"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "EU Pet Passport only. Issued by a DGAV-authorised veterinarian in Portugal."
   destination:
     code: "NL"

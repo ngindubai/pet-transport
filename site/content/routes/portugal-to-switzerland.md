@@ -13,7 +13,7 @@ route_data:
     code: "PT"
     country: "Portugal"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "EU pet passport accepted. No additional export health certificate required for Switzerland."
   destination:
     code: "CH"

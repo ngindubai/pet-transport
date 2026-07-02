@@ -14,7 +14,7 @@ route_data:
     country: "Canada"
     export_requirements:
       export_permit: "No CFIA export permit required for personal pet exports. Some destination countries may require CFIA endorsement of health certificate."
-      health_certificate: "{'required': 'If required by destination country', 'issued_by': 'CFIA District Veterinarian or accredited veterinarian (endorsed by CFIA if needed)', 'process': 'Visit accredited vet for examination, vet prepares health certificate, submit to CFIA for endorsement if destination requires government endorsement', 'timing': 'Typically within 10 days of travel (or as specified by destination country)'}"
+      health_certificate: "Required. Issued by CFIA District Veterinarian or accredited veterinarian (endorsed by CFIA if needed)."
   destination:
     code: "NL"
     country: "Netherlands"

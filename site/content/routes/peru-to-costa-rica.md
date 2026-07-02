@@ -13,7 +13,7 @@ route_data:
     code: "PE"
     country: "Peru"
     export_requirements:
-      export_permit: "{'required': True, 'issued_by': 'SENASA Peru'}"
+      export_permit: "Required. Issued by SENASA Peru."
       health_certificate: "SENASA-endorsed health certificate required for export."
   destination:
     code: "CR"

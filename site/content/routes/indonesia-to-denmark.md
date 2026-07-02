@@ -13,7 +13,7 @@ route_data:
     code: "ID"
     country: "Indonesia"
     export_requirements:
-      export_permit: "{'required': True}"
+      export_permit: "Required"
       health_certificate: "Official veterinary health certificate issued by an Indonesian government veterinarian and endorsed by the Agency for Agricultural Quarantine (BARANTAN, now under BKIPM). Required for all animal exports. Allow 2-4 weeks."
   destination:
     code: "DK"

@@ -13,7 +13,7 @@ route_data:
     code: "FI"
     country: "Finland"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "EU pet passport valid for EU movement. AHC for non-EU export."
   destination:
     code: "DE"

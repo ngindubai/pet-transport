@@ -13,8 +13,8 @@ route_data:
     code: "ZW"
     country: "Zimbabwe"
     export_requirements:
-      export_permit: "{'required': True, 'issued_by': 'Department of Livestock and Veterinary Services'}"
-      health_certificate: "{'required': True}"
+      export_permit: "Required. Issued by Department of Livestock and Veterinary Services."
+      health_certificate: "Required"
   destination:
     code: "LU"
     country: "Luxembourg"

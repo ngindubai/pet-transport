@@ -13,7 +13,7 @@ route_data:
     code: "MA"
     country: "Morocco"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "ONSSA-endorsed health certificate."
   destination:
     code: "GR"

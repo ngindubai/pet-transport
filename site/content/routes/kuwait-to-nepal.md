@@ -13,8 +13,8 @@ route_data:
     code: "KW"
     country: "Kuwait"
     export_requirements:
-      export_permit: "{'required': True}"
-      health_certificate: "{'required': True, 'issued_by': 'PAM-authorised vet'}"
+      export_permit: "Required"
+      health_certificate: "Required. Issued by PAM-authorised vet."
   destination:
     code: "NP"
     country: "Nepal"

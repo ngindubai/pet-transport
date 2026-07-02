@@ -13,8 +13,8 @@ route_data:
     code: "CY"
     country: "Cyprus"
     export_requirements:
-      export_permit: "{'required': False}"
-      health_certificate: "{'required': True, 'name': 'EU Pet Passport or AHC', 'issued_by': 'Department of Veterinary Services-authorised vet'}"
+      export_permit: "Not required"
+      health_certificate: "EU Pet Passport or AHC. Issued by Department of Veterinary Services-authorised vet."
   destination:
     code: "AT"
     country: "Austria"

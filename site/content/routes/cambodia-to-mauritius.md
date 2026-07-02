@@ -13,8 +13,8 @@ route_data:
     code: "KH"
     country: "Cambodia"
     export_requirements:
-      export_permit: "{'required': True, 'issued_by': 'GDAHP'}"
-      health_certificate: "{'required': True}"
+      export_permit: "Required. Issued by GDAHP."
+      health_certificate: "Required"
   destination:
     code: "MU"
     country: "Mauritius"
