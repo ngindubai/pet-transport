@@ -14,7 +14,7 @@ route_data:
     country: "Qatar"
     export_requirements:
       export_permit: "Export permit from MECC."
-      health_certificate: "{'required': True, 'issued_by': 'MECC-authorised official vet'}"
+      health_certificate: "Required. Issued by MECC-authorised official vet."
   destination:
     code: "BG"
     country: "Bulgaria"

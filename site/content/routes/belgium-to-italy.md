@@ -13,8 +13,8 @@ route_data:
     code: "BE"
     country: "Belgium"
     export_requirements:
-      export_permit: "{'required': False}"
-      health_certificate: "{'required': True, 'name': 'EU Pet Passport or AHC', 'issued_by': 'FASFC-authorised vet'}"
+      export_permit: "Not required"
+      health_certificate: "EU Pet Passport or AHC. Issued by FASFC-authorised vet."
   destination:
     code: "IT"
     country: "Italy"

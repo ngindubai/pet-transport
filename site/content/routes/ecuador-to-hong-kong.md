@@ -13,8 +13,8 @@ route_data:
     code: "EC"
     country: "Ecuador"
     export_requirements:
-      export_permit: "{'required': True, 'issued_by': 'AGROCALIDAD'}"
-      health_certificate: "{'required': True}"
+      export_permit: "Required. Issued by AGROCALIDAD."
+      health_certificate: "Required"
   destination:
     code: "HK"
     country: "Hong Kong"

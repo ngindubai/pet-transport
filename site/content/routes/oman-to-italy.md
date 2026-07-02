@@ -13,7 +13,7 @@ route_data:
     code: "OM"
     country: "Oman"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "Health certificate from MAFWR-registered vet for export."
   destination:
     code: "IT"

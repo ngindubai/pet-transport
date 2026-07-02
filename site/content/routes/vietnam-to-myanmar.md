@@ -14,7 +14,7 @@ route_data:
     country: "Vietnam"
     export_requirements:
       export_permit: "No export permit for pet dogs and cats."
-      health_certificate: "{'required': True, 'issued_by': 'MARD-authorised official vet'}"
+      health_certificate: "Required. Issued by MARD-authorised official vet."
   destination:
     code: "MM"
     country: "Myanmar"

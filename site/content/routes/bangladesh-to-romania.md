@@ -13,8 +13,8 @@ route_data:
     code: "BD"
     country: "Bangladesh"
     export_requirements:
-      export_permit: "{'required': True, 'issued_by': 'DLS'}"
-      health_certificate: "{'required': True}"
+      export_permit: "Required. Issued by DLS."
+      health_certificate: "Required"
   destination:
     code: "RO"
     country: "Romania"

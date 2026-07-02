@@ -13,8 +13,8 @@ route_data:
     code: "MT"
     country: "Malta"
     export_requirements:
-      export_permit: "{'required': False}"
-      health_certificate: "{'required': True, 'name': 'EU Pet Passport or AHC', 'issued_by': 'Veterinary Regulation Directorate-authorised vet'}"
+      export_permit: "Not required"
+      health_certificate: "EU Pet Passport or AHC. Issued by Veterinary Regulation Directorate-authorised vet."
   destination:
     code: "TH"
     country: "Thailand"

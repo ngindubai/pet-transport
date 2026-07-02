@@ -13,7 +13,7 @@ route_data:
     code: "PT"
     country: "Portugal"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "Official health certificate required for export to Japan. Issued by a Portuguese DGAV (Directorate-General of Food and Veterinary Affairs) authorised veterinarian and endorsed by DGAV."
   destination:
     code: "JP"

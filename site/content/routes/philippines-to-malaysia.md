@@ -13,7 +13,7 @@ route_data:
     code: "PH"
     country: "Philippines"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "Official veterinary health certificate issued by a BAI-authorised veterinarian and endorsed by the Bureau of Animal Industry (BAI). Must be issued within 14 days of travel."
   destination:
     code: "MY"

@@ -13,8 +13,8 @@ route_data:
     code: "EG"
     country: "Egypt"
     export_requirements:
-      export_permit: "{'required': True}"
-      health_certificate: "{'required': True, 'issued_by': 'GOVS-authorised vet'}"
+      export_permit: "Required"
+      health_certificate: "Required. Issued by GOVS-authorised vet."
   destination:
     code: "ZW"
     country: "Zimbabwe"

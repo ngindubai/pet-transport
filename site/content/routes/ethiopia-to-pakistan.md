@@ -13,8 +13,8 @@ route_data:
     code: "ET"
     country: "Ethiopia"
     export_requirements:
-      export_permit: "{'required': True, 'issued_by': 'Ministry of Agriculture APHRD'}"
-      health_certificate: "{'required': True}"
+      export_permit: "Required. Issued by Ministry of Agriculture APHRD."
+      health_certificate: "Required"
   destination:
     code: "PK"
     country: "Pakistan"

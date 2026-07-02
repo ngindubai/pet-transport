@@ -13,8 +13,8 @@ route_data:
     code: "KE"
     country: "Kenya"
     export_requirements:
-      export_permit: "{'required': False}"
-      health_certificate: "{'required': True, 'issued_by': 'DVS-authorised official vet'}"
+      export_permit: "Not required"
+      health_certificate: "Required. Issued by DVS-authorised official vet."
   destination:
     code: "SK"
     country: "Slovakia"

@@ -13,7 +13,7 @@ route_data:
     code: "NL"
     country: "Netherlands"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "Official veterinary health certificate required. Issued by an NVWA-authorised official veterinarian in the Netherlands. Must be endorsed by the Indian Embassy in The Hague or Indian Consulate in Amsterdam before travel."
   destination:
     code: "IN"

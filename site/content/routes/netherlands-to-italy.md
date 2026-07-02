@@ -13,7 +13,7 @@ route_data:
     code: "NL"
     country: "Netherlands"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "EU Pet Passport suffices for intra-EU movement. Issued by an NVWA-authorised veterinarian."
   destination:
     code: "IT"

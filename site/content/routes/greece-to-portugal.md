@@ -13,7 +13,7 @@ route_data:
     code: "GR"
     country: "Greece"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "EU Pet Passport covers this movement. No separate export health certificate required for intra-EU travel."
   destination:
     code: "PT"

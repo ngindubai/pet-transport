@@ -13,7 +13,7 @@ route_data:
     code: "NO"
     country: "Norway"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "Norway follows EU health certificate formats for export."
   destination:
     code: "BG"

@@ -13,7 +13,7 @@ route_data:
     code: "CH"
     country: "Switzerland"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "Required for Japan. Issued by an FSVO-authorised veterinarian and endorsed by the cantonal veterinary office or FSVO. Must conform to MAFF-specified format."
   destination:
     code: "JP"

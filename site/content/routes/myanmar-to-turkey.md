@@ -13,8 +13,8 @@ route_data:
     code: "MM"
     country: "Myanmar"
     export_requirements:
-      export_permit: "{'required': True, 'issued_by': 'DAH'}"
-      health_certificate: "{'required': True}"
+      export_permit: "Required. Issued by DAH."
+      health_certificate: "Required"
   destination:
     code: "TR"
     country: "Turkey"

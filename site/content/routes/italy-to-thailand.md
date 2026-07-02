@@ -13,7 +13,7 @@ route_data:
     code: "IT"
     country: "Italy"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "Official veterinary health certificate required. Issued by an Italian official vet (veterinario ufficiale) under the Italian Ministry of Health. Must be endorsed by the Royal Thai Embassy before departure."
   destination:
     code: "TH"

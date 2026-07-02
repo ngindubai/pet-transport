@@ -13,8 +13,8 @@ route_data:
     code: "CZ"
     country: "Czech Republic"
     export_requirements:
-      export_permit: "{'required': False}"
-      health_certificate: "{'required': True, 'name': 'EU Pet Passport or AHC', 'issued_by': 'SVA-authorised official vet'}"
+      export_permit: "Not required"
+      health_certificate: "EU Pet Passport or AHC. Issued by SVA-authorised official vet."
   destination:
     code: "HU"
     country: "Hungary"

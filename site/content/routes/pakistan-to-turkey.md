@@ -13,7 +13,7 @@ route_data:
     code: "PK"
     country: "Pakistan"
     export_requirements:
-      export_permit: "{'required': True, 'issued_by': 'Animal Quarantine Department'}"
+      export_permit: "Required. Issued by Animal Quarantine Department."
       health_certificate: "Health certificate endorsed by national authority required for export."
   destination:
     code: "TR"

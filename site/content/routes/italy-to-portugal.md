@@ -13,7 +13,7 @@ route_data:
     code: "IT"
     country: "Italy"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "EU Pet Passport covers intra-EU movement. Issued by an Italian Ministry of Health authorised vet."
   destination:
     code: "PT"

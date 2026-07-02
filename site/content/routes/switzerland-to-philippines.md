@@ -13,7 +13,7 @@ route_data:
     code: "CH"
     country: "Switzerland"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "Official health certificate required. Issued by FSVO-authorised veterinarian and endorsed by cantonal veterinary office or FSVO."
   destination:
     code: "PH"

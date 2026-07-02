@@ -13,7 +13,7 @@ route_data:
     code: "IT"
     country: "Italy"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "Official veterinary health certificate required. Issued by an official vet (veterinario ufficiale) authorised by the Italian Ministry of Health. Must meet India's import requirements."
   destination:
     code: "IN"

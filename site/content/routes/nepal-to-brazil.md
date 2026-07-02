@@ -13,8 +13,8 @@ route_data:
     code: "NP"
     country: "Nepal"
     export_requirements:
-      export_permit: "{'required': True, 'issued_by': 'DoLS'}"
-      health_certificate: "{'required': True}"
+      export_permit: "Required. Issued by DoLS."
+      health_certificate: "Required"
   destination:
     code: "BR"
     country: "Brazil"

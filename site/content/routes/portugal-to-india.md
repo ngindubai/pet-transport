@@ -13,7 +13,7 @@ route_data:
     code: "PT"
     country: "Portugal"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "Official veterinary health certificate issued by a DGAV-authorised official veterinarian in Portugal. Must be endorsed by the Embassy of India in Lisbon before departure."
   destination:
     code: "IN"

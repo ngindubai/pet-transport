@@ -13,7 +13,7 @@ route_data:
     code: "BH"
     country: "Bahrain"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "Health certificate from registered vet, endorsed by Animal Wealth Directorate."
   destination:
     code: "IN"

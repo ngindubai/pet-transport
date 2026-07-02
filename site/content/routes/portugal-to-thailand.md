@@ -13,7 +13,7 @@ route_data:
     code: "PT"
     country: "Portugal"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "Official health certificate from DGAV-authorised official veterinarian in Portugal. Must be endorsed by the Royal Thai Embassy in Lisbon before departure."
   destination:
     code: "TH"

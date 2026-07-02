@@ -13,7 +13,7 @@ route_data:
     code: "PH"
     country: "Philippines"
     export_requirements:
-      export_permit: "{'required': True}"
+      export_permit: "Required"
       health_certificate: "Official veterinary health certificate issued by a Bureau of Animal Industry (BAI) registered veterinarian and endorsed by the BAI. Required for all pet exports. Allow 2-3 weeks for BAI endorsement."
   destination:
     code: "CH"

@@ -13,7 +13,7 @@ route_data:
     code: "PT"
     country: "Portugal"
     export_requirements:
-      export_permit: "{'required': False}"
+      export_permit: "Not required"
       health_certificate: "Official health certificate required. Issued by DGAV-authorised veterinarian and endorsed by DGAV Portugal."
   destination:
     code: "PH"

@@ -13,8 +13,8 @@ route_data:
     code: "CL"
     country: "Chile"
     export_requirements:
-      export_permit: "{'required': False}"
-      health_certificate: "{'required': True, 'issued_by': 'SAG-authorised official vet'}"
+      export_permit: "Not required"
+      health_certificate: "Required. Issued by SAG-authorised official vet."
   destination:
     code: "BD"
     country: "Bangladesh"

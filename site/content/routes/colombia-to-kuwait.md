@@ -13,8 +13,8 @@ route_data:
     code: "CO"
     country: "Colombia"
     export_requirements:
-      export_permit: "{'required': False}"
-      health_certificate: "{'required': True, 'issued_by': 'ICA-authorised official vet'}"
+      export_permit: "Not required"
+      health_certificate: "Required. Issued by ICA-authorised official vet."
   destination:
     code: "KW"
     country: "Kuwait"

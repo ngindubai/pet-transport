@@ -13,8 +13,8 @@ route_data:
     code: "LU"
     country: "Luxembourg"
     export_requirements:
-      export_permit: "{'required': False}"
-      health_certificate: "{'required': True}"
+      export_permit: "Not required"
+      health_certificate: "Required"
   destination:
     code: "TZ"
     country: "Tanzania"

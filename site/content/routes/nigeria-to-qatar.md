@@ -13,8 +13,8 @@ route_data:
     code: "NG"
     country: "Nigeria"
     export_requirements:
-      export_permit: "{'required': True}"
-      health_certificate: "{'required': True, 'issued_by': 'FDVPCS-authorised vet'}"
+      export_permit: "Required"
+      health_certificate: "Required. Issued by FDVPCS-authorised vet."
   destination:
     code: "QA"
     country: "Qatar"
