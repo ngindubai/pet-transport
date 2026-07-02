@@ -1,0 +1,20 @@
+{{- /* Client-side search index. Covers all regular content pages (routes,
+       countries, origins, airlines, breeds, blog). Keys kept short to keep the
+       file small across ~6,900 entries: t=title, u=url, s=section, d=description,
+       k=keywords. Consumed by /static/js/site-search.js on the /search/ page. */ -}}
+{{- $list := slice -}}
+{{- range where site.RegularPages "Kind" "page" -}}
+  {{- if ne .RelPermalink "/search/" -}}
+    {{- $kw := slice -}}
+    {{- with .Params.origin_name }}{{ $kw = $kw | append . }}{{ end -}}
+    {{- with .Params.destination_name }}{{ $kw = $kw | append . }}{{ end -}}
+    {{- $entry := dict
+        "t" .Title
+        "u" .RelPermalink
+        "s" .Type
+        "d" (.Description | default "" | plainify | truncate 160)
+        "k" (delimit $kw " ") -}}
+    {{- $list = $list | append $entry -}}
+  {{- end -}}
+{{- end -}}
+{{- $list | jsonify -}}

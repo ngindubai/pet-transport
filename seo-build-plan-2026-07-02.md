@@ -150,3 +150,57 @@ Execution companion to `seo-audit-2026-07-02.html`. Derived from the SEO and Sea
 | A2, A3, A4, A5, A6, A7, A8, A9, A10 | SONNET | Template, config, data and rule based edits |
 
 No em dashes were used in this document.
+
+---
+
+# Execution session - 2026-07-02
+
+Block 1 (Discoverability and schema hygiene) in progress. Decisions taken this session: A3 remove the sameAs array; A7 build a real search page; llms.txt full rebuild. Sub-plans for A7 and llms.txt below.
+
+## A7 sub-plan - build a real on-site search (Sonnet OK)
+
+Chosen over "remove the SearchAction" by Gareth. The site is static Hugo on Hostinger, so search is client side over a build-time index. No server, no npm step in the Actions workflow (which cannot be edited via MCP), so the search library is vendored.
+
+Note: the current `SearchAction` `urlTemplate` puts the query in the URL path (`/pet-transport/routes/{search_term_string}/`), which collides with real route slugs. The rebuild switches to a query parameter.
+
+1. **Fix the SearchAction target.** In `site/layouts/_default/baseof.html`, change the `urlTemplate` to `https://pettransportglobal.com/pet-transport/routes/?q={search_term_string}` and keep `query-input` as `required name=search_term_string`. (Sonnet OK.)
+2. **Generate a JSON search index at build time.** Add a Hugo output format (JSON) that emits an index of pages with `title`, `url`, and a short `summary`/keyword string. Scope depends on Decision A7-a below. (Sonnet OK.)
+3. **Vendor a small fuzzy-search library** (Fuse.js) into `site/static/js/` so no build-step change is needed. (Sonnet OK.)
+4. **Build the search UI** on the routes section index page (`/pet-transport/routes/`): a search box plus a results list that reads `?q=` on load, queries the JSON index client side, and links through to matches. Placement depends on Decision A7-b. (Sonnet OK.)
+5. **Verify**: `hugo` builds without error, the JSON index is produced, a query returns sensible results, and the SearchAction resolves to a working page. (Sonnet OK.)
+
+Decisions this raises:
+- **A7-a (search scope):** routes only, or all content types (routes, countries, origins, airlines, breeds, blog)? Recommend all content for a genuinely useful site search; index stays small if limited to title, url and a short keyword line.
+- **A7-b (search box placement):** routes index page only (matches the schema), or also a global box in the site header? Recommend routes index first, header later if wanted.
+
+## llms.txt sub-plan - full rebuild (Sonnet OK, pending business facts)
+
+Chosen "full rebuild" by Gareth. Treated as a live deliverable per session override (other AI systems read it and it drives traffic).
+
+1. **Header and description**: persona-framed (no "Gareth"), plain statement of what the site is, with the "not a veterinary or government authority, verify against official sources" caveat retained. (Sonnet OK.)
+2. **Services and quote process**: short section on what the business actually offers and how to get a quote. Depends on Decision LLM-a. (Sonnet OK once facts confirmed.)
+3. **Comprehensive category sections**: high-volume routes, country import guides (75 on disk), origin guides (77), airline policies (145, list the major ones plus link to the full index), breed guides (64), blog highlights, methodology page. Numbers taken from disk, not rounded guesses. (Sonnet OK.)
+4. **Contact block**: depends on Decision LLM-a. (Sonnet OK once confirmed.)
+5. **Domain**: non-www throughout, consistent with the confirmed canonical. (Sonnet OK.)
+6. **Verify**: valid Markdown, every link resolves, no persona or domain errors, no em dashes. (Sonnet OK.)
+
+Decisions this raises:
+- **LLM-a (contact and business facts):** which contact details are public (the +447703577246 WhatsApp/phone already in the schema, any public email, any postal address or is this a service-area business with no public address)? Needed for both llms.txt and the Block 2 schema work.
+- **LLM-b (ratings and prices):** are there genuine, auditable customer reviews and real published starting prices? If not, llms.txt and schema stay capability-only, with no `aggregateRating` and no price fields. Recommend capability-only unless real data exists.
+
+## Changes made and why
+
+Lift-ready notes for future build prompts. One entry per finding as it is completed.
+
+- **A3 - Organization schema sameAs placeholders removed.** File `site/layouts/_default/baseof.html` (was lines 36-40). Removed the `"sameAs"` array that contained literal `"TODO: Facebook URL"`, `"TODO: Instagram URL"`, `"TODO: LinkedIn URL"`, and dropped the now-trailing comma on the `contactPoint` object so the JSON stays valid. Why: those three invalid URLs were being published as the brand's official social profiles on every page (6,000+ pages), which is malformed structured data and undercuts entity-authority signals. Gareth chose to remove the array rather than leave placeholders or supply real URLs; real profile URLs can be re-added later. No content pages changed, so no route/blog count impact.
+
+- **A6 - canonical host confirmed, no code change.** `site/hugo.toml` `baseURL` was already `https://pettransportglobal.com/` (non-www), which matches Gareth's confirmed canonical host. Action for Gareth (hosting, not code): confirm Hostinger 301-redirects `www.pettransportglobal.com` to the non-www host. Left a note; nothing to change in the repo.
+
+- **A7 - real on-site search built (replaces the broken SearchAction).** Files: `site/layouts/_default/baseof.html` (SearchAction `urlTemplate` changed from the path-based `/pet-transport/routes/{search_term_string}/`, which collided with real route slugs, to `https://pettransportglobal.com/search/?q={search_term_string}`; also added a reusable `{{ if .Params.noindex }}` robots hook after the canonical link). New `site/layouts/_default/index.json` (JSON search index over all regular content pages: title, url, section, description, keywords; skips the /search/ page). New `site/content/search.md` (the `/search/` page, `layout: search`, `noindex: true`). New `site/layouts/_default/search.html` (search UI, scoped styles, loads the search JS via the `extra_js` block). New `site/static/js/site-search.js` (dependency-free client-side search: tokenises the query, drops stopwords, expands short-code aliases such as uk/usa/uae to full country names, requires all tokens to match, ranks title>keyword>other; loads only on the search page). `site/hugo.toml` (`home` outputs gained `JSON` so `/index.json` is produced). `site/layouts/partials/header.html` (global search box in the nav, GET to `/search/`, plus scoped styles). Decisions: Gareth chose all-content scope and a header search box. Why: the schema advertised a search feature that did not exist; this ships a working one and fixes the invalid markup. Verified: `node --check` on the JS passes; a Node unit test of the ranking logic passes 8/8 cases (uk/usa aliases, cross-type matches, title-over-keyword ranking, stopword-only and no-match returns). Not verified in a full Hugo build because Hugo could not be installed here (egress policy blocked the release download); the Go templates were statically reviewed (delimiters balanced, block names match `baseof`). The GitHub Actions build will compile them on merge to main. Note (out of scope, pre-existing): the header's origin quick-links use slugs like `/pet-transport/origins/pet-export-guide-shipping-from-united-kingdom/` which do not match the actual origin slug `united-kingdom`; likely 404s, flagged for a later fix, not touched here.
+
+- **llms.txt - full rebuild (session override: treat as a live deliverable).** File `site/static/llms.txt`. Rewrote end to end: removed the "authored by Gareth, Founder" line and replaced it with a persona-framed "Our specialists" section (Marcus Webb, Dr. Sarah Okafor, Emma Hartley, James Osei); added a "How to get a quote" section stating contact is via the website quote form and WhatsApp only (no phone or email published, per Gareth); added a `/search/` entry; expanded coverage to 15 high-volume routes, 30 country guides, 4 origin guides plus index, 17 major airlines plus index, 12 breed guides plus index, and 12 popular articles, each with a section index link; kept the non-www domain and the "not a veterinary or government authority, verify before travel" caveat; capability-only, no ratings or prices. Real disk counts used (6,000+ routes, 75 countries, 77 origins, 145 airlines, 64 breeds, 400+ articles). Every cited route, country, origin, airline, breed, blog and the methodology URL was verified to exist on disk (zero broken links). Why: other AI systems read llms.txt and it drives real traffic; the old file named Gareth (persona-rule breach) and was thin. No em dashes.
+
+### Decision carried into Block 2 (Trust and schema)
+
+- **Contact modelling:** Gareth confirmed WhatsApp and the on-site contact form are the only contact channels; no phone number or email is to be displayed. The Organization schema in `baseof.html` still hard-codes `"telephone": "+447703577246"`. In Block 2, replace that raw `telephone` with a `contactPoint` that uses the WhatsApp URL (`https://wa.me/447703577246`) so nothing presents as a callable number, and model the business as a service-area Organization (no postal address). Reviews and prices stay out of schema (capability-only).
+

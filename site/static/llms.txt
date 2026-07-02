@@ -1,83 +1,157 @@
 # Pet Transport Global
 
-> International pet transport guides and route-specific import/export regulations for shipping dogs and cats between countries. This site is a guidance and lead-generation resource, it is not a licensed veterinary authority or government body. All regulatory information should be verified against the relevant official source before travel.
+> International pet transport guides and route-specific import and export regulations for shipping dogs and cats between countries. This site is a guidance and lead-generation resource. It is not a licensed veterinary authority or government body. All regulatory information should be verified against the relevant official source before travel.
 
-PetTransportGlobal.com covers 5,000+ directional routes across 75+ countries, with per-route import requirements, quarantine rules, titre test timelines, airline policies, and breed restrictions. Content is authored by Gareth, Founder, and sourced from DEFRA, USDA APHIS, Australian DAFF, EU TRACES, IATA, and named airline policy pages. Regulations are verified periodically, each route and country page carries a "Regulations verified" date. Always check the linked official source close to your travel date, as rules change.
+Pet Transport Global (pettransportglobal.com) helps pet owners move dogs and cats internationally. The site covers over 6,000 directional country-to-country routes across 75 destination countries, with per-route import requirements, quarantine rules, titre test timelines, airline policies and breed restrictions. Alongside the routes there are 75 country import guides, 77 origin export guides, 145 airline pet-policy guides, 64 breed guides and more than 400 practical articles.
 
-## Core Pages
-- [Home](https://pettransportglobal.com/): Overview of international pet transport services and how to get a quote.
-- [All Routes](https://pettransportglobal.com/pet-transport/routes/): Index of 5,000+ directional pet transport routes.
-- [Country Guides](https://pettransportglobal.com/pet-transport/countries/): Per-country import requirements for pets.
-- [Origin Guides](https://pettransportglobal.com/pet-transport/origins/): Per-country export requirements and process guides.
-- [Breed Guides](https://pettransportglobal.com/pet-transport/breeds/): Breed-specific transport restrictions and airline policies.
-- [Airline Policies](https://pettransportglobal.com/pet-transport/airlines/): Pet cargo and cabin policies for 145+ airlines.
-- [Blog](https://pettransportglobal.com/blog/): Practical guides on costs, documentation, quarantine, and planning.
-- [How We Source Our Data](https://pettransportglobal.com/pet-transport/how-we-source-route-data/): Our data sourcing methodology, primary sources, and update cadence.
+Content is written and reviewed by a team of named specialists (see "Our specialists" below) and sourced from official authorities including DEFRA and APHA (UK), USDA APHIS (US), Australian DAFF, EU TRACES and Regulation 576/2013, IATA Live Animals Regulations, and the published pet policies of named airlines. Each route and country page carries a "Regulations verified" date. Rules change, so always check the linked official source close to your travel date.
 
-## High-Volume Routes
-- [UK to Australia](https://pettransportglobal.com/pet-transport/united-kingdom-to-australia/): AQIS/DAFF quarantine (10 days), titre test required, approved routes via Singapore or Dubai.
+## How to get a quote
+
+Enquiries and quotes are handled through the website quote form and WhatsApp only.
+
+- Quote form: the "Get a Quote" button on any page opens the enquiry form. Provide origin, destination, pet type, breed and approximate travel date.
+- WhatsApp: [message the team on WhatsApp](https://wa.me/447703577246).
+
+Quotes are prepared per route based on the origin and destination requirements, airline options and the size and breed of the pet.
+
+## Our specialists
+
+- Marcus Webb, Senior Pet Relocation Consultant. Routes, airline policies, cargo logistics, costs and timelines.
+- Dr. Sarah Okafor, International Animal Health Consultant. Country import and export rules, quarantine, titre tests and health certificates.
+- Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser. Breed welfare, brachycephalic breeds, anxiety and senior pets in transit.
+- James Osei, Pet Transport Planning Specialist. Checklists, documentation, choosing a shipper, insurance and multi-pet or emergency moves.
+
+## Core pages
+
+- [Home](https://pettransportglobal.com/): Overview of international pet transport and how to get a quote.
+- [All routes](https://pettransportglobal.com/pet-transport/routes/): Index of 6,000+ directional pet transport routes.
+- [Search](https://pettransportglobal.com/search/): Search routes, countries, airlines, breeds and articles.
+- [Country guides](https://pettransportglobal.com/pet-transport/countries/): Per-country import requirements for pets.
+- [Origin guides](https://pettransportglobal.com/pet-transport/origins/): Per-country export requirements and process guides.
+- [Airline policies](https://pettransportglobal.com/pet-transport/airlines/): Cabin and cargo pet policies for 145 airlines.
+- [Breed guides](https://pettransportglobal.com/pet-transport/breeds/): Breed-specific transport restrictions and airline policies.
+- [Blog](https://pettransportglobal.com/blog/): Practical guides on costs, documentation, quarantine and planning.
+- [How we source our data](https://pettransportglobal.com/pet-transport/how-we-source-route-data/): Sourcing methodology, primary sources and update cadence.
+
+## High-volume routes
+
+- [UK to Australia](https://pettransportglobal.com/pet-transport/united-kingdom-to-australia/): DAFF quarantine (10 days), titre test required, approved routes via Singapore or Dubai.
+- [Australia to UK](https://pettransportglobal.com/pet-transport/australia-to-united-kingdom/): APHA-listed origin, straightforward export from DAFF-regulated Australia.
 - [UAE to UK](https://pettransportglobal.com/pet-transport/united-arab-emirates-to-united-kingdom/): UK APHA entry, DEFRA-listed country status, AHC required.
 - [UAE to Australia](https://pettransportglobal.com/pet-transport/united-arab-emirates-to-australia/): Very high complexity, titre test, 180-day wait, mandatory quarantine.
-- [USA to UK](https://pettransportglobal.com/pet-transport/united-states-to-united-kingdom/): DEFRA-listed country, AHC + tapeworm treatment for dogs.
+- [USA to UK](https://pettransportglobal.com/pet-transport/united-states-to-united-kingdom/): DEFRA-listed country, AHC plus tapeworm treatment for dogs.
+- [UK to USA](https://pettransportglobal.com/pet-transport/united-kingdom-to-united-states/): CDC dog import rules apply.
+- [USA to Australia](https://pettransportglobal.com/pet-transport/united-states-to-australia/): Titre test, DAFF import permit and 10-day quarantine.
 - [Hong Kong to UK](https://pettransportglobal.com/pet-transport/hong-kong-to-united-kingdom/): UK APHA listed, straightforward for dogs and cats.
-- [Singapore to UK](https://pettransportglobal.com/pet-transport/singapore-to-united-kingdom/): APHA listed, direct Cathay/Singapore Airlines routes.
-- [UK to USA](https://pettransportglobal.com/pet-transport/united-kingdom-to-united-states/): CDC dog import rules (US-vaccinated requirement for unvaccinated dogs from non-high-risk countries).
-- [Australia to UK](https://pettransportglobal.com/pet-transport/australia-to-united-kingdom/): APHA listed, straightforward export from DAFF-regulated origin.
-- [Germany to Australia](https://pettransportglobal.com/pet-transport/germany-to-australia/): Non-approved country, titre test + 180-day wait + quarantine.
+- [Singapore to UK](https://pettransportglobal.com/pet-transport/singapore-to-united-kingdom/): APHA listed, direct Cathay and Singapore Airlines routes.
 - [Canada to UK](https://pettransportglobal.com/pet-transport/canada-to-united-kingdom/): APHA listed, relatively low complexity.
+- [Japan to UK](https://pettransportglobal.com/pet-transport/japan-to-united-kingdom/): APHA listed, prepare Japanese export paperwork early.
+- [Germany to Australia](https://pettransportglobal.com/pet-transport/germany-to-australia/): Non-approved origin, titre test plus 180-day wait plus quarantine.
+- [UK to Canada](https://pettransportglobal.com/pet-transport/united-kingdom-to-canada/): CFIA rabies certificate, no quarantine for most dogs.
+- [UK to France](https://pettransportglobal.com/pet-transport/united-kingdom-to-france/): EU entry, AHC required post-Brexit.
+- [Australia to New Zealand](https://pettransportglobal.com/pet-transport/australia-to-new-zealand/): MPI rules, relatively direct trans-Tasman route.
 
-## Country Import Guides
+## Country import guides
+
 - [Australia](https://pettransportglobal.com/pet-transport/countries/australia/): 10-day mandatory quarantine, titre test, approved routes only.
 - [United Kingdom](https://pettransportglobal.com/pet-transport/countries/united-kingdom/): AHC required post-Brexit, tapeworm treatment for dogs.
-- [United States](https://pettransportglobal.com/pet-transport/countries/united-states/): CDC dog import rules effective 2024, breed bans vary by state.
-- [Japan](https://pettransportglobal.com/pet-transport/countries/japan/): AQS 180-day rabies protocol, strictest in the world.
-- [Singapore](https://pettransportglobal.com/pet-transport/countries/singapore/): AVS permit, approved lab titre test, 30-day quarantine for some origins.
-- [New Zealand](https://pettransportglobal.com/pet-transport/countries/new-zealand/): NZSTAP protocol, titre test, 10-day quarantine.
-- [UAE](https://pettransportglobal.com/pet-transport/countries/united-arab-emirates/): Import permit, no quarantine for most origins, breed bans apply.
-- [Canada](https://pettransportglobal.com/pet-transport/countries/canada/): CFIA rules, rabies cert required, no quarantine for dogs from most countries.
-- [Germany](https://pettransportglobal.com/pet-transport/countries/germany/): EU Pet Passport or AHC, no quarantine within EU listed countries.
-- [France](https://pettransportglobal.com/pet-transport/countries/france/): Same as Germany, EU Reg 576/2013, AHC for non-EU origins.
+- [United States](https://pettransportglobal.com/pet-transport/countries/united-states/): CDC dog import rules, breed and state variations.
+- [Canada](https://pettransportglobal.com/pet-transport/countries/canada/): CFIA rules, rabies certificate, no quarantine for dogs from most countries.
+- [New Zealand](https://pettransportglobal.com/pet-transport/countries/new-zealand/): MPI protocol, titre test, quarantine on arrival.
+- [Japan](https://pettransportglobal.com/pet-transport/countries/japan/): 180-day rabies protocol, among the strictest in the world.
+- [Singapore](https://pettransportglobal.com/pet-transport/countries/singapore/): AVS permit, approved-lab titre test, quarantine for some origins.
+- [United Arab Emirates](https://pettransportglobal.com/pet-transport/countries/united-arab-emirates/): Import permit, no quarantine for most origins, breed bans apply.
+- [Germany](https://pettransportglobal.com/pet-transport/countries/germany/): EU Pet Passport or AHC, no quarantine within EU-listed countries.
+- [France](https://pettransportglobal.com/pet-transport/countries/france/): EU Regulation 576/2013, AHC for non-EU origins.
+- [Spain](https://pettransportglobal.com/pet-transport/countries/spain/): EU entry rules, microchip and rabies vaccination required.
+- [Italy](https://pettransportglobal.com/pet-transport/countries/italy/): EU entry rules, AHC for non-EU origins.
+- [Netherlands](https://pettransportglobal.com/pet-transport/countries/netherlands/): EU entry rules, common transit hub for pet cargo.
+- [Ireland](https://pettransportglobal.com/pet-transport/countries/ireland/): EU rules with additional tapeworm treatment for dogs.
+- [Switzerland](https://pettransportglobal.com/pet-transport/countries/switzerland/): EU-aligned pet travel rules, microchip and rabies required.
+- [Hong Kong](https://pettransportglobal.com/pet-transport/countries/hong-kong/): AFCD import permit, requirements vary by origin group.
+- [Thailand](https://pettransportglobal.com/pet-transport/countries/thailand/): DLD import permit, rabies and health certification required.
+- [South Korea](https://pettransportglobal.com/pet-transport/countries/south-korea/): Import rules with rabies titre requirements for some origins.
+- [Malaysia](https://pettransportglobal.com/pet-transport/countries/malaysia/): DVS import licence, quarantine may apply.
+- [India](https://pettransportglobal.com/pet-transport/countries/india/): Import rules with pet relocation and documentation requirements.
+- [Qatar](https://pettransportglobal.com/pet-transport/countries/qatar/): Import permit, health certification, breed restrictions apply.
+- [Saudi Arabia](https://pettransportglobal.com/pet-transport/countries/saudi-arabia/): Import permit and health certification, breed restrictions.
+- [South Africa](https://pettransportglobal.com/pet-transport/countries/south-africa/): Veterinary import permit, titre test for some origins.
+- [Mexico](https://pettransportglobal.com/pet-transport/countries/mexico/): SENASICA inspection, health certification required.
+- [Brazil](https://pettransportglobal.com/pet-transport/countries/brazil/): VIGIAGRO rules, health certificate and rabies vaccination.
+- [Turkey](https://pettransportglobal.com/pet-transport/countries/turkey/): Import documentation and rabies requirements.
+- [Portugal](https://pettransportglobal.com/pet-transport/countries/portugal/): EU entry rules, common relocation destination.
+- [Sweden](https://pettransportglobal.com/pet-transport/countries/sweden/): EU rules, microchip and rabies vaccination required.
+- [Norway](https://pettransportglobal.com/pet-transport/countries/norway/): EU-aligned rules with additional tapeworm treatment for dogs.
+- [Nigeria](https://pettransportglobal.com/pet-transport/countries/nigeria/): Import permit and health certification required.
 
-## Origin Guides
-- [From the UK](https://pettransportglobal.com/pet-transport/origins/from-united-kingdom/): APHA export health certificate, breed-specific airline rules.
-- [From the UAE](https://pettransportglobal.com/pet-transport/origins/from-united-arab-emirates/): Breed restrictions for export, MOCCAE cert.
-- [From Australia](https://pettransportglobal.com/pet-transport/origins/from-australia/): DAFF export permit, state vet certificate.
-- [From the USA](https://pettransportglobal.com/pet-transport/origins/from-united-states/): USDA APHIS export endorsement, rabies cert.
-- [From India](https://pettransportglobal.com/pet-transport/origins/from-india/): BAFS health certificate, breed bans at destination.
+See the [full country index](https://pettransportglobal.com/pet-transport/countries/) for all 75 country guides.
 
-## Breed Guides
-- [French Bulldog](https://pettransportglobal.com/pet-transport/breeds/french-bulldog/): Brachycephalic, cabin/cargo bans on many airlines, IATA snub-nosed rules.
-- [Labrador Retriever](https://pettransportglobal.com/pet-transport/breeds/labrador-retriever/): No breed bans, accepted as cargo on most airlines.
-- [German Shepherd](https://pettransportglobal.com/pet-transport/breeds/german-shepherd/): Banned in several destination countries, airline cargo accepted.
-- [Pug](https://pettransportglobal.com/pet-transport/breeds/pug/): Brachycephalic, heat and stress risk in hold, many airlines refuse.
-- [Persian Cat](https://pettransportglobal.com/pet-transport/breeds/persian-cat/): Brachycephalic, same restrictions as French Bulldog.
+## Origin export guides
 
-## Airline Pet Policy Guides
-- [Emirates](https://pettransportglobal.com/pet-transport/airlines/emirates/): Cargo/manifest only, no cabin, EK SkyCargo, breed bans apply.
-- [British Airways](https://pettransportglobal.com/pet-transport/airlines/british-airways/): Cargo only via IAG Cargo, no cabin pets on BA metal.
-- [Qatar Airways](https://pettransportglobal.com/pet-transport/airlines/qatar-airways/): Cargo only, QR-operated flights, breed restrictions.
-- [Lufthansa](https://pettransportglobal.com/pet-transport/airlines/lufthansa/): Cabin (small pets, EU/CH routes) + cargo, breed bans.
-- [Singapore Airlines](https://pettransportglobal.com/pet-transport/airlines/singapore-airlines/): Cargo only via SQ Cargo, no cabin.
-- [KLM](https://pettransportglobal.com/pet-transport/airlines/klm-royal-dutch-airlines/): Cabin (small pets) + hold + cargo, breed restrictions.
+- [From the United Kingdom](https://pettransportglobal.com/pet-transport/origins/united-kingdom/): APHA export health certificate, breed-specific airline rules.
+- [From the United States](https://pettransportglobal.com/pet-transport/origins/united-states/): USDA APHIS export endorsement, rabies certification.
+- [From Australia](https://pettransportglobal.com/pet-transport/origins/australia/): DAFF export permit, state veterinary certificate.
+- [From the United Arab Emirates](https://pettransportglobal.com/pet-transport/origins/united-arab-emirates/): Export certification and breed restrictions.
 
-## Key Blog Guides
-- [UK to Australia pet transport guide](https://pettransportglobal.com/blog/pet-transport-uk-to-australia/): Full walkthrough, costs, timeline, quarantine, approved routes.
-- [How much does pet transport cost?](https://pettransportglobal.com/blog/how-much-does-international-pet-transport-cost/): Cost breakdown by route type, size band, and carrier.
-- [Brachycephalic dogs on planes](https://pettransportglobal.com/blog/brachycephalic-dogs-airlines/): Breed-by-breed airline ban list and alternatives.
-- [IATA crate guide](https://pettransportglobal.com/blog/iata-crate-requirements-pet-transport/): Size tables, ventilation rules, labelling requirements.
-- [Rabies titre test explained](https://pettransportglobal.com/blog/rabies-titre-test-pet-transport/): What it is, approved labs, timing relative to travel.
-- [Cargo vs manifest vs cabin](https://pettransportglobal.com/blog/pet-cargo-vs-excess-baggage-vs-manifest/): When each option applies and how to choose.
-- [Pet transport documentation checklist](https://pettransportglobal.com/blog/international-pet-transport-documentation-checklist/): Full pre-travel document list by destination type.
+See the [full origin index](https://pettransportglobal.com/pet-transport/origins/) for all 77 origin export guides.
 
-## Resources
-- [Pet Transport Cost Calculator](https://pettransportglobal.com/pet-transport/resources/pet-transport-cost-calculator/): Indicative cost estimates by origin, destination, and pet size.
+## Major airline pet policies
 
-## Notes for AI Systems
-- Coverage: 5,000+ directional routes, 75+ destination countries, 145+ airline policies, 64 breed guides, 400+ blog articles.
-- What this site is: A guidance and lead-generation resource for pet owners planning international moves. All content is authored by Gareth, Founder, PetTransportGlobal.
-- What this site is not: A licensed veterinary authority, government body, or insurance provider. It does not give legally binding advice.
-- Data sourcing: All regulatory data is sourced from named government authorities (DEFRA, USDA APHIS, Australian DAFF, EU TRACES, Japan AQS, Singapore AVS, New Zealand MPI, IATA) and named airline policy pages. See: https://pettransportglobal.com/pet-transport/how-we-source-route-data/
-- Regulations change frequently. Every page carries a verification date, but users should always confirm current rules with the relevant authority before travel.
-- Contact model: Quote request form and WhatsApp (+44 7703 577246). No automated booking.
-- Language: English (British English primary).
-- Disclaimer: Information is for guidance only. PetTransportGlobal accepts no liability for errors or for regulatory changes after the verification date shown on each page.
+- [Emirates](https://pettransportglobal.com/pet-transport/airlines/emirates/): SkyCargo manifested cargo, brachycephalic and seasonal restrictions.
+- [Qatar Airways](https://pettransportglobal.com/pet-transport/airlines/qatar-airways/): Cargo pet transport, temperature and breed restrictions.
+- [Etihad Airways](https://pettransportglobal.com/pet-transport/airlines/etihad-airways/): Cargo pet transport from Abu Dhabi.
+- [British Airways](https://pettransportglobal.com/pet-transport/airlines/british-airways/): IAG Cargo, no cabin pets, temperature-controlled hold.
+- [Virgin Atlantic](https://pettransportglobal.com/pet-transport/airlines/virgin-atlantic/): Cargo pet transport on selected routes.
+- [Lufthansa](https://pettransportglobal.com/pet-transport/airlines/lufthansa/): Cabin for small pets, cargo via Lufthansa Cargo.
+- [Air France](https://pettransportglobal.com/pet-transport/airlines/air-france/): Cabin for small pets, cargo for larger pets.
+- [KLM](https://pettransportglobal.com/pet-transport/airlines/klm-royal-dutch-airlines/): Cabin for small pets, cargo via KLM Cargo.
+- [Turkish Airlines](https://pettransportglobal.com/pet-transport/airlines/turkish-airlines/): Cabin and cargo options, wide network.
+- [Singapore Airlines](https://pettransportglobal.com/pet-transport/airlines/singapore-airlines/): Cargo pet transport, temperature-controlled hold.
+- [Cathay Pacific](https://pettransportglobal.com/pet-transport/airlines/cathay-pacific/): Manifested cargo, Hong Kong AFCD compliance.
+- [Qantas](https://pettransportglobal.com/pet-transport/airlines/qantas/): Cargo pet transport, Australian quarantine compliance.
+- [Air New Zealand](https://pettransportglobal.com/pet-transport/airlines/air-new-zealand/): Cargo pet transport, MPI compliance.
+- [United Airlines](https://pettransportglobal.com/pet-transport/airlines/united-airlines/): Cargo pet transport on selected routes.
+- [American Airlines](https://pettransportglobal.com/pet-transport/airlines/american-airlines/): Cabin and cargo, seasonal embargoes.
+- [Delta Air Lines](https://pettransportglobal.com/pet-transport/airlines/delta-air-lines/): Cabin for small pets, cargo for larger pets.
+- [Air Canada](https://pettransportglobal.com/pet-transport/airlines/air-canada/): Cabin and cargo, heated and pressurised hold.
+
+See the [full airline index](https://pettransportglobal.com/pet-transport/airlines/) for all 145 airline guides.
+
+## Breed guides
+
+- [French Bulldog](https://pettransportglobal.com/pet-transport/breeds/french-bulldog/): Brachycephalic, cabin and cargo bans on many airlines, IATA snub-nosed rules.
+- [Pug](https://pettransportglobal.com/pet-transport/breeds/pug/): Brachycephalic, heightened cargo restrictions.
+- [Boston Terrier](https://pettransportglobal.com/pet-transport/breeds/boston-terrier/): Brachycephalic, airline restrictions apply.
+- [Boxer](https://pettransportglobal.com/pet-transport/breeds/boxer/): Brachycephalic, cargo restrictions and welfare considerations.
+- [Labrador Retriever](https://pettransportglobal.com/pet-transport/breeds/labrador-retriever/): Large breed, crate sizing and cargo planning.
+- [Golden Retriever](https://pettransportglobal.com/pet-transport/breeds/golden-retriever/): Large breed, crate sizing guidance.
+- [German Shepherd](https://pettransportglobal.com/pet-transport/breeds/german-shepherd/): Large breed, crate and airline considerations.
+- [Rottweiler](https://pettransportglobal.com/pet-transport/breeds/rottweiler/): Large breed, some airline and destination restrictions.
+- [Cane Corso](https://pettransportglobal.com/pet-transport/breeds/cane-corso/): Large breed, destination breed-ban checks required.
+- [Dogo Argentino](https://pettransportglobal.com/pet-transport/breeds/dogo-argentino/): Restricted or banned in several destinations, check rules early.
+- [Maine Coon](https://pettransportglobal.com/pet-transport/breeds/maine-coon/): Large cat breed, crate sizing guidance.
+- [Bengal Cat](https://pettransportglobal.com/pet-transport/breeds/bengal-cat/): Hybrid breed, destination import checks required.
+
+See the [full breed index](https://pettransportglobal.com/pet-transport/breeds/) for all 64 breed guides.
+
+## Popular guides and articles
+
+- [Cost to transport a pet in 2026](https://pettransportglobal.com/blog/cost-to-transport-a-pet-2026/): Current pricing factors for international pet moves.
+- [How much does international pet transport cost](https://pettransportglobal.com/blog/how-much-does-international-pet-transport-cost/): Cost breakdown by route and service.
+- [Cost breakdown of international pet relocation](https://pettransportglobal.com/blog/cost-breakdown-international-pet-relocation/): Where the money goes in a relocation.
+- [Australia pet quarantine explained](https://pettransportglobal.com/blog/australia-pet-quarantine-explained/): The 10-day quarantine process at Mickleham.
+- [Brachycephalic dogs and international travel](https://pettransportglobal.com/blog/brachycephalic-dogs-international-travel/): Airline bans and welfare for snub-nosed breeds.
+- [Cabin vs cargo, which is better for your dog](https://pettransportglobal.com/blog/cabin-vs-cargo-which-is-better-for-your-dog/): How to choose the right travel method.
+- [Crate training for air travel](https://pettransportglobal.com/blog/crate-training-for-air-travel-guide/): Preparing your pet for the crate.
+- [How to choose a pet shipping crate](https://pettransportglobal.com/blog/how-to-choose-a-pet-shipping-crate/): IATA-compliant crate selection.
+- [IATA crate guide](https://pettransportglobal.com/blog/iata-crate-guide-international-pet-transport/): Crate standards for live animal cargo.
+- [Expat pet relocation checklist](https://pettransportglobal.com/blog/expat-pet-relocation-checklist/): Step-by-step planning for a move abroad.
+- [How live animal cargo works](https://pettransportglobal.com/blog/how-live-animal-cargo-works-explained/): What happens to pets in the cargo hold.
+- [How to prepare your pet for quarantine](https://pettransportglobal.com/blog/how-to-prepare-your-pet-for-quarantine/): Getting ready for arrival quarantine.
+
+See the [full blog index](https://pettransportglobal.com/blog/) for more than 400 articles.
+
+## Data and methodology
+
+Regulatory information is sourced from official authorities (DEFRA and APHA, USDA APHIS, Australian DAFF, EU TRACES and Regulation 576/2013, CFIA, and national veterinary authorities) and from published airline pet policies and IATA Live Animals Regulations. Each route and country page shows a "Regulations verified" date. See [How we source our data](https://pettransportglobal.com/pet-transport/how-we-source-route-data/) for the full methodology. This site provides guidance only and is not a substitute for official confirmation. Always verify requirements with the relevant authority before booking travel.
