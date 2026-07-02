@@ -3,7 +3,7 @@ title: "Flying with a Sphynx Cat | Hairless Breed Air Travel Guide"
 description: "How Sphynx cats cope with air cargo travel, airline rules, temperature considerations, and import requirements for this hairless breed."
 type: "breeds"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "sphynx"
 breed_name: "Sphynx"
 brachycephalic: true

@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Czech Republic to Pakistan | PetTransportGloba
 description: "Complete guide to pet transport from Czech Republic to Pakistan. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "czech-republic-to-pakistan"
 origin_name: "Czech Republic"
 destination_name: "Pakistan"

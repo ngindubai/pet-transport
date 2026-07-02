@@ -3,7 +3,7 @@ title: "Flying with a Border Collie | International Travel Guide"
 description: "Airline and import rules for Border Collies. Medium-breed cargo logistics, health paperwork, and which routes need the most preparation."
 type: "breeds"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "border-collie"
 breed_name: "Border Collie"
 brachycephalic: false

@@ -4,7 +4,7 @@ title: "Pet Transport from Argentina to United Arab Emirates | PetTransportGloba
 description: "Complete guide to pet transport from Argentina to United Arab Emirates. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "argentina-to-united-arab-emirates"
 origin_name: "Argentina"
 destination_name: "United Arab Emirates"

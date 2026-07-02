@@ -3,7 +3,7 @@ title: "International Pet Relocation: A 12-Month Planning Timeline"
 description: "Australia needs 8 months. Japan needs 9. Even easy routes benefit from 3 months of lead time. This month-by-month guide walks you through the entire pre-travel process."
 date: "2026-05-10"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "pet-relocation-timeline-12-month-planner"
 url: "/blog/pet-relocation-timeline-12-month-planner/"
 seo:

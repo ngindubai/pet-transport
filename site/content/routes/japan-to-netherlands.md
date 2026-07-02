@@ -5,7 +5,7 @@ description: "Moving pets from Japan to the Netherlands in 2026. FAVN titre test
 date: "2026-06-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb - Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "japan-to-netherlands"
 origin_name: "Japan"
 destination_name: "Netherlands"

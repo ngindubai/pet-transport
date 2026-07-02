@@ -3,7 +3,7 @@ title: "Bringing a Pet to Israel: Veterinary Services Requirements and What to P
 description: "Guide to bringing your dog or cat to Israel in 2026: Ministry of Agriculture import permit, health certificate, approved airports, and what to expect at Ben Gurion."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "israel-pet-import-guide"
 url: "/blog/israel-pet-import-guide/"
 seo:

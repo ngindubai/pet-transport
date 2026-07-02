@@ -3,7 +3,7 @@ title: "International Pet Transport Documentation Checklist: What You Need and W
 description: "A practical checklist of all the documents your pet needs for international travel in 2026: what each document is, when to get it, and how long it stays valid."
 date: "2026-05-03"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "James Osei, Pet Transport Planning Specialist, PetTransportGlobal"
 slug: "pet-transport-documentation-checklist"
 url: "/blog/pet-transport-documentation-checklist/"
 seo:

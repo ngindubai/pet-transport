@@ -4,7 +4,7 @@ description: "Moving your dog or cat from Germany to Singapore: AVS category sys
 type: "routes"
 layout: "single"
 template_variant: "B"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "germany-to-singapore"
 origin_name: "Germany"
 destination_name: "Singapore"

@@ -3,7 +3,7 @@ title: "Flying with a Dobermann | Country Bans & Cargo Rules"
 description: "Which countries ban or restrict Dobermanns, which airlines accept them, and what paperwork you need for international relocation."
 type: "breeds"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "dobermann"
 breed_name: "Dobermann"
 brachycephalic: false

@@ -3,7 +3,7 @@ title: "Flying with a Yorkshire Terrier | Cabin & Cargo International Guide"
 description: "Yorkshire Terrier international travel: cabin pet rules, health certificates, and destination requirements. Why Yorkies are among the easiest breeds to fly."
 type: "breeds"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "yorkshire-terrier"
 breed_name: "Yorkshire Terrier"
 brachycephalic: false

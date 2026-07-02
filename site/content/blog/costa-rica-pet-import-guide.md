@@ -3,7 +3,7 @@ title: "Moving Pets to Costa Rica: SENASA Rules, Vaccinations, and Zero-Quaranti
 description: "How to import a dog or cat into Costa Rica. SENASA health certificate requirements, vaccination records, no quarantine on arrival, and tips for expats heading to San José or the coast."
 date: "2026-05-16"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "costa-rica-pet-import-guide"
 url: "/blog/costa-rica-pet-import-guide/"
 seo:

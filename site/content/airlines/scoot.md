@@ -3,7 +3,7 @@ title: "Scoot Pet Transport Guide"
 description: "Scoot Airlines pet policy for 2026: no pets in cabin, limited cargo options, and what Singapore's budget carrier means for pet owners on Southeast Asia routes."
 date: "2026-05-06"
 type: "airlines"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "scoot"
 url: "/pet-transport/airlines/scoot/"
 airline:

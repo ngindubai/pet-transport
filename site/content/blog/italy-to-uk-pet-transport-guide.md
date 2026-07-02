@@ -3,7 +3,7 @@ title: "Pet Transport from Italy to the UK: Post-Brexit Requirements for EU Pets
 description: "Moving from Italy to the UK with a pet after Brexit? EU-issued Pet Passports are currently accepted. Here is what you need: tapeworm treatment, microchip, and current rabies vaccination."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "italy-to-uk-pet-transport-guide"
 url: "/blog/italy-to-uk-pet-transport-guide/"
 seo:

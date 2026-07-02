@@ -3,7 +3,7 @@ title: "Moving Pets to Nepal: Kathmandu Import Rules and What Expats Need to Kno
 description: "Nepal pet import guide. Department of Livestock Services permit, vaccination requirements, and practical advice for expats and aid workers relocating to Kathmandu with dogs or cats."
 date: "2026-05-18"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "nepal-pet-import-guide"
 url: "/blog/nepal-pet-import-guide/"
 seo:

@@ -2,7 +2,7 @@
 title: "Hainan Airlines Pet Policy: Cargo Rules, Cabin Acceptance and China Pet Import"
 description: "Hainan Airlines pet transport policy for cats and dogs. Covers international cargo hold rules, domestic cabin acceptance, brachycephalic breed restrictions, and China's pet import requirements for HNA routes."
 date: "2025-09-12"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "airlines"
 url: "/pet-transport/airlines/hainan-airlines/"
 airline_name: "Hainan Airlines"

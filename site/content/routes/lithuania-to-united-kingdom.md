@@ -4,7 +4,7 @@ title: "Pet Transport Lithuania to United Kingdom | EU Pet Passport & Ryanair Gu
 description: "Moving your pet from Lithuania to the UK? EU pet passport vs AHC, Ryanair and Lufthansa options, tapeworm rules, and UK APHA entry requirements explained."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "lithuania-to-united-kingdom"
 origin_name: "Lithuania"
 destination_name: "United Kingdom"

@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Hong Kong to Saudi Arabia | PetTransportGlobal
 description: "How to ship your dog or cat from Hong Kong to Saudi Arabia. Saudi Arabia import rules, vaccinations, permits, and airline options explained."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "hong-kong-to-saudi-arabia"
 origin_name: "Hong Kong"
 destination_name: "Saudi Arabia"

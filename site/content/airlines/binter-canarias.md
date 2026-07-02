@@ -2,7 +2,7 @@
 title: "Binter Canarias Pet Policy: Cabin Pets and Canary Islands Regional Flights"
 description: "Binter Canarias pet transport policy for cats and dogs. Covers cabin pet acceptance on Canary Islands routes, hold cargo rules, Spanish pet documentation and connections to mainland Spain and Africa."
 date: "2025-09-17"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "airlines"
 url: "/pet-transport/airlines/binter-canarias/"
 airline_name: "Binter Canarias"

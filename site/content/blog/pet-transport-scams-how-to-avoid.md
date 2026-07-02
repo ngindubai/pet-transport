@@ -2,7 +2,7 @@
 title: "Pet Transport Scams"
 description: "Pet transport fraud is more common than many people realise. This guide explains the most frequent scam types, red flags to watch for and how to choose a legitimate pet relocation service."
 date: "2025-07-14"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/pet-transport-scams-how-to-avoid/"
 tags: ["pet transport scams", "fraud", "pet relocation", "safety guide"]

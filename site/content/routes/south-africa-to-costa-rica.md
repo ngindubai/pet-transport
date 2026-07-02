@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from South Africa to Costa Rica | PetTransportGloba
 description: "Pet relocation from South Africa to Costa Rica: Costa Rica import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "south-africa-to-costa-rica"
 origin_name: "South Africa"
 destination_name: "Costa Rica"

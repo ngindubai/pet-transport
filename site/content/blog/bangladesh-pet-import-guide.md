@@ -3,7 +3,7 @@ title: "Bringing Pets to Bangladesh: What the Import Rules Actually Require"
 description: "Bangladesh has specific requirements for pet imports including health certificates, rabies vaccination, and customs declarations. Here is a practical guide for expats moving to Dhaka."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "bangladesh-pet-import-guide"
 url: "/blog/bangladesh-pet-import-guide/"
 seo:

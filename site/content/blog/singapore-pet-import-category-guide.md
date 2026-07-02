@@ -3,7 +3,7 @@ title: "Singapore Pet Import Categories: A, B and C Explained"
 description: "Singapore classifies pet countries into three categories with different quarantine requirements. What Category A, B and C means and which category your country falls into."
 date: "2026-04-19"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "singapore-pet-import-category-guide"
 url: "/blog/singapore-pet-import-category-guide/"
 seo:

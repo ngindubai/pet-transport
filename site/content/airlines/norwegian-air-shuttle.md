@@ -3,7 +3,7 @@ title: "Norwegian Air Shuttle Pet Transport Guide"
 description: "Norwegian Air pet policy for 2026: no pets in cabin on most routes, limited cargo acceptance, and what low-cost European travel means for pet owners."
 date: "2026-05-06"
 type: "airlines"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "norwegian-air-shuttle"
 url: "/pet-transport/airlines/norwegian-air-shuttle/"
 airline:

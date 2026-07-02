@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Bangladesh to South Korea | PetTransportGlobal
 description: "How to ship your dog or cat from Bangladesh to South Korea. South Korea import rules, vaccinations, permits, and airline options explained."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "bangladesh-to-south-korea"
 origin_name: "Bangladesh"
 destination_name: "South Korea"

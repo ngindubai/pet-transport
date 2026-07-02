@@ -3,7 +3,7 @@ title: "Bringing a Pet to Belgium: EU Rules, AHC Requirements and What to Prepar
 description: "Guide to bringing your dog or cat to Belgium in 2026: EU pet passport rules, UK AHC requirements, tapeworm treatment, and FASFC inspection at Brussels."
 date: "2026-05-07"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "belgium-pet-import-guide"
 url: "/blog/belgium-pet-import-guide/"
 seo:

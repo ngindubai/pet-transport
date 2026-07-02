@@ -3,7 +3,7 @@ title: "India to UK Pet Transport: Titre Tests, DEFRA Requirements, and Finding 
 description: "Moving a pet from India to the UK requires a titre test, specific timing, and documentation from APHA. Here's the complete guide."
 date: "2026-04-23"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "india-to-uk-pet-transport-guide"
 url: "/blog/india-to-uk-pet-transport-guide/"
 seo:

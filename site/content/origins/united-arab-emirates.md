@@ -3,7 +3,7 @@ title: "United Arab Emirates Pet Export Guide"
 description: "Complete guide to exporting your pet from the UAE."
 type: "origins"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 country_name: "United Arab Emirates"
 country_code: "AE"
 overview: |

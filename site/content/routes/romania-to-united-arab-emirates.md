@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Romania to United Arab Emirates | PetTransport
 description: "Pet relocation from Romania to United Arab Emirates: United Arab Emirates import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "romania-to-united-arab-emirates"
 origin_name: "Romania"
 destination_name: "United Arab Emirates"

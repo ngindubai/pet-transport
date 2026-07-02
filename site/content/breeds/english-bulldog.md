@@ -3,7 +3,7 @@ title: "Flying with a English Bulldog | Airline Restrictions & Advice"
 description: "Which airlines accept English Bulldog as cargo or cabin? Seasonal embargoes, breed bans, and what you need before booking your flat-faced dog."
 type: "breeds"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "english-bulldog"
 breed_name: "English Bulldog"
 brachycephalic: true

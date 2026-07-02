@@ -3,7 +3,7 @@ title: "Hong Kong Pet Import Guide: AFCD Permits, Quarantine Options, and Import
 description: "Bringing a pet to Hong Kong requires an AFCD import licence and varies by origin country. Here is what to expect, including quarantine durations and required documentation."
 date: "2026-05-05"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "hong-kong-pet-import-guide"
 url: "/blog/hong-kong-pet-import-guide/"
 seo:

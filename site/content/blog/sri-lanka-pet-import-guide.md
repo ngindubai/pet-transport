@@ -3,7 +3,7 @@ title: "Bringing a Pet to Sri Lanka: Quarantine Rules, Import Permits and What t
 description: "Complete guide to bringing your dog or cat to Sri Lanka in 2026: mandatory quarantine, import permit from DAPH, titre test requirements, and Colombo airport process."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "sri-lanka-pet-import-guide"
 url: "/blog/sri-lanka-pet-import-guide/"
 seo:

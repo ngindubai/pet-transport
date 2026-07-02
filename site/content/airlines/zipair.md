@@ -2,7 +2,7 @@
 title: "ZIPAIR Tokyo Pet Transport: Cargo Policies and Pet Travel Guide"
 description: "ZIPAIR Tokyo's pet transport policies explained. Covers cargo hold acceptance, restricted breeds, crate requirements and booking process for routes from Japan."
 date: "2025-08-11"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "airlines"
 url: "/pet-transport/airlines/zipair/"
 airline_name: "ZIPAIR Tokyo"

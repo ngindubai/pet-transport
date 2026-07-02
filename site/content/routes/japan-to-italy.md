@@ -5,7 +5,7 @@ description: "Moving pets from Japan to Italy in 2026. FAVN titre test required,
 date: "2026-06-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb - Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "japan-to-italy"
 origin_name: "Japan"
 destination_name: "Italy"

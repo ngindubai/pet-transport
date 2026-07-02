@@ -3,7 +3,7 @@ title: "Travelling Internationally with a Persian Cat: Breed Considerations and 
 description: "Persian cats are beautiful but have compressed faces that make air travel riskier. Here is what Persian cat owners need to know before planning an international move."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "travelling-with-a-persian-cat-internationally"
 url: "/blog/travelling-with-a-persian-cat-internationally/"
 seo:

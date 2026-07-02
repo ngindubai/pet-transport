@@ -3,7 +3,7 @@ title: "Pet Export Guide: Shipping from Canada"
 description: "Exporting your pet from Canada: health certificate requirements, airline options, and routes from Canada to destinations across Europe, Asia, and beyond."
 type: "origins"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 country_name: "Canada"
 country_code: "CA"
 overview: |

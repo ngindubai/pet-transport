@@ -3,7 +3,7 @@ title: "Pet Transport from South Korea to Australia: Step by Step"
 description: "South Korea is on Australia's approved country list for pet imports. Here is the full process: titre test, 180-day wait, import permit, and Melbourne quarantine."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "south-korea-to-australia-pet-transport-guide"
 url: "/blog/south-korea-to-australia-pet-transport-guide/"
 seo:

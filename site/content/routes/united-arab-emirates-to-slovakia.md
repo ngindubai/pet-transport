@@ -4,7 +4,7 @@ title: "Pet Transport from United Arab Emirates to Slovakia | PetTransportGlobal
 description: "How to ship your dog or cat from United Arab Emirates to Slovakia. Slovakia import rules, vaccinations, permits, and airline options explained."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "united-arab-emirates-to-slovakia"
 origin_name: "United Arab Emirates"
 destination_name: "Slovakia"

@@ -4,7 +4,7 @@ title: "Pet Transport from New Zealand to the UAE | Requirements & Airline Compa
 description: "Moving your pet from New Zealand to the UAE: MOCCAE import permit, microchip, rabies vaccination, Emirates vs Etihad vs Qantas cargo compared."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "new-zealand-to-united-arab-emirates"
 origin_name: "New Zealand"
 destination_name: "United Arab Emirates"

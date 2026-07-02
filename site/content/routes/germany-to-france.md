@@ -4,7 +4,7 @@ description: "Moving your pet from Germany to France: EU pet passport accepted, 
 type: "routes"
 layout: "single"
 template_variant: "A"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "germany-to-france"
 origin_name: "Germany"
 destination_name: "France"

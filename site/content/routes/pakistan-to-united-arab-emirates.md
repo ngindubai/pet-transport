@@ -4,7 +4,7 @@ title: "Pet Transport from Pakistan to United Arab Emirates | PetTransportGlobal
 description: "Complete guide to pet transport from Pakistan to United Arab Emirates. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "pakistan-to-united-arab-emirates"
 origin_name: "Pakistan"
 destination_name: "United Arab Emirates"

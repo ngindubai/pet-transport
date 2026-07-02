@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Costa Rica to Philippines | PetTransportGlobal
 description: "Pet relocation from Costa Rica to Philippines: Philippines import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "costa-rica-to-philippines"
 origin_name: "Costa Rica"
 destination_name: "Philippines"

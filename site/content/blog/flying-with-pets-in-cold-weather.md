@@ -3,7 +3,7 @@ title: "Flying with Your Pet in Cold Weather: Winter Cargo Safety and What to Ch
 description: "Practical guide to cold-weather pet air travel in 2026: winter airline embargoes, minimum temperature rules, crate insulation, and how to prepare your pet for cold conditions in cargo."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "flying-with-pets-in-cold-weather"
 url: "/blog/flying-with-pets-in-cold-weather/"
 seo:

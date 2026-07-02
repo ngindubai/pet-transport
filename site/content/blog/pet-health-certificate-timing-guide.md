@@ -3,7 +3,7 @@ title: "Pet Health Certificates: Timing Rules That Catch People Out"
 description: "Most countries require a health certificate issued within 10 days of travel. Miss that window and your pet cannot fly. Here's how to plan the final vet visit correctly."
 date: "2026-03-27"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "pet-health-certificate-timing-guide"
 url: "/blog/pet-health-certificate-timing-guide/"
 seo:

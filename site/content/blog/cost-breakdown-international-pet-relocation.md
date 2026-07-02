@@ -3,7 +3,7 @@ title: "What Does International Pet Relocation Actually Cost? A Realistic Breakd
 description: "International pet transport costs vary widely by route, animal size, and destination. Here is a transparent breakdown of the typical expenses involved in a pet relocation."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "cost-breakdown-international-pet-relocation"
 url: "/blog/cost-breakdown-international-pet-relocation/"
 seo:

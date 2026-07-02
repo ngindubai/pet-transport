@@ -5,7 +5,7 @@ description: "Moving pets from the Philippines to South Korea in 2026. FAVN titr
 date: "2026-06-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb - Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "philippines-to-south-korea"
 origin_name: "Philippines"
 destination_name: "South Korea"

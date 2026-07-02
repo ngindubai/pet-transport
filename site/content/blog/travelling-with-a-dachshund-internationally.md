@@ -3,7 +3,7 @@ title: "Travelling Internationally with a Dachshund: Cargo, Cabin Options and Wh
 description: "A practical guide to flying internationally with a Dachshund: cabin eligibility by size, crate requirements for cargo, back health considerations, and breed-specific travel tips."
 date: "2026-05-09"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "travelling-with-a-dachshund-internationally"
 url: "/blog/travelling-with-a-dachshund-internationally/"
 seo:

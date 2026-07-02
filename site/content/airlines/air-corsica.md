@@ -2,7 +2,7 @@
 title: "Air Corsica Pet Policy: Cabin Pets, Cargo Rules and Corsica Travel"
 description: "Air Corsica (XK) pet transport policy for cats and dogs. Covers cabin pet acceptance on French mainland to Corsica routes, hold cargo rules, EU pet passport requirements and Ajaccio connections."
 date: "2025-09-19"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "airlines"
 url: "/pet-transport/airlines/air-corsica/"
 airline_name: "Air Corsica"

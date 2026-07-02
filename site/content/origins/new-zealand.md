@@ -3,7 +3,7 @@ title: "New Zealand Pet Export Guide"
 description: "Complete guide to exporting your pet from New Zealand."
 type: "origins"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 country_name: "New Zealand"
 country_code: "NZ"
 overview: |

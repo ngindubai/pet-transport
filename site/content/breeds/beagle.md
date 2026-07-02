@@ -3,7 +3,7 @@ title: "Flying with a Beagle | Cabin & Cargo Rules for International Travel"
 description: "Small-to-medium breed international travel guide for Beagles. Which routes allow cabin travel, cargo options, and the health paperwork you need."
 type: "breeds"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "beagle"
 breed_name: "Beagle"
 brachycephalic: false

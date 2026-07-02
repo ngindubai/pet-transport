@@ -4,7 +4,7 @@ description: "Moving your pet from France to Japan: mandatory 180-day AQS protoc
 type: "routes"
 layout: "single"
 template_variant: "C"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "france-to-japan"
 origin_name: "France"
 destination_name: "Japan"

@@ -3,7 +3,7 @@ title: "Taiwan Pet Import Guide: Quarantine Tiers, BAPHIQ Requirements, and Taip
 description: "Taiwan uses a tiered quarantine system based on your country's rabies status. UK pets face 7-day quarantine minimum. Here's how to prepare."
 date: "2026-05-23"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "taiwan-pet-import-guide"
 url: "/blog/taiwan-pet-import-guide/"
 seo:

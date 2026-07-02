@@ -3,7 +3,7 @@ title: "Pet Export Guide: Shipping from United Kingdom"
 description: "Exporting your pet from the UK: APHA health certificate requirements, airline options, and routes from the United Kingdom to popular destinations."
 type: "origins"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 country_name: "United Kingdom"
 country_code: "GB"
 overview: |

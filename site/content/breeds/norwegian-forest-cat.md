@@ -3,7 +3,7 @@ title: "Flying with a Norwegian Forest Cat | International Travel Guide"
 description: "Airline rules and import paperwork for Norwegian Forest Cats. Large, thick-coated cats and what that means for cargo travel."
 type: "breeds"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "norwegian-forest-cat"
 breed_name: "Norwegian Forest Cat"
 brachycephalic: false

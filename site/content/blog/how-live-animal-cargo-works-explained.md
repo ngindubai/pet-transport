@@ -2,7 +2,7 @@
 title: "How Live Animal Cargo Works"
 description: "What actually happens when your pet travels in airline cargo? This guide explains the full live animal cargo process from check-in to collection, with timings and what to expect."
 date: "2025-07-19"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/how-live-animal-cargo-works-explained/"
 tags: ["live animal cargo", "pet cargo", "airline cargo", "what to expect", "pet transport guide"]

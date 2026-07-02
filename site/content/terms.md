@@ -5,7 +5,6 @@ type: "page"
 layout: "single"
 slug: "terms"
 url: "/terms/"
-author: "Gareth, Founder, PetTransportGlobal"
 ---
 
 # Terms & Conditions

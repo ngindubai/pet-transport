@@ -2,7 +2,7 @@
 title: "Pet Transport from USA to Mexico"
 description: "How to take your cat or dog from the USA to Mexico. Covers USDA APHIS-endorsed health certificates, SENASICA requirements, approved entry points and whether a titre test is needed."
 date: "2025-07-30"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/usa-to-mexico-pet-transport-guide/"
 tags: ["usa", "mexico", "route guide", "north america", "pet transport"]

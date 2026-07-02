@@ -3,7 +3,7 @@ title: "Moving Pets to Canada: CFIA Rules, Rabies Requirements, and Province-by-
 description: "Canada's pet import rules are managed by CFIA and are relatively straightforward from most countries. Here's everything you need to know before crossing the border."
 date: "2026-04-21"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "moving-pets-canada-complete-guide"
 url: "/blog/moving-pets-canada-complete-guide/"
 seo:

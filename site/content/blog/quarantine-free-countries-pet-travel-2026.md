@@ -3,7 +3,7 @@ title: "Which Countries Have No Pet Quarantine in 2026: A Complete Guide"
 description: "Many countries do not require quarantine for well-documented pets. Here is a guide to quarantine-free pet travel destinations in 2026 and what you still need even without quarantine."
 date: 2026-05-09
 type: blog
-author: "The PetTransportGlobal Team"
+author: "PetTransportGlobal Editorial Team"
 slug: "quarantine-free-countries-pet-travel-2026"
 url: "/blog/quarantine-free-countries-pet-travel-2026/"
 seo:

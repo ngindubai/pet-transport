@@ -4,7 +4,7 @@ title: "Pet Relocation Luxembourg to United Arab Emirates | Requirements & Guide
 description: "How to ship your dog or cat from Luxembourg to United Arab Emirates. United Arab Emirates import rules, vaccinations, permits, and airline options explained."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "luxembourg-to-united-arab-emirates"
 origin_name: "Luxembourg"
 destination_name: "United Arab Emirates"

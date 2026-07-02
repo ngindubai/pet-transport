@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Hungary to United Arab Emirates | PetTransport
 description: "How to ship your dog or cat from Hungary to United Arab Emirates. United Arab Emirates import rules, vaccinations, permits, and airline options explained."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "hungary-to-united-arab-emirates"
 origin_name: "Hungary"
 destination_name: "United Arab Emirates"

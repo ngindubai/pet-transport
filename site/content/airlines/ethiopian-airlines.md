@@ -3,7 +3,7 @@ title: "Ethiopian Airlines Pet Transport Guide"
 description: "Ethiopian Airlines pet transport policy 2026: cargo requirements, breed restrictions, crate sizing, Africa routes, and what to prepare when flying with pets on Ethiopian Airlines."
 date: "2026-05-06"
 type: "airlines"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "ethiopian-airlines"
 url: "/pet-transport/airlines/ethiopian-airlines/"
 airline:

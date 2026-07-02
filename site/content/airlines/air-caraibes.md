@@ -2,7 +2,7 @@
 title: "Air Caraibes Pet Transport: Policies for Pets on French Caribbean Flights"
 description: "Air Caraibes pet transport guide. How to fly your cat or dog to and from the French Caribbean (Guadeloupe, Martinique, French Guiana) with Air Caraibes. Covers cabin and cargo policies, documentation and routes."
 date: "2025-07-28"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "airlines"
 airline_name: "Air Caraibes"
 url: "/pet-transport/airlines/air-caraibes/"

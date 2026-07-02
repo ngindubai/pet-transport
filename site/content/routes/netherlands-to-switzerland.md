@@ -4,7 +4,7 @@ title: "Pet Transport Netherlands to Switzerland | EU Passport & SWISS Airlines 
 description: "Moving your pet from the Netherlands to Switzerland? Switzerland accepts EU pet passports. Compare SWISS, KLM, and other airlines, and check FSVO requirements."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "netherlands-to-switzerland"
 origin_name: "Netherlands"
 destination_name: "Switzerland"

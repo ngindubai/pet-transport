@@ -3,7 +3,7 @@ title: "How to Find a Good Pet Transport Agent: What to Ask and What to Avoid"
 description: "A guide to choosing an international pet transport agent in 2026: IPATA accreditation, what to look for, questions to ask, red flags to avoid, and what a good agent actually does."
 date: "2026-05-05"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "how-to-find-a-good-pet-transport-agent"
 url: "/blog/how-to-find-a-good-pet-transport-agent/"
 seo:

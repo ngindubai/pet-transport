@@ -3,7 +3,7 @@ title: "Pet Transport from Hong Kong to UK: APHA Rules and What to Prepare"
 description: "Full guide to moving your dog or cat from Hong Kong to the UK in 2026: titre test, three-month wait, APHA health certificate, tapeworm treatment, and approved entry routes."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "hong-kong-to-uk-pet-transport-guide"
 url: "/blog/hong-kong-to-uk-pet-transport-guide/"
 seo:

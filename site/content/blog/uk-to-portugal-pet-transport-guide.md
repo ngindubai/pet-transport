@@ -2,7 +2,7 @@
 title: "Pet Transport from UK to Portugal"
 description: "How to move your cat or dog from the UK to Portugal after Brexit. Covers the Animal Health Certificate, APHA endorsement, 3-month titre test wait, TRACES notification and airlines."
 date: "2025-07-28"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/uk-to-portugal-pet-transport-guide/"
 tags: ["uk", "portugal", "europe", "route guide", "post-brexit", "pet transport"]

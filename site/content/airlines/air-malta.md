@@ -3,7 +3,7 @@ title: "Air Malta / KM Malta Airlines Pet Transport Guide"
 description: "Air Malta (now KM Malta Airlines) pet policy: small pets in cabin on European routes, hold cargo available. Malta is an EU island with its own entry requirements for pets."
 date: "2026-05-06"
 type: "airlines"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "air-malta"
 url: "/pet-transport/airlines/air-malta/"
 airline:

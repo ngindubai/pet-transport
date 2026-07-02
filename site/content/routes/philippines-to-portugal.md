@@ -5,7 +5,7 @@ type: "routes"
 layout: "single"
 template_variant: "A"
 content_soul: 1
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "philippines-to-portugal"
 origin_name: "Philippines"
 destination_name: "Portugal"

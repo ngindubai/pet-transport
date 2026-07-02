@@ -3,7 +3,7 @@ title: "Moving to the USA from Europe with Your Pet: CDC Rules and Practical Gui
 description: "Complete guide to bringing your dog or cat from Europe to the USA in 2026: CDC dog import requirements, airline policies, state-specific rules, and what to expect at US customs."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "moving-to-usa-from-europe-with-pets"
 url: "/blog/moving-to-usa-from-europe-with-pets/"
 seo:

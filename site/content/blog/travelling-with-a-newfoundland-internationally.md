@@ -2,7 +2,7 @@
 title: "International Travel with a Newfoundland"
 description: "Moving internationally with a Newfoundland dog? This guide covers crate sizing for giant breeds, which airlines accept very large dogs, health considerations for this breed and country documentation."
 date: "2025-09-01"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/travelling-with-a-newfoundland-internationally/"
 tags: ["newfoundland", "breed guide", "giant breeds", "dog travel", "international pet travel"]

@@ -3,7 +3,7 @@ title: "Flying with a Bengal Cat | Country Restrictions & Travel Guide"
 description: "Which countries restrict or ban Bengal cats, airline rules, and what F-generation classification means for international travel."
 type: "breeds"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "bengal-cat"
 breed_name: "Bengal Cat"
 brachycephalic: false

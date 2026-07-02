@@ -4,7 +4,7 @@ title: "Pet Transport from South Korea to United Arab Emirates | PetTransportGlo
 description: "Pet relocation from South Korea to United Arab Emirates: United Arab Emirates import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "south-korea-to-united-arab-emirates"
 origin_name: "South Korea"
 destination_name: "United Arab Emirates"

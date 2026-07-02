@@ -3,7 +3,7 @@ title: "Pet Transport from the UK to Ireland: An Easier Route Than You Might Exp
 description: "Moving from Britain to Ireland with a dog or cat? Ireland stays in the EU, which creates a simple process for pets -- but the Common Travel Area means different rules than other EU moves."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "uk-to-ireland-pet-transport-guide"
 url: "/blog/uk-to-ireland-pet-transport-guide/"
 seo:

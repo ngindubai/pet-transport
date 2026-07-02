@@ -1,7 +1,7 @@
 {{ define "title" }}{{ if .Params.seo.title }}{{ .Params.seo.title }}{{ else }}{{ .Title }} | {{ .Site.Params.brand }}{{ end }}{{ end }}
 
 {{ define "schema" }}
-{{ $author := .Params.author | default "Gareth, Founder, PetTransportGlobal" }}
+{{ $author := .Params.author | default "PetTransportGlobal Editorial Team" }}
 {{ $parts := split (replace $author " - " ", ") ", " }}
 {{ $name := index $parts 0 }}
 {{ $jobTitle := "" }}
@@ -49,7 +49,7 @@
 
 {{ define "main" }}
 
-{{ $author := .Params.author | default "Gareth, Founder, PetTransportGlobal" }}
+{{ $author := .Params.author | default "PetTransportGlobal Editorial Team" }}
 {{ $parts := split (replace $author " - " ", ") ", " }}
 {{ $name := index $parts 0 }}
 {{ $jobTitle := "" }}

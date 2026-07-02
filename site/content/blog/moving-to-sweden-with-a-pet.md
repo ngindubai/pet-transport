@@ -2,7 +2,7 @@
 title: "Moving to Sweden with a Pet: EU Passport"
 description: "A practical guide to relocating to Sweden with a cat or dog. Covers EU pet passport rules, requirements for UK and non-EU pets, Swedish Board of Agriculture (Jordbruksverket) rules and life in Stockholm."
 date: "2025-09-08"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/moving-to-sweden-with-a-pet/"
 tags: ["sweden", "stockholm", "expat guide", "pet relocation", "scandinavia", "europe"]

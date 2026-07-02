@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Czech Republic to Colombia | PetTransportGloba
 description: "Pet relocation from Czech Republic to Colombia: Colombia import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "czech-republic-to-colombia"
 origin_name: "Czech Republic"
 destination_name: "Colombia"

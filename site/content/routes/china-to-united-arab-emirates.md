@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from China to United Arab Emirates | PetTransportGl
 description: "How to ship your dog or cat from China to United Arab Emirates. United Arab Emirates import rules, vaccinations, permits, and airline options explained."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "china-to-united-arab-emirates"
 origin_name: "China"
 destination_name: "United Arab Emirates"

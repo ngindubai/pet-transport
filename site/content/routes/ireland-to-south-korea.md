@@ -3,7 +3,7 @@ title: "Pet Transport from Ireland to South Korea | DAFM Export, APQA Import & F
 description: "Moving your pet from Ireland to South Korea: DAFM health certificate, no titre test from EU Ireland, APQA advance notification, and airline cargo from Dublin to Incheon."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "ireland-to-south-korea"
 origin_name: "Ireland"
 destination_name: "South Korea"

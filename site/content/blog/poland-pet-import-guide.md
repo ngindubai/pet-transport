@@ -3,7 +3,7 @@ title: "Poland Pet Import Guide: EU Travel, UK Pet Requirements, and What to Kno
 description: "Poland is an EU member state. Here is what pets from inside and outside the EU need to enter, including post-Brexit UK rules."
 date: "2026-05-05"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "poland-pet-import-guide"
 url: "/blog/poland-pet-import-guide/"
 seo:

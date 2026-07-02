@@ -3,7 +3,7 @@ title: "Pet Cargo vs Excess Baggage: What's the Difference and Which Is Right fo
 description: "Excess baggage means your pet flies on the same plane as you. Cargo means it might not. Here's how to choose and when each option applies."
 date: "2026-05-12"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "pet-cargo-vs-excess-baggage-what-is-the-difference"
 url: "/blog/pet-cargo-vs-excess-baggage-what-is-the-difference/"
 seo:

@@ -3,7 +3,7 @@ title: "Moving Internationally with a Bichon Frise: Cabin Eligibility and Countr
 description: "Bichon Frises are small, cheerful dogs that usually qualify for cabin travel. Here is what Bichon owners need for international moves, including cabin weight limits, grooming notes, and country rules."
 date: 2026-05-09
 type: blog
-author: "The PetTransportGlobal Team"
+author: "PetTransportGlobal Editorial Team"
 slug: "travelling-with-a-bichon-frise-internationally"
 url: "/blog/travelling-with-a-bichon-frise-internationally/"
 seo:

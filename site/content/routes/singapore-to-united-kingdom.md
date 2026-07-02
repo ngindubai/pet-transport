@@ -4,7 +4,7 @@ title: "Pet Transport from Singapore to the UK | Requirements & Airline Comparis
 description: "Moving your pet from Singapore to the UK: no titre test (Singapore is GB-listed), AHC health certificate, tapeworm treatment, Cathay Pacific vs Singapore Airlines compared."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "singapore-to-united-kingdom"
 origin_name: "Singapore"
 destination_name: "United Kingdom"

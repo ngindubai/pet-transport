@@ -3,7 +3,7 @@ title: "Relocating a Cat Internationally: A Practical Guide for 2026"
 description: "A practical guide to moving your cat internationally in 2026: documentation, crate training, cat-specific airline considerations, quarantine cats, and settling in at the destination."
 date: "2026-05-02"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "relocating-a-cat-internationally"
 url: "/blog/relocating-a-cat-internationally/"
 seo:

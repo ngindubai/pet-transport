@@ -3,7 +3,7 @@ title: "Pet Transport from UK to Japan: MAFF Rules, Quarantine and the Preparati
 description: "Complete guide to moving your dog or cat from the UK to Japan in 2026: MAFF requirements, titre test, the 180-day quarantine risk, and how to qualify for the short quarantine pathway."
 date: "2026-05-05"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "uk-to-japan-pet-transport-guide"
 url: "/blog/uk-to-japan-pet-transport-guide/"
 seo:

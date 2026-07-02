@@ -3,7 +3,7 @@ title: "Pegasus Airlines Pet Transport Guide"
 description: "Pegasus Airlines (Turkey) pet policy: small pets in cabin on most routes, no hold cargo service for pets. Istanbul Sabiha Gokcen hub. Booking process and Turkey pet import rules."
 date: "2026-05-06"
 type: "airlines"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "pegasus-airlines"
 url: "/pet-transport/airlines/pegasus-airlines/"
 airline:

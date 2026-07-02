@@ -3,7 +3,7 @@ title: "Moving to Zimbabwe with Pets: DVS Permit and Import Requirements"
 description: "Zimbabwe requires an import permit, health certificate, and veterinary inspection for pet imports. Here is what expat families moving to Harare need to know about the DVS process."
 date: 2026-05-09
 type: blog
-author: "The PetTransportGlobal Team"
+author: "PetTransportGlobal Editorial Team"
 slug: "zimbabwe-pet-import-guide"
 url: "/blog/zimbabwe-pet-import-guide/"
 seo:

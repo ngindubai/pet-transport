@@ -3,7 +3,7 @@ title: "Flying with a Cat in the Cabin: The Complete Step-by-Step Guide"
 description: "A practical guide to flying with a cat in the cabin on international and domestic flights in 2026: carrier sizing, airline policies, security screening, and keeping your cat calm."
 date: "2026-05-12"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "flying-with-a-cat-in-cabin-complete-guide"
 url: "/blog/flying-with-a-cat-in-cabin-complete-guide/"
 seo:

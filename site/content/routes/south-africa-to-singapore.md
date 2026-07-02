@@ -4,7 +4,7 @@ description: "Shipping your pet from South Africa to Singapore: DALRRD export pe
 type: "routes"
 layout: "single"
 template_variant: "E"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "south-africa-to-singapore"
 origin_name: "South Africa"
 destination_name: "Singapore"

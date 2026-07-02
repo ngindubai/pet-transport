@@ -5,7 +5,7 @@ type: "routes"
 layout: "single"
 template_variant: "E"
 content_soul: 5
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "united-kingdom-to-uruguay"
 origin_name: "United Kingdom"
 destination_name: "Uruguay"

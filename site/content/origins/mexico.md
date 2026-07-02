@@ -3,7 +3,7 @@ title: "Mexico Pet Export Guide"
 description: "Complete guide to exporting your pet from Mexico."
 type: "origins"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 country_name: "Mexico"
 country_code: "MX"
 overview: |

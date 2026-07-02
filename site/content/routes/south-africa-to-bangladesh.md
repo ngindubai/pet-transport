@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from South Africa to Bangladesh | PetTransportGloba
 description: "Pet relocation from South Africa to Bangladesh: Bangladesh import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "south-africa-to-bangladesh"
 origin_name: "South Africa"
 destination_name: "Bangladesh"

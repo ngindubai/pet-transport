@@ -4,7 +4,7 @@ title: "Pet Transport from New Zealand to Canada | Requirements & Airline Compar
 description: "Moving your pet from New Zealand to Canada: CFIA rules, no quarantine, no titre test, health certificate requirements, and Air New Zealand vs Air Canada cargo compared."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "new-zealand-to-canada"
 origin_name: "New Zealand"
 destination_name: "Canada"

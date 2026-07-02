@@ -3,7 +3,7 @@ title: "Moving Pets from the USA to the UK: The Direct Route Guide"
 description: "Moving from the USA to Britain with a dog or cat? The USA is a listed country for UK entry. Here is the process: rabies vaccination, CDC-endorsed health certificate, and tapeworm for dogs."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "usa-to-uk-via-direct-routes-pet-guide"
 url: "/blog/usa-to-uk-via-direct-routes-pet-guide/"
 seo:

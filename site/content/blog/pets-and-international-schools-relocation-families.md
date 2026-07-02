@@ -3,7 +3,7 @@ title: "Relocating with Pets as an Expat Family: What International School Famil
 description: "A guide to pet relocation for families moving for international school assignments: timing your pet's move, destination rules for common expat locations, and managing the process with children."
 date: "2026-05-05"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "pets-and-international-schools-relocation-families"
 url: "/blog/pets-and-international-schools-relocation-families/"
 seo:

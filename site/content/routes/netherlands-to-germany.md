@@ -4,7 +4,7 @@ description: "Moving your pet from the Netherlands to Germany: EU pet passport a
 type: "routes"
 layout: "single"
 template_variant: "B"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "netherlands-to-germany"
 origin_name: "Netherlands"
 destination_name: "Germany"

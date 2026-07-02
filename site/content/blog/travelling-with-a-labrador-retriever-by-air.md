@@ -3,7 +3,7 @@ title: "Travelling with a Labrador Retriever: Size, Airlines, and Cargo Consider
 description: "Labs are one of the most common dogs transported internationally. Guide to which airlines accept Labradors, IATA crate sizes, breed-specific restrictions, and what to expect in cargo."
 date: "2026-06-05"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "travelling-with-a-labrador-retriever-by-air"
 url: "/blog/travelling-with-a-labrador-retriever-by-air/"
 seo:

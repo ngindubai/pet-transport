@@ -3,7 +3,7 @@ title: "Flying with an Alaskan Malamute | Cargo & Heat Restrictions"
 description: "Large breed cargo logistics, seasonal heat embargoes, and import rules for Alaskan Malamutes. Which airlines and routes work best."
 type: "breeds"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "alaskan-malamute"
 breed_name: "Alaskan Malamute"
 brachycephalic: false

@@ -4,7 +4,7 @@ title: "Pet Transport from South Africa to United Arab Emirates | Complete Guide
 description: "How to transport your dog or cat from South Africa to United Arab Emirates. Import requirements, airline options, costs, and step-by-step process."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "south-africa-to-united-arab-emirates"
 origin_name: "South Africa"
 destination_name: "United Arab Emirates"

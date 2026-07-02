@@ -4,7 +4,7 @@ description: "Shipping your pet from Hong Kong to South Africa: AFCD export perm
 type: "routes"
 layout: "single"
 template_variant: "B"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "hong-kong-to-south-africa"
 origin_name: "Hong Kong"
 destination_name: "South Africa"

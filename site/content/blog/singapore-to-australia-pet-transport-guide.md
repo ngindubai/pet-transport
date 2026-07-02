@@ -3,7 +3,7 @@ title: "Pet Transport from Singapore to Australia: DAFF Rules and What to Prepar
 description: "Complete guide to moving your dog or cat from Singapore to Australia in 2026: DAFF requirements, titre test, pre-export isolation, and 10-day quarantine at AQIS."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "singapore-to-australia-pet-transport-guide"
 url: "/blog/singapore-to-australia-pet-transport-guide/"
 seo:

@@ -4,7 +4,7 @@ title: "Pet Transport from the United States to Spain | 2026 Requirements & Airl
 description: "Moving your dog or cat from the USA to Spain in 2026: USDA health certificate, no quarantine, no titre test, airline options, and Spain's PPP breed licence explained."
 type: "routes"
 layout: "single"
-author: "Marcus Webb - Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "united-states-to-spain"
 origin_name: "United States"
 destination_name: "Spain"

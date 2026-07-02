@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Saudi Arabia to United Arab Emirates | PetTran
 description: "Complete guide to pet transport from Saudi Arabia to United Arab Emirates. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "saudi-arabia-to-united-arab-emirates"
 origin_name: "Saudi Arabia"
 destination_name: "United Arab Emirates"

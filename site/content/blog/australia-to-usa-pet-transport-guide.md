@@ -3,7 +3,7 @@ title: "Pet Transport from Australia to USA: CDC Rules and the Documentation Pro
 description: "Complete guide to moving your dog or cat from Australia to the USA in 2026: CDC dog import requirements, microchip timing rules, USDA health certificate, and airline options."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "australia-to-usa-pet-transport-guide"
 url: "/blog/australia-to-usa-pet-transport-guide/"
 seo:

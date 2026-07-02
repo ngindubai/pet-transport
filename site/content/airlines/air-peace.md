@@ -2,7 +2,7 @@
 title: "Air Peace Pet Transport: Policies for Cats and Dogs on West Africa Flights"
 description: "Air Peace pet transport guide. Nigeria's largest airline and how it handles cats and dogs in cabin and cargo. Covers Lagos hub routes, documentation and booking your pet on Air Peace."
 date: "2025-07-25"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "airlines"
 airline_name: "Air Peace"
 url: "/pet-transport/airlines/air-peace/"

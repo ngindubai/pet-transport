@@ -4,7 +4,7 @@ title: "Pet Relocation United Arab Emirates to Czech Republic | Requirements & G
 description: "Complete guide to pet transport from United Arab Emirates to Czech Republic. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "united-arab-emirates-to-czech-republic"
 origin_name: "United Arab Emirates"
 destination_name: "Czech Republic"

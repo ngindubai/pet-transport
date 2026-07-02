@@ -3,7 +3,7 @@ title: "International Pet Transport Glossary: Terms Every Pet Owner Should Know"
 description: "From FAVN to IATA to AHC, international pet transport has a vocabulary all of its own. Here is a plain-English glossary of the key terms every relocating pet owner needs to understand."
 date: 2026-05-09
 type: blog
-author: "The PetTransportGlobal Team"
+author: "PetTransportGlobal Editorial Team"
 slug: "pet-transport-glossary-terms-2026"
 url: "/blog/pet-transport-glossary-terms-2026/"
 seo:

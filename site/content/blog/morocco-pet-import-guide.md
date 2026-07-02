@@ -3,7 +3,7 @@ title: "Moving Pets to Morocco: Rabies Vaccination Rules and What UK Owners Need
 description: "Morocco pet import guide for dogs and cats. Rabies vaccination requirements, health certificate process, and practical advice for UK expats relocating to Marrakech, Casablanca, or the coast."
 date: "2026-05-12"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "morocco-pet-import-guide"
 url: "/blog/morocco-pet-import-guide/"
 seo:

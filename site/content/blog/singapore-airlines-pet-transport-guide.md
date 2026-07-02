@@ -3,7 +3,7 @@ title: "Singapore Airlines Pet Transport: Cargo-Only Policy, Breed Restrictions,
 description: "Singapore Airlines does not accept pets in the cabin. Cargo policy, breed restrictions, Singapore AVS import requirements, and how to book live animal cargo on SIA routes."
 date: "2026-06-03"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "singapore-airlines-pet-transport-guide"
 url: "/blog/singapore-airlines-pet-transport-guide/"
 seo:

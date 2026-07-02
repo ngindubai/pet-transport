@@ -4,7 +4,7 @@ title: "Pet Transport Estonia to United Kingdom | EU Pet Passport & Airline Guid
 description: "Moving your pet from Estonia to the UK? EU pet passport rules, AHC requirements, airBaltic and Finnair options, tapeworm treatment, and costs explained."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "estonia-to-united-kingdom"
 origin_name: "Estonia"
 destination_name: "United Kingdom"

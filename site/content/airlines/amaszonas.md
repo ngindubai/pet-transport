@@ -2,7 +2,7 @@
 title: "Amaszonas Pet Policy: Cargo Rules, Cabin Acceptance and Bolivia and Latin America Routes"
 description: "Amaszonas airline pet transport policy for cats and dogs. Covers cabin and hold cargo acceptance, Bolivian routes, altitude considerations at La Paz, and documentation for Latin American pet travel."
 date: "2025-09-18"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "airlines"
 url: "/pet-transport/airlines/amaszonas/"
 airline_name: "Amaszonas"

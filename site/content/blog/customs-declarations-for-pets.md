@@ -3,7 +3,7 @@ title: "Customs Declarations When Travelling with Pets: What You Actually Need t
 description: "Do you need to declare your pet at customs? What the rules are for pet food, medications, and accessories when crossing international borders with animals."
 date: "2026-06-19"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "customs-declarations-for-pets"
 url: "/blog/customs-declarations-for-pets/"
 seo:

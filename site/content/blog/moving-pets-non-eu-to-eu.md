@@ -3,7 +3,7 @@ title: "Moving Pets to the EU from Outside Europe: The Health Certificate Proces
 description: "Bringing a pet into the EU from the USA, Australia, UAE, or any non-EU country requires a specific health certificate format. What the EU requires, approved countries, and how the process works."
 date: "2026-06-11"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "moving-pets-non-eu-to-eu"
 url: "/blog/moving-pets-non-eu-to-eu/"
 seo:

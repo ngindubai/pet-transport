@@ -3,7 +3,7 @@ title: "Flying with a Russian Blue | Calm Breed's International Travel Guide"
 description: "Russian Blue international travel: airline rules, health documentation, and why this gentle, reserved breed handles air travel better than most."
 type: "breeds"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "russian-blue"
 breed_name: "Russian Blue"
 brachycephalic: false

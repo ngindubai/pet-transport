@@ -3,7 +3,7 @@ title: "Rottweiler Import Restrictions by Country | Pet Transport Global"
 description: "Which countries ban or restrict Rottweiler import, and what it means for international relocation. Country-by-country breakdown with current regulations."
 type: "breeds"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "rottweiler"
 breed_name: "Rottweiler"
 brachycephalic: false

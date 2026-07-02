@@ -3,7 +3,7 @@ title: "Flying with a Golden Retriever | Cargo Tips & Airline Rules"
 description: "What you need to book cargo for a Golden Retriever. Crate sizing, airline options, health certificates, and destination requirements explained."
 type: "breeds"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "golden-retriever"
 breed_name: "Golden Retriever"
 brachycephalic: false

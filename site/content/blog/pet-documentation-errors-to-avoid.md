@@ -2,7 +2,7 @@
 title: "10 Pet Documentation Errors That Can"
 description: "The most common pet transport documentation mistakes -- and how to avoid them. From microchip sequencing errors to expired health certificates, these are the errors that get animals detained."
 date: "2025-08-08"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/pet-documentation-errors-to-avoid/"
 tags: ["pet documentation", "common mistakes", "health certificate", "import permits", "practical guide"]

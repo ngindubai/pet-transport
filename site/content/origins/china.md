@@ -3,7 +3,7 @@ title: "China Pet Export Guide"
 description: "Complete guide to exporting your pet from China. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 country_name: "China"
 country_code: "CN"
 content:

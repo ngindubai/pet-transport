@@ -3,7 +3,7 @@ title: "International Pet Travel with a Yorkshire Terrier: A Complete Guide"
 description: "Yorkshire Terriers are small, breed-unrestricted, and often travel in cabin. Here is everything a Yorkie owner needs to know about international pet relocation."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "travelling-with-a-yorkshire-terrier-internationally"
 url: "/blog/travelling-with-a-yorkshire-terrier-internationally/"
 seo:

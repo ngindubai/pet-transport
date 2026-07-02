@@ -3,7 +3,7 @@ title: "EU Pet Travel After Brexit: Why Your Pet Passport No Longer Works"
 description: "Post-Brexit UK pet passports are not accepted in the EU. Here's what replaced them, how to get an Animal Health Certificate, and which countries still accept UK passports."
 date: "2026-05-02"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "eu-pet-travel-post-brexit-uk-guide"
 url: "/blog/eu-pet-travel-post-brexit-uk-guide/"
 seo:

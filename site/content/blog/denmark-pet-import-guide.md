@@ -3,7 +3,7 @@ title: "Bringing a Pet to Denmark: EU Rules, Breed Bans and Border Controls"
 description: "Complete guide to bringing your dog or cat to Denmark in 2026: EU pet passport, microchip, rabies vaccine, breed bans, and what to expect at Copenhagen Airport."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "denmark-pet-import-guide"
 url: "/blog/denmark-pet-import-guide/"
 seo:

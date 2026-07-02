@@ -3,7 +3,7 @@ title: "Singapore to UK Pet Transport: APHA Requirements and the Titre Test Time
 description: "Moving from Singapore to the UK with your pet? Here is exactly what dogs and cats need to meet UK entry requirements, including the titre test process and timeline."
 date: "2026-05-05"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "singapore-to-uk-pet-transport-guide"
 url: "/blog/singapore-to-uk-pet-transport-guide/"
 seo:

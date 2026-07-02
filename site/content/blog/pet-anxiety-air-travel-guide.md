@@ -3,7 +3,7 @@ title: "Managing Pet Anxiety During Air Travel: Practical Advice from Vets and O
 description: "A guide to recognising and managing anxiety in dogs and cats during international air travel: signs to watch for, preparation strategies, and what vets recommend."
 date: "2026-05-12"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "pet-anxiety-air-travel-guide"
 url: "/blog/pet-anxiety-air-travel-guide/"
 seo:

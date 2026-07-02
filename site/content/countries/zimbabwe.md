@@ -3,7 +3,7 @@ title: "Importing Pets to Zimbabwe | Requirements & Regulations | PetTransportGl
 description: "Complete guide to importing dogs and cats into Zimbabwe. DLVS import requirements, quarantine rules, and banned breeds explained."
 type: "countries"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "zimbabwe"
 destination_country: "Zimbabwe"
 destination_iso: "ZW"

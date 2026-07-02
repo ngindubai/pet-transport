@@ -2,7 +2,7 @@
 title: "Travelling Internationally with a Belgian"
 description: "Everything Belgian Malinois owners need to know about international travel. Covers breed restrictions by country, airline cargo policies, crate requirements and documentation."
 date: "2025-07-11"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/travelling-with-a-belgian-malinois-internationally/"
 tags: ["belgian malinois", "breed guide", "dog travel", "restricted breeds", "international pet travel"]

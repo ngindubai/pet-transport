@@ -4,7 +4,7 @@ description: "Moving your pet from France to the Netherlands: EU pet passport ac
 type: "routes"
 layout: "single"
 template_variant: "C"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "france-to-netherlands"
 origin_name: "France"
 destination_name: "Netherlands"

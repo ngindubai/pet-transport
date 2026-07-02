@@ -4,7 +4,7 @@ title: "Pet Transport from Spain to the United States | 2026 CDC & Airline Guide
 description: "Moving your dog or cat from Spain to the USA in 2026: CDC Dog Import Form, low-risk classification, USDA arrival process, airline options from Spanish airports."
 type: "routes"
 layout: "single"
-author: "Marcus Webb - Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "spain-to-united-states"
 origin_name: "Spain"
 destination_name: "United States"

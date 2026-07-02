@@ -3,7 +3,7 @@ title: "Flying with a Samoyed | Arctic Breed Cargo & Temperature Guide"
 description: "Airline and import rules for Samoyeds. Summer heat restrictions, large crate logistics, and international relocation guide for this thick-coated breed."
 type: "breeds"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "samoyed"
 breed_name: "Samoyed"
 brachycephalic: false

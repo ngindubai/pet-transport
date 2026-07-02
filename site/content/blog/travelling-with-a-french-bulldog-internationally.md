@@ -3,7 +3,7 @@ title: "Flying Internationally with a French Bulldog: Restrictions, Risks and Wh
 description: "A guide to the realities of flying internationally with a French Bulldog in 2026: which airlines accept them, cargo restrictions, health risks, and safer alternatives to explore."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "travelling-with-a-french-bulldog-internationally"
 url: "/blog/travelling-with-a-french-bulldog-internationally/"
 seo:

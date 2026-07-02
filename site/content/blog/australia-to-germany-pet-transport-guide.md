@@ -3,7 +3,7 @@ title: "Pet Transport from Australia to Germany: What Australian Pets Need for E
 description: "Moving from Australia to Germany? Australia is on the EU's approved list. Here is what Australian pets need for German entry: microchip, AHC endorsed by DAFF, tapeworm treatment, and flight options."
 date: 2026-05-09
 type: blog
-author: "The PetTransportGlobal Team"
+author: "PetTransportGlobal Editorial Team"
 slug: "australia-to-germany-pet-transport-guide"
 url: "/blog/australia-to-germany-pet-transport-guide/"
 seo:

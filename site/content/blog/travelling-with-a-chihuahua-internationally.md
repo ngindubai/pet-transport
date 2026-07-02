@@ -3,7 +3,7 @@ title: "Travelling Internationally with a Chihuahua: Cabin Options, Regulations 
 description: "Complete guide to international travel with a Chihuahua in 2026: in-cabin travel options, weight limits, microchip rules, country import requirements, and keeping tiny dogs safe."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "travelling-with-a-chihuahua-internationally"
 url: "/blog/travelling-with-a-chihuahua-internationally/"
 seo:

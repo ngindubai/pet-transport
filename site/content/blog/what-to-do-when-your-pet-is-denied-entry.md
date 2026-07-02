@@ -3,7 +3,7 @@ title: "What Happens When Your Pet Is Denied Entry at the Border?"
 description: "Pet entry denial is rare but it happens. Here is what typically causes it, what border officials will do, and how to handle it if you find yourself in this situation."
 date: "2026-05-05"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "James Osei, Pet Transport Planning Specialist, PetTransportGlobal"
 slug: "what-to-do-when-your-pet-is-denied-entry"
 url: "/blog/what-to-do-when-your-pet-is-denied-entry/"
 seo:

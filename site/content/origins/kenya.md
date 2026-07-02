@@ -3,7 +3,7 @@ title: "Kenya Pet Export Guide"
 description: "Complete guide to exporting your pet from Kenya."
 type: "origins"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 country_name: "Kenya"
 country_code: "KE"
 overview: |

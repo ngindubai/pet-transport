@@ -5,7 +5,7 @@ description: "Moving pets from South Korea to Japan in 2026. AQS requires 180-da
 date: "2026-06-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb - Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "south-korea-to-japan"
 origin_name: "South Korea"
 destination_name: "Japan"

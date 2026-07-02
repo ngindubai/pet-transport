@@ -2,7 +2,7 @@
 title: "Pet Transport from Australia to India"
 description: "Moving your cat or dog from Australia to India. Covers DAHD import permit requirements, AQIS-endorsed health certificates, approved entry airports and airline options for this route."
 date: "2025-07-25"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/australia-to-india-pet-transport-guide/"
 tags: ["australia", "india", "route guide", "pet transport", "pet relocation"]

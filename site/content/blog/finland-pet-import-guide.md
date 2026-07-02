@@ -3,7 +3,7 @@ title: "Moving Pets to Finland: EU Entry Rules, Echinococcus Treatment, and Wint
 description: "Finland's pet import rules for dogs and cats from the UK and outside the EU. Echinococcus tapeworm treatment requirement, health certificates, and cold-weather cargo tips."
 date: "2026-05-10"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "finland-pet-import-guide"
 url: "/blog/finland-pet-import-guide/"
 seo:

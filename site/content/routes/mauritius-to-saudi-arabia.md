@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Mauritius to Saudi Arabia | PetTransportGlobal
 description: "Complete guide to pet transport from Mauritius to Saudi Arabia. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "mauritius-to-saudi-arabia"
 origin_name: "Mauritius"
 destination_name: "Saudi Arabia"

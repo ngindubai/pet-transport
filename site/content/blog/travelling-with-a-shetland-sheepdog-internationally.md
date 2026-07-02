@@ -2,7 +2,7 @@
 title: "International Travel with a Shetland"
 description: "A Shetland Sheepdog owner's guide to international pet travel. Covers airline cargo policies, crate sizing for Shelties, country breed restrictions and key documentation for this popular working breed."
 date: "2025-08-30"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/travelling-with-a-shetland-sheepdog-internationally/"
 tags: ["shetland sheepdog", "sheltie", "breed guide", "dog travel", "international pet travel"]

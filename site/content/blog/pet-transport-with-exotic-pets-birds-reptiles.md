@@ -3,7 +3,7 @@ title: "Travelling Internationally with Birds, Reptiles, and Exotic Pets: What Y
 description: "International travel with birds, reptiles, and exotic pets is far more complex than dogs and cats. CITES permits, country bans, and airline restrictions make this a specialist area."
 date: "2026-05-05"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "pet-transport-with-exotic-pets-birds-reptiles"
 url: "/blog/pet-transport-with-exotic-pets-birds-reptiles/"
 seo:

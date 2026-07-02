@@ -3,7 +3,7 @@ title: "How to Choose the Right Pet Shipping Crate: IATA Rules and Practical Adv
 description: "Picking the wrong crate is one of the most common mistakes in pet travel. Here is a practical guide to IATA crate requirements, sizing, and what to look for before you buy."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "James Osei, Pet Transport Planning Specialist, PetTransportGlobal"
 slug: "how-to-choose-a-pet-shipping-crate"
 url: "/blog/how-to-choose-a-pet-shipping-crate/"
 seo:

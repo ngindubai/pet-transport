@@ -3,7 +3,7 @@ title: "Philippines Pet Export Guide"
 description: "Complete guide to exporting your pet from Philippines."
 type: "origins"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 country_name: "Philippines"
 country_code: "PH"
 overview: |

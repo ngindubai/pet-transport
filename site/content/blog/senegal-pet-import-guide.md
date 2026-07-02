@@ -3,7 +3,7 @@ title: "Moving to Senegal with Pets: DIREL Requirements for Dakar-Bound Expats"
 description: "Senegal is West Africa's most prominent diplomatic and business hub. Here is what dogs and cats need to enter Senegal: DIREL health certificate, vaccinations, and arrival at Blaise Diagne Airport."
 date: 2026-05-09
 type: blog
-author: "The PetTransportGlobal Team"
+author: "PetTransportGlobal Editorial Team"
 slug: "senegal-pet-import-guide"
 url: "/blog/senegal-pet-import-guide/"
 seo:

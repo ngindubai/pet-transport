@@ -3,7 +3,7 @@ title: "Pet Transport from the USA to France: AHC Requirements and Paris Entry"
 description: "Moving from the USA to France with a pet? France follows EU pet travel rules. Here is the full process: USDA-endorsed AHC, microchip, tapeworm treatment, and arriving at Charles de Gaulle."
 date: 2026-05-09
 type: blog
-author: "The PetTransportGlobal Team"
+author: "PetTransportGlobal Editorial Team"
 slug: "usa-to-france-pet-transport-guide"
 url: "/blog/usa-to-france-pet-transport-guide/"
 seo:

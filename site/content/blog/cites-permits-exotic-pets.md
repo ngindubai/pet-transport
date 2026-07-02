@@ -3,7 +3,7 @@ title: "CITES Permits for Exotic Pets: What International Travellers Need to Kno
 description: "If your pet is a species listed under CITES Appendix I, II, or III, you need export and import permits for international travel. Guide to what CITES covers, how to apply, and common mistakes."
 date: "2026-05-28"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "cites-permits-exotic-pets"
 url: "/blog/cites-permits-exotic-pets/"
 seo:

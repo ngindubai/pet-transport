@@ -3,7 +3,7 @@ title: "Pet Microchipping for International Travel: What You Need to Know"
 description: "Microchipping is mandatory for international pet travel. Here is a guide to ISO standards, chip placement, scanning, and what to do if a chip fails or cannot be read."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "pet-microchipping-guide-international-travel"
 url: "/blog/pet-microchipping-guide-international-travel/"
 seo:

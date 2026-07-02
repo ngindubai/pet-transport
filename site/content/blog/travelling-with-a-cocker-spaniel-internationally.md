@@ -3,7 +3,7 @@ title: "Travelling Internationally with a Cocker Spaniel: Airline Policies and I
 description: "Guide to international travel with a Cocker Spaniel or English Springer Spaniel in 2026: airline cargo options, cabin eligibility, ear care, and country import rules."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "travelling-with-a-cocker-spaniel-internationally"
 url: "/blog/travelling-with-a-cocker-spaniel-internationally/"
 seo:

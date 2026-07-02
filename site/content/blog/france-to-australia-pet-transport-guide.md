@@ -3,7 +3,7 @@ title: "France to Australia Pet Transport: The Titre Test, DAFF Requirements, an
 description: "Moving a dog or cat from France to Australia. DAFF entry requirements, rabies titre test process from France, approved labs, Mickleham quarantine, and airline options from Paris."
 date: "2026-06-19"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "france-to-australia-pet-transport-guide"
 url: "/blog/france-to-australia-pet-transport-guide/"
 seo:

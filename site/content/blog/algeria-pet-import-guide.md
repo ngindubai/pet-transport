@@ -2,7 +2,7 @@
 title: "Importing a Pet to Algeria"
 description: "A practical guide to bringing a cat or dog to Algeria. Covers the ONVSA permit process, endorsed health certificates, vaccination requirements and arrival procedures at Algiers Airport."
 date: "2025-07-24"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/algeria-pet-import-guide/"
 tags: ["algeria", "north africa", "country guide", "pet import"]

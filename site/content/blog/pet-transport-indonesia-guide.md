@@ -3,7 +3,7 @@ title: "Moving Pets to Indonesia: Jakarta Import Rules and the Quarantine Proces
 description: "Indonesia pet import guide. The Ministry of Agriculture permit, quarantine requirements, breed restrictions, and what to expect at Soekarno-Hatta Airport in Jakarta."
 date: "2026-05-28"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "pet-transport-indonesia-guide"
 url: "/blog/pet-transport-indonesia-guide/"
 seo:

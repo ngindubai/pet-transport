@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Philippines to South Africa | PetTransportGlob
 description: "How to ship your dog or cat from Philippines to South Africa. South Africa import rules, vaccinations, permits, and airline options explained."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "philippines-to-south-africa"
 origin_name: "Philippines"
 destination_name: "South Africa"

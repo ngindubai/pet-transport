@@ -3,7 +3,7 @@ title: "Travelling Internationally with an English Bulldog: What You Must Know"
 description: "English Bulldogs are one of the most restricted breeds for air travel due to their brachycephalic anatomy. Here is a frank guide to the risks, airline bans, and what alternatives exist."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "travelling-with-an-english-bulldog-internationally"
 url: "/blog/travelling-with-an-english-bulldog-internationally/"
 seo:

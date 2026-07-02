@@ -3,7 +3,7 @@ title: "Flying with a Boston Terrier | Airline Restrictions & Advice"
 description: "Which airlines accept Boston Terrier as cargo or cabin? Seasonal embargoes, breed bans, and what you need before booking your flat-faced dog."
 type: "breeds"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "boston-terrier"
 breed_name: "Boston Terrier"
 brachycephalic: true

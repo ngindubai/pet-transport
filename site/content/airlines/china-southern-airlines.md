@@ -3,7 +3,7 @@ title: "China Southern Airlines Pet Transport Guide"
 description: "China Southern Airlines pet transport policy: cargo requirements, breed restrictions, crate rules, and what to prepare when flying with pets on China Southern."
 date: "2026-05-06"
 type: "airlines"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "china-southern-airlines"
 url: "/pet-transport/airlines/china-southern-airlines/"
 airline:

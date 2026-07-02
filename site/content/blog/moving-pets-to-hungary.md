@@ -3,7 +3,7 @@ title: "Moving Pets to Hungary: EU Rules and What International Arrivals Need"
 description: "Guide to bringing your dog or cat to Hungary in 2026: EU pet passport rules, UK AHC requirements, breed restrictions, and arriving at Budapest Ferenc Liszt Airport."
 date: "2026-05-12"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "moving-pets-to-hungary"
 url: "/blog/moving-pets-to-hungary/"
 seo:

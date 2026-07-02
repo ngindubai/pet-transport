@@ -3,7 +3,7 @@ title: "Air Mauritius Pet Policy: Flying Pets to and from Mauritius"
 description: "Air Mauritius is the national carrier of Mauritius. Here is the pet transport policy, Mauritius's strict biosecurity import requirements, and what pet owners moving to or from Mauritius need to know."
 date: 2026-05-09
 type: airlines
-author: "The PetTransportGlobal Team"
+author: "PetTransportGlobal Editorial Team"
 slug: "air-mauritius"
 url: "/pet-transport/airlines/air-mauritius/"
 seo:

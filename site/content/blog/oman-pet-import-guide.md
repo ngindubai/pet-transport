@@ -3,7 +3,7 @@ title: "Moving Pets to Oman: Import Permits, Breed Restrictions, and the 6-Month
 description: "Oman pet import rules for dogs and cats. The Ministry of Agriculture permit process, breed bans, vaccination requirements, and what the 6-month residency rule means for expats."
 date: "2026-05-12"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "oman-pet-import-guide"
 url: "/blog/oman-pet-import-guide/"
 seo:

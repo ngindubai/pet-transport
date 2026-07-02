@@ -4,7 +4,7 @@ description: "Moving your pet from France to Singapore: AVS Category C rules, ti
 type: "routes"
 layout: "single"
 template_variant: "E"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "france-to-singapore"
 origin_name: "France"
 destination_name: "Singapore"

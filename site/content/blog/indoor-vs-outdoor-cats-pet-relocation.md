@@ -3,7 +3,7 @@ title: "Indoor vs Outdoor Cats: How International Relocation Changes Everything"
 description: "Relocating internationally with a cat is different depending on whether they are indoor or outdoor cats. Here is what to expect and how to help your cat adapt."
 date: "2026-05-05"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "indoor-vs-outdoor-cats-pet-relocation"
 url: "/blog/indoor-vs-outdoor-cats-pet-relocation/"
 seo:

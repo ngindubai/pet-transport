@@ -3,7 +3,7 @@ title: "Germany to USA Pet Transport: CDC Rules, USDA Health Certificates, and W
 description: "Moving from Germany to the USA with your dog or cat? Here is what changed in 2024 and what German pet owners need to meet CDC import requirements."
 date: "2026-05-05"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "germany-to-usa-pet-transport-guide"
 url: "/blog/germany-to-usa-pet-transport-guide/"
 seo:

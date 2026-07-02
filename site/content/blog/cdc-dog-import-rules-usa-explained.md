@@ -3,7 +3,7 @@ title: "CDC Dog Import Rules for the USA: The 2024 Changes Explained"
 description: "The CDC overhauled US dog import rules in 2024. Here's what changed, what high-risk vs low-risk means for your dog, and what the CDC Dog Import Form actually does."
 date: "2026-04-13"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "cdc-dog-import-rules-usa-explained"
 url: "/blog/cdc-dog-import-rules-usa-explained/"
 seo:

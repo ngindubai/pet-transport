@@ -2,7 +2,7 @@
 title: "flynas Pet Transport: Cargo Policies and Pet Travel Guide"
 description: "flynas pet transport policies explained. Saudi Arabia's low-cost carrier covers domestic and Middle East routes. Covers pet acceptance, crate requirements, Saudi import rules and booking process."
 date: "2025-08-17"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "airlines"
 url: "/pet-transport/airlines/flynas/"
 airline_name: "flynas"

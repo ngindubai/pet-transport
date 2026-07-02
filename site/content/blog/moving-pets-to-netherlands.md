@@ -3,7 +3,7 @@ title: "Moving Pets to the Netherlands: EU Import Rules, Breed Bans, and Schipho
 description: "Netherlands pet import guide for UK owners. Animal Health Certificate requirements, the Dutch breed ban list, and what to expect for cargo and cabin arrivals at Amsterdam Schiphol."
 date: "2026-06-01"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "moving-pets-to-netherlands"
 url: "/blog/moving-pets-to-netherlands/"
 seo:

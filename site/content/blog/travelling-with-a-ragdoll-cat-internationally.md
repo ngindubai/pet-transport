@@ -3,7 +3,7 @@ title: "Moving Internationally with a Ragdoll Cat: Size, Temperament, and Practi
 description: "Ragdoll cats are large, placid, and generally good travellers. Here is what Ragdoll owners need to know for international relocation, including cabin weight limits and crate sizing."
 date: 2026-05-09
 type: blog
-author: "The PetTransportGlobal Team"
+author: "PetTransportGlobal Editorial Team"
 slug: "travelling-with-a-ragdoll-cat-internationally"
 url: "/blog/travelling-with-a-ragdoll-cat-internationally/"
 seo:

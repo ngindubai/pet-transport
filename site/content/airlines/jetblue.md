@@ -3,7 +3,7 @@ title: "JetBlue Pet Transport Guide"
 description: "JetBlue pet transport policy 2026: cabin pet rules, weight limits, approved carrier dimensions, breed restrictions, and what US domestic and international travellers need to know."
 date: "2026-05-06"
 type: "airlines"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "jetblue"
 url: "/pet-transport/airlines/jetblue/"
 airline:

@@ -3,7 +3,7 @@ title: "Transporting Cats in Cargo: What to Expect and How to Prepare"
 description: "Most cats travel internationally in cargo holds, not cabins. What cargo travel actually involves, how cats cope, preparation tips, and which airlines handle cats well."
 date: "2026-06-07"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "cats-in-cargo-what-to-expect"
 url: "/blog/cats-in-cargo-what-to-expect/"
 seo:

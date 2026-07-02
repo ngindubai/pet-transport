@@ -3,7 +3,7 @@ title: "Jet2 Pet Policy: Does Jet2 Accept Pets on Flights?"
 description: "Jet2 does not accept pets on its holiday flights. Here is the full policy, assistance animal details, and which airlines to use for the same Mediterranean and European destinations."
 date: 2026-05-09
 type: airlines
-author: "The PetTransportGlobal Team"
+author: "PetTransportGlobal Editorial Team"
 slug: "jet2"
 url: "/pet-transport/airlines/jet2/"
 seo:

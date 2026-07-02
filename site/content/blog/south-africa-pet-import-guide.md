@@ -3,7 +3,7 @@ title: "South Africa Pet Import Guide: DALRRD Import Permit, Rabies Rules, and A
 description: "Bringing a pet to South Africa requires a DALRRD import permit and a vet-certified health certificate. Here is the full process for dogs and cats."
 date: "2026-05-05"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "south-africa-pet-import-guide"
 url: "/blog/south-africa-pet-import-guide/"
 seo:

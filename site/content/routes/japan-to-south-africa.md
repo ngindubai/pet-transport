@@ -4,7 +4,7 @@ description: "Shipping your pet from Japan to South Africa: AQS export certifica
 type: "routes"
 layout: "single"
 template_variant: "B"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "japan-to-south-africa"
 origin_name: "Japan"
 destination_name: "South Africa"

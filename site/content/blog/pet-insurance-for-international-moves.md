@@ -3,7 +3,7 @@ title: "Pet Insurance for International Moves: What to Buy, What it Covers, and 
 description: "Moving internationally with a pet creates insurance gaps. What policies cover during transit, quarantine, and the first months in a new country -- and what to look for."
 date: "2026-05-28"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "James Osei, Pet Transport Planning Specialist, PetTransportGlobal"
 slug: "pet-insurance-for-international-moves"
 url: "/blog/pet-insurance-for-international-moves/"
 seo:

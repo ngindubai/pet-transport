@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from New Zealand to Philippines | PetTransportGloba
 description: "Complete guide to pet transport from New Zealand to Philippines. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "new-zealand-to-philippines"
 origin_name: "New Zealand"
 destination_name: "Philippines"

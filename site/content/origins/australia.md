@@ -3,7 +3,7 @@ title: "Pet Export Guide: Shipping from Australia"
 description: "Exporting your pet from Australia: export health certificate requirements, airline options, and routes from Australia to popular destinations worldwide."
 type: "origins"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 country_name: "Australia"
 country_code: "AU"
 overview: |

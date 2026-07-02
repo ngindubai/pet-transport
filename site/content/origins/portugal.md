@@ -3,7 +3,7 @@ title: "Portugal Pet Export Guide"
 description: "Complete guide to exporting your pet from Portugal."
 type: "origins"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 country_name: "Portugal"
 country_code: "PT"
 overview: |

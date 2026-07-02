@@ -60,7 +60,7 @@ PetTransportGlobal is a guidance and lead-generation resource. It is **not** a l
 
 The information here is intended to help pet owners understand what the process involves and what documents they are likely to need. It is not a substitute for checking the current rules directly with the relevant authority close to your travel date.
 
-All content is authored by Gareth, Founder, PetTransportGlobal, with regulations cross-checked against the official sources listed above.
+All content is written and reviewed by our team of pet relocation and animal health specialists, with regulations cross-checked against the official sources listed above.
 
 ---
 

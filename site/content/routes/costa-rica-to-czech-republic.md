@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Costa Rica to Czech Republic | PetTransportGlo
 description: "Pet relocation from Costa Rica to Czech Republic: Czech Republic import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "costa-rica-to-czech-republic"
 origin_name: "Costa Rica"
 destination_name: "Czech Republic"

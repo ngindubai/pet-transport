@@ -3,7 +3,7 @@ title: "WestJet Pet Transport Guide"
 description: "WestJet pet transport policy 2026: cabin pet rules, cargo options, breed restrictions, crate requirements, and what Canadian pet owners need to know."
 date: "2026-05-06"
 type: "airlines"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "westjet"
 url: "/pet-transport/airlines/westjet/"
 airline:

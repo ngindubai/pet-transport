@@ -4,7 +4,7 @@ description: "Moving your pet from Ireland to Germany: EU pet passport accepted,
 type: "routes"
 layout: "single"
 template_variant: "A"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "ireland-to-germany"
 origin_name: "Ireland"
 destination_name: "Germany"

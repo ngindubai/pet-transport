@@ -2,7 +2,7 @@
 title: "Importing a Pet to Laos: Rules"
 description: "A practical guide to importing cats and dogs to Laos. Covers the Department of Livestock and Fisheries permit process, vaccination requirements, health certificates and border entry."
 date: "2025-07-22"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/laos-pet-import-guide/"
 tags: ["laos", "southeast asia", "country guide", "pet import"]

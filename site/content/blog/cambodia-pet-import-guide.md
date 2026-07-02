@@ -3,7 +3,7 @@ title: "Moving to Cambodia with Pets: Import Rules for Phnom Penh-Bound Expats"
 description: "Cambodia has relaxed pet import rules compared to many Asian neighbours. No mandatory quarantine, no titre test. Here is what dogs and cats need to enter Cambodia legally."
 date: 2026-05-09
 type: blog
-author: "The PetTransportGlobal Team"
+author: "PetTransportGlobal Editorial Team"
 slug: "cambodia-pet-import-guide"
 url: "/blog/cambodia-pet-import-guide/"
 seo:

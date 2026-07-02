@@ -4,7 +4,7 @@ description: "Moving your pet from Germany to Switzerland: bilateral EU-CH pet p
 type: "routes"
 layout: "single"
 template_variant: "D"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "germany-to-switzerland"
 origin_name: "Germany"
 destination_name: "Switzerland"

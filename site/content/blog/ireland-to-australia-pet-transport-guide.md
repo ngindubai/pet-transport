@@ -3,7 +3,7 @@ title: "Ireland to Australia Pet Transport: What Irish Pet Owners Need to Know"
 description: "Moving from Ireland to Australia with your dog or cat? Here is the full process including Group 3 requirements, the 6-month titre test stand-down, and Mickleham quarantine."
 date: "2026-05-05"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "ireland-to-australia-pet-transport-guide"
 url: "/blog/ireland-to-australia-pet-transport-guide/"
 seo:

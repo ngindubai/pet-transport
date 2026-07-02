@@ -3,7 +3,7 @@ title: "Moving Internationally with a Maltese: Tiny Dog, Cabin Travel Tips and C
 description: "Maltese are tiny dogs that almost always qualify for cabin travel. Here is what Maltese owners need for international moves, from cabin requirements to health certificate timing."
 date: 2026-05-09
 type: blog
-author: "The PetTransportGlobal Team"
+author: "PetTransportGlobal Editorial Team"
 slug: "travelling-with-a-maltese-internationally"
 url: "/blog/travelling-with-a-maltese-internationally/"
 seo:

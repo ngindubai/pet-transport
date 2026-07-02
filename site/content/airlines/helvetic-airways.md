@@ -2,7 +2,7 @@
 title: "Helvetic Airways Pet Policy: Cabin Rules, Swiss Routes and European Pet Travel"
 description: "Helvetic Airways pet transport policy for cats and dogs. Covers cabin pet acceptance on Swiss regional routes, hold cargo rules, EU/Swiss pet passport requirements and Zurich hub connections."
 date: "2025-09-15"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "airlines"
 url: "/pet-transport/airlines/helvetic-airways/"
 airline_name: "Helvetic Airways"

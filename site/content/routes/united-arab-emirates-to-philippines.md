@@ -4,7 +4,7 @@ title: "Moving Your Pet from United Arab Emirates to Philippines | Complete Guid
 description: "Pet relocation from United Arab Emirates to Philippines: Philippines import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "united-arab-emirates-to-philippines"
 origin_name: "United Arab Emirates"
 destination_name: "Philippines"

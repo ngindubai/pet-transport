@@ -4,7 +4,7 @@ title: "Pet Transport Switzerland to Italy | Swiss Pet Passport & Intra-Schengen
 description: "Moving your pet from Switzerland to Italy? Switzerland and Italy share borders and aligned pet travel rules. No titre test, no quarantine. See airline options."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "switzerland-to-italy"
 origin_name: "Switzerland"
 destination_name: "Italy"

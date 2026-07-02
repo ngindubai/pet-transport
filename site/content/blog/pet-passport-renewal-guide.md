@@ -3,7 +3,7 @@ title: "EU Pet Passport Renewal: When It Expires and What to Do"
 description: "A guide to EU pet passport expiry, renewal, and what happens if your pet passport is out of date when travelling in 2026."
 date: "2026-05-11"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "pet-passport-renewal-guide"
 url: "/blog/pet-passport-renewal-guide/"
 seo:

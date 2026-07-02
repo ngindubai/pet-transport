@@ -3,7 +3,7 @@ title: "Bulgaria Air Pet Transport Guide"
 description: "Bulgaria Air pet policy: cabin pets on European routes, hold cargo available. Sofia hub. EU pet travel rules for Bulgaria and booking process for dog and cat transport."
 date: "2026-05-06"
 type: "airlines"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "bulgaria-air"
 url: "/pet-transport/airlines/bulgaria-air/"
 airline:

@@ -3,7 +3,7 @@ title: "Bringing a Pet to India: Import Rules, Documentation and What to Expect"
 description: "Guide to bringing your dog or cat to India in 2026: DAHD import requirements, health certificate format, approved airports, and breed restrictions."
 date: "2026-05-02"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "india-pet-import-guide"
 url: "/blog/india-pet-import-guide/"
 seo:

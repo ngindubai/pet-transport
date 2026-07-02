@@ -4,7 +4,7 @@ description: "Moving your pet from Singapore to South Korea: AVS export licence,
 type: "routes"
 layout: "single"
 template_variant: "B"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "singapore-to-south-korea"
 origin_name: "Singapore"
 destination_name: "South Korea"

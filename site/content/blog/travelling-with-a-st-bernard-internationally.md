@@ -2,7 +2,7 @@
 title: "International Travel with a St Bernard"
 description: "Planning to relocate internationally with a St Bernard? This guide covers crate requirements for giant breeds, airline cargo acceptance, country breed restrictions and health considerations."
 date: "2025-08-02"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "blog"
 url: "/blog/travelling-with-a-st-bernard-internationally/"
 tags: ["st bernard", "saint bernard", "breed guide", "large dogs", "international pet travel"]

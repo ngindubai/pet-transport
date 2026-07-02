@@ -2,7 +2,7 @@
 title: "China Airlines Pet Policy: Cargo Rules, Cabin Acceptance and Taiwan Import Requirements"
 description: "China Airlines (Taiwan) pet transport policy for cats and dogs. Covers cargo hold acceptance, cabin rules, breed restrictions, BAPHIQ Taiwan import requirements and airline contact information."
 date: "2025-09-13"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "airlines"
 url: "/pet-transport/airlines/china-airlines/"
 airline_name: "China Airlines"

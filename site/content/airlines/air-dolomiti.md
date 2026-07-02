@@ -2,7 +2,7 @@
 title: "Air Dolomiti Pet Policy: Cabin Pets, Cargo Rules and Intra-European Flights"
 description: "Air Dolomiti pet transport policy for cats and dogs. Covers cabin pet acceptance, hold rules, Lufthansa Group connection, crate requirements and Italy domestic and European route coverage."
 date: "2025-09-14"
-author: "PetTransport Global Editorial Team"
+author: "PetTransportGlobal Editorial Team"
 type: "airlines"
 url: "/pet-transport/airlines/air-dolomiti/"
 airline_name: "Air Dolomiti"

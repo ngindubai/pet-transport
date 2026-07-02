@@ -4,7 +4,7 @@ title: "Pet Transport from Tanzania to United Arab Emirates | PetTransportGlobal
 description: "Pet relocation from Tanzania to United Arab Emirates: United Arab Emirates import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "tanzania-to-united-arab-emirates"
 origin_name: "Tanzania"
 destination_name: "United Arab Emirates"

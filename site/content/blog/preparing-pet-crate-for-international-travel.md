@@ -3,7 +3,7 @@ title: "How to Prepare Your Pet's Crate for International Air Travel"
 description: "Getting your pet's crate right is one of the most important steps in international pet transport. This guide covers IATA requirements, sizing, labelling, and how to help your pet settle in before the flight."
 date: "2026-06-11"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "preparing-pet-crate-for-international-travel"
 url: "/blog/preparing-pet-crate-for-international-travel/"
 seo:

@@ -3,7 +3,7 @@ title: "Bringing a Pet to Sweden: EU Import Rules, Tapeworm and Jordbruksverket 
 description: "Complete guide to bringing your dog or cat to Sweden in 2026: EU pet passport, titre test, tapeworm treatment, and Swedish Board of Agriculture requirements."
 date: "2026-05-06"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "sweden-pet-import-guide"
 url: "/blog/sweden-pet-import-guide/"
 seo:

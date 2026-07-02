@@ -4,7 +4,7 @@ description: "Moving your pet from Italy to France: EU pet passport accepted, no
 type: "routes"
 layout: "single"
 template_variant: "B"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "italy-to-france"
 origin_name: "Italy"
 destination_name: "France"

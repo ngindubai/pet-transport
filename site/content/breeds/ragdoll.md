@@ -3,7 +3,7 @@ title: "Flying with a Ragdoll | Large Cat Cargo & Cabin Guide"
 description: "Ragdoll international travel: cabin eligibility, cargo crate sizing, and a calm breed's guide to air transport and destination paperwork."
 type: "breeds"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
 slug: "ragdoll"
 breed_name: "Ragdoll"
 brachycephalic: false

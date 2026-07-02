@@ -3,7 +3,7 @@ title: "10 Questions to Ask a Pet Relocation Agent Before You Hire Them"
 description: "Not all pet transport agents are equal. Before you hand over your dog or cat's wellbeing to a third party, here are the questions that separate the professionals from the rest."
 date: "2026-05-26"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "pet-relocation-agent-questions-to-ask"
 url: "/blog/pet-relocation-agent-questions-to-ask/"
 seo:

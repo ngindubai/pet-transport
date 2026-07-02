@@ -3,7 +3,7 @@ title: "Moving Pets to Jordan: Import Permits, Vaccinations, and Amman Airport P
 description: "Pet import rules for Jordan. What the Ministry of Agriculture requires, breed restrictions, vaccination protocols, and what to expect at Queen Alia International Airport."
 date: "2026-05-14"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "jordan-pet-import-guide"
 url: "/blog/jordan-pet-import-guide/"
 seo:

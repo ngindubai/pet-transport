@@ -5,7 +5,7 @@ description: "Moving pets from Norway to the US in 2026. No titre test required,
 date: "2026-06-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb - Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "norway-to-united-states"
 origin_name: "Norway"
 destination_name: "United States"

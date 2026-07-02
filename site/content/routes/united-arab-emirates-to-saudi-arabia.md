@@ -4,7 +4,7 @@ title: "Pet Relocation United Arab Emirates to Saudi Arabia | Requirements & Gui
 description: "Pet relocation from United Arab Emirates to Saudi Arabia: Saudi Arabia import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "united-arab-emirates-to-saudi-arabia"
 origin_name: "United Arab Emirates"
 destination_name: "Saudi Arabia"

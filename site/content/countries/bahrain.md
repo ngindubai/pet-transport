@@ -3,7 +3,7 @@ title: "Importing Pets to Bahrain | Requirements & Regulations | PetTransportGlo
 description: "Complete guide to importing dogs and cats into Bahrain. AWD import requirements, quarantine rules, and banned breeds explained."
 type: "countries"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "bahrain"
 destination_country: "Bahrain"
 destination_iso: "BH"

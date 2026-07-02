@@ -3,7 +3,7 @@ title: "Importing Pets to Ghana | Requirements & Regulations | PetTransportGloba
 description: "Complete guide to importing dogs and cats into Ghana. VSD import requirements, quarantine rules, and banned breeds explained."
 type: "countries"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
 slug: "ghana"
 destination_country: "Ghana"
 destination_iso: "GH"

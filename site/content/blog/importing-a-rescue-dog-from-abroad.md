@@ -3,7 +3,7 @@ title: "Importing a Rescue Dog from Abroad: What You Need to Know Before You Com
 description: "A practical guide to importing a rescue dog internationally in 2026: documentation challenges, titre test risks, charity vs private import, and what can go wrong."
 date: "2026-05-11"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "importing-a-rescue-dog-from-abroad"
 url: "/blog/importing-a-rescue-dog-from-abroad/"
 seo:

@@ -3,7 +3,7 @@ title: "Pet Transport from Australia to France: What Australian Pets Need for Fr
 description: "Moving from Australia to France? Australia is EU-listed, so no titre test is required. Here is the process: DAFF-endorsed AHC, tapeworm treatment, flight routing, and arriving at Charles de Gaulle."
 date: 2026-05-09
 type: blog
-author: "The PetTransportGlobal Team"
+author: "PetTransportGlobal Editorial Team"
 slug: "australia-to-france-pet-transport-guide"
 url: "/blog/australia-to-france-pet-transport-guide/"
 seo:

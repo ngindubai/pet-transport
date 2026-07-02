@@ -3,7 +3,7 @@ title: "British Airways Pet Transport: What BA Actually Allows and What Has Chan
 description: "British Airways has significantly restricted pet transport in recent years. Here's what BA currently accepts, what it has banned, and what your alternatives are."
 date: "2026-05-19"
 type: "blog"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "british-airways-pet-transport-guide"
 url: "/blog/british-airways-pet-transport-guide/"
 seo:
