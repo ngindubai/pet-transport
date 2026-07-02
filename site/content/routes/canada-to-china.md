@@ -1,6 +1,6 @@
 ---
 template_variant: "E"
-title: "Pet Relocation Canada to China | Requirements & Guide"
+title: "Pet Transport Canada to China: 30-Day Quarantine, Rules and Timeline"
 description: "How to ship your dog or cat from Canada to China. China import rules, vaccinations, permits, and airline options explained."
 type: "routes"
 layout: "single"

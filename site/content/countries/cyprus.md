@@ -1,6 +1,6 @@
 ---
-title: "Importing a Pet to Cyprus: Requirements and Full Process"
-description: "Everything you need to bring your pet to Cyprus: import regulations, vaccinations, permits, and what to expect on arrival."
+title: "Pet Transport to Cyprus: EU Rules and No Quarantine"
+description: "Bringing a dog or cat to Cyprus? No routine quarantine. EU passport or AHC accepted. Titre test from some origins. Rules, costs and timeline explained."
 type: "countries"
 layout: "single"
 author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
@@ -10,7 +10,7 @@ country_name: "Cyprus"
 country_code: "CY"
 pet_friendliness: "moderate"
 seo:
-  title: "Importing a Pet to Cyprus | Pet Transport Global"
+  title: "Pet Transport to Cyprus: EU Rules and No Quarantine"
   description: "Everything you need to bring your pet to Cyprus: import regulations, vaccinations, permits, and what to expect on arrival."
 import_requirements:
   microchip: "Required (ISO 11784/11785). Before or on same day as first rabies vaccination"

@@ -1,6 +1,6 @@
 ---
-title: "Importing a Pet to Romania: Requirements and Full Process"
-description: "Complete guide to importing your dog or cat into Romania. Import requirements, quarantine, permits, and preparation timeline."
+title: "Pet Transport to Romania: EU Rules and No Quarantine"
+description: "Bringing a dog or cat to Romania? No routine quarantine. EU passport or AHC accepted. Titre test from some origins. Rules, costs and timeline explained."
 type: "countries"
 layout: "single"
 author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
@@ -10,7 +10,7 @@ country_name: "Romania"
 country_code: "RO"
 pet_friendliness: "moderate"
 seo:
-  title: "Importing a Pet to Romania | Pet Transport Global"
+  title: "Pet Transport to Romania: EU Rules and No Quarantine"
   description: "Complete guide to importing your dog or cat into Romania. Import requirements, quarantine, permits, and preparation timeline."
 import_requirements:
   microchip: "Required (ISO 11784/11785). Before or on same day as first rabies vaccination"

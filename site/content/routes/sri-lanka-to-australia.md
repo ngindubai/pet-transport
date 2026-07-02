@@ -1,6 +1,6 @@
 ---
 template_variant: "A"
-title: "Pet Transport from Sri Lanka to Australia | PetTransportGlobal"
+title: "Pet Transport Sri Lanka to Australia: Quarantine, Rules and Timeline"
 description: "How to ship your dog or cat from Sri Lanka to Australia. Australia import rules, vaccinations, permits, and airline options explained."
 type: "routes"
 layout: "single"

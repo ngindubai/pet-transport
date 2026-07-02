@@ -1,6 +1,6 @@
 ---
-title: "How to Bring Your Pet to Malta | Import Rules Explained"
-description: "Malta pet import rules explained. Microchip, rabies vaccination, quarantine status, and health certificate requirements."
+title: "Pet Transport to Malta: EU Rules and No Quarantine"
+description: "Bringing a dog or cat to Malta? No routine quarantine. EU passport or AHC accepted. Titre test from some origins. Rules, costs and timeline explained."
 type: "countries"
 layout: "single"
 author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
@@ -10,7 +10,7 @@ country_name: "Malta"
 country_code: "MT"
 pet_friendliness: "moderate"
 seo:
-  title: "How to Bring Your Pet to Malta | Pet Transport Global"
+  title: "Pet Transport to Malta: EU Rules and No Quarantine"
   description: "Malta pet import rules explained. Microchip, rabies vaccination, quarantine status, and health certificate requirements."
 import_requirements:
   microchip: "Required (ISO 11784/11785). Before or on same day as first rabies vaccination"

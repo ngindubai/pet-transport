@@ -1,6 +1,6 @@
 ---
-title: "How to Bring Your Pet to Israel | Import Rules Explained"
-description: "Everything you need to bring your pet to Israel: import regulations, vaccinations, permits, and what to expect on arrival."
+title: "Pet Transport to Israel: Import Permit and Arrival Checks"
+description: "Bringing a dog or cat to Israel? Short vet inspection on arrival. Titre test from some origins. Rules, costs and timeline explained."
 type: "countries"
 layout: "single"
 author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
@@ -10,7 +10,7 @@ country_name: "Israel"
 country_code: "IL"
 pet_friendliness: "moderate"
 seo:
-  title: "How to Bring Your Pet to Israel | Pet Transport Global"
+  title: "Pet Transport to Israel: Import Permit and Arrival Checks"
   description: "Everything you need to bring your pet to Israel: import regulations, vaccinations, permits, and what to expect on arrival."
 import_requirements:
   microchip: "Required (ISO 11784/11785). Must be implanted before rabies vaccination"

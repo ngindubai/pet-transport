@@ -1,6 +1,6 @@
 ---
 template_variant: "C"
-title: "Pet Transport from Germany to Qatar | PetTransportGlobal"
+title: "Pet Transport Germany to Qatar: Rules, Timeline and No Quarantine"
 description: "Complete guide to pet transport from Germany to Qatar. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"

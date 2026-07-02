@@ -1,6 +1,6 @@
 ---
-title: "Chile Pet Import: Regulations, Permits and Timeline"
-description: "Complete guide to importing your dog or cat into Chile. Import requirements, quarantine, permits, and preparation timeline."
+title: "Pet Transport to Chile: Import Permit and No Quarantine"
+description: "Bringing a dog or cat to Chile? No routine quarantine. Titre test from some origins. Rules, costs and timeline explained."
 type: "countries"
 layout: "single"
 author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
@@ -10,7 +10,7 @@ country_name: "Chile"
 country_code: "CL"
 pet_friendliness: "moderate"
 seo:
-  title: "Chile Pet Import: Regulations, Permits and Timeline | Pet Transport Global"
+  title: "Pet Transport to Chile: Import Permit and No Quarantine"
   description: "Complete guide to importing your dog or cat into Chile. Import requirements, quarantine, permits, and preparation timeline."
 import_requirements:
   microchip: "Required (ISO 11784/11785)"

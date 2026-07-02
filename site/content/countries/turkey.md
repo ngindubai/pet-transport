@@ -1,6 +1,6 @@
 ---
-title: "Importing a Pet to Turkey: Requirements and Full Process"
-description: "Complete guide to importing your dog or cat into Turkey. Import requirements, quarantine, permits, and preparation timeline."
+title: "Pet Transport to Turkey: Rules, Costs and No Quarantine"
+description: "Bringing a dog or cat to Turkey? No routine quarantine. Titre test from some origins. Rules, costs and timeline explained."
 type: "countries"
 layout: "single"
 author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
@@ -10,7 +10,7 @@ country_name: "Turkey"
 country_code: "TR"
 pet_friendliness: "moderate"
 seo:
-  title: "Importing a Pet to Turkey | Pet Transport Global"
+  title: "Pet Transport to Turkey: Rules, Costs and No Quarantine"
   description: "Complete guide to importing your dog or cat into Turkey. Import requirements, quarantine, permits, and preparation timeline."
 import_requirements:
   microchip: "Required (ISO 11784/11785). Must be implanted and readable at time of travel"

@@ -1,4 +1,4 @@
-{{ define "title" }}{{ .Params.seo.title | default (printf "Pet Transport from %s to %s: Guide | Pet Transport Global" .Params.origin_name .Params.destination_name) }}{{ end }}
+{{ define "title" }}{{ .Params.seo.title | default .Title | default (printf "Pet Transport from %s to %s: Guide | Pet Transport Global" .Params.origin_name .Params.destination_name) }}{{ end }}
 
 {{ define "schema" }}
 {{/* Universal schema: emit BOTH HowTo and FAQPage on every variant that has the data.

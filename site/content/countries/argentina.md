@@ -1,6 +1,6 @@
 ---
-title: "How to Bring Your Pet to Argentina | Import Rules Explained"
-description: "Complete guide to importing your dog or cat into Argentina. Import requirements, quarantine, permits, and preparation timeline."
+title: "Pet Transport to Argentina: Rules, Costs and No Quarantine"
+description: "Bringing a dog or cat to Argentina? No routine quarantine. Titre test from some origins. Rules, costs and timeline explained."
 type: "countries"
 layout: "single"
 author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
@@ -10,7 +10,7 @@ country_name: "Argentina"
 country_code: "AR"
 pet_friendliness: "moderate"
 seo:
-  title: "How to Bring Your Pet to Argentina | Pet Transport Global"
+  title: "Pet Transport to Argentina: Rules, Costs and No Quarantine"
   description: "Complete guide to importing your dog or cat into Argentina. Import requirements, quarantine, permits, and preparation timeline."
 import_requirements:
   microchip: "Required (ISO 11784/11785)"

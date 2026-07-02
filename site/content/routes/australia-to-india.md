@@ -1,6 +1,6 @@
 ---
 template_variant: "E"
-title: "Pet Relocation Australia to India | Requirements & Guide"
+title: "Pet Transport Australia to India: Titre Test and 30-Day Quarantine"
 description: "Complete guide to pet transport from Australia to India. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"

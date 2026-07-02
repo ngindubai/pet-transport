@@ -1,6 +1,6 @@
 ---
-title: "Pet Transport to Greece | Requirements & Guide"
-description: "Everything you need to bring your pet to Greece: import regulations, vaccinations, permits, and what to expect on arrival."
+title: "Pet Transport to Greece: EU Rules and No Quarantine"
+description: "Bringing a dog or cat to Greece? No routine quarantine. EU passport or AHC accepted. Rules, costs and timeline explained."
 type: "countries"
 layout: "single"
 author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
@@ -10,7 +10,7 @@ country_name: "Greece"
 country_code: "GR"
 pet_friendliness: "relaxed"
 seo:
-  title: "Pet Transport to Greece | Requirements & Guide | Pet Transport Global"
+  title: "Pet Transport to Greece: EU Rules and No Quarantine"
   description: "Everything you need to bring your pet to Greece: import regulations, vaccinations, permits, and what to expect on arrival."
 import_requirements:
   microchip: "Required (ISO 11784/11785)"
