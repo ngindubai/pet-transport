@@ -2,7 +2,7 @@
   "last_updated": "2026-06-28",
   "routes_built": 6094,
   "routes_remaining": 31736,
-  "total_site_pages": 6896,
+  "total_site_pages": 6897,
   "completed_chunks": 66,
   "next_chunk": 67,
   "next_chunk_tier": "B",
@@ -23,8 +23,8 @@
     "origins": 77,
     "airlines": 145,
     "breeds": 64,
-    "static_pages": 6,
-    "total_markdown_files": 6896,
+    "static_pages": 7,
+    "total_markdown_files": 6897,
     "note": "total_site_pages counts content .md source files. The full deployed total (including Hugo taxonomy and list pages) is verified from sitemap.xml after a build."
   },
   "counts_method": "Reconciled from disk by verify_build_state.py. Never hand-edit count fields; run 'python verify_build_state.py --write' instead."

@@ -8,6 +8,8 @@
 - **Deploy:** Push to `main` triggers GitHub Actions automatically. Hugo build + incremental FTP to Hostinger. Live within ~80 seconds for a single article. After every build batch, the live URLs of new/changed pages are posted in chat for review (LIVE LINK REVIEW GATE in CLAUDE.md).
 
 ## Current State (2026-06-28, reconciled)
+- **2026-07-02 SEO audit executed and merged to live:** on-site search at /search/ (+ header box), llms.txt rebuilt (personas, no Gareth), all authors reassigned to personas sitewide (zero Gareth), author byline + Person schema, answer-first capsule on routes, A1 route-prose de-duplication via data-keyed template composition (route-overview.html + route-sections.html; stored .md overview/sections now unused on complexity-bearing routes, kept as fallback). Fixed sitewide JSON-LD double-escaping (safeJS), a YAML error in dominican-republic-to-austria that was breaking the whole Hugo build, and hero quarantine misinformation on Australia routes. Quarterly refresh routine: refresh_audit.py + REFRESH-ROUTINE.md. Manual follow-ups in BROWSER-PROMPTS.md. Verified with a full Hugo build.
+
 
 - **Routes built:** 6,094 of ~37,830 country pairs (~16.1%). All in `site/content/routes/`.
 - **Blog articles:** 429 (Day 24 was a rewrite of existing stub, not a new file)
