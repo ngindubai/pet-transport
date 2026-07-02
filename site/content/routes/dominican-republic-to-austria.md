@@ -107,19 +107,19 @@ content:
 
         The titre test result does not expire as long as your pet stays up to date with booster vaccinations. This means that if you plan a future move to another EU country after establishing residence in Austria, the same titre result can be used again, provided the boosters are current. Keep all laboratory documentation permanently.
 
-      - heading: "Routing and documentation from Santo Domingo"
-        body: |
-          Las Americas International Airport (SDQ) in Santo Domingo is the main international departure point for pet cargo out of the Dominican Republic. Punta Cana International Airport (PUJ) is an alternative, though its cargo connections to Central Europe are less frequent. For most owners relocating to Austria, SDQ is the practical starting point.
+    - heading: "Routing and documentation from Santo Domingo"
+      body: |
+        Las Americas International Airport (SDQ) in Santo Domingo is the main international departure point for pet cargo out of the Dominican Republic. Punta Cana International Airport (PUJ) is an alternative, though its cargo connections to Central Europe are less frequent. For most owners relocating to Austria, SDQ is the practical starting point.
 
-          The most straightforward routing is SDQ to Madrid (MAD) on Iberia, then MAD to Vienna (VIE) via Iberia or a partner carrier. Air France offers an alternative via Paris CDG, and KLM covers the Amsterdam (AMS) hub. On all routings, confirm live animal cargo acceptance on every segment before booking. Cargo terms can differ between the transatlantic leg and the European connection, and not all carriers accept live animals on all routes.
+        The most straightforward routing is SDQ to Madrid (MAD) on Iberia, then MAD to Vienna (VIE) via Iberia or a partner carrier. Air France offers an alternative via Paris CDG, and KLM covers the Amsterdam (AMS) hub. On all routings, confirm live animal cargo acceptance on every segment before booking. Cargo terms can differ between the transatlantic leg and the European connection, and not all carriers accept live animals on all routes.
 
-          The DIGEGA export health certificate must be issued by a DIGEGA-authorised veterinarian in the Dominican Republic and then endorsed by DIGEGA before departure. The endorsement process typically takes one to two working days. Since the certificate is only valid for 10 days from issue, the vet appointment needs to be planned carefully: allow time for DIGEGA endorsement while still keeping sufficient days for the actual travel window.
+        The DIGEGA export health certificate must be issued by a DIGEGA-authorised veterinarian in the Dominican Republic and then endorsed by DIGEGA before departure. The endorsement process typically takes one to two working days. Since the certificate is only valid for 10 days from issue, the vet appointment needs to be planned carefully: allow time for DIGEGA endorsement while still keeping sufficient days for the actual travel window.
 
-      - heading: "How long does it take to move a pet from the Dominican Republic to Austria?"
-        body: |
-          The minimum realistic timeline from first vet appointment to travel day is around 20 to 24 weeks. This breaks down as follows: microchip and vaccination in week one, a wait of at least 30 days before the blood draw, two to four weeks for the laboratory to process the titre test, then a full 90 days from the date of the passing result. That sequence alone accounts for roughly five months under ideal conditions.
+    - heading: "How long does it take to move a pet from the Dominican Republic to Austria?"
+      body: |
+        The minimum realistic timeline from first vet appointment to travel day is around 20 to 24 weeks. This breaks down as follows: microchip and vaccination in week one, a wait of at least 30 days before the blood draw, two to four weeks for the laboratory to process the titre test, then a full 90 days from the date of the passing result. That sequence alone accounts for roughly five months under ideal conditions.
 
-          Add to that the time needed to source an EU-approved laboratory, arrange international sample shipping from the Dominican Republic, book cargo space with an airline, and organise the DIGEGA endorsement within the 10-day certificate window. Starting preparations at least six months before your planned travel date gives you a reasonable buffer for any delays.
+        Add to that the time needed to source an EU-approved laboratory, arrange international sample shipping from the Dominican Republic, book cargo space with an airline, and organise the DIGEGA endorsement within the 10-day certificate window. Starting preparations at least six months before your planned travel date gives you a reasonable buffer for any delays.
 
 faqs:
   - question: "Why does my pet need a titre test to enter Austria from the Dominican Republic?"

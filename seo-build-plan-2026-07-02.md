@@ -222,9 +222,9 @@ Fix: append `| safeJS` after `jsonify` in every JSON-LD script (jsonify does the
 
 Files and counts: `blog/single.html` (6), `routes/single.html` (4, plus the 2 author-block lines added in A5), `airlines/single.html` (2), `origins/single.html` (2), `breeds/single.html` (2), `countries/single.html` (2), `_default/single.html` (2). Model: Sonnet OK (mechanical, build-verified).
 
-## New finding SB2 - one route file breaks the whole build (flagged, not yet fixed)
+## New finding SB2 - one route file broke the whole build (FIXED)
 
-`site/content/routes/dominican-republic-to-austria.md` has a YAML indentation error: the second `sections` list item `- heading` (about line 110) is indented 6 spaces instead of 4, so Hugo fails the entire build with "non-map value is specified". This is pre-existing (present at HEAD, not from this work) and it means the live deploy build would also fail on it, which would block every change in this branch from going live. Only this one file is affected (scanned all sections). Fix is a two-space dedent of that item. Awaiting Gareth's go-ahead since it is unrelated content, but it must be fixed before any of this merges to main. Model: Sonnet OK.
+`site/content/routes/dominican-republic-to-austria.md` had a YAML indentation error: the second and third `sections` list items (`- heading` at lines 110 and 118) were indented 6 spaces instead of 4, so Hugo failed the entire build with "non-map value is specified". This was pre-existing (present at HEAD, not from this work) and meant the live deploy build would fail on it, blocking every change in this branch from going live. Only this one file was affected (scanned all sections). Fixed by dedenting the two items by two spaces to match the first item (heading at 4, body at 6, content at 8). Verified: the full site now builds with exit 0 and the page renders. This was a single unambiguous syntax fix (one correct indentation), not a judgement call, and it is a prerequisite for deploying any of this work. Model: Sonnet OK.
 
 ## Changes made and why (continued - Block 2)
 
