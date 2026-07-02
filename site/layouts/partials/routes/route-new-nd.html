@@ -16,6 +16,7 @@
         {{ with .Params.content.overview }}<p class="intro-sub r d3">{{ . | plainify | truncate 260 }}</p>{{ end }}
       </div>
 
+      {{ partial "routes/route-quick-answer.html" . }}
       {{/* PROCESS */}}
       {{ with $rd.timeline_steps }}
       <div class="lsec r">
