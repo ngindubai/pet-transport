@@ -5,7 +5,7 @@ For Sonnet to execute. Derived from the live design/conversion audit (Claude in 
 ## How to use this file
 
 - Work top to bottom: Block 0 (critical bugs) first, then conversion, then polish, then the big consolidation.
-- Every item names the file(s) to change and the specific fix. Each is tagged **[SONNET]** or **[OPUS ADVISED]**. Only D20 needs Opus.
+- Every item names the file(s) to change and the specific fix. After the decisions were resolved (see "Decisions resolved" below), every item is **[SONNET]**.
 - Verify every change with a real Hugo build. Hugo is not installed by default; install the pinned version via the Go proxy: `GOBIN=/tmp/gobin go install github.com/gohugoio/hugo@v0.160.1` then build with `/tmp/gobin/hugo --gc --minify --destination /tmp/out`.
 - **Broken-link verification must handle minified HTML.** The minifier drops quotes around `href` values, so a regex like `href="(/...)"` matches nothing and gives a false "zero broken" result (this exact mistake was made earlier). Use `href=(?:"([^"#?]*)"|([^\s">#?]+))` and check each internal path against the set of built directories.
 - Follow CLAUDE.md: no em dashes, British English, correct personas, no bulk-generation scripts (data/template normalisation is fine).
@@ -91,8 +91,8 @@ Each route variant styles the hero breadcrumb differently (amber bar full width,
 ### D15 [SONNET] Inconsistent form label case
 Sidebar forms in variants D/E/fallback use cold ALL-CAPS labels (PET TYPE, EMAIL); other templates use sentence case. Standardise to sentence case sitewide (`quote-form.html` and any variant-specific form markup). Model: Sonnet OK.
 
-### D16 [SONNET, needs content] About page has no imagery or social proof
-`site/content/about.md` is text only. Add credibility elements: IPATA/IATA mentions, the named specialists, and (decision D-d) whether real testimonials/photos/company location exist to add. Do not invent testimonials (YMYL/honesty). Default: add the specialists and accreditations only, no invented social proof. Model: Sonnet OK.
+### D16 [SKIPPED per decision D-d] About page imagery/social proof
+Gareth chose no additions to the About page. Do not change it.
 
 ### D17 [SONNET] Search page is sparse
 `_default/search.html`. Add brief helper text and a set of popular-route/guide links below the search box so the page is useful before a query. Model: Sonnet OK.
@@ -105,25 +105,29 @@ The audit reported blank card thumbnails on the routes/airlines/breeds/blog inde
 
 ---
 
-## Block 3 - The big one
+## Block 3 - Standardise the six route designs
 
-### D20 [OPUS ADVISED] Consolidate the six route designs into one canonical template
-The audit's headline finding: six different route-page designs make the site feel like several stitched-together sites, which erodes trust for an anxious audience. The reviewer ranked them Fallback (nl) and D (nd) and E (ne) strongest; A (na), B (nb), C (nc) weakest. Recommendation: design one canonical route template that combines the fallback's content depth, D's sticky sidebar quote form, and E's sticky stat sub-bar, then migrate all routes to it and retire the others.
+### D20 [SONNET] Standardise shared components across the six route designs (keep all six)
+Decision D-f: keep the six designs, do not consolidate. Goal: a visitor moving between route pages should feel they are on one brand even though the layouts differ. Build these as SHARED partials used by all six route templates (na/nb/nc/nd/ne/nl), replacing each template's bespoke version:
 
-Why Opus: choosing and composing the single best design from six, and getting the layout/hierarchy/mobile behaviour right for a trust-critical page, is design judgement, not mechanical work. Opus should design the canonical template and hand-verify it on several routes (different complexity bands, quarantine/no-quarantine, titre/no-titre, short/long timelines) before any bulk switch. Then Sonnet flips `template_variant` (or the `routes/single.html` router) to the one template and verifies the build.
+1. **Breadcrumb:** one shared breadcrumb partial with one consistent style (fix the full-width amber bar that leaves an empty right expanse). Absorbs D14.
+2. **Primary CTA button:** one amber "Get a free quote" button component, same style and label in the hero of every variant. Fixes the weak text-link CTA on variant C (D6) and the missing hero CTA on variant A (D5).
+3. **Sticky stat sub-bar:** extract variant E's sub-bar (Lead time, Quarantine, Complexity, Airlines + quote button) into a shared partial included in all six. Absorbs D8.
+4. **Form label case:** one form style with sentence-case labels everywhere. Absorbs D15.
+5. **WhatsApp + quote sidebar cards:** the blog sidebar pattern (D7) as a shared partial used on route and guide pages.
 
-This is the largest item and should be its own session. It supersedes D8 and D14 (they become part of the one template). Decision D-f: consolidate to one (recommended) vs keep six but standardise shared components (breadcrumb, CTA, sub-bar). 
+This is mechanical component extraction plus consistent styling: Sonnet, but do it variant by variant with a build check after each, verifying desktop and 390px. Absorbs D5, D6, D8, D14, D15.
 
 ---
 
-## Decisions needed (ask before the dependent item)
+## Decisions resolved (2026-07-02, by Gareth)
 
-- **D-a (D1):** Footer "Cost Calculator" link: remove it, or build a cost-calculator page? (Default: remove.)
-- **D-b (D4):** Home form countries: expand the data file to all served countries, or switch to autocomplete? (Default: expand.)
-- **D-c (D11):** Airline/breed hero images: one generic per section, or per-item images? (Default: one generic per section.)
-- **D-d (D16):** About page: are there real testimonials/photos/address to add, or keep to accreditations and specialists only? (Default: no invented social proof.)
-- **D-e (D19):** Thank-you "within the hour" claim: keep, soften, or remove?
-- **D-f (D20):** Consolidate six route templates to one (recommended), or keep six and standardise shared components?
+- **D-a (D1):** Remove the footer "Cost Calculator" link. No calculator page.
+- **D-b (D4):** Expand the country data file to all served countries (no autocomplete).
+- **D-c (D11):** One generic hero image per section (one for all airline pages, one for all breed pages), from the existing image library.
+- **D-d (D16):** No additions to the About page. Skip D16 entirely.
+- **D-e (D19):** Soften the thank-you promise to "within one business day".
+- **D-f (D20):** Keep the six route designs; do NOT consolidate. Instead standardise the shared components across all six so they feel like one brand. This makes D20 a Sonnet task (no Opus needed) and absorbs D8 and D14.
 
 ## Priority order for execution
 
@@ -132,13 +136,12 @@ This is the largest item and should be its own session. It supersedes D8 and D14
 3. **D9** (WhatsApp overlap) and **D5, D6** (worst CTA placements) - fast conversion wins.
 4. **D7, D8, D10** (CTA patterns sitewide).
 5. **D11-D19** (visual polish), with D18 verify-only.
-6. **D20** (route consolidation) - Opus, its own session, last.
+6. **D20** (standardise shared route components: breadcrumb, CTA, sub-bar, labels, sidebar cards) - absorbs D5, D6, D8, D14, D15.
+
+Note: D16 (About page) is skipped per decision D-d.
 
 ## Model summary
 
-| Item | Model |
-|---|---|
-| D20 route consolidation (design the canonical template) | **OPUS ADVISED** |
-| D1-D19 (links, bugs, CTA placement, visual polish) | SONNET |
+Every item is **SONNET** (no Opus needed after decision D-f to standardise rather than consolidate the route designs). D20 remains the largest item; do it carefully, variant by variant, with a build check after each.
 
 No em dashes were used in this document.
