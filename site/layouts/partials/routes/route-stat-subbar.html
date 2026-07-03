@@ -1,0 +1,46 @@
+{{/*
+  Partial: route-stat-subbar.html
+  D8: extracted from route-new-ne.html's ".overview-bar", the strongest
+  above-fold conversion mechanic on the site per the design audit -- a
+  sticky bar tying the route's key stats (lead time, quarantine, complexity,
+  airline count) directly to a "Start my quote" button, so the CTA is
+  visible in context for as long as the reader is near the top of the page.
+
+  Inline-styled with the site's confirmed brand palette (amber #e8913a,
+  green #1a6b4a) rather than each template's own CSS custom properties, so
+  it renders correctly regardless of small per-template variable naming
+  differences and does not depend on or risk any existing template CSS.
+
+  Usage: {{ partial "routes/route-stat-subbar.html" . }}
+  Expects the same context as the route templates ($rd via .Params.route_data).
+*/}}
+{{ $rd := .Params.route_data }}
+<div class="ptg-stat-subbar" style="position:sticky;top:0;z-index:90;background:#fff;box-shadow:0 4px 18px rgba(0,0,0,.08);padding:16px 24px;">
+  <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;">
+    <div style="display:flex;gap:0;flex-wrap:wrap;">
+      {{ with $rd.estimated_timeline_weeks }}
+      <div style="padding:0 20px;border-right:1px solid #d8d3cc;">
+        <div style="font-size:.7rem;color:#6b6b6b;font-weight:500;">Lead time needed</div>
+        <div style="font-weight:700;font-size:.88rem;color:#0e0e0e;">{{ . }} weeks</div>
+      </div>
+      {{ end }}
+      <div style="padding:0 20px;border-right:1px solid #d8d3cc;">
+        <div style="font-size:.7rem;color:#6b6b6b;font-weight:500;">Quarantine</div>
+        <div style="font-weight:700;font-size:.88rem;color:#0e0e0e;">{{ partial "routes/quarantine-short.html" . }}</div>
+      </div>
+      {{ with $rd.route_complexity }}
+      <div style="padding:0 20px;border-right:1px solid #d8d3cc;">
+        <div style="font-size:.7rem;color:#6b6b6b;font-weight:500;">Route complexity</div>
+        <div style="font-weight:700;font-size:.88rem;color:#0e0e0e;">{{ . | replaceRE "_" " " | title }}</div>
+      </div>
+      {{ end }}
+      {{ with $rd.airlines }}
+      <div style="padding:0 20px;">
+        <div style="font-size:.7rem;color:#6b6b6b;font-weight:500;">Airlines</div>
+        <div style="font-weight:700;font-size:.88rem;color:#0e0e0e;">{{ len . }} carriers on this route</div>
+      </div>
+      {{ end }}
+    </div>
+    <a href="#quote-form" style="padding:11px 24px;background:#e8913a;color:#fff;border-radius:100px;font-family:inherit;font-weight:700;font-size:.88rem;white-space:nowrap;text-decoration:none;box-shadow:0 4px 18px rgba(232,145,58,.35);flex-shrink:0;">Start my quote</a>
+  </div>
+</div>

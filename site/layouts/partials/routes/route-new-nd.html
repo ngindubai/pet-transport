@@ -11,6 +11,12 @@
 
     {{/* LEFT: scrolling content */}}
     <div class="left-col">
+      {{/* D8: sticky stat sub-bar, extracted from route-new-ne.html. Template
+           D already has a persistent right-column sidebar with the form, so
+           this is a lighter addition here than on the other templates, but
+           keeps the stats + CTA combination consistent sitewide. */}}
+      {{ partial "routes/route-stat-subbar.html" . }}
+
       <div class="intro">
         <div class="breadcrumb r"><a href="/">Home</a><span class="bc-sep">/</span><a href="/pet-transport/routes/">Routes</a><span class="bc-sep">/</span><span>{{ $o }} to {{ $d }}</span></div>
         <div class="intro-route r d1"><div class="intro-flag">{{ $rd.origin.code }}</div><div class="rpath"></div><div class="intro-flag">{{ $rd.destination.code }}</div></div>
