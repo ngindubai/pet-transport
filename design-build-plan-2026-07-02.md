@@ -95,8 +95,8 @@ Traced the actual cause: only `route-new-na` uses the shared `quote-form.html` p
 ### D16 [SKIPPED per decision D-d] About page imagery/social proof
 Gareth chose no additions to the About page. Do not change it.
 
-### D17 [SONNET] Search page is sparse
-`_default/search.html`. Add brief helper text and a set of popular-route/guide links below the search box so the page is useful before a query. Model: Sonnet OK.
+### D17 [DONE - 2026-07-03] Search page is sparse
+Added a "Popular searches" block below the search box in `_default/search.html`: six links (a popular route, three country guides, an airline, a breed guide), all slugs verified against real content files before use. `site-search.js` hides this block the moment a query has any tokens (`popularEl.style.display = tokens.length ? "none" : ""`) and shows it again when the search box is cleared, so it never competes with live results. Verified via full Hugo build: all six link targets resolve to real built pages, JS syntax checked with `node -c`.
 
 ### D18 [SONNET] Verify index card images
 The audit reported blank card thumbnails on the routes/airlines/breeds/blog indexes, but the referenced image files DO exist in `static/images/`. Likely a lazy-load or screenshot-timing artifact, or those indexes use a different code path than `_default/list.html`. Verify in a real build whether the `<img>` renders; only fix if genuinely broken. Model: Sonnet OK.

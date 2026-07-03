@@ -20,6 +20,11 @@
     border-radius:4px;padding:2px 8px;margin-left:8px;vertical-align:middle}
   .ptg-result .ptg-result-desc{color:#5a6677;font-size:0.92rem;margin:6px 0 0}
   .ptg-search-empty{color:#5a6677;padding:20px 0}
+  .ptg-search-popular{margin-top:28px}
+  .ptg-search-popular-label{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#5a6677;margin:0 0 10px}
+  .ptg-search-popular-links{display:flex;flex-wrap:wrap;gap:8px}
+  .ptg-search-popular-links a{display:inline-block;padding:7px 14px;font-size:.9rem;color:#1a6b4a;background:#eef5f1;border-radius:20px;text-decoration:none}
+  .ptg-search-popular-links a:hover{background:#dcece4}
 </style>
 
 <div class="ptg-search-wrap">
@@ -33,6 +38,18 @@
 
   <p class="ptg-search-status" id="ptg-search-status" aria-live="polite"></p>
   <ul class="ptg-search-results" id="ptg-search-results"></ul>
+
+  <div class="ptg-search-popular" id="ptg-search-popular">
+    <p class="ptg-search-popular-label">Popular searches</p>
+    <div class="ptg-search-popular-links">
+      <a href="/pet-transport/united-kingdom-to-australia/">UK to Australia</a>
+      <a href="/pet-transport/countries/united-arab-emirates/">United Arab Emirates</a>
+      <a href="/pet-transport/countries/united-states/">United States</a>
+      <a href="/pet-transport/countries/spain/">Spain</a>
+      <a href="/pet-transport/airlines/emirates/">Emirates pet policy</a>
+      <a href="/pet-transport/breeds/french-bulldog/">French Bulldog</a>
+    </div>
+  </div>
 </div>
 {{ end }}
 

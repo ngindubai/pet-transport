@@ -85,6 +85,7 @@
     var statusEl = document.getElementById("ptg-search-status");
     var resultsEl = document.getElementById("ptg-search-results");
     var form = document.getElementById("ptg-search-form");
+    var popularEl = document.getElementById("ptg-search-popular");
 
     if (input && resultsEl) {
       var INDEX = null;
@@ -96,6 +97,7 @@
 
       var render = function (query) {
         var tokens = tokenize(query);
+        if (popularEl) { popularEl.style.display = tokens.length ? "none" : ""; }
         if (!tokens.length) {
           resultsEl.innerHTML = "";
           statusEl.textContent = INDEX ? "Type above to search " + INDEX.length + " pages." : "";
