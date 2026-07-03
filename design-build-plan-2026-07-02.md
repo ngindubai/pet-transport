@@ -77,14 +77,14 @@ Added a mid-page CTA card (reusing the `card accent-left` pattern already live o
 
 ## Block 2 - Visual polish
 
-### D11 [SONNET, maybe decision] Missing hero images on airline and breed single pages
-`airlines/single.html` and `breeds/single.html` render a dark header band with no background image, unlike route/country pages. Add a hero background image. Decision D-c: use an existing generic image from `static/images/` for all, or map per-airline/per-breed images if available. Default: one good generic hero per section. Model: Sonnet OK.
+### D11 [DONE - 2026-07-02] Missing hero images on airline and breed single pages
+Decision D-c: one generic hero per section. `.ptg-inner-hero` (the shared CSS class behind the flat dark header) is also used by the blog template, which was not flagged by the audit and should not change, so the image was added as an inline style override on the `airlines/single.html` and `breeds/single.html` hero divs specifically, not in the shared CSS class. Airlines uses `/images/hero.jpg` (the site's existing flagship pet-travel image; no aviation-specific photo exists in the repo). Breeds uses `/images/pexels-dog-1850465.jpg` (breed pages cover both dogs and cats, so this is a pragmatic "one generic image" choice within the decision's scope, not a perfect per-item match). Both use a dark gradient overlay matching the hero's existing tone so text stays legible. Verified in build: airline and breed heroes now carry a background image, blog's hero is unchanged (still flat colour, confirming no regression).
 
-### D12 [SONNET] Blog markdown tables are unstyled
-`blog/single.html` (`.ptg-blog-body .Content`). Markdown tables (cost tables in cost articles) render as unstyled run-on text. Add table CSS (borders, padding, zebra striping, responsive `overflow-x:auto` wrapper) scoped to the blog body. Model: Sonnet OK.
+### D12 [DONE - 2026-07-02] Blog markdown tables are unstyled
+`.ptg-blog-body` had no CSS at all. Added table styling to `site/assets/css/main.css`: borders, cell padding, a green header row matching the brand, zebra striping, and `display:block;overflow-x:auto` on the table itself for responsive horizontal scroll on narrow screens (markdown tables render with no wrapper div to attach `overflow-x` to otherwise). Verified compiled into the minified build CSS.
 
-### D13 [SONNET] Methodology page is unstyled prose
-`pet-transport/how-we-source-route-data.md` renders via `_default/single.html` with no hero and (after D2) a bare H1. It is the site's strongest trust page. Give it a branded header section and a CTA. Consider a dedicated layout or reuse the country-guide header treatment. Model: Sonnet OK.
+### D13 [DONE - 2026-07-02] Methodology page is unstyled prose
+New dedicated layout, `site/layouts/_default/methodology.html`, applied via `layout: "methodology"` in the page's front matter (it is the only loose file in `site/content/pet-transport/`, so this cannot affect any other page). Gives it the same branded `.ptg-inner-hero` treatment as D11 (airlines/breeds), the styled `verified-date.html` stamp (replacing an inline "Regulations verified: May 2026" sentence in the body, which duplicated it), and a CTA card at the end. Also fixed a real duplicate-H1 issue found while building this: the page previously rendered both a template H1 and its own markdown `# How We Source Our Route Data` heading (the markdown always renders a level-1 heading as an `<h1>`); removed the redundant heading from the content file so there is exactly one H1. Verified in build: single H1, background image present, verified-date stamp present, CTA present.
 
 ### D14 [SONNET] Breadcrumb styling differs across route variants
 Each route variant styles the hero breadcrumb differently (amber bar full width, centred, flush-left, etc.), and the full-width amber bar leaves an empty expanse on the right. Standardise into one breadcrumb component/style used by all route templates. (Folds into D20 if consolidating.) Model: Sonnet OK.

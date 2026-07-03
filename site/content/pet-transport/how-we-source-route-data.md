@@ -4,13 +4,10 @@ description: "How PetTransportGlobal researches, verifies, and updates the pet i
 slug: "how-we-source-route-data"
 date: 2026-05-31
 draft: false
+layout: "methodology"
 ---
 
-# How We Source Our Route Data
-
 PetTransportGlobal covers more than 5,000 directional pet transport routes across 75 countries. Every route page, country guide, and airline policy on this site is built from named, official sources, not third-party summaries or guesswork. This page explains exactly how we research, verify, and update that information.
-
-**Regulations verified: May 2026.** Requirements change. Always confirm current rules with the relevant authority before you travel.
 
 ---
 

@@ -1,0 +1,60 @@
+{{ define "title" }}{{ .Params.seo.title | default .Title }}{{ end }}
+
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": {{ .Title | jsonify | safeJS }},
+    "description": {{ .Params.description | default .Title | jsonify | safeJS }},
+    "datePublished": "{{ .Date.Format "2006-01-02" }}",
+    "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+    "author": { "@type": "Organization", "name": "PetTransportGlobal" },
+    "publisher": { "@type": "Organization", "name": "PetTransportGlobal", "url": "https://pettransportglobal.com" }
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+{{/* D13: the methodology page previously had no hero and relied on the
+     unstyled _default/single.html layout, despite being one of the site's
+     strongest trust pages. Gives it the same branded header treatment as
+     airlines/breeds (D11), a clean single H1 (the markdown body no longer
+     duplicates it, see the content file), the styled verified-date stamp,
+     and a CTA at the end. */}}
+<div class="ptg-inner-hero" style="background:linear-gradient(rgba(26,30,43,.85),rgba(26,30,43,.9)),url('/images/hero.jpg') center/cover no-repeat;">
+    <div class="container">
+        <nav aria-label="breadcrumb" class="ptg-inner-breadcrumb">
+            <ol class="breadcrumb mb-2">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active">{{ index (strings.Split .Title " | ") 0 }}</li>
+            </ol>
+        </nav>
+        <div class="ptg-inner-badge-row mb-2">
+            <span class="ptg-inner-type-badge"><i class="fas fa-shield-alt me-1"></i>Methodology</span>
+        </div>
+        <h1 class="ptg-inner-h1">{{ index (strings.Split .Title " | ") 0 }}</h1>
+    </div>
+</div>
+
+<div class="page ptg-inner-page">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+
+                {{ partial "verified-date.html" . }}
+
+                <div class="ptg-blog-body">
+                    {{ .Content }}
+                </div>
+
+                {{/* D13: CTA at the end of the page */}}
+                <div class="card accent-left mb-4 p-3 bg-light mt-5">
+                    <p class="mb-0">Have a question about a specific route or regulation? <a href="/#quote-form" class="btn btn-primary btn-sm ms-2">Get a free quote</a></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

@@ -27,7 +27,12 @@
 {{ $breed := .Params }}
 
 {{/* ── HERO ─────────────────────────────────────────────────────────────── */}}
-<div class="ptg-inner-hero">
+{{/* D11: breed pages previously had a flat dark colour with no background
+     image, unlike route/country pages. .ptg-inner-hero is shared with the
+     blog template too (which does not need a photo for its article header),
+     so the image is added here via inline style rather than in the shared
+     CSS class, to avoid changing the blog hero. */}}
+<div class="ptg-inner-hero" style="background:linear-gradient(rgba(26,30,43,.82),rgba(26,30,43,.88)),url('/images/pexels-dog-1850465.jpg') center/cover no-repeat;">
     <div class="container">
         <nav aria-label="breadcrumb" class="ptg-inner-breadcrumb">
             <ol class="breadcrumb mb-2">
