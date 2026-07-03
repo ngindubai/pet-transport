@@ -99,13 +99,13 @@ faqs:
     answer: "You need: a USDA-endorsed official health certificate (from a USDA-accredited vet, issued within 10 days of Portuguese arrival); a readable ISO microchip (implanted before rabies vaccination); a current rabies vaccination with 21-day wait after first dose; and the USDA endorsement (USD 38 fee, 2-10 business days processing). No titre test, no import permit, no quarantine."
 links:
   sideways:
-    - url: "/pet-transport/routes/portugal-to-united-states/"
+    - url: "/pet-transport/portugal-to-united-states/"
       text: "Pet Transport Portugal to United States"
-    - url: "/pet-transport/routes/united-states-to-spain/"
+    - url: "/pet-transport/united-states-to-spain/"
       text: "Pet Transport United States to Spain"
-    - url: "/pet-transport/routes/united-states-to-france/"
+    - url: "/pet-transport/united-states-to-france/"
       text: "Pet Transport United States to France"
-    - url: "/pet-transport/routes/united-states-to-italy/"
+    - url: "/pet-transport/united-states-to-italy/"
       text: "Pet Transport United States to Italy"
   upward:
     - url: "/pet-transport/origins/pet-export-guide-shipping-from-united-states/"

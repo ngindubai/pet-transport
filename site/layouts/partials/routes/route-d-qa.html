@@ -20,6 +20,9 @@
   {{ end }}
 {{ end }}
 
+{{/* Same filter, applied to sideways (related route) links. */}}
+{{ $validSideways := partial "routes/valid-sideways.html" . }}
+
 <article class="tpl-route-d">
 
 {{/* ── HERO ──────────────────────────────────────────────────────────── */}}
@@ -151,7 +154,7 @@
                 {{/* Related links */}}
                 {{ with .Params.links }}
                 <div class="tpl-d-section mb-4">
-                    {{ with .sideways }}
+                    {{ with $validSideways }}
                     <h2>Related Routes</h2>
                     <div class="tpl-d-route-grid">
                         {{ range . }}<a href="{{ .url }}" class="tpl-d-route-link">{{ .text }}</a>{{ end }}
@@ -189,15 +192,13 @@
                     {{/* Airline + breed links */}}
                     {{ partial "airline-breed-sidebar.html" . }}
 
-                    {{ with .Params.links }}
-                    {{ with .sideways }}
+                    {{ with $validSideways }}
                     <div class="tpl-d-sidebar-card mb-4">
                         <h5>Related routes</h5>
                         <ul class="list-unstyled">
                             {{ range . }}<li class="mb-2"><a href="{{ .url }}">{{ .text }}</a></li>{{ end }}
                         </ul>
                     </div>
-                    {{ end }}
                     {{ end }}
                     {{ if $validUpward }}
                     <div class="tpl-d-sidebar-card mb-4">

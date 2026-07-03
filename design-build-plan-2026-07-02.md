@@ -13,31 +13,32 @@ For Sonnet to execute. Derived from the live design/conversion audit (Claude in 
 
 ## Honest note on how this arose
 
-A previous fix (SB4) changed the header origin links to plain slugs (`/origins/united-kingdom/`) and a broken-link check reported "zero broken". That check was faulty (the minified-href regex above), and the plain slugs do not exist. The real origin pages build to slugs like `pet-export-guide-shipping-from-united-kingdom`. So SB4 introduced 4 broken links on every page. D1 fixes this correctly and re-verifies with the corrected method.
+A previous fix (SB4) changed the header origin links to plain slugs (`/origins/united-kingdom/`) and a broken-link check reported "zero broken". That check was faulty (the minified-href regex above). D1 (now done, see below) found the actual root cause was not the header links but 52 origin content files missing an explicit `slug:` field; fixing that made the plain slugs SB4 used correct, rather than reverting them.
 
 ---
 
 ## Block 0 - Critical bugs (fix first)
 
-### D1 [SONNET] Broken internal links: 549 distinct, 42,232 instances
-The corrected scan (against a fresh build) found 549 distinct broken internal targets. Categories and fixes:
+### D1 [DONE - 2026-07-02] Broken internal links: 549 distinct / 42,232 instances -> 0
+Executed on Sonnet 5, pushed live pass-by-pass. Final state verified: **0 distinct broken internal targets across all 6,899 built pages** (minify-aware scan, re-run after every change). What was actually found and fixed, which corrects two assumptions in the original scoping above:
 
-1. **Header origin links (4 targets, ~6,897 instances each).** `site/layouts/partials/header.html` links to `/pet-transport/origins/{united-kingdom,united-states,australia,united-arab-emirates}/`, which 404. The real built slugs are:
-   - `/pet-transport/origins/pet-export-guide-shipping-from-united-kingdom/`
-   - `/pet-transport/origins/pet-export-guide-shipping-from-united-states/`
-   - `/pet-transport/origins/pet-export-guide-shipping-from-australia/`
-   - `/pet-transport/origins/united-arab-emirates-pet-export-guide/`  (note: different pattern from the other three)
-   Fix the four hrefs to these. Confirm each builds. (This reverses the faulty SB4 change with the correct targets.)
+1. **Root cause of the header origin links (bigger than 4 pages): 52 of 77 origin content files had no `slug:` field.** Investigation showed Hugo's `:slug` permalink token falls back to a slugified `.Title` when no explicit `slug` is set, so files like `united-kingdom.md` (title "Pet Export Guide: Shipping from United Kingdom") built to `/origins/pet-export-guide-shipping-from-united-kingdom/` instead of the clean `/origins/united-kingdom/`. The original scoping above assumed the header links should point at those ugly built slugs; the actual correct fix (applied instead) was to add `slug: "<filename>"` to all 52 affected origin files, matching the pattern the other 25 origin files already used. This was verified safe: no slug collisions, and route pages' `links.upward` data already referenced the clean slugs (they were being silently filtered out by the existing "UPWARD LINK FILTER" guard because the target pages didn't exist yet). Fixing the slugs restored those links project-wide with no header.html change needed (it already pointed at the clean slugs). Bonus: origin page count in the build went from 75 to 77 (two pages had been silently shadowed by slug collisions before the fix).
 
-2. **Airline links (468 distinct targets).** `site/layouts/partials/airline-breed-sidebar.html` (and `route-c-comparison.html`, `route-e-data.html`) build airline links by slugifying the airline NAME from route data (for example "KLM" to `klm`, "Emirates SkyCargo" to `emirates-skycargo`, "Lufthansa Cargo via FRA" to `lufthansa-cargo-via-fra`). Those slugs do not match the real airline page slugs (`klm-royal-dutch-airlines`, `emirates`, etc.), so ~468 distinct links 404 across tens of thousands of instances. Fix: only render the link when the target page exists, otherwise render the airline name as plain text. Use the same guard already used for upward links in `route-new-na.html`: `{{ if site.GetPage (printf "/pet-transport/airlines/%s" $slug) }}<a ...>{{ else }}<span>{{ end }}`. Apply in every template that links airlines.
+2. **Airline links: existence-guarded, not renamed.** Same root cause as scoped: airline names slugified on the fly (`airline-breed-sidebar.html`, `route-c-comparison.html`, `route-e-data.html`) didn't match real airline page slugs. Fixed with the `site.GetPage` existence guard exactly as scoped: linked when the page exists, otherwise plain text. No `data` file changes needed.
 
-3. **Breed links (15 distinct targets).** Same pattern: route templates (`route-new-na.html`, `route-b-journey.html`, `route-e-data.html`, `route-a-fieldmanual.html`, `route-legacy.html`) and `airline-breed-sidebar.html` link breed-restriction names (for example "Rottweiler (restricted)" to `rottweiler-restricted`) that have no breed page. Apply the same `site.GetPage` existence guard before linking a breed; otherwise plain text.
+3. **Breed links: same existence guard**, applied to `route-new-na.html`, `route-b-journey.html`, `route-e-data.html`, `route-a-fieldmanual.html`, `route-legacy.html`, and `airline-breed-sidebar.html`, exactly as scoped.
 
-4. **Footer cost-calculator link (1 target, every page).** `site/layouts/partials/footer.html` links `/pet-transport/resources/pet-transport-cost-calculator/`, which does not exist. Decision D-a: remove the link, or build the page. Default: remove it.
+4. **Footer cost-calculator link: removed** per decision D-a.
 
-5. **Remaining "other" (61 distinct).** After the above, re-run the corrected scan and fix or filter whatever remains (likely more slugified data links). Target: zero broken internal links, verified with the minify-aware scan.
+5. **New discovery beyond original scope: `links.sideways` (related-route cross-links) were unguarded on ALL SIX route templates**, plus `route-a-fieldmanual.html`, `route-b-journey.html`, `route-c-comparison.html`, `route-d-qa.html`, `route-e-data.html`, `route-legacy.html` (12 files total, 2 render sites each in the 6 legacy-style templates). These reference country pairs not yet built (the site covers ~16% of all possible pairs). Built one new shared partial, `site/layouts/partials/routes/valid-sideways.html`, following the exact convention of the existing `$validUpward` filter, and wired `{{ $validSideways := partial "routes/valid-sideways.html" . }}` into all 12 route templates, replacing every raw `{{ with .sideways }}` render site. The partial defensively checks `reflect.IsMap` before accessing `.Params.links.sideways`, matching `route-legacy.html`'s existing defensive pattern, so it cannot crash the build if any route's `links` front matter is ever malformed.
 
-Decision this raises: D-a (footer cost calculator: remove vs build). Model: Sonnet OK.
+6. **New discovery: 12 origin pages had hardcoded exhaustive markdown link lists** ("Popular routes from Luxembourg", etc.) in their `sections[].body` front matter, literally listing every destination country regardless of whether the route page exists. These cannot be guarded at the template level (they're raw markdown links inside a content string rendered via `.Content`). Fixed by scripting a removal of just the specific dead list lines (verified against the built site's actual route directory listing as ground truth), leaving every valid link untouched. 12 lines removed across 11 files (bangladesh, cambodia, denmark x2, ethiopia, luxembourg, mauritius, morocco, myanmar, portugal, slovakia, zimbabwe).
+
+7. **New discovery: 12 route files had a URL construction bug** in their `links.sideways` data: `url: "/pet-transport/routes/{slug}/"` instead of the correct `/pet-transport/{slug}/` (extra erroneous `routes/` segment). Fixed with a regex substitution across the 12 affected files (italy/portugal/spain x united-kingdom/united-states, both directions), 48 URLs corrected. Targets confirmed to exist before the fix.
+
+8. **New discovery: 2 blog posts had links missing their path prefix** (`/cost-to-transport-a-pet-2026/` instead of `/blog/cost-to-transport-a-pet-2026/`; similarly for `how-to-choose-a-pet-transport-company` and two breed links missing `/pet-transport/`). Fixed directly.
+
+Total: 90 files changed (2 layout partials touched for existence guards across 12 route templates + 1 new shared partial, 1 header/footer fix each, and content fixes in 52 origin slugs + 11 origin body-link cleanups + 12 route sideways-URL fixes + 2 blog link fixes). Verified with a full Hugo build (exit 0) and the minify-aware scan at every stage, final result 0/0. Model: Sonnet, done.
 
 ### D2 [SONNET] Static-page H1 shows the raw SEO title
 `site/layouts/_default/single.html` renders `<h1>{{ .Title }}</h1>`, and `.Title` on the static pages is the full SEO title including the brand/keyword suffix (for example the About page H1 reads "About PetTransportGlobal | International Pet Relocation Specialists"). It looks like a leaked title tag. Fix: render a clean H1, either by stripping everything from the first " | " onward, or by adding an `h1:` front-matter field to about/contact/privacy/terms/methodology and using `{{ .Params.h1 | default .Title }}`. The `<title>` tag itself is correct and should stay. Affects about, contact, privacy, terms, and the methodology page (`pet-transport/how-we-source-route-data.md`). Model: Sonnet OK.
@@ -131,7 +132,7 @@ This is mechanical component extraction plus consistent styling: Sonnet, but do 
 
 ## Priority order for execution
 
-1. **D1** (broken links, 42k instances - biggest SEO/UX bug, includes reversing the SB4 error) - do first.
+1. ~~**D1** (broken links, 42k instances - biggest SEO/UX bug)~~ - **DONE 2026-07-02**, 0 broken links remain, verified.
 2. **D2, D3, D4** (title leak, fake email, home form) - quick critical fixes.
 3. **D9** (WhatsApp overlap) and **D5, D6** (worst CTA placements) - fast conversion wins.
 4. **D7, D8, D10** (CTA patterns sitewide).

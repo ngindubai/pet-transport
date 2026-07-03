@@ -1,5 +1,6 @@
 ---
 title: "South Africa Pet Export Guide"
+slug: "south-africa"
 description: "Complete guide to exporting your pet from South Africa."
 type: "origins"
 layout: "single"

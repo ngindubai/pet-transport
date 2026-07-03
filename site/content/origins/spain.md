@@ -1,5 +1,6 @@
 ---
 title: "Spain Pet Export Guide"
+slug: "spain"
 description: "Complete guide to exporting your pet from Spain."
 type: "origins"
 layout: "single"

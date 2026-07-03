@@ -105,13 +105,13 @@ faqs:
     answer: "Yes. Brittany Ferries accepts dogs and cats on its Portsmouth-Santander and Plymouth-Bilbao routes. Depending on the ship, your pet can travel in onboard kennels, a pet-friendly cabin, or remain in your vehicle during the crossing. The pet fee is around GBP 50 each way. Crossings operate once or twice per week and take 20-30 hours. This is a popular option for owners driving to Spain who want to avoid the cargo system entirely."
 links:
   sideways:
-    - url: "/pet-transport/routes/spain-to-united-kingdom/"
+    - url: "/pet-transport/spain-to-united-kingdom/"
       text: "Pet Transport Spain to United Kingdom"
-    - url: "/pet-transport/routes/united-kingdom-to-france/"
+    - url: "/pet-transport/united-kingdom-to-france/"
       text: "Pet Transport United Kingdom to France"
-    - url: "/pet-transport/routes/united-kingdom-to-italy/"
+    - url: "/pet-transport/united-kingdom-to-italy/"
       text: "Pet Transport United Kingdom to Italy"
-    - url: "/pet-transport/routes/united-kingdom-to-portugal/"
+    - url: "/pet-transport/united-kingdom-to-portugal/"
       text: "Pet Transport United Kingdom to Portugal"
   upward:
     - url: "/pet-transport/origins/pet-export-guide-shipping-from-united-kingdom/"

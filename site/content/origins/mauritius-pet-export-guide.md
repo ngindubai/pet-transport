@@ -116,7 +116,6 @@ sections:
       - [Mauritius to Turkey](/pet-transport/mauritius-to-turkey/)
       - [Mauritius to United Arab Emirates](/pet-transport/mauritius-to-united-arab-emirates/)
       - [Mauritius to United Kingdom](/pet-transport/mauritius-to-united-kingdom/)
-      - [Mauritius to United States](/pet-transport/mauritius-to-united-states/)
       - [Mauritius to Vietnam](/pet-transport/mauritius-to-vietnam/)
       - [Mauritius to Zimbabwe](/pet-transport/mauritius-to-zimbabwe/)
 

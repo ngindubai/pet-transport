@@ -1,5 +1,6 @@
 ---
 title: "Denmark Pet Export Guide"
+slug: "denmark"
 description: "Complete guide to exporting your pet from Denmark. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"
@@ -26,7 +27,6 @@ sections:
       - [Denmark to Bahrain](/pet-transport/denmark-to-bahrain/)
       - [Denmark to Bangladesh](/pet-transport/denmark-to-bangladesh/)
       - [Denmark to Belgium](/pet-transport/denmark-to-belgium/)
-      - [Denmark to Brazil](/pet-transport/denmark-to-brazil/)
       - [Denmark to Bulgaria](/pet-transport/denmark-to-bulgaria/)
       - [Denmark to Cambodia](/pet-transport/denmark-to-cambodia/)
       - [Denmark to Canada](/pet-transport/denmark-to-canada/)
@@ -60,7 +60,6 @@ sections:
       - [Denmark to Malaysia](/pet-transport/denmark-to-malaysia/)
       - [Denmark to Malta](/pet-transport/denmark-to-malta/)
       - [Denmark to Mauritius](/pet-transport/denmark-to-mauritius/)
-      - [Denmark to Mexico](/pet-transport/denmark-to-mexico/)
       - [Denmark to Morocco](/pet-transport/denmark-to-morocco/)
       - [Denmark to Myanmar](/pet-transport/denmark-to-myanmar/)
       - [Denmark to Nepal](/pet-transport/denmark-to-nepal/)

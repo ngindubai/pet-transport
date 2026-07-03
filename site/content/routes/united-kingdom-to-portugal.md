@@ -107,13 +107,13 @@ faqs:
     answer: "Once you are resident in Portugal and your pet is registered there, your Portuguese vet can issue an EU pet passport. An EU pet passport allows travel within EU member states without the need for a new AHC on every trip, as long as the pet's vaccinations remain current. For travel back to Great Britain, however, you will still need to follow UK Pet Travel Scheme rules, including the tapeworm treatment for dogs."
 links:
   sideways:
-    - url: "/pet-transport/routes/portugal-to-united-kingdom/"
+    - url: "/pet-transport/portugal-to-united-kingdom/"
       text: "Pet Transport Portugal to United Kingdom"
-    - url: "/pet-transport/routes/united-kingdom-to-spain/"
+    - url: "/pet-transport/united-kingdom-to-spain/"
       text: "Pet Transport United Kingdom to Spain"
-    - url: "/pet-transport/routes/united-kingdom-to-france/"
+    - url: "/pet-transport/united-kingdom-to-france/"
       text: "Pet Transport United Kingdom to France"
-    - url: "/pet-transport/routes/united-kingdom-to-italy/"
+    - url: "/pet-transport/united-kingdom-to-italy/"
       text: "Pet Transport United Kingdom to Italy"
   upward:
     - url: "/pet-transport/origins/pet-export-guide-shipping-from-united-kingdom/"

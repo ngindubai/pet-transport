@@ -24,6 +24,9 @@
   {{ end }}
 {{ end }}
 
+{{/* Same filter, applied to sideways (related route) links. */}}
+{{ $validSideways := partial "routes/valid-sideways.html" . }}
+
 <article class="tpl-route-a">
 
 {{/* ── SLIM BANNER HERO ───────────────────────────────────────────────────────── */}}
@@ -168,7 +171,7 @@
                     <ul class="tpl-a-list">
                         {{ range . }}
                         {{ $slug := . | lower | replaceRE "[^a-z0-9]+" "-" | strings.TrimRight "-" }}
-                        <li><a href="/pet-transport/breeds/{{ $slug }}/">{{ . }}</a></li>
+                        <li>{{ if site.GetPage (printf "/pet-transport/breeds/%s" $slug) }}<a href="/pet-transport/breeds/{{ $slug }}/">{{ . }}</a>{{ else }}{{ . }}{{ end }}</li>
                         {{ end }}
                     </ul>
                     <div class="tpl-a-warn-box">
@@ -211,7 +214,7 @@
                 {{/* Related routes — inline grid at the bottom */}}
                 {{ with .Params.links }}
                 <section class="tpl-a-section mb-5">
-                    {{ with .sideways }}
+                    {{ with $validSideways }}
                     <h2>Other Routes to Consider</h2>
                     <div class="tpl-a-routes-grid">
                         {{ range . }}<a href="{{ .url }}" class="tpl-a-route-link">{{ .text }}</a>{{ end }}

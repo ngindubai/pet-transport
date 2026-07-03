@@ -1,5 +1,6 @@
 ---
 title: "Czech Republic Pet Export Guide"
+slug: "czech-republic"
 description: "Complete guide to exporting your pet from Czech Republic. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"

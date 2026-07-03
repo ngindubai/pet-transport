@@ -1,5 +1,6 @@
 ---
 title: "Sweden Pet Export Guide"
+slug: "sweden"
 description: "Complete guide to exporting your pet from Sweden."
 type: "origins"
 layout: "single"

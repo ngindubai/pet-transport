@@ -1,5 +1,6 @@
 ---
 title: "New Zealand Pet Export Guide"
+slug: "new-zealand"
 description: "Complete guide to exporting your pet from New Zealand."
 type: "origins"
 layout: "single"

@@ -23,6 +23,9 @@
   {{ end }}
 {{ end }}
 
+{{/* Same filter, applied to sideways (related route) links. */}}
+{{ $validSideways := partial "routes/valid-sideways.html" . }}
+
 <article class="tpl-route-c">
 
 {{/* ── HERO — flight-path design ───────────────────────────────────────── */}}
@@ -169,7 +172,7 @@
                                 {{ range . }}
                                 {{ $slug := .name | lower | replaceRE "[^a-z0-9]+" "-" | strings.TrimRight "-" }}
                                 <tr>
-                                    <td><a href="/pet-transport/airlines/{{ $slug }}/" class="tpl-c-airline-name">{{ .name }}</a></td>
+                                    <td>{{ if site.GetPage (printf "/pet-transport/airlines/%s" $slug) }}<a href="/pet-transport/airlines/{{ $slug }}/" class="tpl-c-airline-name">{{ .name }}</a>{{ else }}<span class="tpl-c-airline-name">{{ .name }}</span>{{ end }}</td>
                                     <td><span class="tpl-c-airline-type {{ .type }}">{{ .type | replace "_" " " | title }}</span></td>
                                     <td>{{ .policy_summary }}</td>
                                 </tr>
@@ -226,7 +229,7 @@
                 {{/* Related routes */}}
                 {{ with .Params.links }}
                 <div class="tpl-c-section mb-4">
-                    {{ with .sideways }}
+                    {{ with $validSideways }}
                     <h2>Related Routes</h2>
                     <div class="tpl-c-route-grid">
                         {{ range . }}<a href="{{ .url }}" class="tpl-c-route-link">{{ .text }}</a>{{ end }}
@@ -260,15 +263,13 @@
                     {{/* Airline + breed links */}}
                     {{ partial "airline-breed-sidebar.html" . }}
 
-                    {{ with .Params.links }}
-                    {{ with .sideways }}
+                    {{ with $validSideways }}
                     <div class="tpl-c-sidebar-card mb-4">
                         <h5>Related routes</h5>
                         <div class="tpl-c-sidebar-links">
                             {{ range . }}<a href="{{ .url }}">{{ .text }}</a>{{ end }}
                         </div>
                     </div>
-                    {{ end }}
                     {{ end }}
                     {{ if $validUpward }}
                     <div class="tpl-c-sidebar-card mb-4">

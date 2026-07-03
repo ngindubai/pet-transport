@@ -1,5 +1,6 @@
 ---
 title: "Germany Pet Export Guide"
+slug: "germany"
 description: "Complete guide to exporting your pet from Germany. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"

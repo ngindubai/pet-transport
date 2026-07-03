@@ -1,0 +1,22 @@
+{{- /*
+  Partial: valid-sideways.html
+  Filters .Params.links.sideways to only entries whose target page exists in
+  the Hugo build. Prevents dead cross-route links to country pairs that are
+  not built yet (the site covers ~16% of all possible country pairs, so many
+  sideways route references point at pairs that don't exist yet). Same
+  pattern as the existing UPWARD LINK FILTER in route-new-na.html.
+  Usage: {{ $validSideways := partial "routes/valid-sideways.html" . }}
+*/ -}}
+{{- $out := slice -}}
+{{- if .Params.links -}}
+  {{- if reflect.IsMap .Params.links -}}
+    {{- with .Params.links.sideways -}}
+      {{- range . -}}
+        {{- if site.GetPage .url -}}
+          {{- $out = $out | append . -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $out -}}

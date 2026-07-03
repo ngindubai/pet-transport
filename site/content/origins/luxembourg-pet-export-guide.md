@@ -116,7 +116,6 @@ sections:
       - [Luxembourg to Turkey](/pet-transport/luxembourg-to-turkey/)
       - [Luxembourg to United Arab Emirates](/pet-transport/luxembourg-to-united-arab-emirates/)
       - [Luxembourg to United Kingdom](/pet-transport/luxembourg-to-united-kingdom/)
-      - [Luxembourg to United States](/pet-transport/luxembourg-to-united-states/)
       - [Luxembourg to Vietnam](/pet-transport/luxembourg-to-vietnam/)
       - [Luxembourg to Zimbabwe](/pet-transport/luxembourg-to-zimbabwe/)
 

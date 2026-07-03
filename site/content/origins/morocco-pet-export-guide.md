@@ -116,7 +116,6 @@ sections:
       - [Morocco to Turkey](/pet-transport/morocco-to-turkey/)
       - [Morocco to United Arab Emirates](/pet-transport/morocco-to-united-arab-emirates/)
       - [Morocco to United Kingdom](/pet-transport/morocco-to-united-kingdom/)
-      - [Morocco to United States](/pet-transport/morocco-to-united-states/)
       - [Morocco to Vietnam](/pet-transport/morocco-to-vietnam/)
       - [Morocco to Zimbabwe](/pet-transport/morocco-to-zimbabwe/)
 

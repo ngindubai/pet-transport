@@ -1,5 +1,6 @@
 ---
 title: "France Pet Export Guide"
+slug: "france"
 description: "Complete guide to exporting your pet from France. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"

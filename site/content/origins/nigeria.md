@@ -1,5 +1,6 @@
 ---
 title: "Nigeria Pet Export Guide"
+slug: "nigeria"
 description: "Complete guide to exporting your pet from Nigeria."
 type: "origins"
 layout: "single"

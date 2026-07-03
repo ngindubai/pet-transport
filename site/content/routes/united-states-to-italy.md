@@ -108,13 +108,13 @@ faqs:
     answer: "Cats from the USA have no US federal export requirements. Italy requires the same documents for cats as for dogs: ISO microchip, current rabies vaccination, and a USDA-endorsed health certificate issued within 10 days of arrival. There is no quarantine, no titre test, and no import permit. Check with your airline for their specific cabin or cargo policies for cats."
 links:
   sideways:
-    - url: "/pet-transport/routes/italy-to-united-states/"
+    - url: "/pet-transport/italy-to-united-states/"
       text: "Pet Transport Italy to United States"
-    - url: "/pet-transport/routes/united-states-to-spain/"
+    - url: "/pet-transport/united-states-to-spain/"
       text: "Pet Transport United States to Spain"
-    - url: "/pet-transport/routes/united-states-to-france/"
+    - url: "/pet-transport/united-states-to-france/"
       text: "Pet Transport United States to France"
-    - url: "/pet-transport/routes/united-states-to-portugal/"
+    - url: "/pet-transport/united-states-to-portugal/"
       text: "Pet Transport United States to Portugal"
   upward:
     - url: "/pet-transport/origins/pet-export-guide-shipping-from-united-states/"

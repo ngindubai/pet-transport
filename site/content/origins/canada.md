@@ -1,5 +1,6 @@
 ---
 title: "Pet Export Guide: Shipping from Canada"
+slug: "canada"
 description: "Exporting your pet from Canada: health certificate requirements, airline options, and routes from Canada to destinations across Europe, Asia, and beyond."
 type: "origins"
 layout: "single"

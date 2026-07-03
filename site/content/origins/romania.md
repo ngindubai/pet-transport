@@ -1,5 +1,6 @@
 ---
 title: "Romania Pet Export Guide"
+slug: "romania"
 description: "Complete guide to exporting your pet from Romania."
 type: "origins"
 layout: "single"

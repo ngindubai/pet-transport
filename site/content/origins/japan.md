@@ -1,5 +1,6 @@
 ---
 title: "Japan Pet Export Guide"
+slug: "japan"
 description: "Complete guide to exporting your pet from Japan. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"

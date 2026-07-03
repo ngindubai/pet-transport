@@ -1,5 +1,6 @@
 ---
 title: "Poland Pet Export Guide"
+slug: "poland"
 description: "Complete guide to exporting your pet from Poland."
 type: "origins"
 layout: "single"

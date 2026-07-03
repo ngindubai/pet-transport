@@ -1,5 +1,6 @@
 ---
 title: "Mexico Pet Export Guide"
+slug: "mexico"
 description: "Complete guide to exporting your pet from Mexico."
 type: "origins"
 layout: "single"

@@ -23,6 +23,9 @@
   {{ end }}
 {{ end }}
 
+{{/* Same filter, applied to sideways (related route) links. */}}
+{{ $validSideways := partial "routes/valid-sideways.html" . }}
+
 {{ $specificPath := printf "static/images/routes/route-%s.jpg" .File.ContentBaseName }}
 {{ $heroImgUrl := cond (os.FileExists $specificPath) (printf "/images/routes/route-%s.jpg" .File.ContentBaseName) "/img/jumbotron.jpg" }}
 
@@ -159,7 +162,7 @@
                     <ul class="checkmark ps-0">
                         {{ range . }}
                         {{ $slug := . | lower | replaceRE "[^a-z0-9]+" "-" | strings.TrimRight "-" }}
-                        <li><a href="/pet-transport/breeds/{{ $slug }}/">{{ . }}</a></li>
+                        <li>{{ if site.GetPage (printf "/pet-transport/breeds/%s" $slug) }}<a href="/pet-transport/breeds/{{ $slug }}/">{{ . }}</a>{{ else }}{{ . }}{{ end }}</li>
                         {{ end }}
                     </ul>
                     <div class="tpl-legacy-warning mt-3">
@@ -309,17 +312,13 @@
                     {{ end }}
 
                     {{/* Sidebar related routes — map format with sideways/upward keys */}}
-                    {{ with .Params.links }}
-                    {{ if reflect.IsMap . }}
-                    {{ with .sideways }}
+                    {{ with $validSideways }}
                     <div class="widget1 bg-light p-3 rounded mb-3">
                         <h5 style="font-family:'Montserrat',sans-serif;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:#1a6b4a;">Related Routes</h5>
                         <ul class="list-unstyled mb-0" style="font-size:.82rem;">
                             {{ range . }}<li class="mb-1"><a href="{{ .url }}">{{ .text }}</a></li>{{ end }}
                         </ul>
                     </div>
-                    {{ end }}
-                    {{ end }}
                     {{ end }}
                     {{ if $validUpward }}
                     <div class="widget1 bg-light p-3 rounded mb-3">

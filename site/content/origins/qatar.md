@@ -1,5 +1,6 @@
 ---
 title: "Qatar Pet Export Guide"
+slug: "qatar"
 description: "Complete guide to exporting your pet from Qatar."
 type: "origins"
 layout: "single"

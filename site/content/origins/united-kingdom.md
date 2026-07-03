@@ -1,5 +1,6 @@
 ---
 title: "Pet Export Guide: Shipping from United Kingdom"
+slug: "united-kingdom"
 description: "Exporting your pet from the UK: APHA health certificate requirements, airline options, and routes from the United Kingdom to popular destinations."
 type: "origins"
 layout: "single"

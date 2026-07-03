@@ -105,13 +105,13 @@ faqs:
     answer: "Italy does not operate a national PPP-style breed restriction list like Spain. However, some Italian regions and municipalities have local breed-specific rules. Check the regulations for your specific destination city or comune before travel, particularly if your dog is a breed commonly subject to restrictions in Europe (Pit Bull types, Rottweiler, and similar)."
 links:
   sideways:
-    - url: "/pet-transport/routes/italy-to-united-kingdom/"
+    - url: "/pet-transport/italy-to-united-kingdom/"
       text: "Pet Transport Italy to United Kingdom"
-    - url: "/pet-transport/routes/united-kingdom-to-spain/"
+    - url: "/pet-transport/united-kingdom-to-spain/"
       text: "Pet Transport United Kingdom to Spain"
-    - url: "/pet-transport/routes/united-kingdom-to-france/"
+    - url: "/pet-transport/united-kingdom-to-france/"
       text: "Pet Transport United Kingdom to France"
-    - url: "/pet-transport/routes/united-kingdom-to-portugal/"
+    - url: "/pet-transport/united-kingdom-to-portugal/"
       text: "Pet Transport United Kingdom to Portugal"
   upward:
     - url: "/pet-transport/origins/pet-export-guide-shipping-from-united-kingdom/"

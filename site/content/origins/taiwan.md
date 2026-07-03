@@ -1,5 +1,6 @@
 ---
 title: "Taiwan Pet Export Guide"
+slug: "taiwan"
 description: "Complete guide to exporting your pet from Taiwan."
 type: "origins"
 layout: "single"

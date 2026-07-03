@@ -1,5 +1,6 @@
 ---
 title: "Netherlands Pet Export Guide"
+slug: "netherlands"
 description: "Complete guide to exporting your pet from Netherlands."
 type: "origins"
 layout: "single"

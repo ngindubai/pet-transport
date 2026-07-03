@@ -1,5 +1,6 @@
 ---
 title: "Shipping Your Pet from Brazil | Export Guide"
+slug: "brazil"
 description: "Complete guide to exporting your pet from Brazil. Export requirements, airlines, and route guides for international destinations."
 type: "origins"
 layout: "single"

@@ -1,5 +1,6 @@
 ---
 title: "Singapore Pet Export Guide"
+slug: "singapore"
 description: "Complete guide to exporting your pet from Singapore."
 type: "origins"
 layout: "single"

@@ -103,13 +103,13 @@ faqs:
     answer: "Yes. Dogs from non-high-risk countries (including Italy) can arrive at any US airport, seaport, or land border crossing. There is no requirement to arrive at an airport with a CDC-registered facility, unlike dogs from high-risk countries. The CDC/CBP inspection happens at the port of entry and is brief for compliant pets."
 links:
   sideways:
-    - url: "/pet-transport/routes/united-states-to-italy/"
+    - url: "/pet-transport/united-states-to-italy/"
       text: "Pet Transport United States to Italy"
-    - url: "/pet-transport/routes/spain-to-united-states/"
+    - url: "/pet-transport/spain-to-united-states/"
       text: "Pet Transport Spain to United States"
-    - url: "/pet-transport/routes/france-to-united-states/"
+    - url: "/pet-transport/france-to-united-states/"
       text: "Pet Transport France to United States"
-    - url: "/pet-transport/routes/united-kingdom-to-united-states/"
+    - url: "/pet-transport/united-kingdom-to-united-states/"
       text: "Pet Transport United Kingdom to United States"
   upward:
     - url: "/pet-transport/countries/united-states/"

@@ -1,5 +1,6 @@
 ---
 title: "Sri Lanka Pet Export Guide"
+slug: "sri-lanka"
 description: "Complete guide to exporting your pet from Sri Lanka."
 type: "origins"
 layout: "single"

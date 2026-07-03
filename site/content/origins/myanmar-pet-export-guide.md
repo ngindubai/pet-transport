@@ -116,7 +116,6 @@ sections:
       - [Myanmar to Turkey](/pet-transport/myanmar-to-turkey/)
       - [Myanmar to United Arab Emirates](/pet-transport/myanmar-to-united-arab-emirates/)
       - [Myanmar to United Kingdom](/pet-transport/myanmar-to-united-kingdom/)
-      - [Myanmar to United States](/pet-transport/myanmar-to-united-states/)
       - [Myanmar to Vietnam](/pet-transport/myanmar-to-vietnam/)
       - [Myanmar to Zimbabwe](/pet-transport/myanmar-to-zimbabwe/)
 

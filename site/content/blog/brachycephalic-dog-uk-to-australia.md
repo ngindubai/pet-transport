@@ -123,7 +123,7 @@ A responsible transporter working with a brachycephalic dog should:
 
 **Not sedate the dog.** Sedation is not recommended by the BVA for brachycephalic dogs during air travel. Sedated animals cannot regulate their own body temperature effectively, and sedation can depress respiratory function further. Any transporter suggesting sedation for a brachy dog should be questioned on this.
 
-Our [French Bulldog breed guide](/breeds/french-bulldog/) and [Pug breed guide](/breeds/pug/) cover breed-specific welfare considerations in more detail, including BOAS and what to discuss with your vet before any travel.
+Our [French Bulldog breed guide](/pet-transport/breeds/french-bulldog/) and [Pug breed guide](/pet-transport/breeds/pug/) cover breed-specific welfare considerations in more detail, including BOAS and what to discuss with your vet before any travel.
 
 ## The honest conversation you need to have
 

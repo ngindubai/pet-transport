@@ -1,5 +1,6 @@
 ---
 title: "Portugal Pet Export Guide"
+slug: "portugal"
 description: "Complete guide to exporting your pet from Portugal."
 type: "origins"
 layout: "single"
@@ -81,7 +82,6 @@ sections:
       - [Portugal to Singapore](/pet-transport/portugal-to-singapore/)
       - [Portugal to Slovakia](/pet-transport/portugal-to-slovakia/)
       - [Portugal to South Africa](/pet-transport/portugal-to-south-africa/)
-      - [Portugal to South Korea](/pet-transport/portugal-to-south-korea/)
       - [Portugal to Spain](/pet-transport/portugal-to-spain/)
       - [Portugal to Sri Lanka](/pet-transport/portugal-to-sri-lanka/)
       - [Portugal to Sweden](/pet-transport/portugal-to-sweden/)

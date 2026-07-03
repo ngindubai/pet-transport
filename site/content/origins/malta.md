@@ -1,5 +1,6 @@
 ---
 title: "Malta Pet Export Guide"
+slug: "malta"
 description: "Complete guide to exporting your pet from Malta."
 type: "origins"
 layout: "single"

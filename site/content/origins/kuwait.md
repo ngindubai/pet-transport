@@ -1,5 +1,6 @@
 ---
 title: "Kuwait Pet Export Guide"
+slug: "kuwait"
 description: "Complete guide to exporting your pet from Kuwait."
 type: "origins"
 layout: "single"

@@ -1,5 +1,6 @@
 ---
 title: "China Pet Export Guide"
+slug: "china"
 description: "Complete guide to exporting your pet from China. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"

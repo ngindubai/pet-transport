@@ -1,5 +1,6 @@
 ---
 title: "Cyprus Pet Export Guide"
+slug: "cyprus"
 description: "Complete guide to exporting your pet from Cyprus. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"

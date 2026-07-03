@@ -1,5 +1,6 @@
 ---
 title: "Pet Export Guide: Shipping from United States"
+slug: "united-states"
 description: "Exporting your pet from the United States: USDA APHIS health certificate requirements, airline options, and routes from the USA to destinations worldwide."
 type: "origins"
 layout: "single"

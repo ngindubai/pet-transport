@@ -1,5 +1,6 @@
 ---
 title: "Egypt Pet Export Guide"
+slug: "egypt"
 description: "Complete guide to exporting your pet from Egypt. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"

@@ -1,5 +1,6 @@
 ---
 title: "Greece Pet Export Guide"
+slug: "greece"
 description: "Complete guide to exporting your pet from Greece. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"

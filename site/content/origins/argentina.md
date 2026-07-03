@@ -1,5 +1,6 @@
 ---
 title: "Argentina Pet Export Guide"
+slug: "argentina"
 description: "Complete guide to exporting your pet from Argentina. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"

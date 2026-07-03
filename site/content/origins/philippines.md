@@ -1,5 +1,6 @@
 ---
 title: "Philippines Pet Export Guide"
+slug: "philippines"
 description: "Complete guide to exporting your pet from Philippines."
 type: "origins"
 layout: "single"
