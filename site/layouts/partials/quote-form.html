@@ -32,7 +32,8 @@
                                     <label>Moving from <span class="required">*</span></label>
                                     <select name="origin_country" class="form-control input-field" required>
                                         <option value="">Select country</option>
-                                        {{ range hugo.Data.countries }}
+                                        {{/* D4: full 75-country list (see site/data/quote_form_countries.json) */}}
+                                        {{ range site.Data.quote_form_countries }}
                                         <option value="{{ .code }}" {{ if and (isset $.Params "origin_code") (eq $.Params.origin_code .code) }}selected{{ end }}>{{ .name }}</option>
                                         {{ end }}
                                     </select>
@@ -41,7 +42,7 @@
                                     <label>Moving to <span class="required">*</span></label>
                                     <select name="destination_country" class="form-control input-field" required>
                                         <option value="">Select country</option>
-                                        {{ range hugo.Data.countries }}
+                                        {{ range site.Data.quote_form_countries }}
                                         <option value="{{ .code }}" {{ if and (isset $.Params "destination_code") (eq $.Params.destination_code .code) }}selected{{ end }}>{{ .name }}</option>
                                         {{ end }}
                                     </select>

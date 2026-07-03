@@ -31,7 +31,7 @@ We respond to all enquiries within 24 hours on business days (Monday to Friday, 
 
 The fastest way to reach us is through the quote form on any of our route pages. Search for your route above and use the form at the bottom of the page.
 
-Alternatively, email us directly at the address in the site footer.
+Alternatively, message us directly on [WhatsApp](https://wa.me/447703577246) and we will get back to you.
 
 ## Frequently Asked Questions
 

@@ -33,7 +33,11 @@
                                 <label class="form-label">Moving from <span class="required">*</span></label>
                                 <select name="origin_country" class="form-control input-field" required>
                                     <option value="">Select country</option>
-                                    {{ range hugo.Data.countries }}
+                                    {{/* D4: use the full 75-country list, not the 12-country
+                                         hugo.Data.countries (which is also used by the country
+                                         carousel further down this page and expects a per-country
+                                         hero image, so it is left as-is). */}}
+                                    {{ range site.Data.quote_form_countries }}
                                     <option value="{{ .code }}">{{ .name }}</option>
                                     {{ end }}
                                 </select>
@@ -42,7 +46,11 @@
                                 <label class="form-label">Moving to <span class="required">*</span></label>
                                 <select name="destination_country" class="form-control input-field" required>
                                     <option value="">Select country</option>
-                                    {{ range hugo.Data.countries }}
+                                    {{/* D4: use the full 75-country list, not the 12-country
+                                         hugo.Data.countries (which is also used by the country
+                                         carousel further down this page and expects a per-country
+                                         hero image, so it is left as-is). */}}
+                                    {{ range site.Data.quote_form_countries }}
                                     <option value="{{ .code }}">{{ .name }}</option>
                                     {{ end }}
                                 </select>

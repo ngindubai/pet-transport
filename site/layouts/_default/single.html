@@ -23,9 +23,14 @@
 {{ end }}
 
 {{ define "main" }}
+{{/* D2: .Title is the full SEO title (e.g. "About PetTransportGlobal |
+     International Pet Relocation Specialists"), which reads as a leaked
+     title tag when used verbatim as the H1. Use only the part before the
+     first " | " for the visible heading; the <title> tag is unaffected. */}}
+{{ $h1 := index (strings.Split .Title " | ") 0 }}
 <section class="route-section">
     <div class="section-inner">
-        <h1>{{ .Title }}</h1>
+        <h1>{{ $h1 }}</h1>
         {{ .Content }}
         {{/* FAQs if defined */}}
         {{ with .Params.faqs }}
