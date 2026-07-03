@@ -1,5 +1,6 @@
 ---
 title: "Indonesia Pet Export Guide"
+slug: "indonesia"
 description: "Complete guide to exporting your pet from Indonesia. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"

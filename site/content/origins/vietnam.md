@@ -1,5 +1,6 @@
 ---
 title: "Vietnam Pet Export Guide"
+slug: "vietnam"
 description: "Complete guide to exporting your pet from Vietnam."
 type: "origins"
 layout: "single"

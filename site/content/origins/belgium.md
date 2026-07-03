@@ -1,5 +1,6 @@
 ---
 title: "Belgium Pet Export Guide"
+slug: "belgium"
 description: "Complete guide to exporting your pet from Belgium. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"

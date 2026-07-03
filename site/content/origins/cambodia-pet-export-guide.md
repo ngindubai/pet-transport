@@ -116,7 +116,6 @@ sections:
       - [Cambodia to Turkey](/pet-transport/cambodia-to-turkey/)
       - [Cambodia to United Arab Emirates](/pet-transport/cambodia-to-united-arab-emirates/)
       - [Cambodia to United Kingdom](/pet-transport/cambodia-to-united-kingdom/)
-      - [Cambodia to United States](/pet-transport/cambodia-to-united-states/)
       - [Cambodia to Vietnam](/pet-transport/cambodia-to-vietnam/)
       - [Cambodia to Zimbabwe](/pet-transport/cambodia-to-zimbabwe/)
 

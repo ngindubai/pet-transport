@@ -86,7 +86,7 @@ For routes within Europe, where requirements are well-established and the docume
 
 **What is the cheapest legal way to move a dog from the UK to Spain?**
 
-Ground transport via Eurotunnel or ferry with your dog in the car is the lowest-cost option. You still need a valid microchip, a current rabies vaccination, an AHC from an APHA-authorised vet within 10 days of travel, and tapeworm treatment for your dog between 24 and 120 hours before departure. Total cost can be under GBP 400 if the AHC fee, crossing fare, and tapeworm treatment are your only expenses. See our full [pet transport cost guide for 2026](/cost-to-transport-a-pet-2026/) for route-by-route figures.
+Ground transport via Eurotunnel or ferry with your dog in the car is the lowest-cost option. You still need a valid microchip, a current rabies vaccination, an AHC from an APHA-authorised vet within 10 days of travel, and tapeworm treatment for your dog between 24 and 120 hours before departure. Total cost can be under GBP 400 if the AHC fee, crossing fare, and tapeworm treatment are your only expenses. See our full [pet transport cost guide for 2026](/blog/cost-to-transport-a-pet-2026/) for route-by-route figures.
 
 **Why is one quote GBP 800 and another GBP 2,500 for the same UK to Germany move?**
 
@@ -94,7 +94,7 @@ The cheaper quote likely covers airport-to-airport cargo only. The more expensiv
 
 **Are there discount or budget pet transport companies that are still safe?**
 
-Some smaller operators price lower than the large specialist firms but still meet IATA standards and use compliant documentation. The question is not whether a company is large or small but whether they can answer specific questions about documentation, crate standards, and transit airport handling. Our guide on [how to choose a pet transport company](/how-to-choose-a-pet-transport-company/) covers the questions to ask.
+Some smaller operators price lower than the large specialist firms but still meet IATA standards and use compliant documentation. The question is not whether a company is large or small but whether they can answer specific questions about documentation, crate standards, and transit airport handling. Our guide on [how to choose a pet transport company](/blog/how-to-choose-a-pet-transport-company/) covers the questions to ask.
 
 **Is it cheaper to ship my pet as cargo than to pay a pet transport agent?**
 

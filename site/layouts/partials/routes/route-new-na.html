@@ -26,6 +26,10 @@
   {{ end }}
 {{ end }}
 
+{{/* Same filter, applied to sideways (related route) links: many reference
+     country pairs not yet built (the site covers ~16% of all pairs). */}}
+{{ $validSideways := partial "routes/valid-sideways.html" . }}
+
 <div class="tpl-na">
 
   {{/* ── HERO ─────────────────────────────────────────── */}}
@@ -64,14 +68,14 @@
           <div class="sc-stat"><span class="sc-stat-l">Quarantine</span><span class="sc-stat-v">{{ partial "routes/quarantine-short.html" . }}</span></div>
         </div>
       </div>
-      {{ with .Params.links }}{{ with .sideways }}
+      {{ with $validSideways }}
       <div class="sc">
         <div class="sc-title">Related routes</div>
         <div class="rel-list">
           {{ range . }}<a href="{{ .url }}" class="rel-item"><span class="rel-name">{{ .text }}</span><span class="rel-arr">&rarr;</span></a>{{ end }}
         </div>
       </div>
-      {{ end }}{{ end }}
+      {{ end }}
       {{ if $validUpward }}
       <div class="sc">
         <div class="sc-title">Country guides</div>
@@ -167,7 +171,7 @@
       <section class="page-sec">
         <div class="sec-tag">Restricted breeds</div>
         <h2 class="sec-h">{{ $rd.destination.country }} <em>breed rules</em></h2>
-        <ul>{{ range . }}{{ $slug := . | lower | replaceRE "[^a-z0-9]+" "-" | strings.TrimRight "-" }}<li><a href="/pet-transport/breeds/{{ $slug }}/" style="color:var(--green)">{{ . }}</a></li>{{ end }}</ul>
+        <ul>{{ range . }}{{ $slug := . | lower | replaceRE "[^a-z0-9]+" "-" | strings.TrimRight "-" }}<li>{{ if site.GetPage (printf "/pet-transport/breeds/%s" $slug) }}<a href="/pet-transport/breeds/{{ $slug }}/" style="color:var(--green)">{{ . }}</a>{{ else }}{{ . }}{{ end }}</li>{{ end }}</ul>
       </section>
       {{ end }}
 

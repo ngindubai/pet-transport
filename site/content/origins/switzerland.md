@@ -1,5 +1,6 @@
 ---
 title: "Switzerland Pet Export Guide"
+slug: "switzerland"
 description: "Complete guide to exporting your pet from Switzerland."
 type: "origins"
 layout: "single"

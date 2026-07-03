@@ -1,5 +1,6 @@
 ---
 title: "Colombia Pet Export Guide"
+slug: "colombia"
 description: "Complete guide to exporting your pet from Colombia. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"

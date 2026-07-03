@@ -1,5 +1,6 @@
 ---
 title: "India Pet Export Guide"
+slug: "india"
 description: "Complete guide to exporting your pet from India. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"

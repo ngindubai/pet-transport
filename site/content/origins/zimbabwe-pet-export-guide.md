@@ -117,7 +117,6 @@ sections:
       - [Zimbabwe to Turkey](/pet-transport/zimbabwe-to-turkey/)
       - [Zimbabwe to United Arab Emirates](/pet-transport/zimbabwe-to-united-arab-emirates/)
       - [Zimbabwe to United Kingdom](/pet-transport/zimbabwe-to-united-kingdom/)
-      - [Zimbabwe to United States](/pet-transport/zimbabwe-to-united-states/)
       - [Zimbabwe to Vietnam](/pet-transport/zimbabwe-to-vietnam/)
 
 faqs:

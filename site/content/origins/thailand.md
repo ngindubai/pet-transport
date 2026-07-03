@@ -1,5 +1,6 @@
 ---
 title: "Thailand Pet Export Guide"
+slug: "thailand"
 description: "Complete guide to exporting your pet from Thailand."
 type: "origins"
 layout: "single"

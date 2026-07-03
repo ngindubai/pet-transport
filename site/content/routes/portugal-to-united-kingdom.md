@@ -91,13 +91,13 @@ faqs:
     answer: "If your pet has an EU pet passport issued in Portugal, you can use that document for every trip. You do not need a new AHC each time. For dogs, you do need a new tapeworm treatment entry in the passport for each UK trip, administered within the correct window. The EU pet passport itself is a standing document; only the tapeworm entry changes."
 links:
   sideways:
-    - url: "/pet-transport/routes/united-kingdom-to-portugal/"
+    - url: "/pet-transport/united-kingdom-to-portugal/"
       text: "Pet Transport United Kingdom to Portugal"
-    - url: "/pet-transport/routes/spain-to-united-kingdom/"
+    - url: "/pet-transport/spain-to-united-kingdom/"
       text: "Pet Transport Spain to United Kingdom"
-    - url: "/pet-transport/routes/france-to-united-kingdom/"
+    - url: "/pet-transport/france-to-united-kingdom/"
       text: "Pet Transport France to United Kingdom"
-    - url: "/pet-transport/routes/italy-to-united-kingdom/"
+    - url: "/pet-transport/italy-to-united-kingdom/"
       text: "Pet Transport Italy to United Kingdom"
   upward:
     - url: "/pet-transport/countries/united-kingdom/"

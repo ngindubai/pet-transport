@@ -1,5 +1,6 @@
 ---
 title: "South Korea Pet Export Guide"
+slug: "south-korea"
 description: "Complete guide to exporting your pet from South Korea."
 type: "origins"
 layout: "single"

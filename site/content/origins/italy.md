@@ -1,5 +1,6 @@
 ---
 title: "Italy Pet Export Guide"
+slug: "italy"
 description: "Complete guide to exporting your pet from Italy. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"

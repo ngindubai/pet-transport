@@ -1,5 +1,6 @@
 ---
 title: "Kenya Pet Export Guide"
+slug: "kenya"
 description: "Complete guide to exporting your pet from Kenya."
 type: "origins"
 layout: "single"

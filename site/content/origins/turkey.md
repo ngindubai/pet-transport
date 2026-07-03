@@ -1,5 +1,6 @@
 ---
 title: "Turkey Pet Export Guide"
+slug: "turkey"
 description: "Complete guide to exporting your pet from Turkey."
 type: "origins"
 layout: "single"

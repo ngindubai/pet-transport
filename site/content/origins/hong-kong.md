@@ -1,5 +1,6 @@
 ---
 title: "Hong Kong Pet Export Guide"
+slug: "hong-kong"
 description: "Complete guide to exporting your pet from Hong Kong. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"

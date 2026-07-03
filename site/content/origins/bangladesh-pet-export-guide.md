@@ -116,7 +116,6 @@ sections:
       - [Bangladesh to Turkey](/pet-transport/bangladesh-to-turkey/)
       - [Bangladesh to United Arab Emirates](/pet-transport/bangladesh-to-united-arab-emirates/)
       - [Bangladesh to United Kingdom](/pet-transport/bangladesh-to-united-kingdom/)
-      - [Bangladesh to United States](/pet-transport/bangladesh-to-united-states/)
       - [Bangladesh to Vietnam](/pet-transport/bangladesh-to-vietnam/)
       - [Bangladesh to Zimbabwe](/pet-transport/bangladesh-to-zimbabwe/)
 

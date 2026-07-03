@@ -94,13 +94,13 @@ faqs:
     answer: "The CDC Dog Import Form receipt is valid for 6 months and can be used for multiple entries if the dog has remained in non-high-risk countries throughout that period. Complete the form online at cdc.gov before travel. It is free and takes about 15 minutes."
 links:
   sideways:
-    - url: "/pet-transport/routes/united-states-to-portugal/"
+    - url: "/pet-transport/united-states-to-portugal/"
       text: "Pet Transport United States to Portugal"
-    - url: "/pet-transport/routes/spain-to-united-states/"
+    - url: "/pet-transport/spain-to-united-states/"
       text: "Pet Transport Spain to United States"
-    - url: "/pet-transport/routes/italy-to-united-states/"
+    - url: "/pet-transport/italy-to-united-states/"
       text: "Pet Transport Italy to United States"
-    - url: "/pet-transport/routes/france-to-united-states/"
+    - url: "/pet-transport/france-to-united-states/"
       text: "Pet Transport France to United States"
   upward:
     - url: "/pet-transport/countries/united-states/"

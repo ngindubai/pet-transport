@@ -116,7 +116,6 @@ sections:
       - [Ethiopia to Turkey](/pet-transport/ethiopia-to-turkey/)
       - [Ethiopia to United Arab Emirates](/pet-transport/ethiopia-to-united-arab-emirates/)
       - [Ethiopia to United Kingdom](/pet-transport/ethiopia-to-united-kingdom/)
-      - [Ethiopia to United States](/pet-transport/ethiopia-to-united-states/)
       - [Ethiopia to Vietnam](/pet-transport/ethiopia-to-vietnam/)
       - [Ethiopia to Zimbabwe](/pet-transport/ethiopia-to-zimbabwe/)
 

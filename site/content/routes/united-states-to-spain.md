@@ -106,13 +106,13 @@ faqs:
     answer: "On transatlantic flights, in-cabin pet policies vary by airline and route. Some airlines allow small cats (under a specific weight including carrier) in cabin on transatlantic flights, but many restrict in-cabin pets to shorter routes. Check directly with the airline on your specific routing. If your cat is too large or the airline does not allow cabin pets on the transatlantic leg, cargo is the alternative. Spain has no objection to cats arriving via cargo."
 links:
   sideways:
-    - url: "/pet-transport/routes/spain-to-united-states/"
+    - url: "/pet-transport/spain-to-united-states/"
       text: "Pet Transport Spain to United States"
-    - url: "/pet-transport/routes/united-states-to-france/"
+    - url: "/pet-transport/united-states-to-france/"
       text: "Pet Transport United States to France"
-    - url: "/pet-transport/routes/united-states-to-italy/"
+    - url: "/pet-transport/united-states-to-italy/"
       text: "Pet Transport United States to Italy"
-    - url: "/pet-transport/routes/united-states-to-portugal/"
+    - url: "/pet-transport/united-states-to-portugal/"
       text: "Pet Transport United States to Portugal"
   upward:
     - url: "/pet-transport/origins/pet-export-guide-shipping-from-united-states/"

@@ -1,5 +1,6 @@
 ---
 title: "Malaysia Pet Export Guide"
+slug: "malaysia"
 description: "Complete guide to exporting your pet from Malaysia."
 type: "origins"
 layout: "single"

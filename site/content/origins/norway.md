@@ -1,5 +1,6 @@
 ---
 title: "Norway Pet Export Guide"
+slug: "norway"
 description: "Complete guide to exporting your pet from Norway."
 type: "origins"
 layout: "single"

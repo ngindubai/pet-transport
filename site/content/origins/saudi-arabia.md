@@ -1,5 +1,6 @@
 ---
 title: "Saudi Arabia Pet Export Guide"
+slug: "saudi-arabia"
 description: "Complete guide to exporting your pet from Saudi Arabia."
 type: "origins"
 layout: "single"

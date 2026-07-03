@@ -1,5 +1,6 @@
 ---
 title: "Austria Pet Export Guide"
+slug: "austria"
 description: "Complete guide to exporting your pet from Austria. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"

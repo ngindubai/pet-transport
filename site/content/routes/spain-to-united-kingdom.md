@@ -102,13 +102,13 @@ faqs:
     answer: "For compliant pets, the APHA inspection is brief: the border vet scans the microchip, checks the travel document, and verifies the tapeworm treatment record for dogs. If everything is in order, the pet is released on arrival day. If documentation is incomplete, the pet may be placed in quarantine at an authorised facility at the owner's cost."
 links:
   sideways:
-    - url: "/pet-transport/routes/united-kingdom-to-spain/"
+    - url: "/pet-transport/united-kingdom-to-spain/"
       text: "Pet Transport United Kingdom to Spain"
-    - url: "/pet-transport/routes/france-to-united-kingdom/"
+    - url: "/pet-transport/france-to-united-kingdom/"
       text: "Pet Transport France to United Kingdom"
-    - url: "/pet-transport/routes/italy-to-united-kingdom/"
+    - url: "/pet-transport/italy-to-united-kingdom/"
       text: "Pet Transport Italy to United Kingdom"
-    - url: "/pet-transport/routes/portugal-to-united-kingdom/"
+    - url: "/pet-transport/portugal-to-united-kingdom/"
       text: "Pet Transport Portugal to United Kingdom"
   upward:
     - url: "/pet-transport/countries/united-kingdom/"

@@ -13,7 +13,10 @@
 */}}
 {{ $rd := .Params.route_data }}
 
-{{/* Airline guide links */}}
+{{/* Airline guide links — only linked when the target page exists; otherwise plain text.
+     Root cause: airline names are slugified on the fly and often don't match the real
+     airline page slug (e.g. "Emirates SkyCargo" -> emirates-skycargo, but the real page
+     is emirates.md). Guard with site.GetPage before linking. */}}
 {{ with $rd.airlines }}
 <div class="widget1 bg-light p-3 rounded mb-3">
   <h5 style="font-family:'Montserrat',sans-serif;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:#1a6b4a;">Airline guides</h5>
@@ -21,20 +24,28 @@
     {{ range . }}
     {{ $name := .name | default . }}
     {{ $slug := $name | lower | replaceRE "[^a-z0-9]+" "-" | strings.TrimRight "-" }}
+    {{ if site.GetPage (printf "/pet-transport/airlines/%s" $slug) }}
     <li class="mb-1"><a href="/pet-transport/airlines/{{ $slug }}/">{{ $name }}</a></li>
+    {{ else }}
+    <li class="mb-1">{{ $name }}</li>
+    {{ end }}
     {{ end }}
   </ul>
 </div>
 {{ end }}
 
-{{/* Breed guide links */}}
+{{/* Breed guide links — same existence guard as airlines above. */}}
 {{ with $rd.destination.breed_restrictions }}
 <div class="widget1 bg-light p-3 rounded mb-3">
   <h5 style="font-family:'Montserrat',sans-serif;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:#b91c1c;">Breed restrictions</h5>
   <ul class="list-unstyled mb-0" style="font-size:.82rem;">
     {{ range . }}
     {{ $slug := . | lower | replaceRE "[^a-z0-9]+" "-" | strings.TrimRight "-" }}
+    {{ if site.GetPage (printf "/pet-transport/breeds/%s" $slug) }}
     <li class="mb-1"><a href="/pet-transport/breeds/{{ $slug }}/">{{ . }}</a></li>
+    {{ else }}
+    <li class="mb-1">{{ . }}</li>
+    {{ end }}
     {{ end }}
   </ul>
   <a href="/pet-transport/breeds/" style="font-size:.78rem;color:#1a6b4a;display:block;margin-top:6px;">All breed guides &rarr;</a>

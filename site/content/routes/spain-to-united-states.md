@@ -108,13 +108,13 @@ faqs:
     answer: "There are no federal breed restrictions for dogs entering the USA. However, some US states, counties, and cities have breed-specific legislation (BSL) affecting breeds such as Pit Bull Terriers, Rottweilers, and American Staffordshire Terriers. Check the rules for your destination city or county before travel. Florida, for example, has banned BSL at state level, while some cities in other states retain it."
 links:
   sideways:
-    - url: "/pet-transport/routes/united-states-to-spain/"
+    - url: "/pet-transport/united-states-to-spain/"
       text: "Pet Transport United States to Spain"
-    - url: "/pet-transport/routes/france-to-united-states/"
+    - url: "/pet-transport/france-to-united-states/"
       text: "Pet Transport France to United States"
-    - url: "/pet-transport/routes/italy-to-united-states/"
+    - url: "/pet-transport/italy-to-united-states/"
       text: "Pet Transport Italy to United States"
-    - url: "/pet-transport/routes/united-kingdom-to-united-states/"
+    - url: "/pet-transport/united-kingdom-to-united-states/"
       text: "Pet Transport United Kingdom to United States"
   upward:
     - url: "/pet-transport/countries/united-states/"

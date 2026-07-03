@@ -1,5 +1,6 @@
 ---
 title: "United Arab Emirates Pet Export Guide"
+slug: "united-arab-emirates"
 description: "Complete guide to exporting your pet from the UAE."
 type: "origins"
 layout: "single"

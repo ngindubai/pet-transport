@@ -116,7 +116,6 @@ sections:
       - [Slovakia to Turkey](/pet-transport/slovakia-to-turkey/)
       - [Slovakia to United Arab Emirates](/pet-transport/slovakia-to-united-arab-emirates/)
       - [Slovakia to United Kingdom](/pet-transport/slovakia-to-united-kingdom/)
-      - [Slovakia to United States](/pet-transport/slovakia-to-united-states/)
       - [Slovakia to Vietnam](/pet-transport/slovakia-to-vietnam/)
       - [Slovakia to Zimbabwe](/pet-transport/slovakia-to-zimbabwe/)
 

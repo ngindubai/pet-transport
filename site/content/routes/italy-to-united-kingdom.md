@@ -92,13 +92,13 @@ faqs:
     answer: "For compliant pets, the APHA inspection at Heathrow, Gatwick, or Manchester is brief. The border vet scans the microchip, checks the travel document, and verifies the tapeworm treatment record. If all is in order, the pet is released on arrival day. Incomplete documentation can result in quarantine at an authorised facility at the owner's expense."
 links:
   sideways:
-    - url: "/pet-transport/routes/united-kingdom-to-italy/"
+    - url: "/pet-transport/united-kingdom-to-italy/"
       text: "Pet Transport United Kingdom to Italy"
-    - url: "/pet-transport/routes/spain-to-united-kingdom/"
+    - url: "/pet-transport/spain-to-united-kingdom/"
       text: "Pet Transport Spain to United Kingdom"
-    - url: "/pet-transport/routes/france-to-united-kingdom/"
+    - url: "/pet-transport/france-to-united-kingdom/"
       text: "Pet Transport France to United Kingdom"
-    - url: "/pet-transport/routes/portugal-to-united-kingdom/"
+    - url: "/pet-transport/portugal-to-united-kingdom/"
       text: "Pet Transport Portugal to United Kingdom"
   upward:
     - url: "/pet-transport/countries/united-kingdom/"

@@ -1,5 +1,6 @@
 ---
 title: "Pet Export Guide: Shipping from Australia"
+slug: "australia"
 description: "Exporting your pet from Australia: export health certificate requirements, airline options, and routes from Australia to popular destinations worldwide."
 type: "origins"
 layout: "single"
