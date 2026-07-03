@@ -52,6 +52,11 @@
         {{ with $rd.route_complexity }}<div class="hstat"><div class="hstat-n"><span class="hstat-badge badge-warn">{{ . | replaceRE "_" " " | title }}</span></div><div class="hstat-l">Route complexity</div></div>{{ end }}
         <div class="hstat"><div class="hstat-n"><span class="hstat-badge badge-ok">&#10003; Managed</span></div><div class="hstat-l">Full door-to-door service</div></div>
       </div>
+      {{/* D5: above-fold CTA. route-new-na.html previously had no CTA at all
+           until the form at the very bottom of the page. .bcta-btn is an
+           existing amber button class already defined for .tpl-na, unused
+           until now. */}}
+      <a href="#quote-form" class="bcta-btn" style="display:inline-block;margin-top:28px;text-decoration:none;">Get a free quote &rarr;</a>
     </div>
   </section>
 
@@ -89,6 +94,13 @@
     {{/* ── MAIN COLUMN ─────────────────────────────────── */}}
     <div class="main-col">
       {{ partial "routes/route-quick-answer.html" . }}
+
+      {{/* D5: quote form moved from the very bottom of the page to here, right
+           after the quick-answer capsule, so it is visible early rather than
+           only after a full scroll through every section. A lighter CTA
+           banner (using the same #quote-form anchor) replaces it at the foot
+           of the page for readers who scroll all the way down. */}}
+      {{ partial "quote-form.html" . }}
 
       {{ partial "verified-date.html" . }}
       {{ partial "data-source-link.html" . }}
@@ -130,6 +142,13 @@
         </table>
       </section>
       {{ end }}
+
+      {{/* D5: mid-page CTA, right after the visitor has just seen exactly
+           what their pet needs, i.e. the highest-intent moment on the page. */}}
+      <div class="page-sec" style="text-align:center;">
+        <a href="#quote-form" class="bcta-btn" style="display:inline-block;text-decoration:none;">Get a free quote for this route &rarr;</a>
+      </div>
+
       {{ with $rd.origin.export_requirements }}
       <section class="page-sec">
         <div class="sec-tag">Leaving {{ $rd.origin.country }}</div>
@@ -210,8 +229,18 @@
 
       {{ partial "airline-breed-sidebar.html" . }}
 
-      {{/* Quote form (shared, functional) */}}
-      {{ partial "quote-form.html" . }}
+      {{/* D5: end-of-page CTA banner. The real form now lives higher up
+           (right after the quick-answer capsule); this is a lightweight
+           nudge back to it for readers who scroll all the way down,
+           using the same unused .bottom-cta component the CSS already
+           defines for this template. */}}
+      <div class="bottom-cta">
+        <div class="bcta-h">Ready to book<br>{{ .Params.origin_name }} to {{ .Params.destination_name }}?</div>
+        <div class="bcta-right">
+          <a href="#quote-form" class="bcta-btn" style="text-decoration:none;">Get a free quote &rarr;</a>
+          <div class="bcta-sub">No commitment. We reply within one business day.</div>
+        </div>
+      </div>
 
     </div>
   </div>

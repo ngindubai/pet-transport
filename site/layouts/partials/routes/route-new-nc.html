@@ -19,7 +19,11 @@
         </div>
         <div class="hero-copy r d2">
           <p>{{ (partial "routes/route-overview.html" .) | plainify | truncate 200 }}</p>
-          <a href="#quote-form" class="hero-copy-cta">Get your free quote</a>
+          {{/* D6: was a small underlined text link (.hero-copy-cta). Replaced
+               with a proper amber button, matching the brand CTA style used
+               elsewhere on the site. Inline styles keep this self-contained
+               rather than relying on an unstyled/underlined shared class. */}}
+          <a href="#quote-form" style="display:inline-flex;align-items:center;gap:8px;margin-top:8px;padding:14px 36px;background:var(--amber);color:#fff;border-radius:6px;text-decoration:none;font-weight:800;font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;">Get your free quote &rarr;</a>
         </div>
       </div>
       <div class="hero-stats r d2">

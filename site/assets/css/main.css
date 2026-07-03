@@ -456,7 +456,7 @@ body { padding-top: 0; }
     position: fixed;
     bottom: 28px;
     right: 24px;
-    z-index: 9999;
+    z-index: 500;
     background: #25d366;
     color: #fff !important;
     width: 56px;
@@ -490,6 +490,23 @@ body { padding-top: 0; }
     transition: opacity 0.2s;
 }
 .ptg-wa-float:hover .ptg-wa-tooltip { opacity: 1; }
+
+/* D9: on tablet / smaller-desktop widths, sticky route sidebar cards (the
+   quote form submit button in particular) sit closer to the same bottom-right
+   corner the float occupies. Shrink and offset the float further from the
+   edge in that range so it cannot sit on top of a submit button's icon; it
+   returns to full size on both wide desktop and true mobile, where the
+   sidebar either has more clearance or stacks full-width above the fold. */
+@media (min-width: 481px) and (max-width: 1200px) {
+    .ptg-wa-float {
+        width: 46px;
+        height: 46px;
+        font-size: 1.3rem;
+        bottom: 20px;
+        right: 16px;
+    }
+    .ptg-wa-tooltip { right: 54px; }
+}
 
 /* ============================================
    INNER PAGE HERO (airlines, breeds, countries)

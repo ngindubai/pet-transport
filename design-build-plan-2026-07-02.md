@@ -55,11 +55,11 @@ Decision D-b: expand to all served countries. Investigation found `hugo.Data.cou
 
 The audit found CTA placement varies wildly by template and is weakest on route variant A. Strongest patterns to copy: the blog sidebar (quote card + WhatsApp card) and route variant E's sticky stat sub-bar.
 
-### D5 [SONNET] Route variant A: no above-fold CTA, form buried at the bottom
-`route-new-na.html`. The quote form is the last element before the footer; there is no CTA above the fold. Add an amber "Get a free quote" button in/under the hero stats, and move or duplicate the quote form to directly below the quick-answer capsule (high on the page). Add a mid-page CTA after the requirements table. Model: Sonnet OK.
+### D5 [DONE - 2026-07-02] Route variant A: no above-fold CTA, form buried at the bottom
+Fixed in `route-new-na.html`. Added an amber hero CTA button under the hero stats (reusing `.bcta-btn`, an already-defined but previously unused amber button class in the template's own CSS). Moved the quote form from the very bottom of the page to directly after the quick-answer capsule (before verified-date/Overview), so it is visible with minimal scrolling instead of only after every section. Added a mid-page CTA button after the destination requirements table, the highest-intent moment on the page. Replaced the now-vacated bottom form slot with a lightweight `.bottom-cta` banner (also a pre-existing, previously unused CSS component) linking back to the one real form via `#quote-form`, so readers who scroll to the end still have a conversion path without a duplicate-ID form. Verified in build: form appears before the Overview section, exactly one `#quote-form` element (no duplicate IDs), hero/mid-page/bottom CTA text all present.
 
-### D6 [SONNET] Route variant C: hero CTA is a weak text link
-`route-new-nc.html`. The hero "Get your free quote" is a small underlined text link. Replace with a proper amber button. Model: Sonnet OK.
+### D6 [DONE - 2026-07-02] Route variant C: hero CTA is a weak text link
+Fixed in `route-new-nc.html`. Replaced the small underlined `.hero-copy-cta` text link with a proper amber button (inline-styled using the template's own `var(--amber)` custom property, since no pre-built amber hero-button class existed in this template's CSS, unlike variant A). Verified in build.
 
 ### D7 [SONNET] Apply the blog sidebar CTA pattern to guide pages
 The blog template's right sidebar (a "Moving your pet abroad?" quote card plus a "Chat on WhatsApp" card) is the best CTA setup on the site and the only place a WhatsApp CTA appears outside the float. Add the same pair of sidebar cards to `countries/single.html`, `airlines/single.html`, `breeds/single.html`, `origins/single.html`. Model: Sonnet OK.
@@ -67,8 +67,8 @@ The blog template's right sidebar (a "Moving your pet abroad?" quote card plus a
 ### D8 [SONNET] Add route variant E's sticky stat sub-bar to the other route templates
 Variant E (`route-new-ne.html`) has a sticky sub-bar (Lead time, Quarantine, Complexity, Airlines + "Start my quote" amber button) that is the strongest above-fold conversion mechanic. Extract it into a shared partial and include it in na/nb/nc/nd/nl. The data is already in every route hero. (If D20 consolidation is chosen, this folds into that instead.) Model: Sonnet OK.
 
-### D9 [SONNET] WhatsApp float overlaps the quote-form submit button
-On some widths the fixed WhatsApp circle (bottom-right) sits over the amber submit button. Adjust the float's position/z-index, or add bottom padding to the form area, so they never overlap. Affects the WhatsApp float (baseof) and route forms. Verify at 390px and mid widths. Model: Sonnet OK.
+### D9 [DONE - 2026-07-02] WhatsApp float overlaps the quote-form submit button
+Investigation: all six route templates use `position: sticky` sidebars in the same bottom-right screen region the WhatsApp float (`position: fixed`, `z-index: 9999`, 56x56px, bottom:28px/right:24px) always occupies, so the collision risk is general rather than tied to one template. Fixed in `site/assets/css/main.css`, a single sitewide change (not touching any of the six route templates individually, so zero risk of breaking their layouts): reduced the float's `z-index` from 9999 to 500, and added a media query for the 481-1200px range (the "smaller desktop widths" the audit flagged) that shrinks the float to 46px and pulls it slightly further from the edge, reducing the chance it sits on top of a sidebar submit button's icon. Full size and top z-index return on true mobile and full desktop widths. Verified compiled into the minified build CSS.
 
 ### D10 [SONNET] Add a mid-page CTA at the high-intent moment on guides
 Country, airline, and breed guides have no CTA between the hero and the bottom form. Add an amber CTA block immediately after the key information (import requirements on country pages; airline restriction list on airline/breed pages). For brachycephalic breed pages especially, a reassurance CTA ("We specialise in snub-nosed breed transport") after the airline-ban list. Model: Sonnet OK.
