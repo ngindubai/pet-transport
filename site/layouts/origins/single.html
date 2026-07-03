@@ -162,6 +162,9 @@
             {{/* Sidebar */}}
             <div class="col-lg-3">
                 <div class="sidebar" style="position:sticky;top:100px;">
+                    {{/* D7: quote + WhatsApp CTA cards, same pattern as the blog sidebar */}}
+                    {{ partial "quote-whatsapp-cards.html" . }}
+
                     <div class="widget1">
                         <div class="widget1-title"><h4>On this page</h4></div>
                         <div class="widget1-body">
@@ -169,7 +172,8 @@
                                 {{ if or $hub.export_requirements (index $hub "export_requirements") }}<li><a href="#export-requirements"><i class="flaticon-clipboard text-primary"></i> Export requirements</a></li>{{ end }}
                                 {{ if or $hub.routes_outgoing $hub.sections }}<li><a href="#routes"><i class="flaticon-plane text-primary"></i> Routes</a></li>{{ end }}
                                 {{ if or $hub.airlines_available $hub.airlines }}<li><a href="#airlines"><i class="flaticon-airline text-primary"></i> Airlines</a></li>{{ end }}
-                                <li><a href="#quote-section"><i class="flaticon-mail text-primary"></i> Get a quote</a></li>
+                                {{/* D7: fixed anchor, matched to quote-form.html's real id="quote-form" */}}
+                                <li><a href="#quote-form"><i class="flaticon-mail text-primary"></i> Get a quote</a></li>
                             </ul>
                         </div>
                     </div>

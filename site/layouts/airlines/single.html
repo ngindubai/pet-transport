@@ -63,6 +63,13 @@
                 </section>
                 {{ end }}
 
+                {{/* D7: quote + WhatsApp CTA cards, same pattern as the blog
+                     sidebar. This template has no sidebar column, so the pair
+                     renders as a compact half-width module instead. */}}
+                <section class="ptg-inner-section" data-aos="fade-up">
+                    <div class="row"><div class="col-md-6">{{ partial "quote-whatsapp-cards.html" . }}</div></div>
+                </section>
+
                 {{/* Policy quick-facts grid */}}
                 {{ with $airline.policy }}
                 <section class="ptg-inner-section" id="policy" data-aos="fade-up">
@@ -148,6 +155,13 @@
                     </div>
                 </section>
                 {{ end }}
+
+                {{/* D10: mid-page CTA right after the policy grid, the moment
+                     a reader has just learned this airline's cargo/cabin
+                     restrictions and is deciding whether it works for them. */}}
+                <div class="card accent-left mb-4 p-3 bg-light">
+                    <p class="mb-0">Not sure {{ $airline.airline_name }} is the right fit for your pet? <a href="#quote-form" class="btn btn-warning btn-sm ms-2">Get a free quote</a></p>
+                </div>
 
                 {{/* Additional content sections */}}
                 {{ with $airline.content.sections }}

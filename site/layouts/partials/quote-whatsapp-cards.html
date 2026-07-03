@@ -1,0 +1,21 @@
+{{/*
+  Partial: quote-whatsapp-cards.html
+  D7: the same "Moving your pet abroad?" quote CTA card + "Chat on WhatsApp"
+  card already used in the blog sidebar (site/layouts/blog/single.html),
+  the strongest CTA pattern on the site and the only place a WhatsApp CTA
+  appears outside the floating button. Shared here so countries, origins,
+  airlines and breeds single pages render the identical, consistent pair
+  rather than four separate copies drifting apart over time.
+  Usage: {{ partial "quote-whatsapp-cards.html" . }}
+*/}}
+<div class="widget1 bg-primary text-light p-3 rounded mb-4">
+    <h5 class="text-light">Moving your pet abroad?</h5>
+    <p style="font-size:0.88rem;color:rgba(255,255,255,0.82);margin-bottom:12px;">We coordinate the paperwork, the airline booking, and the quarantine so you don't have to.</p>
+    <a href="#quote-form" class="btn btn-secondary btn-block">Get a free quote</a>
+</div>
+
+<div class="widget1 p-3 rounded mb-4" style="background:#f0fff4;border:1px solid #b7ebc8;">
+    <h5 style="color:#1a6b4a;"><i class="fab fa-whatsapp me-2" style="color:#25d366;"></i>Chat on WhatsApp</h5>
+    <p style="font-size:0.87rem;color:#374151;margin-bottom:10px;">Quick question? Message us directly and we'll reply within a few hours.</p>
+    <a href="https://wa.me/447703577246" target="_blank" rel="noopener" class="btn btn-sm" style="background:#25d366;color:#fff;font-weight:600;">Start a chat</a>
+</div>

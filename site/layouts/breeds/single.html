@@ -60,6 +60,13 @@
                 </section>
                 {{ end }}
 
+                {{/* D7: quote + WhatsApp CTA cards, same pattern as the blog
+                     sidebar. This template has no sidebar column, so the pair
+                     renders as a compact half-width module instead. */}}
+                <section class="ptg-inner-section" data-aos="fade-up">
+                    <div class="row"><div class="col-md-6">{{ partial "quote-whatsapp-cards.html" . }}</div></div>
+                </section>
+
                 {{/* Countries banning this breed */}}
                 {{ with $breed.banned_countries }}
                 <section class="ptg-inner-section" id="country-bans" data-aos="fade-up">
@@ -104,6 +111,19 @@
                     </div>
                 </section>
                 {{ end }}
+
+                {{/* D10: mid-page CTA right after the airline restriction
+                     list, the moment a worried owner has just read which
+                     carriers will and won't take their pet. Brachycephalic
+                     breeds get a specific reassurance line rather than the
+                     generic one, since the anxiety is higher there. */}}
+                <div class="card accent-left mb-4 p-3 bg-light">
+                    {{ if $breed.brachycephalic }}
+                    <p class="mb-0">We specialise in brachycephalic breed transport and know which airlines and routes work for snub-nosed dogs and cats. <a href="#quote-form" class="btn btn-warning btn-sm ms-2">Get a free quote</a></p>
+                    {{ else }}
+                    <p class="mb-0">Worried about {{ $breed.breed_name }}'s specific requirements? <a href="#quote-form" class="btn btn-warning btn-sm ms-2">Get a free quote</a></p>
+                    {{ end }}
+                </div>
 
                 {{/* Additional content sections */}}
                 {{ with $breed.content.sections }}

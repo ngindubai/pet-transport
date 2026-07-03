@@ -169,6 +169,13 @@
                 </div>
                 {{ end }}
 
+                {{/* D10: mid-page CTA right after the import requirements,
+                     the moment a reader has just seen exactly what their
+                     pet needs to enter {{ $country.country_name }}. */}}
+                <div class="card accent-left mb-4 p-3 bg-light">
+                    <p class="mb-0">Ready to plan your move to {{ $country.country_name }}? <a href="#quote-form" class="btn btn-primary btn-sm ms-2">Get a free quote</a></p>
+                </div>
+
                 {{/* Content sections */}}
                 {{ with $country.content.sections }}
                 {{ range . }}
@@ -207,6 +214,9 @@
             {{/* Sidebar */}}
             <div class="col-lg-3">
                 <div class="sidebar" style="position:sticky;top:100px;">
+                    {{/* D7: quote + WhatsApp CTA cards, same pattern as the blog sidebar */}}
+                    {{ partial "quote-whatsapp-cards.html" . }}
+
                     {{/* On-page nav */}}
                     <div class="widget1">
                         <div class="widget1-title"><h4>On this page</h4></div>
@@ -214,7 +224,10 @@
                             <ul class="colored-icons">
                                 <li><a href="#import-requirements"><i class="flaticon-clipboard text-primary"></i> Import requirements</a></li>
                                 {{ if $routes }}<li><a href="#routes"><i class="flaticon-plane text-primary"></i> Routes</a></li>{{ end }}
-                                <li><a href="#quote-section"><i class="flaticon-mail text-primary"></i> Get a quote</a></li>
+                                {{/* D7: fixed anchor. The quote form partial sets id="quote-form"
+                                     on its own section, not "quote-section"; this link never
+                                     scrolled to the form before. */}}
+                                <li><a href="#quote-form"><i class="flaticon-mail text-primary"></i> Get a quote</a></li>
                             </ul>
                         </div>
                     </div>
