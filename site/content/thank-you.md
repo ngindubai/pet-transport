@@ -1,9 +1,9 @@
 ---
 title: "Enquiry Received"
-description: "Your pet transport enquiry has been received. Someone from our team will be in touch within the hour."
+description: "Your pet transport enquiry has been received. Someone from our team will be in touch within one business day."
 layout: "thank-you"
 url: "/thank-you/"
-lead: "Your enquiry has been received and someone from our team will be in touch with you about your requirements within the hour."
+lead: "Your enquiry has been received and someone from our team will be in touch with you about your requirements within one business day."
 sitemap:
   disable: true
 ---

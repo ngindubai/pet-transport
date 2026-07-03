@@ -661,7 +661,7 @@ body { padding-top: 0; }
 /* ============================================
    IMAGE BACKGROUNDS
    ============================================ */
-.footer-bg { background-image: url('/img/calltoaction.jpg') !important; }
+.footer-bg { background-image: url('/images/hero.jpg') !important; }
 .counter-calltoaction { background-image: url('/img/testimonials.jpg') !important; }
 #adoption-home {
     background-image: url('/img/contactbg1.jpg');

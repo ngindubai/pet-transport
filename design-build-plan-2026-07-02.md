@@ -98,11 +98,11 @@ Gareth chose no additions to the About page. Do not change it.
 ### D17 [DONE - 2026-07-03] Search page is sparse
 Added a "Popular searches" block below the search box in `_default/search.html`: six links (a popular route, three country guides, an airline, a breed guide), all slugs verified against real content files before use. `site-search.js` hides this block the moment a query has any tokens (`popularEl.style.display = tokens.length ? "none" : ""`) and shows it again when the search box is cleared, so it never competes with live results. Verified via full Hugo build: all six link targets resolve to real built pages, JS syntax checked with `node -c`.
 
-### D18 [SONNET] Verify index card images
-The audit reported blank card thumbnails on the routes/airlines/breeds/blog indexes, but the referenced image files DO exist in `static/images/`. Likely a lazy-load or screenshot-timing artifact, or those indexes use a different code path than `_default/list.html`. Verify in a real build whether the `<img>` renders; only fix if genuinely broken. Model: Sonnet OK.
+### D18 [VERIFIED, NO CHANGE NEEDED - 2026-07-03] Verify index card images
+Confirmed not a real bug. Routes, airlines, breeds, and blog indexes all fall back to the same `_default/list.html` (none of them has its own `list.html`). Checked its `$images` slice: all 8 referenced filenames exist in `site/static/images/`. Built the site and inspected the rendered `<img>` tags on all four index pages (`/pet-transport/routes/`, `/pet-transport/airlines/`, `/pet-transport/breeds/`, `/blog/`): every card has a valid `src`, correct `alt` text, and `loading=lazy`, and the image files are present in the build output directory. The audit's "blank thumbnails" report does not match the code or a real build; most likely a lazy-load/screenshot-timing artifact in the browser audit tool. No change made.
 
-### D19 [SONNET, decision] Thank-you page tone
-`site/content/thank-you.md`. The "within the hour" response promise (decision D-e: keep, soften, or remove) and the dark departure-board footer image (swap for something reassuring). Model: Sonnet OK.
+### D19 [DONE - 2026-07-03] Thank-you page tone
+Per decision D-e, softened "within the hour" to "within one business day" in both the `description` and `lead` front matter fields of `site/content/thank-you.md`, matching the wording already used in the D5 hero CTA banner ("No commitment. We reply within one business day."). The dark departure-board photo turned out to be `.footer-bg` in `main.css`, the background of the "Get a free pet transport quote" band in the shared footer, so it appears on every page site-wide, not only thank-you. Flagged this wider blast radius to Gareth before touching it; he confirmed swapping it sitewide. Replaced `/img/calltoaction.jpg` (an airport board reading "Delayed", "Check-In Closed") with `/images/hero.jpg` (the warm dog-in-car-window photo already used as the hero image on airline/breed/methodology pages, D11/D13), keeping the same `.overlay` dark scrim for text contrast. Verified via full Hugo build: compiled CSS rule and image both present in build output.
 
 ---
 
