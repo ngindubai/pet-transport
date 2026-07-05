@@ -417,20 +417,35 @@ When a run builds a batch of 2 blocks, run the quality gate on each block, advan
 2. Named, dated sources for every regulatory claim.
 3. Warm, expert tone.
 4. **No em dashes. Ever. Anywhere. See EM DASH BAN at the top of this file.**
-5. No banned vocabulary: delve, meticulous, comprehensive, tailored, navigate, leverage, seamless, robust, vital, crucial, utilize, intricate, paramount, pivotal, embark, foster, elevate, unleash, unlock, harness, streamline, holistic, realm, landscape (figurative), testament.
-6. Vary sentence rhythm.
-7. Use correct author persona. Never use Gareth's name.
-8. British English throughout.
+5. **BANNED VOCABULARY (master list, never output any of these).**
+   - House words: delve, meticulous, comprehensive, tailored, navigate, leverage, seamless, robust, vital, crucial, utilize, intricate, paramount, pivotal, embark, foster, elevate, unleash, unlock, harness, streamline, holistic, realm, landscape (figurative), testament.
+   - AI-tell words and phrases: moreover, furthermore, additionally, in conclusion, it is worth noting, it is important to note, when it comes to, in today's fast-paced world, navigate the complexities, a testament to, plays a crucial role, plays a vital role, in the realm of, unlock, elevate, tapestry, underscore, foster, myriad, plethora, dive into, embark, ever-evolving, cutting-edge, game-changer, at the end of the day, rest assured, look no further, "whether you are a X or a Y".
+   - If you need one of these ideas, write it a different way in plain words.
+6. **Information gain per page.** Every page must state at least one specific fact or comparison a competitor page does not: a named authority, a real cost in the correct currency, a real timeframe, a concrete process step, or a genuine edge case. A page that adds nothing new is scaled-content spam, humanised or not.
+7. **Burstiness.** Vary sentence length hard (some under five words, some over thirty; never three same-shaped sentences in a row) and vary paragraph length (one-line paragraphs allowed). Use contractions where natural. Cut stacked hedging ("generally", "typically", "in most cases" together).
+8. **Break the template footprint.** Vary the opening construction per page (open on the specific fact, price, authority, or scenario unique to this page, never a fixed "Moving a pet from X to Y" skeleton). Rotate section order and count where the subject allows.
+9. **Multi-pass self-critique.** Draft, then critique the draft against this list and the QA checklist (hunt for repeated sentence shapes, any banned word, uniform paragraphs, a template-identical opening, missing information gain, unsupported claims), then revise, then re-check.
+10. Use correct author persona. Never use Gareth's name.
+11. British English throughout.
+
+**YMYL guard (this is a pet health, safety and regulatory site, so it always applies):**
+- Accuracy outranks every stylistic rule. If a humanisation technique would risk a wrong or misleading statement, drop the technique.
+- Do not fabricate first-hand experience, personal anecdotes, or invented credentials in the body prose. The four personas are editorial bylines (mandated above), not a licence to write "I personally shipped my dog" style anecdotes. Write from genuine domain knowledge and cite authoritative sources.
+- Every figure, rule, price and timeframe must match the canonical facts in this file and the data files, and be sourced (named, dated authority).
+
+The full humanisation standard and the pre-publish QA checklist live in **[AUTONOMOUS-BUILD-ROUTINE.md](AUTONOMOUS-BUILD-ROUTINE.md)**. Every build run applies them.
 
 ---
 
 ## SEO RULES (NON-NEGOTIABLE)
 
 - Unique `title` and `description` per page.
-- One `<h1>` per page containing primary keyword.
+- One `<h1>` per page containing the primary keyword. The H1 is the human heading, not the full SEO `title` string (strip any ` | PetTransportGlobal` suffix; the default template already splits on ` | `).
 - Target keyword in first 100 words, one H2, meta description.
-- Internal links: route to origin hub + destination country guide + relevant airlines.
+- Internal links: route to origin hub + destination country guide + relevant airlines. Guard every data-derived link with `site.GetPage` so a slug that does not resolve is never rendered as a broken link. Route URLs are `/pet-transport/[slug]/`, never `/pet-transport/routes/[slug]/` (that path 404s).
+- **Canonical + schema:** canonical URL and every schema/`sameAs`/sitemap URL use the non-www host `https://pettransportglobal.com/` (see URL FORMAT block above). JSON-LD must be valid and never double-escaped (use `jsonify` / `safeJS`). Never leave `TODO` placeholder strings in schema; an absent field is valid JSON-LD, a placeholder string is not.
 - FAQ schema from `faqs:` front matter.
+- **Populate every `route_data` field** the redesigned templates surface (route_complexity, estimated_timeline_weeks, timeline_steps, cost_factors, key_warnings, airlines, import/export requirements) so no design section renders empty.
 - No duplicate content.
 
 ---
@@ -516,4 +531,4 @@ pet-transport/
 
 ---
 
-*Last updated: 2026-06-09*
+*Last updated: 2026-07-04*
