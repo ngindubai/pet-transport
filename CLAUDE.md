@@ -297,10 +297,10 @@ Earlier versions of these docs claimed the opposite (deploy.yml active, build-to
 
 ## CURRENT STATUS (keep this accurate - update on every commit)
 
-- **Quality routes built:** 5,217 of ~37,830 country pairs (~13.8%). True on-disk count, reconciled by `verify_build_state.py`.
-- **Blog articles:** 413. Content plan Days 1-5 complete. Day 6 is next (`europe-to-uk-pet-transport`).
-- **Total .md source files:** 6,003 (build_state.json `total_site_pages`). Full deployed total, including Hugo taxonomy and list pages, comes from the live sitemap.xml.
-- **Phase 7 route chunks:** 24 complete. Chunk 25 is next (Template C, Tier A). The 90-route P1 priority matrix is fully built; 252 score-7+ Tier A pairs remain.
+- **Quality routes built:** 6,296 of ~37,830 country pairs (~16.6%). True on-disk count, reconciled by `verify_build_state.py`.
+- **Blog articles:** 430. Content plan Days 1-6 + 8-27 complete (27 articles written, Day 7 skipped as pre-existing). Day 28 is next.
+- **Total .md source files:** 7,100 (build_state.json `total_site_pages`). Full deployed total, including Hugo taxonomy and list pages, comes from the live sitemap.xml.
+- **Phase 7 route chunks:** 74 complete. Chunk 75 is next (Template E, Tier B). Tier A is fully complete; Tier B has 592 pairs remaining.
 - **Counts:** Never hand-edited. Run `python verify_build_state.py` to check drift, `--write` to reconcile from disk. A SessionStart hook runs the check at the start of every web session.
 - **Deploy pipeline:** Automatic on push to main via `build-to-live.yml` (builds Hugo, publishes the `live` branch, Hostinger serves it). Verified on GitHub 2026-06-04. `deploy.yml` (FTP) is currently disabled. Live link review gate active.
 - **GEO implementation:** All 4 phases complete (P1 Organization schema + robots, P2 universal route schema, P3 llms.txt + freshness + methodology page, P4 methodology link + airline/breed cross-links).
