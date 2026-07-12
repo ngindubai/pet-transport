@@ -1,6 +1,6 @@
 ---
-title: "Pet Transport to South Korea: Import Permit and 10-Day Quarantine"
-description: "Bringing a dog or cat to South Korea? 10 days quarantine on arrival. Titre test from some origins. Rules, costs and timeline explained."
+title: "Pet Transport to South Korea: APQA Rules and Same-Day Release"
+description: "Bringing a dog or cat to South Korea in 2026: no fixed post-titre wait, same-day release for compliant pets, and what actually triggers APQA's 10-day quarantine average."
 type: "countries"
 layout: "single"
 author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
@@ -10,50 +10,49 @@ country_name: "South Korea"
 country_code: "KR"
 pet_friendliness: "moderate"
 seo:
-  title: "Pet Transport to South Korea: Import Permit and 10-Day Quarantine"
-  description: "Complete guide to importing your dog or cat into South Korea. Import requirements, quarantine, permits, and preparation timeline."
+  title: "Pet Transport to South Korea 2026: APQA Rules Explained"
+  description: "Importing a dog or cat to South Korea in 2026: microchip, titre test, same-day APQA release for compliant pets, and what triggers quarantine. Sourced from APQA."
 import_requirements:
-  microchip: "Required (ISO 11784/11785)"
-  rabies_vaccination: "Required. Minimum age: 12 weeks. 30-day wait after vaccination before travel"
-  titre_test: "Required. Minimum: 0.5 IU/ml. 180-day wait from test date before entry"
-  quarantine: "Mandatory quarantine. 10 days. Facility: APQA facility"
-  import_permit: "Required. Issued by: Animal and Plant Quarantine Agency"
-  health_certificate: "Required. Issued by: Official veterinarian. Valid for 14 days from issue"
+  microchip: "Required. ISO 11784/11785 compliant, implanted before arrival. A non-compliant chip means bringing your own reader or letting APQA implant a new one at your expense. Source: APQA (qia.go.kr), accessed July 2026."
+  rabies_vaccination: "Not separately mandated by APQA for pets under 90 days old. For pets 90 days or older arriving from a country not on Korea's rabies-free list, a current rabies vaccination underpins the titre test below."
+  titre_test: "Required for pets 90 days or older from a non-rabies-free country. Minimum 0.5 IU/ml, tested at an internationally approved laboratory or by the exporting country's competent authority. The result is valid 24 months from the blood draw. Unlike the EU's 90-day wait or Japan's 180-day wait, Korea sets no fixed waiting period after the result comes back: a pet can travel as soon as it's in hand. Source: APQA, accessed July 2026."
+  quarantine: "Not mandatory for every arrival. A pet whose documents check out and who passes the airport clinical exam can be released the same day. When paperwork or the titre result is missing or non-compliant, APQA holds the pet at a quarantine facility; its own published figure puts the average extended hold at 10 days, longer in some cases. Source: APQA."
+  import_permit: "No advance import permit for a standard single-pet move. Advance notification and quarantine facility approval only apply to travellers bringing 10 or more cats and/or dogs at once."
+  health_certificate: "Government-issued health certificate from the origin country, showing the microchip number and date of birth, plus the titre result for pets 90 days or older from a non-rabies-free country. Source: APQA."
 content:
   h1: "Importing Your Pet to South Korea"
   overview: |
-    South Korea's pet import process is managed by APQA (Animal and Plant Quarantine Agency). The system is well-organised and the documentation requirements are clear. Most pets from approved countries can enter without mandatory quarantine if paperwork is correct.
-    
-    Incheon International Airport (ICN) is the main entry point for international pets. The APQA inspection takes place at the airport and is typically efficient for compliant documentation.
-    
-    South Korea does not require a rabies titre test for pets from most approved countries, which significantly reduces the preparation timeline. A standard preparation of 6-8 weeks is generally sufficient for pets from the US, UK, and most European countries.
+    Here's the detail most owners researching this route get wrong: Korea does not hold every arriving pet in quarantine. APQA (the Animal and Plant Quarantine Agency) releases a compliant dog or cat the same day, after a document check and a clinical exam at Incheon. The 10-day figure that circulates online is what APQA itself calls the *average extended* hold, and it only applies when something in the paperwork is missing or the titre result doesn't stack up.
+
+    The other detail worth knowing early: once your pet's rabies titre result is in hand, there's no fixed waiting period before travel. That's a real point of difference from the EU's 90-day rule or Japan's 180-day rule for pets arriving from unlisted countries, and it's the main reason a South Korea move can run faster than either of those, provided the titre test itself is booked in good time.
   sections:
-    - heading: "Approved country list and requirements"
+    - heading: "What actually triggers quarantine, and what doesn't"
       body: |
-        South Korea categorises origin countries by rabies status. Pets from countries classified as rabies-free or low-risk face simplified requirements. For other origins, additional documentation or testing may apply.
-        
-        The standard requirements: microchip (ISO 15444 or 11784/11785), valid rabies vaccination (vaccinated after microchipping), and a government-endorsed health certificate from the origin country. The certificate must be in English or Korean: other languages require a certified translation.
-    - heading: "Health certificate: Korean format matters"
+        A pet under 90 days old faces no rabies vaccination or titre requirement at all beyond the microchip. From 90 days, if the pet is arriving from a country Korea doesn't classify as rabies-free (which covers the UK, US and the rest of Europe), a titre test becomes mandatory: blood drawn at any point in the 24 months before arrival, tested to at least 0.5 IU/ml.
+
+        Get the documents right and the pet clears APQA's desk on arrival day. Get something wrong, whether that's a missing certificate, an out-of-range titre, or a chip that won't scan, and the pet goes into quarantine at the owner's cost, averaging 10 days by APQA's own count but open-ended if the underlying problem takes longer to resolve. The practical lesson: the preparation work happens before departure, not after.
+    - heading: "Health certificate and the 10-or-more rule"
       body: |
-        APQA has a specific preferred format for the health certificate. While it will accept origin-country official formats in most cases, having the certificate match the APQA template avoids delays on arrival. Korean-speaking owners or agents can download the template from the APQA website.
-        
-        The health certificate must be issued within 10 days of travel and endorsed by the origin country's official veterinary authority. Present the original at the APQA desk on arrival at Incheon.
+        The health certificate has to come from an official source in the country of departure and needs to record the microchip number, date of birth, and, where the titre test applies, that result. APQA checks the original against the pet in front of them at Incheon, so any mismatch between chip number and certificate is exactly the kind of thing that turns a same-day release into an extended one.
+
+        Almost nobody moving a single pet needs to think about import permits: Korea only requires advance notification and pre-approved quarantine facility space for travellers bringing 10 or more cats and dogs in one move, a rule aimed at breeders and rescue transports rather than a family relocating with the family dog.
+
 faqs:
-  - question: "Is quarantine required when bringing my pet to South Korea?"
+  - question: "Is quarantine mandatory when bringing my pet to South Korea?"
     answer: |
-      Yes, quarantine is mandatory in South Korea. Your pet will be held for 10 days on arrival. The cost is the owner's responsibility. Ensure all documentation is in order before travel to avoid extended quarantine.
+      No. A pet with complete, compliant documentation and a passing clinical exam can be released the same day at Incheon. Quarantine only applies when paperwork or the titre result doesn't check out, and APQA's own figure for that extended hold averages 10 days, sometimes longer.
   - question: "Is a rabies titre test required to bring my pet to South Korea?"
     answer: |
-      Yes, a rabies titre test is required for pets entering South Korea from most origins. Blood must be drawn at least 30 days after vaccination, and there is a 180-day waiting period after a successful result before entry. Start this process early.
+      Yes, for pets 90 days or older arriving from a country Korea doesn't classify as rabies-free, which includes the UK, US and most of Europe. The result must show at least 0.5 IU/ml and stays valid for 24 months from the blood draw. Unlike the EU or Japan, there's no fixed waiting period after the result before you can travel.
   - question: "Do I need an import permit to bring my pet to South Korea?"
     answer: |
-      Yes, an import permit is required. Apply through Animal and Plant Quarantine Agency (APQA) before booking your flight. The permit must be obtained before travel.
+      Not for a normal single-pet or family move. Advance notification and quarantine facility approval are only required when bringing 10 or more cats and/or dogs at once.
   - question: "Can I bring a cat to South Korea?"
     answer: |
-      Yes, cats can be imported into South Korea. The same microchip, vaccination, and health certificate requirements apply as for dogs. Some rules (such as tapeworm treatment) apply to dogs only. Verify current requirements with APQA.
+      Yes. The same microchip, titre test (for pets 90 days or older from a non-rabies-free country) and health certificate rules apply to cats as to dogs.
   - question: "What health certificate does my pet need to enter South Korea?"
     answer: |
-      A government-issued veterinary health certificate is required, endorsed by the official veterinary authority in your origin country. The certificate must be issued close to the travel date (typically within 7-10 days). Contact APQA or a pet transport agent for the required certificate format.
+      A government-issued health certificate from your departure country, recording the microchip number and date of birth, plus the titre result where that applies. APQA checks the original document against the pet on arrival, so any mismatch risks delaying release.
 routes_incoming:
   - slug: "/pet-transport/australia-to-south-korea/"
     origin: "Australia"
