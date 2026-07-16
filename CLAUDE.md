@@ -297,10 +297,10 @@ Earlier versions of these docs claimed the opposite (deploy.yml active, build-to
 
 ## CURRENT STATUS (keep this accurate - update on every commit)
 
-- **Quality routes built:** 6,296 of ~37,830 country pairs (~16.6%). True on-disk count, reconciled by `verify_build_state.py`.
-- **Blog articles:** 430. Content plan Days 1-6 + 8-27 complete (27 articles written, Day 7 skipped as pre-existing). Day 28 is next.
-- **Total .md source files:** 7,100 (build_state.json `total_site_pages`). Full deployed total, including Hugo taxonomy and list pages, comes from the live sitemap.xml.
-- **Phase 7 route chunks:** 74 complete. Chunk 75 is next (Template E, Tier B). Tier A is fully complete; Tier B has 592 pairs remaining.
+- **Quality routes built:** 6,621 of ~37,830 country pairs (~17.5%). True on-disk count, reconciled by `verify_build_state.py`.
+- **Blog articles:** 432. Content plan Days 1-6 + 8-31 complete (31 articles/content-plan-days written per build_state.json's `content_plan_articles_written`, Day 7 skipped as pre-existing). Day 32 (UK to South Africa route page) is next; flagged as outstanding since chunk 80 and not yet built.
+- **Total .md source files:** 7,427 (build_state.json `total_site_pages`). Full deployed total, including Hugo taxonomy and list pages, comes from the live sitemap.xml.
+- **Phase 7 route chunks:** 86 complete. Chunk 87 is next (Template B, Tier B). Tier A has 12 pairs remaining (per a 2026-07-16 recount from `generate_build_plan_v2.py`'s scoring model, run with a locally-corrected non-Windows `ROUTES_DIR` path); Tier B has 621 pairs remaining before chunk 85-86's 50 routes (~571 after). See build_state.json's `tier_remaining_note` for the known drift in these tier fields.
 - **Counts:** Never hand-edited. Run `python verify_build_state.py` to check drift, `--write` to reconcile from disk. A SessionStart hook runs the check at the start of every web session.
 - **Deploy pipeline:** Automatic on push to main via `build-to-live.yml` (builds Hugo, publishes the `live` branch, Hostinger serves it). Verified on GitHub 2026-06-04. `deploy.yml` (FTP) is currently disabled. Live link review gate active.
 - **GEO implementation:** All 4 phases complete (P1 Organization schema + robots, P2 universal route schema, P3 llms.txt + freshness + methodology page, P4 methodology link + airline/breed cross-links).
