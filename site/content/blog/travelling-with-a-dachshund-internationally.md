@@ -7,7 +7,7 @@ author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "travelling-with-a-dachshund-internationally"
 url: "/blog/travelling-with-a-dachshund-internationally/"
 seo:
-  title: "Travelling Internationally with a | Pet Transport Global"
+  title: "Travelling with a Dachshund | Pet Transport Global"
   description: "A practical guide to flying internationally with a Dachshund: cabin eligibility by size, crate requirements for cargo, back health considerations, and breed-specific travel tips."
 tags:
   - "Dachshund"

@@ -7,7 +7,7 @@ author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "travelling-with-a-chihuahua-internationally"
 url: "/blog/travelling-with-a-chihuahua-internationally/"
 seo:
-  title: "Travelling Internationally with a | Pet Transport Global"
+  title: "Travelling with a Chihuahua | Pet Transport Global"
   description: "Complete guide to international travel with a Chihuahua in 2026: in-cabin travel options, weight limits, microchip rules, country import requirements, and keeping tiny dogs safe."
 tags:
   - "Chihuahua"

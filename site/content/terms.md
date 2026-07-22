@@ -7,8 +7,6 @@ slug: "terms"
 url: "/terms/"
 ---
 
-# Terms & Conditions
-
 **Last updated: 7 May 2026**
 
 Please read these terms carefully before using this website or requesting a quote. By using pettransportglobal.com, you agree to the terms set out below.

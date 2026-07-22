@@ -7,7 +7,7 @@ author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportG
 slug: "pet-microchipping-for-international-travel"
 url: "/blog/pet-microchipping-for-international-travel/"
 seo:
-  title: "Pet Microchipping for International Travel | Pet Transport Global"
+  title: "Pet Microchip ISO Standards and Timing | Pet Transport Global"
   description: "The microchip must go in before the rabies vaccination. That single rule catches out thousands of pet owners every year. Here's everything you need to know."
 tags:
   - "microchip"

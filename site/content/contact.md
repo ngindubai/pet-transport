@@ -7,8 +7,6 @@ slug: "contact"
 url: "/contact/"
 ---
 
-# Contact Us
-
 Tell us where your pet is going and we will put together a clear quote covering documentation, travel, and any quarantine requirements.
 
 ## What to Include in Your Message

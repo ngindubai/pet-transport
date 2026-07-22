@@ -103,6 +103,7 @@ faqs:
   - question: "How far in advance should I start preparing my pet for international transport from Spain?"
     answer: "Start at least 3 months before travel for most destinations. For Australia, New Zealand, or Mauritius, start 7-8 months ahead because of mandatory titre test waiting periods (180 days) and limited quarantine facility availability."
 seo:
+  title: "Spain Pet Export Guide: Requirements & Routes | Pet Transport Global"
   canonical: "https://pettransportglobal.com/pet-transport/origins/spain-pet-export-guide/"
   og_title: "Pet Transport from Spain: Export Guide"
   og_description: "How to ship your dog or cat from Spain internationally. Export requirements, health certificates, and MAPA endorsement explained."

@@ -7,7 +7,7 @@ author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportG
 slug: "south-africa-to-uk-pet-transport-guide"
 url: "/blog/south-africa-to-uk-pet-transport-guide/"
 seo:
-  title: "South Africa to UK Pet Transport | Pet Transport Global"
+  title: "South Africa to UK Pet Transport: APHA Rules | Pet Transport Global"
   description: "South Africa is classified as a non-listed country for UK pet imports. Here's the full titre test and documentation process for moving pets from SA to the UK."
 tags:
   - "south-africa"

@@ -7,7 +7,7 @@ author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportG
 slug: "france-pet-import-guide"
 url: "/blog/france-pet-import-guide/"
 seo:
-  title: "Moving to France with a Pet | Pet Transport Global"
+  title: "France Pet Import Rules for 2026 | Pet Transport Global"
   description: "Complete guide to bringing your dog or cat to France in 2026: EU pet passport rules, microchip requirements, rabies vaccination, and what non-EU arrivals need."
 tags:
   - "France"

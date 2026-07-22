@@ -7,7 +7,7 @@ author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "pet-travel-with-multiple-pets"
 url: "/blog/pet-travel-with-multiple-pets/"
 seo:
-  title: "Moving Internationally with Multiple Pets | Pet Transport Global"
+  title: "Pet Travel with Multiple Pets: 2026 Guide | Pet Transport Global"
   description: "A guide to moving more than one pet internationally in 2026: documentation for each animal, airline limits, quarantine for multiple pets, and how to manage the logistics."
 tags:
   - "multiple pets"

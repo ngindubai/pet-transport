@@ -7,8 +7,6 @@ slug: "about"
 url: "/about/"
 ---
 
-# About PetTransportGlobal
-
 We started PetTransportGlobal because international pet relocation is genuinely complicated, and most of the information online is either out of date, incomplete, or written by people who have never actually shipped an animal.
 
 Every country has its own import rules. Quarantine requirements change. Airlines update their breed policies. A health certificate that was valid last year may now need a different format. For a family relocating internationally, trying to navigate this alone is stressful and mistakes are expensive.

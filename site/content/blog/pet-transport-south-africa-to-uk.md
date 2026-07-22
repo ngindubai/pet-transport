@@ -7,7 +7,7 @@ author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "pet-transport-south-africa-to-uk"
 url: "/blog/pet-transport-south-africa-to-uk/"
 seo:
-  title: "South Africa to UK Pet Transport | Pet Transport Global"
+  title: "Moving a Pet from South Africa to the UK | Pet Transport Global"
   description: "Moving from South Africa to the UK with your pet? Here is what APHA requires for dogs and cats from South Africa, including the titre test timeline and tapeworm rules."
 tags:
   - "south-africa"

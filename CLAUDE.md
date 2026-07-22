@@ -41,7 +41,7 @@ After every job that changes or adds pages (a content block, a blog article, rou
 
 1. Post, in the chat AND in Slack (#build-pet-transport), the **full live URL of every new or changed page** so Gareth can click and review each one.
 2. **EACH PAGE MUST BE ON ITS OWN SEPARATE LINE WITH A BLANK LINE BETWEEN EACH URL.** Never group multiple URLs on one line, never use comma-separated links. One page = one line = one clickable link. In Slack, consecutive bare URLs without blank lines between them bunch together into an unclickable block. Every URL must be preceded and followed by a blank line (or use `- ` bullet prefix). This is non-negotiable.
-3. **URL FORMAT IS FIXED — NEVER GUESS:** The canonical domain is non-www (`https://pettransportglobal.com/`); `www.pettransportglobal.com` redirects to it (corrected 2026-07-04, confirmed with Gareth; this section previously said www was canonical, which was wrong and contradicted the repo's own `baseURL`, schema, robots.txt and llms.txt, all of which have always been non-www). Route pages are always `https://pettransportglobal.com/pet-transport/[slug]/` (e.g. `https://pettransportglobal.com/pet-transport/denmark-to-switzerland/`). Blog articles are always `https://pettransportglobal.com/blog/[slug]/`. Country guides: `/pet-transport/countries/[slug]/`. Airlines: `/pet-transport/airlines/[slug]/`. Do NOT use `/routes/[slug]/` — that path does not exist and will 404.
+3. **URL FORMAT IS FIXED, NEVER GUESS:** The canonical domain is non-www (`https://pettransportglobal.com/`); `www.pettransportglobal.com` redirects to it (corrected 2026-07-04, confirmed with Gareth; this section previously said www was canonical, which was wrong and contradicted the repo's own `baseURL`, schema, robots.txt and llms.txt, all of which have always been non-www). Route pages are always `https://pettransportglobal.com/pet-transport/[slug]/` (e.g. `https://pettransportglobal.com/pet-transport/denmark-to-switzerland/`). Blog articles are always `https://pettransportglobal.com/blog/[slug]/`. Country guides: `/pet-transport/countries/[slug]/`. Airlines: `/pet-transport/airlines/[slug]/`. Do NOT use `/routes/[slug]/` (that path does not exist and will 404).
 4. Group the links clearly (new pages vs changed pages) and give the expected deploy time so Gareth knows when they will be live (see Deploy speed table below).
 5. State plainly that these are now live and need a review, since there is no pre-publish hold.
 6. If a template or sitewide change went out, name a representative sample of affected URLs (you cannot list thousands) plus the home page, so Gareth can spot-check.
@@ -439,14 +439,53 @@ The full humanisation standard and the pre-publish QA checklist live in **[AUTON
 
 ## SEO RULES (NON-NEGOTIABLE)
 
-- Unique `title` and `description` per page.
+- Unique `title` and `description` per page. Never ship a truncated or placeholder `seo.title` (a dropped variable, a trailing "with a"). Scan `title` and `seo.title` across the content type for collisions before publishing. See the SEMRUSH GUARDRAILS section.
 - One `<h1>` per page containing the primary keyword. The H1 is the human heading, not the full SEO `title` string (strip any ` | PetTransportGlobal` suffix; the default template already splits on ` | `).
 - Target keyword in first 100 words, one H2, meta description.
 - Internal links: route to origin hub + destination country guide + relevant airlines. Guard every data-derived link with `site.GetPage` so a slug that does not resolve is never rendered as a broken link. Route URLs are `/pet-transport/[slug]/`, never `/pet-transport/routes/[slug]/` (that path 404s).
-- **Canonical + schema:** canonical URL and every schema/`sameAs`/sitemap URL use the non-www host `https://pettransportglobal.com/` (see URL FORMAT block above). JSON-LD must be valid and never double-escaped (use `jsonify` / `safeJS`). Never leave `TODO` placeholder strings in schema; an absent field is valid JSON-LD, a placeholder string is not.
+- **Canonical + schema:** canonical URL and every schema/`sameAs`/sitemap URL use the non-www host `https://pettransportglobal.com/` (see URL FORMAT block above). JSON-LD must be valid: inside a `<script type="application/ld+json">` block always pipe values through `jsonify | safeJS` together (`jsonify` alone double-encodes and produces invalid JSON). Guard every front-matter-sourced schema value with a `default` fallback so a required field (for example a BreadcrumbList `name`) never renders empty. Never leave `TODO` placeholder strings in schema; an absent field is valid JSON-LD, a placeholder string is not. See the SEMRUSH GUARDRAILS section.
 - FAQ schema from `faqs:` front matter.
 - **Populate every `route_data` field** the redesigned templates surface (route_complexity, estimated_timeline_weeks, timeline_steps, cost_factors, key_warnings, airlines, import/export requirements) so no design section renders empty.
 - No duplicate content.
+
+---
+
+## TECHNICAL SEO HEALTH (SEMRUSH) - GUARDRAILS
+
+The site is audited by Semrush Site Audit (project `pettransportglobal.com`, project ID `29593665`, owner Gareth). To pull the audit: `snapshots` report for the latest snapshot ID, then `info` for the error/warning/notice counts, then `issue_details` per issue ID, and `page_info` to read the exact machine reason for a single page. **Fix every error. Assess every warning and fix the ones that are genuine and in scope. Leave a clear note on the ones that are crawl artefacts or server-side (see the "not defects" list below) rather than breaking the site to silence them.**
+
+The guardrails below exist because we have already made each of these mistakes once (2026-07-22 audit). Do not make them again.
+
+### 1. A template field from front matter must have a fallback, or the two must match
+
+Country guides are split between two front matter styles: some set `country_name`, others set `destination_country`. The BreadcrumbList schema read only `country_name` with no fallback, so 23 country pages rendered an empty `name`. An empty `name` is invalid in a BreadcrumbList `ListItem` (the field is required), which is what Semrush flagged as a structured-data error.
+
+- Every template value that comes from front matter must carry a fallback, for example `.Params.country_name | default .Params.destination_country`.
+- The country single template now resolves one `$cname` at the top of `main` and uses it everywhere, and the schema uses the same fallback. Never reintroduce a bare `.Params.country_name` without a default.
+- Prefer consistent key names across a content type. If a generator can emit either key, the template must handle both.
+
+### 2. JSON-LD in a script block must use `jsonify | safeJS`, never `jsonify` on its own
+
+Hugo contextually escapes values placed inside `<script type="application/ld+json">`. `{{ value | jsonify }}` alone gets double-encoded: `"Bahrain"` becomes `"\"Bahrain\""`, which is invalid JSON. Always pipe through `safeJS` after `jsonify` (the FAQ schema already does). Alternatively wrap a raw value in literal quotes: `"name": "{{ value }}"`. After any schema change, build the site and parse every JSON-LD block to confirm it is valid.
+
+### 3. Every page needs a genuinely unique title
+
+Duplicate-title errors came from a generator producing truncated or placeholder `seo.title` values. Five breed posts all carried `seo.title: "Travelling Internationally with a | Pet Transport Global"` with the breed name dropped. Several near-duplicate posts shared one generic title. Two origin pages (a bare hub and its `-pet-export-guide` twin) both fell through to the same default.
+
+- Never ship a `seo.title` with a dropped variable, a trailing "with a", or any placeholder. An empty variable means a broken title.
+- When two pages cover the same country or topic (a hub plus a longer guide, or two blog angles), give each a distinct title describing its specific angle.
+- Before pushing a batch, scan `title` and `seo.title` across the affected content type for collisions. Rendered title equals `seo.title` when set, otherwise `"{title} | Pet Transport Global"` for blog, or the template default for origins and countries.
+
+### 4. Pages using `_default/single.html` must not start the body with a `# H1`
+
+That template already renders one `<h1>` from the title (split on ` | `). A leading `# Heading` in the markdown body adds a second H1. About, Contact, Terms and Privacy each had two H1s for this reason. Start the body with the first paragraph or an `##` H2.
+
+### Warnings that are NOT defects (do not break the site to silence them)
+
+- **Broken external links to `https://wa.me/447703577246` (thousands of them):** this is the WhatsApp click-to-chat CTA. WhatsApp rate-limits the Semrush crawler and returns HTTP 429, so Semrush reports it as broken. The link works for real users. It is a crawl artefact, not a defect. Do not remove or weaken the WhatsApp CTAs to satisfy the crawler.
+- **Title too long:** many route and blog titles exceed 60 characters. This is a soft best-practice warning, not an error. Only shorten titles as deliberate content work, never as a bulk sweep.
+- **Unminified JavaScript and CSS:** the static assets in `site/static/` are served unminified. Minifying them is an asset-pipeline project (move to `assets/` and use Hugo Pipes, or pre-minify at source), not a quick fix. Flag it, do not attempt it inside an unrelated task.
+- **No HSTS, certificate, and similar notices:** these are Hostinger server configuration, not repo changes.
 
 ---
 
@@ -531,4 +570,4 @@ pet-transport/
 
 ---
 
-*Last updated: 2026-07-04*
+*Last updated: 2026-07-22*

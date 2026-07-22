@@ -7,8 +7,6 @@ slug: "privacy"
 url: "/privacy/"
 ---
 
-# Privacy Policy
-
 **Last updated: 22 April 2026**
 
 This privacy policy explains how PetTransportGlobal collects and uses personal data when you visit our website or submit an enquiry.

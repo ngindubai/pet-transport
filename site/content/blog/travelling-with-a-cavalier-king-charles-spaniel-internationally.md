@@ -7,7 +7,7 @@ author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
 slug: "travelling-with-a-cavalier-king-charles-spaniel-internationally"
 url: "/blog/travelling-with-a-cavalier-king-charles-spaniel-internationally/"
 seo:
-  title: "Travelling Internationally with a | Pet Transport Global"
+  title: "Travelling with a Cavalier King Charles Spaniel | Pet Transport Global"
   description: "Cavalier King Charles Spaniels are gentle travellers but have brachycephalic and cardiac health considerations. Here is what CKCS owners need to know for i"
 tags:
     - "Cavalier King Charles Spaniel"
