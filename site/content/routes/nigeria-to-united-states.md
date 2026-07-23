@@ -5,7 +5,7 @@ description: "Moving pets from Nigeria to the US in 2026. Nigeria is CDC high-ri
 date: "2026-06-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "nigeria-to-united-states"
 origin_name: "Nigeria"
 destination_name: "United States"

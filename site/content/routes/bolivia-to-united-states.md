@@ -5,7 +5,7 @@ description: "Bolivia is CDC high-risk for dog rabies: dogs need a titer test an
 date: "2026-07-13"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "bolivia-to-united-states"
 origin_name: "Bolivia"
 destination_name: "United States"

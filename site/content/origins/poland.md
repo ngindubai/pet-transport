@@ -4,7 +4,7 @@ slug: "poland"
 description: "Complete guide to exporting your pet from Poland."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Poland"
 country_code: "PL"
 overview: |
@@ -24,10 +24,12 @@ sections:
   - heading: "Popular routes from Poland"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Poland to Argentina](/pet-transport/poland-to-argentina/)
+      - [Poland to Armenia](/pet-transport/poland-to-armenia/)
       - [Poland to Australia](/pet-transport/poland-to-australia/)
       - [Poland to Austria](/pet-transport/poland-to-austria/)
+      - [Poland to Azerbaijan](/pet-transport/poland-to-azerbaijan/)
       - [Poland to Bahrain](/pet-transport/poland-to-bahrain/)
       - [Poland to Bangladesh](/pet-transport/poland-to-bangladesh/)
       - [Poland to Belgium](/pet-transport/poland-to-belgium/)
@@ -43,11 +45,14 @@ sections:
       - [Poland to Cyprus](/pet-transport/poland-to-cyprus/)
       - [Poland to Czech Republic](/pet-transport/poland-to-czech-republic/)
       - [Poland to Denmark](/pet-transport/poland-to-denmark/)
+      - [Poland to Dominican Republic](/pet-transport/poland-to-dominican-republic/)
       - [Poland to Ecuador](/pet-transport/poland-to-ecuador/)
       - [Poland to Egypt](/pet-transport/poland-to-egypt/)
+      - [Poland to Estonia](/pet-transport/poland-to-estonia/)
       - [Poland to Ethiopia](/pet-transport/poland-to-ethiopia/)
       - [Poland to Finland](/pet-transport/poland-to-finland/)
       - [Poland to France](/pet-transport/poland-to-france/)
+      - [Poland to Georgia](/pet-transport/poland-to-georgia/)
       - [Poland to Germany](/pet-transport/poland-to-germany/)
       - [Poland to Ghana](/pet-transport/poland-to-ghana/)
       - [Poland to Greece](/pet-transport/poland-to-greece/)
@@ -58,12 +63,18 @@ sections:
       - [Poland to Ireland](/pet-transport/poland-to-ireland/)
       - [Poland to Israel](/pet-transport/poland-to-israel/)
       - [Poland to Italy](/pet-transport/poland-to-italy/)
+      - [Poland to Jamaica](/pet-transport/poland-to-jamaica/)
       - [Poland to Japan](/pet-transport/poland-to-japan/)
       - [Poland to Jordan](/pet-transport/poland-to-jordan/)
+      - [Poland to Kazakhstan](/pet-transport/poland-to-kazakhstan/)
       - [Poland to Kenya](/pet-transport/poland-to-kenya/)
       - [Poland to Kuwait](/pet-transport/poland-to-kuwait/)
+      - [Poland to Latvia](/pet-transport/poland-to-latvia/)
+      - [Poland to Lebanon](/pet-transport/poland-to-lebanon/)
+      - [Poland to Lithuania](/pet-transport/poland-to-lithuania/)
       - [Poland to Luxembourg](/pet-transport/poland-to-luxembourg/)
       - [Poland to Malaysia](/pet-transport/poland-to-malaysia/)
+      - [Poland to Maldives](/pet-transport/poland-to-maldives/)
       - [Poland to Malta](/pet-transport/poland-to-malta/)
       - [Poland to Mauritius](/pet-transport/poland-to-mauritius/)
       - [Poland to Mexico](/pet-transport/poland-to-mexico/)
@@ -76,14 +87,17 @@ sections:
       - [Poland to Norway](/pet-transport/poland-to-norway/)
       - [Poland to Oman](/pet-transport/poland-to-oman/)
       - [Poland to Pakistan](/pet-transport/poland-to-pakistan/)
+      - [Poland to Panama](/pet-transport/poland-to-panama/)
       - [Poland to Peru](/pet-transport/poland-to-peru/)
       - [Poland to Philippines](/pet-transport/poland-to-philippines/)
       - [Poland to Portugal](/pet-transport/poland-to-portugal/)
       - [Poland to Qatar](/pet-transport/poland-to-qatar/)
       - [Poland to Romania](/pet-transport/poland-to-romania/)
+      - [Poland to Rwanda](/pet-transport/poland-to-rwanda/)
       - [Poland to Saudi Arabia](/pet-transport/poland-to-saudi-arabia/)
       - [Poland to Singapore](/pet-transport/poland-to-singapore/)
       - [Poland to Slovakia](/pet-transport/poland-to-slovakia/)
+      - [Poland to Slovenia](/pet-transport/poland-to-slovenia/)
       - [Poland to South Africa](/pet-transport/poland-to-south-africa/)
       - [Poland to South Korea](/pet-transport/poland-to-south-korea/)
       - [Poland to Spain](/pet-transport/poland-to-spain/)
@@ -94,7 +108,11 @@ sections:
       - [Poland to Tanzania](/pet-transport/poland-to-tanzania/)
       - [Poland to Thailand](/pet-transport/poland-to-thailand/)
       - [Poland to Turkey](/pet-transport/poland-to-turkey/)
+      - [Poland to Uganda](/pet-transport/poland-to-uganda/)
       - [Poland to United Arab Emirates](/pet-transport/poland-to-united-arab-emirates/)
+      - [Poland to United Kingdom](/pet-transport/poland-to-united-kingdom/)
+      - [Poland to United States](/pet-transport/poland-to-united-states/)
+      - [Poland to Uruguay](/pet-transport/poland-to-uruguay/)
       - [Poland to Vietnam](/pet-transport/poland-to-vietnam/)
       - [Poland to Zimbabwe](/pet-transport/poland-to-zimbabwe/)
 faqs:

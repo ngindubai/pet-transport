@@ -5,7 +5,7 @@ description: "Moving a pet from the Netherlands to Iceland in 2026. Category 1 s
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "netherlands-to-iceland"
 origin_name: "Netherlands"
 destination_name: "Iceland"

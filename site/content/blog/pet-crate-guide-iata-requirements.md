@@ -3,7 +3,7 @@ title: "Choosing the Right Pet Travel Crate: IATA Size Requirements, Materials, 
 description: "Airlines reject non-compliant crates at check-in. Here's how to measure your pet correctly, understand IATA requirements, and choose the right crate first time."
 date: "2026-04-26"
 type: "blog"
-author: "James Osei, Pet Transport Planning Specialist, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-crate-guide-iata-requirements"
 url: "/blog/pet-crate-guide-iata-requirements/"
 seo:

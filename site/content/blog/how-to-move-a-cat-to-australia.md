@@ -3,7 +3,7 @@ title: "How to Move a Cat to Australia: Titre Tests, Quarantine, and the 8-Month
 description: "Australia's cat import process explained step by step. The titre test requirement, 180-day wait, Mickleham quarantine, health certificates, and how to plan an 8-month preparation timeline."
 date: "2026-05-22"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "how-to-move-a-cat-to-australia"
 url: "/blog/how-to-move-a-cat-to-australia/"
 seo:

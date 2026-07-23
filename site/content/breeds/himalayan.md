@@ -3,7 +3,7 @@ title: "Flying with a Himalayan | Airline Restrictions & Advice"
 description: "Which airlines accept Himalayan as cargo or cabin? Seasonal embargoes, breed bans, and what you need before booking your flat-faced cat."
 type: "breeds"
 layout: "single"
-author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "himalayan"
 breed_name: "Himalayan"
 brachycephalic: true

@@ -5,7 +5,7 @@ description: "Honduras to UAE pet transport in 2026. MOCCAE requires a rabies ti
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "honduras-to-united-arab-emirates"
 origin_name: "Honduras"
 destination_name: "United Arab Emirates"

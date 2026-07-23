@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Norway to Uruguay in 2026. MGAP import pe
 date: "2026-06-23"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "norway-to-uruguay"
 origin_name: "Norway"
 destination_name: "Uruguay"

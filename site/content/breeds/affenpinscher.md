@@ -3,7 +3,7 @@ title: "Flying with a Affenpinscher | Airline Restrictions & Advice"
 description: "Which airlines accept Affenpinscher as cargo or cabin? Seasonal embargoes, breed bans, and what you need before booking your flat-faced dog."
 type: "breeds"
 layout: "single"
-author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "affenpinscher"
 breed_name: "Affenpinscher"
 brachycephalic: true

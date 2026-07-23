@@ -4,7 +4,7 @@ title: "Pet Transport from Singapore to Canada | Requirements & Airline Comparis
 description: "Moving your pet from Singapore to Canada: CFIA rules, no quarantine, no titre test, AVS export endorsement, Singapore Airlines vs Air Canada cargo compared."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "singapore-to-canada"
 origin_name: "Singapore"
 destination_name: "Canada"

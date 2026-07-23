@@ -5,7 +5,7 @@ description: "Step-by-step guide to moving your dog or cat from Austria to the D
 date: "2026-06-24"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "austria-to-dominican-republic"
 origin_name: "Austria"
 destination_name: "Dominican Republic"

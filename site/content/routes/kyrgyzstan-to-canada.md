@@ -5,7 +5,7 @@ description: "Kyrgyzstan sits on CFIA's high-risk dog rabies list, but that main
 date: "2026-07-22"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "kyrgyzstan-to-canada"
 origin_name: "Kyrgyzstan"
 destination_name: "Canada"

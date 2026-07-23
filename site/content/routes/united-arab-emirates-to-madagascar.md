@@ -5,7 +5,7 @@ description: "Emirates flies Dubai to Antananarivo on a single flight number thr
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-arab-emirates-to-madagascar"
 origin_name: "United Arab Emirates"
 destination_name: "Madagascar"

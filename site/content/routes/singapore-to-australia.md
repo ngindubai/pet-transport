@@ -4,7 +4,7 @@ title: "Pet Transport from Singapore to Australia | Requirements & Airline Compa
 description: "Moving your pet from Singapore to Australia: mandatory quarantine, rabies titre test, DAFF import permit, Singapore Airlines vs Qantas cargo compared."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "singapore-to-australia"
 origin_name: "Singapore"
 destination_name: "Australia"

@@ -1,6 +1,6 @@
 ---
-title: "About PetTransportGlobal | International Pet Relocation Specialists"
-description: "PetTransportGlobal helps families move their dogs and cats safely across borders. Learn about our approach, our team, and why pet owners trust us with their animals."
+title: "About Pet Transport Global | International Pet Relocation"
+description: "Learn how Pet Transport Global supports international dog and cat moves, researches route guidance, and distinguishes reviewed information from older pages."
 type: "page"
 layout: "single"
 slug: "about"
@@ -13,7 +13,7 @@ Every country has its own import rules. Quarantine requirements change. Airlines
 
 ## What We Do
 
-We coordinate the full process of moving dogs and cats across international borders, from the first paperwork appointment with your vet to your pet arriving safely at the other end.
+We help coordinate international moves for dogs and cats, from the first paperwork appointment with your vet through arrival arrangements at the destination.
 
 That includes:
 
@@ -31,11 +31,11 @@ We do not give safety guarantees. No one can promise an animal will travel witho
 
 We also know that the animal in question is not a package. It is a family member. Our guidance is written to reflect that: warm, practical, and honest about what is involved.
 
-## Who Writes Our Guides
+## Who Prepares Our Guides
 
-Our route guides, country regulation pages, and airline policy content are researched and written by specialists with experience in international pet logistics. Every regulatory claim cites a named, dated official source. We update our guides when government portals change.
+Our route guides, country pages, and airline content are published by the **Pet Transport Global Editorial Team**. We use company attribution unless a real writer or reviewer and their credentials have been verified for public attribution.
 
-**Regulatory sources we reference:** Australian DAFF/BICON (2026), UK APHA (2026), USDA APHIS (2026), EU TRACES, Singapore AVS (2026), New Zealand MPI (2026), and official government portals for each destination country.
+Reviewed pages show the date recorded in their source file. Older route pages without a recorded review date display a warning and are withheld from search indexing until they are checked. Official sources commonly used include Australian DAFF/BICON, UK APHA, USDA APHIS, EU pet-movement guidance, Singapore AVS, New Zealand MPI, and national veterinary authorities. The specific source quality varies by route, so owners must confirm current rules with the relevant authority before travel.
 
 ## Get in Touch
 

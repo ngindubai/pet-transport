@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Almaty to Dubai or Abu Dhabi in 2026. MOC
 date: "2026-07-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "kazakhstan-to-united-arab-emirates"
 origin_name: "Kazakhstan"
 destination_name: "United Arab Emirates"

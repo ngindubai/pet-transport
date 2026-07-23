@@ -3,7 +3,7 @@ title: "Travelling Internationally with a Pug: Airline Bans, Safety and What to 
 description: "Complete guide to international travel with a Pug in 2026: which airlines ban Pugs, snub-nosed flight risks, cabin vs cargo, and how to plan a safe journey."
 date: "2026-05-06"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-pug-internationally"
 url: "/blog/travelling-with-a-pug-internationally/"
 seo:

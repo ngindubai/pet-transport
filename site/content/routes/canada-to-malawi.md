@@ -5,7 +5,7 @@ description: "Ethiopian Airlines carries a Canadian pet on both legs into Lilong
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-malawi"
 origin_name: "Canada"
 destination_name: "Malawi"

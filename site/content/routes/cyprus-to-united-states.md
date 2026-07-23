@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Cyprus to the United States in 2026. Cypr
 date: "2026-06-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "cyprus-to-united-states"
 origin_name: "Cyprus"
 destination_name: "United States"

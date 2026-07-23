@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Belgium to Lebanon in 2026. Rabies vaccin
 date: "2026-06-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "belgium-to-lebanon"
 origin_name: "Belgium"
 destination_name: "Lebanon"

@@ -3,7 +3,7 @@ title: "Moving Pets to Kuwait: PAH Import Rules, Breed Restrictions, and Kuwait 
 description: "Kuwait pet import guide for dogs and cats. PAH permit process, breed bans, vaccination requirements, and what to expect at Kuwait International Airport."
 date: "2026-06-23"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "kuwait-pet-import-guide"
 url: "/blog/kuwait-pet-import-guide/"
 seo:

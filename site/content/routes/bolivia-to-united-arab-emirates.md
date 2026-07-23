@@ -5,7 +5,7 @@ description: "Bolivia sits outside MOCCAE's low-risk list, so a titre test and a
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "bolivia-to-united-arab-emirates"
 origin_name: "Bolivia"
 destination_name: "United Arab Emirates"

@@ -5,7 +5,7 @@ description: "No rabies titre test applies from Australia either, but the flight
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-kyrgyzstan"
 origin_name: "Australia"
 destination_name: "Kyrgyzstan"

@@ -2,7 +2,7 @@
 title: "AirAsia Pet Transport: Policies for Cats and Dogs on AirAsia Flights"
 description: "AirAsia pet transport guide. Find out whether AirAsia accepts pets in cabin or cargo, which routes allow pets, documentation requirements and how to book your cat or dog on AirAsia."
 date: "2025-07-22"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "airlines"
 airline_name: "AirAsia"
 url: "/pet-transport/airlines/airasia/"

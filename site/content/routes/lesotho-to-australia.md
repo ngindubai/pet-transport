@@ -5,7 +5,7 @@ description: "Lesotho isn't DAFF-approved, but South Africa is, and an existing 
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "lesotho-to-australia"
 origin_name: "Lesotho"
 destination_name: "Australia"

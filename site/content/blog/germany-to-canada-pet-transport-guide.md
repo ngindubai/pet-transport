@@ -3,7 +3,7 @@ title: "Pet Transport from Germany to Canada: CFIA Requirements, Airlines and th
 description: "Moving a dog or cat from Germany to Canada. CFIA import rules, EU health certificate, rabies vaccination and which airlines fly pets on Frankfurt-Toronto routes."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "germany-to-canada-pet-transport-guide"
 url: "/blog/germany-to-canada-pet-transport-guide/"
 seo:

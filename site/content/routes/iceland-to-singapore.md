@@ -5,7 +5,7 @@ description: "Moving a pet from Iceland to Singapore in 2026. Singapore's AVS pl
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "iceland-to-singapore"
 origin_name: "Iceland"
 destination_name: "Singapore"

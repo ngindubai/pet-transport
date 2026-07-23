@@ -5,7 +5,7 @@ description: "Fiji Airways now flies Nadi to Vancouver direct, a new 2026 route,
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-fiji"
 origin_name: "Canada"
 destination_name: "Fiji"

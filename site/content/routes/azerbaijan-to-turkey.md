@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Baku to Istanbul in 2026. Ministry of Agr
 date: "2026-07-09"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "azerbaijan-to-turkey"
 origin_name: "Azerbaijan"
 destination_name: "Turkey"

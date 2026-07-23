@@ -4,7 +4,7 @@ title: "Pet Transport United Kingdom to Panama | AHC, MIDA Import Rules & Airlin
 description: "Moving your pet from the UK to Panama? MIDA import certificate, AHC from a UK vet, Iberia via Madrid, airline options, timeline, and Panama entry rules explained."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-panama"
 origin_name: "United Kingdom"
 destination_name: "Panama"

@@ -2,7 +2,7 @@
 title: "Pet Transport from USA to New Zealand"
 description: "How to move your cat or dog from the USA to New Zealand. Covers the NZSTAP protocol, mandatory treatment schedule, government health certificate endorsement, 10-day quarantine and airline options."
 date: "2025-08-29"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/usa-to-new-zealand-pet-transport-guide/"
 tags: ["usa", "new zealand", "route guide", "quarantine", "pet transport", "nzstap"]

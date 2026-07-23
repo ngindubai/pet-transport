@@ -5,7 +5,7 @@ description: "The same route to the US needs a titre test and 22 to 26 weeks. In
 date: "2026-07-22"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "tajikistan-to-canada"
 origin_name: "Tajikistan"
 destination_name: "Canada"

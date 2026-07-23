@@ -5,7 +5,7 @@ description: "Canada banned Belarusian aircraft in March 2022, separately from t
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "belarus-to-canada"
 origin_name: "Belarus"
 destination_name: "Canada"

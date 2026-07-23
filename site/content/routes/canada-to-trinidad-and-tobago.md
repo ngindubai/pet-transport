@@ -5,7 +5,7 @@ description: "Canada sits in Category 2 on Trinidad and Tobago's rabies risk lis
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-trinidad-and-tobago"
 origin_name: "Canada"
 destination_name: "Trinidad and Tobago"

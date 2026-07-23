@@ -3,7 +3,7 @@ title: "Bringing a Pet to Cyprus: EU Rules, UK Arrivals and What to Prepare"
 description: "Guide to bringing your dog or cat to Cyprus in 2026: EU pet passport rules, UK AHC requirements, tapeworm treatment, and arriving at Larnaca or Paphos airport."
 date: "2026-05-08"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "cyprus-pet-import-guide"
 url: "/blog/cyprus-pet-import-guide/"
 seo:

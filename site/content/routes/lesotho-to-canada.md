@@ -5,7 +5,7 @@ description: "Every pet leaving Lesotho starts with the same Airlink hop to Joha
 date: "2026-07-22"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "lesotho-to-canada"
 origin_name: "Lesotho"
 destination_name: "Canada"

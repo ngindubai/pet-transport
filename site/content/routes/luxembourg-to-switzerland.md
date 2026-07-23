@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Luxembourg to Switzerland | PetTransportGlobal
 description: "Complete guide to pet transport from Luxembourg to Switzerland. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "luxembourg-to-switzerland"
 origin_name: "Luxembourg"
 destination_name: "Switzerland"

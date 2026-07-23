@@ -5,7 +5,7 @@ description: "The US sits on the EU's own titre-exempt list too, so this outboun
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-moldova"
 origin_name: "United States"
 destination_name: "Moldova"

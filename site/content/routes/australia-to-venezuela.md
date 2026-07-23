@@ -5,7 +5,7 @@ description: "No airline has ever flown a direct pet booking from Australia to C
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-venezuela"
 origin_name: "Australia"
 destination_name: "Venezuela"

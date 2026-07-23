@@ -5,7 +5,7 @@ type: "routes"
 layout: "single"
 template_variant: "A"
 content_soul: 1
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "philippines-to-greece"
 origin_name: "Philippines"
 destination_name: "Greece"

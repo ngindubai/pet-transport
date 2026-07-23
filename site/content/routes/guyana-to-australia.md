@@ -5,7 +5,7 @@ description: "Guyana sits outside every one of DAFF's approved country groups, s
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "guyana-to-australia"
 origin_name: "Guyana"
 destination_name: "Australia"

@@ -5,7 +5,7 @@ description: "Moving a dog or cat from the Dominican Republic to Belgium in 2026
 date: "2026-06-23"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "dominican-republic-to-belgium"
 origin_name: "Dominican Republic"
 destination_name: "Belgium"

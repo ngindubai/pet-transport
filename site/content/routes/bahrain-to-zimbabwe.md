@@ -4,7 +4,7 @@ title: "Moving Your Pet from Bahrain to Zimbabwe | Complete Guide"
 description: "How to ship your dog or cat from Bahrain to Zimbabwe. Zimbabwe import rules, vaccinations, permits, and airline options explained."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "bahrain-to-zimbabwe"
 origin_name: "Bahrain"
 destination_name: "Zimbabwe"
@@ -22,7 +22,7 @@ route_data:
       microchip: "Required (ISO 11784/11785)"
       rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel"
       titre_test: "Required for: Most countries. Minimum: 0.5 IU/ml"
-      quarantine: "Mandatory quarantine. 7-14 days days. Government quarantine facility, Harare."
+      quarantine: "Mandatory quarantine. 7-14 days. Government quarantine facility, Harare."
       import_permit: "Required. Issued by: Department of Livestock and Veterinary Services"
       health_certificate: "Required. Issued by: Official veterinarian, endorsed by national authority"
   airlines:
@@ -77,7 +77,7 @@ route_data:
       timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
       responsible: "You + airline check-in/cargo desk"
     - step: 8
-      action: "Quarantine on arrival (7-14 days days)"
+      action: "Quarantine on arrival (7-14 days)"
       timing: "Immediately on arrival (mandatory)"
       responsible: "Zimbabwe quarantine authority"
   cost_factors:
@@ -99,7 +99,7 @@ content:
   overview: |
     Pet transport from Bahrain to Zimbabwe follows a clear process once you know what Zimbabwe requires.
     
-    This route is one of the most demanding international pet transport routes. Start preparations at least 26 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. Zimbabwe requires mandatory quarantine (7-14 days days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
+    This route is one of the most demanding international pet transport routes. Start preparations at least 26 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. Zimbabwe requires mandatory quarantine (7-14 days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
     
     The paperwork is the hard part. Once everything is in order, the journey itself is well-managed.
   sections:
@@ -107,7 +107,7 @@ content:
       body: |
         This is one of the more demanding international pet transport corridors. Zimbabwe runs a strict biosecurity programme and there are no shortcuts through it.
         
-        All pets must complete quarantine on arrival in Zimbabwe (at a government-designated facility) for 7-14 days days. This is non-negotiable and is entirely separate from the pre-travel preparation.
+        All pets must complete quarantine on arrival in Zimbabwe (at a government-designated facility) for 7-14 days. This is non-negotiable and is entirely separate from the pre-travel preparation.
         
         Zimbabwe regulated by the Department of Livestock and Veterinary Services, Ministry of Lands, Agriculture, Fisheries, Water and Rural Development. Harare is the main entry point. Expat and diaspora community active, mainly UK corridor.
     - heading: "From experience: Bahrain to Zimbabwe pet transport"
@@ -123,7 +123,7 @@ faqs:
   - question: "How long does it take to prepare a pet for transport from Bahrain to Zimbabwe?"
     answer: "Allow at least 26 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
   - question: "Does my pet need to quarantine when entering Zimbabwe?"
-    answer: "Yes, quarantine is mandatory in Zimbabwe. Your pet will stay for 7-14 days days at a government-run facility on arrival. This is non-negotiable and the cost is paid by the owner."
+    answer: "Yes, quarantine is mandatory in Zimbabwe. Your pet will stay for 7-14 days at the quarantine facility specified in the arrival instructions. Confirm the facility, duration, and current charges with the destination authority before travel."
   - question: "Is a rabies titre test required for pets entering Zimbabwe?"
     answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Zimbabwe. Start this process as early as possible."
   - question: "Do I need an import permit to bring my pet into Zimbabwe?"

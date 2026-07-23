@@ -5,7 +5,7 @@ description: "Namibia is CDC-listed as high-risk for dog rabies, so a titre test
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "namibia-to-united-states"
 origin_name: "Namibia"
 destination_name: "United States"

@@ -5,7 +5,7 @@ description: "Moving a dog or cat from the Dominican Republic to Switzerland in 
 date: "2026-06-24"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "dominican-republic-to-switzerland"
 origin_name: "Dominican Republic"
 destination_name: "Switzerland"

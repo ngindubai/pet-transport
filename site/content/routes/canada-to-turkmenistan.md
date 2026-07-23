@@ -5,7 +5,7 @@ description: "Turkmenistan's Letter of Invitation visa regime, not the pet paper
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-turkmenistan"
 origin_name: "Canada"
 destination_name: "Turkmenistan"

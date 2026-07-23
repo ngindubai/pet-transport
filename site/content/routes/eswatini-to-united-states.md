@@ -5,7 +5,7 @@ description: "Eswatini is CDC high-risk, and every pet transits Johannesburg, it
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "eswatini-to-united-states"
 origin_name: "Eswatini"
 destination_name: "United States"

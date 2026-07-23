@@ -3,7 +3,7 @@ title: "Pet Transport from USA to South Africa: DALRRD Permits, Airlines and the
 description: "Guide to shipping a dog or cat from the USA to South Africa. Import permit from DALRRD, health certificate, rabies requirements and which airlines serve Johannesburg."
 date: "2026-05-07"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "usa-to-south-africa-pet-transport-guide"
 url: "/blog/usa-to-south-africa-pet-transport-guide/"
 seo:

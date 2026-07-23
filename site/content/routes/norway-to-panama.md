@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Norway to Panama in 2026. Health certific
 date: "2026-06-23"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "norway-to-panama"
 origin_name: "Norway"
 destination_name: "Panama"

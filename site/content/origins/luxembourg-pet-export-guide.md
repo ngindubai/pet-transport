@@ -3,7 +3,7 @@ title: "Shipping Pets from Luxembourg Internationally | PetTransportGlobal"
 description: "How to ship your dog or cat from Luxembourg internationally. Export requirements, health certificates, and ASV endorsement explained."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "luxembourg-pet-export-guide"
 origin_country: "Luxembourg"
 origin_iso: "LU"
@@ -44,7 +44,7 @@ sections:
   - heading: "Popular routes from Luxembourg"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Luxembourg to Argentina](/pet-transport/luxembourg-to-argentina/)
       - [Luxembourg to Australia](/pet-transport/luxembourg-to-australia/)
       - [Luxembourg to Austria](/pet-transport/luxembourg-to-austria/)
@@ -116,9 +116,9 @@ sections:
       - [Luxembourg to Turkey](/pet-transport/luxembourg-to-turkey/)
       - [Luxembourg to United Arab Emirates](/pet-transport/luxembourg-to-united-arab-emirates/)
       - [Luxembourg to United Kingdom](/pet-transport/luxembourg-to-united-kingdom/)
+      - [Luxembourg to United States](/pet-transport/luxembourg-to-united-states/)
       - [Luxembourg to Vietnam](/pet-transport/luxembourg-to-vietnam/)
       - [Luxembourg to Zimbabwe](/pet-transport/luxembourg-to-zimbabwe/)
-
 faqs:
   - question: "What documents does my pet need to leave Luxembourg?"
     answer: "Your pet needs a valid microchip (ISO standard), current rabies vaccination, and an official health certificate endorsed by ASV. Specific destination countries may require additional documents such as a titre test result, import permit, or specific certificate formats."

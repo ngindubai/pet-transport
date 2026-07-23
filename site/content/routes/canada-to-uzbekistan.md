@@ -5,7 +5,7 @@ description: "Canada to Uzbekistan pet transport in 2026. A CFIA-endorsed export
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-uzbekistan"
 origin_name: "Canada"
 destination_name: "Uzbekistan"
@@ -122,8 +122,11 @@ faqs:
 
 links:
   sideways:
-    - "/pet-transport/canada-to-maldives/"
-    - "/pet-transport/canada-to-macau/"
+    - url: "/pet-transport/canada-to-maldives/"
+      text: "Pet transport from Canada to the Maldives"
+    - url: "/pet-transport/canada-to-macau/"
+      text: "Pet transport from Canada to Macau"
   upward:
-    - "/pet-transport/countries/canada/"
+    - url: "/pet-transport/countries/canada/"
+      text: "Canada pet transport guide"
 ---

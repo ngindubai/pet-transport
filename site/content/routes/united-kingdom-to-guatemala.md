@@ -5,7 +5,7 @@ description: "No titre test needed for UK pets entering Guatemala, but OIRSA cha
 date: "2026-07-13"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-guatemala"
 origin_name: "United Kingdom"
 destination_name: "Guatemala"

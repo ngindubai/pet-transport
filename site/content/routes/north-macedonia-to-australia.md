@@ -5,7 +5,7 @@ description: "North Macedonia sits outside DAFF's approved groups, so a pet can'
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "north-macedonia-to-australia"
 origin_name: "North Macedonia"
 destination_name: "Australia"

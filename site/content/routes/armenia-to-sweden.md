@@ -5,7 +5,7 @@ description: "Moving a pet from Armenia to Sweden in 2026. Armenia EU-unlisted: 
 date: "2026-06-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "armenia-to-sweden"
 origin_name: "Armenia"
 destination_name: "Sweden"

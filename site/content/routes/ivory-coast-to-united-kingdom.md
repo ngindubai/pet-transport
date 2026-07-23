@@ -5,7 +5,7 @@ description: "Cote d'Ivoire isn't on the UK's Part 1 or Part 2 rabies lists, so 
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "ivory-coast-to-united-kingdom"
 origin_name: "Ivory Coast"
 destination_name: "United Kingdom"

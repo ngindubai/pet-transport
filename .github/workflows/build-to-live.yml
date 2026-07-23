@@ -1,13 +1,21 @@
-name: Build Hugo to live branch
+name: Production build to live branch
 
 on:
   push:
     branches:
       - main
 
+permissions:
+  contents: write
+
+concurrency:
+  group: pet-transport-production
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
       - name: Checkout main
@@ -19,6 +27,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
+      - name: Validate source
+        run: python scripts/validate_site.py
 
       - name: Rebuild internal link graph
         run: python rebuild_link_graph_v3.py
@@ -32,12 +43,15 @@ jobs:
       - name: Build Hugo site
         run: |
           cd site
-          hugo --gc --minify
+          hugo --gc --minify --cleanDestinationDir
         env:
           HUGO_ENVIRONMENT: production
 
       - name: Split sitemap
         run: python split_sitemap.py
+
+      - name: Audit rendered site
+        run: python scripts/audit_build.py
 
       - name: Publish built site to live branch
         uses: peaceiris/actions-gh-pages@v4

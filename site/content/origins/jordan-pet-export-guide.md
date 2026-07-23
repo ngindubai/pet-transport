@@ -3,7 +3,7 @@ title: "Jordan Pet Export Guide | International Pet Transport"
 description: "How to ship your dog or cat from Jordan internationally. Export requirements, health certificates, and GDVS endorsement explained."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "jordan-pet-export-guide"
 origin_country: "Jordan"
 origin_iso: "JO"
@@ -44,7 +44,7 @@ sections:
   - heading: "Popular routes from Jordan"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Jordan to Argentina](/pet-transport/jordan-to-argentina/)
       - [Jordan to Australia](/pet-transport/jordan-to-australia/)
       - [Jordan to Austria](/pet-transport/jordan-to-austria/)
@@ -119,7 +119,6 @@ sections:
       - [Jordan to United States](/pet-transport/jordan-to-united-states/)
       - [Jordan to Vietnam](/pet-transport/jordan-to-vietnam/)
       - [Jordan to Zimbabwe](/pet-transport/jordan-to-zimbabwe/)
-
 faqs:
   - question: "What documents does my pet need to leave Jordan?"
     answer: "Your pet needs a valid microchip (ISO standard), current rabies vaccination, and an official health certificate endorsed by GDVS. Specific destination countries may require additional documents such as a titre test result, import permit, or specific certificate formats."

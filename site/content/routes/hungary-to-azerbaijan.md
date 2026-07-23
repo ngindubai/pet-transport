@@ -5,7 +5,7 @@ description: "Shipping a dog or cat from Hungary to Azerbaijan in 2026. Nébih h
 date: "2026-06-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "hungary-to-azerbaijan"
 origin_name: "Hungary"
 destination_name: "Azerbaijan"

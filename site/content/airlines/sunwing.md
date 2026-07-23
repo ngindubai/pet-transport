@@ -3,7 +3,7 @@ title: "Sunwing Airlines Pet Policy: Can Pets Fly on Sunwing?"
 description: "Sunwing Airlines is Canada's largest leisure carrier. Here is Sunwing's pet policy, why leisure carriers generally do not accept pets, and what Canadian pet owners should use instead for sun destinations."
 date: 2026-05-09
 type: airlines
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "sunwing"
 url: "/pet-transport/airlines/sunwing/"
 seo:

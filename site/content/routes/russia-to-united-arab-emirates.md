@@ -5,7 +5,7 @@ description: "MOCCAE wants a titre test from a Russia-origin pet, but sets no fi
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "russia-to-united-arab-emirates"
 origin_name: "Russia"
 destination_name: "United Arab Emirates"

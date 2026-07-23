@@ -3,7 +3,7 @@ title: "Moving Pets to Ireland: Tapeworm Treatment, AHC Requirements, and the UK
 description: "Ireland's pet import rules for dogs and cats from the UK, EU, and third countries. The echinococcus treatment requirement, Animal Health Certificate process, and travelling via UK."
 date: "2026-06-25"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "ireland-pet-import-guide"
 url: "/blog/ireland-pet-import-guide/"
 seo:

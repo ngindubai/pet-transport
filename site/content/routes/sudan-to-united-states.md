@@ -5,7 +5,7 @@ description: "Sudan is CDC high-risk for dog rabies. Khartoum airport only retur
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "sudan-to-united-states"
 origin_name: "Sudan"
 destination_name: "United States"

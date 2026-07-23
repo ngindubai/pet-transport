@@ -4,7 +4,7 @@ title: "Pet Transport from Singapore to Hong Kong | Requirements & Airline Compa
 description: "Moving your pet from Singapore to Hong Kong: AFCD import permit, mandatory quarantine, no titre test, Singapore Airlines vs Cathay Pacific cargo compared."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "singapore-to-hong-kong"
 origin_name: "Singapore"
 destination_name: "Hong Kong"

@@ -4,7 +4,7 @@ title: "Pet Transport Switzerland to India | FSVO Certificate & AQCS Entry Rules
 description: "Moving your pet from Switzerland to India? No quarantine, no titre test. Understand AQCS inspection requirements, approved airports, and Lufthansa or Swiss cargo options."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "switzerland-to-india"
 origin_name: "Switzerland"
 destination_name: "India"

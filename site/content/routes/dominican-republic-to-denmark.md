@@ -5,7 +5,7 @@ description: "Dominican Republic to Denmark pet transport in 2026. The DR is EU 
 date: "2026-07-07"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "dominican-republic-to-denmark"
 origin_name: "Dominican Republic"
 destination_name: "Denmark"

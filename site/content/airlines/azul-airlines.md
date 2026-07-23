@@ -3,7 +3,7 @@ title: "Azul Airlines Pet Transport Guide 2026"
 description: "Azul Brazilian Airlines pet policy for dogs and cats. Cabin and cargo rules for Brazil's third-largest carrier, domestic and international routes, and crate requirements."
 date: "2026-05-08"
 type: "airlines"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "azul-airlines"
 url: "/pet-transport/airlines/azul-airlines/"
 seo:

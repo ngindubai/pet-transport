@@ -5,7 +5,7 @@ description: "Ljubljana to Budapest is a 4.5-hour drive or a short connecting fl
 date: "2026-07-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "slovenia-to-hungary"
 origin_name: "Slovenia"
 destination_name: "Hungary"

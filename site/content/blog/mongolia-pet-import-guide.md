@@ -2,7 +2,7 @@
 title: "Importing a Pet to Mongolia: Permits"
 description: "Everything you need to bring a cat or dog to Mongolia. Covers the MASM import permit, health certificate requirements, approved entry points and what to expect at Chinggis Khaan Airport."
 date: "2025-07-23"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/mongolia-pet-import-guide/"
 tags: ["mongolia", "ulaanbaatar", "country guide", "pet import", "central asia"]

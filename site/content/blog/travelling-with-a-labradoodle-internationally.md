@@ -3,7 +3,7 @@ title: "International Travel with a Labradoodle: Routes, Restrictions and What t
 description: "Labradoodles are generally unrestricted internationally but face challenges with airline breed policies and crate sizing. This guide covers everything owners need."
 date: "2026-05-07"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-labradoodle-internationally"
 url: "/blog/travelling-with-a-labradoodle-internationally/"
 seo:

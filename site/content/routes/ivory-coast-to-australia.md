@@ -5,7 +5,7 @@ description: "Cote d'Ivoire is DAFF non-approved, so direct import is impossible
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "ivory-coast-to-australia"
 origin_name: "Ivory Coast"
 destination_name: "Australia"

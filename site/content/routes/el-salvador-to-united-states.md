@@ -5,7 +5,7 @@ description: "El Salvador is CDC-classified high risk for dog rabies, and Americ
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "el-salvador-to-united-states"
 origin_name: "El Salvador"
 destination_name: "United States"

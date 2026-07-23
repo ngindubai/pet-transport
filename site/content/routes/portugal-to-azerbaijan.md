@@ -5,7 +5,7 @@ description: "Moving a pet from Portugal to Azerbaijan in 2026. DGAV EU health c
 date: "2026-06-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "portugal-to-azerbaijan"
 origin_name: "Portugal"
 destination_name: "Azerbaijan"

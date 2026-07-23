@@ -5,7 +5,7 @@ description: "Moving a pet from Iceland to New Zealand in 2026. MPI places Icela
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "iceland-to-new-zealand"
 origin_name: "Iceland"
 destination_name: "New Zealand"

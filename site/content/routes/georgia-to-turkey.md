@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Tbilisi to Istanbul in 2026, by air or ov
 date: "2026-07-09"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "georgia-to-turkey"
 origin_name: "Georgia"
 destination_name: "Turkey"

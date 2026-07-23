@@ -3,7 +3,7 @@ title: "Moving Pets to Malaysia: DVS Requirements, Quarantine, and Kuala Lumpur 
 description: "Malaysia's DVS manages pet imports with a controlled permit system. Here's what you need, how long quarantine lasts, and how collection from KLIA works."
 date: "2026-05-14"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "malaysia-pet-import-guide"
 url: "/blog/malaysia-pet-import-guide/"
 seo:

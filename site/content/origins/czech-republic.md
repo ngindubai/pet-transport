@@ -4,7 +4,7 @@ slug: "czech-republic"
 description: "Complete guide to exporting your pet from Czech Republic. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Czech Republic"
 country_code: "CZ"
 content:
@@ -30,10 +30,12 @@ sections:
   - heading: "Popular routes from Czech Republic"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Czech Republic to Argentina](/pet-transport/czech-republic-to-argentina/)
+      - [Czech Republic to Armenia](/pet-transport/czech-republic-to-armenia/)
       - [Czech Republic to Australia](/pet-transport/czech-republic-to-australia/)
       - [Czech Republic to Austria](/pet-transport/czech-republic-to-austria/)
+      - [Czech Republic to Azerbaijan](/pet-transport/czech-republic-to-azerbaijan/)
       - [Czech Republic to Bahrain](/pet-transport/czech-republic-to-bahrain/)
       - [Czech Republic to Bangladesh](/pet-transport/czech-republic-to-bangladesh/)
       - [Czech Republic to Belgium](/pet-transport/czech-republic-to-belgium/)
@@ -48,11 +50,14 @@ sections:
       - [Czech Republic to Croatia](/pet-transport/czech-republic-to-croatia/)
       - [Czech Republic to Cyprus](/pet-transport/czech-republic-to-cyprus/)
       - [Czech Republic to Denmark](/pet-transport/czech-republic-to-denmark/)
+      - [Czech Republic to Dominican Republic](/pet-transport/czech-republic-to-dominican-republic/)
       - [Czech Republic to Ecuador](/pet-transport/czech-republic-to-ecuador/)
       - [Czech Republic to Egypt](/pet-transport/czech-republic-to-egypt/)
+      - [Czech Republic to Estonia](/pet-transport/czech-republic-to-estonia/)
       - [Czech Republic to Ethiopia](/pet-transport/czech-republic-to-ethiopia/)
       - [Czech Republic to Finland](/pet-transport/czech-republic-to-finland/)
       - [Czech Republic to France](/pet-transport/czech-republic-to-france/)
+      - [Czech Republic to Georgia](/pet-transport/czech-republic-to-georgia/)
       - [Czech Republic to Germany](/pet-transport/czech-republic-to-germany/)
       - [Czech Republic to Ghana](/pet-transport/czech-republic-to-ghana/)
       - [Czech Republic to Greece](/pet-transport/czech-republic-to-greece/)
@@ -63,12 +68,18 @@ sections:
       - [Czech Republic to Ireland](/pet-transport/czech-republic-to-ireland/)
       - [Czech Republic to Israel](/pet-transport/czech-republic-to-israel/)
       - [Czech Republic to Italy](/pet-transport/czech-republic-to-italy/)
+      - [Czech Republic to Jamaica](/pet-transport/czech-republic-to-jamaica/)
       - [Czech Republic to Japan](/pet-transport/czech-republic-to-japan/)
       - [Czech Republic to Jordan](/pet-transport/czech-republic-to-jordan/)
+      - [Czech Republic to Kazakhstan](/pet-transport/czech-republic-to-kazakhstan/)
       - [Czech Republic to Kenya](/pet-transport/czech-republic-to-kenya/)
       - [Czech Republic to Kuwait](/pet-transport/czech-republic-to-kuwait/)
+      - [Czech Republic to Latvia](/pet-transport/czech-republic-to-latvia/)
+      - [Czech Republic to Lebanon](/pet-transport/czech-republic-to-lebanon/)
+      - [Czech Republic to Lithuania](/pet-transport/czech-republic-to-lithuania/)
       - [Czech Republic to Luxembourg](/pet-transport/czech-republic-to-luxembourg/)
       - [Czech Republic to Malaysia](/pet-transport/czech-republic-to-malaysia/)
+      - [Czech Republic to Maldives](/pet-transport/czech-republic-to-maldives/)
       - [Czech Republic to Malta](/pet-transport/czech-republic-to-malta/)
       - [Czech Republic to Mauritius](/pet-transport/czech-republic-to-mauritius/)
       - [Czech Republic to Mexico](/pet-transport/czech-republic-to-mexico/)
@@ -81,15 +92,18 @@ sections:
       - [Czech Republic to Norway](/pet-transport/czech-republic-to-norway/)
       - [Czech Republic to Oman](/pet-transport/czech-republic-to-oman/)
       - [Czech Republic to Pakistan](/pet-transport/czech-republic-to-pakistan/)
+      - [Czech Republic to Panama](/pet-transport/czech-republic-to-panama/)
       - [Czech Republic to Peru](/pet-transport/czech-republic-to-peru/)
       - [Czech Republic to Philippines](/pet-transport/czech-republic-to-philippines/)
       - [Czech Republic to Poland](/pet-transport/czech-republic-to-poland/)
       - [Czech Republic to Portugal](/pet-transport/czech-republic-to-portugal/)
       - [Czech Republic to Qatar](/pet-transport/czech-republic-to-qatar/)
       - [Czech Republic to Romania](/pet-transport/czech-republic-to-romania/)
+      - [Czech Republic to Rwanda](/pet-transport/czech-republic-to-rwanda/)
       - [Czech Republic to Saudi Arabia](/pet-transport/czech-republic-to-saudi-arabia/)
       - [Czech Republic to Singapore](/pet-transport/czech-republic-to-singapore/)
       - [Czech Republic to Slovakia](/pet-transport/czech-republic-to-slovakia/)
+      - [Czech Republic to Slovenia](/pet-transport/czech-republic-to-slovenia/)
       - [Czech Republic to South Africa](/pet-transport/czech-republic-to-south-africa/)
       - [Czech Republic to South Korea](/pet-transport/czech-republic-to-south-korea/)
       - [Czech Republic to Spain](/pet-transport/czech-republic-to-spain/)
@@ -100,9 +114,11 @@ sections:
       - [Czech Republic to Tanzania](/pet-transport/czech-republic-to-tanzania/)
       - [Czech Republic to Thailand](/pet-transport/czech-republic-to-thailand/)
       - [Czech Republic to Turkey](/pet-transport/czech-republic-to-turkey/)
+      - [Czech Republic to Uganda](/pet-transport/czech-republic-to-uganda/)
       - [Czech Republic to United Arab Emirates](/pet-transport/czech-republic-to-united-arab-emirates/)
       - [Czech Republic to United Kingdom](/pet-transport/czech-republic-to-united-kingdom/)
       - [Czech Republic to United States](/pet-transport/czech-republic-to-united-states/)
+      - [Czech Republic to Uruguay](/pet-transport/czech-republic-to-uruguay/)
       - [Czech Republic to Vietnam](/pet-transport/czech-republic-to-vietnam/)
       - [Czech Republic to Zimbabwe](/pet-transport/czech-republic-to-zimbabwe/)
 faqs:

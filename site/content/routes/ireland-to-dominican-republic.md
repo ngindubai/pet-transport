@@ -5,7 +5,7 @@ description: "Dublin to Santo Domingo pet transport in 2026. No titre test, no i
 date: "2026-07-07"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "ireland-to-dominican-republic"
 origin_name: "Ireland"
 destination_name: "Dominican Republic"

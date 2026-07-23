@@ -4,7 +4,7 @@ slug: "indonesia"
 description: "Complete guide to exporting your pet from Indonesia. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Indonesia"
 country_code: "ID"
 overview: |
@@ -24,13 +24,14 @@ sections:
   - heading: "Popular routes from Indonesia"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Indonesia to Argentina](/pet-transport/indonesia-to-argentina/)
       - [Indonesia to Australia](/pet-transport/indonesia-to-australia/)
       - [Indonesia to Austria](/pet-transport/indonesia-to-austria/)
       - [Indonesia to Bahrain](/pet-transport/indonesia-to-bahrain/)
       - [Indonesia to Bangladesh](/pet-transport/indonesia-to-bangladesh/)
       - [Indonesia to Belgium](/pet-transport/indonesia-to-belgium/)
+      - [Indonesia to Brazil](/pet-transport/indonesia-to-brazil/)
       - [Indonesia to Bulgaria](/pet-transport/indonesia-to-bulgaria/)
       - [Indonesia to Cambodia](/pet-transport/indonesia-to-cambodia/)
       - [Indonesia to Canada](/pet-transport/indonesia-to-canada/)
@@ -41,6 +42,7 @@ sections:
       - [Indonesia to Croatia](/pet-transport/indonesia-to-croatia/)
       - [Indonesia to Cyprus](/pet-transport/indonesia-to-cyprus/)
       - [Indonesia to Czech Republic](/pet-transport/indonesia-to-czech-republic/)
+      - [Indonesia to Denmark](/pet-transport/indonesia-to-denmark/)
       - [Indonesia to Ecuador](/pet-transport/indonesia-to-ecuador/)
       - [Indonesia to Egypt](/pet-transport/indonesia-to-egypt/)
       - [Indonesia to Ethiopia](/pet-transport/indonesia-to-ethiopia/)
@@ -48,39 +50,54 @@ sections:
       - [Indonesia to France](/pet-transport/indonesia-to-france/)
       - [Indonesia to Germany](/pet-transport/indonesia-to-germany/)
       - [Indonesia to Ghana](/pet-transport/indonesia-to-ghana/)
+      - [Indonesia to Greece](/pet-transport/indonesia-to-greece/)
       - [Indonesia to Hong Kong](/pet-transport/indonesia-to-hong-kong/)
       - [Indonesia to Hungary](/pet-transport/indonesia-to-hungary/)
+      - [Indonesia to India](/pet-transport/indonesia-to-india/)
       - [Indonesia to Ireland](/pet-transport/indonesia-to-ireland/)
       - [Indonesia to Israel](/pet-transport/indonesia-to-israel/)
+      - [Indonesia to Italy](/pet-transport/indonesia-to-italy/)
+      - [Indonesia to Japan](/pet-transport/indonesia-to-japan/)
       - [Indonesia to Jordan](/pet-transport/indonesia-to-jordan/)
       - [Indonesia to Kenya](/pet-transport/indonesia-to-kenya/)
       - [Indonesia to Kuwait](/pet-transport/indonesia-to-kuwait/)
       - [Indonesia to Luxembourg](/pet-transport/indonesia-to-luxembourg/)
+      - [Indonesia to Malaysia](/pet-transport/indonesia-to-malaysia/)
       - [Indonesia to Malta](/pet-transport/indonesia-to-malta/)
       - [Indonesia to Mauritius](/pet-transport/indonesia-to-mauritius/)
+      - [Indonesia to Mexico](/pet-transport/indonesia-to-mexico/)
       - [Indonesia to Morocco](/pet-transport/indonesia-to-morocco/)
       - [Indonesia to Myanmar](/pet-transport/indonesia-to-myanmar/)
       - [Indonesia to Nepal](/pet-transport/indonesia-to-nepal/)
+      - [Indonesia to Netherlands](/pet-transport/indonesia-to-netherlands/)
       - [Indonesia to New Zealand](/pet-transport/indonesia-to-new-zealand/)
       - [Indonesia to Nigeria](/pet-transport/indonesia-to-nigeria/)
       - [Indonesia to Norway](/pet-transport/indonesia-to-norway/)
       - [Indonesia to Oman](/pet-transport/indonesia-to-oman/)
       - [Indonesia to Pakistan](/pet-transport/indonesia-to-pakistan/)
       - [Indonesia to Peru](/pet-transport/indonesia-to-peru/)
+      - [Indonesia to Philippines](/pet-transport/indonesia-to-philippines/)
       - [Indonesia to Poland](/pet-transport/indonesia-to-poland/)
+      - [Indonesia to Portugal](/pet-transport/indonesia-to-portugal/)
       - [Indonesia to Qatar](/pet-transport/indonesia-to-qatar/)
       - [Indonesia to Romania](/pet-transport/indonesia-to-romania/)
       - [Indonesia to Saudi Arabia](/pet-transport/indonesia-to-saudi-arabia/)
       - [Indonesia to Singapore](/pet-transport/indonesia-to-singapore/)
       - [Indonesia to Slovakia](/pet-transport/indonesia-to-slovakia/)
+      - [Indonesia to Slovenia](/pet-transport/indonesia-to-slovenia/)
       - [Indonesia to South Africa](/pet-transport/indonesia-to-south-africa/)
+      - [Indonesia to South Korea](/pet-transport/indonesia-to-south-korea/)
       - [Indonesia to Spain](/pet-transport/indonesia-to-spain/)
       - [Indonesia to Sri Lanka](/pet-transport/indonesia-to-sri-lanka/)
       - [Indonesia to Sweden](/pet-transport/indonesia-to-sweden/)
+      - [Indonesia to Switzerland](/pet-transport/indonesia-to-switzerland/)
       - [Indonesia to Taiwan](/pet-transport/indonesia-to-taiwan/)
       - [Indonesia to Tanzania](/pet-transport/indonesia-to-tanzania/)
+      - [Indonesia to Thailand](/pet-transport/indonesia-to-thailand/)
       - [Indonesia to Turkey](/pet-transport/indonesia-to-turkey/)
       - [Indonesia to United Arab Emirates](/pet-transport/indonesia-to-united-arab-emirates/)
+      - [Indonesia to United Kingdom](/pet-transport/indonesia-to-united-kingdom/)
+      - [Indonesia to United States](/pet-transport/indonesia-to-united-states/)
       - [Indonesia to Vietnam](/pet-transport/indonesia-to-vietnam/)
       - [Indonesia to Zimbabwe](/pet-transport/indonesia-to-zimbabwe/)
 faqs:

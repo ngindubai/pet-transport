@@ -3,7 +3,7 @@ title: "Which Vaccinations Does Your Pet Need for International Travel?"
 description: "A country-by-country guide to pet vaccination requirements for international travel. Rabies, core vaccines, titre tests and which countries require what."
 date: "2026-05-07"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "vaccinations-your-pet-needs-for-international-travel"
 url: "/blog/vaccinations-your-pet-needs-for-international-travel/"
 seo:

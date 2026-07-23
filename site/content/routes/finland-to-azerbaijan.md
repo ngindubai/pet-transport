@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Finland to Azerbaijan in 2026. Ministry o
 date: "2026-06-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "finland-to-azerbaijan"
 origin_name: "Finland"
 destination_name: "Azerbaijan"

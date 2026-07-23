@@ -2,7 +2,7 @@
 title: "Understanding Airline Pet Embargoes"
 description: "Airlines restrict or ban pet transport during extreme temperatures. This guide explains summer and winter embargoes, which airlines enforce them and how to plan around them."
 date: "2025-07-20"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/understanding-airline-pet-embargoes-seasonal-restrictions/"
 tags: ["pet embargo", "seasonal restrictions", "summer embargo", "airline pet policy", "temperature restrictions"]

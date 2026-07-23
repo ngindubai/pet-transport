@@ -5,7 +5,7 @@ description: "Honduras is unlisted for GB pet travel: titre test, 3-month wait a
 date: "2026-07-13"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "honduras-to-united-kingdom"
 origin_name: "Honduras"
 destination_name: "United Kingdom"

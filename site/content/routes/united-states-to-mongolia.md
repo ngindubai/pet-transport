@@ -5,7 +5,7 @@ description: "No CDC paperwork applies on this leg, that only bites coming back.
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-mongolia"
 origin_name: "United States"
 destination_name: "Mongolia"

@@ -1,4 +1,4 @@
-{{ define "title" }}{{ .Params.seo.title | default .Title | default (printf "Pet Transport from %s to %s: Guide | Pet Transport Global" .Params.origin_name .Params.destination_name) }}{{ end }}
+{{ define "title" }}{{ $candidate := .Params.seo.title | default .Title }}{{ if gt (len $candidate) 65 }}{{ printf "%s to %s Pet Transport Guide" .Params.origin_name .Params.destination_name }}{{ else }}{{ $candidate }}{{ end }}{{ end }}
 
 {{ define "schema" }}
 {{/* Universal schema: emit BOTH HowTo and FAQPage on every variant that has the data.
@@ -18,26 +18,22 @@
 }
 </script>
 
-{{/* --- WebPage with author (E-E-A-T): emitted on all route variants --- */}}
-{{ with .Params.author }}
-{{ $parts := split (replace . " - " ", ") ", " }}
-{{ $name := index $parts 0 }}
-{{ $jobTitle := "" }}{{ if gt (len $parts) 1 }}{{ $jobTitle = index $parts 1 }}{{ end }}
-{{ $atype := "Person" }}{{ if strings.Contains $name "Team" }}{{ $atype = "Organization" }}{{ end }}
+{{/* --- Company-authored WebPage: no named expert is claimed until verified. --- */}}
+{{ $verifiedRaw := .Params.verified_at | default .Params.date }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "url": "{{ $.Permalink }}",
   "author": {
-    "@type": "{{ $atype }}",
-    "name": {{ $name | jsonify | safeJS }}{{ if and (eq $atype "Person") $jobTitle }},
-    "jobTitle": {{ $jobTitle | jsonify | safeJS }},
-    "worksFor": { "@type": "Organization", "name": "Pet Transport Global" }{{ end }}
-  }
+    "@type": "Organization",
+    "name": "Pet Transport Global Editorial Team",
+    "parentOrganization": { "@type": "Organization", "name": "Pet Transport Global" }
+  },
+  "publisher": { "@type": "Organization", "name": "Pet Transport Global" }{{ with $verifiedRaw }},
+  "dateModified": "{{ (time.AsTime .).Format "2006-01-02" }}"{{ end }}
 }
 </script>
-{{ end }}
 
 {{/* --- HowTo (whenever timeline_steps exists) --- */}}
 {{ with .Params.route_data.timeline_steps }}

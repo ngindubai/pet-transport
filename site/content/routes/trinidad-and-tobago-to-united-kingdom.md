@@ -5,7 +5,7 @@ description: "Trinidad and Tobago to UK pet transport in 2026. Trinidad and Toba
 date: "2026-07-11"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "trinidad-and-tobago-to-united-kingdom"
 origin_name: "Trinidad and Tobago"
 destination_name: "United Kingdom"

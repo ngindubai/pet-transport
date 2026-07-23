@@ -5,7 +5,7 @@ description: "The CFIA's high-risk dog rabies list, last revised March 2025, doe
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "paraguay-to-canada"
 origin_name: "Paraguay"
 destination_name: "Canada"

@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Hong Kong to Australia? AFCD export certi
 date: "2026-06-05"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "hong-kong-to-australia"
 origin_name: "Hong Kong"
 destination_name: "Australia"

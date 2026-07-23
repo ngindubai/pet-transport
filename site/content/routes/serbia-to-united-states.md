@@ -5,7 +5,7 @@ description: "Serbia is not on the CDC high-risk list, so Belgrade to US pet mov
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "serbia-to-united-states"
 origin_name: "Serbia"
 destination_name: "United States"

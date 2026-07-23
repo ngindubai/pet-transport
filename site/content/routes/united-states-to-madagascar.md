@@ -5,7 +5,7 @@ description: "Madagascar's own CDC-style caution doesn't apply to a US pet arriv
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-madagascar"
 origin_name: "United States"
 destination_name: "Madagascar"

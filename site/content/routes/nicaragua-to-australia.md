@@ -5,7 +5,7 @@ description: "Nicaragua isn't on DAFF's approved country list, so a pet must liv
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "nicaragua-to-australia"
 origin_name: "Nicaragua"
 destination_name: "Australia"

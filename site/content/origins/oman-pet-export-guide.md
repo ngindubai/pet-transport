@@ -3,7 +3,7 @@ title: "Shipping Pets from Oman Internationally | PetTransportGlobal"
 description: "How to ship your dog or cat from Oman internationally. Export requirements, health certificates, and MAFWR endorsement explained."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "oman-pet-export-guide"
 origin_country: "Oman"
 origin_iso: "OM"
@@ -44,7 +44,7 @@ sections:
   - heading: "Popular routes from Oman"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Oman to Argentina](/pet-transport/oman-to-argentina/)
       - [Oman to Australia](/pet-transport/oman-to-australia/)
       - [Oman to Austria](/pet-transport/oman-to-austria/)
@@ -119,7 +119,6 @@ sections:
       - [Oman to United States](/pet-transport/oman-to-united-states/)
       - [Oman to Vietnam](/pet-transport/oman-to-vietnam/)
       - [Oman to Zimbabwe](/pet-transport/oman-to-zimbabwe/)
-
 faqs:
   - question: "What documents does my pet need to leave Oman?"
     answer: "Your pet needs a valid microchip (ISO standard), current rabies vaccination, and an official health certificate endorsed by MAFWR. Specific destination countries may require additional documents such as a titre test result, import permit, or specific certificate formats."

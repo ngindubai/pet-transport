@@ -5,7 +5,7 @@ description: "Complete guide to moving pets from Sweden to the US in 2026. CDC D
 date: "2026-06-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "sweden-to-united-states"
 origin_name: "Sweden"
 destination_name: "United States"

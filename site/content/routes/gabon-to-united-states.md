@@ -5,7 +5,7 @@ description: "Gabon is on the CDC's high-risk list for dog rabies, so the full f
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "gabon-to-united-states"
 origin_name: "Gabon"
 destination_name: "United States"

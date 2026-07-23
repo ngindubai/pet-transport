@@ -3,7 +3,7 @@ title: "Pet Transport from the USA to Spain: EU Rules for American Pet Owners"
 description: "Moving from the USA to Spain with a pet? Spain follows EU pet travel rules. Here is what US pet owners need: USDA-endorsed AHC, tapeworm treatment, and what to expect at Madrid Barajas."
 date: 2026-05-09
 type: blog
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "usa-to-spain-pet-transport-guide"
 url: "/blog/usa-to-spain-pet-transport-guide/"
 seo:

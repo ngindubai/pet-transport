@@ -5,7 +5,7 @@ description: "Tajikistan sits outside the UK's Part 1 and Part 2 lists, so every
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "tajikistan-to-united-kingdom"
 origin_name: "Tajikistan"
 destination_name: "United Kingdom"

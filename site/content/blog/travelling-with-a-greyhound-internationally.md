@@ -3,7 +3,7 @@ title: "Travelling with a Greyhound Internationally"
 description: "International travel with a Greyhound. Breed-specific airline policies, crate sizing for Greyhounds, country-level breed restrictions, and tips for keeping Greyhounds calm in transit."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-greyhound-internationally"
 url: "/blog/travelling-with-a-greyhound-internationally/"
 seo:

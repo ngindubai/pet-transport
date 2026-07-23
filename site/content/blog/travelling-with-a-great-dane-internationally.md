@@ -3,7 +3,7 @@ title: "Moving Internationally with a Great Dane: Giant Breed Relocation Guide"
 description: "Great Danes are one of the world's largest dog breeds. Here is everything owners need to know about airlines, crate sizing, aircraft hold dimensions, and country rules for international moves."
 date: 2026-05-09
 type: blog
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-great-dane-internationally"
 url: "/blog/travelling-with-a-great-dane-internationally/"
 seo:

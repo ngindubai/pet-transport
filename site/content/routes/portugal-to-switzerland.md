@@ -4,7 +4,7 @@ title: "Pet Transport Portugal to Switzerland | EU Pet Passport & FSVO Entry Rul
 description: "Moving your pet from Portugal to Switzerland? Switzerland accepts EU pet passports. No quarantine, no titre test. Compare TAP, SWISS, and other airlines."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "portugal-to-switzerland"
 origin_name: "Portugal"
 destination_name: "Switzerland"

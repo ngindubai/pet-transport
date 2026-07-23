@@ -5,7 +5,7 @@ description: "Moving a pet from Iceland to the UAE in 2026. Unconfirmed on MOCCA
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "iceland-to-united-arab-emirates"
 origin_name: "Iceland"
 destination_name: "United Arab Emirates"

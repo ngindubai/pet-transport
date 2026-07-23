@@ -5,7 +5,7 @@ description: "Trinidad and Tobago is absent from CFIA's high-risk dog rabies lis
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "trinidad-and-tobago-to-canada"
 origin_name: "Trinidad and Tobago"
 destination_name: "Canada"

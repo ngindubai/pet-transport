@@ -3,7 +3,7 @@ title: "Qatar Airways Pet Transport: Cargo Rules, Breed Bans, and Doha Connectio
 description: "Qatar Airways carries pets as cargo only via QR Cargo. Here's how to book, which breeds are banned, and what Doha transit means for your pet."
 date: "2026-04-13"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "qatar-airways-pet-transport-guide"
 url: "/blog/qatar-airways-pet-transport-guide/"
 seo:

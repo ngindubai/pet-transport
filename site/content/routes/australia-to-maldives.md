@@ -5,7 +5,7 @@ description: "Australia to Maldives pet transport in 2026. Dogs cannot enter the
 date: "2026-07-11"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-maldives"
 origin_name: "Australia"
 destination_name: "Maldives"

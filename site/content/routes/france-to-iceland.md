@@ -5,7 +5,7 @@ description: "Moving a pet from France to Iceland in 2026. France's Category 1 s
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "france-to-iceland"
 origin_name: "France"
 destination_name: "Iceland"

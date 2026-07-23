@@ -5,7 +5,7 @@ description: "Honduras skips the rabies titre test for UK arrivals, just a curre
 date: "2026-07-13"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-honduras"
 origin_name: "United Kingdom"
 destination_name: "Honduras"

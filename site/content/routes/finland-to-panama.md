@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Finland to Panama in 2026. Health certifi
 date: "2026-06-23"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "finland-to-panama"
 origin_name: "Finland"
 destination_name: "Panama"

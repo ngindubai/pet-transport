@@ -5,7 +5,7 @@ description: "BZ$50 covers the Belize import permit for up to 10 pets, valid 90 
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-belize"
 origin_name: "United Kingdom"
 destination_name: "Belize"

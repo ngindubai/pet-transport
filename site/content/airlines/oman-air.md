@@ -3,7 +3,7 @@ title: "Oman Air Pet Transport Guide"
 description: "Oman Air pet transport policy 2026: cargo requirements, breed restrictions, crate rules, and what to prepare when flying with pets on Oman Air."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "oman-air"
 url: "/pet-transport/airlines/oman-air/"
 airline:

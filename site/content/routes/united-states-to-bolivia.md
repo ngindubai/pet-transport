@@ -5,7 +5,7 @@ description: "United States to Bolivia pet transport in 2026. No titre test requ
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-bolivia"
 origin_name: "United States"
 destination_name: "Bolivia"

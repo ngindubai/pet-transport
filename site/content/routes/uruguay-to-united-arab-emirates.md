@@ -5,7 +5,7 @@ description: "Montevideo to Dubai or Abu Dhabi pet transport in 2026. MOCCAE tre
 date: "2026-07-07"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "uruguay-to-united-arab-emirates"
 origin_name: "Uruguay"
 destination_name: "United Arab Emirates"

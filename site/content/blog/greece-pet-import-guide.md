@@ -3,7 +3,7 @@ title: "Greece Pet Import Guide: EU Entry Rules, Non-EU Requirements, and Island
 description: "Greece is an EU member state. Here is what dogs and cats need to enter from both EU and non-EU countries, including what UK pets need post-Brexit."
 date: "2026-05-05"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "greece-pet-import-guide"
 url: "/blog/greece-pet-import-guide/"
 seo:

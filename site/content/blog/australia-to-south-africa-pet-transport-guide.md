@@ -2,7 +2,7 @@
 title: "Pet Transport from Australia to South"
 description: "How to move your cat or dog from Australia to South Africa. Covers DAFF export certificate, DALRRD import permit, approved entry airports, quarantine requirements and airline cargo options."
 date: "2025-08-27"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/australia-to-south-africa-pet-transport-guide/"
 tags: ["australia", "south africa", "route guide", "pet transport", "africa"]

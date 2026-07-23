@@ -3,7 +3,7 @@ title: "International Pet Travel with a Shih Tzu: What the Breed Means for Your 
 description: "Shih Tzus are brachycephalic and face airline restrictions for hold travel. Here is a practical guide for Shih Tzu owners planning international relocation."
 date: "2026-05-06"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-shih-tzu-internationally"
 url: "/blog/travelling-with-a-shih-tzu-internationally/"
 seo:

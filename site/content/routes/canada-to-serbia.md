@@ -5,7 +5,7 @@ description: "A CFIA-endorsed export certificate must be booked by appointment b
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-serbia"
 origin_name: "Canada"
 destination_name: "Serbia"

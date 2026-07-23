@@ -3,7 +3,7 @@ title: "Importing a Pet to Indonesia: 2026 Process for Bali, Jakarta and Beyond"
 description: "Moving a dog or cat to Indonesia in 2026: the rekomendasi import permit, Bali entry restrictions, Jakarta vs Surabaya, quarantine, and real costs. Updated process."
 date: "2026-06-13"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "importing-pets-to-indonesia-2026"
 url: "/blog/importing-pets-to-indonesia-2026/"
 seo:

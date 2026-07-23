@@ -3,7 +3,7 @@ title: "International Travel with an Australian Shepherd"
 description: "Australian Shepherds are medium-large working dogs. This guide covers crate sizing, airline policies, breed notes and key international routes for Aussie Shepherd owners."
 date: "2026-05-07"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-an-australian-shepherd-internationally"
 url: "/blog/travelling-with-an-australian-shepherd-internationally/"
 seo:

@@ -5,7 +5,7 @@ description: "Bosnia is DAFF non-approved, forcing 180 days staged in the UK. Bu
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "bosnia-and-herzegovina-to-australia"
 origin_name: "Bosnia and Herzegovina"
 destination_name: "Australia"

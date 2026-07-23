@@ -5,7 +5,7 @@ description: "Moving a pet from Belgium to Azerbaijan in 2026. FASFC EU health c
 date: "2026-06-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "belgium-to-azerbaijan"
 origin_name: "Belgium"
 destination_name: "Azerbaijan"

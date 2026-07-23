@@ -5,7 +5,7 @@ description: "Nicaragua asks for no rabies titre test from US pets. What it does
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-nicaragua"
 origin_name: "United States"
 destination_name: "Nicaragua"

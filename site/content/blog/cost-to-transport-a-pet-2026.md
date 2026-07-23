@@ -3,7 +3,7 @@ title: "How Much Does It Cost to Move a Pet Internationally in 2026?"
 description: "Real 2026 pet transport costs: vet, crate, flight, customs, quarantine. UK examples for Spain, USA, Australia, UAE. Where the cheap quotes go wrong."
 date: "2026-05-28"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "cost-to-transport-a-pet-2026"
 url: "/blog/cost-to-transport-a-pet-2026/"
 tags:

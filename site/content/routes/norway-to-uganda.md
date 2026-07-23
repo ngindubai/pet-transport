@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Norway to Uganda in 2026. MAAIF import pe
 date: "2026-06-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "norway-to-uganda"
 origin_name: "Norway"
 destination_name: "Uganda"

@@ -4,7 +4,7 @@ title: "Pet Transport Slovenia to United Kingdom | EU Pet Rules & Airline Option
 description: "Moving your pet from Slovenia to the UK? EU AHC requirements, airline routing via Vienna or Frankfurt, tapeworm treatment, and UK APHA entry rules explained."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "slovenia-to-united-kingdom"
 origin_name: "Slovenia"
 destination_name: "United Kingdom"

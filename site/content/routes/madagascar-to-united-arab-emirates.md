@@ -5,7 +5,7 @@ description: "Every other Madagascar route on this site needs two carriers. Emir
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "madagascar-to-united-arab-emirates"
 origin_name: "Madagascar"
 destination_name: "United Arab Emirates"

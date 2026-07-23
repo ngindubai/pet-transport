@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Australia to Barbados in 2026. Australia 
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-barbados"
 origin_name: "Australia"
 destination_name: "Barbados"

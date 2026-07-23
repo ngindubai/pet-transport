@@ -3,7 +3,7 @@ title: "Pet Insurance When Moving Abroad: What Your Policy Covers and the Gaps Y
 description: "Most standard pet insurance policies exclude international transport. Here's what to check in your policy, what transit insurance covers, and whether specialist travel insurance is worth it."
 date: "2026-04-29"
 type: "blog"
-author: "James Osei, Pet Transport Planning Specialist, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-insurance-international-moves"
 url: "/blog/pet-insurance-international-moves/"
 seo:

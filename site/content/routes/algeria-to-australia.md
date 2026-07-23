@@ -5,7 +5,7 @@ description: "Algeria is a DAFF non-approved country, so 180 days in France come
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "algeria-to-australia"
 origin_name: "Algeria"
 destination_name: "Australia"

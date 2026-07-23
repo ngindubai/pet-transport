@@ -3,7 +3,7 @@ title: "Ethiopian Airlines Pet Transport: Africa's Largest Carrier and Its Live 
 description: "Ethiopian Airlines pet cargo and cabin policy. Breed restrictions, route-specific rules, and how to book live animal transport on ET flights across Africa, Europe, and beyond."
 date: "2026-06-05"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "ethiopian-airlines-pet-transport-guide"
 url: "/blog/ethiopian-airlines-pet-transport-guide/"
 seo:

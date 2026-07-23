@@ -2,7 +2,7 @@
 title: "Can a Pregnant or Nursing Dog Fly? What"
 description: "Everything you need to know about flying with a pregnant or nursing dog internationally. Covers airline restrictions, trimester-specific rules, nursing pups and veterinary advice."
 date: "2025-07-15"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/traveling-with-a-pregnant-or-nursing-dog/"
 tags: ["pregnant dog", "nursing dog", "airline restrictions", "dog health", "pet travel"]

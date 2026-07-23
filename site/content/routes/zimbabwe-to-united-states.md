@@ -5,7 +5,7 @@ description: "Harare to Washington runs through Addis Ababa on Ethiopian Airline
 date: "2026-07-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "zimbabwe-to-united-states"
 origin_name: "Zimbabwe"
 destination_name: "United States"

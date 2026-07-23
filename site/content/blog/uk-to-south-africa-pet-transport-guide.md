@@ -3,7 +3,7 @@ title: "Pet Transport UK to South Africa 2026 | Complete Guide"
 description: "How to move your dog or cat from the UK to South Africa. DAFF-SA import permit, health cert, rabies vaccination, and which airlines carry pets to Johannesburg or Cape Town."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "uk-to-south-africa-pet-transport-guide"
 url: "/blog/uk-to-south-africa-pet-transport-guide/"
 seo:

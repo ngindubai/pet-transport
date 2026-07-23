@@ -5,7 +5,7 @@ description: "Macau to Canada pet transport in 2026. Why Macau-origin pets skip 
 date: "2026-07-11"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "macau-to-canada"
 origin_name: "Macau"
 destination_name: "Canada"

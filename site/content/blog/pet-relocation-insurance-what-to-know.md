@@ -3,7 +3,7 @@ title: "Pet Relocation Insurance: Does It Exist and What Does It Cover?"
 description: "Pet relocation insurance is a niche but important topic for international pet moves. Here is what products exist, what they cover, and where the gaps are."
 date: "2026-05-06"
 type: "blog"
-author: "James Osei, Pet Transport Planning Specialist, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-relocation-insurance-what-to-know"
 url: "/blog/pet-relocation-insurance-what-to-know/"
 seo:

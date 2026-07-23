@@ -3,7 +3,7 @@ title: "The Rabies Titre Test: Which Countries Require It, Where to Get It Done,
 description: "A rabies titre test result of 0.5 IU/mL is the threshold most countries use. Here's what that means, which labs are approved, and what happens if your pet fails."
 date: "2026-04-27"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "rabies-titre-test-complete-guide"
 url: "/blog/rabies-titre-test-complete-guide/"
 seo:

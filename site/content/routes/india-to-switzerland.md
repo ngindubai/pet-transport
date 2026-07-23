@@ -5,7 +5,7 @@ description: "Pets from India to Switzerland in 2026 need FAVN titre test, 90-da
 date: "2026-06-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "india-to-switzerland"
 origin_name: "India"
 destination_name: "Switzerland"

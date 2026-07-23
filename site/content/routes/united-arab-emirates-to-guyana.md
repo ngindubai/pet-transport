@@ -5,7 +5,7 @@ description: "The UAE isn't on Guyana's rabies-free list, so a titre test applie
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-arab-emirates-to-guyana"
 origin_name: "United Arab Emirates"
 destination_name: "Guyana"

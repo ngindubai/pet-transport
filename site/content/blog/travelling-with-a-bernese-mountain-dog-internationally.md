@@ -3,7 +3,7 @@ title: "Travelling with a Bernese Mountain Dog Internationally"
 description: "What you need to know about flying internationally with a Bernese Mountain Dog. Crate sizes, airline restrictions, cargo-only rules, and keeping large breeds comfortable in transit."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-bernese-mountain-dog-internationally"
 url: "/blog/travelling-with-a-bernese-mountain-dog-internationally/"
 seo:

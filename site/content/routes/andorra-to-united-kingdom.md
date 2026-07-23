@@ -5,7 +5,7 @@ description: "Andorra has no airport of its own, so pets travel overland to Barc
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "andorra-to-united-kingdom"
 origin_name: "Andorra"
 destination_name: "United Kingdom"

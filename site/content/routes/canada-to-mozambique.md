@@ -5,7 +5,7 @@ description: "No titre test for a Canadian pet entering Mozambique, but the DINA
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-mozambique"
 origin_name: "Canada"
 destination_name: "Mozambique"

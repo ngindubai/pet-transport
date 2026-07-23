@@ -5,7 +5,7 @@ description: "Kosovo sits off both the CDC's and the CFIA's high-risk rabies lis
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "kosovo-to-canada"
 origin_name: "Kosovo"
 destination_name: "Canada"

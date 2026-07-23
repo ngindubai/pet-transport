@@ -5,7 +5,7 @@ description: "Turkmenistan isn't UK rabies-listed and its own airline barely rea
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "turkmenistan-to-united-kingdom"
 origin_name: "Turkmenistan"
 destination_name: "United Kingdom"

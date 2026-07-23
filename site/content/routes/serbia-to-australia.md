@@ -5,7 +5,7 @@ description: "Serbia is DAFF-approved (Group 3), so no 180-day stopover country 
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "serbia-to-australia"
 origin_name: "Serbia"
 destination_name: "Australia"

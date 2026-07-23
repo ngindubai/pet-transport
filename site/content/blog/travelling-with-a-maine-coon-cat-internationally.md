@@ -3,7 +3,7 @@ title: "Travelling Internationally with a Maine Coon: Size, Crates and Import Ru
 description: "Guide to international travel with a Maine Coon cat in 2026: IATA crate sizing for large cats, airline cabin limits, microchip and vaccination requirements, and country rules."
 date: "2026-05-06"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-maine-coon-cat-internationally"
 url: "/blog/travelling-with-a-maine-coon-cat-internationally/"
 seo:

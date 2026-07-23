@@ -5,7 +5,7 @@ description: "Ukraine sits outside MOCCAE's low-risk list, so every dog and cat 
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "ukraine-to-united-arab-emirates"
 origin_name: "Ukraine"
 destination_name: "United Arab Emirates"

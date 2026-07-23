@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Romania to the United States in 2026. Rom
 date: "2026-06-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "romania-to-united-states"
 origin_name: "Romania"
 destination_name: "United States"

@@ -3,7 +3,7 @@ title: "RwandAir Pet Transport Guide 2026"
 description: "Does RwandAir accept pets? Policies for dogs and cats on RwandAir flights from Kigali and connecting African routes, plus alternative options for Rwanda pet travel."
 date: "2026-05-08"
 type: "airlines"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "rwandair"
 url: "/pet-transport/airlines/rwandair/"
 seo:

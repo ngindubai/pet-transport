@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Saudi Arabia to New Zealand | PetTransportGlob
 description: "Pet relocation from Saudi Arabia to New Zealand: New Zealand import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "saudi-arabia-to-new-zealand"
 origin_name: "Saudi Arabia"
 destination_name: "New Zealand"

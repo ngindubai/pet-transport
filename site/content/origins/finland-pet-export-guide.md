@@ -3,7 +3,7 @@ title: "Finland Pet Export Guide | International Pet Transport"
 description: "How to ship your dog or cat from Finland internationally. Export requirements, health certificates, and Ruokavirasto endorsement explained."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "finland-pet-export-guide"
 origin_country: "Finland"
 origin_iso: "FI"
@@ -44,10 +44,12 @@ sections:
   - heading: "Popular routes from Finland"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Finland to Argentina](/pet-transport/finland-to-argentina/)
+      - [Finland to Armenia](/pet-transport/finland-to-armenia/)
       - [Finland to Australia](/pet-transport/finland-to-australia/)
       - [Finland to Austria](/pet-transport/finland-to-austria/)
+      - [Finland to Azerbaijan](/pet-transport/finland-to-azerbaijan/)
       - [Finland to Bahrain](/pet-transport/finland-to-bahrain/)
       - [Finland to Bangladesh](/pet-transport/finland-to-bangladesh/)
       - [Finland to Belgium](/pet-transport/finland-to-belgium/)
@@ -63,10 +65,13 @@ sections:
       - [Finland to Cyprus](/pet-transport/finland-to-cyprus/)
       - [Finland to Czech Republic](/pet-transport/finland-to-czech-republic/)
       - [Finland to Denmark](/pet-transport/finland-to-denmark/)
+      - [Finland to Dominican Republic](/pet-transport/finland-to-dominican-republic/)
       - [Finland to Ecuador](/pet-transport/finland-to-ecuador/)
       - [Finland to Egypt](/pet-transport/finland-to-egypt/)
+      - [Finland to Estonia](/pet-transport/finland-to-estonia/)
       - [Finland to Ethiopia](/pet-transport/finland-to-ethiopia/)
       - [Finland to France](/pet-transport/finland-to-france/)
+      - [Finland to Georgia](/pet-transport/finland-to-georgia/)
       - [Finland to Germany](/pet-transport/finland-to-germany/)
       - [Finland to Ghana](/pet-transport/finland-to-ghana/)
       - [Finland to Greece](/pet-transport/finland-to-greece/)
@@ -77,10 +82,15 @@ sections:
       - [Finland to Ireland](/pet-transport/finland-to-ireland/)
       - [Finland to Israel](/pet-transport/finland-to-israel/)
       - [Finland to Italy](/pet-transport/finland-to-italy/)
+      - [Finland to Jamaica](/pet-transport/finland-to-jamaica/)
       - [Finland to Japan](/pet-transport/finland-to-japan/)
       - [Finland to Jordan](/pet-transport/finland-to-jordan/)
+      - [Finland to Kazakhstan](/pet-transport/finland-to-kazakhstan/)
       - [Finland to Kenya](/pet-transport/finland-to-kenya/)
       - [Finland to Kuwait](/pet-transport/finland-to-kuwait/)
+      - [Finland to Latvia](/pet-transport/finland-to-latvia/)
+      - [Finland to Lebanon](/pet-transport/finland-to-lebanon/)
+      - [Finland to Lithuania](/pet-transport/finland-to-lithuania/)
       - [Finland to Luxembourg](/pet-transport/finland-to-luxembourg/)
       - [Finland to Malaysia](/pet-transport/finland-to-malaysia/)
       - [Finland to Malta](/pet-transport/finland-to-malta/)
@@ -95,15 +105,18 @@ sections:
       - [Finland to Norway](/pet-transport/finland-to-norway/)
       - [Finland to Oman](/pet-transport/finland-to-oman/)
       - [Finland to Pakistan](/pet-transport/finland-to-pakistan/)
+      - [Finland to Panama](/pet-transport/finland-to-panama/)
       - [Finland to Peru](/pet-transport/finland-to-peru/)
       - [Finland to Philippines](/pet-transport/finland-to-philippines/)
       - [Finland to Poland](/pet-transport/finland-to-poland/)
       - [Finland to Portugal](/pet-transport/finland-to-portugal/)
       - [Finland to Qatar](/pet-transport/finland-to-qatar/)
       - [Finland to Romania](/pet-transport/finland-to-romania/)
+      - [Finland to Rwanda](/pet-transport/finland-to-rwanda/)
       - [Finland to Saudi Arabia](/pet-transport/finland-to-saudi-arabia/)
       - [Finland to Singapore](/pet-transport/finland-to-singapore/)
       - [Finland to Slovakia](/pet-transport/finland-to-slovakia/)
+      - [Finland to Slovenia](/pet-transport/finland-to-slovenia/)
       - [Finland to South Africa](/pet-transport/finland-to-south-africa/)
       - [Finland to South Korea](/pet-transport/finland-to-south-korea/)
       - [Finland to Spain](/pet-transport/finland-to-spain/)
@@ -114,12 +127,13 @@ sections:
       - [Finland to Tanzania](/pet-transport/finland-to-tanzania/)
       - [Finland to Thailand](/pet-transport/finland-to-thailand/)
       - [Finland to Turkey](/pet-transport/finland-to-turkey/)
+      - [Finland to Uganda](/pet-transport/finland-to-uganda/)
       - [Finland to United Arab Emirates](/pet-transport/finland-to-united-arab-emirates/)
       - [Finland to United Kingdom](/pet-transport/finland-to-united-kingdom/)
       - [Finland to United States](/pet-transport/finland-to-united-states/)
+      - [Finland to Uruguay](/pet-transport/finland-to-uruguay/)
       - [Finland to Vietnam](/pet-transport/finland-to-vietnam/)
       - [Finland to Zimbabwe](/pet-transport/finland-to-zimbabwe/)
-
 faqs:
   - question: "What documents does my pet need to leave Finland?"
     answer: "Your pet needs a valid microchip (ISO standard), current rabies vaccination, and an official health certificate endorsed by Ruokavirasto. Specific destination countries may require additional documents such as a titre test result, import permit, or specific certificate formats."

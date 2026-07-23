@@ -3,7 +3,7 @@ title: "Pet Transport from Canada to France: EU Entry for Canadian Pets"
 description: "Moving from Canada to France with a pet? Canada is an approved EU third country. Here is the full process: CFIA-endorsed AHC, microchip, and what to expect at Charles de Gaulle on arrival."
 date: 2026-05-09
 type: blog
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-france-pet-transport-guide"
 url: "/blog/canada-to-france-pet-transport-guide/"
 seo:

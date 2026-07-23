@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Denmark to Kazakhstan in 2026. No direct 
 date: "2026-06-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "denmark-to-kazakhstan"
 origin_name: "Denmark"
 destination_name: "Kazakhstan"

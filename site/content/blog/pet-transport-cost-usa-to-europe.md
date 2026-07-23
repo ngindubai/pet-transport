@@ -3,7 +3,7 @@ title: "Cost of Moving a Pet from USA to Europe | 2026 Guide"
 description: "How much does it cost to move a dog or cat from the USA to Europe? Breakdown of USDA APHIS fees, airline cargo costs, EU entry requirements, and agent charges."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-transport-cost-usa-to-europe"
 url: "/blog/pet-transport-cost-usa-to-europe/"
 seo:

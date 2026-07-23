@@ -5,7 +5,7 @@ description: "No direct flight exists, but American's Los Angeles to Belize City
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-belize"
 origin_name: "Australia"
 destination_name: "Belize"

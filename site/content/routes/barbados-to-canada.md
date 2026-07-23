@@ -5,7 +5,7 @@ description: "Barbados is absent from CFIA's high-risk dog rabies list, so pets 
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "barbados-to-canada"
 origin_name: "Barbados"
 destination_name: "Canada"

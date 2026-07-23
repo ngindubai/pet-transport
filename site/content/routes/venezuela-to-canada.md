@@ -5,7 +5,7 @@ description: "Venezuela sits on CFIA's high-risk list for dog rabies, confirmed 
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "venezuela-to-canada"
 origin_name: "Venezuela"
 destination_name: "Canada"

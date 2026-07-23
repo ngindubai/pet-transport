@@ -5,7 +5,7 @@ description: "Seychelles to US pet transport in 2026. Seychelles does not appear
 date: "2026-07-11"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "seychelles-to-united-states"
 origin_name: "Seychelles"
 destination_name: "United States"

@@ -5,7 +5,7 @@ description: "Moving pets from the UK to Ireland in 2026. Animal Health Certific
 date: "2026-06-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-ireland"
 origin_name: "United Kingdom"
 destination_name: "Ireland"

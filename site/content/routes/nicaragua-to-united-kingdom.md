@@ -5,7 +5,7 @@ description: "Nicaragua is unlisted for GB pet travel: a titre test and 3-month 
 date: "2026-07-13"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "nicaragua-to-united-kingdom"
 origin_name: "Nicaragua"
 destination_name: "United Kingdom"

@@ -5,7 +5,7 @@ description: "Canada is one of only nine countries the CFIA recognises as fully 
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "fiji-to-canada"
 origin_name: "Fiji"
 destination_name: "Canada"

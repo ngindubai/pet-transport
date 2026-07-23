@@ -4,7 +4,7 @@ slug: "saudi-arabia"
 description: "Complete guide to exporting your pet from Saudi Arabia."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Saudi Arabia"
 country_code: "SA"
 overview: |
@@ -24,7 +24,7 @@ sections:
   - heading: "Popular routes from Saudi Arabia"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Saudi Arabia to Argentina](/pet-transport/saudi-arabia-to-argentina/)
       - [Saudi Arabia to Australia](/pet-transport/saudi-arabia-to-australia/)
       - [Saudi Arabia to Austria](/pet-transport/saudi-arabia-to-austria/)
@@ -95,6 +95,8 @@ sections:
       - [Saudi Arabia to Thailand](/pet-transport/saudi-arabia-to-thailand/)
       - [Saudi Arabia to Turkey](/pet-transport/saudi-arabia-to-turkey/)
       - [Saudi Arabia to United Arab Emirates](/pet-transport/saudi-arabia-to-united-arab-emirates/)
+      - [Saudi Arabia to United Kingdom](/pet-transport/saudi-arabia-to-united-kingdom/)
+      - [Saudi Arabia to United States](/pet-transport/saudi-arabia-to-united-states/)
       - [Saudi Arabia to Vietnam](/pet-transport/saudi-arabia-to-vietnam/)
       - [Saudi Arabia to Zimbabwe](/pet-transport/saudi-arabia-to-zimbabwe/)
 faqs:

@@ -5,7 +5,7 @@ description: "Flydubai flies Dubai to Bishkek nonstop 11 times a week, its busie
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-arab-emirates-to-kyrgyzstan"
 origin_name: "United Arab Emirates"
 destination_name: "Kyrgyzstan"

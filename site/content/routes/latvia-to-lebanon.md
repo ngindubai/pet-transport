@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Latvia to Lebanon in 2026. PVD-authorised
 date: "2026-06-23"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "latvia-to-lebanon"
 origin_name: "Latvia"
 destination_name: "Lebanon"

@@ -3,7 +3,7 @@ title: "Travelling With Dogs on Long-Haul Flights: Cargo, Comfort, and What Airl
 description: "Long-haul cargo travel is hard on dogs. Here's how to minimise stress, pick the right crate, choose the right airline, and prepare your dog for 12+ hours in the hold."
 date: "2026-03-31"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-dogs-on-long-haul-flights"
 url: "/blog/travelling-with-dogs-on-long-haul-flights/"
 seo:

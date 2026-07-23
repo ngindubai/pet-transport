@@ -5,7 +5,7 @@ description: "Moving a dog or cat from the UAE to Australia? DAFF classification
 date: "2026-06-05"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-arab-emirates-to-australia"
 origin_name: "United Arab Emirates"
 destination_name: "Australia"

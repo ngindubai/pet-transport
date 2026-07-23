@@ -5,7 +5,7 @@ description: "Belize sits on CFIA's high-risk dog rabies list, so dogs must be 7
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "belize-to-canada"
 origin_name: "Belize"
 destination_name: "Canada"

@@ -5,7 +5,7 @@ description: "Mozambique is MOCCAE high-risk, and Maputo has no titre lab of its
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "mozambique-to-united-arab-emirates"
 origin_name: "Mozambique"
 destination_name: "United Arab Emirates"

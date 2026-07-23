@@ -4,7 +4,7 @@ description: "Moving your pet from France to South Africa: DALRRD import permit,
 type: "routes"
 layout: "single"
 template_variant: "B"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "france-to-south-africa"
 origin_name: "France"
 destination_name: "South Africa"

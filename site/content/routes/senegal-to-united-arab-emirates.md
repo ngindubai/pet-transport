@@ -5,7 +5,7 @@ description: "Senegal isn't on MOCCAE's low-risk list, so a titre test applies, 
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "senegal-to-united-arab-emirates"
 origin_name: "Senegal"
 destination_name: "United Arab Emirates"

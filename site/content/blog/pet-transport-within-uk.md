@@ -3,7 +3,7 @@ title: "Pet Transport Within the UK: A Plain-English Guide to Couriers, Regulati
 description: "Moving a dog or cat within the UK in 2026. What DEFRA Type 1 authorisation means, what to check before hiring a courier, how air cargo works on domestic routes, and what the welfare rules actually require."
 date: "2026-06-10"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-transport-within-uk"
 url: "/blog/pet-transport-within-uk/"
 seo:

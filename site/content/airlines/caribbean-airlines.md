@@ -3,7 +3,7 @@ title: "Caribbean Airlines Pet Policy 2026"
 description: "Caribbean Airlines pet transport guide. Does Caribbean Airlines accept dogs and cats? Cabin and hold pet rules, crate requirements, and booking tips for flights from Trinidad."
 date: "2026-05-08"
 type: "airlines"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "caribbean-airlines"
 url: "/pet-transport/airlines/caribbean-airlines/"
 seo:

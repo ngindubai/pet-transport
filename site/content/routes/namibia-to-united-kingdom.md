@@ -5,7 +5,7 @@ description: "Namibia sits outside GB's listed-country tables, so a rabies titre
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "namibia-to-united-kingdom"
 origin_name: "Namibia"
 destination_name: "United Kingdom"

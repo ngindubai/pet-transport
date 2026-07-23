@@ -5,7 +5,7 @@ description: "Perth's direct South African Airways link to Johannesburg gives Au
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-mozambique"
 origin_name: "Australia"
 destination_name: "Mozambique"

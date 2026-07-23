@@ -3,7 +3,7 @@ title: "Pet Transport from the USA to Germany: EU Entry for American Pets"
 description: "Moving from the USA to Germany with a dog or cat? The USA is an approved EU third country. Here is the full process: microchip, AHC endorsed by USDA APHIS, and tapeworm treatment for dogs."
 date: 2026-05-09
 type: blog
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "usa-to-germany-pet-transport-guide"
 url: "/blog/usa-to-germany-pet-transport-guide/"
 seo:

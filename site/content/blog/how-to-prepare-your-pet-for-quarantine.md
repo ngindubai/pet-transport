@@ -3,7 +3,7 @@ title: "Preparing Your Pet for Quarantine: What to Expect and How to Help"
 description: "If your pet is heading to Australia, New Zealand, or Japan, quarantine is mandatory. Here is how to prepare your dog or cat and what happens during the stay."
 date: "2026-05-06"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "how-to-prepare-your-pet-for-quarantine"
 url: "/blog/how-to-prepare-your-pet-for-quarantine/"
 seo:

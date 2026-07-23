@@ -3,7 +3,7 @@ title: "Pet Transport from Australia to UAE 2026"
 description: "How to move your dog or cat from Australia to the United Arab Emirates. DAFF export requirements, MOCCAE import permit, breed restrictions, and airline cargo routes."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-uae-pet-transport-guide"
 url: "/blog/australia-to-uae-pet-transport-guide/"
 seo:

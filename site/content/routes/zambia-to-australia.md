@@ -5,7 +5,7 @@ description: "Zambia has no negotiated DAFF export certificate, so direct entry 
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "zambia-to-australia"
 origin_name: "Zambia"
 destination_name: "Australia"

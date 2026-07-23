@@ -3,7 +3,7 @@ title: "Flying with a Labrador Retriever | International Pet Cargo Guide"
 description: "Airline and country rules for flying a Labrador Retriever internationally. Crate sizes, health paperwork, quarantine countries, and cargo booking tips."
 type: "breeds"
 layout: "single"
-author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "labrador-retriever"
 breed_name: "Labrador Retriever"
 brachycephalic: false

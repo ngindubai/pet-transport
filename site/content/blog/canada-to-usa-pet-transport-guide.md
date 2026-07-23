@@ -3,7 +3,7 @@ title: "Moving Pets from Canada to the USA: A Simpler Process Than You Might Exp
 description: "The Canada-to-USA border is one of the more straightforward for pet travel. Here is what the CDC and USDA require for dogs and cats crossing from Canada."
 date: "2026-05-06"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-usa-pet-transport-guide"
 url: "/blog/canada-to-usa-pet-transport-guide/"
 seo:

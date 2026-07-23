@@ -1,4 +1,4 @@
-{{ define "title" }}{{ .Params.seo.title | default (printf "Pet Transport from %s | Pet Transport Global" (.Params.country_name | default .Params.origin_country)) }}{{ end }}
+{{ define "title" }}{{ .Params.seo.title | default (printf "Pet Transport from %s | Pet Transport Global" (.Params.country_name | default .Params.origin_country)) | truncate 68 }}{{ end }}
 
 {{ define "schema" }}
 {{ with .Params.faqs }}

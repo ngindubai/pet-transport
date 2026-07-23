@@ -4,7 +4,7 @@ slug: "egypt"
 description: "Complete guide to exporting your pet from Egypt. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Egypt"
 country_code: "EG"
 overview: |
@@ -13,14 +13,14 @@ sections:
   - heading: "Export requirements from Egypt"
     body: |
       **Export Permit:** No formal export permit required for household pets. A GAVS-endorsed health certificate is required.
-      
+
       **Issuing Authority:** General Authority for Veterinary Services (GAVS), Egypt
-      
+
       **Last Verified:** 2026-04-24
   - heading: "Popular routes from Egypt"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Egypt to Argentina](/pet-transport/egypt-to-argentina/)
       - [Egypt to Australia](/pet-transport/egypt-to-australia/)
       - [Egypt to Austria](/pet-transport/egypt-to-austria/)

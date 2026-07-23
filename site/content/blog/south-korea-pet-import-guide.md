@@ -3,7 +3,7 @@ title: "South Korea Pet Import Guide: APQA Requirements, Quarantine, and the 10-
 description: "South Korea requires pets from non-approved countries to undergo quarantine. Here's what the 10-day inspection involves, which countries are exempt, and how to prepare."
 date: "2026-05-05"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "south-korea-pet-import-guide"
 url: "/blog/south-korea-pet-import-guide/"
 seo:

@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Hungary to Kazakhstan in 2026. Nébih hea
 date: "2026-06-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "hungary-to-kazakhstan"
 origin_name: "Hungary"
 destination_name: "Kazakhstan"

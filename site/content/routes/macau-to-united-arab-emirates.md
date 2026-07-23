@@ -5,7 +5,7 @@ description: "Moving a pet from Macau to the UAE in 2026. Macau isn't on MOCCAE'
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "macau-to-united-arab-emirates"
 origin_name: "Macau"
 destination_name: "United Arab Emirates"

@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Croatia to Czech Republic | PetTransportGlobal
 description: "How to ship your dog or cat from Croatia to Czech Republic. Czech Republic import rules, vaccinations, permits, and airline options explained."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "croatia-to-czech-republic"
 origin_name: "Croatia"
 destination_name: "Czech Republic"

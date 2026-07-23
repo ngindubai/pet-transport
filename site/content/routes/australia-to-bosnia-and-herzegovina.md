@@ -5,7 +5,7 @@ description: "Bosnia and Herzegovina names Australia directly in its own Annex I
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-bosnia-and-herzegovina"
 origin_name: "Australia"
 destination_name: "Bosnia and Herzegovina"

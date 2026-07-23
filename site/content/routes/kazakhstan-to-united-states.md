@@ -5,7 +5,7 @@ type: "routes"
 layout: "single"
 template_variant: "C"
 content_soul: 3
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "kazakhstan-to-united-states"
 origin_name: "Kazakhstan"
 destination_name: "United States"

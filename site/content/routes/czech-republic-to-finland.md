@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Czech Republic to Finland | PetTransportGlobal
 description: "Complete guide to pet transport from Czech Republic to Finland. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "czech-republic-to-finland"
 origin_name: "Czech Republic"
 destination_name: "Finland"

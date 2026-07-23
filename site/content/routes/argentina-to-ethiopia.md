@@ -4,7 +4,7 @@ title: "Pet Transport from Argentina to Ethiopia | PetTransportGlobal"
 description: "Pet relocation from Argentina to Ethiopia: Ethiopia import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "argentina-to-ethiopia"
 origin_name: "Argentina"
 destination_name: "Ethiopia"
@@ -22,7 +22,7 @@ route_data:
       microchip: "Required (ISO 11784/11785)"
       rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel"
       titre_test: "Required for: Most countries. Minimum: 0.5 IU/ml"
-      quarantine: "Mandatory quarantine. 10 days days. Quarantine at designated facility."
+      quarantine: "Mandatory quarantine. 10 days. Quarantine at designated facility."
       import_permit: "Required. Issued by: Ministry of Agriculture APHRD"
       health_certificate: "Required. Issued by: Official veterinarian, endorsed by national authority"
   airlines:
@@ -86,7 +86,7 @@ route_data:
       timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
       responsible: "You + airline check-in/cargo desk"
     - step: 8
-      action: "Quarantine on arrival (10 days days)"
+      action: "Quarantine on arrival (10 days)"
       timing: "Immediately on arrival (mandatory)"
       responsible: "Ethiopia quarantine authority"
   cost_factors:
@@ -108,7 +108,7 @@ content:
   overview: |
     Moving a pet from Argentina to Ethiopia involves more paperwork than most owners expect.
     
-    This route is one of the most demanding international pet transport routes. Start preparations at least 26 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. Ethiopia requires mandatory quarantine (10 days days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
+    This route is one of the most demanding international pet transport routes. Start preparations at least 26 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. Ethiopia requires mandatory quarantine (10 days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
     
     The paperwork is the hard part. Once everything is in order, the journey itself is well-managed.
   sections:
@@ -116,7 +116,7 @@ content:
       body: |
         This is one of the more demanding international pet transport corridors. Ethiopia runs a strict biosecurity programme and there are no shortcuts through it.
         
-        All pets must complete quarantine on arrival in Ethiopia (at a government-designated facility) for 10 days days. This is non-negotiable and is entirely separate from the pre-travel preparation.
+        All pets must complete quarantine on arrival in Ethiopia (at a government-designated facility) for 10 days. This is non-negotiable and is entirely separate from the pre-travel preparation.
         
         Ethiopia regulated by Ethiopian Institute of Agricultural Research (EIAR) and Ministry of Agriculture Animal and Plant Health Regulatory Directorate. Addis Ababa is the main hub. Ethiopian Airlines hub makes this a transit point for Africa.
     - heading: "Practical advice for shipping your pet from Argentina"
@@ -132,7 +132,7 @@ faqs:
   - question: "How long does it take to prepare a pet for transport from Argentina to Ethiopia?"
     answer: "Allow at least 26 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
   - question: "Does my pet need to quarantine when entering Ethiopia?"
-    answer: "Yes, quarantine is mandatory in Ethiopia. Your pet will stay for 10 days days at a government-run facility on arrival. This is non-negotiable and the cost is paid by the owner."
+    answer: "Yes, quarantine is mandatory in Ethiopia. Your pet will stay for 10 days at the quarantine facility specified in the arrival instructions. Confirm the facility, duration, and current charges with the destination authority before travel."
   - question: "Is a rabies titre test required for pets entering Ethiopia?"
     answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Ethiopia. Start this process as early as possible."
   - question: "Do I need an import permit to bring my pet into Ethiopia?"

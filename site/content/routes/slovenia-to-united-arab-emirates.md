@@ -5,7 +5,7 @@ description: "Ljubljana to Dubai or Abu Dhabi pet transport in 2026. Slovenia's 
 date: "2026-07-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "slovenia-to-united-arab-emirates"
 origin_name: "Slovenia"
 destination_name: "United Arab Emirates"

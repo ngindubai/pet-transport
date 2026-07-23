@@ -3,19 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Params.brand }}{{ end }}</title>
+    {{ $canonical := .Permalink }}{{ $paginationPage := false }}{{ $pageNumber := 1 }}
+    {{ if .IsSection }}{{ $pager := .Paginator }}{{ $pageNumber = $pager.PageNumber }}{{ if gt $pageNumber 1 }}{{ $canonical = $pager.URL | absURL }}{{ $paginationPage = true }}{{ end }}{{ end }}
+    <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Params.brand }}{{ end }}{{ if $paginationPage }} | Page {{ $pageNumber }}{{ end }}</title>
 
     {{/* SEO meta */}}
-    {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
-    {{ if .Params.noindex }}<meta name="robots" content="noindex,follow">{{ end }}
-    <link rel="canonical" href="{{ .Permalink }}">
+    {{ $metaDescription := .Description | default .Site.Params.description | plainify }}
+    {{ if $paginationPage }}{{ $metaDescription = printf "%s Page %d." $metaDescription $pageNumber }}{{ end }}
+    <meta name="description" content="{{ $metaDescription | truncate 160 }}">
+    {{/* routes_without_verification: do not index route claims with no recorded review date */}}
+    {{ $undatedRoute := and (eq .Type "routes") .IsPage (not .Params.verified_at) .Date.IsZero }}
+    {{ if or .Params.noindex $undatedRoute $paginationPage }}<meta name="robots" content="noindex,follow">{{ end }}
+    <link rel="canonical" href="{{ $canonical }}">
 
     {{/* Open Graph */}}
-    <meta property="og:title" content="{{ .Title }}">
-    <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:title" content="{{ .Title }}{{ if $paginationPage }} | Page {{ $pageNumber }}{{ end }}">
+    <meta property="og:description" content="{{ $metaDescription | truncate 160 }}">
+    <meta property="og:url" content="{{ $canonical }}">
     <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
-    {{ with .Params.og_image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+    <meta property="og:image" content="{{ .Params.og_image | default "/images/hero.jpg" | absURL }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ .Title }}{{ if $paginationPage }} | Page {{ $pageNumber }}{{ end }}">
+    <meta name="twitter:description" content="{{ $metaDescription | truncate 160 }}">
+    <meta name="twitter:image" content="{{ .Params.og_image | default "/images/hero.jpg" | absURL }}">
 
     {{/* Site-wide Organization + WebSite schema — renders on every page */}}
     <script type="application/ld+json">
@@ -25,9 +35,18 @@
         {
           "@type": "Organization",
           "name": "Pet Transport Global",
+          "legalName": "Global Solutions Ltd",
           "url": "https://pettransportglobal.com/",
           "logo": "https://pettransportglobal.com/images/logo.png",
           "description": "Professional international pet transport services. Route-specific guides for shipping dogs and cats between countries.",
+          "email": "info@pettransportglobal.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "71-75 Shelton Street, Covent Garden",
+            "addressLocality": "London",
+            "postalCode": "WC2H 9JQ",
+            "addressCountry": "GB"
+          },
           "contactPoint": {
             "@type": "ContactPoint",
             "contactType": "customer service",
@@ -69,7 +88,7 @@
 
     {{/* Template CSS */}}
     <link href="/css/style.css" rel="stylesheet">
-    <link href="/css/plugins.css" rel="stylesheet">
+    {{ if .IsHome }}<link href="/css/plugins.css" rel="stylesheet">{{ end }}
 
     {{/* Color scheme */}}
     <link href="/styles/maincolors.css" rel="stylesheet">
@@ -79,7 +98,7 @@
     <link rel="stylesheet" href="{{ $css.RelPermalink }}">
 
     {{/* Route template design system — loads LAST on route pages so it wins specificity */}}
-    {{ if eq .Type "routes" }}
+    {{ if and (eq .Type "routes") .IsPage }}
     <link href="/css/route-templates.css" rel="stylesheet">
     {{ end }}
 
@@ -91,16 +110,29 @@
     <meta name="google-site-verification" content="{{ . }}">
     {{ end }}
 
-    {{/* Google Analytics 4 — only on live site, not local dev server */}}
+    {{/* Analytics loads only after explicit consent. */}}
     {{ if and (not hugo.IsServer) .Site.Params.googleAnalyticsId }}
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalyticsId }}"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', '{{ .Site.Params.googleAnalyticsId }}', {
-        send_page_view: true
-      });
+      (function () {
+        var measurementId = '{{ .Site.Params.googleAnalyticsId }}';
+        window.ptgLoadAnalytics = function () {
+          if (window.ptgAnalyticsLoaded) return;
+          window.ptgAnalyticsLoaded = true;
+          window.dataLayer = window.dataLayer || [];
+          window.gtag = function () { window.dataLayer.push(arguments); };
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(measurementId);
+          document.head.appendChild(script);
+          window.gtag('js', new Date());
+          window.gtag('config', measurementId, { send_page_view: true });
+        };
+        try {
+          if (localStorage.getItem('ptgAnalyticsConsent') === 'granted') {
+            window.ptgLoadAnalytics();
+          }
+        } catch (e) { /* analytics stays disabled */ }
+      }());
     </script>
     {{ end }}
 </head>
@@ -113,13 +145,44 @@
 
     {{ partial "footer.html" . }}
 
+    {{ if and (not hugo.IsServer) .Site.Params.googleAnalyticsId }}
+    <aside class="ptg-cookie-notice" id="ptg-cookie-notice" hidden aria-label="Analytics cookie choices">
+        <p>We use optional analytics cookies to understand which guides are useful. You can accept or decline them.</p>
+        <div class="ptg-cookie-actions">
+            <button type="button" class="btn btn-primary btn-sm" id="ptg-cookie-accept">Accept analytics</button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" id="ptg-cookie-decline">Decline</button>
+            <a href="/privacy/">Privacy policy</a>
+        </div>
+    </aside>
+    <script>
+      (function () {
+        var notice = document.getElementById('ptg-cookie-notice');
+        if (!notice) return;
+        var choice = null;
+        try { choice = localStorage.getItem('ptgAnalyticsConsent'); } catch (e) { /* show choices */ }
+        if (choice !== 'granted' && choice !== 'denied') notice.hidden = false;
+
+        document.getElementById('ptg-cookie-accept').addEventListener('click', function () {
+          try { localStorage.setItem('ptgAnalyticsConsent', 'granted'); } catch (e) { /* session-only consent */ }
+          notice.hidden = true;
+          if (window.ptgLoadAnalytics) window.ptgLoadAnalytics();
+        });
+        document.getElementById('ptg-cookie-decline').addEventListener('click', function () {
+          try { localStorage.setItem('ptgAnalyticsConsent', 'denied'); } catch (e) { /* session-only choice */ }
+          notice.hidden = true;
+        });
+      }());
+    </script>
+    {{ end }}
+
     {{/* Core JS */}}
-    <script src="/vendor/jquery/jquery.min.js" defer></script>
     <script src="/vendor/bootstrap/js/bootstrap.min.js" defer></script>
-    <script src="/js/custom.js" defer></script>
+    {{ if .IsHome }}
+    <script src="/vendor/jquery/jquery.min.js" defer></script>
     <script src="/js/plugins.js" defer></script>
-    <script src="/js/prefixfree.min.js" defer></script>
+    <script src="/js/custom.js" defer></script>
     <script src="/js/counter.js" defer></script>
+    {{ end }}
 
     {{/* Extra JS (LayerSlider etc.) */}}
     {{ block "extra_js" . }}{{ end }}
@@ -129,7 +192,7 @@
     <script src="{{ $js.RelPermalink }}" defer></script>
 
     {{/* FAQ accordion JS — activates on route template pages */}}
-    {{ if eq .Type "routes" }}
+    {{ if and (eq .Type "routes") .IsPage }}
     <script>
     document.querySelectorAll('.ptg-faq-q').forEach(function(q) {
       q.addEventListener('click', function() {

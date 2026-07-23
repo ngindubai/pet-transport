@@ -3,7 +3,7 @@ title: "Best Countries for Expats with Pets: Easy Import Rules and Pet-Friendly 
 description: "Choosing where to relocate? Some countries are far more pet-friendly than others. This guide ranks destinations by ease of import, veterinary care, and daily life with a pet."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "best-countries-for-expats-with-pets"
 url: "/blog/best-countries-for-expats-with-pets/"
 seo:

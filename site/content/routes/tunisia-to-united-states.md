@@ -5,7 +5,7 @@ description: "Tunisia is CDC high-risk for dog rabies: a titer test, CDC Dog Imp
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "tunisia-to-united-states"
 origin_name: "Tunisia"
 destination_name: "United States"

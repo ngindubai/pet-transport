@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Estonia to Lebanon in 2026. Official heal
 date: "2026-06-23"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "estonia-to-lebanon"
 origin_name: "Estonia"
 destination_name: "Lebanon"

@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Sweden to Georgia in 2026. EU health cert
 date: "2026-06-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "sweden-to-georgia"
 origin_name: "Sweden"
 destination_name: "Georgia"

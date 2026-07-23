@@ -3,7 +3,7 @@ title: "LOT Polish Airlines Pet Transport Guide"
 description: "LOT Polish Airlines pet transport policy 2026: cabin pets, cargo requirements, breed restrictions, crate sizing, and what to prepare when flying with pets on LOT."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "lot-polish-airlines"
 url: "/pet-transport/airlines/lot-polish-airlines/"
 airline:

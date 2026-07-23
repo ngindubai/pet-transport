@@ -3,7 +3,7 @@ title: "How to Find a Good Vet Abroad After Relocating with Your Pet"
 description: "Moving countries means finding a new vet. Here is how to find a reliable, qualified vet in your new country and what to bring from your old vet's records."
 date: "2026-05-06"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "how-to-find-a-vet-abroad-when-you-relocate-with-pets"
 url: "/blog/how-to-find-a-vet-abroad-when-you-relocate-with-pets/"
 seo:

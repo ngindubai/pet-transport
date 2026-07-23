@@ -1,12 +1,7 @@
-{{ define "title" }}{{ if .Params.seo.title }}{{ .Params.seo.title }}{{ else }}{{ .Title }} | {{ .Site.Params.brand }}{{ end }}{{ end }}
+{{ define "title" }}{{ $title := .Params.seo.title | default (printf "%s | %s" .Title .Site.Params.brand) }}{{ $title | truncate 68 }}{{ end }}
 
 {{ define "schema" }}
-{{ $author := .Params.author | default "PetTransportGlobal Editorial Team" }}
-{{ $parts := split (replace $author " - " ", ") ", " }}
-{{ $name := index $parts 0 }}
-{{ $jobTitle := "" }}
-{{ if ge (len $parts) 2 }}{{ $jobTitle = index $parts 1 }}{{ end }}
-{{ if eq $jobTitle "PetTransportGlobal" }}{{ $jobTitle = "" }}{{ end }}
+{{ $name := "Pet Transport Global Editorial Team" }}
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -16,14 +11,13 @@
     "datePublished": "{{ .Date.Format "2006-01-02" }}",
     "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
     "author": {
-        "@type": "Person",
+        "@type": "Organization",
         "name": {{ $name | jsonify | safeJS }},
-        "jobTitle": {{ $jobTitle | jsonify | safeJS }},
-        "worksFor": { "@type": "Organization", "name": "PetTransportGlobal" }
+        "parentOrganization": { "@type": "Organization", "name": "Pet Transport Global" }
     },
     "publisher": {
         "@type": "Organization",
-        "name": "PetTransportGlobal",
+        "name": "Pet Transport Global",
         "url": "https://pettransportglobal.com"
     }
 }
@@ -49,12 +43,7 @@
 
 {{ define "main" }}
 
-{{ $author := .Params.author | default "PetTransportGlobal Editorial Team" }}
-{{ $parts := split (replace $author " - " ", ") ", " }}
-{{ $name := index $parts 0 }}
-{{ $jobTitle := "" }}
-{{ if ge (len $parts) 2 }}{{ $jobTitle = index $parts 1 }}{{ end }}
-{{ if eq $jobTitle "PetTransportGlobal" }}{{ $jobTitle = "" }}{{ end }}
+{{ $name := "Pet Transport Global Editorial Team" }}
 
 {{/* ── Inner hero banner ── */}}
 <div class="ptg-inner-hero">
@@ -75,7 +64,7 @@
         </div>
         <h1 class="ptg-inner-h1">{{ .Title }}</h1>
         <p class="ptg-inner-sub">
-            By {{ $name }}{{ with $jobTitle }}, {{ . }}{{ end }} &nbsp;&middot;&nbsp;
+            By {{ $name }} &nbsp;&middot;&nbsp;
             <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
             &nbsp;&middot;&nbsp; {{ .ReadingTime }} min read
         </p>
@@ -114,8 +103,8 @@
                             <i class="fas fa-user" style="font-size:1.2rem;"></i>
                         </div>
                         <div>
-                            <strong>{{ $name }}</strong>{{ with $jobTitle }}, {{ . }}{{ end }}, PetTransportGlobal<br>
-                            <span style="font-size:0.88rem;color:#6c757d;">{{ $name }} writes for PetTransportGlobal. If you have a question about moving a pet, <a href="/#quote-form">get in touch</a>.</span>
+                            <strong>{{ $name }}</strong><br>
+                            <span style="font-size:0.88rem;color:#6c757d;">Company-authored guidance reviewed against the sources named in each article. If you have a route question, <a href="/#quote-form">get in touch</a>.</span>
                         </div>
                     </div>
                 </div>

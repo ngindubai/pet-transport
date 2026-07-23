@@ -5,7 +5,7 @@ description: "Zambia is on CFIA's high-risk dog rabies list, but a personal pet 
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "zambia-to-canada"
 origin_name: "Zambia"
 destination_name: "Canada"

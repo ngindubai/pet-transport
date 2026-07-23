@@ -5,7 +5,7 @@ description: "NAQIA requires internal and external parasite treatment before ent
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-papua-new-guinea"
 origin_name: "United States"
 destination_name: "Papua New Guinea"

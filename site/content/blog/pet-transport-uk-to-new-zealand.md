@@ -3,7 +3,7 @@ title: "Pet Transport UK to New Zealand: 2026 Process for One of the Strictest B
 description: "UK to New Zealand pet relocation in 2026: MPI import permit, RNATT titre test timing (3 to 24 months), 10-day quarantine at Auckland or Christchurch, Emirates and Singapore Airlines cargo options, real cost. Plan 5 to 7 months ahead."
 date: "2026-06-15"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-transport-uk-to-new-zealand"
 url: "/blog/pet-transport-uk-to-new-zealand/"
 tags:

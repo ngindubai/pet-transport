@@ -4,7 +4,7 @@ description: "Moving your pet from Japan to Singapore: AQS export certificate, A
 type: "routes"
 layout: "single"
 template_variant: "B"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "japan-to-singapore"
 origin_name: "Japan"
 destination_name: "Singapore"

@@ -4,7 +4,7 @@ description: "Moving your pet from Singapore to Japan: mandatory 180-day AQS pro
 type: "routes"
 layout: "single"
 template_variant: "A"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "singapore-to-japan"
 origin_name: "Singapore"
 destination_name: "Japan"

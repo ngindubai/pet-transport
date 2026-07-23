@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Finland to Georgia in 2026. NFSA import r
 date: "2026-06-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "finland-to-georgia"
 origin_name: "Finland"
 destination_name: "Georgia"

@@ -3,7 +3,7 @@ title: "Moving Internationally with a Doberman: Breed Restrictions and Travel Co
 description: "Dobermans face breed-specific legislation in several countries. Here is what Doberman owners need to know before planning an international move, including country-by-country restriction status."
 date: 2026-05-09
 type: blog
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-doberman-internationally"
 url: "/blog/travelling-with-a-doberman-internationally/"
 seo:

@@ -3,7 +3,7 @@ title: "Pet Transport from UK to Costa Rica: Requirements, Airlines and the Jour
 description: "Guide to shipping a dog or cat from the UK to Costa Rica. SENASA requirements, microchip, vaccines, health certificate and which airlines fly pets on this route."
 date: "2026-05-07"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "uk-to-costa-rica-pet-transport-guide"
 url: "/blog/uk-to-costa-rica-pet-transport-guide/"
 seo:

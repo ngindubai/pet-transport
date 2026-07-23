@@ -5,7 +5,7 @@ description: "SENASICA clears pets at the port of entry with no advance permit a
 date: "2026-07-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "malaysia-to-mexico"
 origin_name: "Malaysia"
 destination_name: "Mexico"

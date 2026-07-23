@@ -5,7 +5,7 @@ description: "No airline flies Barbados to Dubai or Abu Dhabi without a change o
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "barbados-to-united-arab-emirates"
 origin_name: "Barbados"
 destination_name: "United Arab Emirates"

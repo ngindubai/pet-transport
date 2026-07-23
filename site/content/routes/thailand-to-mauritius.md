@@ -4,7 +4,7 @@ title: "Moving Your Pet from Thailand to Mauritius | Complete Guide"
 description: "Complete guide to pet transport from Thailand to Mauritius. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "thailand-to-mauritius"
 origin_name: "Thailand"
 destination_name: "Mauritius"
@@ -21,7 +21,7 @@ route_data:
       microchip: "Required (ISO 11784/11785)"
       rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel"
       titre_test: "Required for: All pets from most countries. Minimum: 0.5 IU/ml. 180-day wait from test date before entry"
-      quarantine: "Mandatory quarantine. 30 days minimum days. Facility: Government quarantine station, Mauritius. Mandatory 30-day quarantine for all arriving pets. One of the longest quarantine periods globally."
+      quarantine: "Mandatory quarantine. 30 days minimum. Facility: Government quarantine station, Mauritius. Mandatory 30-day quarantine for all arriving pets. One of the longest quarantine periods globally."
       import_permit: "Required. Issued by: Veterinary Services Division, Ministry of Agro-Industry. Extremely limited import permits issued. Apply well in advance."
       health_certificate: "Required. Issued by: Official government veterinarian in approved country. Valid for 10 days from issue"
   airlines:
@@ -79,7 +79,7 @@ route_data:
       timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
       responsible: "You + airline check-in/cargo desk"
     - step: 8
-      action: "Quarantine on arrival (30 days minimum days)"
+      action: "Quarantine on arrival (30 days minimum)"
       timing: "Immediately on arrival (mandatory)"
       responsible: "Mauritius quarantine authority"
   cost_factors:
@@ -101,7 +101,7 @@ content:
   overview: |
     The Thailand to Mauritius route is one many expats and returning families use each year with their pets.
     
-    This route is one of the most demanding international pet transport routes. Start preparations at least 26 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. Mauritius requires mandatory quarantine (30 days minimum days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
+    This route is one of the most demanding international pet transport routes. Start preparations at least 26 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. Mauritius requires mandatory quarantine (30 days minimum) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
     
     The paperwork is the hard part. Once everything is in order, the journey itself is well-managed.
   sections:
@@ -109,7 +109,7 @@ content:
       body: |
         This is one of the more demanding international pet transport corridors. Mauritius runs a strict biosecurity programme and there are no shortcuts through it.
         
-        All pets must complete quarantine on arrival in Mauritius (at Government quarantine station, Mauritius) for 30 days minimum days. This is non-negotiable and is entirely separate from the pre-travel preparation.
+        All pets must complete quarantine on arrival in Mauritius (at Government quarantine station, Mauritius) for 30 days minimum. This is non-negotiable and is entirely separate from the pre-travel preparation.
         
         Mauritius is rabies-free and has extremely strict pet import controls similar to Australia. Pets must have lived in an approved rabies-free country for 6 months before import. Mandatory quarantine applies. Authority: Veterinary Services Division, Ministry of Agro-Industry and Food Security.
     - heading: "Practical advice for shipping your pet from Thailand"
@@ -125,7 +125,7 @@ faqs:
   - question: "How long does it take to prepare a pet for transport from Thailand to Mauritius?"
     answer: "Allow at least 26 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
   - question: "Does my pet need to quarantine when entering Mauritius?"
-    answer: "Yes, quarantine is mandatory in Mauritius. Your pet will stay for 30 days minimum days at Government quarantine station, Mauritius on arrival. This is non-negotiable and the cost is paid by the owner."
+    answer: "Yes, quarantine is mandatory in Mauritius. Your pet will stay for 30 days minimum at Government quarantine station, Mauritius on arrival. Confirm the facility, duration, and current charges with the destination authority before travel."
   - question: "Is a rabies titre test required for pets entering Mauritius?"
     answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Mauritius. Start this process as early as possible."
   - question: "Do I need an import permit to bring my pet into Mauritius?"

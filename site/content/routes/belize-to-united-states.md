@@ -5,7 +5,7 @@ description: "Belize is CDC high-risk for dog rabies and a New World Screwworm a
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "belize-to-united-states"
 origin_name: "Belize"
 destination_name: "United States"

@@ -5,7 +5,7 @@ description: "All pets entering Azerbaijan must arrive at Baku Heydar Aliyev Air
 date: "2026-06-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "poland-to-azerbaijan"
 origin_name: "Poland"
 destination_name: "Azerbaijan"

@@ -3,7 +3,7 @@ title: "Pet Transport UK to UAE: Costs, Timelines and Heat Restrictions for 2026
 description: "What it really costs to ship a dog or cat from the UK to Dubai or Abu Dhabi in 2026, plus the summer heat embargoes you must plan around. Get a quote."
 date: "2026-06-17"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "uk-to-dubai-uae-pet-transport-guide"
 url: "/blog/uk-to-dubai-uae-pet-transport-guide/"
 tags:

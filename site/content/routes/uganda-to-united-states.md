@@ -5,7 +5,7 @@ description: "Moving your pet from Uganda to the USA? Full CDC high-risk country
 date: "2026-06-11"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "uganda-to-united-states"
 origin_name: "Uganda"
 destination_name: "United States"

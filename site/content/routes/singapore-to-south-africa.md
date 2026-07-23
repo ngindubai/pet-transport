@@ -4,7 +4,7 @@ description: "Moving your pet from Singapore to South Africa: AVS export licence
 type: "routes"
 layout: "single"
 template_variant: "E"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "singapore-to-south-africa"
 origin_name: "Singapore"
 destination_name: "South Africa"

@@ -4,7 +4,7 @@ slug: "brazil"
 description: "Complete guide to exporting your pet from Brazil. Export requirements, airlines, and route guides for international destinations."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Brazil"
 country_code: "BR"
 content:
@@ -32,7 +32,7 @@ sections:
   - heading: "Popular routes from Brazil"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Brazil to Argentina](/pet-transport/brazil-to-argentina/)
       - [Brazil to Australia](/pet-transport/brazil-to-australia/)
       - [Brazil to Austria](/pet-transport/brazil-to-austria/)
@@ -89,11 +89,20 @@ sections:
       - [Brazil to Portugal](/pet-transport/brazil-to-portugal/)
       - [Brazil to Qatar](/pet-transport/brazil-to-qatar/)
       - [Brazil to Romania](/pet-transport/brazil-to-romania/)
+      - [Brazil to Saudi Arabia](/pet-transport/brazil-to-saudi-arabia/)
       - [Brazil to Singapore](/pet-transport/brazil-to-singapore/)
+      - [Brazil to Slovakia](/pet-transport/brazil-to-slovakia/)
+      - [Brazil to Slovenia](/pet-transport/brazil-to-slovenia/)
       - [Brazil to South Africa](/pet-transport/brazil-to-south-africa/)
+      - [Brazil to South Korea](/pet-transport/brazil-to-south-korea/)
       - [Brazil to Spain](/pet-transport/brazil-to-spain/)
+      - [Brazil to Sri Lanka](/pet-transport/brazil-to-sri-lanka/)
       - [Brazil to Sweden](/pet-transport/brazil-to-sweden/)
       - [Brazil to Switzerland](/pet-transport/brazil-to-switzerland/)
+      - [Brazil to Taiwan](/pet-transport/brazil-to-taiwan/)
+      - [Brazil to Tanzania](/pet-transport/brazil-to-tanzania/)
+      - [Brazil to Thailand](/pet-transport/brazil-to-thailand/)
+      - [Brazil to Turkey](/pet-transport/brazil-to-turkey/)
       - [Brazil to United Arab Emirates](/pet-transport/brazil-to-united-arab-emirates/)
       - [Brazil to United Kingdom](/pet-transport/brazil-to-united-kingdom/)
       - [Brazil to United States](/pet-transport/brazil-to-united-states/)

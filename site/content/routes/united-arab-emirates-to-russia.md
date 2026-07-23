@@ -5,7 +5,7 @@ description: "A daily Aeroflot service left Dubai for Moscow within days of Gulf
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-arab-emirates-to-russia"
 origin_name: "United Arab Emirates"
 destination_name: "Russia"

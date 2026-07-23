@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Zambia to the US in 2026. Zambia is CDC h
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "zambia-to-united-states"
 origin_name: "Zambia"
 destination_name: "United States"

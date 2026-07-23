@@ -5,7 +5,7 @@ description: "Malawi is DAFF non-approved, so 180 days staged abroad come first.
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "malawi-to-australia"
 origin_name: "Malawi"
 destination_name: "Australia"

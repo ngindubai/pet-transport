@@ -5,7 +5,7 @@ description: "Cameroon sits on CFIA's high-risk dog rabies list, but the 2022 ba
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "cameroon-to-canada"
 origin_name: "Cameroon"
 destination_name: "Canada"

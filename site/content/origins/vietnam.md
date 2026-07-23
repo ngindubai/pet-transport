@@ -4,7 +4,7 @@ slug: "vietnam"
 description: "Complete guide to exporting your pet from Vietnam."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Vietnam"
 country_code: "VN"
 overview: |
@@ -24,7 +24,7 @@ sections:
   - heading: "Popular routes from Vietnam"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Vietnam to Argentina](/pet-transport/vietnam-to-argentina/)
       - [Vietnam to Australia](/pet-transport/vietnam-to-australia/)
       - [Vietnam to Austria](/pet-transport/vietnam-to-austria/)
@@ -97,6 +97,7 @@ sections:
       - [Vietnam to Turkey](/pet-transport/vietnam-to-turkey/)
       - [Vietnam to United Arab Emirates](/pet-transport/vietnam-to-united-arab-emirates/)
       - [Vietnam to United Kingdom](/pet-transport/vietnam-to-united-kingdom/)
+      - [Vietnam to United States](/pet-transport/vietnam-to-united-states/)
       - [Vietnam to Zimbabwe](/pet-transport/vietnam-to-zimbabwe/)
 faqs:
   - question: "What do I need to export my pet from Vietnam?"

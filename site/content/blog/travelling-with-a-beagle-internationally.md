@@ -3,7 +3,7 @@ title: "Travelling Internationally with a Beagle: What Owners Need to Know"
 description: "A guide to flying internationally with a Beagle: cargo sizing, breed-specific health considerations, country restrictions, and preparation tips for a scent hound."
 date: "2026-05-10"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-beagle-internationally"
 url: "/blog/travelling-with-a-beagle-internationally/"
 seo:

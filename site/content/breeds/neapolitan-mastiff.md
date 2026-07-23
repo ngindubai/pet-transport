@@ -3,7 +3,7 @@ title: "Flying with a Neapolitan Mastiff | Breed Bans & Giant Dog Guide"
 description: "Country bans, airline cargo logistics, and import requirements for Neapolitan Mastiffs. Which destinations ban this giant breed and how to check."
 type: "breeds"
 layout: "single"
-author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "neapolitan-mastiff"
 breed_name: "Neapolitan Mastiff"
 brachycephalic: true

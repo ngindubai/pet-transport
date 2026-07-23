@@ -2,7 +2,7 @@
 title: "Importing a Pet to Trinidad and Tobago"
 description: "A step-by-step guide to importing cats and dogs to Trinidad and Tobago. Covers the TCVD import licence, health certificates, titre test rules and quarantine requirements."
 date: "2025-07-04"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/trinidad-and-tobago-pet-import-guide/"
 tags: ["trinidad", "tobago", "caribbean", "country guide", "pet import"]

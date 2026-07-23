@@ -3,7 +3,7 @@ title: "Moving to New Zealand with a Pet | Practical Guide 2026"
 description: "Everything you need to know about moving to New Zealand with a dog or cat. Approved countries, the 10-day quarantine process at Levin, costs, and how to plan the journey."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "moving-to-new-zealand-with-a-pet"
 url: "/blog/moving-to-new-zealand-with-a-pet/"
 seo:

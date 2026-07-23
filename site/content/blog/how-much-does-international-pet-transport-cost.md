@@ -3,7 +3,7 @@ title: "How Much Does International Pet Transport Cost?"
 description: "Vet fees, health certificates, crates, airline cargo, quarantine charges. Here's what pet transport actually costs, with realistic figures for popular routes."
 date: "2026-04-10"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "how-much-does-international-pet-transport-cost"
 url: "/blog/how-much-does-international-pet-transport-cost/"
 seo:

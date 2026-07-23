@@ -4,7 +4,7 @@ slug: "chile"
 description: "Complete guide to exporting your pet from Chile. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Chile"
 country_code: "CL"
 content:
@@ -30,7 +30,7 @@ sections:
   - heading: "Popular routes from Chile"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Chile to Argentina](/pet-transport/chile-to-argentina/)
       - [Chile to Australia](/pet-transport/chile-to-australia/)
       - [Chile to Austria](/pet-transport/chile-to-austria/)

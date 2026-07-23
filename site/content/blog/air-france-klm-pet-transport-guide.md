@@ -3,7 +3,7 @@ title: "Air France KLM Pet Transport: Cabin Allowances, Cargo Fees, and What's D
 description: "Air France and KLM both allow small pets in the cabin and carry larger pets as cargo. The policies are similar but not identical. Here's what to know for each."
 date: "2026-04-15"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "air-france-klm-pet-transport-guide"
 url: "/blog/air-france-klm-pet-transport-guide/"
 seo:

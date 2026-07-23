@@ -11,9 +11,20 @@
 {{- if .Params.links -}}
   {{- if reflect.IsMap .Params.links -}}
     {{- with .Params.links.sideways -}}
-      {{- range . -}}
-        {{- if site.GetPage .url -}}
-          {{- $out = $out | append . -}}
+      {{- range $entry := . -}}
+        {{- $url := "" -}}
+        {{- $text := "" -}}
+        {{- if reflect.IsMap $entry -}}
+          {{- $url = index $entry "url" | default "" -}}
+          {{- $text = index $entry "text" | default (index $entry "label") | default "" -}}
+        {{- else -}}
+          {{- $url = printf "%v" $entry -}}
+        {{- end -}}
+        {{- with site.GetPage $url -}}
+          {{- if not $text -}}
+            {{- $text = .Title -}}
+          {{- end -}}
+          {{- $out = $out | append (dict "url" $url "text" $text) -}}
         {{- end -}}
       {{- end -}}
     {{- end -}}

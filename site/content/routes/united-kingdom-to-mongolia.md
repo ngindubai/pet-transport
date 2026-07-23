@@ -5,7 +5,7 @@ description: "Mongolia asks less of an arriving pet than almost any other route 
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-mongolia"
 origin_name: "United Kingdom"
 destination_name: "Mongolia"

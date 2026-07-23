@@ -3,7 +3,7 @@ title: "China Eastern Airlines Pet Transport Guide"
 description: "China Eastern Airlines pet transport policy: cabin pets, cargo requirements, approved crates, breed restrictions, and what to prepare when flying with a pet on China Eastern."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "china-eastern-airlines"
 url: "/pet-transport/airlines/china-eastern-airlines/"
 airline:

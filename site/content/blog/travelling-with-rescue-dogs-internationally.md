@@ -3,7 +3,7 @@ title: "Travelling with Rescue Dogs Internationally: Documentation Gaps and How 
 description: "Rescue dogs often have incomplete vaccination histories, unknown microchip status, and questionable paperwork. How to travel internationally with a rescue dog and navigate the documentation challenges."
 date: "2026-06-17"
 type: "blog"
-author: "James Osei, Pet Transport Planning Specialist, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-rescue-dogs-internationally"
 url: "/blog/travelling-with-rescue-dogs-internationally/"
 seo:

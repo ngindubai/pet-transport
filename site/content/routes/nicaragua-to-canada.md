@@ -5,7 +5,7 @@ description: "Nicaragua is absent from CFIA's high-risk dog rabies list, last up
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "nicaragua-to-canada"
 origin_name: "Nicaragua"
 destination_name: "Canada"

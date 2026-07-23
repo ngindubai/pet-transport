@@ -5,7 +5,7 @@ description: "Singapore's rabies-free status carries no weight with Macau's IAM.
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "singapore-to-macau"
 origin_name: "Singapore"
 destination_name: "Macau"

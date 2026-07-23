@@ -5,7 +5,7 @@ description: "BAHFSA's Click2Clear ePermit costs USD 50 and covers 6 months, sam
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-bahamas"
 origin_name: "Canada"
 destination_name: "Bahamas"

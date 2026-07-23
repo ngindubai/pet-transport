@@ -3,7 +3,7 @@ title: "Pet Transport from Croatia | Export Requirements & Routes"
 description: "How to ship your dog or cat from Croatia internationally. Export requirements, health certificates, and HRVet endorsement explained."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "croatia-pet-export-guide"
 origin_country: "Croatia"
 origin_iso: "HR"
@@ -44,7 +44,7 @@ sections:
   - heading: "Popular routes from Croatia"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Croatia to Argentina](/pet-transport/croatia-to-argentina/)
       - [Croatia to Australia](/pet-transport/croatia-to-australia/)
       - [Croatia to Austria](/pet-transport/croatia-to-austria/)
@@ -119,7 +119,6 @@ sections:
       - [Croatia to United States](/pet-transport/croatia-to-united-states/)
       - [Croatia to Vietnam](/pet-transport/croatia-to-vietnam/)
       - [Croatia to Zimbabwe](/pet-transport/croatia-to-zimbabwe/)
-
 faqs:
   - question: "What documents does my pet need to leave Croatia?"
     answer: "Your pet needs a valid microchip (ISO standard), current rabies vaccination, and an official health certificate endorsed by HRVet. Specific destination countries may require additional documents such as a titre test result, import permit, or specific certificate formats."

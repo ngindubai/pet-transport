@@ -3,7 +3,7 @@ title: "Dubai to Australia Pet Transport: UAE Pets and Australia's Strict Biosec
 description: "Moving from Dubai to Australia with a dog or cat? Here is the full UAE-to-Australia process including Group 3 quarantine, titre test stand-down, and DAFF import permit."
 date: "2026-05-05"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "dubai-to-australia-pet-transport-guide"
 url: "/blog/dubai-to-australia-pet-transport-guide/"
 seo:

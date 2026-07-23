@@ -5,7 +5,7 @@ description: "No non-stop flight links Manila to Sao Paulo, so a Gulf hub connec
 date: "2026-07-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "philippines-to-brazil"
 origin_name: "Philippines"
 destination_name: "Brazil"

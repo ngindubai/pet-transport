@@ -5,7 +5,7 @@ description: "Kyrgyzstan is CDC high-risk for dog rabies. Dogs need a titre test
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "kyrgyzstan-to-united-states"
 origin_name: "Kyrgyzstan"
 destination_name: "United States"

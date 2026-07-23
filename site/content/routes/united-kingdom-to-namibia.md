@@ -5,7 +5,7 @@ description: "Namibia doesn't require a rabies titre test from any country, incl
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-namibia"
 origin_name: "United Kingdom"
 destination_name: "Namibia"

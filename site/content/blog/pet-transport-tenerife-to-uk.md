@@ -4,7 +4,7 @@ description: "Moving a dog or cat from Tenerife to the UK in 2026. Animal Health
 date: "2026-06-09"
 type: "blog"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-transport-tenerife-to-uk"
 ---
 

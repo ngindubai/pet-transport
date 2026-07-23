@@ -5,7 +5,7 @@ description: "Since 22 April 2026, GB pets need an Animal Health Certificate, no
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-andorra"
 origin_name: "United Kingdom"
 destination_name: "Andorra"

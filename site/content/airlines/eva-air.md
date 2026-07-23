@@ -3,7 +3,7 @@ title: "EVA Air Pet Transport Guide"
 description: "EVA Air pet transport policy 2026: cabin pets, cargo requirements, approved breeds, crate sizing, and what Taiwan-bound pet owners need to know."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "eva-air"
 url: "/pet-transport/airlines/eva-air/"
 airline:

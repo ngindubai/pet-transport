@@ -3,7 +3,7 @@ title: "IndiGo Pet Policy: Flying with Pets on India's Largest Airline"
 description: "IndiGo is India's biggest carrier but has limited pet-in-cabin options. Here is what you need to know about IndiGo's pet transport policy for domestic and international flights."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "indigo"
 url: "/pet-transport/airlines/indigo/"
 seo:

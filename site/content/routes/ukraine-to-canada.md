@@ -5,7 +5,7 @@ description: "Ukraine sits on the CFIA's high-risk list for dog rabies, which se
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "ukraine-to-canada"
 origin_name: "Ukraine"
 destination_name: "Canada"

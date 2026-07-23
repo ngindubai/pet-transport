@@ -5,7 +5,7 @@ description: "Papua New Guinea isn't on the CDC's dog rabies high-risk list, so 
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "papua-new-guinea-to-united-states"
 origin_name: "Papua New Guinea"
 destination_name: "United States"

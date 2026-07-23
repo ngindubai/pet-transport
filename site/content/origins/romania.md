@@ -4,7 +4,7 @@ slug: "romania"
 description: "Complete guide to exporting your pet from Romania."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Romania"
 country_code: "RO"
 overview: |
@@ -24,7 +24,7 @@ sections:
   - heading: "Popular routes from Romania"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Romania to Argentina](/pet-transport/romania-to-argentina/)
       - [Romania to Australia](/pet-transport/romania-to-australia/)
       - [Romania to Austria](/pet-transport/romania-to-austria/)
@@ -95,6 +95,8 @@ sections:
       - [Romania to Thailand](/pet-transport/romania-to-thailand/)
       - [Romania to Turkey](/pet-transport/romania-to-turkey/)
       - [Romania to United Arab Emirates](/pet-transport/romania-to-united-arab-emirates/)
+      - [Romania to United Kingdom](/pet-transport/romania-to-united-kingdom/)
+      - [Romania to United States](/pet-transport/romania-to-united-states/)
       - [Romania to Vietnam](/pet-transport/romania-to-vietnam/)
       - [Romania to Zimbabwe](/pet-transport/romania-to-zimbabwe/)
 faqs:

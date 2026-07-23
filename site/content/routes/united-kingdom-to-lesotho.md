@@ -5,7 +5,7 @@ description: "Lesotho skips the titre test for UK-origin pets but requires an im
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-lesotho"
 origin_name: "United Kingdom"
 destination_name: "Lesotho"

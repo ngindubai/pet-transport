@@ -5,7 +5,7 @@ description: "Moving your dog or cat from the Philippines to the UK in 2026. BAI
 date: "2026-06-05"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "philippines-to-united-kingdom"
 origin_name: "Philippines"
 destination_name: "United Kingdom"

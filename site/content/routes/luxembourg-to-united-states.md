@@ -5,7 +5,7 @@ description: "Luxembourg has no direct passenger cargo route for pets, but it's 
 date: "2026-07-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "luxembourg-to-united-states"
 origin_name: "Luxembourg"
 destination_name: "United States"

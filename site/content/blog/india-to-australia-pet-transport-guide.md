@@ -3,7 +3,7 @@ title: "Pet Transport from India to Australia: A Realistic Guide"
 description: "Moving from India to Australia with a dog or cat involves strict quarantine, approved country pathways, and lengthy preparation. Here is what to expect."
 date: "2026-05-06"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "india-to-australia-pet-transport-guide"
 url: "/blog/india-to-australia-pet-transport-guide/"
 seo:

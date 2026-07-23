@@ -5,7 +5,7 @@ description: "Botswana is on CFIA's high-risk dog rabies list, and no airline fl
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "botswana-to-canada"
 origin_name: "Botswana"
 destination_name: "Canada"

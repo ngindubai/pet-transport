@@ -5,7 +5,7 @@ description: "Belize's BAHA permit runs 90 days and covers 10 pets for BZ$50, bu
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-arab-emirates-to-belize"
 origin_name: "United Arab Emirates"
 destination_name: "Belize"

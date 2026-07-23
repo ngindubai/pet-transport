@@ -5,7 +5,7 @@ description: "USDA APHIS will not endorse a US export certificate for Namibia un
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-namibia"
 origin_name: "United States"
 destination_name: "Namibia"

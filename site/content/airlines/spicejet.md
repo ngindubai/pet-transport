@@ -3,7 +3,7 @@ title: "SpiceJet Pet Policy: Pets on SpiceJet Flights"
 description: "SpiceJet is one of India's major low-cost carriers. Here is SpiceJet's pet transport policy, including domestic Indian routes, breed restrictions, and booking process."
 date: 2026-05-09
 type: airlines
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "spicejet"
 url: "/pet-transport/airlines/spicejet/"
 seo:

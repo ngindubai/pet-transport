@@ -3,7 +3,7 @@ title: "Bringing Your Pet to Croatia: EU Rules and What to Prepare"
 description: "Croatia joined the EU in 2013 and the Schengen Area in 2023. Here is a practical guide to pet import rules, microchip requirements, and rabies vaccines for dogs and cats."
 date: "2026-05-06"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "croatia-pet-import-guide"
 url: "/blog/croatia-pet-import-guide/"
 seo:

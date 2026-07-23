@@ -3,7 +3,7 @@ title: "Moving to Ecuador with Your Pet: Vet Certificates and Import Rules"
 description: "Ecuador requires a health certificate, rabies vaccination, and AGROCALIDAD approval for pet imports. This guide covers what you need and how to get it."
 date: "2026-05-06"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "ecuador-pet-import-guide"
 url: "/blog/ecuador-pet-import-guide/"
 seo:

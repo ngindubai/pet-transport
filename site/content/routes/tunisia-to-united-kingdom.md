@@ -5,7 +5,7 @@ description: "Tunisia is unlisted for GB pet travel: FAVN titre test, 90-day wai
 date: "2026-07-13"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "tunisia-to-united-kingdom"
 origin_name: "Tunisia"
 destination_name: "United Kingdom"

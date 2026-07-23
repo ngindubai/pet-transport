@@ -5,7 +5,7 @@ description: "Delta's Johannesburg-Atlanta nonstop matters on the return leg. He
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-lesotho"
 origin_name: "United States"
 destination_name: "Lesotho"

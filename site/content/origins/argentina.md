@@ -4,7 +4,7 @@ slug: "argentina"
 description: "Complete guide to exporting your pet from Argentina. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Argentina"
 country_code: "AR"
 content:
@@ -32,7 +32,7 @@ sections:
   - heading: "Popular routes from Argentina"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Argentina to Australia](/pet-transport/argentina-to-australia/)
       - [Argentina to Austria](/pet-transport/argentina-to-austria/)
       - [Argentina to Bahrain](/pet-transport/argentina-to-bahrain/)

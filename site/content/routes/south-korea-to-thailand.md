@@ -5,7 +5,7 @@ description: "Moving a dog or cat from South Korea to Thailand in 2026. DLD impo
 date: "2026-06-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "south-korea-to-thailand"
 origin_name: "South Korea"
 destination_name: "Thailand"

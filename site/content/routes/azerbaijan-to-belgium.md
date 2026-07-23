@@ -5,7 +5,7 @@ description: "Moving a pet from Azerbaijan to Belgium in 2026. Azerbaijan EU-unl
 date: "2026-06-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "azerbaijan-to-belgium"
 origin_name: "Azerbaijan"
 destination_name: "Belgium"

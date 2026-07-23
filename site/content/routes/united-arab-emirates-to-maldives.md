@@ -5,7 +5,7 @@ description: "United Arab Emirates to Maldives pet transport in 2026. Dogs are b
 date: "2026-07-11"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-arab-emirates-to-maldives"
 origin_name: "United Arab Emirates"
 destination_name: "Maldives"

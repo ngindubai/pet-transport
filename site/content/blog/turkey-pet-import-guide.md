@@ -3,7 +3,7 @@ title: "Bringing a Pet to Turkey: Import Rules, Vaccinations and What Expats Nee
 description: "Complete guide to bringing your dog or cat to Turkey in 2026: Ministry of Agriculture health certificate, rabies rules, microchip requirements, and Istanbul arrival."
 date: "2026-05-06"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "turkey-pet-import-guide"
 url: "/blog/turkey-pet-import-guide/"
 seo:

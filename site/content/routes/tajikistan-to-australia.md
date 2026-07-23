@@ -5,7 +5,7 @@ description: "Tajikistan has no DAFF approval for direct entry. No airline flies
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "tajikistan-to-australia"
 origin_name: "Tajikistan"
 destination_name: "Australia"

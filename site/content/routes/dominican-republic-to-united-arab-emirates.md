@@ -5,7 +5,7 @@ description: "Santo Domingo to Dubai or Abu Dhabi in 2026. MOCCAE requires a rab
 date: "2026-07-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "dominican-republic-to-united-arab-emirates"
 origin_name: "Dominican Republic"
 destination_name: "United Arab Emirates"

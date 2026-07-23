@@ -5,7 +5,7 @@ description: "Mongolia has no direct US flights; Korean Air's Seoul connection i
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "mongolia-to-united-states"
 origin_name: "Mongolia"
 destination_name: "United States"

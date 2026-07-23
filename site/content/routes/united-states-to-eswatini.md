@@ -5,7 +5,7 @@ description: "The CDC high-risk rules that govern Eswatini-to-US travel don't ap
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-eswatini"
 origin_name: "United States"
 destination_name: "Eswatini"

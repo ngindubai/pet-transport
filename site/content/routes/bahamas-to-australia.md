@@ -5,7 +5,7 @@ description: "The Bahamas holds DAFF Group 3 status, skipping the 180-day detour
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "bahamas-to-australia"
 origin_name: "Bahamas"
 destination_name: "Australia"

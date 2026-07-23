@@ -5,7 +5,7 @@ description: "Maldives to Australia pet transport in 2026. DAFF classes the Mald
 date: "2026-07-11"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "maldives-to-australia"
 origin_name: "Maldives"
 destination_name: "Australia"

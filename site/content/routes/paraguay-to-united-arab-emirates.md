@@ -5,7 +5,7 @@ description: "Paraguay is not on MOCCAE's low-risk list, so a rabies titre test 
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "paraguay-to-united-arab-emirates"
 origin_name: "Paraguay"
 destination_name: "United Arab Emirates"

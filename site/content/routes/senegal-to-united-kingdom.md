@@ -5,7 +5,7 @@ description: "Senegal is unlisted for GB pet travel, so a rabies titre test and 
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "senegal-to-united-kingdom"
 origin_name: "Senegal"
 destination_name: "United Kingdom"

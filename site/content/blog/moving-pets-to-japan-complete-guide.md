@@ -3,7 +3,7 @@ title: "Moving Your Pet to Japan: The 180-Day Rule and What It Really Means"
 description: "Japan's pet import rules are among the world's strictest. The 180-day titre test timing rule catches most people out. Here's exactly how to get it right."
 date: "2026-03-10"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "moving-pets-to-japan-complete-guide"
 url: "/blog/moving-pets-to-japan-complete-guide/"
 seo:

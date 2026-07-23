@@ -3,7 +3,7 @@ title: "International Pet Travel with a Poodle: A Breed Owner's Guide"
 description: "Poodles are one of the most internationally mobile dog breeds -- low health restrictions, no breed bans, and calm temperaments. Here is what you need for international travel."
 date: "2026-05-06"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-poodle-internationally"
 url: "/blog/travelling-with-a-poodle-internationally/"
 seo:

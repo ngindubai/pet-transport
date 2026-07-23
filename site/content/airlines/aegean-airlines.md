@@ -3,7 +3,7 @@ title: "Aegean Airlines Pet Transport Guide"
 description: "Aegean Airlines pet policy for 2026: cabin pets under 8kg, cargo acceptance for larger animals, Greece routes, and what to know when flying your dog or cat with Greece's main carrier."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "aegean-airlines"
 url: "/pet-transport/airlines/aegean-airlines/"
 airline:

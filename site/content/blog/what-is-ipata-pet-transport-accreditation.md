@@ -3,7 +3,7 @@ title: "What Is IPATA and Why It Matters When Moving Pets Internationally"
 description: "A guide to IPATA (International Pet and Animal Transportation Association): what it is, what membership means, how to find an IPATA member, and when you should use one."
 date: "2026-05-10"
 type: "blog"
-author: "James Osei, Pet Transport Planning Specialist, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "what-is-ipata-pet-transport-accreditation"
 url: "/blog/what-is-ipata-pet-transport-accreditation/"
 seo:

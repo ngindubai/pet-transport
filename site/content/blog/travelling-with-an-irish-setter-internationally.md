@@ -3,7 +3,7 @@ title: "International Travel with an Irish Setter: Size, Routes and Key Consider
 description: "Irish Setters are large, energetic dogs. This guide covers breed restrictions, crate sizing, airline policies and the key international routes for Irish Setter owners moving abroad."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-an-irish-setter-internationally"
 url: "/blog/travelling-with-an-irish-setter-internationally/"
 seo:

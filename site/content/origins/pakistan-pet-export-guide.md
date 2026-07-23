@@ -3,7 +3,7 @@ title: "Shipping Pets from Pakistan Internationally | PetTransportGlobal"
 description: "How to ship your dog or cat from Pakistan internationally. Export requirements, health certificates, and AQD endorsement explained."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pakistan-pet-export-guide"
 origin_country: "Pakistan"
 origin_iso: "PK"
@@ -44,7 +44,7 @@ sections:
   - heading: "Popular routes from Pakistan"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Pakistan to Argentina](/pet-transport/pakistan-to-argentina/)
       - [Pakistan to Australia](/pet-transport/pakistan-to-australia/)
       - [Pakistan to Austria](/pet-transport/pakistan-to-austria/)
@@ -119,7 +119,6 @@ sections:
       - [Pakistan to United States](/pet-transport/pakistan-to-united-states/)
       - [Pakistan to Vietnam](/pet-transport/pakistan-to-vietnam/)
       - [Pakistan to Zimbabwe](/pet-transport/pakistan-to-zimbabwe/)
-
 faqs:
   - question: "What documents does my pet need to leave Pakistan?"
     answer: "Your pet needs a valid microchip (ISO standard), current rabies vaccination, and an official health certificate endorsed by AQD. Specific destination countries may require additional documents such as a titre test result, import permit, or specific certificate formats."

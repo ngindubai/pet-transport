@@ -3,7 +3,7 @@ title: "Flying with a Shiba Inu | Japan Import Rules & Air Travel Guide"
 description: "Shiba Inu international travel: Japan's import rules for Japanese-born dogs, quarantine requirements, and airline cargo guide."
 type: "breeds"
 layout: "single"
-author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "shiba-inu"
 breed_name: "Shiba Inu"
 brachycephalic: false

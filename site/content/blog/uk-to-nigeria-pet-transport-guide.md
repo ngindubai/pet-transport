@@ -3,7 +3,7 @@ title: "Pet Transport from UK to Nigeria: NAFDAC Permits, Airlines and the Proce
 description: "Guide to shipping a dog or cat from the UK to Nigeria. NAFDAC veterinary import permit, APHA health certificate, rabies requirements and airlines flying pets to Lagos."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "uk-to-nigeria-pet-transport-guide"
 url: "/blog/uk-to-nigeria-pet-transport-guide/"
 seo:

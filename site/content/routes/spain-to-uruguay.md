@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Spain to Uruguay in 2026. MGAP import per
 date: "2026-06-28"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "spain-to-uruguay"
 origin_name: "Spain"
 destination_name: "Uruguay"

@@ -5,7 +5,7 @@ description: "Air Macau flies Osaka to Macau direct in under four hours, but car
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "japan-to-macau"
 origin_name: "Japan"
 destination_name: "Macau"

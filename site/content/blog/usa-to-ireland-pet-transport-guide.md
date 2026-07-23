@@ -3,7 +3,7 @@ title: "Pet Transport USA to Ireland 2026 | Complete Guide"
 description: "Moving your dog or cat from the USA to Ireland. Rabies titre test, USDA APHIS health cert, EU entry rules via Dublin, and how long the whole process takes."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "usa-to-ireland-pet-transport-guide"
 url: "/blog/usa-to-ireland-pet-transport-guide/"
 seo:

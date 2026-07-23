@@ -5,7 +5,7 @@ description: "UK pets need certificate 3567 and a 21-day wait for Serbia, no tit
 date: "2026-07-13"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-serbia"
 origin_name: "United Kingdom"
 destination_name: "Serbia"

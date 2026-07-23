@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Uzbekistan to Germany in 2026. Uzbekistan
 date: "2026-07-12"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "uzbekistan-to-germany"
 origin_name: "Uzbekistan"
 destination_name: "Germany"

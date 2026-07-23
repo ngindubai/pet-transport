@@ -5,7 +5,7 @@ description: "A US pet only needs a current rabies shot and a USDA-endorsed cert
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-albania"
 origin_name: "United States"
 destination_name: "Albania"

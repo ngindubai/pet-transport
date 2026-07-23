@@ -5,7 +5,7 @@ description: "Mozambique doesn't require a rabies titre test on entry, unlike th
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-mozambique"
 origin_name: "United Kingdom"
 destination_name: "Mozambique"

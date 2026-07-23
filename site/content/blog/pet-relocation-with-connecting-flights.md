@@ -3,7 +3,7 @@ title: "Pet Transport on Connecting Flights: What Happens in Transit?"
 description: "Most international pet shipments involve a connecting flight. This guide explains how pets are handled at transfer airports, what can go wrong and how to choose a safe routing."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-relocation-with-connecting-flights"
 url: "/blog/pet-relocation-with-connecting-flights/"
 seo:

@@ -2,7 +2,7 @@
 title: "El Al Israel Airlines Pet Transport: Cabin and Cargo Policies"
 description: "El Al Israel Airlines pet transport policies explained. Covers cabin pet acceptance for small dogs and cats, cargo hold pets, Israel import requirements, breed restrictions and booking process."
 date: "2025-08-18"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "airlines"
 url: "/pet-transport/airlines/el-al/"
 airline_name: "El Al Israel Airlines"

@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Germany to Uruguay in 2026. MGAP import p
 date: "2026-06-28"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "germany-to-uruguay"
 origin_name: "Germany"
 destination_name: "Uruguay"

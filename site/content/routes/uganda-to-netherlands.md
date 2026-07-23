@@ -5,7 +5,7 @@ description: "Moving your pet from Uganda to the Netherlands? Uganda is not EU-l
 date: "2026-06-11"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "uganda-to-netherlands"
 origin_name: "Uganda"
 destination_name: "Netherlands"

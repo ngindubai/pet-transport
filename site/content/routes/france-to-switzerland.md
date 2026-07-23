@@ -4,7 +4,7 @@ description: "Moving your pet from France to Switzerland: bilateral EU-CH agreem
 type: "routes"
 layout: "single"
 template_variant: "D"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "france-to-switzerland"
 origin_name: "France"
 destination_name: "Switzerland"

@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Almaty or Astana to Istanbul in 2026. KVC
 date: "2026-07-09"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "kazakhstan-to-turkey"
 origin_name: "Kazakhstan"
 destination_name: "Turkey"

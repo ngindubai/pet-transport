@@ -5,7 +5,7 @@ description: "DSV's import permit for Cote d'Ivoire runs through two Gmail addre
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-ivory-coast"
 origin_name: "Australia"
 destination_name: "Ivory Coast"

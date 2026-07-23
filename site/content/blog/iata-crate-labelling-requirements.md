@@ -3,7 +3,7 @@ title: "IATA Crate Labelling: What Labels Your Pet's Travel Crate Must Have"
 description: "IATA regulations require specific labels on any crate carrying a live animal by air. Get this wrong and your pet may not be loaded. Full guide to IATA crate labelling requirements."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "iata-crate-labelling-requirements"
 url: "/blog/iata-crate-labelling-requirements/"
 seo:

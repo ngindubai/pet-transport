@@ -3,7 +3,7 @@ title: "Moving to Mexico with a Pet"
 description: "A complete guide to relocating to Mexico with your dog or cat. SENASICA health certificate, breed rules, vet access, and practical tips for cities like Mexico City, Merida, and Puerto Vallarta."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "moving-to-mexico-with-a-pet"
 url: "/blog/moving-to-mexico-with-a-pet/"
 seo:

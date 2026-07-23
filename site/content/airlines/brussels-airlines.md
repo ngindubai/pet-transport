@@ -3,7 +3,7 @@ title: "Brussels Airlines Pet Transport Guide"
 description: "Brussels Airlines pet policy for 2026: cabin pets under 8kg, cargo for larger animals, Belgium routes, and what to know when flying your dog or cat with the Belgian carrier."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "brussels-airlines"
 url: "/pet-transport/airlines/brussels-airlines/"
 airline:

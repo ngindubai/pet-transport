@@ -5,7 +5,7 @@ description: "Air Serbia flies Belgrade to Dubai non-stop in under six hours, an
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "serbia-to-united-arab-emirates"
 origin_name: "Serbia"
 destination_name: "United Arab Emirates"

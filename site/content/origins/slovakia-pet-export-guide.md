@@ -3,7 +3,7 @@ title: "Pet Transport from Slovakia | Export Requirements & Routes"
 description: "How to ship your dog or cat from Slovakia internationally. Export requirements, health certificates, and SVFA endorsement explained."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "slovakia-pet-export-guide"
 origin_country: "Slovakia"
 origin_iso: "SK"
@@ -44,7 +44,7 @@ sections:
   - heading: "Popular routes from Slovakia"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Slovakia to Argentina](/pet-transport/slovakia-to-argentina/)
       - [Slovakia to Australia](/pet-transport/slovakia-to-australia/)
       - [Slovakia to Austria](/pet-transport/slovakia-to-austria/)
@@ -116,9 +116,9 @@ sections:
       - [Slovakia to Turkey](/pet-transport/slovakia-to-turkey/)
       - [Slovakia to United Arab Emirates](/pet-transport/slovakia-to-united-arab-emirates/)
       - [Slovakia to United Kingdom](/pet-transport/slovakia-to-united-kingdom/)
+      - [Slovakia to United States](/pet-transport/slovakia-to-united-states/)
       - [Slovakia to Vietnam](/pet-transport/slovakia-to-vietnam/)
       - [Slovakia to Zimbabwe](/pet-transport/slovakia-to-zimbabwe/)
-
 faqs:
   - question: "What documents does my pet need to leave Slovakia?"
     answer: "Your pet needs a valid microchip (ISO standard), current rabies vaccination, and an official health certificate endorsed by SVFA. Specific destination countries may require additional documents such as a titre test result, import permit, or specific certificate formats."

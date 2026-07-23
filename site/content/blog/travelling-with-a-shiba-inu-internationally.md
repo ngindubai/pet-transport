@@ -3,7 +3,7 @@ title: "International Travel with a Shiba Inu: Japan Rules, Breed Notes and Rout
 description: "Shiba Inu owners planning international moves need to know about breed classification, airline policies and the Japan import process for returning home. Full guide here."
 date: "2026-05-07"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-shiba-inu-internationally"
 url: "/blog/travelling-with-a-shiba-inu-internationally/"
 seo:

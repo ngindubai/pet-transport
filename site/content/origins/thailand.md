@@ -4,7 +4,7 @@ slug: "thailand"
 description: "Complete guide to exporting your pet from Thailand."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Thailand"
 country_code: "TH"
 overview: |
@@ -24,7 +24,7 @@ sections:
   - heading: "Popular routes from Thailand"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Thailand to Argentina](/pet-transport/thailand-to-argentina/)
       - [Thailand to Australia](/pet-transport/thailand-to-australia/)
       - [Thailand to Austria](/pet-transport/thailand-to-austria/)
@@ -54,6 +54,7 @@ sections:
       - [Thailand to Hong Kong](/pet-transport/thailand-to-hong-kong/)
       - [Thailand to Hungary](/pet-transport/thailand-to-hungary/)
       - [Thailand to India](/pet-transport/thailand-to-india/)
+      - [Thailand to Indonesia](/pet-transport/thailand-to-indonesia/)
       - [Thailand to Ireland](/pet-transport/thailand-to-ireland/)
       - [Thailand to Israel](/pet-transport/thailand-to-israel/)
       - [Thailand to Italy](/pet-transport/thailand-to-italy/)
@@ -62,8 +63,10 @@ sections:
       - [Thailand to Kenya](/pet-transport/thailand-to-kenya/)
       - [Thailand to Kuwait](/pet-transport/thailand-to-kuwait/)
       - [Thailand to Luxembourg](/pet-transport/thailand-to-luxembourg/)
+      - [Thailand to Malaysia](/pet-transport/thailand-to-malaysia/)
       - [Thailand to Malta](/pet-transport/thailand-to-malta/)
       - [Thailand to Mauritius](/pet-transport/thailand-to-mauritius/)
+      - [Thailand to Mexico](/pet-transport/thailand-to-mexico/)
       - [Thailand to Morocco](/pet-transport/thailand-to-morocco/)
       - [Thailand to Myanmar](/pet-transport/thailand-to-myanmar/)
       - [Thailand to Nepal](/pet-transport/thailand-to-nepal/)
@@ -76,18 +79,24 @@ sections:
       - [Thailand to Peru](/pet-transport/thailand-to-peru/)
       - [Thailand to Philippines](/pet-transport/thailand-to-philippines/)
       - [Thailand to Poland](/pet-transport/thailand-to-poland/)
+      - [Thailand to Portugal](/pet-transport/thailand-to-portugal/)
       - [Thailand to Qatar](/pet-transport/thailand-to-qatar/)
       - [Thailand to Romania](/pet-transport/thailand-to-romania/)
       - [Thailand to Saudi Arabia](/pet-transport/thailand-to-saudi-arabia/)
       - [Thailand to Singapore](/pet-transport/thailand-to-singapore/)
       - [Thailand to Slovakia](/pet-transport/thailand-to-slovakia/)
       - [Thailand to South Africa](/pet-transport/thailand-to-south-africa/)
+      - [Thailand to South Korea](/pet-transport/thailand-to-south-korea/)
       - [Thailand to Spain](/pet-transport/thailand-to-spain/)
       - [Thailand to Sri Lanka](/pet-transport/thailand-to-sri-lanka/)
       - [Thailand to Sweden](/pet-transport/thailand-to-sweden/)
+      - [Thailand to Switzerland](/pet-transport/thailand-to-switzerland/)
       - [Thailand to Taiwan](/pet-transport/thailand-to-taiwan/)
+      - [Thailand to Tanzania](/pet-transport/thailand-to-tanzania/)
       - [Thailand to Turkey](/pet-transport/thailand-to-turkey/)
       - [Thailand to United Arab Emirates](/pet-transport/thailand-to-united-arab-emirates/)
+      - [Thailand to United Kingdom](/pet-transport/thailand-to-united-kingdom/)
+      - [Thailand to United States](/pet-transport/thailand-to-united-states/)
       - [Thailand to Vietnam](/pet-transport/thailand-to-vietnam/)
       - [Thailand to Zimbabwe](/pet-transport/thailand-to-zimbabwe/)
 faqs:

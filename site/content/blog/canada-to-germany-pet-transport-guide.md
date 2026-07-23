@@ -2,7 +2,7 @@
 title: "Pet Transport from Canada to Germany"
 description: "How to move your cat or dog from Canada to Germany. Covers the EU third-country health certificate, CFIA endorsement, rabies titre test rules, 3-month wait and airline options."
 date: "2025-07-26"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/canada-to-germany-pet-transport-guide/"
 tags: ["canada", "germany", "europe", "route guide", "pet transport"]

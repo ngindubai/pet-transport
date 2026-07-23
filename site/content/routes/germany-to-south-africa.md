@@ -4,7 +4,7 @@ description: "Shipping your pet from Germany to South Africa: DALRRD import perm
 type: "routes"
 layout: "single"
 template_variant: "C"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "germany-to-south-africa"
 origin_name: "Germany"
 destination_name: "South Africa"

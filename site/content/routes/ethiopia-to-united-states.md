@@ -5,7 +5,7 @@ description: "Ethiopian Airlines flies Addis Ababa to Washington Dulles non-stop
 date: "2026-07-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "ethiopia-to-united-states"
 origin_name: "Ethiopia"
 destination_name: "United States"

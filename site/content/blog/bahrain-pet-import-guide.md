@@ -3,7 +3,7 @@ title: "Bringing a Pet to Bahrain: Import Permit, Health Certificate and Gulf Ru
 description: "Guide to bringing your dog or cat to Bahrain in 2026: import permit from Directorate of Agricultural Affairs, health certificate, microchip, and arrival at Bahrain International Airport."
 date: "2026-05-06"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "bahrain-pet-import-guide"
 url: "/blog/bahrain-pet-import-guide/"
 seo:

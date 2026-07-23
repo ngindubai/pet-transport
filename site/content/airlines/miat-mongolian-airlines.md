@@ -2,7 +2,7 @@
 title: "MIAT Mongolian Airlines Pet Transport: Cargo Policies and Pet Travel Guide"
 description: "MIAT Mongolian Airlines pet transport policies explained. Covers cargo hold pet acceptance, Mongolia import requirements, crate rules and booking process for Ulaanbaatar routes."
 date: "2025-08-13"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "airlines"
 url: "/pet-transport/airlines/miat-mongolian-airlines/"
 airline_name: "MIAT Mongolian Airlines"

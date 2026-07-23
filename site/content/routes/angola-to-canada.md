@@ -5,7 +5,7 @@ description: "Angola is CFIA high-risk for dog rabies, yet a personal pet skips 
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "angola-to-canada"
 origin_name: "Angola"
 destination_name: "Canada"

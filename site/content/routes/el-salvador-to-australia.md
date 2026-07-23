@@ -5,7 +5,7 @@ description: "El Salvador sits outside every one of Australia's approved country
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "el-salvador-to-australia"
 origin_name: "El Salvador"
 destination_name: "Australia"

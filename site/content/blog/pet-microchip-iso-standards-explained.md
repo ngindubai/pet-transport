@@ -2,7 +2,7 @@
 title: "Pet Microchip ISO Standards Explained"
 description: "Why does your pet's microchip number matter for international travel? This guide explains ISO 11784/11785 standards, the 15-digit chip requirement and how to check your pet is correctly chipped."
 date: "2025-07-16"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/pet-microchip-iso-standards-explained/"
 tags: ["microchip", "ISO 11784", "ISO 11785", "pet documentation", "international pet travel"]

@@ -5,7 +5,7 @@ description: "Moving pets from Japan to South Korea in 2026. Japan is QIAS low-r
 date: "2026-06-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "japan-to-south-korea"
 origin_name: "Japan"
 destination_name: "South Korea"

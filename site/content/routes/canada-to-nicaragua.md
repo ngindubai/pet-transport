@@ -5,7 +5,7 @@ description: "A CFIA endorsement costs CAD 20 to 40 and Nicaragua asks for no ra
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-nicaragua"
 origin_name: "Canada"
 destination_name: "Nicaragua"

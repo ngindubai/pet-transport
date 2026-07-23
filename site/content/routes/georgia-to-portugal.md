@@ -5,7 +5,7 @@ description: "Moving a pet from Georgia to Portugal in 2026. Georgia EU-unlisted
 date: "2026-06-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "georgia-to-portugal"
 origin_name: "Georgia"
 destination_name: "Portugal"

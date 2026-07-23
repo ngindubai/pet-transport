@@ -3,7 +3,7 @@ title: "Air Arabia Pet Transport Guide"
 description: "Air Arabia pet policy for 2026: assistance animals only on most routes, what this means for UAE pet owners, and which airlines to use for cargo pets from Sharjah."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "air-arabia"
 url: "/pet-transport/airlines/air-arabia/"
 airline:

@@ -5,7 +5,7 @@ description: "Ljubljana to Warsaw is around 900 kilometres, nine to ten hours by
 date: "2026-07-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "slovenia-to-poland"
 origin_name: "Slovenia"
 destination_name: "Poland"

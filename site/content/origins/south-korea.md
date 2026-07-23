@@ -4,7 +4,7 @@ slug: "south-korea"
 description: "Complete guide to exporting your pet from South Korea."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "South Korea"
 country_code: "KR"
 overview: |
@@ -24,13 +24,14 @@ sections:
   - heading: "Popular routes from South Korea"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [South Korea to Argentina](/pet-transport/south-korea-to-argentina/)
       - [South Korea to Australia](/pet-transport/south-korea-to-australia/)
       - [South Korea to Austria](/pet-transport/south-korea-to-austria/)
       - [South Korea to Bahrain](/pet-transport/south-korea-to-bahrain/)
       - [South Korea to Bangladesh](/pet-transport/south-korea-to-bangladesh/)
       - [South Korea to Belgium](/pet-transport/south-korea-to-belgium/)
+      - [South Korea to Brazil](/pet-transport/south-korea-to-brazil/)
       - [South Korea to Bulgaria](/pet-transport/south-korea-to-bulgaria/)
       - [South Korea to Cambodia](/pet-transport/south-korea-to-cambodia/)
       - [South Korea to Canada](/pet-transport/south-korea-to-canada/)
@@ -49,20 +50,29 @@ sections:
       - [South Korea to France](/pet-transport/south-korea-to-france/)
       - [South Korea to Germany](/pet-transport/south-korea-to-germany/)
       - [South Korea to Ghana](/pet-transport/south-korea-to-ghana/)
+      - [South Korea to Greece](/pet-transport/south-korea-to-greece/)
       - [South Korea to Hong Kong](/pet-transport/south-korea-to-hong-kong/)
       - [South Korea to Hungary](/pet-transport/south-korea-to-hungary/)
+      - [South Korea to Iceland](/pet-transport/south-korea-to-iceland/)
+      - [South Korea to India](/pet-transport/south-korea-to-india/)
+      - [South Korea to Indonesia](/pet-transport/south-korea-to-indonesia/)
       - [South Korea to Ireland](/pet-transport/south-korea-to-ireland/)
       - [South Korea to Israel](/pet-transport/south-korea-to-israel/)
+      - [South Korea to Italy](/pet-transport/south-korea-to-italy/)
       - [South Korea to Japan](/pet-transport/south-korea-to-japan/)
       - [South Korea to Jordan](/pet-transport/south-korea-to-jordan/)
       - [South Korea to Kenya](/pet-transport/south-korea-to-kenya/)
       - [South Korea to Kuwait](/pet-transport/south-korea-to-kuwait/)
       - [South Korea to Luxembourg](/pet-transport/south-korea-to-luxembourg/)
+      - [South Korea to Macau](/pet-transport/south-korea-to-macau/)
+      - [South Korea to Malaysia](/pet-transport/south-korea-to-malaysia/)
       - [South Korea to Malta](/pet-transport/south-korea-to-malta/)
       - [South Korea to Mauritius](/pet-transport/south-korea-to-mauritius/)
+      - [South Korea to Mexico](/pet-transport/south-korea-to-mexico/)
       - [South Korea to Morocco](/pet-transport/south-korea-to-morocco/)
       - [South Korea to Myanmar](/pet-transport/south-korea-to-myanmar/)
       - [South Korea to Nepal](/pet-transport/south-korea-to-nepal/)
+      - [South Korea to Netherlands](/pet-transport/south-korea-to-netherlands/)
       - [South Korea to New Zealand](/pet-transport/south-korea-to-new-zealand/)
       - [South Korea to Nigeria](/pet-transport/south-korea-to-nigeria/)
       - [South Korea to Norway](/pet-transport/south-korea-to-norway/)
@@ -71,19 +81,25 @@ sections:
       - [South Korea to Peru](/pet-transport/south-korea-to-peru/)
       - [South Korea to Philippines](/pet-transport/south-korea-to-philippines/)
       - [South Korea to Poland](/pet-transport/south-korea-to-poland/)
+      - [South Korea to Portugal](/pet-transport/south-korea-to-portugal/)
       - [South Korea to Qatar](/pet-transport/south-korea-to-qatar/)
       - [South Korea to Romania](/pet-transport/south-korea-to-romania/)
       - [South Korea to Saudi Arabia](/pet-transport/south-korea-to-saudi-arabia/)
       - [South Korea to Singapore](/pet-transport/south-korea-to-singapore/)
       - [South Korea to Slovakia](/pet-transport/south-korea-to-slovakia/)
+      - [South Korea to Slovenia](/pet-transport/south-korea-to-slovenia/)
       - [South Korea to South Africa](/pet-transport/south-korea-to-south-africa/)
       - [South Korea to Spain](/pet-transport/south-korea-to-spain/)
       - [South Korea to Sri Lanka](/pet-transport/south-korea-to-sri-lanka/)
       - [South Korea to Sweden](/pet-transport/south-korea-to-sweden/)
+      - [South Korea to Switzerland](/pet-transport/south-korea-to-switzerland/)
       - [South Korea to Taiwan](/pet-transport/south-korea-to-taiwan/)
       - [South Korea to Tanzania](/pet-transport/south-korea-to-tanzania/)
+      - [South Korea to Thailand](/pet-transport/south-korea-to-thailand/)
       - [South Korea to Turkey](/pet-transport/south-korea-to-turkey/)
       - [South Korea to United Arab Emirates](/pet-transport/south-korea-to-united-arab-emirates/)
+      - [South Korea to United Kingdom](/pet-transport/south-korea-to-united-kingdom/)
+      - [South Korea to United States](/pet-transport/south-korea-to-united-states/)
       - [South Korea to Vietnam](/pet-transport/south-korea-to-vietnam/)
       - [South Korea to Zimbabwe](/pet-transport/south-korea-to-zimbabwe/)
 faqs:

@@ -3,7 +3,7 @@ title: "Travelling Internationally with a Border Terrier"
 description: "Border Terriers travel well but have specific documentation needs for international moves. This guide covers health certs, airline crate sizing, breed restrictions and key routes."
 date: "2026-05-07"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-border-terrier-internationally"
 url: "/blog/travelling-with-a-border-terrier-internationally/"
 seo:

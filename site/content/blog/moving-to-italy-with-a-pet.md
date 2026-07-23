@@ -2,7 +2,7 @@
 title: "Moving to Italy with a Pet: EU Rules"
 description: "A complete guide to relocating to Italy with a cat or dog. Covers EU pet passport rules, third-country requirements for UK and US pets, Italian microchip database registration and life with a pet in Italy."
 date: "2025-09-05"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/moving-to-italy-with-a-pet/"
 tags: ["italy", "expat guide", "pet relocation", "europe"]

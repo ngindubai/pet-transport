@@ -5,7 +5,7 @@ type: "routes"
 layout: "single"
 template_variant: "E"
 content_soul: 5
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "argentina-to-bahrain"
 origin_name: "Argentina"
 destination_name: "Bahrain"

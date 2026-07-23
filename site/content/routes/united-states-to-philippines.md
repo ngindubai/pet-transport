@@ -5,7 +5,7 @@ description: "Moving your dog or cat from the USA to the Philippines in 2026. BA
 date: "2026-06-05"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-philippines"
 origin_name: "United States"
 destination_name: "Philippines"

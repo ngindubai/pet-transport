@@ -5,7 +5,7 @@ description: "Bolivia's own consulate is in Ottawa, and it legalises documents b
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-bolivia"
 origin_name: "Canada"
 destination_name: "Bolivia"

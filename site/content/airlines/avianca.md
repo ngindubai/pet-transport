@@ -3,7 +3,7 @@ title: "Avianca Pet Transport Guide"
 description: "Avianca pet policy for 2026: cabin pets, cargo acceptance, IATA crate rules, and how to move your dog or cat on Colombia's main carrier for Latin America routes."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "avianca"
 url: "/pet-transport/airlines/avianca/"
 airline:

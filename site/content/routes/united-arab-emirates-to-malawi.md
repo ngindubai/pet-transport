@@ -5,7 +5,7 @@ description: "Emirates' codeshare deal with Airlink names Lilongwe as a served d
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-arab-emirates-to-malawi"
 origin_name: "United Arab Emirates"
 destination_name: "Malawi"

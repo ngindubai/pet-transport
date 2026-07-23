@@ -3,7 +3,7 @@ title: "TUI Airways Pet Transport Guide"
 description: "TUI Airways (UK charter) does not accept pets in cabin or cargo on scheduled services. This guide explains TUI's policy, exceptions for assistance animals, and alternatives for pet owners."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "tui-airways"
 url: "/pet-transport/airlines/tui-airways/"
 airline:

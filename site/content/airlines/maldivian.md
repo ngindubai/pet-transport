@@ -3,7 +3,7 @@ title: "Maldivian (Island Aviation) Pet Policy 2026"
 description: "Maldivian (Island Aviation Services) pet transport guide. Domestic Maldives inter-island pet transport, seaplane alternatives, and international pet import rules for the Maldives."
 date: "2026-05-08"
 type: "airlines"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "maldivian"
 url: "/pet-transport/airlines/maldivian/"
 seo:

@@ -3,7 +3,7 @@ title: "easyJet Pet Policy: Does easyJet Accept Pets?"
 description: "easyJet does not accept pets (other than registered assistance dogs) on any of its flights. Here is what pet owners need to know and which airlines to use instead for European routes."
 date: 2026-05-09
 type: airlines
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "easyjet"
 url: "/pet-transport/airlines/easyjet/"
 seo:

@@ -3,7 +3,7 @@ title: "Pet Transport from South Korea to New Zealand | AQS, Titre Test & 180-Da
 description: "Shipping your pet from South Korea to New Zealand: MPI NZSTAP protocol, FAVN titre test mandatory, 180-day wait, Air New Zealand cargo, and full preparation guide."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "south-korea-to-new-zealand"
 origin_name: "South Korea"
 destination_name: "New Zealand"

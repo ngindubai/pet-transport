@@ -5,7 +5,7 @@ description: "What a real 'pet transport service' covers in 2026: paperwork, cra
 date: "2026-06-14"
 type: "blog"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-transport-service-explained"
 faqs:
   - question: "What does a pet transport service actually include?"

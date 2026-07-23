@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Beirut to Istanbul in 2026, the shortest 
 date: "2026-07-09"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "lebanon-to-turkey"
 origin_name: "Lebanon"
 destination_name: "Turkey"

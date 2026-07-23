@@ -5,7 +5,7 @@ description: "Moving pets from Denmark to the US in 2026. No titre test needed, 
 date: "2026-06-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "denmark-to-united-states"
 origin_name: "Denmark"
 destination_name: "United States"

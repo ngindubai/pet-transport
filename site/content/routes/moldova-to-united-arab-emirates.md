@@ -5,7 +5,7 @@ description: "Moldova sits outside MOCCAE's low-risk list, so a titre test appli
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "moldova-to-united-arab-emirates"
 origin_name: "Moldova"
 destination_name: "United Arab Emirates"

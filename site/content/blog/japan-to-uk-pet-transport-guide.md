@@ -3,7 +3,7 @@ title: "Pet Transport from Japan to the UK: What the Return Journey Requires"
 description: "Moving from Japan to the UK with a dog or cat? Japan exports are straightforward for UK entry. Here is what documents you need and how to book the journey."
 date: "2026-05-06"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "japan-to-uk-pet-transport-guide"
 url: "/blog/japan-to-uk-pet-transport-guide/"
 seo:

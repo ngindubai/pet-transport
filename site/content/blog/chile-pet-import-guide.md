@@ -3,7 +3,7 @@ title: "Bringing a Pet to Chile: SAG Rules and What International Arrivals Need"
 description: "Guide to bringing your dog or cat to Chile in 2026: SAG health certificate requirements, rabies vaccination rules, microchip, and arriving at Santiago Arturo Merino Benitez."
 date: "2026-05-07"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "chile-pet-import-guide"
 url: "/blog/chile-pet-import-guide/"
 seo:

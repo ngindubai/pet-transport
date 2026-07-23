@@ -3,7 +3,7 @@ title: "Moving to Costa Rica with a Pet"
 description: "A practical guide to relocating to Costa Rica with your dog or cat. SENASA permit, health certificate steps, life with pets in Costa Rica, and finding a vet after arrival."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "moving-to-costa-rica-with-a-pet"
 url: "/blog/moving-to-costa-rica-with-a-pet/"
 seo:

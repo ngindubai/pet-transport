@@ -3,7 +3,7 @@ title: "Pet Transport Japan to USA 2026 | Complete Guide"
 description: "Moving your dog or cat from Japan to the USA. CDC rules for dogs, USDA APHIS requirements, and what to expect when arriving at a US airport with a pet from a rabies-free country."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "japan-to-usa-pet-transport-guide"
 url: "/blog/japan-to-usa-pet-transport-guide/"
 seo:

@@ -5,7 +5,7 @@ description: "One of the few genuinely non-stop long-haul cargo routes in this b
 date: "2026-07-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "turkey-to-panama"
 origin_name: "Turkey"
 destination_name: "Panama"

@@ -5,7 +5,7 @@ description: "Tajikistan needs no rabies titre test from UK pets, but botched pa
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-tajikistan"
 origin_name: "United Kingdom"
 destination_name: "Tajikistan"

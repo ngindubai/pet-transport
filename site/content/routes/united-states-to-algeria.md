@@ -5,7 +5,7 @@ description: "Algeria skips the titre test for US pets but insists on pre-export
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-algeria"
 origin_name: "United States"
 destination_name: "Algeria"

@@ -5,7 +5,7 @@ description: "Bratislava has no direct US flight, so pets connect via Vienna, Fr
 date: "2026-07-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "slovakia-to-united-states"
 origin_name: "Slovakia"
 destination_name: "United States"

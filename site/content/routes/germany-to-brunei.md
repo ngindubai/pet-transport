@@ -5,7 +5,7 @@ description: "Germany to Brunei pet transport, 2026. Singapore Airlines flies Fr
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "germany-to-brunei"
 origin_name: "Germany"
 destination_name: "Brunei"

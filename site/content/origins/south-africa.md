@@ -4,7 +4,7 @@ slug: "south-africa"
 description: "Complete guide to exporting your pet from South Africa."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "South Africa"
 country_code: "ZA"
 overview: |
@@ -24,7 +24,7 @@ sections:
   - heading: "Popular routes from South Africa"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [South Africa to Argentina](/pet-transport/south-africa-to-argentina/)
       - [South Africa to Australia](/pet-transport/south-africa-to-australia/)
       - [South Africa to Austria](/pet-transport/south-africa-to-austria/)
@@ -53,6 +53,7 @@ sections:
       - [South Africa to Greece](/pet-transport/south-africa-to-greece/)
       - [South Africa to Hong Kong](/pet-transport/south-africa-to-hong-kong/)
       - [South Africa to Hungary](/pet-transport/south-africa-to-hungary/)
+      - [South Africa to Iceland](/pet-transport/south-africa-to-iceland/)
       - [South Africa to India](/pet-transport/south-africa-to-india/)
       - [South Africa to Indonesia](/pet-transport/south-africa-to-indonesia/)
       - [South Africa to Ireland](/pet-transport/south-africa-to-ireland/)
@@ -63,6 +64,7 @@ sections:
       - [South Africa to Kenya](/pet-transport/south-africa-to-kenya/)
       - [South Africa to Kuwait](/pet-transport/south-africa-to-kuwait/)
       - [South Africa to Luxembourg](/pet-transport/south-africa-to-luxembourg/)
+      - [South Africa to Macau](/pet-transport/south-africa-to-macau/)
       - [South Africa to Malaysia](/pet-transport/south-africa-to-malaysia/)
       - [South Africa to Malta](/pet-transport/south-africa-to-malta/)
       - [South Africa to Mauritius](/pet-transport/south-africa-to-mauritius/)
@@ -95,6 +97,8 @@ sections:
       - [South Africa to Thailand](/pet-transport/south-africa-to-thailand/)
       - [South Africa to Turkey](/pet-transport/south-africa-to-turkey/)
       - [South Africa to United Arab Emirates](/pet-transport/south-africa-to-united-arab-emirates/)
+      - [South Africa to United Kingdom](/pet-transport/south-africa-to-united-kingdom/)
+      - [South Africa to United States](/pet-transport/south-africa-to-united-states/)
       - [South Africa to Vietnam](/pet-transport/south-africa-to-vietnam/)
       - [South Africa to Zimbabwe](/pet-transport/south-africa-to-zimbabwe/)
 faqs:

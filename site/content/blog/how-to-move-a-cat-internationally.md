@@ -3,7 +3,7 @@ title: "How to Move a Cat Internationally: What's Different From Dogs"
 description: "Cats and dogs face the same core paperwork, but cats often have advantages - smaller crates, fewer breed bans, and shorter quarantine in some countries. Here's what to know."
 date: "2026-03-17"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "how-to-move-a-cat-internationally"
 url: "/blog/how-to-move-a-cat-internationally/"
 seo:

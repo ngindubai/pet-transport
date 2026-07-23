@@ -5,7 +5,7 @@ description: "Avianca flies San Salvador to Toronto nonstop in about 5 hours, on
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-el-salvador"
 origin_name: "Canada"
 destination_name: "El Salvador"

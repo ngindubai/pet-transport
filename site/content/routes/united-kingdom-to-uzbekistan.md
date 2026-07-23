@@ -5,7 +5,7 @@ description: "UK to Uzbekistan pet transport in 2026. APHA export health certifi
 date: "2026-07-11"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-uzbekistan"
 origin_name: "United Kingdom"
 destination_name: "Uzbekistan"

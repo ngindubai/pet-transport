@@ -5,7 +5,7 @@ description: "Kyrgyzstan isn't DAFF-approved, but staging 180 days in Singapore,
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "kyrgyzstan-to-australia"
 origin_name: "Kyrgyzstan"
 destination_name: "Australia"

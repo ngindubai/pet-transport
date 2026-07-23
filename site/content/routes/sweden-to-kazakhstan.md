@@ -5,7 +5,7 @@ description: "Shipping a pet from Sweden to Kazakhstan in 2026. Jordbruksverket 
 date: "2026-06-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "sweden-to-kazakhstan"
 origin_name: "Sweden"
 destination_name: "Kazakhstan"

@@ -2,7 +2,7 @@
 title: "Pet Transport from UK to Greece"
 description: "How to take your cat or dog from the UK to Greece post-Brexit. Covers the UK-EU health certificate, APHA endorsement, rabies titre test and approved airlines."
 date: "2025-07-06"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/uk-to-greece-pet-transport-guide/"
 tags: ["uk", "greece", "europe", "route guide", "pet transport", "post-brexit"]

@@ -3,7 +3,7 @@ title: "Moving Pets to Thailand: DLD Requirements, Quarantine, and Bangkok Airpo
 description: "Thailand requires a government-issued import permit, health certificate, and potentially a quarantine stay. Here's the full process for moving your dog or cat to Bangkok."
 date: "2026-05-08"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "thailand-pet-import-guide"
 url: "/blog/thailand-pet-import-guide/"
 seo:

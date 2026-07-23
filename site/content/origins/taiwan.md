@@ -4,7 +4,7 @@ slug: "taiwan"
 description: "Complete guide to exporting your pet from Taiwan."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Taiwan"
 country_code: "TW"
 overview: |
@@ -24,7 +24,7 @@ sections:
   - heading: "Popular routes from Taiwan"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Taiwan to Argentina](/pet-transport/taiwan-to-argentina/)
       - [Taiwan to Australia](/pet-transport/taiwan-to-australia/)
       - [Taiwan to Austria](/pet-transport/taiwan-to-austria/)
@@ -95,6 +95,8 @@ sections:
       - [Taiwan to Thailand](/pet-transport/taiwan-to-thailand/)
       - [Taiwan to Turkey](/pet-transport/taiwan-to-turkey/)
       - [Taiwan to United Arab Emirates](/pet-transport/taiwan-to-united-arab-emirates/)
+      - [Taiwan to United Kingdom](/pet-transport/taiwan-to-united-kingdom/)
+      - [Taiwan to United States](/pet-transport/taiwan-to-united-states/)
       - [Taiwan to Vietnam](/pet-transport/taiwan-to-vietnam/)
       - [Taiwan to Zimbabwe](/pet-transport/taiwan-to-zimbabwe/)
 faqs:

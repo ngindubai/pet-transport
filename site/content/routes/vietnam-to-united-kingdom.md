@@ -5,7 +5,7 @@ description: "Moving your dog or cat from Vietnam to the UK in 2026. DAGAH healt
 date: "2026-06-05"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "vietnam-to-united-kingdom"
 origin_name: "Vietnam"
 destination_name: "United Kingdom"

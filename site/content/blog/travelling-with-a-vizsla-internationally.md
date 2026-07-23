@@ -3,7 +3,7 @@ title: "Travelling with a Vizsla Internationally"
 description: "International travel guide for Vizsla owners. Crate sizing, airline acceptance, destination country rules, and keeping your Vizsla calm during long-haul flights."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-vizsla-internationally"
 url: "/blog/travelling-with-a-vizsla-internationally/"
 seo:

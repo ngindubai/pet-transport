@@ -5,7 +5,7 @@ description: "The Bahamas isn't CDC high-risk, so a dog just needs a free CDC Do
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "bahamas-to-united-states"
 origin_name: "Bahamas"
 destination_name: "United States"

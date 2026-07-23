@@ -5,7 +5,7 @@ description: "Angola wants a rabies vaccination given between 4 and 11 months be
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-angola"
 origin_name: "Canada"
 destination_name: "Angola"

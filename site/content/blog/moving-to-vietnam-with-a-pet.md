@@ -3,7 +3,7 @@ title: "Moving to Vietnam with a Pet: NAHABS Permits, Vaccines and Ho Chi Minh C
 description: "Complete guide to importing a dog or cat to Vietnam. Ministry of Agriculture permits, health certificate requirements, rabies vaccines and arriving at Tan Son Nhat Airport."
 date: "2026-05-07"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "moving-to-vietnam-with-a-pet"
 url: "/blog/moving-to-vietnam-with-a-pet/"
 seo:

@@ -5,7 +5,7 @@ description: "Before January 2026, no clean single-carrier path linked Australia
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-senegal"
 origin_name: "Australia"
 destination_name: "Senegal"

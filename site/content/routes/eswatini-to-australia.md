@@ -5,7 +5,7 @@ description: "No airline flies out of Eswatini beyond the region, and DAFF won't
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "eswatini-to-australia"
 origin_name: "Eswatini"
 destination_name: "Australia"

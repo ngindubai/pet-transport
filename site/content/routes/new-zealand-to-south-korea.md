@@ -3,7 +3,7 @@ title: "Pet Transport from New Zealand to South Korea | MPI Export, APQA Import 
 description: "Shipping your pet from New Zealand to South Korea: MPI health certificate, no titre test from NZ, APQA advance notification, and airlines from Auckland to Incheon."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "new-zealand-to-south-korea"
 origin_name: "New Zealand"
 destination_name: "South Korea"

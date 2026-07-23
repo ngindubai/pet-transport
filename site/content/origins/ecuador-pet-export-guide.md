@@ -3,7 +3,7 @@ title: "Pet Transport from Ecuador | Export Requirements & Routes"
 description: "How to ship your dog or cat from Ecuador internationally. Export requirements, health certificates, and AGROCALIDAD endorsement explained."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "ecuador-pet-export-guide"
 origin_country: "Ecuador"
 origin_iso: "EC"
@@ -44,7 +44,7 @@ sections:
   - heading: "Popular routes from Ecuador"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Ecuador to Argentina](/pet-transport/ecuador-to-argentina/)
       - [Ecuador to Australia](/pet-transport/ecuador-to-australia/)
       - [Ecuador to Austria](/pet-transport/ecuador-to-austria/)
@@ -119,7 +119,6 @@ sections:
       - [Ecuador to United States](/pet-transport/ecuador-to-united-states/)
       - [Ecuador to Vietnam](/pet-transport/ecuador-to-vietnam/)
       - [Ecuador to Zimbabwe](/pet-transport/ecuador-to-zimbabwe/)
-
 faqs:
   - question: "What documents does my pet need to leave Ecuador?"
     answer: "Your pet needs a valid microchip (ISO standard), current rabies vaccination, and an official health certificate endorsed by AGROCALIDAD. Specific destination countries may require additional documents such as a titre test result, import permit, or specific certificate formats."

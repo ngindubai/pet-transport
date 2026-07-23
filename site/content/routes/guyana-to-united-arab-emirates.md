@@ -5,7 +5,7 @@ description: "Guyana isn't on MOCCAE's low-risk list, so a rabies titre test app
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "guyana-to-united-arab-emirates"
 origin_name: "Guyana"
 destination_name: "United Arab Emirates"

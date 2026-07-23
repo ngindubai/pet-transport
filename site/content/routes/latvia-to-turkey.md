@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Riga to Istanbul in 2026. Why the EU pet 
 date: "2026-07-09"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "latvia-to-turkey"
 origin_name: "Latvia"
 destination_name: "Turkey"

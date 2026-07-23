@@ -3,7 +3,7 @@ title: "Moving to Slovakia with Pets: EU Rules Made Simple"
 description: "Slovakia is an EU member with straightforward pet import rules. Here is what you need for dogs and cats: microchip, EU Pet Passport or AHC, and rabies vaccination."
 date: "2026-05-06"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "slovakia-pet-import-guide"
 url: "/blog/slovakia-pet-import-guide/"
 seo:

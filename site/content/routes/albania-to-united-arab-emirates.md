@@ -5,7 +5,7 @@ description: "Albania is on MOCCAE's low-risk list, so no rabies titre test appl
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "albania-to-united-arab-emirates"
 origin_name: "Albania"
 destination_name: "United Arab Emirates"

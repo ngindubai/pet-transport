@@ -5,7 +5,7 @@ description: "Ukraine sits on the CDC's high-risk dog rabies list and its airspa
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "ukraine-to-united-states"
 origin_name: "Ukraine"
 destination_name: "United States"

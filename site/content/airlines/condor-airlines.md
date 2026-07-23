@@ -3,7 +3,7 @@ title: "Condor Airlines Pet Transport Guide"
 description: "Condor (Germany) pet policy: cabin pets on European routes, hold cargo for larger animals. Condor flies from Germany and UK to leisure destinations. Full policy explained."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "condor-airlines"
 url: "/pet-transport/airlines/condor-airlines/"
 airline:

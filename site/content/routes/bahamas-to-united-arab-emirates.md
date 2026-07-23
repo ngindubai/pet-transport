@@ -5,7 +5,7 @@ description: "MOCCAE treats the Bahamas as low-risk, so no titre test applies, u
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "bahamas-to-united-arab-emirates"
 origin_name: "Bahamas"
 destination_name: "United Arab Emirates"

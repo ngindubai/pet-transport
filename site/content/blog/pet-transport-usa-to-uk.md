@@ -5,7 +5,7 @@ description: "Moving a pet from the USA to the UK in 2026: GB Health Certificate
 date: "2026-06-12"
 type: "blog"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-transport-usa-to-uk"
 ---
 

@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Brunei to the UK in 2026. DAA export perm
 date: "2026-07-11"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "brunei-to-united-kingdom"
 origin_name: "Brunei"
 destination_name: "United Kingdom"

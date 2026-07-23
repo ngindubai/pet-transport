@@ -5,7 +5,7 @@ description: "Maldives to United Kingdom pet transport in 2026. Dogs cannot be l
 date: "2026-07-11"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "maldives-to-united-kingdom"
 origin_name: "Maldives"
 destination_name: "United Kingdom"

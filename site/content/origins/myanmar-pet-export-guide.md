@@ -3,7 +3,7 @@ title: "Shipping Pets from Myanmar Internationally | PetTransportGlobal"
 description: "How to ship your dog or cat from Myanmar internationally. Export requirements, health certificates, and DAH endorsement explained."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "myanmar-pet-export-guide"
 origin_country: "Myanmar"
 origin_iso: "MM"
@@ -44,7 +44,7 @@ sections:
   - heading: "Popular routes from Myanmar"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Myanmar to Argentina](/pet-transport/myanmar-to-argentina/)
       - [Myanmar to Australia](/pet-transport/myanmar-to-australia/)
       - [Myanmar to Austria](/pet-transport/myanmar-to-austria/)
@@ -116,9 +116,9 @@ sections:
       - [Myanmar to Turkey](/pet-transport/myanmar-to-turkey/)
       - [Myanmar to United Arab Emirates](/pet-transport/myanmar-to-united-arab-emirates/)
       - [Myanmar to United Kingdom](/pet-transport/myanmar-to-united-kingdom/)
+      - [Myanmar to United States](/pet-transport/myanmar-to-united-states/)
       - [Myanmar to Vietnam](/pet-transport/myanmar-to-vietnam/)
       - [Myanmar to Zimbabwe](/pet-transport/myanmar-to-zimbabwe/)
-
 faqs:
   - question: "What documents does my pet need to leave Myanmar?"
     answer: "Your pet needs a valid microchip (ISO standard), current rabies vaccination, and an official health certificate endorsed by DAH. Specific destination countries may require additional documents such as a titre test result, import permit, or specific certificate formats."

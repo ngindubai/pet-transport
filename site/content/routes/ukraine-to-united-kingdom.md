@@ -5,7 +5,7 @@ description: "Ukrainian airspace remains closed to commercial flights, so pets t
 date: "2026-07-13"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "ukraine-to-united-kingdom"
 origin_name: "Ukraine"
 destination_name: "United Kingdom"

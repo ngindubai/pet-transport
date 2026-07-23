@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Finland to Jamaica in 2026. Veterinary im
 date: "2026-06-23"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "finland-to-jamaica"
 origin_name: "Finland"
 destination_name: "Jamaica"

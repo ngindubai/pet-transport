@@ -3,7 +3,7 @@ title: "flydubai Pet Transport Guide"
 description: "flydubai pet policy for 2026: assistance animals only, what this means for UAE pet owners, and which carriers to use for pet transport from Dubai."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "flydubai"
 url: "/pet-transport/airlines/flydubai/"
 airline:

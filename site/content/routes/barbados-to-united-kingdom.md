@@ -5,7 +5,7 @@ description: "Barbados is Part 2 listed for GB pet travel: no rabies titre test,
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "barbados-to-united-kingdom"
 origin_name: "Barbados"
 destination_name: "United Kingdom"

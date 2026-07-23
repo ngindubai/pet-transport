@@ -3,7 +3,7 @@ title: "Turkish Airlines Pet Transport: Cabin and Cargo Policies for Internation
 description: "Turkish Airlines accepts pets in cabin and as cargo on most routes. Complete guide to weight limits, breed restrictions, booking process, and what to expect at Istanbul Airport."
 date: "2026-06-03"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "turkish-airlines-pet-transport-guide"
 url: "/blog/turkish-airlines-pet-transport-guide/"
 seo:

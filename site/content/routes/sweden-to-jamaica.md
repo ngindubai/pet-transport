@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Sweden to Jamaica in 2026. Veterinary imp
 date: "2026-06-23"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "sweden-to-jamaica"
 origin_name: "Sweden"
 destination_name: "Jamaica"

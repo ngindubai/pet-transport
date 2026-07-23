@@ -5,7 +5,7 @@ description: "Pet transport from Germany to the Dominican Republic in 2026. No t
 date: "2026-06-28"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "germany-to-dominican-republic"
 origin_name: "Germany"
 destination_name: "Dominican Republic"

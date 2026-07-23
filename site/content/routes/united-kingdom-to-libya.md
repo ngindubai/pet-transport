@@ -5,7 +5,7 @@ description: "Libya's import rules are sparsely documented and enforcement varie
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-libya"
 origin_name: "United Kingdom"
 destination_name: "Libya"

@@ -5,7 +5,7 @@ description: "Moving a dog or cat from the UK to Laos in 2026. No rabies titre t
 date: "2026-07-11"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-laos"
 origin_name: "United Kingdom"
 destination_name: "Laos"

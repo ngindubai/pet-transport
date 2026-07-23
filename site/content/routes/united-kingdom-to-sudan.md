@@ -5,7 +5,7 @@ description: "Qatar Airways began three-weekly Doha to Port Sudan flights in Jul
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-sudan"
 origin_name: "United Kingdom"
 destination_name: "Sudan"

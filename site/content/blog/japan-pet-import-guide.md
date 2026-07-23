@@ -3,7 +3,7 @@ title: "Japan Pet Import Guide 2026"
 description: "Everything you need to know about bringing a dog or cat to Japan. MAFF quarantine rules, titre test timelines, rabies-free status, and how to avoid long detention periods."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "japan-pet-import-guide"
 url: "/blog/japan-pet-import-guide/"
 seo:

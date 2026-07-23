@@ -5,7 +5,7 @@ description: "The UK to Papua New Guinea export uses APHA certificate 3945. NAQI
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-papua-new-guinea"
 origin_name: "United Kingdom"
 destination_name: "Papua New Guinea"

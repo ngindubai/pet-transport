@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Austria to the United States in 2026. Aus
 date: "2026-06-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "austria-to-united-states"
 origin_name: "Austria"
 destination_name: "United States"

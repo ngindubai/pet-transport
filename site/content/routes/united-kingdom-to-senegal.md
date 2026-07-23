@@ -5,7 +5,7 @@ description: "Moving a pet from the UK to Senegal in 2026. A DSV import authoris
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-senegal"
 origin_name: "United Kingdom"
 destination_name: "Senegal"

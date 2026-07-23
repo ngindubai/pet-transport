@@ -5,7 +5,7 @@ description: "Australia sits on the EU's approved rabies list, so Albania waives
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-albania"
 origin_name: "Australia"
 destination_name: "Albania"

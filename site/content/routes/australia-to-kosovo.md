@@ -5,7 +5,7 @@ description: "Turkish Airlines now flies Melbourne and Sydney to Istanbul direct
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-kosovo"
 origin_name: "Australia"
 destination_name: "Kosovo"

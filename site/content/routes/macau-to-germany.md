@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Macau to Germany in 2026. Macau isn't on 
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "macau-to-germany"
 origin_name: "Macau"
 destination_name: "Germany"

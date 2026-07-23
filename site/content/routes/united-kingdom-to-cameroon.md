@@ -5,7 +5,7 @@ description: "Moving a pet from the UK to Cameroon in 2026. No titre test needed
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-cameroon"
 origin_name: "United Kingdom"
 destination_name: "Cameroon"

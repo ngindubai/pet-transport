@@ -4,7 +4,7 @@ slug: "belgium"
 description: "Complete guide to exporting your pet from Belgium. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Belgium"
 country_code: "BE"
 content:
@@ -32,10 +32,12 @@ sections:
   - heading: "Popular routes from Belgium"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Belgium to Argentina](/pet-transport/belgium-to-argentina/)
+      - [Belgium to Armenia](/pet-transport/belgium-to-armenia/)
       - [Belgium to Australia](/pet-transport/belgium-to-australia/)
       - [Belgium to Austria](/pet-transport/belgium-to-austria/)
+      - [Belgium to Azerbaijan](/pet-transport/belgium-to-azerbaijan/)
       - [Belgium to Bahrain](/pet-transport/belgium-to-bahrain/)
       - [Belgium to Bangladesh](/pet-transport/belgium-to-bangladesh/)
       - [Belgium to Brazil](/pet-transport/belgium-to-brazil/)
@@ -50,11 +52,14 @@ sections:
       - [Belgium to Cyprus](/pet-transport/belgium-to-cyprus/)
       - [Belgium to Czech Republic](/pet-transport/belgium-to-czech-republic/)
       - [Belgium to Denmark](/pet-transport/belgium-to-denmark/)
+      - [Belgium to Dominican Republic](/pet-transport/belgium-to-dominican-republic/)
       - [Belgium to Ecuador](/pet-transport/belgium-to-ecuador/)
       - [Belgium to Egypt](/pet-transport/belgium-to-egypt/)
+      - [Belgium to Estonia](/pet-transport/belgium-to-estonia/)
       - [Belgium to Ethiopia](/pet-transport/belgium-to-ethiopia/)
       - [Belgium to Finland](/pet-transport/belgium-to-finland/)
       - [Belgium to France](/pet-transport/belgium-to-france/)
+      - [Belgium to Georgia](/pet-transport/belgium-to-georgia/)
       - [Belgium to Germany](/pet-transport/belgium-to-germany/)
       - [Belgium to Ghana](/pet-transport/belgium-to-ghana/)
       - [Belgium to Greece](/pet-transport/belgium-to-greece/)
@@ -65,12 +70,18 @@ sections:
       - [Belgium to Ireland](/pet-transport/belgium-to-ireland/)
       - [Belgium to Israel](/pet-transport/belgium-to-israel/)
       - [Belgium to Italy](/pet-transport/belgium-to-italy/)
+      - [Belgium to Jamaica](/pet-transport/belgium-to-jamaica/)
       - [Belgium to Japan](/pet-transport/belgium-to-japan/)
       - [Belgium to Jordan](/pet-transport/belgium-to-jordan/)
+      - [Belgium to Kazakhstan](/pet-transport/belgium-to-kazakhstan/)
       - [Belgium to Kenya](/pet-transport/belgium-to-kenya/)
       - [Belgium to Kuwait](/pet-transport/belgium-to-kuwait/)
+      - [Belgium to Latvia](/pet-transport/belgium-to-latvia/)
+      - [Belgium to Lebanon](/pet-transport/belgium-to-lebanon/)
+      - [Belgium to Lithuania](/pet-transport/belgium-to-lithuania/)
       - [Belgium to Luxembourg](/pet-transport/belgium-to-luxembourg/)
       - [Belgium to Malaysia](/pet-transport/belgium-to-malaysia/)
+      - [Belgium to Maldives](/pet-transport/belgium-to-maldives/)
       - [Belgium to Malta](/pet-transport/belgium-to-malta/)
       - [Belgium to Mauritius](/pet-transport/belgium-to-mauritius/)
       - [Belgium to Mexico](/pet-transport/belgium-to-mexico/)
@@ -83,15 +94,18 @@ sections:
       - [Belgium to Norway](/pet-transport/belgium-to-norway/)
       - [Belgium to Oman](/pet-transport/belgium-to-oman/)
       - [Belgium to Pakistan](/pet-transport/belgium-to-pakistan/)
+      - [Belgium to Panama](/pet-transport/belgium-to-panama/)
       - [Belgium to Peru](/pet-transport/belgium-to-peru/)
       - [Belgium to Philippines](/pet-transport/belgium-to-philippines/)
       - [Belgium to Poland](/pet-transport/belgium-to-poland/)
       - [Belgium to Portugal](/pet-transport/belgium-to-portugal/)
       - [Belgium to Qatar](/pet-transport/belgium-to-qatar/)
       - [Belgium to Romania](/pet-transport/belgium-to-romania/)
+      - [Belgium to Rwanda](/pet-transport/belgium-to-rwanda/)
       - [Belgium to Saudi Arabia](/pet-transport/belgium-to-saudi-arabia/)
       - [Belgium to Singapore](/pet-transport/belgium-to-singapore/)
       - [Belgium to Slovakia](/pet-transport/belgium-to-slovakia/)
+      - [Belgium to Slovenia](/pet-transport/belgium-to-slovenia/)
       - [Belgium to South Africa](/pet-transport/belgium-to-south-africa/)
       - [Belgium to South Korea](/pet-transport/belgium-to-south-korea/)
       - [Belgium to Spain](/pet-transport/belgium-to-spain/)
@@ -102,9 +116,11 @@ sections:
       - [Belgium to Tanzania](/pet-transport/belgium-to-tanzania/)
       - [Belgium to Thailand](/pet-transport/belgium-to-thailand/)
       - [Belgium to Turkey](/pet-transport/belgium-to-turkey/)
+      - [Belgium to Uganda](/pet-transport/belgium-to-uganda/)
       - [Belgium to United Arab Emirates](/pet-transport/belgium-to-united-arab-emirates/)
       - [Belgium to United Kingdom](/pet-transport/belgium-to-united-kingdom/)
       - [Belgium to United States](/pet-transport/belgium-to-united-states/)
+      - [Belgium to Uruguay](/pet-transport/belgium-to-uruguay/)
       - [Belgium to Vietnam](/pet-transport/belgium-to-vietnam/)
       - [Belgium to Zimbabwe](/pet-transport/belgium-to-zimbabwe/)
 faqs:

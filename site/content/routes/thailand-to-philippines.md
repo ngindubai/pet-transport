@@ -5,7 +5,7 @@ type: "routes"
 layout: "single"
 template_variant: "A"
 content_soul: 1
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "thailand-to-philippines"
 origin_name: "Thailand"
 destination_name: "Philippines"

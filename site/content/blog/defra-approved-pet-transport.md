@@ -3,7 +3,7 @@ title: "DEFRA Approved Pet Transport: What Type 1 and Type 2 Authorisation Actua
 description: "How DEFRA transporter authorisation works in 2026, what Type 1 and Type 2 cover, and how to verify a UK pet transporter is genuinely approved before you book."
 date: "2026-07-10"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "defra-approved-pet-transport"
 url: "/defra-approved-pet-transport/"
 tags:

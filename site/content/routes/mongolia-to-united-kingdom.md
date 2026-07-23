@@ -5,7 +5,7 @@ description: "Mongolia is unlisted for UK entry and has no direct European fligh
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "mongolia-to-united-kingdom"
 origin_name: "Mongolia"
 destination_name: "United Kingdom"

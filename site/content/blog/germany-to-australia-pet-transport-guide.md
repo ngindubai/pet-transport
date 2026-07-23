@@ -3,7 +3,7 @@ title: "Germany to Australia Pet Transport: EU Rules, DAFF Requirements, and How
 description: "Germany to Australia involves EU export rules at one end and DAFF's strict quarantine system at the other. Here's how the two frameworks fit together."
 date: "2026-04-19"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "germany-to-australia-pet-transport-guide"
 url: "/blog/germany-to-australia-pet-transport-guide/"
 seo:

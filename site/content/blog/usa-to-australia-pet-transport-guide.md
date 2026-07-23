@@ -3,7 +3,7 @@ title: "USA to Australia Pet Transport: The 6-Month Process Explained"
 description: "Moving pets from the USA to Australia is one of the most complex routes in international pet transport. This guide covers the full 6-8 month process step by step."
 date: "2026-04-17"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "usa-to-australia-pet-transport-guide"
 url: "/blog/usa-to-australia-pet-transport-guide/"
 seo:

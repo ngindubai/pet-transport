@@ -3,7 +3,7 @@ title: "Vueling Pet Policy: Flying with Pets on Spain's Largest Low-Cost Carrier
 description: "Vueling accepts small pets in the cabin on European routes. Here is what you need to know about their cabin pet policy, weight limits, fees, and documentation for Spain-based moves."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "vueling"
 url: "/pet-transport/airlines/vueling/"
 seo:

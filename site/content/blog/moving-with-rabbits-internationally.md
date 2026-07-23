@@ -3,7 +3,7 @@ title: "Moving with Rabbits Internationally: Import Rules, Airline Restrictions,
 description: "International rabbit transport is more complex than dogs or cats. Import bans in some countries, cabin-only options on few airlines, and VHD vaccination requirements -- what owners need to know."
 date: "2026-06-15"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "moving-with-rabbits-internationally"
 url: "/blog/moving-with-rabbits-internationally/"
 seo:

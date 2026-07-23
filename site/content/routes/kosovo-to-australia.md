@@ -5,7 +5,7 @@ description: "Kosovo isn't on DAFF's approved country list, so a pet needs 180 d
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "kosovo-to-australia"
 origin_name: "Kosovo"
 destination_name: "Australia"

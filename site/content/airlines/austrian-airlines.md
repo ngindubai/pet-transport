@@ -3,7 +3,7 @@ title: "Austrian Airlines Pet Transport Guide"
 description: "Austrian Airlines pet transport policy 2026: cabin pets, cargo requirements, EU entry rules, breed restrictions, and what to prepare when flying with pets on Austrian Airlines."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "austrian-airlines"
 url: "/pet-transport/airlines/austrian-airlines/"
 airline:

@@ -5,7 +5,7 @@ description: "Mozambique is CDC high-risk for dog rabies. Foreign vaccination ce
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "mozambique-to-united-states"
 origin_name: "Mozambique"
 destination_name: "United States"

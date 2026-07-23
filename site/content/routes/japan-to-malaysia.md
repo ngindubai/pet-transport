@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Japan to Malaysia in 2026. Japan is rabie
 date: "2026-06-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "japan-to-malaysia"
 origin_name: "Japan"
 destination_name: "Malaysia"

@@ -3,7 +3,7 @@ title: "Pet Health Certificate vs Pet Passport: What is the Difference?"
 description: "EU pet passport versus health certificate explained. Which one you need for international travel, what each document contains, and how Brexit changed UK pet travel."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-health-certificate-vs-pet-passport"
 url: "/blog/pet-health-certificate-vs-pet-passport/"
 seo:

@@ -3,7 +3,7 @@ title: "Pet Transport from Switzerland to South Korea | FSVO Export, APQA Import
 description: "Moving your pet from Switzerland to South Korea: FSVO health certificate, no titre test required from Switzerland, APQA advance notification, and airlines from Zurich."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "switzerland-to-south-korea"
 origin_name: "Switzerland"
 destination_name: "South Korea"

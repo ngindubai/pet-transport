@@ -2,7 +2,7 @@
 title: "International Travel with a Bull Terrier"
 description: "A Bull Terrier owner's guide to international pet travel. Covers breed ban lists in the UK, Germany and other countries, whether the Miniature Bull Terrier is affected, crate requirements and documentation."
 date: "2025-09-02"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/travelling-with-a-bull-terrier-internationally/"
 tags: ["bull terrier", "breed guide", "breed restrictions", "dog travel", "international pet travel"]

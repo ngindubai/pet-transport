@@ -5,7 +5,7 @@ description: "Unlike some of Macau's other routes here, there's no ambiguity: So
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "south-africa-to-macau"
 origin_name: "South Africa"
 destination_name: "Macau"

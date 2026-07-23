@@ -4,7 +4,7 @@ description: "Shipping your pet from South Korea to Singapore: APQA health certi
 type: "routes"
 layout: "single"
 template_variant: "D"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "south-korea-to-singapore"
 origin_name: "South Korea"
 destination_name: "Singapore"

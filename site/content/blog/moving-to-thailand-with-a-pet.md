@@ -3,7 +3,7 @@ title: "Moving to Thailand with a Pet: Bangkok Permits, Vaccines and What to Exp
 description: "Guide to moving to Thailand with a dog or cat. Department of Livestock Development import permit, health certificate requirements and what happens at Suvarnabhumi Airport."
 date: "2026-05-07"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "moving-to-thailand-with-a-pet"
 url: "/blog/moving-to-thailand-with-a-pet/"
 seo:

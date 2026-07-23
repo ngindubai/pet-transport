@@ -3,7 +3,7 @@ title: "Travelling with an Akita Internationally"
 description: "Moving internationally with an Akita. Country bans, crate sizing, cargo-only travel, health certificate needs, and what to check before booking your Akita on an international flight."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-an-akita-internationally"
 url: "/blog/travelling-with-an-akita-internationally/"
 seo:

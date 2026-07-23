@@ -3,7 +3,7 @@ title: "IATA Pet Crate Guide 2026: Sizing, CR82 Rules and What Airlines Actually
 description: "How to size an IATA-compliant pet crate in 2026, what the regulations actually say, and the design details airlines like Lufthansa and Qatar reject crates for at check-in."
 date: "2026-07-11"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "iata-pet-crate-guide"
 url: "/iata-pet-crate-guide/"
 tags:

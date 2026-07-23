@@ -5,7 +5,7 @@ description: "Canada to Maldives pet transport in 2026. The Maldives bans dog im
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-maldives"
 origin_name: "Canada"
 destination_name: "Maldives"

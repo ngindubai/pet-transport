@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Sweden to Lebanon in 2026. Rabies vaccina
 date: "2026-06-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "sweden-to-lebanon"
 origin_name: "Sweden"
 destination_name: "Lebanon"

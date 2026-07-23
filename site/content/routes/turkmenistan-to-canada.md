@@ -5,7 +5,7 @@ description: "The Alabai export ban does apply on this leg: Turkmenistan's natio
 date: "2026-07-22"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "turkmenistan-to-canada"
 origin_name: "Turkmenistan"
 destination_name: "Canada"

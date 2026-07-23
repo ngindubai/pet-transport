@@ -3,7 +3,7 @@ title: "Flying with a Siamese Cat | International Travel Rules"
 description: "Airline cabin rules, cargo options, and import paperwork for Siamese cats. One of the most vocal breeds - how to manage in-flight stress."
 type: "breeds"
 layout: "single"
-author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "siamese"
 breed_name: "Siamese"
 brachycephalic: false

@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Macau to Australia in 2026. IAM export ce
 date: "2026-07-12"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "macau-to-australia"
 origin_name: "Macau"
 destination_name: "Australia"

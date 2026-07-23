@@ -5,7 +5,7 @@ description: "Madagascar is CDC high-risk for dog rabies in 2026. Dogs need a ti
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "madagascar-to-united-states"
 origin_name: "Madagascar"
 destination_name: "United States"

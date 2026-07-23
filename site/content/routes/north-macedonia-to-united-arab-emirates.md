@@ -5,7 +5,7 @@ description: "MOCCAE treats North Macedonia as low-risk, so no titre test applie
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "north-macedonia-to-united-arab-emirates"
 origin_name: "North Macedonia"
 destination_name: "United Arab Emirates"

@@ -3,7 +3,7 @@ title: "Pet Transport from USA to Brazil: MAPA Requirements, Airlines and the SÃ
 description: "Moving a dog or cat from the USA to Brazil. MAPA veterinary certificate, USDA APHIS endorsement, import permit process and which airlines fly pets to SÃ£o Paulo and Rio."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "usa-to-brazil-pet-transport-guide"
 url: "/blog/usa-to-brazil-pet-transport-guide/"
 seo:

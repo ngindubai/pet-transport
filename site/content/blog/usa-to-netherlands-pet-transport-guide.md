@@ -3,7 +3,7 @@ title: "Pet Transport USA to Netherlands 2026 | Complete Guide"
 description: "Moving your dog or cat from the USA to the Netherlands. EU Pet Travel Scheme requirements, USDA APHIS health certificate, titre test, and arriving at Amsterdam Schiphol."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "usa-to-netherlands-pet-transport-guide"
 url: "/blog/usa-to-netherlands-pet-transport-guide/"
 seo:

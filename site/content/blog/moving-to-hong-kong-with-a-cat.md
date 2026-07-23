@@ -3,7 +3,7 @@ title: "Moving to Hong Kong with a Cat: AFCD Import Requirements Explained"
 description: "Hong Kong has a structured cat import process managed by AFCD. Here is what cat owners moving to Hong Kong need: import licence, health certificate, and 4-day in-situ quarantine."
 date: 2026-05-09
 type: blog
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "moving-to-hong-kong-with-a-cat"
 url: "/blog/moving-to-hong-kong-with-a-cat/"
 seo:

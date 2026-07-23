@@ -5,7 +5,7 @@ description: "Bolivia is unlisted for UK pet travel: a rabies titre test, a fixe
 date: "2026-07-13"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "bolivia-to-united-kingdom"
 origin_name: "Bolivia"
 destination_name: "United Kingdom"

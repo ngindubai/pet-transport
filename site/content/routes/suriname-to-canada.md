@@ -5,7 +5,7 @@ description: "Suriname is on CFIA's 13 March 2025 high-risk dog rabies list, but
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "suriname-to-canada"
 origin_name: "Suriname"
 destination_name: "Canada"

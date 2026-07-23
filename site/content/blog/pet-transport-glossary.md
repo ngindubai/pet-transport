@@ -3,7 +3,7 @@ title: "International Pet Transport Glossary: Every Term You Will Encounter Expl
 description: "BICON, FAVN, IATA LAR, OV, AHC - the acronyms in pet transport documentation can be bewildering. Here's a plain-English glossary of every term you're likely to encounter."
 date: "2026-05-27"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-transport-glossary"
 url: "/blog/pet-transport-glossary/"
 seo:

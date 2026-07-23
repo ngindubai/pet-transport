@@ -3,7 +3,7 @@ title: "Pet Transport from UK to Jordan: Ministry Permit, APHA Certificate and A
 description: "Guide to shipping a dog or cat from the UK to Jordan. Ministry of Agriculture import permit, APHA health certificate, rabies vaccination and airlines serving Amman."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "uk-to-jordan-pet-transport-guide"
 url: "/blog/uk-to-jordan-pet-transport-guide/"
 seo:

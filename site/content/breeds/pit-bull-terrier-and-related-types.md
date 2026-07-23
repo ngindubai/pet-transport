@@ -3,7 +3,7 @@ title: "Transporting Pit Bull Terrier (and"
 description: "Which countries ban or restrict Pit Bull Terrier imports, and what it means for international relocation. Country-by-country breakdown with current regulations."
 type: "breeds"
 layout: "single"
-author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pit-bull-terrier-and-related-types"
 breed_name: "Pit Bull Terrier (and related types)"
 brachycephalic: false

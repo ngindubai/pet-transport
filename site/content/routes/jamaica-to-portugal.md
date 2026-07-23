@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Jamaica to Portugal in 2026. Jamaica is a
 date: "2026-06-23"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "jamaica-to-portugal"
 origin_name: "Jamaica"
 destination_name: "Portugal"

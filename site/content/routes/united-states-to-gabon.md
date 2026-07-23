@@ -5,7 +5,7 @@ description: "Gabon's own import permit needs 4 to 6 months lead time, whoever i
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-gabon"
 origin_name: "United States"
 destination_name: "Gabon"

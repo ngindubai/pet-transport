@@ -5,7 +5,7 @@ description: "Whether Bolivia has any working diplomatic mission in the UAE is g
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-arab-emirates-to-bolivia"
 origin_name: "United Arab Emirates"
 destination_name: "Bolivia"

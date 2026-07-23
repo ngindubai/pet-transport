@@ -3,7 +3,7 @@ title: "Royal Air Maroc Pet Transport Guide"
 description: "Royal Air Maroc pet transport policy 2026: cabin pet rules, cargo requirements, breed restrictions, and what to prepare when flying with pets on Royal Air Maroc."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "royal-air-maroc"
 url: "/pet-transport/airlines/royal-air-maroc/"
 airline:

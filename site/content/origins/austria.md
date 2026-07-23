@@ -4,7 +4,7 @@ slug: "austria"
 description: "Complete guide to exporting your pet from Austria. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Austria"
 country_code: "AT"
 content:
@@ -32,9 +32,11 @@ sections:
   - heading: "Popular routes from Austria"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Austria to Argentina](/pet-transport/austria-to-argentina/)
+      - [Austria to Armenia](/pet-transport/austria-to-armenia/)
       - [Austria to Australia](/pet-transport/austria-to-australia/)
+      - [Austria to Azerbaijan](/pet-transport/austria-to-azerbaijan/)
       - [Austria to Bahrain](/pet-transport/austria-to-bahrain/)
       - [Austria to Bangladesh](/pet-transport/austria-to-bangladesh/)
       - [Austria to Belgium](/pet-transport/austria-to-belgium/)
@@ -50,11 +52,14 @@ sections:
       - [Austria to Cyprus](/pet-transport/austria-to-cyprus/)
       - [Austria to Czech Republic](/pet-transport/austria-to-czech-republic/)
       - [Austria to Denmark](/pet-transport/austria-to-denmark/)
+      - [Austria to Dominican Republic](/pet-transport/austria-to-dominican-republic/)
       - [Austria to Ecuador](/pet-transport/austria-to-ecuador/)
       - [Austria to Egypt](/pet-transport/austria-to-egypt/)
+      - [Austria to Estonia](/pet-transport/austria-to-estonia/)
       - [Austria to Ethiopia](/pet-transport/austria-to-ethiopia/)
       - [Austria to Finland](/pet-transport/austria-to-finland/)
       - [Austria to France](/pet-transport/austria-to-france/)
+      - [Austria to Georgia](/pet-transport/austria-to-georgia/)
       - [Austria to Germany](/pet-transport/austria-to-germany/)
       - [Austria to Ghana](/pet-transport/austria-to-ghana/)
       - [Austria to Greece](/pet-transport/austria-to-greece/)
@@ -65,12 +70,18 @@ sections:
       - [Austria to Ireland](/pet-transport/austria-to-ireland/)
       - [Austria to Israel](/pet-transport/austria-to-israel/)
       - [Austria to Italy](/pet-transport/austria-to-italy/)
+      - [Austria to Jamaica](/pet-transport/austria-to-jamaica/)
       - [Austria to Japan](/pet-transport/austria-to-japan/)
       - [Austria to Jordan](/pet-transport/austria-to-jordan/)
+      - [Austria to Kazakhstan](/pet-transport/austria-to-kazakhstan/)
       - [Austria to Kenya](/pet-transport/austria-to-kenya/)
       - [Austria to Kuwait](/pet-transport/austria-to-kuwait/)
+      - [Austria to Latvia](/pet-transport/austria-to-latvia/)
+      - [Austria to Lebanon](/pet-transport/austria-to-lebanon/)
+      - [Austria to Lithuania](/pet-transport/austria-to-lithuania/)
       - [Austria to Luxembourg](/pet-transport/austria-to-luxembourg/)
       - [Austria to Malaysia](/pet-transport/austria-to-malaysia/)
+      - [Austria to Maldives](/pet-transport/austria-to-maldives/)
       - [Austria to Malta](/pet-transport/austria-to-malta/)
       - [Austria to Mauritius](/pet-transport/austria-to-mauritius/)
       - [Austria to Mexico](/pet-transport/austria-to-mexico/)
@@ -83,15 +94,18 @@ sections:
       - [Austria to Norway](/pet-transport/austria-to-norway/)
       - [Austria to Oman](/pet-transport/austria-to-oman/)
       - [Austria to Pakistan](/pet-transport/austria-to-pakistan/)
+      - [Austria to Panama](/pet-transport/austria-to-panama/)
       - [Austria to Peru](/pet-transport/austria-to-peru/)
       - [Austria to Philippines](/pet-transport/austria-to-philippines/)
       - [Austria to Poland](/pet-transport/austria-to-poland/)
       - [Austria to Portugal](/pet-transport/austria-to-portugal/)
       - [Austria to Qatar](/pet-transport/austria-to-qatar/)
       - [Austria to Romania](/pet-transport/austria-to-romania/)
+      - [Austria to Rwanda](/pet-transport/austria-to-rwanda/)
       - [Austria to Saudi Arabia](/pet-transport/austria-to-saudi-arabia/)
       - [Austria to Singapore](/pet-transport/austria-to-singapore/)
       - [Austria to Slovakia](/pet-transport/austria-to-slovakia/)
+      - [Austria to Slovenia](/pet-transport/austria-to-slovenia/)
       - [Austria to South Africa](/pet-transport/austria-to-south-africa/)
       - [Austria to South Korea](/pet-transport/austria-to-south-korea/)
       - [Austria to Spain](/pet-transport/austria-to-spain/)
@@ -102,9 +116,11 @@ sections:
       - [Austria to Tanzania](/pet-transport/austria-to-tanzania/)
       - [Austria to Thailand](/pet-transport/austria-to-thailand/)
       - [Austria to Turkey](/pet-transport/austria-to-turkey/)
+      - [Austria to Uganda](/pet-transport/austria-to-uganda/)
       - [Austria to United Arab Emirates](/pet-transport/austria-to-united-arab-emirates/)
       - [Austria to United Kingdom](/pet-transport/austria-to-united-kingdom/)
       - [Austria to United States](/pet-transport/austria-to-united-states/)
+      - [Austria to Uruguay](/pet-transport/austria-to-uruguay/)
       - [Austria to Vietnam](/pet-transport/austria-to-vietnam/)
       - [Austria to Zimbabwe](/pet-transport/austria-to-zimbabwe/)
 faqs:

@@ -5,7 +5,7 @@ description: "Senegal's own airport changed in 2017; some guides still get it wr
 date: "2026-07-22"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "senegal-to-canada"
 origin_name: "Senegal"
 destination_name: "Canada"

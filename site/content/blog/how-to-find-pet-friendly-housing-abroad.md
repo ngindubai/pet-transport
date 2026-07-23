@@ -2,7 +2,7 @@
 title: "How to Find Pet-Friendly Housing When Moving Abroad"
 description: "Practical advice on finding accommodation abroad that accepts cats and dogs. Covers where to search, what to say to landlords, lease clauses to watch for and countries with pet-friendly rental cultures."
 date: "2025-08-10"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/how-to-find-pet-friendly-housing-abroad/"
 tags: ["pet-friendly housing", "expat guide", "renting abroad", "practical guide"]

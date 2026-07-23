@@ -5,7 +5,7 @@ description: "Macau dropped mandatory quarantine in June 2026, but South Korea's
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "south-korea-to-macau"
 origin_name: "South Korea"
 destination_name: "Macau"

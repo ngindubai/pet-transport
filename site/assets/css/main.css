@@ -917,3 +917,37 @@ body { padding-top: 0; }
 .ptg-blog-body table tbody tr:hover {
     background: #eef4f1;
 }
+.ptg-cookie-notice {
+    position: fixed;
+    z-index: 10000;
+    right: 1rem;
+    bottom: 1rem;
+    width: min(31rem, calc(100% - 2rem));
+    padding: 1rem 1.15rem;
+    border: 1px solid rgba(30, 58, 95, 0.18);
+    border-radius: 0.75rem;
+    background: #fff;
+    color: #243247;
+    box-shadow: 0 0.75rem 2.5rem rgba(15, 35, 60, 0.22);
+}
+
+.ptg-cookie-notice[hidden] {
+    display: none;
+}
+
+.ptg-cookie-notice p {
+    margin: 0 0 0.75rem;
+    line-height: 1.5;
+}
+
+.ptg-cookie-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.ptg-cookie-actions a {
+    margin-left: auto;
+    font-size: 0.88rem;
+}

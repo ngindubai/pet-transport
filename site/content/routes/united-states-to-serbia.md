@@ -5,7 +5,7 @@ description: "USDA APHIS eFile endorsement covers the US export side. Serbia's o
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-serbia"
 origin_name: "United States"
 destination_name: "Serbia"

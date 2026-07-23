@@ -3,7 +3,7 @@ title: "DIY Pet Relocation vs Hiring an Agent: Which is Right for You?"
 description: "Honest comparison of DIY pet relocation versus using a professional IPATA agent in 2026: costs, risks, paperwork complexity, and when each approach makes sense."
 date: "2026-05-06"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-relocation-diy-vs-agent-comparison"
 url: "/blog/pet-relocation-diy-vs-agent-comparison/"
 seo:

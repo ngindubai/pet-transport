@@ -5,7 +5,7 @@ description: "Full guide to flying your dog or cat from Austria to Jamaica. Impo
 date: "2026-06-24"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "austria-to-jamaica"
 origin_name: "Austria"
 destination_name: "Jamaica"

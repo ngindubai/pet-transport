@@ -5,7 +5,7 @@ description: "Kosovo sits outside the UK's Part 1 and Part 2 rabies lists, so do
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "kosovo-to-united-kingdom"
 origin_name: "Kosovo"
 destination_name: "United Kingdom"

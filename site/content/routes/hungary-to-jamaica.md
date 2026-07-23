@@ -5,7 +5,7 @@ description: "Complete guide to moving your dog or cat from Hungary to Jamaica. 
 date: "2026-06-24"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "hungary-to-jamaica"
 origin_name: "Hungary"
 destination_name: "Jamaica"

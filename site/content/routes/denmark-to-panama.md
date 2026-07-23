@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Denmark to Panama in 2026. Foedevarestyre
 date: "2026-06-23"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "denmark-to-panama"
 origin_name: "Denmark"
 destination_name: "Panama"

@@ -5,7 +5,7 @@ description: "Malawi isn't on MOCCAE's low-risk list, so a titre test applies. E
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "malawi-to-united-arab-emirates"
 origin_name: "Malawi"
 destination_name: "United Arab Emirates"

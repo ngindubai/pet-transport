@@ -3,7 +3,7 @@ title: "Pet Health Certificates for International Travel: A Practical Guide"
 description: "Not all health certificates are the same. AHC, USDA-endorsed, government-endorsed. Here's which certificate your pet needs, who issues it, and how long it's valid."
 date: "2026-04-15"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-health-certificate-guide-international-travel"
 url: "/blog/pet-health-certificate-guide-international-travel/"
 seo:

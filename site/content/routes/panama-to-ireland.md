@@ -5,7 +5,7 @@ description: "Panama to Ireland pet transport in 2026. MIDA-endorsed certificate
 date: "2026-07-07"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "panama-to-ireland"
 origin_name: "Panama"
 destination_name: "Ireland"

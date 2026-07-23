@@ -3,7 +3,7 @@ title: "Pet Transport from Germany to Singapore 2026"
 description: "Moving your dog or cat from Germany to Singapore. NParks AVS import licence, AVS country group status for Germany, quarantine booking, and airline cargo options."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "germany-to-singapore-pet-transport-guide"
 url: "/blog/germany-to-singapore-pet-transport-guide/"
 seo:

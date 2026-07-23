@@ -5,7 +5,7 @@ description: "Cameroon's five-generation rule bars most Savannah/Bengal cats and
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-cameroon"
 origin_name: "Australia"
 destination_name: "Cameroon"

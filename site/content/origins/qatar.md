@@ -4,7 +4,7 @@ slug: "qatar"
 description: "Complete guide to exporting your pet from Qatar."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Qatar"
 country_code: "QA"
 overview: |
@@ -24,7 +24,7 @@ sections:
   - heading: "Popular routes from Qatar"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Qatar to Argentina](/pet-transport/qatar-to-argentina/)
       - [Qatar to Australia](/pet-transport/qatar-to-australia/)
       - [Qatar to Austria](/pet-transport/qatar-to-austria/)
@@ -95,6 +95,8 @@ sections:
       - [Qatar to Thailand](/pet-transport/qatar-to-thailand/)
       - [Qatar to Turkey](/pet-transport/qatar-to-turkey/)
       - [Qatar to United Arab Emirates](/pet-transport/qatar-to-united-arab-emirates/)
+      - [Qatar to United Kingdom](/pet-transport/qatar-to-united-kingdom/)
+      - [Qatar to United States](/pet-transport/qatar-to-united-states/)
       - [Qatar to Vietnam](/pet-transport/qatar-to-vietnam/)
       - [Qatar to Zimbabwe](/pet-transport/qatar-to-zimbabwe/)
 faqs:

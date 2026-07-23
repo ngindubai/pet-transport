@@ -5,7 +5,7 @@ description: "Belarus won't take a 3-year rabies vaccine from any origin, Austra
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-belarus"
 origin_name: "Australia"
 destination_name: "Belarus"

@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Istanbul to Tallinn in 2026. Why Turkey's
 date: "2026-07-09"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "turkey-to-estonia"
 origin_name: "Turkey"
 destination_name: "Estonia"

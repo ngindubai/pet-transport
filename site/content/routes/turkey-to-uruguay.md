@@ -5,7 +5,7 @@ description: "No non-stop flight exists between Istanbul and Montevideo, so a pe
 date: "2026-07-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "turkey-to-uruguay"
 origin_name: "Turkey"
 destination_name: "Uruguay"

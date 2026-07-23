@@ -4,7 +4,7 @@ title: "Pet Transport Portugal to Denmark | EU Pet Passport & Airline Comparison
 description: "Moving your pet from Portugal to Denmark? EU-EU travel with an EU pet passport. Compare TAP, SAS, Lufthansa, and other airlines. Check Denmark's breed ban list."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "portugal-to-denmark"
 origin_name: "Portugal"
 destination_name: "Denmark"

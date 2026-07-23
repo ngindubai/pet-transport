@@ -5,7 +5,7 @@ description: "Guatemala is unlisted for UK pet travel: titre test, 3-month wait 
 date: "2026-07-13"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "guatemala-to-united-kingdom"
 origin_name: "Guatemala"
 destination_name: "United Kingdom"

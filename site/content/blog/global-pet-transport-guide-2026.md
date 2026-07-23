@@ -3,7 +3,7 @@ title: "Global Pet Transport Guide 2026: Country Rules, Costs & Airlines"
 description: "The complete reference for international pet transport in 2026. Quarantine rankings, airline comparison, titre test requirements, and cost estimates for 25 countries."
 date: "2026-04-23"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "global-pet-transport-guide-2026"
 url: "/blog/global-pet-transport-guide-2026/"
 seo:

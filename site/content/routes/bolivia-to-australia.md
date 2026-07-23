@@ -5,7 +5,7 @@ description: "Bolivia is not on DAFF's approved-country list, so a pet must live
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "bolivia-to-australia"
 origin_name: "Bolivia"
 destination_name: "Australia"

@@ -5,7 +5,7 @@ description: "Moving pets from South Korea to Italy in 2026. FAVN titre test, 90
 date: "2026-06-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "south-korea-to-italy"
 origin_name: "South Korea"
 destination_name: "Italy"

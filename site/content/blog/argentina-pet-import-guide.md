@@ -3,7 +3,7 @@ title: "Bringing a Pet to Argentina: SENASA Rules and What International Arrival
 description: "Guide to bringing your dog or cat to Argentina in 2026: SENASA health certificate requirements, rabies vaccination rules, and what to prepare for the Buenos Aires arrival."
 date: "2026-05-03"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "argentina-pet-import-guide"
 url: "/blog/argentina-pet-import-guide/"
 seo:

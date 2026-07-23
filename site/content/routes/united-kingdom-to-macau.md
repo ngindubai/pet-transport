@@ -5,7 +5,7 @@ description: "Moving a dog or cat from the UK to Macau in 2026. Export Health Ce
 date: "2026-07-12"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-macau"
 origin_name: "United Kingdom"
 destination_name: "Macau"

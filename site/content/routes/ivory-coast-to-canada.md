@@ -5,7 +5,7 @@ description: "Cote d'Ivoire is on CFIA's high-risk dog rabies list, but personal
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "ivory-coast-to-canada"
 origin_name: "Ivory Coast"
 destination_name: "Canada"

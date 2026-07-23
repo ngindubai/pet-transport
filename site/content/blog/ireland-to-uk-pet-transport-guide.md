@@ -3,7 +3,7 @@ title: "Pet Transport from Ireland to the UK: Post-Brexit Rules for Irish Pet Ow
 description: "Moving from Ireland to Great Britain with a pet? Post-Brexit, GB has changed from EU rules. Here is what Irish pet owners need: AHC from a listed vet, tapeworm treatment, and what happens at the port."
 date: 2026-05-09
 type: blog
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "ireland-to-uk-pet-transport-guide"
 url: "/blog/ireland-to-uk-pet-transport-guide/"
 seo:

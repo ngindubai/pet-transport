@@ -3,7 +3,7 @@ title: "USA to UK Pet Transport: USDA APHIS, UK APHA Rules, and What the Journey
 description: "Moving dogs or cats from the United States to the United Kingdom. USDA APHIS health certificate process, UK APHA import requirements, and the full step-by-step guide."
 date: "2026-06-13"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "us-to-uk-pet-transport-guide"
 url: "/blog/us-to-uk-pet-transport-guide/"
 seo:

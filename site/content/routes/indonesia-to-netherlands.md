@@ -5,7 +5,7 @@ description: "Moving pets from Indonesia to the Netherlands in 2026. FAVN titre 
 date: "2026-06-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "indonesia-to-netherlands"
 origin_name: "Indonesia"
 destination_name: "Netherlands"

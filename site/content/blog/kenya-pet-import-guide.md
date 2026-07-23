@@ -3,7 +3,7 @@ title: "Bringing a Pet to Kenya: DVS Requirements and What Expats Need to Know"
 description: "Guide to bringing your dog or cat to Kenya in 2026: DVS import permit, health certificate requirements, rabies rules, and arriving at Nairobi Jomo Kenyatta Airport."
 date: "2026-05-03"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "kenya-pet-import-guide"
 url: "/blog/kenya-pet-import-guide/"
 seo:

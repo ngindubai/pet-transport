@@ -5,7 +5,7 @@ description: "Moving your dog or cat from Thailand to the USA in 2026. CDC high-
 date: "2026-06-05"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "thailand-to-united-states"
 origin_name: "Thailand"
 destination_name: "United States"

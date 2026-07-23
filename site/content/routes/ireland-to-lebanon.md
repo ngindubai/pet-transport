@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Ireland to Lebanon in 2026. Rabies vaccin
 date: "2026-06-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "ireland-to-lebanon"
 origin_name: "Ireland"
 destination_name: "Lebanon"

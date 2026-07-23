@@ -5,7 +5,7 @@ date: "2026-06-12"
 type: "routes"
 layout: "single"
 template_variant: "D"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "rwanda-to-australia"
 origin_name: "Rwanda"
 destination_name: "Australia"
@@ -114,7 +114,7 @@ content:
 
         The RNATT titre test must return a result of at least 0.5 IU/ml from a DAFF-approved laboratory. Apply for the DAFF import permit via BICON (bicon.agriculture.gov.au) well before travel. The permit costs AUD 420 and must be in hand before you book the flight to Australia. The health certificate issued by a government vet in the transit country must follow the exact DAFF-approved format for that country.
 
-        On arrival in Melbourne, your pet goes directly to the Mickleham Post Entry Quarantine Facility for 10 days. This is non-negotiable and the cost is paid by the owner. After the 10-day period, assuming all tests clear, your pet is released to you.
+        On arrival in Melbourne, your pet goes directly to the Mickleham Post Entry Quarantine Facility for 10 days. Confirm the facility, duration, and current charges with the destination authority before travel. After the 10-day period, assuming all tests clear, your pet is released to you.
 
 faqs:
   - question: "Can my pet travel directly from Rwanda to Australia?"

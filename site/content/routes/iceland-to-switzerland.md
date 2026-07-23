@@ -5,7 +5,7 @@ description: "Moving a pet from Iceland to Switzerland in 2026. No titre test an
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "iceland-to-switzerland"
 origin_name: "Iceland"
 destination_name: "Switzerland"

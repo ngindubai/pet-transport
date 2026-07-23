@@ -5,7 +5,7 @@ description: "Algeria is on CFIA's high-risk dog rabies list, but the ban that f
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "algeria-to-canada"
 origin_name: "Algeria"
 destination_name: "Canada"

@@ -5,7 +5,7 @@ description: "Seychelles to Canada pet transport in 2026. Seychelles is absent f
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "seychelles-to-canada"
 origin_name: "Seychelles"
 destination_name: "Canada"

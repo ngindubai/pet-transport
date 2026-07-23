@@ -5,7 +5,7 @@ description: "Montenegro is absent from CFIA's high-risk list, unlike its own st
 date: "2026-07-22"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "montenegro-to-canada"
 origin_name: "Montenegro"
 destination_name: "Canada"

@@ -5,7 +5,7 @@ description: "MOCCAE puts Fiji on its approved low-risk list, so a dog or cat le
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "fiji-to-united-arab-emirates"
 origin_name: "Fiji"
 destination_name: "United Arab Emirates"

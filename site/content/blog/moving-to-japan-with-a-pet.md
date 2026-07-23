@@ -3,7 +3,7 @@ title: "Moving to Japan with a Pet: The Complete 2026 Guide"
 description: "Japan has some of the strictest pet import rules in the world. This guide walks through every step of the MAFF Animal Quarantine Service process for dogs and cats."
 date: "2026-05-07"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "moving-to-japan-with-a-pet"
 url: "/blog/moving-to-japan-with-a-pet/"
 seo:

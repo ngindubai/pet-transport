@@ -5,7 +5,7 @@ description: "Exporting a pet from Belgium in 2026: FAVV/AFSCA health certificat
 date: "2026-06-13"
 type: "blog"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "belgium-pet-export-guide"
 faqs:
   - question: "Who issues the pet export health certificate in Belgium?"

@@ -3,7 +3,7 @@ title: "Royal Brunei Airlines Pet Transport Guide 2026"
 description: "Does Royal Brunei Airlines accept pets? Pet policies for dogs and cats on Royal Brunei flights from Bandar Seri Begawan, and alternative options for Brunei pet relocation."
 date: "2026-05-08"
 type: "airlines"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "royal-brunei-airlines"
 url: "/pet-transport/airlines/royal-brunei-airlines/"
 seo:

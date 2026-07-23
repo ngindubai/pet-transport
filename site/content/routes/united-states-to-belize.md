@@ -5,7 +5,7 @@ description: "A BZ$50 BAHA permit covers up to 10 pets for a US to Belize move, 
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-belize"
 origin_name: "United States"
 destination_name: "Belize"

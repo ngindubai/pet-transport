@@ -3,7 +3,7 @@ title: "ITA Airways Pet Transport Guide"
 description: "ITA Airways pet policy guide for 2026: cabin pets, cargo acceptance, crate requirements, and how to book your dog or cat on Italy's national carrier."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "ita-airways"
 url: "/pet-transport/airlines/ita-airways/"
 airline:

@@ -3,7 +3,7 @@ title: "Flying with a Great Dane | Giant Breed Air Cargo Guide"
 description: "How to fly a Great Dane internationally. Giant-breed crate requirements, airline cargo booking, and which routes are feasible for the world's largest dog breed."
 type: "breeds"
 layout: "single"
-author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "great-dane"
 breed_name: "Great Dane"
 brachycephalic: false

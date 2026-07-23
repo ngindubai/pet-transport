@@ -5,7 +5,7 @@ description: "Moving your dog or cat from the UK to Malaysia in 2026. DVS import
 date: "2026-06-05"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-malaysia"
 origin_name: "United Kingdom"
 destination_name: "Malaysia"

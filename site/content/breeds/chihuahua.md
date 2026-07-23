@@ -3,7 +3,7 @@ title: "Flying with a Chihuahua | Cabin Pets & International Travel Rules"
 description: "The complete guide for flying a Chihuahua internationally. Cabin pet rules, in-carrier requirements, and country-by-country paperwork guide."
 type: "breeds"
 layout: "single"
-author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "chihuahua"
 breed_name: "Chihuahua"
 brachycephalic: false

@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Panama to Belgium in 2026. Panama is an E
 date: "2026-06-23"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "panama-to-belgium"
 origin_name: "Panama"
 destination_name: "Belgium"

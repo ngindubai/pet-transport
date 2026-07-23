@@ -5,7 +5,7 @@ description: "Moving a pet from Iceland to the UK in 2026. Part 1 status means n
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "iceland-to-united-kingdom"
 origin_name: "Iceland"
 destination_name: "United Kingdom"

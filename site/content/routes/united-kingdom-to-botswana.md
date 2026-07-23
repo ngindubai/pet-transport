@@ -5,7 +5,7 @@ description: "Botswana skips the titre test but wants a signed statement that no
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-botswana"
 origin_name: "United Kingdom"
 destination_name: "Botswana"

@@ -4,7 +4,7 @@ description: "Moving your pet from Spain to Germany: EU pet passport accepted, n
 type: "routes"
 layout: "single"
 template_variant: "legacy"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "spain-to-germany"
 origin_name: "Spain"
 destination_name: "Germany"

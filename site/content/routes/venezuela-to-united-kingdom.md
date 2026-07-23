@@ -5,7 +5,7 @@ description: "Avianca links Caracas to Heathrow via its own Bogota route. GB tre
 date: "2026-07-13"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "venezuela-to-united-kingdom"
 origin_name: "Venezuela"
 destination_name: "United Kingdom"

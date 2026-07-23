@@ -4,7 +4,7 @@ description: "Shipping your dog or cat from Germany to Hong Kong: AFCD import ru
 type: "routes"
 layout: "single"
 template_variant: "B"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "germany-to-hong-kong"
 origin_name: "Germany"
 destination_name: "Hong Kong"

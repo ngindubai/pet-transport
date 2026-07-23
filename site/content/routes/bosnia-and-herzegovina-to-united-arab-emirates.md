@@ -5,7 +5,7 @@ description: "Unlike Sarajevo's UK-bound Wizz Air and Ryanair flights, which car
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "bosnia-and-herzegovina-to-united-arab-emirates"
 origin_name: "Bosnia and Herzegovina"
 destination_name: "United Arab Emirates"

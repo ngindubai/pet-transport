@@ -3,7 +3,7 @@ title: "SriLankan Airlines Pet Transport Guide 2026"
 description: "SriLankan Airlines pet policy for dogs and cats. Cabin and cargo rules for the Sri Lanka flag carrier, route network, crate requirements, and what to expect flying pets to Colombo."
 date: "2026-05-08"
 type: "airlines"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "srilankan-airlines"
 url: "/pet-transport/airlines/srilankan-airlines/"
 seo:

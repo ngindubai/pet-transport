@@ -3,7 +3,7 @@ title: "PAL Express Pet Transport Guide 2026"
 description: "PAL Express pet policy for dogs and cats. Cabin and cargo rules for Philippines Airlines' regional subsidiary on domestic Philippines routes."
 date: "2026-05-08"
 type: "airlines"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "pal-express"
 url: "/pet-transport/airlines/pal-express/"
 seo:

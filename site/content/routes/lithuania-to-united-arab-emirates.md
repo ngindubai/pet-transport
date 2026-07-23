@@ -5,7 +5,7 @@ description: "Vilnius to Dubai or Abu Dhabi pet transport for 2026. MOCCAE's EU 
 date: "2026-07-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "lithuania-to-united-arab-emirates"
 origin_name: "Lithuania"
 destination_name: "United Arab Emirates"

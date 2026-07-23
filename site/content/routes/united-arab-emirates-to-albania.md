@@ -5,7 +5,7 @@ description: "Albania waives the rabies titre test for a pet heading into the UA
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-arab-emirates-to-albania"
 origin_name: "United Arab Emirates"
 destination_name: "Albania"

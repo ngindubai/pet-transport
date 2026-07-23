@@ -4,7 +4,7 @@ title: "Pet Transport United Kingdom to Lebanon | Export Guide & Airline Options
 description: "Relocating your pet from the UK to Lebanon? Lebanon import rules, UK Animal Health Certificate, airline options from London, costs, and timeline."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-lebanon"
 origin_name: "United Kingdom"
 destination_name: "Lebanon"

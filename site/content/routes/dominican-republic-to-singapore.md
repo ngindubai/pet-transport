@@ -5,7 +5,7 @@ description: "Moving a pet from the Dominican Republic to Singapore in 2026. AVS
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "dominican-republic-to-singapore"
 origin_name: "Dominican Republic"
 destination_name: "Singapore"

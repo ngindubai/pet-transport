@@ -3,7 +3,7 @@ title: "Travelling Internationally with a Fearful or Anxious Dog"
 description: "Anxious dogs can travel internationally -- but preparation is different. This guide covers crate training strategies, vet advice, what to tell the airline and how to reduce fear during the flight."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-fearful-or-anxious-dog"
 url: "/blog/travelling-with-a-fearful-or-anxious-dog/"
 seo:

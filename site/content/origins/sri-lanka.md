@@ -4,7 +4,7 @@ slug: "sri-lanka"
 description: "Complete guide to exporting your pet from Sri Lanka."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Sri Lanka"
 country_code: "LK"
 overview: |
@@ -24,7 +24,7 @@ sections:
   - heading: "Popular routes from Sri Lanka"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Sri Lanka to Argentina](/pet-transport/sri-lanka-to-argentina/)
       - [Sri Lanka to Australia](/pet-transport/sri-lanka-to-australia/)
       - [Sri Lanka to Austria](/pet-transport/sri-lanka-to-austria/)
@@ -95,6 +95,8 @@ sections:
       - [Sri Lanka to Thailand](/pet-transport/sri-lanka-to-thailand/)
       - [Sri Lanka to Turkey](/pet-transport/sri-lanka-to-turkey/)
       - [Sri Lanka to United Arab Emirates](/pet-transport/sri-lanka-to-united-arab-emirates/)
+      - [Sri Lanka to United Kingdom](/pet-transport/sri-lanka-to-united-kingdom/)
+      - [Sri Lanka to United States](/pet-transport/sri-lanka-to-united-states/)
       - [Sri Lanka to Vietnam](/pet-transport/sri-lanka-to-vietnam/)
       - [Sri Lanka to Zimbabwe](/pet-transport/sri-lanka-to-zimbabwe/)
 faqs:

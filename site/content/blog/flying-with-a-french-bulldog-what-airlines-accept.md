@@ -3,7 +3,7 @@ title: "Flying with a French Bulldog: Which Airlines Will Take Them"
 description: "French Bulldogs face stricter airline restrictions than most breeds. Here's which airlines accept them, which ban them from cargo, and how to plan an international move."
 date: "2026-04-12"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "flying-with-a-french-bulldog-what-airlines-accept"
 url: "/blog/flying-with-a-french-bulldog-what-airlines-accept/"
 seo:

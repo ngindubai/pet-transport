@@ -4,7 +4,7 @@ slug: "denmark"
 description: "Complete guide to exporting your pet from Denmark. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Denmark"
 country_code: "DK"
 overview: |
@@ -13,20 +13,23 @@ sections:
   - heading: "Export requirements from Denmark"
     body: |
       **Export Permit:** Denmark uses the EU Pet Travel Scheme. EU Pet Passport for EU/EFTA travel. For non-EU destinations, an EU AHC endorsed by DVFA is required.
-      
+
       **Issuing Authority:** Danish Veterinary and Food Administration (DVFA)
-      
+
       **Last Verified:** 2026-04-16
   - heading: "Popular routes from Denmark"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Denmark to Argentina](/pet-transport/denmark-to-argentina/)
+      - [Denmark to Armenia](/pet-transport/denmark-to-armenia/)
       - [Denmark to Australia](/pet-transport/denmark-to-australia/)
       - [Denmark to Austria](/pet-transport/denmark-to-austria/)
+      - [Denmark to Azerbaijan](/pet-transport/denmark-to-azerbaijan/)
       - [Denmark to Bahrain](/pet-transport/denmark-to-bahrain/)
       - [Denmark to Bangladesh](/pet-transport/denmark-to-bangladesh/)
       - [Denmark to Belgium](/pet-transport/denmark-to-belgium/)
+      - [Denmark to Brazil](/pet-transport/denmark-to-brazil/)
       - [Denmark to Bulgaria](/pet-transport/denmark-to-bulgaria/)
       - [Denmark to Cambodia](/pet-transport/denmark-to-cambodia/)
       - [Denmark to Canada](/pet-transport/denmark-to-canada/)
@@ -37,11 +40,14 @@ sections:
       - [Denmark to Croatia](/pet-transport/denmark-to-croatia/)
       - [Denmark to Cyprus](/pet-transport/denmark-to-cyprus/)
       - [Denmark to Czech Republic](/pet-transport/denmark-to-czech-republic/)
+      - [Denmark to Dominican Republic](/pet-transport/denmark-to-dominican-republic/)
       - [Denmark to Ecuador](/pet-transport/denmark-to-ecuador/)
       - [Denmark to Egypt](/pet-transport/denmark-to-egypt/)
+      - [Denmark to Estonia](/pet-transport/denmark-to-estonia/)
       - [Denmark to Ethiopia](/pet-transport/denmark-to-ethiopia/)
       - [Denmark to Finland](/pet-transport/denmark-to-finland/)
       - [Denmark to France](/pet-transport/denmark-to-france/)
+      - [Denmark to Georgia](/pet-transport/denmark-to-georgia/)
       - [Denmark to Germany](/pet-transport/denmark-to-germany/)
       - [Denmark to Ghana](/pet-transport/denmark-to-ghana/)
       - [Denmark to Greece](/pet-transport/denmark-to-greece/)
@@ -52,14 +58,20 @@ sections:
       - [Denmark to Ireland](/pet-transport/denmark-to-ireland/)
       - [Denmark to Israel](/pet-transport/denmark-to-israel/)
       - [Denmark to Italy](/pet-transport/denmark-to-italy/)
+      - [Denmark to Jamaica](/pet-transport/denmark-to-jamaica/)
       - [Denmark to Japan](/pet-transport/denmark-to-japan/)
       - [Denmark to Jordan](/pet-transport/denmark-to-jordan/)
+      - [Denmark to Kazakhstan](/pet-transport/denmark-to-kazakhstan/)
       - [Denmark to Kenya](/pet-transport/denmark-to-kenya/)
       - [Denmark to Kuwait](/pet-transport/denmark-to-kuwait/)
+      - [Denmark to Latvia](/pet-transport/denmark-to-latvia/)
+      - [Denmark to Lebanon](/pet-transport/denmark-to-lebanon/)
+      - [Denmark to Lithuania](/pet-transport/denmark-to-lithuania/)
       - [Denmark to Luxembourg](/pet-transport/denmark-to-luxembourg/)
       - [Denmark to Malaysia](/pet-transport/denmark-to-malaysia/)
       - [Denmark to Malta](/pet-transport/denmark-to-malta/)
       - [Denmark to Mauritius](/pet-transport/denmark-to-mauritius/)
+      - [Denmark to Mexico](/pet-transport/denmark-to-mexico/)
       - [Denmark to Morocco](/pet-transport/denmark-to-morocco/)
       - [Denmark to Myanmar](/pet-transport/denmark-to-myanmar/)
       - [Denmark to Nepal](/pet-transport/denmark-to-nepal/)
@@ -69,15 +81,18 @@ sections:
       - [Denmark to Norway](/pet-transport/denmark-to-norway/)
       - [Denmark to Oman](/pet-transport/denmark-to-oman/)
       - [Denmark to Pakistan](/pet-transport/denmark-to-pakistan/)
+      - [Denmark to Panama](/pet-transport/denmark-to-panama/)
       - [Denmark to Peru](/pet-transport/denmark-to-peru/)
       - [Denmark to Philippines](/pet-transport/denmark-to-philippines/)
       - [Denmark to Poland](/pet-transport/denmark-to-poland/)
       - [Denmark to Portugal](/pet-transport/denmark-to-portugal/)
       - [Denmark to Qatar](/pet-transport/denmark-to-qatar/)
       - [Denmark to Romania](/pet-transport/denmark-to-romania/)
+      - [Denmark to Rwanda](/pet-transport/denmark-to-rwanda/)
       - [Denmark to Saudi Arabia](/pet-transport/denmark-to-saudi-arabia/)
       - [Denmark to Singapore](/pet-transport/denmark-to-singapore/)
       - [Denmark to Slovakia](/pet-transport/denmark-to-slovakia/)
+      - [Denmark to Slovenia](/pet-transport/denmark-to-slovenia/)
       - [Denmark to South Africa](/pet-transport/denmark-to-south-africa/)
       - [Denmark to South Korea](/pet-transport/denmark-to-south-korea/)
       - [Denmark to Spain](/pet-transport/denmark-to-spain/)
@@ -88,9 +103,13 @@ sections:
       - [Denmark to Tanzania](/pet-transport/denmark-to-tanzania/)
       - [Denmark to Thailand](/pet-transport/denmark-to-thailand/)
       - [Denmark to Turkey](/pet-transport/denmark-to-turkey/)
+      - [Denmark to Uganda](/pet-transport/denmark-to-uganda/)
       - [Denmark to United Arab Emirates](/pet-transport/denmark-to-united-arab-emirates/)
       - [Denmark to United Kingdom](/pet-transport/denmark-to-united-kingdom/)
       - [Denmark to United States](/pet-transport/denmark-to-united-states/)
+      - [Denmark to Uruguay](/pet-transport/denmark-to-uruguay/)
+      - [Denmark to Vietnam](/pet-transport/denmark-to-vietnam/)
+      - [Denmark to Zimbabwe](/pet-transport/denmark-to-zimbabwe/)
 faqs:
   - question: "What do I need to export my pet from Denmark?"
     answer: "Denmark uses the EU Pet Travel Scheme. EU Pet Passport for EU/EFTA travel. For non-EU destinations, a DVFA-endorsed AHC is required."

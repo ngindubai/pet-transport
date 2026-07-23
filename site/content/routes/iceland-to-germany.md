@@ -5,7 +5,7 @@ description: "No titre test, no quarantine: an Icelandic pet moves into Germany 
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "iceland-to-germany"
 origin_name: "Iceland"
 destination_name: "Germany"

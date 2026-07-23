@@ -5,7 +5,7 @@ description: "Moving your dog or cat from the USA to Malaysia in 2026. DVS impor
 date: "2026-06-05"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-malaysia"
 origin_name: "United States"
 destination_name: "Malaysia"

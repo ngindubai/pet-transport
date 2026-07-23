@@ -5,7 +5,7 @@ description: "Turkmenistan skips the rabies titre test on entry, unlike most des
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-turkmenistan"
 origin_name: "Australia"
 destination_name: "Turkmenistan"

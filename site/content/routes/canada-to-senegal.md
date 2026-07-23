@@ -5,7 +5,7 @@ description: "Senegal's DSV import authorisation runs on a 3-month clock, separa
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-senegal"
 origin_name: "Canada"
 destination_name: "Senegal"

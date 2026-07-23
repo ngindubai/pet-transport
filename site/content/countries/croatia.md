@@ -3,7 +3,7 @@ title: "Importing Pets to Croatia | Requirements & Regulations | PetTransportGlo
 description: "Complete guide to importing dogs and cats into Croatia. HRVet import requirements, quarantine rules, and banned breeds explained."
 type: "countries"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "croatia"
 destination_country: "Croatia"
 destination_iso: "HR"

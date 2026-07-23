@@ -5,7 +5,7 @@ description: "Moving a cat from Singapore to the Maldives in 2026. Dogs cannot e
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "singapore-to-maldives"
 origin_name: "Singapore"
 destination_name: "Maldives"
