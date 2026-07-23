@@ -16,6 +16,18 @@ const DEFAULT_RECIPIENT = 'info@pettransportglobal.com';
 const DEFAULT_SENDER = 'noreply@pettransportglobal.com';
 const DEFAULT_CRM_ENDPOINT = 'https://logistics-crm-tcu4.onrender.com/api/public/leads';
 
+// Load server-only secrets kept outside the web root, so they are never served
+// publicly and are not overwritten when the live branch redeploys. Create this
+// file once in the folder that contains public_html. It should call
+// putenv('PTG_CRM_API_KEY=...') and putenv('PTG_RATE_LIMIT_SALT=...').
+$documentRoot = $_SERVER['DOCUMENT_ROOT'] ?? '';
+if ($documentRoot !== '') {
+    $secretsFile = dirname($documentRoot) . '/ptg-secrets.php';
+    if (is_readable($secretsFile)) {
+        require $secretsFile;
+    }
+}
+
 header('Cache-Control: no-store, max-age=0');
 header('X-Content-Type-Options: nosniff');
 header('Referrer-Policy: strict-origin-when-cross-origin');
