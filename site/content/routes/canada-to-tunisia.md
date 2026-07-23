@@ -5,7 +5,7 @@ description: "Canada's CFIA needs a certificate, not a permit, but Tunisia's bre
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-tunisia"
 origin_name: "Canada"
 destination_name: "Tunisia"

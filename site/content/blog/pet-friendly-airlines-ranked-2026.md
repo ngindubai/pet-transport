@@ -2,7 +2,7 @@
 title: "Most Pet-Friendly Airlines in 2026"
 description: "How do the world's major airlines compare for travelling with a cat or dog? This guide ranks and compares pet policies across cabin acceptance, hold conditions, brachycephalic restrictions and costs."
 date: "2025-09-03"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/pet-friendly-airlines-ranked-2026/"
 tags: ["airline comparison", "pet-friendly airlines", "airline pet policy", "practical guide"]

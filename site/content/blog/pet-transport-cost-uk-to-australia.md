@@ -3,7 +3,7 @@ title: "Cost of Moving a Pet from UK to Australia | 2026 Guide"
 description: "How much does it cost to move a dog or cat from the UK to Australia? A detailed breakdown of vet fees, health certificate costs, DAFF fees, quarantine, and airline cargo charges."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-transport-cost-uk-to-australia"
 url: "/blog/pet-transport-cost-uk-to-australia/"
 seo:

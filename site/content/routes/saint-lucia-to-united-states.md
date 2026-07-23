@@ -5,7 +5,7 @@ description: "Saint Lucia isn't CDC high-risk. American Airlines flies Miami-Hew
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "saint-lucia-to-united-states"
 origin_name: "Saint Lucia"
 destination_name: "United States"

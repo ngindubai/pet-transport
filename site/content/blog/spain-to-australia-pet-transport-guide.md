@@ -3,7 +3,7 @@ title: "Pet Transport Spain to Australia 2026 | Complete Guide"
 description: "Moving your dog or cat from Spain to Australia. DAFF requirements, titre test, approved country pathway, quarantine in Australia, and which airlines fly the route."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "spain-to-australia-pet-transport-guide"
 url: "/blog/spain-to-australia-pet-transport-guide/"
 seo:

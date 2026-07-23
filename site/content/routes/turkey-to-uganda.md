@@ -5,7 +5,7 @@ description: "Turkish Airlines only started flying Istanbul to Entebbe non-stop 
 date: "2026-07-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "turkey-to-uganda"
 origin_name: "Turkey"
 destination_name: "Uganda"

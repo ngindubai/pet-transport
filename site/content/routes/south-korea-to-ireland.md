@@ -3,7 +3,7 @@ title: "Pet Transport from South Korea to Ireland | APQA Export, EU Titre Test &
 description: "Moving your pet from South Korea to Ireland: APQA health certificate, EU FAVN titre test and 3-month wait required, Dublin BCP inspection, and airline options from Incheon."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "south-korea-to-ireland"
 origin_name: "South Korea"
 destination_name: "Ireland"

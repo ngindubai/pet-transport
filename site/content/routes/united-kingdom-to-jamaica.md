@@ -4,7 +4,7 @@ title: "Pet Transport United Kingdom to Jamaica | Import Permits & Airline Guide
 description: "Moving your pet from the UK to Jamaica? Jamaica's strict titre test and import permit rules explained, airline options from London, timeline, and costs."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-jamaica"
 origin_name: "United Kingdom"
 destination_name: "Jamaica"

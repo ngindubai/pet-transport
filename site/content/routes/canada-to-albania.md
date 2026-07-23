@@ -5,7 +5,7 @@ description: "Canada sits on the same EU rabies-risk list as the US, so Albania 
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-albania"
 origin_name: "Canada"
 destination_name: "Albania"

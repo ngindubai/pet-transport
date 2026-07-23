@@ -5,7 +5,7 @@ description: "No airline has flown Minsk to the EU or UK since 2021. Pets drive 
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "belarus-to-united-kingdom"
 origin_name: "Belarus"
 destination_name: "United Kingdom"

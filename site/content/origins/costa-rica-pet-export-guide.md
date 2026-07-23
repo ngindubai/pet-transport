@@ -3,7 +3,7 @@ title: "Pet Transport from Costa Rica | Export Requirements & Routes"
 description: "How to ship your dog or cat from Costa Rica internationally. Export requirements, health certificates, and SENASA-CR endorsement explained."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "costa-rica-pet-export-guide"
 origin_country: "Costa Rica"
 origin_iso: "CR"
@@ -44,7 +44,7 @@ sections:
   - heading: "Popular routes from Costa Rica"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Costa Rica to Argentina](/pet-transport/costa-rica-to-argentina/)
       - [Costa Rica to Australia](/pet-transport/costa-rica-to-australia/)
       - [Costa Rica to Austria](/pet-transport/costa-rica-to-austria/)
@@ -119,7 +119,6 @@ sections:
       - [Costa Rica to United States](/pet-transport/costa-rica-to-united-states/)
       - [Costa Rica to Vietnam](/pet-transport/costa-rica-to-vietnam/)
       - [Costa Rica to Zimbabwe](/pet-transport/costa-rica-to-zimbabwe/)
-
 faqs:
   - question: "What documents does my pet need to leave Costa Rica?"
     answer: "Your pet needs a valid microchip (ISO standard), current rabies vaccination, and an official health certificate endorsed by SENASA-CR. Specific destination countries may require additional documents such as a titre test result, import permit, or specific certificate formats."

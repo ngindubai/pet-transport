@@ -22,11 +22,12 @@
 
         {{ $allPages := .Pages }}
         {{ $total := len $allPages }}
+        {{ $paginator := .Paginator }}
         {{ $images := slice "hero.jpg" "pexels-dog-1850465.jpg" "eddiekphoto-dog-6680642.jpg" "rmgaylord0-dog-916421.jpg" "dompixabay-cats-3971069.jpg" "pinuu-cat-5047346.jpg" "stocksnap-pug-2598826.jpg" "publicdomainpictures-dog-165210_1920.jpg" }}
 
         {{/* Popular row */}}
         {{ $popular := first 4 $allPages }}
-        {{ if gt (len $popular) 0 }}
+        {{ if and (eq $paginator.PageNumber 1) (gt (len $popular) 0) }}
         <div class="section-heading">
             <p class="subtitle">popular</p>
             <h2>Top {{ .Title }}</h2>
@@ -61,12 +62,13 @@
         </div>
 
         <div class="mb-3">
-            <input type="search" id="listFilter" class="form-control" placeholder="Search {{ .Title | lower }}..." autocomplete="off">
+            <input type="search" id="listFilter" class="form-control" placeholder="Filter this page of {{ .Title | lower }}..." autocomplete="off">
             <p class="mt-2 text-muted" id="filterCount"></p>
+            {{ if eq .Type "routes" }}<p class="text-muted">Showing {{ len $paginator.Pages }} of {{ $total }} routes on this page. Use <a href="/search/">site search</a> to find any origin or destination.</p>{{ end }}
         </div>
 
         <div class="row" id="allItemsGrid">
-            {{ range $i, $p := $allPages }}
+            {{ range $i, $p := $paginator.Pages }}
             {{ $img := index $images (mod $i (len $images)) }}
             <div class="col-lg-3 col-md-6 mb-4" data-filter-title="{{ $p.Title | lower }}">
                 <div class="blog-box">
@@ -87,6 +89,11 @@
             {{ end }}
         </div>
         <p class="text-center text-muted" id="noResults" style="display:none;">No matches found. Try a different search term.</p>
+        {{ if gt $paginator.TotalPages 1 }}
+        <nav aria-label="Directory pages" class="d-flex justify-content-center mt-4">
+            {{ template "_internal/pagination.html" . }}
+        </nav>
+        {{ end }}
     </div>
 </div>
 {{ end }}

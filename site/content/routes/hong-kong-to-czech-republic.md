@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Hong Kong to Czech Republic | PetTransportGlob
 description: "Complete guide to pet transport from Hong Kong to Czech Republic. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "hong-kong-to-czech-republic"
 origin_name: "Hong Kong"
 destination_name: "Czech Republic"

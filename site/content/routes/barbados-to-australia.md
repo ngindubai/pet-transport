@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Barbados to Australia in 2026. DAFF class
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "barbados-to-australia"
 origin_name: "Barbados"
 destination_name: "Australia"

@@ -3,7 +3,7 @@ title: "Flying with a Miniature Schnauzer | International Pet Transport"
 description: "Cabin and cargo options for Miniature Schnauzers, health paperwork for international travel, and a guide to destination requirements."
 type: "breeds"
 layout: "single"
-author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "miniature-schnauzer"
 breed_name: "Miniature Schnauzer"
 brachycephalic: false

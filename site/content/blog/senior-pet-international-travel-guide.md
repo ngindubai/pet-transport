@@ -3,7 +3,7 @@ title: "Senior Pet Travel: Preparing an Older Dog or Cat for an International Mo
 description: "Older pets can travel internationally - but they need extra preparation. Here's how to assess fitness for travel, manage age-related conditions, and make the journey as comfortable as possible."
 date: "2026-05-28"
 type: "blog"
-author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "senior-pet-international-travel-guide"
 url: "/blog/senior-pet-international-travel-guide/"
 seo:

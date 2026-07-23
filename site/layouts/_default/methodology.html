@@ -1,4 +1,4 @@
-{{ define "title" }}{{ .Params.seo.title | default .Title }}{{ end }}
+{{ define "title" }}{{ .Params.seo.title | default .Title | truncate 68 }}{{ end }}
 
 {{ define "schema" }}
 <script type="application/ld+json">
@@ -9,8 +9,8 @@
     "description": {{ .Params.description | default .Title | jsonify | safeJS }},
     "datePublished": "{{ .Date.Format "2006-01-02" }}",
     "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
-    "author": { "@type": "Organization", "name": "PetTransportGlobal" },
-    "publisher": { "@type": "Organization", "name": "PetTransportGlobal", "url": "https://pettransportglobal.com" }
+    "author": { "@type": "Organization", "name": "Pet Transport Global Editorial Team" },
+    "publisher": { "@type": "Organization", "name": "Pet Transport Global", "url": "https://pettransportglobal.com" }
 }
 </script>
 {{ end }}
@@ -42,7 +42,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-9">
 
-                {{ partial "verified-date.html" . }}
+                <p class="ptg-author-byline"><strong>Pet Transport Global Editorial Team</strong> &middot; Methodology updated <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time></p>
 
                 <div class="ptg-blog-body">
                     {{ .Content }}

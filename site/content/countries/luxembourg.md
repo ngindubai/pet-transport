@@ -3,7 +3,7 @@ title: "Pet Import Rules for Luxembourg | Microchip, Vaccines, Quarantine Explai
 description: "Complete guide to importing dogs and cats into Luxembourg. ASV import requirements, quarantine rules, and banned breeds explained."
 type: "countries"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "luxembourg"
 destination_country: "Luxembourg"
 destination_iso: "LU"

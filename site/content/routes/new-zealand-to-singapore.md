@@ -4,7 +4,7 @@ title: "Pet Transport from New Zealand to Singapore | Requirements & Airline Com
 description: "Moving your pet from New Zealand to Singapore: AVS import permit, mandatory quarantine (30 days dogs, 10 days cats), no titre test, Singapore Airlines vs Air NZ compared."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "new-zealand-to-singapore"
 origin_name: "New Zealand"
 destination_name: "Singapore"

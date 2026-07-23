@@ -5,7 +5,7 @@ description: "The US sits in Part B of Bosnia and Herzegovina's own low-risk lis
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-bosnia-and-herzegovina"
 origin_name: "United States"
 destination_name: "Bosnia and Herzegovina"

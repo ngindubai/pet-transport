@@ -3,7 +3,7 @@ title: "Air Astana Pet Policy: Flying Pets with Kazakhstan's National Airline"
 description: "Air Astana is Kazakhstan's national carrier. Here is what you need to know about their pet transport policy, cabin pet rules, and health documentation for Central Asian routes."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "air-astana"
 url: "/pet-transport/airlines/air-astana/"
 seo:

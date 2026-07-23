@@ -3,7 +3,7 @@ title: "Morocco Pet Export Guide | International Pet Transport"
 description: "How to ship your dog or cat from Morocco internationally. Export requirements, health certificates, and ONSSA endorsement explained."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "morocco-pet-export-guide"
 origin_country: "Morocco"
 origin_iso: "MA"
@@ -44,7 +44,7 @@ sections:
   - heading: "Popular routes from Morocco"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Morocco to Argentina](/pet-transport/morocco-to-argentina/)
       - [Morocco to Australia](/pet-transport/morocco-to-australia/)
       - [Morocco to Austria](/pet-transport/morocco-to-austria/)
@@ -116,9 +116,9 @@ sections:
       - [Morocco to Turkey](/pet-transport/morocco-to-turkey/)
       - [Morocco to United Arab Emirates](/pet-transport/morocco-to-united-arab-emirates/)
       - [Morocco to United Kingdom](/pet-transport/morocco-to-united-kingdom/)
+      - [Morocco to United States](/pet-transport/morocco-to-united-states/)
       - [Morocco to Vietnam](/pet-transport/morocco-to-vietnam/)
       - [Morocco to Zimbabwe](/pet-transport/morocco-to-zimbabwe/)
-
 faqs:
   - question: "What documents does my pet need to leave Morocco?"
     answer: "Your pet needs a valid microchip (ISO standard), current rabies vaccination, and an official health certificate endorsed by ONSSA. Specific destination countries may require additional documents such as a titre test result, import permit, or specific certificate formats."

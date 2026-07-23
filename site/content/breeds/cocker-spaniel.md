@@ -3,7 +3,7 @@ title: "Flying with a Cocker Spaniel | International Pet Transport Guide"
 description: "What Cocker Spaniel owners need to know about airline cargo rules, cabin eligibility, and import paperwork for international moves."
 type: "breeds"
 layout: "single"
-author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "cocker-spaniel"
 breed_name: "Cocker Spaniel"
 brachycephalic: false

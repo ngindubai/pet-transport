@@ -5,7 +5,7 @@ description: "flydubai's Ashgabat-Dubai run is the one genuinely easy part of th
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "turkmenistan-to-united-arab-emirates"
 origin_name: "Turkmenistan"
 destination_name: "United Arab Emirates"

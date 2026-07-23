@@ -5,7 +5,7 @@ description: "Move a dog or cat from Hungary to Armenia in 2026. Nébih health c
 date: "2026-06-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "hungary-to-armenia"
 origin_name: "Hungary"
 destination_name: "Armenia"

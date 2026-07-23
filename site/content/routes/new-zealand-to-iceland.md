@@ -5,7 +5,7 @@ description: "Moving a pet from New Zealand to Iceland in 2026. New Zealand is a
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "new-zealand-to-iceland"
 origin_name: "New Zealand"
 destination_name: "Iceland"

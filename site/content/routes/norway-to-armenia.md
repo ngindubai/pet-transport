@@ -5,7 +5,7 @@ description: "Moving a pet from Norway to Armenia in 2026. Mattilsynet health ce
 date: "2026-06-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "norway-to-armenia"
 origin_name: "Norway"
 destination_name: "Armenia"

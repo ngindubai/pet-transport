@@ -5,7 +5,7 @@ description: "Moving a dog or cat from France to the Dominican Republic in 2026.
 date: "2026-06-28"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "france-to-dominican-republic"
 origin_name: "France"
 destination_name: "Dominican Republic"

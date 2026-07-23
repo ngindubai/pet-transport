@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Thailand to Mexico in 2026. DLD export ce
 date: "2026-06-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "thailand-to-mexico"
 origin_name: "Thailand"
 destination_name: "Mexico"

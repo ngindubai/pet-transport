@@ -5,7 +5,7 @@ description: "A MOCCAE export certificate lasts 30 days; Zambia's own import per
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-arab-emirates-to-zambia"
 origin_name: "United Arab Emirates"
 destination_name: "Zambia"

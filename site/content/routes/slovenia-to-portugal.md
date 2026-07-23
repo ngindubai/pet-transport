@@ -5,7 +5,7 @@ description: "Ljubljana to Lisbon is over 2,000 kilometres, too far to drive wit
 date: "2026-07-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "slovenia-to-portugal"
 origin_name: "Slovenia"
 destination_name: "Portugal"

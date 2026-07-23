@@ -3,7 +3,7 @@ title: "Importing Pets to Bangladesh | Requirements & Regulations | PetTransport
 description: "Complete guide to importing dogs and cats into Bangladesh. DLS import requirements, quarantine rules, and banned breeds explained."
 type: "countries"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "bangladesh"
 destination_country: "Bangladesh"
 destination_iso: "BD"

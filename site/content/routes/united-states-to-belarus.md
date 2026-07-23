@@ -5,7 +5,7 @@ description: "Belarus wants the US certificate endorsed within 5 days and only a
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-belarus"
 origin_name: "United States"
 destination_name: "Belarus"

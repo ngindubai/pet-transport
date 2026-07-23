@@ -5,7 +5,7 @@ description: "A Tajikistan dog entering the US needs a titre test or quarantine 
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-tajikistan"
 origin_name: "United States"
 destination_name: "Tajikistan"

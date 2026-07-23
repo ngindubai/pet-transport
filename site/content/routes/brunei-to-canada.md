@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Brunei to Canada in 2026. Royal Brunei Ai
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "brunei-to-canada"
 origin_name: "Brunei"
 destination_name: "Canada"

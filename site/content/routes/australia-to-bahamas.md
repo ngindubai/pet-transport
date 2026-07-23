@@ -5,7 +5,7 @@ description: "Australia's WOAH rabies-free status means BAHFSA skips the rabies 
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-bahamas"
 origin_name: "Australia"
 destination_name: "Bahamas"

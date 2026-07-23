@@ -5,7 +5,7 @@ description: "Iceland runs a mandatory 14-day quarantine on every incoming pet, 
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "germany-to-iceland"
 origin_name: "Germany"
 destination_name: "Iceland"

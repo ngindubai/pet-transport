@@ -4,7 +4,7 @@ slug: "sweden"
 description: "Complete guide to exporting your pet from Sweden."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Sweden"
 country_code: "SE"
 overview: |
@@ -24,10 +24,12 @@ sections:
   - heading: "Popular routes from Sweden"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Sweden to Argentina](/pet-transport/sweden-to-argentina/)
+      - [Sweden to Armenia](/pet-transport/sweden-to-armenia/)
       - [Sweden to Australia](/pet-transport/sweden-to-australia/)
       - [Sweden to Austria](/pet-transport/sweden-to-austria/)
+      - [Sweden to Azerbaijan](/pet-transport/sweden-to-azerbaijan/)
       - [Sweden to Bahrain](/pet-transport/sweden-to-bahrain/)
       - [Sweden to Bangladesh](/pet-transport/sweden-to-bangladesh/)
       - [Sweden to Belgium](/pet-transport/sweden-to-belgium/)
@@ -43,11 +45,14 @@ sections:
       - [Sweden to Cyprus](/pet-transport/sweden-to-cyprus/)
       - [Sweden to Czech Republic](/pet-transport/sweden-to-czech-republic/)
       - [Sweden to Denmark](/pet-transport/sweden-to-denmark/)
+      - [Sweden to Dominican Republic](/pet-transport/sweden-to-dominican-republic/)
       - [Sweden to Ecuador](/pet-transport/sweden-to-ecuador/)
       - [Sweden to Egypt](/pet-transport/sweden-to-egypt/)
+      - [Sweden to Estonia](/pet-transport/sweden-to-estonia/)
       - [Sweden to Ethiopia](/pet-transport/sweden-to-ethiopia/)
       - [Sweden to Finland](/pet-transport/sweden-to-finland/)
       - [Sweden to France](/pet-transport/sweden-to-france/)
+      - [Sweden to Georgia](/pet-transport/sweden-to-georgia/)
       - [Sweden to Germany](/pet-transport/sweden-to-germany/)
       - [Sweden to Ghana](/pet-transport/sweden-to-ghana/)
       - [Sweden to Greece](/pet-transport/sweden-to-greece/)
@@ -58,10 +63,15 @@ sections:
       - [Sweden to Ireland](/pet-transport/sweden-to-ireland/)
       - [Sweden to Israel](/pet-transport/sweden-to-israel/)
       - [Sweden to Italy](/pet-transport/sweden-to-italy/)
+      - [Sweden to Jamaica](/pet-transport/sweden-to-jamaica/)
       - [Sweden to Japan](/pet-transport/sweden-to-japan/)
       - [Sweden to Jordan](/pet-transport/sweden-to-jordan/)
+      - [Sweden to Kazakhstan](/pet-transport/sweden-to-kazakhstan/)
       - [Sweden to Kenya](/pet-transport/sweden-to-kenya/)
       - [Sweden to Kuwait](/pet-transport/sweden-to-kuwait/)
+      - [Sweden to Latvia](/pet-transport/sweden-to-latvia/)
+      - [Sweden to Lebanon](/pet-transport/sweden-to-lebanon/)
+      - [Sweden to Lithuania](/pet-transport/sweden-to-lithuania/)
       - [Sweden to Luxembourg](/pet-transport/sweden-to-luxembourg/)
       - [Sweden to Malaysia](/pet-transport/sweden-to-malaysia/)
       - [Sweden to Malta](/pet-transport/sweden-to-malta/)
@@ -76,15 +86,18 @@ sections:
       - [Sweden to Norway](/pet-transport/sweden-to-norway/)
       - [Sweden to Oman](/pet-transport/sweden-to-oman/)
       - [Sweden to Pakistan](/pet-transport/sweden-to-pakistan/)
+      - [Sweden to Panama](/pet-transport/sweden-to-panama/)
       - [Sweden to Peru](/pet-transport/sweden-to-peru/)
       - [Sweden to Philippines](/pet-transport/sweden-to-philippines/)
       - [Sweden to Poland](/pet-transport/sweden-to-poland/)
       - [Sweden to Portugal](/pet-transport/sweden-to-portugal/)
       - [Sweden to Qatar](/pet-transport/sweden-to-qatar/)
       - [Sweden to Romania](/pet-transport/sweden-to-romania/)
+      - [Sweden to Rwanda](/pet-transport/sweden-to-rwanda/)
       - [Sweden to Saudi Arabia](/pet-transport/sweden-to-saudi-arabia/)
       - [Sweden to Singapore](/pet-transport/sweden-to-singapore/)
       - [Sweden to Slovakia](/pet-transport/sweden-to-slovakia/)
+      - [Sweden to Slovenia](/pet-transport/sweden-to-slovenia/)
       - [Sweden to South Africa](/pet-transport/sweden-to-south-africa/)
       - [Sweden to South Korea](/pet-transport/sweden-to-south-korea/)
       - [Sweden to Spain](/pet-transport/sweden-to-spain/)
@@ -94,7 +107,11 @@ sections:
       - [Sweden to Tanzania](/pet-transport/sweden-to-tanzania/)
       - [Sweden to Thailand](/pet-transport/sweden-to-thailand/)
       - [Sweden to Turkey](/pet-transport/sweden-to-turkey/)
+      - [Sweden to Uganda](/pet-transport/sweden-to-uganda/)
       - [Sweden to United Arab Emirates](/pet-transport/sweden-to-united-arab-emirates/)
+      - [Sweden to United Kingdom](/pet-transport/sweden-to-united-kingdom/)
+      - [Sweden to United States](/pet-transport/sweden-to-united-states/)
+      - [Sweden to Uruguay](/pet-transport/sweden-to-uruguay/)
       - [Sweden to Vietnam](/pet-transport/sweden-to-vietnam/)
       - [Sweden to Zimbabwe](/pet-transport/sweden-to-zimbabwe/)
 faqs:

@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Norway to Jamaica in 2026. Import permit 
 date: "2026-06-23"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "norway-to-jamaica"
 origin_name: "Norway"
 destination_name: "Jamaica"

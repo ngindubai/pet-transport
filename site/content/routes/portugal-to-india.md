@@ -4,7 +4,7 @@ title: "Pet Transport Portugal to India | Journey Guide for Relocating Pet Owner
 description: "Shipping your dog or cat from Portugal to India. AQCS import permit, Indian Embassy endorsement, documentation timeline, and what to expect on arrival."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "portugal-to-india"
 origin_name: "Portugal"
 destination_name: "India"

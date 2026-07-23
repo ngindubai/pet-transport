@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Thailand to Czech Republic | PetTransportGloba
 description: "Complete guide to pet transport from Thailand to Czech Republic. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "thailand-to-czech-republic"
 origin_name: "Thailand"
 destination_name: "Czech Republic"

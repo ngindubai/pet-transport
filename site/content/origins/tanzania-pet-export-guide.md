@@ -3,7 +3,7 @@ title: "Tanzania Pet Export Guide | International Pet Transport"
 description: "How to ship your dog or cat from Tanzania internationally. Export requirements, health certificates, and MLF endorsement explained."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "tanzania-pet-export-guide"
 origin_country: "Tanzania"
 origin_iso: "TZ"
@@ -44,7 +44,7 @@ sections:
   - heading: "Popular routes from Tanzania"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Tanzania to Argentina](/pet-transport/tanzania-to-argentina/)
       - [Tanzania to Australia](/pet-transport/tanzania-to-australia/)
       - [Tanzania to Austria](/pet-transport/tanzania-to-austria/)
@@ -119,7 +119,6 @@ sections:
       - [Tanzania to United States](/pet-transport/tanzania-to-united-states/)
       - [Tanzania to Vietnam](/pet-transport/tanzania-to-vietnam/)
       - [Tanzania to Zimbabwe](/pet-transport/tanzania-to-zimbabwe/)
-
 faqs:
   - question: "What documents does my pet need to leave Tanzania?"
     answer: "Your pet needs a valid microchip (ISO standard), current rabies vaccination, and an official health certificate endorsed by MLF. Specific destination countries may require additional documents such as a titre test result, import permit, or specific certificate formats."

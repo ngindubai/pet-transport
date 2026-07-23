@@ -4,7 +4,7 @@ description: "Moving your pet from Germany to South Korea: no titre test from EU
 type: "routes"
 layout: "single"
 template_variant: "D"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "germany-to-south-korea"
 origin_name: "Germany"
 destination_name: "South Korea"

@@ -1,66 +1,54 @@
 ---
-title: "How We Source Our Route Data | Pet Transport Global"
-description: "How PetTransportGlobal researches, verifies, and updates the pet import regulations, quarantine rules, and airline policies on this site. Our data sourcing methodology explained."
+title: "How We Source Route Data | Pet Transport Global"
+description: "How Pet Transport Global checks pet import rules, records review dates, handles older route pages, and corrects route and airline guidance."
 slug: "how-we-source-route-data"
-date: 2026-05-31
+date: 2026-07-23
 draft: false
 layout: "methodology"
+author: "Pet Transport Global Editorial Team"
 ---
 
-PetTransportGlobal covers more than 5,000 directional pet transport routes across 75 countries. Every route page, country guide, and airline policy on this site is built from named, official sources, not third-party summaries or guesswork. This page explains exactly how we research, verify, and update that information.
+Pet Transport Global publishes thousands of directional route pages. Their review status is not identical, so the site distinguishes a recorded check from older generated guidance instead of assigning every page the date of the latest website build.
 
----
+## Sources We Prefer
 
-## Primary sources we use
+For regulatory claims, the editorial team looks first for government, intergovernmental, and carrier sources, including:
 
-Every import requirement, quarantine rule, and titre test timeline on this site comes directly from government or intergovernmental authorities. Our primary sources are:
+- **UK APHA / DEFRA**: [bringing a pet to Great Britain](https://www.gov.uk/bring-pet-to-great-britain)
+- **USDA APHIS**: [pet travel requirements](https://www.aphis.usda.gov/pet-travel)
+- **Australian DAFF**: [live-animal and pet imports](https://www.agriculture.gov.au/biosecurity-trade/import/live-animals/pets)
+- **European Commission**: [movement of pets](https://food.ec.europa.eu/animals/movement-pets_en)
+- **Japan Animal Quarantine Service**: [English guidance](https://www.maff.go.jp/aqs/english/)
+- **Singapore Animal & Veterinary Service**: [AVS](https://www.nparks.gov.sg/avs)
+- **New Zealand Ministry for Primary Industries**: [bringing animals to New Zealand](https://www.mpi.govt.nz/travel-and-recreation/bringing-animals-to-nz/)
+- **IATA Live Animals Regulations** and the operating airline's current animal policy
 
-- **UK APHA / DEFRA**: UK pet travel and import rules: [gov.uk/bring-pet-to-great-britain](https://www.gov.uk/bring-pet-to-great-britain)
-- **USDA APHIS**: US pet import requirements: [aphis.usda.gov/pet-travel](https://www.aphis.usda.gov/pet-travel)
-- **Australian DAFF**: Australian biosecurity and import rules: [agriculture.gov.au](https://www.agriculture.gov.au/biosecurity-trade/import/live-animals/pets)
-- **EU TRACES / EU Reg 576/2013**: EU pet movement rules: [ec.europa.eu/food/animals/pet-movement](https://food.ec.europa.eu/animals/movement-pets_en)
-- **Japan AQS**: Animal Quarantine Service: [maff.go.jp/aqs](https://www.maff.go.jp/aqs/english/)
-- **Singapore AVS**: Animal and Veterinary Service: [nparks.gov.sg](https://www.nparks.gov.sg/avs)
-- **New Zealand MPI**: Ministry for Primary Industries: [mpi.govt.nz](https://www.mpi.govt.nz/travel-and-recreation/bringing-animals-to-nz/)
-- **IATA Live Animals Regulations**: Crate standards, species rules, and airline cargo policies
-- Named airline policy pages for each carrier covered on the site
+For other destinations, we look for the national veterinary authority, agriculture ministry, embassy, or official permit portal. Some older route files contain secondary-source summaries or generic authority descriptions. Those pages are not represented as freshly verified merely because the site was rebuilt.
 
-For countries not covered by the above, we use the relevant national veterinary authority or ministry of agriculture.
+## What the Review Label Means
 
----
+A page marked **“Regulations checked”** has a date recorded in its content source. That date is emitted in the page and structured data. A page with no recorded date instead says **“Verification date not recorded”** and is automatically set to `noindex` until reviewed.
 
-## How we verify information
+A recorded date is evidence of when an editorial check was logged, not a guarantee that rules have remained unchanged. Pet owners should confirm requirements with the destination authority and operating airline close to travel.
 
-Each route page and country guide is researched directly against the primary source listed above. We do not rely on pet-travel aggregator sites, travel agency summaries, or undated forum posts.
+## How a Route Is Reviewed
 
-Where official sources are unclear or contradictory, we flag this on the relevant page and recommend owners contact the authority directly.
+For a substantive route review, we aim to:
 
-All regulatory data carries a **"Regulations verified"** date stamp on the page itself. This reflects the date the content was last checked against the primary source, not the date of publication.
+1. Identify the destination's current pet-import instructions and permit process.
+2. Check microchip, rabies vaccination, titre-test, health-certificate, quarantine, and breed conditions.
+3. Check export or endorsement steps at the origin.
+4. Compare the proposed airline and each operating leg with the carrier's current animal policy.
+5. Record the source and review date, and resolve contradictions between requirements, summaries, and FAQs.
 
----
+Automated quality gates reject known generated-text defects, malformed internal links, false build-date freshness, and common requirement/FAQ contradictions. They support review but do not replace regulatory research.
 
-## Update cadence
+## Corrections and Review Priorities
 
-Regulations change, sometimes without much notice. Our standard practice:
+High-traffic and time-sensitive routes are prioritised for rechecking. We do not claim that every route is reviewed on a fixed schedule. If you find an error, email [info@pettransportglobal.com](mailto:info@pettransportglobal.com) with the page URL and, where possible, the updated official source. We will assess the report and correct or withhold the page as appropriate.
 
-- **High-traffic routes** (UK-Australia, UAE-UK, USA-UK, etc.) are checked at least every three months.
-- **All other routes and country guides** are reviewed on a rolling basis, with a full audit at least once a year.
-- **Airline policies** are checked every quarter, or when a known policy change is announced.
+## Scope and Limitations
 
-If you spot an error or an out-of-date regulation, please [contact us](/contact/) with a link to the updated official source. We will verify and correct it promptly.
+Pet Transport Global is not a veterinary authority, government body, or legal adviser. This site helps owners plan questions, documents, and timing. It does not replace instructions from the relevant authority, veterinarian, airline, or import permit.
 
----
-
-## What this site is: and is not
-
-PetTransportGlobal is a guidance and lead-generation resource. It is **not** a licensed veterinary authority, government body, or legal advisor.
-
-The information here is intended to help pet owners understand what the process involves and what documents they are likely to need. It is not a substitute for checking the current rules directly with the relevant authority close to your travel date.
-
-All content is written and reviewed by our team of pet relocation and animal health specialists, with regulations cross-checked against the official sources listed above.
-
----
-
-## Questions?
-
-If you have a question about a specific route or regulation, [get in touch](/contact/) or [request a quote](/). We research each enquiry individually against the current official rules for your origin and destination.
+All public guidance is attributed to the **Pet Transport Global Editorial Team** until an individual writer or reviewer and their credentials have been verified.

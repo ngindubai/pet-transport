@@ -5,7 +5,7 @@ description: "Saint Lucia is Part 2 listed, so no rabies titre test is needed. V
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "saint-lucia-to-united-kingdom"
 origin_name: "Saint Lucia"
 destination_name: "United Kingdom"

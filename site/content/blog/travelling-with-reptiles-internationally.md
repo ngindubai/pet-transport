@@ -3,7 +3,7 @@ title: "Travelling with Reptiles Internationally | Permits and Rules"
 description: "How to transport reptiles across international borders. CITES Appendix I and II rules, import permits, health certificates, and practical advice for moving snakes, lizards, and tortoises."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-reptiles-internationally"
 url: "/blog/travelling-with-reptiles-internationally/"
 seo:

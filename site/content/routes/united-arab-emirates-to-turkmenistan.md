@@ -5,7 +5,7 @@ description: "flydubai flies Dubai to Ashgabat nonstop twice a week and carries 
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-arab-emirates-to-turkmenistan"
 origin_name: "United Arab Emirates"
 destination_name: "Turkmenistan"

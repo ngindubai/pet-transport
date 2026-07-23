@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Slovakia to the United Kingdom in 2026. S
 date: "2026-06-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "slovakia-to-united-kingdom"
 origin_name: "Slovakia"
 destination_name: "United Kingdom"

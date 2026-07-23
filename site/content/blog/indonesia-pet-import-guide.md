@@ -3,7 +3,7 @@ title: "Bringing Pets to Indonesia: Import Rules for Expats Moving to Bali or Ja
 description: "Indonesia requires advance import permits, microchipping, and rabies vaccination for pet imports. Bali has stricter rules than other islands. Here is what expats need to know."
 date: "2026-05-06"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "indonesia-pet-import-guide"
 url: "/blog/indonesia-pet-import-guide/"
 seo:

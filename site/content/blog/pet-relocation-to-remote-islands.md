@@ -3,7 +3,7 @@ title: "Relocating with Pets to Remote Islands: Biosecurity, Quarantine, and Spe
 description: "Moving to the Azores, Canary Islands, Galapagos, Maldives, or other island destinations with a pet? Island biosecurity rules are often stricter than mainland rules. Here is what to expect."
 date: "2026-05-06"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-relocation-to-remote-islands"
 url: "/blog/pet-relocation-to-remote-islands/"
 seo:

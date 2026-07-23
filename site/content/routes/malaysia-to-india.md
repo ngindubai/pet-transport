@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Malaysia to India in 2026. AQCS NOC requi
 date: "2026-06-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "malaysia-to-india"
 origin_name: "Malaysia"
 destination_name: "India"

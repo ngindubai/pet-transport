@@ -5,7 +5,7 @@ description: "Moving your dog or cat from Thailand to the UK in 2026. DLD health
 date: "2026-06-05"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "thailand-to-united-kingdom"
 origin_name: "Thailand"
 destination_name: "United Kingdom"

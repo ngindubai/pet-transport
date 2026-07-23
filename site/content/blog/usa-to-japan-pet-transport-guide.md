@@ -3,7 +3,7 @@ title: "Pet Transport from the USA to Japan: Preparing for One of the World's St
 description: "Japan has one of the most demanding pet import systems in the world. Moving from the USA requires a rabies titre test, 180-day wait, and advance notification. Here is the full timeline."
 date: "2026-05-06"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "usa-to-japan-pet-transport-guide"
 url: "/blog/usa-to-japan-pet-transport-guide/"
 seo:

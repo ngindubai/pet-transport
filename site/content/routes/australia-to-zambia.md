@@ -5,7 +5,7 @@ description: "Zambia asks for no rabies titre test on entry, just a Lusaka vet p
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-zambia"
 origin_name: "Australia"
 destination_name: "Zambia"

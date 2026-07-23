@@ -3,7 +3,7 @@ title: "Flying with a Scottish Fold | Airline Restrictions & Advice"
 description: "Which airlines accept Scottish Fold as cargo or cabin? Seasonal embargoes, breed bans, and what you need before booking your flat-faced cat."
 type: "breeds"
 layout: "single"
-author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "scottish-fold"
 breed_name: "Scottish Fold"
 brachycephalic: true

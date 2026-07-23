@@ -3,7 +3,7 @@ title: "EU Pet Passport Guide 2026: What It Is, Who Needs One, and How It Works"
 description: "A complete guide to the EU pet passport in 2026: what it records, which countries accept it, how UK pets are affected post-Brexit, and how to get one for your pet."
 date: "2026-05-03"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "eu-pet-passport-guide-2026"
 url: "/blog/eu-pet-passport-guide-2026/"
 seo:

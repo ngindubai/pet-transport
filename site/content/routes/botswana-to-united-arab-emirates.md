@@ -5,7 +5,7 @@ description: "Botswana isn't on MOCCAE's low-risk list, so a rabies titre test a
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "botswana-to-united-arab-emirates"
 origin_name: "Botswana"
 destination_name: "United Arab Emirates"

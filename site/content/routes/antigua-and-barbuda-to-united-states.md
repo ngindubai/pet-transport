@@ -5,7 +5,7 @@ description: "Antigua and Barbuda is not on the CDC's high-risk dog rabies list,
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "antigua-and-barbuda-to-united-states"
 origin_name: "Antigua and Barbuda"
 destination_name: "United States"

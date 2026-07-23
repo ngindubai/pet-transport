@@ -5,7 +5,7 @@ description: "Turkmenistan will let an Alabai in, just not out. A US pet clears 
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-turkmenistan"
 origin_name: "United States"
 destination_name: "Turkmenistan"

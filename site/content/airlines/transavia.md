@@ -3,7 +3,7 @@ title: "Transavia Pet Policy: Cabin Pets on the Dutch and French Budget Carrier"
 description: "Transavia accepts small pets in the cabin on European routes. Here is what you need to know about their pet policy, weight limits, approved carriers, and booking process."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "transavia"
 url: "/pet-transport/airlines/transavia/"
 seo:

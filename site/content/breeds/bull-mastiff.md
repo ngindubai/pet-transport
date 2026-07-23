@@ -3,7 +3,7 @@ title: "Flying with a Bull Mastiff | Airline Restrictions & Advice"
 description: "Which airlines accept Bull Mastiff as cargo or cabin? Seasonal embargoes, breed bans, and what you need before booking your flat-faced dog."
 type: "breeds"
 layout: "single"
-author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "bull-mastiff"
 breed_name: "Bull Mastiff"
 brachycephalic: true

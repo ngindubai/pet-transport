@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Brunei to the Netherlands in 2026. A Sing
 date: "2026-07-12"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "brunei-to-netherlands"
 origin_name: "Brunei"
 destination_name: "Netherlands"

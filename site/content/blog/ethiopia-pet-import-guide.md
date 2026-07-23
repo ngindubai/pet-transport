@@ -3,7 +3,7 @@ title: "Moving Pets to Ethiopia: Veterinary Import Permits and Addis Ababa Entry
 description: "Pet import guide for Ethiopia. The Ministry of Agriculture permit process, vaccination requirements, and what expats and NGO workers need to know before flying to Addis Ababa."
 date: "2026-05-20"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "ethiopia-pet-import-guide"
 url: "/blog/ethiopia-pet-import-guide/"
 seo:

@@ -3,7 +3,7 @@ title: "Pet Transport from UK to Morocco 2026"
 description: "How to move your dog or cat from the UK to Morocco. APHA health certificate, ONSSA requirements, ferry or flight options, and breed restriction rules."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "uk-to-morocco-pet-transport-guide"
 url: "/blog/uk-to-morocco-pet-transport-guide/"
 seo:

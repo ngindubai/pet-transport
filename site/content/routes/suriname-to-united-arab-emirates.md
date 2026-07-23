@@ -5,7 +5,7 @@ description: "Suriname isn't on MOCCAE's low-risk list, so a titre test applies,
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "suriname-to-united-arab-emirates"
 origin_name: "Suriname"
 destination_name: "United Arab Emirates"

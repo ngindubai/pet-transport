@@ -5,7 +5,7 @@ description: "Uruguay to Finland pet transport in 2026. FAVN titre test, 90-day 
 date: "2026-07-07"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "uruguay-to-finland"
 origin_name: "Uruguay"
 destination_name: "Finland"

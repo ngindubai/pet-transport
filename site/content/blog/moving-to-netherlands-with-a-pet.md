@@ -2,7 +2,7 @@
 title: "Moving to the Netherlands with a Pet"
 description: "Everything you need to know about relocating to the Netherlands with a cat or dog. Covers EU pet passport rules, third-country requirements for UK and US pets, LICG database, and life in Amsterdam."
 date: "2025-08-23"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/moving-to-netherlands-with-a-pet/"
 tags: ["netherlands", "amsterdam", "expat guide", "pet relocation", "europe"]

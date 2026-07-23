@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Bangladesh to the United Kingdom in 2026.
 date: "2026-06-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "bangladesh-to-united-kingdom"
 origin_name: "Bangladesh"
 destination_name: "United Kingdom"

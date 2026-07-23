@@ -5,7 +5,7 @@ description: "Moving a pet from Kazakhstan to Singapore in 2026. Kazakhstan sits
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "kazakhstan-to-singapore"
 origin_name: "Kazakhstan"
 destination_name: "Singapore"

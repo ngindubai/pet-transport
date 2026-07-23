@@ -5,7 +5,7 @@ description: "Botswana is a DAFF non-approved country, so pets need 180 days liv
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "botswana-to-australia"
 origin_name: "Botswana"
 destination_name: "Australia"

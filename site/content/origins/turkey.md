@@ -4,7 +4,7 @@ slug: "turkey"
 description: "Complete guide to exporting your pet from Turkey."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Turkey"
 country_code: "TR"
 overview: |
@@ -24,10 +24,12 @@ sections:
   - heading: "Popular routes from Turkey"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Turkey to Argentina](/pet-transport/turkey-to-argentina/)
+      - [Turkey to Armenia](/pet-transport/turkey-to-armenia/)
       - [Turkey to Australia](/pet-transport/turkey-to-australia/)
       - [Turkey to Austria](/pet-transport/turkey-to-austria/)
+      - [Turkey to Azerbaijan](/pet-transport/turkey-to-azerbaijan/)
       - [Turkey to Bahrain](/pet-transport/turkey-to-bahrain/)
       - [Turkey to Bangladesh](/pet-transport/turkey-to-bangladesh/)
       - [Turkey to Belgium](/pet-transport/turkey-to-belgium/)
@@ -43,11 +45,14 @@ sections:
       - [Turkey to Cyprus](/pet-transport/turkey-to-cyprus/)
       - [Turkey to Czech Republic](/pet-transport/turkey-to-czech-republic/)
       - [Turkey to Denmark](/pet-transport/turkey-to-denmark/)
+      - [Turkey to Dominican Republic](/pet-transport/turkey-to-dominican-republic/)
       - [Turkey to Ecuador](/pet-transport/turkey-to-ecuador/)
       - [Turkey to Egypt](/pet-transport/turkey-to-egypt/)
+      - [Turkey to Estonia](/pet-transport/turkey-to-estonia/)
       - [Turkey to Ethiopia](/pet-transport/turkey-to-ethiopia/)
       - [Turkey to Finland](/pet-transport/turkey-to-finland/)
       - [Turkey to France](/pet-transport/turkey-to-france/)
+      - [Turkey to Georgia](/pet-transport/turkey-to-georgia/)
       - [Turkey to Germany](/pet-transport/turkey-to-germany/)
       - [Turkey to Ghana](/pet-transport/turkey-to-ghana/)
       - [Turkey to Greece](/pet-transport/turkey-to-greece/)
@@ -58,10 +63,15 @@ sections:
       - [Turkey to Ireland](/pet-transport/turkey-to-ireland/)
       - [Turkey to Israel](/pet-transport/turkey-to-israel/)
       - [Turkey to Italy](/pet-transport/turkey-to-italy/)
+      - [Turkey to Jamaica](/pet-transport/turkey-to-jamaica/)
       - [Turkey to Japan](/pet-transport/turkey-to-japan/)
       - [Turkey to Jordan](/pet-transport/turkey-to-jordan/)
+      - [Turkey to Kazakhstan](/pet-transport/turkey-to-kazakhstan/)
       - [Turkey to Kenya](/pet-transport/turkey-to-kenya/)
       - [Turkey to Kuwait](/pet-transport/turkey-to-kuwait/)
+      - [Turkey to Latvia](/pet-transport/turkey-to-latvia/)
+      - [Turkey to Lebanon](/pet-transport/turkey-to-lebanon/)
+      - [Turkey to Lithuania](/pet-transport/turkey-to-lithuania/)
       - [Turkey to Luxembourg](/pet-transport/turkey-to-luxembourg/)
       - [Turkey to Malaysia](/pet-transport/turkey-to-malaysia/)
       - [Turkey to Malta](/pet-transport/turkey-to-malta/)
@@ -76,15 +86,18 @@ sections:
       - [Turkey to Norway](/pet-transport/turkey-to-norway/)
       - [Turkey to Oman](/pet-transport/turkey-to-oman/)
       - [Turkey to Pakistan](/pet-transport/turkey-to-pakistan/)
+      - [Turkey to Panama](/pet-transport/turkey-to-panama/)
       - [Turkey to Peru](/pet-transport/turkey-to-peru/)
       - [Turkey to Philippines](/pet-transport/turkey-to-philippines/)
       - [Turkey to Poland](/pet-transport/turkey-to-poland/)
       - [Turkey to Portugal](/pet-transport/turkey-to-portugal/)
       - [Turkey to Qatar](/pet-transport/turkey-to-qatar/)
       - [Turkey to Romania](/pet-transport/turkey-to-romania/)
+      - [Turkey to Rwanda](/pet-transport/turkey-to-rwanda/)
       - [Turkey to Saudi Arabia](/pet-transport/turkey-to-saudi-arabia/)
       - [Turkey to Singapore](/pet-transport/turkey-to-singapore/)
       - [Turkey to Slovakia](/pet-transport/turkey-to-slovakia/)
+      - [Turkey to Slovenia](/pet-transport/turkey-to-slovenia/)
       - [Turkey to South Africa](/pet-transport/turkey-to-south-africa/)
       - [Turkey to South Korea](/pet-transport/turkey-to-south-korea/)
       - [Turkey to Spain](/pet-transport/turkey-to-spain/)
@@ -94,7 +107,11 @@ sections:
       - [Turkey to Taiwan](/pet-transport/turkey-to-taiwan/)
       - [Turkey to Tanzania](/pet-transport/turkey-to-tanzania/)
       - [Turkey to Thailand](/pet-transport/turkey-to-thailand/)
+      - [Turkey to Uganda](/pet-transport/turkey-to-uganda/)
       - [Turkey to United Arab Emirates](/pet-transport/turkey-to-united-arab-emirates/)
+      - [Turkey to United Kingdom](/pet-transport/turkey-to-united-kingdom/)
+      - [Turkey to United States](/pet-transport/turkey-to-united-states/)
+      - [Turkey to Uruguay](/pet-transport/turkey-to-uruguay/)
       - [Turkey to Vietnam](/pet-transport/turkey-to-vietnam/)
       - [Turkey to Zimbabwe](/pet-transport/turkey-to-zimbabwe/)
 faqs:

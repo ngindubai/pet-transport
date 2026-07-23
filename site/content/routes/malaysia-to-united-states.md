@@ -5,7 +5,7 @@ description: "Moving your dog or cat from Malaysia to the USA in 2026. CDC high-
 date: "2026-06-05"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "malaysia-to-united-states"
 origin_name: "Malaysia"
 destination_name: "United States"

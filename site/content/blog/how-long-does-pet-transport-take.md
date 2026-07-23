@@ -3,7 +3,7 @@ title: "How Long Does International Pet Transport Take?"
 description: "Timeline guide for international pet transport. Preparation timelines by destination, documentation processing times, and realistic planning windows for a smooth move."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "how-long-does-pet-transport-take"
 url: "/blog/how-long-does-pet-transport-take/"
 seo:

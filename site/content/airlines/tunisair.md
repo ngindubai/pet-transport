@@ -2,7 +2,7 @@
 title: "Tunisair Pet Policy: Cargo Rules, Cabin Acceptance and Tunisia Pet Import Requirements"
 description: "Tunisair pet transport policy for cats and dogs. Covers cabin and hold cargo acceptance, Tunisia import requirements, DGSV documentation and key routes connecting North Africa and Europe."
 date: "2025-09-16"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "airlines"
 url: "/pet-transport/airlines/tunisair/"
 airline_name: "Tunisair"

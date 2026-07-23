@@ -3,7 +3,7 @@ title: "Shipping Pets from Hungary Internationally | PetTransportGlobal"
 description: "How to ship your dog or cat from Hungary internationally. Export requirements, health certificates, and NEBIH endorsement explained."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "hungary-pet-export-guide"
 origin_country: "Hungary"
 origin_iso: "HU"
@@ -44,10 +44,12 @@ sections:
   - heading: "Popular routes from Hungary"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Hungary to Argentina](/pet-transport/hungary-to-argentina/)
+      - [Hungary to Armenia](/pet-transport/hungary-to-armenia/)
       - [Hungary to Australia](/pet-transport/hungary-to-australia/)
       - [Hungary to Austria](/pet-transport/hungary-to-austria/)
+      - [Hungary to Azerbaijan](/pet-transport/hungary-to-azerbaijan/)
       - [Hungary to Bahrain](/pet-transport/hungary-to-bahrain/)
       - [Hungary to Bangladesh](/pet-transport/hungary-to-bangladesh/)
       - [Hungary to Belgium](/pet-transport/hungary-to-belgium/)
@@ -63,11 +65,14 @@ sections:
       - [Hungary to Cyprus](/pet-transport/hungary-to-cyprus/)
       - [Hungary to Czech Republic](/pet-transport/hungary-to-czech-republic/)
       - [Hungary to Denmark](/pet-transport/hungary-to-denmark/)
+      - [Hungary to Dominican Republic](/pet-transport/hungary-to-dominican-republic/)
       - [Hungary to Ecuador](/pet-transport/hungary-to-ecuador/)
       - [Hungary to Egypt](/pet-transport/hungary-to-egypt/)
+      - [Hungary to Estonia](/pet-transport/hungary-to-estonia/)
       - [Hungary to Ethiopia](/pet-transport/hungary-to-ethiopia/)
       - [Hungary to Finland](/pet-transport/hungary-to-finland/)
       - [Hungary to France](/pet-transport/hungary-to-france/)
+      - [Hungary to Georgia](/pet-transport/hungary-to-georgia/)
       - [Hungary to Germany](/pet-transport/hungary-to-germany/)
       - [Hungary to Ghana](/pet-transport/hungary-to-ghana/)
       - [Hungary to Greece](/pet-transport/hungary-to-greece/)
@@ -77,12 +82,18 @@ sections:
       - [Hungary to Ireland](/pet-transport/hungary-to-ireland/)
       - [Hungary to Israel](/pet-transport/hungary-to-israel/)
       - [Hungary to Italy](/pet-transport/hungary-to-italy/)
+      - [Hungary to Jamaica](/pet-transport/hungary-to-jamaica/)
       - [Hungary to Japan](/pet-transport/hungary-to-japan/)
       - [Hungary to Jordan](/pet-transport/hungary-to-jordan/)
+      - [Hungary to Kazakhstan](/pet-transport/hungary-to-kazakhstan/)
       - [Hungary to Kenya](/pet-transport/hungary-to-kenya/)
       - [Hungary to Kuwait](/pet-transport/hungary-to-kuwait/)
+      - [Hungary to Latvia](/pet-transport/hungary-to-latvia/)
+      - [Hungary to Lebanon](/pet-transport/hungary-to-lebanon/)
+      - [Hungary to Lithuania](/pet-transport/hungary-to-lithuania/)
       - [Hungary to Luxembourg](/pet-transport/hungary-to-luxembourg/)
       - [Hungary to Malaysia](/pet-transport/hungary-to-malaysia/)
+      - [Hungary to Maldives](/pet-transport/hungary-to-maldives/)
       - [Hungary to Malta](/pet-transport/hungary-to-malta/)
       - [Hungary to Mauritius](/pet-transport/hungary-to-mauritius/)
       - [Hungary to Mexico](/pet-transport/hungary-to-mexico/)
@@ -95,15 +106,18 @@ sections:
       - [Hungary to Norway](/pet-transport/hungary-to-norway/)
       - [Hungary to Oman](/pet-transport/hungary-to-oman/)
       - [Hungary to Pakistan](/pet-transport/hungary-to-pakistan/)
+      - [Hungary to Panama](/pet-transport/hungary-to-panama/)
       - [Hungary to Peru](/pet-transport/hungary-to-peru/)
       - [Hungary to Philippines](/pet-transport/hungary-to-philippines/)
       - [Hungary to Poland](/pet-transport/hungary-to-poland/)
       - [Hungary to Portugal](/pet-transport/hungary-to-portugal/)
       - [Hungary to Qatar](/pet-transport/hungary-to-qatar/)
       - [Hungary to Romania](/pet-transport/hungary-to-romania/)
+      - [Hungary to Rwanda](/pet-transport/hungary-to-rwanda/)
       - [Hungary to Saudi Arabia](/pet-transport/hungary-to-saudi-arabia/)
       - [Hungary to Singapore](/pet-transport/hungary-to-singapore/)
       - [Hungary to Slovakia](/pet-transport/hungary-to-slovakia/)
+      - [Hungary to Slovenia](/pet-transport/hungary-to-slovenia/)
       - [Hungary to South Africa](/pet-transport/hungary-to-south-africa/)
       - [Hungary to South Korea](/pet-transport/hungary-to-south-korea/)
       - [Hungary to Spain](/pet-transport/hungary-to-spain/)
@@ -114,12 +128,13 @@ sections:
       - [Hungary to Tanzania](/pet-transport/hungary-to-tanzania/)
       - [Hungary to Thailand](/pet-transport/hungary-to-thailand/)
       - [Hungary to Turkey](/pet-transport/hungary-to-turkey/)
+      - [Hungary to Uganda](/pet-transport/hungary-to-uganda/)
       - [Hungary to United Arab Emirates](/pet-transport/hungary-to-united-arab-emirates/)
       - [Hungary to United Kingdom](/pet-transport/hungary-to-united-kingdom/)
       - [Hungary to United States](/pet-transport/hungary-to-united-states/)
+      - [Hungary to Uruguay](/pet-transport/hungary-to-uruguay/)
       - [Hungary to Vietnam](/pet-transport/hungary-to-vietnam/)
       - [Hungary to Zimbabwe](/pet-transport/hungary-to-zimbabwe/)
-
 faqs:
   - question: "What documents does my pet need to leave Hungary?"
     answer: "Your pet needs a valid microchip (ISO standard), current rabies vaccination, and an official health certificate endorsed by NEBIH. Specific destination countries may require additional documents such as a titre test result, import permit, or specific certificate formats."

@@ -3,7 +3,7 @@ title: "Saudia Pet Policy: Flying Pets with Saudi Arabian Airlines"
 description: "Saudia (Saudi Arabian Airlines) accepts pets as cargo on international routes. Here is what you need to know about their pet transport policy, breed restrictions, and booking process."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "saudia"
 url: "/pet-transport/airlines/saudia/"
 seo:

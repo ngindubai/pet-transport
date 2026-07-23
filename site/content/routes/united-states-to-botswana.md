@@ -5,7 +5,7 @@ description: "No CDC-style machinery in reverse: Botswana skips the titre test b
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-botswana"
 origin_name: "United States"
 destination_name: "Botswana"

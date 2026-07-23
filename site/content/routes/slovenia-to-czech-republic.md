@@ -5,7 +5,7 @@ description: "Ljubljana to Prague is about 600 kilometres, six to seven hours by
 date: "2026-07-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "slovenia-to-czech-republic"
 origin_name: "Slovenia"
 destination_name: "Czech Republic"

@@ -5,7 +5,7 @@ description: "No non-stop flight links Athens to India, so a Gulf hub connection
 date: "2026-07-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "greece-to-india"
 origin_name: "Greece"
 destination_name: "India"

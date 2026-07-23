@@ -3,7 +3,7 @@ title: "Travelling with a Samoyed Internationally"
 description: "International travel with a Samoyed. Heat sensitivity concerns, cargo-only travel, crate sizing, and destination country requirements for this Nordic breed."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-samoyed-internationally"
 url: "/blog/travelling-with-a-samoyed-internationally/"
 seo:

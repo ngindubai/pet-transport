@@ -5,7 +5,7 @@ description: "Fiji requires a mandatory 30-day government quarantine for UK-orig
 date: "2026-07-13"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-fiji"
 origin_name: "United Kingdom"
 destination_name: "Fiji"

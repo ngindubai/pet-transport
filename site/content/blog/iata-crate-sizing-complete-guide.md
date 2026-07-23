@@ -3,7 +3,7 @@ title: "IATA Crate Sizing: How to Pick the Right Size for Your Dog or Cat"
 description: "The complete guide to IATA live animal container sizing. How to measure your pet, which IATA size number applies, and what vents, door, and floor specifications the regulations require."
 date: "2026-05-24"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "iata-crate-sizing-complete-guide"
 url: "/blog/iata-crate-sizing-complete-guide/"
 seo:

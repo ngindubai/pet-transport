@@ -5,7 +5,7 @@ description: "Russia is CDC high-risk for dog rabies and there are no direct Mos
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "russia-to-united-states"
 origin_name: "Russia"
 destination_name: "United States"

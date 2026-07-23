@@ -5,7 +5,7 @@ description: "No airline flies Dhaka to the US non-stop, so a Gulf hub connectio
 date: "2026-07-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "bangladesh-to-united-states"
 origin_name: "Bangladesh"
 destination_name: "United States"

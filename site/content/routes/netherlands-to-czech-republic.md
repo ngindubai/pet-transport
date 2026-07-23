@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Netherlands to Czech Republic | PetTransportGl
 description: "Pet relocation from Netherlands to Czech Republic: Czech Republic import requirements, timeline, airlines, costs, and documentation checklist."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "netherlands-to-czech-republic"
 origin_name: "Netherlands"
 destination_name: "Czech Republic"

@@ -3,7 +3,7 @@ title: "Bringing a Pet to Nigeria: Federal Department of Livestock Requirements"
 description: "Guide to bringing your dog or cat to Nigeria in 2026: import permit, health certificate, vaccination schedule, arrival process at Lagos and Abuja airports."
 date: "2026-05-06"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "nigeria-pet-import-guide"
 url: "/blog/nigeria-pet-import-guide/"
 seo:

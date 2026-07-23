@@ -4,7 +4,7 @@ title: "Pet Transport from Italy to the United Kingdom | 2026 AHC & Tapeworm Gui
 description: "Moving your dog or cat from Italy to the UK in 2026: EU pet passport or AHC, tapeworm timing for dogs, approved UK entry airports, and no titre test required."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "italy-to-united-kingdom"
 origin_name: "Italy"
 destination_name: "United Kingdom"

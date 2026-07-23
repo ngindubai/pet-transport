@@ -4,7 +4,7 @@ title: "Pet Transport United Kingdom to Dominican Republic | Export Guide & Airl
 description: "Relocating your pet from the UK to the Dominican Republic? AHC requirements, airline options from London, DR import rules, costs, and timeline."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-dominican-republic"
 origin_name: "United Kingdom"
 destination_name: "Dominican Republic"

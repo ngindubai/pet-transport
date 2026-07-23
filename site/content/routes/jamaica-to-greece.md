@@ -5,7 +5,7 @@ description: "Jamaica to Greece pet transport: Jamaica is EU Group 2 listed, so 
 date: "2026-07-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "jamaica-to-greece"
 origin_name: "Jamaica"
 destination_name: "Greece"

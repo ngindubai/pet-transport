@@ -5,7 +5,7 @@ description: "Turkmenistan isn't on DAFF's approved list, so a pet must live in 
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "turkmenistan-to-australia"
 origin_name: "Turkmenistan"
 destination_name: "Australia"

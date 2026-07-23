@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Ireland to Georgia in 2026. No titre test
 date: "2026-06-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "ireland-to-georgia"
 origin_name: "Ireland"
 destination_name: "Georgia"

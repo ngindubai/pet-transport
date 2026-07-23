@@ -5,7 +5,7 @@ description: "Which authority signs a pet's exit from the UAE, MOCCAE or ADAFSA,
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-arab-emirates-to-venezuela"
 origin_name: "United Arab Emirates"
 destination_name: "Venezuela"

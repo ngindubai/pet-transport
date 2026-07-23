@@ -5,7 +5,7 @@ description: "Belarus is DAFF non-approved, needing 180 days staged abroad. The 
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "belarus-to-australia"
 origin_name: "Belarus"
 destination_name: "Australia"

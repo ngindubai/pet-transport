@@ -2,7 +2,7 @@
 title: "Stopover and Layover with a Pet"
 description: "A practical guide to what happens to your pet during a connecting flight or stopover. Covers transit conditions at major hubs, live animal handling, temperature risks, connection timing and what to ask your airline."
 date: "2025-09-04"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/stopover-layover-with-a-pet-guide/"
 tags: ["transit", "layover", "stopover", "pet cargo", "practical guide", "airline hubs"]

@@ -5,7 +5,7 @@ description: "Kosovo isn't on the CDC's named high-risk list for dog rabies, so 
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "kosovo-to-united-states"
 origin_name: "Kosovo"
 destination_name: "United States"

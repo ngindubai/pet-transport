@@ -3,7 +3,7 @@ title: "Moving Internationally with Exotic Birds: CITES, Permits, and Health Cer
 description: "Travelling internationally with parrots, cockatoos, or other exotic birds involves CITES export permits, disease testing, and strict import rules. Here is what you need to know."
 date: "2026-05-06"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "moving-with-exotic-birds-internationally"
 url: "/blog/moving-with-exotic-birds-internationally/"
 seo:

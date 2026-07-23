@@ -5,7 +5,7 @@ description: "No non-stop flight links Istanbul to Santo Domingo, so plan for a 
 date: "2026-07-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "turkey-to-dominican-republic"
 origin_name: "Turkey"
 destination_name: "Dominican Republic"

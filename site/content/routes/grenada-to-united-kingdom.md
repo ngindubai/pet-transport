@@ -5,7 +5,7 @@ description: "Grenada sits outside the UK's Part 1 and Part 2 list, unlike most 
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "grenada-to-united-kingdom"
 origin_name: "Grenada"
 destination_name: "United Kingdom"

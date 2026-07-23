@@ -3,7 +3,7 @@ title: "Flying with a Belgian Malinois | Country Restrictions & Cargo Guide"
 description: "Which countries restrict Belgian Malinois import, airline cargo rules, and what working-dog owners need to know before international relocation."
 type: "breeds"
 layout: "single"
-author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "belgian-malinois"
 breed_name: "Belgian Malinois"
 brachycephalic: false

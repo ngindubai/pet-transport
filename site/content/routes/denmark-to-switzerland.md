@@ -4,7 +4,7 @@ title: "Pet Transport from Denmark to Switzerland | Danish Pet Passport & Swiss 
 description: "Moving your pet from Denmark to Switzerland? EU bilateral rules apply. No titre test, no quarantine. SWISS and SAS fly direct. Check Switzerland's breed restrictions."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "denmark-to-switzerland"
 origin_name: "Denmark"
 destination_name: "Switzerland"

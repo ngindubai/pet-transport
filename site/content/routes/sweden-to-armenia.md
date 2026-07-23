@@ -5,7 +5,7 @@ description: "Shipping a pet from Sweden to Armenia in 2026. Jordbruksverket EU 
 date: "2026-06-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "sweden-to-armenia"
 origin_name: "Sweden"
 destination_name: "Armenia"

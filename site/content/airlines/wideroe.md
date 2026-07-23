@@ -2,7 +2,7 @@
 title: "Wideroe Pet Transport: Cargo Policies and Pet Travel Guide"
 description: "Wideroe airline pet transport policies explained. Norway's regional carrier covers Scandinavian routes. Covers cabin pet acceptance, hold policies, crate requirements and Norway import rules."
 date: "2025-08-14"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "airlines"
 url: "/pet-transport/airlines/wideroe/"
 airline_name: "Wideroe"

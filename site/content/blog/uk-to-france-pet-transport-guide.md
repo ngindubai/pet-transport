@@ -3,7 +3,7 @@ title: "Pet Transport UK to France: Eurotunnel, AHC and 2026 Costs"
 description: "What it actually costs to take a dog or cat from the UK to France in 2026, the AHC paperwork France really asks for, and whether Eurotunnel, a ferry, a flight or a courier is the right call."
 date: "2026-07-11"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "uk-to-france-pet-transport-guide"
 url: "/blog/uk-to-france-pet-transport-guide/"
 seo:

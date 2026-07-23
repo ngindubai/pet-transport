@@ -5,7 +5,7 @@ description: "Since December 2024, Macau sits in its own AFCD category, Group II
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "macau-to-hong-kong"
 origin_name: "Macau"
 destination_name: "Hong Kong"

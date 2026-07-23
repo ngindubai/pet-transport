@@ -3,7 +3,7 @@ title: "Singapore Pet Import Guide 2026"
 description: "How to bring your dog or cat to Singapore. AVS approved country lists, import permits, quarantine requirements, and timeline planning for the Lion City."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "singapore-pet-import-guide"
 url: "/blog/singapore-pet-import-guide/"
 seo:

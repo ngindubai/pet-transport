@@ -4,7 +4,7 @@ slug: "singapore"
 description: "Complete guide to exporting your pet from Singapore."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Singapore"
 country_code: "SG"
 overview: |
@@ -24,14 +24,17 @@ sections:
   - heading: "Popular routes from Singapore"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Singapore to Argentina](/pet-transport/singapore-to-argentina/)
+      - [Singapore to Armenia](/pet-transport/singapore-to-armenia/)
       - [Singapore to Australia](/pet-transport/singapore-to-australia/)
       - [Singapore to Austria](/pet-transport/singapore-to-austria/)
+      - [Singapore to Azerbaijan](/pet-transport/singapore-to-azerbaijan/)
       - [Singapore to Bahrain](/pet-transport/singapore-to-bahrain/)
       - [Singapore to Bangladesh](/pet-transport/singapore-to-bangladesh/)
       - [Singapore to Belgium](/pet-transport/singapore-to-belgium/)
       - [Singapore to Brazil](/pet-transport/singapore-to-brazil/)
+      - [Singapore to Brunei](/pet-transport/singapore-to-brunei/)
       - [Singapore to Bulgaria](/pet-transport/singapore-to-bulgaria/)
       - [Singapore to Cambodia](/pet-transport/singapore-to-cambodia/)
       - [Singapore to Canada](/pet-transport/singapore-to-canada/)
@@ -43,27 +46,35 @@ sections:
       - [Singapore to Cyprus](/pet-transport/singapore-to-cyprus/)
       - [Singapore to Czech Republic](/pet-transport/singapore-to-czech-republic/)
       - [Singapore to Denmark](/pet-transport/singapore-to-denmark/)
+      - [Singapore to Dominican Republic](/pet-transport/singapore-to-dominican-republic/)
       - [Singapore to Ecuador](/pet-transport/singapore-to-ecuador/)
       - [Singapore to Egypt](/pet-transport/singapore-to-egypt/)
       - [Singapore to Ethiopia](/pet-transport/singapore-to-ethiopia/)
       - [Singapore to Finland](/pet-transport/singapore-to-finland/)
       - [Singapore to France](/pet-transport/singapore-to-france/)
+      - [Singapore to Georgia](/pet-transport/singapore-to-georgia/)
       - [Singapore to Germany](/pet-transport/singapore-to-germany/)
       - [Singapore to Ghana](/pet-transport/singapore-to-ghana/)
       - [Singapore to Greece](/pet-transport/singapore-to-greece/)
       - [Singapore to Hong Kong](/pet-transport/singapore-to-hong-kong/)
       - [Singapore to Hungary](/pet-transport/singapore-to-hungary/)
+      - [Singapore to Iceland](/pet-transport/singapore-to-iceland/)
       - [Singapore to India](/pet-transport/singapore-to-india/)
       - [Singapore to Indonesia](/pet-transport/singapore-to-indonesia/)
       - [Singapore to Ireland](/pet-transport/singapore-to-ireland/)
       - [Singapore to Israel](/pet-transport/singapore-to-israel/)
       - [Singapore to Italy](/pet-transport/singapore-to-italy/)
+      - [Singapore to Jamaica](/pet-transport/singapore-to-jamaica/)
       - [Singapore to Japan](/pet-transport/singapore-to-japan/)
       - [Singapore to Jordan](/pet-transport/singapore-to-jordan/)
+      - [Singapore to Kazakhstan](/pet-transport/singapore-to-kazakhstan/)
       - [Singapore to Kenya](/pet-transport/singapore-to-kenya/)
       - [Singapore to Kuwait](/pet-transport/singapore-to-kuwait/)
+      - [Singapore to Laos](/pet-transport/singapore-to-laos/)
       - [Singapore to Luxembourg](/pet-transport/singapore-to-luxembourg/)
+      - [Singapore to Macau](/pet-transport/singapore-to-macau/)
       - [Singapore to Malaysia](/pet-transport/singapore-to-malaysia/)
+      - [Singapore to Maldives](/pet-transport/singapore-to-maldives/)
       - [Singapore to Malta](/pet-transport/singapore-to-malta/)
       - [Singapore to Mauritius](/pet-transport/singapore-to-mauritius/)
       - [Singapore to Mexico](/pet-transport/singapore-to-mexico/)
@@ -76,6 +87,7 @@ sections:
       - [Singapore to Norway](/pet-transport/singapore-to-norway/)
       - [Singapore to Oman](/pet-transport/singapore-to-oman/)
       - [Singapore to Pakistan](/pet-transport/singapore-to-pakistan/)
+      - [Singapore to Panama](/pet-transport/singapore-to-panama/)
       - [Singapore to Peru](/pet-transport/singapore-to-peru/)
       - [Singapore to Philippines](/pet-transport/singapore-to-philippines/)
       - [Singapore to Poland](/pet-transport/singapore-to-poland/)
@@ -83,6 +95,7 @@ sections:
       - [Singapore to Qatar](/pet-transport/singapore-to-qatar/)
       - [Singapore to Romania](/pet-transport/singapore-to-romania/)
       - [Singapore to Saudi Arabia](/pet-transport/singapore-to-saudi-arabia/)
+      - [Singapore to Seychelles](/pet-transport/singapore-to-seychelles/)
       - [Singapore to Slovakia](/pet-transport/singapore-to-slovakia/)
       - [Singapore to South Africa](/pet-transport/singapore-to-south-africa/)
       - [Singapore to South Korea](/pet-transport/singapore-to-south-korea/)
@@ -93,8 +106,13 @@ sections:
       - [Singapore to Taiwan](/pet-transport/singapore-to-taiwan/)
       - [Singapore to Tanzania](/pet-transport/singapore-to-tanzania/)
       - [Singapore to Thailand](/pet-transport/singapore-to-thailand/)
+      - [Singapore to Trinidad and Tobago](/pet-transport/singapore-to-trinidad-and-tobago/)
       - [Singapore to Turkey](/pet-transport/singapore-to-turkey/)
       - [Singapore to United Arab Emirates](/pet-transport/singapore-to-united-arab-emirates/)
+      - [Singapore to United Kingdom](/pet-transport/singapore-to-united-kingdom/)
+      - [Singapore to United States](/pet-transport/singapore-to-united-states/)
+      - [Singapore to Uruguay](/pet-transport/singapore-to-uruguay/)
+      - [Singapore to Uzbekistan](/pet-transport/singapore-to-uzbekistan/)
       - [Singapore to Vietnam](/pet-transport/singapore-to-vietnam/)
       - [Singapore to Zimbabwe](/pet-transport/singapore-to-zimbabwe/)
 faqs:

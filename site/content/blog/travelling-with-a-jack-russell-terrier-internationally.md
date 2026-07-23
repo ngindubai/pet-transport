@@ -3,7 +3,7 @@ title: "Travelling with a Jack Russell Terrier Internationally"
 description: "International travel with a Jack Russell Terrier. Cabin vs cargo, crate training tips for an energetic breed, country restrictions, and health certificate requirements."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-jack-russell-terrier-internationally"
 url: "/blog/travelling-with-a-jack-russell-terrier-internationally/"
 seo:

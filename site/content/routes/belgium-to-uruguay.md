@@ -5,7 +5,7 @@ description: "Brussels to Montevideo pet transport in 2026. No titre test, but U
 date: "2026-07-07"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "belgium-to-uruguay"
 origin_name: "Belgium"
 destination_name: "Uruguay"

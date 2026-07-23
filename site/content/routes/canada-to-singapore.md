@@ -5,7 +5,7 @@ date: "2026-06-05"
 type: "routes"
 layout: "single"
 template_variant: "E"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-singapore"
 origin_name: "Canada"
 destination_name: "Singapore"
@@ -100,7 +100,7 @@ content:
   sections:
     - heading: "Category C: understanding the 30-day quarantine"
       body: |
-        Singapore divides origin countries into categories A, B, and C based on their disease risk profile. Canada is Category C, the most restrictive tier for standard companion animals. This means the quarantine is 30 days in a government-run facility, rather than the 10-day Special Residential Scheme available to Category B countries.
+        Singapore divides origin countries into categories A, B, and C based on their disease risk profile. Canada is Category C, the most restrictive tier for standard companion animals. The route data records a 30-day stay at Singapore's designated animal quarantine facility rather than the shorter residential scheme available to some other origin categories. Confirm the current category and booking arrangements with Singapore's Animal & Veterinary Service before travel.
 
         The government quarantine is managed by NParks/AVS. It is focused on biosecurity assessment and disease surveillance. Pets are housed in individual units, monitored by staff, and receive veterinary checks during the period. The facilities are professional, but it is a 30-day hold in an unfamiliar environment.
 

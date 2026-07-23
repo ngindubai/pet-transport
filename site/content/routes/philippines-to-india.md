@@ -5,7 +5,7 @@ description: "Moving a dog or cat from the Philippines to India in 2026. BAI exp
 date: "2026-06-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "philippines-to-india"
 origin_name: "Philippines"
 destination_name: "India"

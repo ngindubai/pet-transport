@@ -5,7 +5,7 @@ description: "Caribbean Airlines began flying Georgetown to Toronto nonstop dail
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "guyana-to-canada"
 origin_name: "Guyana"
 destination_name: "Canada"

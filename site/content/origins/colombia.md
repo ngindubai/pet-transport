@@ -4,7 +4,7 @@ slug: "colombia"
 description: "Complete guide to exporting your pet from Colombia. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Colombia"
 country_code: "CO"
 content:
@@ -30,7 +30,7 @@ sections:
   - heading: "Popular routes from Colombia"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Colombia to Argentina](/pet-transport/colombia-to-argentina/)
       - [Colombia to Australia](/pet-transport/colombia-to-australia/)
       - [Colombia to Austria](/pet-transport/colombia-to-austria/)

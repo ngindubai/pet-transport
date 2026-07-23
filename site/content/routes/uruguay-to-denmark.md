@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Uruguay to Denmark in 2026. Uruguay is EU
 date: "2026-07-07"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "uruguay-to-denmark"
 origin_name: "Uruguay"
 destination_name: "Denmark"

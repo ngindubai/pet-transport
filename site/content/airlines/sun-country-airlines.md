@@ -3,7 +3,7 @@ title: "Sun Country Airlines Pet Policy 2026"
 description: "Sun Country Airlines pet transport guide. Does Sun Country accept dogs and cats in cabin? Weight limits, approved carriers, and booking tips for US domestic routes."
 date: "2026-05-08"
 type: "airlines"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "sun-country-airlines"
 url: "/pet-transport/airlines/sun-country-airlines/"
 seo:

@@ -5,7 +5,7 @@ description: "Moving a dog or cat from France to Macau in 2026: the titre test I
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "france-to-macau"
 origin_name: "France"
 destination_name: "Macau"

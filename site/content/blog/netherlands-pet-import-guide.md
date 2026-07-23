@@ -3,7 +3,7 @@ title: "Bringing a Pet to the Netherlands: EU Rules and What Non-EU Arrivals Nee
 description: "Complete guide to bringing your dog or cat to the Netherlands in 2026: EU pet passport, AHC requirements for UK arrivals, breed bans, and Dutch import rules."
 date: "2026-04-30"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "netherlands-pet-import-guide"
 url: "/blog/netherlands-pet-import-guide/"
 seo:

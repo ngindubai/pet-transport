@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Finland to Kazakhstan in 2026. EAEU impor
 date: "2026-06-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "finland-to-kazakhstan"
 origin_name: "Finland"
 destination_name: "Kazakhstan"

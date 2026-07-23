@@ -5,7 +5,7 @@ description: "GB has a dedicated export certificate for this route, EHC 3928. Za
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-zambia"
 origin_name: "United Kingdom"
 destination_name: "Zambia"

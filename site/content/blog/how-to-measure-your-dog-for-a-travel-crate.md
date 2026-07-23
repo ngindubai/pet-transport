@@ -3,7 +3,7 @@ title: "How to Measure Your Dog for an IATA Travel Crate"
 description: "Getting the crate size wrong is one of the most common pet travel mistakes. This guide shows you exactly how to measure your dog for an IATA-compliant travel crate."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "how-to-measure-your-dog-for-a-travel-crate"
 url: "/blog/how-to-measure-your-dog-for-a-travel-crate/"
 seo:

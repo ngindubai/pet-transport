@@ -5,7 +5,7 @@ description: "Air Algerie will not carry pets in the hold on any UK route, so th
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "algeria-to-united-kingdom"
 origin_name: "Algeria"
 destination_name: "United Kingdom"

@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Kigali to Istanbul in 2026 on Turkish Air
 date: "2026-07-09"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "rwanda-to-turkey"
 origin_name: "Rwanda"
 destination_name: "Turkey"

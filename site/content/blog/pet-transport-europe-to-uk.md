@@ -3,7 +3,7 @@ title: "Pet Transport Europe to UK: Bringing a Pet Back After Brexit"
 description: "Bringing a pet from Europe to the UK in 2026: Animal Health Certificate requirements, tapeworm treatment timing, ferry and Eurotunnel options, rescue dog rules, and real costs."
 date: "2026-06-05"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-transport-europe-to-uk"
 url: "/blog/pet-transport-europe-to-uk/"
 seo:

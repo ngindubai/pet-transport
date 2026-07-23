@@ -5,7 +5,7 @@ description: "Slovenia to Greece is intra-EU travel: EU pet passport or AHC, no 
 date: "2026-07-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "slovenia-to-greece"
 origin_name: "Slovenia"
 destination_name: "Greece"

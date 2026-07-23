@@ -5,7 +5,7 @@ description: "Canada to Laos pet transport in 2026. No CFIA export permit needed
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-laos"
 origin_name: "Canada"
 destination_name: "Laos"

@@ -3,7 +3,7 @@ title: "Pet Transport from Australia to Canada: Rules, Timing and the Best Airli
 description: "Shipping a dog or cat from Australia to Canada. CFIA requirements, Australian export certificate, rabies vaccination, and which airlines fly pets on this long-haul route."
 date: "2026-05-07"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-canada-pet-transport-guide"
 url: "/blog/australia-to-canada-pet-transport-guide/"
 seo:

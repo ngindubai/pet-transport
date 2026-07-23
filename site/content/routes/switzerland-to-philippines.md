@@ -4,7 +4,7 @@ title: "Pet Transport Switzerland to Philippines | BAI Quarantine & FSVO Cert Gu
 description: "Moving your pet from Switzerland to the Philippines? BAI 7-day quarantine is mandatory. Understand titre test requirements, FSVO export certificate, and airline options."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "switzerland-to-philippines"
 origin_name: "Switzerland"
 destination_name: "Philippines"

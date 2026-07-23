@@ -5,7 +5,7 @@ description: "Algeria's own Australia page on this site needs 180 days staged in
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-algeria"
 origin_name: "Canada"
 destination_name: "Algeria"

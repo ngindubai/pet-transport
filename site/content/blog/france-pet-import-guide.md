@@ -3,7 +3,7 @@ title: "Moving to France with a Pet: Import Rules and What You Need in 2026"
 description: "Complete guide to bringing your dog or cat to France in 2026: EU pet passport rules, microchip requirements, rabies vaccination, and what non-EU arrivals need."
 date: "2026-04-28"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "france-pet-import-guide"
 url: "/blog/france-pet-import-guide/"
 seo:

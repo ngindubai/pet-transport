@@ -5,7 +5,7 @@ description: "Uzbekistan to Canada pet transport in 2026. CFIA classifies Uzbeki
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "uzbekistan-to-canada"
 origin_name: "Uzbekistan"
 destination_name: "Canada"
@@ -122,8 +122,11 @@ faqs:
 
 links:
   sideways:
-    - "/pet-transport/uzbekistan-to-united-kingdom/"
-    - "/pet-transport/uzbekistan-to-australia/"
+    - url: "/pet-transport/uzbekistan-to-united-kingdom/"
+      text: "Pet transport from Uzbekistan to the United Kingdom"
+    - url: "/pet-transport/uzbekistan-to-australia/"
+      text: "Pet transport from Uzbekistan to Australia"
   upward:
-    - "/pet-transport/countries/canada/"
+    - url: "/pet-transport/countries/canada/"
+      text: "Canada pet transport guide"
 ---

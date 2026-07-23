@@ -5,7 +5,7 @@ description: "Senegal is on the CDC's high-risk dog rabies list. Delta flies Dak
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "senegal-to-united-states"
 origin_name: "Senegal"
 destination_name: "United States"

@@ -4,7 +4,7 @@ slug: "nigeria"
 description: "Complete guide to exporting your pet from Nigeria."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Nigeria"
 country_code: "NG"
 overview: |
@@ -24,7 +24,7 @@ sections:
   - heading: "Popular routes from Nigeria"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Nigeria to Argentina](/pet-transport/nigeria-to-argentina/)
       - [Nigeria to Australia](/pet-transport/nigeria-to-australia/)
       - [Nigeria to Austria](/pet-transport/nigeria-to-austria/)
@@ -95,6 +95,8 @@ sections:
       - [Nigeria to Thailand](/pet-transport/nigeria-to-thailand/)
       - [Nigeria to Turkey](/pet-transport/nigeria-to-turkey/)
       - [Nigeria to United Arab Emirates](/pet-transport/nigeria-to-united-arab-emirates/)
+      - [Nigeria to United Kingdom](/pet-transport/nigeria-to-united-kingdom/)
+      - [Nigeria to United States](/pet-transport/nigeria-to-united-states/)
       - [Nigeria to Vietnam](/pet-transport/nigeria-to-vietnam/)
       - [Nigeria to Zimbabwe](/pet-transport/nigeria-to-zimbabwe/)
 faqs:

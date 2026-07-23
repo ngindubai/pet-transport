@@ -3,7 +3,7 @@ title: "Pet Transport from Australia to Japan: MAFF Rules and the Preparation Ti
 description: "Complete guide to moving your dog or cat from Australia to Japan in 2026: MAFF requirements, titre test process, 180-day rule, and pre-notification to the Animal Quarantine Service."
 date: "2026-05-08"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-japan-pet-transport-guide"
 url: "/blog/australia-to-japan-pet-transport-guide/"
 seo:

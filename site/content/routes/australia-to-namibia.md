@@ -5,7 +5,7 @@ description: "Namibia asks for no rabies titre test from Australia, but the only
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-namibia"
 origin_name: "Australia"
 destination_name: "Namibia"

@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Ljubljana to Istanbul in 2026. Why the EU
 date: "2026-07-09"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "slovenia-to-turkey"
 origin_name: "Slovenia"
 destination_name: "Turkey"

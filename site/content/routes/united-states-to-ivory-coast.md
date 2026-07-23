@@ -5,7 +5,7 @@ description: "The CDC treats Ivory Coast as high-risk for dogs entering the US, 
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-ivory-coast"
 origin_name: "United States"
 destination_name: "Ivory Coast"

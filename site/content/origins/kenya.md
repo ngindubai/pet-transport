@@ -4,7 +4,7 @@ slug: "kenya"
 description: "Complete guide to exporting your pet from Kenya."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Kenya"
 country_code: "KE"
 overview: |
@@ -24,7 +24,7 @@ sections:
   - heading: "Popular routes from Kenya"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Kenya to Argentina](/pet-transport/kenya-to-argentina/)
       - [Kenya to Australia](/pet-transport/kenya-to-australia/)
       - [Kenya to Austria](/pet-transport/kenya-to-austria/)
@@ -95,6 +95,8 @@ sections:
       - [Kenya to Thailand](/pet-transport/kenya-to-thailand/)
       - [Kenya to Turkey](/pet-transport/kenya-to-turkey/)
       - [Kenya to United Arab Emirates](/pet-transport/kenya-to-united-arab-emirates/)
+      - [Kenya to United Kingdom](/pet-transport/kenya-to-united-kingdom/)
+      - [Kenya to United States](/pet-transport/kenya-to-united-states/)
       - [Kenya to Vietnam](/pet-transport/kenya-to-vietnam/)
       - [Kenya to Zimbabwe](/pet-transport/kenya-to-zimbabwe/)
 faqs:

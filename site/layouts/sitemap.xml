@@ -1,0 +1,15 @@
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {{- range site.Pages }}
+    {{- $undatedRoute := and (eq .Type "routes") .IsPage (not .Params.verified_at) .Date.IsZero }}
+    {{- if and (not .Params.noindex) (not $undatedRoute) (not .Sitemap.Disable) }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+      {{- $lastmodRaw := .Params.verified_at | default .Params.lastmod | default .Params.date }}
+      {{- with $lastmodRaw }}
+    <lastmod>{{ (time.AsTime .).Format "2006-01-02" }}</lastmod>
+      {{- end }}
+  </url>
+    {{- end }}
+  {{- end }}
+</urlset>

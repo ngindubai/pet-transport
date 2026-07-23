@@ -2,7 +2,7 @@
 title: "Travelling Internationally with a Shar Pei"
 description: "A Shar Pei owner's guide to international pet travel. Covers brachycephalic airline restrictions, country breed bans, crate requirements and health documentation."
 date: "2025-07-13"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/travelling-with-a-shar-pei-internationally/"
 tags: ["shar pei", "breed guide", "brachycephalic", "restricted breeds", "international pet travel"]

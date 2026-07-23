@@ -5,7 +5,7 @@ description: "MOCCAE issues a UAE export certificate in days, but Tunisia's outr
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-arab-emirates-to-tunisia"
 origin_name: "United Arab Emirates"
 destination_name: "Tunisia"

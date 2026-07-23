@@ -4,7 +4,7 @@ description: "Moving your pet from Germany to China: GACC titre test mandatory, 
 type: "routes"
 layout: "single"
 template_variant: "A"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "germany-to-china"
 origin_name: "Germany"
 destination_name: "China"

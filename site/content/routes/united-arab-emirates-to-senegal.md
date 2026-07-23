@@ -5,7 +5,7 @@ description: "Emirates has run Dubai-Dakar direct for 15 years, up to 5 times we
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-arab-emirates-to-senegal"
 origin_name: "United Arab Emirates"
 destination_name: "Senegal"

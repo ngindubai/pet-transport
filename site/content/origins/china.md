@@ -4,7 +4,7 @@ slug: "china"
 description: "Complete guide to exporting your pet from China. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "China"
 country_code: "CN"
 content:
@@ -30,7 +30,7 @@ sections:
   - heading: "Popular routes from China"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [China to Argentina](/pet-transport/china-to-argentina/)
       - [China to Australia](/pet-transport/china-to-australia/)
       - [China to Austria](/pet-transport/china-to-austria/)
@@ -58,6 +58,7 @@ sections:
       - [China to Greece](/pet-transport/china-to-greece/)
       - [China to Hong Kong](/pet-transport/china-to-hong-kong/)
       - [China to Hungary](/pet-transport/china-to-hungary/)
+      - [China to Iceland](/pet-transport/china-to-iceland/)
       - [China to India](/pet-transport/china-to-india/)
       - [China to Indonesia](/pet-transport/china-to-indonesia/)
       - [China to Ireland](/pet-transport/china-to-ireland/)
@@ -68,6 +69,7 @@ sections:
       - [China to Kenya](/pet-transport/china-to-kenya/)
       - [China to Kuwait](/pet-transport/china-to-kuwait/)
       - [China to Luxembourg](/pet-transport/china-to-luxembourg/)
+      - [China to Macau](/pet-transport/china-to-macau/)
       - [China to Malaysia](/pet-transport/china-to-malaysia/)
       - [China to Malta](/pet-transport/china-to-malta/)
       - [China to Mauritius](/pet-transport/china-to-mauritius/)

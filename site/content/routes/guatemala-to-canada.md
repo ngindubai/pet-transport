@@ -5,7 +5,7 @@ description: "Guatemala sits on CFIA's high-risk dog rabies list, but the restri
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "guatemala-to-canada"
 origin_name: "Guatemala"
 destination_name: "Canada"

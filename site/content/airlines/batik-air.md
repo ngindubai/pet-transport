@@ -3,7 +3,7 @@ title: "Batik Air Pet Policy 2026"
 description: "Batik Air (Lion Air Group) pet transport guide. Does Batik Air accept dogs and cats? Indonesia domestic pet rules, cabin and hold policies, and booking information."
 date: "2026-05-08"
 type: "airlines"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "batik-air"
 url: "/pet-transport/airlines/batik-air/"
 seo:

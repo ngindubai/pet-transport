@@ -3,7 +3,7 @@ title: "Pet Transport from UK to Bahrain: Requirements, Titre Test Timeline and 
 description: "Guide to shipping a dog or cat from the UK to Bahrain. Ministry permit, rabies titre test, APHA health certificate, breed checks and which airlines fly pets on this route."
 date: "2026-05-07"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "uk-to-bahrain-pet-transport-guide"
 url: "/blog/uk-to-bahrain-pet-transport-guide/"
 seo:

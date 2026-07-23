@@ -5,7 +5,7 @@ description: "Moldova gives Canadian pets an EU-listing exemption one way, yet s
 date: "2026-07-22"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "moldova-to-canada"
 origin_name: "Moldova"
 destination_name: "Canada"

@@ -4,7 +4,7 @@ title: "Pet Transport Kazakhstan to United Kingdom | UK APHA Protocol & Airline 
 description: "Moving your pet from Kazakhstan to the UK? Titre test, Air Astana and Turkish Airlines cargo, UK APHA documentation, costs, and step-by-step timeline."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "kazakhstan-to-united-kingdom"
 origin_name: "Kazakhstan"
 destination_name: "United Kingdom"

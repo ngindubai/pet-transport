@@ -5,7 +5,7 @@ description: "Mozambique's own airline can't fly a pet past Maputo. Ethiopian Ai
 date: "2026-07-22"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "mozambique-to-canada"
 origin_name: "Mozambique"
 destination_name: "Canada"

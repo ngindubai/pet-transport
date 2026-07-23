@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Istanbul to Yerevan on Turkish Airlines' 
 date: "2026-07-09"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "turkey-to-armenia"
 origin_name: "Turkey"
 destination_name: "Armenia"

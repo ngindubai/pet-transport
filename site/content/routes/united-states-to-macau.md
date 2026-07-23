@@ -5,7 +5,7 @@ description: "Moving a dog or cat from the US to Macau in 2026. USDA-endorsed he
 date: "2026-07-12"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-macau"
 origin_name: "United States"
 destination_name: "Macau"

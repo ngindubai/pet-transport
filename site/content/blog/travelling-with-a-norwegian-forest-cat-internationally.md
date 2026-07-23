@@ -3,7 +3,7 @@ title: "Travelling with a Norwegian Forest Cat Internationally"
 description: "Norwegian Forest Cats and international travel. Crate requirements, airline policies for large cats, health certificate needs, and how to prepare a Wegie for long-haul transit."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-norwegian-forest-cat-internationally"
 url: "/blog/travelling-with-a-norwegian-forest-cat-internationally/"
 seo:

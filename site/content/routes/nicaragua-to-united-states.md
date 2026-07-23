@@ -5,7 +5,7 @@ description: "Nicaragua is not on the CDC's high-risk list for dog rabies, so no
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "nicaragua-to-united-states"
 origin_name: "Nicaragua"
 destination_name: "United States"

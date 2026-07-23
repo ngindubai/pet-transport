@@ -3,7 +3,7 @@ title: "Moving to Luxembourg with Pets: A Short Guide to EU Pet Travel Rules"
 description: "Luxembourg is a small EU and Schengen member with standard EU pet import rules. Here is what dogs and cats need to enter Luxembourg from within and outside the EU."
 date: "2026-05-06"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "luxembourg-pet-import-guide"
 url: "/blog/luxembourg-pet-import-guide/"
 seo:

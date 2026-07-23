@@ -3,7 +3,7 @@ title: "Which Countries Require a Pet Import Permit? | 2026 Guide"
 description: "Which countries require a formal import permit before your pet can arrive? A guide to countries that mandate advance permits and the steps to apply for each."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "understanding-pet-import-permits-by-country"
 url: "/blog/understanding-pet-import-permits-by-country/"
 seo:

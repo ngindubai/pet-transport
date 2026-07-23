@@ -5,7 +5,7 @@ type: "routes"
 layout: "single"
 template_variant: "B"
 content_soul: 2
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "argentina-to-norway"
 origin_name: "Argentina"
 destination_name: "Norway"

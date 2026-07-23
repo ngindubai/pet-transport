@@ -5,7 +5,7 @@ description: "Madagascar's high-risk CFIA status, dated 13 March 2025, mostly ba
 date: "2026-07-22"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "madagascar-to-canada"
 origin_name: "Madagascar"
 destination_name: "Canada"

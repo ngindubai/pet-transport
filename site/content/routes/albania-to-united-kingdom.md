@@ -5,7 +5,7 @@ description: "Albania has no EU-approved lab for the rabies titre test GB requir
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "albania-to-united-kingdom"
 origin_name: "Albania"
 destination_name: "United Kingdom"

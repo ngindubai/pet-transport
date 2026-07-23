@@ -5,7 +5,7 @@ description: "Russia asks less of an Australian pet than almost any destination 
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-russia"
 origin_name: "Australia"
 destination_name: "Russia"

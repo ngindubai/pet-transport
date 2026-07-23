@@ -3,7 +3,7 @@ title: "Pet Transport Insurance: What Is Covered and Do You Need It?"
 description: "Does your pet need insurance for international travel? This guide explains what pet transport insurance covers, what it does not, and how to buy it."
 date: "2026-05-07"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-transport-insurance-explained"
 url: "/blog/pet-transport-insurance-explained/"
 seo:

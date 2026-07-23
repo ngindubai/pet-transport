@@ -5,7 +5,7 @@ description: "Delta launches Tirana to New York nonstop in summer 2026, Albania'
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "albania-to-united-states"
 origin_name: "Albania"
 destination_name: "United States"

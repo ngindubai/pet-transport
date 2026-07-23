@@ -5,7 +5,7 @@ description: "Move your pet from Poland to Kazakhstan. No titre test required, G
 date: "2026-06-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "poland-to-kazakhstan"
 origin_name: "Poland"
 destination_name: "Kazakhstan"

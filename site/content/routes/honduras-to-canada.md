@@ -5,7 +5,7 @@ description: "Honduras to Canada pet transport in 2026. Honduras sits on CFIA's 
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "honduras-to-canada"
 origin_name: "Honduras"
 destination_name: "Canada"

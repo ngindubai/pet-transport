@@ -5,7 +5,7 @@ description: "Bosnia and Herzegovina doesn't appear on CFIA's high-risk list, so
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "bosnia-and-herzegovina-to-canada"
 origin_name: "Bosnia and Herzegovina"
 destination_name: "Canada"

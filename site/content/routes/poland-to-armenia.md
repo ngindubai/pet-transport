@@ -5,7 +5,7 @@ description: "Move your pet from Poland to Armenia with no titre test required f
 date: "2026-06-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "poland-to-armenia"
 origin_name: "Poland"
 destination_name: "Armenia"

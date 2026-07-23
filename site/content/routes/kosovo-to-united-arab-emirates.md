@@ -5,7 +5,7 @@ description: "Kosovo isn't on MOCCAE's low-risk list, so a titre test applies, t
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "kosovo-to-united-arab-emirates"
 origin_name: "Kosovo"
 destination_name: "United Arab Emirates"

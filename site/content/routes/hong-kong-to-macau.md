@@ -5,7 +5,7 @@ description: "No flight, no cargo agent, no titre test. A pet moving Hong Kong t
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "hong-kong-to-macau"
 origin_name: "Hong Kong"
 destination_name: "Macau"

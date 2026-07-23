@@ -5,7 +5,7 @@ description: "Botswana's DVS skips the rabies titre test for a UAE-origin pet en
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-arab-emirates-to-botswana"
 origin_name: "United Arab Emirates"
 destination_name: "Botswana"

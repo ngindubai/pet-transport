@@ -3,7 +3,7 @@ title: "Saudi Arabia Pet Import Guide: MEWA Requirements, Breed Restrictions, an
 description: "Saudi Arabia has specific breed restrictions and requires a MEWA health certificate for pet imports. Here is what dogs and cats need to enter Saudi Arabia."
 date: "2026-05-05"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "saudi-arabia-pet-import-guide"
 url: "/blog/saudi-arabia-pet-import-guide/"
 seo:

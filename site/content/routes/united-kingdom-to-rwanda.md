@@ -4,7 +4,7 @@ title: "Pet Transport United Kingdom to Rwanda | AHC, RAB Import Rules & Airline
 description: "Relocating your pet from the UK to Rwanda? Rwanda import permit, AHC from a UK vet, RwandAir and Qatar cargo from London, timeline, and documentation guide."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-rwanda"
 origin_name: "United Kingdom"
 destination_name: "Rwanda"

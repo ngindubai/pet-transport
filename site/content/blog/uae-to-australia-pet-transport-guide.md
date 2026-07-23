@@ -3,7 +3,7 @@ title: "Pet Transport from the UAE to Australia: Approved Pathway Guide"
 description: "Moving from Dubai or Abu Dhabi to Australia with a pet? The UAE is on Australia's approved country list, but the process still takes months. Here is what you need."
 date: "2026-05-06"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "uae-to-australia-pet-transport-guide"
 url: "/blog/uae-to-australia-pet-transport-guide/"
 seo:

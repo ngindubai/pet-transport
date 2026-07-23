@@ -3,7 +3,7 @@ title: "Pet Transport UAE to Pakistan: 2026 Process for Dogs and Cats"
 description: "Moving a dog or cat from Dubai or Abu Dhabi to Lahore, Karachi or Islamabad in 2026. AQD NOC, UAE health certificate, airline options and costs explained."
 date: "2026-06-07"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-transport-uae-to-pakistan"
 url: "/blog/pet-transport-uae-to-pakistan/"
 seo:

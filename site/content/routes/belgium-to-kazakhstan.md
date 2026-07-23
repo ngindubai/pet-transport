@@ -5,7 +5,7 @@ description: "Moving a pet from Belgium to Kazakhstan in 2026. FASFC EU certific
 date: "2026-06-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "belgium-to-kazakhstan"
 origin_name: "Belgium"
 destination_name: "Kazakhstan"

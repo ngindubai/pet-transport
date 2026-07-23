@@ -3,7 +3,7 @@ title: "Pet Transport from Canada to Australia: DAFF Requirements and Full Timel
 description: "Full guide to moving your dog or cat from Canada to Australia in 2026: DAFF import permit, titre test, CFIA health certificate, quarantine booking, and 10-day post-arrival process."
 date: "2026-05-06"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-australia-pet-transport-guide"
 url: "/blog/canada-to-australia-pet-transport-guide/"
 seo:

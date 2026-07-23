@@ -5,7 +5,7 @@ description: "El Salvador is on Canada's high-risk dog rabies list, but the 2022
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "el-salvador-to-canada"
 origin_name: "El Salvador"
 destination_name: "Canada"

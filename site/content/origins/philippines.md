@@ -4,7 +4,7 @@ slug: "philippines"
 description: "Complete guide to exporting your pet from Philippines."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Philippines"
 country_code: "PH"
 overview: |
@@ -24,13 +24,14 @@ sections:
   - heading: "Popular routes from Philippines"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Philippines to Argentina](/pet-transport/philippines-to-argentina/)
       - [Philippines to Australia](/pet-transport/philippines-to-australia/)
       - [Philippines to Austria](/pet-transport/philippines-to-austria/)
       - [Philippines to Bahrain](/pet-transport/philippines-to-bahrain/)
       - [Philippines to Bangladesh](/pet-transport/philippines-to-bangladesh/)
       - [Philippines to Belgium](/pet-transport/philippines-to-belgium/)
+      - [Philippines to Brazil](/pet-transport/philippines-to-brazil/)
       - [Philippines to Bulgaria](/pet-transport/philippines-to-bulgaria/)
       - [Philippines to Cambodia](/pet-transport/philippines-to-cambodia/)
       - [Philippines to Canada](/pet-transport/philippines-to-canada/)
@@ -52,6 +53,8 @@ sections:
       - [Philippines to Greece](/pet-transport/philippines-to-greece/)
       - [Philippines to Hong Kong](/pet-transport/philippines-to-hong-kong/)
       - [Philippines to Hungary](/pet-transport/philippines-to-hungary/)
+      - [Philippines to India](/pet-transport/philippines-to-india/)
+      - [Philippines to Indonesia](/pet-transport/philippines-to-indonesia/)
       - [Philippines to Ireland](/pet-transport/philippines-to-ireland/)
       - [Philippines to Israel](/pet-transport/philippines-to-israel/)
       - [Philippines to Italy](/pet-transport/philippines-to-italy/)
@@ -63,6 +66,7 @@ sections:
       - [Philippines to Malaysia](/pet-transport/philippines-to-malaysia/)
       - [Philippines to Malta](/pet-transport/philippines-to-malta/)
       - [Philippines to Mauritius](/pet-transport/philippines-to-mauritius/)
+      - [Philippines to Mexico](/pet-transport/philippines-to-mexico/)
       - [Philippines to Morocco](/pet-transport/philippines-to-morocco/)
       - [Philippines to Myanmar](/pet-transport/philippines-to-myanmar/)
       - [Philippines to Nepal](/pet-transport/philippines-to-nepal/)
@@ -81,14 +85,18 @@ sections:
       - [Philippines to Singapore](/pet-transport/philippines-to-singapore/)
       - [Philippines to Slovakia](/pet-transport/philippines-to-slovakia/)
       - [Philippines to South Africa](/pet-transport/philippines-to-south-africa/)
+      - [Philippines to South Korea](/pet-transport/philippines-to-south-korea/)
       - [Philippines to Spain](/pet-transport/philippines-to-spain/)
       - [Philippines to Sri Lanka](/pet-transport/philippines-to-sri-lanka/)
       - [Philippines to Sweden](/pet-transport/philippines-to-sweden/)
+      - [Philippines to Switzerland](/pet-transport/philippines-to-switzerland/)
       - [Philippines to Taiwan](/pet-transport/philippines-to-taiwan/)
       - [Philippines to Tanzania](/pet-transport/philippines-to-tanzania/)
       - [Philippines to Thailand](/pet-transport/philippines-to-thailand/)
       - [Philippines to Turkey](/pet-transport/philippines-to-turkey/)
       - [Philippines to United Arab Emirates](/pet-transport/philippines-to-united-arab-emirates/)
+      - [Philippines to United Kingdom](/pet-transport/philippines-to-united-kingdom/)
+      - [Philippines to United States](/pet-transport/philippines-to-united-states/)
       - [Philippines to Vietnam](/pet-transport/philippines-to-vietnam/)
       - [Philippines to Zimbabwe](/pet-transport/philippines-to-zimbabwe/)
 faqs:

@@ -5,7 +5,7 @@ description: "Tbilisi to Yerevan is a genuine 30-minute flight, or a road trip a
 date: "2026-07-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "georgia-to-armenia"
 origin_name: "Georgia"
 destination_name: "Armenia"

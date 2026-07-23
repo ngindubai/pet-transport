@@ -5,7 +5,7 @@ description: "Moving a pet from Czech Republic to Lebanon in 2026. Lebanese Mini
 date: "2026-06-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "czech-republic-to-lebanon"
 origin_name: "Czech Republic"
 destination_name: "Lebanon"

@@ -5,7 +5,7 @@ description: "Moving a pet from Kazakhstan to Sweden in 2026. Kazakhstan EU-unli
 date: "2026-06-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "kazakhstan-to-sweden"
 origin_name: "Kazakhstan"
 destination_name: "Sweden"

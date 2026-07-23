@@ -5,7 +5,7 @@ description: "There's no direct flight from Dubai or Abu Dhabi to Nadi, and Fiji
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-arab-emirates-to-fiji"
 origin_name: "United Arab Emirates"
 destination_name: "Fiji"

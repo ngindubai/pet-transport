@@ -3,7 +3,7 @@ title: "International Travel with a West Highland Terrier (Westie)"
 description: "West Highland Terriers are compact, fearless dogs that travel well. This guide covers breed restrictions, in-cabin options, crate sizing and key international routes for Westie owners."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-west-highland-terrier-internationally"
 url: "/blog/travelling-with-a-west-highland-terrier-internationally/"
 seo:

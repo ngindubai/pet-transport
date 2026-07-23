@@ -5,7 +5,7 @@ description: "Pet transport from Belgium to Panama in 2026. No titre test, no qu
 date: "2026-06-28"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "belgium-to-panama"
 origin_name: "Belgium"
 destination_name: "Panama"

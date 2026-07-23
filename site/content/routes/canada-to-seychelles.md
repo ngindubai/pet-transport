@@ -5,7 +5,7 @@ description: "Canada to Seychelles pet transport in 2026. Canada's rabies-contro
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-seychelles"
 origin_name: "Canada"
 destination_name: "Seychelles"

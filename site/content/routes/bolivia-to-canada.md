@@ -5,7 +5,7 @@ description: "Bolivia is on CFIA's high-risk dog rabies list, but the September 
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "bolivia-to-canada"
 origin_name: "Bolivia"
 destination_name: "Canada"

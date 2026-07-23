@@ -5,7 +5,7 @@ description: "How to move a dog or cat from the UK to Germany in 2026: AHC paper
 date: "2026-07-06"
 type: "blog"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "uk-to-germany-pet-transport-guide"
 url: "/blog/uk-to-germany-pet-transport-guide/"
 tags:

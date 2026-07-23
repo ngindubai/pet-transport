@@ -3,7 +3,7 @@ title: "Hawaiian Airlines Pet Transport Guide"
 description: "Hawaiian Airlines pet transport policy 2026: inter-island cabin pets, cargo rules, Hawaii quarantine requirements, and what mainland US pet owners moving to Hawaii need to know."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "hawaiian-airlines"
 url: "/pet-transport/airlines/hawaiian-airlines/"
 airline:

@@ -3,7 +3,7 @@ title: "Ethiopia Pet Export Guide | International Pet Transport"
 description: "How to ship your dog or cat from Ethiopia internationally. Export requirements, health certificates, and APHRD endorsement explained."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "ethiopia-pet-export-guide"
 origin_country: "Ethiopia"
 origin_iso: "ET"
@@ -44,7 +44,7 @@ sections:
   - heading: "Popular routes from Ethiopia"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Ethiopia to Argentina](/pet-transport/ethiopia-to-argentina/)
       - [Ethiopia to Australia](/pet-transport/ethiopia-to-australia/)
       - [Ethiopia to Austria](/pet-transport/ethiopia-to-austria/)
@@ -116,9 +116,9 @@ sections:
       - [Ethiopia to Turkey](/pet-transport/ethiopia-to-turkey/)
       - [Ethiopia to United Arab Emirates](/pet-transport/ethiopia-to-united-arab-emirates/)
       - [Ethiopia to United Kingdom](/pet-transport/ethiopia-to-united-kingdom/)
+      - [Ethiopia to United States](/pet-transport/ethiopia-to-united-states/)
       - [Ethiopia to Vietnam](/pet-transport/ethiopia-to-vietnam/)
       - [Ethiopia to Zimbabwe](/pet-transport/ethiopia-to-zimbabwe/)
-
 faqs:
   - question: "What documents does my pet need to leave Ethiopia?"
     answer: "Your pet needs a valid microchip (ISO standard), current rabies vaccination, and an official health certificate endorsed by APHRD. Specific destination countries may require additional documents such as a titre test result, import permit, or specific certificate formats."

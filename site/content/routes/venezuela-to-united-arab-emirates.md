@@ -5,7 +5,7 @@ description: "The UAE is the only one of Venezuela's three long-haul destination
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "venezuela-to-united-arab-emirates"
 origin_name: "Venezuela"
 destination_name: "United Arab Emirates"

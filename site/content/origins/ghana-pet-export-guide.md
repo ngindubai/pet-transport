@@ -3,7 +3,7 @@ title: "Pet Transport from Ghana | Export Requirements & Routes"
 description: "How to ship your dog or cat from Ghana internationally. Export requirements, health certificates, and VSD endorsement explained."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "ghana-pet-export-guide"
 origin_country: "Ghana"
 origin_iso: "GH"
@@ -44,7 +44,7 @@ sections:
   - heading: "Popular routes from Ghana"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Ghana to Argentina](/pet-transport/ghana-to-argentina/)
       - [Ghana to Australia](/pet-transport/ghana-to-australia/)
       - [Ghana to Austria](/pet-transport/ghana-to-austria/)
@@ -119,7 +119,6 @@ sections:
       - [Ghana to United States](/pet-transport/ghana-to-united-states/)
       - [Ghana to Vietnam](/pet-transport/ghana-to-vietnam/)
       - [Ghana to Zimbabwe](/pet-transport/ghana-to-zimbabwe/)
-
 faqs:
   - question: "What documents does my pet need to leave Ghana?"
     answer: "Your pet needs a valid microchip (ISO standard), current rabies vaccination, and an official health certificate endorsed by VSD. Specific destination countries may require additional documents such as a titre test result, import permit, or specific certificate formats."

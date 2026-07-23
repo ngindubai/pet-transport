@@ -241,13 +241,9 @@ fileId: 1AWlrcecS7B5z_1qujwgK_bu4LKNgWM48JGrnm7Yetbk
 
 Parse to find: the last PTG-XXX number, current status of any referenced client, notes, quote refs, next actions.
 
-### Email reading via Claude in Chrome
+### Customer communication access
 
-Claude in Chrome reads Gareth's personal Outlook account (garethsomers@outlook.com) at outlook.live.com. Read all inbox and sent items for full supplier context. Open linked Xero/Quotient quotes to extract figures. Never send or delete anything.
-
-### WhatsApp reading via Claude in Chrome
-
-Claude in Chrome reads WhatsApp Web (web.whatsapp.com). Only read conversations with phone numbers in the tracker. Never send, delete, or reply. New enquiries added to tracker only on Gareth's explicit instruction.
+Customer email and messaging accounts are outside this repository's build workflow. Do not access private communications or customer records unless the account owner gives explicit, task-specific authorization through an approved authenticated tool.
 
 ---
 

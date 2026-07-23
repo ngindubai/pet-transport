@@ -3,7 +3,7 @@ title: "Frontier Airlines Pet Policy 2026"
 description: "Frontier Airlines pet transport guide. Does Frontier accept dogs and cats? In-cabin only policy, weight limits, carrier requirements, and booking tips."
 date: "2026-05-08"
 type: "airlines"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "frontier-airlines"
 url: "/pet-transport/airlines/frontier-airlines/"
 seo:

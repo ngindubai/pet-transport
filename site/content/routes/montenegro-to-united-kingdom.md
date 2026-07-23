@@ -5,7 +5,7 @@ description: "Montenegro is unlisted for UK pet travel. FAVN titre test, 90-day 
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "montenegro-to-united-kingdom"
 origin_name: "Montenegro"
 destination_name: "United Kingdom"

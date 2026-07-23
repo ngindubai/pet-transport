@@ -5,7 +5,7 @@ description: "Hong Kong to Iceland pet transport in 2026: MAST's approved list e
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "hong-kong-to-iceland"
 origin_name: "Hong Kong"
 destination_name: "Iceland"

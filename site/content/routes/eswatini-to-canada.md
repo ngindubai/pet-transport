@@ -5,7 +5,7 @@ description: "Eswatini has no long-haul airport of its own, and unlike the US ro
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "eswatini-to-canada"
 origin_name: "Eswatini"
 destination_name: "Canada"

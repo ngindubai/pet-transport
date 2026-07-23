@@ -3,7 +3,7 @@ title: "Moving Internationally with Multiple Pets: What Changes and What Gets Ha
 description: "Moving multiple dogs or cats internationally multiplies the paperwork, costs, and logistics. Here is how to manage the process when you have more than one pet."
 date: "2026-05-06"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "moving-with-multiple-pets-internationally"
 url: "/blog/moving-with-multiple-pets-internationally/"
 seo:

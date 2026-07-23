@@ -3,7 +3,7 @@ title: "UK to Australia Pet Transport: The Complete 2026 Guide"
 description: "Moving your pet from the UK to Australia is one of the world's most complex routes. This guide covers every step: titre test timing, Mickleham quarantine, approved labs, and what can go wrong."
 date: "2026-03-03"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "uk-to-australia-pet-transport-complete-guide"
 url: "/blog/uk-to-australia-pet-transport-complete-guide/"
 seo:

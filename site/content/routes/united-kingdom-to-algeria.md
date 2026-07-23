@@ -5,7 +5,7 @@ description: "A Pit Bull-type dog can be refused at Algiers airport on breed alo
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-algeria"
 origin_name: "United Kingdom"
 destination_name: "Algeria"

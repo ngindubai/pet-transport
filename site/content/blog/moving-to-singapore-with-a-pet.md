@@ -3,7 +3,7 @@ title: "Moving to Singapore with a Pet"
 description: "A complete guide to relocating to Singapore with your dog or cat. NParks import licence, quarantine booking, breed restrictions, and practical life with pets in the city-state."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "moving-to-singapore-with-a-pet"
 url: "/blog/moving-to-singapore-with-a-pet/"
 seo:

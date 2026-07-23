@@ -3,7 +3,7 @@ title: "Flying Internationally with Two Dogs"
 description: "Can you fly with two dogs? Per-booking limits, crate sharing rules, documentation for multiple pets, and practical tips for managing two dogs in international transit."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "flying-with-two-dogs"
 url: "/blog/flying-with-two-dogs/"
 seo:

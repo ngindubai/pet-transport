@@ -3,7 +3,7 @@ title: "How to Choose a Pet Relocation Company: What to Look for and What to Avo
 description: "Not all pet relocation companies are equal. Here is a practical guide to vetting agents, checking credentials, and getting a quote that actually covers everything."
 date: "2026-05-06"
 type: "blog"
-author: "James Osei, Pet Transport Planning Specialist, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "how-to-choose-a-pet-relocation-company"
 url: "/blog/how-to-choose-a-pet-relocation-company/"
 seo:

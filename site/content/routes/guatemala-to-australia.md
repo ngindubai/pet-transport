@@ -5,7 +5,7 @@ description: "Guatemala sits on DAFF's Non-Approved list, so a direct import is 
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "guatemala-to-australia"
 origin_name: "Guatemala"
 destination_name: "Australia"

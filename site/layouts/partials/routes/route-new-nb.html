@@ -139,7 +139,7 @@
       <div class="sec-wrap sec-dark"><div class="sec-inner">
         <div class="sec-tag r">Airlines</div>
         <h2 class="sec-h r d1">Carriers on <em>this route</em></h2>
-        <p class="sec-p r d2">Not all airlines accept live animals on this route. We know every carrier policy for this corridor.</p>
+        <p class="sec-p r d2">Not all airlines accept live animals on this route. Confirm the operating carrier's current policy for every flight segment.</p>
         <div class="airline-list r d2">
           {{ range . }}
           <div class="al"><div class="al-body"><div class="al-name">{{ .name }}</div><div class="al-detail">{{ .policy_summary }}</div>{{ with .type }}<div class="al-tags"><span class="at at-g">{{ . | replaceRE "_" " " | title }}</span></div>{{ end }}</div></div>

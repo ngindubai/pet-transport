@@ -2,7 +2,7 @@
 title: "Importing a Pet to Ukraine: Rules"
 description: "A practical guide to Ukraine pet import rules covering microchipping, rabies vaccination, EU health certificates and border entry procedures. Updated 2025."
 date: "2025-07-01"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/ukraine-pet-import-guide/"
 tags: ["ukraine", "country guide", "pet import", "europe"]

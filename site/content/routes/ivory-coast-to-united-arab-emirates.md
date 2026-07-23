@@ -5,7 +5,7 @@ description: "Emirates covers Abidjan to Dubai as one continuing service via a s
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "ivory-coast-to-united-arab-emirates"
 origin_name: "Ivory Coast"
 destination_name: "United Arab Emirates"

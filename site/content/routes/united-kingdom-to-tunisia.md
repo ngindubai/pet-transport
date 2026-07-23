@@ -5,7 +5,7 @@ description: "UK dogs and cats need certificate 3028, a rabies jab and no titre 
 date: "2026-07-13"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-tunisia"
 origin_name: "United Kingdom"
 destination_name: "Tunisia"

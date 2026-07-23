@@ -5,7 +5,7 @@ description: "Angola is not on the UK's Part 1 or Part 2 list, so pets need a ra
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "angola-to-united-kingdom"
 origin_name: "Angola"
 destination_name: "United Kingdom"

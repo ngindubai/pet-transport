@@ -4,7 +4,7 @@ title: "Pet Transport from Hong Kong to Singapore | AFCD Export & AVS Import Gui
 description: "Moving your pet from Hong Kong to Singapore: AFCD export licence, AVS import permit, mandatory 30-day quarantine, Singapore Airlines and Cathay cargo options."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "hong-kong-to-singapore"
 origin_name: "Hong Kong"
 destination_name: "Singapore"

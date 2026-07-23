@@ -5,7 +5,7 @@ description: "Dublin to Panama City pet transport in 2026. No titre test, no qua
 date: "2026-07-07"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "ireland-to-panama"
 origin_name: "Ireland"
 destination_name: "Panama"

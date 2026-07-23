@@ -5,7 +5,7 @@ description: "Fiji to United States pet transport in 2026. Fiji is not on the CD
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "fiji-to-united-states"
 origin_name: "Fiji"
 destination_name: "United States"

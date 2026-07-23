@@ -3,7 +3,7 @@ title: "What to Pack in Your Pet Travel Kit: Documents, Supplies, and Comfort It
 description: "International pet travel requires more preparation than domestic trips. Here is a complete packing list covering documentation, supplies for the journey, and comfort items for your pet."
 date: 2026-05-09
 type: blog
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "what-to-pack-in-your-pet-travel-kit"
 url: "/blog/what-to-pack-in-your-pet-travel-kit/"
 seo:

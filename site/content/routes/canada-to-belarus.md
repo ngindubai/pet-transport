@@ -5,7 +5,7 @@ description: "LOT flies Toronto to Warsaw direct, but no airline touches Minsk. 
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-belarus"
 origin_name: "Canada"
 destination_name: "Belarus"

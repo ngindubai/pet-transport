@@ -3,7 +3,7 @@ title: "Moving Pets to Ghana: Veterinary Import Permits, Rabies Rules, and Expat
 description: "Pet import guide for Ghana. The Veterinary Services Directorate permit, vaccination requirements, health certificate process, and practical tips for UK nationals relocating to Accra."
 date: "2026-05-14"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "ghana-pet-import-guide"
 url: "/blog/ghana-pet-import-guide/"
 seo:

@@ -5,7 +5,7 @@ description: "CFIA lists Serbia as high-risk for dog rabies, even though the US 
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "serbia-to-canada"
 origin_name: "Serbia"
 destination_name: "Canada"

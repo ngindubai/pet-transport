@@ -5,7 +5,7 @@ description: "Riga to Dubai pet transport in 2026: MOCCAE's low-risk EU classifi
 date: "2026-07-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "latvia-to-united-arab-emirates"
 origin_name: "Latvia"
 destination_name: "United Arab Emirates"

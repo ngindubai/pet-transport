@@ -5,7 +5,7 @@ description: "Pet transport from Spain to Panama in 2026. No titre test, no quar
 date: "2026-06-28"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "spain-to-panama"
 origin_name: "Spain"
 destination_name: "Panama"

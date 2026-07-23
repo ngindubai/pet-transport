@@ -3,7 +3,7 @@ title: "Pet Transport from South Korea to China | GACC 180-Day Protocol, Titre T
 description: "Moving your pet from South Korea to China: GACC titre test mandatory, 180-day wait, 30-day quarantine for dogs, airline cargo from Incheon, and full preparation guide."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "south-korea-to-china"
 origin_name: "South Korea"
 destination_name: "China"

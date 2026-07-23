@@ -3,7 +3,7 @@ title: "International Travel with a Corgi: Breed Notes, Crate Sizing and Routes"
 description: "Corgis are compact, sturdy dogs well-suited to international travel. This guide covers breed restrictions, in-cabin options, crate sizing and key routes for Corgi owners."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-corgi-internationally"
 url: "/blog/travelling-with-a-corgi-internationally/"
 seo:

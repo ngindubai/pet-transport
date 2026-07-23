@@ -3,6 +3,7 @@
 
 baseURL = "https://pettransportglobal.com/"  # Domain pending registration
 languageCode = "en"
+timeZone = "Asia/Dubai"
 title = "Pet Transport Global | International Pet Transport"
 # No external theme — using custom layouts in /layouts/
 
@@ -21,8 +22,8 @@ buildFuture = false
 
 # Outputs
 [outputs]
-  home = ["HTML", "RSS", "JSON"]  # JSON = client-side search index at /index.json
-  section = ["HTML", "RSS"]
+  home = ["HTML", "JSON"]  # JSON = client-side search index at /index.json
+  section = ["HTML"]
   page = ["HTML"]
 
 # Sitemap
@@ -33,7 +34,7 @@ buildFuture = false
 
 # Pagination
 [pagination]
-  pagerSize = 20
+  pagerSize = 48
 
 # Permalinks — clean URLs matching our slug structure
 [permalinks]

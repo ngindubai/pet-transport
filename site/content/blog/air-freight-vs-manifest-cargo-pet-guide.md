@@ -3,7 +3,7 @@ title: "Air Freight vs Manifest Cargo for Pets | Which is Better?"
 description: "Understanding the difference between excess baggage, manifest cargo, and unaccompanied air freight for pet transport. Which option is safer, cheaper, and better for your animal."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "air-freight-vs-manifest-cargo-pet-guide"
 url: "/blog/air-freight-vs-manifest-cargo-pet-guide/"
 seo:

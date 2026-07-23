@@ -5,7 +5,7 @@ description: "Guyana is unlisted for GB pet travel, so a titre test and 3-month 
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "guyana-to-united-kingdom"
 origin_name: "Guyana"
 destination_name: "United Kingdom"

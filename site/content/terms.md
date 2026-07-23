@@ -7,7 +7,7 @@ slug: "terms"
 url: "/terms/"
 ---
 
-**Last updated: 7 May 2026**
+**Last updated: 23 July 2026**
 
 Please read these terms carefully before using this website or requesting a quote. By using pettransportglobal.com, you agree to the terms set out below.
 
@@ -15,7 +15,7 @@ Please read these terms carefully before using this website or requesting a quot
 
 ## 1. About Us
 
-PetTransportGlobal operates at pettransportglobal.com and provides information, guidance, and professional coordination services for the international relocation of pets. References to "we", "us", or "our" throughout these terms mean PetTransportGlobal.
+Pet Transport Global is operated by **Global Solutions Ltd** from 71–75 Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom. We provide information, guidance, and professional coordination services for international pet relocation through pettransportglobal.com. References to "we", "us", or "our" mean Global Solutions Ltd trading as Pet Transport Global. You can contact us at [info@pettransportglobal.com](mailto:info@pettransportglobal.com).
 
 ---
 
@@ -67,7 +67,7 @@ This site contains links to government websites, airline pages, and other extern
 
 ## 8. Privacy
 
-Our use of your personal data is explained in our [Privacy Policy](/privacy/). By submitting an enquiry, you consent to us using your data to respond to your request as described in that policy.
+Our use of personal data, including the legal bases on which we process it, is explained in our [Privacy Policy](/privacy/).
 
 ---
 
@@ -83,4 +83,4 @@ These terms are governed by the laws of England and Wales. Any disputes arising 
 
 ---
 
-If you have any questions about these terms, contact us via WhatsApp or the enquiry form on the site.
+If you have any questions about these terms, email [info@pettransportglobal.com](mailto:info@pettransportglobal.com) or use the enquiry form on the site.

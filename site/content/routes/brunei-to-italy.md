@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Brunei to Italy in 2026. A Singapore tran
 date: "2026-07-12"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "brunei-to-italy"
 origin_name: "Brunei"
 destination_name: "Italy"

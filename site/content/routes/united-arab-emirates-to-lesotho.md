@@ -5,7 +5,7 @@ description: "A UAE pet always changes carriers at O.R. Tambo, on a separate way
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-arab-emirates-to-lesotho"
 origin_name: "United Arab Emirates"
 destination_name: "Lesotho"

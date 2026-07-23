@@ -5,7 +5,7 @@ description: "Honduras does not appear on DAFF's Group 1, 2 or 3 approved-countr
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "honduras-to-australia"
 origin_name: "Honduras"
 destination_name: "Australia"

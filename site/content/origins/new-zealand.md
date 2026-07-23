@@ -4,7 +4,7 @@ slug: "new-zealand"
 description: "Complete guide to exporting your pet from New Zealand."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "New Zealand"
 country_code: "NZ"
 overview: |
@@ -24,7 +24,7 @@ sections:
   - heading: "Popular routes from New Zealand"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [New Zealand to Argentina](/pet-transport/new-zealand-to-argentina/)
       - [New Zealand to Australia](/pet-transport/new-zealand-to-australia/)
       - [New Zealand to Austria](/pet-transport/new-zealand-to-austria/)
@@ -53,6 +53,7 @@ sections:
       - [New Zealand to Greece](/pet-transport/new-zealand-to-greece/)
       - [New Zealand to Hong Kong](/pet-transport/new-zealand-to-hong-kong/)
       - [New Zealand to Hungary](/pet-transport/new-zealand-to-hungary/)
+      - [New Zealand to Iceland](/pet-transport/new-zealand-to-iceland/)
       - [New Zealand to India](/pet-transport/new-zealand-to-india/)
       - [New Zealand to Indonesia](/pet-transport/new-zealand-to-indonesia/)
       - [New Zealand to Ireland](/pet-transport/new-zealand-to-ireland/)
@@ -63,6 +64,7 @@ sections:
       - [New Zealand to Kenya](/pet-transport/new-zealand-to-kenya/)
       - [New Zealand to Kuwait](/pet-transport/new-zealand-to-kuwait/)
       - [New Zealand to Luxembourg](/pet-transport/new-zealand-to-luxembourg/)
+      - [New Zealand to Macau](/pet-transport/new-zealand-to-macau/)
       - [New Zealand to Malaysia](/pet-transport/new-zealand-to-malaysia/)
       - [New Zealand to Malta](/pet-transport/new-zealand-to-malta/)
       - [New Zealand to Mauritius](/pet-transport/new-zealand-to-mauritius/)
@@ -95,6 +97,8 @@ sections:
       - [New Zealand to Thailand](/pet-transport/new-zealand-to-thailand/)
       - [New Zealand to Turkey](/pet-transport/new-zealand-to-turkey/)
       - [New Zealand to United Arab Emirates](/pet-transport/new-zealand-to-united-arab-emirates/)
+      - [New Zealand to United Kingdom](/pet-transport/new-zealand-to-united-kingdom/)
+      - [New Zealand to United States](/pet-transport/new-zealand-to-united-states/)
       - [New Zealand to Vietnam](/pet-transport/new-zealand-to-vietnam/)
       - [New Zealand to Zimbabwe](/pet-transport/new-zealand-to-zimbabwe/)
 faqs:

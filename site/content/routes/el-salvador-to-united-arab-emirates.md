@@ -5,7 +5,7 @@ description: "El Salvador isn't on MOCCAE's low-risk list, so a titre test appli
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "el-salvador-to-united-arab-emirates"
 origin_name: "El Salvador"
 destination_name: "United Arab Emirates"

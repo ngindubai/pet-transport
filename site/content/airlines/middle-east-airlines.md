@@ -2,7 +2,7 @@
 title: "Middle East Airlines (MEA) Pet Transport: Policies for Cats and Dogs"
 description: "Middle East Airlines pet transport guide. How to fly your cat or dog with Lebanon's national carrier MEA. Covers cabin pet rules, cargo hold, Beirut routes and documentation requirements."
 date: "2025-07-24"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "airlines"
 airline_name: "Middle East Airlines"
 url: "/pet-transport/airlines/middle-east-airlines/"

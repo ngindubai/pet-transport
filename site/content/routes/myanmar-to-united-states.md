@@ -5,7 +5,7 @@ description: "Yangon has no non-stop flight to the US, so a Bangkok or Singapore
 date: "2026-07-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "myanmar-to-united-states"
 origin_name: "Myanmar"
 destination_name: "United States"

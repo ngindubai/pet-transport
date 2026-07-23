@@ -3,7 +3,7 @@ title: "Moving to Dubai with a Dog: MOCCAE Permits, Breed Bans, and Expat Life"
 description: "Dubai has hundreds of thousands of expats, many with dogs. Here is the complete guide: MOCCAE import permit, breed restrictions, registration, and practical dog life in Dubai."
 date: 2026-05-09
 type: blog
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "moving-to-dubai-with-a-dog"
 url: "/blog/moving-to-dubai-with-a-dog/"
 seo:

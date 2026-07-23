@@ -5,7 +5,7 @@ description: "Athens to Montevideo pet transport in 2026. No titre test, but Uru
 date: "2026-07-07"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "greece-to-uruguay"
 origin_name: "Greece"
 destination_name: "Uruguay"

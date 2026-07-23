@@ -3,7 +3,7 @@ title: "Pet Travel Insurance: What's Covered and What's Not When Moving Internat
 description: "Pet travel insurance for international moves works differently from standard policies. This guide covers what's typically included, what's excluded, and what to look for before you buy."
 date: "2026-06-10"
 type: "blog"
-author: "James Osei, Pet Transport Planning Specialist, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-travel-insurance-international-moves"
 url: "/blog/pet-travel-insurance-international-moves/"
 seo:

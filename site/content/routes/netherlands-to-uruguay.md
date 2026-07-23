@@ -5,7 +5,7 @@ description: "Moving a dog or cat from the Netherlands to Uruguay in 2026. MGAP 
 date: "2026-06-28"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "netherlands-to-uruguay"
 origin_name: "Netherlands"
 destination_name: "Uruguay"

@@ -4,7 +4,7 @@ title: "Pet Transport from Saudi Arabia to Myanmar | PetTransportGlobal"
 description: "Complete guide to pet transport from Saudi Arabia to Myanmar. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "saudi-arabia-to-myanmar"
 origin_name: "Saudi Arabia"
 destination_name: "Myanmar"
@@ -22,7 +22,7 @@ route_data:
       microchip: "Required (ISO 11784/11785)"
       rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel"
       titre_test: "Required for: Most countries. Minimum: 0.5 IU/ml"
-      quarantine: "Mandatory quarantine. 14 days days. Quarantine at designated facility."
+      quarantine: "Mandatory quarantine. 14 days. Quarantine at designated facility."
       import_permit: "Required. Issued by: DAH"
       health_certificate: "Required. Issued by: Official veterinarian, endorsed by national authority"
   airlines:
@@ -80,7 +80,7 @@ route_data:
       timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
       responsible: "You + airline check-in/cargo desk"
     - step: 8
-      action: "Quarantine on arrival (14 days days)"
+      action: "Quarantine on arrival (14 days)"
       timing: "Immediately on arrival (mandatory)"
       responsible: "Myanmar quarantine authority"
   cost_factors:
@@ -102,7 +102,7 @@ content:
   overview: |
     Getting your dog from Saudi Arabia to Myanmar is entirely achievable, but the preparation timeline is not flexible.
     
-    This route is one of the most demanding international pet transport routes. Start preparations at least 26 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. Myanmar requires mandatory quarantine (14 days days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
+    This route is one of the most demanding international pet transport routes. Start preparations at least 26 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. Myanmar requires mandatory quarantine (14 days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
     
     We've laid out every step below so you know exactly what to prepare and when.
   sections:
@@ -110,7 +110,7 @@ content:
       body: |
         This is one of the more demanding international pet transport corridors. Myanmar runs a strict biosecurity programme and there are no shortcuts through it.
         
-        All pets must complete quarantine on arrival in Myanmar (at a government-designated facility) for 14 days days. This is non-negotiable and is entirely separate from the pre-travel preparation.
+        All pets must complete quarantine on arrival in Myanmar (at a government-designated facility) for 14 days. This is non-negotiable and is entirely separate from the pre-travel preparation.
         
         Myanmar regulated by Department of Animal Husbandry (DAH), Ministry of Agriculture, Livestock and Irrigation. Complex import/export processes. Expat community in Yangon.
     - heading: "Step-by-step: what to do first"
@@ -126,7 +126,7 @@ faqs:
   - question: "How long does it take to prepare a pet for transport from Saudi Arabia to Myanmar?"
     answer: "Allow at least 26 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
   - question: "Does my pet need to quarantine when entering Myanmar?"
-    answer: "Yes, quarantine is mandatory in Myanmar. Your pet will stay for 14 days days at a government-run facility on arrival. This is non-negotiable and the cost is paid by the owner."
+    answer: "Yes, quarantine is mandatory in Myanmar. Your pet will stay for 14 days at the quarantine facility specified in the arrival instructions. Confirm the facility, duration, and current charges with the destination authority before travel."
   - question: "Is a rabies titre test required for pets entering Myanmar?"
     answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Myanmar. Start this process as early as possible."
   - question: "Do I need an import permit to bring my pet into Myanmar?"

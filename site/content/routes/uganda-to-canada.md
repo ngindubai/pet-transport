@@ -5,7 +5,7 @@ description: "Moving your pet from Uganda to Canada? No titre test required for 
 date: "2026-06-11"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "uganda-to-canada"
 origin_name: "Uganda"
 destination_name: "Canada"

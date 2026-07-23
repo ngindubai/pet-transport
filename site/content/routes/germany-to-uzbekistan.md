@@ -5,7 +5,7 @@ description: "Germany to Uzbekistan pet transport, 2026. Uzbekistan Airways flie
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "germany-to-uzbekistan"
 origin_name: "Germany"
 destination_name: "Uzbekistan"

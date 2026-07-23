@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Japan to Indonesia in 2026. Japan is rabi
 date: "2026-06-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "japan-to-indonesia"
 origin_name: "Japan"
 destination_name: "Indonesia"

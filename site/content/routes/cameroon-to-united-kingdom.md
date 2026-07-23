@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Cameroon to the UK in 2026. Cameroon is u
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "cameroon-to-united-kingdom"
 origin_name: "Cameroon"
 destination_name: "United Kingdom"

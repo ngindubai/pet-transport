@@ -3,7 +3,7 @@ title: "Pet Relocation Budget Guide: What International Pet Transport Actually C
 description: "A realistic breakdown of international pet transport costs in 2026: vet and certificate fees, cargo costs, quarantine fees, agent fees, and what affects the final price."
 date: "2026-05-06"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-relocation-budget-guide"
 url: "/blog/pet-relocation-budget-guide/"
 seo:

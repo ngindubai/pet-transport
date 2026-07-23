@@ -5,7 +5,7 @@ description: "Tunisia isn't on any of DAFF's approved country lists, so a pet ha
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "tunisia-to-australia"
 origin_name: "Tunisia"
 destination_name: "Australia"

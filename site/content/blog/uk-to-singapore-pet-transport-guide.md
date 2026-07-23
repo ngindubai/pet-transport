@@ -3,7 +3,7 @@ title: "Pet Transport from UK to Singapore: Licences, Quarantine and the Process
 description: "Complete guide to moving your dog or cat from the UK to Singapore in 2026: AVS licence, approved breeds, quarantine rules, and the full preparation timeline."
 date: "2026-05-05"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "uk-to-singapore-pet-transport-guide"
 url: "/blog/uk-to-singapore-pet-transport-guide/"
 seo:

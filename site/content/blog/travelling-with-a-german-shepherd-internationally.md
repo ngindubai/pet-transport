@@ -3,7 +3,7 @@ title: "International Travel with a German Shepherd: Rules, Breed Checks and Key
 description: "German Shepherds face breed restrictions in some countries. This guide covers where GSDs are allowed, crate sizing, airline policies and key international routes for GSD owners."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-german-shepherd-internationally"
 url: "/blog/travelling-with-a-german-shepherd-internationally/"
 seo:

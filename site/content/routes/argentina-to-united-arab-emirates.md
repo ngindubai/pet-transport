@@ -4,7 +4,7 @@ title: "Pet Transport from Argentina to United Arab Emirates | PetTransportGloba
 description: "Complete guide to pet transport from Argentina to United Arab Emirates. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "argentina-to-united-arab-emirates"
 origin_name: "Argentina"
 destination_name: "United Arab Emirates"
@@ -128,7 +128,7 @@ faqs:
   - question: "Is a rabies titre test required for pets entering United Arab Emirates?"
     answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter United Arab Emirates. Start this process as early as possible."
   - question: "Do I need an import permit to bring my pet into United Arab Emirates?"
-    answer: "Yes, an import permit is required from United Arab Emirates's authority (the relevant government body). Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
+    answer: "Yes, an import permit is required from the United Arab Emirates veterinary authority. Apply before you book your flight. The permit specifies conditions your pet must meet and must be obtained in advance."
   - question: "What health certificate does my pet need for this route?"
     answer: "Your pet needs a government-issued veterinary health certificate from an official vet in Argentina. The certificate must be issued within 10 days of travel. Present the original (not a copy) at check-in. Check United Arab Emirates's authority for the exact format required."
 links:

@@ -5,7 +5,7 @@ description: "Germany to Seychelles pet transport, 2026. Every pet is quarantine
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "germany-to-seychelles"
 origin_name: "Germany"
 destination_name: "Seychelles"

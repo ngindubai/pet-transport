@@ -3,7 +3,7 @@ title: "UK Pet Transport Cost Calculator: 2026 Numbers, By Route"
 description: "Work out what it will cost to move your pet from the UK in 2026. Real cost figures for 10 major routes, broken down by vet, documentation, cargo, quarantine and agent. Use this to estimate your move before you get quotes."
 date: "2026-06-10"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "uk-pet-transport-cost-calculator"
 url: "/blog/uk-pet-transport-cost-calculator/"
 tags:

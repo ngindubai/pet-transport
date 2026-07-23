@@ -5,7 +5,7 @@ description: "Guide to moving your dog or cat from Switzerland to Uruguay. MGAP 
 date: "2026-06-24"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "switzerland-to-uruguay"
 origin_name: "Switzerland"
 destination_name: "Uruguay"

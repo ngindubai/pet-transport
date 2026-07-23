@@ -3,7 +3,7 @@ title: "USA Pet Import Guide: CDC Rules, Rabies Vaccinations, and What Changed i
 description: "The USA tightened dog import rules in 2024. Here is what dogs and cats need to enter the United States, including the CDC screwworm certificate for some origins."
 date: "2026-05-05"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "usa-pet-import-guide"
 url: "/blog/usa-pet-import-guide/"
 seo:

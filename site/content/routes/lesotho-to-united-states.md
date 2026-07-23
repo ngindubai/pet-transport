@@ -5,7 +5,7 @@ description: "Lesotho pets fly Airlink to Johannesburg, then Delta's 17-hour non
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "lesotho-to-united-states"
 origin_name: "Lesotho"
 destination_name: "United States"

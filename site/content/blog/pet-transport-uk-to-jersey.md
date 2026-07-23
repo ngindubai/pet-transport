@@ -4,7 +4,7 @@ description: "Moving a dog or cat from the UK to Jersey in 2026. No AHC, no pet 
 date: "2026-06-06"
 type: "blog"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-transport-uk-to-jersey"
 ---
 

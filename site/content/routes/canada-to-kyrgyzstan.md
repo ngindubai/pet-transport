@@ -5,7 +5,7 @@ description: "Kyrgyzstan skips the rabies titre test for any origin country, Can
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-kyrgyzstan"
 origin_name: "Canada"
 destination_name: "Kyrgyzstan"

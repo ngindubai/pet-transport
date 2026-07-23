@@ -2,7 +2,7 @@
 title: "Pet Transport from UK to China: Permits"
 description: "How to move your cat or dog from the UK to China. Covers GACC registration, MIQ quarantine, endorsed health certificates, approved airlines and timeline planning."
 date: "2025-07-05"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/uk-to-china-pet-transport-guide/"
 tags: ["uk", "china", "route guide", "quarantine", "pet transport"]

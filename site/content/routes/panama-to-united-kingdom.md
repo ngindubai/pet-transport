@@ -4,7 +4,7 @@ title: "Pet Transport Panama to United Kingdom | APHA Protocol & Airline Compari
 description: "Relocating your pet from Panama to the UK? Titre test requirements, Copa and Iberia routing options, UK APHA documentation, costs, and full timeline."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "panama-to-united-kingdom"
 origin_name: "Panama"
 destination_name: "United Kingdom"

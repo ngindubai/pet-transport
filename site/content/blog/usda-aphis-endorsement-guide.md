@@ -3,7 +3,7 @@ title: "USDA APHIS Endorsement: How to Get Your Pet's Health Certificate Authent
 description: "US pet owners need USDA APHIS to endorse their pet's health certificate before most international journeys. Step-by-step guide to the accredited vet, APHIS endorsement process, and timelines."
 date: "2026-06-09"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "usda-aphis-endorsement-guide"
 url: "/blog/usda-aphis-endorsement-guide/"
 seo:

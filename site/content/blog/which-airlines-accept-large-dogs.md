@@ -3,7 +3,7 @@ title: "Which Airlines Accept Large Dogs in 2026?"
 description: "A guide to airlines that accept large dogs in hold cargo or excess baggage. Carrier-by-carrier comparison, weight limits, embargoes, and how to book large dog travel."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "which-airlines-accept-large-dogs"
 url: "/blog/which-airlines-accept-large-dogs/"
 seo:

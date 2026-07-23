@@ -5,7 +5,7 @@ description: "AED 100 clears a pet's MOCCAE export certificate from Dubai or Abu
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-arab-emirates-to-ukraine"
 origin_name: "United Arab Emirates"
 destination_name: "Ukraine"

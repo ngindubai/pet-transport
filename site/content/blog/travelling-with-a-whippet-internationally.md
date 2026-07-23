@@ -3,7 +3,7 @@ title: "Travelling with a Whippet Internationally"
 description: "International travel guide for Whippet owners. Crate sizing, airline acceptance, country breed rules, and tips for keeping Whippets comfortable during long-haul flights."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-whippet-internationally"
 url: "/blog/travelling-with-a-whippet-internationally/"
 seo:

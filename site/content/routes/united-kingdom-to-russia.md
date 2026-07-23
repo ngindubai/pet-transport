@@ -5,7 +5,7 @@ description: "No direct UK-Russia flights since 2022. Russia needs no titre test
 date: "2026-07-13"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-russia"
 origin_name: "United Kingdom"
 destination_name: "Russia"

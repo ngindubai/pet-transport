@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Ukraine to Australia in 2026. Ukraine is 
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "ukraine-to-australia"
 origin_name: "Ukraine"
 destination_name: "Australia"

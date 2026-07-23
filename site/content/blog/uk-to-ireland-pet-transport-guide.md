@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Great Britain to Ireland in 2026. What re
 date: "2026-07-09"
 type: "blog"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "uk-to-ireland-pet-transport-guide"
 url: "/blog/uk-to-ireland-pet-transport-guide/"
 tags:

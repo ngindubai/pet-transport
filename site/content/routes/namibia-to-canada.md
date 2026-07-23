@@ -5,7 +5,7 @@ description: "Namibia is on CFIA's high-risk dog rabies list (13 March 2025), ye
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "namibia-to-canada"
 origin_name: "Namibia"
 destination_name: "Canada"

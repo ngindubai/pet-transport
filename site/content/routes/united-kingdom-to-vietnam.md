@@ -5,7 +5,7 @@ description: "Moving your dog or cat from the UK to Vietnam in 2026. AHC from a 
 date: "2026-06-05"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-vietnam"
 origin_name: "United Kingdom"
 destination_name: "Vietnam"

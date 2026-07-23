@@ -3,7 +3,7 @@ title: "The Best (and Worst) Airports for Pet Cargo: What to Know Before You Boo
 description: "Guide to major international airports for pet cargo in 2026: which airports have dedicated live animal facilities, temperature-controlled holding, and the smoothest customs processes."
 date: "2026-05-06"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "best-airports-for-pet-transit-cargo"
 url: "/blog/best-airports-for-pet-transit-cargo/"
 seo:

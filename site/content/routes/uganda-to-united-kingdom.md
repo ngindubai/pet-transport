@@ -4,7 +4,7 @@ title: "Pet Transport Uganda to United Kingdom | APHA Import Guide & Airline Opt
 description: "Moving your pet from Uganda to the UK? Titre test protocol, British Airways and Qatar cargo from Entebbe, UK APHA requirements, documentation, and costs."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "uganda-to-united-kingdom"
 origin_name: "Uganda"
 destination_name: "United Kingdom"

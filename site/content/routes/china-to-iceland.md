@@ -5,7 +5,7 @@ description: "Moving a pet from China to Iceland in 2026. China isn't on MAST's 
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "china-to-iceland"
 origin_name: "China"
 destination_name: "Iceland"

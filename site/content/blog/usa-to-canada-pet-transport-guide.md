@@ -3,7 +3,7 @@ title: "Pet Transport from USA to Canada: CFIA Rules and What You Need to Cross 
 description: "Guide to moving your dog or cat from the USA to Canada in 2026: CFIA requirements, health certificate for dogs, crossing at land borders vs airports, and provincial rules."
 date: "2026-05-08"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "usa-to-canada-pet-transport-guide"
 url: "/blog/usa-to-canada-pet-transport-guide/"
 seo:

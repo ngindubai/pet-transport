@@ -5,7 +5,7 @@ description: "Guide to moving your dog or cat from Switzerland to Panama. MIDA i
 date: "2026-06-24"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "switzerland-to-panama"
 origin_name: "Switzerland"
 destination_name: "Panama"

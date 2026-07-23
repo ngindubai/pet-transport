@@ -2,7 +2,7 @@
 title: "Cabin vs Cargo"
 description: "Should your dog fly in the cabin or the cargo hold? This guide breaks down the welfare, cost and practical differences to help you make the right decision for your individual dog."
 date: "2025-08-07"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/cabin-vs-cargo-which-is-better-for-your-dog/"
 tags: ["cabin vs cargo", "dog travel", "airline pet policy", "welfare guide"]

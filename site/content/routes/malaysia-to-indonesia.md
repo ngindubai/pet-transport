@@ -5,7 +5,7 @@ description: "Kuala Lumpur to Jakarta is a genuine two-hour direct flight, one o
 date: "2026-07-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "malaysia-to-indonesia"
 origin_name: "Malaysia"
 destination_name: "Indonesia"

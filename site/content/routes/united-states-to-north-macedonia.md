@@ -5,7 +5,7 @@ description: "The US's rabies-controlled status carries through to North Macedon
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-north-macedonia"
 origin_name: "United States"
 destination_name: "North Macedonia"

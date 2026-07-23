@@ -28,14 +28,22 @@
     </div>
 </section>
 
-{{/* GA4 lead conversion event — fires on every thank-you page load */}}
+{{/* Only record a conversion after a quote form was submitted in this tab. */}}
 {{ if and (not hugo.IsServer) .Site.Params.googleAnalyticsId }}
 <script>
-  if (typeof gtag === 'function') {
-    gtag('event', 'generate_lead', {
-      'event_category': 'enquiry',
-      'event_label': document.referrer || 'direct'
-    });
+  try {
+    var accepted = new URLSearchParams(window.location.search).get('submitted') === '1';
+    if (accepted && sessionStorage.getItem('ptgLeadSubmitted') === '1') {
+      sessionStorage.removeItem('ptgLeadSubmitted');
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', {
+          'event_category': 'enquiry',
+          'event_label': 'verified_quote_submission'
+        });
+      }
+    }
+  } catch (e) {
+    // Storage may be unavailable in privacy modes. Do not report an unverified lead.
   }
 </script>
 {{ end }}

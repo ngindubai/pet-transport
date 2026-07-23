@@ -3,7 +3,7 @@ title: "South Africa to UK Pet Transport: What Dogs and Cats Need to Enter Great
 description: "Moving from South Africa to the UK with your pet? Here is what APHA requires for dogs and cats from South Africa, including the titre test timeline and tapeworm rules."
 date: "2026-05-05"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-transport-south-africa-to-uk"
 url: "/blog/pet-transport-south-africa-to-uk/"
 seo:

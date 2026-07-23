@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Yerevan to Istanbul in 2026 on Turkish Ai
 date: "2026-07-09"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "armenia-to-turkey"
 origin_name: "Armenia"
 destination_name: "Turkey"

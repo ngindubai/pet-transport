@@ -5,7 +5,7 @@ description: "Latvia to Greece is intra-EU travel: EU pet passport or AHC, no ti
 date: "2026-07-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "latvia-to-greece"
 origin_name: "Latvia"
 destination_name: "Greece"

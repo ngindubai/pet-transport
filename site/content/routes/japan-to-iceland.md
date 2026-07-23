@@ -5,7 +5,7 @@ description: "Japan to Iceland pet transport in 2026: MAST classes Japan as Cate
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "japan-to-iceland"
 origin_name: "Japan"
 destination_name: "Iceland"

@@ -5,7 +5,7 @@ description: "Iceland to South Africa pet transport 2026: DALRRD skips the titre
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "iceland-to-south-africa"
 origin_name: "Iceland"
 destination_name: "South Africa"

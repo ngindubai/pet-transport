@@ -3,7 +3,7 @@ title: "Pet Transport from Australia to Singapore: AVS Rules and the Preparation
 description: "Complete guide to moving your dog or cat from Australia to Singapore in 2026: AVS import licence, approved breeds, titre test, 10-day quarantine, and what to expect."
 date: "2026-05-08"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-singapore-pet-transport-guide"
 url: "/blog/australia-to-singapore-pet-transport-guide/"
 seo:

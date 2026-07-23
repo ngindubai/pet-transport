@@ -3,7 +3,7 @@ title: "What Is in a Pet Health Certificate? A Plain-Language Breakdown"
 description: "Plain-language guide to what a pet health certificate contains in 2026: the EU AHC format, what each section means, how to check it is correct, and what to do if there is an error."
 date: "2026-05-06"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-health-certificate-what-it-contains"
 url: "/blog/pet-health-certificate-what-it-contains/"
 seo:

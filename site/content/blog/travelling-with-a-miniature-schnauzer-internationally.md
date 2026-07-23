@@ -3,7 +3,7 @@ title: "Travelling Internationally with a Miniature Schnauzer"
 description: "Everything Miniature Schnauzer owners need to know about international travel. Breed restrictions, cabin vs hold, crate sizing, and key routes covered."
 date: "2026-05-07"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-miniature-schnauzer-internationally"
 url: "/blog/travelling-with-a-miniature-schnauzer-internationally/"
 seo:

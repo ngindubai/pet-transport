@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Austria to Lebanon in 2026. Rabies vaccin
 date: "2026-06-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "austria-to-lebanon"
 origin_name: "Austria"
 destination_name: "Lebanon"

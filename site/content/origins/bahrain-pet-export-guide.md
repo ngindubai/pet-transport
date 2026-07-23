@@ -3,7 +3,7 @@ title: "Pet Transport from Bahrain | Export Requirements & Routes"
 description: "How to ship your dog or cat from Bahrain internationally. Export requirements, health certificates, and AWD endorsement explained."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "bahrain-pet-export-guide"
 origin_country: "Bahrain"
 origin_iso: "BH"
@@ -44,7 +44,7 @@ sections:
   - heading: "Popular routes from Bahrain"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Bahrain to Argentina](/pet-transport/bahrain-to-argentina/)
       - [Bahrain to Australia](/pet-transport/bahrain-to-australia/)
       - [Bahrain to Austria](/pet-transport/bahrain-to-austria/)
@@ -119,7 +119,6 @@ sections:
       - [Bahrain to United States](/pet-transport/bahrain-to-united-states/)
       - [Bahrain to Vietnam](/pet-transport/bahrain-to-vietnam/)
       - [Bahrain to Zimbabwe](/pet-transport/bahrain-to-zimbabwe/)
-
 faqs:
   - question: "What documents does my pet need to leave Bahrain?"
     answer: "Your pet needs a valid microchip (ISO standard), current rabies vaccination, and an official health certificate endorsed by AWD. Specific destination countries may require additional documents such as a titre test result, import permit, or specific certificate formats."

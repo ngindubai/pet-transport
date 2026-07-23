@@ -5,7 +5,7 @@ description: "Guyana treats the UK as a rabies-free origin, so no titre test or 
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-guyana"
 origin_name: "United Kingdom"
 destination_name: "Guyana"

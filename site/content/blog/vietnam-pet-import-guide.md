@@ -3,7 +3,7 @@ title: "Vietnam Pet Import Guide: DAH Requirements, Quarantine, and Entry Docume
 description: "Bringing a pet to Vietnam requires advance planning and a DAH-approved health certificate. Here is what dogs and cats need to enter Vietnam."
 date: "2026-05-05"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "vietnam-pet-import-guide"
 url: "/blog/vietnam-pet-import-guide/"
 seo:

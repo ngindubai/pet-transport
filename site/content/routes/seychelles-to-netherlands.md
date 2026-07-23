@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Seychelles to the Netherlands in 2026. Se
 date: "2026-07-12"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "seychelles-to-netherlands"
 origin_name: "Seychelles"
 destination_name: "Netherlands"

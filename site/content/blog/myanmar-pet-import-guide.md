@@ -3,7 +3,7 @@ title: "Myanmar Pet Import Guide 2026"
 description: "What you need to know about bringing a dog or cat to Myanmar. Veterinary import certificate, health documentation, and practical advice for relocating with pets."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "myanmar-pet-import-guide"
 url: "/blog/myanmar-pet-import-guide/"
 seo:

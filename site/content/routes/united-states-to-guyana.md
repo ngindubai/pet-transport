@@ -5,7 +5,7 @@ description: "The US isn't on Guyana's short rabies-free list, so a titre test a
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-guyana"
 origin_name: "United States"
 destination_name: "Guyana"

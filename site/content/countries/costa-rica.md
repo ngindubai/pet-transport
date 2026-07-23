@@ -3,7 +3,7 @@ title: "Importing Pets to Costa Rica | Requirements & Regulations | PetTransport
 description: "Complete guide to importing dogs and cats into Costa Rica. SENASA-CR import requirements, quarantine rules, and banned breeds explained."
 type: "countries"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "costa-rica"
 destination_country: "Costa Rica"
 destination_iso: "CR"

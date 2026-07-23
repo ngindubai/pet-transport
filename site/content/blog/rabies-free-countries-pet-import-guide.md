@@ -3,7 +3,7 @@ title: "Moving Pets to Rabies-Free Countries: Stricter Rules, Longer Waits"
 description: "Rabies-free countries like Australia, New Zealand, Japan, and Hawaii protect their status with strict import rules including titre tests and quarantine. Here is what that means for pet owners."
 date: "2026-05-06"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "rabies-free-countries-pet-import-guide"
 url: "/blog/rabies-free-countries-pet-import-guide/"
 seo:

@@ -2,7 +2,7 @@
 title: "Air Botswana Pet Transport: Cargo Policies and Pet Travel Guide"
 description: "Air Botswana's pet transport policies explained. Covers domestic and regional route pet acceptance, Botswana import requirements, crate specifications and the Gaborone airport process."
 date: "2025-08-16"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "airlines"
 url: "/pet-transport/airlines/air-botswana/"
 airline_name: "Air Botswana"

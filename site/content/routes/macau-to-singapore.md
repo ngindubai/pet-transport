@@ -5,7 +5,7 @@ description: "Macau isn't named on Singapore's AVS Schedule I or II lists, unlik
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "macau-to-singapore"
 origin_name: "Macau"
 destination_name: "Singapore"

@@ -2,7 +2,7 @@
 title: "International Travel with a Springer"
 description: "Planning to relocate or travel internationally with a Springer Spaniel? This breed guide covers crate sizing, airline policies, breed restrictions and health documentation."
 date: "2025-07-10"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/travelling-with-a-springer-spaniel-internationally/"
 tags: ["springer spaniel", "breed guide", "dog travel", "international pet travel"]

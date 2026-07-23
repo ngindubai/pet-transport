@@ -3,7 +3,7 @@ title: "Alaska Airlines Pet Transport Guide"
 description: "Alaska Airlines pet policy for 2026: cabin pets on US domestic routes, cargo restrictions, seasonal embargoes, and what pet owners need to know when flying within the USA."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "alaska-airlines"
 url: "/pet-transport/airlines/alaska-airlines/"
 airline:

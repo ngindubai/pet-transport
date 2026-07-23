@@ -3,7 +3,7 @@ title: "Bangkok Airways Pet Transport Guide 2026"
 description: "Bangkok Airways pet policy for dogs and cats. Cabin and cargo rules for the boutique Thai carrier, routes, crate requirements, and connecting options for Thailand pet travel."
 date: "2026-05-08"
 type: "airlines"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "bangkok-airways"
 url: "/pet-transport/airlines/bangkok-airways/"
 seo:

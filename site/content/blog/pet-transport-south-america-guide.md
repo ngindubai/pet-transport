@@ -3,7 +3,7 @@ title: "Moving Pets to South America: Brazil, Argentina, and Chile Import Rules 
 description: "South America's three largest pet destinations compared. Brazil MAPA, Argentina SENASA, and Chile SAG import requirements, health certificate formats, and key differences."
 date: "2026-06-23"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-transport-south-america-guide"
 url: "/blog/pet-transport-south-america-guide/"
 seo:

@@ -3,7 +3,7 @@ title: "Travelling with a Bengal Cat Internationally"
 description: "Bengal cats and international travel. CITES considerations for early generations, airline policies, microchip requirements, and how to keep an active breed calm in transit."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-bengal-cat-internationally"
 url: "/blog/travelling-with-a-bengal-cat-internationally/"
 seo:

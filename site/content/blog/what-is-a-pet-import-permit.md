@@ -3,7 +3,7 @@ title: "What Is a Pet Import Permit and Do You Need One?"
 description: "Many countries require a pet import permit before your dog or cat can enter. This guide explains what an import permit is, which countries require one and how to apply."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "what-is-a-pet-import-permit"
 url: "/blog/what-is-a-pet-import-permit/"
 seo:

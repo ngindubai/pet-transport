@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Ireland to Azerbaijan in 2026. No titre t
 date: "2026-06-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "ireland-to-azerbaijan"
 origin_name: "Ireland"
 destination_name: "Azerbaijan"

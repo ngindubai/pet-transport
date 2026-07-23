@@ -5,7 +5,7 @@ description: "KLM flies Amsterdam to Mexico City non-stop, so a short Copenhagen
 date: "2026-07-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "denmark-to-mexico"
 origin_name: "Denmark"
 destination_name: "Mexico"

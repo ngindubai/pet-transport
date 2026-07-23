@@ -5,7 +5,7 @@ description: "Jamaica's Preliminary Application Form has to clear VSD before a s
 date: "2026-07-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "turkey-to-jamaica"
 origin_name: "Turkey"
 destination_name: "Jamaica"

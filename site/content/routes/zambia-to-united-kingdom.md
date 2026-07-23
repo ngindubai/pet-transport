@@ -5,7 +5,7 @@ description: "Zambia is unlisted for GB pet travel: a rabies titre test and 3-mo
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "zambia-to-united-kingdom"
 origin_name: "Zambia"
 destination_name: "United Kingdom"

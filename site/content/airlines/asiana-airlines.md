@@ -3,7 +3,7 @@ title: "Asiana Airlines Pet Transport Guide"
 description: "Asiana Airlines pet transport policy 2026: cabin pet rules, cargo requirements, breed restrictions, crate sizing, and what to prepare when flying with pets on Asiana."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "asiana-airlines"
 url: "/pet-transport/airlines/asiana-airlines/"
 airline:

@@ -4,7 +4,7 @@ title: "Pet Transport Netherlands to Japan | 180-Day Quarantine Rules & Airlines
 description: "Moving your pet from the Netherlands to Japan? Japan's 180-day pre-arrival system is the most complex in the world. Compare airlines and understand MAFF quarantine rules."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "netherlands-to-japan"
 origin_name: "Netherlands"
 destination_name: "Japan"

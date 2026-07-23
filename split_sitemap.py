@@ -15,7 +15,6 @@ Also updates robots.txt Sitemap directive if needed.
 
 import os
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
 
 PUBLIC_DIR = os.path.join("site", "public")
 SITEMAP_IN = os.path.join(PUBLIC_DIR, "sitemap.xml")
@@ -63,7 +62,7 @@ def classify_url(url: str) -> tuple[str, str]:
         return "pages", "1.0"
 
     # Static pages
-    if top in ("about", "contact", "privacy"):
+    if top in ("about", "contact", "privacy", "terms", "search"):
         return "pages", "0.5"
 
     # Blog listing + articles
@@ -74,13 +73,12 @@ def classify_url(url: str) -> tuple[str, str]:
 
     # Pet-transport sub-sections
     if top == "pet-transport":
+        if path in ("pet-transport", "pet-transport/routes", "pet-transport/how-we-source-route-data"):
+            return "pages", "0.6"
         if sub in ("countries", "origins", "airlines", "breeds"):
             return "hubs", "0.7"
         if sub == "resources":
             return "pages", "0.6"
-        if sub in ("countries", "origins", "airlines", "breeds", ""):
-            # section index pages
-            return "hubs", "0.6"
         # Everything else under /pet-transport/ is a route
         return "routes", "0.8"
 
@@ -111,13 +109,12 @@ def build_section_xml(entries: list[dict], section_key: str) -> str:
     ]
     for entry in entries:
         loc = entry["loc"]
-        lastmod = entry["lastmod"] or datetime.now(timezone.utc).strftime("%Y-%m-%d")
-        # Trim to date only
-        lastmod = lastmod[:10]
+        lastmod = entry["lastmod"][:10] if entry["lastmod"] else ""
         _, priority = classify_url(loc)
         lines.append("  <url>")
         lines.append(f"    <loc>{loc}</loc>")
-        lines.append(f"    <lastmod>{lastmod}</lastmod>")
+        if lastmod:
+            lines.append(f"    <lastmod>{lastmod}</lastmod>")
         lines.append(f"    <changefreq>{cfg['changefreq']}</changefreq>")
         lines.append(f"    <priority>{priority}</priority>")
         lines.append("  </url>")
@@ -130,7 +127,6 @@ def build_index_xml(section_files: list[tuple[str, int, str]]) -> str:
     Build a sitemap index XML string.
     section_files: list of (filename, url_count, lastmod_date)
     """
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
@@ -138,7 +134,8 @@ def build_index_xml(section_files: list[tuple[str, int, str]]) -> str:
     for fname, count, lastmod in section_files:
         lines.append("  <sitemap>")
         lines.append(f"    <loc>{BASE_URL}/{fname}</loc>")
-        lines.append(f"    <lastmod>{lastmod or today}</lastmod>")
+        if lastmod:
+            lines.append(f"    <lastmod>{lastmod}</lastmod>")
         lines.append("  </sitemap>")
     lines.append("</sitemapindex>")
     return "\n".join(lines)

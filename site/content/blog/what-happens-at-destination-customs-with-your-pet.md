@@ -3,7 +3,7 @@ title: "What Happens at Customs When Your Pet Arrives Internationally"
 description: "What to expect when your dog or cat clears customs at an international airport. The inspection process, what officials check, and what can go wrong."
 date: "2026-05-07"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "what-happens-at-destination-customs-with-your-pet"
 url: "/blog/what-happens-at-destination-customs-with-your-pet/"
 seo:

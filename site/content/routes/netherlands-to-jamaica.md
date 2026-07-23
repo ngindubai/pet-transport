@@ -5,7 +5,7 @@ description: "Moving a dog or cat from the Netherlands to Jamaica in 2026. VSD i
 date: "2026-06-28"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "netherlands-to-jamaica"
 origin_name: "Netherlands"
 destination_name: "Jamaica"

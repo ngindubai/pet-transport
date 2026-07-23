@@ -5,7 +5,7 @@ description: "Complete guide to moving your dog or cat from Austria to Panama. M
 date: "2026-06-24"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "austria-to-panama"
 origin_name: "Austria"
 destination_name: "Panama"

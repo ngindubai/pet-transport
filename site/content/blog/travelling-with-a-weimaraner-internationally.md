@@ -3,7 +3,7 @@ title: "Travelling with a Weimaraner Internationally"
 description: "International travel with a Weimaraner. Crate sizing, airline large dog policies, country rules, and practical advice for flying with this large, sensitive breed."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-weimaraner-internationally"
 url: "/blog/travelling-with-a-weimaraner-internationally/"
 seo:

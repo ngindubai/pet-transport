@@ -3,7 +3,7 @@ title: "Importing a Pet to Australia in 2026: The Group 3 Country Playbook"
 description: "How to import a dog or cat to Australia in 2026. Group 1/2/3 explained, RNATT timing, DAFF permits, Mickleham quarantine, real cost ranges by origin."
 date: "2026-06-08"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "importing-pets-to-australia-2026"
 url: "/blog/importing-pets-to-australia-2026/"
 seo:

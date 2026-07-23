@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Spain to Jamaica in 2026. VSD import perm
 date: "2026-06-28"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "spain-to-jamaica"
 origin_name: "Spain"
 destination_name: "Jamaica"

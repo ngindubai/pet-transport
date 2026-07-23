@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Uruguay to Belgium in 2026. Uruguay is an
 date: "2026-06-23"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "uruguay-to-belgium"
 origin_name: "Uruguay"
 destination_name: "Belgium"

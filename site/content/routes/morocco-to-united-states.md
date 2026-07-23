@@ -5,7 +5,7 @@ description: "Royal Air Maroc flies Casablanca to JFK non-stop, 13 times a week.
 date: "2026-07-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "morocco-to-united-states"
 origin_name: "Morocco"
 destination_name: "United States"

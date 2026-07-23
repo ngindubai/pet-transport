@@ -3,7 +3,7 @@ title: "Pet Transport from Zimbabwe | Export Requirements & Routes"
 description: "How to ship your dog or cat from Zimbabwe internationally. Export requirements, health certificates, and DLVS endorsement explained."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "zimbabwe-pet-export-guide"
 origin_country: "Zimbabwe"
 origin_iso: "ZW"
@@ -44,7 +44,7 @@ sections:
   - heading: "Popular routes from Zimbabwe"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Zimbabwe to Argentina](/pet-transport/zimbabwe-to-argentina/)
       - [Zimbabwe to Australia](/pet-transport/zimbabwe-to-australia/)
       - [Zimbabwe to Austria](/pet-transport/zimbabwe-to-austria/)
@@ -117,8 +117,8 @@ sections:
       - [Zimbabwe to Turkey](/pet-transport/zimbabwe-to-turkey/)
       - [Zimbabwe to United Arab Emirates](/pet-transport/zimbabwe-to-united-arab-emirates/)
       - [Zimbabwe to United Kingdom](/pet-transport/zimbabwe-to-united-kingdom/)
+      - [Zimbabwe to United States](/pet-transport/zimbabwe-to-united-states/)
       - [Zimbabwe to Vietnam](/pet-transport/zimbabwe-to-vietnam/)
-
 faqs:
   - question: "What documents does my pet need to leave Zimbabwe?"
     answer: "Your pet needs a valid microchip (ISO standard), current rabies vaccination, and an official health certificate endorsed by DLVS. Specific destination countries may require additional documents such as a titre test result, import permit, or specific certificate formats."

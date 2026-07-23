@@ -5,7 +5,7 @@ description: "The UK's place on the EU's approved rabies list means no titre tes
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-albania"
 origin_name: "United Kingdom"
 destination_name: "Albania"

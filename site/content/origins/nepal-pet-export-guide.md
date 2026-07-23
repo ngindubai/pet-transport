@@ -3,7 +3,7 @@ title: "Shipping Pets from Nepal Internationally | PetTransportGlobal"
 description: "How to ship your dog or cat from Nepal internationally. Export requirements, health certificates, and DoLS endorsement explained."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "nepal-pet-export-guide"
 origin_country: "Nepal"
 origin_iso: "NP"
@@ -44,7 +44,7 @@ sections:
   - heading: "Popular routes from Nepal"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Nepal to Argentina](/pet-transport/nepal-to-argentina/)
       - [Nepal to Australia](/pet-transport/nepal-to-australia/)
       - [Nepal to Austria](/pet-transport/nepal-to-austria/)
@@ -119,7 +119,6 @@ sections:
       - [Nepal to United States](/pet-transport/nepal-to-united-states/)
       - [Nepal to Vietnam](/pet-transport/nepal-to-vietnam/)
       - [Nepal to Zimbabwe](/pet-transport/nepal-to-zimbabwe/)
-
 faqs:
   - question: "What documents does my pet need to leave Nepal?"
     answer: "Your pet needs a valid microchip (ISO standard), current rabies vaccination, and an official health certificate endorsed by DoLS. Specific destination countries may require additional documents such as a titre test result, import permit, or specific certificate formats."

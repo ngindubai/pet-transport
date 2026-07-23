@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Lithuania to Lebanon in 2026. VMVT-author
 date: "2026-06-23"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "lithuania-to-lebanon"
 origin_name: "Lithuania"
 destination_name: "Lebanon"

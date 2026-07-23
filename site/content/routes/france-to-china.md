@@ -4,7 +4,7 @@ description: "Moving your pet from France to China: GACC titre test mandatory, 1
 type: "routes"
 layout: "single"
 template_variant: "A"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "france-to-china"
 origin_name: "France"
 destination_name: "China"

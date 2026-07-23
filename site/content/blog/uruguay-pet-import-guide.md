@@ -3,7 +3,7 @@ title: "Moving to Uruguay with Pets: MGAP Requirements for Montevideo-Bound Fami
 description: "Uruguay is one of South America's most liveable countries for expats. Here is what dogs and cats need to enter Uruguay: MGAP health certificate, vaccinations, and what happens at Carrasco Airport."
 date: 2026-05-09
 type: blog
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "uruguay-pet-import-guide"
 url: "/blog/uruguay-pet-import-guide/"
 seo:

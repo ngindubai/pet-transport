@@ -3,7 +3,7 @@ title: "Pet Transport Agents: What They Do, What They Cost, and When You Actuall
 description: "For simple routes you probably don't need an agent. For Australia, Japan, or New Zealand you almost certainly do. Here's how to decide and what to look for."
 date: "2026-04-03"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-transport-agents-what-they-do-and-when-you-need-one"
 url: "/blog/pet-transport-agents-what-they-do-and-when-you-need-one/"
 seo:

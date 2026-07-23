@@ -5,7 +5,7 @@ description: "Antigua and Barbuda classes the US as rabies-endemic, so a titre t
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-antigua-and-barbuda"
 origin_name: "United States"
 destination_name: "Antigua and Barbuda"

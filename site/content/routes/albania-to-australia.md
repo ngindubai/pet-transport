@@ -5,7 +5,7 @@ description: "Albania is a DAFF non-approved country, so 180 days in an approved
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "albania-to-australia"
 origin_name: "Albania"
 destination_name: "Australia"

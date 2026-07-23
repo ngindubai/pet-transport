@@ -3,7 +3,7 @@ title: "New Zealand Pet Import Guide: Biosecurity Rules, MPI Approval, and What 
 description: "New Zealand has some of the world's most rigorous pet import rules. Here is what dogs and cats need to enter NZ, including approved countries, quarantine, and MPI requirements."
 date: "2026-05-05"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "new-zealand-pet-import-guide"
 url: "/blog/new-zealand-pet-import-guide/"
 seo:

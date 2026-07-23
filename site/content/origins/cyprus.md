@@ -4,7 +4,7 @@ slug: "cyprus"
 description: "Complete guide to exporting your pet from Cyprus. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Cyprus"
 country_code: "CY"
 content:
@@ -30,7 +30,7 @@ sections:
   - heading: "Popular routes from Cyprus"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Cyprus to Argentina](/pet-transport/cyprus-to-argentina/)
       - [Cyprus to Australia](/pet-transport/cyprus-to-australia/)
       - [Cyprus to Austria](/pet-transport/cyprus-to-austria/)

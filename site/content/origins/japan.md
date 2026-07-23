@@ -4,7 +4,7 @@ slug: "japan"
 description: "Complete guide to exporting your pet from Japan. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Japan"
 country_code: "JP"
 overview: |
@@ -24,13 +24,14 @@ sections:
   - heading: "Popular routes from Japan"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Japan to Argentina](/pet-transport/japan-to-argentina/)
       - [Japan to Australia](/pet-transport/japan-to-australia/)
       - [Japan to Austria](/pet-transport/japan-to-austria/)
       - [Japan to Bahrain](/pet-transport/japan-to-bahrain/)
       - [Japan to Bangladesh](/pet-transport/japan-to-bangladesh/)
       - [Japan to Belgium](/pet-transport/japan-to-belgium/)
+      - [Japan to Brazil](/pet-transport/japan-to-brazil/)
       - [Japan to Bulgaria](/pet-transport/japan-to-bulgaria/)
       - [Japan to Cambodia](/pet-transport/japan-to-cambodia/)
       - [Japan to Canada](/pet-transport/japan-to-canada/)
@@ -49,19 +50,28 @@ sections:
       - [Japan to France](/pet-transport/japan-to-france/)
       - [Japan to Germany](/pet-transport/japan-to-germany/)
       - [Japan to Ghana](/pet-transport/japan-to-ghana/)
+      - [Japan to Greece](/pet-transport/japan-to-greece/)
       - [Japan to Hong Kong](/pet-transport/japan-to-hong-kong/)
       - [Japan to Hungary](/pet-transport/japan-to-hungary/)
+      - [Japan to Iceland](/pet-transport/japan-to-iceland/)
+      - [Japan to India](/pet-transport/japan-to-india/)
+      - [Japan to Indonesia](/pet-transport/japan-to-indonesia/)
       - [Japan to Ireland](/pet-transport/japan-to-ireland/)
       - [Japan to Israel](/pet-transport/japan-to-israel/)
+      - [Japan to Italy](/pet-transport/japan-to-italy/)
       - [Japan to Jordan](/pet-transport/japan-to-jordan/)
       - [Japan to Kenya](/pet-transport/japan-to-kenya/)
       - [Japan to Kuwait](/pet-transport/japan-to-kuwait/)
       - [Japan to Luxembourg](/pet-transport/japan-to-luxembourg/)
+      - [Japan to Macau](/pet-transport/japan-to-macau/)
+      - [Japan to Malaysia](/pet-transport/japan-to-malaysia/)
       - [Japan to Malta](/pet-transport/japan-to-malta/)
       - [Japan to Mauritius](/pet-transport/japan-to-mauritius/)
+      - [Japan to Mexico](/pet-transport/japan-to-mexico/)
       - [Japan to Morocco](/pet-transport/japan-to-morocco/)
       - [Japan to Myanmar](/pet-transport/japan-to-myanmar/)
       - [Japan to Nepal](/pet-transport/japan-to-nepal/)
+      - [Japan to Netherlands](/pet-transport/japan-to-netherlands/)
       - [Japan to New Zealand](/pet-transport/japan-to-new-zealand/)
       - [Japan to Nigeria](/pet-transport/japan-to-nigeria/)
       - [Japan to Norway](/pet-transport/japan-to-norway/)
@@ -70,19 +80,25 @@ sections:
       - [Japan to Peru](/pet-transport/japan-to-peru/)
       - [Japan to Philippines](/pet-transport/japan-to-philippines/)
       - [Japan to Poland](/pet-transport/japan-to-poland/)
+      - [Japan to Portugal](/pet-transport/japan-to-portugal/)
       - [Japan to Qatar](/pet-transport/japan-to-qatar/)
       - [Japan to Romania](/pet-transport/japan-to-romania/)
       - [Japan to Saudi Arabia](/pet-transport/japan-to-saudi-arabia/)
       - [Japan to Singapore](/pet-transport/japan-to-singapore/)
       - [Japan to Slovakia](/pet-transport/japan-to-slovakia/)
       - [Japan to South Africa](/pet-transport/japan-to-south-africa/)
+      - [Japan to South Korea](/pet-transport/japan-to-south-korea/)
       - [Japan to Spain](/pet-transport/japan-to-spain/)
       - [Japan to Sri Lanka](/pet-transport/japan-to-sri-lanka/)
       - [Japan to Sweden](/pet-transport/japan-to-sweden/)
+      - [Japan to Switzerland](/pet-transport/japan-to-switzerland/)
       - [Japan to Taiwan](/pet-transport/japan-to-taiwan/)
       - [Japan to Tanzania](/pet-transport/japan-to-tanzania/)
+      - [Japan to Thailand](/pet-transport/japan-to-thailand/)
       - [Japan to Turkey](/pet-transport/japan-to-turkey/)
       - [Japan to United Arab Emirates](/pet-transport/japan-to-united-arab-emirates/)
+      - [Japan to United Kingdom](/pet-transport/japan-to-united-kingdom/)
+      - [Japan to United States](/pet-transport/japan-to-united-states/)
       - [Japan to Vietnam](/pet-transport/japan-to-vietnam/)
       - [Japan to Zimbabwe](/pet-transport/japan-to-zimbabwe/)
 faqs:

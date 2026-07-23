@@ -5,7 +5,7 @@ description: "Shipping your pet from Uganda to France involves the full EU unlis
 date: "2026-06-11"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "uganda-to-france"
 origin_name: "Uganda"
 destination_name: "France"

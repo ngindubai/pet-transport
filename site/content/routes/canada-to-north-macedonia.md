@@ -5,7 +5,7 @@ description: "North Macedonia's FVA exempts Canadian pets from the titre test be
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-north-macedonia"
 origin_name: "Canada"
 destination_name: "North Macedonia"

@@ -3,7 +3,7 @@ title: "Importing Pets to Cambodia | Requirements & Regulations | PetTransportGl
 description: "Complete guide to importing dogs and cats into Cambodia. GDAHP import requirements, quarantine rules, and banned breeds explained."
 type: "countries"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "cambodia"
 destination_country: "Cambodia"
 destination_iso: "KH"

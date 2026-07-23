@@ -4,7 +4,7 @@ slug: "hong-kong"
 description: "Complete guide to exporting your pet from Hong Kong. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Hong Kong"
 country_code: "HK"
 overview: |
@@ -24,7 +24,7 @@ sections:
   - heading: "Popular routes from Hong Kong"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Hong Kong to Argentina](/pet-transport/hong-kong-to-argentina/)
       - [Hong Kong to Australia](/pet-transport/hong-kong-to-australia/)
       - [Hong Kong to Austria](/pet-transport/hong-kong-to-austria/)
@@ -52,6 +52,7 @@ sections:
       - [Hong Kong to Ghana](/pet-transport/hong-kong-to-ghana/)
       - [Hong Kong to Greece](/pet-transport/hong-kong-to-greece/)
       - [Hong Kong to Hungary](/pet-transport/hong-kong-to-hungary/)
+      - [Hong Kong to Iceland](/pet-transport/hong-kong-to-iceland/)
       - [Hong Kong to India](/pet-transport/hong-kong-to-india/)
       - [Hong Kong to Indonesia](/pet-transport/hong-kong-to-indonesia/)
       - [Hong Kong to Ireland](/pet-transport/hong-kong-to-ireland/)
@@ -62,6 +63,7 @@ sections:
       - [Hong Kong to Kenya](/pet-transport/hong-kong-to-kenya/)
       - [Hong Kong to Kuwait](/pet-transport/hong-kong-to-kuwait/)
       - [Hong Kong to Luxembourg](/pet-transport/hong-kong-to-luxembourg/)
+      - [Hong Kong to Macau](/pet-transport/hong-kong-to-macau/)
       - [Hong Kong to Malaysia](/pet-transport/hong-kong-to-malaysia/)
       - [Hong Kong to Malta](/pet-transport/hong-kong-to-malta/)
       - [Hong Kong to Mauritius](/pet-transport/hong-kong-to-mauritius/)
@@ -95,6 +97,8 @@ sections:
       - [Hong Kong to Thailand](/pet-transport/hong-kong-to-thailand/)
       - [Hong Kong to Turkey](/pet-transport/hong-kong-to-turkey/)
       - [Hong Kong to United Arab Emirates](/pet-transport/hong-kong-to-united-arab-emirates/)
+      - [Hong Kong to United Kingdom](/pet-transport/hong-kong-to-united-kingdom/)
+      - [Hong Kong to United States](/pet-transport/hong-kong-to-united-states/)
       - [Hong Kong to Vietnam](/pet-transport/hong-kong-to-vietnam/)
       - [Hong Kong to Zimbabwe](/pet-transport/hong-kong-to-zimbabwe/)
 faqs:

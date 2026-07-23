@@ -5,7 +5,7 @@ description: "Antigua and Barbuda sits on the UK's Part 2 list, so no rabies tit
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "antigua-and-barbuda-to-united-kingdom"
 origin_name: "Antigua and Barbuda"
 destination_name: "United Kingdom"

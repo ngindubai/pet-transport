@@ -3,7 +3,7 @@ title: "Choosing the Right Vet for International Pet Travel: What to Look for an
 description: "Not every vet can issue international health certificates. Here's how to find an APHA-authorised vet in the UK, what qualifications matter, and what questions to ask before booking."
 date: "2026-05-25"
 type: "blog"
-author: "James Osei, Pet Transport Planning Specialist, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "choosing-the-right-vet-for-international-pet-travel"
 url: "/blog/choosing-the-right-vet-for-international-pet-travel/"
 seo:

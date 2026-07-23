@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Paraguay to Australia in 2026. Paraguay i
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "paraguay-to-australia"
 origin_name: "Paraguay"
 destination_name: "Australia"

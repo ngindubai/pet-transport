@@ -2,7 +2,7 @@
 title: "Bamboo Airways Pet Transport: Policies for Pets on Vietnam Flights"
 description: "Bamboo Airways pet transport guide. How to fly your cat or dog within Vietnam and on international routes with Bamboo Airways. Covers cabin and cargo pet policies, Vietnamese documentation and booking."
 date: "2025-07-27"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "airlines"
 airline_name: "Bamboo Airways"
 url: "/pet-transport/airlines/bamboo-airways/"

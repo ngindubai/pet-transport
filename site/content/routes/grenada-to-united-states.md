@@ -5,7 +5,7 @@ description: "Grenada isn't on the CDC's high-risk list for dog rabies, so titre
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "grenada-to-united-states"
 origin_name: "Grenada"
 destination_name: "United States"

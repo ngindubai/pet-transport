@@ -5,7 +5,7 @@ description: "Canada to Paraguay pet transport in 2026. Copa Airlines won't fly 
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-paraguay"
 origin_name: "Canada"
 destination_name: "Paraguay"

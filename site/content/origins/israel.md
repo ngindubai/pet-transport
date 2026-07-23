@@ -4,7 +4,7 @@ slug: "israel"
 description: "Complete guide to exporting your pet from Israel. Export requirements, airline options, and route guides for international destinations."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Israel"
 country_code: "IL"
 overview: |
@@ -24,7 +24,7 @@ sections:
   - heading: "Popular routes from Israel"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Israel to Argentina](/pet-transport/israel-to-argentina/)
       - [Israel to Australia](/pet-transport/israel-to-australia/)
       - [Israel to Austria](/pet-transport/israel-to-austria/)
@@ -95,6 +95,8 @@ sections:
       - [Israel to Thailand](/pet-transport/israel-to-thailand/)
       - [Israel to Turkey](/pet-transport/israel-to-turkey/)
       - [Israel to United Arab Emirates](/pet-transport/israel-to-united-arab-emirates/)
+      - [Israel to United Kingdom](/pet-transport/israel-to-united-kingdom/)
+      - [Israel to United States](/pet-transport/israel-to-united-states/)
       - [Israel to Vietnam](/pet-transport/israel-to-vietnam/)
       - [Israel to Zimbabwe](/pet-transport/israel-to-zimbabwe/)
 faqs:

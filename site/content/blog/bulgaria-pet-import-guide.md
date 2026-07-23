@@ -3,7 +3,7 @@ title: "Moving to Bulgaria with Pets: Import Rules Explained"
 description: "Planning to move to Bulgaria with your dog or cat? Here is what you need to know about EU pet passport rules, microchipping, and rabies vaccination requirements."
 date: "2026-05-06"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "bulgaria-pet-import-guide"
 url: "/blog/bulgaria-pet-import-guide/"
 seo:

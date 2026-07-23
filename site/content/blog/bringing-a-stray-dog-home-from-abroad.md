@@ -3,7 +3,7 @@ title: "Bringing a Stray or Rescue Dog Home from Abroad: A Step-by-Step Guide"
 description: "Rescued a dog abroad and want to bring it home? This guide covers the process for importing a stray from a holiday destination to the UK, USA, or EU, including CDC rules."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "bringing-a-stray-dog-home-from-abroad"
 url: "/blog/bringing-a-stray-dog-home-from-abroad/"
 seo:

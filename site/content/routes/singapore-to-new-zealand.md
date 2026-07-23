@@ -4,7 +4,7 @@ title: "Pet Transport from Singapore to New Zealand | Requirements & Airline Com
 description: "Moving your pet from Singapore to New Zealand: MPI import permit, titre test, mandatory 10-day quarantine, AVS export endorsement, Singapore Airlines vs Air NZ compared."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "singapore-to-new-zealand"
 origin_name: "Singapore"
 destination_name: "New Zealand"

@@ -5,7 +5,7 @@ description: "Complete guide to moving your dog or cat from the Czech Republic t
 date: "2026-06-24"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "czech-republic-to-jamaica"
 origin_name: "Czech Republic"
 destination_name: "Jamaica"

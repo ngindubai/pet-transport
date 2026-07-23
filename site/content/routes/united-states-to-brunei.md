@@ -5,7 +5,7 @@ description: "Moving a dog or cat from the USA to Brunei in 2026. The USA is not
 date: "2026-07-11"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-brunei"
 origin_name: "United States"
 destination_name: "Brunei"

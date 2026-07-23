@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Japan to India in 2026. MAFF health certi
 date: "2026-06-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "japan-to-india"
 origin_name: "Japan"
 destination_name: "India"

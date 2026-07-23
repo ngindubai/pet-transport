@@ -5,7 +5,7 @@ description: "Venezuela is a DAFF non-approved country, so pets need 180 days in
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "venezuela-to-australia"
 origin_name: "Venezuela"
 destination_name: "Australia"

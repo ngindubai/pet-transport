@@ -5,7 +5,7 @@ description: "Kuala Lumpur to Sao Paulo runs through a Gulf hub, since no non-st
 date: "2026-07-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "malaysia-to-brazil"
 origin_name: "Malaysia"
 destination_name: "Brazil"

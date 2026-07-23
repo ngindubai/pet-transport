@@ -3,7 +3,7 @@ title: "Pet Transport from Cambodia | Export Requirements & Routes"
 description: "How to ship your dog or cat from Cambodia internationally. Export requirements, health certificates, and GDAHP endorsement explained."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "cambodia-pet-export-guide"
 origin_country: "Cambodia"
 origin_iso: "KH"
@@ -44,7 +44,7 @@ sections:
   - heading: "Popular routes from Cambodia"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Cambodia to Argentina](/pet-transport/cambodia-to-argentina/)
       - [Cambodia to Australia](/pet-transport/cambodia-to-australia/)
       - [Cambodia to Austria](/pet-transport/cambodia-to-austria/)
@@ -116,9 +116,9 @@ sections:
       - [Cambodia to Turkey](/pet-transport/cambodia-to-turkey/)
       - [Cambodia to United Arab Emirates](/pet-transport/cambodia-to-united-arab-emirates/)
       - [Cambodia to United Kingdom](/pet-transport/cambodia-to-united-kingdom/)
+      - [Cambodia to United States](/pet-transport/cambodia-to-united-states/)
       - [Cambodia to Vietnam](/pet-transport/cambodia-to-vietnam/)
       - [Cambodia to Zimbabwe](/pet-transport/cambodia-to-zimbabwe/)
-
 faqs:
   - question: "What documents does my pet need to leave Cambodia?"
     answer: "Your pet needs a valid microchip (ISO standard), current rabies vaccination, and an official health certificate endorsed by GDAHP. Specific destination countries may require additional documents such as a titre test result, import permit, or specific certificate formats."

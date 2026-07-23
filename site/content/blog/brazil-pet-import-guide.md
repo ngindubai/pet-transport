@@ -3,7 +3,7 @@ title: "Brazil Pet Import Guide: MAPA Requirements, Health Certificates, and Qua
 description: "Brazil's pet import process is managed by MAPA. Here is what dogs and cats need to enter Brazil, including the health certificate format, vaccination requirements, and what to expect on arrival."
 date: "2026-05-05"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "brazil-pet-import-guide"
 url: "/blog/brazil-pet-import-guide/"
 seo:

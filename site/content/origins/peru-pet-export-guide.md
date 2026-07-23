@@ -3,7 +3,7 @@ title: "Shipping Pets from Peru Internationally | PetTransportGlobal"
 description: "How to ship your dog or cat from Peru internationally. Export requirements, health certificates, and SENASA-PE endorsement explained."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "peru-pet-export-guide"
 origin_country: "Peru"
 origin_iso: "PE"
@@ -44,7 +44,7 @@ sections:
   - heading: "Popular routes from Peru"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Peru to Argentina](/pet-transport/peru-to-argentina/)
       - [Peru to Australia](/pet-transport/peru-to-australia/)
       - [Peru to Austria](/pet-transport/peru-to-austria/)
@@ -119,7 +119,6 @@ sections:
       - [Peru to United States](/pet-transport/peru-to-united-states/)
       - [Peru to Vietnam](/pet-transport/peru-to-vietnam/)
       - [Peru to Zimbabwe](/pet-transport/peru-to-zimbabwe/)
-
 faqs:
   - question: "What documents does my pet need to leave Peru?"
     answer: "Your pet needs a valid microchip (ISO standard), current rabies vaccination, and an official health certificate endorsed by SENASA-PE. Specific destination countries may require additional documents such as a titre test result, import permit, or specific certificate formats."

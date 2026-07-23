@@ -3,7 +3,7 @@ title: "Travelling with Fish Internationally | Import Rules and Tips"
 description: "How to transport fish across international borders. CITES permits for tropical species, disease certifications, and practical advice for moving aquarium fish by air."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-fish-internationally"
 url: "/blog/travelling-with-fish-internationally/"
 seo:

@@ -3,7 +3,7 @@ title: "Allegiant Air Pet Policy 2026"
 description: "Allegiant Air pet transport guide. Does Allegiant accept dogs and cats? In-cabin only policy, weight limits, approved carriers, fees, and booking tips."
 date: "2026-05-08"
 type: "airlines"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "allegiant-air"
 url: "/pet-transport/airlines/allegiant-air/"
 seo:

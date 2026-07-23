@@ -3,7 +3,7 @@ title: "Travelling with Pets in Summer Heat | Safety Guide 2026"
 description: "How to protect your pet during summer air travel. Temperature embargoes explained, breeds at highest risk, how to time your flights, and what airlines do to keep animals safe in the heat."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "summer-heat-pet-air-travel-precautions"
 url: "/blog/summer-heat-pet-air-travel-precautions/"
 seo:

@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Slovenia to Lebanon in 2026. Rabies vacci
 date: "2026-06-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "slovenia-to-lebanon"
 origin_name: "Slovenia"
 destination_name: "Lebanon"

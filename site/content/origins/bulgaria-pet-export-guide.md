@@ -3,7 +3,7 @@ title: "Bulgaria Pet Export Guide | International Pet Transport"
 description: "How to ship your dog or cat from Bulgaria internationally. Export requirements, health certificates, and BFSA endorsement explained."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "bulgaria-pet-export-guide"
 origin_country: "Bulgaria"
 origin_iso: "BG"
@@ -44,7 +44,7 @@ sections:
   - heading: "Popular routes from Bulgaria"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Bulgaria to Argentina](/pet-transport/bulgaria-to-argentina/)
       - [Bulgaria to Australia](/pet-transport/bulgaria-to-australia/)
       - [Bulgaria to Austria](/pet-transport/bulgaria-to-austria/)
@@ -119,7 +119,6 @@ sections:
       - [Bulgaria to United States](/pet-transport/bulgaria-to-united-states/)
       - [Bulgaria to Vietnam](/pet-transport/bulgaria-to-vietnam/)
       - [Bulgaria to Zimbabwe](/pet-transport/bulgaria-to-zimbabwe/)
-
 faqs:
   - question: "What documents does my pet need to leave Bulgaria?"
     answer: "Your pet needs a valid microchip (ISO standard), current rabies vaccination, and an official health certificate endorsed by BFSA. Specific destination countries may require additional documents such as a titre test result, import permit, or specific certificate formats."

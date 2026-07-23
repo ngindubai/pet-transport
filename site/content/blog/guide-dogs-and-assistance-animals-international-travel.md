@@ -3,7 +3,7 @@ title: "Guide Dogs and Assistance Animals: International Travel Rights and Requi
 description: "Guide dogs and registered assistance animals have special protections for international travel, including cabin rights on many airlines. Here is a country-by-country guide to rights, requirements, and documentation."
 date: 2026-05-09
 type: blog
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "guide-dogs-and-assistance-animals-international-travel"
 url: "/blog/guide-dogs-and-assistance-animals-international-travel/"
 seo:

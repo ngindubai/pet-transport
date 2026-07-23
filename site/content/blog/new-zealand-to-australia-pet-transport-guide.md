@@ -3,7 +3,7 @@ title: "Pet Transport from New Zealand to Australia: Trans-Tasman Rules and What
 description: "Guide to moving your dog or cat from New Zealand to Australia in 2026: DAFF requirements, the trans-Tasman route, crate standards, and what makes NZ-Australia one of the easier pathways."
 date: "2026-05-06"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "new-zealand-to-australia-pet-transport-guide"
 url: "/blog/new-zealand-to-australia-pet-transport-guide/"
 seo:

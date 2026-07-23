@@ -5,7 +5,7 @@ description: "South Korea to Iceland pet transport in 2026: absent from MAST's C
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "south-korea-to-iceland"
 origin_name: "South Korea"
 destination_name: "Iceland"

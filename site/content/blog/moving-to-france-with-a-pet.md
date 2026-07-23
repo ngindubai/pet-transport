@@ -2,7 +2,7 @@
 title: "Moving to France with a Pet"
 description: "A complete guide to relocating to France with a cat or dog. Covers EU pet passport rules, post-Brexit requirements for UK pets, US third-country rules, ICAD microchip registration and life in France."
 date: "2025-09-07"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/moving-to-france-with-a-pet/"
 tags: ["france", "expat guide", "paris", "pet relocation", "europe"]

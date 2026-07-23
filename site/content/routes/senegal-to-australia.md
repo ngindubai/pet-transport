@@ -5,7 +5,7 @@ description: "Senegal has no DAFF approval for direct import. Emirates offers a 
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "senegal-to-australia"
 origin_name: "Senegal"
 destination_name: "Australia"

@@ -4,7 +4,7 @@ title: "Pet Transport Panama to Netherlands | EU Titre Test & 90-Day Wait Explai
 description: "Shipping a cat or dog from Panama to the Netherlands? Full EU unlisted-country protocol: FAVN titre test, 90-day wait, MIDA health certificate, airline options from PTY."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "panama-to-netherlands"
 origin_name: "Panama"
 destination_name: "Netherlands"

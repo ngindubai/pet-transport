@@ -5,7 +5,7 @@ description: "Madagascar is DAFF non-approved, so 180 days staged abroad come fi
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "madagascar-to-australia"
 origin_name: "Madagascar"
 destination_name: "Australia"

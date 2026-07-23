@@ -4,7 +4,7 @@ description: "Moving your pet from Germany to Japan: Japan's mandatory 180-day A
 type: "routes"
 layout: "single"
 template_variant: "D"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "germany-to-japan"
 origin_name: "Germany"
 destination_name: "Japan"

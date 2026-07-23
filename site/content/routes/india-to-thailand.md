@@ -5,7 +5,7 @@ description: "Moving a dog or cat from India to Thailand in 2026. DLD import per
 date: "2026-06-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "india-to-thailand"
 origin_name: "India"
 destination_name: "Thailand"

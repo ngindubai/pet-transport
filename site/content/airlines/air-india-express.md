@@ -3,7 +3,7 @@ title: "Air India Express Pet Transport Guide 2026"
 description: "Air India Express pet policy. Does this Indian LCC accept pets in the cabin or as cargo? Rules for dogs and cats on Air India Express domestic and short-haul international routes."
 date: "2026-05-08"
 type: "airlines"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "air-india-express"
 url: "/pet-transport/airlines/air-india-express/"
 seo:

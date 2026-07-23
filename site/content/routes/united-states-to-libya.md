@@ -5,7 +5,7 @@ description: "A cat travelling with its owner doesn't need a Libyan import permi
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-libya"
 origin_name: "United States"
 destination_name: "Libya"

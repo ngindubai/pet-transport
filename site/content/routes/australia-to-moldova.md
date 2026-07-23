@@ -5,7 +5,7 @@ description: "Australia sits on the same EU rabies-exempt list as the UK, so thi
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-moldova"
 origin_name: "Australia"
 destination_name: "Moldova"

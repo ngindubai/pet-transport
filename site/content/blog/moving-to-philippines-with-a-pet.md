@@ -3,7 +3,7 @@ title: "Moving to the Philippines with a Pet: BAI Requirements and What to Know"
 description: "Guide to importing a dog or cat to the Philippines. Bureau of Animal Industry veterinary import clearance, health certificate, vaccinations and Manila airport process."
 date: "2026-05-07"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "moving-to-philippines-with-a-pet"
 url: "/blog/moving-to-philippines-with-a-pet/"
 seo:

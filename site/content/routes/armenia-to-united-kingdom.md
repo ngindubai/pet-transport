@@ -4,7 +4,7 @@ title: "Pet Transport Armenia to United Kingdom | UK APHA Protocol & Cargo Routi
 description: "Moving your pet from Armenia to the UK? Emirates and Qatar cargo from Yerevan, titre test requirements, UK APHA documentation, timeline, and costs."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "armenia-to-united-kingdom"
 origin_name: "Armenia"
 destination_name: "United Kingdom"

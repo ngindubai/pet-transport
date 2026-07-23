@@ -5,7 +5,7 @@ description: "Pet transport from Italy to Panama in 2026. No titre test, no quar
 date: "2026-06-28"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "italy-to-panama"
 origin_name: "Italy"
 destination_name: "Panama"

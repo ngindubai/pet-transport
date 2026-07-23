@@ -4,7 +4,7 @@ slug: "kuwait"
 description: "Complete guide to exporting your pet from Kuwait."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Kuwait"
 country_code: "KW"
 overview: |
@@ -24,7 +24,7 @@ sections:
   - heading: "Popular routes from Kuwait"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Kuwait to Argentina](/pet-transport/kuwait-to-argentina/)
       - [Kuwait to Australia](/pet-transport/kuwait-to-australia/)
       - [Kuwait to Austria](/pet-transport/kuwait-to-austria/)
@@ -95,6 +95,8 @@ sections:
       - [Kuwait to Thailand](/pet-transport/kuwait-to-thailand/)
       - [Kuwait to Turkey](/pet-transport/kuwait-to-turkey/)
       - [Kuwait to United Arab Emirates](/pet-transport/kuwait-to-united-arab-emirates/)
+      - [Kuwait to United Kingdom](/pet-transport/kuwait-to-united-kingdom/)
+      - [Kuwait to United States](/pet-transport/kuwait-to-united-states/)
       - [Kuwait to Vietnam](/pet-transport/kuwait-to-vietnam/)
       - [Kuwait to Zimbabwe](/pet-transport/kuwait-to-zimbabwe/)
 faqs:

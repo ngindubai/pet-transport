@@ -3,75 +3,9 @@
 ## What this project is
 Programmatic SEO site at pettransportglobal.com. Built with Hugo (static site). Hosted on Hostinger. Repository is on GitHub. GitHub Actions auto-deploys on every push to `main`.
 
-## Current build status
-- **5,461 route pages** built (as of last update to this file)
-- **33,545 routes remaining** across Tier A (45), Tier B (1,094), Tier C (7,720), Tier D (24,686)
-- **6,258 total pages** live (routes + airline pages + breed guides + country pages + blog)
+## Production deployment
 
----
-
-## ⚠️ ONE MANUAL ACTION REQUIRED: Update GitHub Actions workflow
-
-The script `rebuild_link_graph_v3.py` was added and needs to run BEFORE every Hugo build.
-Claude cannot update `.github/workflows/build-to-live.yml` directly (requires `workflows` permission).
-
-**You need to manually edit `.github/workflows/build-to-live.yml` in GitHub UI once:**
-
-Replace the current content with this:
-
-```yaml
-name: Build Hugo to live branch
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout main
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Rebuild internal link graph
-        run: python rebuild_link_graph_v3.py
-
-      - name: Set up Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: '0.160.1'
-          extended: true
-
-      - name: Build Hugo site
-        run: |
-          cd site
-          hugo --gc --minify
-        env:
-          HUGO_ENVIRONMENT: production
-
-      - name: Split sitemap
-        run: python split_sitemap.py
-
-      - name: Publish built site to live branch
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site/public
-          publish_branch: live
-          force_orphan: true
-          commit_message: "Deploy: ${{ github.sha }}"
-```
-
-Until this is done, run `rebuild_link_graph_v3.py` manually before each push (or use `build.bat`).
+`build-to-live.yml` is the only production publisher. It validates and builds `main`, publishes compiled output to `live`, and Hostinger Git deploys `live`. Pull requests run the non-publishing `quality-gates.yml` workflow. See `DEPLOY.md` for configuration and rollback details.
 
 ---
 
@@ -141,7 +75,7 @@ title: "Pet Transport [Origin] to [Destination] | PetTransportGlobal"
 description: "140-160 char description with reassurance hook and CTA."
 type: "routes"
 layout: "single"
-author: "Gareth - Founder, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "{origin-slug}-to-{destination-slug}"
 origin_name: "Origin Country"
 destination_name: "Destination Country"
@@ -189,7 +123,7 @@ faqs:
     answer: "..."
 links:
   sideways:
-    - url: "/pet-transport/routes/{dest-slug}-to-{origin-slug}/"
+    - url: "/pet-transport/{dest-slug}-to-{origin-slug}/"
       text: "Pet Transport {Destination} to {Origin}"
   upward:
     - url: "/pet-transport/origins/{origin-slug}-pet-export-guide/"

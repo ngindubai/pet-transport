@@ -5,7 +5,7 @@ description: "Moving a pet from Canada to Cote d'Ivoire in 2026. No titre test r
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-ivory-coast"
 origin_name: "Canada"
 destination_name: "Ivory Coast"

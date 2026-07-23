@@ -3,7 +3,7 @@ title: "Pet Travel Documentation Checklist: Everything You Need in One List"
 description: "A complete checklist of pet travel documents for international moves. Print this out, tick each item off, and travel with confidence that nothing has been forgotten."
 date: "2026-05-06"
 type: "blog"
-author: "James Osei, Pet Transport Planning Specialist, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-travel-documentation-checklist"
 url: "/blog/pet-travel-documentation-checklist/"
 seo:

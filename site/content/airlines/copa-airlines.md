@@ -3,7 +3,7 @@ title: "Copa Airlines Pet Transport Guide"
 description: "Copa Airlines pet transport policy 2026: cabin pets, cargo requirements, breed restrictions, Panama hub routing, and what Latin America pet owners need to know."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "copa-airlines"
 url: "/pet-transport/airlines/copa-airlines/"
 airline:

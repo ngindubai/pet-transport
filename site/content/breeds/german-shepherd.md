@@ -3,7 +3,7 @@ title: "Flying with a German Shepherd | Breed Restrictions & Cargo Rules"
 description: "Country bans, airline cargo policies, and import rules for German Shepherds. Which routes are straightforward and which need extra planning."
 type: "breeds"
 layout: "single"
-author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "german-shepherd"
 breed_name: "German Shepherd"
 brachycephalic: false

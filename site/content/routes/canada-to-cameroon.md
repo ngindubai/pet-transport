@@ -5,7 +5,7 @@ description: "Moving a pet from Canada to Cameroon in 2026. No rabies titre test
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-cameroon"
 origin_name: "Canada"
 destination_name: "Cameroon"

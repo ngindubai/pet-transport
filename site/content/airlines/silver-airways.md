@@ -3,7 +3,7 @@ title: "Silver Airways Pet Transport Guide 2026"
 description: "Silver Airways pet policy for dogs and cats. Can you fly with a pet on Silver Airways? Rules for cabin and cargo travel on this USA regional carrier."
 date: "2026-05-08"
 type: "airlines"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "silver-airways"
 url: "/pet-transport/airlines/silver-airways/"
 seo:

@@ -2,18 +2,26 @@
 # Used by build-to-live.yml CI workflow (Linux/macOS)
 # Also usable locally: make build
 
-.PHONY: build links hugo sitemap
+.PHONY: build validate links hugo sitemap audit
 
-build: links hugo sitemap
+build: validate links hugo sitemap audit
+
+validate:
+	@echo "[1/5] Validating source..."
+	python3 scripts/validate_site.py
 
 links:
-	@echo "[1/3] Rebuilding internal link graph..."
+	@echo "[2/5] Rebuilding internal link graph..."
 	python3 rebuild_link_graph_v3.py
 
 hugo:
-	@echo "[2/3] Building Hugo site..."
-	cd site && hugo --gc --minify
+	@echo "[3/5] Building Hugo site..."
+	hugo --gc --minify --cleanDestinationDir --source site
 
 sitemap:
-	@echo "[3/3] Splitting sitemap..."
+	@echo "[4/5] Splitting sitemap..."
 	python3 split_sitemap.py
+
+audit:
+	@echo "[5/5] Auditing rendered site..."
+	python3 scripts/audit_build.py

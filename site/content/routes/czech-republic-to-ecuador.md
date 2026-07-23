@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from Czech Republic to Ecuador | PetTransportGlobal
 description: "How to ship your dog or cat from Czech Republic to Ecuador. Ecuador import rules, vaccinations, permits, and airline options explained."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "czech-republic-to-ecuador"
 origin_name: "Czech Republic"
 destination_name: "Ecuador"

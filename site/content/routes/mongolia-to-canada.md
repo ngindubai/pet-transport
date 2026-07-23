@@ -5,7 +5,7 @@ description: "Mongolia sits on CFIA's high-risk list, yet a personal pet still a
 date: "2026-07-22"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "mongolia-to-canada"
 origin_name: "Mongolia"
 destination_name: "Canada"

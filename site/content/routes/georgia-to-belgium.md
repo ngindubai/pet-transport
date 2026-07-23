@@ -5,7 +5,7 @@ description: "Moving a pet from Georgia to Belgium in 2026. Georgia is EU-unlist
 date: "2026-06-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "georgia-to-belgium"
 origin_name: "Georgia"
 destination_name: "Belgium"

@@ -5,7 +5,7 @@ description: "An island nation with no direct US flight, so a Paris or Dubai con
 date: "2026-07-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "mauritius-to-united-states"
 origin_name: "Mauritius"
 destination_name: "United States"

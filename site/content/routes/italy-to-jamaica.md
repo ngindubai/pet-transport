@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Italy to Jamaica in 2026. VSD import perm
 date: "2026-06-28"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "italy-to-jamaica"
 origin_name: "Italy"
 destination_name: "Jamaica"

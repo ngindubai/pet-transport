@@ -2,7 +2,7 @@
 title: "Pet Transport from Germany to Japan"
 description: "Moving a cat or dog from Germany to Japan. Explains Japan's Animal Quarantine Service 180-day preparation window, MIQ facility stays, health certificates and airline options."
 date: "2025-07-08"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/germany-to-japan-pet-transport-guide/"
 tags: ["germany", "japan", "route guide", "quarantine", "pet transport"]

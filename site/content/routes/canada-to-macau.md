@@ -5,7 +5,7 @@ description: "Canada to Macau pet transport in 2026. IAM import licence PS-1092,
 date: "2026-07-11"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-macau"
 origin_name: "Canada"
 destination_name: "Macau"

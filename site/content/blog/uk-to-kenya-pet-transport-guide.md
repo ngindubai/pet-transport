@@ -3,7 +3,7 @@ title: "Pet Transport from UK to Kenya 2026"
 description: "How to move your dog or cat from the UK to Kenya. KVB import requirements, APHA health certificate, breed considerations, and arrival procedures at Nairobi airport."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "uk-to-kenya-pet-transport-guide"
 url: "/blog/uk-to-kenya-pet-transport-guide/"
 seo:

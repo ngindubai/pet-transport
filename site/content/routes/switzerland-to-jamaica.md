@@ -5,7 +5,7 @@ description: "Full guide to flying your dog or cat from Switzerland to Jamaica. 
 date: "2026-06-24"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "switzerland-to-jamaica"
 origin_name: "Switzerland"
 destination_name: "Jamaica"

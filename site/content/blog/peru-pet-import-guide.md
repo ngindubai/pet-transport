@@ -3,7 +3,7 @@ title: "Moving Pets to Peru: SENASA Import Permits and Lima Airport Veterinary I
 description: "Peru pet import rules for dogs and cats. The SENASA permit and health certificate process, vaccination requirements, and what happens at Jorge Chávez International Airport."
 date: "2026-05-16"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "peru-pet-import-guide"
 url: "/blog/peru-pet-import-guide/"
 seo:

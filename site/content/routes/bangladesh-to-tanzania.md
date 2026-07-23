@@ -4,7 +4,7 @@ title: "Pet Relocation Bangladesh to Tanzania | Requirements & Guide"
 description: "How to ship your dog or cat from Bangladesh to Tanzania. Tanzania import rules, vaccinations, permits, and airline options explained."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "bangladesh-to-tanzania"
 origin_name: "Bangladesh"
 destination_name: "Tanzania"
@@ -22,7 +22,7 @@ route_data:
       microchip: "Required (ISO 11784/11785)"
       rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel"
       titre_test: "Required for: Most countries. Minimum: 0.5 IU/ml"
-      quarantine: "Mandatory quarantine. 10 days minimum days. Government-approved quarantine facility required."
+      quarantine: "Mandatory quarantine. 10 days minimum. Government-approved quarantine facility required."
       import_permit: "Required. Issued by: Ministry of Livestock and Fisheries"
       health_certificate: "Required. Issued by: Official veterinarian, endorsed by national authority"
   airlines:
@@ -77,7 +77,7 @@ route_data:
       timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
       responsible: "You + airline check-in/cargo desk"
     - step: 8
-      action: "Quarantine on arrival (10 days minimum days)"
+      action: "Quarantine on arrival (10 days minimum)"
       timing: "Immediately on arrival (mandatory)"
       responsible: "Tanzania quarantine authority"
   cost_factors:
@@ -99,7 +99,7 @@ content:
   overview: |
     Moving a pet from Bangladesh to Tanzania involves more paperwork than most owners expect.
     
-    This route is one of the most demanding international pet transport routes. Start preparations at least 26 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. Tanzania requires mandatory quarantine (10 days minimum days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
+    This route is one of the most demanding international pet transport routes. Start preparations at least 26 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. Tanzania requires mandatory quarantine (10 days minimum) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
     
     We've laid out every step below so you know exactly what to prepare and when.
   sections:
@@ -107,7 +107,7 @@ content:
       body: |
         This is one of the more demanding international pet transport corridors. Tanzania runs a strict biosecurity programme and there are no shortcuts through it.
         
-        All pets must complete quarantine on arrival in Tanzania (at a government-designated facility) for 10 days minimum days. This is non-negotiable and is entirely separate from the pre-travel preparation.
+        All pets must complete quarantine on arrival in Tanzania (at a government-designated facility) for 10 days minimum. This is non-negotiable and is entirely separate from the pre-travel preparation.
         
         Tanzania regulated by Tanzania Veterinary Laboratory Agency (TVLA) and the Ministry of Livestock and Fisheries. Dar es Salaam and Kilimanjaro are main entry points. Expat community present.
     - heading: "From experience: Bangladesh to Tanzania pet transport"
@@ -123,7 +123,7 @@ faqs:
   - question: "How long does it take to prepare a pet for transport from Bangladesh to Tanzania?"
     answer: "Allow at least 26 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
   - question: "Does my pet need to quarantine when entering Tanzania?"
-    answer: "Yes, quarantine is mandatory in Tanzania. Your pet will stay for 10 days minimum days at a government-run facility on arrival. This is non-negotiable and the cost is paid by the owner."
+    answer: "Yes, quarantine is mandatory in Tanzania. Your pet will stay for 10 days minimum at the quarantine facility specified in the arrival instructions. Confirm the facility, duration, and current charges with the destination authority before travel."
   - question: "Is a rabies titre test required for pets entering Tanzania?"
     answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Tanzania. Start this process as early as possible."
   - question: "Do I need an import permit to bring my pet into Tanzania?"

@@ -5,7 +5,7 @@ description: "Tajikistan sits on the CDC's high-risk dog rabies list, triggering
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "tajikistan-to-united-states"
 origin_name: "Tajikistan"
 destination_name: "United States"

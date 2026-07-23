@@ -5,7 +5,7 @@ description: "Zambia asks for no titre test from Canada, just a vaccination insi
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-zambia"
 origin_name: "Canada"
 destination_name: "Zambia"

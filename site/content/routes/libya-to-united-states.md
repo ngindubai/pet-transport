@@ -5,7 +5,7 @@ description: "Libya is on the CDC's high-risk dog rabies list, so a titre test a
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "libya-to-united-states"
 origin_name: "Libya"
 destination_name: "United States"

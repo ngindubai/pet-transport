@@ -3,7 +3,7 @@ title: "Bringing a Pet to Austria: EU Rules and What International Arrivals Need
 description: "Guide to bringing your dog or cat to Austria in 2026: EU pet passport rules, AHC for UK arrivals, dog registration requirements, and Austrian import rules."
 date: "2026-05-01"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "austria-pet-import-guide"
 url: "/blog/austria-pet-import-guide/"
 seo:

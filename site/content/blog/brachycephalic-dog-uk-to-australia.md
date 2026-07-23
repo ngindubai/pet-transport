@@ -1,7 +1,7 @@
 ---
 title: "Flying a Brachycephalic Dog UK to Australia: What's Allowed in 2026"
 date: "2026-06-12"
-author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 description: "Bulldogs, pugs and other flat-faced breeds flying UK to Australia in 2026. Airline embargoes, summer heat rules, vet fitness checks, real options."
 slug: "brachycephalic-dog-uk-to-australia"
 type: "blog"

@@ -5,7 +5,7 @@ description: "Macau isn't one of MAFF's six designated regions, so the full 180-
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "macau-to-japan"
 origin_name: "Macau"
 destination_name: "Japan"

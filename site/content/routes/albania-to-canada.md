@@ -5,7 +5,7 @@ description: "Albania isn't on CFIA's high-risk dog rabies list, so a Canada-bou
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "albania-to-canada"
 origin_name: "Albania"
 destination_name: "Canada"

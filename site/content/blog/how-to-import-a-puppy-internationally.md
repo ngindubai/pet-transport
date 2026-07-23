@@ -3,7 +3,7 @@ title: "How to Import a Puppy Internationally 2026"
 description: "What is different about importing a puppy versus an adult dog? Age restrictions, early vaccination timing, titre test age eligibility, and country-specific minimum age rules."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "how-to-import-a-puppy-internationally"
 url: "/blog/how-to-import-a-puppy-internationally/"
 seo:

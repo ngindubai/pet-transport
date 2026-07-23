@@ -3,7 +3,7 @@ title: "International Pet Transport: A Plain-English Guide for 2026"
 description: "Honest, in-depth guide to moving a pet internationally in 2026. Costs, timelines, paperwork, airline cargo, quarantine. Written by an expert. Get a quote."
 date: "2026-06-01"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "international-pet-transport-guide"
 url: "/blog/international-pet-transport-guide/"
 seo:

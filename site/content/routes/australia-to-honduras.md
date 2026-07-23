@@ -5,7 +5,7 @@ description: "Honduras keeps its import list short, no titre test, just a correc
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-honduras"
 origin_name: "Australia"
 destination_name: "Honduras"

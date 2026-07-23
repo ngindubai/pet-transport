@@ -5,7 +5,7 @@ description: "Unlike Sarajevo and Bishkek, Dubai has no direct flight to Pristin
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-arab-emirates-to-kosovo"
 origin_name: "United Arab Emirates"
 destination_name: "Kosovo"

@@ -3,7 +3,7 @@ title: "LIAT Airlines Pet Policy 2026"
 description: "LIAT Airlines pet transport guide. LIAT's operational status in 2026, Caribbean inter-island pet travel options, and alternative carriers for Eastern Caribbean routes."
 date: "2026-05-08"
 type: "airlines"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "liat-airlines"
 url: "/pet-transport/airlines/liat-airlines/"
 seo:

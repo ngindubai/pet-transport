@@ -5,7 +5,7 @@ description: "Moldova is a CDC high-risk country for dog rabies. No direct fligh
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "moldova-to-united-states"
 origin_name: "Moldova"
 destination_name: "United States"

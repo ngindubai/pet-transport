@@ -5,16 +5,16 @@
 {{/* ===== HERO with inline quote form ===== */}}
 <section id="quote-form" class="site-hero">
     {{/* Sources injected by hero-video.js — prevents mobile browsers downloading the desktop video */}}
-    <video class="hero-video" id="hero-vid" autoplay muted loop playsinline poster="/images/hero-poster.jpg" aria-hidden="true"></video>
+    <video class="hero-video" id="hero-vid" autoplay muted loop playsinline poster="/images/hero.jpg" aria-hidden="true"></video>
     <div class="container">
         <div class="row align-items-center g-4 g-lg-5">
 
             {{/* Left: headline + trust bullets */}}
             <div class="col-lg-7 hero-text-col">
                 <h1>Move your pet <span>anywhere</span> in the world</h1>
-                <p class="hero-lead">Route-specific guides and professional coordination for shipping dogs and cats between countries. Every requirement verified.</p>
+                <p class="hero-lead">Route-specific guides and professional coordination for moving dogs and cats between countries, with dated checks shown wherever they are recorded.</p>
                 <ul class="hero-trust list-unstyled mt-4 mb-4">
-                    <li><i class="fas fa-check-circle me-2"></i>Government-verified import rules</li>
+                    <li><i class="fas fa-check-circle me-2"></i>Official sources named in reviewed guides</li>
                     <li><i class="fas fa-check-circle me-2"></i>Breed restriction checks included</li>
                     <li><i class="fas fa-check-circle me-2"></i>Full documentation and vet coordination</li>
                 </ul>
@@ -37,7 +37,7 @@
                                          hugo.Data.countries (which is also used by the country
                                          carousel further down this page and expects a per-country
                                          hero image, so it is left as-is). */}}
-                                    {{ range site.Data.quote_form_countries }}
+                                    {{ range hugo.Data.quote_form_countries }}
                                     <option value="{{ .code }}">{{ .name }}</option>
                                     {{ end }}
                                 </select>
@@ -50,7 +50,7 @@
                                          hugo.Data.countries (which is also used by the country
                                          carousel further down this page and expects a per-country
                                          hero image, so it is left as-is). */}}
-                                    {{ range site.Data.quote_form_countries }}
+                                    {{ range hugo.Data.quote_form_countries }}
                                     <option value="{{ .code }}">{{ .name }}</option>
                                     {{ end }}
                                 </select>
@@ -100,7 +100,7 @@
             <div class="col-lg-9">
                 <h3>Your pet is family. We treat them that way.</h3>
                 <p>Moving a pet internationally involves a maze of rules that most people have never come across before, and honestly, why would you have? Did you know Australia won't allow your dog to land unless a specific blood test was completed at least 180 days before travel? Or that New Zealand inspectors can turn an animal away at the border if a single field on the health certificate has been filled in incorrectly? Some countries ban entire breeds. Others require import permits that take weeks to obtain. Some airlines won't carry flat-faced dogs at all, regardless of how healthy they are.</p>
-                <p>That's where we come in. Our team works with pet owners relocating to and from every corner of the world. We know the regulations for every animal, every country, every airline. Whether your dog is heading from Dubai to London, or your cat needs to make the journey from Sydney to Vancouver, we've handled that route before and we know exactly what's required.</p>
+                <p>That's where we come in. Our team helps pet owners compare the paperwork, timing, airline, and welfare considerations for an international move. Each guide is a planning starting point, and pages without a recorded review date carry a clear warning until the requirements are checked again.</p>
                 <p>You decide how much help you want. Some clients just need us to book the right cargo space on the right airline. Others hand everything over from day one: doorstep collection, vet coordination, documentation, airport handling, and delivery at the other end. Most people land somewhere in the middle. Whatever feels right for you, our job is to make sure nothing gets missed.</p>
                 <p class="mb-0">A lot of people trust us with the animals they love most. That's not something we take lightly.</p>
             </div>
@@ -308,7 +308,7 @@
             <p>Every destination has unique pet import regulations. Our country guides break down exactly what you need.</p>
         </div>
         <div class="col-md-12 carousel-2items owl-carousel owl-theme mt-4">
-            {{ range $c := hugo.Data.countries }}
+            {{ range $c := hugo.Data.featured_countries }}
             <div class="country-feature-card">
                 <div class="cfc-img-wrap">
                     <a href="/pet-transport/countries/{{ $c.slug }}/">
@@ -317,21 +317,19 @@
                     <div class="cfc-country-name">{{ $c.name }}</div>
                 </div>
                 <div class="cfc-body">
-                    {{ with $c.import_requirements }}
-                    {{ with .quarantine }}
+                    {{ with $c.quarantine }}
                     <div class="cfc-stat">
                         <span class="cfc-stat-icon cfc-amber"><i class="fas fa-home fa-fw"></i></span>
                         <span class="cfc-stat-label">Quarantine</span>
                         <span class="cfc-stat-value">{{ . | truncate 90 }}</span>
                     </div>
                     {{ end }}
-                    {{ with .rabies_vaccination }}
+                    {{ with $c.rabies_status }}
                     <div class="cfc-stat">
                         <span class="cfc-stat-icon cfc-green"><i class="fas fa-syringe fa-fw"></i></span>
                         <span class="cfc-stat-label">Rabies vax</span>
                         <span class="cfc-stat-value">{{ . | truncate 90 }}</span>
                     </div>
-                    {{ end }}
                     {{ end }}
                     <a href="/pet-transport/countries/{{ $c.slug }}/" class="btn btn-primary w-100">
                         View requirements &rarr;

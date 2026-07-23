@@ -5,7 +5,7 @@ description: "Shipping a dog or cat from the UK to Canada in 2026: CFIA paperwor
 date: "2026-06-19"
 type: "blog"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "uk-to-canada-pet-transport-guide"
 url: "/blog/uk-to-canada-pet-transport-guide/"
 tags:

@@ -5,7 +5,7 @@ description: "Moving a dog or cat from South Korea to Brazil in 2026. APQA expor
 date: "2026-06-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "south-korea-to-brazil"
 origin_name: "South Korea"
 destination_name: "Brazil"

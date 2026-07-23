@@ -5,7 +5,7 @@ description: "North Macedonia is off the CDC's high-risk dog rabies list, so US 
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "north-macedonia-to-united-states"
 origin_name: "North Macedonia"
 destination_name: "United States"

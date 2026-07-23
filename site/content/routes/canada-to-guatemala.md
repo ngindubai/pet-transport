@@ -5,7 +5,7 @@ description: "Neither country asks for much on this route, no CFIA export permit
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-guatemala"
 origin_name: "Canada"
 destination_name: "Guatemala"

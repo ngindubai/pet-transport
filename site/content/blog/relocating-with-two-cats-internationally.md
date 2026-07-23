@@ -2,7 +2,7 @@
 title: "Relocating Internationally with Two Cats"
 description: "A practical guide to moving two cats internationally. Covers whether cats can share a crate, separate documentation requirements, airline booking and stress management tips."
 date: "2025-07-18"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/relocating-with-two-cats-internationally/"
 tags: ["relocating with cats", "two cats", "cat travel", "international pet transport"]

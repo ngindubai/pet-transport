@@ -3,7 +3,7 @@ title: "Pet Transport UK to Spain: 2026 Costs, Paperwork and Driving vs Flying"
 description: "Moving your dog or cat from the UK to Spain in 2026. AHC requirements, cost breakdown by route method, and how the driving versus flying decision actually works."
 date: "2026-06-04"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "uk-to-spain-pet-transport-complete-guide"
 url: "/blog/uk-to-spain-pet-transport-complete-guide/"
 seo:

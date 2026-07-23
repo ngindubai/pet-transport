@@ -5,7 +5,7 @@ description: "Macau isn't among the countries with a bilateral veterinary agreem
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "macau-to-south-africa"
 origin_name: "Macau"
 destination_name: "South Africa"

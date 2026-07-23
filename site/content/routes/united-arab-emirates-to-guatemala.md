@@ -5,7 +5,7 @@ description: "MOCCAE's export permit is only valid for 30 days, tighter than mos
 date: "2026-07-15"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-arab-emirates-to-guatemala"
 origin_name: "United Arab Emirates"
 destination_name: "Guatemala"

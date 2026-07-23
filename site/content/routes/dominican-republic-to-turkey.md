@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Santo Domingo to Istanbul in 2026. DIGEGA
 date: "2026-07-09"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "dominican-republic-to-turkey"
 origin_name: "Dominican Republic"
 destination_name: "Turkey"

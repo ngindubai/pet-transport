@@ -5,7 +5,7 @@ description: "Kosovo has no negotiated export certificate with Canada, so the CF
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-kosovo"
 origin_name: "Canada"
 destination_name: "Kosovo"

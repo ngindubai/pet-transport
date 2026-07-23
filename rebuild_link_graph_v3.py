@@ -138,7 +138,7 @@ def build_popular_routes_section(orig_name, routes):
         f'  - heading: "Popular routes from {orig_name}"\n'
         f'    body: |\n'
         f'      We have detailed guides for the following routes:\n'
-        f'      \n'
+        f'\n'
         f'{link_lines}'
     )
 

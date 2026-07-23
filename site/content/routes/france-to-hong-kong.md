@@ -4,7 +4,7 @@ description: "Moving your pet from France to Hong Kong: AFCD Group 1 status, no 
 type: "routes"
 layout: "single"
 template_variant: "A"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "france-to-hong-kong"
 origin_name: "France"
 destination_name: "Hong Kong"

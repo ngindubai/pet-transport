@@ -2,7 +2,7 @@
 title: "International Travel with a Basset Hound"
 description: "A Basset Hound owner's guide to international pet travel. Covers airline cargo policies, whether Bassets are classed as brachycephalic, crate sizing and documentation requirements."
 date: "2025-07-31"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/travelling-with-a-basset-hound-internationally/"
 tags: ["basset hound", "breed guide", "dog travel", "international pet travel"]

@@ -3,7 +3,7 @@ title: "Travelling with a German Shepherd: Cargo, Crate Size, and Country Restri
 description: "German Shepherds are large dogs that travel as cargo. Guide to IATA crate sizing, airline acceptance, breed-specific country regulations, and how to prepare a GSD for the journey."
 date: "2026-06-07"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-german-shepherd-by-air"
 url: "/blog/travelling-with-a-german-shepherd-by-air/"
 seo:

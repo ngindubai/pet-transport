@@ -5,7 +5,7 @@ description: "Tunis to Dubai is a direct six-hour flight on Tunisair or Emirates
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "tunisia-to-united-arab-emirates"
 origin_name: "Tunisia"
 destination_name: "United Arab Emirates"

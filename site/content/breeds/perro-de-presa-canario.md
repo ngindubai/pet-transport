@@ -3,7 +3,7 @@ title: "Perro de Presa Canario: Country Import Restrictions"
 description: "Which countries ban or restrict Perro de Presa Canario import, and what it means for international relocation. Country-by-country breakdown with current regulations."
 type: "breeds"
 layout: "single"
-author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "perro-de-presa-canario"
 breed_name: "Perro de Presa Canario"
 brachycephalic: false

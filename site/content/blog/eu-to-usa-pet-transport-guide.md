@@ -3,7 +3,7 @@ title: "Pet Transport from EU to USA 2026"
 description: "How to move your dog or cat from any EU country to the United States. CDC dog import rules, USDA requirements, health certificate steps, and airline cargo options."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "eu-to-usa-pet-transport-guide"
 url: "/blog/eu-to-usa-pet-transport-guide/"
 seo:

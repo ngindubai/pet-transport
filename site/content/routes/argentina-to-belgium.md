@@ -5,7 +5,7 @@ type: "routes"
 layout: "single"
 template_variant: "D"
 content_soul: 4
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "argentina-to-belgium"
 origin_name: "Argentina"
 destination_name: "Belgium"

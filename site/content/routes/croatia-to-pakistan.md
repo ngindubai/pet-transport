@@ -4,7 +4,7 @@ title: "Moving Your Pet from Croatia to Pakistan | Complete Guide"
 description: "Complete guide to pet transport from Croatia to Pakistan. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "croatia-to-pakistan"
 origin_name: "Croatia"
 destination_name: "Pakistan"
@@ -22,7 +22,7 @@ route_data:
       microchip: "Required (ISO 11784/11785)"
       rabies_vaccination: "Required. Minimum age: 12 weeks. 21-day wait after vaccination before travel"
       titre_test: "Required for: Pets from some countries. Minimum: 0.5 IU/ml"
-      quarantine: "Mandatory quarantine. 7-14 days days. Quarantine inspection required. Duration depends on origin country and documentation status."
+      quarantine: "Mandatory quarantine. 7-14 days. Quarantine inspection required. Duration depends on origin country and documentation status."
       import_permit: "Required. Issued by: Animal Quarantine Department, Ministry of National Food Security and Research"
       health_certificate: "Required. Issued by: Official veterinarian, endorsed by national authority"
   airlines:
@@ -77,7 +77,7 @@ route_data:
       timing: "3-4 hours before departure for cargo pets; 2 hours for cabin"
       responsible: "You + airline check-in/cargo desk"
     - step: 8
-      action: "Quarantine on arrival (7-14 days days)"
+      action: "Quarantine on arrival (7-14 days)"
       timing: "Immediately on arrival (mandatory)"
       responsible: "Pakistan quarantine authority"
   cost_factors:
@@ -99,7 +99,7 @@ content:
   overview: |
     Pet transport from Croatia to Pakistan follows a clear process once you know what Pakistan requires.
     
-    This route is one of the most demanding international pet transport routes. Start preparations at least 26 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. Pakistan requires mandatory quarantine (7-14 days days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
+    This route is one of the most demanding international pet transport routes. Start preparations at least 26 weeks before your travel date -- some steps have fixed waiting periods that cannot be shortened. Pakistan requires mandatory quarantine (7-14 days) for all arriving pets. This is the part of the process most owners find hardest to plan around. A rabies titre test is required, which adds a mandatory waiting period after your pet's vaccination. You cannot speed this up.
     
     Use this guide to map out your preparation timeline and avoid the most common mistakes.
   sections:
@@ -107,7 +107,7 @@ content:
       body: |
         This is one of the more demanding international pet transport corridors. Pakistan runs a strict biosecurity programme and there are no shortcuts through it.
         
-        All pets must complete quarantine on arrival in Pakistan (at a government-designated facility) for 7-14 days days. This is non-negotiable and is entirely separate from the pre-travel preparation.
+        All pets must complete quarantine on arrival in Pakistan (at a government-designated facility) for 7-14 days. This is non-negotiable and is entirely separate from the pre-travel preparation.
         
         Pakistan regulated by Ministry of National Food Security and Research. Importing pets to Pakistan is more complex; exporting pets from Pakistan (expats leaving) is a common use case. Authority: Animal Quarantine Department.
     - heading: "From experience: Croatia to Pakistan pet transport"
@@ -123,7 +123,7 @@ faqs:
   - question: "How long does it take to prepare a pet for transport from Croatia to Pakistan?"
     answer: "Allow at least 26 weeks from starting preparations to travel day. Some steps involve mandatory waiting periods that cannot be shortened, so starting early is the only way to keep to your schedule."
   - question: "Does my pet need to quarantine when entering Pakistan?"
-    answer: "Yes, quarantine is mandatory in Pakistan. Your pet will stay for 7-14 days days at a government-run facility on arrival. This is non-negotiable and the cost is paid by the owner."
+    answer: "Yes, quarantine is mandatory in Pakistan. Your pet will stay for 7-14 days at the quarantine facility specified in the arrival instructions. Confirm the facility, duration, and current charges with the destination authority before travel."
   - question: "Is a rabies titre test required for pets entering Pakistan?"
     answer: "Yes, a rabies titre test is required. Blood must be drawn at least 30 days after your pet's rabies vaccination, and there is a 90-day waiting period after a successful result before your pet can enter Pakistan. Start this process as early as possible."
   - question: "Do I need an import permit to bring my pet into Pakistan?"

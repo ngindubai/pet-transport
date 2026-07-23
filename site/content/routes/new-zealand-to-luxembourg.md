@@ -4,7 +4,7 @@ title: "Shipping Dogs & Cats from New Zealand to Luxembourg | PetTransportGlobal
 description: "Complete guide to pet transport from New Zealand to Luxembourg. Import requirements, quarantine rules, airline options, and step-by-step timeline."
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "new-zealand-to-luxembourg"
 origin_name: "New Zealand"
 destination_name: "Luxembourg"

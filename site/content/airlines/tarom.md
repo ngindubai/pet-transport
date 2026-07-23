@@ -3,7 +3,7 @@ title: "TAROM Romanian Airlines Pet Transport Guide"
 description: "TAROM pet policy for 2026: cabin pets under 8kg, cargo acceptance, EU rules, and what to know when flying your dog or cat on Romania's national carrier."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "tarom"
 url: "/pet-transport/airlines/tarom/"
 airline:

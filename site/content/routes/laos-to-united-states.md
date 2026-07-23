@@ -5,7 +5,7 @@ description: "Laos to USA pet transport in 2026. The CDC's 15 April 2026 high-ri
 date: "2026-07-11"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "laos-to-united-states"
 origin_name: "Laos"
 destination_name: "United States"

@@ -3,7 +3,7 @@ title: "International Travel with a Standard Poodle: Size, Routes and Key Consid
 description: "Standard Poodles are large, intelligent dogs. This guide covers breed restrictions, crate sizing, airline policies and the key international routes for Standard Poodle owners."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "travelling-with-a-standard-poodle-internationally"
 url: "/blog/travelling-with-a-standard-poodle-internationally/"
 seo:

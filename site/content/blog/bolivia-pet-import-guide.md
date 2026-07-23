@@ -3,7 +3,7 @@ title: "Moving to Bolivia with Pets: SENASAG Requirements and Altitude Considera
 description: "Bolivia is home to a growing expat community in La Paz and Santa Cruz. Here is what dogs and cats need to enter Bolivia legally, including SENASAG health certificate requirements and high-altitude health notes."
 date: 2026-05-09
 type: blog
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "bolivia-pet-import-guide"
 url: "/blog/bolivia-pet-import-guide/"
 seo:

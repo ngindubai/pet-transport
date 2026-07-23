@@ -3,7 +3,7 @@ title: "Pet Transport for Military Families: PCS Moves, Orders-Based Relocation,
 description: "Military families face unique pet transport challenges: tight PCS timelines, government travel restrictions, quarantine at overseas posts, and navigating airline policies on short notice."
 date: "2026-06-17"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-transport-military-families"
 url: "/blog/pet-transport-military-families/"
 seo:

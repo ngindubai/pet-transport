@@ -3,7 +3,7 @@ title: "Pet Transportation Services UK: A Reality Check on What's Actually Avail
 description: "Pet transportation services UK covers four completely different markets. This guide breaks down domestic couriers, IPATA agencies, airline cargo, and full relocation companies: what each does, what it costs, and what credentials to check."
 date: "2026-06-16"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-transportation-services-uk"
 url: "/blog/pet-transportation-services-uk/"
 tags:

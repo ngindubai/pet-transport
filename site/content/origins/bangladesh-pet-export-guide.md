@@ -3,7 +3,7 @@ title: "Pet Transport from Bangladesh | Export Requirements & Routes"
 description: "How to ship your dog or cat from Bangladesh internationally. Export requirements, health certificates, and DLS endorsement explained."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "bangladesh-pet-export-guide"
 origin_country: "Bangladesh"
 origin_iso: "BD"
@@ -44,7 +44,7 @@ sections:
   - heading: "Popular routes from Bangladesh"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Bangladesh to Argentina](/pet-transport/bangladesh-to-argentina/)
       - [Bangladesh to Australia](/pet-transport/bangladesh-to-australia/)
       - [Bangladesh to Austria](/pet-transport/bangladesh-to-austria/)
@@ -116,9 +116,9 @@ sections:
       - [Bangladesh to Turkey](/pet-transport/bangladesh-to-turkey/)
       - [Bangladesh to United Arab Emirates](/pet-transport/bangladesh-to-united-arab-emirates/)
       - [Bangladesh to United Kingdom](/pet-transport/bangladesh-to-united-kingdom/)
+      - [Bangladesh to United States](/pet-transport/bangladesh-to-united-states/)
       - [Bangladesh to Vietnam](/pet-transport/bangladesh-to-vietnam/)
       - [Bangladesh to Zimbabwe](/pet-transport/bangladesh-to-zimbabwe/)
-
 faqs:
   - question: "What documents does my pet need to leave Bangladesh?"
     answer: "Your pet needs a valid microchip (ISO standard), current rabies vaccination, and an official health certificate endorsed by DLS. Specific destination countries may require additional documents such as a titre test result, import permit, or specific certificate formats."

@@ -5,7 +5,7 @@ description: "Guyana treats Australia as rabies-free, so no titre test or quaran
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-guyana"
 origin_name: "Australia"
 destination_name: "Guyana"

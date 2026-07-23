@@ -3,7 +3,7 @@ title: "Cat Import Rules by Country 2026: Quarantine, Vaccines, and Titre Tests 
 description: "A quick-reference guide to cat import requirements in 20 major destination countries. Which countries need titre tests, which have mandatory quarantine, and where the rules are changing."
 date: "2026-05-28"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "cat-import-rules-by-country-2026"
 url: "/blog/cat-import-rules-by-country-2026/"
 seo:

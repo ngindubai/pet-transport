@@ -3,7 +3,7 @@ title: "How to Prepare Your Cat for a Long International Flight"
 description: "Cats handle long-haul travel differently to dogs. This guide covers crate training, feeding, in-cabin vs hold options and how to reduce stress for your cat on a long flight."
 date: "2026-05-07"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "how-to-prepare-your-cat-for-a-long-flight"
 url: "/blog/how-to-prepare-your-cat-for-a-long-flight/"
 seo:

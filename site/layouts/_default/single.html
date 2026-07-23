@@ -1,4 +1,4 @@
-{{ define "title" }}{{ if .Params.seo.title }}{{ .Params.seo.title }}{{ else }}{{ .Title }} | {{ .Site.Params.brand }}{{ end }}{{ end }}
+{{ define "title" }}{{ $title := .Params.seo.title | default (printf "%s | %s" .Title .Site.Params.brand) }}{{ $title | truncate 68 }}{{ end }}
 
 {{ define "schema" }}
 <script type="application/ld+json">
@@ -11,11 +11,12 @@
     "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
     "author": {
         "@type": "Organization",
-        "name": "PetTransportGlobal"
+        "name": "Pet Transport Global Editorial Team",
+        "parentOrganization": { "@type": "Organization", "name": "Pet Transport Global" }
     },
     "publisher": {
         "@type": "Organization",
-        "name": "PetTransportGlobal",
+        "name": "Pet Transport Global",
         "url": "https://pettransportglobal.com"
     }
 }

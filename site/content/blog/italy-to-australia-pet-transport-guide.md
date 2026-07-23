@@ -2,7 +2,7 @@
 title: "Pet Transport from Italy to Australia"
 description: "How to move your cat or dog from Italy to Australia. Covers the Italian UVAC-endorsed health certificate, Australian DAFF import permit, rabies titre test, mandatory quarantine and airline routes."
 date: "2025-08-25"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/italy-to-australia-pet-transport-guide/"
 tags: ["italy", "australia", "route guide", "quarantine", "pet transport"]

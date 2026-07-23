@@ -5,7 +5,7 @@ description: "Tajikistan asks for no rabies titre test from a Canadian pet, and 
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-tajikistan"
 origin_name: "Canada"
 destination_name: "Tajikistan"

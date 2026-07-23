@@ -5,7 +5,7 @@ description: "Full guide to moving your dog or cat from Poland to the Dominican 
 date: "2026-06-24"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "poland-to-dominican-republic"
 origin_name: "Poland"
 destination_name: "Dominican Republic"

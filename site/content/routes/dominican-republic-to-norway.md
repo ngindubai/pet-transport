@@ -5,7 +5,7 @@ description: "Dominican Republic to Norway pet transport in 2026. FAVN titre tes
 date: "2026-07-07"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "dominican-republic-to-norway"
 origin_name: "Dominican Republic"
 destination_name: "Norway"

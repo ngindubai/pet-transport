@@ -3,7 +3,7 @@ title: "Air Zimbabwe Pet Policy 2026"
 description: "Air Zimbabwe pet transport guide. Does Air Zimbabwe accept dogs and cats? Pet cargo services, routes, documentation requirements, and alternatives for Zimbabwe pet transport."
 date: "2026-05-08"
 type: "airlines"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "air-zimbabwe"
 url: "/pet-transport/airlines/air-zimbabwe/"
 seo:

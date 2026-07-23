@@ -3,7 +3,7 @@ title: "Cebu Pacific Pet Policy: Flying Pets with the Philippines Budget Carrier
 description: "Cebu Pacific is the Philippines' largest low-cost carrier. Here is what you need to know about their pet transport policy for domestic and international routes."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "cebu-pacific"
 url: "/pet-transport/airlines/cebu-pacific/"
 seo:

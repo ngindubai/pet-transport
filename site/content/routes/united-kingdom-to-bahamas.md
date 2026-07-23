@@ -5,7 +5,7 @@ description: "A dog or cat can't land in Nassau without a BAHFSA ePermit applied
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-bahamas"
 origin_name: "United Kingdom"
 destination_name: "Bahamas"

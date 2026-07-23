@@ -3,7 +3,7 @@ title: "UK to New Zealand Pet Transport: Complete Guide (2026)"
 description: "New Zealand has among the world's strictest pet import rules. This guide covers approved countries, titre test requirements, MPI permits, and the managed isolation process."
 date: "2026-03-07"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "uk-to-new-zealand-pet-transport-guide"
 url: "/blog/uk-to-new-zealand-pet-transport-guide/"
 seo:

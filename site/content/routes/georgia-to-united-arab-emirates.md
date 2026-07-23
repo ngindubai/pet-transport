@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Tbilisi to Dubai or Abu Dhabi in 2026. MO
 date: "2026-07-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "georgia-to-united-arab-emirates"
 origin_name: "Georgia"
 destination_name: "United Arab Emirates"

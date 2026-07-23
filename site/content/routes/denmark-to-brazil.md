@@ -5,7 +5,7 @@ description: "No non-stop flight links Copenhagen to Sao Paulo, so a European or
 date: "2026-07-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "denmark-to-brazil"
 origin_name: "Denmark"
 destination_name: "Brazil"

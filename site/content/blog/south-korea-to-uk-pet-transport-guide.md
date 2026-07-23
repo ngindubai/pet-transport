@@ -2,7 +2,7 @@
 title: "Pet Transport from South Korea to the UK"
 description: "How to move your cat or dog from South Korea to the UK. Covers South Korea's listed-country status for UK entry, MAFRA health certificate, tapeworm treatment for dogs and airline options."
 date: "2025-08-26"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/south-korea-to-uk-pet-transport-guide/"
 tags: ["south korea", "uk", "route guide", "pet transport", "korea"]

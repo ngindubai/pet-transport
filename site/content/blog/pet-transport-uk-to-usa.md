@@ -3,7 +3,7 @@ title: "Pet Transport UK to USA: What 2026 Actually Looks Like Post-CDC Reset"
 description: "UK to USA pet transport in 2026: the new CDC dog import rules, vet paperwork, cargo airline options, real costs. State-specific gotchas explained."
 date: "2026-06-04"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-transport-uk-to-usa"
 url: "/blog/pet-transport-uk-to-usa/"
 seo:

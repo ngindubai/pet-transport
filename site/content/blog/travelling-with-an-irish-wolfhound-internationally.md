@@ -2,7 +2,7 @@
 title: "International Travel with an Irish"
 description: "Moving internationally with an Irish Wolfhound? This guide covers crate sizing for giant breeds, which airlines accept large dogs, country restrictions and the unique challenges of this breed."
 date: "2025-08-01"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/travelling-with-an-irish-wolfhound-internationally/"
 tags: ["irish wolfhound", "breed guide", "giant breeds", "dog travel", "international pet travel"]

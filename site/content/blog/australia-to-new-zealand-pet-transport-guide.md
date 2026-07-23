@@ -3,7 +3,7 @@ title: "Pet Transport from Australia to New Zealand: The Trans-Tasman Rules"
 description: "Moving a dog or cat from Australia to New Zealand. MPI biosecurity requirements, the approved pathway, approved carriers and what the quarantine process looks like."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "australia-to-new-zealand-pet-transport-guide"
 url: "/blog/australia-to-new-zealand-pet-transport-guide/"
 seo:

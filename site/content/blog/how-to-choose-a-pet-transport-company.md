@@ -3,7 +3,7 @@ title: "How to Choose a Pet Transport Company: What to Ask Before You Book"
 description: "Not all pet transport companies are equal. This guide explains what IPATA membership means, what questions to ask, red flags to avoid and how to compare quotes."
 date: "2026-05-07"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "how-to-choose-a-pet-transport-company"
 url: "/blog/how-to-choose-a-pet-transport-company/"
 seo:

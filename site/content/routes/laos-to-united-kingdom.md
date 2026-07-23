@@ -5,7 +5,7 @@ description: "Laos to UK pet transport in 2026. Laos is CDC and APHA unlisted, s
 date: "2026-07-11"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "laos-to-united-kingdom"
 origin_name: "Laos"
 destination_name: "United Kingdom"

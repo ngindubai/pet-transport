@@ -3,7 +3,7 @@ title: "Germany to Australia Pet Transport 2026: Updated Titre Test Process and 
 description: "Moving pets from Germany to Australia in 2026. The latest DAFF import rules for listed countries, titre test labs in Germany, health certificate endorsement, and Mickleham quarantine costs."
 date: "2026-06-21"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "germany-to-australia-pet-transport-guide-2026"
 url: "/blog/germany-to-australia-pet-transport-guide-2026/"
 seo:

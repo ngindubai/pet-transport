@@ -5,7 +5,7 @@ description: "Seychelles to UK pet transport in 2026. Seychelles is rabies-free,
 date: "2026-07-11"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "seychelles-to-united-kingdom"
 origin_name: "Seychelles"
 destination_name: "United Kingdom"

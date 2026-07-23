@@ -5,7 +5,7 @@ description: "WestJet and Air Canada's Toronto to Belize City nonstop only runs 
 date: "2026-07-18"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-belize"
 origin_name: "Canada"
 destination_name: "Belize"

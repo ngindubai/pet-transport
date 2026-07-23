@@ -3,7 +3,7 @@ title: "Pet Transport from France to UK: Post-Brexit Rules and What You Need"
 description: "Complete guide to moving your dog or cat from France to the UK in 2026: APHA health certificate, tapeworm treatment, approved routes, and what post-Brexit rules mean for French-registered pets."
 date: "2026-05-06"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "france-to-uk-pet-transport-guide"
 url: "/blog/france-to-uk-pet-transport-guide/"
 seo:

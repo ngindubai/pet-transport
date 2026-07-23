@@ -2,7 +2,7 @@
 title: "Pet Transport from Switzerland to the UK"
 description: "How to move your cat or dog from Switzerland to the UK. Covers Switzerland's third-country status for UK entry, health certificate format, FOPH endorsement, tapeworm treatment timing and airline options."
 date: "2025-08-24"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/switzerland-to-uk-pet-transport-guide/"
 tags: ["switzerland", "uk", "route guide", "pet transport", "post-brexit"]

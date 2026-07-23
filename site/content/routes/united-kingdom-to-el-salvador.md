@@ -5,7 +5,7 @@ description: "APHA issues a dedicated El Salvador export certificate, EHC 3946. 
 date: "2026-07-13"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-el-salvador"
 origin_name: "United Kingdom"
 destination_name: "El Salvador"

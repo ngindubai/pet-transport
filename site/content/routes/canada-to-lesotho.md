@@ -5,7 +5,7 @@ description: "Ethiopian's Toronto-Addis Ababa service, the only nonstop link bet
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-lesotho"
 origin_name: "Canada"
 destination_name: "Lesotho"

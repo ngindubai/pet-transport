@@ -5,7 +5,7 @@ description: "IPSA asks no rabies titre test of a UAE-origin pet, unlike the rev
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-arab-emirates-to-nicaragua"
 origin_name: "United Arab Emirates"
 destination_name: "Nicaragua"

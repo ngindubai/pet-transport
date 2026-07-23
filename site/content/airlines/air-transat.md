@@ -3,7 +3,7 @@ title: "Air Transat Pet Policy: Flying Pets with Canada's Vacation Carrier"
 description: "Air Transat accepts small pets in the cabin on many routes. Here is what you need to know about their pet policy, fees, weight limits, and which routes allow cabin pets."
 date: "2026-05-06"
 type: "airlines"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "air-transat"
 url: "/pet-transport/airlines/air-transat/"
 seo:

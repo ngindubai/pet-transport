@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Trinidad and Tobago to France in 2026. No
 date: "2026-07-12"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "trinidad-and-tobago-to-france"
 origin_name: "Trinidad and Tobago"
 destination_name: "France"

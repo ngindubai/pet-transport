@@ -1,4 +1,4 @@
-{{ define "title" }}{{ if .Params.seo.title }}{{ .Params.seo.title }}{{ else if .Params.airline_name }}{{ printf "%s Pet Cargo Policy | Pet Transport Global" .Params.airline_name }}{{ else }}{{ .Title }}{{ end }}{{ end }}
+{{ define "title" }}{{ $title := .Title }}{{ if .Params.seo.title }}{{ $title = .Params.seo.title }}{{ else if .Params.airline_name }}{{ $title = printf "%s Pet Cargo Policy | Pet Transport Global" .Params.airline_name }}{{ end }}{{ $title | truncate 68 }}{{ end }}
 
 {{ define "schema" }}
 {{ with .Params.faqs }}

@@ -5,7 +5,7 @@ description: "Moving a pet from Azerbaijan to Portugal in 2026. Azerbaijan EU-un
 date: "2026-06-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "azerbaijan-to-portugal"
 origin_name: "Azerbaijan"
 destination_name: "Portugal"

@@ -3,7 +3,7 @@ title: "UK Pet Passports 2026: What Replaced Them and How the AHC Actually Works
 description: "UK pet passports stopped working for EU travel in 2021. Here's what the Animal Health Certificate is, what it costs, how long it lasts, and when you actually need one in 2026."
 date: "2026-07-05"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "uk-pet-passports-2026-guide"
 url: "/blog/uk-pet-passports-2026-guide/"
 seo:

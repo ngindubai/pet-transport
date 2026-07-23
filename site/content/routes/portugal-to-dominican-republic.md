@@ -5,7 +5,7 @@ description: "Pet transport from Portugal to the Dominican Republic in 2026. No 
 date: "2026-06-28"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "portugal-to-dominican-republic"
 origin_name: "Portugal"
 destination_name: "Dominican Republic"

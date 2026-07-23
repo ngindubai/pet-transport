@@ -5,7 +5,7 @@ description: "Belize is unlisted for UK pet travel, so a rabies titre test and a
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "belize-to-united-kingdom"
 origin_name: "Belize"
 destination_name: "United Kingdom"

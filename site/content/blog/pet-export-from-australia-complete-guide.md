@@ -3,7 +3,7 @@ title: "Exporting Your Pet from Australia: What DAFF Requires for Departure"
 description: "Moving out of Australia with a dog or cat? DAFF manages pet exports as well as imports. Here is what you need: export permit, health certificate, and destination country requirements."
 date: "2026-05-06"
 type: "blog"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-export-from-australia-complete-guide"
 url: "/blog/pet-export-from-australia-complete-guide/"
 seo:

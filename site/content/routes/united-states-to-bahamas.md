@@ -5,7 +5,7 @@ description: "BAHFSA's ePermit now costs USD 50 and runs 6 months since the move
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-states-to-bahamas"
 origin_name: "United States"
 destination_name: "Bahamas"

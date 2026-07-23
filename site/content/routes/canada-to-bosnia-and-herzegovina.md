@@ -5,7 +5,7 @@ description: "Canada sits in Part B of Bosnia's own Annex IV country list, along
 date: "2026-07-21"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "canada-to-bosnia-and-herzegovina"
 origin_name: "Canada"
 destination_name: "Bosnia and Herzegovina"

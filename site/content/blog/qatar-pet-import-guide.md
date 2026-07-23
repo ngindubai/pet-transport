@@ -3,7 +3,7 @@ title: "Bringing a Pet to Qatar: Ministry of Environment Rules, Import Permits a
 description: "Full guide to bringing your dog or cat to Qatar in 2026: MECC import permit, approved breeds, health certificate, and arrival process at Hamad International Airport."
 date: "2026-05-06"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "qatar-pet-import-guide"
 url: "/blog/qatar-pet-import-guide/"
 seo:

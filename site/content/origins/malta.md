@@ -4,7 +4,7 @@ slug: "malta"
 description: "Complete guide to exporting your pet from Malta."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 country_name: "Malta"
 country_code: "MT"
 overview: |
@@ -24,7 +24,7 @@ sections:
   - heading: "Popular routes from Malta"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Malta to Argentina](/pet-transport/malta-to-argentina/)
       - [Malta to Australia](/pet-transport/malta-to-australia/)
       - [Malta to Austria](/pet-transport/malta-to-austria/)
@@ -95,6 +95,8 @@ sections:
       - [Malta to Thailand](/pet-transport/malta-to-thailand/)
       - [Malta to Turkey](/pet-transport/malta-to-turkey/)
       - [Malta to United Arab Emirates](/pet-transport/malta-to-united-arab-emirates/)
+      - [Malta to United Kingdom](/pet-transport/malta-to-united-kingdom/)
+      - [Malta to United States](/pet-transport/malta-to-united-states/)
       - [Malta to Vietnam](/pet-transport/malta-to-vietnam/)
       - [Malta to Zimbabwe](/pet-transport/malta-to-zimbabwe/)
 faqs:

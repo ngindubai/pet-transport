@@ -3,7 +3,7 @@ title: "How to Read an Airline Pet Policy: What the Fine Print Actually Means"
 description: "Airline pet policies are full of conditions, exceptions and breed lists. This guide decodes the key terms so you know what to look for and what questions to ask before booking."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "how-to-read-an-airline-pet-policy"
 url: "/blog/how-to-read-an-airline-pet-policy/"
 seo:

@@ -5,7 +5,7 @@ description: "Honest take on 'cheap' pet transport quotes. Where the savings are
 date: "2026-06-06"
 type: "blog"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "cheap-pet-transport-honest-look"
 ---
 

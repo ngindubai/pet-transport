@@ -5,7 +5,7 @@ description: "Moving a dog or cat from India to Malaysia in 2026. FAVN titre tes
 date: "2026-06-06"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "india-to-malaysia"
 origin_name: "India"
 destination_name: "Malaysia"

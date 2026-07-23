@@ -5,7 +5,7 @@ description: "UAE to Honduras pet transport in 2026. MOCCAE's export certificate
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-arab-emirates-to-honduras"
 origin_name: "United Arab Emirates"
 destination_name: "Honduras"

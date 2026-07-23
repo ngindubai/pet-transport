@@ -5,7 +5,7 @@ description: "Suriname isn't in any DAFF approved country group, so a pet needs 
 date: "2026-07-16"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "suriname-to-australia"
 origin_name: "Suriname"
 destination_name: "Australia"

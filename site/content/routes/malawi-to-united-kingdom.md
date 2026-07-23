@@ -5,7 +5,7 @@ description: "Malawi is unlisted for UK pet entry. A rabies titre test and fixed
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "malawi-to-united-kingdom"
 origin_name: "Malawi"
 destination_name: "United Kingdom"

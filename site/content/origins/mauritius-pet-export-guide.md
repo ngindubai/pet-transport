@@ -3,7 +3,7 @@ title: "Mauritius Pet Export Guide | International Pet Transport"
 description: "How to ship your dog or cat from Mauritius internationally. Export requirements, health certificates, and VSD-MU endorsement explained."
 type: "origins"
 layout: "single"
-author: "Dr. Sarah Okafor, International Animal Health Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "mauritius-pet-export-guide"
 origin_country: "Mauritius"
 origin_iso: "MU"
@@ -44,7 +44,7 @@ sections:
   - heading: "Popular routes from Mauritius"
     body: |
       We have detailed guides for the following routes:
-      
+
       - [Mauritius to Argentina](/pet-transport/mauritius-to-argentina/)
       - [Mauritius to Australia](/pet-transport/mauritius-to-australia/)
       - [Mauritius to Austria](/pet-transport/mauritius-to-austria/)
@@ -116,9 +116,9 @@ sections:
       - [Mauritius to Turkey](/pet-transport/mauritius-to-turkey/)
       - [Mauritius to United Arab Emirates](/pet-transport/mauritius-to-united-arab-emirates/)
       - [Mauritius to United Kingdom](/pet-transport/mauritius-to-united-kingdom/)
+      - [Mauritius to United States](/pet-transport/mauritius-to-united-states/)
       - [Mauritius to Vietnam](/pet-transport/mauritius-to-vietnam/)
       - [Mauritius to Zimbabwe](/pet-transport/mauritius-to-zimbabwe/)
-
 faqs:
   - question: "What documents does my pet need to leave Mauritius?"
     answer: "Your pet needs a valid microchip (ISO standard), current rabies vaccination, and an official health certificate endorsed by VSD-MU. Specific destination countries may require additional documents such as a titre test result, import permit, or specific certificate formats."

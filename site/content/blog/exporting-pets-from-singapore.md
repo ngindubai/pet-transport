@@ -3,7 +3,7 @@ title: "Exporting a Pet from Singapore: The 2026 AVS Process Done Properly"
 description: "Singapore pet export 2026: AVS export licence, health certificate, FAVN titre for Australia, Changi cargo. From SG to UK, AU, US, EU explained step by step."
 date: "2026-06-08"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "exporting-pets-from-singapore"
 url: "/blog/exporting-pets-from-singapore/"
 seo:

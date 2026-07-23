@@ -3,7 +3,7 @@ title: "Pet Transport from USA to UAE 2026"
 description: "How to transport your dog or cat from the USA to the United Arab Emirates. MOCCAE permit, USDA APHIS health certificate, breed restrictions, and airline options."
 date: "2026-05-08"
 type: "blog"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 slug: "usa-to-uae-pet-transport-guide"
 url: "/blog/usa-to-uae-pet-transport-guide/"
 seo:

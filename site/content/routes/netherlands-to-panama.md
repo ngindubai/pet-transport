@@ -5,7 +5,7 @@ description: "Pet transport from the Netherlands to Panama in 2026. No titre tes
 date: "2026-06-28"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "netherlands-to-panama"
 origin_name: "Netherlands"
 destination_name: "Panama"

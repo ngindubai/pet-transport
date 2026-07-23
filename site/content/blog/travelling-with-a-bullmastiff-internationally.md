@@ -2,7 +2,7 @@
 title: "International Travel with a Bullmastiff"
 description: "Planning to move internationally with a Bullmastiff? This guide covers breed restrictions in key countries, cargo crate requirements for large breeds, brachycephalic airline rules and what to check before booking."
 date: "2025-08-31"
-author: "PetTransportGlobal Editorial Team"
+author: "Pet Transport Global Editorial Team"
 type: "blog"
 url: "/blog/travelling-with-a-bullmastiff-internationally/"
 tags: ["bullmastiff", "breed guide", "large dogs", "brachycephalic", "international pet travel"]

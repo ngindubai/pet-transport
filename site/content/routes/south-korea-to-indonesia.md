@@ -5,7 +5,7 @@ description: "Seoul Incheon flies direct to Jakarta on both Korean Air and Garud
 date: "2026-07-10"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "south-korea-to-indonesia"
 origin_name: "South Korea"
 destination_name: "Indonesia"

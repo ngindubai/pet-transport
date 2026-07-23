@@ -3,7 +3,7 @@ title: "When Do You Need a Pet Import Permit? A Country-by-Country Guide"
 description: "Not all countries require import permits for pets. This guide explains which destinations need advance permits, how to apply, and what happens if you arrive without one."
 date: "2026-05-22"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "pet-import-permit-guide"
 url: "/blog/pet-import-permit-guide/"
 seo:

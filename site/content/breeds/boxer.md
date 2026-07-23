@@ -3,7 +3,7 @@ title: "Flying with a Boxer | Airline Restrictions & Advice"
 description: "Which airlines accept Boxer as cargo or cabin? Seasonal embargoes, breed bans, and what you need before booking your flat-faced dog."
 type: "breeds"
 layout: "single"
-author: "Emma Hartley, Certified Animal Behaviourist and Pet Travel Adviser, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "boxer"
 breed_name: "Boxer"
 brachycephalic: true

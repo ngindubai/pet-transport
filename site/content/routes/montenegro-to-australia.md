@@ -5,7 +5,7 @@ description: "Unlike neighbour Albania, Montenegro sits directly on DAFF's Group
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "montenegro-to-australia"
 origin_name: "Montenegro"
 destination_name: "Australia"

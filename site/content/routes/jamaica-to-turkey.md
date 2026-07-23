@@ -5,7 +5,7 @@ description: "Moving a dog or cat from Kingston to Istanbul in 2026. VSD export 
 date: "2026-07-09"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "jamaica-to-turkey"
 origin_name: "Jamaica"
 destination_name: "Turkey"

@@ -3,7 +3,7 @@ title: "Pet Transport from the UK to Italy: Post-Brexit Requirements"
 description: "Moving to Italy with your dog or cat from the UK after Brexit? You need an AHC, microchip, and current rabies vaccination. Here is the full process explained."
 date: "2026-05-06"
 type: "blog"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "uk-to-italy-pet-transport-guide"
 url: "/blog/uk-to-italy-pet-transport-guide/"
 seo:

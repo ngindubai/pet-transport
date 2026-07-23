@@ -5,7 +5,7 @@ description: "Every Eswatini pet flies to Johannesburg first; Etihad carries non
 date: "2026-07-20"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "eswatini-to-united-arab-emirates"
 origin_name: "Eswatini"
 destination_name: "United Arab Emirates"

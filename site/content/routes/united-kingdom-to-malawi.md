@@ -5,7 +5,7 @@ description: "Malawi asks for a DAHLD import permit and proof of vaccination fro
 date: "2026-07-17"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-kingdom-to-malawi"
 origin_name: "United Kingdom"
 destination_name: "Malawi"

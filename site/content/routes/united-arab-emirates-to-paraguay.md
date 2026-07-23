@@ -5,7 +5,7 @@ description: "Moving a dog or cat from the UAE to Paraguay in 2026. SENACSA does
 date: "2026-07-14"
 type: "routes"
 layout: "single"
-author: "Marcus Webb, Senior Pet Relocation Consultant, PetTransportGlobal"
+author: "Pet Transport Global Editorial Team"
 slug: "united-arab-emirates-to-paraguay"
 origin_name: "United Arab Emirates"
 destination_name: "Paraguay"
